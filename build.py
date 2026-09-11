@@ -389,14 +389,14 @@ DATA = {
  # workbook and the verifier, and off the page a reader sees.
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · %s" % TODAY,
 
- "kicker": "Titan · Greater Houston business development screen · %s" % TODAY,
+ "kicker": "Greater Houston · business development screen for a construction printer · %s" % TODAY,
 
- "headline": "Greater Houston, sized for the Titan. %d firms, three counts each." % n,
+ "headline": "Greater Houston, sized for one printer. %d firms, three counts each." % n,
  # ICON writes display sentences in two weights: the connective words drop back,
  # the load-bearing ones stay solid. The same device, with the numbers carrying it.
  # A title, not a conclusion. What the document is, and nothing about what to think of it.
  # The counts live in the strip below, where a number belongs.
- "headline_html": ("Greater Houston, sized for the Titan.<br>"
+ "headline_html": ("Greater Houston, sized for one printer.<br>"
                    "<b>%d firms. Three counts each.</b>" % n),
  # A label is a name, not a sentence. The clause each of these used to carry
  # moved into the group note, where there is room to say it once.
