@@ -1,12 +1,12 @@
 # Greater Houston Rolodex — handoff
 
-Build 31 · 2026-09-11
+Build 32 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
 ## Where it lives
 
-- **Hosted**: published as a claude.ai artifact (Build 31, Version 7), private until shared from the page's own share menu. The artifact declares the `downloads` capability so the in-page Excel export works in the viewer. To republish from a new session, pass the artifact URL as `url`; the file to publish is `rolodex-artifact.html`, which `build.py` emits alongside the standalone file.
+- **Hosted**: published as a claude.ai artifact (Build 32, Version 7), private until shared from the page's own share menu. The artifact declares the `downloads` capability so the in-page Excel export works in the viewer. To republish from a new session, pass the artifact URL as `url`; the file to publish is `rolodex-artifact.html`, which `build.py` emits alongside the standalone file.
 - **Standalone**: `ICON_Greater_Houston_Rolodex.html` (self-contained, opens from disk) and `ICON_Greater_Houston_Rolodex.xlsx` (the full workbook).
 - **Source**: a git repository, ready to push. `make` builds, exports and verifies. The served copies are in `docs/` so GitHub Pages can serve them from that folder.
 
@@ -91,9 +91,13 @@ A fifth view, Market, with five figures drawn at build time from the same record
 
 **Hero.** A full-width signature strip under the masthead: the 13 published closings as dots on the machine-fit bands, two end labels, tooltips, click opens the firm, staggered rise on load (off under reduced motion), hidden below 760px where the Market view carries the full figure.
 
-## Build 31: vocabulary, quotes, repo
+## Build 32: vocabulary, quotes, repo
 
-The three counts were renamed so a reader at ICON needs no glossary: **Repetition** (builds the same plans, in one place), **Titan fit** (one or two printers would cover it), **Track record** (has paid for a new building method before). "Decider" became **Decision-maker**. The rule reads: *Yes and Partly both keep a firm in. Only a No takes it out.* The headline reads *sized for the Titan*. The cover cards lost their one-letter tier badge and abbreviated badges; the legend's already-buying swatch now shows the white dot the chips carry. Three verbatim quotes sit under the code tables: the ICC's own sentence on Houston's 2021 adoption naming 3-D printing, ESR-4652's scope sentence, and STRUCTURE on R104.11. Scratch files removed; README, Makefile, requirements and .gitignore added; outputs copied to `docs/`.
+The three counts were renamed so a reader at ICON needs no glossary: **Repetition** (builds the same plans, in one place), **Printer fit** (one or two printers would cover it), **Track record** (has paid for a new building method before). "Decider" became **Decision-maker**. The rule reads: *Yes and Partly both keep a firm in. Only a No takes it out.* The headline reads *sized for the Titan*. The cover cards lost their one-letter tier badge and abbreviated badges; the legend's already-buying swatch now shows the white dot the chips carry. Three verbatim quotes sit under the code tables: the ICC's own sentence on Houston's 2021 adoption naming 3-D printing, ESR-4652's scope sentence, and STRUCTURE on R104.11. Scratch files removed; README, Makefile, requirements and .gitignore added; outputs copied to `docs/`.
+
+## Build 32: the second count is Printer fit
+
+The count was briefly labelled *Titan fit*. It now reads **Printer fit**, for the same reason the tool is called Rolodex and not ICON: the product name stays out of the methodology. Titan remains where it is a fact (the headline, ICON's record, the timeline, the ESR question, the bands note). ICON's own term for the method is *additive construction* (its newsroom: "commercial-scale additive manufacturing"; Project Olympus under NASA's additive construction work); the page uses plain words instead and says "printed wall".
 
 ## Live numbers
 

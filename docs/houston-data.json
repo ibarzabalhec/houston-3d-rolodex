@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 31,
+ "build": 32,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Titan · Greater Houston business development screen · 2026-09-11",
@@ -47,7 +47,7 @@
    false
   ]
  ],
- "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Titan fit: one or two printers would cover it. Track record: has paid for a new building method before. The first two place a firm on the grid; the third is the chip colour. Open a firm for the evidence, add it to a call list, and export the list to Excel or paper.",
+ "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two printers would cover it. Track record: has paid for a new building method before. The first two place a firm on the grid; the third is the chip colour. Open a firm for the evidence, add it to a call list, and export the list to Excel or paper.",
  "axes": [
   {
    "key": "repeatability",
@@ -60,7 +60,7 @@
   },
   {
    "key": "machine_fit",
-   "label": "Titan fit",
+   "label": "Printer fit",
    "blurb": "",
    "clear": 14,
    "partial": 25,
@@ -79,7 +79,7 @@
  ],
  "matrix": {
   "x_label": "Repetition: builds the same plans, in one place",
-  "y_label": "Titan fit: one or two printers would cover it",
+  "y_label": "Printer fit: one or two printers would cover it",
   "order": [
    "fail",
    "partial",
@@ -93,7 +93,7 @@
  },
  "axis_titles": {
   "repeatability": "Repetition: builds the same plans, in one place",
-  "machine_fit": "Titan fit: one or two printers would cover it",
+  "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
  "matrix_note": "The top right cell holds <b>7 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 10 that are in on all three counts in the strip above; 2 firms appear in both. Of the 7 here, <b>2</b> have paid for an unproven method, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>4</b> have no method record.",
@@ -370,7 +370,7 @@
  "limits": [
   [
    "The three counts",
-   "Repetition asks whether a firm builds the same plans in one place. Titan fit asks whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is partial, and national purchasing fails. Track record asks whether the firm has ever paid for a new way of building. Yes and Partly both keep a firm in. Only a No takes it out."
+   "Repetition asks whether a firm builds the same plans in one place. Printer fit asks whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is partial, and national purchasing fails. Track record asks whether the firm has ever paid for a new way of building. Yes and Partly both keep a firm in. Only a No takes it out."
   ],
   [
    "Who decides",
@@ -1133,7 +1133,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Eighty printed homes on one site is inside the band one machine serves."
@@ -1235,7 +1235,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Twenty-six homes on one site, twenty-three of them already printed."
@@ -1337,7 +1337,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "One duplex. Proof the method works in the city limits, not a volume that keeps a machine busy."
@@ -1483,7 +1483,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Builds and holds whole build-to-rent communities, so the output is concentrated where a machine can stand still."
@@ -1605,7 +1605,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Three-storey attached townhomes at citywide volume, built by one owner who also develops the land."
@@ -1704,7 +1704,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "No Houston closings figure is published, and purchasing may sit with Clayton rather than locally."
@@ -1828,7 +1828,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "1,200 homes on one site is the right concentration, but Century buys nationally."
@@ -1972,7 +1972,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "About 750 closings last year across two markets. A machine would be a line inside the business rather than the business."
@@ -2087,7 +2087,7 @@
    "audit_flags": [
     "The 300-closings figure and the even-flow description come from a Builder Magazine profile of 2014 performance. The cadence model is on record; the current volume is not.",
     "Individual profiles for the four named leaders were not found. They are named with titles on the firm's own team page, which is the citation.",
-    "The volume on file was more than 300 closings a year. HousingWire reports 973 homes and $310 million in 2025, up 17 percent. Titan fit moves from Yes to Partly on that figure."
+    "The volume on file was more than 300 closings a year. HousingWire reports 973 homes and $310 million in 2025, up 17 percent. Printer fit moves from Yes to Partly on that figure."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -2112,7 +2112,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "973 homes in 2025 across Bryan-College Station, Conroe and Huntsville. Two machines would be a production line inside the business rather than the business."
@@ -2257,7 +2257,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Five affordable developments in one neighbourhood, at a scale one machine covers."
@@ -2377,7 +2377,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "346 units with its own architect and its own general contractor. No third party is in the decision."
@@ -2482,7 +2482,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Four Texas divisions under a Japanese parent. Volume is above the band and the parent is industrialising on its own terms."
@@ -2584,7 +2584,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Owned by Rausch Coleman Homes since 2020. No volume figure is published for the brand, and purchasing may sit with the parent."
@@ -2690,7 +2690,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "At that volume one machine is a meaningful share of output rather than a pilot."
@@ -2808,7 +2808,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "45 closings in 2025 and 70 planned for 2026. One machine would cover most of a year's walls."
@@ -2914,7 +2914,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "195 closings in 2022 and 189 in 2021, the latest figures published. Inside the band one or two machines serve."
@@ -3016,7 +3016,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "Attached townhome production at a volume one machine could carry."
@@ -3141,7 +3141,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "A $600 million programme in five phases, but the product is multifamily and the procurement is public."
@@ -3296,7 +3296,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "A national builder closing thousands a year through a corporate purchasing desk."
@@ -3397,7 +3397,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "The volume band fits, but the parent listed in January 2024 and purchasing may have centralised."
@@ -3521,7 +3521,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "10,800 rental homes held across 115 communities. The volume is far above one machine, though the build-and-hold model is the right one."
@@ -3652,7 +3652,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "20,000 homes since 2004 is roughly a thousand a year, above the band but not beyond a two-machine pilot."
@@ -3769,7 +3769,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "156 units inside a single masterplan, built to hold. One machine covers a community at a time."
@@ -3893,7 +3893,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "1,062 closings in 2025 and 1,016 in 2024 across Houston and Austin. Two machines would be a line inside the business."
@@ -3976,7 +3976,7 @@
    ],
    "audit_flags": [
     "The cumulative figure is the firm's own and covers eighteen years. No single-year number is published.",
-    "Builder reports 540 closings in 2025 and 552 in 2024. Titan fit moves from Yes to Partly.",
+    "Builder reports 540 closings in 2025 and 552 in 2024. Printer fit moves from Yes to Partly.",
     "No LinkedIn company page exists for the firm, only individual employee profiles."
    ],
    "hue_hex": "#FF4F00",
@@ -4002,7 +4002,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "540 closings in 2025 and 552 in 2024 across about twenty communities. Two machines would carry a fifth of output at most."
@@ -4104,7 +4104,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "A David Weekley Homes line, so purchasing sits with a national builder. One machine would cover the brand's output; the decision would not be the brand's alone."
@@ -4229,7 +4229,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "About seventy-five homes a year, stated by the firm. One machine would carry most of it."
@@ -4338,7 +4338,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "About fifty closings a year. One machine covers most of that, if it can be moved economically."
@@ -4453,7 +4453,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "No closings figure is published. A 2020 startup may not yet be at machine scale."
@@ -4589,7 +4589,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Seven rental communities funded under one Houston director. The firm is run from Dallas."
@@ -4702,7 +4702,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Eleven divisions nationally means purchasing scale above the band a single machine serves."
@@ -4816,7 +4816,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Two Houston divisions inside Dream Finders, so the volume fits and the purchasing may not be local."
@@ -4923,7 +4923,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "483 closings in 2025 and 511 in 2024. The volume supports machines; the dispersion does not."
@@ -5033,7 +5033,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "No volume figure. Houston is secondary to San Antonio, so the local share is small."
@@ -5153,7 +5153,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "No closings figure is published anywhere, so the machine question cannot be sized."
@@ -5253,7 +5253,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "A small developer with its own vice president of construction, and no published unit count to size it."
@@ -5353,7 +5353,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "No closings figure is published. Price point above $500,000 implies volume below the machine band."
@@ -5503,7 +5503,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Industrial and outdoor storage. There is no repeated house here."
@@ -5650,7 +5650,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Adaptive reuse and retail. Every project is its own building."
@@ -5751,7 +5751,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Converting industrial buildings leaves almost no new wall to print."
@@ -5869,7 +5869,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Converting two 1927 and 1941 office towers to residential. No new exterior wall."
@@ -5966,7 +5966,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
      "text": "Retail shells at 20,000 to 25,000 square feet. A printed wall competes with tilt-wall here, not with stick framing."
@@ -6112,7 +6112,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Sixty blocks of mixed-use. The buildings are one-offs, whatever the acreage."
@@ -6228,7 +6228,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "The phase-one programme is retail, office and parking rather than repeated units."
@@ -6362,7 +6362,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Conversion work leaves little new wall. A printed element would have to be an addition rather than the building."
@@ -6468,7 +6468,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Medical office and retail shells rather than houses."
@@ -6602,7 +6602,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Thousands of closings a year across a dozen states, bought from one office."
@@ -6736,7 +6736,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "A national builder, bought centrally, however good the Houston division is."
@@ -6850,7 +6850,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "A national builder with a national build-to-rent brand."
@@ -6976,7 +6976,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "A national builder with a corporate purchasing function."
@@ -7115,7 +7115,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "125,000 homes and a national purchasing and supply chain function."
@@ -7231,7 +7231,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
      "text": "More than 300 homes a year on the firm's own count, across Texas and Tennessee."
@@ -7368,7 +7368,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "120 communities and thousands of closings a year, bought centrally."
@@ -7492,7 +7492,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "110 communities inside the DRB platform, bought by a parent that has put capital into wood."
@@ -8120,7 +8120,7 @@
     },
     {
      "axis": "machine_fit",
-     "title": "Titan fit: one or two printers would cover it",
+     "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
      "text": "Sells lots, wholly owned by Lennar, so the route is Lennar."

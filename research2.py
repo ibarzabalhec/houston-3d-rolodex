@@ -266,9 +266,9 @@ MACHINE_WHY = {
 FLAGS = {
     "HOU-065": [
         "The volume on file was more than 300 closings a year. HousingWire reports 973 homes and "
-        "$310 million in 2025, up 17 percent. Titan fit moves from Yes to Partly on that figure."],
+        "$310 million in 2025, up 17 percent. Printer fit moves from Yes to Partly on that figure."],
     "HOU-064": [
-        "Builder reports 540 closings in 2025 and 552 in 2024. Titan fit moves from Yes to Partly."],
+        "Builder reports 540 closings in 2025 and 552 in 2024. Printer fit moves from Yes to Partly."],
     "HOU-068": [
         "Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. "
         "The firm's own release names Jason Golan Founder and Owner and Kyle Davison Division "

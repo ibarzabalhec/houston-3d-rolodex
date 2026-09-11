@@ -36,7 +36,7 @@ COLS = [
     ("Name", 26), ("Firm", 34), ("Title", 34), ("Group", 26), ("Holds", 7),
     ("Role", 13), ("Region", 30), ("Headline figure", 30),
     ("Repetition", 12), ("Repetition why", 48),
-    ("Titan fit", 12), ("Titan fit why", 48),
+    ("Printer fit", 12), ("Printer fit why", 48),
     ("Track record", 13), ("Track record why", 48), ("Capital", 10),
     ("LinkedIn URL", 40), ("Find", 9), ("Status", 14), ("Company URL", 34),
     ("Screen result", 80), ("Open items", 60),

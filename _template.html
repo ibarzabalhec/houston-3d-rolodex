@@ -755,7 +755,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 
   <div class="wrap" id="stageList" hidden>
     <div class="scroll"><table><thead><tr>
-      <th>Firm</th><th>Repetition</th><th>Titan fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline figure</th><th class="ac"><span class="vh">Call list</span></th>
+      <th>Firm</th><th>Repetition</th><th>Printer fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline figure</th><th class="ac"><span class="vh">Call list</span></th>
     </tr></thead><tbody id="tb"></tbody></table></div>
   </div>
 </div>
@@ -1275,7 +1275,7 @@ document.getElementById('sub').textContent=D.sub;
   h+='<line class="hgrid" x1="'+hx+'" y1="'+(axisY-22-lanes*18)+'" x2="'+hx+'" y2="'+(axisY-24)+'"/>'+
      '<text class="hname" x="'+(hx-6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="end">'+esc(hi.short)+', '+String(hi.high).replace(/\B(?=(\d{3})+(?!\d))/g,',')+' a year</text>';
   h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+rows.length+' of '+T.length+
-     ' firms publish an annual closings figure, each a dot. Solid is a Yes on Titan fit; grey is a Partly.</text>'+
+     ' firms publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
      '<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
   h+='</svg>';
   document.getElementById('heroFig').innerHTML=h;
@@ -1317,11 +1317,11 @@ function drawMatrix(){
       var rows=T.filter(function(t){return t.cell===key;});
       var best=(x==='clear'&&y==='clear');
       html+='<div class="cell'+(best?' best':'')+'" role="gridcell" aria-label="'+
-        'Repetition '+W[x]+', Titan fit '+W[y]+', '+rows.length+' firms">'+
-        '<div class="chead"><b>'+rows.length+'</b><span>Repetition '+W[x]+' &middot; Titan fit '+W[y]+'</span></div>'+
+        'Repetition '+W[x]+', Printer fit '+W[y]+', '+rows.length+' firms">'+
+        '<div class="chead"><b>'+rows.length+'</b><span>Repetition '+W[x]+' &middot; Printer fit '+W[y]+'</span></div>'+
         '<div class="chips">'+rows.map(function(t){
           var al=t.entity_name+'. Repetition '+W[t.marks.repeatability]+
-            ', Titan fit '+W[t.marks.machine_fit]+
+            ', Printer fit '+W[t.marks.machine_fit]+
             ', track record '+W[t.marks.innovation]+
             (t.group==='adopter'?', already buying printed walls':'')+
             (t.has_decider?', decision-maker named':'')+'.';
@@ -1559,7 +1559,7 @@ function activeFilters(){
 }
 function clearFilters(){F={group:[],count:[],dec:''};}
 
-var AXN={repeatability:'Repetition',machine_fit:'Titan fit',innovation:'Track record'};
+var AXN={repeatability:'Repetition',machine_fit:'Printer fit',innovation:'Track record'};
 var FMENU=null;
 
 function closeMenu(){
@@ -1611,7 +1611,7 @@ function menuFor(kind,axis){
 function drawFilterBar(){
   var defs=[['group',null,'Section'],
             ['count','repeatability','Repetition'],
-            ['count','machine_fit','Titan fit'],
+            ['count','machine_fit','Printer fit'],
             ['count','innovation','Track record'],
             ['dec',null,'Decision-maker']];
   var bar=defs.map(function(d){
@@ -1738,7 +1738,7 @@ function buildXlsx(rows,widths,sheetName){
    shape a CRM import and a call sheet both want, with the firm's screen
    repeated alongside. A firm with no named contact still gets a row, so the
    gap travels with the list rather than disappearing from it. */
-var XCOLS=[['Firm',30],['Section',22],['Repetition',12],['Titan fit',11],['Track record',13],
+var XCOLS=[['Firm',30],['Section',22],['Repetition',12],['Printer fit',11],['Track record',13],
            ['Region',24],['Headline figure',34],['Contact',22],['Title',34],['Decides the wall',15],
            ['Status',16],['LinkedIn',46],['Named on',46],['Website',34],['The screen',60]];
 function exportRows(list){
@@ -1814,7 +1814,7 @@ function buildCover(t,idx){
   el.setAttribute('tabindex','-1'); el.setAttribute('role','button');
   el.setAttribute('aria-label',t.entity_name+'. '+(D.group_labels[t.group]||'')+'. Open firm.');
   var lines=coverNameLines(t.entity_name), sz=coverNameSize(lines);
-  var counts=[['repeatability','Repetition','m1'],['machine_fit','Titan fit','m3'],['innovation','Track record','m2']]
+  var counts=[['repeatability','Repetition','m1'],['machine_fit','Printer fit','m3'],['innovation','Track record','m2']]
     .map(function(a){return '<span class="'+a[2]+' '+t.marks[a[0]]+'">'+a[1]+' '+W[t.marks[a[0]]]+'</span>';}).join('');
   var face='<span class="pip"></span>'+
     '<div class="t-row"><span>'+esc(t.region||'')+'</span></div>'+
@@ -1997,7 +1997,7 @@ function drawPrintRoster(){
     });
   });
   document.getElementById('printRoster').innerHTML=
-    '<table><thead><tr><th>Firm</th><th>Repetition</th><th>Titan fit</th>'+
+    '<table><thead><tr><th>Firm</th><th>Repetition</th><th>Printer fit</th>'+
     '<th>Track record</th><th>Decision-maker</th><th>Headline figure</th></tr></thead>'+
     '<tbody>'+(h||'<tr><td colspan="6">No firms match the current filter.</td></tr>')+'</tbody></table>'+
     '<p style="margin-top:14px;font-size:8pt;color:#555">'+shown+' of '+T.length+

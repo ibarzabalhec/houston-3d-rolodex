@@ -151,7 +151,7 @@ WHY["HOU-042"] = (
 
 AXIS_TITLE = {
     "repeatability": "Repetition: builds the same plans, in one place",
-    "machine_fit": "Titan fit: one or two printers would cover it",
+    "machine_fit": "Printer fit: one or two printers would cover it",
     "innovation": "Track record: has paid for a new building method before",
 }
 VERDICT_WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}

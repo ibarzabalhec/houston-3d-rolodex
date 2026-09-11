@@ -32,7 +32,7 @@ function figClosings(){
   rows.forEach(function(r,i){
     var y=top+i*rowH, bh=18, cy=y+bh/2;
     var tip=r.name+': '+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
-            ' homes, '+r.year+'. '+r.source+'. Titan fit '+W_[r.fit]+'.';
+            ' homes, '+r.year+'. '+r.source+'. Printer fit '+W_[r.fit]+'.';
     h+='<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end" data-id="'+r.id+'">'+esc(r.short)+'</text>';
     h+='<rect x="'+X(0)+'" y="'+y+'" width="'+(X(r.low)-X(0))+'" height="'+bh+'" rx="0" class="bar '+r.fit+'"'+tipAttr(tip)+'/>';
     if(r.high>r.low){
@@ -43,12 +43,12 @@ function figClosings(){
        (r.low===r.high?fmt(r.high):fmt(r.low)+'–'+fmt(r.high))+' <tspan class="yr">'+r.year+'</tspan></text>';
   });
   h+='</svg>';
-  var tbl='<table class="ftab"><thead><tr><th>Firm</th><th>Homes a year</th><th>Year</th><th>Titan fit</th><th>Source</th></tr></thead><tbody>'+
+  var tbl='<table class="ftab"><thead><tr><th>Firm</th><th>Homes a year</th><th>Year</th><th>Printer fit</th><th>Source</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td>'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
       '</td><td>'+r.year+'</td><td>'+W_[r.fit]+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
     rows.length+' of '+T.length+' firms publish an annual figure. The other '+MK.closings_missing+
-    ' do not, and are not drawn. Solid bars are a Yes on Titan fit; grey bars are a Partly. A range is drawn to its low end with a line to its high end. The shaded bands are an assumption; how they were set is under How each number is produced, below.',
+    ' do not, and are not drawn. Solid bars are a Yes on Printer fit; grey bars are a Partly. A range is drawn to its low end with a line to its high end. The shaded bands are an assumption; how they were set is under How each number is produced, below.',
     h, tbl);
 }
 
@@ -228,7 +228,7 @@ function drawMarket(){
   var both=T.filter(function(t){return t.marks.machine_fit==='clear'&&t.marks.innovation!=='fail';}).length;
   var dec=T.filter(function(t){return t.decider_confirmed;}).length;
   document.getElementById('mkStats').innerHTML=[
-    [n,'firms screened'],[fit,'a Yes on Titan fit'],[both,'a Yes on Titan fit with a track record'],
+    [n,'firms screened'],[fit,'a Yes on Printer fit'],[both,'a Yes on Printer fit with a track record'],
     [yes,'have paid for a new method before'],[dec,'with a confirmed decision-maker']
   ].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+esc(s[1])+'</span></div>';}).join('');
   var M=D.method||[],BM=D.bands_method||{};

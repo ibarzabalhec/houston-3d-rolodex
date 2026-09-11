@@ -29,7 +29,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 31
+BUILD = 32
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -419,20 +419,20 @@ DATA = {
    [str(n_dec), "with a named decision-maker", True],
    [str(g["adopter"]), "already printing, with a competitor", False],
  ],
- "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Titan fit: one or two "
+ "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two "
         "printers would cover it. Track record: has paid for a new building method before. The first two "
         "place a firm on the grid; the third is the chip colour. Open a firm for the evidence, add it to a "
         "call list, and export the list to Excel or paper.",
 
  "axes": [
    axis_row("repeatability", "Repetition", ""),
-   axis_row("machine_fit", "Titan fit", ""),
+   axis_row("machine_fit", "Printer fit", ""),
    axis_row("innovation", "Track record", ""),
  ],
 
  "matrix": {
    "x_label": "Repetition: builds the same plans, in one place",
-   "y_label": "Titan fit: one or two printers would cover it",
+   "y_label": "Printer fit: one or two printers would cover it",
    "order": ["fail", "partial", "clear"],
    "words": {"clear": "Yes", "partial": "Partly", "fail": "No"},
  },
@@ -448,7 +448,7 @@ DATA = {
 
  "limits": [
    ["The three counts",
-    "Repetition asks whether a firm builds the same plans in one place. Titan fit asks "
+    "Repetition asks whether a firm builds the same plans in one place. Printer fit asks "
     "whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes "
     "a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is "
     "partial, and national purchasing fails. Track record asks whether the firm has ever paid for "

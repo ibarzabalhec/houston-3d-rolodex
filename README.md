@@ -9,7 +9,7 @@ One self-contained HTML file. No framework, no build-time dependency beyond Pyth
 | Count | The question | Yes / Partly / No |
 |---|---|---|
 | **Repetition** | Builds the same plans, in one place | written per firm, with the reason |
-| **Titan fit** | One or two printers would cover it | 25 to 400 homes a year concentrated is a Yes; 400 to 1,500, or purchasing at a parent, or no published figure, is a Partly; above 1,500 or a national desk is a No |
+| **Printer fit** | One or two printers would cover it | 25 to 400 homes a year concentrated is a Yes; 400 to 1,500, or purchasing at a parent, or no published figure, is a Partly; above 1,500 or a national desk is a No |
 | **Track record** | Has paid for a new building method before | the only count that uses the accent colour |
 
 Yes and Partly both keep a firm in. Only a No takes it out.
@@ -40,7 +40,7 @@ make
 
 ```
 data_a.py data_b.py data_c.py builders.py creative.py   firm records, by layer
-screens.py why.py machine.py                            verdicts, reasons, the Titan-fit count
+screens.py why.py machine.py                            verdicts, reasons, the printer-fit count
 found.py links.py corrections.py research2.py          verification, links, corrections, second research pass
 competitors.py code.py market.py                        the field, code and permitting, published figures
 _template.html _market.js atmos.js _fonts.css           the page, the figures, the background, embedded type
