@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.png
+*.pdf
+# build products at the root; the served copies live in docs/
+/ICON_Greater_Houston_Rolodex.html
+/ICON_Greater_Houston_Rolodex.xlsx
+/houston-data.json
+/rolodex-artifact.html
