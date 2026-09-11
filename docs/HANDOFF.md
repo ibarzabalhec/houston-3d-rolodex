@@ -97,7 +97,7 @@ The three counts were renamed so a reader at ICON needs no glossary: **Repetitio
 
 ## Build 32: the second count is Printer fit
 
-The count was briefly labelled *Titan fit*. It now reads **Printer fit**, for the same reason the tool is called Rolodex and not ICON: the product name stays out of the methodology. The headline now reads *sized for one printer* and the kicker names a construction printer, not the product. Titan remains where it is a fact: ICON's record, the timeline, the ESR question, the bands note. ICON's own term for the method is *additive construction* (its newsroom: "commercial-scale additive manufacturing"; Project Olympus under NASA's additive construction work); the page uses plain words instead and says "printed wall".
+The count was briefly labelled *Titan fit*. It now reads **Printer fit**, for the same reason the tool is called Rolodex and not ICON: the product name stays out of the methodology. The headline is a question, *Who in Greater Houston is ready to print?*, and the kicker names a construction printer, not the product. Titan remains where it is a fact: ICON's record, the timeline, the ESR question, the bands note. ICON's own term for the method is *additive construction* (its newsroom: "commercial-scale additive manufacturing"; Project Olympus under NASA's additive construction work); the page uses plain words instead and says "printed wall".
 
 ## Live numbers
 
