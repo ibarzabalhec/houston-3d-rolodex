@@ -20,7 +20,7 @@ CLOSINGS = {
     "HOU-060": (150, 200, 2026, "The firm's own site"),
     "HOU-066": (40, 60, 2026, "The firm's own site"),
     "HOU-061": (45, 45, 2025, "The firm's own site; 70 planned for 2026"),
-    "HOU-071": (20, 20, 2020, "Houston Business Journal ranking, quoted by the firm"),
+    "HOU-071": (75, 75, 2026, "The firm's own site, about seventy-five a year"),
 }
 
 # The machine-fit bands, as stated in the method note.

@@ -91,9 +91,8 @@ COMPETITORS = [
  "facts": [
   ["What it is", "A printer manufacturer rather than a builder, backed by GE, CEMEX, Holcim and "
                  "PERI. It sells the BOD2 to contractors."],
-  ["Why it matters", "Titan is a machine sale, not a service. That puts ICON in COBOD's business "
-                     "rather than Hive's, and a Houston builder pricing a printer will get a COBOD "
-                     "quote alongside it."],
+  ["Why it matters", "Titan is a machine sale. COBOD sells machines to contractors in Texas today, "
+                     "so a builder pricing a printer can price both."],
  ],
 },
 {
@@ -111,8 +110,7 @@ COMPETITORS = [
  "name": "Apis Cor",
  "where": "Melbourne, Florida",
  "status": "live",
- "line": "D.R. Horton put strategic money into it in March 2024. A national builder has already "
-         "picked a printer, and it was not ICON.",
+ "line": "D.R. Horton put strategic money into it in March 2024. Horton builds in Greater Houston.",
  "facts": [
   ["Backing", "Strategic investment from D.R. Horton, announced March 2024, amount undisclosed."],
   ["Texas", "Its one Texas connection is the Sunconomy eco-village in Montgomery, announced since "

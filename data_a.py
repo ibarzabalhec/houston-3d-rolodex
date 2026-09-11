@@ -14,7 +14,6 @@ A_TIER = [
  "key_stat": "5 TX projects under way, 5-7 in pipeline (Apr 2025)",
  "principals": [
    {"name": "Ting Qiao", "role": "Chief Executive Officer and Co-Founder", "linkedin_url": None},
-   {"name": "Derrick Hughes", "role": "Senior Vice President of Construction Operations", "linkedin_url": None},
  ],
  "key_projects": [
    {"name": "Canvas on Founders Hill", "detail": "Fulshear, Fort Bend County. Announced March 12, 2025.",
@@ -104,7 +103,6 @@ A_TIER = [
    {"url": "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo", "date": "2025-02-01"},
  ],
  "audit_flags": ["Cuney Homes existing and planned unit counts not disclosed in the sourced article.",
-                 "Agency referenced in search results as rebranding to Housing Alliance HTX. Relationship between the two names unconfirmed.",
                  "Buy America and federal procurement applicability to a printed wall system not assessed. Confirm before any bid."],
  "hue_hex": "#C8102E",
 },

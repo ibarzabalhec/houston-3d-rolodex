@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 32,
+ "build": 33,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -32,7 +32,7 @@
    false
   ],
   [
-   "10",
+   "9",
    "in on all three counts",
    false
   ],
@@ -72,8 +72,8 @@
    "label": "Track record",
    "blurb": "",
    "clear": 8,
-   "partial": 12,
-   "fail": 41,
+   "partial": 13,
+   "fail": 40,
    "total": 61
   }
  ],
@@ -96,7 +96,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>7 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 10 that are in on all three counts in the strip above; 2 firms appear in both. Of the 7 here, <b>2</b> have paid for an unproven method, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>4</b> have no method record.",
+ "matrix_note": "The top right cell holds <b>7 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 9 that are in on all three counts in the strip above; 2 firms appear in both. Of the 7 here, <b>2</b> have paid for an unproven method, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>4</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "proven_adopter": "Prints today",
@@ -233,7 +233,7 @@
     ],
     [
      "Why it matters",
-     "Titan is a machine sale, not a service. That puts ICON in COBOD's business rather than Hive's, and a Houston builder pricing a printer will get a COBOD quote alongside it."
+     "Titan is a machine sale. COBOD sells machines to contractors in Texas today, so a builder pricing a printer can price both."
     ]
    ]
   },
@@ -257,7 +257,7 @@
    "name": "Apis Cor",
    "where": "Melbourne, Florida",
    "status": "live",
-   "line": "D.R. Horton put strategic money into it in March 2024. A national builder has already picked a printer, and it was not ICON.",
+   "line": "D.R. Horton put strategic money into it in March 2024. Horton builds in Greater Houston.",
    "facts": [
     [
      "Backing",
@@ -382,7 +382,7 @@
   ],
   [
    "Where a firm has no contact",
-   "Several firms publish nobody. That is recorded on the card rather than left blank, because a builder closing hundreds of homes a year with no identifiable construction lead is a fact about the firm."
+   "Several firms publish nobody. That is recorded on the card rather than left blank."
   ],
   [
    "Scope",
@@ -637,6 +637,18 @@
     "group": "b"
    },
    {
+    "id": "HOU-071",
+    "name": "Jamestown Estate Homes",
+    "short": "Jamestown Estate Homes",
+    "low": 75,
+    "high": 75,
+    "year": 2026,
+    "source": "The firm's own site, about seventy-five a year",
+    "fit": "clear",
+    "method": "fail",
+    "group": "b"
+   },
+   {
     "id": "HOU-066",
     "name": "Sandcastle Homes",
     "short": "Sandcastle Homes",
@@ -656,18 +668,6 @@
     "high": 45,
     "year": 2025,
     "source": "The firm's own site; 70 planned for 2026",
-    "fit": "clear",
-    "method": "fail",
-    "group": "b"
-   },
-   {
-    "id": "HOU-071",
-    "name": "Jamestown Estate Homes",
-    "short": "Jamestown Estate Homes",
-    "low": 20,
-    "high": 20,
-    "year": 2020,
-    "source": "Houston Business Journal ranking, quoted by the firm",
     "fit": "clear",
     "method": "fail",
     "group": "b"
@@ -701,13 +701,13 @@
    {
     "group": "a",
     "label": "Strong target",
-    "n": 10,
+    "n": 9,
     "yes": 1,
-    "partly": 9,
+    "partly": 8,
     "no": 0,
     "decider": 5,
     "confirm": 1,
-    "linked": 10
+    "linked": 9
    },
    {
     "group": "b",
@@ -756,13 +756,13 @@
    {
     "group": "icon",
     "label": "Already working with ICON",
-    "n": 1,
+    "n": 2,
     "yes": 0,
-    "partly": 0,
-    "no": 1,
+    "partly": 2,
+    "no": 0,
     "decider": 0,
     "confirm": 0,
-    "linked": 1
+    "linked": 2
    }
   ],
   "owners": [
@@ -1034,12 +1034,12 @@
  "stats": {
   "total": 61,
   "adopters": 3,
-  "tier_a": 10,
+  "tier_a": 9,
   "tier_b": 24,
   "out": 0,
   "principals": 157,
-  "linkedin_held": 78,
-  "audit_flags": 186,
+  "linkedin_held": 77,
+  "audit_flags": 181,
   "with_decider": 24,
   "with_decider_live": 16,
   "with_decider_confirmed": 22,
@@ -1383,12 +1383,6 @@
      "li_evidence": "CEO of AiWB, Co-Founder at Wan Bridge. Bellaire, Texas."
     },
     {
-     "name": "Derrick Hughes",
-     "role": "Chief Operating Officer, Sterling Creek Homes (2026); ex-Senior Vice President of Construction Operations, Wan Bridge",
-     "linkedin_url": "https://www.linkedin.com/in/derrick-hughes-41109737/",
-     "departed": true
-    },
-    {
      "name": "Randy Hutchinson",
      "role": "Vice President of Construction Operations, AiWB",
      "linkedin_url": "https://www.linkedin.com/in/randy-hutchinson-0b0a71124/",
@@ -1454,11 +1448,9 @@
     }
    ],
    "audit_flags": [
-    "Wan Bridge appears to have been succeeded by AiWB. Ting Qiao's LinkedIn headline reads CEO of AiWB with Wan Bridge as co-founder, and the EVP of talent, VP of design, VP of construction operations, purchasing manager, HR and IT staff all show AiWB as current and Wan Bridge as past. Confirm which entity contracts before any approach.",
-    "Derrick Hughes has left Wan Bridge. LinkedIn shows him as COO at Sterling Creek Homes in Llano, Texas, with the Wan Bridge role listed as past. Ting Qiao is the remaining contact.",
+    "Two names appear here. Wan Bridge issued its New Braunfels build-to-rent release under its own name on 18 November 2025 with Ting Qiao quoted as co-founder and chief executive. Several staff profiles list AiWB as the current employer with Wan Bridge as past. Confirm which entity contracts before an approach.",
     "No disclosed fund size, financing figure or JV for Wan Bridge. Capital capacity inferred from concurrent project count, not from a stated figure.",
-    "LinkedIn URLs unsourced for both principals. Verify before outreach.",
-    "Four Wan Bridge leaders have left rather than moved: Derrick Hughes to Sterling Creek Homes, Binh Ngo (VP of Construction) to DNK Construction & Design. Treat the 2025 project list as possibly stale."
+    "LinkedIn URLs unsourced for both principals. Verify before outreach."
    ],
    "hue_hex": "#FF4F00",
    "_machine_why": "Builds and holds whole build-to-rent communities, so the output is concentrated where a machine can stand still.",
@@ -1942,12 +1934,11 @@
     "John Winniford holds a title at both Signorelli and First America, and it is the same man. He ran Gehan, then Brightland, as president and chief executive for nearly a decade and delivered more than 22,000 homes from 2016. He became president of First America on 17 September 2025 and holds the title President, Homebuilding at Signorelli, the parent. He spent that decade inside a builder owned by Sumitomo Forestry, a timber group, and left it.",
     "Two of the three people who would have to agree are new. The president arrived in September 2025 and the purchasing lead changed in April 2026.",
     "First America's purchasing changed hands this year. Kristen Rinewalt left in April 2026 after fifteen years running purchasing there, and Mike Faul now holds the title. Specifications are reviewed when a purchasing lead changes.",
-    "Her leaving post puts a figure on the volume from inside the company: eleven closings in her first year, 750 last year across two markets. That is the repeatability number, stated by the person who bought the materials for it.",
-    "She is now Vice President of Purchasing at Elk Ridge Homes in Conroe, a start-up acreage builder too small to be screened here, and sat on a 2026 Builder Innovator Summit panel on how homes get designed and built. She knows First America's cost base.",
+    "The 750 closings figure for last year, across two markets, is stated in the outgoing purchasing lead's own post. No other published figure exists for the brand.",
     "The wall-assembly blog post carries no publication date. Currency unconfirmed.",
     "Advanced framing is a refinement of stick framing, not a non-standard system. Scored as partial appetite, not proven method risk.",
     "No capital signal with a figure for First America Homes or its parent.",
-    "No LinkedIn profile is held for John Winniford. LinkedIn holds exactly one John Winniford: one connection, eight followers, headline owner, Austin. That is not a man who ran a builder of 22,000 homes. He is reachable through Signorelli's own bio page instead, which is linked on his row."
+    "No LinkedIn profile is held for John Winniford. The one LinkedIn profile under the name does not name Signorelli or Brightland, so it is not held. He is reachable through Signorelli's own bio page, which is linked on his row."
    ],
    "hue_hex": "#E8A33D",
    "_machine_why": "About 750 closings last year across two markets. A machine would be a line inside the business rather than the business.",
@@ -2295,7 +2286,7 @@
    ],
    "region": "Houston HQ / Fort Bend",
    "homepage_url": "https://suebausa.com/",
-   "synopsis": "Houston multifamily developer active since 1984. Broke ground in 2025 on a 346-unit project at Fort Bend Town Center in Missouri City, master-developed by NewQuest Properties, with completion targeted autumn 2026. Sueba affiliates served as both architect and general contractor. Original developer at CityCentre and BLVD Place.",
+   "synopsis": "Houston multifamily developer active since 1984. Broke ground in 2025 on a 346-unit project at Fort Bend Town Center in Missouri City, master-developed by NewQuest Properties, with completion targeted autumn 2026. Sueba affiliates served as both architect and general contractor.",
    "key_stat": "346 units, in-house architect and GC",
    "principals": [
     {
@@ -2512,104 +2503,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "HOU-078",
-   "entity_name": "GreenEco Builders",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "region": "Tavola, New Caney",
-   "homepage_url": "https://greenecobuilders.com/",
-   "synopsis": "Green-building focused production builder in Tavola that uses radiant barrier roof decking and orders windows per house rather than per community so it can adopt newer energy products as they are released.",
-   "key_stat": "Orders windows per home to keep adopting newer products",
-   "principals": [
-    {
-     "name": "George Kopecky",
-     "role": "President",
-     "linkedin_url": "https://www.linkedin.com/in/george-kopecky-7ba08a26/",
-     "li_evidence": "Indexed title reads George Kopecky, President at GreenEco Builders. Named as the firm's principal in trade coverage of the 2020 sale to Rausch Coleman."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Tavola",
-     "detail": "New Caney. Radiant barrier roof decking, stated at up to 17 percent attic heat reduction.",
-     "signal_type": "method_risk",
-     "fit_signal": "Radiant barrier decking specified ahead of code.",
-     "url": "https://www.har.com/blog_27737"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 1
-   },
-   "mvp_screen": "Orders windows per home rather than per community so it can adopt newer products. Owned by Rausch Coleman Homes since 2020.",
-   "_verdict": "A builder that changes its specification mid-community on purpose. Small, thinly documented, and the only one here whose stated reason for a purchasing choice is keeping the option to switch.",
-   "_why": [
-    "One confirmed community, Tavola in New Caney. The footprint is small.",
-    "No volume figure and no leadership identified, so the fit cannot be sized.",
-    "It orders windows per home rather than per community specifically so it can adopt newer energy products as they appear. That is a procurement habit built for method change."
-   ],
-   "sources": [
-    {
-     "url": "https://www.har.com/blog_27737",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "GreenEco was acquired by Rausch Coleman Homes of Fayetteville, Arkansas in 2020, on the acquirer's own account in trade press. It still sells under its own name in Houston listings. Confirm whether purchasing sits in Katy or in Fayetteville before an approach.",
-    "No leadership, no volume and no price band are published. The per-home window ordering is the only method evidence on record."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "holds": 3,
-   "capital_mark": "fail",
-   "group": "a",
-   "tier": "A",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "One confirmed community, Tavola in New Caney. The footprint is small."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Owned by Rausch Coleman Homes since 2020. No volume figure is published for the brand, and purchasing may sit with the parent."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "It orders windows per home rather than per community specifically so it can adopt newer energy products as they appear. That is a procurement habit built for method change."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "GreenEco Builders",
-   "cell": "partial|partial",
-   "clears": 0,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "HOU-060",
    "entity_name": "Cervelle Homes",
    "entity_type": "homebuilder",
@@ -2665,7 +2558,7 @@
    ],
    "audit_flags": [
     "Two people are named as leadership on the site without titles. Confirm which one owns construction before approaching.",
-    "No title is published for Kevin Holland or John Payson on the site, in the GHBA directory or on LinkedIn. Payson shares the founder's surname."
+    "No title is published for Kevin Holland or John Payson on the site, in the GHBA directory or on LinkedIn."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -2769,7 +2662,7 @@
    "_why": [
     "Four communities inside a single county, with three more announced in the same corridor.",
     "45 closings in 2025 and 70 planned for 2026. One machine would cover most of a year's walls.",
-    "No method evidence. A six-person company has no innovation budget and no procurement layer."
+    "No method evidence. Six people, so the decision sits with the two founders."
    ],
    "sources": [
     {
@@ -2818,7 +2711,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "No method evidence. A six-person company has no innovation budget and no procurement layer."
+     "text": "No method evidence. Six people, so the decision sits with the two founders."
     }
    ],
    "company_li": null,
@@ -3115,8 +3008,7 @@
    "audit_flags": [
     "Cuney Homes existing and planned unit counts not disclosed in the sourced article.",
     "Buy America and federal procurement applicability to a printed wall system not assessed. Confirm before any bid.",
-    "The authority now operates as Housing Alliance HTX and its site has moved to housingforhouston.com. The domain in the original record is superseded.",
-    "Agency referenced in search results as rebranding to Housing Alliance HTX. Relationship between the two names unconfirmed."
+    "The authority's board voted in January 2026 to operate as Housing Alliance HTX, reported by the Houston Chronicle and on the authority's own news page. The Cuney Homes announcement was made under the old name, which is the name kept here."
    ],
    "hue_hex": "#C8102E",
    "_machine_why": "A $600 million programme in five phases, but the product is multifamily and the procurement is public.",
@@ -3335,7 +3227,7 @@
    "principals": [
     {
      "name": "Stephen Ray",
-     "role": "Leads the Houston division; Founder and President of Devon Street Homes before the 2024 sale",
+     "role": "Leads the Houston division; Founder and President of Devon Street Homes before the 2023 sale",
      "source_url": "https://www.smithdouglas.com/blog/smith-douglas-homes-acquires-devon-street-homes-enters-houston-tx-market",
      "source_evidence": "Smith Douglas's own announcement: Stephen Ray, Founder and President of Devon Street, will continue to lead the Houston division. No post-acquisition title is published.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Stephen%20Ray%20Smith%20Douglas%20Homes"
@@ -3437,20 +3329,36 @@
    "key_stat": "10,800+ rental homes, 115+ communities",
    "principals": [
     {
-     "name": "Margaret Potter",
+     "name": "Dan Miller",
      "role": "Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "Camillo's own about page now names Dan Miller as chief executive and does not name her. Third-party org charts still show her as chief executive since 2013. Treat the title as stale until the firm confirms it.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Margaret%20Potter%20Camillo%20Companies"
+     "source_evidence": "Chief Executive Officer on Camillo's own about page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dan%20Miller%20Camillo%20Companies"
     },
     {
-     "name": "Meagan Yager",
-     "role": "Vice President of Marketing",
+     "name": "Lee Darnold",
+     "role": "President, Legend Homes by Camillo",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "Not on Camillo's current about page. A third-party org chart lists her as corporate vice president of marketing at Legend Homes, a Camillo brand. The page does list a Meagan Butler in property management, who is a different person.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Meagan%20Yager%20Camillo%20Companies"
+     "source_evidence": "President, Legend Homes by Camillo, on the firm's own about page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Lee%20Darnold%20Camillo%20Companies"
+    },
+    {
+     "name": "Sean Mulroony",
+     "role": "President, Academy Development by Camillo",
+     "linkedin_url": null,
+     "source_url": "https://www.camillocompanies.com/about-us",
+     "source_evidence": "President, Academy Development by Camillo, on the firm's own about page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Sean%20Mulroony%20Camillo%20Companies"
+    },
+    {
+     "name": "Jomar Ereso",
+     "role": "Chief Financial Officer",
+     "linkedin_url": null,
+     "source_url": "https://www.camillocompanies.com/about-us",
+     "source_evidence": "Chief Financial Officer on the firm's own about page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jomar%20Ereso%20Camillo%20Companies"
     }
    ],
    "key_projects": [
@@ -3494,7 +3402,7 @@
    ],
    "audit_flags": [
     "Dedicated innovation-appetite search returned no construction-method or technology content. Scored zero on evidence, not on inference.",
-    "Nobody is publicly identifiable at Camillo or SimplyHome at VP or director level in construction or purchasing. The construction decision-maker there is unidentified.",
+    "Camillo's own about page names a chief executive, a chief financial officer, a general counsel and presidents for Legend Homes and Academy Development. No construction or purchasing lead is published for any brand.",
     "No named or dated individual Houston community with a unit count. Aggregate figures only.",
     "No capital signal with a figure."
    ],
@@ -3820,13 +3728,6 @@
      "name": "Diane Danilov",
      "role": "Vice President of Land and Business Development",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Diane%20Danilov%20Westin%20Homes"
-    },
-    {
-     "name": "Kyle Davison",
-     "role": "Division President",
-     "source_url": "https://admin.westin-homes.com/news/details/50",
-     "source_evidence": "The firm's twentieth-anniversary release names Kyle Davison, Division President.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Kyle%20Davison%20Westin%20Homes"
     }
    ],
    "key_projects": [
@@ -3867,7 +3768,7 @@
    ],
    "audit_flags": [
     "The construction and purchasing names come from a contact-data aggregator. The firm publishes no leadership page, so confirm before use.",
-    "Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. The firm's own release names Jason Golan Founder and Owner and Kyle Davison Division President; LinkedIn indexes Golan as President.",
+    "Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. The firm's twentieth-anniversary release, dated December 2014, names Jason Golan as founder. The division president it names then is now Central Region President at Meritage Homes and is listed there.",
     "No LinkedIn profile is held for Matthew Roland or Diane Danilov. Only data aggregators carry their titles, and those were not used."
    ],
    "hue_hex": "#FF4F00",
@@ -4078,7 +3979,6 @@
    ],
    "audit_flags": [
     "Launched in 2025 and headquartered in Dallas. No volume figure exists yet, which is expected rather than a gap.",
-    "A builder with no installed method and no legacy trade base is the cheapest kind to convert.",
     "Imagination Homes is a David Weekley Homes line for entry-level product, and Greg Grahmann is a David Weekley division president. The wall decision runs through the parent."
    ],
    "hue_hex": "#FF4F00",
@@ -4766,9 +4666,9 @@
    ],
    "capital_signals": [
     {
-     "text": "Owned by NASDAQ-listed Dream Finders Homes. Acquisition date and price not sourced.",
+     "text": "Owned by NASDAQ-listed Dream Finders Homes, which announced the purchase of parent McGuyer Homebuilders (MHI, doing business as Coventry Homes) on 13 September 2021 for $150 million in preferred stock.",
      "date": null,
-     "url": "https://www.coventryhomes.com/about-us/"
+     "url": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/13/dream-finders-homes-to-acquire-the-assets-of-mcguyer"
     }
    ],
    "scores": {
@@ -4778,7 +4678,7 @@
     "capital_access": 2,
     "machine_fit": 2
    },
-   "mvp_screen": "100 communities and a listed parent, but no named executive was found, so there is no contact to call.",
+   "mvp_screen": "Close to 100 communities inside Dream Finders, which bought parent MHI in 2021. Two Houston division presidents are named.",
    "sources": [
     {
      "url": "https://www.coventryhomes.com/about-us/",
@@ -4786,11 +4686,10 @@
     }
    ],
    "audit_flags": [
-    "Dream Finders acquisition date and price not sourced. Decision rights between parent and subsidiary unknown.",
+    "Decision rights between parent and subsidiary not published.",
     "Neither the Coventry nor the Dream Finders name carries a vice president or director of construction or purchasing in Houston. The two division presidents are the only doors on file.",
     "Coventry is a Dream Finders Homes brand. Both Houston division presidents carry DFH in their own titles, so the parent is not incidental, and any method conversation runs through Dream Finders as well as Coventry.",
     "Dream Finders' 2024 annual report describes procurement across local, regional and national levels, with national volume used to secure manufacturer pricing. Coventry's Houston purchasing is therefore a hybrid, and a wall specification would clear both.",
-    "No named principals found. No identified point of contact.",
     "No Houston community unit counts."
    ],
    "hue_hex": "#5B7C99",
@@ -4826,7 +4725,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "No method evidence, and no named executive was found either."
+     "text": "No method evidence on record."
     }
    ],
    "company_li": "https://www.linkedin.com/company/coventryhomes",
@@ -6087,7 +5986,7 @@
     "Midway About page returned 404. Leadership confirmed from secondary sources.",
     "Parkway question resolved. Midway kept sole development control of East River and sold its interest in the Parkway Ventures joint venture to Parkway in December 2024. Bradley Freels is confirmed Chairman and Chief Executive Officer on Midway's own leadership page. Rob Sigler is Executive Vice President of Construction, Investment and Development, which is the title that decides a structural system here, and his own feed carries mass-timber construction from Kirksey. The method conversation at Midway has a named owner who has already shown interest in one alternative system. Larry Sloan, formerly EVP of investment and development, left in November 2023. He is now Chief Development Officer at Triten Real Estate Partners, also screened here, so the same person is reachable on the Triten card.",
     "No capital or financing figure for East River.",
-    "No LinkedIn profile is held for Bradley Freels. Two live Bradley Freels profiles exist, a sales leader and a machine operator at Meijer in Dayton. Neither is Midway's chairman. He has no findable public profile."
+    "No LinkedIn profile is held for Bradley Freels. No LinkedIn profile identifiable as Midway's chairman was found. The name matches other people's profiles, none at Midway."
    ],
    "hue_hex": "#5B7C99",
    "_machine_why": "Sixty blocks of mixed-use. The buildings are one-offs, whatever the acreage.",
@@ -7326,7 +7225,7 @@
     "capital_access": 2,
     "machine_fit": 1
    },
-   "mvp_screen": "120 communities and local ownership. Its own published definition of innovation never touches how the building is built.",
+   "mvp_screen": "120 communities and local ownership. Its published innovation page covers smart-home features and floor plans.",
    "sources": [
     {
      "url": "https://www.perryhomes.com/about-perry-homes",
@@ -8059,6 +7958,109 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-078",
+   "entity_name": "GreenEco Builders",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Tavola, New Caney",
+   "homepage_url": "https://greenecobuilders.com/",
+   "synopsis": "Green-building focused production builder in Tavola that uses radiant barrier roof decking and orders windows per house rather than per community so it can adopt newer energy products as they are released.",
+   "key_stat": "Orders windows per home to keep adopting newer products",
+   "principals": [
+    {
+     "name": "George Kopecky",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/george-kopecky-7ba08a26/",
+     "li_evidence": "Indexed title reads George Kopecky, President at GreenEco Builders. Named as the firm's principal in trade coverage of the 2020 sale to Rausch Coleman."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Tavola",
+     "detail": "New Caney. Radiant barrier roof decking, stated at up to 17 percent attic heat reduction.",
+     "signal_type": "method_risk",
+     "fit_signal": "Radiant barrier decking specified ahead of code.",
+     "url": "https://www.har.com/blog_27737"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 1
+   },
+   "mvp_screen": "Orders windows per home rather than per community so it can adopt newer products. Owned by Rausch Coleman Homes, which Lennar bought in February 2025.",
+   "_verdict": "A builder that changes its specification mid-community on purpose. Small, thinly documented, and the only one here whose stated reason for a purchasing choice is keeping the option to switch.",
+   "_why": [
+    "One confirmed community, Tavola in New Caney. The footprint is small.",
+    "No volume figure and no leadership identified, so the fit cannot be sized.",
+    "It orders windows per home rather than per community specifically so it can adopt newer energy products as they appear. That is a procurement habit built for method change."
+   ],
+   "sources": [
+    {
+     "url": "https://www.har.com/blog_27737",
+     "date": null
+    },
+    {
+     "url": "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "Owned by Rausch Coleman Homes, which Lennar bought on 10 February 2025. Lennar built the hundred-home Wolf Ranch community with ICON. The relationship exists at corporate level.",
+    "GreenEco was acquired by Rausch Coleman Homes in 2020. Lennar announced the completed acquisition of Rausch Coleman on 10 February 2025, naming Houston among the markets added. It still sells under its own name in Houston listings. The route is Lennar.",
+    "No volume and no price band are published for the brand. The per-home window ordering is the only method evidence on record for the brand itself."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "fail",
+   "group": "icon",
+   "tier": "I",
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "One confirmed community, Tavola in New Caney. The footprint is small."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Owned by Rausch Coleman Homes since 2020, and Lennar completed its purchase of Rausch Coleman on 10 February 2025. No volume figure is published for the brand; purchasing sits with the parent."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It orders windows per home rather than per community specifically so it can adopt newer energy products as they appear. That is a procurement habit built for method change."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "GreenEco Builders",
+   "cell": "partial|partial",
+   "clears": 0,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-042",
    "entity_name": "Friendswood Development Company",
    "entity_type": "mpc_developer",
@@ -8081,11 +8083,11 @@
    "scores": {
     "repeatability": 2,
     "wall_share": 0,
-    "innovation": 0,
+    "innovation": 2,
     "capital_access": 2,
     "machine_fit": 1
    },
-   "mvp_screen": "Sells lots, wholly owned by Lennar since 2000. No named executives found.",
+   "mvp_screen": "Sells lots, wholly owned by Lennar since 2000. Lennar built a hundred printed homes with ICON at Wolf Ranch.",
    "sources": [
     {
      "url": "https://friendswooddevelopment.com/about-fdc",
@@ -8093,7 +8095,7 @@
     }
    ],
    "audit_flags": [
-    "Wholly owned by Lennar, which built the hundred-home Wolf Ranch community with ICON in Georgetown, designed by Bjarke Ingels Group and completed in 2025. The relationship exists at corporate level. Treat Friendswood as a relationship to acknowledge, not a lead to work.",
+    "Wholly owned by Lennar, which built the hundred-home Wolf Ranch community with ICON in Georgetown, designed by Bjarke Ingels Group and completed in 2025. The relationship exists at corporate level.",
     "Friendswood is wholly owned by Lennar. ICON and Lennar built the hundred-home Wolf Ranch community in Georgetown together, designed by Bjarke Ingels Group and completed in 2025. The introduction into Houston already exists at corporate level; it has not been used here.",
     "No named principals found. Lennar parent relationship is the actual route."
    ],
@@ -8103,9 +8105,9 @@
    "marks": {
     "repeatability": "partial",
     "machine_fit": "fail",
-    "innovation": "fail"
+    "innovation": "partial"
    },
-   "holds": 1,
+   "holds": 2,
    "capital_mark": "partial",
    "group": "icon",
    "tier": "I",
@@ -8128,9 +8130,9 @@
     {
      "axis": "innovation",
      "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Its owner has already paid for an unproven method: Lennar built a hundred printed homes with ICON at Wolf Ranch in Georgetown."
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "The parent, Lennar, built a hundred printed homes with ICON at Wolf Ranch. Friendswood itself buys no walls."
     }
    ],
    "company_li": "https://www.linkedin.com/company/friendswood-development-company",

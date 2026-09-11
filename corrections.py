@@ -9,13 +9,10 @@ research stays intact and the correction is visible as its own line.
 FLAGS = {
     # Wan Bridge: the team has moved to AiWB
     "HOU-001": [
-        "Wan Bridge appears to have been succeeded by AiWB. Ting Qiao's LinkedIn headline reads "
-        "CEO of AiWB with Wan Bridge as co-founder, and the EVP of talent, VP of design, VP of "
-        "construction operations, purchasing manager, HR and IT staff all show AiWB as current and "
-        "Wan Bridge as past. Confirm which entity contracts before any approach.",
-        "Four Wan Bridge leaders have left rather than moved: Derrick Hughes to Sterling Creek Homes, "
-        "Binh Ngo (VP of Construction) to DNK Construction & Design. Treat the 2025 project list as "
-        "possibly stale.",
+        "Two names appear here. Wan Bridge issued its New Braunfels build-to-rent release under its "
+        "own name on 18 November 2025 with Ting Qiao quoted as co-founder and chief executive. Several "
+        "staff profiles list AiWB as the current employer with Wan Bridge as past. Confirm which "
+        "entity contracts before an approach.",
     ],
     # Firms where a construction-lead sweep came back empty at the right level
     "HOU-009": [
@@ -25,8 +22,9 @@ FLAGS = {
         "InTown Homes names a supervisor and a warranty coordinator and no construction VP or "
         "director, which is consistent with a smaller operation where Frank Liu decides."],
     "HOU-010": [
-        "Nobody is publicly identifiable at Camillo or SimplyHome at VP or director level in "
-        "construction or purchasing. The construction decision-maker there is unidentified."],
+        "Camillo's own about page names a chief executive, a chief financial officer, a general "
+        "counsel and presidents for Legend Homes and Academy Development. No construction or "
+        "purchasing lead is published for any brand."],
     "HOU-028": [
         "Raymond Gabriele is listed AIA on LinkedIn, so the in-house architect that makes Sueba's "
         "vertical integration real is a named, reachable person. He is the method decision-maker here, "
@@ -42,12 +40,8 @@ FLAGS = {
         "First America's purchasing changed hands this year. Kristen Rinewalt left in April 2026 after "
         "fifteen years running purchasing there, and Mike Faul now holds the title. Specifications "
         "are reviewed when a purchasing lead changes.",
-        "Her leaving post puts a figure on the volume from inside the company: eleven closings in her "
-        "first year, 750 last year across two markets. That is the repeatability number, stated by the "
-        "person who bought the materials for it.",
-        "She is now Vice President of Purchasing at Elk Ridge Homes in Conroe, a start-up acreage "
-        "builder too small to be screened here, and sat on a 2026 Builder Innovator Summit panel on how "
-        "homes get designed and built. She knows First America's cost base."],
+        "The 750 closings figure for last year, across two markets, is stated in the outgoing "
+        "purchasing lead's own post. No other published figure exists for the brand."],
     "HOU-015": [
         "John Winniford holds the title President, Homebuilding at Signorelli and is also president "
         "of First America Homes. Signorelli itself names a commercial-division construction manager "
@@ -64,8 +58,9 @@ FLAGS = {
         "more than 22,000 homes from 2016 and expanding the company into Colorado, Florida and "
         "Tennessee. The firm publishes no leadership page."],
     "HOU-003": [
-        "The authority now operates as Housing Alliance HTX and its site has moved to "
-        "housingforhouston.com. The domain in the original record is superseded."],
+        "The authority's board voted in January 2026 to operate as Housing Alliance HTX, reported by "
+        "the Houston Chronicle and on the authority's own news page. The Cuney Homes announcement was "
+        "made under the old name, which is the name kept here."],
     "HOU-043": [
         "Newland's own leadership page redirects to Brookfield Residential, which announces the "
         "acquisition and names nobody."],

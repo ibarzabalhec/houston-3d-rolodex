@@ -24,7 +24,8 @@ REST = [
  "homepage_url": "https://www.camillocompanies.com/",
  "synopsis": "Houston real estate group founded in 1989 running three brands: SimplyHome single-family build-to-rent, with more than 10,800 rental homes across 115-plus communities as of August 2026, Legend Homes for-sale production housing, and Academy Development. Holds 25,000 to 35,000 residential lots owned or in development at any time.",
  "key_stat": "10,800+ rental homes, 115+ communities",
- "principals": P(("Margaret Potter", "Chief Executive Officer"), ("Meagan Yager", "Vice President of Marketing")),
+ "principals": P(("Dan Miller", "Chief Executive Officer"), ("Lee Darnold", "President, Legend Homes by Camillo"),
+                 ("Sean Mulroony", "President, Academy Development by Camillo"), ("Jomar Ereso", "Chief Financial Officer")),
  "key_projects": PJ(
    ("SimplyHome portfolio", "More than 10,800 single-family rental homes built across 115-plus communities as of August 2026.",
     "repeatable", "The highest built-and-held unit count screened. Builds, owns and manages, so schedule savings and wall durability both land on the same balance sheet.",

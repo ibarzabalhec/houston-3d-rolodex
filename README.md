@@ -50,6 +50,6 @@ docs/                                                   served copies and the ha
 
 ## Handoff
 
-`docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open.
+`docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open. `docs/ROADMAP.md` is the research plan for the next pass.
 
 Héctor Ibarzábal · September 2026

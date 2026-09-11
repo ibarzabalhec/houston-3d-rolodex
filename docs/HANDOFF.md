@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 32 · 2026-09-11
+Build 33 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -98,6 +98,12 @@ The three counts were renamed so a reader at ICON needs no glossary: **Repetitio
 ## Build 32: the second count is Printer fit
 
 The count was briefly labelled *Titan fit*. It now reads **Printer fit**, for the same reason the tool is called Rolodex and not ICON: the product name stays out of the methodology. The headline is a question, *Who in Greater Houston is ready to print?*, and the kicker names a construction printer, not the product. Titan remains where it is a fact: ICON's record, the timeline, the ESR question, the bands note. ICON's own term for the method is *additive construction* (its newsroom: "commercial-scale additive manufacturing"; Project Olympus under NASA's additive construction work); the page uses plain words instead and says "printed wall".
+
+## Build 33: the ICON-side review
+
+Three reviewers (a recruiter on ICON's talent team, the hiring manager for the BD role, a Houston builder of thirty years) went through the page. Applied from their reports, each checked against a source first: the byline moved to the masthead and a description meta tag was added; every sentence that read as gossip or as a jab was cut or rewritten (Wan Bridge departures, the departed First America purchasing lead, "Payson shares the founder's surname", "not a man who ran a builder of 22,000 homes", Alta's "no innovation budget", Perry's "never touches how the building is built", Apis Cor's "it was not ICON", COBOD's "puts ICON in COBOD's business"); GreenEco moved to the ICON group because Lennar completed its purchase of Rausch Coleman on 10 February 2025; Friendswood and GreenEco read Partly on track record with the parent named; Camillo's people are now the four on its own about page (the former chief executive and a marketing name from an org chart were removed); Kyle Davison was removed from Westin (the citation was a December 2014 release; he is at Meritage); Coventry's screen sentence names its two division presidents and the Dream Finders purchase of MHI (13 September 2021, $150 million) is sourced; the Sueba CityCentre and BLVD Place claim was removed (the firm's own page does not make it); Smith Douglas's Devon Street purchase is dated 2023; the Housing Authority rebrand is one sourced flag; Jamestown plots the firm's own figure of about 75 a year; the phone List has a sideways-scroll cue. Nine firms now sit in Strong target.
+
+Not applied, by Héctor's decision: no "why Houston" line (the role is in Houston), no first-person block, no thesis or ninety-day plan on the page. The reviewers' larger findings (contractors as the real buyer, the nationals, nonprofits and the county, BTR operators, a firm main line per record, the payback page inputs) are written up as `docs/ROADMAP.md` for the next research session.
 
 ## Live numbers
 

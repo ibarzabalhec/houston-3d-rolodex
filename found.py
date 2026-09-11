@@ -375,14 +375,6 @@ MOVED = {
                 "Taylor Morrison has no local door on file.",
         "firm": "Taylor Morrison Home Corporation",
     },
-    "Derrick Hughes": {
-        "url": "https://www.linkedin.com/in/derrick-hughes-41109737/",
-        "role": "Chief Operating Officer, Sterling Creek Homes (2026); "
-                "ex-Senior Vice President of Construction Operations, Wan Bridge",
-        "flag": "Derrick Hughes has left Wan Bridge. LinkedIn shows him as COO at Sterling Creek Homes "
-                "in Llano, Texas, with the Wan Bridge role listed as past. Ting Qiao is the remaining contact.",
-        "firm": "Wan Bridge Group",
-    },
 }
 
 # Correct person, departed, and outside the relevance gate. Removed from the record.
@@ -405,16 +397,15 @@ REMOVED = {
 # Top hit was a real profile belonging to somebody else. Left null on purpose.
 REJECTED = [
     ("Bradley Freels", "Midway",
-     "Two live Bradley Freels profiles exist, a sales leader and a machine operator at Meijer in "
-     "Dayton. Neither is Midway's chairman. He has no findable public profile."),
+     "No LinkedIn profile identifiable as Midway's chairman was found. The name matches other "
+     "people's profiles, none at Midway."),
     ("Steve Commander", "Commander Home Builders",
      "linkedin.com/in/scommander is a regional retail operations leader, not the San Leon builder."),
     ("Tony M. Brown", "Elpis 3D Home Builders",
      "Top hit is a Tony Brown at Brown King Construction in Knoxville, Tennessee."),
     ("John Winniford", "First America Homes",
-     "LinkedIn holds exactly one John Winniford: one connection, "
-     "eight followers, headline owner, Austin. That is not a man who ran a builder of 22,000 homes. "
-     "He is reachable through Signorelli's own bio page instead, which is linked on his row."),
+     "The one LinkedIn profile under the name does not name Signorelli or Brightland, so it is "
+     "not held. He is reachable through Signorelli's own bio page, which is linked on his row."),
     ("Frank Liu", "InTown Homes / Lovett Commercial (Frank Liu)",
      "No profile under that name is identifiable as the InTown and Lovett principal."),
 ]

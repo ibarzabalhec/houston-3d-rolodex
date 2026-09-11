@@ -171,8 +171,6 @@ SOURCES = {
     ("HOU-072", "Chris Lemming"): ("https://www.housingwire.com/articles/partners-building-succession-plan/",
         "HousingWire, 15 June 2026: Chris Lemming assumes the presidency after an eighteen-month "
         "succession."),
-    ("HOU-068", "Kyle Davison"): ("https://admin.westin-homes.com/news/details/50",
-        "The firm's twentieth-anniversary release names Kyle Davison, Division President."),
     ("HOU-080", "David Kelley"): ("https://www.conceptneighborhood.com/team",
         "Team page: Managing Partner, Projects and Finance."),
     ("HOU-080", "Jeffrey Kaplan"): ("https://www.conceptneighborhood.com/team",
@@ -209,7 +207,7 @@ TITLES = {
     ("HOU-076", "Greg Grahmann"): "Director, Imagination Homes; Division President, David Weekley Homes",
     ("HOU-060", "Kevin Holland"): "Leads the firm with John Payson; no title published",
     ("HOU-060", "John Payson"): "Leads the firm with Kevin Holland; no title published",
-    ("HOU-074", "Stephen Ray"): "Leads the Houston division; Founder and President of Devon Street Homes before the 2024 sale",
+    ("HOU-074", "Stephen Ray"): "Leads the Houston division; Founder and President of Devon Street Homes before the 2023 sale",
     ("HOU-071", "Greg Hawes"): "Founder; Manager on the firm's own page, President on LinkedIn",
     ("HOU-066", "Mike Dishberger"): "Chief Executive Officer and Co-Owner; oversees construction and purchasing",
     ("HOU-066", "Mike Salomon"): "President and Co-Owner",
@@ -220,7 +218,6 @@ PEOPLE = {
     "HOU-078": [("George Kopecky", "President")],
     "HOU-069": [("Jeff Dye", "President")],
     "HOU-072": [("Chris Lemming", "President, since June 2026")],
-    "HOU-068": [("Kyle Davison", "Division President")],
     "HOU-077": [("Chris Hightower", "Division President, Houston")],
 }
 
@@ -240,6 +237,7 @@ STATS = {
 # target_id -> {axis: score}. Only machine fit moves, and only where a figure
 # or an owner changed the band.
 SCORES = {
+    "HOU-042": {"innovation": 2},    # the parent has paid for a printed wall; the brand has not
     "HOU-065": {"machine_fit": 2},   # 973 a year: two printers are a line, not the business
     "HOU-064": {"machine_fit": 2},   # 540 a year
     "HOU-076": {"machine_fit": 2},   # purchasing sits with David Weekley
@@ -257,8 +255,9 @@ MACHINE_WHY = {
                "one or two machines serve.",
     "HOU-076": "A David Weekley Homes line, so purchasing sits with a national builder. One machine "
                "would cover the brand's output; the decision would not be the brand's alone.",
-    "HOU-078": "Owned by Rausch Coleman Homes since 2020. No volume figure is published for the "
-               "brand, and purchasing may sit with the parent.",
+    "HOU-078": "Owned by Rausch Coleman Homes since 2020, and Lennar completed its purchase of "
+               "Rausch Coleman on 10 February 2025. No volume figure is published for the brand; "
+               "purchasing sits with the parent.",
     "HOU-072": "More than 300 homes a year on the firm's own count, across Texas and Tennessee.",
 }
 
@@ -271,14 +270,15 @@ FLAGS = {
         "Builder reports 540 closings in 2025 and 552 in 2024. Printer fit moves from Yes to Partly."],
     "HOU-068": [
         "Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. "
-        "The firm's own release names Jason Golan Founder and Owner and Kyle Davison Division "
-        "President; LinkedIn indexes Golan as President.",
+        "The firm's twentieth-anniversary release, dated December 2014, names Jason Golan as "
+        "founder. The division president it names then is now Central Region President at Meritage "
+        "Homes and is listed there.",
         "No LinkedIn profile is held for Matthew Roland or Diane Danilov. Only data aggregators "
         "carry their titles, and those were not used."],
     "HOU-078": [
-        "GreenEco was acquired by Rausch Coleman Homes of Fayetteville, Arkansas in 2020, on the "
-        "acquirer's own account in trade press. It still sells under its own name in Houston "
-        "listings. Confirm whether purchasing sits in Katy or in Fayetteville before an approach."],
+        "GreenEco was acquired by Rausch Coleman Homes in 2020. Lennar announced the completed "
+        "acquisition of Rausch Coleman on 10 February 2025, naming Houston among the markets added. "
+        "It still sells under its own name in Houston listings. The route is Lennar."],
     "HOU-076": [
         "Imagination Homes is a David Weekley Homes line for entry-level product, and Greg Grahmann "
         "is a David Weekley division president. The wall decision runs through the parent."],
@@ -306,7 +306,7 @@ FLAGS = {
         "A founder-run firm with no other executive published anywhere. No annual volume figure."],
     "HOU-060": [
         "No title is published for Kevin Holland or John Payson on the site, in the GHBA directory "
-        "or on LinkedIn. Payson shares the founder's surname."],
+        "or on LinkedIn."],
     "HOU-081": [
         "Preston Luster is the senior construction manager on the team page. No vice president of "
         "construction is published; the two managing principals are the decision layer."],
@@ -363,7 +363,7 @@ VERDICTS = {
     "HOU-045": "Now part of Sekisui House U.S., whose stated mission is transferring Japanese "
                "construction technology into its US brands. Nothing has reached Texas yet.",
     "HOU-078": "Orders windows per home rather than per community so it can adopt newer products. "
-               "Owned by Rausch Coleman Homes since 2020.",
+               "Owned by Rausch Coleman Homes, which Lennar bought in February 2025.",
     "HOU-060": "150 to 200 homes a year from two standing plan families in one corridor. Inside the "
                "band one machine serves.",
     "HOU-061": "45 closings in 2025 and 70 planned for 2026, all inside one county. One machine "
@@ -395,5 +395,6 @@ VERDICTS = {
                "president runs both.",
     "HOU-039": "Sells lots. Sunterra carries 2,303 acres and 15 builders.",
     "HOU-040": "Sells lots across 14 Houston masterplans. Buys no walls.",
-    "HOU-042": "Sells lots, wholly owned by Lennar since 2000. No named executives found.",
+    "HOU-042": "Sells lots, wholly owned by Lennar since 2000. Lennar built a hundred printed homes "
+               "with ICON at Wolf Ranch.",
 }

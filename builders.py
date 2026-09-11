@@ -52,7 +52,7 @@ BUILDERS = [
  "machine changes the business rather than supplementing it.",
  ("Four communities inside a single county, with three more announced in the same corridor.",
   "45 closings in 2025 and 70 planned for 2026. One machine would cover most of a year's walls.",
-  "No method evidence. A six-person company has no innovation budget and no procurement layer."),
+  "No method evidence. Six people, so the decision sits with the two founders."),
  [("Dru Kahlenberg", "Chief Executive Officer"),
   ("Scott Gilbert", "President"),
   ("Ashley Meinecke", "Accounts Payable and Purchasing Manager")],
@@ -394,7 +394,7 @@ BUILDERS = [
  ["https://www.prnewswire.com/news-releases/imagination-homes-launches-breaks-ground-on-first-community-302539487.html"],
  ["Launched in 2025 and headquartered in Dallas. No volume figure exists yet, which is expected "
   "rather than a gap.",
-  "A builder with no installed method and no legacy trade base is the cheapest kind to convert."]),
+  ]),
 
 ("HOU-077", "Sitterle Homes", "San Antonio, building in Houston",
  "https://www.sitterlehomes.com/",
@@ -433,7 +433,8 @@ BUILDERS = [
  [("Tavola", "New Caney. Radiant barrier roof decking, stated at up to 17 percent attic heat reduction.",
    "method_risk", "Radiant barrier decking specified ahead of code.",
    "https://www.har.com/blog_27737")],
- ["https://www.har.com/blog_27737"],
- ["No leadership, no volume and no price band are published. The per-home window ordering is the "
-  "only method evidence on record."]),
+ ["https://www.har.com/blog_27737",
+  "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes"],
+ ["No volume and no price band are published for the brand. The per-home window ordering is the "
+  "only method evidence on record for the brand itself."]),
 ]

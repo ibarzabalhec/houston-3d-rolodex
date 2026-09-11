@@ -404,16 +404,18 @@ PERSON = {
 ("HOU-025", "Darin Rowe"): (
     "https://newsroom.taylormorrison.com/2022-11-14-Taylor-Morrison-Unveils-New-Build-To-Rent-Brand,-Yardly",
     "Build-to-Rent President, quoted on the launch of the Yardly brand. National, not Houston."),
-("HOU-010", "Margaret Potter"): (
+("HOU-010", "Dan Miller"): (
     "https://www.camillocompanies.com/about-us",
-    "Camillo's own about page now names Dan Miller as chief executive and does not name her. "
-    "Third-party org charts still show her as chief executive since 2013. Treat the title as stale "
-    "until the firm confirms it."),
-("HOU-010", "Meagan Yager"): (
+    "Chief Executive Officer on Camillo's own about page."),
+("HOU-010", "Lee Darnold"): (
     "https://www.camillocompanies.com/about-us",
-    "Not on Camillo's current about page. A third-party org chart lists her as corporate vice "
-    "president of marketing at Legend Homes, a Camillo brand. The page does list a Meagan Butler in "
-    "property management, who is a different person."),
+    "President, Legend Homes by Camillo, on the firm's own about page."),
+("HOU-010", "Sean Mulroony"): (
+    "https://www.camillocompanies.com/about-us",
+    "President, Academy Development by Camillo, on the firm's own about page."),
+("HOU-010", "Jomar Ereso"): (
+    "https://www.camillocompanies.com/about-us",
+    "Chief Financial Officer on the firm's own about page."),
 ("HOU-051", "John D. Lawrence"): (
     "https://investments.rice.edu/people",
     "Chief Investment Officer and President of Rice Management Company, the owner of the Ion "

@@ -111,7 +111,7 @@ WHY = {
             "Its stated technology package is smart-home fittings, not structure."),
 "HOU-033": ("Close to 100 communities, 55,000 homes company-wide.",
             "Detached single-family.",
-            "No method evidence, and no named executive was found either."),
+            "No method evidence on record."),
 "HOU-030": ("Roughly 100 properties, with two new Houston-area land positions.",
             "Retail shells, which already compete against tilt-wall concrete.",
             "No method evidence found."),
@@ -145,8 +145,8 @@ WHY["HOU-038"] = (
 WHY["HOU-042"] = (
     "Sells lots inside its own masterplans. Lennar builds the houses.",
     "The lots are the product. Any machine question belongs to Lennar, not to Friendswood.",
-    "Its owner has already paid for an unproven method: Lennar built a hundred printed homes with "
-    "ICON at Wolf Ranch in Georgetown.",
+    "The parent, Lennar, built a hundred printed homes with ICON at Wolf Ranch. Friendswood itself "
+    "buys no walls.",
 )
 
 AXIS_TITLE = {

@@ -29,7 +29,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 32
+BUILD = 33
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -468,9 +468,7 @@ DATA = {
     "the sentence that identified them sits under the name. Where neither exists the field is empty "
     "with the reason stated. No URL, title or figure here was inferred."],
    ["Where a firm has no contact",
-    "Several firms publish nobody. That is recorded on the card rather than left blank, because a "
-    "builder closing hundreds of homes a year with no identifiable construction lead is a fact "
-    "about the firm."],
+    "Several firms publish nobody. That is recorded on the card rather than left blank."],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "

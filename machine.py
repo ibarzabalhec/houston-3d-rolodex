@@ -142,6 +142,8 @@ NATIONAL = {
 ICON_CLIENT = {
     "HOU-042": "Wholly owned by Lennar, which built the hundred-home Wolf Ranch community with "
                "ICON in Georgetown, designed by Bjarke Ingels Group and completed in 2025. The "
-               "relationship exists at corporate level. Treat Friendswood as a relationship to "
-               "acknowledge, not a lead to work.",
+               "relationship exists at corporate level.",
+    "HOU-078": "Owned by Rausch Coleman Homes, which Lennar bought on 10 February 2025. Lennar built "
+               "the hundred-home Wolf Ranch community with ICON. The relationship exists at "
+               "corporate level.",
 }
