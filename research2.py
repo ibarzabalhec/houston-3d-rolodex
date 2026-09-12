@@ -346,7 +346,7 @@ FLAGS = {
         "2,200 homes company-wide in 2023; no Houston breakout has been filed."],
     "HOU-075": [
         "Risewell is the 2025 merger of Landsea Homes and The New Home Company, which closed 2,831 "
-        "and 1,123 homes respectively in 2024. No Houston division figure is published."],
+        "and 1,123 homes respectively in 2024."],
 }
 
 # additional deciders, by the same bar: VP or director of construction, or head of purchasing
@@ -391,7 +391,7 @@ VERDICTS = {
     "HOU-074": "324 closings across fifteen communities in the year before it was acquired, on "
                "standardised entry-level product. Now part of a listed builder; the Houston "
                "purchasing structure is not published.",
-    "HOU-022": "20,000 homes since 2004. Daiwa House owns a stake. No published method evidence.",
+    "HOU-022": "20,000 homes since 2004. Daiwa House owns a stake.",
     "HOU-068": "1,062 closings in 2025 across the south suburban masterplans, with a named vice "
                "president of construction.",
     "HOU-064": "540 closings in 2025 and 552 in 2024 on a no-haggle affordable model. A named "
@@ -400,9 +400,8 @@ VERDICTS = {
                "curated plan set, selling at Meridiana.",
     "HOU-066": "About fifty homes a year, stated by the firm, on small infill sites rather than in "
                "one community. The volume fits a machine; the sites are scattered.",
-    "HOU-062": "Seven plans, ten communities, founded 2020. No closings figure to size it against.",
-    "HOU-069": "483 closings in 2025 across more than twenty communities and more than 150 plans. "
-               "A president is named; no construction or purchasing lead is published.",
+    "HOU-062": "Seven plans, ten communities, founded 2020.",
+    "HOU-069": "483 closings in 2025 across more than twenty communities and more than 150 plans.",
     "HOU-067": "A semi-custom builder that won a volume award and publishes no volume. Named "
                "purchasing and construction managers.",
     "HOU-083": "Builds new rather than converting: small-format ground-up retail in the Heights.",

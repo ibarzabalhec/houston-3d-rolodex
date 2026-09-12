@@ -35,7 +35,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 42
+BUILD = 43
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -539,18 +539,17 @@ DATA = {
    ["Sources",
     "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose "
     "headline names the firm, or a page on the firm's own site that names the person with a title, and "
-    "the sentence that identified them sits under the name. Where neither exists the field is empty "
-    "with the reason stated. No source URL, title or figure here was inferred. The only built links "
-    "are the LinkedIn searches marked search, which run a keyword query rather than claim a page."],
+    "the sentence that identified them sits under the name. No source URL, title or figure here was "
+    "inferred. The only built links are the LinkedIn searches marked search, which run a keyword "
+    "query rather than claim a page."],
    ["What is in the contractor section",
     "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. "
     "The scope rule above is a builder rule and does not apply to them: most of this trade in Houston "
-    "is commercial and industrial, and where a contractor publishes no residential work its record "
-    "says so."],
+    "is commercial and industrial."],
    ["In the press",
     "Each item is a headline a search actually returned, with the outlet, the date the result "
     "carried, and a link read off the result rather than assembled. The headline is the "
-    "publisher's. Nothing in that list has been summarised or characterised here."],
+    "publisher's."],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "

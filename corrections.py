@@ -77,8 +77,6 @@ FLAGS = {
         "owner and then unnamed members for the chief financial officer and staff. There is no "
         "construction or preconstruction lead published."],
     "HOU-033": [
-        "Neither the Coventry nor the Dream Finders name carries a vice president or director of "
-        "construction or purchasing in Houston. The two division presidents are the only doors on file.",
         "Coventry is a Dream Finders Homes brand. Both Houston division presidents carry DFH in their "
         "own titles, so the parent is not incidental, and any method conversation runs through Dream "
         "Finders as well as Coventry."],

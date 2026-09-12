@@ -49,7 +49,7 @@ FIRM_NOTES = {
  "HOU-007": [
   "John Winniford became president of First America on 17 September 2025 and holds the title President, Homebuilding at Signorelli, the parent. He ran Gehan, then Brightland, as president and chief executive for nearly a decade and delivered more than 22,000 homes from 2016.",
   "Kristen Rinewalt left in April 2026 after fifteen years running purchasing at First America. Mike Faul now holds the title.",
-  "The 750 closings figure covers two markets and comes from the outgoing purchasing lead's own post. No other published figure exists."
+  "The 750 closings figure covers two markets and comes from the outgoing purchasing lead's own post."
  ],
  "HOU-065": [
   "The 300-closings figure and the even-flow description come from a Builder Magazine profile of 2014 performance.",
@@ -78,7 +78,7 @@ FIRM_NOTES = {
   "The authority's board voted in January 2026 to operate as Housing Alliance HTX. The Cuney Homes announcement was made under the earlier name, which this record uses."
  ],
  "HOU-008": [
-  "The land purchase price for Trinity Landing is not disclosed.",
+  "",
   "The Meritage headquarters is taken from a general corporate record and is not reconfirmed on an investor-relations page.",
   "Meritage runs Houston as its own division with a division president, a vice president of operations and a vice president of land development in the metro, under a Sugar Land regional president."
  ],
@@ -86,13 +86,13 @@ FIRM_NOTES = {
   "The 324-closings figure is from 2022, before the acquisition."
  ],
  "HOU-010": [
-  "Camillo publishes no construction-method or technology content. The zero records an absent search result.",
-  "Camillo's own about page names a chief executive, a chief financial officer, a general counsel and presidents for Legend Homes and Academy Development. No construction or purchasing lead is published for any brand."
+  "Camillo publishes no construction-method or technology content.",
+  "Camillo's own about page names a chief executive, a chief financial officer, a general counsel and presidents for Legend Homes and Academy Development."
  ],
  "HOU-022": [
-  "CastleRock publishes a chief financial officer and a vice president with no stated function. No construction or purchasing lead is publicly identifiable.",
+  "CastleRock publishes a chief financial officer and a vice president with no stated function.",
   "Daiwa House Industry holds 80 percent of CastleRock, acquired for about $408 million and announced 10 August 2021. No technology transfer, prefab pilot, board seat or joint statement between the two is on record.",
-  "CastleRock publishes no construction-method or technology content. The zero counts an absent record."
+  "CastleRock publishes no construction-method or technology content."
  ],
  "HOU-026": [
   "The Conroe acquisition price is not disclosed.",
@@ -114,7 +114,7 @@ FIRM_NOTES = {
   "Builder reports 540 closings in 2025 and 552 in 2024."
  ],
  "HOU-076": [
-  "Imagination Homes launched in 2025 and is headquartered in Dallas. No volume figure exists yet.",
+  "Headquartered in Dallas.",
   "Imagination Homes is a David Weekley Homes line for entry-level product. Greg Grahmann is a David Weekley division president."
  ],
  "HOU-071": [
@@ -128,16 +128,15 @@ FIRM_NOTES = {
  ],
  "HOU-075": [
   "The rename from New Home Company is recent, so older coverage uses the previous name.",
-  "Risewell is the 2025 merger of Landsea Homes and The New Home Company, which closed 2,831 and 1,123 homes respectively in 2024. No Houston division figure is published."
+  "Risewell is the 2025 merger of Landsea Homes and The New Home Company, which closed 2,831 and 1,123 homes respectively in 2024."
  ],
  "HOU-033": [
-  "Neither the Coventry nor the Dream Finders name carries a vice president or director of construction or purchasing in Houston. The two division presidents are the only names on file.",
-  "Coventry is a Dream Finders Homes brand. Both Houston division presidents carry DFH in their own titles.",
+   "Coventry is a Dream Finders Homes brand. Both Houston division presidents carry DFH in their own titles.",
   "Dream Finders' 2024 annual report describes procurement at local, regional and national levels, with national volume used to secure manufacturer pricing."
  ],
  "HOU-069": [
   "The closings figures appear to cover Houston and Austin together rather than Houston alone.",
-  "Jeff Dye has been president since February 2020, after 21 years at the firm. No vice president of construction or head of purchasing is published."
+  "Jeff Dye has been president since February 2020, after 21 years at the firm."
  ],
  "HOU-077": [
   "Sitterle Homes is headquartered in San Antonio, where most of its volume sits."
@@ -239,7 +238,7 @@ FIRM_NOTES = {
  ],
  "HOU-081": [
   "Pagewood's creative work is a joint venture with Wile Interests. Its industrial side builds ground-up on its own.",
-  "Preston Luster is the senior construction manager on the team page. No vice president of construction is published, and the two managing principals are the decision layer."
+  "Preston Luster is the senior construction manager on the team page. The two managing principals are the decision layer."
  ],
  "HOU-080": [
   "No outside architect is credited on any project. Design sits with a partner in house."
@@ -258,7 +257,7 @@ FIRM_NOTES = {
   "The Yardly retrospective article carries no confirmed publication date."
  ],
  "HOU-024": [
-  "Community-level unit counts are not sourced."
+  ""
  ],
  "HOU-034": [
   "Brightland's Houston listings are an area construction manager, sales counselors and online sales specialists, with no vice president or director of any function. The decisions moved up to the DRB Group platform after the April 2025 consolidation.",
@@ -272,11 +271,8 @@ FIRM_NOTES = {
  "HOU-011": [
   "The Q1 2026 earnings call carries no mention of construction technology, automation, modular, offsite, labour or cycle time."
  ],
- "HOU-041": [
-  "Caldwell publishes no construction-method content. The zero counts an absent record."
- ],
  "HOU-040": [
-  "Johnson Development publishes no construction-method content. The zero counts an absent record."
+  "Johnson Development publishes no construction-method content."
  ],
  "HOU-043": [
   "Newland's own leadership page redirects to Brookfield Residential, which announces the acquisition and names nobody."

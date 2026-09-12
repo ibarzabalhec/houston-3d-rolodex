@@ -358,8 +358,7 @@ BUILDERS = [
  "The rebranded New Home Company, operating eleven divisions nationally, with a Houston division "
  "led by a named division president building in Sunterra.",
  (2, 2, 1, 3),
- "A national platform with a Houston division president who is a licensed engineer. One community "
- "identified so far.",
+ "A national platform with a Houston division president who is a licensed engineer, building in Sunterra.",
  ("One Houston community confirmed, Sunterra. Too early to read the plan strategy.",
   "Eleven divisions nationally means purchasing scale above the band a single machine serves.",
   "The division president is a professional engineer, which is rare and matters for a method "

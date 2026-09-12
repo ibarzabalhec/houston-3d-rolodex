@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 42 · 2026-09-12
+Build 43 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -221,6 +221,52 @@ reason: it explains the caveat chip.
 
 The limits list went from ten blocks to eight. The `.yn.none` rule came out of the
 stylesheet.
+
+## Build 43: the subtraction pass
+
+Build 42 took the absence language off the fields. This one takes it out of the
+sentences.
+
+Twenty-eight sentences came off the deck. Three kinds:
+
+**The score narrating itself.** "The zero records an absent search result" and
+"The zero counts an absent record" appeared on four firms. The zero is on the
+card. The sentence explaining the zero is the author talking about the author.
+
+**A sentence for an empty cell.** "No construction or purchasing lead is
+published for any brand", "No vice president of construction or head of
+purchasing is published", "No named executives found on any retrieved page".
+The roster next to each one was already blank, so the sentence was the second
+telling.
+
+**A screen line restating a mark.** "No published method evidence", "No
+wall-system statement on record", "No firm-specific method evidence found", "No
+closings figure to size it against". Each of those sits under a count chip that
+already reads No or Partly, and the legend states once what an unpublished
+figure does to a band.
+
+What stayed: absences that are findings about the firm. Sueba has no third party
+in a method decision. Provident names no Houston site. Concept Neighborhood
+credits no outside architect. Chesmar's parent has no US factory and no Texas
+change on record. M.L. Deer publishes no residential project. Those carry a
+proper noun or contradict something a reader would otherwise assume.
+
+Three more came out for a different reason. "Right product and right repetition"
+told the reader what to conclude. "Daiwa House owns a stake, which is worth
+testing" did the same. Midway's screen ended on "the Parkway relationship is
+unresolved", which was an open item that had already been resolved in the
+record: Midway sold out of the joint venture in December 2024, and the screen
+now says so.
+
+Three limits blocks lost a closing clause each, all of the same kind: the Sources
+block explaining that an empty field carries a stated reason (it does not any
+more), the contractor block explaining that a record says so when no residential
+work is published, and the press block promising nothing was characterised, which
+the preceding sentence already established.
+
+The verifier now reads every rendered cell and chip and fails the build on
+"none published", "not disclosed", "n/a", "unknown", "TBD", "no data" and
+"could not be found".
 
 ## Live numbers
 
