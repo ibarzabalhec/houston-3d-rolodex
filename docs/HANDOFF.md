@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 40 · 2026-09-11
+Build 41 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -190,6 +190,18 @@ It renders as a section called In the press on the firm page, under the evidence
 What it turned up beyond the links. The Gulf Shore Estates project at Commander has six separate outlets on it across April 2026, including the Galveston County Daily News and ABC13, which is more coverage than any other firm on the deck. Bisnow's piece on the Spring Branch printed house is headlined "Next Stop, Apartments", which is a better opening line for a CIVE call than anything in the record. Stylecraft has two trade profiles inside two months, Builder in July 2026 and HousingWire in June. Arch-Con topped out a 330-unit apartment building in July 2026, which is the multifamily project its own record said was missing. Harvey Cleary sits at 72 on the 2026 ENR Top 400.
 
 One thing checked and dismissed. A Boxer Property post titled "Boxer Announces Executive Leadership Changes" turned out to be dated October 2013 and is the origin of the current titles rather than a change to them. It is kept because it puts engineering and construction under the president, which is who would own a method decision there.
+
+## Build 41: the open items came off the page
+
+The firm cards carried a section called Open items. It was a research notebook, and half of it told a researcher what to do next rather than telling a reader anything true about a firm. This page is read by people outside the project, so the section is gone. Nothing was thrown away.
+
+**Integrity first, because the deletion would otherwise have hidden something.** Six of the items were the only place the page disclosed that a name came from a contact-data aggregator, while the method block says flatly that aggregators were not used. Five people sat on the deck with no source at all behind them. Checked one by one: Diane Danilov is real, her LinkedIn headline reads VP of Land and Business Development at Westin Homes, and India Kinslow's reads Director of Purchasing at Sitterle Homes in San Antonio, which is where that firm's purchasing sits. Matthew Roland returns nothing at Westin, the only Patrick Mustoe on LinkedIn owns a firm in Eugene, Oregon, and Art Maya returns nothing. Those three came off the deck. Matthew Roland was a marked decision-maker, so Westin's decision-maker is now Diane Danilov, on evidence rather than on a database.
+
+**Then the other 258 items were sorted.** Twenty-eight were instructions or notes about the research process and were deleted. Seventy-two carried a fact and moved into the record: into the firm's description, its screen line, or onto the contact they qualified. Twenty-one qualified a named contact and now sit in that person's evidence line, where a reader meets them. Nineteen were entity facts and went into the description. The rest, 110 notes across 75 firms, were statements that a field is empty, and ninety separate notes saying nothing is published say less than one sentence saying every empty field was checked. That sentence is now in the method block under Empty fields.
+
+**The register survives.** `internal/OPEN_ITEMS.md` holds every unresolved note by firm. It sits outside `docs/`, which is the directory GitHub Pages serves, and the verifier fails the build if it ever appears there or if any firm carries an open item again.
+
+The workbook lost its Open items column and the firm card lost the section. What a reader now sees on a card is the screen, the three counts, the firm, who to call, the evidence, the press and the sources.
 
 ## Live numbers
 

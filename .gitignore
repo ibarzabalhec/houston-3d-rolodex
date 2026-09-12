@@ -7,3 +7,4 @@ __pycache__/
 /ICON_Greater_Houston_Rolodex.xlsx
 /houston-data.json
 /rolodex-artifact.html
+# the internal register is tracked but must never be copied into docs/ output

@@ -335,6 +335,25 @@ async def main():
             await pg.evaluate("document.getElementById('home').click()")
             await pg.wait_for_timeout(120)
 
+        # The Open items list is internal and must not reach a reader. Nothing
+        # carries one in the data, nothing renders one on a card, and the
+        # register itself stays out of the directory GitHub Pages serves.
+        leftover = [t["entity_name"] for t in D["targets"] if t.get("audit_flags")]
+        if leftover:
+            problems.append("%d firms still carry open items" % len(leftover))
+        if (ROOT / "docs" / "OPEN_ITEMS.md").exists():
+            problems.append("the internal register is inside the served docs directory")
+        await pg.evaluate("document.getElementById('home').click()")
+        await pg.wait_for_timeout(120)
+        await pg.evaluate("document.querySelector('.chip').click()")
+        await pg.wait_for_timeout(220)
+        labs = await pg.eval_on_selector_all("#firmBody .lab", "e=>e.map(x=>x.textContent.trim())")
+        print("firm sections   :", labs)
+        if any("Open item" in x for x in labs):
+            problems.append("the open items section still renders")
+        await pg.evaluate("document.getElementById('home').click()")
+        await pg.wait_for_timeout(120)
+
         blank = [t["entity_name"] for t in D["targets"]
                  if t["group"] != "out" and not t.get("key_stat")]
         if blank:

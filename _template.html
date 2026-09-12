@@ -1496,8 +1496,6 @@ function firmPage(t){
         '<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.headline)+'</a>'+
         '<span class="out">'+esc(p.outlet)+'</span></li>';
     }).join('')+'</ul>'));
-  if((t.audit_flags||[]).length) h.push(section('Open items','<ul class="mini flags">'+
-    t.audit_flags.map(function(f){return '<li>'+esc(f)+'</li>';}).join('')+'</ul>'));
   if((t.sources||[]).length) h.push(section('Sources','<ul class="mini">'+t.sources.map(function(s){
     return '<li>'+(s.date?'<span class="dt">'+esc(s.date)+'</span>':'')+src(s.url,s.url)+'</li>';
   }).join('')+'</ul>'));

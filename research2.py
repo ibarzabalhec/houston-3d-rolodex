@@ -23,6 +23,13 @@ Data aggregators (ZoomInfo, RocketReach and the like) were not used.
 
 # name -> (url, evidence)
 LINKEDIN = {
+    # Checked in the open-items pass. Three names alongside these had no profile
+    # and no source outside a contact-data aggregator, so they came off the deck.
+    "Diane Danilov": ("https://www.linkedin.com/in/diane-danilov-2431a212/",
+        "Headline reads VP of Land & Business Development at Westin Homes. Houston, Texas."),
+    "India Kinslow": ("https://www.linkedin.com/in/india-kinslow-824b2614b/",
+        "Headline reads Director Of Purchasing at Sitterle Homes. San Antonio, which is where "
+        "the firm's purchasing sits."),
     # Stylecraft
     "Doug French": ("https://www.linkedin.com/in/doug-french-bb28b074/",
         "Indexed title reads Doug French, Stylecraft Builders Inc. The firm's team page lists him as "
@@ -346,10 +353,11 @@ FLAGS = {
 # The builder layer was added after the decider pass ran and never received it,
 # so firms whose whole case rests on a named construction lead showed none.
 DECIDERS = {
+    ("HOU-068", "Diane Danilov"),      # VP of Land and Business Development, the only
+                                       # Westin officer with an independent source
     ("HOU-065", "Jordan York"),        # VP of Construction
     ("HOU-065", "Bruce Hendren"),      # VP of Pre-Construction, where the specification is set
     ("HOU-063", "Jason Madden"),       # VP of Construction
-    ("HOU-068", "Matthew Roland"),     # VP of Construction, Houston
     ("HOU-062", "Christina Wright"),   # Director of Purchasing
     ("HOU-064", "Robert Davis"),       # Director of Construction
     ("HOU-067", "Bo Banowsky"),        # Purchasing Manager, the purchasing function at a firm this size

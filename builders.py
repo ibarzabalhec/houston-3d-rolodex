@@ -190,9 +190,8 @@ BUILDERS = [
   "Energy Star and Environments for Living certification, with whole-home dehumidifiers standard. "
   "A firm that pays for third-party verification has paid for something unproven before."),
  [("Tim Drone", "President"),
-  ("Patrick Mustoe", "Owner"),
   ("Bo Banowsky", "Purchasing Manager"),
-  ("Art Maya", "Construction Manager")],
+  ],
  [("Sienna, Jordan Ranch, Artavia, The Woodlands Hills", "Four master planned communities.",
    "repeatable", "Semi-custom plans repeated inside named communities rather than one-off design.",
    "https://www.jpatrickhomes.com/where-we-build/")],
@@ -211,7 +210,6 @@ BUILDERS = [
   "No closings figure is published, so the fit cannot be sized. Two markets only.",
   "No method evidence. The published language is about plans refined over time, not construction."),
  [("Jason Golan", "President"),
-  ("Matthew Roland", "Vice President of Construction, Houston"),
   ("Diane Danilov", "Vice President of Land and Business Development")],
  [("Lago Mar, Del Bello Lakes, Meridiana", "Texas City, Manvel and Rosharon.",
    "repeatable", "Three south-suburban masterplans taking one plan set.",

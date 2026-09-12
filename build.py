@@ -25,6 +25,7 @@ from creative import CREATIVE, NEW_CREATIVE, EXTRA as CEXTRA
 from competitors import ICON as ICON_RECORD, COMPETITORS, CONSOLIDATION
 from builders import BUILDERS
 from press import PRESS
+from resolved import FIRM_NOTES, PERSON_NOTES, SCREEN_NOTES
 from trades import (TRADES, NEW_TRADES, NEW_METHOD, PRINTED_ADOPTERS,
                     TRADE_DECIDERS, TRADE_DECIDER_NOTES,
                     TRADE_PEOPLE, TRADE_PEOPLE_FLAGS,
@@ -34,7 +35,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 40
+BUILD = 41
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -177,6 +178,15 @@ def finalize(recs):
             t["group"], t["tier"] = "b", "B"
         else:
             t["group"], t["tier"] = "out", "C" if t["holds"] == 1 else "D"
+        for _s in FIRM_NOTES.get(t["target_id"], []):
+            if _s not in t["synopsis"]:
+                t["synopsis"] = t["synopsis"].rstrip() + " " + _s
+        if t["target_id"] in SCREEN_NOTES:
+            t["mvp_screen"] = SCREEN_NOTES[t["target_id"]]
+        for _p in t["principals"]:
+            for _s in PERSON_NOTES.get("%s|%s" % (t["target_id"], _p["name"]), []):
+                _p["source_evidence"] = ((_p.get("source_evidence") or "").rstrip()
+                                         + " " + _s).strip()
         t["press"] = [{"date": d, "outlet": o, "headline": h, "url": u}
                       for d, o, h, u in PRESS.get(t["target_id"], [])]
         t["last_verified"] = TODAY
@@ -338,6 +348,11 @@ def _is_caveat(f):
     low = f.lower()
     return any(m in low for m in CAVEAT_MARKS) or low.startswith("no ")
 
+
+# The Open items list is gone from the page. What carried a fact moved into the
+# record in resolved.py; what remained is the internal register in docs.
+for t in targets:
+    t["audit_flags"] = []
 
 for t in targets:
     flags = t.get("audit_flags", [])
@@ -538,6 +553,11 @@ DATA = {
     "headline is the publisher's. Nothing in that list has been summarised or characterised here, "
     "and an empty list means the firm was not searched or returned nothing."
     % _n_press],
+   ["Empty fields",
+    "An empty field means the field was checked and nothing is published, not that it was skipped. "
+    "That applies to volumes, capital figures, leadership pages and method statements alike. Where "
+    "a figure or a contact rests on something thinner than the firm's own page, the qualification "
+    "sits next to it rather than in a separate list."],
    ["Where a firm has no contact",
     "%d of the %d firms here publish nobody at all, and %d of those are contractors. That is "
     "recorded on the card rather than left blank, and it is the largest single gap in the file."

@@ -46,7 +46,7 @@ screens.py why.py machine.py                            verdicts, reasons, the p
 found.py links.py corrections.py research2.py          verification, links, corrections, second research pass
 competitors.py code.py market.py                        the field, code and permitting, published figures
 trades.py                                               the contractor layer and who signs for a machine
-press.py                                                dated press per firm, headline, outlet and link
+press.py resolved.py                                    dated press per firm, and what the open items became
 _template.html _market.js atmos.js _fonts.css           the page, the figures, the background, embedded type
 build.py build_xlsx.py verify.py                        the chain
 docs/                                                   served copies and the handoff
@@ -54,6 +54,6 @@ docs/                                                   served copies and the ha
 
 ## Handoff
 
-`docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open. `docs/ROADMAP.md` is the research plan for the next pass.
+`internal/OPEN_ITEMS.md` is the unresolved research register. It is not published and sits outside the served directory. `docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open. `docs/ROADMAP.md` is the research plan for the next pass.
 
 Héctor Ibarzábal · September 2026

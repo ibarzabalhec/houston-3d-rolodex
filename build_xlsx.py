@@ -39,7 +39,7 @@ COLS = [
     ("Printer fit", 12), ("Printer fit why", 48),
     ("Track record", 13), ("Track record why", 48), ("Capital", 10),
     ("LinkedIn URL", 40), ("Find", 9), ("Status", 14), ("Company URL", 34),
-    ("Screen result", 80), ("Open items", 60),
+    ("Screen result", 80),
     ("Decides the wall", 15), ("How this person was verified", 70),
     ("Firm page for this person", 46), ("Company LinkedIn", 42), ("Leadership page", 42),
     ("Latest press", 70),
@@ -79,7 +79,7 @@ for t in T:
         repw=WHYT(t, 0), wallw=WHYT(t, 1), innw=WHYT(t, 2),
         url=t.get("homepage_url") or ("no website confirmed" if t.get("no_web_presence") else ""),
         cli=t.get("company_li") or "", team=t.get("team_url") or "",
-        screen=t["mvp_screen"], flags=" | ".join(t.get("audit_flags", [])),
+        screen=t["mvp_screen"],
         press=(lambda ps: ("%s %s. %s  %s" % (ps[0]["date"], ps[0]["outlet"],
                                               ps[0]["headline"], ps[0]["url"])).strip()
                if ps else "")(sorted(t.get("press") or [],
@@ -131,7 +131,7 @@ ws.row_dimensions[HDR].height = 22
 
 KEYS = ["name", "firm", "title", "tier", "score", "role", "region", "stat",
         "rep", "repw", "wall", "wallw", "inn", "innw", "cap",
-        "li", None, None, "url", "screen", "flags", "dec", "ev", "bio", "cli", "team", "press"]
+        "li", None, None, "url", "screen", "dec", "ev", "bio", "cli", "team", "press"]
 
 for ri, r in enumerate(rows):
     row = first + ri
@@ -145,7 +145,7 @@ for ri, r in enumerate(rows):
             v = r.get(key, "")
         c = ws.cell(row=row, column=ci, value=v)
         c.font = Font(name="Arial", size=10, color=INK)
-        c.alignment = Alignment(vertical="top", wrap_text=(ci in (10, 12, 14, 20, 21, 23)))
+        c.alignment = Alignment(vertical="top", wrap_text=(ci in (10, 12, 14, 20, 22)))
         c.border = Border(bottom=thin)
         if band and ci != LI_COL:
             c.fill = PatternFill("solid", fgColor=BAND)
