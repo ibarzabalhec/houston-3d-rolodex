@@ -280,6 +280,11 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .yn.clear{background:var(--ink);border-color:var(--ink);color:#fff}
 .yn.partial{border-color:var(--ink3);color:var(--ink);background:var(--paper3)}
 .yn.innovation.clear{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.mini.press li{margin-bottom:10px}
+.mini.press a{color:var(--ink);text-decoration:none;border-bottom:1px solid var(--rule2)}
+.mini.press a:hover{border-bottom-color:var(--ink)}
+.mini.press .out{display:block;font:500 10.5px/1.5 var(--mono);letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink4);margin-top:3px}
 .yn.none{background:none;border:0;color:var(--ink4);text-transform:none;letter-spacing:0;
   font-weight:500;padding-left:0}
 .yn.chk{border-color:var(--ink3);color:var(--ink);background:var(--paper3);
@@ -1485,6 +1490,12 @@ function firmPage(t){
   if(cs.length) h.push(section('Capital','<ul class="mini">'+cs.map(function(c){
     return '<li>'+(c.date?'<span class="dt">'+esc(c.date)+'</span>':'')+esc(c.text)+' '+src(c.url)+'</li>';
   }).join('')+'</ul>'));
+  if((t.press||[]).length) h.push(section('In the press','<ul class="mini press">'+
+    t.press.map(function(p){
+      return '<li>'+(p.date?'<span class="dt">'+esc(p.date)+'</span>':'')+
+        '<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.headline)+'</a>'+
+        '<span class="out">'+esc(p.outlet)+'</span></li>';
+    }).join('')+'</ul>'));
   if((t.audit_flags||[]).length) h.push(section('Open items','<ul class="mini flags">'+
     t.audit_flags.map(function(f){return '<li>'+esc(f)+'</li>';}).join('')+'</ul>'));
   if((t.sources||[]).length) h.push(section('Sources','<ul class="mini">'+t.sources.map(function(s){

@@ -42,6 +42,7 @@ COLS = [
     ("Screen result", 80), ("Open items", 60),
     ("Decides the wall", 15), ("How this person was verified", 70),
     ("Firm page for this person", 46), ("Company LinkedIn", 42), ("Leadership page", 42),
+    ("Latest press", 70),
 ]
 LI_COL, FIND_COL, ST_COL = 16, 17, 18   # 1-indexed
 HDR = 6
@@ -79,6 +80,10 @@ for t in T:
         url=t.get("homepage_url") or ("no website confirmed" if t.get("no_web_presence") else ""),
         cli=t.get("company_li") or "", team=t.get("team_url") or "",
         screen=t["mvp_screen"], flags=" | ".join(t.get("audit_flags", [])),
+        press=(lambda ps: ("%s %s. %s  %s" % (ps[0]["date"], ps[0]["outlet"],
+                                              ps[0]["headline"], ps[0]["url"])).strip()
+               if ps else "")(sorted(t.get("press") or [],
+                                     key=lambda p: p["date"], reverse=True)),
     )
     people = t.get("principals") or []
     if people:
@@ -126,7 +131,7 @@ ws.row_dimensions[HDR].height = 22
 
 KEYS = ["name", "firm", "title", "tier", "score", "role", "region", "stat",
         "rep", "repw", "wall", "wallw", "inn", "innw", "cap",
-        "li", None, None, "url", "screen", "flags", "dec", "ev", "bio", "cli", "team"]
+        "li", None, None, "url", "screen", "flags", "dec", "ev", "bio", "cli", "team", "press"]
 
 for ri, r in enumerate(rows):
     row = first + ri

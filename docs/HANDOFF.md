@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 39 · 2026-09-11
+Build 40 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -180,6 +180,16 @@ Found: Justin Segal, President of Boxer Property, and Andrew Segal alongside him
 One correction worth more than the profiles. Burton Construction's own about page names Brad Burton as founder and stops there. The current chief executive is Shawn McAlpin, who appears nowhere on the firm's site. The record named the wrong person as the one who signs, and now names both.
 
 Two confirmed absences, recorded so the next session does not look again. Matt Zetlmeisl at ICF Constructors has no LinkedIn profile at all; a surname search returns ten people, none of them him and none in Texas construction, so the firm's own site is the only route to him. Trey Green returns nothing against the parent's name and exists only on Satterfield and Pontikes' own team page.
+
+## Build 40: the press layer
+
+An evidence pass over the key firms, run through Chrome against the open web because the session's web search budget was spent. Thirty-two dated items across eleven firms, each one a headline a search actually returned, with the outlet, the date the result carried, and a link read off the result rather than assembled. The headline is the publisher's. Nothing is summarised or characterised, and a firm with no list has either not been searched or returned nothing, which the method block says.
+
+It renders as a section called In the press on the firm page, under the evidence and above the open items, and the most recent item is carried into the workbook as a new column.
+
+What it turned up beyond the links. The Gulf Shore Estates project at Commander has six separate outlets on it across April 2026, including the Galveston County Daily News and ABC13, which is more coverage than any other firm on the deck. Bisnow's piece on the Spring Branch printed house is headlined "Next Stop, Apartments", which is a better opening line for a CIVE call than anything in the record. Stylecraft has two trade profiles inside two months, Builder in July 2026 and HousingWire in June. Arch-Con topped out a 330-unit apartment building in July 2026, which is the multifamily project its own record said was missing. Harvey Cleary sits at 72 on the 2026 ENR Top 400.
+
+One thing checked and dismissed. A Boxer Property post titled "Boxer Announces Executive Leadership Changes" turned out to be dated October 2013 and is the origin of the current titles rather than a change to them. It is kept because it puts engineering and construction under the president, which is who would own a method decision there.
 
 ## Live numbers
 

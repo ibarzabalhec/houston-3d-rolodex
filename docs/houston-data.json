@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 39,
+ "build": 40,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -395,6 +395,10 @@
   [
    "What is in the contractor section",
    "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. The scope rule above is a builder rule and does not apply to them: most of this trade in Houston is commercial and industrial, and where a contractor publishes no residential work its record says so."
+  ],
+  [
+   "In the press",
+   "11 firms carry a press list. Each item is a headline a search actually returned, with the outlet, the date the result carried, and a link read off the result rather than assembled. The headline is the publisher's. Nothing in that list has been summarised or characterised here, and an empty list means the firm was not searched or returned nothing."
   ],
   [
    "Where a firm has no contact",
@@ -1150,6 +1154,32 @@
    "tail": false,
    "group": "adopter",
    "tier": "P",
+   "press": [
+    {
+     "date": "2026-02",
+     "outlet": "The Architect's Newspaper",
+     "headline": "Zuri Gardens, a 3D-printed Texas community, shows promise for attainable housing",
+     "url": "https://www.archpaper.com/2026/02/zuri-gardens-3d-printed-texas-community/"
+    },
+    {
+     "date": "2025-12-03",
+     "outlet": "Houstonia Magazine",
+     "headline": "Houston's First 3D Printed Home Community, Zuri Gardens",
+     "url": "https://www.houstoniamag.com/home-and-real-estate/2025/12/3d-printed-houses-neighborhood-houston"
+    },
+    {
+     "date": "2025-08-13",
+     "outlet": "CultureMap Houston",
+     "headline": "Houston debuts 3D-printed affordable homes at Zuri Gardens",
+     "url": "https://houston.culturemap.com/news/real-estate/innovative-3d-printed-affordable-housing-development-rises-in-houston/"
+    },
+    {
+     "date": "",
+     "outlet": "City of Houston",
+     "headline": "New Homes for South Houston, Garver Heights and Zuri Gardens",
+     "url": "https://houstontx.gov/housing/homes/sh-garver-zuri.html"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1252,6 +1282,44 @@
    "tail": false,
    "group": "adopter",
    "tier": "P",
+   "press": [
+    {
+     "date": "2026-04-08",
+     "outlet": "Houston Agent Magazine",
+     "headline": "HiveASMBLD launches 3D-printed Gulf Shore Estates in San Leon",
+     "url": "https://houstonagentmagazine.com/2026/04/08/hiveasmbld-3d-printed-gulf-shore-estates-san-leon/"
+    },
+    {
+     "date": "2026-04-10",
+     "outlet": "The Galveston County Daily News",
+     "headline": "Printing the future: San Leon project tests new model for coastal housing",
+     "url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html"
+    },
+    {
+     "date": "2026-04-22",
+     "outlet": "ABC13 Houston",
+     "headline": "San Leon development aims for sustainability from the ground up",
+     "url": "https://abc13.com/post/san-leon-development-aims-sustainability-ground/18943368/"
+    },
+    {
+     "date": "2026-04-03",
+     "outlet": "Houston Business Journal",
+     "headline": "Houston-based company to build 3D-printed home community in San Leon",
+     "url": "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html"
+    },
+    {
+     "date": "2026-04-30",
+     "outlet": "Intelligent Build.tech",
+     "headline": "Partnership to develop an innovative 3D-printed residential community",
+     "url": "https://www.intelligentbuild.tech/2026/04/30/partnership-to-develop-an-innovative-3d-printed-residential-community/"
+    },
+    {
+     "date": "",
+     "outlet": "Realty News Report",
+     "headline": "3D Printed Homes Coming to Galveston County Coast",
+     "url": "https://realtynewsreport.com/3d-printed-homes-coming-to-galveston-county-coast/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1354,6 +1422,20 @@
    "tail": false,
    "group": "adopter",
    "tier": "P",
+   "press": [
+    {
+     "date": "",
+     "outlet": "Houston Chronicle",
+     "headline": "3D-printed duplex under construction in Houston's East End",
+     "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php"
+    },
+    {
+     "date": "2026-04-22",
+     "outlet": "Homes.com",
+     "headline": "Houston's 3D-printed housing push grows with two new developments",
+     "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1492,6 +1574,32 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [
+    {
+     "date": "2026-04-25",
+     "outlet": "Houston Chronicle",
+     "headline": "Why Houston's booming build-to-rent sector could slow",
+     "url": "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php"
+    },
+    {
+     "date": "2025-03-14",
+     "outlet": "Houston Business Journal",
+     "headline": "Wan Bridge readjusts build-to-rent development goal",
+     "url": "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html"
+    },
+    {
+     "date": "2025-11-24",
+     "outlet": "Realty News Report",
+     "headline": "Build-To-Rent Boom: Dellrose, Yardly and More",
+     "url": "https://realtynewsreport.com/build-to-rent-boom-dellrose-yardly-and-more/"
+    },
+    {
+     "date": "",
+     "outlet": "Wan Bridge",
+     "headline": "In The News, the firm's own index, which carries a March 2026 launch at Frontera Shores",
+     "url": "https://wanbridge.com/in-the-news/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1614,6 +1722,7 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1738,6 +1847,14 @@
    "capital_mark": "clear",
    "group": "a",
    "tier": "A",
+   "press": [
+    {
+     "date": "2013-10-30",
+     "outlet": "Boxer Property",
+     "headline": "Boxer Announces Executive Leadership Changes, which is where the current titles come from and which puts engineering and construction under the president",
+     "url": "https://www.boxerproperty.com/blog/roles-responsibilities-evolve-executives/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1840,6 +1957,7 @@
    "capital_mark": "clear",
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -1964,6 +2082,7 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2107,6 +2226,20 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [
+    {
+     "date": "2026-08-10",
+     "outlet": "CEOWORLD magazine",
+     "headline": "Danny Signorelli Leads First America Homes Expansion Across Houston and Texas",
+     "url": "https://ceoworld.biz/2026/08/10/danny-signorelli-leads-first-america-homes-expansion-across-houston-and-texas/"
+    },
+    {
+     "date": "",
+     "outlet": "The Signorelli Company",
+     "headline": "First America Homes, on the parent's own site",
+     "url": "https://www.signorellicompany.com/first-america-homes"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2247,6 +2380,20 @@
    "capital_mark": "partial",
    "group": "a",
    "tier": "A",
+   "press": [
+    {
+     "date": "2026-07-24",
+     "outlet": "Builder Magazine",
+     "headline": "How Stylecraft Is Building Bigger While Staying Local",
+     "url": "https://www.builderonline.com/builder-100/leadership/how-stylecraft-is-building-bigger-while-staying-local/"
+    },
+    {
+     "date": "2026-06-11",
+     "outlet": "HousingWire",
+     "headline": "Stylecraft Builders' micro approach to margin, pace and growth",
+     "url": "https://www.housingwire.com/articles/stylecraft-builders-margin-pace-and-growth/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2362,6 +2509,7 @@
    "capital_mark": "partial",
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2466,6 +2614,7 @@
    "capital_mark": "fail",
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2610,6 +2759,7 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2730,6 +2880,7 @@
    "tail": false,
    "group": "a",
    "tier": "A",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2835,6 +2986,20 @@
    "capital_mark": "fail",
    "group": "a",
    "tier": "A",
+   "press": [
+    {
+     "date": "",
+     "outlet": "Builder Magazine",
+     "headline": "Chesmar Homes, with the note that Sekisui House U.S. is the 2026 Builder of the Year",
+     "url": "https://www.builderonline.com/organization/chesmar-homes/"
+    },
+    {
+     "date": "",
+     "outlet": "Baytown-West Chambers County Economic Development Foundation",
+     "headline": "Japanese Homebuilder Builds U.S. Momentum With Acquisition of Houston Company",
+     "url": "https://baytownedf.org/news/article/japanese-homebuilder-builds-u.s-momentum-with-acquisition-of-houston-company"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -2945,6 +3110,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3063,6 +3229,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3169,6 +3336,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3269,6 +3437,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3393,6 +3562,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3548,6 +3718,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3649,6 +3820,7 @@
    "capital_mark": "clear",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3789,6 +3961,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -3920,6 +4093,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4037,6 +4211,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4149,6 +4324,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4248,6 +4424,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4359,6 +4536,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4456,6 +4634,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4573,6 +4752,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4682,6 +4862,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4783,6 +4964,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -4908,6 +5090,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5017,6 +5200,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5132,6 +5316,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5268,6 +5453,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5381,6 +5567,7 @@
    "capital_mark": "clear",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5494,6 +5681,7 @@
    "tail": false,
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5601,6 +5789,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5711,6 +5900,7 @@
    "capital_mark": "partial",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5831,6 +6021,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -5931,6 +6122,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6031,6 +6223,7 @@
    "capital_mark": "fail",
    "group": "b",
    "tier": "B",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6142,6 +6335,7 @@
    "capital_mark": "fail",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6263,6 +6457,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6385,6 +6580,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6506,6 +6702,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6629,6 +6826,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6756,6 +6954,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6877,6 +7076,26 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [
+    {
+     "date": "2023-02-07",
+     "outlet": "Bisnow Houston",
+     "headline": "Next Stop, Apartments: 2-Story 3D-Printed House Lays Foundation For Bigger Projects Ahead",
+     "url": "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549"
+    },
+    {
+     "date": "2023-02-24",
+     "outlet": "Built Offsite",
+     "headline": "Largest 3D printed hybrid home takes shape",
+     "url": "https://builtoffsite.com.au/news/largest-3d-printed-hybrid-home-takes-shape/"
+    },
+    {
+     "date": "2025-03",
+     "outlet": "Construction In Focus",
+     "headline": "CIVE, Construction and Design at their Finest",
+     "url": "https://constructioninfocus.com/2025/03/cive-construction-and-design-at-their-finest/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -6991,6 +7210,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7106,6 +7326,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7223,6 +7444,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7353,6 +7575,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7497,6 +7720,20 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [
+    {
+     "date": "2026",
+     "outlet": "Engineering News-Record",
+     "headline": "ENR 2026 Top 400 Contractors, where the firm is ranked 72",
+     "url": "https://www.enr.com/toplists/2026-Top-400-Contractors-1"
+    },
+    {
+     "date": "2023-08-08",
+     "outlet": "Engineering News-Record",
+     "headline": "Harvey, Harvey-Cleary, a Little Bit of Everything Firm",
+     "url": "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7603,6 +7840,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7715,6 +7953,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7826,6 +8065,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -7955,6 +8195,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8053,6 +8294,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8158,6 +8400,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8259,6 +8502,7 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8363,6 +8607,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8484,6 +8729,32 @@
    "capital_mark": "clear",
    "group": "trade",
    "tier": "W",
+   "press": [
+    {
+     "date": "2026-07-21",
+     "outlet": "Construction Owners",
+     "headline": "Arch-Con Tops Out 330-Unit Artis Montrose Apartment Project",
+     "url": "https://www.constructionowners.com/news/arch-con-reaches-topping-out-milestone-on-330-unit-artis-montrose-apartment-project"
+    },
+    {
+     "date": "",
+     "outlet": "Arch-Con Corporation",
+     "headline": "Artis Montrose tops out nine months after breaking ground",
+     "url": "https://www.arch-con.com/artis-montrose-tops-out/"
+    },
+    {
+     "date": "",
+     "outlet": "Arch-Con Corporation",
+     "headline": "Arch-Con Advances First Phase of The Hangar Multifamily",
+     "url": "https://www.arch-con.com/millie-at-the-hangar/"
+    },
+    {
+     "date": "",
+     "outlet": "Arch-Con Corporation",
+     "headline": "Silo Springs breaks ground in West Houston",
+     "url": "https://www.arch-con.com/silo-springs/"
+    }
+   ],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8592,6 +8863,7 @@
    "capital_mark": "partial",
    "group": "trade",
    "tier": "W",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8745,6 +9017,7 @@
    "tail": false,
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8892,6 +9165,7 @@
    "tail": false,
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -8993,6 +9267,7 @@
    "tail": false,
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9111,6 +9386,7 @@
    "tail": false,
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9225,6 +9501,7 @@
    "capital_mark": "partial",
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9324,6 +9601,7 @@
    "capital_mark": "fail",
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9470,6 +9748,7 @@
    "tail": false,
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9586,6 +9865,7 @@
    "capital_mark": "partial",
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9720,6 +10000,7 @@
    "capital_mark": "fail",
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9826,6 +10107,7 @@
    "capital_mark": "fail",
    "group": "creative",
    "tier": "X",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -9960,6 +10242,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10094,6 +10377,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10208,6 +10492,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10334,6 +10619,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10473,6 +10759,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10610,6 +10897,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10734,6 +11022,7 @@
    "tail": false,
    "group": "national",
    "tier": "N",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -10879,6 +11168,7 @@
    "tail": false,
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/signorelli-company",
@@ -11011,6 +11301,7 @@
    "tail": false,
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/the-howard-hughes-corporation",
@@ -11079,6 +11370,7 @@
    "capital_mark": "clear",
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/land-tejas-companies",
@@ -11148,6 +11440,7 @@
    "capital_mark": "fail",
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/caldwell-companies",
@@ -11219,6 +11512,7 @@
    "capital_mark": "fail",
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/the-johnson-development-corp",
@@ -11293,6 +11587,7 @@
    "capital_mark": "fail",
    "group": "channel",
    "tier": "M",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/newland-communities-llc",
@@ -11378,6 +11673,7 @@
    "capital_mark": "fail",
    "group": "icon",
    "tier": "I",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -11465,6 +11761,7 @@
    "capital_mark": "partial",
    "group": "icon",
    "tier": "I",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [
     {
@@ -11608,6 +11905,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/newquest-properties",
@@ -11701,6 +11999,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/fidelis-realty-partners",
@@ -11824,6 +12123,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": null,
@@ -11928,6 +12228,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/read-king-inc-",
@@ -12034,6 +12335,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/camden-property-trust",
@@ -12120,6 +12422,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/greystar",
@@ -12226,6 +12529,7 @@
    "tail": false,
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/the-dinerstein-companies/",
@@ -12298,6 +12602,7 @@
    "capital_mark": "partial",
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/baker-katz",
@@ -12363,6 +12668,7 @@
    "capital_mark": "fail",
    "group": "out",
    "tier": "C",
+   "press": [],
    "last_verified": "2026-09-11",
    "why": [],
    "company_li": "https://www.linkedin.com/company/wulfe",

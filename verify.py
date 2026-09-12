@@ -308,6 +308,33 @@ async def main():
         # The contractor layer. It is a section like any other, so it has to
         # filter, print, export and open like any other, and the counts it
         # carries have to be the ones the data holds.
+        # Every press item carries a real link and an outlet, and the section
+        # renders for a firm that has one.
+        bad_press = []
+        for t in D["targets"]:
+            for p in t.get("press", []):
+                if not str(p.get("url", "")).startswith("http") or not p.get("outlet") \
+                        or not p.get("headline"):
+                    bad_press.append(t["entity_name"])
+        n_press = sum(1 for t in D["targets"] if t.get("press"))
+        print("press           :", n_press, "firms |",
+              sum(len(t.get("press") or []) for t in D["targets"]), "items")
+        if bad_press:
+            problems.append("press items missing a link, outlet or headline: %s" % set(bad_press))
+        if n_press:
+            await pg.evaluate("document.getElementById('home').click()")
+            await pg.wait_for_timeout(120)
+            pid = next(t["target_id"] for t in D["targets"] if t.get("press"))
+            await pg.evaluate(
+                "document.querySelector('.chip[data-id=\"%s\"]').click()" % pid)
+            await pg.wait_for_timeout(250)
+            links = await pg.locator("#firmBody .mini.press a").count()
+            want = len([t for t in D["targets"] if t["target_id"] == pid][0]["press"])
+            if links != want:
+                problems.append("the press section does not render its items")
+            await pg.evaluate("document.getElementById('home').click()")
+            await pg.wait_for_timeout(120)
+
         blank = [t["entity_name"] for t in D["targets"]
                  if t["group"] != "out" and not t.get("key_stat")]
         if blank:

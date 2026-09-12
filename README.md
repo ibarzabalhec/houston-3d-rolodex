@@ -46,6 +46,7 @@ screens.py why.py machine.py                            verdicts, reasons, the p
 found.py links.py corrections.py research2.py          verification, links, corrections, second research pass
 competitors.py code.py market.py                        the field, code and permitting, published figures
 trades.py                                               the contractor layer and who signs for a machine
+press.py                                                dated press per firm, headline, outlet and link
 _template.html _market.js atmos.js _fonts.css           the page, the figures, the background, embedded type
 build.py build_xlsx.py verify.py                        the chain
 docs/                                                   served copies and the handoff
