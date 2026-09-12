@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 51 · 2026-09-12
+Build 52 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,6 +530,92 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 52: the audit round
+
+Six independent passes were run against the cards, one batch each, with
+instructions to assume the write-up was wrong until a source the agent opened
+itself said otherwise. Every URL the deck publishes was checked for status and
+swept against the source rules.
+
+The rules held. 533 URLs, no encyclopedia, no contact aggregator, no constructed
+link. The content did not hold.
+
+**Two people published as the person who can change a wall specification could
+not be called.** Marilyn Vanderhider, carried on Avenue CDC as Director of Single
+Family Housing with a link to her LinkedIn, died on 22 November 2015. Brad
+Burton, carried on Burton Construction as founder, is not on the firm's own
+leadership page, which names Shawn McAlpin as chief executive and Cullen Burton
+as president. Both are off the deck.
+
+**Seven more named contacts were not on the pages they were sourced to.** Randy
+Hutchinson and John Serra at Wan Bridge, Gregg Erickson at RSK, Mark Wood at
+Hanover, Jeff Raymer and Todd Riedel at M.L. Deer, Stephen Sams at Howard Hughes.
+In each case the firm publishes a team page and the name is not on it. Where the
+firm publishes someone in that function, that person replaced them: Jim Foy,
+Houston Director of Construction at RSK; Marc Deer and Richard Rolland at M.L.
+Deer. Wan Bridge publishes seven leaders and no construction or purchasing seat
+at all, so that card now says so instead of naming one.
+
+**A reason arguing against its own mark, in eight places.** Howard Hughes was
+marked No on Track record directly above its own sentence saying it financed and
+opened Greater Houston's first mass timber office building. That shipped for four
+builds. Five trade records used the deck's own band sentence, "a firm with no
+published figure is a Partly," under a Yes. Avenue CDC read Partly on a count
+whose only evidence was a 2017 Kinder Institute piece about transit-oriented
+development, which says nothing about how anything is built. J. Patrick Homes
+read No on the same energy-certification evidence Caldwell Homes reads Partly on.
+
+`verify.py` now fails the build on this class: a reason that opens with a
+negation under a non-fail mark, a reason that names a verdict other than its own
+mark, or a verdict that disagrees with its mark. 291 reasons, none contradict.
+
+**Caldwell Companies said it does not pour walls** while Caldwell Homes, its own
+homebuilding division, sat ten cards away in the A tier. Printer fit moved to
+Partly and both records now point at each other.
+
+**Boxer Property had the print time backwards.** The card said the walls printed
+over seven to eight days. The source says the walls printed in under 30 hours and
+seven to eight days covered the whole house. On a deck about printing walls that
+is the number.
+
+**Stylecraft exited the Houston metro.** Its chief executive said so on the
+record to HousingWire in June 2026, in the same interview the deck already cites
+for its closings figure. The record stays, because Ladera Creek in Conroe is
+still live inventory inside the metro, and the card now says what he said.
+
+Also corrected: Chesmar no longer operates as a distinct brand as of January
+2026; Hillwood's League City tract is Legacy, more than 700 acres with ten
+builders, not the 540 acres and 1,250 lots published in Build 51; Sunterra
+carries eighteen builders, not fifteen; Johnson Development publishes fifteen
+masterplans, not fourteen; Signorelli's Valley Ranch is in Montgomery County, not
+Liberty, and the 6,400-acre figure the card hedged against appears in no source;
+Commander Home Builders has one printed home under construction, not
+twenty-three built; GreenEco's own domain is a parked-domain lander and the page
+carrying its product claims returns 404, so both are gone and the record carries
+what the ownership chain supports; Scott Anderson at Keystone is vice president
+and general manager, and 2026-2027 president of the American Concrete Institute.
+
+**A correction that had to be corrected.** An audit pass reported Derrick Hughes
+as Wan Bridge's Vice President of Construction Operations, and a fetch of
+`wanbridge.com/leadership/derrick-hughes` returned a bio saying exactly that. The
+URL is a 404 and the name appears nowhere in the leadership page's own markup.
+The finding was wrong, the check of it was wrong, and the name never shipped. A
+fetch that reads a page is not evidence the page exists.
+
+**Two agent findings were rejected.** D.R. Horton's 62 percent of Forestar and
+the 83 percent lot share are both verbatim in the FY2025 annual report, which the
+agent had not opened.
+
+`linkcheck.py` is new and runs by hand, not in `make`, because a build that fails
+when someone else's server is slow is a build nobody runs. It reports status on
+every published URL, separates the hosts that refuse scripted requests from the
+ones that are actually dead, and sweeps every source domain against the rules.
+
+Corrections live in `audit.py` rather than in the modules holding the original
+research, so the first draft stays readable next to what a second look changed.
+
+97 firms, 247 contacts, 46 with a named decider. All checks pass.
+
 ## Build 51: the rest of the directory, and the builder that already bought one
 
 Build 50 read one category of the Greater Houston Builders Association directory,
@@ -677,4 +763,13 @@ surface (filters, call list, workbook builder).
 - DSLD Homes and Tilson Homes each carry one named person. Neither publishes a
   construction or purchasing officer.
 - Whether Screen or List should be the landing view. List is now the faster tool.
+- The Houston Housing Authority's two domains, housingforhouston.com and
+  housingauthorityhouston.org, do not resolve from this container. Unknown
+  whether that is an outage or the sites are gone. Check in a browser before
+  trusting that card's team link.
+- `linkcheck.py` BLOCKED holds 30 hosts that refuse scripted requests. Each was
+  confirmed by hand once. Re-confirm before adding to it.
+- Nine named contacts sit on firms that publish no team page at all, so nothing
+  confirms or denies them: Kendall, Long Lake, Westin, Perry, Partners in
+  Building, Keystone Concrete Placement, Texas A&M Concrete, Tricoast, LGI.
 - The repository has never been pushed to GitHub.

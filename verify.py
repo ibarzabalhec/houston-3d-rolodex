@@ -4,12 +4,39 @@
 Fails loudly rather than printing a clean report, so a broken build cannot be
 sent by accident.
 """
-import asyncio, json, pathlib
+import asyncio, json, pathlib, re
 from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).parent
 URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve())
 D = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
+
+# A reason that argues one way under a mark that says the other. Howard Hughes
+# shipped for four builds marked No on the count its own sentence answered Yes,
+# and nothing caught it. This does.
+_NEG = re.compile(r"^(nothing on record|no method|none on record|no evidence|"
+                  r"nothing published|no construction-method|no published method)", re.I)
+_SAYS = re.compile(r"\bis a (Yes|Partly|No)\b")
+_W = {"clear": "Yes", "partial": "Partly", "fail": "No"}
+_bad = []
+for _t in D["targets"]:
+    for _w in _t["why"]:
+        _said = _W[_w["mark"]]
+        if _NEG.search(_w["text"]) and _w["mark"] != "fail":
+            _bad.append("%s %s: a negative reason under %s" % (_t["short"], _w["axis"], _said))
+        _m = _SAYS.search(_w["text"])
+        if _m and _m.group(1) != _said:
+            _bad.append("%s %s: the reason says %s, the mark says %s"
+                        % (_t["short"], _w["axis"], _m.group(1), _said))
+        if _w["verdict"] != _said:
+            _bad.append("%s %s: verdict %s against mark %s"
+                        % (_t["short"], _w["axis"], _w["verdict"], _said))
+if _bad:
+    for _b in _bad:
+        print("   " + _b)
+    raise SystemExit("FAILED: a reason argues against its own mark")
+print("reason vs mark  : %d reasons, none contradict"
+      % sum(len(t["why"]) for t in D["targets"]))
 
 
 async def main():

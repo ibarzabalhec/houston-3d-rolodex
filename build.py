@@ -35,10 +35,11 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 import permits as PM
 import focus as FOCUS
 import gap as GAP
+import audit as AUDIT
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 51
+BUILD = 52
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -390,6 +391,63 @@ for t in targets:
             t["key_projects"].append({"name": _a, "detail": _b, "signal_type": _c,
                                       "fit_signal": _d, "url": _e})
     for _u in FOCUS.SOURCES.get(tid, []):
+        if not any(x.get("url") == _u for x in t["sources"]):
+            t["sources"].append({"url": _u, "date": None})
+
+# audit.py runs last, because it is a second look at what every pass above wrote.
+# It removes people who cannot be called, corrects figures a source did not carry,
+# and moves the counts it found pointing the wrong way.
+for t in targets:
+    tid = t["target_id"]
+    t["principals"] = [p for p in t["principals"]
+                       if (tid, p["name"]) not in AUDIT.DROP_PEOPLE]
+    for (_tid, _nm), (_role, _url, _ev) in AUDIT.PEOPLE.items():
+        if _tid != tid or any(p["name"] == _nm for p in t["principals"]):
+            continue
+        _p = {"name": _nm, "role": _role, "source_url": _url}
+        if _ev:
+            _p["source_evidence"] = _ev
+        if AUDIT.DECIDER.get((tid, _nm)):
+            _p["decider"] = True
+        t["principals"].append(_p)
+    for _pr in t["principals"]:
+        _rt = AUDIT.RETITLE.get((tid, _pr["name"]))
+        if _rt:
+            _pr["role"] = _rt
+    if tid in AUDIT.SYNOPSIS:
+        t["synopsis"] = AUDIT.SYNOPSIS[tid]
+    if tid in AUDIT.KEY_STAT:
+        t["key_stat"] = AUDIT.KEY_STAT[tid]
+    if tid in AUDIT.DROP_HOMEPAGE:
+        t["homepage_url"] = None
+    if tid in AUDIT.SCORE:
+        t["scores"].update(AUDIT.SCORE[tid])
+        for _k, _v in AUDIT.SCORE[tid].items():
+            t["marks"][_k] = mark(_v)
+        t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
+        t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
+    if tid in AUDIT.WHY:
+        for _w, _txt in zip(t["why"], AUDIT.WHY[tid]):
+            _w["text"] = _txt
+    for _w in t["why"]:
+        _w["mark"] = t["marks"][_w["axis"]]
+        _w["verdict"] = VERDICT_WORD[_w["mark"]]
+    t["key_projects"] = [k for k in t["key_projects"]
+                         if (tid, k["name"]) not in AUDIT.DROP_PROJECTS]
+    for _k in t["key_projects"]:
+        _nu = AUDIT.EDIT_PROJECT_URL.get((tid, _k["name"]))
+        if _nu:
+            _k["url"] = _nu
+        _nd = AUDIT.EDIT_PROJECT_DETAIL.get((tid, _k["name"]))
+        if _nd:
+            _k["detail"] = _nd
+    for _a, _b, _c, _d, _e in AUDIT.PROJECTS.get(tid, []):
+        if not any(k["name"] == _a for k in t["key_projects"]):
+            t["key_projects"].append({"name": _a, "detail": _b, "signal_type": _c,
+                                      "fit_signal": _d, "url": _e})
+    t["sources"] = [x for x in t["sources"]
+                    if (tid, x.get("url")) not in AUDIT.DROP_SOURCES]
+    for _u in AUDIT.SOURCES.get(tid, []):
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
 
