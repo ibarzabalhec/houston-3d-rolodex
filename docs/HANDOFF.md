@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 49 · 2026-09-12
+Build 50 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,11 +530,56 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 50: the directory the deck had never been checked against
+
+The deck was assembled from trade press, master-planned-community builder rosters
+and the Builder 100. None of those enumerate a privately held builder that does
+not issue releases, which is most of the band a printer is bought for. The
+Greater Houston Builders Association member directory does, and it is public and
+browsable: 190 companies under Builder, Single Family, plus 70 under Build On
+Your Lot and 46 under Multi-Family and Townhomes.
+
+The directory was harvested in the browser rather than by fetch, because the page
+renders all 190 cards client-side and a fetch truncates partway. Read against the
+deck, 164 names were not on it.
+
+Most of those 164 are the answer to the question rather than a gap. The Single
+Family category holds custom and infill shops of one to five homes a year
+alongside production builders, and they sit below the volume a machine is bought
+for. Cross-referencing the directory against the masterplan rosters already held
+narrowed it to thirteen names with live communities, and of those, all but two
+were nationals the deck already carries or already reads as a No on Printer fit.
+
+**Two were real, and one of them is significant.**
+
+**Long Lake, Ltd.** closed 782 homes in 2025 and 912 in 2024, ranks 74th on the
+2026 Builder 100, and describes itself as the largest privately held homebuilder
+in Greater Houston. 22 communities from $249,990 to $627,900. 38 floor plans
+across four product lines, identified by number rather than name, which is about
+twenty starts per plan a year. It develops its own land through Woodmere
+Development Co., so a pilot needs nobody else's permission. Its own about page
+sells job-built production methods as a control advantage, which is the objection
+written down in advance. Dustin Rodgers is Vice President of Construction.
+
+**Caldwell Homes** is the opposite profile and is here for it: a 55+ single-storey
+builder in three communities at $448,600 to $875,000, ranked 41st in the metro,
+publishing no closings figure. Kevin Johnson holds Vice President of Construction
+and Purchasing, one person for both, which is the shortest decision chain on the
+deck. It has paid for above-code performance, ENERGY STAR and a 2020 PRISM energy
+award, and nothing structural, so Track record reads Partly rather than Yes.
+
+Note that Caldwell Homes is the homebuilding division of Caldwell Companies, which
+was already on the deck as a land owner. They are one group and two records,
+because one sells lots and the other builds houses.
+
+The deck says how it was drawn now, in a new limits block. 90 firms became 92,
+and 47 carry a named decision-maker.
+
 ## Live numbers
 
-90 firms on the deck, 9 held off. 224 contacts, 109 LinkedIn profiles, 44 firms
-with a named decider, 32 press items across 11 firms, 22 contractors, 17 firms
-holding Track record, 0 open items on the page.
+92 firms on the deck, 9 held off. 233 contacts, 111 LinkedIn profiles, 47 firms
+with a named decider, 32 press items across 11 firms, 22 contractors, 0 open
+items on the page.
 
 The permit layer: 46 years of metro single-family authorisations, 26 years by
 county across 10 counties, 6 years across 112 permit-issuing jurisdictions.
@@ -544,7 +589,7 @@ county across 10 counties, 6 years across 112 permit-issuing jurisdictions.
 `data_a/b/c.py` + `builders.py` + `creative.py` + `screens.py` + `why.py` +
 `machine.py` + `found.py` + `links.py` + `corrections.py` + `competitors.py` +
 `research2.py` + `market.py` + `code.py` + `trades.py` + `press.py` +
-`resolved.py` + `permits.py` + **`focus.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
+`resolved.py` + `permits.py` + `focus.py` + **`gap.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
 `rolodex-artifact.html` + `docs/` copies; `build_xlsx.py` → XLSX; `verify.py`
 renders headless and fails on any of about fifty-five checks, including every
 audit finding above, any wiki or contact-aggregator citation, any record missing

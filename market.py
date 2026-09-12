@@ -9,6 +9,7 @@ the chart and the caption says how many that is. No figure is estimated.
 # target_id -> (low, high, year, source). low == high for a single figure.
 CLOSINGS = {
     "HOU-068": (1062, 1062, 2025, "Builder 100, 2026 list"),
+    "HOU-130": (782, 782, 2025, "Builder 100 firm page"),
     "HOU-065": (973, 973, 2025, "HousingWire"),
     "HOU-007": (750, 750, 2025, "Stated by the outgoing purchasing lead, two markets"),
     "HOU-064": (540, 540, 2025, "Builder 100 firm page"),

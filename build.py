@@ -34,10 +34,11 @@ import research2 as R2
 from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 import permits as PM
 import focus as FOCUS
+import gap as GAP
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 49
+BUILD = 50
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -46,6 +47,7 @@ CONFIRMED.update(R2.LINKEDIN)
 PERSON.update(R2.SOURCES)
 DECIDERS.update(R2.DECIDERS)
 DECIDERS.update(TRADE_DECIDERS)
+DECIDERS.update(GAP.DECIDERS)
 for _tid, _ppl in R2.PEOPLE.items():
     NEW_PEOPLE.setdefault(_tid, []).extend(_ppl)
 for _tid, _sc in R2.SCORES.items():
@@ -141,6 +143,16 @@ def finalize(recs):
                     _p["decider"] = True
                 t["principals"].append(_p)
         for _p in t["principals"]:
+            _g = GAP.PEOPLE_LINKS.get((t["target_id"], _p["name"]))
+            if _g:
+                _li, _su, _ev = _g
+                if _li:
+                    _p["linkedin_url"] = _li
+                if _su:
+                    _p["source_url"] = _su
+                if _ev:
+                    _p["li_evidence" if _li else "source_evidence"] = _ev
+        for _p in t["principals"]:
             _hit = DECIDER_PROFILES.get((t["target_id"], _p["name"]))
             if _hit and not _p.get("linkedin_url"):
                 _p["linkedin_url"], _p["li_evidence"] = _hit
@@ -151,6 +163,11 @@ def finalize(recs):
             _f = TRADE_PEOPLE_FLAGS[t["target_id"]]
             if _f not in t["audit_flags"]:
                 t["audit_flags"].append(_f)
+
+        if t["target_id"] in GAP.DECIDER_NOTES:
+            _n = GAP.DECIDER_NOTES[t["target_id"]]
+            if _n not in t["audit_flags"]:
+                t["audit_flags"].append(_n)
 
         if t["target_id"] in TRADE_DECIDER_NOTES:
             _n = TRADE_DECIDER_NOTES[t["target_id"]]
@@ -328,7 +345,8 @@ _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_CREATIVE)
         + expand_builders(NEW_TRADES, "contractor", "wall_trade")
         + expand_builders(NEW_METHOD)
-        + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer"))
+        + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer")
+        + expand_builders(GAP.GAP))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
 
@@ -613,6 +631,13 @@ DATA = {
     "Each item is a headline a search actually returned, with the outlet, the date the result "
     "carried, and a link read off the result rather than assembled. The headline is the "
     "publisher's."],
+   ["How the list was drawn",
+    "Trade press, the builder lists each master-planned community publishes, the "
+    "Builder 100, and the Greater Houston Builders Association member directory, "
+    "which carries 190 companies under Builder, Single Family. Reading the "
+    "directory against this deck found two production builders it did not hold, "
+    "both now on it. The rest of what the directory adds is custom and infill work "
+    "of a few homes a year, below the volume a printer is bought for."],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "

@@ -1,11 +1,11 @@
 {
  "version": "2.0",
- "build": 49,
+ "build": 50,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
- "headline": "Who in Greater Houston is ready to print? 90 firms, three counts each.",
- "headline_html": "Who in Greater Houston is ready to print?<br><b>90 firms. Three counts each.</b>",
+ "headline": "Who in Greater Houston is ready to print? 92 firms, three counts each.",
+ "headline_html": "Who in Greater Houston is ready to print?<br><b>92 firms. Three counts each.</b>",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Strong target",
@@ -29,17 +29,17 @@
  },
  "stat_strip": [
   [
-   "90",
+   "92",
    "firms screened",
    false
   ],
   [
-   "12",
+   "13",
    "in on all three counts",
    false
   ],
   [
-   "45",
+   "47",
    "with a named decision-maker",
    true
   ],
@@ -60,28 +60,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 46,
+   "clear": 48,
    "partial": 37,
    "fail": 7,
-   "total": 90
+   "total": 92
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 22,
-   "partial": 43,
+   "clear": 23,
+   "partial": 44,
    "fail": 25,
-   "total": 90
+   "total": 92
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
    "clear": 17,
-   "partial": 20,
-   "fail": 53,
-   "total": 90
+   "partial": 21,
+   "fail": 54,
+   "total": 92
   }
  ],
  "matrix": {
@@ -103,7 +103,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>9 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 12 that are in on all three counts in the strip above; 2 firms appear in both. Of the 9 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>6</b> have no method record.",
+ "matrix_note": "The top right cell holds <b>10 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 10 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>6</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -386,7 +386,7 @@
   ],
   [
    "Who decides",
-   "45 of 90 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 45 can be reached as named without a caveat. The other 3 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "47 of 92 firms have a named vice president or director of construction, or head of purchasing, and 44 of those 47 can be reached as named without a caveat. The other 3 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
   ],
   [
    "Sources",
@@ -399,6 +399,10 @@
   [
    "In the press",
    "Each item is a headline a search actually returned, with the outlet, the date the result carried, and a link read off the result rather than assembled. The headline is the publisher's."
+  ],
+  [
+   "How the list was drawn",
+   "Trade press, the builder lists each master-planned community publishes, the Builder 100, and the Greater Houston Builders Association member directory, which carries 190 companies under Builder, Single Family. Reading the directory against this deck found two production builders it did not hold, both now on it. The rest of what the directory adds is custom and infill work of a few homes a year, below the volume a printer is bought for."
   ],
   [
    "Scope",
@@ -557,6 +561,18 @@
     "group": "a"
    },
    {
+    "id": "HOU-130",
+    "name": "Long Lake, Ltd.",
+    "short": "Long Lake, Ltd.",
+    "low": 782,
+    "high": 782,
+    "year": 2025,
+    "source": "Builder 100 firm page",
+    "fit": "partial",
+    "method": "fail",
+    "group": "b"
+   },
+   {
     "id": "HOU-007",
     "name": "First America Homes",
     "short": "First America",
@@ -689,8 +705,8 @@
     "group": "b"
    }
   ],
-  "closings_missing": 55,
-  "closings_base": 68,
+  "closings_missing": 56,
+  "closings_base": 70,
   "bands": [
    [
     25,
@@ -718,24 +734,24 @@
    {
     "group": "a",
     "label": "Strong target",
-    "n": 12,
+    "n": 13,
     "yes": 4,
-    "partly": 8,
+    "partly": 9,
     "no": 0,
-    "decider": 8,
+    "decider": 9,
     "confirm": 1,
-    "linked": 10
+    "linked": 11
    },
    {
     "group": "b",
     "label": "One gap",
-    "n": 28,
+    "n": 29,
     "yes": 3,
     "partly": 2,
-    "no": 23,
-    "decider": 12,
+    "no": 24,
+    "decider": 13,
     "confirm": 0,
-    "linked": 24
+    "linked": 25
    },
    {
     "group": "trade",
@@ -18073,17 +18089,17 @@
   ]
  },
  "stats": {
-  "total": 90,
+  "total": 92,
   "adopters": 3,
-  "tier_a": 12,
-  "tier_b": 28,
+  "tier_a": 13,
+  "tier_b": 29,
   "out": 0,
-  "principals": 224,
-  "linkedin_held": 109,
+  "principals": 233,
+  "linkedin_held": 111,
   "audit_flags": 0,
-  "with_decider": 45,
-  "with_decider_live": 21,
-  "with_decider_confirmed": 42,
+  "with_decider": 47,
+  "with_decider_live": 23,
+  "with_decider_confirmed": 44,
   "with_decider_caveat": 3
  },
  "targets": [
@@ -18631,6 +18647,165 @@
    "has_decider": true,
    "decider_confirmed": false,
    "decider_caveat": true
+  },
+  {
+   "target_id": "HOU-131",
+   "entity_name": "Caldwell Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Cypress, Porter, Willis / Harris, Montgomery",
+   "homepage_url": "https://www.caldwellhomes.com/",
+   "synopsis": "The homebuilding division of Caldwell Companies, launched February 2017, building single-storey homes for buyers aged 55 and over. Three Greater Houston communities: The Heritage at Towne Lake in Cypress, Fairway Pines at The Highlands in Porter, and Chambers Creek in Willis, where a new Heritage Collection opened in July 2026. Homes run $448,600 to $875,000 at 1,900 to 2,819 square feet, on a shared plan library whose names repeat across communities. Ranked 41st on the Houston area 2023 builder list, the only active-adult builder on it. No annual closings figure is published. Towne Lake is developed by its own parent, so part of its pipeline sits on ground the group controls.",
+   "key_stat": "Three 55+ communities, $448,600 to $875,000",
+   "principals": [
+    {
+     "name": "Fred Caldwell",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.caldwellhomes.com/our-team",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Fred%20Caldwell%20Caldwell%20Homes"
+    },
+    {
+     "name": "Peter Barnhart",
+     "role": "President",
+     "source_url": "https://www.caldwellhomes.com/our-team",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Peter%20Barnhart%20Caldwell%20Homes"
+    },
+    {
+     "name": "Tim Mayo",
+     "role": "Senior Vice President of Operations",
+     "source_url": "https://www.caldwellhomes.com/our-team",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tim%20Mayo%20Caldwell%20Homes"
+    },
+    {
+     "name": "Kevin Johnson",
+     "role": "Vice President of Construction and Purchasing",
+     "source_url": "https://www.caldwellhomes.com/our-team",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Kevin%20Johnson%20Caldwell%20Homes"
+    },
+    {
+     "name": "Anthony Moreno",
+     "role": "Vice President of Sales",
+     "source_url": "https://www.caldwellhomes.com/our-team",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Anthony%20Moreno%20Caldwell%20Homes"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "The Heritage at Towne Lake",
+     "detail": "Cypress. Heritage Cove, Sunset Harbor Garden Homes and Sunset Harbor Villas, $448,600 to $875,000. Towne Lake is developed by Caldwell Companies, the parent.",
+     "signal_type": "repeatable",
+     "fit_signal": "Single-storey product on a repeating plan library, on ground the group already controls.",
+     "url": "https://www.caldwellhomes.com/communities/towne-lake"
+    },
+    {
+     "name": "Fairway Pines at The Highlands",
+     "detail": "Porter, Montgomery County, inside a 2,300-acre masterplan. Homes from $471,000, 1,900 to 2,819 square feet.",
+     "signal_type": "repeatable",
+     "fit_signal": "The same plan library again, in a second masterplan, which is what makes the library worth changing once.",
+     "url": "https://www.caldwellhomes.com/communities/the-highlands"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 3,
+    "innovation": 2,
+    "capital_access": 2
+   },
+   "mvp_screen": "One person holds construction and purchasing, the plan library repeats across all three communities, and the price band absorbs a method premium.",
+   "_verdict": "One person holds construction and purchasing, the plan library repeats across all three communities, and the price band absorbs a method premium.",
+   "_why": [
+    "The same named plans, Cardinal, Bluebell, Texas Paintbrush, Bayberry II and Waterlily, sell in more than one community.",
+    "Three communities and a rank of 41 in the metro put it inside the band one or two printers cover.",
+    "It has paid for above-code performance, ENERGY STAR certification and a 2020 PRISM award for an energy-efficient home, but nothing structural."
+   ],
+   "sources": [
+    {
+     "url": "https://www.caldwellhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.caldwellhomes.com/our-team",
+     "date": null
+    },
+    {
+     "url": "https://www.caldwellhomes.com/communities",
+     "date": null
+    },
+    {
+     "url": "https://www.caldwellhomes.com/communities/towne-lake",
+     "date": null
+    },
+    {
+     "url": "https://www.caldwellhomes.com/communities/the-highlands",
+     "date": null
+    },
+    {
+     "url": "https://caldwellcos.com/development/caldwell-homes/caldwell-homes",
+     "date": null
+    },
+    {
+     "url": "https://www.constructiondive.com/news/caldwell-companies-launches-luxury-active-adult-homes-unit/436653/",
+     "date": null
+    },
+    {
+     "url": "https://www.caldwellhomes.com/news/houston-area-2023-builder-rankings-list",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "group": "a",
+   "tier": "A",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "The same named plans, Cardinal, Bluebell, Texas Paintbrush, Bayberry II and Waterlily, sell in more than one community."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three communities and a rank of 41 in the metro put it inside the band one or two printers cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It has paid for above-code performance, ENERGY STAR certification and a 2020 PRISM award for an energy-efficient home, but nothing structural."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Caldwell Homes",
+   "cell": "clear|clear",
+   "clears": 2,
+   "deciders": [
+    "Kevin Johnson"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
   },
   {
    "target_id": "HOU-004",
@@ -20535,6 +20710,150 @@
    "clears": 1,
    "deciders": [
     "Neal Rackleff"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-130",
+   "entity_name": "Long Lake, Ltd.",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Houston / Harris, Montgomery, Fort Bend",
+   "homepage_url": "https://www.longlakeltd.com/",
+   "synopsis": "The largest privately held homebuilder in Greater Houston by its own description, founded 1997, with more than 29,000 homes delivered. 782 closings in 2025 and 912 in 2024, ranked 74th on the 2026 Builder 100. Sells in 22 Greater Houston communities from $249,990 to $627,900, including Sunterra Lakes and Sunterra North. Publishes 38 floor plans across four product lines, Briarwood, Discovery, Lake Ridge and Lakewood, and identifies them by number rather than name. Develops its own land through Woodmere Development Co., which bought 95 acres in Montgomery County in November 2024 and 494 acres beside Bridgeland in 2022. Its about page sells job-built production methods as a control advantage.",
+   "key_stat": "782 closings in 2025, 38 plans",
+   "principals": [
+    {
+     "name": "Craig Jones",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.builderonline.com/firms/long-lake-limited/",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Craig%20Jones%20Long%20Lake%2C%20Ltd."
+    },
+    {
+     "name": "Dustin Rodgers",
+     "role": "Vice President of Construction",
+     "linkedin_url": "https://www.linkedin.com/in/dustin-rodgers-61a9908a/",
+     "decider": true
+    },
+    {
+     "name": "Dave Dronberger",
+     "role": "Construction Manager",
+     "linkedin_url": "https://www.linkedin.com/in/dave-dronberger-9b098315/"
+    },
+    {
+     "name": "Aaron Alford",
+     "role": "Executive Vice President, Woodmere Development Co.",
+     "source_url": "https://wolffcompanies.com/news/in-off-market-deal-long-lake-buys-494-acres-next-to-bridgeland-for-new-community/",
+     "source_evidence": "Woodmere is Long Lake's own land arm, so this seat buys the ground the plans go on.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Aaron%20Alford%20Long%20Lake%2C%20Ltd."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "The 38-plan library",
+     "detail": "Four product lines, Briarwood, Discovery, Lake Ridge and Lakewood, identified by plan number. Creekwood Crossing sells plans 218, 252, 254, 264, 265 and 269 at 1,876 to 2,837 square feet.",
+     "signal_type": "repeatable",
+     "fit_signal": "A numbered plan library repeated across 22 communities is the condition the first count is looking for, and the reason a wall assembly changed once reaches every community at the same time.",
+     "url": "https://www.longlakeltd.com/new-homes/communities/creekwood-crossing/"
+    },
+    {
+     "name": "Woodmere Development Co.",
+     "detail": "The firm's own land arm. 95 acres at Decker Prairie-Rosehill Road in Montgomery County, bought from the Brautigam family in November 2024. 494 acres beside Bridgeland in 2022.",
+     "signal_type": "repeatable",
+     "fit_signal": "It owns the ground it builds on, so a method change does not need a land developer's approval first.",
+     "url": "https://therealdeal.com/texas/houston/2024/11/25/long-lake-purchased-100-acre-tract-in-houston-area/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 0,
+    "capital_access": 3
+   },
+   "mvp_screen": "782 closings across 22 communities on 38 numbered plans, and it develops its own land, so a pilot needs nobody else's permission.",
+   "_verdict": "782 closings across 22 communities on 38 numbered plans, and it develops its own land, so a pilot needs nobody else's permission.",
+   "_why": [
+    "22 communities on 38 plans in four series, about twenty starts per plan a year.",
+    "782 closings in 2025 sits above the band one or two printers cover, so the first order is a line inside the business rather than the whole business.",
+    "Nothing on record. Its about page argues the other way, for job-built production methods as a control advantage."
+   ],
+   "sources": [
+    {
+     "url": "https://www.longlakeltd.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.longlakeltd.com/about/",
+     "date": null
+    },
+    {
+     "url": "https://www.longlakeltd.com/new-homes/communities/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/long-lake-limited/",
+     "date": null
+    },
+    {
+     "url": "https://sunterratx.com/homebuilders/long-lake/",
+     "date": null
+    },
+    {
+     "url": "https://members.ghba.org/memberdirectory/Search/builder-single-family-132864",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "group": "b",
+   "tier": "B",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "22 communities on 38 plans in four series, about twenty starts per plan a year."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "782 closings in 2025 sits above the band one or two printers cover, so the first order is a line inside the business rather than the whole business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. Its about page argues the other way, for job-built production methods as a control advantage."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": 782,
+   "short": "Long Lake, Ltd.",
+   "cell": "clear|partial",
+   "clears": 1,
+   "deciders": [
+    "Dustin Rodgers"
    ],
    "has_decider": true,
    "decider_confirmed": true,
