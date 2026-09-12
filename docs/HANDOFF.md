@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 36 · 2026-09-11
+Build 37 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -142,6 +142,18 @@ A record-integrity pass before the session closed, and it found the largest sile
 **Seven blank headline figures.** Chesmar, RSK and Friendswood showed an empty column, and so did all four land owners, which reads as an oversight rather than as an absence. Each now says what the record holds: acreage and builder rosters for the land owners, the Sekisui ownership for Chesmar, 366 units for RSK. Jamestown's headline still carried the 2020 figure the chart stopped drawing in Build 33; it now matches. The verifier fails on a blank.
 
 **Text.** Zero em dashes, zero aggregator citations, zero wiki citations, no remaining "Titan fit", no remaining instance of the old rule sentence, and the last two "unproven method" strings are gone. Trailing whitespace is now stripped at build time rather than carried into the workbook. One doubled article introduced by an earlier sweep was repaired.
+
+## Build 37: the LinkedIn pass
+
+Run through Héctor's own signed-in Chrome on 12 September 2026, because this session had spent its web search budget and LinkedIn refuses automated fetches. The evidence standard is unchanged: a search-result headline naming the person and the firm together. Roles that execute a specification rather than choose one were not recorded, so no project managers, estimators, superintendents, safety or accounting staff entered the file.
+
+Twenty-five people across thirteen contractors. Firms publishing nobody fell from sixteen to three. Named decision-makers rose from 36 to 44, and LinkedIn profiles held from 77 to 101.
+
+The ones that matter. Scott Clarke, Chief Operating Officer at Harvey-Cleary Builders, on the firm with the deepest owned trade in the section. Mark Scully, President, and Tim Manherz, Vice President, at Encore Concrete Construction, which is employee-owned and therefore decides capital internally. Trent Tellepsen, President, and Daniel Lara, Vice President, at Building Concrete Solutions. Todd Riedel, Chief Operating Officer, and Jeff Raymer, Executive Vice President, at M.L. Deer, the firm that already sells insulated concrete form and installs gantry cranes. Ryan Taylor, Owner at T&T Construction. Scott Anderson and Rodney Horn, both Vice Presidents at Keystone. David Buzzelli, Vice President at Texas A&M Concrete, which also confirms against the firm's own dated news post. And at CIVE, Hugo Domloj, Founder and Chief Executive, alongside Hikmat Zerbe, whose headline confirms the head of structural engineering that broadcast coverage quoted on the printed house in Spring Branch.
+
+Two structural findings came out of the same pass and are recorded as open items rather than as fact. A Satterfield and Pontikes recruiter and a business development specialist for Greco Structures and Rollcon both surface on a Greco search, which suggests Greco sits inside that group and changes who signs. Two people carry T&T Construction alongside RD DevCo and E&S Construction in one headline, which suggests a related group of companies.
+
+Three firms still publish nobody: Baker Construction, where the national leadership is not a Houston decision anyway, plus Live Lone Star and Seaside Construction, which were never part of this pass. Rino Construction returns no owner or officer under either of its names, only project managers and a controller, and that is now stated on the record.
 
 ## Live numbers
 

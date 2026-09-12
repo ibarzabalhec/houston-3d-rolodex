@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 36,
+ "build": 37,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -39,7 +39,7 @@
    false
   ],
   [
-   "36",
+   "44",
    "with a named decision-maker",
    true
   ],
@@ -386,7 +386,7 @@
   ],
   [
    "Who decides",
-   "36 of 90 firms have a named vice president or director of construction, or head of purchasing, and 34 of those 36 can be reached as named without a caveat. The other 2 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "44 of 90 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 44 can be reached as named without a caveat. The other 2 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
   ],
   [
    "Sources",
@@ -398,7 +398,7 @@
   ],
   [
    "Where a firm has no contact",
-   "16 of the 90 firms here publish nobody at all, and 14 of those are contractors. That is recorded on the card rather than left blank, and it is the largest single gap in the file."
+   "3 of the 90 firms here publish nobody at all, and 1 of those are contractors. That is recorded on the card rather than left blank, and it is the largest single gap in the file."
   ],
   [
    "Scope",
@@ -744,9 +744,9 @@
     "yes": 2,
     "partly": 6,
     "no": 14,
-    "decider": 7,
+    "decider": 15,
     "confirm": 0,
-    "linked": 0
+    "linked": 13
    },
    {
     "group": "creative",
@@ -1065,12 +1065,12 @@
   "tier_a": 12,
   "tier_b": 28,
   "out": 0,
-  "principals": 187,
-  "linkedin_held": 77,
-  "audit_flags": 249,
-  "with_decider": 36,
+  "principals": 212,
+  "linkedin_held": 101,
+  "audit_flags": 253,
+  "with_decider": 44,
   "with_decider_live": 21,
-  "with_decider_confirmed": 34,
+  "with_decider_confirmed": 42,
   "with_decider_caveat": 2
  },
  "targets": [
@@ -6299,7 +6299,22 @@
    "homepage_url": "https://www.encoreconcrete.com/",
    "synopsis": "Commercial concrete contractor established in 2017, carrying a 100 percent employee-owned mark on its own homepage, with tilt-up warehouses, data centres and elevated multifamily buildings in its published project types.",
    "key_stat": "Employee-owned, and lists elevated multifamily as a project type",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Mark Scully",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/mark-scully-596648201/",
+     "li_evidence": "Headline reads President at Encore Concrete Construction. Spring, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Tim Manherz",
+     "role": "Vice President",
+     "linkedin_url": "https://www.linkedin.com/in/tim-manherz-9a2b62148/",
+     "li_evidence": "Headline reads Vice President at Encore Concrete Construction. Greater Houston.",
+     "decider": true
+    }
+   ],
    "key_projects": [
     {
      "name": "Modern Heart and Vascular",
@@ -6388,9 +6403,12 @@
    "short": "Encore Concrete Construction",
    "cell": "clear|clear",
    "clears": 2,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Mark Scully",
+    "Tim Manherz"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -6402,7 +6420,22 @@
    "homepage_url": "https://www.keystoneconcrete.com/",
    "synopsis": "Family-owned concrete placement contractor running three placement divisions, structural, commercial and residential, plus sitework and utilities, with its own placing booms, hydraulic self-jacking formwork systems and tower cranes.",
    "key_stat": "1,500 craftsmen, 975,000 cubic yards a year",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Scott Anderson",
+     "role": "Vice President, Keystone Structural Concrete",
+     "linkedin_url": "https://www.linkedin.com/in/scott-anderson-266878141/",
+     "li_evidence": "Headline reads Vice President at Keystone Structural Concrete. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Rodney Horn",
+     "role": "Vice President, Keystone Concrete and Key-Scape",
+     "linkedin_url": "https://www.linkedin.com/in/rodney-horn-963a8048/",
+     "li_evidence": "Headline reads Vice President at Keystone Concrete, LLC/Key-Scape Landscaping. Houston, Texas. Keyscape is the landscaping arm named on the firm's own site.",
+     "decider": true
+    }
+   ],
    "key_projects": [
     {
      "name": "Residential concrete placement",
@@ -6486,9 +6519,12 @@
    "short": "Keystone Concrete Placement",
    "cell": "clear|partial",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Scott Anderson",
+    "Rodney Horn"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -6623,7 +6659,28 @@
    "homepage_url": "https://www.bcshouston.com/",
    "synopsis": "Specialty concrete contractor working either as general contractor or as subcontractor across site concrete, foundations, tilt-wall and elevated concrete, and building three-dimensional working models for clash detection before it pours.",
    "key_stat": "Runs Revit, Tekla, AutoCAD and Navisworks in house",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Trent Tellepsen",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/trent-tellepsen-b8608024/",
+     "li_evidence": "Headline reads President at Building Concrete Solutions. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Daniel Lara",
+     "role": "Vice President",
+     "linkedin_url": "https://www.linkedin.com/in/daniel-lara-24329570/",
+     "li_evidence": "Headline reads Vice President at Building Concrete Solutions. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Jorge Hernandez",
+     "role": "Manager of Operations",
+     "linkedin_url": "https://www.linkedin.com/in/jorge-hern%C3%A1ndez-614616204/",
+     "li_evidence": "Headline reads Manager of Operations at Building Concrete Solutions. Houston, Texas."
+    }
+   ],
    "key_projects": [
     {
      "name": "Three-dimensional preconstruction modelling",
@@ -6700,9 +6757,12 @@
    "short": "Building Concrete Solutions",
    "cell": "partial|clear",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Trent Tellepsen",
+    "Daniel Lara"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -6714,7 +6774,29 @@
    "homepage_url": "https://cive.com/",
    "synopsis": "Full-service design-build firm blending architecture, engineering and construction that collaborated with a printing contractor and an architect on a printed single-family residence in Spring Branch, described on its own site as the first of its kind in the United States.",
    "key_stat": "Engineer and design-build partner on the printed house in Spring Branch",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Hugo Domloj",
+     "role": "Founder and Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/hachem-domloj/",
+     "li_evidence": "Headline reads Founder & CEO at CIVE, Inc. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Hikmat Zerbe",
+     "role": "Head of Structural Engineering",
+     "linkedin_url": "https://www.linkedin.com/in/hikmat-zerbe-b3139669/",
+     "li_evidence": "Headline reads Head of Structural Engineering at CIVE. Houston, Texas. He is the person broadcast coverage quoted on the printed house in Spring Branch.",
+     "decider": true
+    },
+    {
+     "name": "Clemente Barrera",
+     "role": "Vice President of Construction",
+     "linkedin_url": null,
+     "li_evidence": "Headline reads Vice President of Construction at CIVE. Houston, Texas. No profile URL was captured in the pass.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Clemente%20Barrera%20CIVE"
+    }
+   ],
    "key_projects": [
     {
      "name": "Spring Branch printed residence",
@@ -6796,9 +6878,12 @@
    "short": "CIVE",
    "cell": "partial|partial",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Hugo Domloj",
+    "Hikmat Zerbe"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -6810,7 +6895,22 @@
    "homepage_url": "https://www.mldeer.com/",
    "synopsis": "Commercial general contractor and construction manager of more than 25 years that publishes five building types it offers, prefabricated metal, tilt-wall, masonry, insulated concrete form and conventional wood frame, and that also installs gantry, jib, bridge and portal cranes.",
    "key_stat": "Carries insulated concrete form buildings as a standard offering",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Todd Riedel",
+     "role": "Chief Operating Officer",
+     "linkedin_url": "https://www.linkedin.com/in/todd-riedel-2b37185/",
+     "li_evidence": "Headline reads COO at ML Deer Construction. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Jeff Raymer",
+     "role": "Executive Vice President",
+     "linkedin_url": "https://www.linkedin.com/in/jeff-raymer-b29060a/",
+     "li_evidence": "Headline reads Executive Vice President at ML Deer Construction. Houston, Texas.",
+     "decider": true
+    }
+   ],
    "key_projects": [
     {
      "name": "Crane installation",
@@ -6892,9 +6992,12 @@
    "short": "M.L. Deer Construction",
    "cell": "partial|clear",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Todd Riedel",
+    "Jeff Raymer"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -6906,7 +7009,15 @@
    "homepage_url": "https://tandtconstruction.com/",
    "synopsis": "Civil and concrete contractor that also owns its ready-mix delivery through Taylor Made Concrete, using volumetric mixers, alongside site work, tilt-wall building construction and industrial pads.",
    "key_stat": "Runs its own volumetric concrete delivery",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Ryan Taylor",
+     "role": "Owner",
+     "linkedin_url": "https://www.linkedin.com/in/ryan-taylor-594162139/",
+     "li_evidence": "Headline reads Owner at T&T Construction. Greater Houston.",
+     "decider": true
+    }
+   ],
    "key_projects": [
     {
      "name": "Taylor Made Concrete",
@@ -6937,6 +7048,7 @@
     }
    ],
    "audit_flags": [
+    "Two people carry T&T Construction alongside RD DevCo and E&S Construction in the same headline, which suggests a group of related companies. Confirm the structure.",
     "No executive is named on the firm's own site, and no crew count or years in business is published.",
     "No residential or multifamily work appears on its own site."
    ],
@@ -6983,9 +7095,11 @@
    "short": "T&T Construction",
    "cell": "partial|clear",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Ryan Taylor"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -7220,7 +7334,20 @@
    "homepage_url": "https://andradeconstructioncompanies.com/",
    "synopsis": "Self-performing subcontractor across three scopes at once, earthwork, utilities and concrete, carrying small and minority business certification and membership of the Tilt-Up Concrete Association, the American Concrete Institute and the American Society of Concrete Contractors.",
    "key_stat": "Owns earthwork, utilities and concrete",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Eric Rice",
+     "role": "Business Development Manager",
+     "linkedin_url": "https://www.linkedin.com/in/eric-rice-177124352/",
+     "li_evidence": "Headline reads Business Development Manager at Andrade Construction Companies. Houston, Texas."
+    },
+    {
+     "name": "Luis Andrade",
+     "role": "Chief Operating Officer, Andrade Concrete and Construction",
+     "linkedin_url": "https://www.linkedin.com/in/luis-andrade-128317159/",
+     "li_evidence": "Headline reads COO at Andrade Concrete & Construction Inc., which is a different registered name from Andrade Construction Companies. Confirm the two are the same business."
+    }
+   ],
    "key_projects": [
     {
      "name": "Mesa Apartments",
@@ -7311,7 +7438,20 @@
    "homepage_url": "https://grecostructures.com/",
    "synopsis": "Concrete subcontractor working for general contractors across elevated post-tensioned decks, mass concrete and tilt-up, with an award-listed panel record at the top of the height range the trade attempts.",
    "key_stat": "49 panels, tallest 52 feet 7 inches, on one job",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Thomas Valentine",
+     "role": "Operations Manager",
+     "linkedin_url": "https://www.linkedin.com/in/thomas-valentine-6b1a7b117/",
+     "li_evidence": "Headline reads Operations Manager at Greco Structures. Spring, Texas."
+    },
+    {
+     "name": "Jordan Lopez",
+     "role": "Business Development, Greco Structures and Rollcon",
+     "linkedin_url": "https://www.linkedin.com/in/jordan-lopez-528225229/",
+     "li_evidence": "Headline reads Business Development Specialist for Greco Structures & Rollcon. Houston, Texas."
+    }
+   ],
    "key_projects": [
     {
      "name": "HCC West Houston Expansion",
@@ -7346,6 +7486,7 @@
     }
    ],
    "audit_flags": [
+    "A recruiter for the Satterfield and Pontikes family of companies and a business development specialist for Greco Structures and Rollcon both surface on a Greco search, which suggests Greco sits inside that group. Confirm the ownership before an approach; it changes who signs.",
     "No executive is named on the firm's own site, and no crew count or annual volume is published.",
     "No residential or multifamily work appears on its own site."
    ],
@@ -7406,7 +7547,20 @@
    "homepage_url": "https://htxconcrete.com/",
    "synopsis": "Turnkey commercial concrete and site development contractor that calls tilt-wall panels its own specialty and publishes a multifamily category alongside retail, industrial and institutional work.",
    "key_stat": "Names a garden-style multifamily project on its own site",
-   "principals": [],
+   "principals": [
+    {
+     "name": "J. Cameron Guinn",
+     "role": "Vice President, Business Development",
+     "linkedin_url": "https://www.linkedin.com/in/j-cameron-guinn-2047686/",
+     "li_evidence": "Headline reads Vice President Business Development at HTX Concrete. Houston, Texas."
+    },
+    {
+     "name": "Tony Le",
+     "role": "Chief Estimator",
+     "linkedin_url": "https://www.linkedin.com/in/tony-le-81ba0032/",
+     "li_evidence": "Headline reads Chief Estimator at HTX Concrete. Houston, Texas."
+    }
+   ],
    "key_projects": [
     {
      "name": "Cypress Creek Lakes Apartments",
@@ -7504,7 +7658,20 @@
    "homepage_url": "https://rino-con.com/",
    "synopsis": "General contractor, formerly Rosenberger Construction, whose stated specialty is tilt-up and which has historically self-performed concrete, working warehouse, office, healthcare, retail and church work across Houston and Central Texas.",
    "key_stat": "Operating since 1991, tilt-up its stated specialty",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Jeff Rager",
+     "role": "Senior Project Manager",
+     "linkedin_url": "https://www.linkedin.com/in/jeff-rager-b0ab6a380/",
+     "li_evidence": "Headline reads Senior Project Manager, Rino (Rosenberger) Construction. Spring, Texas, and it carries both names, which confirms the rename."
+    },
+    {
+     "name": "James Abbate",
+     "role": "Controller",
+     "linkedin_url": "https://www.linkedin.com/in/james-abbate/",
+     "li_evidence": "Headline reads Controller at Rosenberger Construction. Katy, Texas."
+    }
+   ],
    "key_projects": [
     {
      "name": "TCC Multi-Family Interiors",
@@ -7541,7 +7708,8 @@
    "audit_flags": [
     "The firm's own pages carry two different completed square footage figures, 48 million on one page and over 38 million on another. Neither is repeated here as fact.",
     "Its tilt-up page lists single and multi-family residences among possible applications, but no residential project is named anywhere on the site.",
-    "No executive is named on the firm's own site."
+    "No executive is named on the firm's own site.",
+    "No owner, president or vice president surfaces for the firm under either name. The senior people who do are project managers and a controller."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -7701,7 +7869,15 @@
    "homepage_url": "https://www.texasamconcrete.com/",
    "synopsis": "Turnkey concrete contractor that supplies, forms, places and finishes its own work, with a tilt-up record carried in the Tilt-Up Concrete Association's own project archive.",
    "key_stat": "79 panels and 52,116 square feet of tilt-up wall on one job",
-   "principals": [],
+   "principals": [
+    {
+     "name": "David Buzzelli",
+     "role": "Vice President",
+     "linkedin_url": "https://www.linkedin.com/in/david-buzzelli-faci-77109b29/",
+     "li_evidence": "Headline reads Vice President of Texas A&M Concrete, LLC. Houston, Texas. He is also named as a founder in the firm's own dated news post.",
+     "decider": true
+    }
+   ],
    "key_projects": [
     {
      "name": "TCC Multi-Family Interiors",
@@ -7782,9 +7958,11 @@
    "short": "Texas A&M Concrete",
    "cell": "clear|partial",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "David Buzzelli"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -7895,7 +8073,14 @@
    "homepage_url": "https://leolaconstruction.com/houston/",
    "synopsis": "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single family and townhome communities, delivering the whole wall package under one contract through a network of more than 900 subcontractors.",
    "key_stat": "9,900 homes a year company-wide, across 300 communities",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Chris Vogler",
+     "role": "Business Development Manager",
+     "linkedin_url": "https://www.linkedin.com/in/chris-vogler-56239a52/",
+     "li_evidence": "Headline reads Business Development Manager at Leola Construction. Spring, Texas. He is the only Leola person in Greater Houston that a search returns."
+    }
+   ],
    "key_projects": [
     {
      "name": "Houston division",
@@ -7932,7 +8117,8 @@
    "audit_flags": [
     "It counts more than 900 subcontractors and no direct field crew, so there is no crew to redeploy onto a machine.",
     "Headquarters and ownership sit in Florida, so a Houston equipment decision would be made elsewhere.",
-    "About thirty names appear on the firm's own about page without titles beside them. None is recorded here."
+    "About thirty names appear on the firm's own about page without titles beside them. None is recorded here.",
+    "Only one Leola person in Greater Houston surfaces at all, in business development. The firm is Florida-owned and the leadership sits there."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -8107,7 +8293,21 @@
    "homepage_url": "https://www.harveycleary.com/",
    "synopsis": "General contractor that self-performs an unusually deep set of structural trades through IQI Construction LLC, described on its own site as a captured company and solely owned and operated entity.",
    "key_stat": "Owns formwork, rebar, place and finish, and tiltwall erection",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Scott Clarke",
+     "role": "Chief Operating Officer",
+     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
+     "li_evidence": "Headline reads Chief Operating Officer at Harvey | Harvey-Cleary Builders. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Jarrod Portelance",
+     "role": "Project Director",
+     "linkedin_url": "https://www.linkedin.com/in/jarrodportelance/",
+     "li_evidence": "Headline reads Project Director at Harvey | Harvey-Cleary Builders. Houston, Texas."
+    }
+   ],
    "key_projects": [
     {
      "name": "IQI Construction LLC",
@@ -8184,9 +8384,11 @@
    "short": "Harvey Cleary",
    "cell": "partial|partial",
    "clears": 0,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Scott Clarke"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {

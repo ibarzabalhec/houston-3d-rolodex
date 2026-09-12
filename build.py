@@ -25,13 +25,14 @@ from creative import CREATIVE, NEW_CREATIVE, EXTRA as CEXTRA
 from competitors import ICON as ICON_RECORD, COMPETITORS, CONSOLIDATION
 from builders import BUILDERS
 from trades import (TRADES, NEW_TRADES, NEW_METHOD, PRINTED_ADOPTERS,
-                    TRADE_DECIDERS, TRADE_DECIDER_NOTES)
+                    TRADE_DECIDERS, TRADE_DECIDER_NOTES,
+                    TRADE_PEOPLE, TRADE_PEOPLE_FLAGS)
 import research2 as R2
 from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 36
+BUILD = 37
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -126,6 +127,17 @@ def finalize(recs):
             t.setdefault(k, [])
         t.setdefault("hue_hex", "#FF4F00")
         t.setdefault("tail", False)
+
+        for _n, _r, _u, _ev, _dec in TRADE_PEOPLE.get(t["target_id"], []):
+            if not any(p["name"] == _n for p in t["principals"]):
+                _p = {"name": _n, "role": _r, "linkedin_url": _u, "li_evidence": _ev}
+                if _dec:
+                    _p["decider"] = True
+                t["principals"].append(_p)
+        if t["target_id"] in TRADE_PEOPLE_FLAGS:
+            _f = TRADE_PEOPLE_FLAGS[t["target_id"]]
+            if _f not in t["audit_flags"]:
+                t["audit_flags"].append(_f)
 
         if t["target_id"] in TRADE_DECIDER_NOTES:
             _n = TRADE_DECIDER_NOTES[t["target_id"]]

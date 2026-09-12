@@ -870,3 +870,134 @@ TRADE_DECIDER_NOTES = {
     "HOU-112": "Travis Boone runs the listed parent, not the Houston concrete business. The capital "
                "decision would sit with him; the work does not.",
 }
+
+# target_id -> [(name, role, linkedin_url, headline evidence, is_decider)]
+# One LinkedIn pass, 12 September 2026, run in a signed-in session. The evidence
+# is the search-result headline naming the person and the firm together, which is
+# the same standard the builder layer holds to. Project managers, estimators,
+# superintendents, safety and accounting are not recorded: they execute a
+# specification rather than choose one.
+TRADE_PEOPLE = {
+    "HOU-101": [
+        ("Scott Anderson", "Vice President, Keystone Structural Concrete",
+         "https://www.linkedin.com/in/scott-anderson-266878141/",
+         "Headline reads Vice President at Keystone Structural Concrete. Houston, Texas.", True),
+        ("Rodney Horn", "Vice President, Keystone Concrete and Key-Scape",
+         "https://www.linkedin.com/in/rodney-horn-963a8048/",
+         "Headline reads Vice President at Keystone Concrete, LLC/Key-Scape Landscaping. Houston, "
+         "Texas. Keyscape is the landscaping arm named on the firm's own site.", True),
+    ],
+    "HOU-102": [
+        ("Scott Clarke", "Chief Operating Officer",
+         "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
+         "Headline reads Chief Operating Officer at Harvey | Harvey-Cleary Builders. Houston, Texas.", True),
+        ("Jarrod Portelance", "Project Director",
+         "https://www.linkedin.com/in/jarrodportelance/",
+         "Headline reads Project Director at Harvey | Harvey-Cleary Builders. Houston, Texas.", False),
+    ],
+    "HOU-103": [
+        ("David Buzzelli", "Vice President",
+         "https://www.linkedin.com/in/david-buzzelli-faci-77109b29/",
+         "Headline reads Vice President of Texas A&M Concrete, LLC. Houston, Texas. He is also named "
+         "as a founder in the firm's own dated news post.", True),
+    ],
+    "HOU-105": [
+        ("Mark Scully", "President",
+         "https://www.linkedin.com/in/mark-scully-596648201/",
+         "Headline reads President at Encore Concrete Construction. Spring, Texas.", True),
+        ("Tim Manherz", "Vice President",
+         "https://www.linkedin.com/in/tim-manherz-9a2b62148/",
+         "Headline reads Vice President at Encore Concrete Construction. Greater Houston.", True),
+    ],
+    "HOU-106": [
+        ("Thomas Valentine", "Operations Manager",
+         "https://www.linkedin.com/in/thomas-valentine-6b1a7b117/",
+         "Headline reads Operations Manager at Greco Structures. Spring, Texas.", False),
+        ("Jordan Lopez", "Business Development, Greco Structures and Rollcon",
+         "https://www.linkedin.com/in/jordan-lopez-528225229/",
+         "Headline reads Business Development Specialist for Greco Structures & Rollcon. Houston, Texas.", False),
+    ],
+    "HOU-107": [
+        ("Eric Rice", "Business Development Manager",
+         "https://www.linkedin.com/in/eric-rice-177124352/",
+         "Headline reads Business Development Manager at Andrade Construction Companies. Houston, Texas.", False),
+        ("Luis Andrade", "Chief Operating Officer, Andrade Concrete and Construction",
+         "https://www.linkedin.com/in/luis-andrade-128317159/",
+         "Headline reads COO at Andrade Concrete & Construction Inc., which is a different registered "
+         "name from Andrade Construction Companies. Confirm the two are the same business.", False),
+    ],
+    "HOU-108": [
+        ("J. Cameron Guinn", "Vice President, Business Development",
+         "https://www.linkedin.com/in/j-cameron-guinn-2047686/",
+         "Headline reads Vice President Business Development at HTX Concrete. Houston, Texas.", False),
+        ("Tony Le", "Chief Estimator",
+         "https://www.linkedin.com/in/tony-le-81ba0032/",
+         "Headline reads Chief Estimator at HTX Concrete. Houston, Texas.", False),
+    ],
+    "HOU-109": [
+        ("Ryan Taylor", "Owner",
+         "https://www.linkedin.com/in/ryan-taylor-594162139/",
+         "Headline reads Owner at T&T Construction. Greater Houston.", True),
+    ],
+    "HOU-111": [
+        ("Trent Tellepsen", "President",
+         "https://www.linkedin.com/in/trent-tellepsen-b8608024/",
+         "Headline reads President at Building Concrete Solutions. Houston, Texas.", True),
+        ("Daniel Lara", "Vice President",
+         "https://www.linkedin.com/in/daniel-lara-24329570/",
+         "Headline reads Vice President at Building Concrete Solutions. Houston, Texas.", True),
+        ("Jorge Hernandez", "Manager of Operations",
+         "https://www.linkedin.com/in/jorge-hern%C3%A1ndez-614616204/",
+         "Headline reads Manager of Operations at Building Concrete Solutions. Houston, Texas.", False),
+    ],
+    "HOU-114": [
+        ("Jeff Rager", "Senior Project Manager",
+         "https://www.linkedin.com/in/jeff-rager-b0ab6a380/",
+         "Headline reads Senior Project Manager, Rino (Rosenberger) Construction. Spring, Texas, and "
+         "it carries both names, which confirms the rename.", False),
+        ("James Abbate", "Controller",
+         "https://www.linkedin.com/in/james-abbate/",
+         "Headline reads Controller at Rosenberger Construction. Katy, Texas.", False),
+    ],
+    "HOU-118": [
+        ("Chris Vogler", "Business Development Manager",
+         "https://www.linkedin.com/in/chris-vogler-56239a52/",
+         "Headline reads Business Development Manager at Leola Construction. Spring, Texas. He is the "
+         "only Leola person in Greater Houston that a search returns.", False),
+    ],
+    "HOU-119": [
+        ("Todd Riedel", "Chief Operating Officer",
+         "https://www.linkedin.com/in/todd-riedel-2b37185/",
+         "Headline reads COO at ML Deer Construction. Houston, Texas.", True),
+        ("Jeff Raymer", "Executive Vice President",
+         "https://www.linkedin.com/in/jeff-raymer-b29060a/",
+         "Headline reads Executive Vice President at ML Deer Construction. Houston, Texas.", True),
+    ],
+    "HOU-129": [
+        ("Hugo Domloj", "Founder and Chief Executive Officer",
+         "https://www.linkedin.com/in/hachem-domloj/",
+         "Headline reads Founder & CEO at CIVE, Inc. Houston, Texas.", True),
+        ("Hikmat Zerbe", "Head of Structural Engineering",
+         "https://www.linkedin.com/in/hikmat-zerbe-b3139669/",
+         "Headline reads Head of Structural Engineering at CIVE. Houston, Texas. He is the person "
+         "broadcast coverage quoted on the printed house in Spring Branch.", True),
+        ("Clemente Barrera", "Vice President of Construction",
+         None,
+         "Headline reads Vice President of Construction at CIVE. Houston, Texas. No profile URL was "
+         "captured in the pass.", False),
+    ],
+}
+
+# Open items raised by the same pass.
+TRADE_PEOPLE_FLAGS = {
+    "HOU-106": "A recruiter for the Satterfield and Pontikes family of companies and a business "
+               "development specialist for Greco Structures and Rollcon both surface on a Greco "
+               "search, which suggests Greco sits inside that group. Confirm the ownership before "
+               "an approach; it changes who signs.",
+    "HOU-109": "Two people carry T&T Construction alongside RD DevCo and E&S Construction in the "
+               "same headline, which suggests a group of related companies. Confirm the structure.",
+    "HOU-114": "No owner, president or vice president surfaces for the firm under either name. The "
+               "senior people who do are project managers and a controller.",
+    "HOU-118": "Only one Leola person in Greater Houston surfaces at all, in business development. "
+               "The firm is Florida-owned and the leadership sits there.",
+}
