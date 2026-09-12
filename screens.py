@@ -33,7 +33,7 @@ VERDICT = {
 "HOU-023": "125,000 homes, Houston HQ, 50 years. Its supplier recognition covers insulation and fire-stopping, not the envelope.",
 "HOU-013": "120 communities and local ownership. Its published innovation page covers smart-home features and floor plans.",
 "HOU-031": "36 freestanding emergency centres and over 100 build-to-suits, the most repeated small-commercial format screened.",
-"HOU-032": "Attached townhome production, which is the right product type. Ownership sourced only from a contact database.",
+"HOU-032": "Attached townhome production, the product type a printed party wall serves. The owner is held on a LinkedIn headline alone; the firm's own site publishes nobody.",
 "HOU-019": "$155M into 389 build-to-rent homes, Houston HQ, holds long term. Figures date to 2022.",
 "HOU-027": "156 units inside Sunterra, a Houston-based development director, and a 10,000-home national brand. Costs withheld.",
 "HOU-011": "11,400 acres and $900M from Pershing Square, but it sells lots, so the builder buys the wall rather than Howard Hughes.",

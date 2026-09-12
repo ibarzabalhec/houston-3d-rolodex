@@ -91,11 +91,11 @@ METHOD = [
   "the records behind the page, taken when the page is generated. None is estimated or rounded."],
  ["Yes, Partly, No",
   "Each verdict is written per firm with its reason, from the sources on the firm's page. A Partly "
-  "records partial evidence; a No records an absent record, not a finding against the firm. Yes and Partly both keep a firm in. Only a No takes it out."],
+  "records partial evidence; a No records an absent record, not a finding against the firm. Yes and Partly both count as holding a count. A No does not."],
  ["Annual closings",
   "Only published figures are drawn: Builder 100 firm pages, HousingWire, or the firm's own site, each "
   "named in the tooltip and the table. A range is the firm's own range. Where a figure is dated, the "
-  "year is shown. Forty-eight firms publish none and are not drawn."],
+  "year is shown. The count is against the builders on the deck: a contractor closes no homes and is not drawn."],
  ["Machine-fit bands", BANDS_METHOD],
  ["Printed units",
   "Units per project as reported by the developer or the printer, with the outlet named. A project "

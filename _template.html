@@ -280,6 +280,8 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .yn.clear{background:var(--ink);border-color:var(--ink);color:#fff}
 .yn.partial{border-color:var(--ink3);color:var(--ink);background:var(--paper3)}
 .yn.innovation.clear{background:var(--orange);border-color:var(--orange);color:var(--ink)}
+.yn.none{background:none;border:0;color:var(--ink4);text-transform:none;letter-spacing:0;
+  font-weight:500;padding-left:0}
 .yn.chk{border-color:var(--ink3);color:var(--ink);background:var(--paper3);
   border-style:dashed}
 .empty{color:var(--ink3);font-size:14px;padding:26px 0}
@@ -484,6 +486,8 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .cf-card .reflection .tile{box-shadow:none}
 /* the mirrored copy doubles the paint cost of every visible card */
 .cf-stage.dragging .reflection{display:none}
+/* on a phone the card is short enough that the mirrored badges read as a fault */
+@media(max-width:640px){.cf-card .reflection{display:none}}
 .cf-stage.dragging .tile::before{display:none}
 .cf-title{text-align:center;margin:18px 0 0}
 .cf-title .name{font:700 clamp(22px,3vw,34px)/1.1 var(--sans);letter-spacing:-.03em}
@@ -765,7 +769,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   </div>
 
   <div class="wrap" id="stageList" hidden>
-    <div class="swipe" id="listSwipe"><div class="lab swipe-hint" aria-hidden="true">Swipe sideways for the other counts and the call list</div><div class="scroll"><table><thead><tr>
+    <div class="swipe" id="listSwipe"><div class="lab swipe-hint" aria-hidden="true">Swipe sideways for the counts</div><div class="scroll"><table><thead><tr>
       <th>Firm</th><th>Repetition</th><th>Printer fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline figure</th><th class="ac"><span class="vh">Call list</span></th>
     </tr></thead><tbody id="tb"></tbody></table></div></div>
   </div>
@@ -998,7 +1002,7 @@ function initAtmosphere() {
     // Corner coordinate marker — elegant, just the survey label
     ctx.globalAlpha = colors.alphaLabel * 1.1;
     ctx.font = '10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
-    ctx.fillText('23°N  /  99°W', 24, h - 24);
+    ctx.fillText('29°N  /  95°W', 24, h - 24);
     ctx.restore();
   }
 
@@ -1264,7 +1268,7 @@ document.getElementById('by').innerHTML='Prepared by '+esc(D.byline.split(' · '
 document.getElementById('hl').innerHTML=D.headline_html;
 document.getElementById('sub').textContent=D.sub;
 (function heroFigure(){
-  var NB=T.filter(function(t){return t.group!=='trade';}).length;
+  var NB=(D.market&&D.market.closings_base)||T.filter(function(t){return t.group!=='trade';}).length;
   var MK=D.market||{}, rows=(MK.closings||[]).slice(); if(!rows.length) return;
   var W=1040,H=178,L=8,R=8,axisY=104,max=1200;
   var X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
@@ -1299,7 +1303,7 @@ document.getElementById('sub').textContent=D.sub;
   h+='<line class="hgrid" x1="'+hx+'" y1="'+(axisY-22-lanes*18)+'" x2="'+hx+'" y2="'+(axisY-24)+'"/>'+
      '<text class="hname" x="'+(hx-6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="end">'+esc(hi.short)+', '+String(hi.high).replace(/\B(?=(\d{3})+(?!\d))/g,',')+' a year</text>';
   h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+rows.length+' of the '+NB+
-     ' builders screened publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
+     ' builders on the deck publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
      '<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
   h+='</svg>';
   document.getElementById('heroFig').innerHTML=h;
@@ -1323,7 +1327,7 @@ document.getElementById('legend').innerHTML=
   '<i><span class="sw p"></span>partial evidence</i>'+
   '<i><span class="sw"></span>none on record</i>'+
   '<i><span class="sw k"></span>already buying printed walls</i>'+
-  '<i class="rule"><b>Yes</b> and <b>Partly</b> both keep a firm in. Only a <b>No</b> takes it out.</i>';
+  '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed.</i>';
 
 T.forEach(function(t){t._b=[t.entity_name,t.short,t.region,t.synopsis,t.key_stat,t.mvp_screen,
   (t.principals||[]).map(function(p){return p.name+' '+p.role;}).join(' '),
@@ -1388,7 +1392,7 @@ function drawList(){
         ['repeatability','machine_fit','innovation'].map(function(k){
           return '<td><span class="yn '+k+' '+t.marks[k]+'">'+W[t.marks[k]]+'</span></td>';}).join('')+
         '<td>'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
-                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':'<span class="yn">\u2014</span>'))+'</td>'+
+                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':'<span class="yn none">none published</span>'))+'</td>'+
         '<td class="hf">'+esc(t.key_stat||'')+'</td>'+
         '<td class="ac"><button class="rowadd'+(inCall?' on':'')+'" data-add="'+t.target_id+
           '" aria-pressed="'+inCall+'" aria-label="'+(inCall?'Remove ':'Add ')+esc(t.entity_name)+
@@ -1458,7 +1462,7 @@ function firmPage(t){
         :'<p class="note">No builder in this file is confirmed inside these communities yet.</p>')));
   }
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
-    '<p class="cnote">Yes and Partly both keep a firm in. Only a No takes it out.</p>'));
+    '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
   h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'));
 
   if((t.principals||[]).length){
@@ -1980,7 +1984,8 @@ function render(){
   // one bar, on every view that lists firms
   document.getElementById('filters').hidden=(mode==='field'||mode==='market');
   if(mode!=='field') drawFilterBar();
-  document.getElementById('legend').hidden=(mode==='field'||mode==='market');
+  document.getElementById('legend').hidden=(mode==='field'||mode==='market'||
+    (mode==='scroll'&&window.matchMedia('(max-width:640px)').matches));
   // Search reads firm, person and project records. The field section is prose
   // about competitors, so the box would look live and do nothing.
   var qb=document.getElementById('q');
@@ -2016,7 +2021,7 @@ function drawPrintRoster(){
         '<td class="m">'+W[t.marks.repeatability]+'</td>'+
         '<td class="m">'+W[t.marks.machine_fit]+'</td>'+
         '<td class="m">'+W[t.marks.innovation]+'</td>'+
-        '<td>'+esc(who||'\u2014')+'</td>'+
+        '<td>'+esc(who||'none published')+'</td>'+
         '<td>'+esc(t.key_stat||'')+'</td></tr>';
     });
   });
@@ -2025,7 +2030,7 @@ function drawPrintRoster(){
     '<th>Track record</th><th>Decision-maker</th><th>Headline figure</th></tr></thead>'+
     '<tbody>'+(h||'<tr><td colspan="6">No firms match the current filter.</td></tr>')+'</tbody></table>'+
     '<p style="margin-top:14px;font-size:8pt;color:#555">'+shown+' of '+T.length+
-    ' firms shown. Yes and Partly both keep a firm in. Only a No takes it out. '+esc(D.byline||'')+'</p>';
+    ' firms shown. Yes and Partly both count as holding a count. A No does not. '+esc(D.byline||'')+'</p>';
 }
 
 document.addEventListener('click',function(e){

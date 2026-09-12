@@ -169,8 +169,10 @@ COMPETITORS = [
  "status": "bankrupt",
  "line": "Filed Chapter 11 on 24 December 2025.",
  "facts": [
-  ["What happened", "Chapter 11 on 24 December 2025. Its Texas presence was a single live-print "
-                    "demonstration house in Fort Worth."],
+  ["What happened", "Chapter 11 on 24 December 2025. Its Texas presence was one house in Fort "
+                    "Worth, printed live over two days in May 2024 with Boxer Property of Houston "
+                    "as the development partner. No coverage after June 2024 confirms it was "
+                    "completed."],
  ],
 },
 {

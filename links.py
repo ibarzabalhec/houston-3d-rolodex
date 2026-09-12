@@ -378,10 +378,6 @@ PERSON = {
 ("HOU-031", "Jeff Read"): ("https://www.read-king.com/team", "Principal."),
 ("HOU-031", "Ewing King"): ("https://www.read-king.com/team", "Principal."),
 ("HOU-031", "Blake Allen"): ("https://www.read-king.com/team", "Chief Financial Officer."),
-("HOU-032", "Vinod Ramani"): (
-    "https://www.bbb.org/us/tx/houston/profile/real-estate/urban-living-0915-52001132",
-    "Listed as chief executive in the Better Business Bureau record for Urban Living. The firm's "
-    "own site refuses automated retrieval, so this is a third-party citation, not the firm's."),
 ("HOU-035", "Mary Lawler"): (
     "https://avenuecdc.org/about-us/board-staff/",
     "Chief Executive Officer on Avenue's own board and staff page, marking twenty-five years of "

@@ -31,7 +31,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 34
+BUILD = 35
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -288,7 +288,7 @@ _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_CREATIVE)
         + expand_builders(NEW_TRADES, "contractor", "wall_trade")
         + expand_builders(NEW_METHOD)
-        + expand_builders(PRINTED_ADOPTERS, "developer", "proven_adopter"))
+        + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer"))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
 for t in targets:
@@ -387,13 +387,20 @@ MATRIX_NOTE = (
     "The top right cell holds <b>%s</b> that repeat a plan set and build at a volume one or two machines "
     "would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the "
     "%d that are in on all three counts in the strip above; %s in both. Of the %d here, <b>%d</b> "
-    "%s paid for an unproven method, %s. <b>%d</b> %s partial evidence. The other <b>%d</b> %s no "
+    "%s paid for a method that was new at the time, %s. <b>%d</b> %s partial evidence. The other <b>%d</b> %s no "
     "method record."
     % (_n(len(best), "firm", "firms"), g["a"], _n(_overlap, "firm appears", "firms appear"),
        len(best), len(best_yes), "has" if len(best_yes) == 1 else "have", _yes,
        len(best_part), "shows" if len(best_part) == 1 else "show",
        len(best_no), "has" if len(best_no) == 1 else "have")
 )
+
+# A contractor closes no homes, so the closings figure is drawn against the
+# builders on the deck and nothing else. One number, used everywhere it is said.
+_n_builders = sum(1 for t in deck if t["group"] != "trade")
+_n_nocontact = sum(1 for t in deck if not t["principals"])
+_n_nocontact_trade = sum(1 for t in deck if not t["principals"] and t["group"] == "trade")
+_n_closings = sum(1 for tid in CLOSINGS if any(t["target_id"] == tid for t in deck))
 
 DATA = {
  "version": "2.0",
@@ -471,7 +478,7 @@ DATA = {
     "whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes "
     "a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is "
     "partial, and national purchasing fails. Track record asks whether the firm has ever paid for "
-    "a new way of building. Yes and Partly both keep a firm in. Only a No takes it out."],
+    "a new way of building. Yes and Partly both count as holding a count. A No does not. A firm in on all three sits in the first section; one gap puts it in the second; the rest are grouped by what they are rather than by what they score."],
    ["The counts, read for a contractor",
     "A contractor does not close houses, so the same three questions are asked of the work rather "
     "than of the plan set. Repetition asks whether the firm puts up the same wall again and again "
@@ -492,9 +499,17 @@ DATA = {
     "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose "
     "headline names the firm, or a page on the firm's own site that names the person with a title, and "
     "the sentence that identified them sits under the name. Where neither exists the field is empty "
-    "with the reason stated. No URL, title or figure here was inferred."],
+    "with the reason stated. No source URL, title or figure here was inferred. The only built links "
+    "are the LinkedIn searches marked search, which run a keyword query rather than claim a page."],
+   ["What is in the contractor section",
+    "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. "
+    "The scope rule above is a builder rule and does not apply to them: most of this trade in Houston "
+    "is commercial and industrial, and where a contractor publishes no residential work its record "
+    "says so."],
    ["Where a firm has no contact",
-    "Several firms publish nobody. That is recorded on the card rather than left blank."],
+    "%d of the %d firms here publish nobody at all, and %d of those are contractors. That is "
+    "recorded on the card rather than left blank, and it is the largest single gap in the file."
+    % (_n_nocontact, n, _n_nocontact_trade)],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "
@@ -522,7 +537,8 @@ DATA = {
         "group": next(t["group"] for t in deck if t["target_id"] == tid)}
        for tid, (lo, hi, yr, src) in CLOSINGS.items() if any(t["target_id"] == tid for t in deck)],
        key=lambda r: -r["high"]),
-   "closings_missing": n - sum(1 for tid in CLOSINGS if any(t["target_id"] == tid for t in deck)),
+   "closings_missing": _n_builders - _n_closings,
+   "closings_base": _n_builders,
    "bands": BANDS,
    "by_section": [
        {"group": gk, "label": lbl,
@@ -562,7 +578,11 @@ DATA = {
 # footnote is enough for a reader to discount the rest. The build refuses them
 # rather than relying on whoever writes the next record to remember.
 BANNED_SOURCES = ("wikipedia.", "wikiwand.", "dbpedia.", "fandom.", ".wiki/", "wiki.",
-                  "everipedia.", "infogalactic.")
+                  "everipedia.", "infogalactic.",
+                  # contact-data aggregators. A person's title is held from the firm's own
+                  # page or from a LinkedIn headline, never from a resold database.
+                  "zoominfo.", "rocketreach.", "apollo.io", "crunchbase.", "buzzfile.",
+                  "signalhire.", "lusha.", "leadiq.", "dnb.com", "bbb.org", "yelp.com")
 
 
 def _scan_for_banned(obj, path=""):

@@ -215,7 +215,7 @@ function initAtmosphere() {
     // Corner coordinate marker — elegant, just the survey label
     ctx.globalAlpha = colors.alphaLabel * 1.1;
     ctx.font = '10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
-    ctx.fillText('23°N  /  99°W', 24, h - 24);
+    ctx.fillText('29°N  /  95°W', 24, h - 24);
     ctx.restore();
   }
 

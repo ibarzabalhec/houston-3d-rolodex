@@ -18,7 +18,7 @@ The first two counts place a firm on a 3×3 grid. Sections (already buying print
 
 ## Five views
 
-Firms are grouped into sections before the counts are totalled: already buying printed walls, strong target, one gap, builds the wall not the house (the concrete, shell and wall contractors, where the counts are read for a contractor rather than a builder), custom and hybrid job, national builder, land owner, and already working with ICON.
+Firms are grouped into sections before the counts are totalled: already buying printed walls, strong target, one gap, builds the wall not the house (twenty-two concrete, shell and wall contractors, where the counts are read for a contractor rather than a builder), custom and hybrid job, national builder, land owner, and already working with ICON.
 
 **Screen** the grid · **List** a table with per-row add and add-all · **Cover** an iPod-style cover flow · **Field** twelve competitors, ICON's own record, and the code and permitting route with verbatim quotes from the documents · **Market** five figures with a table and a source under each, and a note on how every number is produced.
 

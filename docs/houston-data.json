@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 34,
+ "build": 35,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -34,7 +34,7 @@
    false
   ],
   [
-   "11",
+   "12",
    "in on all three counts",
    false
   ],
@@ -44,12 +44,12 @@
    true
   ],
   [
-   "5",
+   "3",
    "already printing, with a competitor",
    false
   ],
   [
-   "21",
+   "22",
    "contractors who build the wall",
    false
   ]
@@ -69,9 +69,9 @@
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 23,
-   "partial": 44,
-   "fail": 23,
+   "clear": 22,
+   "partial": 43,
+   "fail": 25,
    "total": 90
   },
   {
@@ -103,7 +103,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>10 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 11 that are in on all three counts in the strip above; 2 firms appear in both. Of the 10 here, <b>3</b> have paid for an unproven method, Wan Bridge and ICF Constructors, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>6</b> have no method record.",
+ "matrix_note": "The top right cell holds <b>9 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 12 that are in on all three counts in the strip above; 2 firms appear in both. Of the 9 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>1</b> shows partial evidence. The other <b>6</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -345,7 +345,7 @@
    "facts": [
     [
      "What happened",
-     "Chapter 11 on 24 December 2025. Its Texas presence was a single live-print demonstration house in Fort Worth."
+     "Chapter 11 on 24 December 2025. Its Texas presence was one house in Fort Worth, printed live over two days in May 2024 with Boxer Property of Houston as the development partner. No coverage after June 2024 confirms it was completed."
     ]
    ]
   },
@@ -378,7 +378,7 @@
  "limits": [
   [
    "The three counts",
-   "Repetition asks whether a firm builds the same plans in one place. Printer fit asks whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is partial, and national purchasing fails. Track record asks whether the firm has ever paid for a new way of building. Yes and Partly both keep a firm in. Only a No takes it out."
+   "Repetition asks whether a firm builds the same plans in one place. Printer fit asks whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is partial, and national purchasing fails. Track record asks whether the firm has ever paid for a new way of building. Yes and Partly both count as holding a count. A No does not. A firm in on all three sits in the first section; one gap puts it in the second; the rest are grouped by what they are rather than by what they score."
   ],
   [
    "The counts, read for a contractor",
@@ -390,11 +390,15 @@
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose headline names the firm, or a page on the firm's own site that names the person with a title, and the sentence that identified them sits under the name. Where neither exists the field is empty with the reason stated. No URL, title or figure here was inferred."
+   "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose headline names the firm, or a page on the firm's own site that names the person with a title, and the sentence that identified them sits under the name. Where neither exists the field is empty with the reason stated. No source URL, title or figure here was inferred. The only built links are the LinkedIn searches marked search, which run a keyword query rather than claim a page."
+  ],
+  [
+   "What is in the contractor section",
+   "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. The scope rule above is a builder rule and does not apply to them: most of this trade in Houston is commercial and industrial, and where a contractor publishes no residential work its record says so."
   ],
   [
    "Where a firm has no contact",
-   "Several firms publish nobody. That is recorded on the card rather than left blank."
+   "16 of the 90 firms here publish nobody at all, and 14 of those are contractors. That is recorded on the card rather than left blank, and it is the largest single gap in the file."
   ],
   [
    "Scope",
@@ -490,11 +494,11 @@
   },
   {
    "title": "Yes, Partly, No",
-   "text": "Each verdict is written per firm with its reason, from the sources on the firm's page. A Partly records partial evidence; a No records an absent record, not a finding against the firm. Yes and Partly both keep a firm in. Only a No takes it out."
+   "text": "Each verdict is written per firm with its reason, from the sources on the firm's page. A Partly records partial evidence; a No records an absent record, not a finding against the firm. Yes and Partly both count as holding a count. A No does not."
   },
   {
    "title": "Annual closings",
-   "text": "Only published figures are drawn: Builder 100 firm pages, HousingWire, or the firm's own site, each named in the tooltip and the table. A range is the firm's own range. Where a figure is dated, the year is shown. Forty-eight firms publish none and are not drawn."
+   "text": "Only published figures are drawn: Builder 100 firm pages, HousingWire, or the firm's own site, each named in the tooltip and the table. A range is the firm's own range. Where a figure is dated, the year is shown. The count is against the builders on the deck: a contractor closes no homes and is not drawn."
   },
   {
    "title": "Machine-fit bands",
@@ -622,7 +626,7 @@
     "source": "The firm's own site, Texas and Tennessee",
     "fit": "clear",
     "method": "fail",
-    "group": "national"
+    "group": "creative"
    },
    {
     "id": "HOU-060",
@@ -685,7 +689,8 @@
     "group": "b"
    }
   ],
-  "closings_missing": 77,
+  "closings_missing": 55,
+  "closings_base": 68,
   "bands": [
    [
     25,
@@ -702,22 +707,22 @@
    {
     "group": "adopter",
     "label": "Already buying printed walls",
-    "n": 5,
-    "yes": 5,
+    "n": 3,
+    "yes": 3,
     "partly": 0,
     "no": 0,
-    "decider": 1,
+    "decider": 0,
     "confirm": 0,
     "linked": 3
    },
    {
     "group": "a",
     "label": "Strong target",
-    "n": 11,
-    "yes": 3,
+    "n": 12,
+    "yes": 4,
     "partly": 8,
     "no": 0,
-    "decider": 7,
+    "decider": 8,
     "confirm": 1,
     "linked": 9
    },
@@ -735,8 +740,8 @@
    {
     "group": "trade",
     "label": "Builds the wall, not the house",
-    "n": 21,
-    "yes": 1,
+    "n": 22,
+    "yes": 2,
     "partly": 6,
     "no": 14,
     "decider": 7,
@@ -746,24 +751,24 @@
    {
     "group": "creative",
     "label": "Custom and hybrid job",
-    "n": 9,
+    "n": 10,
     "yes": 4,
     "partly": 2,
-    "no": 3,
-    "decider": 1,
+    "no": 4,
+    "decider": 2,
     "confirm": 0,
-    "linked": 9
+    "linked": 10
    },
    {
     "group": "national",
     "label": "National builder",
-    "n": 8,
+    "n": 7,
     "yes": 0,
     "partly": 0,
-    "no": 8,
-    "decider": 6,
+    "no": 7,
+    "decider": 5,
     "confirm": 1,
-    "linked": 8
+    "linked": 7
    },
    {
     "group": "channel",
@@ -1056,13 +1061,13 @@
  },
  "stats": {
   "total": 90,
-  "adopters": 5,
-  "tier_a": 11,
+  "adopters": 3,
+  "tier_a": 12,
   "tier_b": 28,
   "out": 0,
   "principals": 187,
   "linkedin_held": 77,
-  "audit_flags": 250,
+  "audit_flags": 249,
   "with_decider": 36,
   "with_decider_live": 21,
   "with_decider_confirmed": 34,
@@ -1278,227 +1283,6 @@
    "short": "Commander Homes",
    "cell": "partial|clear",
    "clears": 2,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-128",
-   "entity_name": "Boxer Property",
-   "entity_type": "developer",
-   "entity_role": "proven_adopter",
-   "region": "Houston, Harris",
-   "homepage_url": "https://www.boxerproperty.com/",
-   "synopsis": "Houston-headquartered commercial property owner and manager founded in 1992, overseeing more than 15 million square feet across 16 cities, which partnered on a printed house in Fort Worth and whose founder said in print that the future is printed houses made out of concrete.",
-   "key_stat": "Paid for a printed house in Fort Worth",
-   "principals": [
-    {
-     "name": "Andrew Segal",
-     "role": "Chairman and Chief Executive Officer",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Segal%20Boxer%20Property"
-    },
-    {
-     "name": "Justin Segal",
-     "role": "President",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Justin%20Segal%20Boxer%20Property"
-    },
-    {
-     "name": "Blake Morris",
-     "role": "Chief Financial Officer",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Blake%20Morris%20Boxer%20Property"
-    },
-    {
-     "name": "John Rentz",
-     "role": "Vice President and General Counsel",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=John%20Rentz%20Boxer%20Property"
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "LoMa house",
-     "detail": "100 West Bolt Street, Fort Worth, Tarrant. About 1,000 square feet, walls printed over seven to eight days in May 2024 on a printing contractor's machine, with Boxer as the development partner.",
-     "signal_type": "method_risk",
-     "fit_signal": "The firm has already carried the risk of a printed building once.",
-     "url": "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 3,
-    "capital_access": 3
-   },
-   "mvp_screen": "A Houston owner with 15 million square feet that has already written a cheque for a printed building, and said publicly why.",
-   "_verdict": "A Houston owner with 15 million square feet that has already written a cheque for a printed building, and said publicly why.",
-   "_why": [
-    "Commercial buildings across sixteen cities. The product is not a repeated house plan.",
-    "A portfolio this size could absorb a machine, though the firm is an owner rather than a builder and would hire the crew.",
-    "It partnered on a printed house in Fort Worth with a printing contractor and its founder is on the record saying the future is printed concrete houses."
-   ],
-   "sources": [
-    {
-     "url": "https://www.boxerproperty.com/about-us/",
-     "date": null
-    },
-    {
-     "url": "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/",
-     "date": null
-    },
-    {
-     "url": "https://www.voxelmatters.com/black-buffalo-3d-live-print-home-texas/",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "The printed house is in Fort Worth, not Houston. The firm is Houston-headquartered; the project is not.",
-    "No coverage after June 2024 confirms the Fort Worth house was completed. Treat completion as unverified."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "clear"
-   },
-   "holds": 3,
-   "capital_mark": "clear",
-   "group": "adopter",
-   "tier": "P",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Commercial buildings across sixteen cities. The product is not a repeated house plan."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "A portfolio this size could absorb a machine, though the firm is an owner rather than a builder and would hire the crew."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "It partnered on a printed house in Fort Worth with a printing contractor and its founder is on the record saying the future is printed concrete houses."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Boxer Property",
-   "cell": "partial|partial",
-   "clears": 1,
-   "deciders": [
-    "Andrew Segal",
-    "Justin Segal"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-129",
-   "entity_name": "CIVE",
-   "entity_type": "developer",
-   "entity_role": "proven_adopter",
-   "region": "Houston, Harris",
-   "homepage_url": "https://cive.com/",
-   "synopsis": "Full-service design-build firm blending architecture, engineering and construction that collaborated with a printing contractor and an architect on a printed single-family residence in Spring Branch, described on its own site as the first of its kind in the United States.",
-   "key_stat": "Engineer and design-build partner on the printed house in Spring Branch",
-   "principals": [],
-   "key_projects": [
-    {
-     "name": "Spring Branch printed residence",
-     "detail": "Houston, Harris. Printing ran from July 2022 to May 2023, with CIVE as engineer and design-build partner alongside the printing contractor and the architect. The published size differs between sources and is not repeated here.",
-     "signal_type": "method_risk",
-     "fit_signal": "The only Houston firm outside the printing trade that has engineered a printed building.",
-     "url": "https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 3,
-    "capital_access": 2
-   },
-   "mvp_screen": "A Houston design-build firm that has already engineered and delivered a printed building. The technical staff to run a machine is already inside it.",
-   "_verdict": "A Houston design-build firm that has already engineered and delivered a printed building. The technical staff to run a machine is already inside it.",
-   "_why": [
-    "Design-build projects, each one different.",
-    "A design-build firm of this size would run a printer as one capability rather than as the business.",
-    "It engineered and delivered a printed house in Houston in collaboration with a printing contractor, and publishes the project on its own site."
-   ],
-   "sources": [
-    {
-     "url": "https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/",
-     "date": null
-    },
-    {
-     "url": "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "Its own project page names no individual. A structural engineering lead was named in broadcast coverage of the house; confirm the title on the firm's own page before recording it.",
-    "The published size of the house differs between the printing contractor's release and broadcast coverage, so no figure is carried here.",
-    "The owner of the Spring Branch house is not published anywhere."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "clear"
-   },
-   "holds": 3,
-   "capital_mark": "partial",
-   "group": "adopter",
-   "tier": "P",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Design-build projects, each one different."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "A design-build firm of this size would run a printer as one capability rather than as the business."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "It engineered and delivered a printed house in Houston in collaboration with a printing contractor, and publishes the project on its own site."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "CIVE",
-   "cell": "partial|partial",
-   "clears": 1,
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -1864,6 +1648,131 @@
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-128",
+   "entity_name": "Boxer Property",
+   "entity_type": "developer",
+   "entity_role": "vertical_buyer",
+   "region": "Houston, Harris",
+   "homepage_url": "https://www.boxerproperty.com/",
+   "synopsis": "Houston-headquartered commercial property owner and manager founded in 1992, overseeing more than 15 million square feet across 16 cities, which partnered on a printed house in Fort Worth and whose founder said in print that the future is printed houses made out of concrete.",
+   "key_stat": "Paid for a printed house in Fort Worth",
+   "principals": [
+    {
+     "name": "Andrew Segal",
+     "role": "Chairman and Chief Executive Officer",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Segal%20Boxer%20Property"
+    },
+    {
+     "name": "Justin Segal",
+     "role": "President",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Justin%20Segal%20Boxer%20Property"
+    },
+    {
+     "name": "Blake Morris",
+     "role": "Chief Financial Officer",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Blake%20Morris%20Boxer%20Property"
+    },
+    {
+     "name": "John Rentz",
+     "role": "Vice President and General Counsel",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=John%20Rentz%20Boxer%20Property"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "LoMa house",
+     "detail": "100 West Bolt Street, Fort Worth, Tarrant. About 1,000 square feet, walls printed over seven to eight days in May 2024 on a printing contractor's machine, with Boxer as the development partner.",
+     "signal_type": "method_risk",
+     "fit_signal": "The firm has already carried the risk of a printed building once.",
+     "url": "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 3,
+    "capital_access": 3
+   },
+   "mvp_screen": "A Houston owner with 15 million square feet that has paid for a printed building, in Fort Worth, and said in print why.",
+   "_verdict": "A Houston owner with 15 million square feet that has paid for a printed building, in Fort Worth, and said in print why.",
+   "_why": [
+    "Commercial buildings across sixteen cities. The product is not a repeated house plan.",
+    "A portfolio this size could absorb a machine, though the firm is an owner rather than a builder and would hire the crew.",
+    "It partnered on a printed house in Fort Worth with a printing contractor and its founder is on the record saying the future is printed concrete houses."
+   ],
+   "sources": [
+    {
+     "url": "https://www.boxerproperty.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/",
+     "date": null
+    },
+    {
+     "url": "https://www.voxelmatters.com/black-buffalo-3d-live-print-home-texas/",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "The printed house is in Fort Worth, not Houston. The firm is Houston-headquartered; the project is not.",
+    "No coverage after June 2024 confirms the Fort Worth house was completed. Treat completion as unverified."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "clear",
+   "group": "a",
+   "tier": "A",
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial buildings across sixteen cities. The product is not a repeated house plan."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A portfolio this size could absorb a machine, though the firm is an owner rather than a builder and would hire the crew."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "It partnered on a printed house in Fort Worth with a printing contractor and its founder is on the record saying the future is printed concrete houses."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Boxer Property",
+   "cell": "partial|partial",
+   "clears": 1,
+   "deciders": [
+    "Andrew Segal",
+    "Justin Segal"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -2522,8 +2431,8 @@
     "innovation": 3,
     "capital_access": 1
    },
-   "mvp_screen": "It moved its wall production into a factory and publishes the price list. That is the same argument a printer makes, reached by a different route.",
-   "_verdict": "It moved its wall production into a factory and publishes the price list. That is the same argument a printer makes, reached by a different route.",
+   "mvp_screen": "It moved its wall production into a factory and publishes the price list.",
+   "_verdict": "It moved its wall production into a factory and publishes the price list.",
    "_why": [
     "A published product line rather than one-off design, though no built volume is published.",
     "No annual volume is published. On the bands, a firm with no published figure is a Partly.",
@@ -3314,9 +3223,7 @@
      "name": "Vinod Ramani",
      "role": "Owner",
      "linkedin_url": "https://www.linkedin.com/in/vinod-ramani-4a46788/",
-     "li_evidence": "Indexed title reads Vinod Ramani, Urban Living.",
-     "source_url": "https://www.bbb.org/us/tx/houston/profile/real-estate/urban-living-0915-52001132",
-     "source_evidence": "Listed as chief executive in the Better Business Bureau record for Urban Living. The firm's own site refuses automated retrieval, so this is a third-party citation, not the firm's."
+     "li_evidence": "Indexed title reads Vinod Ramani, Urban Living."
     }
    ],
    "key_projects": [
@@ -3336,7 +3243,7 @@
     "capital_access": 1,
     "machine_fit": 3
    },
-   "mvp_screen": "Attached townhome production, the product type a printed party wall serves. Ownership sourced only from a contact database.",
+   "mvp_screen": "Attached townhome production, the product type a printed party wall serves. The owner is held on a LinkedIn headline alone; the firm's own site publishes nobody.",
    "sources": [
     {
      "url": "https://urbanliving.com/developments.php",
@@ -3344,7 +3251,7 @@
     }
    ],
    "audit_flags": [
-    "Ownership sourced only from a third-party contact database, not a company page. Unverified.",
+    "The firm's own site publishes no leadership and refuses automated retrieval. The owner is held on an indexed LinkedIn headline naming him with the firm, and on nothing else.",
     "No named communities, unit counts or capital figures.",
     "No innovation-appetite evidence."
    ],
@@ -4402,7 +4309,7 @@
      "name": "Ker Thomson Home",
      "detail": "Houston, Harris. Insulated concrete form walls with triple-pane hurricane-rated windows, certified by IBHS Fortified, LEED Platinum and Zero Energy Ready, and winner of Best Large Residential at the 2014 National ICF Builder Awards.",
      "signal_type": "method_risk",
-     "fit_signal": "A builder that shopped seven wall systems before choosing one will listen to an eighth.",
+     "fit_signal": "A builder that compared seven wall systems before choosing one has done the comparison before.",
      "url": "https://buildblock.com/ker-thomson-home-houston-tx-triple-certified-ibhs-usgbc-doe-house-country/"
     }
    ],
@@ -6180,14 +6087,14 @@
      "name": "Rockport rebuild",
      "detail": "Rockport, Aransas. Insulated concrete form used for all exterior walls and the suspended floor slab, 4,375 square feet of living space on 6,700 square feet of form, 25 days of installation, 300 cubic yards of concrete, floor elevated 14 feet above mean flood level on more than 40 poured-in-place columns.",
      "signal_type": "method_risk",
-     "fit_signal": "A coastal rebuild is where a concrete wall already wins the argument on its own.",
+     "fit_signal": "On the coast the wind and water case for a concrete wall is already made.",
      "url": "https://icfmag.com/2020/02/hurricane-harvey-rebuild/"
     }
    ],
    "capital_signals": [],
    "scores": {
     "repeatability": 3,
-    "machine_fit": 3,
+    "machine_fit": 2,
     "innovation": 3,
     "capital_access": 1
    },
@@ -6195,7 +6102,7 @@
    "_verdict": "Twenty-four years building concrete walls instead of wood ones, with its own crews. The only contractor screened whose whole business is a non-conventional wall.",
    "_why": [
     "The same wall system, installed again and again across Houston and the coast since 2002.",
-    "A shell contractor at this size would have one or two printers working most of the year.",
+    "No crew count or homes-a-year figure is published. On the bands, a firm with no published figure is a Partly, and that is the first thing to establish on the call.",
     "Its entire business is a wall method that was new when it adopted it. The crews are trained on twelve form systems and run a twenty-step checklist before every placement."
    ],
    "sources": [
@@ -6217,7 +6124,7 @@
    "new_layer": true,
    "marks": {
     "repeatability": "clear",
-    "machine_fit": "clear",
+    "machine_fit": "partial",
     "innovation": "clear"
    },
    "holds": 3,
@@ -6231,8 +6138,8 @@
    "team_url": null,
    "team_note": null,
    "short": "ICF Constructors",
-   "cell": "clear|clear",
-   "clears": 3,
+   "cell": "clear|partial",
+   "clears": 2,
    "deciders": [
     "Matt Zetlmeisl"
    ],
@@ -6296,7 +6203,7 @@
    "_verdict": "A 150-person self-performing concrete sub, still owned by the three brothers who started it. One or two printers would cover a real share of the wall it puts up.",
    "_why": [
     "Tilt-up and foundation work repeating across four counties from one Houston yard.",
-    "At 150 field and office staff, one or two printers would carry a real share of a year's wall work rather than sitting idle.",
+    "150 office and field staff on the firm's own count. That is the only published size in this section, and at that size one or two printers cover a real share of a year's wall.",
     "No method statement on record. Its published work is conventional tilt-up and foundations."
    ],
    "sources": [
@@ -6354,7 +6261,7 @@
      "name": "Modern Heart and Vascular",
      "detail": "Humble, Harris. 100,962 square feet, 32 panels, four floors. Tilt-Up Achievement Award 2025. General contractor Arch-Con Corporation.",
      "signal_type": "repeatable",
-     "fit_signal": "A four-storey panel job, which is the height band the printer's evaluation report reaches toward.",
+     "fit_signal": "A four-storey panel job. The evaluation report for a printed wall covers walls to twelve feet.",
      "url": "https://tilt-up.org/projects/profile/?id=6722"
     },
     {
@@ -6376,7 +6283,7 @@
    "_verdict": "Employee-owned, so the capital decision is made inside the company. Elevated multifamily is one of the seven project types it publishes.",
    "_why": [
     "Tilt-up warehouses, retail centres and schools repeating inside the Houston market.",
-    "A contractor of this size would put one or two printers to work rather than park them.",
+    "No crew count or annual volume is published. The one published job runs to 32 panels across four floors. On the bands, a firm with no annual figure is a Partly.",
     "No method statement on record. The 2025 tilt-up award is for execution, not for a new method."
    ],
    "sources": [
@@ -6442,7 +6349,7 @@
      "name": "Driscoll Apartments",
      "detail": "Named on the firm's own structural placement page.",
      "signal_type": "repeatable",
-     "fit_signal": "Multifamily placement work, which is the closest published analogue to a repeated wall.",
+     "fit_signal": "Multifamily placement work, the closest published example of a repeated wall on its record.",
      "url": "https://www.keystoneconcrete.com/"
     }
    ],
@@ -6550,7 +6457,7 @@
    "_verdict": "It already owns a prefabrication plant and runs separate multifamily and single family divisions, with a named leader on each. The walls it builds are interior, not structural.",
    "_why": [
     "Interior wall and ceiling packages repeating across multifamily and single family work in one metro.",
-    "A contractor with divisions this size would run a printer as one line inside the business.",
+    "No employee count or annual unit figure is published. On the bands, a firm with no published figure is a Partly.",
     "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory, which is the nearest thing to the argument for a printer."
    ],
    "sources": [
@@ -6623,11 +6530,11 @@
     "innovation": 2,
     "capital_access": 2
    },
-   "mvp_screen": "A concrete subcontractor that models its own work in three dimensions before pouring it. The software habit is the part that transfers to a printer.",
-   "_verdict": "A concrete subcontractor that models its own work in three dimensions before pouring it. The software habit is the part that transfers to a printer.",
+   "mvp_screen": "A concrete subcontractor that models its own work in three dimensions before pouring it. A printed wall arrives as a model too.",
+   "_verdict": "A concrete subcontractor that models its own work in three dimensions before pouring it. A printed wall arrives as a model too.",
    "_why": [
     "Concrete packages recurring across Houston projects under both delivery models.",
-    "A specialty contractor at this size would carry one or two printers across its own jobs.",
+    "No crew count, revenue or project size is published. Nothing on the site sizes the work, so on the bands this is a Partly.",
     "It bought and staffed a modelling stack, Revit, Tekla, AutoCAD and Navisworks, to plan its pours. A printed wall arrives as a model first, so the habit transfers, though modelling is not itself a building method."
    ],
    "sources": [
@@ -6667,6 +6574,80 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-129",
+   "entity_name": "CIVE",
+   "entity_type": "developer",
+   "entity_role": "vertical_buyer",
+   "region": "Houston, Harris",
+   "homepage_url": "https://cive.com/",
+   "synopsis": "Full-service design-build firm blending architecture, engineering and construction that collaborated with a printing contractor and an architect on a printed single-family residence in Spring Branch, described on its own site as the first of its kind in the United States.",
+   "key_stat": "Engineer and design-build partner on the printed house in Spring Branch",
+   "principals": [],
+   "key_projects": [
+    {
+     "name": "Spring Branch printed residence",
+     "detail": "Houston, Harris. Printing ran from July 2022 to May 2023, with CIVE as engineer and design-build partner alongside the printing contractor and the architect. The published size differs between sources and is not repeated here.",
+     "signal_type": "method_risk",
+     "fit_signal": "A Houston firm outside the printing trade that has engineered a printed building.",
+     "url": "https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 3,
+    "capital_access": 2
+   },
+   "mvp_screen": "A Houston design-build firm that has already engineered and delivered a printed building. The technical staff to run a machine is already inside it.",
+   "_verdict": "A Houston design-build firm that has already engineered and delivered a printed building. The technical staff to run a machine is already inside it.",
+   "_why": [
+    "Design-build projects, each one different.",
+    "No headcount, revenue or annual project figure is published. On the bands, a firm with no published figure is a Partly.",
+    "It engineered and delivered a printed house in Houston in collaboration with a printing contractor, and publishes the project on its own site."
+   ],
+   "sources": [
+    {
+     "url": "https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/",
+     "date": null
+    },
+    {
+     "url": "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "Its own project page names no individual. A structural engineering lead was named in broadcast coverage of the house; confirm the title on the firm's own page before recording it.",
+    "The published size of the house differs between the printing contractor's release and broadcast coverage, so no figure is carried here.",
+    "The owner of the Spring Branch house is not published anywhere."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "group": "trade",
+   "tier": "W",
+   "last_verified": "2026-09-11",
+   "why": [],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "CIVE",
+   "cell": "partial|partial",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-119",
    "entity_name": "M.L. Deer Construction",
    "entity_type": "contractor",
@@ -6692,11 +6673,11 @@
     "innovation": 2,
     "capital_access": 2
    },
-   "mvp_screen": "It already sells a concrete wall system to commercial clients, and it installs gantry cranes. Both halves of a printer are inside the business.",
-   "_verdict": "It already sells a concrete wall system to commercial clients, and it installs gantry cranes. Both halves of a printer are inside the business.",
+   "mvp_screen": "It already sells a concrete wall system to commercial clients, and it installs gantry cranes. A printer is a gantry that places concrete.",
+   "_verdict": "It already sells a concrete wall system to commercial clients, and it installs gantry cranes. A printer is a gantry that places concrete.",
    "_why": [
     "Commercial buildings across the Gulf Coast. The structures differ project to project.",
-    "A construction manager of this size would put one or two printers to work across its own jobs.",
+    "No revenue, crew count or project count is published. On the bands, a firm with no published figure is a Partly.",
     "It carries insulated concrete form construction in its standard menu alongside tilt-wall and masonry, so it has sold and built a concrete wall system rather than only a wood one. No named project is published to date it."
    ],
    "sources": [
@@ -6766,11 +6747,11 @@
     "innovation": 2,
     "capital_access": 2
    },
-   "mvp_screen": "It owns the mix as well as the placing. A printer eats concrete by the yard, and this firm makes its own.",
-   "_verdict": "It owns the mix as well as the placing. A printer eats concrete by the yard, and this firm makes its own.",
+   "mvp_screen": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
+   "_verdict": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
    "_why": [
     "Industrial and commercial concrete recurring across the east side of the metro.",
-    "A contractor of this size would put one or two printers to work on its own sites.",
+    "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly.",
     "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
    ],
    "sources": [
@@ -6803,80 +6784,6 @@
    "team_note": null,
    "short": "T&T Construction",
    "cell": "partial|clear",
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-113",
-   "entity_name": "Baker Concrete Construction",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Houston operations, Harris",
-   "homepage_url": "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461",
-   "synopsis": "Concrete subcontractor with a standing Houston industrial office, named as the concrete subcontractor on the tallest tilt-wall job currently under way in the metro.",
-   "key_stat": "61 panels at 70 feet, the heaviest about 87 tons",
-   "principals": [],
-   "key_projects": [
-    {
-     "name": "Harris Health Central Fill Pharmacy",
-     "detail": "Houston, Harris. 145,000 square feet, 61 panels at 70 feet, heaviest about 87 tons. General contractor Skanska, erector MSD Building Corp, owner Harris Health System. Completion expected August 2026.",
-     "signal_type": "repeatable",
-     "fit_signal": "A four-storey tilt-wall job in Houston, which is the height a printed wall is trying to reach.",
-     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 1,
-    "capital_access": 3
-   },
-   "mvp_screen": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here.",
-   "_verdict": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here.",
-   "_why": [
-    "Panel and structural concrete work recurring across the Houston market.",
-    "A contractor working at this scale would run a printer as one line rather than as the business.",
-    "No method statement on record. Working at the top of the panel size range is difficulty, not a new method."
-   ],
-   "sources": [
-    {
-     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
-     "date": null
-    },
-    {
-     "url": "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "The Houston listing gives a contact name without a title, which is not enough to record.",
-    "Whether the capital decision is made in Houston is not published.",
-    "The firm's own website was not read in this pass, so the Houston office scope, crew count and leadership are unconfirmed. Verify before outreach."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "clear",
-   "group": "trade",
-   "tier": "W",
-   "last_verified": "2026-09-11",
-   "why": [],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Baker Concrete Construction",
-   "cell": "clear|partial",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -6930,11 +6837,11 @@
     "innovation": 1,
     "capital_access": 3
    },
-   "mvp_screen": "Over 44,000 apartment homes and 200-plus projects. Garden-style at volume is the most repeated wall in the metro.",
-   "_verdict": "Over 44,000 apartment homes and 200-plus projects. Garden-style at volume is the most repeated wall in the metro.",
+   "mvp_screen": "Over 44,000 apartment homes and 200-plus projects. Garden-style apartments repeat the same wall more than any other product here.",
+   "_verdict": "Over 44,000 apartment homes and 200-plus projects. Garden-style apartments repeat the same wall more than any other product here.",
    "_why": [
     "Garden-style and mid-rise apartment buildings repeating across Texas markets from a Houston office.",
-    "A contractor with 44,000 units behind it would run one or two printers as a line inside the business.",
+    "Over 44,000 apartment homes in 45 years, so the wall volume is there. It states that it works through trade partners rather than self-performing, so the machine would sit with a subcontractor rather than with Blazer.",
     "No method statement on record. The only construction-method language on the site is the list of building types it builds."
    ],
    "sources": [
@@ -7000,7 +6907,7 @@
      "name": "Sam Houston High School",
      "detail": "Houston, Harris. 257 panels in four thicknesses, 175,820 square feet of tilt-up wall on a 338,969 square foot building. Tilt-Up Achievement Award 2019.",
      "signal_type": "repeatable",
-     "fit_signal": "A 257-panel job is the production rate a printer is measured against.",
+     "fit_signal": "A 257-panel job is the production rate a printed wall is measured against.",
      "url": "https://tilt-up.org/projects/profile/?id=5900"
     }
    ],
@@ -7088,11 +6995,11 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "It owns the dirt, the utilities and the concrete on the same site. A printer would land on a slab its own crews poured.",
-   "_verdict": "It owns the dirt, the utilities and the concrete on the same site. A printer would land on a slab its own crews poured.",
+   "mvp_screen": "It owns the earthwork, the utilities and the concrete on the same site, so a printer would stand on a slab its own crews poured.",
+   "_verdict": "It owns the earthwork, the utilities and the concrete on the same site, so a printer would stand on a slab its own crews poured.",
    "_why": [
     "Site and concrete packages recurring across Houston jobs, though the buildings themselves differ.",
-    "A self-performing sub of this breadth would put one or two printers to work across its own sites.",
+    "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly.",
     "No method statement on record."
    ],
    "sources": [
@@ -7146,7 +7053,7 @@
      "name": "HCC West Houston Expansion",
      "detail": "Katy, Harris. 49 panels, tallest 52 feet 7 inches, 45,000 square feet of tilt-up wall on a 125,000 square foot building. Tilt-Up Achievement Award 2022.",
      "signal_type": "repeatable",
-     "fit_signal": "Panel height at this range is the part of the trade a printed wall has to answer.",
+     "fit_signal": "The evaluation report for a printed wall reaches twelve feet. These panels are four times that.",
      "url": "https://tilt-up.org/projects/profile/?id=6324"
     }
    ],
@@ -7157,11 +7064,11 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "Panels at 52 feet and elevated post-tensioned decks. The work is difficult, repeats inside one metro, and is bought by general contractors rather than by owners.",
-   "_verdict": "Panels at 52 feet and elevated post-tensioned decks. The work is difficult, repeats inside one metro, and is bought by general contractors rather than by owners.",
+   "mvp_screen": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
+   "_verdict": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
    "_why": [
     "Panel and deck work recurring across Houston projects for a standing set of general contractors.",
-    "A subcontractor at this level of difficulty would run a printer as one crew among several.",
+    "No crew count or annual volume is published. The one published job runs to 49 panels. On the bands, a firm with no annual figure is a Partly.",
     "No method statement on record."
    ],
    "sources": [
@@ -7241,7 +7148,7 @@
    "_verdict": "One of two contractors screened that names an actual multifamily project on its own site. The published work is paving-heavy.",
    "_why": [
     "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall.",
-    "A turnkey contractor at this size would carry one or two printers across its own jobs.",
+    "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job.",
     "No method statement on record."
    ],
    "sources": [
@@ -7281,80 +7188,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "HOU-118",
-   "entity_name": "Leola Construction",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Houston division, working Harris, Fort Bend, Montgomery and Waller",
-   "homepage_url": "https://leolaconstruction.com/houston/",
-   "synopsis": "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single family and townhome communities, delivering the whole wall package under one contract through a network of more than 900 subcontractors.",
-   "key_stat": "9,900 homes a year company-wide, across 300 communities",
-   "principals": [],
-   "key_projects": [
-    {
-     "name": "Houston division",
-     "detail": "Named on the firm's own site as partnering with builders and developers on single family and townhome communities in Katy, Cypress, Sugar Land, Conroe and The Woodlands.",
-     "signal_type": "repeatable",
-     "fit_signal": "The wall package for production housing, sold as one contract.",
-     "url": "https://leolaconstruction.com/houston/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 1,
-    "capital_access": 2
-   },
-   "mvp_screen": "It sells the entire wall package to production builders, which is the procurement a printed wall would displace. It owns almost no direct field labour.",
-   "_verdict": "It sells the entire wall package to production builders, which is the procurement a printed wall would displace. It owns almost no direct field labour.",
-   "_why": [
-    "Single family and townhome communities across the north and west of the metro, taking the same wall package community after community.",
-    "9,900 homes a year on the firm's own count, company-wide across Florida and Texas. That is far above what one or two printers cover, and no Houston-only figure is published.",
-    "No method statement on record."
-   ],
-   "sources": [
-    {
-     "url": "https://leolaconstruction.com/houston/",
-     "date": null
-    },
-    {
-     "url": "https://leolaconstruction.com/",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "It counts more than 900 subcontractors and no direct field crew, so there is no crew to redeploy onto a machine.",
-    "Headquarters and ownership sit in Florida, so a Houston equipment decision would be made elsewhere.",
-    "About thirty names appear on the firm's own about page without titles beside them. None is recorded here."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "partial",
-   "group": "trade",
-   "tier": "W",
-   "last_verified": "2026-09-11",
-   "why": [],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Leola Construction",
-   "cell": "clear|partial",
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "HOU-114",
    "entity_name": "Rino Construction",
    "entity_type": "contractor",
@@ -7384,7 +7217,7 @@
    "_verdict": "Thirty-five years of tilt-up as the stated specialty. On at least one award-listed job it subcontracted the panels rather than pouring them.",
    "_why": [
     "Tilt-up buildings recurring across two Texas metros since 1991.",
-    "A general contractor of this size would run a printer as one self-perform line.",
+    "Its own pages carry two different completed square footage figures and neither is repeated here, so nothing published sizes a year's work. On the bands that is a Partly.",
     "No method statement on record."
    ],
    "sources": [
@@ -7450,7 +7283,7 @@
      "name": "Custom residential concrete",
      "detail": "Named on the firm's own site, covering driveways, culvert installation, engineered slabs and retaining walls.",
      "signal_type": "repeatable",
-     "fit_signal": "A firm already pouring engineered residential slabs is one step from printing on them.",
+     "fit_signal": "A firm already pouring engineered residential slabs pours the surface a printer stands on.",
      "url": "https://silverspurconcrete.com/"
     }
    ],
@@ -7461,11 +7294,11 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "The only contractor screened that pairs tilt-wall with a published residential concrete line. Engineered residential slabs are where a printed wall starts.",
-   "_verdict": "The only contractor screened that pairs tilt-wall with a published residential concrete line. Engineered residential slabs are where a printed wall starts.",
+   "mvp_screen": "The only contractor screened that pairs tilt-wall with a published residential concrete line, including engineered slabs.",
+   "_verdict": "The only contractor screened that pairs tilt-wall with a published residential concrete line, including engineered slabs.",
    "_why": [
     "Commercial concrete and metal buildings recurring across the north side of the metro.",
-    "A contractor at this size would put one or two printers to work rather than park them.",
+    "No crew count, revenue or project size is published anywhere on the site. On the bands, a firm with no published figure is a Partly.",
     "No method statement on record."
    ],
    "sources": [
@@ -7522,7 +7355,7 @@
      "name": "TCC Multi-Family Interiors",
      "detail": "Houston. 79 panels, tallest 43 feet 6 inches, 52,116 square feet of tilt-up wall, built January to December 2019. Tilt-Up Achievement Award 2020.",
      "signal_type": "repeatable",
-     "fit_signal": "A panel count at that scale is the volume a printer has to beat on cost per square foot.",
+     "fit_signal": "A panel count at that scale is the volume a printed wall has to beat on cost per square foot.",
      "url": "https://tilt-up.org/projects/profile/?id=5900"
     }
    ],
@@ -7581,6 +7414,157 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-113",
+   "entity_name": "Baker Construction",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston industrial office, Harris, inside a national firm",
+   "homepage_url": "https://bakerconstruction.com/",
+   "synopsis": "Concrete specialty contractor, formerly trading as Baker Concrete Construction, with a standing Houston industrial office inside a national business of more than 12,500 people, named as the concrete subcontractor on the tallest tilt-wall job under way in the metro.",
+   "key_stat": "61 panels at 70 feet, the heaviest about 87 tons",
+   "principals": [],
+   "key_projects": [
+    {
+     "name": "Harris Health Central Fill Pharmacy",
+     "detail": "Houston, Harris. 145,000 square feet, 61 panels at 70 feet, heaviest about 87 tons. General contractor Skanska, erector MSD Building Corp, owner Harris Health System. Completion expected August 2026.",
+     "signal_type": "repeatable",
+     "fit_signal": "A four-storey tilt-wall job in Houston, well above what a printed wall is evaluated for.",
+     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here. The firm is national.",
+   "_verdict": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here. The firm is national.",
+   "_why": [
+    "Panel and structural concrete work recurring across the Houston market.",
+    "More than 12,500 people across the United States on the firm's own count, and first on a national ranking of concrete specialty contractors. A machine purchase at that size runs through a national desk, which the bands score as a No.",
+    "No method statement on record. Working at the top of the panel size range is difficulty, not a new method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
+     "date": null
+    },
+    {
+     "url": "https://bakerconstruction.com/",
+     "date": null
+    },
+    {
+     "url": "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "The firm's own site names no executive and no Houston office. The Houston address comes from a trade association listing.",
+    "It is on the deck as the contractor on the metro's tallest tilt-wall job, not as a likely buyer. A firm of 12,500 people decides equipment centrally."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "holds": 1,
+   "capital_mark": "clear",
+   "group": "trade",
+   "tier": "W",
+   "last_verified": "2026-09-11",
+   "why": [],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Baker Construction",
+   "cell": "clear|fail",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-118",
+   "entity_name": "Leola Construction",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston division, working Harris, Fort Bend, Montgomery and Waller",
+   "homepage_url": "https://leolaconstruction.com/houston/",
+   "synopsis": "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single family and townhome communities, delivering the whole wall package under one contract through a network of more than 900 subcontractors.",
+   "key_stat": "9,900 homes a year company-wide, across 300 communities",
+   "principals": [],
+   "key_projects": [
+    {
+     "name": "Houston division",
+     "detail": "Named on the firm's own site as partnering with builders and developers on single family and townhome communities in Katy, Cypress, Sugar Land, Conroe and The Woodlands.",
+     "signal_type": "repeatable",
+     "fit_signal": "The wall package for production housing, sold as one contract.",
+     "url": "https://leolaconstruction.com/houston/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "It sells the entire wall package to production builders, which is the procurement a printed wall would displace. It owns almost no direct field labour.",
+   "_verdict": "It sells the entire wall package to production builders, which is the procurement a printed wall would displace. It owns almost no direct field labour.",
+   "_why": [
+    "Single family and townhome communities across the north and west of the metro, taking the same wall package community after community.",
+    "9,900 homes a year on the firm's own count, company-wide across Florida and Texas, far above what one or two printers cover. It also counts more than 900 subcontractors and no direct field crew, so there is nobody inside the firm to put on a machine.",
+    "No method statement on record."
+   ],
+   "sources": [
+    {
+     "url": "https://leolaconstruction.com/houston/",
+     "date": null
+    },
+    {
+     "url": "https://leolaconstruction.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "It counts more than 900 subcontractors and no direct field crew, so there is no crew to redeploy onto a machine.",
+    "Headquarters and ownership sit in Florida, so a Houston equipment decision would be made elsewhere.",
+    "About thirty names appear on the firm's own about page without titles beside them. None is recorded here."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "holds": 1,
+   "capital_mark": "partial",
+   "group": "trade",
+   "tier": "W",
+   "last_verified": "2026-09-11",
+   "why": [],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Leola Construction",
+   "cell": "clear|fail",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-115",
    "entity_name": "Arch-Con Corporation",
    "entity_type": "contractor",
@@ -7624,11 +7608,11 @@
     "innovation": 2,
     "capital_access": 3
    },
-   "mvp_screen": "It published how it reordered a standard method to win a month of schedule. That is the mindset the sale needs, in a firm that buys its concrete rather than pouring it.",
-   "_verdict": "It published how it reordered a standard method to win a month of schedule. That is the mindset the sale needs, in a firm that buys its concrete rather than pouring it.",
+   "mvp_screen": "It published how it reordered a standard method to win a month of schedule. It buys its concrete rather than pouring it.",
+   "_verdict": "It published how it reordered a standard method to win a month of schedule. It buys its concrete rather than pouring it.",
    "_why": [
     "Eight divisions across commercial, retail, healthcare and multifamily. The buildings differ project to project.",
-    "A general contractor of this size would treat a printer as one trade among many.",
+    "No annual volume is published. The one published job runs to 770,640 square feet, and the panels on it were poured by somebody else.",
     "It reordered the standard tilt-wall sequence on a 770,640 square foot job, setting a 275-ton lattice boom crane on the perimeter to avoid the slab, and published the result. That is method appetite rather than the purchase of a new method."
    ],
    "sources": [
@@ -7704,7 +7688,7 @@
    "_verdict": "It already owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower crane erection. No other firm screened discloses that much owned trade.",
    "_why": [
     "Commercial and institutional work rather than a repeated plan, so the structure changes project to project.",
-    "A general contractor of this size would run a printer as one more self-perform line, not as the business.",
+    "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly.",
     "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
    ],
    "sources": [
@@ -7772,7 +7756,7 @@
    "_verdict": "Twenty-two years old, founder still named, a tilt-up award in 2024 and multifamily in the published portfolio.",
    "_why": [
     "Commercial and multifamily work across four metros. The buildings differ project to project.",
-    "A general contractor of this size would run a printer as one trade among many.",
+    "No revenue, crew count or project size is published. On the bands, a firm with no published figure is a Partly.",
     "No method statement on record. The tilt-up award is for execution."
    ],
    "sources": [
@@ -8327,6 +8311,122 @@
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-072",
+   "entity_name": "Partners in Building",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Houston, build on your lot",
+   "homepage_url": "https://partnersinbuilding.com/",
+   "synopsis": "Custom builder founded in 1986, now closing more than 300 homes a year across Houston, Dallas, the Brazos Valley and Nashville on a build-on-your-lot model, with a formal vice president of purchasing.",
+   "key_stat": "More than 300 homes a year in Texas and Tennessee",
+   "principals": [
+    {
+     "name": "Jim Lemming",
+     "role": "Chairman, formerly President and Chief Executive Officer until June 2026",
+     "source_url": "https://www.housingwire.com/articles/partners-building-succession-plan/",
+     "source_evidence": "HousingWire, 15 June 2026: President and CEO Jim Lemming will transition to chairman, and his son Chris Lemming will assume the presidency.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jim%20Lemming%20Partners%20in%20Building"
+    },
+    {
+     "name": "Dewey Hennessee",
+     "role": "Vice President of Purchasing",
+     "linkedin_url": "https://www.linkedin.com/in/dewey-hennessee-gmb-caps-cgp-95418531",
+     "li_evidence": "Indexed title reads Dewey Hennessee GMB CAPS CGP, Partners in Building. The title on file comes from the first pass and is not repeated in the index entry.",
+     "decider": true
+    },
+    {
+     "name": "Chris Lemming",
+     "role": "President, since June 2026",
+     "source_url": "https://www.housingwire.com/articles/partners-building-succession-plan/",
+     "source_evidence": "HousingWire, 15 June 2026: Chris Lemming assumes the presidency after an eighteen-month succession.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Lemming%20Partners%20in%20Building"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Towne Lake, Harvest Green, Firethorne",
+     "detail": "Cypress, Richmond and Katy.",
+     "signal_type": "repeatable",
+     "fit_signal": "Community work alongside the build-on-your-lot business.",
+     "url": "https://partnersinbuilding.com/greater-houston/northwest/towne-lake"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 1,
+    "machine_fit": 3,
+    "innovation": 0,
+    "capital_access": 2
+   },
+   "mvp_screen": "More than 300 homes a year and a vice president of purchasing. Every house is one-of-a-kind. The presidency passed from Jim to Chris Lemming in June 2026.",
+   "_verdict": "More than 300 homes a year and a vice president of purchasing, which almost no custom builder has. Every house is one-of-a-kind.",
+   "_why": [
+    "Build on your lot, one-of-a-kind by its own description. There is no plan set to repeat.",
+    "More than 300 homes a year. The volume is there even if the repetition is not.",
+    "No method evidence."
+   ],
+   "sources": [
+    {
+     "url": "https://partnersinbuilding.com/40th-anniversary",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "A custom builder with a vice president of purchasing is rare. The role only exists where somebody is standardising something.",
+    "Volume is spread across four markets in two states, so the Houston share is unknown.",
+    "Jim Lemming moved to chairman in June 2026 after an eighteen-month succession; his son Chris Lemming is president. The chief executive title on file from the first pass is stale."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "fail",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 1,
+   "capital_mark": "partial",
+   "group": "creative",
+   "tier": "X",
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Build on your lot, one-of-a-kind by its own description. There is no plan set to repeat."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "More than 300 homes a year on the firm's own count, across Texas and Tennessee."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method evidence."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Partners in Building",
+   "cell": "fail|clear",
+   "clears": 1,
+   "deciders": [
+    "Dewey Hennessee"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -9572,122 +9672,6 @@
    "clears": 1,
    "deciders": [
     "John Schiegg"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-072",
-   "entity_name": "Partners in Building",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "region": "Houston, build on your lot",
-   "homepage_url": "https://partnersinbuilding.com/",
-   "synopsis": "Custom builder founded in 1986, now closing more than 250 homes a year across Houston, Dallas, the Brazos Valley and Nashville on a build-on-your-lot model, with a formal vice president of purchasing.",
-   "key_stat": "More than 300 homes a year in Texas and Tennessee",
-   "principals": [
-    {
-     "name": "Jim Lemming",
-     "role": "Chairman, formerly President and Chief Executive Officer until June 2026",
-     "source_url": "https://www.housingwire.com/articles/partners-building-succession-plan/",
-     "source_evidence": "HousingWire, 15 June 2026: President and CEO Jim Lemming will transition to chairman, and his son Chris Lemming will assume the presidency.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jim%20Lemming%20Partners%20in%20Building"
-    },
-    {
-     "name": "Dewey Hennessee",
-     "role": "Vice President of Purchasing",
-     "linkedin_url": "https://www.linkedin.com/in/dewey-hennessee-gmb-caps-cgp-95418531",
-     "li_evidence": "Indexed title reads Dewey Hennessee GMB CAPS CGP, Partners in Building. The title on file comes from the first pass and is not repeated in the index entry.",
-     "decider": true
-    },
-    {
-     "name": "Chris Lemming",
-     "role": "President, since June 2026",
-     "source_url": "https://www.housingwire.com/articles/partners-building-succession-plan/",
-     "source_evidence": "HousingWire, 15 June 2026: Chris Lemming assumes the presidency after an eighteen-month succession.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Lemming%20Partners%20in%20Building"
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Towne Lake, Harvest Green, Firethorne",
-     "detail": "Cypress, Richmond and Katy.",
-     "signal_type": "repeatable",
-     "fit_signal": "Community work alongside the build-on-your-lot business.",
-     "url": "https://partnersinbuilding.com/greater-houston/northwest/towne-lake"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 1,
-    "machine_fit": 3,
-    "innovation": 0,
-    "capital_access": 2
-   },
-   "mvp_screen": "More than 300 homes a year and a vice president of purchasing. Every house is one-of-a-kind. The presidency passed from Jim to Chris Lemming in June 2026.",
-   "_verdict": "More than 250 homes a year and a vice president of purchasing, which almost no custom builder has. Every house is one-of-a-kind.",
-   "_why": [
-    "Build on your lot, one-of-a-kind by its own description. There is no plan set to repeat.",
-    "More than 250 homes a year. The volume is there even if the repetition is not.",
-    "No method evidence."
-   ],
-   "sources": [
-    {
-     "url": "https://partnersinbuilding.com/40th-anniversary",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "A custom builder with a vice president of purchasing is rare. The role only exists where somebody is standardising something.",
-    "Volume is spread across four markets in two states, so the Houston share is unknown.",
-    "Jim Lemming moved to chairman in June 2026 after an eighteen-month succession; his son Chris Lemming is president. The chief executive title on file from the first pass is stale."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "fail",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "holds": 1,
-   "capital_mark": "partial",
-   "group": "national",
-   "tier": "N",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Build on your lot, one-of-a-kind by its own description. There is no plan set to repeat."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "More than 300 homes a year on the firm's own count, across Texas and Tennessee."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "No method evidence."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Partners in Building",
-   "cell": "fail|clear",
-   "clears": 1,
-   "deciders": [
-    "Dewey Hennessee"
    ],
    "has_decider": true,
    "decider_confirmed": true,

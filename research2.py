@@ -369,7 +369,7 @@ VERDICTS = {
     "HOU-061": "45 closings in 2025 and 70 planned for 2026, all inside one county. One machine "
                "would cover the whole programme.",
     "HOU-032": "Attached townhome production, the product type a printed party wall serves. "
-               "Ownership sourced only from a contact database.",
+               "The owner is held on a LinkedIn headline alone; the firm's own site publishes nobody.",
     "HOU-074": "324 closings across fifteen communities in the year before it was acquired, on "
                "standardised entry-level product. Now part of a listed builder; the Houston "
                "purchasing structure is not published.",

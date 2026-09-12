@@ -250,7 +250,7 @@ MID = [
  "scores": {"repeatability": 3, "wall_share": 3, "innovation": 0, "capital_access": 1},
  "mvp_screen": "Product type is close to ideal and the model is repeat production. Everything else is thin. No community names, unit counts or capital figures were obtained, and the only ownership attribution comes from a third-party contact database rather than a company page. Verify the principal before any approach.",
  "sources": S(("https://urbanliving.com/developments.php", "2026-09-11")),
- "audit_flags": ["Ownership sourced only from a third-party contact database, not a company page. Unverified.",
+ "audit_flags": ["The firm's own site publishes no leadership and refuses automated retrieval. The owner is held on an indexed LinkedIn headline naming him with the firm, and on nothing else.",
                  "No named communities, unit counts or capital figures.", "No innovation-appetite evidence."],
  "hue_hex": "#E8A33D",
 },

@@ -132,7 +132,7 @@ CHANNEL = {
 NATIONAL = {
     "HOU-014": "LGI Homes", "HOU-013": "Perry Homes", "HOU-023": "David Weekley Homes",
     "HOU-024": "Ashton Woods Homes", "HOU-012": "M/I Homes", "HOU-025": "Taylor Morrison",
-    "HOU-034": "Brightland Homes", "HOU-072": "Partners in Building",
+    "HOU-034": "Brightland Homes",
 }
 
 

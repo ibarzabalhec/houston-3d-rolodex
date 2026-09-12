@@ -293,15 +293,15 @@ BUILDERS = [
 
 ("HOU-072", "Partners in Building", "Houston, build on your lot",
  "https://partnersinbuilding.com/",
- "More than 250 homes a year",
- "Custom builder founded in 1986, now closing more than 250 homes a year across Houston, Dallas, "
+ "More than 300 homes a year",
+ "Custom builder founded in 1986, now closing more than 300 homes a year across Houston, Dallas, "
  "the Brazos Valley and Nashville on a build-on-your-lot model, with a formal vice president of "
  "purchasing.",
  (1, 3, 0, 2),
- "More than 250 homes a year and a vice president of purchasing, which almost no custom builder "
+ "More than 300 homes a year and a vice president of purchasing, which almost no custom builder "
  "has. Every house is one-of-a-kind.",
  ("Build on your lot, one-of-a-kind by its own description. There is no plan set to repeat.",
-  "More than 250 homes a year. The volume is there even if the repetition is not.",
+  "More than 300 homes a year. The volume is there even if the repetition is not.",
   "No method evidence."),
  [("Jim Lemming", "Chief Executive Officer and Owner"),
   ("Dewey Hennessee", "Vice President of Purchasing")],

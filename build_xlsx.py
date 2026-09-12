@@ -166,7 +166,7 @@ note = ws.cell(row=last + 2, column=1,
            "named the firm; column W records what was read. Where that test failed the cell is left empty rather "
            "than guessed, because a fabricated slug passes visual inspection and then fails in front of the person "
            "it names. Column Q searches for the empty ones in your own session. Each of the three counts reads "
-           "Yes, Partly or No, with the reason in the column beside it. Yes and Partly both keep a firm in. Only a No takes it out. "
+           "Yes, Partly or No, with the reason in the column beside it. Yes and Partly both count as holding a count. A No does not. "
            "Holds counts how many of the three are Yes or Partly. Capital is a qualifier, not a count. Source: ICON Greater Houston screen, build %d, %s." % (D["build"], D["last_updated"])))
 note.font = Font(name="Arial", size=9, italic=True, color=MUTED)
 

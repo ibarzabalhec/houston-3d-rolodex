@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 34 · 2026-09-11
+Build 35 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -116,6 +116,20 @@ Six builders whose wall is already not wood joined the builder flow rather than 
 Three findings from the sweeps are recorded in `trades.py` rather than smoothed over. Houston's structural concrete trade is almost entirely commercial and industrial, so for most of these firms a printed house wall would be a new market. Houston production builders publish almost nothing about their shell trade base: of the builders screened, one publishes a partner list and it is all manufacturers and distributors. And no Greater Houston contractor surfaced anywhere as having publicly adopted construction robotics, which is a gap in the record rather than a search that failed.
 
 The hero and market closings captions now count builders rather than all firms, since a contractor closes no homes. The verifier gained four checks on the new section: that it exists and lists its firms, that it is offered in the section filter and filters to the right count, and that at least one contractor carries a decision-maker.
+
+## Build 35: polish on the expanded deck
+
+A reviewer drove the 90-firm build cold at four widths and found things the expansion had broken. All of it is fixed.
+
+**Numbers that disagreed with each other.** The closings figure was drawn against three different denominators on the same page, 69 on the hero, 78 on the market figure and a stale forty-eight in the method note. There is now one number, computed once in `build.py` as the builders on the deck, read by both figures and stated in the method: 13 of 68. Partners in Building carried 250 homes a year in its synopsis and 300 everywhere else; the later sourced figure, 300, is now the only one. It also sat under National builder while carrying a Yes on Printer fit, which contradicted that section's own note. It is a build-on-your-lot custom builder, so it moved to Custom and hybrid job, where its record already said it belonged.
+
+**A rule that was not true.** "Yes and Partly both keep a firm in. Only a No takes it out" appeared five times, and twenty-five firms with a No on Printer fit were on the deck. It now reads: Yes and Partly both count as holding a count, a No does not, and the section says where the holds landed.
+
+**Circular reasons in the contractor layer.** Fourteen of the twenty-two Printer fit reasons opened "a contractor of this size" and then named no size. Every one is rewritten to say what it rests on, and where a firm publishes no size the reason says so and the mark follows the published band rule, which makes it a Partly. That moved ICF Constructors off a Yes it had not earned. Leola Construction's own reason said 9,900 homes a year is far above what one or two printers cover while the mark read Partly; it is now a No. Baker Concrete Construction shipped with "the firm's own website was not read in this pass"; the site was read, the firm trades as Baker Construction, it carries more than 12,500 people nationally, and the mark is now a No with that as the reason.
+
+**Two firms in the wrong section.** Boxer Property and CIVE had been filed under Already buying printed walls, which took that count from three to five. Boxer's printed house is in Fort Worth and CIVE engineered rather than paid for one, so neither has a printed wall standing in Greater Houston. Boxer now takes its section from its counts and CIVE sits with the contractors, where a firm that built the wall for somebody else belongs. The section is back to three.
+
+**Smaller things.** The em dash appeared 54 times in the Decision-maker column, in a file whose house rule bans it; empty cells now read "none published", which is also more informative. The method claimed "No URL was constructed" while the call sheet printed 135 built LinkedIn keyword searches, so the claim is now scoped to source URLs and the searches are described for what they are. "Several firms publish nobody" is now the real count, 16 of 90, with 14 of those in the contractor section, named as the largest single gap in the file. A Better Business Bureau record was doing duty as a leadership source for Urban Living; it is gone, the LinkedIn holding stands on its own, and `BANNED_SOURCES` now refuses eleven contact-data aggregators the way it already refused wikis, so the build fails if one returns. The matrix note called the method "unproven" where the legend says "new at the time". The scope note is a builder rule and now says so, because most of the contractor trade in Houston is commercial. On a phone the cover view showed the count badges upside down in the card reflection, which read as a fault, and spent most of a screen on a legend the card face already spells out; both are gone below 640. The background survey marker read 23°N / 99°W, which is not Houston; it reads 29°N / 95°W.
 
 ## Live numbers
 

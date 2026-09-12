@@ -19,6 +19,7 @@ precisely the shape of a hybrid print job.
 # Existing records that move into this group rather than being screened out.
 CREATIVE = {
     "HOU-005": "Radom Capital",
+    "HOU-072": "Partners in Building",
     "HOU-006": "Triten Real Estate Partners",
     "HOU-036": "Midway",
     "HOU-037": "The Deal Company (Sawyer Yards)",

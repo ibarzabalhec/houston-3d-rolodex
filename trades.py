@@ -5,7 +5,7 @@ Why this layer exists. Greater Houston production builders do not self-perform
 their walls. They buy the shell from a trade. So the firm that would own and run
 a printer here is often not the builder whose name is on the sign, it is the
 concrete, shell or framing contractor the builder hires, or the general
-contractor that self-performs concrete. Twenty-two of those are screened here.
+contractor that self-performs concrete. Twenty-two of those are screened here, twenty-one wall and shell contractors plus the Houston design-build firm that engineered the printed house in Spring Branch.
 
 How the three counts are read for a contractor. Repetition asks whether the
 firm puts up the same wall repeatedly inside one metro rather than a different
@@ -62,6 +62,7 @@ TRADES = {
     "HOU-119": "M.L. Deer Construction",
     "HOU-120": "ICF Constructors",
     "HOU-121": "MAREK",
+    "HOU-129": "CIVE",
 }
 
 # (id, name, region, url, key_stat, synopsis, scores, verdict, why triple,
@@ -90,7 +91,7 @@ NEW_TRADES = [
    "repeatable", "A contractor that already prices residential concrete does not have to be sold the market first.",
    "https://www.keystoneconcrete.com/"),
   ("Driscoll Apartments", "Named on the firm's own structural placement page.",
-   "repeatable", "Multifamily placement work, which is the closest published analogue to a repeated wall.",
+   "repeatable", "Multifamily placement work, the closest published example of a repeated wall on its record.",
    "https://www.keystoneconcrete.com/")],
  ["https://www.keystoneconcrete.com/"],
  ["No executive is named anywhere on the firm's own site. There is no published door.",
@@ -107,8 +108,8 @@ NEW_TRADES = [
  "tower crane erection. No other firm screened discloses that much owned trade.",
  ("Commercial and institutional work rather than a repeated plan, so the structure changes project "
   "to project.",
-  "A general contractor of this size would run a printer as one more self-perform line, not as the "
-  "business.",
+  "No crew count, revenue or annual volume is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "No method statement on record. Owning the equipment and the crews is not the same as having "
   "paid for a method that was new at the time."),
  [],
@@ -135,7 +136,7 @@ NEW_TRADES = [
  [],
  [("TCC Multi-Family Interiors", "Houston. 79 panels, tallest 43 feet 6 inches, 52,116 square feet of "
    "tilt-up wall, built January to December 2019. Tilt-Up Achievement Award 2020.",
-   "repeatable", "A panel count at that scale is the volume a printer has to beat on cost per square foot.",
+   "repeatable", "A panel count at that scale is the volume a printed wall has to beat on cost per square foot.",
    "https://tilt-up.org/projects/profile/?id=5900")],
  ["https://www.texasamconcrete.com/", "https://tilt-up.org/projects/profile/?id=5900"],
  ["The firm's own site names no executive and no employee count. Earlier trade coverage carried "
@@ -152,8 +153,8 @@ NEW_TRADES = [
  "A 150-person self-performing concrete sub, still owned by the three brothers who started it. One "
  "or two printers would cover a real share of the wall it puts up.",
  ("Tilt-up and foundation work repeating across four counties from one Houston yard.",
-  "At 150 field and office staff, one or two printers would carry a real share of a year's wall "
-  "work rather than sitting idle.",
+  "150 office and field staff on the firm's own count. That is the only published size in this "
+  "section, and at that size one or two printers cover a real share of a year's wall.",
   "No method statement on record. Its published work is conventional tilt-up and foundations."),
  [("Eleazar Botello", "Founder, named on the firm's own site"),
   ("Eden Botello", "Founder, named on the firm's own site"),
@@ -179,12 +180,13 @@ NEW_TRADES = [
  "Employee-owned, so the capital decision is made inside the company. Elevated multifamily is one "
  "of the seven project types it publishes.",
  ("Tilt-up warehouses, retail centres and schools repeating inside the Houston market.",
-  "A contractor of this size would put one or two printers to work rather than park them.",
+  "No crew count or annual volume is published. The one published job runs to 32 panels across four "
+  "floors. On the bands, a firm with no annual figure is a Partly.",
   "No method statement on record. The 2025 tilt-up award is for execution, not for a new method."),
  [],
  [("Modern Heart and Vascular", "Humble, Harris. 100,962 square feet, 32 panels, four floors. "
    "Tilt-Up Achievement Award 2025. General contractor Arch-Con Corporation.",
-   "repeatable", "A four-storey panel job, which is the height band the printer's evaluation report reaches toward.",
+   "repeatable", "A four-storey panel job. The evaluation report for a printed wall covers walls to twelve feet.",
    "https://tilt-up.org/projects/profile/?id=6722"),
   ("Elevated multifamily buildings", "Named as one of seven project types on the firm's own site.",
    "repeatable", "Housing work published by the firm itself rather than inferred.",
@@ -201,15 +203,16 @@ NEW_TRADES = [
  "mass concrete and tilt-up, with an award-listed panel record at the top of the height range the "
  "trade attempts.",
  (3, 2, 1, 2),
- "Panels at 52 feet and elevated post-tensioned decks. The work is difficult, repeats inside one "
- "metro, and is bought by general contractors rather than by owners.",
+ "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is "
+ "bought by general contractors rather than by owners.",
  ("Panel and deck work recurring across Houston projects for a standing set of general contractors.",
-  "A subcontractor at this level of difficulty would run a printer as one crew among several.",
+  "No crew count or annual volume is published. The one published job runs to 49 panels. On the "
+  "bands, a firm with no annual figure is a Partly.",
   "No method statement on record."),
  [],
  [("HCC West Houston Expansion", "Katy, Harris. 49 panels, tallest 52 feet 7 inches, 45,000 square feet "
    "of tilt-up wall on a 125,000 square foot building. Tilt-Up Achievement Award 2022.",
-   "repeatable", "Panel height at this range is the part of the trade a printed wall has to answer.",
+   "repeatable", "The evaluation report for a printed wall reaches twelve feet. These panels are four times that.",
    "https://tilt-up.org/projects/profile/?id=6324")],
  ["https://grecostructures.com/", "https://tilt-up.org/projects/profile/?id=6324"],
  ["No executive is named on the firm's own site, and no crew count or annual volume is published.",
@@ -222,10 +225,11 @@ NEW_TRADES = [
  "carrying small and minority business certification and membership of the Tilt-Up Concrete "
  "Association, the American Concrete Institute and the American Society of Concrete Contractors.",
  (2, 3, 1, 2),
- "It owns the dirt, the utilities and the concrete on the same site. A printer would land on a "
- "slab its own crews poured.",
+ "It owns the earthwork, the utilities and the concrete on the same site, so a printer would stand "
+ "on a slab its own crews poured.",
  ("Site and concrete packages recurring across Houston jobs, though the buildings themselves differ.",
-  "A self-performing sub of this breadth would put one or two printers to work across its own sites.",
+  "No crew count, revenue or annual volume is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "No method statement on record."),
  [],
  [("Mesa Apartments", "Utilities package, named on the firm's own site.",
@@ -246,7 +250,8 @@ NEW_TRADES = [
  "published work is paving-heavy.",
  ("Commercial shells and paving across the metro. The published square footages are weighted to "
   "paving rather than to wall.",
-  "A turnkey contractor at this size would carry one or two printers across its own jobs.",
+  "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall "
+  "against 155,000 gross square feet of paving on the same job.",
   "No method statement on record."),
  [],
  [("Cypress Creek Lakes Apartments", "Cypress, Harris. Described on the firm's own site as a luxury "
@@ -269,10 +274,11 @@ NEW_TRADES = [
  "Concrete, using volumetric mixers, alongside site work, tilt-wall building construction and "
  "industrial pads.",
  (2, 3, 2, 2),
- "It owns the mix as well as the placing. A printer eats concrete by the yard, and this firm makes "
- "its own.",
+ "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm "
+ "delivers its own.",
  ("Industrial and commercial concrete recurring across the east side of the metro.",
-  "A contractor of this size would put one or two printers to work on its own sites.",
+  "No crew count, revenue or annual volume is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from "
   "a plant. That is paying for a different way to get concrete to a site, though it is not a wall "
   "method."),
@@ -291,15 +297,16 @@ NEW_TRADES = [
  "and scheduling in house, carrying both tilt-wall construction and a named residential concrete "
  "line including engineered slabs.",
  (2, 3, 1, 2),
- "The only contractor screened that pairs tilt-wall with a published residential concrete line. "
- "Engineered residential slabs are where a printed wall starts.",
+ "The only contractor screened that pairs tilt-wall with a published residential concrete line, "
+ "including engineered slabs.",
  ("Commercial concrete and metal buildings recurring across the north side of the metro.",
-  "A contractor at this size would put one or two printers to work rather than park them.",
+  "No crew count, revenue or project size is published anywhere on the site. On the bands, a firm "
+  "with no published figure is a Partly.",
   "No method statement on record."),
  [("Trent Mitchell", "Presented as the principal on the firm's own site, without a stated title")],
  [("Custom residential concrete", "Named on the firm's own site, covering driveways, culvert "
    "installation, engineered slabs and retaining walls.",
-   "repeatable", "A firm already pouring engineered residential slabs is one step from printing on them.",
+   "repeatable", "A firm already pouring engineered residential slabs pours the surface a printer stands on.",
    "https://silverspurconcrete.com/")],
  ["https://silverspurconcrete.com/"],
  ["No crew count, revenue or project size is published. The scale is unverified.",
@@ -312,10 +319,11 @@ NEW_TRADES = [
  "site concrete, foundations, tilt-wall and elevated concrete, and building three-dimensional "
  "working models for clash detection before it pours.",
  (2, 3, 2, 2),
- "A concrete subcontractor that models its own work in three dimensions before pouring it. The "
- "software habit is the part that transfers to a printer.",
+ "A concrete subcontractor that models its own work in three dimensions before pouring it. A "
+ "printed wall arrives as a model too.",
  ("Concrete packages recurring across Houston projects under both delivery models.",
-  "A specialty contractor at this size would carry one or two printers across its own jobs.",
+  "No crew count, revenue or project size is published. Nothing on the site sizes the work, so on "
+  "the bands this is a Partly.",
   "It bought and staffed a modelling stack, Revit, Tekla, AutoCAD and Navisworks, to plan its "
   "pours. A printed wall arrives as a model first, so the habit transfers, though modelling is "
   "not itself a building method."),
@@ -347,7 +355,7 @@ NEW_TRADES = [
    "of 29 January 2024")],
  [("Sam Houston High School", "Houston, Harris. 257 panels in four thicknesses, 175,820 square feet "
    "of tilt-up wall on a 338,969 square foot building. Tilt-Up Achievement Award 2019.",
-   "repeatable", "A 257-panel job is the production rate a printer is measured against.",
+   "repeatable", "A 257-panel job is the production rate a printed wall is measured against.",
    "https://tilt-up.org/projects/profile/?id=5900")],
  ["https://www.oriongroupholdingsinc.com/investors/press-release/2024/29-01-2024-120203346",
   "https://tilt-up.org/projects/profile/?id=5900"],
@@ -356,30 +364,34 @@ NEW_TRADES = [
   "owner's decision.",
   "No residential or multifamily work is published."]),
 
-("HOU-113", "Baker Concrete Construction", "Houston operations, Harris",
- "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461",
+("HOU-113", "Baker Construction", "Houston industrial office, Harris, inside a national firm",
+ "https://bakerconstruction.com/",
  "61 panels at 70 feet, the heaviest about 87 tons",
- "Concrete subcontractor with a standing Houston industrial office, named as the concrete "
- "subcontractor on the tallest tilt-wall job currently under way in the metro.",
- (3, 2, 1, 3),
+ "Concrete specialty contractor, formerly trading as Baker Concrete Construction, with a standing "
+ "Houston industrial office inside a national business of more than 12,500 people, named as the "
+ "concrete subcontractor on the tallest tilt-wall job under way in the metro.",
+ (3, 1, 1, 3),
  "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of "
- "what the trade attempts here.",
+ "what the trade attempts here. The firm is national.",
  ("Panel and structural concrete work recurring across the Houston market.",
-  "A contractor working at this scale would run a printer as one line rather than as the business.",
+  "More than 12,500 people across the United States on the firm's own count, and first on a "
+  "national ranking of concrete specialty contractors. A machine purchase at that size runs through "
+  "a national desk, which the bands score as a No.",
   "No method statement on record. Working at the top of the panel size range is difficulty, not a "
   "new method."),
  [],
  [("Harris Health Central Fill Pharmacy", "Houston, Harris. 145,000 square feet, 61 panels at 70 feet, "
    "heaviest about 87 tons. General contractor Skanska, erector MSD Building Corp, owner Harris "
    "Health System. Completion expected August 2026.",
-   "repeatable", "A four-storey tilt-wall job in Houston, which is the height a printed wall is trying to reach.",
+   "repeatable", "A four-storey tilt-wall job in Houston, well above what a printed wall is evaluated for.",
    "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013")],
  ["https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
+  "https://bakerconstruction.com/",
   "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461"],
- ["The firm's own website was not read in this pass, so the Houston office scope, crew count and "
-  "leadership are unconfirmed. Verify before outreach.",
-  "The Houston listing gives a contact name without a title, which is not enough to record.",
-  "Whether the capital decision is made in Houston is not published."]),
+ ["The firm's own site names no executive and no Houston office. The Houston address comes from a "
+  "trade association listing.",
+  "It is on the deck as the contractor on the metro's tallest tilt-wall job, not as a likely buyer. "
+  "A firm of 12,500 people decides equipment centrally."]),
 
 ("HOU-114", "Rino Construction", "Katy, Harris and Fort Bend, with Austin",
  "https://rino-con.com/",
@@ -391,7 +403,8 @@ NEW_TRADES = [
  "Thirty-five years of tilt-up as the stated specialty. On at least one award-listed job it "
  "subcontracted the panels rather than pouring them.",
  ("Tilt-up buildings recurring across two Texas metros since 1991.",
-  "A general contractor of this size would run a printer as one self-perform line.",
+  "Its own pages carry two different completed square footage figures and neither is repeated here, "
+  "so nothing published sizes a year's work. On the bands that is a Partly.",
   "No method statement on record."),
  [],
  [("TCC Multi-Family Interiors", "Houston, Harris. 79 panels, completed December 2019, with Texas A&M "
@@ -413,11 +426,12 @@ NEW_TRADES = [
  "an account of erecting a building's steel diaphragm before its tilt-wall panels in order to pour "
  "concrete and panels at the same time.",
  (2, 2, 2, 3),
- "It published how it reordered a standard method to win a month of schedule. That is the mindset "
- "the sale needs, in a firm that buys its concrete rather than pouring it.",
+ "It published how it reordered a standard method to win a month of schedule. It buys its "
+ "concrete rather than pouring it.",
  ("Eight divisions across commercial, retail, healthcare and multifamily. The buildings differ "
   "project to project.",
-  "A general contractor of this size would treat a printer as one trade among many.",
+  "No annual volume is published. The one published job runs to 770,640 square feet, and the panels "
+  "on it were poured by somebody else.",
   "It reordered the standard tilt-wall sequence on a 770,640 square foot job, setting a 275-ton "
   "lattice boom crane on the perimeter to avoid the slab, and published the result. That is "
   "method appetite rather than the purchase of a new method."),
@@ -442,7 +456,8 @@ NEW_TRADES = [
  "Twenty-two years old, founder still named, a tilt-up award in 2024 and multifamily in the "
  "published portfolio.",
  ("Commercial and multifamily work across four metros. The buildings differ project to project.",
-  "A general contractor of this size would run a printer as one trade among many.",
+  "No revenue, crew count or project size is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "No method statement on record. The tilt-up award is for execution."),
  [("Brad Burton", "Founder, named on the firm's own about page")],
  [],
@@ -458,12 +473,13 @@ NEW_TRADES = [
  "density mid-rise and high-density mid-rise over concrete podium, plus wrap-style parking, "
  "working through trade partners rather than self-performing.",
  (3, 2, 1, 3),
- "Over 44,000 apartment homes and 200-plus projects. Garden-style at volume is the most repeated "
- "wall in the metro.",
+ "Over 44,000 apartment homes and 200-plus projects. Garden-style apartments repeat the same wall "
+ "more than any other product here.",
  ("Garden-style and mid-rise apartment buildings repeating across Texas markets from a Houston "
   "office.",
-  "A contractor with 44,000 units behind it would run one or two printers as a line inside the "
-  "business.",
+  "Over 44,000 apartment homes in 45 years, so the wall volume is there. It states that it works "
+  "through trade partners rather than self-performing, so the machine would sit with a subcontractor "
+  "rather than with Blazer.",
   "No method statement on record. The only construction-method language on the site is the list of "
   "building types it builds."),
  [("Chris Richardson", "Listed under Senior Leadership on the firm's own team page"),
@@ -486,13 +502,14 @@ NEW_TRADES = [
  "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single "
  "family and townhome communities, delivering the whole wall package under one contract through a "
  "network of more than 900 subcontractors.",
- (3, 2, 1, 2),
+ (3, 1, 1, 2),
  "It sells the entire wall package to production builders, which is the procurement a printed wall "
  "would displace. It owns almost no direct field labour.",
  ("Single family and townhome communities across the north and west of the metro, taking the same "
   "wall package community after community.",
-  "9,900 homes a year on the firm's own count, company-wide across Florida and Texas. That is far "
-  "above what one or two printers cover, and no Houston-only figure is published.",
+  "9,900 homes a year on the firm's own count, company-wide across Florida and Texas, far above "
+  "what one or two printers cover. It also counts more than 900 subcontractors and no direct field "
+  "crew, so there is nobody inside the firm to put on a machine.",
   "No method statement on record."),
  [],
  [("Houston division", "Named on the firm's own site as partnering with builders and developers on "
@@ -515,9 +532,10 @@ NEW_TRADES = [
  "conventional wood frame, and that also installs gantry, jib, bridge and portal cranes.",
  (2, 3, 2, 2),
  "It already sells a concrete wall system to commercial clients, and it installs gantry cranes. "
- "Both halves of a printer are inside the business.",
+ "A printer is a gantry that places concrete.",
  ("Commercial buildings across the Gulf Coast. The structures differ project to project.",
-  "A construction manager of this size would put one or two printers to work across its own jobs.",
+  "No revenue, crew count or project count is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "It carries insulated concrete form construction in its standard menu alongside tilt-wall and "
   "masonry, so it has sold and built a concrete wall system rather than only a wood one. No named "
   "project is published to date it."),
@@ -537,11 +555,12 @@ NEW_TRADES = [
  "Insulated concrete form installer and shell contractor whose crews are full-time employees "
  "trained in no less than twelve different brands and types of insulated concrete form, working "
  "custom homes, safe rooms, condominiums and light commercial.",
- (3, 3, 3, 1),
+ (3, 2, 3, 1),
  "Twenty-four years building concrete walls instead of wood ones, with its own crews. The only "
  "contractor screened whose whole business is a non-conventional wall.",
  ("The same wall system, installed again and again across Houston and the coast since 2002.",
-  "A shell contractor at this size would have one or two printers working most of the year.",
+  "No crew count or homes-a-year figure is published. On the bands, a firm with no published "
+  "figure is a Partly, and that is the first thing to establish on the call.",
   "Its entire business is a wall method that was new when it adopted it. The crews are trained on "
   "twelve form systems and run a twenty-step checklist before every placement."),
  [("Matt Zetlmeisl", "Owner, named on the firm's own homepage as having owned and operated it since 2002")],
@@ -549,7 +568,7 @@ NEW_TRADES = [
    "the suspended floor slab, 4,375 square feet of living space on 6,700 square feet of form, "
    "25 days of installation, 300 cubic yards of concrete, floor elevated 14 feet above mean flood "
    "level on more than 40 poured-in-place columns.",
-   "method_risk", "A coastal rebuild is where a concrete wall already wins the argument on its own.",
+   "method_risk", "On the coast the wind and water case for a concrete wall is already made.",
    "https://icfmag.com/2020/02/hurricane-harvey-rebuild/")],
  ["https://icfconstructors.com/about/", "https://icfmag.com/2020/02/hurricane-harvey-rebuild/"],
  ["No crew count, revenue or homes-a-year figure is published.",
@@ -567,7 +586,8 @@ NEW_TRADES = [
  "divisions, with a named leader on each. The walls it builds are interior, not structural.",
  ("Interior wall and ceiling packages repeating across multifamily and single family work in one "
   "metro.",
-  "A contractor with divisions this size would run a printer as one line inside the business.",
+  "No employee count or annual unit figure is published. On the bands, a firm with no published "
+  "figure is a Partly.",
   "It built and staffed a prefabrication plant producing wall panels and interior components "
   "offsite, and publishes what that saved on a hospital project. That is paying to move wall work "
   "into a factory, which is the nearest thing to the argument for a printer."),
@@ -685,7 +705,7 @@ NEW_METHOD = [
  [("Ker Thomson Home", "Houston, Harris. Insulated concrete form walls with triple-pane "
    "hurricane-rated windows, certified by IBHS Fortified, LEED Platinum and Zero Energy Ready, and "
    "winner of Best Large Residential at the 2014 National ICF Builder Awards.",
-   "method_risk", "A builder that shopped seven wall systems before choosing one will listen to an eighth.",
+   "method_risk", "A builder that compared seven wall systems before choosing one has done the comparison before.",
    "https://buildblock.com/ker-thomson-home-houston-tx-triple-certified-ibhs-usgbc-doe-house-country/")],
  ["https://www.nautiluscustomhomes.com/about-us",
   "https://www.icfmag.com/2015/09/durable-energy-builder-home/",
@@ -701,8 +721,7 @@ NEW_METHOD = [
  "dwelling units and hospitality units, with a published product line and starting prices from "
  "$99,000 for the smallest accessory unit.",
  (2, 2, 3, 1),
- "It moved its wall production into a factory and publishes the price list. That is the same "
- "argument a printer makes, reached by a different route.",
+ "It moved its wall production into a factory and publishes the price list.",
  ("A published product line rather than one-off design, though no built volume is published.",
   "No annual volume is published. On the bands, a firm with no published figure is a Partly.",
   "Its whole model is factory-built construction rather than site framing. It has already paid to "
@@ -747,9 +766,10 @@ NEW_METHOD = [
 ]
 
 
-# Owners and builders that have already paid for a printed building. These join
-# the proven adopter section, which is the section for firms that have printed
-# walls standing or contracted, with or without ICON.
+# Two firms with a printed building on their record. Neither has a printed wall
+# standing in Greater Houston, so neither joins the section that counts those.
+# Boxer is an owner and takes its section from its counts. CIVE built the wall
+# for somebody else, which is what the contractor section holds.
 PRINTED_ADOPTERS = [
 
 ("HOU-128", "Boxer Property", "Houston, Harris",
@@ -759,8 +779,8 @@ PRINTED_ADOPTERS = [
  "than 15 million square feet across 16 cities, which partnered on a printed house in Fort Worth "
  "and whose founder said in print that the future is printed houses made out of concrete.",
  (2, 2, 3, 3),
- "A Houston owner with 15 million square feet that has already written a cheque for a printed "
- "building, and said publicly why.",
+ "A Houston owner with 15 million square feet that has paid for a printed building, in Fort Worth, "
+ "and said in print why.",
  ("Commercial buildings across sixteen cities. The product is not a repeated house plan.",
   "A portfolio this size could absorb a machine, though the firm is an owner rather than a builder "
   "and would hire the crew.",
@@ -793,15 +813,15 @@ PRINTED_ADOPTERS = [
  "A Houston design-build firm that has already engineered and delivered a printed building. The "
  "technical staff to run a machine is already inside it.",
  ("Design-build projects, each one different.",
-  "A design-build firm of this size would run a printer as one capability rather than as the "
-  "business.",
+  "No headcount, revenue or annual project figure is published. On the bands, a firm with no "
+  "published figure is a Partly.",
   "It engineered and delivered a printed house in Houston in collaboration with a printing "
   "contractor, and publishes the project on its own site."),
  [],
  [("Spring Branch printed residence", "Houston, Harris. Printing ran from July 2022 to May 2023, "
    "with CIVE as engineer and design-build partner alongside the printing contractor and the "
    "architect. The published size differs between sources and is not repeated here.",
-   "method_risk", "The only Houston firm outside the printing trade that has engineered a printed building.",
+   "method_risk", "A Houston firm outside the printing trade that has engineered a printed building.",
    "https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/")],
  ["https://cive.com/us-first-multi-story-3d-printed-home-houston-tx/",
   "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/"],

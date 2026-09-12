@@ -11,7 +11,7 @@ function svgOpen(w,h,cls){return '<svg class="fig'+(cls?' '+cls:'')+'" viewBox="
 function tipAttr(t){return ' data-tip="'+esc(t)+'"';}
 
 /* 1. Published annual closings, one bar per firm, with the machine-fit bands. */
-var NB=(D.targets||[]).filter(function(t){return t.group!=='trade';}).length;
+var NB=(D.market&&D.market.closings_base)||0;
 function figClosings(){
   var rows=MK.closings||[]; if(!rows.length) return '';
   var W=900,L=190,R=110,rowH=30,top=34,H=top+rows.length*rowH+30;
@@ -48,7 +48,7 @@ function figClosings(){
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td>'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
       '</td><td>'+r.year+'</td><td>'+W_[r.fit]+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
-    rows.length+' of the '+NB+' builders screened publish an annual figure. The other '+(NB-rows.length)+
+    rows.length+' of the '+NB+' builders on the deck publish an annual figure. The other '+MK.closings_missing+
     ' do not, and are not drawn. Contractors are not counted here: they put up walls for other firms and close no homes. Solid bars are a Yes on Printer fit; grey bars are a Partly. A range is drawn to its low end with a line to its high end. The shaded bands are an assumption; how they were set is under How each number is produced, below.',
     h, tbl);
 }
