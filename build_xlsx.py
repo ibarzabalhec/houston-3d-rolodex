@@ -175,6 +175,60 @@ note = ws.cell(row=last + 2, column=1,
            "Holds counts how many of the three are Yes or Partly. Capital is a qualifier, not a count. Source: ICON Greater Houston screen, build %d, %s." % (D["build"], D["last_updated"])))
 note.font = Font(name="Arial", size=9, italic=True, color=MUTED)
 
+# ------------------------------------------------------------------ permits
+# A second sheet, because it holds a different quantity. Census counts units
+# AUTHORISED BY PERMIT; the Contacts sheet counts houses a builder closes.
+# They are never put in one table.
+P = D.get("permits") or {}
+if P:
+    ps = wb.create_sheet("Permits")
+    ps.sheet_view.showGridLines = False
+    hdr = Font(name="Arial", size=9, bold=True, color="FFFFFF")
+    fill = PatternFill("solid", fgColor=HEADBG)
+    yrs = P["counties"][0]["years"]
+
+    ps.cell(row=1, column=1, value="Single-family units authorised by building permit, %s"
+            % P["geo"]["name"]).font = Font(name="Arial", size=11, bold=True, color=INK)
+    ps.cell(row=2, column=1, value=("Source: HUD SOCDS, republishing the Census Building Permits Survey. "
+            "An authorisation is not a start, a completion or a closing. Census counts townhouses and row "
+            "houses as single family. The jurisdictions sum to the counties and the counties sum to the "
+            "metro exactly, in every year.")).font = Font(name="Arial", size=9, italic=True, color=MUTED)
+
+    r = 4
+    ps.cell(row=r, column=1, value="County").font = hdr
+    ps.cell(row=r, column=1).fill = fill
+    for j, y in enumerate(yrs):
+        c = ps.cell(row=r, column=2 + j, value=y); c.font = hdr; c.fill = fill
+    for c2 in sorted(P["counties"], key=lambda x: -x["sf"][-1]):
+        r += 1
+        ps.cell(row=r, column=1, value=c2["name"]).font = Font(name="Arial", size=10, color=INK)
+        for j, v in enumerate(c2["sf"]):
+            ps.cell(row=r, column=2 + j, value=v).font = Font(name="Arial", size=10, color=INK)
+    r += 1
+    ps.cell(row=r, column=1, value="Metro total").font = Font(name="Arial", size=10, bold=True, color=INK)
+    msa = {m["year"]: m["sf"] for m in P["msa"]}
+    for j, y in enumerate(yrs):
+        ps.cell(row=r, column=2 + j, value=msa.get(y)).font = Font(name="Arial", size=10, bold=True, color=INK)
+
+    r += 3
+    ps.cell(row=r, column=1, value="Permit-issuing jurisdiction").font = hdr
+    ps.cell(row=r, column=1).fill = fill
+    ps.cell(row=r, column=2, value="County").font = hdr
+    ps.cell(row=r, column=2).fill = fill
+    for j, y in enumerate(P["place_years"]):
+        c = ps.cell(row=r, column=3 + j, value=y); c.font = hdr; c.fill = fill
+    for pl in sorted(P["places"], key=lambda x: -x["sf"][-1]):
+        r += 1
+        ps.cell(row=r, column=1, value=pl["name"]).font = Font(name="Arial", size=10, color=INK)
+        ps.cell(row=r, column=2, value=pl["county"]).font = Font(name="Arial", size=10, color=MUTED)
+        for j, v in enumerate(pl["sf"]):
+            ps.cell(row=r, column=3 + j, value=v).font = Font(name="Arial", size=10, color=INK)
+    ps.column_dimensions["A"].width = 38
+    ps.column_dimensions["B"].width = 16
+    for j in range(len(yrs)):
+        ps.column_dimensions[get_column_letter(3 + j)].width = 9
+    ps.freeze_panes = "C5"
+
 wb.save("ICON_Greater_Houston_Rolodex.xlsx")
 import shutil, os
 os.makedirs("docs", exist_ok=True)

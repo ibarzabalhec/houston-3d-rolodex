@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 43,
+ "build": 44,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -1056,6 +1056,6344 @@
     "month": 1,
     "label": "Titan deliveries begin",
     "kind": "icon"
+   }
+  ]
+ },
+ "permits": {
+  "quantity": "authorized",
+  "geo": {
+   "cbsa": "26420",
+   "name": "Houston-Pasadena-The Woodlands, TX",
+   "old_name": "Houston-The Woodlands-Sugar Land, TX",
+   "n_counties": 10
+  },
+  "msa": [
+   {
+    "year": 1980,
+    "sf": 21160,
+    "all": 39934,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1981,
+    "sf": 25763,
+    "all": 48549,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1982,
+    "sf": 30563,
+    "all": 75130,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1983,
+    "sf": 30303,
+    "all": 65743,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1984,
+    "sf": 17820,
+    "all": 32505,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1985,
+    "sf": 8919,
+    "all": 13607,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1986,
+    "sf": 7803,
+    "all": 8753,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1987,
+    "sf": 7514,
+    "all": 7843,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1988,
+    "sf": 8093,
+    "all": 9174,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1989,
+    "sf": 9894,
+    "all": 12299,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1990,
+    "sf": 10963,
+    "all": 13321,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1991,
+    "sf": 13535,
+    "all": 17234,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1992,
+    "sf": 15159,
+    "all": 18527,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1993,
+    "sf": 15667,
+    "all": 19678,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1994,
+    "sf": 15761,
+    "all": 22517,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1995,
+    "sf": 15879,
+    "all": 21712,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1996,
+    "sf": 19467,
+    "all": 24149,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1997,
+    "sf": 20859,
+    "all": 32366,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1998,
+    "sf": 25415,
+    "all": 46894,
+    "quantity": "authorized"
+   },
+   {
+    "year": 1999,
+    "sf": 25618,
+    "all": 36706,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2000,
+    "sf": 28180,
+    "all": 36025,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2001,
+    "sf": 30496,
+    "all": 37613,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2002,
+    "sf": 34685,
+    "all": 47092,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2003,
+    "sf": 42053,
+    "all": 58814,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2004,
+    "sf": 45103,
+    "all": 56036,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2005,
+    "sf": 51205,
+    "all": 62125,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2006,
+    "sf": 55162,
+    "all": 71719,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2007,
+    "sf": 42217,
+    "all": 63274,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2008,
+    "sf": 28192,
+    "all": 42728,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2009,
+    "sf": 22369,
+    "all": 27326,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2010,
+    "sf": 22330,
+    "all": 27452,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2011,
+    "sf": 22889,
+    "all": 31271,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2012,
+    "sf": 28631,
+    "all": 43293,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2013,
+    "sf": 34548,
+    "all": 51339,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2014,
+    "sf": 38321,
+    "all": 63747,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2015,
+    "sf": 36963,
+    "all": 57078,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2016,
+    "sf": 35632,
+    "all": 44997,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2017,
+    "sf": 36716,
+    "all": 42763,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2018,
+    "sf": 40887,
+    "all": 57854,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2019,
+    "sf": 39901,
+    "all": 64066,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2020,
+    "sf": 50632,
+    "all": 71257,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2021,
+    "sf": 53315,
+    "all": 69859,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2022,
+    "sf": 48485,
+    "all": 76512,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2023,
+    "sf": 50992,
+    "all": 69303,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2024,
+    "sf": 52703,
+    "all": 65747,
+    "quantity": "authorized"
+   },
+   {
+    "year": 2025,
+    "sf": 46341,
+    "all": 65197,
+    "quantity": "authorized"
+   }
+  ],
+  "counties": [
+   {
+    "fips": "48201",
+    "name": "Harris",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     18244,
+     20122,
+     23052,
+     26450,
+     28020,
+     32465,
+     33023,
+     23985,
+     14823,
+     11591,
+     11057,
+     11107,
+     14550,
+     16986,
+     18533,
+     16721,
+     15511,
+     16980,
+     17732,
+     17903,
+     20834,
+     21260,
+     18156,
+     20324,
+     20087,
+     16940
+    ],
+    "all": [
+     24565,
+     26419,
+     34339,
+     40983,
+     36395,
+     41506,
+     46455,
+     40238,
+     27877,
+     14142,
+     15039,
+     17338,
+     27154,
+     30998,
+     40060,
+     33975,
+     22661,
+     22818,
+     34149,
+     37755,
+     36961,
+     35204,
+     38787,
+     34593,
+     29936,
+     30909
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48339",
+    "name": "Montgomery",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     4067,
+     3997,
+     4497,
+     5581,
+     6023,
+     6586,
+     7417,
+     5074,
+     3583,
+     2773,
+     2723,
+     2795,
+     3364,
+     4976,
+     5511,
+     4970,
+     4175,
+     5290,
+     6663,
+     6082,
+     8901,
+     12227,
+     11820,
+     11259,
+     11586,
+     11597
+    ],
+    "all": [
+     4197,
+     4117,
+     5033,
+     6313,
+     6977,
+     7441,
+     8885,
+     7611,
+     4437,
+     3301,
+     2932,
+     4009,
+     4526,
+     6340,
+     7145,
+     7024,
+     5537,
+     5294,
+     7062,
+     7674,
+     10219,
+     13750,
+     15190,
+     13741,
+     13246,
+     13614
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48157",
+    "name": "Fort Bend",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     1063,
+     936,
+     1130,
+     3476,
+     3858,
+     4097,
+     7910,
+     7046,
+     5689,
+     4845,
+     4724,
+     5110,
+     6517,
+     7913,
+     8465,
+     9096,
+     9777,
+     7711,
+     8949,
+     8452,
+     11403,
+     9938,
+     8917,
+     9953,
+     11200,
+     9760
+    ],
+    "all": [
+     1313,
+     1348,
+     1130,
+     4191,
+     4152,
+     4097,
+     8796,
+     7902,
+     5887,
+     5425,
+     4954,
+     5598,
+     6725,
+     9135,
+     9268,
+     9278,
+     10279,
+     7802,
+     9023,
+     10758,
+     14093,
+     10762,
+     12434,
+     11363,
+     12017,
+     12609
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48039",
+    "name": "Brazoria",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     1903,
+     2405,
+     2738,
+     3025,
+     3288,
+     3989,
+     3287,
+     2703,
+     1977,
+     1496,
+     1647,
+     1562,
+     1922,
+     1965,
+     2466,
+     2975,
+     2909,
+     3132,
+     3365,
+     3207,
+     3895,
+     4455,
+     4174,
+     3750,
+     3363,
+     2789
+    ],
+    "all": [
+     2085,
+     2405,
+     3081,
+     3191,
+     4367,
+     4688,
+     3589,
+     3761,
+     2127,
+     2293,
+     1979,
+     1941,
+     2360,
+     2089,
+     3480,
+     3365,
+     2930,
+     3138,
+     3367,
+     3210,
+     3897,
+     4462,
+     4178,
+     3752,
+     3963,
+     2800
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48167",
+    "name": "Galveston",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     2235,
+     2441,
+     2687,
+     2733,
+     2995,
+     3148,
+     2732,
+     2587,
+     1517,
+     1140,
+     1731,
+     1823,
+     1784,
+     2176,
+     2638,
+     2372,
+     2209,
+     2095,
+     2201,
+     2197,
+     2926,
+     2474,
+     2065,
+     2667,
+     3148,
+     2521
+    ],
+    "all": [
+     2931,
+     2554,
+     2739,
+     3193,
+     3059,
+     3318,
+     3041,
+     2816,
+     1684,
+     1455,
+     1971,
+     1853,
+     1967,
+     2176,
+     3006,
+     2447,
+     2241,
+     2129,
+     2201,
+     2531,
+     3278,
+     2512,
+     2429,
+     2689,
+     3148,
+     2525
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48291",
+    "name": "Liberty",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     213,
+     212,
+     235,
+     258,
+     263,
+     287,
+     293,
+     251,
+     240,
+     231,
+     193,
+     252,
+     165,
+     175,
+     300,
+     306,
+     456,
+     544,
+     722,
+     823,
+     964,
+     1234,
+     1558,
+     1295,
+     1319,
+     1010
+    ],
+    "all": [
+     213,
+     212,
+     235,
+     258,
+     263,
+     287,
+     293,
+     251,
+     240,
+     231,
+     269,
+     260,
+     169,
+     175,
+     300,
+     306,
+     456,
+     546,
+     724,
+     823,
+     964,
+     1234,
+     1558,
+     1297,
+     1321,
+     1010
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48071",
+    "name": "Chambers",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     309,
+     326,
+     270,
+     417,
+     571,
+     517,
+     368,
+     457,
+     316,
+     257,
+     226,
+     216,
+     293,
+     318,
+     377,
+     317,
+     295,
+     526,
+     593,
+     792,
+     932,
+     1052,
+     745,
+     582,
+     642,
+     562
+    ],
+    "all": [
+     309,
+     326,
+     270,
+     419,
+     571,
+     517,
+     368,
+     457,
+     316,
+     409,
+     226,
+     216,
+     293,
+     318,
+     377,
+     317,
+     295,
+     526,
+     593,
+     792,
+     932,
+     1052,
+     745,
+     582,
+     646,
+     564
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48407",
+    "name": "San Jacinto",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     11,
+     6,
+     0,
+     13,
+     11,
+     3,
+     3,
+     0,
+     4,
+     0,
+     2,
+     2,
+     7,
+     5,
+     2,
+     177,
+     265,
+     368,
+     376,
+     394,
+     457,
+     575,
+     586,
+     548,
+     578,
+     519
+    ],
+    "all": [
+     11,
+     6,
+     0,
+     13,
+     11,
+     3,
+     3,
+     0,
+     4,
+     0,
+     2,
+     2,
+     7,
+     5,
+     2,
+     177,
+     265,
+     368,
+     376,
+     394,
+     457,
+     575,
+     586,
+     548,
+     578,
+     523
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48473",
+    "name": "Waller",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     21,
+     17,
+     31,
+     55,
+     46,
+     67,
+     90,
+     60,
+     7,
+     6,
+     9,
+     5,
+     8,
+     4,
+     5,
+     10,
+     13,
+     36,
+     75,
+     24,
+     31,
+     57,
+     90,
+     247,
+     368,
+     339
+    ],
+    "all": [
+     287,
+     188,
+     214,
+     208,
+     213,
+     219,
+     245,
+     184,
+     110,
+     36,
+     59,
+     37,
+     71,
+     73,
+     82,
+     170,
+     305,
+     108,
+     148,
+     102,
+     167,
+     265,
+     231,
+     371,
+     480,
+     339
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "fips": "48015",
+    "name": "Austin",
+    "years": [
+     2000,
+     2001,
+     2002,
+     2003,
+     2004,
+     2005,
+     2006,
+     2007,
+     2008,
+     2009,
+     2010,
+     2011,
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021,
+     2022,
+     2023,
+     2024,
+     2025
+    ],
+    "sf": [
+     114,
+     34,
+     45,
+     45,
+     28,
+     46,
+     39,
+     54,
+     36,
+     30,
+     18,
+     17,
+     21,
+     30,
+     24,
+     19,
+     22,
+     34,
+     211,
+     27,
+     289,
+     43,
+     374,
+     367,
+     412,
+     304
+    ],
+    "all": [
+     114,
+     38,
+     51,
+     45,
+     28,
+     49,
+     44,
+     54,
+     46,
+     34,
+     21,
+     17,
+     21,
+     30,
+     27,
+     19,
+     28,
+     34,
+     211,
+     27,
+     289,
+     43,
+     374,
+     367,
+     412,
+     304
+    ],
+    "quantity": "authorized"
+   }
+  ],
+  "place_years": [
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "places": [
+   {
+    "name": "Harris County Unincorporated Area",
+    "county": "Harris",
+    "sf": [
+     13017,
+     12023,
+     9645,
+     12252,
+     12151,
+     11014
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Montgomery County Unincorporated Area",
+    "county": "Montgomery",
+    "sf": [
+     6940,
+     9027,
+     9131,
+     8880,
+     8895,
+     9056
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Fort Bend County Unincorporated Area",
+    "county": "Fort Bend",
+    "sf": [
+     7892,
+     5351,
+     4741,
+     5014,
+     6547,
+     5673
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Houston",
+    "county": "Harris",
+    "sf": [
+     5923,
+     7146,
+     6800,
+     6609,
+     6808,
+     4774
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Fulshear",
+    "county": "Fort Bend",
+    "sf": [
+     2345,
+     3008,
+     3001,
+     3854,
+     3970,
+     3264
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Conroe",
+    "county": "Montgomery",
+    "sf": [
+     1545,
+     2574,
+     1865,
+     1814,
+     2069,
+     1839
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Liberty County Unincorporated Area",
+    "county": "Liberty",
+    "sf": [
+     776,
+     972,
+     1261,
+     992,
+     1128,
+     882
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "League City",
+    "county": "Galveston",
+    "sf": [
+     847,
+     388,
+     427,
+     842,
+     928,
+     816
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Brazoria County Unincorporated Area",
+    "county": "Brazoria",
+    "sf": [
+     1217,
+     1361,
+     1644,
+     1280,
+     1167,
+     815
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Manvel",
+    "county": "Brazoria",
+    "sf": [
+     774,
+     931,
+     891,
+     686,
+     630,
+     745
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Iowa Colony Village",
+    "county": "Brazoria",
+    "sf": [
+     796,
+     759,
+     627,
+     780,
+     883,
+     743
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Texas City",
+    "county": "Galveston",
+    "sf": [
+     778,
+     829,
+     481,
+     596,
+     974,
+     640
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "San Jacinto County Unincorporated Area",
+    "county": "San Jacinto",
+    "sf": [
+     457,
+     573,
+     578,
+     543,
+     569,
+     511
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Rosenberg",
+    "county": "Fort Bend",
+    "sf": [
+     355,
+     511,
+     346,
+     385,
+     311,
+     419
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Chambers County Unincorporated Area",
+    "county": "Chambers",
+    "sf": [
+     665,
+     793,
+     481,
+     382,
+     414,
+     379
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Tomball",
+    "county": "Harris",
+    "sf": [
+     350,
+     448,
+     339,
+     332,
+     345,
+     309
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Alvin",
+    "county": "Brazoria",
+    "sf": [
+     283,
+     345,
+     183,
+     382,
+     282,
+     285
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Waller",
+    "county": "Waller",
+    "sf": [
+     4,
+     23,
+     64,
+     170,
+     304,
+     284
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Magnolia Town",
+    "county": "Montgomery",
+    "sf": [
+     103,
+     272,
+     493,
+     374,
+     304,
+     275
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Montgomery",
+    "county": "Montgomery",
+    "sf": [
+     94,
+     76,
+     98,
+     45,
+     117,
+     270
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Santa Fe",
+    "county": "Galveston",
+    "sf": [
+     62,
+     70,
+     63,
+     58,
+     364,
+     261
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Galveston",
+    "county": "Galveston",
+    "sf": [
+     237,
+     251,
+     215,
+     289,
+     279,
+     254
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Baytown",
+    "county": "Harris",
+    "sf": [
+     283,
+     309,
+     154,
+     140,
+     142,
+     229
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Austin County Unincorporated Area",
+    "county": "Austin",
+    "sf": [
+     260,
+     21,
+     196,
+     196,
+     210,
+     189
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Galveston County Unincorporated Area",
+    "county": "Galveston",
+    "sf": [
+     318,
+     344,
+     422,
+     271,
+     166,
+     171
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Mont Belvieu",
+    "county": "Chambers",
+    "sf": [
+     240,
+     230,
+     209,
+     178,
+     188,
+     167
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "La Marque",
+    "county": "Galveston",
+    "sf": [
+     241,
+     225,
+     217,
+     268,
+     105,
+     137
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Willis",
+    "county": "Montgomery",
+    "sf": [
+     96,
+     105,
+     17,
+     80,
+     173,
+     129
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Dayton",
+    "county": "Liberty",
+    "sf": [
+     34,
+     58,
+     80,
+     105,
+     135,
+     119
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Katy",
+    "county": "Harris",
+    "sf": [
+     576,
+     527,
+     430,
+     390,
+     170,
+     116
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Missouri City",
+    "county": "Fort Bend",
+    "sf": [
+     634,
+     693,
+     421,
+     435,
+     118,
+     109
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Kemah",
+    "county": "Galveston",
+    "sf": [
+     2,
+     4,
+     17,
+     145,
+     131,
+     102
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Pearland",
+    "county": "Brazoria",
+    "sf": [
+     531,
+     715,
+     338,
+     214,
+     60,
+     101
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Arcola",
+    "county": "Fort Bend",
+    "sf": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     95
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Friendswood",
+    "county": "Galveston",
+    "sf": [
+     156,
+     81,
+     102,
+     111,
+     130,
+     92
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Pasadena",
+    "county": "Harris",
+    "sf": [
+     144,
+     119,
+     138,
+     109,
+     47,
+     87
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "La Porte",
+    "county": "Harris",
+    "sf": [
+     255,
+     320,
+     285,
+     154,
+     109,
+     84
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Sealy",
+    "county": "Austin",
+    "sf": [
+     9,
+     12,
+     147,
+     138,
+     146,
+     76
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Bellaire",
+    "county": "Harris",
+    "sf": [
+     61,
+     60,
+     73,
+     51,
+     46,
+     48
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "West University Place",
+    "county": "Harris",
+    "sf": [
+     45,
+     48,
+     55,
+     37,
+     35,
+     48
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hempstead",
+    "county": "Waller",
+    "sf": [
+     0,
+     0,
+     0,
+     49,
+     52,
+     45
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Sugar Land",
+    "county": "Fort Bend",
+    "sf": [
+     148,
+     151,
+     136,
+     36,
+     67,
+     44
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Beasley",
+    "county": "Fort Bend",
+    "sf": [
+     1,
+     13,
+     20,
+     41,
+     41,
+     39
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Needville",
+    "county": "Fort Bend",
+    "sf": [
+     10,
+     16,
+     12,
+     15,
+     11,
+     39
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Humble",
+    "county": "Harris",
+    "sf": [
+     4,
+     1,
+     0,
+     3,
+     9,
+     38
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Dickinson",
+    "county": "Galveston",
+    "sf": [
+     176,
+     101,
+     46,
+     52,
+     48,
+     37
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Spring Valley Village",
+    "county": "Harris",
+    "sf": [
+     30,
+     31,
+     20,
+     19,
+     13,
+     35
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Bellville",
+    "county": "Austin",
+    "sf": [
+     6,
+     4,
+     24,
+     31,
+     52,
+     30
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Seabrook",
+    "county": "Harris",
+    "sf": [
+     34,
+     35,
+     39,
+     31,
+     60,
+     30
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Clute",
+    "county": "Brazoria",
+    "sf": [
+     46,
+     58,
+     39,
+     46,
+     21,
+     29
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Weston Lakes",
+    "county": "Fort Bend",
+    "sf": [
+     0,
+     0,
+     0,
+     0,
+     0,
+     27
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hunters Creek Village",
+    "county": "Harris",
+    "sf": [
+     11,
+     20,
+     22,
+     20,
+     16,
+     21
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Stafford",
+    "county": "Fort Bend",
+    "sf": [
+     3,
+     49,
+     39,
+     39,
+     29,
+     21
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Richwood",
+    "county": "Brazoria",
+    "sf": [
+     12,
+     19,
+     14,
+     11,
+     8,
+     19
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "South Houston",
+    "county": "Harris",
+    "sf": [
+     17,
+     30,
+     26,
+     12,
+     16,
+     17
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Kendleton",
+    "county": "Fort Bend",
+    "sf": [
+     2,
+     2,
+     4,
+     4,
+     3,
+     16
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Surfside Beach",
+    "county": "Brazoria",
+    "sf": [
+     37,
+     24,
+     39,
+     15,
+     16,
+     14
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Bunker Hill Village",
+    "county": "Harris",
+    "sf": [
+     7,
+     16,
+     16,
+     14,
+     15,
+     12
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Beach City",
+    "county": "Chambers",
+    "sf": [
+     14,
+     23,
+     42,
+     16,
+     8,
+     11
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Richmond",
+    "county": "Fort Bend",
+    "sf": [
+     7,
+     136,
+     189,
+     126,
+     98,
+     11
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Prairie View",
+    "county": "Waller",
+    "sf": [
+     3,
+     3,
+     9,
+     7,
+     10,
+     10
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Jersey Village",
+    "county": "Harris",
+    "sf": [
+     2,
+     3,
+     0,
+     0,
+     2,
+     9
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Oyster Creek",
+    "county": "Brazoria",
+    "sf": [
+     6,
+     1,
+     1,
+     2,
+     2,
+     9
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Piney Point Village",
+    "county": "Harris",
+    "sf": [
+     10,
+     11,
+     10,
+     10,
+     9,
+     9
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Roman Forest Town",
+    "county": "Montgomery",
+    "sf": [
+     19,
+     84,
+     94,
+     24,
+     2,
+     9
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Southside Place",
+    "county": "Harris",
+    "sf": [
+     14,
+     16,
+     13,
+     11,
+     11,
+     9
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Cut And Shoot",
+    "county": "Montgomery",
+    "sf": [
+     0,
+     0,
+     2,
+     1,
+     0,
+     8
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Deer Park",
+    "county": "Harris",
+    "sf": [
+     17,
+     15,
+     2,
+     12,
+     5,
+     8
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hedwig Village",
+    "county": "Harris",
+    "sf": [
+     8,
+     7,
+     9,
+     7,
+     8,
+     8
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Shepherd",
+    "county": "San Jacinto",
+    "sf": [
+     0,
+     2,
+     8,
+     5,
+     9,
+     8
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hilshire Village",
+    "county": "Harris",
+    "sf": [
+     3,
+     4,
+     4,
+     5,
+     5,
+     7
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Jacinto City",
+    "county": "Harris",
+    "sf": [
+     5,
+     7,
+     12,
+     12,
+     5,
+     7
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Liberty",
+    "county": "Liberty",
+    "sf": [
+     10,
+     12,
+     9,
+     12,
+     11,
+     7
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Wallis",
+    "county": "Austin",
+    "sf": [
+     10,
+     2,
+     4,
+     1,
+     2,
+     7
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Holiday Lakes Town",
+    "county": "Brazoria",
+    "sf": [
+     13,
+     4,
+     4,
+     1,
+     1,
+     6
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Lake Jackson",
+    "county": "Brazoria",
+    "sf": [
+     35,
+     21,
+     73,
+     69,
+     5,
+     6
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Panorama Village",
+    "county": "Montgomery",
+    "sf": [
+     17,
+     7,
+     3,
+     3,
+     4,
+     6
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Webster",
+    "county": "Harris",
+    "sf": [
+     3,
+     46,
+     49,
+     79,
+     45,
+     6
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Nassau Bay",
+    "county": "Harris",
+    "sf": [
+     3,
+     0,
+     0,
+     4,
+     3,
+     5
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Shoreacres",
+    "county": "Harris",
+    "sf": [
+     2,
+     4,
+     2,
+     1,
+     2,
+     5
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Clear Lake Shores",
+    "county": "Galveston",
+    "sf": [
+     9,
+     10,
+     5,
+     3,
+     3,
+     4
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "El Lago",
+    "county": "Harris",
+    "sf": [
+     1,
+     1,
+     0,
+     0,
+     5,
+     4
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Tiki Island Village",
+    "county": "Galveston",
+    "sf": [
+     6,
+     8,
+     9,
+     8,
+     7,
+     4
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Anahuac",
+    "county": "Chambers",
+    "sf": [
+     10,
+     5,
+     12,
+     3,
+     3,
+     3
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Freeport",
+    "county": "Brazoria",
+    "sf": [
+     16,
+     18,
+     7,
+     7,
+     6,
+     3
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Simonton",
+    "county": "Fort Bend",
+    "sf": [
+     4,
+     7,
+     4,
+     0,
+     3,
+     3
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "West Columbia",
+    "county": "Brazoria",
+    "sf": [
+     10,
+     6,
+     12,
+     7,
+     8,
+     3
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Woodbranch Village",
+    "county": "Montgomery",
+    "sf": [
+     33,
+     31,
+     29,
+     21,
+     18,
+     3
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Brazoria",
+    "county": "Brazoria",
+    "sf": [
+     5,
+     3,
+     4,
+     3,
+     9,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Brookside Village",
+    "county": "Brazoria",
+    "sf": [
+     10,
+     11,
+     10,
+     3,
+     3,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Danbury",
+    "county": "Brazoria",
+    "sf": [
+     3,
+     9,
+     6,
+     3,
+     2,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hardin",
+    "county": "Liberty",
+    "sf": [
+     4,
+     2,
+     3,
+     0,
+     2,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Jamaica Beach Village",
+    "county": "Galveston",
+    "sf": [
+     8,
+     9,
+     15,
+     3,
+     2,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Jones Creek Village",
+    "county": "Brazoria",
+    "sf": [
+     4,
+     5,
+     2,
+     2,
+     0,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Old River-Winfree",
+    "county": "Chambers",
+    "sf": [
+     3,
+     1,
+     1,
+     3,
+     29,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "San Felipe Town",
+    "county": "Austin",
+    "sf": [
+     4,
+     4,
+     3,
+     1,
+     2,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Sweeny",
+    "county": "Brazoria",
+    "sf": [
+     9,
+     6,
+     8,
+     5,
+     9,
+     2
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Baileys Prairie Village",
+    "county": "Brazoria",
+    "sf": [
+     5,
+     5,
+     1,
+     2,
+     3,
+     1
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Bayou Vista Village",
+    "county": "Galveston",
+    "sf": [
+     9,
+     12,
+     8,
+     1,
+     3,
+     1
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Shenandoah",
+    "county": "Montgomery",
+    "sf": [
+     51,
+     45,
+     86,
+     8,
+     0,
+     1
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Stagecoach Town",
+    "county": "Montgomery",
+    "sf": [
+     3,
+     6,
+     0,
+     4,
+     3,
+     1
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Taylor Lake Village",
+    "county": "Harris",
+    "sf": [
+     4,
+     9,
+     9,
+     5,
+     5,
+     1
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Angleton",
+    "county": "Brazoria",
+    "sf": [
+     83,
+     154,
+     271,
+     231,
+     248,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Brookshire",
+    "county": "Waller",
+    "sf": [
+     22,
+     22,
+     17,
+     20,
+     1,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Cleveland",
+    "county": "Liberty",
+    "sf": [
+     140,
+     190,
+     205,
+     186,
+     43,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Galena Park",
+    "county": "Harris",
+    "sf": [
+     2,
+     4,
+     3,
+     3,
+     0,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Hitchcock",
+    "county": "Galveston",
+    "sf": [
+     77,
+     142,
+     38,
+     20,
+     8,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Morgans Point",
+    "county": "Harris",
+    "sf": [
+     3,
+     0,
+     1,
+     2,
+     0,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Oak Ridge North",
+    "county": "Montgomery",
+    "sf": [
+     0,
+     0,
+     2,
+     5,
+     1,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Orchard",
+    "county": "Fort Bend",
+    "sf": [
+     2,
+     1,
+     4,
+     4,
+     2,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Pattison",
+    "county": "Waller",
+    "sf": [
+     2,
+     9,
+     0,
+     1,
+     1,
+     0
+    ],
+    "quantity": "authorized"
+   },
+   {
+    "name": "Quintana Town",
+    "county": "Brazoria",
+    "sf": [
+     0,
+     0,
+     0,
+     1,
+     0,
+     0
+    ],
+    "quantity": "authorized"
+   }
+  ],
+  "geom": [
+   {
+    "fips": "48407",
+    "name": "San Jacinto",
+    "rings": [
+     [
+      [
+       [
+        -95.2439,
+        30.9013
+       ],
+       [
+        -95.3133,
+        30.8977
+       ],
+       [
+        -95.3142,
+        30.8723
+       ],
+       [
+        -95.3273,
+        30.8596
+       ],
+       [
+        -95.3591,
+        30.5044
+       ],
+       [
+        -95.3295,
+        30.4332
+       ],
+       [
+        -95.3083,
+        30.4057
+       ],
+       [
+        -95.2363,
+        30.3793
+       ],
+       [
+        -95.2173,
+        30.3554
+       ],
+       [
+        -95.2038,
+        30.3521
+       ],
+       [
+        -95.2259,
+        30.3195
+       ],
+       [
+        -94.8426,
+        30.4875
+       ],
+       [
+        -94.8655,
+        30.4949
+       ],
+       [
+        -94.8676,
+        30.5103
+       ],
+       [
+        -94.8297,
+        30.5401
+       ],
+       [
+        -94.9098,
+        30.5614
+       ],
+       [
+        -94.9365,
+        30.5577
+       ],
+       [
+        -94.9661,
+        30.5767
+       ],
+       [
+        -95.0304,
+        30.5797
+       ],
+       [
+        -95.0312,
+        30.598
+       ],
+       [
+        -95.007,
+        30.6073
+       ],
+       [
+        -95.0246,
+        30.6491
+       ],
+       [
+        -95.0096,
+        30.6559
+       ],
+       [
+        -95.0404,
+        30.6635
+       ],
+       [
+        -95.0339,
+        30.6741
+       ],
+       [
+        -95.0542,
+        30.6714
+       ],
+       [
+        -95.055,
+        30.6805
+       ],
+       [
+        -95.09,
+        30.6719
+       ],
+       [
+        -95.0951,
+        30.6608
+       ],
+       [
+        -95.1149,
+        30.6609
+       ],
+       [
+        -95.1107,
+        30.6725
+       ],
+       [
+        -95.1196,
+        30.6771
+       ],
+       [
+        -95.1095,
+        30.6938
+       ],
+       [
+        -95.135,
+        30.6934
+       ],
+       [
+        -95.1471,
+        30.7179
+       ],
+       [
+        -95.1457,
+        30.743
+       ],
+       [
+        -95.1312,
+        30.7582
+       ],
+       [
+        -95.1395,
+        30.7761
+       ],
+       [
+        -95.1314,
+        30.7826
+       ],
+       [
+        -95.2312,
+        30.8413
+       ],
+       [
+        -95.243,
+        30.8662
+       ],
+       [
+        -95.2306,
+        30.8864
+       ],
+       [
+        -95.2439,
+        30.9013
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48339",
+    "name": "Montgomery",
+    "rings": [
+     [
+      [
+       [
+        -95.5589,
+        30.5088
+       ],
+       [
+        -95.5988,
+        30.5089
+       ],
+       [
+        -95.8302,
+        30.6304
+       ],
+       [
+        -95.8044,
+        30.3394
+       ],
+       [
+        -95.8034,
+        30.0901
+       ],
+       [
+        -95.7611,
+        30.0863
+       ],
+       [
+        -95.7147,
+        30.1022
+       ],
+       [
+        -95.691,
+        30.0988
+       ],
+       [
+        -95.684,
+        30.1073
+       ],
+       [
+        -95.6696,
+        30.1012
+       ],
+       [
+        -95.6237,
+        30.127
+       ],
+       [
+        -95.6228,
+        30.1361
+       ],
+       [
+        -95.5907,
+        30.136
+       ],
+       [
+        -95.5419,
+        30.1705
+       ],
+       [
+        -95.4998,
+        30.1434
+       ],
+       [
+        -95.4883,
+        30.108
+       ],
+       [
+        -95.4545,
+        30.1044
+       ],
+       [
+        -95.4244,
+        30.1156
+       ],
+       [
+        -95.4099,
+        30.0926
+       ],
+       [
+        -95.3499,
+        30.0765
+       ],
+       [
+        -95.3153,
+        30.0534
+       ],
+       [
+        -95.3116,
+        30.0333
+       ],
+       [
+        -95.2909,
+        30.0264
+       ],
+       [
+        -95.2633,
+        30.0322
+       ],
+       [
+        -95.0966,
+        30.1674
+       ],
+       [
+        -95.1657,
+        30.3447
+       ],
+       [
+        -95.2265,
+        30.3197
+       ],
+       [
+        -95.2038,
+        30.3521
+       ],
+       [
+        -95.2173,
+        30.3554
+       ],
+       [
+        -95.2363,
+        30.3793
+       ],
+       [
+        -95.3083,
+        30.4057
+       ],
+       [
+        -95.3295,
+        30.4332
+       ],
+       [
+        -95.3621,
+        30.5089
+       ],
+       [
+        -95.5589,
+        30.5088
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48291",
+    "name": "Liberty",
+    "rings": [
+     [
+      [
+       [
+        -94.5963,
+        30.1122
+       ],
+       [
+        -94.7327,
+        30.4901
+       ],
+       [
+        -94.8426,
+        30.4875
+       ],
+       [
+        -95.1657,
+        30.3447
+       ],
+       [
+        -95.0311,
+        29.9935
+       ],
+       [
+        -95.0036,
+        29.9948
+       ],
+       [
+        -94.9803,
+        29.9634
+       ],
+       [
+        -94.9987,
+        29.9203
+       ],
+       [
+        -94.9843,
+        29.8862
+       ],
+       [
+        -94.4423,
+        29.8904
+       ],
+       [
+        -94.4451,
+        30.1127
+       ],
+       [
+        -94.5963,
+        30.1122
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48473",
+    "name": "Waller",
+    "rings": [
+     [
+      [
+       [
+        -95.804,
+        30.2157
+       ],
+       [
+        -95.8041,
+        30.2453
+       ],
+       [
+        -96.089,
+        30.2286
+       ],
+       [
+        -96.0979,
+        30.2134
+       ],
+       [
+        -96.1104,
+        30.2295
+       ],
+       [
+        -96.1296,
+        30.2108
+       ],
+       [
+        -96.1453,
+        30.2189
+       ],
+       [
+        -96.1582,
+        30.2072
+       ],
+       [
+        -96.1622,
+        30.1841
+       ],
+       [
+        -96.1549,
+        30.1764
+       ],
+       [
+        -96.1618,
+        30.1671
+       ],
+       [
+        -96.151,
+        30.1561
+       ],
+       [
+        -96.1526,
+        30.1431
+       ],
+       [
+        -96.1789,
+        30.1564
+       ],
+       [
+        -96.1724,
+        30.1395
+       ],
+       [
+        -96.1918,
+        30.1381
+       ],
+       [
+        -96.1791,
+        30.1202
+       ],
+       [
+        -96.1895,
+        30.1109
+       ],
+       [
+        -96.1736,
+        30.1123
+       ],
+       [
+        -96.1705,
+        30.0989
+       ],
+       [
+        -96.1536,
+        30.1066
+       ],
+       [
+        -96.1577,
+        30.0911
+       ],
+       [
+        -96.1348,
+        30.0714
+       ],
+       [
+        -96.1459,
+        30.0679
+       ],
+       [
+        -96.1426,
+        30.0594
+       ],
+       [
+        -96.1135,
+        30.0499
+       ],
+       [
+        -96.1067,
+        30.0358
+       ],
+       [
+        -96.1133,
+        30.0283
+       ],
+       [
+        -96.0968,
+        30.0276
+       ],
+       [
+        -96.0849,
+        30.0062
+       ],
+       [
+        -96.1041,
+        29.9983
+       ],
+       [
+        -96.0957,
+        29.9779
+       ],
+       [
+        -96.1031,
+        29.9676
+       ],
+       [
+        -96.0929,
+        29.9613
+       ],
+       [
+        -96.1259,
+        29.966
+       ],
+       [
+        -96.1012,
+        29.9435
+       ],
+       [
+        -96.1216,
+        29.9492
+       ],
+       [
+        -96.1312,
+        29.9382
+       ],
+       [
+        -96.1133,
+        29.9145
+       ],
+       [
+        -96.1259,
+        29.8979
+       ],
+       [
+        -96.0922,
+        29.8811
+       ],
+       [
+        -96.1123,
+        29.8723
+       ],
+       [
+        -96.1009,
+        29.853
+       ],
+       [
+        -96.1221,
+        29.8384
+       ],
+       [
+        -96.1087,
+        29.8223
+       ],
+       [
+        -96.0982,
+        29.8267
+       ],
+       [
+        -96.1026,
+        29.8096
+       ],
+       [
+        -96.043,
+        29.7965
+       ],
+       [
+        -96.0292,
+        29.7534
+       ],
+       [
+        -96.0401,
+        29.7387
+       ],
+       [
+        -96.0327,
+        29.728
+       ],
+       [
+        -95.9708,
+        29.7286
+       ],
+       [
+        -95.971,
+        29.7407
+       ],
+       [
+        -95.9507,
+        29.741
+       ],
+       [
+        -95.826,
+        29.7886
+       ],
+       [
+        -95.9608,
+        30.1634
+       ],
+       [
+        -95.8989,
+        30.1211
+       ],
+       [
+        -95.8737,
+        30.122
+       ],
+       [
+        -95.8389,
+        30.0832
+       ],
+       [
+        -95.8171,
+        30.0819
+       ],
+       [
+        -95.8034,
+        30.0901
+       ],
+       [
+        -95.804,
+        30.2157
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48201",
+    "name": "Harris",
+    "rings": [
+     [
+      [
+       [
+        -95.5495,
+        30.1704
+       ],
+       [
+        -95.5906,
+        30.1361
+       ],
+       [
+        -95.6228,
+        30.1361
+       ],
+       [
+        -95.6237,
+        30.127
+       ],
+       [
+        -95.6696,
+        30.1012
+       ],
+       [
+        -95.684,
+        30.1073
+       ],
+       [
+        -95.691,
+        30.0988
+       ],
+       [
+        -95.7147,
+        30.1022
+       ],
+       [
+        -95.7611,
+        30.0863
+       ],
+       [
+        -95.7893,
+        30.0945
+       ],
+       [
+        -95.8174,
+        30.0818
+       ],
+       [
+        -95.8389,
+        30.0832
+       ],
+       [
+        -95.8737,
+        30.122
+       ],
+       [
+        -95.8989,
+        30.1211
+       ],
+       [
+        -95.9608,
+        30.1634
+       ],
+       [
+        -95.826,
+        29.7886
+       ],
+       [
+        -95.6058,
+        29.6646
+       ],
+       [
+        -95.424,
+        29.5806
+       ],
+       [
+        -95.3463,
+        29.5857
+       ],
+       [
+        -95.3315,
+        29.5992
+       ],
+       [
+        -95.2624,
+        29.5936
+       ],
+       [
+        -95.2537,
+        29.5537
+       ],
+       [
+        -95.2402,
+        29.5625
+       ],
+       [
+        -95.216,
+        29.5548
+       ],
+       [
+        -95.1935,
+        29.5599
+       ],
+       [
+        -95.2,
+        29.5446
+       ],
+       [
+        -95.1626,
+        29.4974
+       ],
+       [
+        -95.1043,
+        29.5107
+       ],
+       [
+        -95.0968,
+        29.5215
+       ],
+       [
+        -95.1032,
+        29.5285
+       ],
+       [
+        -95.0942,
+        29.5253
+       ],
+       [
+        -95.105,
+        29.5469
+       ],
+       [
+        -95.0904,
+        29.5315
+       ],
+       [
+        -95.0795,
+        29.5352
+       ],
+       [
+        -95.0859,
+        29.545
+       ],
+       [
+        -95.0735,
+        29.5519
+       ],
+       [
+        -95.0784,
+        29.5711
+       ],
+       [
+        -95.0705,
+        29.5809
+       ],
+       [
+        -95.0899,
+        29.582
+       ],
+       [
+        -95.0813,
+        29.5912
+       ],
+       [
+        -95.0903,
+        29.5932
+       ],
+       [
+        -95.0921,
+        29.6075
+       ],
+       [
+        -95.0895,
+        29.5945
+       ],
+       [
+        -95.0672,
+        29.5811
+       ],
+       [
+        -95.0716,
+        29.563
+       ],
+       [
+        -95.0542,
+        29.5657
+       ],
+       [
+        -95.0441,
+        29.5993
+       ],
+       [
+        -95.056,
+        29.6015
+       ],
+       [
+        -95.0345,
+        29.6119
+       ],
+       [
+        -95.0426,
+        29.6014
+       ],
+       [
+        -95.0393,
+        29.584
+       ],
+       [
+        -95.0562,
+        29.5643
+       ],
+       [
+        -95.0351,
+        29.558
+       ],
+       [
+        -95.0316,
+        29.5701
+       ],
+       [
+        -95.0311,
+        29.5548
+       ],
+       [
+        -95.0178,
+        29.5488
+       ],
+       [
+        -94.9989,
+        29.5911
+       ],
+       [
+        -94.983,
+        29.6022
+       ],
+       [
+        -94.9932,
+        29.6125
+       ],
+       [
+        -95.0252,
+        29.6114
+       ],
+       [
+        -94.9971,
+        29.6145
+       ],
+       [
+        -95.0157,
+        29.6384
+       ],
+       [
+        -95.0016,
+        29.6644
+       ],
+       [
+        -94.9813,
+        29.6767
+       ],
+       [
+        -95.0085,
+        29.6796
+       ],
+       [
+        -95.0086,
+        29.6869
+       ],
+       [
+        -94.9893,
+        29.6853
+       ],
+       [
+        -95.0006,
+        29.6971
+       ],
+       [
+        -95.0209,
+        29.7032
+       ],
+       [
+        -95.0229,
+        29.6834
+       ],
+       [
+        -95.0244,
+        29.6989
+       ],
+       [
+        -95.0552,
+        29.7081
+       ],
+       [
+        -95.051,
+        29.7241
+       ],
+       [
+        -95.0582,
+        29.7261
+       ],
+       [
+        -95.0485,
+        29.7296
+       ],
+       [
+        -95.0764,
+        29.7415
+       ],
+       [
+        -95.0809,
+        29.7573
+       ],
+       [
+        -95.0717,
+        29.741
+       ],
+       [
+        -95.0659,
+        29.7467
+       ],
+       [
+        -95.0799,
+        29.7617
+       ],
+       [
+        -95.1002,
+        29.7374
+       ],
+       [
+        -95.1021,
+        29.7437
+       ],
+       [
+        -95.1144,
+        29.7371
+       ],
+       [
+        -95.1146,
+        29.7265
+       ],
+       [
+        -95.1113,
+        29.7386
+       ],
+       [
+        -95.1373,
+        29.7281
+       ],
+       [
+        -95.1329,
+        29.733
+       ],
+       [
+        -95.1703,
+        29.7459
+       ],
+       [
+        -95.197,
+        29.7412
+       ],
+       [
+        -95.2116,
+        29.7247
+       ],
+       [
+        -95.2236,
+        29.7243
+       ],
+       [
+        -95.2194,
+        29.7178
+       ],
+       [
+        -95.2276,
+        29.7249
+       ],
+       [
+        -95.2547,
+        29.713
+       ],
+       [
+        -95.2648,
+        29.7023
+       ],
+       [
+        -95.2554,
+        29.6926
+       ],
+       [
+        -95.2695,
+        29.6809
+       ],
+       [
+        -95.2657,
+        29.7032
+       ],
+       [
+        -95.2438,
+        29.718
+       ],
+       [
+        -95.3028,
+        29.7299
+       ],
+       [
+        -95.3119,
+        29.7112
+       ],
+       [
+        -95.3033,
+        29.7302
+       ],
+       [
+        -95.2767,
+        29.7273
+       ],
+       [
+        -95.2802,
+        29.7383
+       ],
+       [
+        -95.2977,
+        29.754
+       ],
+       [
+        -95.3169,
+        29.7488
+       ],
+       [
+        -95.348,
+        29.7667
+       ],
+       [
+        -95.29,
+        29.7522
+       ],
+       [
+        -95.2723,
+        29.7267
+       ],
+       [
+        -95.2453,
+        29.7203
+       ],
+       [
+        -95.213,
+        29.7267
+       ],
+       [
+        -95.2061,
+        29.7422
+       ],
+       [
+        -95.1656,
+        29.7515
+       ],
+       [
+        -95.1756,
+        29.7532
+       ],
+       [
+        -95.1528,
+        29.7383
+       ],
+       [
+        -95.1238,
+        29.7367
+       ],
+       [
+        -95.0953,
+        29.7553
+       ],
+       [
+        -95.1104,
+        29.7623
+       ],
+       [
+        -95.1251,
+        29.7572
+       ],
+       [
+        -95.1269,
+        29.7645
+       ],
+       [
+        -95.1237,
+        29.7575
+       ],
+       [
+        -95.1075,
+        29.7681
+       ],
+       [
+        -95.096,
+        29.7574
+       ],
+       [
+        -95.1033,
+        29.7822
+       ],
+       [
+        -95.0611,
+        29.7941
+       ],
+       [
+        -95.0933,
+        29.8018
+       ],
+       [
+        -95.0957,
+        29.825
+       ],
+       [
+        -95.0872,
+        29.8197
+       ],
+       [
+        -95.0655,
+        29.8283
+       ],
+       [
+        -95.0824,
+        29.8159
+       ],
+       [
+        -95.0666,
+        29.8128
+       ],
+       [
+        -95.0562,
+        29.7961
+       ],
+       [
+        -95.0789,
+        29.7646
+       ],
+       [
+        -95.0468,
+        29.7828
+       ],
+       [
+        -95.0443,
+        29.762
+       ],
+       [
+        -95.0382,
+        29.7637
+       ],
+       [
+        -95.0566,
+        29.7602
+       ],
+       [
+        -95.0497,
+        29.7563
+       ],
+       [
+        -95.0539,
+        29.747
+       ],
+       [
+        -95.0308,
+        29.7461
+       ],
+       [
+        -95.0187,
+        29.7207
+       ],
+       [
+        -95.0136,
+        29.7268
+       ],
+       [
+        -95.0159,
+        29.7051
+       ],
+       [
+        -95.0049,
+        29.7037
+       ],
+       [
+        -95.0135,
+        29.7224
+       ],
+       [
+        -94.994,
+        29.7089
+       ],
+       [
+        -94.9825,
+        29.7474
+       ],
+       [
+        -94.9896,
+        29.7089
+       ],
+       [
+        -94.9508,
+        29.6987
+       ],
+       [
+        -94.9342,
+        29.7086
+       ],
+       [
+        -94.9454,
+        29.7176
+       ],
+       [
+        -94.913,
+        29.7673
+       ],
+       [
+        -94.9242,
+        29.7956
+       ],
+       [
+        -94.9079,
+        29.8268
+       ],
+       [
+        -94.9367,
+        29.833
+       ],
+       [
+        -94.9501,
+        29.8545
+       ],
+       [
+        -94.9771,
+        29.8683
+       ],
+       [
+        -94.9863,
+        29.9061
+       ],
+       [
+        -94.9987,
+        29.9203
+       ],
+       [
+        -94.9803,
+        29.9634
+       ],
+       [
+        -95.0036,
+        29.9948
+       ],
+       [
+        -95.0311,
+        29.9935
+       ],
+       [
+        -95.0966,
+        30.1674
+       ],
+       [
+        -95.2633,
+        30.0322
+       ],
+       [
+        -95.2909,
+        30.0264
+       ],
+       [
+        -95.3116,
+        30.0333
+       ],
+       [
+        -95.3153,
+        30.0534
+       ],
+       [
+        -95.3499,
+        30.0765
+       ],
+       [
+        -95.4099,
+        30.0926
+       ],
+       [
+        -95.4244,
+        30.1156
+       ],
+       [
+        -95.4545,
+        30.1044
+       ],
+       [
+        -95.4883,
+        30.108
+       ],
+       [
+        -95.4998,
+        30.1434
+       ],
+       [
+        -95.5495,
+        30.1704
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48015",
+    "name": "Austin",
+    "rings": [
+     [
+      [
+       [
+        -96.2864,
+        30.0964
+       ],
+       [
+        -96.5188,
+        30.0652
+       ],
+       [
+        -96.594,
+        30.0711
+       ],
+       [
+        -96.6222,
+        30.0442
+       ],
+       [
+        -96.5356,
+        29.9071
+       ],
+       [
+        -96.4851,
+        29.8673
+       ],
+       [
+        -96.441,
+        29.8538
+       ],
+       [
+        -96.4124,
+        29.8245
+       ],
+       [
+        -96.3592,
+        29.8188
+       ],
+       [
+        -96.343,
+        29.8296
+       ],
+       [
+        -96.3307,
+        29.8146
+       ],
+       [
+        -96.3373,
+        29.8013
+       ],
+       [
+        -96.3147,
+        29.7863
+       ],
+       [
+        -96.3197,
+        29.7753
+       ],
+       [
+        -96.3117,
+        29.7562
+       ],
+       [
+        -96.2714,
+        29.7171
+       ],
+       [
+        -96.2754,
+        29.6995
+       ],
+       [
+        -96.258,
+        29.6673
+       ],
+       [
+        -96.201,
+        29.6571
+       ],
+       [
+        -96.1693,
+        29.629
+       ],
+       [
+        -96.1422,
+        29.6198
+       ],
+       [
+        -96.1109,
+        29.623
+       ],
+       [
+        -96.0898,
+        29.602
+       ],
+       [
+        -96.025,
+        29.6029
+       ],
+       [
+        -96.0145,
+        29.6414
+       ],
+       [
+        -96.032,
+        29.658
+       ],
+       [
+        -96.0175,
+        29.6685
+       ],
+       [
+        -96.0305,
+        29.6753
+       ],
+       [
+        -96.0462,
+        29.6657
+       ],
+       [
+        -96.0594,
+        29.678
+       ],
+       [
+        -96.0382,
+        29.6878
+       ],
+       [
+        -96.0159,
+        29.6809
+       ],
+       [
+        -96.0213,
+        29.7059
+       ],
+       [
+        -96.005,
+        29.71
+       ],
+       [
+        -96.0115,
+        29.7198
+       ],
+       [
+        -96.0343,
+        29.7198
+       ],
+       [
+        -96.0401,
+        29.7387
+       ],
+       [
+        -96.0293,
+        29.754
+       ],
+       [
+        -96.0475,
+        29.8018
+       ],
+       [
+        -96.1026,
+        29.8096
+       ],
+       [
+        -96.0982,
+        29.8267
+       ],
+       [
+        -96.1087,
+        29.8223
+       ],
+       [
+        -96.1221,
+        29.8384
+       ],
+       [
+        -96.1009,
+        29.853
+       ],
+       [
+        -96.1123,
+        29.8723
+       ],
+       [
+        -96.0922,
+        29.8807
+       ],
+       [
+        -96.1253,
+        29.8966
+       ],
+       [
+        -96.1134,
+        29.9149
+       ],
+       [
+        -96.1317,
+        29.9362
+       ],
+       [
+        -96.1219,
+        29.9491
+       ],
+       [
+        -96.1013,
+        29.9429
+       ],
+       [
+        -96.1249,
+        29.9673
+       ],
+       [
+        -96.0928,
+        29.9616
+       ],
+       [
+        -96.1031,
+        29.9676
+       ],
+       [
+        -96.0957,
+        29.9779
+       ],
+       [
+        -96.1043,
+        29.9971
+       ],
+       [
+        -96.0847,
+        30.0027
+       ],
+       [
+        -96.0951,
+        30.0257
+       ],
+       [
+        -96.1121,
+        30.0268
+       ],
+       [
+        -96.1122,
+        30.0485
+       ],
+       [
+        -96.1408,
+        30.0578
+       ],
+       [
+        -96.1462,
+        30.0701
+       ],
+       [
+        -96.1657,
+        30.0533
+       ],
+       [
+        -96.1901,
+        30.0648
+       ],
+       [
+        -96.2096,
+        30.0623
+       ],
+       [
+        -96.2298,
+        30.0759
+       ],
+       [
+        -96.2595,
+        30.0757
+       ],
+       [
+        -96.2712,
+        30.0941
+       ],
+       [
+        -96.2864,
+        30.0964
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48071",
+    "name": "Chambers",
+    "rings": [
+     [
+      [
+       [
+        -94.4423,
+        29.8904
+       ],
+       [
+        -94.9835,
+        29.8836
+       ],
+       [
+        -94.9416,
+        29.8366
+       ],
+       [
+        -94.9074,
+        29.8253
+       ],
+       [
+        -94.9242,
+        29.7956
+       ],
+       [
+        -94.9131,
+        29.767
+       ],
+       [
+        -94.9454,
+        29.7176
+       ],
+       [
+        -94.9325,
+        29.7143
+       ],
+       [
+        -94.9296,
+        29.6978
+       ],
+       [
+        -94.9151,
+        29.6986
+       ],
+       [
+        -94.9315,
+        29.672
+       ],
+       [
+        -94.9232,
+        29.6576
+       ],
+       [
+        -94.8727,
+        29.671
+       ],
+       [
+        -94.854,
+        29.7168
+       ],
+       [
+        -94.819,
+        29.7543
+       ],
+       [
+        -94.7356,
+        29.7854
+       ],
+       [
+        -94.7403,
+        29.7925
+       ],
+       [
+        -94.7238,
+        29.7879
+       ],
+       [
+        -94.7305,
+        29.776
+       ],
+       [
+        -94.723,
+        29.777
+       ],
+       [
+        -94.7245,
+        29.7592
+       ],
+       [
+        -94.6958,
+        29.7588
+       ],
+       [
+        -94.7062,
+        29.7421
+       ],
+       [
+        -94.6892,
+        29.7603
+       ],
+       [
+        -94.6982,
+        29.7343
+       ],
+       [
+        -94.6925,
+        29.7062
+       ],
+       [
+        -94.6902,
+        29.7559
+       ],
+       [
+        -94.6985,
+        29.6597
+       ],
+       [
+        -94.6911,
+        29.6538
+       ],
+       [
+        -94.7002,
+        29.6506
+       ],
+       [
+        -94.7154,
+        29.6096
+       ],
+       [
+        -94.7622,
+        29.5377
+       ],
+       [
+        -94.7895,
+        29.5465
+       ],
+       [
+        -94.7801,
+        29.5304
+       ],
+       [
+        -94.7604,
+        29.5245
+       ],
+       [
+        -94.5597,
+        29.5739
+       ],
+       [
+        -94.5428,
+        29.5694
+       ],
+       [
+        -94.5237,
+        29.5405
+       ],
+       [
+        -94.4985,
+        29.5437
+       ],
+       [
+        -94.4748,
+        29.5582
+       ],
+       [
+        -94.4221,
+        29.5672
+       ],
+       [
+        -94.4177,
+        29.5922
+       ],
+       [
+        -94.3818,
+        29.595
+       ],
+       [
+        -94.3539,
+        29.6118
+       ],
+       [
+        -94.3579,
+        29.8875
+       ],
+       [
+        -94.4423,
+        29.8904
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48157",
+    "name": "Fort Bend",
+    "rings": [
+     [
+      [
+       [
+        -95.7293,
+        29.7343
+       ],
+       [
+        -95.826,
+        29.7886
+       ],
+       [
+        -95.9507,
+        29.741
+       ],
+       [
+        -95.971,
+        29.7407
+       ],
+       [
+        -95.9708,
+        29.7286
+       ],
+       [
+        -96.0327,
+        29.728
+       ],
+       [
+        -96.0336,
+        29.7188
+       ],
+       [
+        -96.012,
+        29.7199
+       ],
+       [
+        -96.005,
+        29.71
+       ],
+       [
+        -96.0213,
+        29.7059
+       ],
+       [
+        -96.0147,
+        29.6824
+       ],
+       [
+        -96.0387,
+        29.6878
+       ],
+       [
+        -96.0594,
+        29.6776
+       ],
+       [
+        -96.0462,
+        29.6657
+       ],
+       [
+        -96.0305,
+        29.6753
+       ],
+       [
+        -96.0175,
+        29.6685
+       ],
+       [
+        -96.032,
+        29.658
+       ],
+       [
+        -96.0145,
+        29.6414
+       ],
+       [
+        -96.0249,
+        29.603
+       ],
+       [
+        -96.0892,
+        29.6019
+       ],
+       [
+        -96.0621,
+        29.5914
+       ],
+       [
+        -96.0598,
+        29.5684
+       ],
+       [
+        -96.0447,
+        29.562
+       ],
+       [
+        -96.0413,
+        29.5414
+       ],
+       [
+        -96.0564,
+        29.5394
+       ],
+       [
+        -96.0542,
+        29.5122
+       ],
+       [
+        -96.0223,
+        29.5026
+       ],
+       [
+        -96.0347,
+        29.4924
+       ],
+       [
+        -96.0594,
+        29.492
+       ],
+       [
+        -96.0598,
+        29.4736
+       ],
+       [
+        -96.0294,
+        29.4523
+       ],
+       [
+        -96.0356,
+        29.4434
+       ],
+       [
+        -96.0069,
+        29.429
+       ],
+       [
+        -95.992,
+        29.4338
+       ],
+       [
+        -95.9824,
+        29.411
+       ],
+       [
+        -95.9706,
+        29.4081
+       ],
+       [
+        -95.9684,
+        29.3834
+       ],
+       [
+        -95.9367,
+        29.3586
+       ],
+       [
+        -95.9526,
+        29.3479
+       ],
+       [
+        -95.9504,
+        29.3364
+       ],
+       [
+        -95.8942,
+        29.315
+       ],
+       [
+        -95.8974,
+        29.299
+       ],
+       [
+        -95.8789,
+        29.2662
+       ],
+       [
+        -95.8475,
+        29.2626
+       ],
+       [
+        -95.7978,
+        29.308
+       ],
+       [
+        -95.7839,
+        29.2963
+       ],
+       [
+        -95.7528,
+        29.3246
+       ],
+       [
+        -95.6552,
+        29.2911
+       ],
+       [
+        -95.6263,
+        29.2932
+       ],
+       [
+        -95.6268,
+        29.312
+       ],
+       [
+        -95.5788,
+        29.3413
+       ],
+       [
+        -95.5721,
+        29.3841
+       ],
+       [
+        -95.545,
+        29.3991
+       ],
+       [
+        -95.5565,
+        29.4248
+       ],
+       [
+        -95.5493,
+        29.4384
+       ],
+       [
+        -95.4624,
+        29.4392
+       ],
+       [
+        -95.424,
+        29.5806
+       ],
+       [
+        -95.6058,
+        29.6646
+       ],
+       [
+        -95.7293,
+        29.7343
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48039",
+    "name": "Brazoria",
+    "rings": [
+     [
+      [
+       [
+        -95.3301,
+        29.5991
+       ],
+       [
+        -95.3465,
+        29.5856
+       ],
+       [
+        -95.4233,
+        29.5831
+       ],
+       [
+        -95.4624,
+        29.4392
+       ],
+       [
+        -95.5493,
+        29.4384
+       ],
+       [
+        -95.5565,
+        29.4248
+       ],
+       [
+        -95.545,
+        29.3991
+       ],
+       [
+        -95.5721,
+        29.3841
+       ],
+       [
+        -95.5788,
+        29.3413
+       ],
+       [
+        -95.6268,
+        29.312
+       ],
+       [
+        -95.6263,
+        29.2932
+       ],
+       [
+        -95.6552,
+        29.2911
+       ],
+       [
+        -95.7528,
+        29.3246
+       ],
+       [
+        -95.7839,
+        29.2963
+       ],
+       [
+        -95.7978,
+        29.308
+       ],
+       [
+        -95.8739,
+        29.2298
+       ],
+       [
+        -95.8447,
+        29.205
+       ],
+       [
+        -95.8578,
+        29.1933
+       ],
+       [
+        -95.8383,
+        29.1766
+       ],
+       [
+        -95.8508,
+        29.1523
+       ],
+       [
+        -95.8377,
+        29.1342
+       ],
+       [
+        -95.8417,
+        29.0987
+       ],
+       [
+        -95.8296,
+        29.089
+       ],
+       [
+        -95.8058,
+        29.0906
+       ],
+       [
+        -95.7936,
+        29.0722
+       ],
+       [
+        -95.765,
+        29.0606
+       ],
+       [
+        -95.7854,
+        29.0391
+       ],
+       [
+        -95.7762,
+        29.0181
+       ],
+       [
+        -95.7851,
+        29.0083
+       ],
+       [
+        -95.7677,
+        29.0036
+       ],
+       [
+        -95.7783,
+        28.9972
+       ],
+       [
+        -95.7672,
+        28.992
+       ],
+       [
+        -95.7699,
+        28.9717
+       ],
+       [
+        -95.679,
+        28.9657
+       ],
+       [
+        -95.6551,
+        28.9517
+       ],
+       [
+        -95.6422,
+        28.9043
+       ],
+       [
+        -95.5793,
+        28.8599
+       ],
+       [
+        -95.5788,
+        28.8394
+       ],
+       [
+        -95.5676,
+        28.8298
+       ],
+       [
+        -95.534,
+        28.8311
+       ],
+       [
+        -95.5101,
+        28.8462
+       ],
+       [
+        -95.5292,
+        28.8432
+       ],
+       [
+        -95.5179,
+        28.8509
+       ],
+       [
+        -95.5324,
+        28.8538
+       ],
+       [
+        -95.5272,
+        28.8641
+       ],
+       [
+        -95.517,
+        28.8654
+       ],
+       [
+        -95.5077,
+        28.8472
+       ],
+       [
+        -95.4743,
+        28.8678
+       ],
+       [
+        -95.4486,
+        28.8684
+       ],
+       [
+        -95.4258,
+        28.8892
+       ],
+       [
+        -95.3861,
+        28.8969
+       ],
+       [
+        -95.3754,
+        28.9697
+       ],
+       [
+        -95.3927,
+        28.981
+       ],
+       [
+        -95.4,
+        28.9745
+       ],
+       [
+        -95.4192,
+        28.9802
+       ],
+       [
+        -95.435,
+        29.0023
+       ],
+       [
+        -95.4459,
+        28.9991
+       ],
+       [
+        -95.4628,
+        29.0248
+       ],
+       [
+        -95.4798,
+        29.0322
+       ],
+       [
+        -95.4957,
+        29.0339
+       ],
+       [
+        -95.4997,
+        29.0243
+       ],
+       [
+        -95.5076,
+        29.0373
+       ],
+       [
+        -95.5187,
+        29.0283
+       ],
+       [
+        -95.5367,
+        29.0362
+       ],
+       [
+        -95.5349,
+        29.0494
+       ],
+       [
+        -95.5576,
+        29.0539
+       ],
+       [
+        -95.5876,
+        29.0899
+       ],
+       [
+        -95.5579,
+        29.0552
+       ],
+       [
+        -95.5343,
+        29.0499
+       ],
+       [
+        -95.5362,
+        29.0369
+       ],
+       [
+        -95.5185,
+        29.0291
+       ],
+       [
+        -95.5085,
+        29.0386
+       ],
+       [
+        -95.4995,
+        29.0254
+       ],
+       [
+        -95.4963,
+        29.0351
+       ],
+       [
+        -95.4798,
+        29.0334
+       ],
+       [
+        -95.4616,
+        29.0256
+       ],
+       [
+        -95.4462,
+        29.0007
+       ],
+       [
+        -95.4338,
+        29.0026
+       ],
+       [
+        -95.4193,
+        28.9818
+       ],
+       [
+        -95.4021,
+        28.9755
+       ],
+       [
+        -95.3951,
+        28.9849
+       ],
+       [
+        -95.3755,
+        28.9728
+       ],
+       [
+        -95.3868,
+        28.917
+       ],
+       [
+        -95.3823,
+        28.8968
+       ],
+       [
+        -95.3639,
+        28.9078
+       ],
+       [
+        -95.3748,
+        28.9103
+       ],
+       [
+        -95.3682,
+        28.919
+       ],
+       [
+        -95.363,
+        28.9082
+       ],
+       [
+        -95.313,
+        28.9411
+       ],
+       [
+        -95.3237,
+        28.9334
+       ],
+       [
+        -95.3418,
+        28.9374
+       ],
+       [
+        -95.3325,
+        28.9373
+       ],
+       [
+        -95.3288,
+        28.9488
+       ],
+       [
+        -95.3732,
+        28.9624
+       ],
+       [
+        -95.3274,
+        28.95
+       ],
+       [
+        -95.3279,
+        28.9349
+       ],
+       [
+        -95.3056,
+        28.9465
+       ],
+       [
+        -95.232,
+        29.0274
+       ],
+       [
+        -95.2403,
+        29.0226
+       ],
+       [
+        -95.2444,
+        29.0341
+       ],
+       [
+        -95.2589,
+        29.029
+       ],
+       [
+        -95.2672,
+        29.0375
+       ],
+       [
+        -95.2483,
+        29.0459
+       ],
+       [
+        -95.2445,
+        29.0318
+       ],
+       [
+        -95.2317,
+        29.0281
+       ],
+       [
+        -95.2028,
+        29.098
+       ],
+       [
+        -95.2177,
+        29.0907
+       ],
+       [
+        -95.2084,
+        29.0908
+       ],
+       [
+        -95.2094,
+        29.0815
+       ],
+       [
+        -95.2265,
+        29.0856
+       ],
+       [
+        -95.2223,
+        29.0763
+       ],
+       [
+        -95.2387,
+        29.068
+       ],
+       [
+        -95.2399,
+        29.0841
+       ],
+       [
+        -95.2633,
+        29.0856
+       ],
+       [
+        -95.2508,
+        29.0932
+       ],
+       [
+        -95.2475,
+        29.0852
+       ],
+       [
+        -95.2309,
+        29.0848
+       ],
+       [
+        -95.2102,
+        29.0955
+       ],
+       [
+        -95.1516,
+        29.1523
+       ],
+       [
+        -95.1489,
+        29.1808
+       ],
+       [
+        -95.1574,
+        29.1958
+       ],
+       [
+        -95.1818,
+        29.1884
+       ],
+       [
+        -95.1875,
+        29.2024
+       ],
+       [
+        -95.2102,
+        29.2127
+       ],
+       [
+        -95.1501,
+        29.2023
+       ],
+       [
+        -95.1379,
+        29.1896
+       ],
+       [
+        -95.1193,
+        29.2005
+       ],
+       [
+        -95.1069,
+        29.1834
+       ],
+       [
+        -95.0956,
+        29.1904
+       ],
+       [
+        -95.0969,
+        29.1788
+       ],
+       [
+        -95.1079,
+        29.182
+       ],
+       [
+        -95.1197,
+        29.1723
+       ],
+       [
+        -95.0571,
+        29.2012
+       ],
+       [
+        -95.2331,
+        29.4656
+       ],
+       [
+        -95.2155,
+        29.5587
+       ],
+       [
+        -95.2402,
+        29.5625
+       ],
+       [
+        -95.2537,
+        29.5537
+       ],
+       [
+        -95.2619,
+        29.5933
+       ],
+       [
+        -95.3301,
+        29.5991
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -95.1318,
+        29.0813
+       ],
+       [
+        -95.13,
+        29.0714
+       ],
+       [
+        -95.1408,
+        29.0658
+       ],
+       [
+        -95.1568,
+        29.0707
+       ],
+       [
+        -95.1445,
+        29.0579
+       ],
+       [
+        -95.1571,
+        29.0701
+       ],
+       [
+        -95.1644,
+        29.0471
+       ],
+       [
+        -95.2205,
+        29.0158
+       ],
+       [
+        -95.2382,
+        28.9913
+       ],
+       [
+        -95.2737,
+        28.9792
+       ],
+       [
+        -95.2889,
+        28.9633
+       ],
+       [
+        -95.2826,
+        28.9581
+       ],
+       [
+        -95.3056,
+        28.9443
+       ],
+       [
+        -95.289,
+        28.9315
+       ],
+       [
+        -95.2948,
+        28.9375
+       ],
+       [
+        -95.2636,
+        28.9701
+       ],
+       [
+        -95.1252,
+        29.0674
+       ],
+       [
+        -95.1318,
+        29.0813
+       ]
+      ]
+     ]
+    ]
+   },
+   {
+    "fips": "48167",
+    "name": "Galveston",
+    "rings": [
+     [
+      [
+       [
+        -95.1993,
+        29.5614
+       ],
+       [
+        -95.2165,
+        29.5557
+       ],
+       [
+        -95.2331,
+        29.4656
+       ],
+       [
+        -95.0571,
+        29.2012
+       ],
+       [
+        -95.036,
+        29.2128
+       ],
+       [
+        -95.024,
+        29.2344
+       ],
+       [
+        -95.0371,
+        29.24
+       ],
+       [
+        -95.0237,
+        29.2346
+       ],
+       [
+        -95.0148,
+        29.2417
+       ],
+       [
+        -95.0228,
+        29.2472
+       ],
+       [
+        -95.0203,
+        29.2406
+       ],
+       [
+        -95.0337,
+        29.2361
+       ],
+       [
+        -95.0267,
+        29.2473
+       ],
+       [
+        -95.0372,
+        29.2568
+       ],
+       [
+        -95.0143,
+        29.242
+       ],
+       [
+        -94.9937,
+        29.2626
+       ],
+       [
+        -95.0049,
+        29.2699
+       ],
+       [
+        -94.9976,
+        29.2797
+       ],
+       [
+        -95.0064,
+        29.2811
+       ],
+       [
+        -94.9931,
+        29.2825
+       ],
+       [
+        -94.9864,
+        29.2747
+       ],
+       [
+        -94.9917,
+        29.266
+       ],
+       [
+        -94.9532,
+        29.2934
+       ],
+       [
+        -95.01,
+        29.3089
+       ],
+       [
+        -95.0178,
+        29.3313
+       ],
+       [
+        -95.0362,
+        29.3391
+       ],
+       [
+        -95.0398,
+        29.3589
+       ],
+       [
+        -95.0609,
+        29.3761
+       ],
+       [
+        -95.0394,
+        29.3591
+       ],
+       [
+        -95.0358,
+        29.3394
+       ],
+       [
+        -95.0171,
+        29.3316
+       ],
+       [
+        -95.0099,
+        29.3095
+       ],
+       [
+        -94.9521,
+        29.2941
+       ],
+       [
+        -94.9414,
+        29.3096
+       ],
+       [
+        -94.946,
+        29.3315
+       ],
+       [
+        -94.9398,
+        29.3144
+       ],
+       [
+        -94.8981,
+        29.3033
+       ],
+       [
+        -94.8918,
+        29.3259
+       ],
+       [
+        -94.9079,
+        29.3409
+       ],
+       [
+        -94.9058,
+        29.355
+       ],
+       [
+        -94.8936,
+        29.3534
+       ],
+       [
+        -94.8951,
+        29.3416
+       ],
+       [
+        -94.8914,
+        29.3555
+       ],
+       [
+        -94.8647,
+        29.3722
+       ],
+       [
+        -94.8819,
+        29.3792
+       ],
+       [
+        -94.8881,
+        29.363
+       ],
+       [
+        -94.9191,
+        29.3621
+       ],
+       [
+        -94.8907,
+        29.3639
+       ],
+       [
+        -94.8856,
+        29.3895
+       ],
+       [
+        -94.8096,
+        29.364
+       ],
+       [
+        -94.8867,
+        29.3912
+       ],
+       [
+        -94.8915,
+        29.4336
+       ],
+       [
+        -94.9168,
+        29.4455
+       ],
+       [
+        -94.9231,
+        29.4327
+       ],
+       [
+        -94.8917,
+        29.4224
+       ],
+       [
+        -94.9394,
+        29.4212
+       ],
+       [
+        -94.9514,
+        29.4084
+       ],
+       [
+        -94.9455,
+        29.42
+       ],
+       [
+        -94.9769,
+        29.4174
+       ],
+       [
+        -94.9365,
+        29.4357
+       ],
+       [
+        -94.9399,
+        29.4548
+       ],
+       [
+        -94.9184,
+        29.4455
+       ],
+       [
+        -94.9515,
+        29.4679
+       ],
+       [
+        -94.974,
+        29.4596
+       ],
+       [
+        -94.9866,
+        29.4423
+       ],
+       [
+        -94.9985,
+        29.4614
+       ],
+       [
+        -95.02,
+        29.4587
+       ],
+       [
+        -95.0134,
+        29.4693
+       ],
+       [
+        -94.9833,
+        29.4527
+       ],
+       [
+        -94.9562,
+        29.4701
+       ],
+       [
+        -94.9782,
+        29.488
+       ],
+       [
+        -94.9534,
+        29.4726
+       ],
+       [
+        -94.9324,
+        29.4868
+       ],
+       [
+        -94.9254,
+        29.4707
+       ],
+       [
+        -94.9096,
+        29.4968
+       ],
+       [
+        -94.9577,
+        29.5067
+       ],
+       [
+        -94.9809,
+        29.4893
+       ],
+       [
+        -94.9594,
+        29.5069
+       ],
+       [
+        -94.9959,
+        29.5208
+       ],
+       [
+        -95.0172,
+        29.5481
+       ],
+       [
+        -95.0286,
+        29.5468
+       ],
+       [
+        -95.0326,
+        29.5352
+       ],
+       [
+        -95.0283,
+        29.541
+       ],
+       [
+        -95.0419,
+        29.5494
+       ],
+       [
+        -95.0458,
+        29.5433
+       ],
+       [
+        -95.0426,
+        29.5506
+       ],
+       [
+        -95.0545,
+        29.546
+       ],
+       [
+        -95.0509,
+        29.5551
+       ],
+       [
+        -95.0758,
+        29.5449
+       ],
+       [
+        -95.0724,
+        29.5329
+       ],
+       [
+        -95.0786,
+        29.5441
+       ],
+       [
+        -95.0791,
+        29.5247
+       ],
+       [
+        -95.0818,
+        29.5337
+       ],
+       [
+        -95.0963,
+        29.5345
+       ],
+       [
+        -95.0901,
+        29.5192
+       ],
+       [
+        -95.1057,
+        29.5171
+       ],
+       [
+        -95.1043,
+        29.5107
+       ],
+       [
+        -95.1626,
+        29.4974
+       ],
+       [
+        -95.2,
+        29.5446
+       ],
+       [
+        -95.1933,
+        29.5593
+       ],
+       [
+        -95.1993,
+        29.5614
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.7501,
+        29.3348
+       ],
+       [
+        -94.7698,
+        29.3363
+       ],
+       [
+        -94.7782,
+        29.3134
+       ],
+       [
+        -94.8768,
+        29.2936
+       ],
+       [
+        -94.8803,
+        29.279
+       ],
+       [
+        -94.8493,
+        29.287
+       ],
+       [
+        -94.8299,
+        29.2813
+       ],
+       [
+        -94.8484,
+        29.2774
+       ],
+       [
+        -94.8466,
+        29.2694
+       ],
+       [
+        -94.8573,
+        29.2798
+       ],
+       [
+        -94.8781,
+        29.2728
+       ],
+       [
+        -94.8741,
+        29.2658
+       ],
+       [
+        -94.884,
+        29.2733
+       ],
+       [
+        -94.9158,
+        29.2582
+       ],
+       [
+        -94.9074,
+        29.2506
+       ],
+       [
+        -94.9228,
+        29.2503
+       ],
+       [
+        -94.9135,
+        29.2405
+       ],
+       [
+        -94.9212,
+        29.2483
+       ],
+       [
+        -94.9375,
+        29.2419
+       ],
+       [
+        -94.9216,
+        29.233
+       ],
+       [
+        -94.939,
+        29.2399
+       ],
+       [
+        -94.9332,
+        29.2337
+       ],
+       [
+        -94.9505,
+        29.2315
+       ],
+       [
+        -94.9312,
+        29.2196
+       ],
+       [
+        -94.9539,
+        29.2178
+       ],
+       [
+        -94.9507,
+        29.207
+       ],
+       [
+        -94.9575,
+        29.2157
+       ],
+       [
+        -94.9717,
+        29.214
+       ],
+       [
+        -94.9578,
+        29.2028
+       ],
+       [
+        -94.9813,
+        29.2101
+       ],
+       [
+        -94.9663,
+        29.1972
+       ],
+       [
+        -94.993,
+        29.1997
+       ],
+       [
+        -94.9882,
+        29.1905
+       ],
+       [
+        -94.9991,
+        29.1873
+       ],
+       [
+        -94.9842,
+        29.1866
+       ],
+       [
+        -94.9887,
+        29.1812
+       ],
+       [
+        -95.0133,
+        29.1857
+       ],
+       [
+        -95.0052,
+        29.1745
+       ],
+       [
+        -95.0221,
+        29.1758
+       ],
+       [
+        -95.0095,
+        29.1732
+       ],
+       [
+        -95.0294,
+        29.1697
+       ],
+       [
+        -95.0238,
+        29.1637
+       ],
+       [
+        -95.0349,
+        29.1651
+       ],
+       [
+        -95.0277,
+        29.1583
+       ],
+       [
+        -95.0947,
+        29.1228
+       ],
+       [
+        -95.1249,
+        29.0887
+       ],
+       [
+        -94.8136,
+        29.273
+       ],
+       [
+        -94.7307,
+        29.3323
+       ],
+       [
+        -94.69,
+        29.328
+       ],
+       [
+        -94.7501,
+        29.3348
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.5049,
+        29.5101
+       ],
+       [
+        -94.5125,
+        29.5162
+       ],
+       [
+        -94.6702,
+        29.4578
+       ],
+       [
+        -94.6758,
+        29.4459
+       ],
+       [
+        -94.6715,
+        29.4572
+       ],
+       [
+        -94.6828,
+        29.4531
+       ],
+       [
+        -94.7693,
+        29.3842
+       ],
+       [
+        -94.7778,
+        29.3729
+       ],
+       [
+        -94.7673,
+        29.3706
+       ],
+       [
+        -94.7775,
+        29.3717
+       ],
+       [
+        -94.7796,
+        29.363
+       ],
+       [
+        -94.7502,
+        29.3707
+       ],
+       [
+        -94.6781,
+        29.3455
+       ],
+       [
+        -94.7493,
+        29.3708
+       ],
+       [
+        -94.7313,
+        29.3691
+       ],
+       [
+        -94.7133,
+        29.3982
+       ],
+       [
+        -94.6716,
+        29.4302
+       ],
+       [
+        -94.5049,
+        29.5101
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.3722,
+        29.5962
+       ],
+       [
+        -94.4126,
+        29.5935
+       ],
+       [
+        -94.4125,
+        29.573
+       ],
+       [
+        -94.4609,
+        29.5593
+       ],
+       [
+        -94.4994,
+        29.5073
+       ],
+       [
+        -94.3707,
+        29.5544
+       ],
+       [
+        -94.3722,
+        29.5962
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.5665,
+        29.5319
+       ],
+       [
+        -94.5916,
+        29.5137
+       ],
+       [
+        -94.598,
+        29.4955
+       ],
+       [
+        -94.5905,
+        29.4923
+       ],
+       [
+        -94.6059,
+        29.483
+       ],
+       [
+        -94.511,
+        29.5194
+       ],
+       [
+        -94.5304,
+        29.5174
+       ],
+       [
+        -94.5665,
+        29.5319
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.7829,
+        29.3349
+       ],
+       [
+        -94.8105,
+        29.3526
+       ],
+       [
+        -94.8221,
+        29.3429
+       ],
+       [
+        -94.8228,
+        29.3152
+       ],
+       [
+        -94.7912,
+        29.3152
+       ],
+       [
+        -94.7766,
+        29.3372
+       ],
+       [
+        -94.7829,
+        29.3349
+       ]
+      ]
+     ],
+     [
+      [
+       [
+        -94.6287,
+        29.4751
+       ],
+       [
+        -94.6067,
+        29.483
+       ],
+       [
+        -94.641,
+        29.4725
+       ],
+       [
+        -94.6732,
+        29.4759
+       ],
+       [
+        -94.7053,
+        29.4375
+       ],
+       [
+        -94.6287,
+        29.4751
+       ]
+      ]
+     ]
+    ]
+   }
+  ],
+  "crossref": [
+   {
+    "label": "Single family units authorised",
+    "geo": "Houston CBSA",
+    "year": 2025,
+    "value": 46341,
+    "url": "https://www.huduser.gov/socds/permits",
+    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
+    "independent": false
+   },
+   {
+    "label": "Single-family building permits",
+    "geo": "Houston-Pasadena-The Woodlands",
+    "year": 2025,
+    "value": 46343,
+    "url": "https://www.bisnow.com/houston/news/construction-development/houston-is-building-the-most-homes-nationally-it-needs-even-more-135063",
+    "source": "Bisnow, reporting NAHB's chief economist at the GHBA mid-year forecast",
+    "independent": false
+   },
+   {
+    "label": "All units authorised",
+    "geo": "Houston CBSA",
+    "year": 2025,
+    "value": 65197,
+    "url": "https://www.huduser.gov/socds/permits",
+    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
+    "independent": false
+   },
+   {
+    "label": "New privately-owned housing units authorised",
+    "geo": "Houston CBSA",
+    "year": 2025,
+    "value": 65075,
+    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
+    "source": "Census Building Permits Survey, annual highlights",
+    "independent": false
+   },
+   {
+    "label": "All units authorised",
+    "geo": "Houston CBSA",
+    "year": 2024,
+    "value": 65747,
+    "url": "https://www.huduser.gov/socds/permits",
+    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
+    "independent": false
+   },
+   {
+    "label": "New privately-owned housing units authorised",
+    "geo": "Houston CBSA",
+    "year": 2024,
+    "value": 65747,
+    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
+    "source": "Census Building Permits Survey, annual highlights",
+    "independent": false
+   }
+  ],
+  "revisions": [
+   {
+    "year": 2014,
+    "first": 38323,
+    "now": 38321
+   },
+   {
+    "year": 2015,
+    "first": 36786,
+    "now": 36963
+   },
+   {
+    "year": 2016,
+    "first": 35367,
+    "now": 35632
+   },
+   {
+    "year": 2017,
+    "first": 36348,
+    "now": 36716
+   },
+   {
+    "year": 2018,
+    "first": 40321,
+    "now": 40887
+   }
+  ],
+  "defs": [
+   {
+    "title": "Authorised, not built",
+    "text": "Census counts housing units authorised by a permit. That is the first of the five phases it defines for new residential construction, ahead of started, under construction and completed. A permit is not a house. The closings figures elsewhere on this page come from builders and count houses handed over, and the two are never added or divided here."
+   },
+   {
+    "title": "What counts as single family",
+    "text": "Census calls the category 1 unit, and its own definition puts fully detached, semidetached, row houses and townhouses in it. A townhouse is a single-family unit in this series."
+   },
+   {
+    "title": "Units, not structures",
+    "text": "Every figure is units. The survey prints a structure count only for buildings of five units or more."
+   },
+   {
+    "title": "Not adjusted",
+    "text": "Annual totals are unadjusted and not annualised."
+   },
+   {
+    "title": "The series has a seam",
+    "text": "Census moved from a 2014 basis to an annually updated universe in 2023 and folded micropolitan areas into the metro files in 2024. Years either side of that are not strictly one continuous series. Where the archived tables and the current ones disagree, both figures are shown."
+   },
+   {
+    "title": "The metro was renamed",
+    "text": "CBSA 26420 was published as Houston-The Woodlands-Sugar Land and is now published as Houston-Pasadena-The Woodlands. Same code, same ten counties."
+   },
+   {
+    "title": "Where the counties come from",
+    "text": "The ten counties are Austin, Brazoria, Chambers, Fort Bend, Galveston, Harris, Liberty, Montgomery, San Jacinto and Waller. The 122 permit-issuing jurisdictions sum to those ten counties, and the ten counties sum to the metro, exactly, in every year. County outlines are TxDOT's."
+   },
+   {
+    "title": "Two sources that are not a second opinion",
+    "text": "The Texas Real Estate Research Center publishes this same Census series, so it agrees with it by construction. The Greater Houston Partnership publishes construction contract awards in dollars, which is a different quantity. Neither is used here as corroboration."
+   }
+  ],
+  "sources": [
+   {
+    "url": "https://www.huduser.gov/socds/permits",
+    "label": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey"
+   },
+   {
+    "url": "https://www.census.gov/construction/bps/definitions.html",
+    "label": "Census Building Permits Survey, definitions"
+   },
+   {
+    "url": "https://www.census.gov/construction/bps/methodology.html",
+    "label": "Census Building Permits Survey, methodology"
+   },
+   {
+    "url": "https://www.census.gov/construction/bps/announcements.html",
+    "label": "Census Building Permits Survey, announcements"
+   },
+   {
+    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
+    "label": "Census Building Permits Survey, annual highlights"
+   },
+   {
+    "url": "https://www.census.gov/construction/bps/txt/tb3u2018.txt",
+    "label": "Census table 3au, 2018"
+   },
+   {
+    "url": "https://www.bisnow.com/houston/news/construction-development/houston-is-building-the-most-homes-nationally-it-needs-even-more-135063",
+    "label": "Bisnow, reporting NAHB's chief economist at the GHBA mid-year forecast"
+   },
+   {
+    "url": "https://gis-txdot.opendata.arcgis.com/datasets/texas-county-boundaries/geoservice",
+    "label": "TxDOT, Texas County Boundaries"
    }
   ]
  },

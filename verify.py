@@ -430,13 +430,67 @@ async def main():
         await pg.wait_for_timeout(400)
         figs = await pg.locator(".figs:not(.method)").count()
         tabs = await pg.locator(".figs .ftable table").count()
-        bars = await pg.locator(".fig .bar").count()
+        bars = await pg.locator("#mkBody .figs .fig .bar").count()
         print("market figures  :", figs, "| tables", tabs, "| closing bars", bars)
-        if figs != 5 or tabs != 5:
-            problems.append("the market view does not draw five figures with tables")
-        want_bars = len(D["market"]["closings"]) + sum(1 for r in D["market"]["printed"] if r["units"] > 0)
+        if figs != 10 or tabs != 10:
+            problems.append("the market view does not draw ten figures with tables")
+
+        # The permit layer is a different quantity from the closings layer and is
+        # never mixed with it. Three levels of the same survey must reconcile
+        # exactly, every figure must carry a source, and the map must draw ten
+        # counties.
+        P = D["permits"]
+        msa = {r["year"]: r["sf"] for r in P["msa"]}
+        for c in P["counties"]:
+            if len(c["years"]) != len(c["sf"]):
+                problems.append("a county permit series is ragged")
+        for y in P["counties"][0]["years"]:
+            tot = sum(c["sf"][c["years"].index(y)] for c in P["counties"])
+            if tot != msa.get(y):
+                problems.append("county permits do not sum to the metro in %d (%d vs %s)"
+                                % (y, tot, msa.get(y)))
+        pyi = len(P["place_years"]) - 1
+        by_cty = {}
+        for pl in P["places"]:
+            by_cty[pl["county"]] = by_cty.get(pl["county"], 0) + pl["sf"][pyi]
+        for c in P["counties"]:
+            y = P["place_years"][pyi]
+            want = c["sf"][c["years"].index(y)]
+            if by_cty.get(c["name"], 0) != want:
+                problems.append("jurisdictions do not sum to %s County in %d" % (c["name"], y))
+        if any(r.get("quantity") != "authorized" for r in P["msa"]):
+            problems.append("a permit figure is not labelled as an authorisation")
+        if len(P["geom"]) != 10:
+            problems.append("the county map does not carry ten outlines")
+        if not P["sources"] or any(not s0["url"].startswith("http") for s0 in P["sources"]):
+            problems.append("a permit source is missing its link")
+        srcs = await pg.locator("#mkBody .figsrc a").count()
+        cty_paths = await pg.locator("#figMap .cty").count()
+        cells = await pg.locator("#mtxHost .cell").count()
+        jur = await pg.locator("#jurHost .bar").count()
+        print("permits         :", len(P["msa"]), "years |", len(P["counties"]), "counties |",
+              len(P["places"]), "jurisdictions | source links", srcs)
+        if cty_paths != 10:
+            problems.append("the county map does not render ten counties")
+        if cells != len(P["counties"]) * len(P["counties"][0]["years"]):
+            problems.append("the county matrix does not render every cell")
+        if jur != 25:
+            problems.append("the jurisdiction chart does not render its top 25")
+        if srcs < 5:
+            problems.append("permit figures are missing their source links")
+        # the two quantities never share a figure
+        mixed = await pg.evaluate(
+            "(()=>{const t=[...document.querySelectorAll('#mkBody .figs')];"
+            "return t.filter(s=>/units authorised/i.test(s.textContent)"
+            "&&/homes a year/i.test(s.textContent)).length})()")
+        if mixed:
+            problems.append("a figure mixes permits with closings")
+        want_bars = (len(D["market"]["closings"])
+                     + sum(1 for r in D["market"]["printed"] if r["units"] > 0)
+                     + len(D["permits"]["msa"]) + 25)
         if bars != want_bars:
-            problems.append("bar count does not match the published figures")
+            problems.append("bar count does not match the published figures (%d vs %d)"
+                            % (bars, want_bars))
         # a segment opens the firms it counts, and the list survives an add
         await pg.click('.fig .seg[data-seg="a:partial"]', position={"x": 100, "y": 10})
         await pg.wait_for_timeout(300)
@@ -466,7 +520,7 @@ async def main():
             await pg.set_viewport_size({"width": w, "height": 800})
             await pg.wait_for_timeout(300)
             hits = await pg.evaluate(
-                "[...document.querySelectorAll('.seg button')].map(function(b){"
+                "[...document.querySelectorAll('.navtools .seg button')].map(function(b){"
                 "var r=b.getBoundingClientRect();"
                 "var e=document.elementFromPoint(r.x+r.width/2,r.y+r.height/2);"
                 "return !!(e&&(e===b||b.contains(e)));})")

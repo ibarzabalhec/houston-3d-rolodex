@@ -586,6 +586,28 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 
 /* market figures */
 .stats.mk{margin-top:26px}
+.figsrc{margin:12px 0 0;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px}
+.figsrc .lab{margin-right:2px}
+.fig .cty{stroke:var(--ink3);stroke-width:.8}
+.fig .cty:hover{stroke:var(--ink);stroke-width:2}
+.fig .ctyl{font:600 11.5px var(--sans);text-anchor:middle;pointer-events:none;paint-order:stroke}
+.fig .ctyv{font:500 10px var(--mono);text-anchor:middle;pointer-events:none;font-variant-numeric:tabular-nums;paint-order:stroke}
+.fig .cell{stroke:#FFFFFF;stroke-width:1}
+.fig .cell:hover{stroke:var(--ink);stroke-width:1.5}
+.fig .rowl.sm{font-size:11.5px}
+.mapwrap{display:block}
+.yrctl{display:flex;align-items:center;gap:10px;margin:0 0 12px}
+.yrctl label{font:600 10px/1.4 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3)}
+.yrctl input[type=range]{flex:1;max-width:420px;accent-color:var(--ink)}
+.yrctl output{font:600 13px var(--mono);font-variant-numeric:tabular-nums;min-width:4ch}
+.mtxctl{margin:0 0 14px}
+.mtxctl .seg{display:inline-flex}
+.ftab.wide{width:100%;border-collapse:collapse;font-size:13px}
+.ftab.wide.mt{margin-top:22px}
+.ftab.wide caption{caption-side:top;text-align:left;padding:0 0 8px;
+  font:600 10px/1.4 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3)}
+.ftab .num{text-align:right;font-variant-numeric:tabular-nums}
+@media(max-width:640px){.yrctl input[type=range]{max-width:none}}
 .figs{margin:46px 0 0;padding-top:22px;border-top:1px solid var(--rule)}
 .figs h3{margin:0;font:700 22px/1.15 var(--sans);letter-spacing:-.025em}
 .fcap{margin:8px 0 18px;max-width:78ch;font-size:13.5px;line-height:1.6;color:var(--ink2)}
@@ -607,6 +629,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .fig .val .yr{font:500 10px var(--mono);fill:var(--ink3)}
 .fig .bar{fill:var(--ink)}
 .fig .bar.partial{fill:var(--ink3)}
+.fig .bar.uninc{fill:var(--paper);stroke:var(--ink);stroke-width:1.2}
 .fig .range{stroke:var(--ink3);stroke-width:2}
 .fig .seg.clear{fill:var(--orange)}
 .fig .seg.partial{fill:var(--rule2)}

@@ -32,10 +32,11 @@ from trades import (TRADES, NEW_TRADES, NEW_METHOD, PRINTED_ADOPTERS,
                     DECIDER_PROFILES, LATE_PEOPLE, NO_PROFILE)
 import research2 as R2
 from market import CLOSINGS, BANDS, PRINTED, TIMELINE
+import permits as PM
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 43
+BUILD = 44
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -605,6 +606,28 @@ DATA = {
    "printed": [{"project": a, "place": b, "printer": c, "units": d, "status": e}
                for a, b, c, d, e in PRINTED],
    "timeline": [{"year": y, "month": m, "label": l, "kind": k} for y, m, l, k in TIMELINE],
+ })(),
+ "permits": (lambda: {
+   "quantity": PM.QUANTITY,
+   "geo": PM.GEO,
+   "msa": [{"year": y, "sf": PM.MSA[y][0], "all": PM.MSA[y][1], "quantity": PM.QUANTITY}
+           for y in sorted(PM.MSA)],
+   "counties": [{"fips": f, "name": nm,
+                 "years": sorted(sf), "sf": [sf[y] for y in sorted(sf)],
+                 "all": [tot[y] for y in sorted(tot)], "quantity": PM.QUANTITY}
+                for f, (nm, sf, tot) in PM.COUNTY.items()],
+   "place_years": PM.PLACE_YEARS,
+   "places": [{"name": nm, "county": ct, "sf": v, "quantity": PM.QUANTITY}
+              for nm, ct, v in PM.PLACE if any(v)],
+   "geom": PM.GEOM,
+   "crossref": [{"label": lb, "geo": gg, "year": yy, "value": vv,
+                 "url": PM.SOURCE[k][0], "source": PM.SOURCE[k][1], "independent": ind}
+                for lb, gg, yy, vv, k, ind in PM.CROSSREF],
+   "revisions": [{"year": y, "first": a, "now": b} for y, a, b in PM.REVISIONS],
+   "defs": [{"title": a, "text": b} for a, b in PM.DEFS],
+   "sources": [{"url": u, "label": l} for u, l in
+               [PM.SOURCE[k] for k in ("socds", "defs", "method", "announce",
+                                       "highlights", "txt2018", "nahb", "txdot")]],
  })(),
  "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"], "out": g["out"],
            "principals": n_people, "linkedin_held": n_li, "audit_flags": n_flags,

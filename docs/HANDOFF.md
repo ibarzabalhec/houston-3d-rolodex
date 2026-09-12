@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 43 · 2026-09-12
+Build 44 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -268,19 +268,91 @@ The verifier now reads every rendered cell and chip and fails the build on
 "none published", "not disclosed", "n/a", "unknown", "TBD", "no data" and
 "could not be found".
 
+## Build 44: the market tab gets a market
+
+The tab had no denominator. Everything on it was bottom-up: closings for the 13
+firms that publish one, the printer bands, the section counts, the printed
+projects, the timeline. It could not answer whether 90 firms is most of Houston
+or a corner of it.
+
+It now carries the Census Building Permits Survey: single-family units authorised
+across the ten-county metro, 1980 to 2025, then the same figure by county and by
+permit-issuing jurisdiction.
+
+**The one rule this build is built around.** Permits are not closings. Census
+counts units authorised, which is phase one of the five it defines for new
+residential construction. The builder figures on the same page count houses
+handed over. They are never added, divided, or drawn on one axis, and the
+verifier fails the build if one figure contains both. There is deliberately no
+"the deck covers X per cent of Houston" line: the numerator would be closings
+from 13 firms and the denominator permits for the whole metro, and the quotient
+would be meaningless in a way that is easy to quote and hard to see.
+
+**Where it came from.** Census publishes 2019 onward only as .xls and blocks its
+plain-text archive to automated reads, so the series came from HUD's SOCDS query
+tool, which republishes the same survey at metro, county and jurisdiction level.
+Query: CBSA 26420, Annual, series Single Family and All Permits.
+
+**What reconciles.** 112 jurisdictions sum to the ten counties, and the ten
+counties sum to the metro, exactly, in every year of overlap. Zero difference,
+not rounded agreement. Both are verifier checks now.
+
+**What cross-reads.** 2025 single family is 46,341 here and 46,343 as NAHB's
+chief economist gave it at the GHBA mid-year forecast. 2024 all-units is 65,747
+here and 65,747 in the Census annual highlights. 2025 all-units is 65,197 here
+and 65,075 in the highlights, which is a preliminary-to-final revision. None of
+these is independent of Census, because every Houston permit figure in
+circulation comes from it, and the page says so rather than presenting agreement
+as corroboration. Texas A&M's TRERC republishes the same survey; the Greater
+Houston Partnership publishes contract awards in dollars, which is a different
+quantity. Both are named on the page for the same reason.
+
+**The archived tables disagree with the current ones**, and the page prints both.
+2018 single family was 40,321 as first published and is 40,887 now. The gap is
+identical in the total and the single-family row for every year from 2014 to
+2018, so it sits entirely in single family. Census revises and re-bases; the
+chart marks the 2023 re-basing with a dashed line.
+
+**Four figures**, each with its own source links under it, which is what the
+`figure()` helper gained a slot for:
+
+- The metro series, 1980 to 2025, one column a year.
+- A county choropleth, real TxDOT outlines, with a year slider. Shading is grey
+  to ink on a square-root scale, never orange: on this page orange means only
+  that a firm has paid for a new building method, and one meaning per colour is
+  the rule.
+- The same counties as a matrix, 2000 to 2025, with two readings. Share of metro
+  shows a county gaining ground; against its own peak shows its own cycle. There
+  is no absolute-units shading, because Harris would take the dark end of every
+  row and nothing else would read.
+- Permit-issuing jurisdictions, ranked, by year. Outlined bars are unincorporated
+  county area, solid bars are cities.
+
+**What it says.** Harris County peaked in 2002 to 2007 and has not returned.
+Montgomery, Fort Bend, Liberty, Waller, San Jacinto and Austin counties are all
+at or near their own peaks in the last five years. And the three largest
+permit-issuing jurisdictions in the metro are not cities: unincorporated Harris,
+unincorporated Montgomery and unincorporated Fort Bend, at 11,014, 9,056 and
+5,673 in 2025, against 4,774 for the City of Houston.
+
+The workbook gained a Permits sheet, kept separate from Contacts for the same
+reason the figures are kept apart.
+
 ## Live numbers
 
 90 firms on the deck, 9 held off. 223 contacts, 109 LinkedIn profiles, 44 firms
 with a named decider (42 confirmed, 2 to confirm), 32 press items across 11 firms,
-22 contractors in the trade section, 3 firms publishing nobody at all, 0 open
-items on the page.
+22 contractors in the trade section, 0 open items on the page.
+
+The permit layer: 46 years of metro single-family authorisations, 26 years by
+county across 10 counties, 6 years across 112 permit-issuing jurisdictions.
 
 ## Files and chain
 
 `data_a/b/c.py` + `builders.py` + `creative.py` + `screens.py` + `why.py` +
 `machine.py` + `found.py` + `links.py` + `corrections.py` + `competitors.py` +
-`research2.py` + `market.py` + `code.py` + **`trades.py`** + **`press.py`** +
-**`resolved.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
+`research2.py` + `market.py` + `code.py` + `trades.py` + `press.py` +
+`resolved.py` + **`permits.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
 `rolodex-artifact.html` + `docs/` copies; `build_xlsx.py` → XLSX; `verify.py`
 renders headless and fails on any of about fifty-five checks, including every
 audit finding above, any wiki or contact-aggregator citation, any record missing
