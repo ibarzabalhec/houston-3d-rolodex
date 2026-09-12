@@ -31,7 +31,7 @@ REST = [
     "repeatable", "The highest built-and-held unit count screened. Builds, owns and manages, so schedule savings and wall durability both land on the same balance sheet.",
     "https://www.camillocompanies.com/blog/simplyhome-celebrates-its-10000th-home-constructed"),
    ("Lot bank", "25,000 to 35,000 residential lots owned or in development at any time, reported March 7, 2023.",
-    "repeatable", "A standing lot bank of this size converts directly into forward unit volume without new land assembly.",
+    "repeatable", "A lot bank of 25,000 to 35,000 lots converts directly into forward unit volume without new land assembly.",
     "https://www.housingwire.com/articles/camillo-weds-its-brand-family-with-a-newly-spoken-vow-opening-doors/")),
  "capital_signals": [],
  "scores": {"repeatability": 3, "wall_share": 3, "innovation": 0, "capital_access": 2},

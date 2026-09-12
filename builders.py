@@ -345,8 +345,8 @@ BUILDERS = [
  "entry-level product. Now public, which usually moves purchasing upward.",
  ("324 homes across fifteen communities, on a standardised first-time-buyer product.",
   "The volume band fits, but the parent listed in January 2024 and purchasing may have centralised.",
-  "The model is standardisation for entry-level buyers. That is not evidence of paying for an "
-  "unproven method."),
+  "The model is standardisation for entry-level buyers. That is not evidence of paying for a "
+  "method that was new at the time."),
  [("Stephen Ray", "Founder of Devon Street Homes, continuing to direct the Houston division")],
  [("Fulshear Lakes", "Fulshear.", "repeatable",
    "Entry-level product in a Fort Bend masterplan.",

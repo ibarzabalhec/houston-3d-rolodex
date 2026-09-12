@@ -15,7 +15,7 @@ from data_a import A_TIER
 from data_b import REST
 from data_c import MID, TAIL
 from screens import VERDICT, SIGNAL_MERGE
-from why import WHY, AXIS_TITLE, VERDICT_WORD
+from why import WHY, AXIS_TITLE, TRADE_AXIS_TITLE, VERDICT_WORD
 from found import CONFIRMED, PROBABLE, MOVED, REMOVED, REJECTED, ADDED
 from corrections import (FLAGS as CFLAGS, VERDICTS as CVERD, COMPETITOR,
                          SCORES as CSCORES, WHY_OVERRIDE as CWHY)
@@ -31,7 +31,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 35
+BUILD = 36
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -172,7 +172,7 @@ def finalize(recs):
         for p in t["key_projects"]:
             p["signal_type"] = SIGNAL_MERGE.get(p["signal_type"], p["signal_type"])
 
-        if t["group"] in ("adopter", "a", "b", "national", "creative", "icon"):
+        if t["group"] in ("adopter", "a", "b", "trade", "national", "creative", "icon"):
             if "_why" in t:
                 texts = t["_why"]
             else:
@@ -182,7 +182,8 @@ def finalize(recs):
                 old = WHY[t["target_id"]]
                 # the middle reason used to answer wall share; the machine count replaces it
                 texts = [old[0], t.get("_machine_why", ""), old[2]]
-            t["why"] = [{"axis": k, "title": AXIS_TITLE[k],
+            titles = TRADE_AXIS_TITLE if t["group"] == "trade" else AXIS_TITLE
+            t["why"] = [{"axis": k, "title": titles[k],
                          "verdict": VERDICT_WORD[t["marks"][k]], "mark": t["marks"][k],
                          "text": CWHY.get(t["target_id"], {}).get(k, texts[i])}
                         for i, k in enumerate(SCREENS)]
@@ -585,6 +586,17 @@ BANNED_SOURCES = ("wikipedia.", "wikiwand.", "dbpedia.", "fandom.", ".wiki/", "w
                   "signalhire.", "lusha.", "leadiq.", "dnb.com", "bbb.org", "yelp.com")
 
 
+def _strip_trailing(obj):
+    """Trailing spaces are invisible on the page and wrong in the workbook."""
+    if isinstance(obj, dict):
+        return {k: _strip_trailing(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_strip_trailing(v) for v in obj]
+    if isinstance(obj, str):
+        return obj.rstrip()
+    return obj
+
+
 def _scan_for_banned(obj, path=""):
     found = []
     if isinstance(obj, dict):
@@ -602,6 +614,7 @@ def _scan_for_banned(obj, path=""):
     return found
 
 
+DATA = _strip_trailing(DATA)
 _banned = _scan_for_banned(DATA)
 if _banned:
     for where, what in _banned:

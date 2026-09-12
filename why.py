@@ -149,6 +149,14 @@ WHY["HOU-042"] = (
     "buys no walls.",
 )
 
+# A contractor has no plan set and closes no homes, so the first count is asked
+# of the wall rather than of the house. The other two read the same.
+TRADE_AXIS_TITLE = {
+    "repeatability": "Repetition: puts up the same wall, in one metro",
+    "machine_fit": "Printer fit: one or two printers would cover it",
+    "innovation": "Track record: has paid for a new building method before",
+}
+
 AXIS_TITLE = {
     "repeatability": "Repetition: builds the same plans, in one place",
     "machine_fit": "Printer fit: one or two printers would cover it",

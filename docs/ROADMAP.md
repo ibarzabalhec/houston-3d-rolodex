@@ -14,6 +14,12 @@ Run in Build 34. Twenty-one contractors now sit in the section "Builds the wall,
 
 Alongside the contractors, the public money they would bid on is still unrecorded: the City's Housing and Community Development Department and Harris County Community Services programmes, with a unit count and a dated award from the agenda item on the agency site. That is demand for a printed wall, not a buyer of a printer, and it belongs on the contractor's side rather than as a firm record.
 
+## Before anything else: what a new session should check
+
+Run `make` first. It builds, writes the workbook and runs about fifty headless checks, and it fails non-zero on any of them. Then read the last three entries in `docs/HANDOFF.md`, which record what the two reviews found and what was done about it.
+
+Two faults in this file were both of the same kind, and a third of the same kind is the thing most likely to be there still: a section or a field was added to the page without being added to the code that fills it. The contractor reasons block was empty for two builds. Blank headline figures sat in a column for longer than that. When you add a section, a field or a count, grep for every place the existing ones are listed by name, and add a verifier check in the same commit.
+
 ## Pass 2. The nationals as records
 
 D.R. Horton, Lennar, Pulte, KB Home, Highland, Tri Pointe and Trendmaker, Toll, Beazer, Long Lake, Saratoga, Rausch Coleman (now Lennar). Our own Johnson page lists several as "not screened". For each: Houston closings from Builder 100 or the 10-K segment table (the firm's own filing on its investor site, not a summary), the Houston division president and VP of construction from the firm's own division page or a dated release, where the wall assembly is decided (corporate or division, from the 10-K or a stated purchasing structure), and any printed-wall or method statement on record. Lennar's Wolf Ranch and D.R. Horton's Apis Cor investment are already in the field; the record should carry the source line, not the interpretation. They go into the national section, which already exists.

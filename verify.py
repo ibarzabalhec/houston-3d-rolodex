@@ -308,6 +308,25 @@ async def main():
         # The contractor layer. It is a section like any other, so it has to
         # filter, print, export and open like any other, and the counts it
         # carries have to be the ones the data holds.
+        blank = [t["entity_name"] for t in D["targets"]
+                 if t["group"] != "out" and not t.get("key_stat")]
+        if blank:
+            problems.append("%d records show a blank headline figure" % len(blank))
+
+        # Every record that is on the deck and not a land owner carries three
+        # reasons. Twenty-two contractors once shipped with none, because the
+        # section was added to the page and not to the block that builds them.
+        noreason = [t["entity_name"] for t in D["targets"]
+                    if t["group"] not in ("out", "channel") and len(t.get("why") or []) != 3]
+        print("reasons missing  :", noreason or "none")
+        if noreason:
+            problems.append("%d records carry no reasons" % len(noreason))
+        rendered = await pg.evaluate(
+            "(()=>{const t=window.rolodex.data.targets.find(x=>x.group==='trade');"
+            "return t?(t.why||[]).length:0})()")
+        if rendered != 3:
+            problems.append("a contractor record does not carry its three reasons")
+
         trade = [t for t in D["targets"] if t["group"] == "trade"]
         if len(trade) < 15:
             problems.append("the contractor section is missing or short")

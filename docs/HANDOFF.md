@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 35 · 2026-09-11
+Build 36 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -130,6 +130,18 @@ A reviewer drove the 90-firm build cold at four widths and found things the expa
 **Two firms in the wrong section.** Boxer Property and CIVE had been filed under Already buying printed walls, which took that count from three to five. Boxer's printed house is in Fort Worth and CIVE engineered rather than paid for one, so neither has a printed wall standing in Greater Houston. Boxer now takes its section from its counts and CIVE sits with the contractors, where a firm that built the wall for somebody else belongs. The section is back to three.
 
 **Smaller things.** The em dash appeared 54 times in the Decision-maker column, in a file whose house rule bans it; empty cells now read "none published", which is also more informative. The method claimed "No URL was constructed" while the call sheet printed 135 built LinkedIn keyword searches, so the claim is now scoped to source URLs and the searches are described for what they are. "Several firms publish nobody" is now the real count, 16 of 90, with 14 of those in the contractor section, named as the largest single gap in the file. A Better Business Bureau record was doing duty as a leadership source for Urban Living; it is gone, the LinkedIn holding stands on its own, and `BANNED_SOURCES` now refuses eleven contact-data aggregators the way it already refused wikis, so the build fails if one returns. The matrix note called the method "unproven" where the legend says "new at the time". The scope note is a builder rule and now says so, because most of the contractor trade in Houston is commercial. On a phone the cover view showed the count badges upside down in the card reflection, which read as a fault, and spent most of a screen on a legend the card face already spells out; both are gone below 640. The background survey marker read 23°N / 99°W, which is not Houston; it reads 29°N / 95°W.
+
+## Build 36: the last sweep
+
+A record-integrity pass before the session closed, and it found the largest silent fault in the file.
+
+**The contractor reasons were never on the page.** The block in `build.py` that turns three sentences into the three counts on a firm card ran only for a fixed list of sections, and the contractor section was added to the page without being added to that list. All twenty-two contractor records shipped in Builds 34 and 35 with an empty reasons block: the card showed the verdict, the firm, the contacts and the evidence, and nothing at all under Three counts. The reasons existed in the data the whole time under a private key, which is why a reviewer reading the JSON could quote them and a reader on the page could not see them. Fixed, and the verifier now fails the build if any record outside the land-owner section carries anything other than three reasons.
+
+**Contractors read the first count differently, and now the card says so.** A contractor has no plan set, so the axis title on those cards reads *Repetition: puts up the same wall, in one metro* rather than *builds the same plans, in one place*. The other two are unchanged.
+
+**Seven blank headline figures.** Chesmar, RSK and Friendswood showed an empty column, and so did all four land owners, which reads as an oversight rather than as an absence. Each now says what the record holds: acreage and builder rosters for the land owners, the Sekisui ownership for Chesmar, 366 units for RSK. Jamestown's headline still carried the 2020 figure the chart stopped drawing in Build 33; it now matches. The verifier fails on a blank.
+
+**Text.** Zero em dashes, zero aggregator citations, zero wiki citations, no remaining "Titan fit", no remaining instance of the old rule sentence, and the last two "unproven method" strings are gone. Trailing whitespace is now stripped at build time rather than carried into the workbook. One doubled article introduced by an earlier sweep was repaired.
 
 ## Live numbers
 

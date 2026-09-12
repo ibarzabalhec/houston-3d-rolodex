@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 35,
+ "build": 36,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -1446,7 +1446,7 @@
      "name": "Proprietary construction ERP and site robotics",
      "detail": "Six-year in-house build. Automates construction budgets, scheduling and inspection reporting. Robotic units run site inspections and upload progress data for AI delay and quality detection.",
      "signal_type": "method_risk",
-     "fit_signal": "The only firm screened with dated, named-executive evidence of sustained premium spend on unproven construction technology. ",
+     "fit_signal": "The only firm screened with dated, named-executive evidence of sustained premium spend on unproven construction technology.",
      "url": "https://keycrew.co/journal/wan-bridge-groups-ting-qiao-on-elevating-the-build-to-rent-market/"
     }
    ],
@@ -2060,7 +2060,7 @@
      "name": "Published wall-assembly position",
      "detail": "Company blog describes 2x6 advanced framing at 16-inch on-centre spacing, stated as 30 percent more lumber than typical, plus LP TopNotch 350 subfloor and pump-truck foundation pours.",
      "signal_type": "method_risk",
-     "fit_signal": "A production builder that markets its wall assembly has already decided the wall is a competitive variable rather than a commodity. ",
+     "fit_signal": "A production builder that markets its wall assembly has already decided the wall is a competitive variable rather than a commodity.",
      "url": "https://www.firstamericahomes.com/blog/first-america-homes-construction-the-real-difference-is-in-the-walls/"
     }
    ],
@@ -2774,7 +2774,7 @@
    "region": "Spring, Harris-Montgomery",
    "homepage_url": "https://www.chesmar.com/",
    "synopsis": "Production builder headquartered in Spring with divisions in three other Texas markets and a builder role at Sienna. Chesmar publishes no Houston community unit counts and no construction-method content.",
-   "key_stat": null,
+   "key_stat": "No unit count published; owned by Sekisui House U.S.",
    "principals": [
     {
      "name": "Michael Hundl",
@@ -3623,7 +3623,7 @@
    "_why": [
     "324 homes across fifteen communities, on a standardised first-time-buyer product.",
     "The volume band fits, but the parent listed in January 2024 and purchasing may have centralised.",
-    "The model is standardisation for entry-level buyers. That is not evidence of paying for an unproven method."
+    "The model is standardisation for entry-level buyers. That is not evidence of paying for a method that was new at the time."
    ],
    "sources": [
     {
@@ -3668,7 +3668,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "The model is standardisation for entry-level buyers. That is not evidence of paying for an unproven method."
+     "text": "The model is standardisation for entry-level buyers. That is not evidence of paying for a method that was new at the time."
     }
    ],
    "company_li": null,
@@ -3742,7 +3742,7 @@
      "name": "Lot bank",
      "detail": "25,000 to 35,000 residential lots owned or in development at any time, reported March 7, 2023.",
      "signal_type": "repeatable",
-     "fit_signal": "A standing lot bank of this size converts directly into forward unit volume without new land assembly.",
+     "fit_signal": "A lot bank of 25,000 to 35,000 lots converts directly into forward unit volume without new land assembly.",
      "url": "https://www.housingwire.com/articles/camillo-weds-its-brand-family-with-a-newly-spoken-vow-opening-doors/"
     }
    ],
@@ -4825,7 +4825,7 @@
    "region": "Houston, 16 communities",
    "homepage_url": "https://jamestownestatehomes.com/",
    "synopsis": "Family builder founded in 2008 by Greg Hawes with his daughters, building about seventy-five homes a year from a catalogue of eighty-two plans across sixteen communities from Sienna to Montgomery.",
-   "key_stat": "20 homes and $22 million in 2020, the latest published",
+   "key_stat": "About 75 homes a year on the firm's own count",
    "principals": [
     {
      "name": "Greg Hawes",
@@ -5875,7 +5875,7 @@
    "region": "Chicago HQ / Katy, Harris",
    "homepage_url": "https://rskrealestatepartners.com/",
    "synopsis": "Two Katy build-to-rent duplex projects within about a mile of each other, 156 and 210 units. Right product and right repetition, but no capital figure disclosed and no innovation evidence found.",
-   "key_stat": null,
+   "key_stat": "366 build-to-rent units across two Katy projects",
    "principals": [
     {
      "name": "Neil Joshi",
@@ -6132,7 +6132,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "The same wall system, installed again and again across Houston and the coast since 2002."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No crew count or homes-a-year figure is published. On the bands, a firm with no published figure is a Partly, and that is the first thing to establish on the call."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Its entire business is a wall method that was new when it adopted it. The crews are trained on twelve form systems and run a twenty-step checklist before every placement."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6229,7 +6251,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Tilt-up and foundation work repeating across four counties from one Houston yard."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "150 office and field staff on the firm's own count. That is the only published size in this section, and at that size one or two printers cover a real share of a year's wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. Its published work is conventional tilt-up and foundations."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6314,7 +6358,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Tilt-up warehouses, retail centres and schools repeating inside the Houston market."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No crew count or annual volume is published. The one published job runs to 32 panels across four floors. On the bands, a firm with no annual figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. The 2025 tilt-up award is for execution, not for a new method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6390,7 +6456,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three standing placement divisions in one metro, so the same work recurs rather than arriving one project at a time."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,500 craftsmen and 975,000 cubic yards a year on the firm's own count. One or two printers would be a line inside the business rather than the business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It owns a fleet of placing booms and multiple complete hydraulic self-jacking formwork systems on its own account. Buying capital equipment to change how concrete gets placed is the habit this count is looking for, though formwork is not a new method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6487,7 +6575,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Interior wall and ceiling packages repeating across multifamily and single family work in one metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No employee count or annual unit figure is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory, which is the nearest thing to the argument for a printer."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6560,7 +6670,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Concrete packages recurring across Houston projects under both delivery models."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No crew count, revenue or project size is published. Nothing on the site sizes the work, so on the bands this is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It bought and staffed a modelling stack, Revit, Tekla, AutoCAD and Navisworks, to plan its pours. A printed wall arrives as a model first, so the habit transfers, though modelling is not itself a building method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6634,7 +6766,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Design-build projects, each one different."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No headcount, revenue or annual project figure is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "It engineered and delivered a printed house in Houston in collaboration with a printing contractor, and publishes the project on its own site."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6708,7 +6862,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial buildings across the Gulf Coast. The structures differ project to project."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No revenue, crew count or project count is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It carries insulated concrete form construction in its standard menu alongside tilt-wall and masonry, so it has sold and built a concrete wall system rather than only a wood one. No named project is published to date it."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6777,7 +6953,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Industrial and commercial concrete recurring across the east side of the metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6872,7 +7070,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Garden-style and mid-rise apartment buildings repeating across Texas markets from a Houston office."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Over 44,000 apartment homes in 45 years, so the wall volume is there. It states that it works through trade partners rather than self-performing, so the machine would sit with a subcontractor rather than with Blazer."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. The only construction-method language on the site is the list of building types it builds."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -6954,7 +7174,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Panel production at the top of the metro's range, recurring across institutional and commercial work."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "The concrete business is large enough that a printer is a line item, and the capital decision sits with a listed parent rather than in Houston."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7025,7 +7267,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Site and concrete packages recurring across Houston jobs, though the buildings themselves differ."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7098,7 +7362,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Panel and deck work recurring across Houston projects for a standing set of general contractors."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No crew count or annual volume is published. The one published job runs to 49 panels. On the bands, a firm with no annual figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7174,7 +7460,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7248,7 +7556,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Tilt-up buildings recurring across two Texas metros since 1991."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Its own pages carry two different completed square footage figures and neither is repeated here, so nothing published sizes a year's work. On the bands that is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7325,7 +7655,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial concrete and metal buildings recurring across the north side of the metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "No crew count, revenue or project size is published anywhere on the site. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7400,7 +7752,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Tilt-up panel production repeats inside one metro even when the buildings differ."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "The firm's own site gives a job range of $500,000 to $15 million. A printer would be one line in a book that size."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. Its published involvement is in concrete standards committees, not in new methods."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7477,7 +7851,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Panel and structural concrete work recurring across the Houston market."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 12,500 people across the United States on the firm's own count, and first on a national ranking of concrete specialty contractors. A machine purchase at that size runs through a national desk, which the bands score as a No."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. Working at the top of the panel size range is difficulty, not a new method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7551,7 +7947,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Single family and townhome communities across the north and west of the metro, taking the same wall package community after community."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "9,900 homes a year on the firm's own count, company-wide across Florida and Texas, far above what one or two printers cover. It also counts more than 900 subcontractors and no direct field crew, so there is nobody inside the firm to put on a machine."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7642,7 +8060,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Eight divisions across commercial, retail, healthcare and multifamily. The buildings differ project to project."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No annual volume is published. The one published job runs to 770,640 square feet, and the panels on it were poured by somebody else."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It reordered the standard tilt-wall sequence on a 770,640 square foot job, setting a 275-ton lattice boom crane on the perimeter to avoid the slab, and published the result. That is method appetite rather than the purchase of a new method."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7714,7 +8154,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial and institutional work rather than a repeated plan, so the structure changes project to project."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7782,7 +8244,29 @@
    "group": "trade",
    "tier": "W",
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial and multifamily work across four metros. The buildings differ project to project."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No revenue, crew count or project size is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. The tilt-up award is for execution."
+    }
+   ],
    "company_li": null,
    "company_li_note": null,
    "team_url": null,
@@ -7894,7 +8378,7 @@
    "audit_flags": [
     "The Mill square footage and unit count cross-checked across two sources with differing detail. Treat figures as approximate.",
     "The Mill is the hybrid precedent. A 75,000 square foot six-storey office frame in cross-laminated timber, reported as one of Houston's first, alongside 340 apartments and a 14,000 square foot 1890s brick building kept and folded into the new structure. Michael Hsu and EDI on design. One team ran an unproven structural system and an adaptive reuse on the same six-acre site.",
-    "Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG. ",
+    "Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG.",
     "Triten's construction staff below Larry Sloan are construction managers. A Chief Construction Officer is titled to Triten Corporation, a separate Houston company sharing the name. The relationship between the two is unresolved.",
     "No capital signal carries a dollar figure. M-K-T Heights price undisclosed.",
     "LinkedIn URLs unsourced for all four principals."
@@ -8583,7 +9067,7 @@
      "name": "East River",
      "detail": "100 Jensen Drive, Fifth Ward. 150 acres planned at 60 city blocks over a decades-long horizon. Phase One 26 acres: The Laura at 360 units, 250,000 square feet office, 110,000 square feet retail. Groundbreaking August 26, 2021.",
      "signal_type": "repeatable",
-     "fit_signal": "Phased delivery of low- and mid-rise blocks on a single 150-acre site over decades. ",
+     "fit_signal": "Phased delivery of low- and mid-rise blocks on a single 150-acre site over decades.",
      "url": "https://rebusinessonline.com/midway-breaks-ground-on-150-acre-east-river-mixed-use-development-in-houston/"
     },
     {
@@ -10199,7 +10683,7 @@
    "region": "Houston / Katy, Harris-Waller",
    "homepage_url": "https://landtejas.com/",
    "synopsis": "Develops lots and sells them to builders, so it never buys a wall system. Sunterra's 2,303 acres and 15-builder roster make it the largest single builder roster screened, and Starwood Capital took a majority interest on December 29, 2021.",
-   "key_stat": null,
+   "key_stat": "Sunterra, 2,303 acres in Katy, fifteen builders",
    "principals": [
     {
      "name": "Alan Brende",
@@ -10273,7 +10757,7 @@
    "region": "Cypress / Montgomery, Harris",
    "homepage_url": "https://caldwellcos.com/",
    "synopsis": "Land developer of Towne Lake and The Highlands, the latter 2,300 acres with 4,000 planned homes and 12 concurrent builders. Sells lots, does not pour walls. Publishes no construction-method content.",
-   "key_stat": null,
+   "key_stat": "Towne Lake and The Highlands, about 4,000 homes",
    "principals": [
     {
      "name": "Fred Caldwell",
@@ -10344,7 +10828,7 @@
    "region": "Houston / Fort Bend, Montgomery",
    "homepage_url": "https://www.johnsondevelopment.com/",
    "synopsis": "Land developer running 14 concurrent Houston-area masterplans including Sienna and Cross Creek West. Channel value is high and direct wall purchasing is nil. Johnson Development publishes no construction-method content.",
-   "key_stat": null,
+   "key_stat": "Fourteen concurrent Houston masterplans",
    "principals": [
     {
      "name": "Michael J. Smith",
@@ -10417,7 +10901,7 @@
    "region": "San Diego HQ / Katy, Harris",
    "homepage_url": "https://newlandco.com/",
    "synopsis": "Land developer of the 3,600-acre Elyson community in Katy. No executives could be confirmed from any retrieved page and the headquarters location rests on a third-party business listing.",
-   "key_stat": null,
+   "key_stat": "Elyson, 3,600 acres in Katy",
    "principals": [
     {
      "name": "Alan Bauer",
@@ -10588,7 +11072,7 @@
    "region": "Houston / Montgomery, Galveston",
    "homepage_url": "https://friendswooddevelopment.com/",
    "synopsis": "Land developer founded 1962 and a wholly owned Lennar subsidiary since 2000. The channel leads directly to Lennar, which is a vertical builder. No named executives found on any retrieved page.",
-   "key_stat": null,
+   "key_stat": "Sells lots inside its own masterplans; Lennar builds",
    "principals": [
     {
      "name": "Michael Reamer",

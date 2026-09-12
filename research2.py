@@ -230,8 +230,18 @@ STATS = {
     "HOU-069": "483 closings and $306 million in 2025",
     "HOU-072": "More than 300 homes a year in Texas and Tennessee",
     "HOU-066": "40 to 60 homes a year on the firm's own count",
-    "HOU-071": "20 homes and $22 million in 2020, the latest published",
+    "HOU-071": "About 75 homes a year on the firm's own count",
     "HOU-077": "372 closings company-wide in 2022, no Houston figure",
+    # A blank column reads as an oversight. Where no figure is published, the
+    # column says what the record actually holds instead.
+    "HOU-045": "No unit count published; owned by Sekisui House U.S.",
+    "HOU-044": "366 build-to-rent units across two Katy projects",
+    "HOU-042": "Sells lots inside its own masterplans; Lennar builds",
+    # The land owners publish acreage and builder rosters, not closings.
+    "HOU-039": "Sunterra, 2,303 acres in Katy, fifteen builders",
+    "HOU-040": "Fourteen concurrent Houston masterplans",
+    "HOU-041": "Towne Lake and The Highlands, about 4,000 homes",
+    "HOU-043": "Elyson, 3,600 acres in Katy",
 }
 
 # target_id -> {axis: score}. Only machine fit moves, and only where a figure
