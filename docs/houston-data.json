@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 38,
+ "build": 39,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -724,7 +724,7 @@
     "no": 0,
     "decider": 8,
     "confirm": 1,
-    "linked": 9
+    "linked": 10
    },
    {
     "group": "b",
@@ -746,7 +746,7 @@
     "no": 14,
     "decider": 15,
     "confirm": 0,
-    "linked": 12
+    "linked": 16
    },
    {
     "group": "creative",
@@ -1065,9 +1065,9 @@
   "tier_a": 12,
   "tier_b": 28,
   "out": 0,
-  "principals": 223,
-  "linkedin_held": 100,
-  "audit_flags": 255,
+  "principals": 226,
+  "linkedin_held": 107,
+  "audit_flags": 258,
   "with_decider": 44,
   "with_decider_live": 21,
   "with_decider_confirmed": 42,
@@ -1663,14 +1663,16 @@
     {
      "name": "Andrew Segal",
      "role": "Chairman and Chief Executive Officer",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Andrew%20Segal%20Boxer%20Property"
+     "linkedin_url": "https://www.linkedin.com/in/andrew-segal-40049914/",
+     "li_evidence": "Headline reads Boxer Property. Houston, Texas. The title comes from the firm's own about page.",
+     "decider": true
     },
     {
      "name": "Justin Segal",
      "role": "President",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Justin%20Segal%20Boxer%20Property"
+     "linkedin_url": "https://www.linkedin.com/in/segaljustin/",
+     "li_evidence": "Headline reads President - Boxer Property. Founder - Stemmons Enterprise. Houston, Texas.",
+     "decider": true
     },
     {
      "name": "Blake Morris",
@@ -6125,6 +6127,7 @@
    ],
    "audit_flags": [
     "Its named markets run from Houston to Corpus Christi, Dallas and McAllen, so Houston is one of several. Confirm how much of the work is local.",
+    "Matt Zetlmeisl has no LinkedIn profile. A search of the surname returns ten people, none of them him and none in Texas construction. The firm's own site is the only route to him.",
     "No crew count, revenue or homes-a-year figure is published anywhere, including on the page about the firm's financial strength, which describes high business volume without a number."
    ],
    "hue_hex": "#FF4F00",
@@ -6190,14 +6193,16 @@
     {
      "name": "Eleazar Botello",
      "role": "Founder, named on the firm's own site",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Eleazar%20Botello%20Botello%20Builders"
+     "linkedin_url": "https://www.linkedin.com/in/eleazarbotello/",
+     "li_evidence": "Headline reads President at Botello Builders Corporation. Houston, Texas. The firm's own site calls him a founder and gives no title.",
+     "decider": true
     },
     {
      "name": "Eden Botello",
      "role": "Founder, named on the firm's own site",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Eden%20Botello%20Botello%20Builders"
+     "linkedin_url": "https://www.linkedin.com/in/eden-botello-28a5691b5/",
+     "li_evidence": "Headline reads Operations Manager at Botello Builders Corporation. Houston, Texas.",
+     "decider": true
     },
     {
      "name": "Jose Botello",
@@ -6553,8 +6558,9 @@
     {
      "name": "Phil Nevlud",
      "role": "Division President",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Phil%20Nevlud%20MAREK"
+     "linkedin_url": "https://www.linkedin.com/in/phil-nevlud-843a391a/",
+     "li_evidence": "Headline reads Division President - Houston and does not name the firm. A search for his name with MAREK returns him and nobody else, and MAREK's own site names him Division President.",
+     "decider": true
     },
     {
      "name": "Ronald Marek",
@@ -7332,6 +7338,7 @@
     "Greco's own site names no officer and publishes no crew count or annual volume. The parent's site is where the people are.",
     "The parent describes Greco as a turnkey commercial concrete contractor operating throughout Texas, running for more than thirty years and established under the Greco name about ten years ago, with a pumping arm of two pump trucks.",
     "Greco lists multifamily among its markets but names no multifamily project.",
+    "Trey Green returns no LinkedIn result against the parent's name. He is named on Satterfield and Pontikes' own team page and nowhere else that was retrieved.",
     "The parent's own site names Greco among the Satterfield and Pontikes family of companies, so the LinkedIn signal was right. The person who signs sits at the parent, in the self-perform group."
    ],
    "hue_hex": "#FF4F00",
@@ -8405,8 +8412,9 @@
     {
      "name": "Michael G. Scheurich",
      "role": "Founder and Chief Executive Officer",
-     "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20G.%20Scheurich%20Arch-Con%20Corporation"
+     "linkedin_url": "https://www.linkedin.com/in/michael-scheurich-07811331/",
+     "li_evidence": "Headline reads Chief Executive Officer at Arch-Con Corporation. Houston, Texas.",
+     "decider": true
     },
     {
      "name": "Jason M. Cooper",
@@ -8418,6 +8426,13 @@
      "name": "Daniel J. O'Hare",
      "role": "Chief Financial Officer",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Daniel%20J.%20O%27Hare%20Arch-Con%20Corporation"
+    },
+    {
+     "name": "Christopher Scheurich",
+     "role": "General Counsel",
+     "linkedin_url": null,
+     "li_evidence": "Headline reads General Counsel at Arch-Con Corporation. Houston, Texas.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Christopher%20Scheurich%20Arch-Con%20Corporation"
     }
    ],
    "key_projects": [
@@ -8523,6 +8538,20 @@
      "role": "Founder, named on the firm's own about page",
      "decider": true,
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brad%20Burton%20Burton%20Construction"
+    },
+    {
+     "name": "Shawn McAlpin",
+     "role": "Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/shawn-mcalpin-b1260312/",
+     "li_evidence": "Headline reads CEO at Burton Construction. Katy, Texas. The firm's own about page names only its founder, so this is the current chief executive and the founder is not.",
+     "decider": true
+    },
+    {
+     "name": "Joshua Cantu",
+     "role": "Director",
+     "linkedin_url": null,
+     "li_evidence": "Headline reads Director at Burton Construction. Houston, Texas.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Joshua%20Cantu%20Burton%20Construction"
     }
    ],
    "key_projects": [],
@@ -8533,8 +8562,8 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "Twenty-two years old, founder still named, a tilt-up award in 2024 and multifamily in the published portfolio.",
-   "_verdict": "Twenty-two years old, founder still named, a tilt-up award in 2024 and multifamily in the published portfolio.",
+   "mvp_screen": "Twenty-two years old, a tilt-up award in 2024 and multifamily in the published portfolio. The founder is on the firm's own page; the chief executive is not.",
+   "_verdict": "Twenty-two years old, a tilt-up award in 2024 and multifamily in the published portfolio. The founder is on the firm's own page; the chief executive is not.",
    "_why": [
     "Commercial and multifamily work across four metros. The buildings differ project to project.",
     "No revenue, crew count or project size is published. On the bands, a firm with no published figure is a Partly.",
@@ -8547,6 +8576,7 @@
     }
    ],
    "audit_flags": [
+    "The firm's own about page names its founder and stops there. The current chief executive was found on LinkedIn, not on the site.",
     "Self-perform scope is not stated on the firm's own site, so whether it owns concrete crews is unconfirmed.",
     "No multifamily project is named and no revenue or crew count is published."
    ],
@@ -8594,7 +8624,8 @@
    "cell": "partial|partial",
    "clears": 0,
    "deciders": [
-    "Brad Burton"
+    "Brad Burton",
+    "Shawn McAlpin"
    ],
    "has_decider": true,
    "decider_confirmed": true,

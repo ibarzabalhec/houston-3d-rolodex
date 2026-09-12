@@ -500,8 +500,8 @@ NEW_TRADES = [
  "General contractor founded in 2004 covering office, mixed-use, medical, industrial, retail, "
  "hospitality and multifamily, carrying a 2024 Tilt-Up Achievement Award on its own about page.",
  (2, 2, 1, 2),
- "Twenty-two years old, founder still named, a tilt-up award in 2024 and multifamily in the "
- "published portfolio.",
+ "Twenty-two years old, a tilt-up award in 2024 and multifamily in the published portfolio. The "
+ "founder is on the firm's own page; the chief executive is not.",
  ("Commercial and multifamily work across four metros. The buildings differ project to project.",
   "No revenue, crew count or project size is published. On the bands, a firm with no published "
   "figure is a Partly.",
@@ -511,7 +511,9 @@ NEW_TRADES = [
  ["https://burtonconstruction.com/"],
  ["Self-perform scope is not stated on the firm's own site, so whether it owns concrete crews is "
   "unconfirmed.",
-  "No multifamily project is named and no revenue or crew count is published."]),
+  "No multifamily project is named and no revenue or crew count is published.",
+  "The firm's own about page names its founder and stops there. The current chief executive was "
+  "found on LinkedIn, not on the site."]),
 
 ("HOU-117", "Blazer Building", "Houston, Harris, with Texas growth markets",
  "https://www.blazerbuilding.com/",
@@ -898,6 +900,7 @@ TRADE_DECIDERS = {
     ("HOU-115", "Michael G. Scheurich"),
     ("HOU-115", "Jason M. Cooper"),
     ("HOU-116", "Brad Burton"),
+    ("HOU-116", "Shawn McAlpin"),
     ("HOU-120", "Matt Zetlmeisl"),
     ("HOU-121", "Phil Nevlud"),
     ("HOU-121", "Ronald Marek"),
@@ -1046,4 +1049,61 @@ TRADE_PEOPLE_FLAGS = {
                "LinkedIn returns only project managers and a controller under either firm name.",
     "HOU-118": "Only one Leola person in Greater Houston surfaces at all, in business development. "
                "The firm is Florida-owned and the leadership sits there.",
+}
+
+# Second LinkedIn pass, 12 September 2026, covering people the records already
+# named from a firm's own page but for whom no profile was held, plus the firms
+# that still published nobody. Same standard: the headline names the person and
+# the firm together, unless the note says otherwise.
+# (target_id, name) -> (linkedin_url, evidence)
+DECIDER_PROFILES = {
+    ("HOU-128", "Justin Segal"): (
+        "https://www.linkedin.com/in/segaljustin/",
+        "Headline reads President - Boxer Property. Founder - Stemmons Enterprise. Houston, Texas."),
+    ("HOU-128", "Andrew Segal"): (
+        "https://www.linkedin.com/in/andrew-segal-40049914/",
+        "Headline reads Boxer Property. Houston, Texas. The title comes from the firm's own about page."),
+    ("HOU-115", "Michael G. Scheurich"): (
+        "https://www.linkedin.com/in/michael-scheurich-07811331/",
+        "Headline reads Chief Executive Officer at Arch-Con Corporation. Houston, Texas."),
+    ("HOU-104", "Eleazar Botello"): (
+        "https://www.linkedin.com/in/eleazarbotello/",
+        "Headline reads President at Botello Builders Corporation. Houston, Texas. The firm's own "
+        "site calls him a founder and gives no title."),
+    ("HOU-104", "Eden Botello"): (
+        "https://www.linkedin.com/in/eden-botello-28a5691b5/",
+        "Headline reads Operations Manager at Botello Builders Corporation. Houston, Texas."),
+    ("HOU-121", "Phil Nevlud"): (
+        "https://www.linkedin.com/in/phil-nevlud-843a391a/",
+        "Headline reads Division President - Houston and does not name the firm. A search for his "
+        "name with MAREK returns him and nobody else, and MAREK's own site names him Division "
+        "President."),
+}
+
+# People found on this pass who were not on the record at all.
+LATE_PEOPLE = {
+    "HOU-116": [
+        ("Shawn McAlpin", "Chief Executive Officer",
+         "https://www.linkedin.com/in/shawn-mcalpin-b1260312/",
+         "Headline reads CEO at Burton Construction. Katy, Texas. The firm's own about page names "
+         "only its founder, so this is the current chief executive and the founder is not.", True),
+        ("Joshua Cantu", "Director",
+         None,
+         "Headline reads Director at Burton Construction. Houston, Texas.", False),
+    ],
+    "HOU-115": [
+        ("Christopher Scheurich", "General Counsel",
+         None,
+         "Headline reads General Counsel at Arch-Con Corporation. Houston, Texas.", False),
+    ],
+}
+
+# Searched for and not found. A confirmed absence is worth recording, because it
+# stops the next session looking again.
+NO_PROFILE = {
+    "HOU-120": "Matt Zetlmeisl has no LinkedIn profile. A search of the surname returns ten people, "
+               "none of them him and none in Texas construction. The firm's own site is the only "
+               "route to him.",
+    "HOU-106": "Trey Green returns no LinkedIn result against the parent's name. He is named on "
+               "Satterfield and Pontikes' own team page and nowhere else that was retrieved.",
 }

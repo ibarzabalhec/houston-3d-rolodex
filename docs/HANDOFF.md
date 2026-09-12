@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 38 · 2026-09-11
+Build 39 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -170,6 +170,16 @@ The people were in after Build 37 but the records themselves were still the thin
 **Smaller corrections.** Trent Mitchell at Silver Spur is Owner, published, after eighteen years selling ready-mix to Houston general contractors, so the presentation caveat comes off. Andrade was founded in 2003 by Victor Andrade; the second domain carrying the name Andrade Concrete and Construction is a placeholder with no address, services or people, so whether the two are one business is unsettled and now says so. Keystone's residential division places custom home foundations, master plan communities, and additions and flatwork, and the firm states it owns its pump fleet and runs a yard in every location. Building Concrete Solutions names The Travis at 3300 Main and Gables Residential Westcreek, two apartment buildings, which most of this section cannot show.
 
 **Confirmed absences, which are worth as much as the finds.** Texas A&M Concrete publishes nothing beyond its job range, names nobody, and shows no residential work. Botello's projects are schools, healthcare, a museum and dealerships, with no residential. Encore names six projects and not one is multifamily, despite listing elevated multifamily as a project type, and its employee ownership appears only as a badge. ICF Constructors publishes no volume figure anywhere, including on its own page about financial strength, which describes high business volume without a number.
+
+## Build 39: the second LinkedIn pass
+
+The scope Héctor approved was the blank firms plus the deciders who had no profile. Build 37 did the first half; this is the second. Profiles held rose from 101 to 107, and deciders with no profile fell from 24 to 18.
+
+Found: Justin Segal, President of Boxer Property, and Andrew Segal alongside him. Michael Scheurich, Chief Executive at Arch-Con. Phil Nevlud at MAREK, whose headline reads Division President without naming the firm, held because a search of his name with MAREK returns him and nobody else and the firm's own site gives the title. And at Botello Builders, where the firm's own site calls all three brothers founders and gives no titles, LinkedIn gives two: Eleazar Botello is President and Eden Botello is Operations Manager.
+
+One correction worth more than the profiles. Burton Construction's own about page names Brad Burton as founder and stops there. The current chief executive is Shawn McAlpin, who appears nowhere on the firm's site. The record named the wrong person as the one who signs, and now names both.
+
+Two confirmed absences, recorded so the next session does not look again. Matt Zetlmeisl at ICF Constructors has no LinkedIn profile at all; a surname search returns ten people, none of them him and none in Texas construction, so the firm's own site is the only route to him. Trey Green returns nothing against the parent's name and exists only on Satterfield and Pontikes' own team page.
 
 ## Live numbers
 
