@@ -12,7 +12,7 @@ from openpyxl.utils import get_column_letter
 D = json.load(open("houston-data.json", encoding="utf-8"))
 WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 GROUP = {"adopter": "Already buying printed walls", "a": "Strong target",
-         "b": "Worth pursuing, one gap", "national": "National scale, pilot not purchase", "creative": "Creative project, hybrid job",
+         "b": "Worth pursuing, one gap", "trade": "Builds the wall, not the house", "national": "National scale, pilot not purchase", "creative": "Creative project, hybrid job",
          "channel": "Masterplan owner", "icon": "Already working with ICON",
          "out": "Off deck, screened out"}
 T = D["targets"]

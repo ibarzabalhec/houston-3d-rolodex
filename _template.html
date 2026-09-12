@@ -1264,6 +1264,7 @@ document.getElementById('by').innerHTML='Prepared by '+esc(D.byline.split(' · '
 document.getElementById('hl').innerHTML=D.headline_html;
 document.getElementById('sub').textContent=D.sub;
 (function heroFigure(){
+  var NB=T.filter(function(t){return t.group!=='trade';}).length;
   var MK=D.market||{}, rows=(MK.closings||[]).slice(); if(!rows.length) return;
   var W=1040,H=178,L=8,R=8,axisY=104,max=1200;
   var X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
@@ -1297,8 +1298,8 @@ document.getElementById('sub').textContent=D.sub;
      '<text class="hname sub" x="'+(lx+6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="start">'+esc(lo.short)+', '+lo.high+' a year</text>';
   h+='<line class="hgrid" x1="'+hx+'" y1="'+(axisY-22-lanes*18)+'" x2="'+hx+'" y2="'+(axisY-24)+'"/>'+
      '<text class="hname" x="'+(hx-6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="end">'+esc(hi.short)+', '+String(hi.high).replace(/\B(?=(\d{3})+(?!\d))/g,',')+' a year</text>';
-  h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+rows.length+' of '+T.length+
-     ' firms publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
+  h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+rows.length+' of the '+NB+
+     ' builders screened publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
      '<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
   h+='</svg>';
   document.getElementById('heroFig').innerHTML=h;
@@ -1367,7 +1368,7 @@ function drawMatrix(){
 }
 
 function drawList(){
-  var groups=['adopter','a','b','creative','national','channel','icon'].map(function(k){
+  var groups=['adopter','a','b','trade','creative','national','channel','icon'].map(function(k){
     return [k,GL[k]||'',GN[k]||''];}),h='';
   var shown=0;
   groups.forEach(function(g){
@@ -1407,7 +1408,7 @@ function whyList(t){
       '<span class="tx">'+esc(w.text)+'</span></span></li>';}).join('')+'</ul>';
 }
 
-function personRow(p,compact){
+function personRow(p,compact,grp){
   var links=icon(p.linkedin_url,'li','LinkedIn profile')+
             icon(p.source_url,'doc','Named on this page')+
             (!p.linkedin_url?icon(p.find_url,'find','Search LinkedIn for this person'):'');
@@ -1418,7 +1419,7 @@ function personRow(p,compact){
   }
   return '<div class="p1'+(p.decider?' dec':'')+(p.departed?' gone':'')+'">'+
     '<div><div class="nm">'+esc(p.name)+
-      (p.decider?'<span class="badge">Specifies the wall</span>':'')+
+      (p.decider?'<span class="badge">'+(grp==='trade'?'Signs for the machine':'Specifies the wall')+'</span>':'')+
       (p.departed?'<span class="badge g">Departed</span>':'')+
       (p.probable?'<span class="badge g">Unconfirmed</span>':'')+
       (p.entity_note?'<span class="badge g">Confirm entity</span>':'')+
@@ -1462,7 +1463,7 @@ function firmPage(t){
 
   if((t.principals||[]).length){
     var ppl=t.principals.slice().sort(function(x,y){return (y.decider?1:0)-(x.decider?1:0);})
-      .map(function(p){return personRow(p,false);}).join('');
+      .map(function(p){return personRow(p,false,t.group);}).join('');
     var notes='';
     if(t.company_li_note) notes+='<p class="note">'+esc(t.company_li_note)+'</p>';
     if(t.team_note) notes+='<p class="note">'+esc(t.team_note)+'</p>';
@@ -1504,7 +1505,7 @@ function callPage(){
       return '<div class="cl"><h3>'+esc(t.entity_name)+'</h3><p class="syn">'+esc(t.mvp_screen)+'</p>'+
         whyList(t)+
         t.principals.slice().sort(function(x,y){return (y.decider?1:0)-(x.decider?1:0);})
-          .map(function(p){return personRow(p,true)+
+          .map(function(p){return personRow(p,true,t.group)+
             '<div class="urlline">'+esc(p.linkedin_url||p.source_url||p.find_url||'')+'</div>';}).join('')+
         '<button class="addbtn" data-add="'+id+'">Remove</button></div>';}).join(''));
     h.push('<div class="clact">'+
@@ -1614,7 +1615,7 @@ function optionCount(kind,key){
 function menuFor(kind,axis){
   var rows=[];
   if(kind==='group'){
-    ['adopter','a','b','creative','national','channel','icon'].forEach(function(g){
+    ['adopter','a','b','trade','creative','national','channel','icon'].forEach(function(g){
       if(!T.some(function(t){return t.group===g;})) return;
       rows.push(['group:'+g, GL[g]||g, F.group.indexOf(g)>=0, optionCount('group',g)]);});
   }else if(kind==='count'){
@@ -2002,7 +2003,7 @@ function render(){
    carries whatever filter is currently applied. */
 function drawPrintRoster(){
   var h='',shown=0;
-  ['adopter','a','b','creative','national','channel','icon'].forEach(function(k){
+  ['adopter','a','b','trade','creative','national','channel','icon'].forEach(function(k){
     var rows=T.filter(function(t){return t.group===k&&hit(t);});
     if(!rows.length) return;
     shown+=rows.length;

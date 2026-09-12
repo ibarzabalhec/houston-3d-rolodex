@@ -24,12 +24,14 @@ from machine import MACHINE, DROPPED, NATIONAL, CHANNEL, ICON_CLIENT
 from creative import CREATIVE, NEW_CREATIVE, EXTRA as CEXTRA
 from competitors import ICON as ICON_RECORD, COMPETITORS, CONSOLIDATION
 from builders import BUILDERS
+from trades import (TRADES, NEW_TRADES, NEW_METHOD, PRINTED_ADOPTERS,
+                    TRADE_DECIDERS, TRADE_DECIDER_NOTES)
 import research2 as R2
 from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 33
+BUILD = 34
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -37,6 +39,7 @@ BUILD = 33
 CONFIRMED.update(R2.LINKEDIN)
 PERSON.update(R2.SOURCES)
 DECIDERS.update(R2.DECIDERS)
+DECIDERS.update(TRADE_DECIDERS)
 for _tid, _ppl in R2.PEOPLE.items():
     NEW_PEOPLE.setdefault(_tid, []).extend(_ppl)
 for _tid, _sc in R2.SCORES.items():
@@ -49,6 +52,7 @@ SCREENS = ["repeatability", "machine_fit", "innovation"]
 
 ROLE_LABELS = {
     "vertical_buyer": "Buys walls",
+    "wall_trade": "Builds the wall",
     "proven_adopter": "Prints today",
     "channel": "Sells lots",
     "capital": "Funds it",
@@ -78,14 +82,14 @@ def expand_tail(rows):
     return out
 
 
-def expand_builders(rows):
+def expand_builders(rows, etype="homebuilder", role="vertical_buyer"):
     """The builder layer carries its own verdict and reasons inline."""
     out = []
     for (tid, name, region, url, stat, syn, sc, verdict, why3,
          people, projects, srcs, flags) in rows:
         out.append({
-            "target_id": tid, "entity_name": name, "entity_type": "homebuilder",
-            "entity_role": "vertical_buyer", "region": region, "homepage_url": url,
+            "target_id": tid, "entity_name": name, "entity_type": etype,
+            "entity_role": role, "region": region, "homepage_url": url,
             "synopsis": syn, "key_stat": stat,
             "principals": [{"name": n, "role": r} for n, r in people],
             "key_projects": [{"name": a, "detail": b, "signal_type": c, "fit_signal": d, "url": e}
@@ -123,6 +127,11 @@ def finalize(recs):
         t.setdefault("hue_hex", "#FF4F00")
         t.setdefault("tail", False)
 
+        if t["target_id"] in TRADE_DECIDER_NOTES:
+            _n = TRADE_DECIDER_NOTES[t["target_id"]]
+            if _n not in t["audit_flags"]:
+                t["audit_flags"].append(_n)
+
         hard = any("Do not approach" in f for f in t["audit_flags"])
         if t["entity_role"] == "proven_adopter":
             t["group"], t["tier"] = "adopter", "P"
@@ -134,6 +143,8 @@ def finalize(recs):
             t["group"], t["tier"] = "channel", "M"
         elif t["target_id"] in NATIONAL:
             t["group"], t["tier"] = "national", "N"
+        elif t["target_id"] in TRADES:
+            t["group"], t["tier"] = "trade", "W"
         elif t["target_id"] in CREATIVE:
             t["group"], t["tier"] = "creative", "X"
         elif hard:
@@ -274,7 +285,10 @@ SHORT = {
 }
 
 _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
-        + expand_builders(NEW_CREATIVE))
+        + expand_builders(NEW_CREATIVE)
+        + expand_builders(NEW_TRADES, "contractor", "wall_trade")
+        + expand_builders(NEW_METHOD)
+        + expand_builders(PRINTED_ADOPTERS, "developer", "proven_adopter"))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
 for t in targets:
@@ -305,8 +319,8 @@ for t in targets:
     t["audit_flags"] = ([f for f in flags if not _is_caveat(f)]
                         + [f for f in flags if _is_caveat(f)])
 
-GROUP_ORDER = {"adopter": 0, "a": 1, "b": 2, "creative": 3, "national": 4, "channel": 5,
-               "icon": 6, "out": 7}
+GROUP_ORDER = {"adopter": 0, "a": 1, "b": 2, "trade": 3, "creative": 4, "national": 5,
+               "channel": 6, "icon": 7, "out": 8}
 for t in targets:
     t["clears"] = sum(1 for k in SCREENS if t["scores"][k] == 3)
 targets.sort(key=lambda t: (GROUP_ORDER[t["group"]], -t["clears"], -t["holds"],
@@ -402,6 +416,7 @@ DATA = {
  # moved into the group note, where there is room to say it once.
  "group_labels": {"adopter": "Already buying printed walls", "a": "Strong target",
                   "b": "One gap", "national": "National builder",
+                  "trade": "Builds the wall, not the house",
                   "creative": "Custom and hybrid job",
                   "channel": "Land owner, not the buyer",
                   "icon": "Already working with ICON", "out": ""},
@@ -409,6 +424,9 @@ DATA = {
                  "b": "In on two of three counts.",
                  "adopter": "Has printed walls standing or contracted with a competitor.",
                  "national": "Purchasing sits at a national desk.",
+                 "trade": "Concrete, shell and wall contractors, and the general contractors that "
+                          "self-perform concrete. Houston builders do not put up their own walls, so "
+                          "the firm that would run a printer is often the one they hire.",
                  "creative": "Design-led work that does not repeat a plan set. The printed element "
                              "sits inside a conventional project.",
                  "channel": "Owns the ground. The builders inside buy the wall.",
@@ -418,6 +436,7 @@ DATA = {
    [str(g["a"]), "in on all three counts", False],
    [str(n_dec), "with a named decision-maker", True],
    [str(g["adopter"]), "already printing, with a competitor", False],
+   [str(g["trade"]), "contractors who build the wall", False],
  ],
  "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two "
         "printers would cover it. Track record: has paid for a new building method before. The first two "
@@ -453,6 +472,12 @@ DATA = {
     "a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is "
     "partial, and national purchasing fails. Track record asks whether the firm has ever paid for "
     "a new way of building. Yes and Partly both keep a firm in. Only a No takes it out."],
+   ["The counts, read for a contractor",
+    "A contractor does not close houses, so the same three questions are asked of the work rather "
+    "than of the plan set. Repetition asks whether the firm puts up the same wall again and again "
+    "inside one metro. Printer fit asks whether one or two printers would cover a share of the wall "
+    "it puts up in a year, on the same bands, with a firm whose purchasing sits at a corporate desk "
+    "scored Partly for the same reason a national builder is. Track record is unchanged."],
    ["Who decides",
     "%d of %d firms have a named vice president or director of construction, or head of purchasing, "
     "and %d of those %d can be reached as named without a caveat. The other %d carry a decider who has "
@@ -460,7 +485,8 @@ DATA = {
     "caveat sits on the contact itself. "
     "That is the bar, because those roles can change a wall specification. Construction managers, "
     "superintendents and purchasing agents are excluded: they execute a specification rather than "
-    "choose one."
+    "choose one. At a contractor the specification belongs to somebody else, so the person marked "
+    "is the one who signs for equipment: the owner, the president or the division head."
     % (n_dec, n, n_dec_ok, n_dec, n_dec_chk)],
    ["Sources",
     "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose "
@@ -509,7 +535,8 @@ DATA = {
         "linked": sum(1 for t in deck if t["group"] == gk
                       and any(p.get("linkedin_url") or p.get("source_url") for p in t["principals"]))}
        for gk, lbl in [("adopter", "Already buying printed walls"), ("a", "Strong target"),
-                       ("b", "One gap"), ("creative", "Custom and hybrid job"),
+                       ("b", "One gap"), ("trade", "Builds the wall, not the house"),
+                       ("creative", "Custom and hybrid job"),
                        ("national", "National builder"), ("channel", "Land owner, not the buyer"),
                        ("icon", "Already working with ICON")]],
    "owners": [

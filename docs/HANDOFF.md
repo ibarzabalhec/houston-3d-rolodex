@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 33 · 2026-09-11
+Build 34 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -104,6 +104,18 @@ The count was briefly labelled *Titan fit*. It now reads **Printer fit**, for th
 Three reviewers (a recruiter on ICON's talent team, the hiring manager for the BD role, a Houston builder of thirty years) went through the page. Applied from their reports, each checked against a source first: the byline moved to the masthead and a description meta tag was added; every sentence that read as gossip or as a jab was cut or rewritten (Wan Bridge departures, the departed First America purchasing lead, "Payson shares the founder's surname", "not a man who ran a builder of 22,000 homes", Alta's "no innovation budget", Perry's "never touches how the building is built", Apis Cor's "it was not ICON", COBOD's "puts ICON in COBOD's business"); GreenEco moved to the ICON group because Lennar completed its purchase of Rausch Coleman on 10 February 2025; Friendswood and GreenEco read Partly on track record with the parent named; Camillo's people are now the four on its own about page (the former chief executive and a marketing name from an org chart were removed); Kyle Davison was removed from Westin (the citation was a December 2014 release; he is at Meritage); Coventry's screen sentence names its two division presidents and the Dream Finders purchase of MHI (13 September 2021, $150 million) is sourced; the Sueba CityCentre and BLVD Place claim was removed (the firm's own page does not make it); Smith Douglas's Devon Street purchase is dated 2023; the Housing Authority rebrand is one sourced flag; Jamestown plots the firm's own figure of about 75 a year; the phone List has a sideways-scroll cue. Nine firms now sit in Strong target.
 
 Not applied, by Héctor's decision: no "why Houston" line (the role is in Houston), no first-person block, no thesis or ninety-day plan on the page. The reviewers' larger findings (contractors as the real buyer, the nationals, BTR operators, a firm main line per record, the payback page inputs) are written up as `docs/ROADMAP.md` for the next research session.
+
+## Build 34: the contractor layer
+
+The reviewers' central finding was that Greater Houston production builders do not put up their own walls, so the firm that would own and run a printer here is often the trade they hire, and there was not one on the deck. Four sweeps went out: insulated concrete form and concrete-home builders; tilt-wall, shell and structural concrete contractors and the general contractors that self-perform concrete; every printed building in Texas with the firms attached; and the trade base the screened builders actually name. Twenty-nine records came out of it and the roster went from 61 firms to 90.
+
+A new section, **Builds the wall, not the house**, holds twenty-one concrete, shell and wall contractors and the general contractors that self-perform concrete. The three counts are read differently there and the page says so: Repetition asks whether the firm puts up the same wall again and again inside one metro, Printer fit asks whether one or two printers would cover a share of the wall it puts up in a year on the same bands, and Track record is unchanged. The decision-maker rule also changes, and the page says that too: at a builder the person is the one who can change a wall specification, at a contractor it is the one who signs for equipment, so the badge on a contractor's card reads *Signs for the machine*. Named decision-makers went from 24 to 36.
+
+Six builders whose wall is already not wood joined the builder flow rather than the contractor section, because they build the house: Everlasting Homes on structural concrete insulated panels, Tiona Homes and Seaside Construction on insulated concrete form, Nautilus Custom Homes, Aura Dwellings on volumetric modular, and Live Lone Star on factory-built product. Two firms that have already paid for a printed building joined the proven-adopter section: Boxer Property, a Houston commercial owner that partnered on a printed house in Fort Worth, and CIVE, the Houston design-build firm that engineered the printed house in Spring Branch.
+
+Three findings from the sweeps are recorded in `trades.py` rather than smoothed over. Houston's structural concrete trade is almost entirely commercial and industrial, so for most of these firms a printed house wall would be a new market. Houston production builders publish almost nothing about their shell trade base: of the builders screened, one publishes a partner list and it is all manufacturers and distributors. And no Greater Houston contractor surfaced anywhere as having publicly adopted construction robotics, which is a gap in the record rather than a search that failed.
+
+The hero and market closings captions now count builders rather than all firms, since a contractor closes no homes. The verifier gained four checks on the new section: that it exists and lists its firms, that it is offered in the section filter and filters to the right count, and that at least one contractor carries a decision-maker.
 
 ## Live numbers
 

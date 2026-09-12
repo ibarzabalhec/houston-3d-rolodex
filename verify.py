@@ -305,6 +305,46 @@ async def main():
         if chk != len(caveat):
             problems.append("caveated deciders are not marked in the list")
 
+        # The contractor layer. It is a section like any other, so it has to
+        # filter, print, export and open like any other, and the counts it
+        # carries have to be the ones the data holds.
+        trade = [t for t in D["targets"] if t["group"] == "trade"]
+        if len(trade) < 15:
+            problems.append("the contractor section is missing or short")
+        await pg.evaluate("document.getElementById('vList').click()")
+        await pg.wait_for_timeout(300)
+        hdr = await pg.locator("#tb tr.grp", has_text="Builds the wall, not the house").count()
+        rows_trade = await pg.evaluate(
+            "(()=>{const r=[...document.querySelectorAll('#tb tr')];"
+            "let on=false,n=0;for(const x of r){if(x.classList.contains('grp')){"
+            "on=x.textContent.indexOf('Builds the wall')>=0;continue;}if(on)n++;}return n})()")
+        print("contractors     :", len(trade), "in data |", rows_trade, "listed")
+        if hdr != 1 or rows_trade != len(trade):
+            problems.append("the contractor section does not list its firms")
+        # the section filter reaches it
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(250)
+        await pg.click('.fsel > button >> nth=0')
+        await pg.wait_for_timeout(200)
+        opt = await pg.locator('#fmenu [data-f="group:trade"]').count()
+        if opt != 1:
+            problems.append("the contractor section is not offered in the section filter")
+        else:
+            await pg.click('#fmenu [data-f="group:trade"]')
+            await pg.wait_for_timeout(300)
+            shown = await pg.evaluate("window.rolodex.shown().length")
+            print("filter to trade :", shown)
+            if shown != len(trade):
+                problems.append("filtering to the contractor section returns the wrong count")
+            await pg.evaluate("window.rolodex.reset()")
+            await pg.wait_for_timeout(200)
+        # a contractor names the person who signs for equipment, not a specification
+        badge = await pg.evaluate(
+            "(()=>{const t=window.rolodex.data.targets.find(x=>x.group==='trade'"
+            "&&(x.principals||[]).some(p=>p.decider));return t?t.target_id:null})()")
+        if not badge:
+            problems.append("no contractor carries a decision-maker")
+
         # The market view: five figures, each with a table, tooltips on marks,
         # and nothing drawn that the data does not hold.
         await pg.evaluate("document.getElementById('vMarket').click()")

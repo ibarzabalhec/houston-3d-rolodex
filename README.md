@@ -1,6 +1,6 @@
 # Rolodex · Greater Houston
 
-Sixty-one Greater Houston builders and developers, each placed against three counts for ICON's Titan construction printer, with named decision-makers, verified links, a call list, an Excel export, a market view in figures, and the code and permitting route for a printed wall.
+Ninety Greater Houston builders, developers and wall contractors, each placed against three counts for ICON's Titan construction printer, with named decision-makers, verified links, a call list, an Excel export, a market view in figures, and the code and permitting route for a printed wall.
 
 One self-contained HTML file. No framework, no build-time dependency beyond Python, no network request at runtime. The served copy is `docs/index.html`.
 
@@ -17,6 +17,8 @@ Yes and Partly both keep a firm in. Only a No takes it out.
 The first two counts place a firm on a 3×3 grid. Sections (already buying printed walls, strong target, one gap, custom and hybrid job, national builder, land owner, already working with ICON) are assigned before the count of holds, so a grid cell and a section are different sets; the page says so where the two could be confused.
 
 ## Five views
+
+Firms are grouped into sections before the counts are totalled: already buying printed walls, strong target, one gap, builds the wall not the house (the concrete, shell and wall contractors, where the counts are read for a contractor rather than a builder), custom and hybrid job, national builder, land owner, and already working with ICON.
 
 **Screen** the grid · **List** a table with per-row add and add-all · **Cover** an iPod-style cover flow · **Field** twelve competitors, ICON's own record, and the code and permitting route with verbatim quotes from the documents · **Market** five figures with a table and a source under each, and a note on how every number is produced.
 
@@ -43,6 +45,7 @@ data_a.py data_b.py data_c.py builders.py creative.py   firm records, by layer
 screens.py why.py machine.py                            verdicts, reasons, the printer-fit count
 found.py links.py corrections.py research2.py          verification, links, corrections, second research pass
 competitors.py code.py market.py                        the field, code and permitting, published figures
+trades.py                                               the contractor layer and who signs for a machine
 _template.html _market.js atmos.js _fonts.css           the page, the figures, the background, embedded type
 build.py build_xlsx.py verify.py                        the chain
 docs/                                                   served copies and the handoff
