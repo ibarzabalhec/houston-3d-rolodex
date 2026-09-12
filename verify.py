@@ -351,6 +351,20 @@ async def main():
         print("firm sections   :", labs)
         if any("Open item" in x for x in labs):
             problems.append("the open items section still renders")
+
+        # An absence is a blank, not a sentence. A cell with no value stays
+        # empty, and no block on the page announces that a field was checked
+        # and came back with nothing. Gap language in a rendered cell or chip
+        # fails the build.
+        GAP = ("none published", "not disclosed", "no data", "n/a",
+               "unknown", "tbd", "not available", "could not be found")
+        cells = await pg.eval_on_selector_all(
+            "#firmBody td, #firmBody .yn, #listBody td, .chip",
+            "e=>e.map(x=>x.textContent.trim().toLowerCase())")
+        hit = sorted({c for c in cells if c in GAP})
+        print("gap language    :", hit or "none")
+        if hit:
+            problems.append("a cell narrates an absence: %s" % ", ".join(hit))
         await pg.evaluate("document.getElementById('home').click()")
         await pg.wait_for_timeout(120)
 
