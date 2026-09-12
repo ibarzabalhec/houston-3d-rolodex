@@ -285,8 +285,6 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .mini.press a:hover{border-bottom-color:var(--ink)}
 .mini.press .out{display:block;font:500 10.5px/1.5 var(--mono);letter-spacing:.06em;
   text-transform:uppercase;color:var(--ink4);margin-top:3px}
-.yn.none{background:none;border:0;color:var(--ink4);text-transform:none;letter-spacing:0;
-  font-weight:500;padding-left:0}
 .yn.chk{border-color:var(--ink3);color:var(--ink);background:var(--paper3);
   border-style:dashed}
 .empty{color:var(--ink3);font-size:14px;padding:26px 0}
@@ -1397,7 +1395,7 @@ function drawList(){
         ['repeatability','machine_fit','innovation'].map(function(k){
           return '<td><span class="yn '+k+' '+t.marks[k]+'">'+W[t.marks[k]]+'</span></td>';}).join('')+
         '<td>'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
-                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':'<span class="yn none">none published</span>'))+'</td>'+
+                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':''))+'</td>'+
         '<td class="hf">'+esc(t.key_stat||'')+'</td>'+
         '<td class="ac"><button class="rowadd'+(inCall?' on':'')+'" data-add="'+t.target_id+
           '" aria-pressed="'+inCall+'" aria-label="'+(inCall?'Remove ':'Add ')+esc(t.entity_name)+
@@ -2030,7 +2028,7 @@ function drawPrintRoster(){
         '<td class="m">'+W[t.marks.repeatability]+'</td>'+
         '<td class="m">'+W[t.marks.machine_fit]+'</td>'+
         '<td class="m">'+W[t.marks.innovation]+'</td>'+
-        '<td>'+esc(who||'none published')+'</td>'+
+        '<td>'+esc(who||'')+'</td>'+
         '<td>'+esc(t.key_stat||'')+'</td></tr>';
     });
   });

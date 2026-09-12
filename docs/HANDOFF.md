@@ -203,18 +203,55 @@ The firm cards carried a section called Open items. It was a research notebook, 
 
 The workbook lost its Open items column and the firm card lost the section. What a reader now sees on a card is the screen, the three counts, the firm, who to call, the evidence, the press and the sources.
 
+## Build 42: an absence is a blank, not a sentence
+
+The page used to tell the reader when it had nothing. A decision-maker cell read
+"none published". A print roster cell read the same. Two blocks in the limits list
+explained what an empty field meant and how many firms published nobody, and the
+press block closed by naming the firms that had returned nothing. All of that is
+gone. Where a field has no value it is now empty, and the reader draws the
+obvious conclusion without being told.
+
+What stayed are the absences that are the reason for a mark the reader can see.
+"No crew count, revenue or annual volume is published. On the bands, a firm with
+no published figure is a Partly" explains a Partly that is printed on the card,
+so it is evidence, not narration. The "Who decides" block stayed for the same
+reason: it explains the caveat chip.
+
+The limits list went from ten blocks to eight. The `.yn.none` rule came out of the
+stylesheet.
+
 ## Live numbers
 
-61 firms on the deck, 9 held off. 157 contacts, 78 LinkedIn profiles, 24 firms with a named decider (22 confirmed, 2 to confirm), 186 open items.
+90 firms on the deck, 9 held off. 223 contacts, 109 LinkedIn profiles, 44 firms
+with a named decider (42 confirmed, 2 to confirm), 32 press items across 11 firms,
+22 contractors in the trade section, 3 firms publishing nobody at all, 0 open
+items on the page.
 
 ## Files and chain
 
-`data_a/b/c.py` + `builders.py` + `creative.py` + `screens.py` + `why.py` + `machine.py` + `found.py` + `links.py` + `corrections.py` + `competitors.py` + **`research2.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML + `rolodex-artifact.html`; `build_xlsx.py` → XLSX; `verify.py` renders headless and fails on any of about thirty checks, including every audit finding above. The build refuses any wiki citation. `window.rolodex` is a supported scripting surface (filters, call list, workbook builder).
+`data_a/b/c.py` + `builders.py` + `creative.py` + `screens.py` + `why.py` +
+`machine.py` + `found.py` + `links.py` + `corrections.py` + `competitors.py` +
+`research2.py` + `market.py` + `code.py` + **`trades.py`** + **`press.py`** +
+**`resolved.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
+`rolodex-artifact.html` + `docs/` copies; `build_xlsx.py` → XLSX; `verify.py`
+renders headless and fails on any of about fifty-five checks, including every
+audit finding above, any wiki or contact-aggregator citation, any record missing
+its three reasons, any blank headline figure, and any open item reaching the page.
+`make` runs build, workbook and verify. `window.rolodex` is a supported scripting
+surface (filters, call list, workbook builder).
 
 ## Still open
 
-- No LinkedIn for: Matthew Roland and Diane Danilov (Westin), Christian Sommer and Keith Blum (Tricoast), Patrick Mustoe and Art Maya (J. Patrick), Katy Hawes and Matt Norris (Jamestown), Stephen Ray (Smith Douglas), Jordan York (Stylecraft, company page only).
+- 18 named deciders have no LinkedIn profile. Jordan York (Stylecraft) has a
+  company page only. Matt Zetlmeisl and Trey Green were searched and are not on
+  the platform.
 - No volume figure: Tricoast, J. Patrick, Ravenna, GreenEco. Kendall's latest is 2022.
 - Brohn's purchasing (local or Clayton) is not published anywhere.
+- `internal/OPEN_ITEMS.md` holds 110 notes across 75 firms. It is the research
+  queue, and it stays outside `docs/`.
+- `docs/ROADMAP.md` carries six research passes. Pass 1 (contractors) is done.
+  Passes 2 to 6 are not: nationals as records, build-to-rent operators, firm main
+  phone lines, the remaining register notes, payback-page inputs.
 - Whether Screen or List should be the landing view. List is now the faster tool.
-- Clone the source into `~/projects`.
+- The repository has never been pushed to GitHub.

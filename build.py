@@ -35,7 +35,7 @@ from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 41
+BUILD = 42
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -548,20 +548,9 @@ DATA = {
     "is commercial and industrial, and where a contractor publishes no residential work its record "
     "says so."],
    ["In the press",
-    "%d firms carry a press list. Each item is a headline a search actually returned, with the "
-    "outlet, the date the result carried, and a link read off the result rather than assembled. The "
-    "headline is the publisher's. Nothing in that list has been summarised or characterised here, "
-    "and an empty list means the firm was not searched or returned nothing."
-    % _n_press],
-   ["Empty fields",
-    "An empty field means the field was checked and nothing is published, not that it was skipped. "
-    "That applies to volumes, capital figures, leadership pages and method statements alike. Where "
-    "a figure or a contact rests on something thinner than the firm's own page, the qualification "
-    "sits next to it rather than in a separate list."],
-   ["Where a firm has no contact",
-    "%d of the %d firms here publish nobody at all, and %d of those are contractors. That is "
-    "recorded on the card rather than left blank, and it is the largest single gap in the file."
-    % (_n_nocontact, n, _n_nocontact_trade)],
+    "Each item is a headline a search actually returned, with the outlet, the date the result "
+    "carried, and a link read off the result rather than assembled. The headline is the "
+    "publisher's. Nothing in that list has been summarised or characterised here."],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "
