@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 37,
+ "build": 38,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -60,8 +60,8 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 45,
-   "partial": 38,
+   "clear": 46,
+   "partial": 37,
    "fail": 7,
    "total": 90
   },
@@ -746,7 +746,7 @@
     "no": 14,
     "decider": 15,
     "confirm": 0,
-    "linked": 13
+    "linked": 12
    },
    {
     "group": "creative",
@@ -1065,9 +1065,9 @@
   "tier_a": 12,
   "tier_b": 28,
   "out": 0,
-  "principals": 212,
-  "linkedin_held": 101,
-  "audit_flags": 253,
+  "principals": 223,
+  "linkedin_held": 100,
+  "audit_flags": 255,
   "with_decider": 44,
   "with_decider_live": 21,
   "with_decider_confirmed": 42,
@@ -6111,13 +6111,21 @@
      "date": null
     },
     {
+     "url": "https://icfconstructors.com/projects/",
+     "date": null
+    },
+    {
+     "url": "https://icfconstructors.com/financial-strength/",
+     "date": null
+    },
+    {
      "url": "https://icfmag.com/2020/02/hurricane-harvey-rebuild/",
      "date": null
     }
    ],
    "audit_flags": [
     "Its named markets run from Houston to Corpus Christi, Dallas and McAllen, so Houston is one of several. Confirm how much of the work is local.",
-    "No crew count, revenue or homes-a-year figure is published."
+    "No crew count, revenue or homes-a-year figure is published anywhere, including on the page about the firm's financial strength, which describes high business volume without a number."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -6439,10 +6447,10 @@
    "key_projects": [
     {
      "name": "Residential concrete placement",
-     "detail": "Named as one of three placement divisions on the firm's own site.",
+     "detail": "Its own residential page places custom home foundations, master plan communities, and large additions and flatwork.",
      "signal_type": "repeatable",
-     "fit_signal": "A contractor that already prices residential concrete does not have to be sold the market first.",
-     "url": "https://www.keystoneconcrete.com/"
+     "fit_signal": "Master plan communities is production housing, which is the repeated foundation a printed wall would stand on.",
+     "url": "https://www.keystoneconcrete.com/residential"
     },
     {
      "name": "Driscoll Apartments",
@@ -6470,11 +6478,16 @@
     {
      "url": "https://www.keystoneconcrete.com/",
      "date": null
+    },
+    {
+     "url": "https://www.keystoneconcrete.com/residential",
+     "date": null
     }
    ],
    "audit_flags": [
-    "The residential division is named but not described. Confirm what it places before an approach.",
-    "No executive is named anywhere on the firm's own site. There is no published door."
+    "The residential page names no client and no project, so the size of that division is unknown.",
+    "It states that it owns its pump fleet and runs a yard in every location, which is the equipment posture a machine purchase would sit inside.",
+    "No executive is named anywhere on the firm's own site. Its contact page says only that it is a member of the Stewart family of companies."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -6688,6 +6701,13 @@
      "signal_type": "method_risk",
      "fit_signal": "The firm already works from a model rather than from a paper set.",
      "url": "https://www.bcshouston.com/"
+    },
+    {
+     "name": "The Travis at 3300 Main and Gables Residential Westcreek",
+     "detail": "Two multifamily buildings named on the firm's own work page, alongside hospital and parking structures.",
+     "signal_type": "repeatable",
+     "fit_signal": "Apartment work already on the record, which most of this section does not have.",
+     "url": "https://www.bcshouston.com/our-work"
     }
    ],
    "capital_signals": [],
@@ -6708,11 +6728,15 @@
     {
      "url": "https://www.bcshouston.com/",
      "date": null
+    },
+    {
+     "url": "https://www.bcshouston.com/our-work",
+     "date": null
     }
    ],
    "audit_flags": [
-    "No executive is named on the firm's own site, and no crew count, revenue or project size is published. Everything except the modelling claim is unverified.",
-    "No residential or multifamily work appears on its own site."
+    "Its about pages do not exist. Nothing on the site sizes the business.",
+    "No executive is named on the firm's own site and no crew count, revenue or project size is published. The president and vice president here are held from LinkedIn alone."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -7007,15 +7031,23 @@
    "entity_role": "wall_trade",
    "region": "Pasadena, Harris",
    "homepage_url": "https://tandtconstruction.com/",
-   "synopsis": "Civil and concrete contractor that also owns its ready-mix delivery through Taylor Made Concrete, using volumetric mixers, alongside site work, tilt-wall building construction and industrial pads.",
-   "key_stat": "Runs its own volumetric concrete delivery",
+   "synopsis": "Third-generation family concrete and civil contractor established in Pasadena in 1969, running site work, tilt-wall building construction and industrial pads, and owning its ready-mix delivery through Taylor Made Concrete on volumetric mixers.",
+   "key_stat": "65 employees, 1,000-plus Houston projects since 1969",
    "principals": [
     {
      "name": "Ryan Taylor",
-     "role": "Owner",
-     "linkedin_url": "https://www.linkedin.com/in/ryan-taylor-594162139/",
-     "li_evidence": "Headline reads Owner at T&T Construction. Greater Houston.",
-     "decider": true
+     "role": "Third generation, took leadership in 2001, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Taylor%20T%26T%20Construction"
+    },
+    {
+     "name": "Jeff Taylor",
+     "role": "Second-generation co-owner, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Taylor%20T%26T%20Construction"
+    },
+    {
+     "name": "Dianna Taylor",
+     "role": "Second-generation co-owner, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dianna%20Taylor%20T%26T%20Construction"
     }
    ],
    "key_projects": [
@@ -7038,19 +7070,23 @@
    "_verdict": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
    "_why": [
     "Industrial and commercial concrete recurring across the east side of the metro.",
-    "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly.",
+    "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly.",
     "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
    ],
    "sources": [
     {
-     "url": "https://tandtconstruction.com/",
+     "url": "https://tandtconstruction.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://tandtconstruction.com/taylormade/",
      "date": null
     }
    ],
    "audit_flags": [
-    "Two people carry T&T Construction alongside RD DevCo and E&S Construction in the same headline, which suggests a group of related companies. Confirm the structure.",
-    "No executive is named on the firm's own site, and no crew count or years in business is published.",
-    "No residential or multifamily work appears on its own site."
+    "Two people carry T&T alongside RD DevCo and E&S Construction in one LinkedIn headline. Neither name appears anywhere on T&T's own site, so the group question is open.",
+    "No residential or multifamily work appears on its own site.",
+    "Neither RD DevCo nor E&S Construction appears anywhere on T&T's own site, so the group the LinkedIn headlines imply is unconfirmed."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -7078,7 +7114,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly."
+     "text": "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly."
     },
     {
      "axis": "innovation",
@@ -7095,11 +7131,9 @@
    "short": "T&T Construction",
    "cell": "partial|clear",
    "clears": 1,
-   "deciders": [
-    "Ryan Taylor"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -7220,6 +7254,281 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-106",
+   "entity_name": "Greco Structures",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, working Harris and Fort Bend",
+   "homepage_url": "https://grecostructures.com/",
+   "synopsis": "Concrete subcontractor inside the Satterfield and Pontikes family of companies, working for general contractors across elevated post-tensioned decks, mass concrete and tilt-up, with an award-listed panel record at the top of the height range the trade attempts and multifamily among the markets it lists.",
+   "key_stat": "49 panels, tallest 52 feet 7 inches, on one job",
+   "principals": [
+    {
+     "name": "Trey Green",
+     "role": "Senior Vice President, Self Perform Group, Satterfield and Pontikes, named on the parent's own team page as overseeing Greco Structures, Rollcon, Rocket Pumping and Westway",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trey%20Green%20Greco%20Structures"
+    },
+    {
+     "name": "George A. Pontikes Jr.",
+     "role": "Chief Executive Officer and Chairman, Satterfield and Pontikes",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=George%20A.%20Pontikes%20Jr.%20Greco%20Structures"
+    },
+    {
+     "name": "Thomas Valentine",
+     "role": "Operations Manager",
+     "linkedin_url": "https://www.linkedin.com/in/thomas-valentine-6b1a7b117/",
+     "li_evidence": "Headline reads Operations Manager at Greco Structures. Spring, Texas."
+    },
+    {
+     "name": "Jordan Lopez",
+     "role": "Business Development, Greco Structures and Rollcon",
+     "linkedin_url": "https://www.linkedin.com/in/jordan-lopez-528225229/",
+     "li_evidence": "Headline reads Business Development Specialist for Greco Structures & Rollcon. Houston, Texas."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "HCC West Houston Expansion",
+     "detail": "Katy, Harris. 49 panels, tallest 52 feet 7 inches, 45,000 square feet of tilt-up wall on a 125,000 square foot building. Tilt-Up Achievement Award 2022.",
+     "signal_type": "repeatable",
+     "fit_signal": "The evaluation report for a printed wall reaches twelve feet. These panels are four times that.",
+     "url": "https://tilt-up.org/projects/profile/?id=6324"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
+   "_verdict": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
+   "_why": [
+    "Panel and deck work recurring across Houston projects for a standing set of general contractors.",
+    "No crew count or annual volume is published, and the purchase would clear through the parent's self-perform group rather than through Greco. On the bands, both of those are a Partly.",
+    "No method statement on record."
+   ],
+   "sources": [
+    {
+     "url": "https://grecostructures.com/",
+     "date": null
+    },
+    {
+     "url": "https://tilt-up.org/projects/profile/?id=6324",
+     "date": null
+    },
+    {
+     "url": "https://www.satpon.com/approach/spfc/",
+     "date": null
+    },
+    {
+     "url": "https://www.satpon.com/about/team/",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "Greco's own site names no officer and publishes no crew count or annual volume. The parent's site is where the people are.",
+    "The parent describes Greco as a turnkey commercial concrete contractor operating throughout Texas, running for more than thirty years and established under the Greco name about ten years ago, with a pumping arm of two pump trucks.",
+    "Greco lists multifamily among its markets but names no multifamily project.",
+    "The parent's own site names Greco among the Satterfield and Pontikes family of companies, so the LinkedIn signal was right. The person who signs sits at the parent, in the self-perform group."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "group": "trade",
+   "tier": "W",
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Panel and deck work recurring across Houston projects for a standing set of general contractors."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No crew count or annual volume is published, and the purchase would clear through the parent's self-perform group rather than through Greco. On the bands, both of those are a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Greco Structures",
+   "cell": "clear|partial",
+   "clears": 1,
+   "deciders": [
+    "Trey Green"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-102",
+   "entity_name": "Harvey Cleary",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, with Austin, San Antonio, Denver and Washington",
+   "homepage_url": "https://www.harveycleary.com/",
+   "synopsis": "General contractor founded in 1957 that self-performs an unusually deep set of structural trades through IQI Construction LLC, described on its own site as a captured company and solely owned and operated entity, and that runs a standing residential market alongside its commercial work.",
+   "key_stat": "$2 billion in volume, 700-plus employees, founded 1957",
+   "principals": [
+    {
+     "name": "David E. Harvey Sr.",
+     "role": "Founder, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20E.%20Harvey%20Sr.%20Harvey%20Cleary"
+    },
+    {
+     "name": "David Harvey Jr.",
+     "role": "Took ownership in 1987, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Harvey%20Jr.%20Harvey%20Cleary"
+    },
+    {
+     "name": "Joseph Cleary",
+     "role": "Took ownership in 1987, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Joseph%20Cleary%20Harvey%20Cleary"
+    },
+    {
+     "name": "Scott Clarke",
+     "role": "Chief Operating Officer",
+     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
+     "li_evidence": "Headline reads Chief Operating Officer at Harvey | Harvey-Cleary Builders. Houston, Texas.",
+     "decider": true
+    },
+    {
+     "name": "Jarrod Portelance",
+     "role": "Project Director",
+     "linkedin_url": "https://www.linkedin.com/in/jarrodportelance/",
+     "li_evidence": "Headline reads Project Director at Harvey | Harvey-Cleary Builders. Houston, Texas."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "IQI Construction LLC",
+     "detail": "The captured entity that performs the self-perform scope, named on the firm's own site.",
+     "signal_type": "repeatable",
+     "fit_signal": "The crews and the equipment already sit inside the company rather than being hired in.",
+     "url": "https://www.harveycleary.com/self-perform-work/"
+    },
+    {
+     "name": "The Cooper Apartments",
+     "detail": "Named on the firm's own residential market page as a 72-unit multifamily building with a fitness center and rooftop amenity space.",
+     "signal_type": "repeatable",
+     "fit_signal": "A 72-unit apartment building is the repeated wall a printer serves.",
+     "url": "https://www.harveycleary.com/markets/residential/"
+    },
+    {
+     "name": "Camden Conte, Brava, The Watermark at Houston Heights",
+     "detail": "Further residential buildings named on the firm's own site.",
+     "signal_type": "repeatable",
+     "fit_signal": "Residential is a standing market here, not a one-off.",
+     "url": "https://www.harveycleary.com/markets/residential/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "It owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower crane erection, and it builds apartments. No other firm screened discloses that much owned trade.",
+   "_verdict": "It owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower crane erection, and it builds apartments. No other firm screened discloses that much owned trade.",
+   "_why": [
+    "A standing residential market inside the firm, with multifamily buildings delivered repeatedly alongside the commercial work.",
+    "$2 billion in construction volume and more than 700 employees on the firm's own count. One or two printers would be a line inside a business that size rather than the business.",
+    "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
+   ],
+   "sources": [
+    {
+     "url": "https://www.harveycleary.com/self-perform-work/",
+     "date": null
+    },
+    {
+     "url": "https://www.harveycleary.com/markets/residential/",
+     "date": null
+    },
+    {
+     "url": "https://www.harveycleary.com/about-us/",
+     "date": null
+    }
+   ],
+   "audit_flags": [
+    "The current officer roster is not published. The firm names its founders and the two men who took ownership in 1987, and nothing below that.",
+    "Its residential work is apartments and senior living rather than for-sale houses, so the wall is a multifamily wall."
+   ],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "group": "trade",
+   "tier": "W",
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A standing residential market inside the firm, with multifamily buildings delivered repeatedly alongside the commercial work."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "$2 billion in construction volume and more than 700 employees on the firm's own count. One or two printers would be a line inside a business that size rather than the business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "short": "Harvey Cleary",
+   "cell": "clear|partial",
+   "clears": 1,
+   "deciders": [
+    "Scott Clarke"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-112",
    "entity_name": "ORION",
    "entity_type": "contractor",
@@ -7336,6 +7645,11 @@
    "key_stat": "Owns earthwork, utilities and concrete",
    "principals": [
     {
+     "name": "Victor Andrade",
+     "role": "Founder, named on the firm's own about page as having started the firm in 2003",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Victor%20Andrade%20Andrade%20Construction%20Companies"
+    },
+    {
      "name": "Eric Rice",
      "role": "Business Development Manager",
      "linkedin_url": "https://www.linkedin.com/in/eric-rice-177124352/",
@@ -7379,7 +7693,8 @@
    ],
    "audit_flags": [
     "Its published housing exposure is site utilities, not wall work.",
-    "No executive is named on the firm's own site, and no crew count or revenue is published."
+    "A second web presence, andradeconcrete.com, carries the name Andrade Concrete and Construction and is a placeholder page with no address, services or people. A chief operating officer is held on LinkedIn under that second name. Whether the two are one business is unsettled.",
+    "No crew count or revenue is published."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -7423,115 +7738,6 @@
    "team_note": null,
    "short": "Andrade Construction Companies",
    "cell": "partial|clear",
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-106",
-   "entity_name": "Greco Structures",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Houston, working Harris and Fort Bend",
-   "homepage_url": "https://grecostructures.com/",
-   "synopsis": "Concrete subcontractor working for general contractors across elevated post-tensioned decks, mass concrete and tilt-up, with an award-listed panel record at the top of the height range the trade attempts.",
-   "key_stat": "49 panels, tallest 52 feet 7 inches, on one job",
-   "principals": [
-    {
-     "name": "Thomas Valentine",
-     "role": "Operations Manager",
-     "linkedin_url": "https://www.linkedin.com/in/thomas-valentine-6b1a7b117/",
-     "li_evidence": "Headline reads Operations Manager at Greco Structures. Spring, Texas."
-    },
-    {
-     "name": "Jordan Lopez",
-     "role": "Business Development, Greco Structures and Rollcon",
-     "linkedin_url": "https://www.linkedin.com/in/jordan-lopez-528225229/",
-     "li_evidence": "Headline reads Business Development Specialist for Greco Structures & Rollcon. Houston, Texas."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "HCC West Houston Expansion",
-     "detail": "Katy, Harris. 49 panels, tallest 52 feet 7 inches, 45,000 square feet of tilt-up wall on a 125,000 square foot building. Tilt-Up Achievement Award 2022.",
-     "signal_type": "repeatable",
-     "fit_signal": "The evaluation report for a printed wall reaches twelve feet. These panels are four times that.",
-     "url": "https://tilt-up.org/projects/profile/?id=6324"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 1,
-    "capital_access": 2
-   },
-   "mvp_screen": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
-   "_verdict": "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is bought by general contractors rather than by owners.",
-   "_why": [
-    "Panel and deck work recurring across Houston projects for a standing set of general contractors.",
-    "No crew count or annual volume is published. The one published job runs to 49 panels. On the bands, a firm with no annual figure is a Partly.",
-    "No method statement on record."
-   ],
-   "sources": [
-    {
-     "url": "https://grecostructures.com/",
-     "date": null
-    },
-    {
-     "url": "https://tilt-up.org/projects/profile/?id=6324",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "A recruiter for the Satterfield and Pontikes family of companies and a business development specialist for Greco Structures and Rollcon both surface on a Greco search, which suggests Greco sits inside that group. Confirm the ownership before an approach; it changes who signs.",
-    "No executive is named on the firm's own site, and no crew count or annual volume is published.",
-    "No residential or multifamily work appears on its own site."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "partial",
-   "group": "trade",
-   "tier": "W",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: puts up the same wall, in one metro",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Panel and deck work recurring across Houston projects for a standing set of general contractors."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No crew count or annual volume is published. The one published job runs to 49 panels. On the bands, a firm with no annual figure is a Partly."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "No method statement on record."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Greco Structures",
-   "cell": "clear|partial",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -7660,6 +7866,21 @@
    "key_stat": "Operating since 1991, tilt-up its stated specialty",
    "principals": [
     {
+     "name": "Steve Salverino",
+     "role": "Chief Executive Officer, named on the firm's own leadership page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steve%20Salverino%20Rino%20Construction"
+    },
+    {
+     "name": "Jacob Aswad",
+     "role": "President, named on the firm's own leadership page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jacob%20Aswad%20Rino%20Construction"
+    },
+    {
+     "name": "Justin Henderson",
+     "role": "Vice President, named on the firm's own leadership page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Justin%20Henderson%20Rino%20Construction"
+    },
+    {
      "name": "Jeff Rager",
      "role": "Senior Project Manager",
      "linkedin_url": "https://www.linkedin.com/in/jeff-rager-b0ab6a380/",
@@ -7688,11 +7909,11 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "Thirty-five years of tilt-up as the stated specialty. On at least one award-listed job it subcontracted the panels rather than pouring them.",
-   "_verdict": "Thirty-five years of tilt-up as the stated specialty. On at least one award-listed job it subcontracted the panels rather than pouring them.",
+   "mvp_screen": "Thirty-five years of tilt-up as the stated specialty. Its own site puts the self-performed concrete in the past tense.",
+   "_verdict": "Thirty-five years of tilt-up as the stated specialty. Its own site puts the self-performed concrete in the past tense.",
    "_why": [
-    "Tilt-up buildings recurring across two Texas metros since 1991.",
-    "Its own pages carry two different completed square footage figures and neither is repeated here, so nothing published sizes a year's work. On the bands that is a Partly.",
+    "Tilt-up buildings recurring across two Texas metros since 1991, at 48 million square feet on its own count.",
+    "48 million square feet since 1991 on the firm's own homepage. A second page still carries an older 38 million. No annual figure is published, so this sits at a Partly.",
     "No method statement on record."
    ],
    "sources": [
@@ -7701,15 +7922,19 @@
      "date": null
     },
     {
+     "url": "https://rino-con.com/services/construction-types/tilt-wall-tilt-up-construction/",
+     "date": null
+    },
+    {
      "url": "https://tilt-up.org/projects/profile/?id=5900",
      "date": null
     }
    ],
    "audit_flags": [
-    "The firm's own pages carry two different completed square footage figures, 48 million on one page and over 38 million on another. Neither is repeated here as fact.",
-    "Its tilt-up page lists single and multi-family residences among possible applications, but no residential project is named anywhere on the site.",
-    "No executive is named on the firm's own site.",
-    "No owner, president or vice president surfaces for the firm under either name. The senior people who do are project managers and a controller."
+    "Its tilt-wall page reads that the firm self-performed its concrete work for many years, in the past tense, so whether it still owns concrete crews is the first thing to establish.",
+    "The homepage says 48 million square feet and the tilt-wall page still says over 38 million. Both are anchored to 1991, so the second looks like a page that was not refreshed.",
+    "Its tilt-up page lists single and multi-family residences among possible applications, but no residential project is named anywhere on the site. The one job with Multi-Family in its name is a two-storey corporate headquarters and a warehouse.",
+    "Its own leadership page names a chief executive, a president and a vice president. LinkedIn returns only project managers and a controller under either firm name."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -7730,14 +7955,14 @@
      "title": "Repetition: puts up the same wall, in one metro",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "Tilt-up buildings recurring across two Texas metros since 1991."
+     "text": "Tilt-up buildings recurring across two Texas metros since 1991, at 48 million square feet on its own count."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "Its own pages carry two different completed square footage figures and neither is repeated here, so nothing published sizes a year's work. On the bands that is a Partly."
+     "text": "48 million square feet since 1991 on the firm's own homepage. A second page still carries an older 38 million. No annual figure is published, so this sits at a Partly."
     },
     {
      "axis": "innovation",
@@ -7771,7 +7996,7 @@
    "principals": [
     {
      "name": "Trent Mitchell",
-     "role": "Presented as the principal on the firm's own site, without a stated title",
+     "role": "Owner, named on the firm's own about page, after eighteen years selling ready-mix to the largest general contractors in Houston",
      "decider": true,
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trent%20Mitchell%20Silver%20Spur%20Concrete%20Contractors"
     }
@@ -7806,9 +8031,8 @@
     }
    ],
    "audit_flags": [
-    "Trent Mitchell is presented as the principal on the firm's own site without a stated title. Scored as a decision-maker on presentation, not on a published title. Confirm before outreach.",
-    "No crew count, revenue or project size is published. The scale is unverified.",
-    "No formal title is published for the principal. The site presents him without one."
+    "The residential concrete pages would not load. The line is named in the navigation, with driveways, engineered slabs, barndominiums and retaining walls under it, but the detail is unread.",
+    "No crew count, revenue or project size is published. The completed-projects counter on the about page has a label and no number in it. The scale is unverified."
    ],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -8279,113 +8503,6 @@
    "deciders": [
     "Michael G. Scheurich",
     "Jason M. Cooper"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-102",
-   "entity_name": "Harvey Cleary",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Houston, with Austin, San Antonio, Denver and Washington",
-   "homepage_url": "https://www.harveycleary.com/",
-   "synopsis": "General contractor that self-performs an unusually deep set of structural trades through IQI Construction LLC, described on its own site as a captured company and solely owned and operated entity.",
-   "key_stat": "Owns formwork, rebar, place and finish, and tiltwall erection",
-   "principals": [
-    {
-     "name": "Scott Clarke",
-     "role": "Chief Operating Officer",
-     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
-     "li_evidence": "Headline reads Chief Operating Officer at Harvey | Harvey-Cleary Builders. Houston, Texas.",
-     "decider": true
-    },
-    {
-     "name": "Jarrod Portelance",
-     "role": "Project Director",
-     "linkedin_url": "https://www.linkedin.com/in/jarrodportelance/",
-     "li_evidence": "Headline reads Project Director at Harvey | Harvey-Cleary Builders. Houston, Texas."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "IQI Construction LLC",
-     "detail": "The captured entity that performs the self-perform scope, named on the firm's own site.",
-     "signal_type": "repeatable",
-     "fit_signal": "The crews and the equipment already sit inside the company rather than being hired in.",
-     "url": "https://www.harveycleary.com/self-perform-work/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 1,
-    "capital_access": 3
-   },
-   "mvp_screen": "It already owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower crane erection. No other firm screened discloses that much owned trade.",
-   "_verdict": "It already owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower crane erection. No other firm screened discloses that much owned trade.",
-   "_why": [
-    "Commercial and institutional work rather than a repeated plan, so the structure changes project to project.",
-    "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly.",
-    "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
-   ],
-   "sources": [
-    {
-     "url": "https://www.harveycleary.com/self-perform-work/",
-     "date": null
-    }
-   ],
-   "audit_flags": [
-    "Residential exposure is not published anywhere on the site. Confirm whether it builds housing at all.",
-    "No individual is named on the self-perform page. Find the person who runs IQI before an approach."
-   ],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "clear",
-   "group": "trade",
-   "tier": "W",
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: puts up the same wall, in one metro",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Commercial and institutional work rather than a repeated plan, so the structure changes project to project."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No crew count, revenue or annual volume is published. On the bands, a firm with no published figure is a Partly."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "No method statement on record. Owning the equipment and the crews is not the same as having paid for a method that was new at the time."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "short": "Harvey Cleary",
-   "cell": "partial|partial",
-   "clears": 0,
-   "deciders": [
-    "Scott Clarke"
    ],
    "has_decider": true,
    "decider_confirmed": true,

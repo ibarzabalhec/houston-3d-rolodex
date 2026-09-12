@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 37 · 2026-09-11
+Build 38 · 2026-09-11
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -154,6 +154,22 @@ The ones that matter. Scott Clarke, Chief Operating Officer at Harvey-Cleary Bui
 Two structural findings came out of the same pass and are recorded as open items rather than as fact. A Satterfield and Pontikes recruiter and a business development specialist for Greco Structures and Rollcon both surface on a Greco search, which suggests Greco sits inside that group and changes who signs. Two people carry T&T Construction alongside RD DevCo and E&S Construction in one headline, which suggests a related group of companies.
 
 Three firms still publish nobody: Baker Construction, where the national leadership is not a Houston decision anyway, plus Live Lone Star and Seaside Construction, which were never part of this pass. Rino Construction returns no owner or officer under either of its names, only project managers and a controller, and that is now stated on the record.
+
+## Build 38: the contractor records verified
+
+The people were in after Build 37 but the records themselves were still the thinnest evidence in the file, and ten of the twenty-two had never been opened directly. This pass read the firms' own pages. One record was simply wrong, four questions closed, and several confirmed absences are now stated as confirmed rather than assumed.
+
+**Harvey Cleary was wrong.** Its record said residential exposure was not published. The firm runs a standing residential market page naming The Cooper Apartments, a 72-unit multifamily building, alongside Camden Conte, Brava and The Watermark at Houston Heights. It also publishes $2 billion in construction volume, more than 700 employees, a 1957 founding and first place on a 2023 ENR ranking for Texas and Louisiana. Repetition moved from Partly to Yes, the headline figure is now the volume rather than a list of trades, and the founders and the two men who took ownership in 1987 are named.
+
+**Greco sits inside Satterfield and Pontikes.** The LinkedIn signal was right and the parent's own site confirms it, naming Greco among its family of companies and describing it as a turnkey commercial concrete contractor working throughout Texas, running more than thirty years and about ten under the Greco name, with a pumping arm of two pump trucks. Trey Green is Senior Vice President of the parent's Self Perform Group and oversees Greco, so he is the person who signs. Greco lists multifamily among its markets.
+
+**T&T is a third-generation family firm with real numbers.** Established in Pasadena in 1969 by C.A. Taylor, 65 employees on average, more than 1,000 Greater Houston projects, with Jeff and Dianna Taylor as second-generation co-owners and Ryan Taylor leading since 2001. The record's "no crew count published" is gone. The RD DevCo and E&S Construction group the LinkedIn headlines implied appears nowhere on T&T's own site and stays open.
+
+**Rino does not self-perform concrete now.** Its tilt-wall page reads that the firm self-performed its concrete work for many years, in the past tense. Its leadership page names Steve Salverino as chief executive, Jacob Aswad as president and Justin Henderson as vice president. The two square footage figures are a stale page rather than two scopes: 48 million on the homepage, an older 38 million on a page that was not refreshed, both anchored to 1991. The one job with Multi-Family in its name is a corporate headquarters and a warehouse.
+
+**Smaller corrections.** Trent Mitchell at Silver Spur is Owner, published, after eighteen years selling ready-mix to Houston general contractors, so the presentation caveat comes off. Andrade was founded in 2003 by Victor Andrade; the second domain carrying the name Andrade Concrete and Construction is a placeholder with no address, services or people, so whether the two are one business is unsettled and now says so. Keystone's residential division places custom home foundations, master plan communities, and additions and flatwork, and the firm states it owns its pump fleet and runs a yard in every location. Building Concrete Solutions names The Travis at 3300 Main and Gables Residential Westcreek, two apartment buildings, which most of this section cannot show.
+
+**Confirmed absences, which are worth as much as the finds.** Texas A&M Concrete publishes nothing beyond its job range, names nobody, and shows no residential work. Botello's projects are schools, healthcare, a museum and dealerships, with no residential. Encore names six projects and not one is multifamily, despite listing elevated multifamily as a project type, and its employee ownership appears only as a badge. ICF Constructors publishes no volume figure anywhere, including on its own page about financial strength, which describes high business volume without a number.
 
 ## Live numbers
 
