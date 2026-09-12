@@ -1,11 +1,11 @@
 {
  "version": "2.0",
- "build": 52,
+ "build": 53,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
- "headline": "Who in Greater Houston is ready to print? 97 firms, three counts each.",
- "headline_html": "Who in Greater Houston is ready to print?<br><b>97 firms. Three counts each.</b>",
+ "headline": "Who in Greater Houston is ready to print? 96 firms, three counts each.",
+ "headline_html": "Who in Greater Houston is ready to print?<br><b>96 firms. Three counts each.</b>",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Strong target",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "97",
+   "96",
    "firms screened",
    false
   ],
@@ -39,7 +39,7 @@
    false
   ],
   [
-   "46",
+   "43",
    "with a named decision-maker",
    true
   ],
@@ -60,28 +60,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 53,
+   "clear": 52,
    "partial": 37,
    "fail": 7,
-   "total": 97
+   "total": 96
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 19,
-   "partial": 53,
-   "fail": 25,
-   "total": 97
+   "clear": 15,
+   "partial": 57,
+   "fail": 24,
+   "total": 96
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 18,
-   "partial": 21,
-   "fail": 58,
-   "total": 97
+   "clear": 17,
+   "partial": 23,
+   "fail": 56,
+   "total": 96
   }
  ],
  "matrix": {
@@ -103,7 +103,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>10 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 10 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>6</b> have no method record.",
+ "matrix_note": "The top right cell holds <b>8 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 8 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>4</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -386,7 +386,7 @@
   ],
   [
    "Who decides",
-   "46 of 97 firms have a named vice president or director of construction, or head of purchasing, and 45 of those 46 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "43 of 96 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 43 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
   ],
   [
    "Sources",
@@ -676,7 +676,7 @@
     "high": 195,
     "year": 2022,
     "source": "Builder 100 firm page",
-    "fit": "clear",
+    "fit": "partial",
     "method": "fail",
     "group": "b"
    },
@@ -717,8 +717,8 @@
     "group": "b"
    }
   ],
-  "closings_missing": 60,
-  "closings_base": 75,
+  "closings_missing": 59,
+  "closings_base": 74,
   "bands": [
    [
     25,
@@ -748,8 +748,8 @@
     "label": "Strong target",
     "n": 13,
     "yes": 4,
-    "partly": 8,
-    "no": 1,
+    "partly": 9,
+    "no": 0,
     "decider": 8,
     "confirm": 0,
     "linked": 11
@@ -757,13 +757,13 @@
    {
     "group": "b",
     "label": "One gap",
-    "n": 31,
+    "n": 30,
     "yes": 3,
-    "partly": 3,
+    "partly": 2,
     "no": 25,
-    "decider": 14,
+    "decider": 11,
     "confirm": 0,
-    "linked": 27
+    "linked": 25
    },
    {
     "group": "trade",
@@ -772,16 +772,16 @@
     "yes": 2,
     "partly": 6,
     "no": 14,
-    "decider": 14,
+    "decider": 15,
     "confirm": 0,
-    "linked": 16
+    "linked": 17
    },
    {
     "group": "creative",
     "label": "Custom and hybrid job",
     "n": 10,
-    "yes": 4,
-    "partly": 2,
+    "yes": 3,
+    "partly": 3,
     "no": 4,
     "decider": 2,
     "confirm": 0,
@@ -792,9 +792,9 @@
     "label": "National builder",
     "n": 9,
     "yes": 1,
-    "partly": 0,
-    "no": 8,
-    "decider": 6,
+    "partly": 1,
+    "no": 7,
+    "decider": 5,
     "confirm": 1,
     "linked": 9
    },
@@ -18118,17 +18118,17 @@
   ]
  },
  "stats": {
-  "total": 97,
+  "total": 96,
   "adopters": 3,
   "tier_a": 13,
-  "tier_b": 31,
+  "tier_b": 30,
   "out": 0,
-  "principals": 247,
-  "linkedin_held": 106,
+  "principals": 242,
+  "linkedin_held": 91,
   "audit_flags": 0,
-  "with_decider": 46,
-  "with_decider_live": 22,
-  "with_decider_confirmed": 45,
+  "with_decider": 43,
+  "with_decider_live": 19,
+  "with_decider_confirmed": 42,
   "with_decider_caveat": 1
  },
  "targets": [
@@ -19337,24 +19337,12 @@
      "li_evidence": "CEO, President, The Signorelli Company. Greater Houston."
     },
     {
-     "name": "Troy Robinson",
-     "role": "Vice President of Construction, First America Homes",
-     "linkedin_url": "https://www.linkedin.com/in/troyjrobinson/",
-     "li_evidence": "VP of Construction for First America Homes. Willis, Texas.",
-     "decider": true
-    },
-    {
-     "name": "Mike Faul",
-     "role": "Vice President of Purchasing, First America Homes",
-     "linkedin_url": "https://www.linkedin.com/in/mike-faul-a06b2a203/",
-     "li_evidence": "Profile opened. Company line reads First America Homes. Magnolia, Texas. He took the role this year, after a fifteen-year incumbent left in April 2026.",
-     "decider": true
-    },
-    {
      "name": "David Assid",
-     "role": "Division President, First America Homes",
+     "role": "Houston Division President, Homebuilding",
      "linkedin_url": "https://www.linkedin.com/in/davidassid/",
-     "decider": false
+     "li_evidence": "Division President, First America Homes. Houston, Texas.",
+     "decider": false,
+     "source_url": "https://www.signorellicompany.com/our-leadership"
     }
    ],
    "key_projects": [
@@ -19451,12 +19439,9 @@
    "short": "First America",
    "cell": "clear|partial",
    "clears": 1,
-   "deciders": [
-    "Troy Robinson",
-    "Mike Faul"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -19944,157 +19929,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "HOU-035",
-   "entity_name": "Avenue CDC",
-   "entity_type": "nonprofit_developer",
-   "entity_role": "vertical_buyer",
-   "categories": [
-    "civic_institutional",
-    "affordable"
-   ],
-   "region": "Near Northside, Harris County",
-   "homepage_url": "https://avenuecdc.org/",
-   "synopsis": "Nonprofit community development corporation building affordable homes since 1991 and operating in Houston's Near Northside since 2002, with five named developments in the neighbourhood. The City of Houston contributed $3.4 million toward the $11.8 million acquisition and rehabilitation of the Avenue Center. Avenue publishes no construction officer.",
-   "key_stat": "5 named Near Northside developments",
-   "principals": [
-    {
-     "name": "Mary Lawler",
-     "role": "Chief Executive Officer",
-     "linkedin_url": null,
-     "source_url": "https://avenuecdc.org/about-us/board-staff/",
-     "source_evidence": "Chief Executive Officer on Avenue's own board and staff page, marking twenty-five years of leadership.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Mary%20Lawler%20Avenue%20CDC"
-    },
-    {
-     "name": "Nicole Cassier",
-     "role": "Chief Strategy Officer",
-     "linkedin_url": "https://www.linkedin.com/in/nicolecassier/",
-     "source_evidence": "Nicole Cassier's LinkedIn headline gives her title but not her employer.",
-     "li_evidence": "Chief Strategy Officer, Housing & Community Development. Surfaced on an Avenue CDC search.",
-     "probable": true
-    },
-    {
-     "name": "Karen Briggs Gwin",
-     "role": "Chief Financial Officer",
-     "linkedin_url": "https://www.linkedin.com/in/karen-briggs-gwin-02106614/",
-     "li_evidence": "Chief Financial Officer, Avenue CDC. Greater Houston."
-    },
-    {
-     "name": "Kionta Carter",
-     "role": "Chief Programs Officer",
-     "source_url": "https://avenuecdc.org/about-us/board-staff/"
-    },
-    {
-     "name": "Angela Guerrero",
-     "role": "Director, Asset Management and Realty Services",
-     "source_url": "https://avenuecdc.org/about-us/board-staff/",
-     "source_evidence": "The closest published seat to how the houses get built. Avenue names no construction officer."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Near Northside development programme",
-     "detail": "Five named developments since 2002: Avenue Place, Avenue Terraces, Avenue Station, Avenue Villas and Fulton Gardens.",
-     "signal_type": "repeatable",
-     "fit_signal": "Five repeat affordable developments in one neighbourhood under one owner.",
-     "url": "https://avenuecdc.org/community-development/community-initiatives/"
-    },
-    {
-     "name": "Post-Harvey resilience framing",
-     "detail": "Avenue CDC's Near Northside work framed by Rice University's Kinder Institute as a test case for equitable transit-oriented development after Hurricane Harvey.",
-     "signal_type": "resilience",
-     "fit_signal": "Resilience positioning tied to Harvey by an independent academic institution rather than by the developer's own marketing.",
-     "url": "https://kinder.rice.edu/urbanedge/harvey-be-turning-point-equitable-transit-oriented-development-houston"
-    },
-    {
-     "name": "Avenue Center, Near Northside",
-     "detail": "The City of Houston contributed $3.4 million toward the $11.8 million acquisition and rehabilitation of the Avenue Center, announced 20 May 2022.",
-     "signal_type": "repeatable",
-     "fit_signal": "A rehabilitation, not a ground-up build, so it says nothing about how Avenue puts up a wall.",
-     "url": "https://houstontx.gov/housing/communication/2022/0520b.html"
-    }
-   ],
-   "capital_signals": [
-    {
-     "text": "$3.4 million from the City of Houston for the Near Northside Community Resource Center",
-     "date": null,
-     "url": "https://www.virtualbx.com/feature-story/houston-avenue-cdc-receives-3-4m-from-city-for-its-near-northside-community-resource-center/"
-    }
-   ],
-   "scores": {
-    "repeatability": 2,
-    "wall_share": 3,
-    "innovation": 0,
-    "capital_access": 1,
-    "machine_fit": 3
-   },
-   "mvp_screen": "Five affordable developments in one neighbourhood, framed post-Harvey by Rice's Kinder Institute. $3.4M is the only figure.",
-   "sources": [
-    {
-     "url": "https://avenuecdc.org/about-us/board-staff/",
-     "date": "2026-09-11"
-    },
-    {
-     "url": "https://avenuecdc.org/community-development/community-initiatives/",
-     "date": "2026-09-11"
-    },
-    {
-     "url": "https://houstontx.gov/housing/communication/2022/0520b.html",
-     "date": null
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#C8102E",
-   "_machine_why": "Five affordable developments in one neighbourhood, at a scale one machine covers.",
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "fail",
-   "tail": false,
-   "group": "a",
-   "tier": "A",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Five developments in one neighbourhood since 2002."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Five affordable developments in one neighbourhood, at a scale one machine covers."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record. The resilience reading came from a 2017 Rice Kinder Institute piece about transit-oriented development, which says nothing about how anything is built."
-    }
-   ],
-   "company_li": "https://www.linkedin.com/company/avenue-community-development-coporation",
-   "company_li_note": null,
-   "team_url": "https://avenuecdc.org/about-us/board-staff/",
-   "team_note": null,
-   "clears": 1,
-   "vol": null,
-   "short": "Avenue CDC",
-   "cell": "partial|clear",
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "HOU-045",
    "entity_name": "Chesmar Homes",
    "entity_type": "homebuilder",
@@ -20208,6 +20042,117 @@
     "Michael Hundl",
     "Dan Renaud",
     "David Ebarb"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-067",
+   "entity_name": "J. Patrick Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Houston, 12 submarkets",
+   "homepage_url": "https://www.jpatrickhomes.com/",
+   "synopsis": "Semi-custom builder founded in 1990, named Volume Builder of the Year at the Houston PRISM awards, selling from the $370,000s to the $900,000s across twelve submarkets including Sienna, Jordan Ranch, Artavia and The Woodlands Hills.",
+   "key_stat": "Volume Builder of the Year, 12 submarkets",
+   "principals": [
+    {
+     "name": "Tim Drone",
+     "role": "President",
+     "source_url": "https://houstonagentmagazine.com/2026/02/10/j-patrick-homes-small-lots-grange/",
+     "source_evidence": "Quoted as President Tim Drone in February 2026 coverage of the firm's small-lot product.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tim%20Drone%20J.%20Patrick%20Homes"
+    },
+    {
+     "name": "Bo Banowsky",
+     "role": "Purchasing Manager",
+     "linkedin_url": "https://www.linkedin.com/in/bo-banowsky-3b11278/",
+     "li_evidence": "Indexed title reads Bo Banowsky, Purchasing Manager, J. Patrick Homes.",
+     "decider": true
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Sienna, Jordan Ranch, Artavia, The Woodlands Hills",
+     "detail": "Four master planned communities.",
+     "signal_type": "repeatable",
+     "fit_signal": "Semi-custom plans repeated inside named communities rather than one-off design.",
+     "url": "https://www.jpatrickhomes.com/where-we-build/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 1
+   },
+   "mvp_screen": "A semi-custom builder that won a volume award and publishes no volume. Named purchasing and construction managers.",
+   "_verdict": "A semi-custom builder that won a volume award and publishes no volume. Named purchasing and construction managers.",
+   "_why": [
+    "Twelve submarkets is wide for a builder this size, which spreads the plan set thin.",
+    "No closings figure is published anywhere, so the machine question cannot be sized.",
+    "Energy Star and Environments for Living certification, with whole-home dehumidifiers standard. A firm that pays for third-party verification has paid for something unproven before."
+   ],
+   "sources": [
+    {
+     "url": "https://www.jpatrickhomes.com/about-j-patrick/",
+     "date": null
+    },
+    {
+     "url": "https://www.jpatrickhomes.com/where-we-build/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "fail",
+   "group": "a",
+   "tier": "A",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Twelve submarkets is wide for a builder this size, which spreads the plan set thin."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No closings figure is published anywhere, so the machine question cannot be sized."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It has paid for above-code performance, Energy Star and Environments for Living certification with whole-home dehumidifiers standard, but nothing structural."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "clears": 0,
+   "vol": null,
+   "short": "J. Patrick Homes",
+   "cell": "partial|partial",
+   "deciders": [
+    "Bo Banowsky"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -20565,208 +20510,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "HOU-063",
-   "entity_name": "Kendall Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "region": "Katy, with communities in Conroe, Willis and New Caney",
-   "homepage_url": "https://kendallhomes.net/",
-   "synopsis": "Family builder founded in 1993, selling from the $300,000s to the $800,000s across Conroe, Willis, New Caney and the Lake Conroe corridor. The cumulative figure is the firm's own. No single-year closings number is published, so the annual rate is an average.",
-   "key_stat": "195 closings in 2022, the latest published",
-   "principals": [
-    {
-     "name": "Glenn Briggs",
-     "role": "President",
-     "linkedin_url": "https://www.linkedin.com/in/glenn-briggs-5231975/",
-     "li_evidence": "Indexed title reads Glenn Briggs, President at Kendall Homes."
-    },
-    {
-     "name": "Jason Madden",
-     "role": "Vice President of Construction",
-     "linkedin_url": "https://www.linkedin.com/in/jason-madden-3610ba70/",
-     "li_evidence": "Indexed title reads Jason Madden, Vice President of Construction at Kendall Homes.",
-     "decider": true
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Waukegan Way, Meadow Glen, Deer Pines, Canyon Creek",
-     "detail": "Conroe.",
-     "signal_type": "repeatable",
-     "fit_signal": "Four communities in one county taking the same plan set.",
-     "url": "https://kendallhomes.net/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 3,
-    "innovation": 0,
-    "capital_access": 1
-   },
-   "mvp_screen": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
-   "_verdict": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
-   "_why": [
-    "Communities clustered in Conroe, Willis and New Caney rather than spread across the metro.",
-    "More than 4,000 homes since 1993 is an average above 100 a year, inside the band a machine serves.",
-    "The firm's published positioning is against speed and cost cutting. A printed wall would be measured on the firm's own terms."
-   ],
-   "sources": [
-    {
-     "url": "https://kendallhomes.net/",
-     "date": null
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "fail",
-   "group": "b",
-   "tier": "B",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Communities clustered in Conroe, Willis and New Caney rather than spread across the metro."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "195 closings in 2022 and 189 in 2021, the latest figures published. Inside the band one or two machines serve."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "The firm's published positioning is against speed and cost cutting. A printed wall would be measured on the firm's own terms."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "vol": 195,
-   "short": "Kendall Homes",
-   "cell": "clear|clear",
-   "clears": 2,
-   "deciders": [
-    "Jason Madden"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-032",
-   "entity_name": "Urban Living",
-   "entity_type": "developer",
-   "entity_role": "vertical_buyer",
-   "categories": [
-    "developers",
-    "infill"
-   ],
-   "region": "Inner-loop Houston, Harris County",
-   "homepage_url": "https://urbanliving.com/",
-   "synopsis": "Houston developer and brokerage of inner-loop townhome communities, active for decades across the Washington Corridor, Montrose and adjacent neighbourhoods.",
-   "key_stat": "Inner-loop attached townhome production",
-   "principals": [
-    {
-     "name": "Vinod Ramani",
-     "role": "Owner",
-     "linkedin_url": "https://www.linkedin.com/in/vinod-ramani-4a46788/",
-     "li_evidence": "Indexed title reads Vinod Ramani, Urban Living."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Inner-loop townhome communities",
-     "detail": "Multiple attached three-storey townhome communities across inner Houston.",
-     "signal_type": "repeatable",
-     "fit_signal": "Attached three-storey townhomes are the highest wall-share residential type available, and this is a repeat production model rather than a one-off.",
-     "url": "https://urbanliving.com/developments.php"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "wall_share": 3,
-    "innovation": 0,
-    "capital_access": 1,
-    "machine_fit": 3
-   },
-   "mvp_screen": "Attached townhome production, the product type a printed party wall serves. The owner is held on a LinkedIn headline alone; the firm's own site publishes nobody.",
-   "sources": [
-    {
-     "url": "https://urbanliving.com/developments.php",
-     "date": "2026-09-11"
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#E8A33D",
-   "_machine_why": "Attached townhome production at a volume one machine could carry.",
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "fail",
-   "tail": false,
-   "group": "b",
-   "tier": "B",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Repeat townhome communities across inner Houston."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Attached townhome production at a volume one machine could carry."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "No method evidence found."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": "Urban Living is a generic name and several unrelated LinkedIn pages carry it. None could be tied to the Houston firm, so none is claimed.",
-   "team_url": null,
-   "team_note": "urbanliving.com refuses automated retrieval, so no team page could be read.",
-   "vol": null,
-   "short": "Urban Living",
-   "cell": "clear|clear",
-   "clears": 2,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "HOU-003",
    "entity_name": "Houston Housing Authority",
    "entity_type": "public_agency",
@@ -20776,15 +20519,14 @@
     "developers"
    ],
    "region": "Third Ward / citywide, Harris County",
-   "homepage_url": "https://www.housingauthorityhouston.org/",
-   "synopsis": "Public housing agency that announced on October 22, 2025 a five-phase redevelopment of Cuney Homes, Houston's oldest public housing community, opened 1943. The 2025 to 2032 programme is backed by a $50 million HUD Choice Neighborhood Implementation Grant against a total project cost stated at over $600 million. Jamie Bryant was named President and Chief Executive Officer in February 2025. Existing and planned unit counts for Cuney Homes are not disclosed in the sourced article. The authority's board voted in January 2026 to operate as Housing Alliance HTX. The Cuney Homes announcement was made under the earlier name, which this record uses.",
+   "homepage_url": null,
+   "synopsis": "Public housing authority for the City of Houston, running a five-phase redevelopment of Cuney Homes in the Third Ward, opened 1943, announced 22 October 2025 and running 2025 to 2032 on more than $600 million including a $50 million HUD grant. Unit counts are not disclosed in the announcement. Both domains the authority published, housingauthorityhouston.org and housingforhouston.com, stopped resolving, so the leadership titles below are the last ones it published rather than ones that can be checked today.",
    "key_stat": "$600M+ programme, 5 phases, 2025-2032",
    "principals": [
     {
      "name": "Jamie Bryant",
      "role": "President and Chief Executive Officer, named February 2025",
      "linkedin_url": null,
-     "source_url": "https://housingforhouston.com/leadership/executive-leadership/",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jamie%20Bryant%20Houston%20Housing%20Authority"
     },
     {
@@ -20876,7 +20618,6 @@
    ],
    "company_li": "https://www.linkedin.com/company/houston-housing-authority",
    "company_li_note": null,
-   "team_url": "https://housingforhouston.com/leadership/executive-leadership/",
    "team_note": null,
    "vol": null,
    "short": "Houston Housing Authority",
@@ -21062,26 +20803,6 @@
      "linkedin_url": null,
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steven%20J.%20Hilton%20Meritage%20Homes%20Corporation"
-    },
-    {
-     "name": "Jayar Griffith",
-     "role": "Vice President of Operations, Meritage Homes Houston",
-     "linkedin_url": "https://www.linkedin.com/in/jayar-griffith-30a43439/",
-     "li_evidence": "Vice President of Operations at Meritage Homes (Houston). Houston, Texas. Operations at a production builder owns build cycle and trade scope.",
-     "decider": true
-    },
-    {
-     "name": "Jeremy Flach",
-     "role": "Division President, Meritage Homes Houston",
-     "linkedin_url": "https://www.linkedin.com/in/jeremy-flach-b3616614/",
-     "decider": false
-    },
-    {
-     "name": "Kyle Davison",
-     "role": "Central Region President, Meritage Homes",
-     "linkedin_url": "https://www.linkedin.com/in/kyle-davison-377a322b/",
-     "li_evidence": "Central Region President at Meritage Homes (NYSE). Sugar Land, Texas.",
-     "decider": false
     }
    ],
    "key_projects": [
@@ -21171,11 +20892,9 @@
    "short": "Meritage",
    "cell": "clear|fail",
    "clears": 1,
-   "deciders": [
-    "Jayar Griffith"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -21185,17 +20904,9 @@
    "entity_role": "vertical_buyer",
    "region": "Houston, formerly Devon Street Homes",
    "homepage_url": "https://www.smithdouglas.com/",
-   "synopsis": "Public builder that entered Houston in 2023 by acquiring Devon Street Homes, which had closed 324 homes across fifteen communities the year before and controlled about 1,500 lots. The 324-closings figure is from 2022, before the acquisition.",
+   "synopsis": "Georgia builder that entered Houston by acquiring Devon Street Homes in 2023, which had closed 324 homes across 15 communities with about 1,500 lots in 2022. Its January 2026 leadership announcement names regional and division presidents for the Southeast, Atlanta and Chattanooga and no Houston division leader, and no current company page publishes one.",
    "key_stat": "324 closings in 2022 as Devon Street",
-   "principals": [
-    {
-     "name": "Stephen Ray",
-     "role": "Leads the Houston division; Founder and President of Devon Street Homes before the 2023 sale",
-     "source_evidence": "Smith Douglas's own announcement: Stephen Ray, Founder and President of Devon Street, will continue to lead the Houston division. No post-acquisition title is published.",
-     "source_url": "https://www.smithdouglas.com/blog/smith-douglas-homes-acquires-devon-street-homes-enters-houston-tx-market",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Stephen%20Ray%20Smith%20Douglas%20Homes"
-    }
-   ],
+   "principals": [],
    "key_projects": [
     {
      "name": "Fulshear Lakes",
@@ -21287,8 +20998,8 @@
    ],
    "region": "Houston HQ, Harris County",
    "homepage_url": "https://www.camillocompanies.com/",
-   "synopsis": "Houston real estate group founded in 1989 running three brands: SimplyHome single-family build-to-rent, with more than 10,800 rental homes across 115-plus communities as of August 2026, Legend Homes for-sale production housing, and Academy Development. Holds 25,000 to 35,000 residential lots owned or in development at any time. Camillo publishes no construction-method or technology content. Camillo's own about page names a chief executive, a chief financial officer, a general counsel and presidents for Legend Homes and Academy Development.",
-   "key_stat": "10,800+ rental homes, 115+ communities",
+   "synopsis": "Houston real estate group founded in 1989 running three brands: SimplyHome single-family build-to-rent, which announced its ten thousandth rental home in May 2023, Legend Homes for-sale production housing, and Academy Development. Holds 25,000 to 35,000 residential lots owned or in development at any time. Camillo publishes no construction-method or technology content.",
+   "key_stat": "10,000th rental home, May 2023",
    "principals": [
     {
      "name": "Dan Miller",
@@ -21379,14 +21090,14 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "10,800 rental homes across 115 communities."
+     "text": "Three brands and a lot bank of 25,000 to 35,000 residential lots held at any time."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "10,800 rental homes held across 115 communities. The volume is far above one machine, though the build-and-hold model is the right one."
+     "text": "The rental portfolio passed its ten thousandth home in May 2023, far above one machine, though the build-and-hold model is the right shape."
     },
     {
      "axis": "innovation",
@@ -21419,7 +21130,7 @@
    ],
    "region": "Houston HQ / Fort Bend",
    "homepage_url": "https://www.c-rock.com/",
-   "synopsis": "Privately held homebuilder founded April 1, 2004 in Houston with more than 20,000 homes built across 300-plus communities and a 2020 milestone of over 1,600 closings in a single year. Ranked 49th on the 2025 USA Top Builders list. Daiwa House of Japan acquired an interest in 2021, funding expansion into Arizona, Tennessee and Alabama. Builder in Austin Point Phase I. CastleRock publishes a chief financial officer and a vice president with no stated function. Daiwa House Industry holds 80 percent of CastleRock, acquired for about $408 million and announced 10 August 2021. No technology transfer, prefab pilot, board seat or joint statement between the two is on record. CastleRock publishes no construction-method or technology content.",
+   "synopsis": "Privately held homebuilder founded April 1, 2004 in Houston with more than 20,000 homes built across 300-plus communities and a 2020 milestone of over 1,600 closings in a single year. Ranked 49th on the 2025 USA Top Builders list. Daiwa House Industry holds 80 percent, acquired for about $408 million and announced 10 August 2021, funding expansion into Arizona, Tennessee and Alabama. Builder in Austin Point Phase I. Its own about page names two people: a chief executive and a senior executive vice president. No technology transfer, prefab pilot, board seat or joint statement between CastleRock and Daiwa House is on record, and CastleRock publishes no construction-method content.",
    "key_stat": "20,000+ homes, 300+ communities",
    "principals": [
     {
@@ -21434,13 +21145,6 @@
      "role": "Senior Executive Vice President",
      "linkedin_url": "https://www.linkedin.com/in/kirk-breitenwischer-32778312/",
      "li_evidence": "VP at Castlerock Communities. Houston, Texas. The headline gives no function."
-    },
-    {
-     "name": "Bruce Torkelson",
-     "role": "Chief Financial Officer, CastleRock Communities",
-     "linkedin_url": "https://www.linkedin.com/in/brucetorkelson/",
-     "li_evidence": "CFO at CastleRock Communities. Houston, Texas.",
-     "decider": false
     }
    ],
    "key_projects": [
@@ -21469,7 +21173,7 @@
    "scores": {
     "repeatability": 3,
     "wall_share": 3,
-    "innovation": 0,
+    "innovation": 1,
     "capital_access": 2,
     "machine_fit": 2
    },
@@ -21519,17 +21223,17 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "Search ended early. Daiwa House owns a stake and is an industrialised builder, untested."
+     "text": "Daiwa House holds the majority and is an industrialised builder in Japan. Nothing published connects that to CastleRock's own method."
     }
    ],
    "company_li": "https://www.linkedin.com/company/castlerock-communities",
    "company_li_note": null,
    "team_url": "https://www.c-rock.com/about",
    "team_note": null,
+   "clears": 1,
    "vol": null,
    "short": "CastleRock",
    "cell": "clear|partial",
-   "clears": 1,
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -21545,7 +21249,7 @@
    ],
    "region": "Mesa HQ / Montgomery, Harris",
    "homepage_url": "https://www.christophertodd.com/",
-   "synopsis": "Arizona build-to-rent operator that made its first Texas acquisition on October 17, 2024, buying the 314-home, 40-acre Cottage Green in Conroe, Montgomery County, rebranded Cottage Living. Also built the 240-home Christopher Todd Communities at Cypress with Taylor Morrison. The Conroe acquisition price is not disclosed. Cottage Living was acquired rather than developed by the firm.",
+   "synopsis": "Arizona build-to-rent operator that made its first Texas acquisition on October 17, 2024, buying the 314-home, 40-acre Cottage Green in Conroe, Montgomery County, rebranded Cottage Living. Also built the 240-home Christopher Todd Communities at Cypress on almost nineteen gated acres with Taylor Morrison. The Conroe acquisition price is not disclosed. Cottage Living was acquired rather than developed by the firm.",
    "key_stat": "314 homes Conroe, 240 homes Cypress",
    "principals": [
     {
@@ -21628,7 +21332,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "156 units inside a single masterplan, built to hold. One machine covers a community at a time."
+     "text": "240 homes on nineteen acres in Cypress, built to hold. One machine covers a community at a time."
     },
     {
      "axis": "innovation",
@@ -22200,7 +21904,7 @@
    "entity_role": "vertical_buyer",
    "region": "Sugar Land",
    "homepage_url": "https://www.westin-homes.com/",
-   "synopsis": "Founder-led semi-custom builder in Sugar Land, active only in Houston and Austin, with the widest footprint in the south suburban master planned communities of any builder screened. Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. The firm's twentieth-anniversary release, dated December 2014, names Jason Golan as founder.",
+   "synopsis": "Founder-led semi-custom builder in Sugar Land, active only in Houston and Austin, with the widest footprint in the south suburban master planned communities of any builder screened. Its own communities index lists twenty-eight Houston communities. Builder reports 1,062 closings and $621 million in 2025, rank 60 on the 2026 Builder 100. The firm's twentieth-anniversary release, dated December 2014, names Jason Golan as founder.",
    "key_stat": "1,062 closings and $621 million in 2025",
    "principals": [
     {
@@ -22250,6 +21954,10 @@
    "sources": [
     {
      "url": "https://www.westin-homes.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.westin-homes.com/communities/houston",
      "date": null
     }
    ],
@@ -22307,14 +22015,165 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-035",
+   "entity_name": "Avenue CDC",
+   "entity_type": "nonprofit_developer",
+   "entity_role": "vertical_buyer",
+   "categories": [
+    "civic_institutional",
+    "affordable"
+   ],
+   "region": "Near Northside, Harris County",
+   "homepage_url": "https://avenuecdc.org/",
+   "synopsis": "Nonprofit community development corporation building affordable homes since 1991 and operating in Houston's Near Northside since 2002, with five named developments in the neighbourhood. The City of Houston contributed $3.4 million toward the $11.8 million acquisition and rehabilitation of the Avenue Center. Avenue publishes no construction officer.",
+   "key_stat": "5 named Near Northside developments",
+   "principals": [
+    {
+     "name": "Mary Lawler",
+     "role": "Chief Executive Officer",
+     "linkedin_url": null,
+     "source_url": "https://avenuecdc.org/about-us/board-staff/",
+     "source_evidence": "Chief Executive Officer on Avenue's own board and staff page, marking twenty-five years of leadership.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Mary%20Lawler%20Avenue%20CDC"
+    },
+    {
+     "name": "Nicole Cassier",
+     "role": "Chief Strategy Officer",
+     "linkedin_url": "https://www.linkedin.com/in/nicolecassier/",
+     "source_evidence": "Nicole Cassier's LinkedIn headline gives her title but not her employer.",
+     "li_evidence": "Chief Strategy Officer, Housing & Community Development. Surfaced on an Avenue CDC search.",
+     "probable": true
+    },
+    {
+     "name": "Karen Briggs Gwin",
+     "role": "Chief Financial Officer",
+     "linkedin_url": "https://www.linkedin.com/in/karen-briggs-gwin-02106614/",
+     "li_evidence": "Chief Financial Officer, Avenue CDC. Greater Houston."
+    },
+    {
+     "name": "Kionta Carter",
+     "role": "Chief Programs Officer",
+     "source_url": "https://avenuecdc.org/about-us/board-staff/"
+    },
+    {
+     "name": "Angela Guerrero",
+     "role": "Director, Asset Management and Realty Services",
+     "source_url": "https://avenuecdc.org/about-us/board-staff/",
+     "source_evidence": "The closest published seat to how the houses get built. Avenue names no construction officer."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Near Northside development programme",
+     "detail": "Five named developments since 2002: Avenue Place, Avenue Terraces, Avenue Station, Avenue Villas and Fulton Gardens.",
+     "signal_type": "repeatable",
+     "fit_signal": "Five repeat affordable developments in one neighbourhood under one owner.",
+     "url": "https://avenuecdc.org/community-development/community-initiatives/"
+    },
+    {
+     "name": "Post-Harvey resilience framing",
+     "detail": "Avenue CDC's Near Northside work framed by Rice University's Kinder Institute as a test case for equitable transit-oriented development after Hurricane Harvey.",
+     "signal_type": "resilience",
+     "fit_signal": "Resilience positioning tied to Harvey by an independent academic institution rather than by the developer's own marketing.",
+     "url": "https://kinder.rice.edu/urbanedge/harvey-be-turning-point-equitable-transit-oriented-development-houston"
+    },
+    {
+     "name": "Avenue Center, Near Northside",
+     "detail": "The City of Houston contributed $3.4 million toward the $11.8 million acquisition and rehabilitation of the Avenue Center, announced 20 May 2022.",
+     "signal_type": "repeatable",
+     "fit_signal": "A rehabilitation, not a ground-up build, so it says nothing about how Avenue puts up a wall.",
+     "url": "https://houstontx.gov/housing/communication/2022/0520b.html"
+    }
+   ],
+   "capital_signals": [
+    {
+     "text": "$3.4 million from the City of Houston for the Near Northside Community Resource Center",
+     "date": null,
+     "url": "https://www.virtualbx.com/feature-story/houston-avenue-cdc-receives-3-4m-from-city-for-its-near-northside-community-resource-center/"
+    }
+   ],
+   "scores": {
+    "repeatability": 2,
+    "wall_share": 3,
+    "innovation": 0,
+    "capital_access": 1,
+    "machine_fit": 3
+   },
+   "mvp_screen": "Five affordable developments in one neighbourhood, framed post-Harvey by Rice's Kinder Institute. $3.4M is the only figure.",
+   "sources": [
+    {
+     "url": "https://avenuecdc.org/about-us/board-staff/",
+     "date": "2026-09-11"
+    },
+    {
+     "url": "https://avenuecdc.org/community-development/community-initiatives/",
+     "date": "2026-09-11"
+    },
+    {
+     "url": "https://houstontx.gov/housing/communication/2022/0520b.html",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#C8102E",
+   "_machine_why": "Five affordable developments in one neighbourhood, at a scale one machine covers.",
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "fail",
+   "tail": false,
+   "group": "b",
+   "tier": "B",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Five developments in one neighbourhood since 2002."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five affordable developments in one neighbourhood, at a scale one machine covers."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. The resilience reading came from a 2017 Rice Kinder Institute piece about transit-oriented development, which says nothing about how anything is built."
+    }
+   ],
+   "company_li": "https://www.linkedin.com/company/avenue-community-development-coporation",
+   "company_li_note": null,
+   "team_url": "https://avenuecdc.org/about-us/board-staff/",
+   "team_note": null,
+   "clears": 1,
+   "vol": null,
+   "short": "Avenue CDC",
+   "cell": "partial|clear",
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-064",
    "entity_name": "Colina Homes",
    "entity_type": "homebuilder",
    "entity_role": "vertical_buyer",
    "region": "Houston, 20 communities",
    "homepage_url": "https://www.colinahomes.com/",
-   "synopsis": "Affordable production builder founded in 2007 by Ken Williams, selling on no-haggle pricing across more than twenty communities from downtown to Katy, Conroe, League City and Magnolia. The cumulative figure is the firm's own and covers eighteen years. Builder reports 540 closings in 2025 and 552 in 2024.",
-   "key_stat": "540 closings in 2025, 552 in 2024",
+   "synopsis": "Affordable production builder founded in 2007 by Ken Williams, selling on no-haggle pricing across fourteen communities published on its own site, from Katy and Cypress to Magnolia, Willis, Splendora and Texas City. Builder reports 540 closings in 2025 and 552 in 2024.",
+   "key_stat": "540 closings in 2025, fourteen communities published",
    "principals": [
     {
      "name": "Ken Williams",
@@ -22358,6 +22217,10 @@
     {
      "url": "https://www.colinahomes.com/about",
      "date": null
+    },
+    {
+     "url": "https://www.colinahomes.com/communities",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -22381,14 +22244,14 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "More than twenty communities, all inside Greater Houston, taking a standard plan set."
+     "text": "Fourteen communities on its own communities page, all inside Greater Houston, taking a standard plan set."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "540 closings in 2025 and 552 in 2024 across about twenty communities. Two machines would carry a fifth of output at most."
+     "text": "540 closings in 2025 and 552 in 2024 across fourteen published communities. Two machines would carry a fifth of output at most."
     },
     {
      "axis": "innovation",
@@ -22420,7 +22283,7 @@
    "entity_role": "vertical_buyer",
    "region": "Meridiana, Rosharon",
    "homepage_url": "https://imaginationhomes.com/",
-   "synopsis": "New builder launched in 2025 on an explicitly attainable entry-level strategy, starting in the high $200,000s, that has joined the builder lineup at Meridiana. Headquartered in Dallas. Imagination Homes is a David Weekley Homes line for entry-level product. Greg Grahmann is a David Weekley division president.",
+   "synopsis": "Entry-level builder launched in 2025, whose first community was Rose Hill in Denison, north Texas. It joined the builder lineup at Magnolia Springs in Greater Houston in December 2025 and at Meridiana in Manvel in January 2026. Greg Grahmann is named in trade coverage as director of Imagination Homes and as having joined David Weekley Homes in 2013.",
    "key_stat": "Entry-level, launched 2025",
    "principals": [
     {
@@ -22431,15 +22294,7 @@
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Greg%20Grahmann%20Imagination%20Homes"
     }
    ],
-   "key_projects": [
-    {
-     "name": "Meridiana",
-     "detail": "Rosharon. Joined the builder lineup at a south-suburban masterplan.",
-     "signal_type": "repeatable",
-     "fit_signal": "Entry-level product from the high $200,000s in an established masterplan.",
-     "url": "https://www.prnewswire.com/news-releases/imagination-homes-launches-breaks-ground-on-first-community-302539487.html"
-    }
-   ],
+   "key_projects": [],
    "capital_signals": [],
    "scores": {
     "repeatability": 3,
@@ -22454,12 +22309,7 @@
     "New and small. One machine would be most of the capacity.",
     "The strategy is explicitly about attainability, so a wall cost saving lands on the stated strategy."
    ],
-   "sources": [
-    {
-     "url": "https://www.prnewswire.com/news-releases/imagination-homes-launches-breaks-ground-on-first-community-302539487.html",
-     "date": null
-    }
-   ],
+   "sources": [],
    "audit_flags": [],
    "hue_hex": "#FF4F00",
    "tail": false,
@@ -22518,7 +22368,7 @@
    "entity_role": "vertical_buyer",
    "region": "Houston, 16 communities",
    "homepage_url": "https://jamestownestatehomes.com/",
-   "synopsis": "Family builder founded in 2008 by Greg Hawes with his daughters, building about seventy-five homes a year from a catalogue of eighty-two plans across sixteen communities from Sienna to Montgomery. The firm publishes an eight to ten month build time from design to completion.",
+   "synopsis": "Family builder founded in 2008 by Greg Hawes with his daughters, building about seventy-five homes a year across sixteen communities from Sienna to Montgomery. The firm publishes an eight to ten month build time from design to completion. No plan count is published on either page the record cites.",
    "key_stat": "About 75 homes a year on the firm's own count",
    "principals": [
     {
@@ -22603,7 +22453,7 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "Eighty-two plans for about seventy-five houses a year. The catalogue is wider than the output."
+     "text": "About seventy-five houses a year across sixteen communities."
     },
     {
      "axis": "machine_fit",
@@ -22634,18 +22484,115 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-063",
+   "entity_name": "Kendall Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Katy, with communities in Conroe, Willis and New Caney",
+   "homepage_url": "https://kendallhomes.net/",
+   "synopsis": "Family builder founded in 1993, selling from the $300,000s to the $800,000s. Its own site publishes communities in Conroe, Willis, New Caney and New Waverly on the Lake Conroe corridor, and at Alvin, Dayton, Bay City and West Columbia at the edges of the metro. The firm publishes more than 4,000 homes since 1993 and over $1 billion in revenue, and no single-year closings figure. Its only published executive is its founder.",
+   "key_stat": "Founded 1993, more than 4,000 homes on the firm's own count",
+   "principals": [
+    {
+     "name": "David Wickens",
+     "role": "Founder",
+     "source_url": "https://kendallhomes.net/",
+     "source_evidence": "The only executive the firm publishes."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Waukegan Way, Meadow Glen, Deer Pines, Canyon Creek",
+     "detail": "Conroe.",
+     "signal_type": "repeatable",
+     "fit_signal": "Four communities in one county taking the same plan set.",
+     "url": "https://kendallhomes.net/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 0,
+    "capital_access": 1
+   },
+   "mvp_screen": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
+   "_verdict": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
+   "_why": [
+    "Communities clustered in Conroe, Willis and New Caney rather than spread across the metro.",
+    "More than 4,000 homes since 1993 is an average above 100 a year, inside the band a machine serves.",
+    "The firm's published positioning is against speed and cost cutting. A printed wall would be measured on the firm's own terms."
+   ],
+   "sources": [
+    {
+     "url": "https://kendallhomes.net/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "fail",
+   "group": "b",
+   "tier": "B",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Communities clustered on the Lake Conroe corridor, with outliers at Bay City and West Columbia."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No annual closings figure is published. On the bands, a firm with no published figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "The firm's published positioning is against speed and cost cutting. A printed wall would be measured on the firm's own terms."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "clears": 1,
+   "vol": 195,
+   "short": "Kendall Homes",
+   "cell": "clear|partial",
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-066",
    "entity_name": "Sandcastle Homes",
    "entity_type": "homebuilder",
    "entity_role": "vertical_buyer",
    "region": "Inner Loop Houston",
    "homepage_url": "https://www.sandcastlehouston.com/",
-   "synopsis": "Inner Loop infill builder founded in 1995, averaging about fifty closings a year in Rice Military, Sawyer Heights, Garden Oaks, Sunset Heights and Montrose. The firm's own retrospective puts volume at 40 to 60 homes a year since a 2005 peak of 59. Mike Dishberger oversees construction and purchasing himself.",
+   "synopsis": "Inner Loop infill builder founded in 1995, averaging about fifty closings a year in Rice Military, Sawyer Heights, Garden Oaks, Sunset Heights and Montrose. Its own team page publishes a vice president of construction and a purchasing manager, so both functions are staffed under the chief executive rather than held by him.",
    "key_stat": "40 to 60 homes a year on the firm's own count",
    "principals": [
     {
      "name": "Mike Dishberger",
-     "role": "Chief Executive Officer and Co-Owner; oversees construction and purchasing",
+     "role": "Chief Executive Officer and Co-Owner",
      "linkedin_url": "https://www.linkedin.com/in/mike-dishberger-01b66b9/",
      "li_evidence": "Indexed title reads Mike Dishberger, CEO at Sandcastle Homes Inc. The firm's team page: Chief Executive Officer and Co-Owner, overseeing construction, purchasing and accounting.",
      "decider": true,
@@ -22659,6 +22606,17 @@
      "li_evidence": "Indexed title reads Mike Salomon, Owner, Sandcastle Homes, Inc. The firm's team page: President and Co-Owner, over land, sales and business development.",
      "source_url": "https://www.sandcastlehouston.com/about-sandcastle/meet-our-team/",
      "source_evidence": "Team page: President and Co-Owner, managing land acquisition, sales and business development."
+    },
+    {
+     "name": "Jo Dunham",
+     "role": "Vice President of Construction",
+     "source_url": "https://www.sandcastlehouston.com/about-sandcastle/meet-our-team/",
+     "decider": true
+    },
+    {
+     "name": "Katie Pritchard",
+     "role": "Purchasing Manager",
+     "source_url": "https://www.sandcastlehouston.com/about-sandcastle/meet-our-team/"
     }
    ],
    "key_projects": [
@@ -22687,6 +22645,10 @@
    "sources": [
     {
      "url": "https://www.sandcastlehouston.com/about-sandcastle/",
+     "date": null
+    },
+    {
+     "url": "https://www.sandcastlehouston.com/about-sandcastle/meet-our-team/",
      "date": null
     }
    ],
@@ -22737,7 +22699,8 @@
    "cell": "partial|clear",
    "clears": 1,
    "deciders": [
-    "Mike Dishberger"
+    "Mike Dishberger",
+    "Jo Dunham"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -22852,117 +22815,6 @@
    "clears": 1,
    "deciders": [
     "Christina Wright"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-067",
-   "entity_name": "J. Patrick Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "region": "Houston, 12 submarkets",
-   "homepage_url": "https://www.jpatrickhomes.com/",
-   "synopsis": "Semi-custom builder founded in 1990, named Volume Builder of the Year at the Houston PRISM awards, selling from the $370,000s to the $900,000s across twelve submarkets including Sienna, Jordan Ranch, Artavia and The Woodlands Hills.",
-   "key_stat": "Volume Builder of the Year, 12 submarkets",
-   "principals": [
-    {
-     "name": "Tim Drone",
-     "role": "President",
-     "source_url": "https://houstonagentmagazine.com/2026/02/10/j-patrick-homes-small-lots-grange/",
-     "source_evidence": "Quoted as President Tim Drone in February 2026 coverage of the firm's small-lot product.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tim%20Drone%20J.%20Patrick%20Homes"
-    },
-    {
-     "name": "Bo Banowsky",
-     "role": "Purchasing Manager",
-     "linkedin_url": "https://www.linkedin.com/in/bo-banowsky-3b11278/",
-     "li_evidence": "Indexed title reads Bo Banowsky, Purchasing Manager, J. Patrick Homes.",
-     "decider": true
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Sienna, Jordan Ranch, Artavia, The Woodlands Hills",
-     "detail": "Four master planned communities.",
-     "signal_type": "repeatable",
-     "fit_signal": "Semi-custom plans repeated inside named communities rather than one-off design.",
-     "url": "https://www.jpatrickhomes.com/where-we-build/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 1
-   },
-   "mvp_screen": "A semi-custom builder that won a volume award and publishes no volume. Named purchasing and construction managers.",
-   "_verdict": "A semi-custom builder that won a volume award and publishes no volume. Named purchasing and construction managers.",
-   "_why": [
-    "Twelve submarkets is wide for a builder this size, which spreads the plan set thin.",
-    "No closings figure is published anywhere, so the machine question cannot be sized.",
-    "Energy Star and Environments for Living certification, with whole-home dehumidifiers standard. A firm that pays for third-party verification has paid for something unproven before."
-   ],
-   "sources": [
-    {
-     "url": "https://www.jpatrickhomes.com/about-j-patrick/",
-     "date": null
-    },
-    {
-     "url": "https://www.jpatrickhomes.com/where-we-build/",
-     "date": null
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "holds": 3,
-   "capital_mark": "fail",
-   "group": "b",
-   "tier": "B",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Twelve submarkets is wide for a builder this size, which spreads the plan set thin."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No closings figure is published anywhere, so the machine question cannot be sized."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "It has paid for above-code performance, Energy Star and Environments for Living certification with whole-home dehumidifiers standard, but nothing structural."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "clears": 0,
-   "vol": null,
-   "short": "J. Patrick Homes",
-   "cell": "partial|partial",
-   "deciders": [
-    "Bo Banowsky"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -23219,7 +23071,7 @@
    ],
    "region": "Houston HQ, Harris County",
    "homepage_url": "https://www.coventryhomes.com/",
-   "synopsis": "Houston-founded production homebuilder established 1988, now a subsidiary of NASDAQ-listed Dream Finders Homes. Operates close to 100 unique communities across four Texas markets with more than 55,000 homes closed company-wide. Active builder in Sienna. Coventry is a Dream Finders Homes brand. Both Houston division presidents carry DFH in their own titles. Dream Finders' 2024 annual report describes procurement at local, regional and national levels, with national volume used to secure manufacturer pricing.",
+   "synopsis": "Houston-founded production homebuilder established 1988, now a subsidiary of NASDAQ-listed Dream Finders Homes. Operates close to 100 unique communities across four Texas markets with more than 55,000 homes closed company-wide, thirty of them in Greater Houston. Coventry is a Dream Finders Homes brand and its Houston division president carries DFH in his own title.",
    "key_stat": "~100 communities, 55,000+ homes closed",
    "principals": [
     {
@@ -23227,12 +23079,6 @@
      "role": "Division President, Coventry Homes (Dream Finders Homes)",
      "linkedin_url": "https://www.linkedin.com/in/james-kotzur-748107224/",
      "li_evidence": "Division President at DFH - Coventry Homes. Houston, Texas. First named executive found for this firm, and the DFH prefix identifies the parent.",
-     "decider": false
-    },
-    {
-     "name": "Brian Grigsby",
-     "role": "Division President, Houston South, Coventry Homes (Dream Finders Homes)",
-     "linkedin_url": "https://www.linkedin.com/in/brian-grigsby-859a97285/",
      "decider": false
     }
    ],
@@ -23264,6 +23110,10 @@
     {
      "url": "https://www.coventryhomes.com/about-us/",
      "date": "2026-09-11"
+    },
+    {
+     "url": "https://www.coventryhomes.com/new-homes/tx/houston/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -23429,27 +23279,26 @@
    "entity_role": "vertical_buyer",
    "region": "San Antonio, building in Houston",
    "homepage_url": "https://www.sitterlehomes.com/",
-   "synopsis": "Family-owned semi-custom builder founded in San Antonio in 1964, building in Houston at Lakes of Bella Terra West, Sunset Harbor at Towne Lake, Veranda and The Lagos at Aliana. Sitterle Homes is headquartered in San Antonio, where most of its volume sits.",
+   "synopsis": "San Antonio builder founded in 1964, now in four Texas markets including Houston. Builder's last published figures are 372 closings and $210 million in 2022, with nothing filed since. Its own about page records two co-owners acquiring the company in 2005 and assigns neither a title.",
    "key_stat": "372 closings company-wide in 2022, no Houston figure",
    "principals": [
     {
      "name": "Frank Sitterle, Jr.",
-     "role": "President and co-owner",
+     "role": "Co-owner",
      "linkedin_url": "https://www.linkedin.com/in/frank-sitterle-071b8246/",
      "li_evidence": "Indexed title reads Frank Sitterle, President, Sitterle Homes. The firm's about page has him acquiring the company in 2005 with Jeff Buell."
-    },
-    {
-     "name": "India Kinslow",
-     "role": "Director of Purchasing",
-     "source_evidence": "No page outside a data aggregator names India Kinslow with a title at Sitterle, so no link is held for her.",
-     "linkedin_url": "https://www.linkedin.com/in/india-kinslow-824b2614b/",
-     "li_evidence": "Headline reads Director Of Purchasing at Sitterle Homes. San Antonio, which is where the firm's purchasing sits."
     },
     {
      "name": "Chris Hightower",
      "role": "Division President, Houston",
      "linkedin_url": "https://www.linkedin.com/in/chris-hightower-029b45112/",
      "li_evidence": "Indexed title reads Chris Hightower, Division President at Sitterle Homes. The GHBA member directory lists him as Division President, Houston."
+    },
+    {
+     "name": "Jeff Buell",
+     "role": "Co-owner",
+     "source_url": "https://sitterlehomes.com/about-us/",
+     "source_evidence": "The about page records the two of them acquiring the company in 2005 and assigns neither a title."
     }
    ],
    "key_projects": [
@@ -23478,6 +23327,10 @@
    "sources": [
     {
      "url": "https://www.sitterlehomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://sitterlehomes.com/about-us/",
      "date": null
     }
    ],
@@ -23651,7 +23504,7 @@
    "entity_role": "vertical_buyer",
    "region": "Cypress",
    "homepage_url": "https://ravennahomes.com/",
-   "synopsis": "Semi-custom builder in Cypress selling from the $500,000s across Artavia, Audubon, Bridgeland, Cross Creek West, The Highlands and The Woodlands Hills.",
+   "synopsis": "Semi-custom builder in Cypress across Artavia, Audubon, Bridgeland, Cross Creek West, The Highlands and The Woodlands Hills. Its own about page says the founding brothers worked as division presidents at a major Houston builder and does not name the builder.",
    "key_stat": "Seven communities, from the $500,000s",
    "principals": [
     {
@@ -23687,6 +23540,10 @@
    "sources": [
     {
      "url": "https://ravennahomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.ravennahomes.com/about/",
      "date": null
     }
    ],
@@ -24239,7 +24096,7 @@
    "key_stat": "Engineer and design-build partner on the printed house in Spring Branch",
    "principals": [
     {
-     "name": "Hugo Domloj",
+     "name": "Hachem Domloj",
      "role": "Founder and Chief Executive Officer",
      "linkedin_url": "https://www.linkedin.com/in/hachem-domloj/",
      "li_evidence": "Headline reads Founder & CEO at CIVE, Inc. Houston, Texas.",
@@ -24290,6 +24147,10 @@
     },
     {
      "url": "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/",
+     "date": null
+    },
+    {
+     "url": "https://cive.com/about/",
      "date": null
     }
    ],
@@ -24359,117 +24220,11 @@
    "cell": "partial|partial",
    "clears": 1,
    "deciders": [
-    "Hugo Domloj",
+    "Hachem Domloj",
     "Hikmat Zerbe"
    ],
    "has_decider": true,
    "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-109",
-   "entity_name": "T&T Construction",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Pasadena, Harris",
-   "homepage_url": "https://tandtconstruction.com/",
-   "synopsis": "Third-generation family concrete and civil contractor established in Pasadena in 1969, running site work, tilt-wall building construction and industrial pads, and owning its ready-mix delivery through Taylor Made Concrete on volumetric mixers. Two people carry T&T alongside RD DevCo and E&S Construction in one LinkedIn headline. Neither name appears on T&T's own site.",
-   "key_stat": "65 employees, 1,000-plus Houston projects since 1969",
-   "principals": [
-    {
-     "name": "Ryan Taylor",
-     "role": "Third generation, took leadership in 2001, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Taylor%20T%26T%20Construction"
-    },
-    {
-     "name": "Jeff Taylor",
-     "role": "Second-generation co-owner, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Taylor%20T%26T%20Construction"
-    },
-    {
-     "name": "Dianna Taylor",
-     "role": "Second-generation co-owner, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dianna%20Taylor%20T%26T%20Construction"
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Taylor Made Concrete",
-     "detail": "The firm's own concrete delivery arm, using volumetric mixers.",
-     "signal_type": "method_risk",
-     "fit_signal": "Owning the mix is the part of a printed wall that is hardest to source on demand.",
-     "url": "https://tandtconstruction.com/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 3,
-    "innovation": 2,
-    "capital_access": 2
-   },
-   "mvp_screen": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
-   "_verdict": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
-   "_why": [
-    "Industrial and commercial concrete recurring across the east side of the metro.",
-    "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly.",
-    "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
-   ],
-   "sources": [
-    {
-     "url": "https://tandtconstruction.com/about-us/",
-     "date": null
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "clear",
-    "innovation": "partial"
-   },
-   "holds": 3,
-   "capital_mark": "partial",
-   "group": "trade",
-   "tier": "W",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: puts up the same wall, in one metro",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Industrial and commercial concrete recurring across the east side of the metro."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "vol": null,
-   "short": "T&T Construction",
-   "cell": "partial|clear",
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -25096,116 +24851,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "HOU-108",
-   "entity_name": "HTX Concrete",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "region": "Houston, working Harris, Fort Bend and Brazoria",
-   "homepage_url": "https://htxconcrete.com/",
-   "synopsis": "Turnkey commercial concrete and site development contractor that calls tilt-wall panels its own specialty and publishes a multifamily category alongside retail, industrial and institutional work. Across the published projects the paving square footage is many times the tilt-wall square footage.",
-   "key_stat": "Names a garden-style multifamily project on its own site",
-   "principals": [
-    {
-     "name": "J. Cameron Guinn",
-     "role": "Vice President, Business Development",
-     "linkedin_url": "https://www.linkedin.com/in/j-cameron-guinn-2047686/",
-     "li_evidence": "Headline reads Vice President Business Development at HTX Concrete. Houston, Texas."
-    },
-    {
-     "name": "Tony Le",
-     "role": "Chief Estimator",
-     "linkedin_url": "https://www.linkedin.com/in/tony-le-81ba0032/",
-     "li_evidence": "Headline reads Chief Estimator at HTX Concrete. Houston, Texas."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Cypress Creek Lakes Apartments",
-     "detail": "Cypress, Harris. Described on the firm's own site as a luxury garden-style multifamily development, designed by Meeks and Partners.",
-     "signal_type": "repeatable",
-     "fit_signal": "Garden-style multifamily is the repeated wall a printer serves best.",
-     "url": "https://htxconcrete.com/"
-    },
-    {
-     "name": "Center at Pearland Parkway",
-     "detail": "Pearland, Brazoria. 12,000 square feet of tilt wall and 155,000 gross square feet of paving.",
-     "signal_type": "method_risk",
-     "fit_signal": "The ratio of paving to wall in the published work is the thing to test on the call.",
-     "url": "https://htxconcrete.com/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 3,
-    "innovation": 1,
-    "capital_access": 2
-   },
-   "mvp_screen": "One of two contractors screened that names an actual multifamily project on its own site. The published work is paving-heavy.",
-   "_verdict": "One of two contractors screened that names an actual multifamily project on its own site. The published work is paving-heavy.",
-   "_why": [
-    "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall.",
-    "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job.",
-    "No method statement on record."
-   ],
-   "sources": [
-    {
-     "url": "https://htxconcrete.com/",
-     "date": null
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#FF4F00",
-   "tail": false,
-   "new_layer": true,
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "holds": 2,
-   "capital_mark": "partial",
-   "group": "trade",
-   "tier": "W",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: puts up the same wall, in one metro",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "No method statement on record."
-    }
-   ],
-   "company_li": null,
-   "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
-   "vol": null,
-   "short": "HTX Concrete",
-   "cell": "partial|clear",
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "HOU-114",
    "entity_name": "Rino Construction",
    "entity_type": "contractor",
@@ -25249,7 +24894,7 @@
      "detail": "Houston, Harris. 79 panels, completed December 2019, with Texas A&M Concrete as the concrete contractor.",
      "signal_type": "method_risk",
      "fit_signal": "On this job the panels were subcontracted, so the crew that would run a printer is not necessarily inside the company.",
-     "url": "https://tilt-up.org/projects/profile/?id=5900"
+     "url": "https://tilt-up.org/projects/profile/?id=6094"
     }
    ],
    "capital_signals": [],
@@ -25276,7 +24921,7 @@
      "date": null
     },
     {
-     "url": "https://tilt-up.org/projects/profile/?id=5900",
+     "url": "https://tilt-up.org/projects/profile/?id=6094",
      "date": null
     }
    ],
@@ -25338,7 +24983,7 @@
    "entity_role": "wall_trade",
    "region": "Houston, Harris",
    "homepage_url": "https://www.texasamconcrete.com/",
-   "synopsis": "Turnkey concrete contractor that supplies, forms, places and finishes its own work, with a tilt-up record carried in the Tilt-Up Concrete Association's own project archive.",
+   "synopsis": "Turnkey concrete contractor that supplies, forms, places and finishes its own work, with a tilt-up record carried in the Tilt-Up Concrete Association's own project archive. Its own news post names two co-founders and a vice president.",
    "key_stat": "79 panels and 52,116 square feet of tilt-up wall on one job",
    "principals": [
     {
@@ -25347,6 +24992,16 @@
      "linkedin_url": "https://www.linkedin.com/in/david-buzzelli-faci-77109b29/",
      "li_evidence": "Headline reads Vice President of Texas A&M Concrete, LLC. Houston, Texas. He is also named as a founder in the firm's own dated news post.",
      "decider": true
+    },
+    {
+     "name": "Adrian Villarreal",
+     "role": "Co-founder",
+     "source_url": "https://www.texasamconcrete.com/blogs/news/texas-concrete-contractor-makes-it-big"
+    },
+    {
+     "name": "Marcos Chavez",
+     "role": "Co-founder",
+     "source_url": "https://www.texasamconcrete.com/blogs/news/texas-concrete-contractor-makes-it-big"
     }
    ],
    "key_projects": [
@@ -25355,7 +25010,7 @@
      "detail": "Houston. 79 panels, tallest 43 feet 6 inches, 52,116 square feet of tilt-up wall, built January to December 2019. Tilt-Up Achievement Award 2020.",
      "signal_type": "repeatable",
      "fit_signal": "A panel count at that scale is the volume a printed wall has to beat on cost per square foot.",
-     "url": "https://tilt-up.org/projects/profile/?id=5900"
+     "url": "https://tilt-up.org/projects/profile/?id=6094"
     }
    ],
    "capital_signals": [],
@@ -25378,7 +25033,7 @@
      "date": null
     },
     {
-     "url": "https://tilt-up.org/projects/profile/?id=5900",
+     "url": "https://tilt-up.org/projects/profile/?id=6094",
      "date": null
     }
    ],
@@ -25442,9 +25097,27 @@
    "entity_role": "wall_trade",
    "region": "Houston industrial office, Harris, inside a national firm",
    "homepage_url": "https://bakerconstruction.com/",
-   "synopsis": "Concrete specialty contractor, formerly trading as Baker Concrete Construction, with a standing Houston industrial office inside a national business of more than 12,500 people, named as the concrete subcontractor on the tallest tilt-wall job under way in the metro. The firm's own site names no executive and no Houston office. The Houston address comes from a trade association listing.",
+   "synopsis": "Concrete specialty contractor, formerly trading as Baker Concrete Construction, with a standing Houston industrial office inside a national business of more than 12,500 people, named as the concrete subcontractor on the tallest tilt-wall job under way in the metro. Its own leadership page names fourteen executives including a president for the Central and Great West region, which is the seat that covers Texas. The locations page names five regional headquarters and no Texas office; the Houston address comes from a trade association listing.",
    "key_stat": "61 panels at 70 feet, the heaviest about 87 tons",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Martin Jordana",
+     "role": "President, Central and Great West Region",
+     "source_url": "https://bakerconstruction.com/leadership/",
+     "source_evidence": "The regional seat that covers Texas.",
+     "decider": true
+    },
+    {
+     "name": "Karl Watson",
+     "role": "Chief Executive Officer, Baker Construction Enterprises",
+     "source_url": "https://bakerconstruction.com/leadership/"
+    },
+    {
+     "name": "Dan T. Baker",
+     "role": "Executive Vice Chair and President",
+     "source_url": "https://bakerconstruction.com/leadership/"
+    }
+   ],
    "key_projects": [
     {
      "name": "Harris Health Central Fill Pharmacy",
@@ -25479,6 +25152,10 @@
     },
     {
      "url": "https://web.abchouston.org/03-00-00-Concrete/Baker-Concrete-Construction,-Industrial-461",
+     "date": null
+    },
+    {
+     "url": "https://bakerconstruction.com/leadership/",
      "date": null
     }
    ],
@@ -25528,9 +25205,11 @@
    "short": "Baker Construction",
    "cell": "clear|fail",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Martin Jordana"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -25540,7 +25219,7 @@
    "entity_role": "wall_trade",
    "region": "Houston division, working Harris, Fort Bend, Montgomery and Waller",
    "homepage_url": "https://leolaconstruction.com/houston/",
-   "synopsis": "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single family and townhome communities, delivering the whole wall package under one contract through a network of more than 900 subcontractors. Leola counts more than 900 subcontractors and no direct field crew. The firm's headquarters and ownership sit in Florida.",
+   "synopsis": "Shell contractor whose Houston division carries slab masonry, wood framing and drywall on single family and townhome communities, delivering the whole wall package under one contract and describing those stages as work it performs under one accountable roof. It also works through a network of more than 900 subcontractors. The firm's headquarters and ownership sit in Florida.",
    "key_stat": "9,900 homes a year company-wide, across 300 communities",
    "principals": [
     {
@@ -25611,7 +25290,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "9,900 homes a year on the firm's own count, company-wide across Florida and Texas, far above what one or two printers cover. It also counts more than 900 subcontractors and no direct field crew, so there is nobody inside the firm to put on a machine."
+     "text": "9,900 homes a year on the firm's own count, company-wide across Florida and Texas, far above what one or two printers cover."
     },
     {
      "axis": "innovation",
@@ -26023,6 +25702,112 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-109",
+   "entity_name": "T&T Construction",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Pasadena, Harris",
+   "homepage_url": "https://tandtconstruction.com/",
+   "synopsis": "Third-generation family concrete and civil contractor established in Pasadena in 1969, running site work, tilt-wall building construction and industrial pads, and owning its ready-mix delivery through Taylor Made Concrete on volumetric mixers. Two people carry T&T alongside RD DevCo and E&S Construction in one LinkedIn headline. Neither name appears on T&T's own site.",
+   "key_stat": "65 employees, 1,000-plus Houston projects since 1969",
+   "principals": [
+    {
+     "name": "Ryan Taylor",
+     "role": "Third generation, took leadership in 2001, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Taylor%20T%26T%20Construction"
+    },
+    {
+     "name": "Jeff Taylor",
+     "role": "Second-generation co-owner, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Taylor%20T%26T%20Construction"
+    },
+    {
+     "name": "Dianna Taylor",
+     "role": "Second-generation co-owner, named on the firm's own about page",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dianna%20Taylor%20T%26T%20Construction"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Taylor Made Concrete",
+     "detail": "The firm's own concrete delivery arm, using volumetric mixers.",
+     "signal_type": "method_risk",
+     "fit_signal": "Owning the mix is the part of a printed wall that is hardest to source on demand.",
+     "url": "https://tandtconstruction.com/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 2
+   },
+   "mvp_screen": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
+   "_verdict": "It owns the mix as well as the placing. A printer is fed concrete continuously, and this firm delivers its own.",
+   "_why": [
+    "Industrial and commercial concrete recurring across the east side of the metro.",
+    "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly.",
+    "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
+   ],
+   "sources": [
+    {
+     "url": "https://tandtconstruction.com/about-us/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Industrial and commercial concrete recurring across the east side of the metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "65 employees on average and more than 1,000 Greater Houston projects since 1969, on the firm's own count. No annual wall figure is published, so this sits at a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It bought volumetric mixers and stood up its own delivery arm rather than buying ready-mix from a plant. That is paying for a different way to get concrete to a site, though it is not a wall method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "clears": 0,
+   "vol": null,
+   "short": "T&T Construction",
+   "cell": "partial|partial",
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-107",
    "entity_name": "Andrade Construction Companies",
    "entity_type": "contractor",
@@ -26241,6 +26026,116 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-108",
+   "entity_name": "HTX Concrete",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, working Harris, Fort Bend and Brazoria",
+   "homepage_url": "https://htxconcrete.com/",
+   "synopsis": "Turnkey commercial concrete and site development contractor that calls tilt-wall panels its own specialty and publishes a multifamily category alongside retail, industrial and institutional work. Across the published projects the paving square footage is many times the tilt-wall square footage.",
+   "key_stat": "Names a garden-style multifamily project on its own site",
+   "principals": [
+    {
+     "name": "J. Cameron Guinn",
+     "role": "Vice President, Business Development",
+     "linkedin_url": "https://www.linkedin.com/in/j-cameron-guinn-2047686/",
+     "li_evidence": "Headline reads Vice President Business Development at HTX Concrete. Houston, Texas."
+    },
+    {
+     "name": "Tony Le",
+     "role": "Chief Estimator",
+     "linkedin_url": "https://www.linkedin.com/in/tony-le-81ba0032/",
+     "li_evidence": "Headline reads Chief Estimator at HTX Concrete. Houston, Texas."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Cypress Creek Lakes Apartments",
+     "detail": "Cypress, Harris. Described on the firm's own site as a luxury garden-style multifamily development, designed by Meeks and Partners.",
+     "signal_type": "repeatable",
+     "fit_signal": "Garden-style multifamily is the repeated wall a printer serves best.",
+     "url": "https://htxconcrete.com/"
+    },
+    {
+     "name": "Center at Pearland Parkway",
+     "detail": "Pearland, Brazoria. 12,000 square feet of tilt wall and 155,000 gross square feet of paving.",
+     "signal_type": "method_risk",
+     "fit_signal": "The ratio of paving to wall in the published work is the thing to test on the call.",
+     "url": "https://htxconcrete.com/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "One of two contractors screened that names an actual multifamily project on its own site. The published work is paving-heavy.",
+   "_verdict": "One of two contractors screened that names an actual multifamily project on its own site. The published work is paving-heavy.",
+   "_why": [
+    "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall.",
+    "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job.",
+    "No method statement on record."
+   ],
+   "sources": [
+    {
+     "url": "https://htxconcrete.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Commercial shells and paving across the metro. The published square footages are weighted to paving rather than to wall."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No annual volume is published. The one published wall figure is 12,000 square feet of tilt wall against 155,000 gross square feet of paving on the same job."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No method statement on record."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "clears": 0,
+   "vol": null,
+   "short": "HTX Concrete",
+   "cell": "partial|partial",
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-110",
    "entity_name": "Silver Spur Concrete Contractors",
    "entity_type": "contractor",
@@ -26351,8 +26246,8 @@
    ],
    "region": "East End / Fort Bend, Harris County",
    "homepage_url": "https://www.tritenre.com/",
-   "synopsis": "Houston investor-developer. The Landing at Aliana is 294 units on one Fort Bend site, opening summer 2027. The Mill at 2219 Canal Street is a six-acre East End redevelopment framed in cross-laminated timber, reported as one of Houston's first, with 340 apartments and 100,000 square feet of office and retail built around a preserved 1890s brick mill. Michael Hsu and EDI on design. Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG.",
-   "key_stat": "340 units, mass timber frame",
+   "synopsis": "Houston investor-developer. The Landing at Aliana is 294 units of three-storey garden-style housing on one Fort Bend site, under construction from March 2026, opening summer 2027 and completing 2028, with NewQuest Properties. The Mill is a six-acre East End redevelopment of a preserved 1890s brick mill, delivered in 2025 as 341 apartments over a cast-in-place concrete podium with five storeys of wood frame above it. A six-storey cross-laminated timber office building was reported in 2021 as a second phase, contingent on retail leasing; it does not appear in the firm's own portfolio entry. Michael Hsu and EDI on design. Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG.",
+   "key_stat": "341 units at The Mill, 294 more under construction at Aliana",
    "principals": [
     {
      "name": "Scott Arnoldy",
@@ -26414,9 +26309,9 @@
    "scores": {
     "repeatability": 3,
     "wall_share": 2,
-    "innovation": 3,
+    "innovation": 2,
     "capital_access": 2,
-    "machine_fit": 1
+    "machine_fit": 2
    },
    "mvp_screen": "Financed a cross-laminated timber frame at The Mill. 294 units at Aliana land in Titan's first delivery window.",
    "sources": [
@@ -26427,6 +26322,14 @@
     {
      "url": "https://natlawreview.com/press-releases/metronational-grows-greater-houston-portfolio-landmark-m-k-t-heights",
      "date": "2026-03-30"
+    },
+    {
+     "url": "https://www.tritenre.com/portfolio/the-mill",
+     "date": null
+    },
+    {
+     "url": "https://www.arch-con.com/themilltopsout/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -26434,10 +26337,10 @@
    "_machine_why": "Industrial and outdoor storage. There is no repeated house here.",
    "marks": {
     "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "clear"
+    "machine_fit": "partial",
+    "innovation": "partial"
    },
-   "holds": 2,
+   "holds": 3,
    "capital_mark": "partial",
    "tail": false,
    "group": "creative",
@@ -26450,31 +26353,31 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "340 units at The Mill, 294 more at Aliana opening 2027."
+     "text": "341 units at The Mill, 294 more under construction at Aliana."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Industrial and outdoor storage. There is no repeated house here."
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "The Landing at Aliana is 294 units of three-storey garden-style housing on one Fort Bend site. That is the repeating low-rise the band covers."
     },
     {
      "axis": "innovation",
      "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Financed a cross-laminated timber frame and calls it a rare alternative to steel and concrete."
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It expected to use cross-laminated timber on a six-storey office building at The Mill in 2021, contingent on retail leasing. The building is not in its own portfolio entry and no source shows it was built."
     }
    ],
    "company_li": "https://www.linkedin.com/company/triten-real-estate-partners",
    "company_li_note": null,
    "team_url": "https://www.tritenre.com/team",
    "team_note": null,
+   "clears": 1,
    "vol": null,
    "short": "Triten",
-   "cell": "clear|fail",
-   "clears": 2,
+   "cell": "clear|partial",
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -26732,7 +26635,7 @@
    ],
    "region": "Downtown Houston, Harris County",
    "homepage_url": "https://cameronmanagement.com/",
-   "synopsis": "Employee-owned owner of the Niels Esperson and Mellie Esperson towers in downtown Houston, converting up to 100 apartments into the 1927 and 1941 buildings under a programme reported in 2023 at about $50 million. The work is interior: the exterior wall stays. The unit count is published only as up to 100.",
+   "synopsis": "Property and facilities manager of the Niels Esperson and Mellie Esperson towers in downtown Houston, 1927 and 1941, where it had planned to convert office floors to apartments. MetLife foreclosed in August 2024 after a default on a loan issued in December 2018, and Interra Capital Group acquired the buildings; Cameron Management was retained as the property and facilities management team for a designated period. It no longer owns the buildings the conversion sat in, and no source shows the conversion surviving the sale.",
    "key_stat": "$50M conversion, up to 100 units",
    "principals": [
     {
@@ -26784,6 +26687,10 @@
     {
      "url": "https://cameronmanagement.com/contact",
      "date": "2026-09-11"
+    },
+    {
+     "url": "https://realtynewsreport.com/historic-esperson-buildings-acquired-in-foreclosure-sale/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -27197,8 +27104,8 @@
    "entity_role": "vertical_buyer",
    "region": "Houston",
    "homepage_url": "https://www.pagewood.com/",
-   "synopsis": "Investment and development firm. East Blocks is ten contiguous EaDo blocks, 513,000 square feet in phase one, a joint venture with Wile Interests designed by Gensler with SWA on landscape. It also builds ground-up industrial on its own account, so it commissions a new shell as well as converting one. Preston Luster is the senior construction manager on the team page, and the two managing principals are the decision layer.",
-   "key_stat": "East Blocks, 513,000 sf across ten EaDo blocks",
+   "synopsis": "Investment and development firm whose business spans industrial development and acquisitions, adaptive reuse, traditional multifamily and build-to-rent communities. East Blocks is ten contiguous EaDo blocks; phase one broke ground in April 2026 and is the adaptive reuse of two 15,000 square foot warehouses at 1107 Hutchins Street and 2202 Dallas Street, 30,000 square feet combined, completion expected August 2026. The district figure of 513,000 square feet is the full ten-block programme, not phase one. Gensler on design, SWA on landscape, in joint venture with Wile Interests. Preston Luster is the senior construction manager on the team page, and the two managing principals are the decision layer.",
+   "key_stat": "East Blocks phase one, 30,000 sf across two warehouses",
    "principals": [
     {
      "name": "Paul Coonrod",
@@ -27227,6 +27134,13 @@
      "signal_type": "method_risk",
      "fit_signal": "Randolph Wile of the partner firm: by almost every measure it would be easier to demolish and redevelop these blocks from a clean slate.",
      "url": "https://www.pagewood.com/"
+    },
+    {
+     "name": "East Blocks phase one",
+     "detail": "1107 Hutchins Street and 2202 Dallas Street, two warehouses of 15,000 square feet each, 30,000 square feet combined. Groundbreaking April 2026, completion expected August 2026.",
+     "signal_type": "repeatable",
+     "fit_signal": "Two buildings of one size, done twice, is the shape a repeated wall assembly needs.",
+     "url": "https://www.pagewood.com/press/pagewood-breaks-ground-on-phase-1-of-east-blocks"
     }
    ],
    "capital_signals": [],
@@ -27246,6 +27160,14 @@
    "sources": [
     {
      "url": "https://www.pagewood.com/team",
+     "date": null
+    },
+    {
+     "url": "https://www.pagewood.com/press/pagewood-breaks-ground-on-phase-1-of-east-blocks",
+     "date": null
+    },
+    {
+     "url": "https://www.pagewood.com/",
      "date": null
     }
    ],
@@ -27432,7 +27354,7 @@
    "entity_type": "homebuilder",
    "entity_role": "vertical_buyer",
    "region": "Houston and Katy",
-   "homepage_url": "https://www.pagewood.com/",
+   "homepage_url": "https://www.wileinterests.com/",
    "synopsis": "Developer of ground-up retail and medical office in Katy, and joint-venture partner on the East Blocks conversion in EaDo. Its own site is a placeholder with no content, so this record comes from press coverage.",
    "key_stat": "Ground-up in Katy, adaptive reuse in EaDo",
    "principals": [
@@ -27693,7 +27615,7 @@
     {
      "name": "Saun Sullivan",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.dsldhomes.com/about-us",
+     "source_url": "https://www.builderonline.com/firms/dsld-homes/",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Saun%20Sullivan%20DSLD%20Homes"
     }
    ],
@@ -27797,6 +27719,152 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-023",
+   "entity_name": "David Weekley Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "categories": [
+    "homebuilders"
+   ],
+   "region": "Houston HQ, Harris County",
+   "homepage_url": "https://www.davidweekleyhomes.com/",
+   "synopsis": "Houston-founded national builder, the largest privately held builder in the country by its own description, headquartered in Houston and building across it. Its 2026 National Preferred Partners list names 27 suppliers including James Hardie on cladding, GAF on roofing, DuPont on weather barrier, Simpson Strong-Tie on structural connectors and Weyerhaeuser on engineered framing. John Schiegg is quoted in that release as Vice President of Purchasing and Supply Chain Services.",
+   "key_stat": "125,000+ homes, 19 markets, Houston HQ",
+   "principals": [
+    {
+     "name": "Jay Brown",
+     "role": "Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/",
+     "li_evidence": "Chief Executive Officer at David Weekley Homes. Houston, Texas."
+    },
+    {
+     "name": "Chris Weekley",
+     "role": "President and Vice Chairman",
+     "linkedin_url": null,
+     "source_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
+     "source_evidence": "President and Vice Chairman. The firm's own page credits him with innovation and developer relationships, which is the brief a printed wall would land in.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Weekley%20David%20Weekley%20Homes"
+    },
+    {
+     "name": "David Weekley",
+     "role": "Chairman and Founder",
+     "linkedin_url": null,
+     "source_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
+     "source_evidence": "Chairman, who started the company in 1976 at twenty-three.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Weekley%20David%20Weekley%20Homes"
+    },
+    {
+     "name": "John Schiegg",
+     "role": "Vice President of Purchasing and Supply Chain, David Weekley Homes",
+     "linkedin_url": "https://www.linkedin.com/in/john-schiegg-7593996/",
+     "li_evidence": "Profile opened. Company line reads David Weekley Homes, Houston, Texas. He owns purchasing and supply chain for the largest privately held builder in the country.",
+     "decider": true,
+     "source_url": "https://www.prnewswire.com/news-releases/david-weekley-homes-announces-2026-national-preferred-partners-302809074.html"
+    },
+    {
+     "name": "Ladd Fargo",
+     "role": "Chief Operating Officer, David Weekley Homes",
+     "linkedin_url": "https://www.linkedin.com/in/ladd-fargo-241a47259/",
+     "decider": false
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Houston master-planned community programme",
+     "detail": "Builder role across Austin Point, Sienna and other Houston-area masterplans. More than 125,000 homes sold across 19 markets.",
+     "signal_type": "repeatable",
+     "fit_signal": "Fifty years of repeat detached production headquartered inside the target geography.",
+     "url": "https://houstonagentmagazine.com/2026/03/10/david-weekley-homes-celebrates-50-years/"
+    },
+    {
+     "name": "2026 National Preferred Partners",
+     "detail": "Twenty-seven suppliers named, including James Hardie on cladding, GAF on roofing, DuPont Performance Building Solutions on weather barrier, Owens Corning, Simpson Strong-Tie on structural connectors and Weyerhaeuser Trus Joist on engineered framing.",
+     "signal_type": "method_risk",
+     "fit_signal": "The firm commits to a named supplier for every layer of the wall, which is the list a printed wall would have to enter.",
+     "url": "https://www.prnewswire.com/news-releases/david-weekley-homes-announces-2026-national-preferred-partners-302809074.html"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "wall_share": 3,
+    "innovation": 2,
+    "capital_access": 2,
+    "machine_fit": 1
+   },
+   "mvp_screen": "125,000 homes, Houston HQ, 50 years. Its supplier recognition covers insulation and fire-stopping, not the envelope.",
+   "sources": [
+    {
+     "url": "https://houstonagentmagazine.com/2026/03/10/david-weekley-homes-celebrates-50-years/",
+     "date": "2026-03-10"
+    },
+    {
+     "url": "https://www.stocktitan.net/news/IBP/ibp-recognized-by-david-weekley-homes-as-2026-national-preferred-umuhb1xfn66z.html",
+     "date": "2026-01-01"
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/david-weekley-homes-announces-2026-national-preferred-partners-302809074.html",
+     "date": null
+    },
+    {
+     "url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#E8A33D",
+   "_machine_why": "125,000 homes and a national purchasing and supply chain function.",
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "tail": false,
+   "group": "national",
+   "tier": "N",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Houston is the firm's home market and it builds across the metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "A national builder with a national supply chain."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Its 2026 preferred-partner list names cladding, roofing, weather barrier, structural connectors and engineered framing. That is the envelope, and it is a supply-chain commitment rather than a method."
+    }
+   ],
+   "company_li": "https://www.linkedin.com/company/david-weekley-homes",
+   "company_li_note": null,
+   "team_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
+   "team_note": null,
+   "clears": 1,
+   "vol": null,
+   "short": "David Weekley",
+   "cell": "clear|fail",
+   "deciders": [
+    "John Schiegg"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-014",
    "entity_name": "LGI Homes, Inc.",
    "entity_type": "homebuilder",
@@ -27807,8 +27875,8 @@
    ],
    "region": "The Woodlands HQ, Montgomery County",
    "homepage_url": "https://www.lgihomes.com/",
-   "synopsis": "NASDAQ-listed production homebuilder headquartered at 1450 Lake Robbins Drive in The Woodlands, operating more than 185 new-home communities nationally and reporting closings monthly. The Q2 2026 transcript carries no construction-method or technology mention. The innovation score records that absence. LGI runs a vice president of construction in each market, including Houston. Purchasing is the one national role and it sits at the Conroe head office.",
-   "key_stat": "185+ communities, Houston-area HQ",
+   "synopsis": "Systematic production builder headquartered in The Woodlands, closing thousands of homes a year across 36 markets in 21 states, with 153 active selling communities as of 31 August 2026 and more than 80,000 homes closed since 2003. Purchasing is a national function.",
+   "key_stat": "153 active selling communities, 36 markets, 21 states",
    "principals": [
     {
      "name": "Eric Lipar",
@@ -27895,21 +27963,21 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "More than 185 communities, entry-level product, head office in the metro."
+     "text": "153 active selling communities on one systematic plan set."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "Thousands of closings a year across a dozen states, bought from one office."
+     "text": "Thousands of closings a year across 36 markets in 21 states."
     },
     {
      "axis": "innovation",
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "Its Q2 2026 earnings call mentions method, labour and cycle time zero times."
+     "text": "Nothing on record."
     }
    ],
    "company_li": "https://www.linkedin.com/company/lgi-homes",
@@ -28192,7 +28260,7 @@
     },
     {
      "name": "Lindsay Motley",
-     "role": "Regional President, Texas",
+     "role": "Regional President",
      "linkedin_url": null,
      "source_url": "https://www.ashtonwoods.com/corporate-info",
      "source_evidence": "Regional President. The firm's own announcement names her Austin division president.",
@@ -28206,9 +28274,15 @@
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Lewis%20Ashton%20Woods%20Homes"
     },
     {
-     "name": "DeKendrick Vidito",
-     "role": "Vice President of Purchasing, Ashton Woods Homes",
-     "linkedin_url": "https://www.linkedin.com/in/dekendrick-vidito-58087766/",
+     "name": "Adam Weaver",
+     "role": "Senior Vice President of Purchasing",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "decider": true
+    },
+    {
+     "name": "Ken Newman",
+     "role": "Senior Vice President of Construction Operations",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
      "decider": true
     }
    ],
@@ -28238,6 +28312,10 @@
     {
      "url": "https://shoppingcenterbusiness.com/signorelli-co-announces-phase-i-of-4700-acre-master-planned-development-near-houston/",
      "date": "2023-09-22"
+    },
+    {
+     "url": "https://www.ashtonwoods.com/corporate-info",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -28287,144 +28365,8 @@
    "cell": "clear|fail",
    "clears": 1,
    "deciders": [
-    "DeKendrick Vidito"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-023",
-   "entity_name": "David Weekley Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "categories": [
-    "homebuilders"
-   ],
-   "region": "Houston HQ, Harris County",
-   "homepage_url": "https://www.davidweekleyhomes.com/",
-   "synopsis": "Privately held homebuilder founded in Houston in 1976, marking 50 years on March 10, 2026, operating in 19 markets with more than 125,000 homes sold. Builder in Austin Point, Sienna and other Houston master-planned communities.",
-   "key_stat": "125,000+ homes, 19 markets, Houston HQ",
-   "principals": [
-    {
-     "name": "Jay Brown",
-     "role": "Chief Executive Officer",
-     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/",
-     "li_evidence": "Chief Executive Officer at David Weekley Homes. Houston, Texas."
-    },
-    {
-     "name": "Chris Weekley",
-     "role": "President and Vice Chairman",
-     "linkedin_url": null,
-     "source_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
-     "source_evidence": "President and Vice Chairman. The firm's own page credits him with innovation and developer relationships, which is the brief a printed wall would land in.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Weekley%20David%20Weekley%20Homes"
-    },
-    {
-     "name": "David Weekley",
-     "role": "Chairman and Founder",
-     "linkedin_url": null,
-     "source_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
-     "source_evidence": "Chairman, who started the company in 1976 at twenty-three.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Weekley%20David%20Weekley%20Homes"
-    },
-    {
-     "name": "John Schiegg",
-     "role": "Vice President of Purchasing and Supply Chain, David Weekley Homes",
-     "linkedin_url": "https://www.linkedin.com/in/john-schiegg-7593996/",
-     "li_evidence": "Profile opened. Company line reads David Weekley Homes, Houston, Texas. He owns purchasing and supply chain for the largest privately held builder in the country.",
-     "decider": true
-    },
-    {
-     "name": "Ladd Fargo",
-     "role": "Chief Operating Officer, David Weekley Homes",
-     "linkedin_url": "https://www.linkedin.com/in/ladd-fargo-241a47259/",
-     "decider": false
-    },
-    {
-     "name": "Chad Durham",
-     "role": "Vice President of Build-to-Rent, David Weekley Homes",
-     "linkedin_url": "https://www.linkedin.com/in/chad-durham-1227bb74/",
-     "li_evidence": "Vice President of Build-To-Rent at David Weekley Homes. Austin, Texas, which is ICON's own city. Build-to-rent is the product line where a repeated wall pays back fastest.",
-     "decider": false
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Houston master-planned community programme",
-     "detail": "Builder role across Austin Point, Sienna and other Houston-area masterplans. More than 125,000 homes sold across 19 markets.",
-     "signal_type": "repeatable",
-     "fit_signal": "Fifty years of repeat detached production headquartered inside the target geography.",
-     "url": "https://houstonagentmagazine.com/2026/03/10/david-weekley-homes-celebrates-50-years/"
-    }
-   ],
-   "capital_signals": [],
-   "scores": {
-    "repeatability": 3,
-    "wall_share": 3,
-    "innovation": 0,
-    "capital_access": 2,
-    "machine_fit": 1
-   },
-   "mvp_screen": "125,000 homes, Houston HQ, 50 years. Its supplier recognition covers insulation and fire-stopping, not the envelope.",
-   "sources": [
-    {
-     "url": "https://houstonagentmagazine.com/2026/03/10/david-weekley-homes-celebrates-50-years/",
-     "date": "2026-03-10"
-    },
-    {
-     "url": "https://www.stocktitan.net/news/IBP/ibp-recognized-by-david-weekley-homes-as-2026-national-preferred-umuhb1xfn66z.html",
-     "date": "2026-01-01"
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#E8A33D",
-   "_machine_why": "125,000 homes and a national purchasing and supply chain function.",
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "holds": 1,
-   "capital_mark": "partial",
-   "tail": false,
-   "group": "national",
-   "tier": "N",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "125,000 homes across 19 markets, Houston head office, 50 years."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "125,000 homes and a national purchasing and supply chain function."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Its 2026 supplier recognition covers insulation and fire-stopping, not the envelope."
-    }
-   ],
-   "company_li": "https://www.linkedin.com/company/david-weekley-homes",
-   "company_li_note": null,
-   "team_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
-   "team_note": null,
-   "vol": null,
-   "short": "David Weekley",
-   "cell": "clear|fail",
-   "clears": 1,
-   "deciders": [
-    "John Schiegg"
+    "Adam Weaver",
+    "Ken Newman"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -28440,7 +28382,7 @@
    ],
    "region": "Houston HQ, Harris County",
    "homepage_url": "https://www.perryhomes.com/",
-   "synopsis": "Privately held Houston homebuilder founded in 1967 by Bob Perry. Operates more than 120 communities and has sold over 65,000 homes across Dallas-Fort Worth, Austin, Houston and San Antonio. Active builder in Austin Point and Sienna.",
+   "synopsis": "Houston-founded builder, family owned since 1967, now building across Houston, Austin, Dallas-Fort Worth and San Antonio and, since February 2024, across Florida in Orlando, Tampa, Sarasota, Port St. Lucie and Jacksonville. Its own about page describes the markets it builds in rather than a homes-sold total, and it publishes no construction or purchasing officer.",
    "key_stat": "120+ communities, 65,000+ homes sold",
    "principals": [
     {
@@ -28457,19 +28399,6 @@
      "linkedin_url": null,
      "source_url": "https://www.perryhomes.com/about-perry-homes",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Todd%20Chachere%20Perry%20Homes"
-    },
-    {
-     "name": "Shane Huhn",
-     "role": "Vice President of Construction, Perry Homes",
-     "linkedin_url": "https://www.linkedin.com/in/shane-huhn-645270161/",
-     "li_evidence": "Vice President of Construction at Perry Homes. Location shows only United States; Perry is headquartered in Houston.",
-     "decider": true
-    },
-    {
-     "name": "Lauren Chachere",
-     "role": "Vice President of Purchasing, Perry Homes",
-     "linkedin_url": "https://www.linkedin.com/in/laurenchachere/",
-     "decider": true
     }
    ],
    "key_projects": [
@@ -28557,12 +28486,9 @@
    "short": "Perry Homes",
    "cell": "clear|fail",
    "clears": 1,
-   "deciders": [
-    "Shane Huhn",
-    "Lauren Chachere"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -29863,12 +29789,12 @@
    ],
    "region": "Houston HQ / Brazoria, Montgomery",
    "homepage_url": "https://www.frpltd.com/",
-   "synopsis": "Houston retail developer managing roughly 26 million square feet across nearly 100 properties in 12 states. Bought acreage near the Grand Parkway in Alvin, Brazoria County in November 2024 for a planned 280,000 square foot Alvin Marketplace, and separately acquired 33 acres in New Caney, Montgomery County.",
+   "synopsis": "Houston retail developer managing roughly 26 million square feet across nearly 100 properties in 12 states. Bought acreage near the Grand Parkway in Alvin, Brazoria County in November 2024 for a planned 280,000 square foot Alvin Marketplace, and separately acquired 33 acres in New Caney, Montgomery County. Its own page carries a lower set of portfolio figures, 10 million square feet across 60-plus properties in four states, and the two have not been reconciled.",
    "key_stat": "26M sf, ~100 properties, 12 states",
    "principals": [
     {
      "name": "K. Alan Hassenflu",
-     "role": "Chairman and Chief Executive Officer",
+     "role": "President and Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.frpltd.com/about-fidelis/mission-values",
      "source_evidence": "President and Chief Executive Officer, a founder in 2003, formerly senior managing director at Trammell Crow.",
@@ -29876,15 +29802,14 @@
     },
     {
      "name": "Glenn Airola",
-     "role": "Co-President and Chief Operating Officer",
+     "role": "Executive Vice President, General Counsel and Chief Administrative Officer",
      "linkedin_url": null,
      "source_url": "https://www.frpltd.com/about-fidelis/mission-values",
-     "source_evidence": "Executive Vice President, General Counsel and Chief Administrative Officer since 2007.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Glenn%20Airola%20Fidelis%20Realty%20Partners"
     },
     {
      "name": "R. Carson Wilson IV",
-     "role": "Executive Vice President of Leasing, Construction and Development, Fidelis Realty Partners",
+     "role": "Vice President, Leasing",
      "linkedin_url": "https://www.linkedin.com/in/r-carson-wilson-iv-9b7525292/",
      "li_evidence": "Executive Vice President - Leasing, Construction and Development at Fidelis Realty Partners. Greater Houston. One title covers all three, so the person who signs the lease also owns the build.",
      "decider": true
@@ -30584,6 +30509,93 @@
    "short": "Wulfe & Co.",
    "cell": "partial|fail",
    "clears": 0
+  },
+  {
+   "target_id": "HOU-032",
+   "entity_name": "Urban Living",
+   "entity_type": "developer",
+   "entity_role": "vertical_buyer",
+   "categories": [
+    "developers",
+    "infill"
+   ],
+   "region": "Inner-loop Houston, Harris County",
+   "homepage_url": null,
+   "synopsis": "Houston developer and brokerage of inner-loop townhome communities. Its own domain, the only source this record ever had, now redirects to a parked-domain lander with no communities, no leadership and no content. Nothing published supports a current operation, so the record is held off the roster rather than carried on a page that no longer exists.",
+   "key_stat": "Its own domain no longer resolves to a site",
+   "principals": [
+    {
+     "name": "Vinod Ramani",
+     "role": "Owner",
+     "linkedin_url": "https://www.linkedin.com/in/vinod-ramani-4a46788/",
+     "li_evidence": "Indexed title reads Vinod Ramani, Urban Living."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Inner-loop townhome communities",
+     "detail": "Multiple attached three-storey townhome communities across inner Houston.",
+     "signal_type": "repeatable",
+     "fit_signal": "Attached three-storey townhomes are the highest wall-share residential type available, and this is a repeat production model rather than a one-off.",
+     "url": "https://urbanliving.com/developments.php"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 0,
+    "wall_share": 3,
+    "innovation": 0,
+    "capital_access": 1,
+    "machine_fit": 0
+   },
+   "mvp_screen": "Attached townhome production, the product type a printed party wall serves. The owner is held on a LinkedIn headline alone; the firm's own site publishes nobody.",
+   "sources": [],
+   "audit_flags": [],
+   "hue_hex": "#E8A33D",
+   "_machine_why": "Attached townhome production at a volume one machine could carry.",
+   "marks": {
+    "repeatability": "fail",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "holds": 0,
+   "capital_mark": "fail",
+   "tail": false,
+   "group": "out",
+   "tier": "D",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing is published. The firm's own site is a parked domain."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No community, unit count or volume figure survives on any page the deck can cite."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": "Urban Living is a generic name and several unrelated LinkedIn pages carry it. None could be tied to the Houston firm, so none is claimed.",
+   "team_url": null,
+   "team_note": "urbanliving.com refuses automated retrieval, so no team page could be read.",
+   "clears": 0,
+   "vol": null,
+   "short": "Urban Living",
+   "cell": "fail|fail"
   }
  ]
 }

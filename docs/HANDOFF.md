@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 52 · 2026-09-12
+Build 53 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,6 +530,89 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 53: recursive evaluation, and what the second pass cost the first
+
+Build 52 audited thirty cards and called it an audit. It was a sample. This build
+ran the loop properly: audit, gate every finding against raw bytes, apply, then
+audit the corrections and the seventy-six cards the first round never opened.
+
+Round two found more than round one did, on cards round one had not looked at.
+That is a fact about the method, not about the deck.
+
+**Three of round two's findings are corrections of round one.**
+
+The name probe reported Cullen Burton missing from Burton Construction's
+leadership page. He is on it. The site answers a script with a 182-byte bot stub
+and a browser with the full roster, so the probe read an empty page and called a
+real person absent. `probe.py` now treats a body under two kilobytes, or a page
+that renders fewer than 400 words with no hit, as unreadable rather than as
+evidence. That second guard cleared two more false positives, at DSLD and Smith
+Douglas, whose pages ship 40,000 and 53,000 words of script-rendered chrome.
+
+Round one published Derrick Hughes as Wan Bridge's construction vice president on
+the strength of a fetch that returned his bio. The URL is a 404. He never
+shipped, because the link checker ran before the build did.
+
+Round one's reason-versus-mark check caught eight contradictions and missed two,
+HTX Concrete and T&T Construction, because both phrase the deck's own band rule
+in words the pattern did not match. The pattern is wider now and also fails a
+machine-fit Yes written over an absent figure. It then caught a contradiction I
+introduced in this build, on Kendall Homes.
+
+**The gate.** No finding in this build was applied on an agent's word. Each one
+was adjudicated by fetching the page and testing whether the figure or the name
+is in the bytes. Thirty-one claims were tested that way. Nineteen were confirmed
+and applied, and the rest were either refuted or could not be read and were left
+alone. Two examples of each: Coventry Homes is not on Sienna's builder list and
+Sienna is not on Coventry's community list, so "active builder in Sienna" is
+gone; Pagewood's own release puts phase one at two warehouses of 15,000 square
+feet each, against the 513,000 the card published, which is the whole ten-block
+district. Against that, the Camillo post does not name Matt Hansen and the
+Tricoast pages render from script, so neither claim was acted on.
+
+**`probe.py` is new and it is the part that scales.** For every contact with a
+readable source, it fetches the bytes and asks whether the name is in them. No
+model reads the page. On first run it flagged fifteen contacts whose name is not
+in the page cited for them, eight of them people published as the person who can
+change a wall specification. After the corrections it flags none. Forty-one
+contacts sit on pages that refuse scripts or render from JavaScript, and those
+are reported as unread rather than as clean.
+
+**What the contact layer lost.** DeKendrick Vidito at Ashton Woods, Shane Huhn
+and Lauren Chachere at Perry, Chad Durham at David Weekley, Glenn Briggs and
+Jason Madden at Kendall, Bruce Torkelson at CastleRock, India Kinslow at
+Sitterle, Jayar Griffith, Jeremy Flach and Kyle Davison at Meritage, Brian
+Grigsby at Coventry, Mike Faul and Troy Robinson at First America, Stephen Ray at
+Smith Douglas. Fifteen names, none of them on a page their own firm publishes.
+Where the firm publishes someone in that function, that person replaced them:
+Adam Weaver and Ken Newman at Ashton Woods, Jo Dunham and Katie Pritchard at
+Sandcastle, Martin Jordana at Baker Construction, David Wickens at Kendall.
+
+**Records that changed shape.** Urban Living's only source was its own domain,
+which is now a parked lander, so the record holds nothing and moved off the
+roster. Cameron Management lost the Esperson towers to a MetLife foreclosure in
+August 2024 and is the manager, not the owner. Triten's cross-laminated timber
+was an expectation in a 2021 article, contingent on retail leasing, and does not
+appear in the firm's own portfolio entry, so Track record moved to Partly and the
+card now leads on the 294 units under construction at Aliana. Leola Construction
+self-performs slab masonry, framing and drywall, which is the opposite of the
+"no direct field crew" the card had used to score it. Baker Construction
+publishes fourteen executives on a page the card said named none. CIVE's founder
+is Hachem Domloj, not Hugo. Perry Homes builds in Florida. LGI has 153 active
+communities, not 185, in 21 states, not a dozen.
+
+**Four gates now run over the deck**, and all four are clean:
+
+    make                 build, workbook, and about sixty checks including
+                         reason versus mark
+    python3 probe.py     every contact's name against the bytes of its source
+    python3 linkcheck.py every URL's status, and the source rules
+
+0 dead links. 0 rule breaks. 0 contacts missing from their cited page. 0 reasons
+arguing against their own mark.
+
+96 firms, 242 contacts, 43 with a named decider, 3 with no contact published.
+
 ## Build 52: the audit round
 
 Six independent passes were run against the cards, one batch each, with
@@ -763,10 +846,13 @@ surface (filters, call list, workbook builder).
 - DSLD Homes and Tilson Homes each carry one named person. Neither publishes a
   construction or purchasing officer.
 - Whether Screen or List should be the landing view. List is now the faster tool.
-- The Houston Housing Authority's two domains, housingforhouston.com and
-  housingauthorityhouston.org, do not resolve from this container. Unknown
-  whether that is an outage or the sites are gone. Check in a browser before
-  trusting that card's team link.
+- Both Houston Housing Authority domains stopped resolving. Its card now says so
+  and carries its leadership titles without a link. A Houston affordable-housing
+  body trades as Housing Alliance HTX at alliancehtx.org, and nothing on that
+  site says it is the same organisation, so the deck does not claim it is.
+- 41 contacts sit on pages that refuse scripted requests or render their names
+  from JavaScript. `probe.py` reports them as unread, not as clean. They are the
+  residual risk in the contact layer and need a human with a browser.
 - `linkcheck.py` BLOCKED holds 30 hosts that refuse scripted requests. Each was
   confirmed by hand once. Re-confirm before adding to it.
 - Nine named contacts sit on firms that publish no team page at all, so nothing

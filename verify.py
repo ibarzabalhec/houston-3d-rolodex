@@ -16,16 +16,24 @@ D = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 # and nothing caught it. This does.
 _NEG = re.compile(r"^(nothing on record|no method|none on record|no evidence|"
                   r"nothing published|no construction-method|no published method)", re.I)
-_SAYS = re.compile(r"\bis a (Yes|Partly|No)\b")
+# Round one's version matched only "is a Partly". T&T Construction wrote "sits
+# at a Partly" and HTX wrote nothing at all, and both shipped a Yes over a
+# reason that argued the opposite.
+_SAYS = re.compile(r"\b(?:is|sits at|reads as|counts as) an? (Yes|Partly|No)\b", re.I)
+_NOFIG = re.compile(r"^no [a-z ,]*(figure|volume|count|closings|revenue|headcount)"
+                    r"[a-z ,]* is published", re.I)
 _W = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 _bad = []
 for _t in D["targets"]:
     for _w in _t["why"]:
         _said = _W[_w["mark"]]
+        if (_NOFIG.search(_w["text"]) and _w["axis"] == "machine_fit"
+                and _w["mark"] == "clear"):
+            _bad.append("%s machine_fit: Yes over an absent figure" % _t["short"])
         if _NEG.search(_w["text"]) and _w["mark"] != "fail":
             _bad.append("%s %s: a negative reason under %s" % (_t["short"], _w["axis"], _said))
         _m = _SAYS.search(_w["text"])
-        if _m and _m.group(1) != _said:
+        if _m and _m.group(1).capitalize() != _said:
             _bad.append("%s %s: the reason says %s, the mark says %s"
                         % (_t["short"], _w["axis"], _m.group(1), _said))
         if _w["verdict"] != _said:

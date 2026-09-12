@@ -36,10 +36,11 @@ import permits as PM
 import focus as FOCUS
 import gap as GAP
 import audit as AUDIT
+import audit2 as AUDIT2
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 52
+BUILD = 53
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -450,6 +451,83 @@ for t in targets:
     for _u in AUDIT.SOURCES.get(tid, []):
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
+
+# audit2.py is the second round, and three of its entries correct the first.
+for t in targets:
+    tid = t["target_id"]
+    t["principals"] = [p for p in t["principals"]
+                       if (tid, p["name"]) not in AUDIT2.DROP_PEOPLE]
+    for _pr in t["principals"]:
+        _nn = AUDIT2.RENAME.get((tid, _pr["name"]))
+        if _nn:
+            _pr["name"] = _nn
+    for (_tid, _nm), (_role, _url, _ev) in AUDIT2.PEOPLE.items():
+        if _tid != tid or any(p["name"] == _nm for p in t["principals"]):
+            continue
+        _p = {"name": _nm, "role": _role, "source_url": _url}
+        if _ev:
+            _p["source_evidence"] = _ev
+        if AUDIT2.DECIDER.get((tid, _nm)):
+            _p["decider"] = True
+        t["principals"].append(_p)
+    for _pr in t["principals"]:
+        _rt = AUDIT2.RETITLE.get((tid, _pr["name"]))
+        if _rt:
+            _pr["role"] = _rt
+        if (tid, _pr["name"]) in AUDIT2.RESOURCE:
+            _rs = AUDIT2.RESOURCE[(tid, _pr["name"])]
+            if _rs:
+                _pr["source_url"] = _rs
+            else:
+                _pr.pop("source_url", None)
+    if tid in AUDIT2.DROP_TEAM_URL:
+        t.pop("team_url", None)
+    if tid in AUDIT2.SYNOPSIS:
+        t["synopsis"] = AUDIT2.SYNOPSIS[tid]
+    if tid in AUDIT2.KEY_STAT:
+        t["key_stat"] = AUDIT2.KEY_STAT[tid]
+    if tid in AUDIT2.HOMEPAGE:
+        t["homepage_url"] = AUDIT2.HOMEPAGE[tid]
+    if tid in AUDIT2.DROP_HOMEPAGE:
+        t["homepage_url"] = None
+    if tid in AUDIT2.SCORE:
+        t["scores"].update(AUDIT2.SCORE[tid])
+        for _k, _v in AUDIT2.SCORE[tid].items():
+            t["marks"][_k] = mark(_v)
+        t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
+        t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
+    if tid in AUDIT2.WHY:
+        for _w, _txt in zip(t["why"], AUDIT2.WHY[tid]):
+            _w["text"] = _txt
+    for _w in t["why"]:
+        _w["mark"] = t["marks"][_w["axis"]]
+        _w["verdict"] = VERDICT_WORD[_w["mark"]]
+    t["key_projects"] = [k for k in t["key_projects"]
+                         if (tid, k["name"]) not in AUDIT2.DROP_PROJECTS]
+    for _k in t["key_projects"]:
+        _nu = AUDIT2.EDIT_PROJECT_URL.get((tid, _k["name"]))
+        if _nu:
+            _k["url"] = _nu
+    for _a, _b, _c, _d, _e in AUDIT2.PROJECTS.get(tid, []):
+        if not any(k["name"] == _a for k in t["key_projects"]):
+            t["key_projects"].append({"name": _a, "detail": _b, "signal_type": _c,
+                                      "fit_signal": _d, "url": _e})
+    t["sources"] = [x for x in t["sources"]
+                    if (tid, x.get("url")) not in AUDIT2.DROP_SOURCES]
+    for _u in AUDIT2.SOURCES.get(tid, []):
+        if not any(x.get("url") == _u for x in t["sources"]):
+            t["sources"].append({"url": _u, "date": None})
+
+# A count that moves can move a record between sections, and the section was
+# assigned before the audit ran. Only the plain tiers are re-derived: adopter,
+# icon, channel, national, trade and creative are assigned by what the firm is,
+# not by how it scored.
+for t in targets:
+    if t["group"] not in ("a", "b", "out") or t["tier"] == "D":
+        continue
+    t["group"], t["tier"] = (("a", "A") if t["holds"] == 3 else
+                             ("b", "B") if t["holds"] == 2 else
+                             ("out", "C" if t["holds"] == 1 else "D"))
 
 # An evidence line that only repeats the title, under an icon that is already the
 # link, is the same fact three times. focus.restates_title decides.
