@@ -1,12 +1,12 @@
 # Greater Houston Rolodex — handoff
 
-Build 41 · 2026-09-11
+Build 42 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
 ## Where it lives
 
-- **Hosted**: published as a claude.ai artifact (Build 32, Version 7), private until shared from the page's own share menu. The artifact declares the `downloads` capability so the in-page Excel export works in the viewer. To republish from a new session, pass the artifact URL as `url`; the file to publish is `rolodex-artifact.html`, which `build.py` emits alongside the standalone file.
+- **Hosted**: published as a claude.ai artifact (Version 20), private until shared from the page's own share menu. The artifact declares the `downloads` capability so the in-page Excel export works in the viewer. To republish from a new session, pass the artifact URL as `url`; the file to publish is `rolodex-artifact.html`, which `build.py` emits alongside the standalone file.
 - **Standalone**: `ICON_Greater_Houston_Rolodex.html` (self-contained, opens from disk) and `ICON_Greater_Houston_Rolodex.xlsx` (the full workbook).
 - **Source**: a git repository, ready to push. `make` builds, exports and verifies. The served copies are in `docs/` so GitHub Pages can serve them from that folder.
 
@@ -17,8 +17,8 @@ A printer is bought by a builder, not by a landowner and not by a fund. The buil
 ## The three counts
 
 1. **Repeats** enough units in one place.
-2. **Machine fit**: one or two machines would cover it. Roughly 25 to 400 homes a year concentrated in a few communities clears it; 400 to 1,500, or purchasing at a parent, or no published figure, is partial; above 1,500 or bought nationally fails.
-3. **Method appetite**: has paid for an unproven way of building. The only thing on the page that uses orange. Eight firms of 61.
+2. **Printer fit**: one or two machines would cover it. Roughly 25 to 400 homes a year concentrated in a few communities clears it; 400 to 1,500, or purchasing at a parent, or no published figure, is partial; above 1,500 or bought nationally fails.
+3. **Track record**: has paid for an unproven way of building. The only thing on the page that uses orange. Eight firms of 90.
 
 A Partly still counts as holding. Only a No does not. This rule is now stated in the legend on every view and under the counts on every firm page.
 
@@ -27,18 +27,19 @@ A Partly still counts as holding. Only a No does not. This rule is now stated in
 Labels are names, not sentences. The explanatory clause each used to carry is in a note under the section header in List view and in `group_notes` in the data.
 
 - **Already buying printed walls** (3), with a competitor
-- **Strong target** (10): holds all three counts
-- **One gap** (24): holds two
-- **Custom and hybrid job** (9): retail and hospitality adjacent, adaptive reuse, design-led
-- **National builder** (8): purchasing at a national desk, so the first order is a pilot
+- **Strong target** (12): holds all three counts
+- **One gap** (28): holds two
+- **Builds the wall, not the house** (22): contractors and trades, read on a different axis
+- **Custom and hybrid job** (10): retail and hospitality adjacent, adaptive reuse, design-led
+- **National builder** (7): purchasing at a national desk, so the first order is a pilot
 - **Land owner, not the buyer** (6): masterplan owners; each lists the builders in the file that build inside it
-- **Already working with ICON** (1): Friendswood, owned by Lennar. Acknowledged, not prospected.
+- **Already working with ICON** (2)
 
 ## The four views
 
 Screen (3×3 matrix), List (table with per-row add and add-all), Cover (iPod cover flow ported from the Americas rolodex, real geometry), Field (competitors and ICON's own record).
 
-**One filter system across Screen, List and Cover**: five controls (Section, Repeats, Machine fit, Method appetite, Decider), each a menu whose option counts respect everything else applied. Applied values show as removable chips with a Reset all that is present whenever anything is on. Search composes with filters. Field disables search.
+**One filter system across Screen, List and Cover**: five controls (Section, Repetition, Printer fit, Track record, Decider), each a menu whose option counts respect everything else applied. Applied values show as removable chips with a Reset all that is present whenever anything is on. Search composes with filters. Field disables search.
 
 **Excel export in the page**: a real `.xlsx` written in-page (store-only ZIP, no library). "Excel (n)" in the filter bar exports the current filtered set; "Download Excel" on the call sheet exports the picks. One row per contact, fifteen columns, frozen header, autofilter. In the hosted viewer it goes through `claude.use("downloads")`; as a file it uses an anchor download.
 
