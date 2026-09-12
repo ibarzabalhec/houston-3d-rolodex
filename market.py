@@ -14,6 +14,7 @@ CLOSINGS = {
     "HOU-007": (750, 750, 2025, "Stated by the outgoing purchasing lead, two markets"),
     "HOU-064": (540, 540, 2025, "Builder 100 firm page"),
     "HOU-069": (483, 483, 2025, "Builder 100 firm page"),
+    "HOU-135": (425, 425, 2024, "Builder 100 firm page, Texas-wide"),
     "HOU-077": (372, 372, 2022, "Builder 100 firm page, company-wide"),
     "HOU-074": (324, 324, 2022, "As Devon Street Homes, before the sale"),
     "HOU-072": (300, 300, 2026, "The firm's own site, Texas and Tennessee"),

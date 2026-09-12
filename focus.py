@@ -249,23 +249,78 @@ def _norm(s):
     return _re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
 
 
-_PROVENANCE = _re.compile(
-    r"^(linked from [a-z0-9 ]*?(team|about|leadership|people|staff)[a-z0-9 ]*?"
-    r" which lists (him|her|them) as |team page (lists [a-z ]+ )?|company page |"
-    r"about page |leadership page |staff page |named on the [a-z ]*page as |"
-    r"the firm s own [a-z ]*page names (him|her|them) as )")
+# Provenance is the sentence that says where a fact came from. The link beside
+# the name already says that. These patterns cut the provenance out of an
+# evidence line so that what is left can be tested: if the remainder is only the
+# title again, the line says nothing the card does not already carry, and it goes.
+_PROVENANCE = [
+    # "linked from the team page which lists him as", "named on the about page as"
+    _re.compile(r"^linked from [a-z0-9 ]*?(team|about|leadership|people|staff)[a-z0-9 ]*?"
+                r" which lists (him|her|them) as "),
+    _re.compile(r"^named (on|in) (the |its |their )?[a-z ]*?(page|release|listing|record)"
+                r"( as| named| naming)? "),
+    # "team page:", "about page lists him as", "executive team page lists her under X as"
+    _re.compile(r"^(the )?(executive |management |corporate )?"
+                r"(team|about|leadership|staff|people|management|officers|governance|"
+                r"company|home|member|bio|board and staff)"
+                r"( and [a-z]+)? page:? ?"
+                r"(lists|names|gives|reads|carries|shows)? ?"
+                r"(him|her|them)? ?(under [a-z ]+? )?(as )?"),
+    # "the firm's own bio page.", "Meritage's own management page:", "Perry's own page:"
+    _re.compile(r"^([a-z.&/ ]{1,26} s|the (firm|company|authority|association) s) own "
+                r"[a-z ]*?(page|site|post|release|announcement|listing|record|bio):? ?"),
+    _re.compile(r"^listed (first )?(under [a-z ]+? )?(as )?"),
+    # trailing: "... on LGI's own management page", "... on the firm's own team page"
+    _re.compile(r",? (on|per|from) ([a-z.&/ ]{1,26} s|the (firm|company|authority|"
+                r"association|division) s|its|their) own [a-z ]*?"
+                r"(page|site|release|announcement|listing|record)\.?$"),
+    _re.compile(r",? (on|in|per) (the |its |their )?[a-z ]*?"
+                r"(team|about|leadership|people|staff|management|officers|governance|"
+                r"member|bio) [a-z]*? ?page\.?$"),
+]
 
 
-def restates_title(evidence, role):
+def _strip_provenance(e, name=""):
+    """Cut the where-it-came-from clauses, and the person's own name with them."""
+    if name:
+        n = _norm(name)
+        for part in ([n] + [p for p in n.split() if len(p) > 2]):
+            e = _re.sub(r"\b" + _re.escape(part) + r"\b", " ", e)
+        e = _re.sub(r"\s+", " ", e).strip()
+    changed = True
+    while changed:
+        changed = False
+        for pat in _PROVENANCE:
+            e2 = pat.sub("", e).strip(" ,.")
+            if e2 != e:
+                e, changed = e2, True
+    return e
+
+
+_STOP = {"the", "a", "an", "of", "and", "on", "at", "in", "for", "to", "s",
+         "his", "her", "their", "its", "as", "with"}
+
+
+def _tok(s):
+    return [w for w in s.split() if w not in _STOP]
+
+
+def restates_title(evidence, role, name=""):
+    """True when the line, stripped of provenance, is only the title again."""
     e, r = _norm(evidence), _norm(role)
     if not e or not r:
         return False
-    e = _PROVENANCE.sub("", e)
+    e = _strip_provenance(e, name)
     if not e:
         return True
-    # what is left is the title, give or take a place name or a company name.
-    # Either direction counts: the record's title can carry an extra clause the
-    # team page does not ("co-founder of Axelrad"), and the line is still only
-    # the title.
-    return ((r in e and len(e) <= len(r) + 22)
-            or (e in r and len(r) <= len(e) + 34))
+    et, rt = _tok(e), _tok(r)
+    if not et:
+        return True
+    es, rs = set(et), set(rt)
+    if es <= rs:
+        return True
+    if rs <= es and len(et) - len(rt) <= 2:
+        return True
+    # "AP and Purchasing Manager" against "Accounts Payable and Purchasing
+    # Manager": short, and almost all of it is the title.
+    return len(et) <= 6 and len(es & rs) >= 0.6 * len(es)

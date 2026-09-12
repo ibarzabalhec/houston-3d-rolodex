@@ -38,7 +38,7 @@ import gap as GAP
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 50
+BUILD = 51
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -48,6 +48,8 @@ PERSON.update(R2.SOURCES)
 DECIDERS.update(R2.DECIDERS)
 DECIDERS.update(TRADE_DECIDERS)
 DECIDERS.update(GAP.DECIDERS)
+NATIONAL.update(GAP.NATIONAL)
+CHANNEL.update(GAP.CHANNEL)
 for _tid, _ppl in R2.PEOPLE.items():
     NEW_PEOPLE.setdefault(_tid, []).extend(_ppl)
 for _tid, _sc in R2.SCORES.items():
@@ -337,6 +339,7 @@ SHORT = {
  "HOU-024": "Ashton Woods", "HOU-034": "Brightland", "HOU-033": "Coventry",
  "HOU-045": "Chesmar", "HOU-013": "Perry Homes", "HOU-014": "LGI Homes",
  "HOU-009": "Century Communities", "HOU-008": "Meritage", "HOU-012": "M/I Homes",
+ "HOU-132": "D.R. Horton", "HOU-133": "Hillwood", "HOU-135": "Tilson Homes",
  "HOU-001": "Wan Bridge", "HOU-005": "Radom Capital", "HOU-006": "Triten",
  "HOU-031": "Read King", "HOU-032": "Urban Living", "HOU-036": "Midway",
 }
@@ -346,7 +349,8 @@ _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_TRADES, "contractor", "wall_trade")
         + expand_builders(NEW_METHOD)
         + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer")
-        + expand_builders(GAP.GAP))
+        + expand_builders(GAP.GAP)
+        + expand_builders(GAP.CHANNEL_ROWS, "mpc_developer", "channel"))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
 
@@ -394,13 +398,14 @@ for t in targets:
 for t in targets:
     for _p in t["principals"]:
         for _f in ("li_evidence", "source_evidence"):
-            if _p.get(_f) and FOCUS.restates_title(_p[_f], _p.get("role", "")):
+            if _p.get(_f) and FOCUS.restates_title(_p[_f], _p.get("role", ""),
+                                                  _p.get("name", "")):
                 _p.pop(_f, None)
 
 # The grid orders chips by size, so each record carries the figure it publishes.
 for t in targets:
     _c = CLOSINGS.get(t["target_id"])
-    t["vol"] = _c[1] if _c else None
+    t["vol"] = _c[1] if _c else GAP.SCALE.get(t["target_id"])
 
 for t in targets:
     t["short"] = SHORT.get(t["target_id"], t["entity_name"])
@@ -633,11 +638,13 @@ DATA = {
     "publisher's."],
    ["How the list was drawn",
     "Trade press, the builder lists each master-planned community publishes, the "
-    "Builder 100, and the Greater Houston Builders Association member directory, "
-    "which carries 190 companies under Builder, Single Family. Reading the "
-    "directory against this deck found two production builders it did not hold, "
-    "both now on it. The rest of what the directory adds is custom and infill work "
-    "of a few homes a year, below the volume a printer is bought for."],
+    "Builder 100, and the Greater Houston Builders Association member directory. "
+    "The directory carries 190 companies under Builder, Single Family and six "
+    "further categories: Build-to-Rent, Build On Your Lot, ICF Homes, 50+ "
+    "Communities, Multi-Family and Townhomes, and Developers. Reading all seven "
+    "against this deck, and reading the metro permit leaders against it, added five "
+    "firms. The rest of what the directory holds is custom and infill work of a few "
+    "homes a year, below the volume a printer is bought for."],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
     "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "

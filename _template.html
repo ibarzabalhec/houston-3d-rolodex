@@ -1514,11 +1514,11 @@ function personRow(p,compact,grp){
   var ev='';
   if(!compact){
     if(p.li_evidence) ev+='<span class="ev"><em>LinkedIn.</em> '+esc(p.li_evidence)+'</span>';
-    if(p.source_evidence) ev+='<span class="ev"><em>Company bio.</em> '+esc(p.source_evidence)+'</span>';
+    if(p.source_evidence) ev+='<span class="ev"><em>Source.</em> '+esc(p.source_evidence)+'</span>';
   }
   return '<div class="p1'+(p.decider?' dec':'')+(p.departed?' gone':'')+'">'+
     '<div><div class="nm">'+esc(p.name)+
-      (p.decider?'<span class="badge">'+(grp==='trade'?'Signs for the machine':'Specifies the wall')+'</span>':'')+
+      (p.decider?'<span class="badge">'+(grp==='trade'?'Signs for the machine':(grp==='channel'?'Lets a method in':'Specifies the wall'))+'</span>':'')+
       (p.departed?'<span class="badge g">Departed</span>':'')+
       (p.probable?'<span class="badge g">Unconfirmed</span>':'')+
       (p.entity_note?'<span class="badge g">Confirm entity</span>':'')+

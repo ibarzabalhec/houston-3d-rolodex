@@ -1,11 +1,11 @@
 {
  "version": "2.0",
- "build": 50,
+ "build": 51,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
- "headline": "Who in Greater Houston is ready to print? 92 firms, three counts each.",
- "headline_html": "Who in Greater Houston is ready to print?<br><b>92 firms. Three counts each.</b>",
+ "headline": "Who in Greater Houston is ready to print? 97 firms, three counts each.",
+ "headline_html": "Who in Greater Houston is ready to print?<br><b>97 firms. Three counts each.</b>",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Strong target",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "92",
+   "97",
    "firms screened",
    false
   ],
@@ -39,7 +39,7 @@
    false
   ],
   [
-   "47",
+   "50",
    "with a named decision-maker",
    true
   ],
@@ -60,28 +60,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 48,
+   "clear": 53,
    "partial": 37,
    "fail": 7,
-   "total": 92
+   "total": 97
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 23,
-   "partial": 44,
-   "fail": 25,
-   "total": 92
+   "clear": 24,
+   "partial": 47,
+   "fail": 26,
+   "total": 97
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 17,
+   "clear": 19,
    "partial": 21,
-   "fail": 54,
-   "total": 92
+   "fail": 57,
+   "total": 97
   }
  ],
  "matrix": {
@@ -103,7 +103,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>10 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 10 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>6</b> have no method record.",
+ "matrix_note": "The top right cell holds <b>11 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 11 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>7</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -386,7 +386,7 @@
   ],
   [
    "Who decides",
-   "47 of 92 firms have a named vice president or director of construction, or head of purchasing, and 44 of those 47 can be reached as named without a caveat. The other 3 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "50 of 97 firms have a named vice president or director of construction, or head of purchasing, and 47 of those 50 can be reached as named without a caveat. The other 3 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
   ],
   [
    "Sources",
@@ -402,7 +402,7 @@
   ],
   [
    "How the list was drawn",
-   "Trade press, the builder lists each master-planned community publishes, the Builder 100, and the Greater Houston Builders Association member directory, which carries 190 companies under Builder, Single Family. Reading the directory against this deck found two production builders it did not hold, both now on it. The rest of what the directory adds is custom and infill work of a few homes a year, below the volume a printer is bought for."
+   "Trade press, the builder lists each master-planned community publishes, the Builder 100, and the Greater Houston Builders Association member directory. The directory carries 190 companies under Builder, Single Family and six further categories: Build-to-Rent, Build On Your Lot, ICF Homes, 50+ Communities, Multi-Family and Townhomes, and Developers. Reading all seven against this deck, and reading the metro permit leaders against it, added five firms. The rest of what the directory holds is custom and infill work of a few homes a year, below the volume a printer is bought for."
   ],
   [
    "Scope",
@@ -609,6 +609,18 @@
     "group": "b"
    },
    {
+    "id": "HOU-135",
+    "name": "Tilson Home Corporation",
+    "short": "Tilson Homes",
+    "low": 425,
+    "high": 425,
+    "year": 2024,
+    "source": "Builder 100 firm page, Texas-wide",
+    "fit": "partial",
+    "method": "fail",
+    "group": "b"
+   },
+   {
     "id": "HOU-077",
     "name": "Sitterle Homes",
     "short": "Sitterle Homes",
@@ -705,8 +717,8 @@
     "group": "b"
    }
   ],
-  "closings_missing": 56,
-  "closings_base": 70,
+  "closings_missing": 60,
+  "closings_base": 75,
   "bands": [
    [
     25,
@@ -745,13 +757,13 @@
    {
     "group": "b",
     "label": "One gap",
-    "n": 29,
+    "n": 31,
     "yes": 3,
     "partly": 2,
-    "no": 24,
-    "decider": 13,
+    "no": 26,
+    "decider": 14,
     "confirm": 0,
-    "linked": 25
+    "linked": 27
    },
    {
     "group": "trade",
@@ -778,24 +790,24 @@
    {
     "group": "national",
     "label": "National builder",
-    "n": 7,
-    "yes": 0,
+    "n": 9,
+    "yes": 1,
     "partly": 0,
-    "no": 7,
-    "decider": 5,
+    "no": 8,
+    "decider": 6,
     "confirm": 1,
-    "linked": 7
+    "linked": 9
    },
    {
     "group": "channel",
     "label": "Land owner, not the buyer",
-    "n": 6,
-    "yes": 1,
+    "n": 7,
+    "yes": 2,
     "partly": 0,
     "no": 5,
-    "decider": 0,
+    "decider": 1,
     "confirm": 1,
-    "linked": 6
+    "linked": 7
    },
    {
     "group": "icon",
@@ -810,6 +822,23 @@
    }
   ],
   "owners": [
+   {
+    "id": "HOU-133",
+    "short": "Hillwood",
+    "line": "Pomona, Valencia and a 540-acre League City tract, 4,500 lots at build-out",
+    "builders": [
+     {
+      "name": "Perry Homes",
+      "id": "HOU-013",
+      "off": false
+     },
+     {
+      "name": "Coventry Homes",
+      "id": "HOU-033",
+      "off": false
+     }
+    ]
+   },
    {
     "id": "HOU-011",
     "short": "Howard Hughes",
@@ -18089,17 +18118,17 @@
   ]
  },
  "stats": {
-  "total": 92,
+  "total": 97,
   "adopters": 3,
   "tier_a": 13,
-  "tier_b": 29,
+  "tier_b": 31,
   "out": 0,
-  "principals": 233,
+  "principals": 243,
   "linkedin_held": 111,
   "audit_flags": 0,
-  "with_decider": 47,
-  "with_decider_live": 23,
-  "with_decider_confirmed": 44,
+  "with_decider": 50,
+  "with_decider_live": 24,
+  "with_decider_confirmed": 47,
   "with_decider_caveat": 3
  },
  "targets": [
@@ -18508,7 +18537,6 @@
      "name": "Randy Hutchinson",
      "role": "Vice President of Construction Operations, AiWB",
      "linkedin_url": "https://www.linkedin.com/in/randy-hutchinson-0b0a71124/",
-     "li_evidence": "Vice President of Construction Operations at AiWB. Greater Houston.",
      "entity_note": "Listed at AiWB, not Wan Bridge. Confirm which entity contracts before an approach.",
      "decider": true
     },
@@ -18516,7 +18544,6 @@
      "name": "John Serra",
      "role": "Purchasing Manager, AiWB",
      "linkedin_url": "https://www.linkedin.com/in/john-serra-b1b48394/",
-     "li_evidence": "Purchasing Manager at AiWB. Houston, Texas.",
      "entity_note": "Listed at AiWB, not Wan Bridge. Confirm which entity contracts before an approach.",
      "decider": true
     }
@@ -19440,8 +19467,7 @@
      "role": "Owner, President and Chief Executive Officer",
      "linkedin_url": "https://www.linkedin.com/in/doug-french-bb28b074/",
      "li_evidence": "Indexed title reads Doug French, Stylecraft Builders Inc. The firm's team page lists him as Owner, President and Chief Executive Officer.",
-     "source_url": "https://www.stylecraft.com/team/",
-     "source_evidence": "Team page lists Doug French, Owner, President and Chief Executive Officer."
+     "source_url": "https://www.stylecraft.com/team/"
     },
     {
      "name": "Jordan York",
@@ -19464,8 +19490,7 @@
      "role": "Director of the South Six Construction Group",
      "linkedin_url": "https://www.linkedin.com/in/emilyrunnion/",
      "li_evidence": "Indexed title reads Emily Runnion, Stylecraft. The firm's team page lists her as Director of the South Six Construction Group.",
-     "source_url": "https://www.stylecraft.com/team/",
-     "source_evidence": "Team page lists Emily Runnion, Director of South Six Construction Group."
+     "source_url": "https://www.stylecraft.com/team/"
     }
    ],
    "key_projects": [
@@ -20070,7 +20095,6 @@
      "name": "Dan Renaud",
      "role": "Vice President of Construction Operations, Chesmar Homes",
      "linkedin_url": "https://www.linkedin.com/in/dan-renaud-8b244719/",
-     "li_evidence": "Vice President of Construction Operations at Chesmar Homes. Houston, Texas.",
      "decider": true
     },
     {
@@ -20271,6 +20295,134 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-136",
+   "entity_name": "Clay Residential",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Houston / Cypress, Iowa Colony",
+   "homepage_url": "https://www.clayresidential.com/",
+   "synopsis": "Build-to-rent arm of Clay Development & Construction, a Houston industrial developer, formed as a new division in January 2022. It builds detached and attached rental homes under the Willow name and for-sale homes under its own. Two Greater Houston communities: Willow at Marvida in Cypress, 368 units split into 134 detached homes and 234 attached villas at 1,382 to 2,900 square feet, completing 2026; and Willow at Sierra Vista in Iowa Colony, 97 detached rental homes at 1,548 to 1,980 square feet. At launch it stated a 2022 pipeline of 1,000 single-family and duplex rental homes across Houston, Austin, San Antonio and Dallas. No annual closings figure is published. The Greater Houston Builders Association lists it under Builder, Build-to-Rent.",
+   "key_stat": "465 rental homes in two Houston communities",
+   "principals": [
+    {
+     "name": "Samuel Sanders",
+     "role": "Vice President of Construction Operations",
+     "source_url": "https://members.ghba.org/memberdirectory/Details/clay-residential-2924528",
+     "source_evidence": "Listed as the primary contact on the association's own member record.",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Samuel%20Sanders%20Clay%20Residential"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Willow at Marvida, Cypress",
+     "detail": "368 units inside the 856-acre Marvida masterplan: 134 detached homes and 234 attached villas, three to five bedrooms at 1,382 to 2,900 square feet, completing 2026.",
+     "signal_type": "repeatable",
+     "fit_signal": "234 attached villas repeat one wall assembly more times than any detached plan on this deck.",
+     "url": "https://rebusinessonline.com/clay-residential-breaks-ground-on-368-unit-single-family-rental-project-in-metro-houston/"
+    },
+    {
+     "name": "Willow at Sierra Vista, Iowa Colony",
+     "detail": "97 detached rental homes at 1,548 to 1,980 square feet, three and four bedrooms, inside a Land Tejas community.",
+     "signal_type": "repeatable",
+     "fit_signal": "Land Tejas is on this deck. The lot developer and the builder are both reachable.",
+     "url": "https://sierravistahouston.com/our-builders/clay-residential"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 3,
+    "innovation": 0,
+    "capital_access": 2
+   },
+   "mvp_screen": "465 rental homes across two Houston communities, with the construction seat named on the record.",
+   "_verdict": "465 rental homes across two Houston communities, with the construction seat named on the record.",
+   "_why": [
+    "465 homes across two communities on three, four and five bedroom plans.",
+    "Two communities and 465 homes sits inside the band one or two printers cover.",
+    "Nothing on record. Its construction page names craftsmen, subcontractors and suppliers and no method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.clayresidential.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.clayresidential.com/communities/",
+     "date": null
+    },
+    {
+     "url": "https://www.clayresidential.com/construction/",
+     "date": null
+    },
+    {
+     "url": "https://members.ghba.org/memberdirectory/Details/clay-residential-2924528",
+     "date": null
+    },
+    {
+     "url": "https://rebusinessonline.com/clay-residential-breaks-ground-on-368-unit-single-family-rental-project-in-metro-houston/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/robert-clay-ventures-into-build-to-rent-single-family/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "group": "b",
+   "tier": "B",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "465 homes across two communities on three, four and five bedroom plans."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Two communities and 465 homes sits inside the band one or two printers cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. Its construction page names craftsmen, subcontractors and suppliers and no method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Clay Residential",
+   "cell": "clear|clear",
+   "clears": 2,
+   "deciders": [
+    "Samuel Sanders"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-061",
    "entity_name": "Alta Homes",
    "entity_type": "homebuilder",
@@ -20299,7 +20451,6 @@
      "role": "Accounts Payable and Purchasing Manager",
      "decider": true,
      "source_url": "https://www.myaltahomes.com/about",
-     "source_evidence": "About page: AP and Purchasing Manager.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ashley%20Meinecke%20Alta%20Homes"
     }
    ],
@@ -20610,7 +20761,6 @@
      "role": "President and Chief Executive Officer, named February 2025",
      "linkedin_url": null,
      "source_url": "https://housingforhouston.com/leadership/executive-leadership/",
-     "source_evidence": "Named President and Chief Executive Officer on the authority's own executive leadership page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jamie%20Bryant%20Houston%20Housing%20Authority"
     },
     {
@@ -20884,7 +21034,6 @@
      "role": "Executive Vice President and Chief Financial Officer",
      "linkedin_url": null,
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Executive Vice President and Chief Financial Officer on Meritage's own management page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Hilla%20Sferruzza%20Meritage%20Homes%20Corporation"
     },
     {
@@ -20892,7 +21041,6 @@
      "role": "Executive Chairman of the Board",
      "linkedin_url": null,
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Executive Chairman of the Board on Meritage's own management page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steven%20J.%20Hilton%20Meritage%20Homes%20Corporation"
     },
     {
@@ -20906,7 +21054,6 @@
      "name": "Jeremy Flach",
      "role": "Division President, Meritage Homes Houston",
      "linkedin_url": "https://www.linkedin.com/in/jeremy-flach-b3616614/",
-     "li_evidence": "Division President at Meritage Homes. Houston, Texas.",
      "decider": false
     },
     {
@@ -21128,7 +21275,6 @@
      "role": "Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "Chief Executive Officer on Camillo's own about page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dan%20Miller%20Camillo%20Companies"
     },
     {
@@ -21136,7 +21282,6 @@
      "role": "President, Legend Homes by Camillo",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "President, Legend Homes by Camillo, on the firm's own about page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Lee%20Darnold%20Camillo%20Companies"
     },
     {
@@ -21144,7 +21289,6 @@
      "role": "President, Academy Development by Camillo",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "President, Academy Development by Camillo, on the firm's own about page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Sean%20Mulroony%20Camillo%20Companies"
     },
     {
@@ -21152,7 +21296,6 @@
      "role": "Chief Financial Officer",
      "linkedin_url": null,
      "source_url": "https://www.camillocompanies.com/about-us",
-     "source_evidence": "Chief Financial Officer on the firm's own about page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jomar%20Ereso%20Camillo%20Companies"
     }
    ],
@@ -21264,7 +21407,6 @@
      "role": "Chief Executive Officer and Founding Partner",
      "linkedin_url": null,
      "source_url": "https://www.c-rock.com/about",
-     "source_evidence": "CastleRock's own about page: a founding partner, serving as chief executive.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Lance%20Wright%20CastleRock%20Communities"
     },
     {
@@ -21897,6 +22039,134 @@
    "vol": null,
    "short": "Seaside Construction",
    "cell": "fail|partial",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-135",
+   "entity_name": "Tilson Home Corporation",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Houston / Spring, Katy, Willis, Angleton",
+   "homepage_url": "https://www.tilsonhomes.com/",
+   "synopsis": "Family-owned builder founded in Houston in 1932, building on land the buyer already owns. 425 closings in 2024 at $199 million, ranked 119th on the Builder 100, against 745 closings and rank 75 in 2023. Twelve design centers across Texas, five of them on the Gulf Coast: Spring, Katy, Republic Grand Ranch in Willis, Angleton and Bryan. It carries the construction cost itself, stating it builds from 0 to 100 percent out of its own pocket with no interim construction loan and no draw schedule. It subcontracts the work, and says some of its subcontractors have built Tilson homes since 1962. The wall and foundation specification is published: post-tension slab engineered per site, 2x4 studs at 16 inches on center, full OSB wrap, open-cell spray foam. No construction or purchasing officer is published.",
+   "key_stat": "425 closings in 2024, 12 design centers in Texas",
+   "principals": [
+    {
+     "name": "Edward E. Martin Jr.",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.builderonline.com/firms/tilson-homes/",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Edward%20E.%20Martin%20Jr.%20Tilson%20Home%20Corporation"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "No construction loan",
+     "detail": "The firm states it builds a home from 0 to 100 percent out of its own pocket, with no interim construction loan and no draw schedule.",
+     "signal_type": "repeatable",
+     "fit_signal": "A method change needs no lender's sign-off on the collateral.",
+     "url": "https://www.tilsonhomes.com/blog/build-on-your-land-with-tilson-homes/"
+    },
+    {
+     "name": "The published specification",
+     "detail": "Post-tension slab engineered per site, cables tensioned to 29,000 to 31,000 psi over a 28-day cure. Walls are 2x4 studs at 16 inches on center under a full OSB wrap, with open-cell spray foam to a third-party verified 3 ACH.",
+     "signal_type": "method_risk",
+     "fit_signal": "It already engineers and pours concrete on every job, and the wall above it is framed.",
+     "url": "https://www.tilsonhomes.com/standard-features/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 0,
+    "capital_access": 2
+   },
+   "mvp_screen": "One plan set repeated on scattered lots, and it funds its own construction, so a method change needs no lender.",
+   "_verdict": "One plan set repeated on scattered lots, and it funds its own construction, so a method change needs no lender.",
+   "_why": [
+    "One plan set sold from twelve design centers and built on lots the buyer already owns.",
+    "425 closings a year sits inside the band one or two printers cover. The lots are scattered, so every house is a separate set-up.",
+    "Nothing on record. It publishes its wall specification and it is stick frame."
+   ],
+   "sources": [
+    {
+     "url": "https://www.tilsonhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.tilsonhomes.com/about/",
+     "date": null
+    },
+    {
+     "url": "https://www.tilsonhomes.com/where-we-build/",
+     "date": null
+    },
+    {
+     "url": "https://www.tilsonhomes.com/standard-features/",
+     "date": null
+    },
+    {
+     "url": "https://www.tilsonhomes.com/quality-construction/foundations/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/tilson-homes/",
+     "date": null
+    },
+    {
+     "url": "https://members.texasbuilders.org/builder-directory/Details/tilson-home-corporation-726266",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "group": "b",
+   "tier": "B",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "One plan set sold from twelve design centers and built on lots the buyer already owns."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "425 closings a year sits inside the band one or two printers cover. The lots are scattered, so every house is a separate set-up."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. It publishes its wall specification and it is stick frame."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": 425,
+   "short": "Tilson Homes",
+   "cell": "clear|partial",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -22587,7 +22857,6 @@
      "role": "Founder and Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://provident.net/our-team/",
-     "source_evidence": "Founder and Chief Executive Officer, named on the firm's team page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Leon%20J.%20Backes%20Provident%20Realty%20Advisors"
     },
     {
@@ -22715,8 +22984,7 @@
      "role": "Division President, Houston",
      "linkedin_url": "https://www.linkedin.com/in/jenniferkeller/",
      "li_evidence": "Indexed title reads Jennifer Keller, P.E., Division President, Risewell Homes. The firm's team page lists her as Houston Division President.",
-     "source_url": "https://www.risewellhomes.com/team",
-     "source_evidence": "Executive team page lists her under Division Presidents as Houston Division President."
+     "source_url": "https://www.risewellhomes.com/team"
     },
     {
      "name": "Matthew R. Zaist",
@@ -22834,7 +23102,6 @@
      "name": "Brian Grigsby",
      "role": "Division President, Houston South, Coventry Homes (Dream Finders Homes)",
      "linkedin_url": "https://www.linkedin.com/in/brian-grigsby-859a97285/",
-     "li_evidence": "Division President - Houston South @ Dream Finders Homes - Coventry Homes.",
      "decider": false
     }
    ],
@@ -27224,6 +27491,270 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-132",
+   "entity_name": "D.R. Horton, Inc.",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Arlington HQ / Sugar Land, Richmond, Conroe",
+   "homepage_url": "https://www.drhorton.com/texas/houston",
+   "synopsis": "The largest homebuilder in the United States by volume. 84,863 homes closed in the fiscal year to 30 September 2025 across 126 markets in 36 states, of which 22,319 were in the South Central segment that holds Texas. Houston is named as a market in the annual report and no metro closings figure is published. Its own site listed 65 Houston-area communities and 668 standing homes, from $139,990 in Conroe to $878,600 in Pinehurst, sold under the D.R. Horton, Emerald Homes and Express Homes names. It owned 62 percent of Forestar Group at 30 September 2025, which sold 14,240 lots that year with 83 percent of them going to D.R. Horton. In March 2024 it made a strategic investment in Apis Cor, a manufacturer of construction 3D printing robots. No Houston division officer is published.",
+   "key_stat": "372 Houston permits in August 2026, first in the metro",
+   "principals": [
+    {
+     "name": "Paul J. Romanowski",
+     "role": "President and Chief Executive Officer",
+     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Paul%20J.%20Romanowski%20D.R.%20Horton%2C%20Inc."
+    },
+    {
+     "name": "Michael J. Murray",
+     "role": "Executive Vice President and Chief Operating Officer",
+     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20J.%20Murray%20D.R.%20Horton%2C%20Inc."
+    },
+    {
+     "name": "Brad Conlon",
+     "role": "Senior Vice President of Business Development",
+     "source_url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html",
+     "source_evidence": "The seat that spoke for the company on the Apis Cor investment. He is not one of the four executive officers, so this sits below the officer tier.",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brad%20Conlon%20D.R.%20Horton%2C%20Inc."
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Apis Cor, March 2024",
+     "detail": "Strategic investment in a manufacturer of construction 3D printing robots, announced 11 March 2024 by Apis Cor. Amount undisclosed. D.R. Horton issued no release of its own. Apis Cor named a multi-unit project in South Florida as the next step, after a new 3D printed wall system.",
+     "signal_type": "method_risk",
+     "fit_signal": "It has already paid for a printed wall system. The incumbent has a name.",
+     "url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html"
+    },
+    {
+     "name": "Forestar Group",
+     "detail": "62 percent owned at 30 September 2025. Forestar sold 14,240 lots in fiscal 2025, 83 percent of them to D.R. Horton. Its Houston communities include Westland Ranch in League City, The Canopies in New Caney at 611 acres, and Fairwater in Magnolia.",
+     "signal_type": "repeatable",
+     "fit_signal": "The lots and the houses are decided inside one group.",
+     "url": "https://www.forestar.com/communities/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 3,
+    "capital_access": 3
+   },
+   "mvp_screen": "It has already bought equity in a printed wall system, and it builds more houses in Houston than anyone else.",
+   "_verdict": "It has already bought equity in a printed wall system, and it builds more houses in Houston than anyone else.",
+   "_why": [
+    "65 Houston communities and 668 standing homes at one time, on a national plan library.",
+    "84,863 closings a year is far above the band one or two printers cover, so the first order is a pilot inside one division rather than a purchase.",
+    "Strategic investment in Apis Cor, March 2024, amount undisclosed. It is the only equity position in a printed wall system on this deck."
+   ],
+   "sources": [
+    {
+     "url": "https://www.drhorton.com/texas/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.drhorton.com/texas/houston/inventory",
+     "date": null
+    },
+    {
+     "url": "https://investor.drhorton.com/news-and-events/press-releases/2025/10-28-2025-103117295",
+     "date": null
+    },
+    {
+     "url": "https://investor.drhorton.com/corporate-governance/executive-officers",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/building/d-r-horton-invests-in-3d-printing-robot-manufacturer-apis-cor_o",
+     "date": null
+    },
+    {
+     "url": "https://blog.hbweekly.com/texas-homebuilding-leaders-august-2026/",
+     "date": null
+    },
+    {
+     "url": "https://members.ghba.org/memberdirectory/Details/d-r-horton-americas-builder-emerald-homes-express-homes-755729",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "clear",
+   "group": "national",
+   "tier": "N",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "65 Houston communities and 668 standing homes at one time, on a national plan library."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "84,863 closings a year is far above the band one or two printers cover, so the first order is a pilot inside one division rather than a purchase."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Strategic investment in Apis Cor, March 2024, amount undisclosed. It is the only equity position in a printed wall system on this deck."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": 84863,
+   "short": "D.R. Horton",
+   "cell": "clear|partial",
+   "clears": 2,
+   "deciders": [
+    "Brad Conlon"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-134",
+   "entity_name": "DSLD Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "region": "Baton Rouge HQ / Bonney, Magnolia, Montgomery",
+   "homepage_url": "https://www.dsldhomes.com/",
+   "synopsis": "Production builder founded in Louisiana, ranked 25th on the 2026 Builder 100 with 3,989 closings in 2025 and 4,116 in 2024. Of the 2025 figure, 3,642 were detached for sale and 347 were single-family build-to-rent. It describes itself as the largest privately held firm in its region, with more than 41,000 homes built and over 120 communities across Louisiana, southern Mississippi, Alabama, Tennessee, Texas and northwest Florida. Three Greater Houston communities: Aldean in Bonney at $264,990 to $319,990, Mostyn Springs in Magnolia at $239,990 to $325,990, and Two Step Farm in Montgomery at $348,990 to $485,990. No Texas or Houston division head is published.",
+   "key_stat": "3,989 closings in 2025, three Houston communities",
+   "principals": [
+    {
+     "name": "Saun Sullivan",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.dsldhomes.com/about-us",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Saun%20Sullivan%20DSLD%20Homes"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "The Houston entry",
+     "detail": "Aldean in Bonney, Mostyn Springs in Magnolia and Two Step Farm in Montgomery. Three communities across Brazoria and Montgomery counties, $239,990 to $485,990.",
+     "signal_type": "repeatable",
+     "fit_signal": "One plan library serving three counties out of one division.",
+     "url": "https://www.dsldhomes.com/communities/texas/houston"
+    },
+    {
+     "name": "The build-to-rent line",
+     "detail": "347 of the 3,989 homes closed in 2025 were single-family build-to-rent.",
+     "signal_type": "repeatable",
+     "fit_signal": "Rental product is held by the owner who pays to maintain it.",
+     "url": "https://www.builderonline.com/firms/dsld-homes/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 0,
+    "capital_access": 3
+   },
+   "mvp_screen": "Three Houston communities opened out of a 120-community plan library, and a build-to-rent line inside it.",
+   "_verdict": "Three Houston communities opened out of a 120-community plan library, and a build-to-rent line inside it.",
+   "_why": [
+    "Three Houston communities drawn from a plan library that runs across six states.",
+    "3,989 closings a year sits above the band one or two printers cover. The Houston division is three communities of it.",
+    "Nothing on record. Its about page names energy efficiency and structural excellence and no method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.dsldhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.dsldhomes.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://www.dsldhomes.com/communities/texas/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/dsld-homes/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "group": "national",
+   "tier": "N",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three Houston communities drawn from a plan library that runs across six states."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "3,989 closings a year sits above the band one or two printers cover. The Houston division is three communities of it."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. Its about page names energy efficiency and structural excellence and no method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": 3989,
+   "short": "DSLD Homes",
+   "cell": "clear|partial",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-014",
    "entity_name": "LGI Homes, Inc.",
    "entity_type": "homebuilder",
@@ -27242,7 +27773,6 @@
      "role": "Chief Executive Officer and Chairman of the Board",
      "linkedin_url": null,
      "source_url": "https://investor.lgihomes.com/corporate-governance/management",
-     "source_evidence": "Chief Executive Officer and Chairman on LGI's own management page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Eric%20Lipar%20LGI%20Homes%2C%20Inc."
     },
     {
@@ -27250,7 +27780,6 @@
      "role": "President and Chief Operating Officer",
      "linkedin_url": null,
      "source_url": "https://investor.lgihomes.com/corporate-governance/management",
-     "source_evidence": "President and Chief Operating Officer on LGI's own management page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Mike%20Snider%20LGI%20Homes%2C%20Inc."
     },
     {
@@ -27258,7 +27787,6 @@
      "role": "Chief Financial Officer and Treasurer",
      "linkedin_url": null,
      "source_url": "https://investor.lgihomes.com/corporate-governance/management",
-     "source_evidence": "Chief Financial Officer and Treasurer on LGI's own management page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Charles%20Merdian%20LGI%20Homes%2C%20Inc."
     },
     {
@@ -27639,7 +28167,6 @@
      "name": "DeKendrick Vidito",
      "role": "Vice President of Purchasing, Ashton Woods Homes",
      "linkedin_url": "https://www.linkedin.com/in/dekendrick-vidito-58087766/",
-     "li_evidence": "Vice President of Purchasing at Ashton Woods Homes. Houston, Texas.",
      "decider": true
     }
    ],
@@ -27770,7 +28297,6 @@
      "name": "Ladd Fargo",
      "role": "Chief Operating Officer, David Weekley Homes",
      "linkedin_url": "https://www.linkedin.com/in/ladd-fargo-241a47259/",
-     "li_evidence": "Chief Operating Officer at David Weekley Homes. Houston, Texas.",
      "decider": false
     },
     {
@@ -27901,7 +28427,6 @@
      "name": "Lauren Chachere",
      "role": "Vice President of Purchasing, Perry Homes",
      "linkedin_url": "https://www.linkedin.com/in/laurenchachere/",
-     "li_evidence": "Vice President of Purchasing at Perry Homes. Houston, Texas.",
      "decider": true
     }
    ],
@@ -28117,6 +28642,156 @@
    "decider_caveat": true
   },
   {
+   "target_id": "HOU-133",
+   "entity_name": "Hillwood Communities",
+   "entity_type": "mpc_developer",
+   "entity_role": "channel",
+   "region": "Dallas HQ / Manvel, Pearland, League City",
+   "homepage_url": "https://www.hillwoodcommunities.com/",
+   "synopsis": "Residential land development arm of Hillwood, the Perot family company. Three Greater Houston master-planned communities: Pomona in Manvel, Valencia in Manvel at 440 acres and 938 single-family lots, and a 540-acre League City tract bought in May 2022 for 1,250 lots at $400,000 to $700,000. 4,500 lots across the three at build-out. Pomona took the Greater Houston Builders Association Prism award for Master-Planned Community of the Year in 2022 and 2023. Valencia's builders are Perry Homes, Coventry Homes and Pulte Homes. Hillwood Communities is also the developer of Wolf Ranch in Georgetown, where ICON and Lennar built the hundred-home Genesis Collection to a Bjarke Ingels Group design.",
+   "key_stat": "Three Houston masterplans, 4,500 lots at build-out",
+   "principals": [
+    {
+     "name": "Fred Balda",
+     "role": "President",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Fred%20Balda%20Hillwood%20Communities"
+    },
+    {
+     "name": "Russell Bynum",
+     "role": "Senior Vice President, General Manager, Houston MSA",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "decider": true,
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Russell%20Bynum%20Hillwood%20Communities"
+    },
+    {
+     "name": "Mark Meyer",
+     "role": "Senior Vice President, Planning and Innovation",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Mark%20Meyer%20Hillwood%20Communities"
+    },
+    {
+     "name": "Patrick Cowden",
+     "role": "Senior Vice President, Development",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Patrick%20Cowden%20Hillwood%20Communities"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Wolf Ranch, Georgetown",
+     "detail": "Hillwood Communities developed the community where ICON and Lennar built the Genesis Collection: 100 single-family houses on eight plans from 1,575 to 2,112 square feet, designed by Bjarke Ingels Group.",
+     "signal_type": "method_risk",
+     "fit_signal": "A printer has already worked inside one of its communities, and it wrote about it on its own site.",
+     "url": "https://www.hillwoodcommunities.com/blog/the-future-of-housing-3d-printed-homes-in-georgetown-texas/"
+    },
+    {
+     "name": "Valencia, Manvel",
+     "detail": "440 acres and 938 single-family lots on 40 to 70 foot homesites, $300,000 to $600,000. Builders are Perry Homes, Coventry Homes and Pulte Homes.",
+     "signal_type": "repeatable",
+     "fit_signal": "Two of the three builders on this community are already on this deck.",
+     "url": "https://www.hillwood.com/newsroom/press-releases/hillwood-communities-expands-houston-footprint-announces-new-master-planned-community/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 0,
+    "innovation": 3,
+    "capital_access": 3
+   },
+   "mvp_screen": "It is the land developer of Wolf Ranch, and it runs three Houston masterplans with a Houston general manager named.",
+   "_verdict": "It is the land developer of Wolf Ranch, and it runs three Houston masterplans with a Houston general manager named.",
+   "_why": [
+    "Three concurrent Houston masterplans and 4,500 lots at build-out.",
+    "It develops lots and sells them to vertical builders. It does not pour walls.",
+    "A hundred printed homes were built inside one of its own communities."
+   ],
+   "sources": [
+    {
+     "url": "https://www.hillwoodcommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/texas-community-developer/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/blog/the-future-of-housing-3d-printed-homes-in-georgetown-texas/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwood.com/newsroom/press-releases/hillwood-communities-expands-houston-footprint-announces-new-master-planned-community/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "clear"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "group": "channel",
+   "tier": "M",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three concurrent Houston masterplans and 4,500 lots at build-out."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It develops lots and sells them to vertical builders. It does not pour walls."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A hundred printed homes were built inside one of its own communities."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Hillwood",
+   "cell": "clear|fail",
+   "channel_line": "Pomona, Valencia and a 540-acre League City tract, 4,500 lots at build-out",
+   "channel_builders": [
+    "Perry Homes",
+    "Coventry Homes"
+   ],
+   "clears": 2,
+   "deciders": [
+    "Russell Bynum"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-011",
    "entity_name": "Howard Hughes Holdings Inc.",
    "entity_type": "mpc_developer",
@@ -28136,7 +28811,6 @@
      "role": "Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Chief Executive Officer on Howard Hughes's own leadership page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20O%27Reilly%20Howard%20Hughes%20Holdings%20Inc."
     },
     {
@@ -28144,7 +28818,6 @@
      "role": "Executive Chairman of the Board",
      "linkedin_url": null,
      "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Executive Chairman on Howard Hughes's own leadership page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bill%20Ackman%20Howard%20Hughes%20Holdings%20Inc."
     },
     {
@@ -28152,7 +28825,6 @@
      "role": "Chief Investment Officer",
      "linkedin_url": null,
      "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Chief Investment Officer on Howard Hughes's own leadership page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Israel%20Howard%20Hughes%20Holdings%20Inc."
     },
     {
@@ -29281,7 +29953,6 @@
      "name": "Mark Wood",
      "role": "Vice President of Construction, The Hanover Company",
      "linkedin_url": "https://www.linkedin.com/in/mark-wood-49713011/",
-     "li_evidence": "Vice President - Construction at The Hanover Company. Houston, Texas.",
      "decider": true
     },
     {
@@ -29479,7 +30150,6 @@
      "name": "Michael Eilertsen",
      "role": "Vice President of Construction, Camden Property Trust",
      "linkedin_url": "https://www.linkedin.com/in/michael-eilertsen-68a59911/",
-     "li_evidence": "Vice President Of Construction at Camden Property Trust. Houston, Texas.",
      "decider": true
     }
    ],
@@ -29568,7 +30238,6 @@
      "role": "Founder, Chairman and Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.greystar.com/contact-us/our-people/bob-faith",
-     "source_evidence": "Founder, Chairman and Chief Executive Officer on Greystar's own bio page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bob%20Faith%20Greystar"
     },
     {

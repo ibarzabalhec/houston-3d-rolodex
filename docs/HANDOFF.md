@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 50 · 2026-09-12
+Build 51 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,6 +530,66 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 51: the rest of the directory, and the builder that already bought one
+
+Build 50 read one category of the Greater Houston Builders Association directory,
+Builder - Single Family. The directory carries six more. Reading Build-to-Rent,
+Build On Your Lot, ICF Homes, 50+ Communities, Multi-Family and Townhomes, and
+Developers against the deck, and then reading the metro's permit leaders against
+it, added five firms and found one omission that mattered more than any of them.
+
+**D.R. Horton was not on the deck.** First in Greater Houston by permits in
+August 2026 at 372, 65 communities and 668 standing homes on its own site, and
+84,863 closings in the fiscal year to 30 September 2025. It is also the only firm
+on this deck that has put equity into a printed wall system: a strategic
+investment in Apis Cor, announced 11 March 2024, amount undisclosed. That fact
+was already in the file, as a line in a competitor profile and a dot on the
+field timeline, with no record attached to it. The named counterparty is Brad
+Conlon, Senior Vice President of Business Development, in Arlington. No Houston
+division officer is published, and the one Houston executive with a titled public
+record left for Mattamy in August 2026, so the directory listings carrying his
+name are stale and he is not on the card.
+
+**Hillwood Communities was not on the deck either.** The market tab has cited
+Wolf Ranch since Build 12 and never named the party that let a printer into it.
+Hillwood Communities developed that community. It also runs three Greater Houston
+masterplans, Pomona and Valencia in Manvel and a 540-acre League City tract, 4,500
+lots at build-out, with a named Houston general manager, Russell Bynum, and a
+named Senior Vice President of Planning and Innovation, Mark Meyer.
+
+Also added: **DSLD Homes** (25th on the Builder 100, 3,989 closings in 2025,
+three Houston communities, no Texas officer published), **Tilson Home
+Corporation** (425 closings in 2024, on-your-lot, funds its own construction with
+no interim loan, and publishes a stick-frame wall specification), and **Clay
+Residential** (465 rental homes across two Houston communities, with the Vice
+President of Construction Operations named on the association's own record).
+
+Screened and not added, each for a stated reason: AOG Living builds apartments and
+its pipeline is in Austin and Dallas; McCord Development holds 4,300 acres at
+Generation Park with one 251-unit apartment building and no residential wall
+product; America's Home Place publishes no volume and builds one-off custom;
+ITEX Group builds three and four storey workforce multifamily; Forestar is 62
+percent owned by D.R. Horton and reads as a clause inside that record rather than
+a card of its own.
+
+**A fact printed three times, again.** Build 49 cut evidence lines that only
+restated a person's title. The filter was too narrow and caught 7 of them. It now
+strips provenance clauses anywhere in the line, not only at the front, and
+compares what is left to the title by token set rather than substring. 30 more
+lines went, all of the form "Chief Executive Officer on LGI's own management
+page" or "Vice President of Purchasing at Perry Homes. Houston, Texas." The link
+beside the name already says where it came from. The evidence label changed from
+"Company bio." to "Source.", because a press release is not a company bio.
+
+**Quantities, again.** D.R. Horton's 84,863 and DSLD's 3,989 are company-wide
+across 126 and 120-plus communities respectively. They do not go on the closings
+chart, which compares firms at Houston scale and tops out at Westin's 1,062. They
+carry a grid ordering figure instead, in `gap.SCALE`, so the largest builder on
+the deck leads its cell rather than sorting last for want of a number. Tilson's
+425 is Texas-wide from the Builder 100 and does go on the chart, labelled.
+
+97 firms, 243 contacts, 50 with a named decider. All checks pass.
+
 ## Build 50: the directory the deck had never been checked against
 
 The deck was assembled from trade press, master-planned-community builder rosters
@@ -606,8 +666,15 @@ surface (filters, call list, workbook builder).
 - Brohn's purchasing (local or Clayton) is not published anywhere.
 - `internal/OPEN_ITEMS.md` holds 110 notes across 75 firms. It is the research
   queue, and it stays outside `docs/`.
-- `docs/ROADMAP.md` carries six research passes. Pass 1 (contractors) is done.
-  Passes 2 to 6 are not: nationals as records, build-to-rent operators, firm main
-  phone lines, the remaining register notes, payback-page inputs.
+- `docs/ROADMAP.md` carries six research passes. Pass 1 (contractors) is done and
+  pass 2 (nationals as records) is done as of Build 51. Passes 3 to 6 are not:
+  build-to-rent operators, firm main phone lines, the remaining register notes,
+  payback-page inputs.
+- D.R. Horton: no Houston division officer is published anywhere outside a data
+  aggregator. The Apis Cor investment has no published follow-up two and a half
+  years on, and the South Florida multi-unit project it named has not been shown
+  to exist.
+- DSLD Homes and Tilson Homes each carry one named person. Neither publishes a
+  construction or purchasing officer.
 - Whether Screen or List should be the landing view. List is now the faster tool.
 - The repository has never been pushed to GitHub.
