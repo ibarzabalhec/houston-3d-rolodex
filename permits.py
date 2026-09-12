@@ -296,7 +296,10 @@ REVISIONS = [
     (2018, 40321, 40887),
 ]
 
-DEFS = [
+# Not shipped. The survey's own definitions are the build's discipline, not the
+# reader's reading: what reaches the page has already been checked against them.
+# Read these before touching a figure or adding a year.
+_DEFS = [
     ("Authorised, not built",
      "Census counts housing units authorised by a permit. That is the first of the five "
      "phases it defines for new residential construction, ahead of started, under "

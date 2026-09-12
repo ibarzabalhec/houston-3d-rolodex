@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 46 · 2026-09-12
+Build 48 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -397,11 +397,104 @@ The verifier now opens List at 320, 390 and 430 and fails the build if the table
 scrolls sideways, if any count sits past the right edge, or if a label prints
 with nothing under it.
 
+## Build 47: the working comes off the market tab
+
+The tab was carrying the evidence that the figures are right, as well as the
+figures. A reader is owed the number. The checking is the build's job.
+
+Gone:
+
+- **"The same number, read twice."** Two tables: the metro figure against every
+  other published reading of it, and the archived Census tables for 2014 to 2018
+  against the same years now. The largest disagreement in the second table was
+  about 600 homes in 2018, on a base of 40,000. A reader who sees that spends
+  attention on a rounding difference and learns nothing about Houston.
+- **The dashed "universe re-based" marker** on the metro series, which existed to
+  explain that second table.
+- **"How the permit figures are produced,"** all eight blocks of it. Census's own
+  definitions of authorisation, units versus structures, seasonal adjustment and
+  the CBSA rename are the discipline this build is held to, not reading for a
+  client. What ships has already been checked against them.
+- **A second copy of the source list** under the method block. Every figure
+  already carries its own sources.
+- **Five source links** that were provenance for the cut tables and pointed at
+  nothing left on the page.
+- **Two sentences of design rationale** in the map and matrix captions, explaining
+  why the ramp is grey and why the matrix is not shaded in absolute units. That is
+  an argument with myself, held in front of the reader.
+
+The checks did not go anywhere. They moved into `verify.py`, where the build fails
+if the metro figure drifts from the published cross-read (it prints "46341 vs NAHB
+46343, gap 2" on every run), if an archived Census year moves by more than 1,200
+units, or if survey method or cross-reads ever ship on the page again. The
+definitions live on in `permits.py` as `_DEFS`, read by whoever touches a figure
+next.
+
+Two method blocks became one, and it holds only the deck's own rubric, which a
+reader does need in order to read a mark.
+
+Ten figures became nine. What a reader needs about the quantity now sits in two
+sentences of the first caption: a permit is an authorisation and not a closing,
+and Census counts townhouses as single family.
+
+## Build 48: what the record is about
+
+Four changes, one principle behind all of them: a record should be about the
+product a printer can put up.
+
+**Published annual closings stopped being about printers.** It was drawing the
+machine-fit bands behind the bars and colouring each bar by that count, which is
+the job of Track record by section, one figure below it. It now answers one
+question, how big each builder is in houses closed a year, and answers it once.
+
+**"How each number is produced" came off the tab.** Six blocks explaining the
+deck's own rubric, on a page whose figures already carry their captions and their
+sources. The market tab now explains nothing about itself.
+
+**Howard Hughes was on the deck and barely on it.** The record opened with a $900
+million Pershing Square investment, which tells a reader nothing about land. It now
+opens with what it sells: three Greater Houston communities and 1,802 residential
+acres still to sell at June 30, 2026, being 1,142 at Bridgeland, 597 at The
+Woodlands Hills and 63 at The Woodlands, which sells out in 2031. 621 residential
+acres sold company-wide in 2025 at an average $890,000 an acre. Bridgeland sold 812
+new homes in 2025, eleventh in the country.
+
+Its Track record count moved from No to Yes. Howard Hughes financed, branded and
+opened One Bridgeland Green, Greater Houston's first mass timber office building,
+dowel-laminated and cross-laminated timber with low-carbon concrete in the same
+structure, topped out December 2024 and opened November 2025. The count asks
+whether a firm has ever paid for a new way of building. That is the count, met. It
+does not move the firm up the deck, because a land owner is placed by what it
+sells and it still sells lots.
+
+Fifteen builders now hang off the record, read from each community's own builder
+page, eleven of which are already screened here. Jim Carman is retitled President,
+Texas Region. Stephen Sams is added as the residential land seat, marked Confirm,
+because the only dated source for the title is April 2022.
+
+That change exposed something: **all six land owners carried marks with no reasons
+under them.** Survivable while every one of them read No on the third count, since
+an absence explains itself, but Howard Hughes now reads Yes there. All six have
+their three reasons, and the verifier requires them.
+
+**Six records were rewritten to lead with the right product.** Triten opened on
+75,000 square feet of office and described The Mill twice; it now opens on 294
+units at Aliana, with the timber frame kept because that is method evidence and the
+office compressed to a clause. Midway opens on The Laura at 360 units. Signorelli
+opens on 23,000 paper lots. Pagewood opens on the ten EaDo blocks. Wile leads with
+ground-up retail. Cameron Management leads with the residential conversion and says
+plainly that the exterior wall stays.
+
+`focus.py` holds all of it and runs last, so it overrides whatever the layers below
+produced. Its docstring carries the rule: land and lots, single-family, repeating
+low-rise residential, one and two storey shell, then everything else as a clause,
+and only where it says something about how the firm builds.
+
 ## Live numbers
 
-90 firms on the deck, 9 held off. 223 contacts, 109 LinkedIn profiles, 44 firms
-with a named decider (42 confirmed, 2 to confirm), 32 press items across 11 firms,
-22 contractors in the trade section, 0 open items on the page.
+90 firms on the deck, 9 held off. 224 contacts, 109 LinkedIn profiles, 44 firms
+with a named decider, 32 press items across 11 firms, 22 contractors, 17 firms
+holding Track record, 0 open items on the page.
 
 The permit layer: 46 years of metro single-family authorisations, 26 years by
 county across 10 counties, 6 years across 112 permit-issuing jurisdictions.
@@ -411,7 +504,7 @@ county across 10 counties, 6 years across 112 permit-issuing jurisdictions.
 `data_a/b/c.py` + `builders.py` + `creative.py` + `screens.py` + `why.py` +
 `machine.py` + `found.py` + `links.py` + `corrections.py` + `competitors.py` +
 `research2.py` + `market.py` + `code.py` + `trades.py` + `press.py` +
-`resolved.py` + **`permits.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
+`resolved.py` + `permits.py` + **`focus.py`** → `build.py` → `houston-data.json` → `_template.html` → HTML +
 `rolodex-artifact.html` + `docs/` copies; `build_xlsx.py` → XLSX; `verify.py`
 renders headless and fails on any of about fifty-five checks, including every
 audit finding above, any wiki or contact-aggregator citation, any record missing

@@ -377,7 +377,7 @@ async def main():
         # reasons. Twenty-two contractors once shipped with none, because the
         # section was added to the page and not to the block that builds them.
         noreason = [t["entity_name"] for t in D["targets"]
-                    if t["group"] not in ("out", "channel") and len(t.get("why") or []) != 3]
+                    if t["group"] != "out" and len(t.get("why") or []) != 3]
         print("reasons missing  :", noreason or "none")
         if noreason:
             problems.append("%d records carry no reasons" % len(noreason))
@@ -432,8 +432,12 @@ async def main():
         tabs = await pg.locator(".figs .ftable table").count()
         bars = await pg.locator("#mkBody .figs .fig .bar").count()
         print("market figures  :", figs, "| tables", tabs, "| closing bars", bars)
-        if figs != 10 or tabs != 10:
-            problems.append("the market view does not draw ten figures with tables")
+        if figs != 9 or tabs != 9:
+            problems.append("the market view does not draw nine figures with tables (%d, %d)"
+                            % (figs, tabs))
+        # the market tab explains nothing about its own method any more
+        if await pg.locator("#mkBody .figs.method").count():
+            problems.append("a method block is back on the market tab")
 
         # The permit layer is a different quantity from the closings layer and is
         # never mixed with it. Three levels of the same survey must reconcile
@@ -464,6 +468,25 @@ async def main():
             problems.append("the county map does not carry ten outlines")
         if not P["sources"] or any(not s0["url"].startswith("http") for s0 in P["sources"]):
             problems.append("a permit source is missing its link")
+        # The cross-reads live here, not on the page. A reader is owed the number,
+        # not the working that established it.
+        import permits as _PM
+        for lb, gg, yy, vv, key, _ind in _PM.CROSSREF:
+            if "socds" in key:
+                ours = msa.get(yy) if "Single family" in lb else None
+                if ours is not None and ours != vv:
+                    problems.append("the %d figure moved away from its cross-read" % yy)
+        nahb = [c for c in _PM.CROSSREF if c[4] == "nahb"]
+        if nahb:
+            gap = abs(msa.get(nahb[0][2], 0) - nahb[0][3])
+            print("cross-read      : %d vs NAHB %d, gap %d"
+                  % (msa.get(nahb[0][2], 0), nahb[0][3], gap))
+            if gap > 50:
+                problems.append("the metro figure no longer agrees with the published cross-read")
+        if any(abs(b - a) > 1200 for _y, a, b in _PM.REVISIONS):
+            problems.append("an archived Census year now differs by more than 1,200 units")
+        if "defs" in P or "crossref" in P or "revisions" in P:
+            problems.append("survey method or cross-reads are shipping on the page")
         srcs = await pg.locator("#mkBody .figsrc a").count()
         cty_paths = await pg.locator("#figMap .cty").count()
         cells = await pg.locator("#mtxHost .cell").count()
@@ -478,6 +501,7 @@ async def main():
             problems.append("the jurisdiction chart does not render its top 25")
         if srcs < 5:
             problems.append("permit figures are missing their source links")
+
         # the two quantities never share a figure
         mixed = await pg.evaluate(
             "(()=>{const t=[...document.querySelectorAll('#mkBody .figs')];"

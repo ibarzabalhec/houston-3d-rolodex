@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 46,
+ "build": 48,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -39,7 +39,7 @@
    false
   ],
   [
-   "44",
+   "45",
    "with a named decision-maker",
    true
   ],
@@ -78,9 +78,9 @@
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 16,
+   "clear": 17,
    "partial": 20,
-   "fail": 54,
+   "fail": 53,
    "total": 90
   }
  ],
@@ -386,7 +386,7 @@
   ],
   [
    "Who decides",
-   "44 of 90 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 44 can be reached as named without a caveat. The other 2 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "45 of 90 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 45 can be reached as named without a caveat. The other 3 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
   ],
   [
    "Sources",
@@ -774,11 +774,11 @@
     "group": "channel",
     "label": "Land owner, not the buyer",
     "n": 6,
-    "yes": 0,
+    "yes": 1,
     "partly": 0,
-    "no": 6,
+    "no": 5,
     "decider": 0,
-    "confirm": 0,
+    "confirm": 1,
     "linked": 6
    },
    {
@@ -795,6 +795,88 @@
   ],
   "owners": [
    {
+    "id": "HOU-011",
+    "short": "Howard Hughes",
+    "line": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+    "builders": [
+     {
+      "name": "Lennar",
+      "id": null,
+      "off": false
+     },
+     {
+      "name": "Perry Homes",
+      "id": "HOU-013",
+      "off": false
+     },
+     {
+      "name": "David Weekley Homes",
+      "id": "HOU-023",
+      "off": false
+     },
+     {
+      "name": "Highland Homes",
+      "id": null,
+      "off": false
+     },
+     {
+      "name": "Chesmar Homes",
+      "id": "HOU-045",
+      "off": false
+     },
+     {
+      "name": "Coventry Homes",
+      "id": "HOU-033",
+      "off": false
+     },
+     {
+      "name": "Century Communities, Inc.",
+      "id": "HOU-009",
+      "off": false
+     },
+     {
+      "name": "Beazer Homes",
+      "id": null,
+      "off": false
+     },
+     {
+      "name": "Westin Homes",
+      "id": "HOU-068",
+      "off": false
+     },
+     {
+      "name": "Tri Pointe Homes",
+      "id": null,
+      "off": false
+     },
+     {
+      "name": "Ravenna Homes",
+      "id": "HOU-070",
+      "off": false
+     },
+     {
+      "name": "Newmark Homes",
+      "id": "HOU-069",
+      "off": false
+     },
+     {
+      "name": "Partners in Building",
+      "id": "HOU-072",
+      "off": false
+     },
+     {
+      "name": "J. Patrick Homes",
+      "id": "HOU-067",
+      "off": false
+     },
+     {
+      "name": "Brightland Homes",
+      "id": "HOU-034",
+      "off": false
+     }
+    ]
+   },
+   {
     "id": "HOU-015",
     "short": "Signorelli",
     "line": "Valley Ranch, Austin Point, Granger Pines and Cielo",
@@ -805,12 +887,6 @@
       "off": false
      }
     ]
-   },
-   {
-    "id": "HOU-011",
-    "short": "Howard Hughes",
-    "line": "",
-    "builders": []
    },
    {
     "id": "HOU-039",
@@ -17981,123 +18057,6 @@
     ]
    }
   ],
-  "crossref": [
-   {
-    "label": "Single family units authorised",
-    "geo": "Houston CBSA",
-    "year": 2025,
-    "value": 46341,
-    "url": "https://www.huduser.gov/socds/permits",
-    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
-    "independent": false
-   },
-   {
-    "label": "Single-family building permits",
-    "geo": "Houston-Pasadena-The Woodlands",
-    "year": 2025,
-    "value": 46343,
-    "url": "https://www.bisnow.com/houston/news/construction-development/houston-is-building-the-most-homes-nationally-it-needs-even-more-135063",
-    "source": "Bisnow, reporting NAHB's chief economist at the GHBA mid-year forecast",
-    "independent": false
-   },
-   {
-    "label": "All units authorised",
-    "geo": "Houston CBSA",
-    "year": 2025,
-    "value": 65197,
-    "url": "https://www.huduser.gov/socds/permits",
-    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
-    "independent": false
-   },
-   {
-    "label": "New privately-owned housing units authorised",
-    "geo": "Houston CBSA",
-    "year": 2025,
-    "value": 65075,
-    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
-    "source": "Census Building Permits Survey, annual highlights",
-    "independent": false
-   },
-   {
-    "label": "All units authorised",
-    "geo": "Houston CBSA",
-    "year": 2024,
-    "value": 65747,
-    "url": "https://www.huduser.gov/socds/permits",
-    "source": "HUD SOCDS Building Permits, republishing the Census Building Permits Survey",
-    "independent": false
-   },
-   {
-    "label": "New privately-owned housing units authorised",
-    "geo": "Houston CBSA",
-    "year": 2024,
-    "value": 65747,
-    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
-    "source": "Census Building Permits Survey, annual highlights",
-    "independent": false
-   }
-  ],
-  "revisions": [
-   {
-    "year": 2014,
-    "first": 38323,
-    "now": 38321
-   },
-   {
-    "year": 2015,
-    "first": 36786,
-    "now": 36963
-   },
-   {
-    "year": 2016,
-    "first": 35367,
-    "now": 35632
-   },
-   {
-    "year": 2017,
-    "first": 36348,
-    "now": 36716
-   },
-   {
-    "year": 2018,
-    "first": 40321,
-    "now": 40887
-   }
-  ],
-  "defs": [
-   {
-    "title": "Authorised, not built",
-    "text": "Census counts housing units authorised by a permit. That is the first of the five phases it defines for new residential construction, ahead of started, under construction and completed. A permit is not a house. The closings figures elsewhere on this page come from builders and count houses handed over, and the two are never added or divided here."
-   },
-   {
-    "title": "What counts as single family",
-    "text": "Census calls the category 1 unit, and its own definition puts fully detached, semidetached, row houses and townhouses in it. A townhouse is a single-family unit in this series."
-   },
-   {
-    "title": "Units, not structures",
-    "text": "Every figure is units. The survey prints a structure count only for buildings of five units or more."
-   },
-   {
-    "title": "Not adjusted",
-    "text": "Annual totals are unadjusted and not annualised."
-   },
-   {
-    "title": "The series has a seam",
-    "text": "Census moved from a 2014 basis to an annually updated universe in 2023 and folded micropolitan areas into the metro files in 2024. Years either side of that are not strictly one continuous series. Where the archived tables and the current ones disagree, both figures are shown."
-   },
-   {
-    "title": "The metro was renamed",
-    "text": "CBSA 26420 was published as Houston-The Woodlands-Sugar Land and is now published as Houston-Pasadena-The Woodlands. Same code, same ten counties."
-   },
-   {
-    "title": "Where the counties come from",
-    "text": "The ten counties are Austin, Brazoria, Chambers, Fort Bend, Galveston, Harris, Liberty, Montgomery, San Jacinto and Waller. The 122 permit-issuing jurisdictions sum to those ten counties, and the ten counties sum to the metro, exactly, in every year. County outlines are TxDOT's."
-   },
-   {
-    "title": "Two sources that are not a second opinion",
-    "text": "The Texas Real Estate Research Center publishes this same Census series, so it agrees with it by construction. The Greater Houston Partnership publishes construction contract awards in dollars, which is a different quantity. Neither is used here as corroboration."
-   }
-  ],
   "sources": [
    {
     "url": "https://www.huduser.gov/socds/permits",
@@ -18106,26 +18065,6 @@
    {
     "url": "https://www.census.gov/construction/bps/definitions.html",
     "label": "Census Building Permits Survey, definitions"
-   },
-   {
-    "url": "https://www.census.gov/construction/bps/methodology.html",
-    "label": "Census Building Permits Survey, methodology"
-   },
-   {
-    "url": "https://www.census.gov/construction/bps/announcements.html",
-    "label": "Census Building Permits Survey, announcements"
-   },
-   {
-    "url": "https://www.census.gov/construction/bps/pdf/annual_highlights.pdf",
-    "label": "Census Building Permits Survey, annual highlights"
-   },
-   {
-    "url": "https://www.census.gov/construction/bps/txt/tb3u2018.txt",
-    "label": "Census table 3au, 2018"
-   },
-   {
-    "url": "https://www.bisnow.com/houston/news/construction-development/houston-is-building-the-most-homes-nationally-it-needs-even-more-135063",
-    "label": "Bisnow, reporting NAHB's chief economist at the GHBA mid-year forecast"
    },
    {
     "url": "https://gis-txdot.opendata.arcgis.com/datasets/texas-county-boundaries/geoservice",
@@ -18139,13 +18078,13 @@
   "tier_a": 12,
   "tier_b": 28,
   "out": 0,
-  "principals": 223,
+  "principals": 224,
   "linkedin_held": 109,
   "audit_flags": 0,
-  "with_decider": 44,
+  "with_decider": 45,
   "with_decider_live": 21,
   "with_decider_confirmed": 42,
-  "with_decider_caveat": 2
+  "with_decider_caveat": 3
  },
  "targets": [
   {
@@ -25724,7 +25663,7 @@
    ],
    "region": "East End / Fort Bend, Harris County",
    "homepage_url": "https://www.tritenre.com/",
-   "synopsis": "Houston vertically integrated investor-developer. Began construction in 2022 on The Mill at 2219 Canal Street, a six-acre East End project combining 75,000 square feet of office, 25,000 square feet of retail and 340 apartments around a preserved 1890s brick lumber mill, framed in cross-laminated timber. Has the 294-unit Landing at Aliana under way in Fort Bend County, opening summer 2027. The Mill square footage and unit count come from two sources whose detail differs, so the figures are approximate. The Mill is a 75,000 square foot six-storey office frame in cross-laminated timber, reported as one of Houston's first, alongside 340 apartments and a 14,000 square foot 1890s brick building kept and folded into the new structure. Michael Hsu and EDI were on design. One team ran an unproven structural system and an adaptive reuse on the same six-acre site. Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG.",
+   "synopsis": "Houston investor-developer. The Landing at Aliana is 294 units on one Fort Bend site, opening summer 2027. The Mill at 2219 Canal Street is a six-acre East End redevelopment framed in cross-laminated timber, reported as one of Houston's first, with 340 apartments and 100,000 square feet of office and retail built around a preserved 1890s brick mill. Michael Hsu and EDI on design. Triten and Radom Capital are the same pair across the Heights packing-plant cluster, M-K-T and the Swift BLDG.",
    "key_stat": "340 units, mass timber frame",
    "principals": [
     {
@@ -26107,7 +26046,7 @@
    ],
    "region": "Downtown Houston, Harris County",
    "homepage_url": "https://cameronmanagement.com/",
-   "synopsis": "Owner of the Niels Esperson and Mellie Esperson towers, built 1927 in downtown Houston, reported in 2023 to be converting up to 100 apartment units into the buildings at a stated $50 million renovation cost. The unit count is stated only as up to 100. The Esperson renovation is an office-to-residential conversion of two towers from 1927 and 1941 under a programme reported at about $50 million. The firm is employee owned.",
+   "synopsis": "Employee-owned owner of the Niels Esperson and Mellie Esperson towers in downtown Houston, converting up to 100 apartments into the 1927 and 1941 buildings under a programme reported in 2023 at about $50 million. The work is interior: the exterior wall stays. The unit count is published only as up to 100.",
    "key_stat": "$50M conversion, up to 100 units",
    "principals": [
     {
@@ -26432,7 +26371,7 @@
    ],
    "region": "Houston HQ / East End, Harris County",
    "homepage_url": "https://www.midway.team/",
-   "synopsis": "Houston investment and development firm that broke ground on August 26, 2021 on East River, a 150-acre mixed-use redevelopment of the former industrial turning-basin site on Buffalo Bayou, planned at 60 city blocks. Phase One covers 26 acres including The Laura at 360 units, 250,000 square feet of office and 110,000 square feet of retail. Combined with Parkway Property Investments in May 2023. Midway kept sole development control of East River and sold its interest in the Parkway Ventures joint venture to Parkway in December 2024. Bradley Freels is Chairman and Chief Executive Officer on Midway's own leadership page. Rob Sigler is Executive Vice President of Construction, Investment and Development, and his own feed carries mass-timber construction from Kirksey. Larry Sloan, formerly Executive Vice President of investment and development, left in November 2023 and is now Chief Development Officer at Triten Real Estate Partners, also screened here.",
+   "synopsis": "Houston investment and development firm. East River is a 150-acre redevelopment of the former turning-basin site on Buffalo Bayou, broken ground August 26, 2021 and planned at 60 city blocks. Phase One is 26 acres and opens with The Laura at 360 units, alongside 360,000 square feet of office and retail. Midway kept sole development control of East River and sold its interest in the Parkway Ventures joint venture to Parkway in December 2024. Rob Sigler's own feed carries mass-timber construction from Kirksey. Larry Sloan left in November 2023 and is now Chief Development Officer at Triten Real Estate Partners, also screened here.",
    "key_stat": "East River: 150 acres, 60 city blocks",
    "principals": [
     {
@@ -26570,7 +26509,7 @@
    "entity_role": "vertical_buyer",
    "region": "Houston",
    "homepage_url": "https://www.pagewood.com/",
-   "synopsis": "Investment and development firm running industrial and office ground-up alongside East Blocks, a ten-block EaDo redevelopment with Wile Interests designed by Gensler. Pagewood's creative work is a joint venture with Wile Interests. Its industrial side builds ground-up on its own. Preston Luster is the senior construction manager on the team page. The two managing principals are the decision layer.",
+   "synopsis": "Investment and development firm. East Blocks is ten contiguous EaDo blocks, 513,000 square feet in phase one, a joint venture with Wile Interests designed by Gensler with SWA on landscape. It also builds ground-up industrial on its own account, so it commissions a new shell as well as converting one. Preston Luster is the senior construction manager on the team page, and the two managing principals are the decision layer.",
    "key_stat": "East Blocks, 513,000 sf across ten EaDo blocks",
    "principals": [
     {
@@ -26815,7 +26754,7 @@
    "entity_role": "vertical_buyer",
    "region": "Houston and Katy",
    "homepage_url": "https://www.pagewood.com/",
-   "synopsis": "Developer that builds ground-up medical office and retail in Katy and is the joint-venture partner on the East Blocks conversion in EaDo. The firm's own website is a placeholder with no content, so this record comes from press coverage.",
+   "synopsis": "Developer of ground-up retail and medical office in Katy, and joint-venture partner on the East Blocks conversion in EaDo. Its own site is a placeholder with no content, so this record comes from press coverage.",
    "key_stat": "Ground-up in Katy, adaptive reuse in EaDo",
    "principals": [
     {
@@ -27804,6 +27743,210 @@
    "decider_caveat": true
   },
   {
+   "target_id": "HOU-011",
+   "entity_name": "Howard Hughes Holdings Inc.",
+   "entity_type": "mpc_developer",
+   "entity_role": "channel",
+   "categories": [
+    "mpc",
+    "public",
+    "developers"
+   ],
+   "region": "The Woodlands HQ / Harris, Montgomery",
+   "homepage_url": "https://www.howardhughes.com/",
+   "synopsis": "NYSE-listed master-planned community developer, headquartered inside The Woodlands, running three Greater Houston communities: The Woodlands, Bridgeland at 11,500 acres in Cypress, and The Woodlands Hills at 2,000 acres in Conroe and Willis. It sells finished lots to builders and does not build houses. 1,802 residential acres remain across the three as of June 30, 2026: 1,142 at Bridgeland, 597 at The Woodlands Hills, 63 at The Woodlands, which it expects to sell out in 2031. Company-wide it sold 621 residential acres in 2025 at an average $890,000 an acre. Bridgeland sold 812 new homes in 2025, eleventh in the country. It developed One Bridgeland Green, Greater Houston's first mass timber office building, framed in dowel-laminated and cross-laminated timber with low-carbon concrete, topped out December 2024 and opened November 2025. Pershing Square took 46.9 percent in May 2025.",
+   "key_stat": "1,802 residential acres left to sell",
+   "principals": [
+    {
+     "name": "David O'Reilly",
+     "role": "Chief Executive Officer",
+     "linkedin_url": null,
+     "source_url": "https://investor.howardhughes.com/governance/leadership",
+     "source_evidence": "Chief Executive Officer on Howard Hughes's own leadership page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20O%27Reilly%20Howard%20Hughes%20Holdings%20Inc."
+    },
+    {
+     "name": "Bill Ackman",
+     "role": "Executive Chairman of the Board",
+     "linkedin_url": null,
+     "source_url": "https://investor.howardhughes.com/governance/leadership",
+     "source_evidence": "Executive Chairman on Howard Hughes's own leadership page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bill%20Ackman%20Howard%20Hughes%20Holdings%20Inc."
+    },
+    {
+     "name": "Ryan Israel",
+     "role": "Chief Investment Officer",
+     "linkedin_url": null,
+     "source_url": "https://investor.howardhughes.com/governance/leadership",
+     "source_evidence": "Chief Investment Officer on Howard Hughes's own leadership page.",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Israel%20Howard%20Hughes%20Holdings%20Inc."
+    },
+    {
+     "name": "Jim Carman",
+     "role": "President, Texas Region",
+     "linkedin_url": "https://www.linkedin.com/in/carmanjim/",
+     "li_evidence": "Profile opened. President, Texas Region at Howard Hughes Communities. Greater Houston. His own feed carries Bridgeland's number nine national ranking at 500 home sales by mid-2026 and the 83-acre Toro District with the Houston Texans headquarters."
+    },
+    {
+     "name": "Stephen Sams",
+     "role": "Senior Vice President, Master Planned Communities, Residential Development, Houston Region",
+     "source_url": "https://www.bridgeland.com/the-howard-hughes-corporation-appoints-stephen-sams-as-senior-vice-president-mpc-of-residential-development-in-the-houston-region/",
+     "source_evidence": "Named in the firm's own April 2022 appointment release, reporting to Jim Carman and covering The Woodlands, Bridgeland and The Woodlands Hills. No later source confirms he still holds it.",
+     "decider": true,
+     "probable": true
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Bridgeland",
+     "detail": "Cypress, Harris County. 11,400 acres, construction begun October 2003, home sales from 2006, roughly 65,000 residents projected at 2037 buildout.",
+     "signal_type": "resilience",
+     "fit_signal": "A 900-acre lake and detention network with eight feet of freeboard exceeded Harris County Flood Control District requirements. ULI records no homes taking on water in either the April 2016 Tax Day Flood or Hurricane Harvey in August 2017. Evidence this developer already pays for engineered resilience.",
+     "url": "https://developingresilience.uli.org/case/bridgeland/"
+    },
+    {
+     "name": "The Woodlands Hills",
+     "detail": "Conroe and Willis, Montgomery County. 2,000 acres, more than 4,500 planned residences. Groundbreaking November 15, 2017.",
+     "signal_type": "repeatable",
+     "fit_signal": "4,500-plus residences in one location, though delivered by third-party builders on Howard Hughes lots rather than by Howard Hughes.",
+     "url": "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-corporationr-breaks-ground-woodlands-hills"
+    },
+    {
+     "name": "LEED for Communities precertification",
+     "detail": "Bridgeland and The Woodlands precertified by USGBC on July 14, 2022.",
+     "signal_type": "resilience",
+     "fit_signal": "Programme-level sustainability commitment. The Q1 2026 earnings call contains no mention of construction technology, method, labour or cycle time.",
+     "url": "https://www.bridgeland.com/news/the-howard-hughes-communities-of-bridgeland-and-the-woodlands-earn-leed-precertification/"
+    },
+    {
+     "name": "One Bridgeland Green",
+     "detail": "20203 Bridgeland Creek Parkway, Cypress. Around 50,000 square feet over three storeys. Spruce-pine-fir lumber, dowel-laminated timber decking, cross-laminated timber shear walls, low-carbon concrete. Lake|Flato design, Kirksey architect of record, Tellepsen general contractor. Topped out December 12, 2024, opened November 2025.",
+     "signal_type": "method_risk",
+     "fit_signal": "Greater Houston's first mass timber office building, developed by the land owner itself rather than by a tenant. The one documented case of this firm paying to be first with a structural system.",
+     "url": "https://www.bridgeland.com/news/howard-hughes-celebrates-topping-out-of-one-bridgeland-green-greater-houstons-first-mass-timber-office-building/"
+    }
+   ],
+   "capital_signals": [
+    {
+     "text": "Pershing Square invested $900 million for nine million newly issued shares at $100.00, a 48 percent premium, taking 46.9 percent ownership",
+     "date": "2025-05-05",
+     "url": "https://www.globenewswire.com/news-release/2025/05/05/3073918/0/en/Pershing-Square-to-Invest-900-million-to-Acquire-Nine-Million-Newly-Issued-Shares-of-Howard-Hughes-Holdings-and-Transform-HHH-Into-a-Diversified-Holding-Company.html"
+    }
+   ],
+   "scores": {
+    "repeatability": 3,
+    "wall_share": 2,
+    "innovation": 3,
+    "capital_access": 3,
+    "machine_fit": 1
+   },
+   "mvp_screen": "1,802 residential acres left to sell across three communities, and it paid to put up Greater Houston's first mass timber office. It sells lots, so the builder buys the wall.",
+   "sources": [
+    {
+     "url": "https://developingresilience.uli.org/case/bridgeland/",
+     "date": "2026-09-11"
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2025/05/05/3073918/0/en/Pershing-Square-to-Invest-900-million-to-Acquire-Nine-Million-Newly-Issued-Shares-of-Howard-Hughes-Holdings-and-Transform-HHH-Into-a-Diversified-Holding-Company.html",
+     "date": "2025-05-05"
+    },
+    {
+     "url": "https://www.bridgeland.com/news/the-howard-hughes-communities-of-bridgeland-and-the-woodlands-earn-leed-precertification/",
+     "date": "2022-07-14"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1981792/000162828026053303/hhhsupplemental2q26.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.bridgeland.com/homes/builders-model-homes/",
+     "date": null
+    },
+    {
+     "url": "https://thewoodlandshills.com/homes/home-builders/",
+     "date": null
+    },
+    {
+     "url": "https://communities.howardhughes.com/regions/texas/",
+     "date": null
+    },
+    {
+     "url": "https://communities.howardhughes.com/press-releases/summerlin-and-bridgeland-rank-among-top-15-best-selling-master-planned-communities-nationwide/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#5B7C99",
+   "_machine_why": "Sells lots. The builder buys the wall.",
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "clear"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "tail": false,
+   "group": "channel",
+   "tier": "M",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three communities on one metro's edge, 1,802 residential acres still to sell."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It sells finished lots. The builder who buys them buys the wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Financed and opened Greater Houston's first mass timber office building, with low-carbon concrete in the same structure."
+    }
+   ],
+   "company_li": "https://www.linkedin.com/company/the-howard-hughes-corporation",
+   "company_li_note": null,
+   "team_url": "https://investor.howardhughes.com/governance/leadership",
+   "team_note": null,
+   "_verdict": "1,802 residential acres left to sell across three communities, and it paid to put up Greater Houston's first mass timber office. It sells lots, so the builder buys the wall.",
+   "clears": 2,
+   "short": "Howard Hughes",
+   "cell": "clear|fail",
+   "channel_builders": [
+    "Lennar",
+    "Perry Homes",
+    "David Weekley Homes",
+    "Highland Homes",
+    "Chesmar Homes",
+    "Coventry Homes",
+    "Century Communities, Inc.",
+    "Beazer Homes",
+    "Westin Homes",
+    "Tri Pointe Homes",
+    "Ravenna Homes",
+    "Newmark Homes",
+    "Partners in Building",
+    "J. Patrick Homes",
+    "Brightland Homes"
+   ],
+   "channel_line": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "deciders": [
+    "Stephen Sams"
+   ],
+   "has_decider": true,
+   "decider_confirmed": false,
+   "decider_caveat": true
+  },
+  {
    "target_id": "HOU-015",
    "entity_name": "The Signorelli Company",
    "entity_type": "mpc_developer",
@@ -27814,7 +27957,7 @@
    ],
    "region": "The Woodlands HQ / Fort Bend, Liberty",
    "homepage_url": "https://www.signorellicompany.com/",
-   "synopsis": "Privately held developer with more than 16 master-planned communities and over 23,000 paper lots in pipeline as of August 6, 2026. Developer of Austin Point in Rosenberg, cited at 4,700 to 6,400 acres with roughly 14,000 planned homes, announced September 22, 2023, and Valley Ranch in Liberty County with 2.55 million square feet of retail, 2,000-plus single-family homes and 1,000 multifamily units. The cookie-cutter quote concerns land use and commercial mix, not construction method. John Winniford holds the title President, Homebuilding at Signorelli and is also president of First America Homes. Signorelli itself names a commercial-division construction manager and land-development managers, and no vice president or director of construction. Austin Point acreage is cited as both 4,700 and 6,400 acres in different releases, and the two are not reconciled.",
+   "synopsis": "Privately held land developer with more than 16 master-planned communities and over 23,000 paper lots in pipeline as of August 6, 2026. Developer of Austin Point in Rosenberg, roughly 14,000 planned homes on an acreage cited as both 4,700 and 6,400 in different releases, announced September 22, 2023. Valley Ranch in Liberty County carries more than 2,000 single-family homes and 1,000 multifamily units alongside 2.55 million square feet of retail. John Winniford holds the title President, Homebuilding at Signorelli and is also president of First America Homes. Signorelli itself names a commercial-division construction manager and land-development managers.",
    "key_stat": "23,000+ paper lots in pipeline",
    "principals": [
     {
@@ -27907,7 +28050,29 @@
    "tier": "M",
    "press": [],
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "More than 16 masterplans and over 23,000 paper lots in pipeline."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It sells lots, but it owns First America Homes, and one president runs both."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record about how anything inside its communities is built."
+    }
+   ],
    "company_li": "https://www.linkedin.com/company/signorelli-company",
    "company_li_note": null,
    "team_url": "https://www.signorellicompany.com/our-leadership",
@@ -27918,132 +28083,6 @@
    "channel_builders": [
     "First America Homes"
    ],
-   "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "HOU-011",
-   "entity_name": "Howard Hughes Holdings Inc.",
-   "entity_type": "mpc_developer",
-   "entity_role": "channel",
-   "categories": [
-    "mpc",
-    "public",
-    "developers"
-   ],
-   "region": "The Woodlands HQ / Harris, Montgomery",
-   "homepage_url": "https://www.howardhughes.com/",
-   "synopsis": "NYSE-listed master-planned community developer behind The Woodlands, begun 1974, and Bridgeland, 11,400 acres with construction begun October 2003 and roughly 65,000 residents projected at 2037 buildout. Broke ground on The Woodlands Hills, 2,000 acres and 4,500-plus residences, on November 15, 2017. Pershing Square invested $900 million on May 5, 2025 for 46.9 percent ownership. The Q1 2026 earnings call carries no mention of construction technology, automation, modular, offsite, labour or cycle time.",
-   "key_stat": "$900M Pershing Square investment, 46.9%",
-   "principals": [
-    {
-     "name": "David O'Reilly",
-     "role": "Chief Executive Officer",
-     "linkedin_url": null,
-     "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Chief Executive Officer on Howard Hughes's own leadership page.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20O%27Reilly%20Howard%20Hughes%20Holdings%20Inc."
-    },
-    {
-     "name": "Bill Ackman",
-     "role": "Executive Chairman of the Board",
-     "linkedin_url": null,
-     "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Executive Chairman on Howard Hughes's own leadership page.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bill%20Ackman%20Howard%20Hughes%20Holdings%20Inc."
-    },
-    {
-     "name": "Ryan Israel",
-     "role": "Chief Investment Officer",
-     "linkedin_url": null,
-     "source_url": "https://investor.howardhughes.com/governance/leadership",
-     "source_evidence": "Chief Investment Officer on Howard Hughes's own leadership page.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Israel%20Howard%20Hughes%20Holdings%20Inc."
-    },
-    {
-     "name": "Jim Carman",
-     "role": "President, Houston Region",
-     "linkedin_url": "https://www.linkedin.com/in/carmanjim/",
-     "li_evidence": "Profile opened. President, Texas Region at Howard Hughes Communities. Greater Houston. His own feed carries Bridgeland's number nine national ranking at 500 home sales by mid-2026 and the 83-acre Toro District with the Houston Texans headquarters."
-    }
-   ],
-   "key_projects": [
-    {
-     "name": "Bridgeland",
-     "detail": "Cypress, Harris County. 11,400 acres, construction begun October 2003, home sales from 2006, roughly 65,000 residents projected at 2037 buildout.",
-     "signal_type": "resilience",
-     "fit_signal": "A 900-acre lake and detention network with eight feet of freeboard exceeded Harris County Flood Control District requirements. ULI records no homes taking on water in either the April 2016 Tax Day Flood or Hurricane Harvey in August 2017. Evidence this developer already pays for engineered resilience.",
-     "url": "https://developingresilience.uli.org/case/bridgeland/"
-    },
-    {
-     "name": "The Woodlands Hills",
-     "detail": "Conroe and Willis, Montgomery County. 2,000 acres, more than 4,500 planned residences. Groundbreaking November 15, 2017.",
-     "signal_type": "repeatable",
-     "fit_signal": "4,500-plus residences in one location, though delivered by third-party builders on Howard Hughes lots rather than by Howard Hughes.",
-     "url": "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-corporationr-breaks-ground-woodlands-hills"
-    },
-    {
-     "name": "LEED for Communities precertification",
-     "detail": "Bridgeland and The Woodlands precertified by USGBC on July 14, 2022.",
-     "signal_type": "resilience",
-     "fit_signal": "Programme-level sustainability commitment. The Q1 2026 earnings call contains no mention of construction technology, method, labour or cycle time.",
-     "url": "https://www.bridgeland.com/news/the-howard-hughes-communities-of-bridgeland-and-the-woodlands-earn-leed-precertification/"
-    }
-   ],
-   "capital_signals": [
-    {
-     "text": "Pershing Square invested $900 million for nine million newly issued shares at $100.00, a 48 percent premium, taking 46.9 percent ownership",
-     "date": "2025-05-05",
-     "url": "https://www.globenewswire.com/news-release/2025/05/05/3073918/0/en/Pershing-Square-to-Invest-900-million-to-Acquire-Nine-Million-Newly-Issued-Shares-of-Howard-Hughes-Holdings-and-Transform-HHH-Into-a-Diversified-Holding-Company.html"
-    }
-   ],
-   "scores": {
-    "repeatability": 3,
-    "wall_share": 2,
-    "innovation": 1,
-    "capital_access": 3,
-    "machine_fit": 1
-   },
-   "mvp_screen": "11,400 acres and $900M from Pershing Square, but it sells lots, so the builder buys the wall rather than Howard Hughes.",
-   "sources": [
-    {
-     "url": "https://developingresilience.uli.org/case/bridgeland/",
-     "date": "2026-09-11"
-    },
-    {
-     "url": "https://www.globenewswire.com/news-release/2025/05/05/3073918/0/en/Pershing-Square-to-Invest-900-million-to-Acquire-Nine-Million-Newly-Issued-Shares-of-Howard-Hughes-Holdings-and-Transform-HHH-Into-a-Diversified-Holding-Company.html",
-     "date": "2025-05-05"
-    },
-    {
-     "url": "https://www.bridgeland.com/news/the-howard-hughes-communities-of-bridgeland-and-the-woodlands-earn-leed-precertification/",
-     "date": "2022-07-14"
-    }
-   ],
-   "audit_flags": [],
-   "hue_hex": "#5B7C99",
-   "_machine_why": "Sells lots. The builder buys the wall.",
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "holds": 1,
-   "capital_mark": "clear",
-   "tail": false,
-   "group": "channel",
-   "tier": "M",
-   "press": [],
-   "last_verified": "2026-09-11",
-   "why": [],
-   "company_li": "https://www.linkedin.com/company/the-howard-hughes-corporation",
-   "company_li_note": null,
-   "team_url": "https://investor.howardhughes.com/governance/leadership",
-   "team_note": null,
-   "short": "Howard Hughes",
-   "cell": "clear|fail",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -28106,7 +28145,29 @@
    "tier": "M",
    "press": [],
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Sunterra alone is 2,303 acres in Katy with fifteen builders inside it."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It sells lots. Fifteen builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record about construction method."
+    }
+   ],
    "company_li": "https://www.linkedin.com/company/land-tejas-companies",
    "company_li_note": null,
    "team_url": "https://landtejas.com/about-us/our-leadership/",
@@ -28174,7 +28235,29 @@
    "tier": "M",
    "press": [],
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Towne Lake and The Highlands carry about 4,000 planned homes across 12 builders."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It sells lots and does not pour walls."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Publishes no construction-method content."
+    }
+   ],
    "company_li": "https://www.linkedin.com/company/caldwell-companies",
    "company_li_note": null,
    "team_url": "https://caldwellcos.com/our-team",
@@ -28244,7 +28327,29 @@
    "tier": "M",
    "press": [],
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Fourteen concurrent Houston masterplans."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It sells lots across all fourteen. The builders inside buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Publishes no construction-method content."
+    }
+   ],
    "company_li": "https://www.linkedin.com/company/the-johnson-development-corp",
    "company_li_note": null,
    "team_url": "https://www.johnsondevelopment.com/our-leaders",
@@ -28316,7 +28421,29 @@
    "tier": "M",
    "press": [],
    "last_verified": "2026-09-11",
-   "why": [],
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "One Houston community, Elyson, at 3,600 acres in Katy."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It sells lots, and the platform now sits inside Brookfield Residential."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record about construction method."
+    }
+   ],
    "company_li": "https://www.linkedin.com/company/newland-communities-llc",
    "company_li_note": null,
    "team_url": null,

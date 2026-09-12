@@ -33,10 +33,11 @@ from trades import (TRADES, NEW_TRADES, NEW_METHOD, PRINTED_ADOPTERS,
 import research2 as R2
 from market import CLOSINGS, BANDS, PRINTED, TIMELINE
 import permits as PM
+import focus as FOCUS
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 46
+BUILD = 48
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -207,8 +208,11 @@ def finalize(recs):
         for p in t["key_projects"]:
             p["signal_type"] = SIGNAL_MERGE.get(p["signal_type"], p["signal_type"])
 
-        if t["group"] in ("adopter", "a", "b", "trade", "national", "creative", "icon"):
-            if "_why" in t:
+        if t["group"] in ("adopter", "a", "b", "trade", "national", "creative", "icon",
+                          "channel"):
+            if t["target_id"] in FOCUS.WHY:
+                texts = list(FOCUS.WHY[t["target_id"]])
+            elif "_why" in t:
                 texts = t["_why"]
             else:
                 if t["target_id"] not in WHY:
@@ -327,12 +331,55 @@ _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer"))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
+
+# focus.py runs before anything reads a mark or a section, because it changes one.
+# It points each record at the product a printer can serve and drops the portfolio
+# that has nothing to do with a wall.
+for t in targets:
+    tid = t["target_id"]
+    if tid in FOCUS.SYNOPSIS:
+        t["synopsis"] = FOCUS.SYNOPSIS[tid]
+    if tid in FOCUS.SCREEN:
+        t["mvp_screen"] = t["_verdict"] = FOCUS.SCREEN[tid]
+    if tid in FOCUS.KEY_STAT:
+        t["key_stat"] = FOCUS.KEY_STAT[tid]
+    if tid in FOCUS.SCORE:
+        t["scores"].update(FOCUS.SCORE[tid])
+        for _k, _v in FOCUS.SCORE[tid].items():
+            t["marks"][_k] = mark(_v)
+        t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
+        t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
+    for _pr in t["principals"]:
+        _rt = FOCUS.RETITLE.get((tid, _pr["name"]))
+        if _rt:
+            _pr["role"] = _rt
+    for (_tid, _nm), (_role, _url, _ev) in FOCUS.PEOPLE.items():
+        if _tid != tid or any(p["name"] == _nm for p in t["principals"]):
+            continue
+        _p = {"name": _nm, "role": _role, "source_url": _url, "source_evidence": _ev}
+        _conf = FOCUS.DECIDER.get((tid, _nm))
+        if _conf is not None:
+            _p["decider"] = True
+            if not _conf:
+                _p["probable"] = True
+        t["principals"].append(_p)
+    for _a, _b, _c, _d, _e in FOCUS.PROJECTS.get(tid, []):
+        if not any(k["name"] == _a for k in t["key_projects"]):
+            t["key_projects"].append({"name": _a, "detail": _b, "signal_type": _c,
+                                      "fit_signal": _d, "url": _e})
+    for _u in FOCUS.SOURCES.get(tid, []):
+        if not any(x.get("url") == _u for x in t["sources"]):
+            t["sources"].append({"url": _u, "date": None})
+
 for t in targets:
     t["short"] = SHORT.get(t["target_id"], t["entity_name"])
     t["cell"] = t["marks"]["repeatability"] + "|" + t["marks"]["machine_fit"]
     ch = CHANNEL.get(t["target_id"])
     if ch:
         t["channel_line"], t["channel_builders"] = ch
+    if t["target_id"] in FOCUS.BUILDERS:
+        t["channel_builders"] = FOCUS.BUILDERS[t["target_id"]]
+        t["channel_line"] = FOCUS.CHANNEL_LINE.get(t["target_id"], t.get("channel_line", ""))
 
 # Open items carry two different kinds of sentence. One is a finding a reader can
 # act on: a purchasing lead changed, a parent owns the land, a figure came from
@@ -620,14 +667,8 @@ DATA = {
    "places": [{"name": nm, "county": ct, "sf": v, "quantity": PM.QUANTITY}
               for nm, ct, v in PM.PLACE if any(v)],
    "geom": PM.GEOM,
-   "crossref": [{"label": lb, "geo": gg, "year": yy, "value": vv,
-                 "url": PM.SOURCE[k][0], "source": PM.SOURCE[k][1], "independent": ind}
-                for lb, gg, yy, vv, k, ind in PM.CROSSREF],
-   "revisions": [{"year": y, "first": a, "now": b} for y, a, b in PM.REVISIONS],
-   "defs": [{"title": a, "text": b} for a, b in PM.DEFS],
    "sources": [{"url": u, "label": l} for u, l in
-               [PM.SOURCE[k] for k in ("socds", "defs", "method", "announce",
-                                       "highlights", "txt2018", "nahb", "txdot")]],
+               [PM.SOURCE[k] for k in ("socds", "defs", "txdot")]],
  })(),
  "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"], "out": g["out"],
            "principals": n_people, "linkedin_held": n_li, "audit_flags": n_flags,
