@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 44 · 2026-09-12
+Build 45 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -337,6 +337,38 @@ unincorporated Montgomery and unincorporated Fort Bend, at 11,014, 9,056 and
 
 The workbook gained a Permits sheet, kept separate from Contacts for the same
 reason the figures are kept apart.
+
+## Build 45: the map, drawn properly
+
+The outlines were the problem. TxDOT's service simplifies each county on its own,
+so at the tolerance Build 44 used, two counties' shared border came back as two
+different lines up to about 600 metres apart. At the size the map draws that is
+nearly two pixels, which is why every seam read as a doubled or broken line.
+
+The outlines are now pulled at about 130 metres and snapped to three decimals,
+which is under a pixel at this scale, so a shared border lands on one line. 3,536
+points across 18 rings, 67KB in the payload.
+
+What changed in the drawing:
+
+- **One boundary layer, on top of the fills.** Counties are filled with no stroke;
+  every outline is then drawn once in a single grey hairline above them. Because
+  the shared edges now coincide, two counties' seam renders as one line, and the
+  metro's outer edge is the same weight as every interior border.
+- **Labels sit at each county's pole of inaccessibility**, not its centroid: the
+  interior point farthest from any edge, found by a coarse grid pass and two
+  refinements. A centroid puts "Waller" on the Harris border; this does not.
+  Counties with little room get the same label one step smaller rather than
+  losing their figure.
+- **The ramp starts at #EDEDED**, not near-white, so the quietest county still
+  reads as a filled shape against the page.
+- **The key is one continuous strip** in the empty lower left, labelled at its two
+  ends only, instead of six swatches with a number under each. The old one also
+  ran off the right edge, because `.axt` sets `text-anchor: middle` in CSS and was
+  overriding the `text-anchor="end"` attribute. There are now `.axs` and `.axe`
+  classes for that.
+- **Below 700px the map keeps a working size and scrolls inside its own wrapper.**
+  Scaled to a phone column it was ten unreadable labels.
 
 ## Live numbers
 

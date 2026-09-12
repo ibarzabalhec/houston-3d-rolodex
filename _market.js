@@ -226,12 +226,13 @@ var PM=D.permits||{};
 var PSRC=PM.sources||[];
 function psrc(){var a=[].slice.call(arguments);
   return PSRC.filter(function(s){return a.some(function(k){return s.url.indexOf(k)>-1;});});}
+var RAMP=['#EDEDED','#D6D6D6','#B6B6B6','#8A8A8A','#4F4F4F','#111111'];
 function shade(v,max){ /* 0..1 -> paper to ink, five steps, printable */
-  if(!max) return '#F4F4F4';
+  if(!max) return RAMP[0];
   var t=Math.sqrt(v/max), i=Math.min(5,Math.floor(t*5.999));
-  return ['#F4F4F4','#E0E0E0','#C2C2C2','#949494','#565656','#111111'][i];
+  return RAMP[i];
 }
-function inkOn(hex){return (hex==='#565656'||hex==='#111111')?'#FFFFFF':'#111111';}
+function inkOn(hex){return (hex==='#4F4F4F'||hex==='#111111')?'#FFFFFF':'#111111';}
 
 /* 7. The metro series. One column a year, single family only. */
 function figPermits(){
@@ -269,72 +270,121 @@ function figPermits(){
     h, tbl, psrc('huduser','definitions'));
 }
 
-/* 8. The ten counties, drawn. */
+/* 8. The ten counties, drawn. Outlines are TxDOT's, at a fidelity where a shared
+   border between two counties lands on the same pixel, so the seam reads as one
+   line. Fill is the sequential ramp; labels sit at each county's pole of
+   inaccessibility rather than its centroid, so they stay inside the shape. */
 var PYEAR=2025;
 function figCountyMap(){
   var G=PM.geom||[], C=PM.counties||[]; if(!G.length||!C.length) return '';
-  var yrs=C[0].years, W=640,H=430;
+  var yrs=C[0].years, W=680,H=470, PAD=26;
   var lo=[999,999],hi=[-999,-999];
   G.forEach(function(f){f.rings.forEach(function(p){p.forEach(function(r){r.forEach(function(c){
     lo[0]=Math.min(lo[0],c[0]);lo[1]=Math.min(lo[1],c[1]);
     hi[0]=Math.max(hi[0],c[0]);hi[1]=Math.max(hi[1],c[1]);});});});});
   var k=Math.cos((lo[1]+hi[1])/2*Math.PI/180);
-  var sx=(W-20)/((hi[0]-lo[0])*k), sy=(H-20)/(hi[1]-lo[1]), sc=Math.min(sx,sy);
-  var ox=(W-(hi[0]-lo[0])*k*sc)/2, oy=(H-(hi[1]-lo[1])*sc)/2;
+  var sc=Math.min((W-2*PAD)/((hi[0]-lo[0])*k), (H-2*PAD-30)/(hi[1]-lo[1]));
+  var ox=(W-(hi[0]-lo[0])*k*sc)/2, oy=PAD;
   var PX=function(c){return [ox+(c[0]-lo[0])*k*sc, oy+(hi[1]-c[1])*sc];};
-  var body='<div class="mapwrap"><div class="yrctl"><label for="pyr">Year</label>'+
+
+  /* the point inside a ring that is farthest from any edge: a coarse grid pass
+     then two refinements. Cheap, and it never puts a label outside its county. */
+  function ptSeg(px,py,ax,ay,bx,by){
+    var dx=bx-ax, dy=by-ay, l=dx*dx+dy*dy, t=l?((px-ax)*dx+(py-ay)*dy)/l:0;
+    t=t<0?0:(t>1?1:t);
+    var qx=ax+t*dx-px, qy=ay+t*dy-py; return Math.sqrt(qx*qx+qy*qy);
+  }
+  function inside(px,py,r){
+    var on=false;
+    for(var i=0,j=r.length-1;i<r.length;j=i++){
+      var a=r[i],b=r[j];
+      if((a[1]>py)!==(b[1]>py) && px<(b[0]-a[0])*(py-a[1])/(b[1]-a[1])+a[0]) on=!on;
+    }
+    return on;
+  }
+  function labelPoint(r){
+    var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
+    r.forEach(function(p){x0=Math.min(x0,p[0]);y0=Math.min(y0,p[1]);x1=Math.max(x1,p[0]);y1=Math.max(y1,p[1]);});
+    var best=null, bd=-1, step=Math.max((x1-x0),(y1-y0))/22;
+    function scan(cx0,cy0,cx1,cy1,st){
+      for(var x=cx0;x<=cx1;x+=st) for(var y=cy0;y<=cy1;y+=st){
+        if(!inside(x,y,r)) continue;
+        var d=1e9;
+        for(var i=0,j=r.length-1;i<r.length;j=i++){
+          d=Math.min(d,ptSeg(x,y,r[i][0],r[i][1],r[j][0],r[j][1]));
+          if(d<bd) break;
+        }
+        if(d>bd){bd=d;best=[x,y];}
+      }
+    }
+    scan(x0,y0,x1,y1,step);
+    if(best){ scan(best[0]-step,best[1]-step,best[0]+step,best[1]+step,step/4); }
+    if(best){ scan(best[0]-step/4,best[1]-step/4,best[0]+step/4,best[1]+step/4,step/12); }
+    return {p:best||[(x0+x1)/2,(y0+y1)/2], r:bd};
+  }
+  /* placed once, in screen space, and cached: the projection never changes */
+  var ANCHOR={};
+  G.forEach(function(f){
+    var big=null, ba=-1;
+    f.rings.forEach(function(poly){
+      var r=poly[0], a=0;
+      for(var j=0;j<r.length;j++){var q=r[j],w=r[(j+1)%r.length];a+=q[0]*w[1]-w[0]*q[1];}
+      a=Math.abs(a/2); if(a>ba){ba=a;big=r;}
+    });
+    ANCHOR[f.fips]=labelPoint(big.map(PX));
+  });
+
+  var body='<div class="yrctl"><label for="pyr">Year</label>'+
     '<input type="range" id="pyr" min="'+yrs[0]+'" max="'+yrs[yrs.length-1]+'" value="'+PYEAR+'" step="1">'+
-    '<output id="pyrv">'+PYEAR+'</output></div><div id="mapHost"></div></div>';
-  var tbl='<table class="ftab"><thead><tr><th>County</th>'+yrs.filter(function(y){return y%5===0||y===yrs[yrs.length-1];}).map(function(y){return '<th>'+y+'</th>';}).join('')+'</tr></thead><tbody>'+
+    '<output id="pyrv">'+PYEAR+'</output></div><div id="mapHost"></div>';
+  var shown=yrs.filter(function(y,i){return y%5===0||i===yrs.length-1;});
+  var tbl='<table class="ftab"><thead><tr><th>County</th>'+shown.map(function(y){return '<th class="num">'+y+'</th>';}).join('')+'</tr></thead><tbody>'+
     C.slice().sort(function(a,b){return b.sf[b.sf.length-1]-a.sf[a.sf.length-1];}).map(function(c){
-      return '<tr><td>'+esc(c.name)+'</td>'+yrs.map(function(y,i){
-        return (y%5===0||i===yrs.length-1)?'<td>'+fmt(c.sf[i])+'</td>':'';}).join('')+'</tr>';}).join('')+
+      return '<tr><td>'+esc(c.name)+'</td>'+shown.map(function(y){
+        return '<td class="num">'+fmt(c.sf[c.years.indexOf(y)])+'</td>';}).join('')+'</tr>';}).join('')+
     '</tbody></table>';
+
   window.__drawMap=function(){
     var i=yrs.indexOf(PYEAR); if(i<0) i=yrs.length-1;
-    var vals=C.map(function(c){return c.sf[i];}), max=Math.max.apply(null,vals);
+    var max=Math.max.apply(null,C.map(function(c){return c.sf[i];}));
     var h=svgOpen(W,H,'map');
+    var D_={};
     G.forEach(function(f){
-      var c=C.filter(function(x){return x.fips===f.fips;})[0]; if(!c) return;
-      var v=c.sf[i], fill=shade(v,max);
-      var d=f.rings.map(function(poly){return poly.map(function(ring){
+      D_[f.fips]=f.rings.map(function(poly){return poly.map(function(ring){
         return 'M'+ring.map(function(pt){var q=PX(pt);return q[0].toFixed(1)+' '+q[1].toFixed(1);}).join('L')+'Z';}).join('');}).join('');
-      var tip=c.name+' County, '+PYEAR+': '+fmt(v)+' single-family units authorised.';
-      h+='<path d="'+d+'" class="cty" fill="'+fill+'"'+tipAttr(tip)+'/>';
     });
+    h+='<g class="ctys">';
     G.forEach(function(f){
       var c=C.filter(function(x){return x.fips===f.fips;})[0]; if(!c) return;
       var v=c.sf[i], fill=shade(v,max);
-      var big=null, ba=-1;
-      f.rings.forEach(function(poly){
-        var r=poly[0], a=0;
-        for(var j=0;j<r.length;j++){var q=r[j],w=r[(j+1)%r.length];a+=q[0]*w[1]-w[0]*q[1];}
-        a=Math.abs(a/2); if(a>ba){ba=a;big=r;}
-      });
-      var cx=0, cy=0, aa=0;
-      for(var j=0;j<big.length;j++){
-        var A=PX(big[j]), B=PX(big[(j+1)%big.length]);
-        var cr=A[0]*B[1]-B[0]*A[1];
-        aa+=cr; cx+=(A[0]+B[0])*cr; cy+=(A[1]+B[1])*cr;
-      }
-      if(Math.abs(aa)>1e-6){cx/=(3*aa); cy/=(3*aa);}
-      else {cx=0;cy=0;big.forEach(function(pt){var q=PX(pt);cx+=q[0];cy+=q[1];});cx/=big.length;cy/=big.length;}
-      var pen=' fill="'+inkOn(fill)+'" stroke="'+fill+'" stroke-width="3.5"';
-      h+='<text x="'+cx.toFixed(0)+'" y="'+cy.toFixed(0)+'" class="ctyl"'+pen+'>'+esc(c.name)+'</text>'+
-         '<text x="'+cx.toFixed(0)+'" y="'+(cy+14).toFixed(0)+'" class="ctyv"'+pen+'>'+fmt(v)+'</text>';
+      h+='<path d="'+D_[f.fips]+'" class="cty" fill="'+fill+'"'+
+         tipAttr(c.name+' County, '+PYEAR+': '+fmt(v)+' single-family units authorised')+'/>';
     });
-    var kx=W-250, ky=H-24;
-    h+='<text x="'+kx+'" y="'+(ky-8)+'" class="axl">Units authorised, '+PYEAR+'</text>';
-    [0,1,2,3,4,5].forEach(function(b){
-      var lo=Math.round(max*Math.pow(b/6,2)), fill=['#F4F4F4','#E0E0E0','#C2C2C2','#949494','#565656','#111111'][b];
-      h+='<rect x="'+(kx+b*38)+'" y="'+ky+'" width="36" height="10" fill="'+fill+'" stroke="#CFCFCF"/>'+
-         '<text x="'+(kx+b*38)+'" y="'+(ky+22)+'" class="axt" text-anchor="start">'+fmt(lo)+'</text>';
+    h+='</g><g class="ctyedge">'+G.map(function(f){return '<path d="'+D_[f.fips]+'"/>';}).join('')+
+       '</g><g class="ctyls">';
+    G.forEach(function(f){
+      var c=C.filter(function(x){return x.fips===f.fips;})[0]; if(!c) return;
+      var v=c.sf[i], fill=shade(v,max), A=ANCHOR[f.fips], x=A.p[0], y=A.p[1];
+      var tight=A.r<30, fs=tight?10:12, vs=tight?9:10.5;
+      var pen=' fill="'+inkOn(fill)+'" stroke="'+fill+'" stroke-width="'+(tight?2.4:3)+'"';
+      h+='<text x="'+x.toFixed(0)+'" y="'+(y-2).toFixed(0)+'" class="ctyl" style="font-size:'+fs+'px"'+pen+'>'+esc(c.name)+'</text>'+
+         '<text x="'+x.toFixed(0)+'" y="'+(y+(tight?9:12)).toFixed(0)+'" class="ctyv" style="font-size:'+vs+'px"'+pen+'>'+fmt(v)+'</text>';
     });
+    h+='</g>';
+    /* key: a continuous strip, two labels, no ladder of numbers */
+    var KW=170, kx=14, ky=H-34;
+    h+='<text x="'+kx+'" y="'+(ky-9)+'" class="axl">Units authorised, '+PYEAR+'</text>';
+    RAMP.forEach(function(fill,b){
+      h+='<rect x="'+(kx+b*(KW/6)).toFixed(1)+'" y="'+ky+'" width="'+(KW/6).toFixed(1)+'" height="9" fill="'+fill+'" '+
+         'stroke="#CFCFCF" stroke-width=".5"/>';
+    });
+    h+='<text x="'+kx+'" y="'+(ky+20)+'" class="axs">0</text>'+
+       '<text x="'+(kx+KW)+'" y="'+(ky+20)+'" class="axe">'+fmt(max)+'</text>';
     h+='</svg>';
     var host=document.getElementById('mapHost'); if(host) host.innerHTML=h;
   };
   return figure('Where the permits are',
-    'Single-family units authorised by county. Shading runs light to dark on a square-root scale, and is grey throughout: on this page the accent colour means only that a firm has paid for a new building method. County outlines are TxDOT’s, simplified. Drag the year.',
+    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to Harris. The ramp is grey to ink and never the accent: on this page the accent means one thing, that a firm has paid for a new building method. Outlines are TxDOT’s published county boundaries. Drag the year.',
     body, tbl, psrc('huduser','txdot'), 'figMap');
 }
 
