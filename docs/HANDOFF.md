@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 45 · 2026-09-12
+Build 46 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -369,6 +369,33 @@ What changed in the drawing:
   classes for that.
 - **Below 700px the map keeps a working size and scrolls inside its own wrapper.**
   Scaled to a phone column it was ten unreadable labels.
+
+## Build 46: the list stops being a table on a phone
+
+The List view had seven columns inside a 358px column. The fix in an earlier
+build was to make the firm name sticky and let the rest scroll sideways, with a
+hint reading "Swipe sideways for the counts". The firm column takes whatever
+width the other six do not, which on a phone is about 500px, so the sticky cell
+covered the whole viewport and the columns you were swiping toward stayed
+underneath it. The counts were unreachable. Two smaller faults sat next to it:
+the section header spanned six columns in a seven-column table, leaving a stray
+cell, and its note was clipped at the scroll edge.
+
+Below 640px each firm is now one stacked block. Name on its own line, the three
+counts and the decision-maker as labelled chips in two columns, the headline
+figure underneath, and the call-list button in the top right corner. No sideways
+scroll anywhere, and the headline figure comes back rather than being hidden to
+buy width.
+
+The markup did not change, so the desktop table and everything reading it are
+untouched. Each count cell carries a `data-l` attribute with its short column
+name, which the stacked layout prints as the chip's label and the table ignores.
+A labelled cell with nothing in it hides itself, so a firm with no named decider
+does not print a "Decision-maker" label over an empty space.
+
+The verifier now opens List at 320, 390 and 430 and fails the build if the table
+scrolls sideways, if any count sits past the right edge, or if a label prints
+with nothing under it.
 
 ## Live numbers
 

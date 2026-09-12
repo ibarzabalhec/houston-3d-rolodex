@@ -547,13 +547,45 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .lim b{font:600 9.5px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
 .lim span{font-size:13.5px;line-height:1.62;color:var(--ink2)}
 @media(max-width:720px){.lim{grid-template-columns:1fr;gap:6px}}
-/* The headline figure is the widest column and the least useful on a phone,
-   where the table already has to scroll sideways to reach the counts. */
-@media(max-width:640px){.hf{display:none}
-  table td:first-child,table th:first-child,.ctab td:first-child,.ctab th:first-child{position:sticky;left:0;background:var(--paper);z-index:1}
-  tr.grp td:first-child{background:var(--paper3)}
+/* On a phone the list stops being a table. Seven columns inside 358px meant a
+   sideways swipe past a sticky firm name that covered the counts you were
+   swiping to reach, so the counts were unreachable. Each firm is now one
+   stacked block: name, then the three counts and the decision-maker as labelled
+   chips, with the call-list button in the corner. No sideways scroll at all. */
+@media(max-width:640px){
+  #stageList .scroll{overflow-x:visible;border-top:0}
+  #stageList table{min-width:0;display:block}
+  #stageList thead{display:none}
+  #stageList tbody{display:block}
+  #stageList tr{display:block;position:relative;border-bottom:1px solid var(--rule);
+    padding:14px 44px 14px 0}
+  #stageList td{display:inline-flex;align-items:baseline;gap:8px;border:0;padding:0;
+    font-size:13px;margin:0 16px 0 0}
+  #stageList td[data-l]::before{content:attr(data-l);font:600 9px/1.4 var(--mono);
+    letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+  #stageList td.f{display:block;width:100%;margin:0 0 3px}
+  #stageList td.f .fbtn2{padding:0;font-size:15px;line-height:1.3}
+  #stageList td.hf{display:block;width:100%;margin:3px 0 0;color:var(--ink2);line-height:1.5}
+  #stageList td.hf::before{display:block;margin-bottom:3px}
+  #stageList td.hf:empty{display:none}
+  #stageList td.ac{position:absolute;top:12px;right:0;width:auto;margin:0}
+  #stageList tr.grp{padding:16px 0 10px;border-bottom:1px solid var(--ink);background:none}
+  #stageList tr.grp td{display:block;width:100%;margin:0;background:none}
+  #stageList tr.grp em{display:block;margin:4px 0 0}
+  #stageList tr.grp .grpadd{float:none;display:inline-block;margin:10px 0 2px}
+  #stageList td[data-l]:empty{display:none}
+  #stageList tr:not(.grp){display:flex;flex-wrap:wrap;align-items:baseline;
+    column-gap:18px;row-gap:7px}
+  #stageList tr:not(.grp) td[data-l]:not(.hf){flex:0 0 calc(50% - 9px);margin:0;
+    justify-content:flex-start;min-width:0}
+  #stageList td[data-l]:not(.hf)::before{flex:0 0 auto}
+  #stageList tr:has(td.empty){padding:24px 0}
+  .swipe::after{display:none}
+  .swipe-hint{display:none!important}
   .legend{gap:12px 18px}
-  table th,table td{padding-right:8px}}
+  /* other tables on the page keep the sticky-first-column treatment */
+  .ctab td:first-child,.ctab th:first-child{position:sticky;left:0;background:var(--paper);z-index:1}
+  .ctab th,.ctab td{padding-right:8px}}
 .end{padding:34px 0 60px;font:600 9.5px/1.7 var(--mono);letter-spacing:.08em;
   text-transform:uppercase;color:var(--ink3)}
 
@@ -1256,6 +1288,8 @@ initAtmosphere();
 var D=JSON.parse(document.getElementById('rolodex-data').textContent),T=D.targets;
 var M=D.matrix,ORD=M.order,W=M.words,byId={};
 var GL=D.group_labels||{},GN=D.group_notes||{};
+/* short column names for the stacked phone layout */
+var AT={repeatability:'Repetition',machine_fit:'Printer fit',innovation:'Track record'};
 T.forEach(function(t){byId[t.target_id]=t;});
 T=T.filter(function(t){return t.group!=='out';});
 var call=[],mode='matrix',q='',view='index',viewing=null;
@@ -1421,19 +1455,20 @@ function drawList(){
     shown+=rows.length;
     var ids=rows.map(function(t){return t.target_id;}).join(',');
     var allIn=rows.every(function(t){return call.indexOf(t.target_id)>=0;});
-    h+='<tr class="grp"><td colspan="6">'+esc(g[1])+' &middot; '+rows.length+
+    h+='<tr class="grp"><td colspan="7">'+esc(g[1])+' &middot; '+rows.length+
        (g[2]?'<em>'+esc(g[2])+'</em>':'')+
        '<button class="grpadd" data-addmany="'+ids+'">'+(allIn?'Remove all':'Add all')+'</button>'+
-       '</td><td class="ac"></td></tr>';
+       '</td></tr>';
     rows.forEach(function(t){
       var inCall=call.indexOf(t.target_id)>=0;
       h+='<tr><td class="f"><button class="fbtn2" data-id="'+t.target_id+'">'+
           esc(t.entity_name)+'</button></td>'+
-        ['repeatability','machine_fit','innovation'].map(function(k){
-          return '<td><span class="yn '+k+' '+t.marks[k]+'">'+W[t.marks[k]]+'</span></td>';}).join('')+
-        '<td>'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
+        ['repeatability','machine_fit','innovation'].map(function(k,i){
+          return '<td data-l="'+esc(AT[k]||'')+'"><span class="yn '+k+' '+t.marks[k]+'">'+
+                 W[t.marks[k]]+'</span></td>';}).join('')+
+        '<td data-l="Decision-maker">'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
                  (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':''))+'</td>'+
-        '<td class="hf">'+esc(t.key_stat||'')+'</td>'+
+        '<td class="hf" data-l="Headline figure">'+esc(t.key_stat||'')+'</td>'+
         '<td class="ac"><button class="rowadd'+(inCall?' on':'')+'" data-add="'+t.target_id+
           '" aria-pressed="'+inCall+'" aria-label="'+(inCall?'Remove ':'Add ')+esc(t.entity_name)+
           ' to call list" title="'+(inCall?'Remove from call list':'Add to call list')+'">'+

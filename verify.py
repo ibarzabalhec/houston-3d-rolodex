@@ -533,6 +533,33 @@ async def main():
             if over > 0:
                 problems.append("horizontal overflow at %dpx" % w)
 
+            # the list stops being a table on a phone. Seven columns inside a
+            # 358px column used to mean a sideways swipe past a sticky firm
+            # name that covered the counts you were swiping to reach. Every
+            # count has to sit inside the viewport, with nothing to scroll.
+            if w <= 430:
+                await pg.evaluate("document.getElementById('vList').click()")
+                await pg.wait_for_timeout(350)
+                lst = await pg.evaluate(
+                    "(()=>{const s=document.querySelector('#listSwipe .scroll');"
+                    "const cw=document.documentElement.clientWidth;"
+                    "const cells=[...document.querySelectorAll('#tb tr:not(.grp) td[data-l]')];"
+                    "const out=cells.filter(c=>c.getBoundingClientRect().right>cw+1).length;"
+                    "const lab=cells.filter(c=>c.offsetParent&&!c.textContent.trim()).length;"
+                    "return {h:s.scrollWidth-s.clientWidth,out:out,rows:"
+                    "document.querySelectorAll('#tb tr:not(.grp)').length,emptyLabelled:lab}})()")
+                print("list at %-4d   : hscroll %s, cells past the edge %s, rows %s"
+                      % (w, lst["h"], lst["out"], lst["rows"]))
+                if lst["h"] > 0:
+                    problems.append("the list scrolls sideways at %dpx" % w)
+                if lst["out"]:
+                    problems.append("%d list cells sit past the right edge at %dpx"
+                                    % (lst["out"], w))
+                if lst["emptyLabelled"]:
+                    problems.append("a list cell prints its label with nothing under it at %dpx" % w)
+                await pg.evaluate("document.getElementById('vMatrix').click()")
+                await pg.wait_for_timeout(200)
+
         await b.close()
 
     if problems:
