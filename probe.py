@@ -39,6 +39,41 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 
 SKIP_HOST = {"linkedin.com", "www.linkedin.com"}
+
+# Pages a script cannot read that were opened in a browser by hand, with what
+# was on them. A host that answers 403 to urllib is not evidence of anything, so
+# these are reported as read rather than as unknown. Date them and say what you
+# saw, so the next person can tell a stale note from a fresh one.
+VERIFIED = {
+    "https://burtonconstruction.com/leadership/":
+        "2026-09-12: eight names. Shawn McAlpin CEO, Cullen Burton President.",
+    "https://investor.lgihomes.com/corporate-governance/management":
+        "2026-09-12: four officers. Lipar, Snider, Merdian, Garber. No purchasing seat.",
+    "https://investors.mihomes.com/investor-relations/officers-directors/default.aspx":
+        "2026-09-12: Schottenstein, Creek, Krohne, plus the board. The words "
+        "Houston and Purchasing do not appear.",
+    "https://investors.camdenliving.com/investors/governance/board-of-directors/default.aspx":
+        "2026-09-12: Jessett and Campo on the board of trust managers.",
+    "https://investors.centurycommunities.com/governance/executive-management/default.aspx":
+        "2026-09-12: Francescon. Division leadership is not published here.",
+    "https://investor.howardhughes.com/governance/leadership":
+        "2026-09-12: Ackman, O'Reilly, Israel, Olea, Valane.",
+    "https://www.risewellhomes.com/team":
+        "2026-09-12: Zaist President and CEO, Jennifer Keller Houston Division "
+        "President, plus ten more division presidents.",
+    "https://www.builderonline.com/firms/tilson-homes/":
+        "2026-09-12: Edward Martin as CEO, 425 closings, rank 119.",
+    "https://www.builderonline.com/firms/long-lake-limited/":
+        "2026-09-12: Craig Jones, 782 closings in 2025, 912 in 2024.",
+    "https://www.builderonline.com/builder-100/strategy/imagination-homes-targets-attainable-entry-level-housing-in-texas/":
+        "2026-09-12: quotes Greg Grahmann as director at Imagination Homes and "
+        "gives him no other title.",
+    "https://www.newquest.com/about-us/leadership/":
+        "2026-09-12: renders navigation only, 1,373 characters, no names, in a "
+        "real browser after ten seconds.",
+    "https://houstonagentmagazine.com/2026/02/10/j-patrick-homes-small-lots-grange/":
+        "2026-09-12: sits on a Cloudflare interstitial in a real browser too.",
+}
 # Common first-name spellings that differ between a bio page and a directory.
 NICK = {"mike": "michael", "jim": "james", "bob": "robert", "bill": "william",
         "tom": "thomas", "dan": "daniel", "dave": "david", "chris": "christopher",
@@ -119,11 +154,21 @@ def main():
     d = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
     want_titles = "--titles" in sys.argv
 
-    jobs = {}
+    jobs, li_only = {}, []
     for t in d["targets"]:
         for p in t["principals"]:
-            u = p.get("source_url") or t.get("team_url")
-            if not u or urlparse(u).netloc.lower() in SKIP_HOST:
+            # Only the page cited FOR THIS PERSON. An earlier version fell back to
+            # the firm's team_url, which on a public builder is an investor-
+            # relations officers page: a division purchasing lead would never be
+            # on it, so "not found there" said nothing at all. That test nearly
+            # cost eight real contacts.
+            u = p.get("source_url")
+            if not u:
+                if p.get("linkedin_url"):
+                    li_only.append((t["short"], p["name"], bool(p.get("decider"))))
+                continue
+            if urlparse(u).netloc.lower() in SKIP_HOST:
+                li_only.append((t["short"], p["name"], bool(p.get("decider"))))
                 continue
             jobs.setdefault(u, []).append((t["short"], p["name"], p.get("role", ""),
                                            bool(p.get("decider"))))
@@ -180,14 +225,23 @@ def main():
         for firm, nm, role, u in title_off:
             print("  %-28s %-24s %s" % (firm[:28], nm[:24], role[:46]))
             print("      %s" % u)
-    print("\nnot claimed either way, the page could not be read: %d" % len(review))
+    seen_v = {u for _f, _n, _d, u, _w in review if u in VERIFIED}
+    print("\nread in a browser by hand, not by this script: %d pages" % len(seen_v))
+    for u in sorted(seen_v):
+        print("  %s\n     %s" % (u, VERIFIED[u]))
+    rest = [r for r in review if r[3] not in VERIFIED]
+    print("\nnot claimed either way, the page could not be read: %d" % len(rest))
     seen = set()
-    for firm, nm, dec, u, why in review:
+    for firm, nm, dec, u, why in rest:
         if (u, why) in seen:
             continue
         seen.add((u, why))
         print("  %-24s %-34s %s" % (why[:24], firm[:34], u))
     print("\nname found on the cited page: %d" % ok)
+    print("LinkedIn headline only, no firm page to check against: %d"
+          % len(li_only))
+    for firm, nm, dec in sorted(li_only, key=lambda x: (not x[2], x[0])):
+        print("  %s%-30s %s" % ("* " if dec else "  ", firm[:30], nm))
     print("* marks a contact flagged as the person who can change a wall spec")
 
     OUT.parent.mkdir(exist_ok=True)

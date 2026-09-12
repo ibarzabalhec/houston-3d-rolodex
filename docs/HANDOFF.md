@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 53 · 2026-09-12
+Build 54 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,6 +530,52 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 54: the browser round, and the probe's own false positive
+
+Build 53 left 41 contacts on pages a script cannot read: hosts that answer 403,
+sites that render their names from JavaScript, and one that serves a 182-byte bot
+stub. Those were reported as unread rather than as clean. This build opened them
+in a real browser.
+
+**Twelve pages read by hand.** Nine confirmed every name on them: Burton
+Construction, LGI, M/I, Camden, Century, Howard Hughes, Risewell, and the Builder
+firm pages for Tilson and Long Lake. Two are unreadable even in a browser:
+houstonagentmagazine sits on a Cloudflare interstitial, and NewQuest's leadership
+page renders 1,373 characters of navigation and no names after ten seconds.
+
+**The probe was over-reporting, and that is the finding of this build.** It tested
+each contact against `source_url` **or the firm's `team_url`**. For a contact
+whose only link is a LinkedIn headline, that fallback tested them against the
+firm's investor-relations officers page, where a division purchasing lead would
+never appear. Absence there says nothing. Eight real contacts were one decision
+away from being deleted on that test: Chuck Collier and Kyle Hanna at LGI, Patrick
+Mayhan and Randy Barras at M/I, Michael Eilertsen at Camden, Tanya Rizzo at
+Century, Jim Carman at Howard Hughes, Kirk Breitenwischer at CastleRock.
+
+The probe now tests only the page cited for that person. Contacts whose sole
+source is a LinkedIn headline are reported in their own list, 90 of them, because
+there is no firm page to check them against and saying so is the honest answer.
+That is the deck's own rule from the roadmap: a LinkedIn profile is held where the
+page or the search-index title shows the person and the firm together, otherwise
+the firm's own page.
+
+`probe.py` also gained a `VERIFIED` table: a page a script cannot read, opened in
+a browser, with the date and what was on it. Those stop being reported as unknown
+and start being reported as read. It is the same pattern as `linkcheck.py`'s
+BLOCKED list, and it exists so that the next person can tell a stale note from a
+fresh one.
+
+**Two findings survived the browser.** Joshua Cantu carried no link of any kind on
+the Burton Construction card and is not among the eight people its leadership page
+names. Greg Grahmann's card gave him a David Weekley division presidency; the
+cited Builder article, read in a browser, quotes him only as "director at
+Imagination Homes," and the division-president words that a text search found on
+that page came from a sidebar link to an unrelated story about KB Home.
+
+96 firms, 241 contacts, 43 with a named decider. 152 contacts stand on a firm page
+that names them and 0 are missing from it. 90 stand on a LinkedIn headline. 14
+sit on pages nothing can read.
+
 ## Build 53: recursive evaluation, and what the second pass cost the first
 
 Build 52 audited thirty cards and called it an audit. It was a sample. This build
@@ -850,9 +896,12 @@ surface (filters, call list, workbook builder).
   and carries its leadership titles without a link. A Houston affordable-housing
   body trades as Housing Alliance HTX at alliancehtx.org, and nothing on that
   site says it is the same organisation, so the deck does not claim it is.
-- 41 contacts sit on pages that refuse scripted requests or render their names
-  from JavaScript. `probe.py` reports them as unread, not as clean. They are the
-  residual risk in the contact layer and need a human with a browser.
+- Three contacts sit behind houstonagentmagazine's Cloudflare interstitial, which
+  a browser does not clear either: Jeff Dye, Jay McManus and Tim Drone. Four more
+  sit on NewQuest's leadership page, which renders no names at all.
+- 90 contacts stand on a LinkedIn headline with no firm page that names them.
+  That is inside the deck's own rule and it is also the softest evidence on it.
+  `probe.py` lists them; a phone call is what would harden them.
 - `linkcheck.py` BLOCKED holds 30 hosts that refuse scripted requests. Each was
   confirmed by hand once. Re-confirm before adding to it.
 - Nine named contacts sit on firms that publish no team page at all, so nothing

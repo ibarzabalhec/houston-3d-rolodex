@@ -18123,7 +18123,7 @@
   "tier_a": 13,
   "tier_b": 30,
   "out": 0,
-  "principals": 242,
+  "principals": 241,
   "linkedin_held": 91,
   "audit_flags": 0,
   "with_decider": 43,
@@ -22283,12 +22283,12 @@
    "entity_role": "vertical_buyer",
    "region": "Meridiana, Rosharon",
    "homepage_url": "https://imaginationhomes.com/",
-   "synopsis": "Entry-level builder launched in 2025, whose first community was Rose Hill in Denison, north Texas. It joined the builder lineup at Magnolia Springs in Greater Houston in December 2025 and at Meridiana in Manvel in January 2026. Greg Grahmann is named in trade coverage as director of Imagination Homes and as having joined David Weekley Homes in 2013.",
+   "synopsis": "Entry-level builder launched in 2025, whose first community was Rose Hill in Denison, north Texas. It joined the builder lineup at Magnolia Springs in Greater Houston in December 2025 and at Meridiana in Manvel in January 2026. Builder Magazine quotes Greg Grahmann as director at Imagination Homes.",
    "key_stat": "Entry-level, launched 2025",
    "principals": [
     {
      "name": "Greg Grahmann",
-     "role": "Director, Imagination Homes; Division President, David Weekley Homes",
+     "role": "Director, Imagination Homes",
      "source_url": "https://www.builderonline.com/builder-100/strategy/imagination-homes-targets-attainable-entry-level-housing-in-texas/",
      "source_evidence": "Builder names him director at Imagination Homes. He joined David Weekley Homes in 2013 and is separately listed as a division president there.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Greg%20Grahmann%20Imagination%20Homes"
@@ -25922,7 +25922,7 @@
    "entity_role": "wall_trade",
    "region": "Houston, with Austin, San Antonio and Phoenix",
    "homepage_url": "https://burtonconstruction.com/",
-   "synopsis": "General contractor founded in 2004 covering office, mixed-use, medical, industrial, retail, hospitality and multifamily, carrying a 2024 Tilt-Up Achievement Award on its own about page. Self-perform scope is not stated on the firm's own site, so whether it owns concrete crews is unconfirmed.",
+   "synopsis": "General contractor founded in 2004 covering office, mixed-use, medical, industrial, retail, hospitality and multifamily, carrying a 2024 Tilt-Up Achievement Award on its own about page. Its leadership page names eight people, a chief executive and a president among them. Self-perform scope is not stated on the firm's own site, so whether it owns concrete crews is unconfirmed.",
    "key_stat": "Founded 2004, with multifamily in its published portfolio",
    "principals": [
     {
@@ -25931,13 +25931,6 @@
      "linkedin_url": "https://www.linkedin.com/in/shawn-mcalpin-b1260312/",
      "li_evidence": "Headline reads CEO at Burton Construction. Katy, Texas. The firm's own about page names only its founder, so this is the current chief executive and the founder is not.",
      "decider": true
-    },
-    {
-     "name": "Joshua Cantu",
-     "role": "Director",
-     "linkedin_url": null,
-     "li_evidence": "Headline reads Director at Burton Construction. Houston, Texas.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Joshua%20Cantu%20Burton%20Construction"
     },
     {
      "name": "Cullen Burton",

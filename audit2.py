@@ -71,6 +71,9 @@ DROP_PEOPLE = {
     # this URL no longer carries. Smith Douglas's January 2026 leadership
     # release names no Houston division leader.
     ("HOU-074", "Stephen Ray"),
+    # Carried no link at all, of any kind. The firm's leadership page, read in a
+    # browser, names eight people and he is not among them.
+    ("HOU-116", "Joshua Cantu"),
 }
 
 # A contact whose name is not in the page cited for it, where the firm does
@@ -149,6 +152,10 @@ RETITLE = {
     ("HOU-103", "David Buzzelli"): "Vice President",
     # The parent's leadership page, verbatim.
     ("HOU-007", "David Assid"): "Houston Division President, Homebuilding",
+    # The cited article, read in a browser, quotes him as "director at
+    # Imagination Homes" and gives him no other title. The division-president
+    # half came from a sidebar link to an unrelated story about a different firm.
+    ("HOU-076", "Greg Grahmann"): "Director, Imagination Homes",
 }
 
 RENAME = {
@@ -426,12 +433,20 @@ SYNOPSIS = {
         "selling communities as of 31 August 2026 and more than 80,000 homes "
         "closed since 2003. Purchasing is a national function.",
 
+    "HOU-116":
+        "General contractor founded in 2004 covering office, mixed-use, medical, "
+        "industrial, retail, hospitality and multifamily, carrying a 2024 Tilt-Up "
+        "Achievement Award on its own about page. Its leadership page names eight "
+        "people, a chief executive and a president among them. Self-perform scope "
+        "is not stated on the firm's own site, so whether it owns concrete crews "
+        "is unconfirmed.",
+
     "HOU-076":
         "Entry-level builder launched in 2025, whose first community was Rose Hill "
         "in Denison, north Texas. It joined the builder lineup at Magnolia Springs "
         "in Greater Houston in December 2025 and at Meridiana in Manvel in January "
-        "2026. Greg Grahmann is named in trade coverage as director of Imagination "
-        "Homes and as having joined David Weekley Homes in 2013.",
+        "2026. Builder Magazine quotes Greg Grahmann as director at Imagination "
+        "Homes.",
 
     "HOU-070":
         "Semi-custom builder in Cypress across Artavia, Audubon, Bridgeland, Cross "
