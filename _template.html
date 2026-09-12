@@ -30,12 +30,12 @@ __FONTS__
 /* The ground. A grain dot, a masked grid and three soft washes that drift on a
    slow loop. Same device as the Americas deck, translated to the light palette:
    at these opacities it reads as paper rather than as decoration. */
-.bg{position:fixed;inset:0;z-index:-1;pointer-events:none;overflow:hidden;background:var(--paper)}
+.bg{position:fixed;inset:0;z-index:-2;pointer-events:none;overflow:hidden;background:var(--paper)}
 .bg .grain{position:absolute;inset:0;
   background-image:radial-gradient(rgba(17,17,17,.055) 1px, transparent 1px);
   background-size:3px 3px}
 #atmos{position:fixed;top:-20px;left:-20px;width:calc(100vw + 40px);height:calc(100vh + 40px);
-  z-index:-1;pointer-events:none;opacity:.5;transition:opacity 400ms ease;will-change:transform}
+  z-index:-1;pointer-events:none;opacity:1;transition:opacity 400ms ease;will-change:transform}
 @media print{.bg,#atmos{display:none}}
 html,body{margin:0;padding:0}
 body{background:var(--paper);color:var(--ink);font:400 16px/1.5 var(--sans);
@@ -213,6 +213,10 @@ header.top .by{margin-top:18px;text-transform:none;letter-spacing:.04em;font-siz
 .chip.printing::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
   background:#fff;margin-left:7px;vertical-align:middle}
 .chip.dim{opacity:.2}
+.chip .vol{margin-left:7px;font:500 9.5px/1 var(--mono);font-style:normal;
+  color:var(--ink3);font-variant-numeric:tabular-nums}
+.chip.i-clear .vol{color:rgba(255,255,255,.72)}
+.chip.printing .vol{color:rgba(255,255,255,.72)}
 .chip.sel{box-shadow:0 0 0 2px var(--ink)}
 .chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .xrow{display:grid;grid-template-columns:repeat(3,1fr);margin-left:34px}
@@ -882,9 +886,11 @@ function initAtmosphere() {
   // Colors read once per resize / theme change (not every frame).
   function readColors() {
     const cs = getComputedStyle(document.documentElement);
-    const accent = (cs.getPropertyValue('--accent-warm').trim()) || '#C9A063';
-    const ink    = (cs.getPropertyValue('--text-primary').trim()) || '#8a8a8a';
-    const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+    const ink = (cs.getPropertyValue('--ink').trim()) || '#111111';
+    // index contours are the same ink, carried by weight and alpha rather than
+    // by hue: the accent belongs to the third count and nothing else.
+    const accent = ink;
+    const isLight = document.documentElement.getAttribute('data-theme') !== 'dark';
     return { accent, ink, isLight };
   }
 
@@ -971,7 +977,7 @@ function initAtmosphere() {
       const isIndex = (idx % 5 === 0);   // every 5th contour is an "index contour"
       ctx.strokeStyle = isIndex ? colors.accent : colors.ink;
       ctx.globalAlpha = isIndex ? colors.alphaIndex : colors.alphaMinor;
-      ctx.lineWidth = isIndex ? 0.9 : 0.5;
+      ctx.lineWidth = isIndex ? 1.2 : 0.7;
       ctx.beginPath();
       for (let j = 0; j < rows - 1; j++) {
         for (let i = 0; i < cols - 1; i++) {
@@ -1218,10 +1224,13 @@ function initAtmosphere() {
     // darkness rather than a faded ghost.
     const colors = {
       accent, ink, isLight,
-      alphaGrid:    isLight ? 0.18 : 0.10,
-      alphaMinor:   isLight ? 0.22 : 0.12,
-      alphaIndex:   isLight ? 0.44 : 0.26,
-      alphaLabel:   isLight ? 0.62 : 0.40,
+      // On white, ink at .27 lands on the same grey as the page's own hairlines,
+      // which is the weight this should read at: survey linework behind the type,
+      // never competing with it.
+      alphaGrid:    isLight ? 0.07 : 0.10,
+      alphaMinor:   isLight ? 0.13 : 0.12,
+      alphaIndex:   isLight ? 0.27 : 0.26,
+      alphaLabel:   isLight ? 0.34 : 0.40,
     };
     ctx.clearRect(0, 0, state.w, state.h);
     // Elevation levels — 18 lines spread across the field's dynamic range
@@ -1411,12 +1420,21 @@ function textHit(t){return !q||t._b.indexOf(q)>=0;}
 function hit(t){return textHit(t)&&inFilters(t);}
 
 /* ----------------------------------------------------------------- matrix */
+/* Reading order is priority order. Both axes run Yes, Partly, No outward from the
+   top left, so the cell a reader lands on first is the one that holds all the
+   firms that clear both counts. Inside a cell, the largest published builder is
+   first: a grid that answers "who" should not hide "how big". */
+function volSort(a,b){
+  var av=a.vol||-1, bv=b.vol||-1;
+  if(av!==bv) return bv-av;
+  return a.short.localeCompare(b.short);
+}
 function drawMatrix(){
   var html='';
   for(var yi=ORD.length-1;yi>=0;yi--){
-    for(var xi=0;xi<ORD.length;xi++){
+    for(var xi=ORD.length-1;xi>=0;xi--){
       var y=ORD[yi],x=ORD[xi],key=x+'|'+y;
-      var rows=T.filter(function(t){return t.cell===key;});
+      var rows=T.filter(function(t){return t.cell===key;}).sort(volSort);
       var best=(x==='clear'&&y==='clear');
       html+='<div class="cell'+(best?' best':'')+'" role="gridcell" aria-label="'+
         'Repetition '+W[x]+', Printer fit '+W[y]+', '+rows.length+' firms">'+
@@ -1430,12 +1448,14 @@ function drawMatrix(){
           return '<button class="chip i-'+t.marks.innovation+(t.group==='adopter'?' printing':'')+
             (hit(t)?'':' dim')+(call.indexOf(t.target_id)>=0?' sel':'')+
             '" data-id="'+t.target_id+'" title="'+esc(t.entity_name)+
-            '" aria-label="'+esc(al)+'">'+esc(t.short)+'</button>';
+            '" aria-label="'+esc(al)+'">'+esc(t.short)+
+            (t.vol?'<i class="vol">'+String(t.vol).replace(/\B(?=(\d{3})+(?!\d))/g,',')+'</i>':'')+
+            '</button>';
         }).join('')+'</div></div>';
     }
   }
   document.getElementById('matrix').innerHTML=html;
-  document.getElementById('xrow').innerHTML=ORD.map(function(x){
+  document.getElementById('xrow').innerHTML=ORD.slice().reverse().map(function(x){
     return '<div class="'+(x==='clear'?'hi':'')+'">Repetition '+W[x]+'</div>';}).join('');
   // Every chip dimmed and nothing said so. The grid looked broken rather than empty.
   var live=T.filter(hit).length;

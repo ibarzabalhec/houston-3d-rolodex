@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 48 · 2026-09-12
+Build 49 · 2026-09-12
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -489,6 +489,46 @@ plainly that the exterior wall stays.
 produced. Its docstring carries the rule: land and lots, single-family, repeating
 low-rise residential, one and two storey shell, then everything else as a clause,
 and only where it says something about how the firm builds.
+
+## Build 49: the background, the grid, and a fact printed three times
+
+**The atmosphere has never been visible, and the reason is one line of CSS.**
+`.bg` carries `background: var(--paper)`, an opaque white sheet, at `z-index:-1`.
+`#atmos` is also at `z-index:-1` and comes first in the DOM. Two siblings at the
+same z-index paint in document order, so the ground has been painting over the
+canvas since the deck was built. Everything was running underneath it: the
+marching-squares contour pass, the peak drift, the amplitude LFOs, the elevation
+labels, the gleam sweep, the 29°N/95°W corner mark. A hard red rectangle painted
+straight onto the canvas did not reach the screen, which is how the occlusion was
+confirmed rather than guessed. `.bg` moves to `z-index:-2`.
+
+Two things were wrong underneath it as well. The renderer was ported from the
+Americas rolodex and still read that deck's tokens, `--accent-warm` and
+`--text-primary`, neither of which exists here, so it fell back to a gold that is
+not in this palette. It reads `--ink` now, and the index contours carry their
+weight through alpha and line width rather than hue, because on this page the
+accent means one thing. Alphas were also tuned for a canvas at half opacity;
+index contours now land near the same grey as the page's own hairlines.
+
+**The grid now reads in priority order.** Both axes ran outward from the bottom
+left, which is the convention for a scatter but the opposite of how anyone reads a
+page: the top-left cell, the first thing the eye lands on, held the single firm
+that repeats nothing. Columns are reversed, so top left is now Repetition Yes ·
+Printer fit Yes and holds the nine firms that clear both counts. Inside every
+cell, chips are ordered by published annual closings, largest first, and a firm
+that publishes a figure carries it on the chip. Westin at 1,062 now leads its
+cell instead of sitting eleventh in insertion order. The sub-line says both rules.
+
+**An evidence line that only repeats the title is gone.** Under a name reading
+"Managing Partner, Projects and Finance", Concept Neighborhood printed "Linked
+from conceptneighborhood.com/team, which lists him as Managing Partner, Projects
+and Finance" and then "Team page: Managing Partner, Projects and Finance", under
+an icon that is already that link. Three copies of one fact. `focus.restates_title`
+strips a leading provenance clause and drops the line when what is left is the
+title in either direction of containment, which catches the case where the record
+carries an extra clause the team page does not. 208 evidence lines became 198. The
+187 that stayed say something the name, title and link do not: a title four years
+old, a person listed at the parent, a figure that came from someone's own post.
 
 ## Live numbers
 

@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 48,
+ "build": 49,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -54,7 +54,7 @@
    false
   ]
  ],
- "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two printers would cover it. Track record: has paid for a new building method before. The first two place a firm on the grid; the third is the chip colour. Open a firm for the evidence, add it to a call list, and export the list to Excel or paper.",
+ "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two printers would cover it. Track record: has paid for a new building method before. The first two place a firm on the grid; the third is the chip colour. Both axes run outward from the top left, so the first cell holds the firms that clear both counts, and inside every cell the largest published builder is first. Open a firm for the evidence, add it to a call list, and export the list to Excel or paper.",
  "axes": [
   {
    "key": "repeatability",
@@ -18113,7 +18113,6 @@
      "name": "Harry Klein",
      "role": "Co-founder, Cole Klein Builders",
      "source_url": "https://colekleinbuilders.com/about/",
-     "source_evidence": "Co-founder.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Harry%20Klein%20Cole%20Klein%20Builders"
     }
    ],
@@ -18212,6 +18211,7 @@
    "company_li_note": null,
    "team_url": "https://colekleinbuilders.com/about/",
    "team_note": null,
+   "vol": null,
    "short": "Cole Klein",
    "cell": "clear|clear",
    "clears": 3,
@@ -18347,6 +18347,7 @@
    "company_li_note": "No LinkedIn company page exists. The firm's only social presence is a Facebook page for San Leon.",
    "team_url": null,
    "team_note": "No company website could be found at all, only a Facebook page and a Texas LLC filing in Dickinson.",
+   "vol": null,
    "short": "Commander Homes",
    "cell": "partial|clear",
    "clears": 2,
@@ -18458,6 +18459,7 @@
    "company_li_note": "No LinkedIn company page for Elpis 3D. Searches return unrelated firms using the same word.",
    "team_url": null,
    "team_note": "No company website could be found.",
+   "vol": null,
    "short": "Elpis 3D",
    "cell": "fail|partial",
    "clears": 1,
@@ -18618,6 +18620,7 @@
    "company_li_note": null,
    "team_url": "https://wanbridge.com/leadership/",
    "team_note": null,
+   "vol": null,
    "short": "Wan Bridge",
    "cell": "clear|clear",
    "clears": 3,
@@ -18735,6 +18738,7 @@
    "company_li_note": null,
    "team_url": "https://www.lovettcommercial.com/about",
    "team_note": "InTown's own site has no leadership page. The page here is Lovett Commercial, the same ownership under Frank Liu.",
+   "vol": null,
    "short": "InTown / Lovett",
    "cell": "clear|clear",
    "clears": 2,
@@ -18864,6 +18868,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Boxer Property",
    "cell": "partial|partial",
    "clears": 1,
@@ -18964,6 +18969,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Brohn Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -19084,6 +19090,7 @@
    "company_li_note": null,
    "team_url": "https://investors.centurycommunities.com/governance/executive-management/default.aspx",
    "team_note": null,
+   "vol": null,
    "short": "Century Communities",
    "cell": "clear|partial",
    "clears": 1,
@@ -19138,7 +19145,6 @@
      "name": "David Assid",
      "role": "Division President, First America Homes",
      "linkedin_url": "https://www.linkedin.com/in/davidassid/",
-     "li_evidence": "Division President, First America Homes. Houston, Texas.",
      "decider": false
     }
    ],
@@ -19232,6 +19238,7 @@
    "company_li_note": null,
    "team_url": "https://www.firstamericahomes.com/about/",
    "team_note": null,
+   "vol": 750,
    "short": "First America",
    "cell": "clear|partial",
    "clears": 1,
@@ -19275,8 +19282,7 @@
      "linkedin_url": "https://www.linkedin.com/in/bruce-hendren-6a059068/",
      "li_evidence": "Indexed title reads Bruce Hendren, Stylecraft. The firm's team page lists him as Vice President of Pre-Construction.",
      "decider": true,
-     "source_url": "https://www.stylecraft.com/team/",
-     "source_evidence": "Team page lists Bruce Hendren, Vice President of Pre-Construction."
+     "source_url": "https://www.stylecraft.com/team/"
     },
     {
      "name": "Emily Runnion",
@@ -19382,6 +19388,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 973,
    "short": "Stylecraft Builders",
    "cell": "clear|partial",
    "clears": 1,
@@ -19495,6 +19502,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Tiona Homes",
    "cell": "partial|partial",
    "clears": 1,
@@ -19597,6 +19605,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Aura Dwellings and Hospitality",
    "cell": "partial|partial",
    "clears": 1,
@@ -19738,6 +19747,7 @@
    "company_li_note": null,
    "team_url": "https://avenuecdc.org/about-us/board-staff/",
    "team_note": null,
+   "vol": null,
    "short": "Avenue CDC",
    "cell": "partial|clear",
    "clears": 1,
@@ -19773,7 +19783,6 @@
      "role": "Executive Vice President and Chief Operating Officer",
      "linkedin_url": null,
      "source_url": "https://suebausa.com/about-us/",
-     "source_evidence": "Executive Vice President and Chief Operating Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=John%20Chiang%20Sueba%20USA%20Corporation"
     },
     {
@@ -19854,6 +19863,7 @@
    "company_li_note": null,
    "team_url": "https://suebausa.com/about-us/",
    "team_note": null,
+   "vol": null,
    "short": "Sueba USA",
    "cell": "partial|clear",
    "clears": 1,
@@ -19967,6 +19977,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": "Chesmar publishes no leadership page. Every name on this card came off LinkedIn.",
+   "vol": null,
    "short": "Chesmar",
    "cell": "partial|partial",
    "clears": 0,
@@ -20075,6 +20086,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 200,
    "short": "Cervelle Homes",
    "cell": "clear|clear",
    "clears": 2,
@@ -20191,6 +20203,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 45,
    "short": "Alta Homes",
    "cell": "clear|clear",
    "clears": 2,
@@ -20296,6 +20309,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 195,
    "short": "Kendall Homes",
    "cell": "clear|clear",
    "clears": 2,
@@ -20393,6 +20407,7 @@
    "company_li_note": "Urban Living is a generic name and several unrelated LinkedIn pages carry it. None could be tied to the Houston firm, so none is claimed.",
    "team_url": null,
    "team_note": "urbanliving.com refuses automated retrieval, so no team page could be read.",
+   "vol": null,
    "short": "Urban Living",
    "cell": "clear|clear",
    "clears": 2,
@@ -20514,6 +20529,7 @@
    "company_li_note": null,
    "team_url": "https://housingforhouston.com/leadership/executive-leadership/",
    "team_note": null,
+   "vol": null,
    "short": "Houston Housing Authority",
    "cell": "clear|partial",
    "clears": 1,
@@ -20665,6 +20681,7 @@
    "company_li_note": null,
    "team_url": "https://investors.meritagehomes.com/company-information/management-team",
    "team_note": null,
+   "vol": null,
    "short": "Meritage",
    "cell": "clear|fail",
    "clears": 1,
@@ -20764,6 +20781,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 324,
    "short": "Smith Douglas Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -20900,6 +20918,7 @@
    "company_li_note": null,
    "team_url": "https://www.camillocompanies.com/about-us",
    "team_note": null,
+   "vol": null,
    "short": "Camillo / SimplyHome",
    "cell": "clear|partial",
    "clears": 1,
@@ -21026,6 +21045,7 @@
    "company_li_note": null,
    "team_url": "https://www.c-rock.com/about",
    "team_note": null,
+   "vol": null,
    "short": "CastleRock",
    "cell": "clear|partial",
    "clears": 1,
@@ -21141,6 +21161,7 @@
    "company_li_note": null,
    "team_url": "https://www.christophertodd.com/our-story/",
    "team_note": null,
+   "vol": null,
    "short": "Christopher Todd",
    "cell": "partial|clear",
    "clears": 1,
@@ -21251,6 +21272,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Everlasting Homes Building Group",
    "cell": "fail|partial",
    "clears": 1,
@@ -21347,6 +21369,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Live Lone Star",
    "cell": "clear|fail",
    "clears": 1,
@@ -21456,6 +21479,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Nautilus Custom Homes",
    "cell": "fail|partial",
    "clears": 1,
@@ -21551,6 +21575,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Seaside Construction",
    "cell": "fail|partial",
    "clears": 1,
@@ -21661,6 +21686,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 1062,
    "short": "Westin Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -21767,6 +21793,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 540,
    "short": "Colina Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -21866,6 +21893,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Imagination Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -21896,14 +21924,12 @@
      "name": "Katy Hawes",
      "role": "Co-President",
      "source_url": "https://jamestownestatehomes.com/team/katy-hawes/",
-     "source_evidence": "Team page: Co-President.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Katy%20Hawes%20Jamestown%20Estate%20Homes"
     },
     {
      "name": "Matt Norris",
      "role": "Co-President",
      "source_url": "https://jamestownestatehomes.com/team/matt-norris/",
-     "source_evidence": "Team page: Co-President.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Matt%20Norris%20Jamestown%20Estate%20Homes"
     }
    ],
@@ -21989,6 +22015,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 75,
    "short": "Jamestown Estate Homes",
    "cell": "partial|clear",
    "clears": 1,
@@ -22096,6 +22123,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 60,
    "short": "Sandcastle Homes",
    "cell": "partial|clear",
    "clears": 1,
@@ -22209,6 +22237,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Tricoast Homes",
    "cell": "clear|partial",
    "clears": 1,
@@ -22343,6 +22372,7 @@
    "company_li_note": null,
    "team_url": "https://provident.net/our-team/",
    "team_note": null,
+   "vol": null,
    "short": "Provident",
    "cell": "partial|partial",
    "clears": 0,
@@ -22374,8 +22404,7 @@
      "role": "President and Chief Executive Officer",
      "linkedin_url": "https://www.linkedin.com/in/matthew-zaist-01949696/",
      "li_evidence": "Indexed title reads Matthew Zaist, President and CEO at Risewell Homes. Confirmed on the firm's team page.",
-     "source_url": "https://www.risewellhomes.com/team",
-     "source_evidence": "Executive team page: President and Chief Executive Officer."
+     "source_url": "https://www.risewellhomes.com/team"
     }
    ],
    "key_projects": [
@@ -22453,6 +22482,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Risewell Homes",
    "cell": "partial|partial",
    "clears": 0,
@@ -22561,6 +22591,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": "Coventry's about page names no executives. It is a Dream Finders brand and has no leadership page of its own.",
+   "vol": null,
    "short": "Coventry",
    "cell": "partial|partial",
    "clears": 0,
@@ -22665,6 +22696,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 483,
    "short": "Newmark Homes",
    "cell": "partial|partial",
    "clears": 0,
@@ -22774,6 +22806,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 372,
    "short": "Sitterle Homes",
    "cell": "partial|partial",
    "clears": 0,
@@ -22882,6 +22915,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "J. Patrick Homes",
    "cell": "partial|partial",
    "clears": 0,
@@ -22906,7 +22940,6 @@
      "name": "Neil Joshi",
      "role": "Managing Member, RSK Real Estate Partners",
      "source_url": "https://rskrealestatepartners.com/our-team/",
-     "source_evidence": "Managing Member.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Neil%20Joshi%20RSK%20Real%20Estate%20Partners"
     },
     {
@@ -22921,7 +22954,6 @@
      "name": "Hannah Ripkey",
      "role": "Vice President of Development, RSK Real Estate Partners",
      "source_url": "https://rskrealestatepartners.com/our-team/",
-     "source_evidence": "Vice President of Development.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Hannah%20Ripkey%20RSK%20Real%20Estate%20Partners"
     }
    ],
@@ -22983,6 +23015,7 @@
    "company_li_note": null,
    "team_url": "https://rskrealestatepartners.com/our-team/",
    "team_note": null,
+   "vol": null,
    "short": "RSK",
    "cell": "partial|partial",
    "clears": 0,
@@ -23081,6 +23114,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Ravenna Homes",
    "cell": "partial|partial",
    "clears": 0,
@@ -23190,6 +23224,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "ICF Constructors",
    "cell": "clear|partial",
    "clears": 2,
@@ -23309,6 +23344,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Botello Builders",
    "cell": "clear|clear",
    "clears": 2,
@@ -23428,6 +23464,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Encore Concrete Construction",
    "cell": "clear|clear",
    "clears": 2,
@@ -23546,6 +23583,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Keystone Concrete Placement",
    "cell": "clear|partial",
    "clears": 1,
@@ -23667,6 +23705,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "MAREK",
    "cell": "clear|partial",
    "clears": 1,
@@ -23792,6 +23831,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Building Concrete Solutions",
    "cell": "partial|clear",
    "clears": 1,
@@ -23929,6 +23969,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "CIVE",
    "cell": "partial|partial",
    "clears": 1,
@@ -24040,6 +24081,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "M.L. Deer Construction",
    "cell": "partial|clear",
    "clears": 1,
@@ -24152,6 +24194,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "T&T Construction",
    "cell": "partial|clear",
    "clears": 1,
@@ -24266,6 +24309,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Blazer Building",
    "cell": "clear|partial",
    "clears": 1,
@@ -24392,6 +24436,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Greco Structures",
    "cell": "clear|partial",
    "clears": 1,
@@ -24547,6 +24592,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Harvey Cleary",
    "cell": "clear|partial",
    "clears": 1,
@@ -24650,6 +24696,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "ORION",
    "cell": "clear|partial",
    "clears": 1,
@@ -24759,6 +24806,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Andrade Construction Companies",
    "cell": "partial|clear",
    "clears": 1,
@@ -24868,6 +24916,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "HTX Concrete",
    "cell": "partial|clear",
    "clears": 1,
@@ -24993,6 +25042,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Rino Construction",
    "cell": "clear|partial",
    "clears": 1,
@@ -25089,6 +25139,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Silver Spur Concrete Contractors",
    "cell": "partial|clear",
    "clears": 1,
@@ -25192,6 +25243,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Texas A&M Concrete",
    "cell": "clear|partial",
    "clears": 1,
@@ -25291,6 +25343,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Baker Construction",
    "cell": "clear|fail",
    "clears": 1,
@@ -25391,6 +25444,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Leola Construction",
    "cell": "clear|fail",
    "clears": 1,
@@ -25535,6 +25589,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Arch-Con Corporation",
    "cell": "partial|partial",
    "clears": 0,
@@ -25640,6 +25695,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Burton Construction",
    "cell": "partial|partial",
    "clears": 0,
@@ -25787,6 +25843,7 @@
    "company_li_note": null,
    "team_url": "https://www.tritenre.com/team",
    "team_note": null,
+   "vol": null,
    "short": "Triten",
    "cell": "clear|fail",
    "clears": 2,
@@ -25813,8 +25870,7 @@
     {
      "name": "Steve Radom",
      "role": "Managing Principal",
-     "linkedin_url": "https://www.linkedin.com/in/steveradom/",
-     "li_evidence": "Managing Principal at Radom Capital."
+     "linkedin_url": "https://www.linkedin.com/in/steveradom/"
     },
     {
      "name": "Barton Kelly",
@@ -25930,6 +25986,7 @@
    "company_li_note": null,
    "team_url": "https://www.radomcapital.com/team",
    "team_note": null,
+   "vol": null,
    "short": "Radom Capital",
    "cell": "partial|fail",
    "clears": 1,
@@ -26027,6 +26084,7 @@
    "company_li_note": "The Deal Company's site links only to Instagram and Facebook. No LinkedIn company page was confirmed.",
    "team_url": "https://www.dealco.net/about/",
    "team_note": null,
+   "vol": null,
    "short": "The Deal Co.",
    "cell": "partial|fail",
    "clears": 1,
@@ -26142,6 +26200,7 @@
    "company_li_note": null,
    "team_url": "https://cameronmanagement.com/about",
    "team_note": null,
+   "vol": null,
    "short": "Cameron Mgmt",
    "cell": "fail|fail",
    "clears": 1,
@@ -26253,6 +26312,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": 300,
    "short": "Partners in Building",
    "cell": "fail|clear",
    "clears": 1,
@@ -26351,6 +26411,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Braun Enterprises",
    "cell": "partial|partial",
    "clears": 0,
@@ -26393,7 +26454,6 @@
      "role": "Executive Vice President and General Counsel",
      "linkedin_url": null,
      "source_url": "https://www.midway.team/our-people",
-     "source_evidence": "Executive Vice President and General Counsel.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Clark%20Thompson%20Midway"
     },
     {
@@ -26407,7 +26467,6 @@
      "name": "Anna Deans",
      "role": "Executive Vice President, Midway",
      "linkedin_url": "https://www.linkedin.com/in/anna-deans-bbbab03/",
-     "li_evidence": "Executive Vice President, Midway. Houston, Texas.",
      "decider": false
     }
    ],
@@ -26492,6 +26551,7 @@
    "company_li_note": null,
    "team_url": "https://www.midway.team/our-people",
    "team_note": null,
+   "vol": null,
    "short": "Midway",
    "cell": "partial|fail",
    "clears": 0,
@@ -26516,7 +26576,6 @@
      "name": "Paul Coonrod",
      "role": "Founder and Managing Principal",
      "source_url": "https://www.pagewood.com/team",
-     "source_evidence": "Team page: Founder and Managing Principal.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Paul%20Coonrod%20Pagewood"
     },
     {
@@ -26524,14 +26583,12 @@
      "role": "Managing Principal",
      "linkedin_url": "https://www.linkedin.com/in/mathew-volz-14684850/",
      "li_evidence": "Indexed title reads Mathew Volz, Managing Principal at Pagewood. The firm's team page spells the name Mat.",
-     "source_url": "https://www.pagewood.com/team",
-     "source_evidence": "Team page: Managing Principal."
+     "source_url": "https://www.pagewood.com/team"
     },
     {
      "name": "Preston Luster",
      "role": "Senior Construction Manager",
      "source_url": "https://www.pagewood.com/team",
-     "source_evidence": "Team page: Senior Construction Manager.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Preston%20Luster%20Pagewood"
     }
    ],
@@ -26606,6 +26663,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Pagewood",
    "cell": "partial|fail",
    "clears": 0,
@@ -26628,33 +26686,25 @@
      "name": "David Kelley",
      "role": "Managing Partner, Projects and Finance",
      "linkedin_url": "https://www.linkedin.com/in/david-kelley-275240105/",
-     "li_evidence": "Linked from conceptneighborhood.com/team, which lists him as Managing Partner, Projects and Finance.",
-     "source_url": "https://www.conceptneighborhood.com/team",
-     "source_evidence": "Team page: Managing Partner, Projects and Finance."
+     "source_url": "https://www.conceptneighborhood.com/team"
     },
     {
      "name": "Jeffrey Kaplan",
      "role": "Managing Partner, Brokerage and Placemaking, co-founder of Axelrad",
      "linkedin_url": "https://www.linkedin.com/in/jeffrey-kaplan-71190150/",
-     "li_evidence": "Linked from conceptneighborhood.com/team, which lists him as Managing Partner, Brokerage and Placemaking.",
-     "source_url": "https://www.conceptneighborhood.com/team",
-     "source_evidence": "Team page: Managing Partner, Brokerage and Placemaking."
+     "source_url": "https://www.conceptneighborhood.com/team"
     },
     {
      "name": "Monte Large",
      "role": "Partner, Design and Placemaking",
      "linkedin_url": "https://www.linkedin.com/in/montelarge/",
-     "li_evidence": "Linked from conceptneighborhood.com/team, which lists him as Partner, Design and Placemaking.",
-     "source_url": "https://www.conceptneighborhood.com/team",
-     "source_evidence": "Team page: Partner, Design and Placemaking."
+     "source_url": "https://www.conceptneighborhood.com/team"
     },
     {
      "name": "Jeremy Roberts",
      "role": "Managing Partner, Projects and Legal",
      "linkedin_url": "https://www.linkedin.com/in/jeremyaaronroberts/",
-     "li_evidence": "Linked from conceptneighborhood.com/team, which lists him as Managing Partner, Projects and Legal.",
-     "source_url": "https://www.conceptneighborhood.com/team",
-     "source_evidence": "Team page: Managing Partner, Projects and Legal."
+     "source_url": "https://www.conceptneighborhood.com/team"
     }
    ],
    "key_projects": [
@@ -26739,6 +26789,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Concept Neighborhood",
    "cell": "fail|fail",
    "clears": 0,
@@ -26844,6 +26895,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "Wile Interests",
    "cell": "partial|fail",
    "clears": 0,
@@ -26975,6 +27027,7 @@
    "company_li_note": null,
    "team_url": "https://investor.lgihomes.com/corporate-governance/management",
    "team_note": null,
+   "vol": null,
    "short": "LGI Homes",
    "cell": "clear|fail",
    "clears": 1,
@@ -27027,7 +27080,6 @@
      "name": "Randy Barras",
      "role": "Vice President of Purchasing, M/I Homes Houston",
      "linkedin_url": "https://www.linkedin.com/in/rbarras/",
-     "li_evidence": "Vice President of Purchasing, M/I Homes - Houston. Houston, Texas.",
      "decider": true
     }
    ],
@@ -27107,6 +27159,7 @@
    "company_li_note": null,
    "team_url": "https://investors.mihomes.com/investor-relations/officers-directors/default.aspx",
    "team_note": null,
+   "vol": null,
    "short": "M/I Homes",
    "cell": "clear|fail",
    "clears": 1,
@@ -27219,6 +27272,7 @@
    "company_li_note": null,
    "team_url": "https://newsroom.taylormorrison.com/Leadership",
    "team_note": null,
+   "vol": null,
    "short": "Taylor Morrison",
    "cell": "clear|fail",
    "clears": 1,
@@ -27245,7 +27299,6 @@
      "role": "President and Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "President and Chief Executive Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ken%20Balogh%20Ashton%20Woods%20Homes"
     },
     {
@@ -27261,7 +27314,6 @@
      "role": "Chief Operating Officer",
      "linkedin_url": null,
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Chief Operating Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Lewis%20Ashton%20Woods%20Homes"
     },
     {
@@ -27342,6 +27394,7 @@
    "company_li_note": null,
    "team_url": "https://www.ashtonwoods.com/corporate-info",
    "team_note": null,
+   "vol": null,
    "short": "Ashton Woods",
    "cell": "clear|fail",
    "clears": 1,
@@ -27479,6 +27532,7 @@
    "company_li_note": null,
    "team_url": "https://www.davidweekleyhomes.com/about-us/meet-the-team",
    "team_note": null,
+   "vol": null,
    "short": "David Weekley",
    "cell": "clear|fail",
    "clears": 1,
@@ -27515,7 +27569,6 @@
      "role": "Chief Executive Officer",
      "linkedin_url": null,
      "source_url": "https://www.perryhomes.com/about-perry-homes",
-     "source_evidence": "Chief Executive Officer on Perry's own page.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Todd%20Chachere%20Perry%20Homes"
     },
     {
@@ -27614,6 +27667,7 @@
    "company_li_note": null,
    "team_url": "https://www.perryhomes.com/about-perry-homes",
    "team_note": null,
+   "vol": null,
    "short": "Perry Homes",
    "cell": "clear|fail",
    "clears": 1,
@@ -27732,6 +27786,7 @@
    "company_li_note": null,
    "team_url": "https://www.drbgroup.com/about",
    "team_note": "Brightland publishes no leadership of its own. The page linked here is The DRB Group, its parent since April 2025, which does.",
+   "vol": null,
    "short": "Brightland",
    "cell": "partial|fail",
    "clears": 0,
@@ -27919,6 +27974,7 @@
    "team_note": null,
    "_verdict": "1,802 residential acres left to sell across three communities, and it paid to put up Greater Houston's first mass timber office. It sells lots, so the builder buys the wall.",
    "clears": 2,
+   "vol": null,
    "short": "Howard Hughes",
    "cell": "clear|fail",
    "channel_builders": [
@@ -28077,6 +28133,7 @@
    "company_li_note": null,
    "team_url": "https://www.signorellicompany.com/our-leadership",
    "team_note": null,
+   "vol": null,
    "short": "Signorelli",
    "cell": "clear|partial",
    "channel_line": "Valley Ranch, Austin Point, Granger Pines and Cielo",
@@ -28103,14 +28160,12 @@
      "name": "Alan Brende",
      "role": "Co-President, Land Tejas",
      "source_url": "https://landtejas.com/about-us/our-leadership/",
-     "source_evidence": "Co-President.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Alan%20Brende%20Land%20Tejas"
     },
     {
      "name": "Melanie Ohl",
      "role": "Co-President, Land Tejas",
      "source_url": "https://landtejas.com/about-us/our-leadership/",
-     "source_evidence": "Co-President.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Melanie%20Ohl%20Land%20Tejas"
     }
    ],
@@ -28172,6 +28227,7 @@
    "company_li_note": null,
    "team_url": "https://landtejas.com/about-us/our-leadership/",
    "team_note": null,
+   "vol": null,
    "short": "Land Tejas",
    "cell": "clear|fail",
    "channel_line": "Sunterra, 2,303 acres in Katy, with fifteen builders",
@@ -28200,7 +28256,6 @@
      "name": "Fred Caldwell",
      "role": "Chief Executive Officer, Caldwell Companies",
      "source_url": "https://caldwellcos.com/our-team",
-     "source_evidence": "Chief Executive Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Fred%20Caldwell%20Caldwell%20Companies"
     }
    ],
@@ -28262,6 +28317,7 @@
    "company_li_note": null,
    "team_url": "https://caldwellcos.com/our-team",
    "team_note": null,
+   "vol": null,
    "short": "Caldwell",
    "cell": "clear|fail",
    "channel_line": "Towne Lake and The Highlands, about 4,000 homes across twelve builders",
@@ -28292,7 +28348,6 @@
      "name": "Michael J. Smith",
      "role": "President and Chief Executive Officer, Johnson Development",
      "source_url": "https://www.johnsondevelopment.com/our-leaders",
-     "source_evidence": "President and Chief Executive Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20J.%20Smith%20Johnson%20Development%20Corp"
     }
    ],
@@ -28354,6 +28409,7 @@
    "company_li_note": null,
    "team_url": "https://www.johnsondevelopment.com/our-leaders",
    "team_note": null,
+   "vol": null,
    "short": "Johnson Development",
    "cell": "clear|fail",
    "channel_line": "Fourteen Houston masterplans including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
@@ -28448,6 +28504,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": "Newland's leadership page now redirects to Brookfield Residential, which announces the acquisition and names nobody. The firm no longer publishes its own leadership.",
+   "vol": null,
    "short": "Newland",
    "cell": "partial|fail",
    "channel_line": "Elyson, 3,600 acres in Katy, now inside Brookfield Residential",
@@ -28552,6 +28609,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "vol": null,
    "short": "GreenEco Builders",
    "cell": "partial|partial",
    "clears": 0,
@@ -28574,7 +28632,6 @@
      "name": "Michael Reamer",
      "role": "President, Friendswood Development Company",
      "source_url": "https://friendswooddevelopment.com/people",
-     "source_evidence": "President.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20Reamer%20Friendswood%20Development%20Company"
     }
    ],
@@ -28636,6 +28693,7 @@
    "company_li_note": null,
    "team_url": "https://friendswooddevelopment.com/people",
    "team_note": null,
+   "vol": null,
    "short": "Friendswood",
    "cell": "partial|fail",
    "channel_line": "Wholly owned by Lennar since 2000",
@@ -28666,7 +28724,6 @@
      "role": "Co-Founder and Managing Partner",
      "linkedin_url": null,
      "source_url": "https://www.newquest.com/about-us/leadership/",
-     "source_evidence": "Co-Founder and Managing Partner.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steven%20D.%20Alvis%20NewQuest%20Properties"
     },
     {
@@ -28674,7 +28731,6 @@
      "role": "Co-Founder and Managing Partner",
      "linkedin_url": null,
      "source_url": "https://www.newquest.com/about-us/leadership/",
-     "source_evidence": "Co-Founder and Managing Partner.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jay%20K.%20Sears%20NewQuest%20Properties"
     },
     {
@@ -28682,7 +28738,6 @@
      "role": "President and Chief Development Officer",
      "linkedin_url": null,
      "source_url": "https://www.newquest.com/about-us/leadership/",
-     "source_evidence": "President and Chief Development Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Austin%20Alvis%20NewQuest%20Properties"
     },
     {
@@ -28690,7 +28745,6 @@
      "role": "Chief Operating Officer and Head of Capital Markets",
      "linkedin_url": null,
      "source_url": "https://www.newquest.com/about-us/leadership/",
-     "source_evidence": "Chief Operating Officer and Head of Capital Markets.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Horton%20NewQuest%20Properties"
     }
    ],
@@ -28755,6 +28809,7 @@
    "company_li_note": null,
    "team_url": "https://www.newquest.com/about-us/leadership/",
    "team_note": null,
+   "vol": null,
    "short": "NewQuest",
    "cell": "clear|fail",
    "clears": 1
@@ -28845,6 +28900,7 @@
    "company_li_note": null,
    "team_url": "https://www.frpltd.com/about-fidelis/mission-values",
    "team_note": null,
+   "vol": null,
    "short": "Fidelis",
    "cell": "clear|fail",
    "clears": 1
@@ -28965,6 +29021,7 @@
    "company_li_note": "No LinkedIn company page was confirmed and Hanover's own site carries no link to one.",
    "team_url": "https://www.hanoverco.com/leadership",
    "team_note": "The leadership page renders client-side, so the names on it could not be read from a fetch. The people below were sourced elsewhere.",
+   "vol": null,
    "short": "Hanover",
    "cell": "clear|fail",
    "clears": 1
@@ -28989,7 +29046,6 @@
      "role": "Principal and Co-Founder",
      "linkedin_url": null,
      "source_url": "https://www.read-king.com/team",
-     "source_evidence": "Principal.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Read%20Read%20King"
     },
     {
@@ -28997,7 +29053,6 @@
      "role": "Principal",
      "linkedin_url": null,
      "source_url": "https://www.read-king.com/team",
-     "source_evidence": "Principal.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ewing%20King%20Read%20King"
     },
     {
@@ -29005,7 +29060,6 @@
      "role": "Chief Financial Officer",
      "linkedin_url": null,
      "source_url": "https://www.read-king.com/team",
-     "source_evidence": "Chief Financial Officer.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Blake%20Allen%20Read%20King"
     },
     {
@@ -29066,6 +29120,7 @@
    "company_li_note": null,
    "team_url": "https://www.read-king.com/team",
    "team_note": null,
+   "vol": null,
    "short": "Read King",
    "cell": "clear|fail",
    "clears": 1
@@ -29170,6 +29225,7 @@
    "company_li_note": null,
    "team_url": "https://investors.camdenliving.com/investors/governance/board-of-directors/default.aspx",
    "team_note": null,
+   "vol": null,
    "short": "Camden",
    "cell": "partial|fail",
    "clears": 0
@@ -29253,6 +29309,7 @@
    "company_li_note": null,
    "team_url": "https://www.greystar.com/business/about-greystar/our-leadership",
    "team_note": null,
+   "vol": null,
    "short": "Greystar Summerwell",
    "cell": "partial|fail",
    "clears": 0
@@ -29290,7 +29347,6 @@
      "role": "Managing Partner of Development and Design",
      "linkedin_url": null,
      "source_url": "https://www.dinersteincos.com/about-us",
-     "source_evidence": "Managing Partner of Development and Design.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brad%20Dinerstein%20The%20Dinerstein%20Companies"
     },
     {
@@ -29298,7 +29354,6 @@
      "role": "President and Partner",
      "linkedin_url": null,
      "source_url": "https://www.dinersteincos.com/about-us",
-     "source_evidence": "President and Partner.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=John%20Caltagirone%20The%20Dinerstein%20Companies"
     }
    ],
@@ -29356,6 +29411,7 @@
    "company_li_note": null,
    "team_url": "https://www.dinersteincos.com/about-us",
    "team_note": null,
+   "vol": null,
    "short": "Dinerstein",
    "cell": "partial|fail",
    "clears": 0
@@ -29429,6 +29485,7 @@
    "company_li_note": null,
    "team_url": "https://bakerkatz.com/about-us/",
    "team_note": null,
+   "vol": null,
    "short": "Baker Katz",
    "cell": "partial|fail",
    "clears": 0
@@ -29455,7 +29512,6 @@
      "role": "Director of Construction, Wulfe & Co.",
      "decider": true,
      "source_url": "https://www.wulfe.com/people",
-     "source_evidence": "Director of Construction.",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tammy%20Smith%20Wulfe%20%26%20Co."
     }
    ],
@@ -29495,6 +29551,7 @@
    "company_li_note": "The page reads Wulfe rather than Wulfe & Co. No other Houston firm uses the name and the firm's own site uses the short form.",
    "team_url": "https://www.wulfe.com/people",
    "team_note": null,
+   "vol": null,
    "short": "Wulfe & Co.",
    "cell": "partial|fail",
    "clears": 0

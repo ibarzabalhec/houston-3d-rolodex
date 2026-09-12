@@ -37,7 +37,7 @@ import focus as FOCUS
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 48
+BUILD = 49
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -371,6 +371,19 @@ for t in targets:
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
 
+# An evidence line that only repeats the title, under an icon that is already the
+# link, is the same fact three times. focus.restates_title decides.
+for t in targets:
+    for _p in t["principals"]:
+        for _f in ("li_evidence", "source_evidence"):
+            if _p.get(_f) and FOCUS.restates_title(_p[_f], _p.get("role", "")):
+                _p.pop(_f, None)
+
+# The grid orders chips by size, so each record carries the figure it publishes.
+for t in targets:
+    _c = CLOSINGS.get(t["target_id"])
+    t["vol"] = _c[1] if _c else None
+
 for t in targets:
     t["short"] = SHORT.get(t["target_id"], t["entity_name"])
     t["cell"] = t["marks"]["repeatability"] + "|" + t["marks"]["machine_fit"]
@@ -536,8 +549,10 @@ DATA = {
  ],
  "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two "
         "printers would cover it. Track record: has paid for a new building method before. The first two "
-        "place a firm on the grid; the third is the chip colour. Open a firm for the evidence, add it to a "
-        "call list, and export the list to Excel or paper.",
+        "place a firm on the grid; the third is the chip colour. Both axes run outward from the top left, "
+        "so the first cell holds the firms that clear both counts, and inside every cell the largest "
+        "published builder is first. Open a firm for the evidence, add it to a call list, and export the "
+        "list to Excel or paper.",
 
  "axes": [
    axis_row("repeatability", "Repetition", ""),

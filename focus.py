@@ -229,3 +229,43 @@ WHY = {
   "It sells lots, and the platform now sits inside Brookfield Residential.",
   "Nothing on record about construction method."),
 }
+
+
+# ---------------------------------------------------------------- evidence
+# An evidence line under a name exists to say something the name, the title and
+# the link do not already say: that a title is four years old, that the person
+# sits at the parent rather than the division, that a figure came from their own
+# post. It does not exist to narrate where a link came from. "Linked from
+# conceptneighborhood.com/team, which lists him as Managing Partner, Projects and
+# Finance" prints the title a second time and the URL a second time, under an icon
+# that is already the URL.
+#
+# Returns True when a line is only the title restated, with or without a clause
+# naming the page the icon already links to.
+import re as _re
+
+
+def _norm(s):
+    return _re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+
+
+_PROVENANCE = _re.compile(
+    r"^(linked from [a-z0-9 ]*?(team|about|leadership|people|staff)[a-z0-9 ]*?"
+    r" which lists (him|her|them) as |team page (lists [a-z ]+ )?|company page |"
+    r"about page |leadership page |staff page |named on the [a-z ]*page as |"
+    r"the firm s own [a-z ]*page names (him|her|them) as )")
+
+
+def restates_title(evidence, role):
+    e, r = _norm(evidence), _norm(role)
+    if not e or not r:
+        return False
+    e = _PROVENANCE.sub("", e)
+    if not e:
+        return True
+    # what is left is the title, give or take a place name or a company name.
+    # Either direction counts: the record's title can carry an extra clause the
+    # team page does not ("co-founder of Axelrad"), and the line is still only
+    # the title.
+    return ((r in e and len(e) <= len(r) + 22)
+            or (e in r and len(r) <= len(e) + 34))
