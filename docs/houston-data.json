@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 53,
+ "build": 55,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -26272,10 +26272,10 @@
    "key_projects": [
     {
      "name": "The Mill",
-     "detail": "2219 Canal Street, East End Houston. Six acres. 75,000 square feet office, 25,000 square feet retail, 340 apartments, around a preserved 14,000 square foot 1890s brick lumber mill. Cross-laminated timber structural frame.",
+     "detail": "East End Houston, six acres around a preserved 1890s brick mill. Delivered in 2025 as 341 apartments over a cast-in-place concrete podium with five storeys of wood frame above it. A six-storey cross-laminated timber office building was reported in 2021 as a second phase, contingent on retail leasing, and does not appear in the firm's own portfolio entry.",
      "signal_type": "method_risk",
      "fit_signal": "Triten describes mass timber as a relatively rare alternative to steel and concrete. Specifying and financing a CLT frame is the one documented case in Houston of a developer paying for an unproven structural system.",
-     "url": "https://www.tritenre.com/about"
+     "url": "https://www.tritenre.com/portfolio/the-mill"
     },
     {
      "name": "The Landing at Aliana",
@@ -26960,7 +26960,7 @@
    ],
    "region": "Houston HQ / East End, Harris County",
    "homepage_url": "https://www.midway.team/",
-   "synopsis": "Houston investment and development firm. East River is a 150-acre redevelopment of the former turning-basin site on Buffalo Bayou, broken ground August 26, 2021 and planned at 60 city blocks. Phase One is 26 acres and opens with The Laura at 360 units, alongside 360,000 square feet of office and retail. Midway kept sole development control of East River and sold its interest in the Parkway Ventures joint venture to Parkway in December 2024. Rob Sigler's own feed carries mass-timber construction from Kirksey. Larry Sloan left in November 2023 and is now Chief Development Officer at Triten Real Estate Partners, also screened here.",
+   "synopsis": "Houston investment and development firm. East River is a 150-acre redevelopment of the former turning-basin site on Buffalo Bayou, broken ground August 26, 2021 and planned at 60 city blocks. Phase One is 26 acres with 250,000 square feet of office and 110,000 of retail; The Laura, 359 apartments, opened in 2024. Midway kept sole development control of East River and sold its interest in the Parkway Ventures joint venture to Parkway in December 2024.",
    "key_stat": "East River: 150 acres, 60 city blocks",
    "principals": [
     {
@@ -27001,7 +27001,7 @@
    "key_projects": [
     {
      "name": "East River",
-     "detail": "100 Jensen Drive, Fifth Ward. 150 acres planned at 60 city blocks over a decades-long horizon. Phase One 26 acres: The Laura at 360 units, 250,000 square feet office, 110,000 square feet retail. Groundbreaking August 26, 2021.",
+     "detail": "100 Jensen Drive, Fifth Ward. 150 acres planned at 60 city blocks over a decades-long horizon. Phase One is 26 acres with 250,000 square feet of office and 110,000 of retail. The Laura, 359 apartments, opened in 2024.",
      "signal_type": "repeatable",
      "fit_signal": "Phased delivery of low- and mid-rise blocks on a single 150-acre site over decades.",
      "url": "https://rebusinessonline.com/midway-breaks-ground-on-150-acre-east-river-mixed-use-development-in-houston/"
@@ -27035,6 +27035,10 @@
     {
      "url": "https://www.prnewswire.com/news-releases/parkway-and-midway-form-preeminent-real-estate-investment-operations-and-management-firm-301820191.html",
      "date": "2023-05-10"
+    },
+    {
+     "url": "https://rebusinessonline.com/midway-opens-359-unit-laura-apartments-at-east-river-in-houston/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -27122,13 +27126,6 @@
    ],
    "key_projects": [
     {
-     "name": "East Blocks",
-     "detail": "EaDo. Phase one is 513,000 square feet: 196,000 retail, 112,000 office, 205,000 parking, across four addresses. Redevelopment from the second quarter of 2024 through 2027, with Gensler and SWA.",
-     "signal_type": "method_risk",
-     "fit_signal": "Randolph Wile of the partner firm: by almost every measure it would be easier to demolish and redevelop these blocks from a clean slate.",
-     "url": "https://www.pagewood.com/"
-    },
-    {
      "name": "East Blocks phase one",
      "detail": "1107 Hutchins Street and 2202 Dallas Street, two warehouses of 15,000 square feet each, 30,000 square feet combined. Groundbreaking April 2026, completion expected August 2026.",
      "signal_type": "repeatable",
@@ -27192,7 +27189,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "The phase-one programme is retail, office and parking rather than repeated units."
+     "text": "Phase one is two warehouses of the same size, done twice. The rest of the district is one-offs, and the build-to-rent line is not in Houston."
     },
     {
      "axis": "innovation",
@@ -27910,7 +27907,7 @@
    "key_projects": [
     {
      "name": "National community programme",
-     "detail": "More than 185 new-home communities, entry-level product, headquartered in the Houston metro.",
+     "detail": "153 active selling communities as of 31 August 2026, entry-level product, headquartered in The Woodlands.",
      "signal_type": "repeatable",
      "fit_signal": "The most standardised product line among the listed builders and a head office inside the target geography. Entry-level detached housing puts a high share of cost in the wall.",
      "url": "https://www.lgihomes.com/"
@@ -28375,8 +28372,8 @@
    ],
    "region": "Houston HQ, Harris County",
    "homepage_url": "https://www.perryhomes.com/",
-   "synopsis": "Houston-founded builder, family owned since 1967, now building across Houston, Austin, Dallas-Fort Worth and San Antonio and, since February 2024, across Florida in Orlando, Tampa, Sarasota, Port St. Lucie and Jacksonville. Its own about page describes the markets it builds in rather than a homes-sold total, and it publishes no construction or purchasing officer.",
-   "key_stat": "120+ communities, 65,000+ homes sold",
+   "synopsis": "Houston-founded builder, family-owned and operated since 1967 and, in its own words, one of the nation's largest woman-owned homebuilders. It builds across Houston, Austin, Dallas-Fort Worth and San Antonio and, since February 2024, across Florida in Orlando, Tampa, Sarasota, Port St. Lucie and Jacksonville. Kathy Perry Britton is Executive Chair and Todd Chachere is Chief Executive Officer. Its about page names the markets it builds in and publishes no community count, no homes-sold total and no construction or purchasing officer.",
+   "key_stat": "Four Texas markets and five in Florida, no volume published",
    "principals": [
     {
      "name": "Kathy Britton",
@@ -28397,7 +28394,7 @@
    "key_projects": [
     {
      "name": "Houston community programme",
-     "detail": "More than 120 active communities across four Texas markets, including builder roles at Austin Point in Rosenberg and Sienna in Missouri City.",
+     "detail": "Builder roles at Austin Point in Rosenberg and Sienna in Missouri City. Its own about page names four Texas markets and five in Florida and publishes no community count.",
      "signal_type": "repeatable",
      "fit_signal": "Detached single-family at this volume with a Houston headquarters. Wall-heavy product and decision-making in the same city as the printer.",
      "url": "https://www.perryhomes.com/about-perry-homes"
@@ -28454,14 +28451,14 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "More than 120 communities and 65,000 homes, locally owned."
+     "text": "Nine markets across two states on one plan library."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "120 communities and thousands of closings a year, bought centrally."
+     "text": "Nine markets across two states. The volume is far above what one or two printers cover, and it is bought centrally."
     },
     {
      "axis": "innovation",

@@ -40,7 +40,7 @@ import audit2 as AUDIT2
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 from urllib.parse import quote
 
-BUILD = 53
+BUILD = 55
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -508,6 +508,9 @@ for t in targets:
         _nu = AUDIT2.EDIT_PROJECT_URL.get((tid, _k["name"]))
         if _nu:
             _k["url"] = _nu
+        _nd = AUDIT2.EDIT_PROJECT_DETAIL.get((tid, _k["name"]))
+        if _nd:
+            _k["detail"] = _nd
     for _a, _b, _c, _d, _e in AUDIT2.PROJECTS.get(tid, []):
         if not any(k["name"] == _a for k in t["key_projects"]):
             t["key_projects"].append({"name": _a, "detail": _b, "signal_type": _c,
@@ -517,6 +520,37 @@ for t in targets:
     for _u in AUDIT2.SOURCES.get(tid, []):
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
+
+# A corrected figure that is still printed somewhere else on the same card.
+# Build 53 rewrote eleven synopses and touched nothing else on those cards, and
+# five of them went out contradicting themselves. Correcting a number now means
+# declaring the number it replaces, and this refuses to build while the old one
+# survives anywhere the reader can see it.
+_stale = []
+for t in targets:
+    for _old, _why in AUDIT2.SUPERSEDED.get(t["target_id"], []):
+        _where = []
+        if _old in (t.get("synopsis") or ""):
+            _where.append("synopsis")
+        if _old in (t.get("key_stat") or ""):
+            _where.append("headline figure")
+        for _w in t["why"]:
+            if _old in _w["text"]:
+                _where.append("the %s reason" % _w["axis"])
+        for _k in t["key_projects"]:
+            if _old in (_k["name"] + " " + _k["detail"] + " " + (_k.get("fit_signal") or "")):
+                _where.append("evidence: %s" % _k["name"])
+        for _p in t["principals"]:
+            if _old in (_p.get("role") or ""):
+                _where.append("a title")
+        if _where:
+            _stale.append("%s %s: %r still on the card in %s. It was superseded: %s"
+                          % (t["target_id"], t["entity_name"], _old,
+                             ", ".join(sorted(set(_where))), _why))
+if _stale:
+    for _s in _stale:
+        print("   " + _s)
+    raise SystemExit("FAILED: a superseded figure is still printed on its card")
 
 # A count that moves can move a record between sections, and the section was
 # assigned before the audit ran. Only the plain tiers are re-derived: adopter,

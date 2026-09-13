@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 54 · 2026-09-12
+Build 55 · 2026-09-13
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -530,6 +530,66 @@ carries an extra clause the team page does not. 208 evidence lines became 198. T
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
 
+## Build 55: the figures gate, and five cards that contradicted themselves
+
+Asked whether I was worried some of this was invented, the right answer was to
+test it rather than say so. Two tests, one weak and one not.
+
+**The weak one.** All 98 LinkedIn URLs, checked for the shapes a fabricated slug
+takes: a surname absent from its own slug, a forename absent, one URL on two
+different people. Four name mismatches, all benign (`raygabriele`, `bartonk`,
+`dahightower`, and a percent-encoded accent), and one duplicate that is the same
+man correctly on two cards. No structural tell. That is worth little: 73 of the
+98 carry a hex suffix, which is the shape that cannot be judged by looking, and
+neither linkcheck nor probe can open linkedin.com at all. The contact layer's
+softest 91 entries remain untested by anything.
+
+**The one that found something.** `figures.py` is new and does for numbers what
+`probe.py` does for names: take every figure a card prints, fetch every page that
+card cites, and ask whether the figure is in the bytes. 779 figures across 106
+cards. Restricted to cards where every cited page came back readable, 27 were
+printing a figure that is on none of them.
+
+**Five of those were self-inflicted, and they were live.** Build 53 rewrote
+eleven synopses and touched nothing else on those cards:
+
+- Perry Homes printed "120+ communities, 65,000+ homes sold" as its headline
+  figure directly above a synopsis saying the about page publishes no homes-sold
+  total. That page contains neither string in any form.
+- LGI said 153 active selling communities in the synopsis and "more than 185" in
+  an evidence item on the same card.
+- Pagewood said phase one was 30,000 square feet in the synopsis, while the
+  superseded evidence item sat beside its replacement still saying 513,000.
+- Triten said The Mill delivered as 341 apartments and the evidence item said 340,
+  at the old address, with the office component the synopsis had just said does
+  not appear in the firm's own portfolio.
+- Midway had The Laura at 360 units and opening. It is 359 and opened in 2024.
+  That one was reported in round two and never applied.
+
+**The gate.** `audit2.SUPERSEDED` is a register: correcting a figure means naming
+the figure it replaces. `build.py` then refuses to build while the old one is
+printed anywhere on that card, in the synopsis, the headline, a reason, an
+evidence item or a title. It was tested by feeding it a live string and watching
+it fail the build.
+
+**A stale `.pyc` read for the source.** While testing the gate, a restored file
+the same byte length as the one it replaced, written inside the same second, was
+invisible to CPython's mtime-and-size check, and the build reported a figure the
+source no longer held. `PYTHONDONTWRITEBYTECODE` is now set in the Makefile.
+Nothing here is hot enough to need bytecode on disk, and a cached artifact
+standing in for its source is the same failure as everything else in this audit.
+
+**What is left, stated as two different things.** 25 cards still print a figure
+that is on no page they cite. Eight of them name a publisher in words without
+linking it: Westin, Colina and Sitterle all say "Builder reports" and cite only
+the firm's homepage, so the Builder 100 firm page is the source and it is not on
+the card. That is a link-the-claim job. The other 17 need a look each; several
+are price bands on sites that render prices from script, which the checker cannot
+read and should not be trusted to have refuted. None of the 25 is known to be
+invented, and none of them should be described as verified either.
+
+96 firms, 241 contacts, 43 with a named decider.
+
 ## Build 54: the browser round, and the probe's own false positive
 
 Build 53 left 41 contacts on pages a script cannot read: hosts that answer 403,
@@ -899,7 +959,9 @@ surface (filters, call list, workbook builder).
 - Three contacts sit behind houstonagentmagazine's Cloudflare interstitial, which
   a browser does not clear either: Jeff Dye, Jay McManus and Tim Drone. Four more
   sit on NewQuest's leadership page, which renders no names at all.
-- 90 contacts stand on a LinkedIn headline with no firm page that names them.
+- 25 cards print a figure on no page they cite. Eight name a publisher without
+  linking it and are a mechanical fix; run `python3 figures.py` for the list.
+- 91 contacts stand on a LinkedIn headline with no firm page that names them.
   That is inside the deck's own rule and it is also the softest evidence on it.
   `probe.py` lists them; a phone call is what would harden them.
 - `linkcheck.py` BLOCKED holds 30 hosts that refuse scripted requests. Each was

@@ -166,6 +166,7 @@ RENAME = {
 
 KEY_STAT = {
     "HOU-063": "Founded 1993, more than 4,000 homes on the firm's own count",
+    "HOU-013": "Four Texas markets and five in Florida, no volume published",
     "HOU-010": "10,000th rental home, May 2023",
     "HOU-081": "East Blocks phase one, 30,000 sf across two warehouses",
     "HOU-006": "341 units at The Mill, 294 more under construction at Aliana",
@@ -256,6 +257,19 @@ WHY = {
         "not beyond a two-machine pilot.",
         "Daiwa House holds the majority and is an industrialised builder in "
         "Japan. Nothing published connects that to CastleRock's own method."),
+    "HOU-013": (
+        "Nine markets across two states on one plan library.",
+        "Nine markets across two states. The volume is far above what one or two "
+        "printers cover, and it is bought centrally.",
+        "Its own published definition of innovation is smart-home features and "
+        "floor plans."),
+    "HOU-081": (
+        "Ten blocks under one plan is concentration, but every building is its "
+        "own problem.",
+        "Phase one is two warehouses of the same size, done twice. The rest of "
+        "the district is one-offs, and the build-to-rent line is not in Houston.",
+        "It chose to keep eighty-year-old warehouses that would have been cheaper "
+        "to demolish. The partner said so on the record."),
     "HOU-014": (
         "153 active selling communities on one systematic plan set.",
         "Thousands of closings a year across 36 markets in 21 states.",
@@ -410,7 +424,7 @@ SYNOPSIS = {
         "the buildings the conversion sat in, and no source shows the conversion "
         "surviving the sale.",
 
-    "HOU-013":
+    "HOU-013x":
         "Houston-founded builder, family owned since 1967, now building across "
         "Houston, Austin, Dallas-Fort Worth and San Antonio and, since February "
         "2024, across Florida in Orlando, Tampa, Sarasota, Port St. Lucie and "
@@ -471,6 +485,25 @@ SYNOPSIS = {
         "division presidents for the Southeast, Atlanta and Chattanooga and no "
         "Houston division leader, and no current company page publishes one.",
 
+    "HOU-013":
+        "Houston-founded builder, family-owned and operated since 1967 and, in "
+        "its own words, one of the nation's largest woman-owned homebuilders. It "
+        "builds across Houston, Austin, Dallas-Fort Worth and San Antonio and, "
+        "since February 2024, across Florida in Orlando, Tampa, Sarasota, Port "
+        "St. Lucie and Jacksonville. Kathy Perry Britton is Executive Chair and "
+        "Todd Chachere is Chief Executive Officer. Its about page names the "
+        "markets it builds in and publishes no community count, no homes-sold "
+        "total and no construction or purchasing officer.",
+
+    "HOU-036":
+        "Houston investment and development firm. East River is a 150-acre "
+        "redevelopment of the former turning-basin site on Buffalo Bayou, broken "
+        "ground August 26, 2021 and planned at 60 city blocks. Phase One is 26 "
+        "acres with 250,000 square feet of office and 110,000 of retail; The "
+        "Laura, 359 apartments, opened in 2024. Midway kept sole development "
+        "control of East River and sold its interest in the Parkway Ventures "
+        "joint venture to Parkway in December 2024.",
+
     "HOU-077":
         "San Antonio builder founded in 1964, now in four Texas markets including "
         "Houston. Builder's last published figures are 372 closings and $210 "
@@ -492,9 +525,37 @@ HOMEPAGE = {
 DROP_PROJECTS = {
     # The cited release is the firm's north Texas launch and names neither.
     ("HOU-076", "Meridiana"),
+    # Superseded by "East Blocks phase one" and left standing beside it for a
+    # build, carrying the district figure as though it were phase one.
+    ("HOU-081", "East Blocks"),
+}
+
+# An evidence item whose text a correction superseded.
+EDIT_PROJECT_DETAIL = {
+    ("HOU-006", "The Mill"):
+        "East End Houston, six acres around a preserved 1890s brick mill. "
+        "Delivered in 2025 as 341 apartments over a cast-in-place concrete "
+        "podium with five storeys of wood frame above it. A six-storey "
+        "cross-laminated timber office building was reported in 2021 as a second "
+        "phase, contingent on retail leasing, and does not appear in the firm's "
+        "own portfolio entry.",
+    ("HOU-036", "East River"):
+        "100 Jensen Drive, Fifth Ward. 150 acres planned at 60 city blocks over "
+        "a decades-long horizon. Phase One is 26 acres with 250,000 square feet "
+        "of office and 110,000 of retail. The Laura, 359 apartments, opened in "
+        "2024.",
+    ("HOU-014", "National community programme"):
+        "153 active selling communities as of 31 August 2026, entry-level "
+        "product, headquartered in The Woodlands.",
+    ("HOU-013", "Houston community programme"):
+        "Builder roles at Austin Point in Rosenberg and Sienna in Missouri City. "
+        "Its own about page names four Texas markets and five in Florida and "
+        "publishes no community count.",
 }
 
 EDIT_PROJECT_URL = {
+    # The portfolio entry is the page that carries 341 and no office component.
+    ("HOU-006", "The Mill"): "https://www.tritenre.com/portfolio/the-mill",
     # id=5900 is Sam Houston High School, another firm's job. The project these
     # two cards describe, with these exact figures, is id=6094.
     ("HOU-103", "TCC Multi-Family Interiors"): "https://tilt-up.org/projects/profile/?id=6094",
@@ -547,6 +608,7 @@ SOURCES = {
     "HOU-114": ["https://tilt-up.org/projects/profile/?id=6094"],
     "HOU-077": ["https://sitterlehomes.com/about-us/"],
     "HOU-070": ["https://www.ravennahomes.com/about/"],
+    "HOU-036": ["https://rebusinessonline.com/midway-opens-359-unit-laura-apartments-at-east-river-in-houston/"],
     "HOU-033": ["https://www.coventryhomes.com/new-homes/tx/houston/"],
     "HOU-068": ["https://www.westin-homes.com/communities/houston"],
 }
@@ -560,4 +622,41 @@ DROP_SOURCES = {
     ("HOU-114", "https://tilt-up.org/projects/profile/?id=5900"),
     # Does not carry the community the card cites it for.
     ("HOU-076", "https://www.prnewswire.com/news-releases/imagination-homes-launches-breaks-ground-on-first-community-302539487.html"),
+}
+
+
+# ---------------------------------------------------------------- supersession
+
+"""Correcting a figure means declaring the figure it replaces.
+
+Build 53 rewrote eleven synopses and left every other part of those cards alone.
+Five of them ended up contradicting themselves in print: a headline figure the
+synopsis directly above it called a misreading, an evidence item still carrying
+the community count the synopsis had just halved, a phase-one size the synopsis
+had just cut by a factor of seventeen.
+
+figures.py found them by testing every printed number against the bytes of the
+pages its own card cites. This registry stops the next one. Correcting a number
+now means naming the number it replaces, and the build fails if the old one
+still appears anywhere on that card: synopsis, headline, reasons, evidence,
+titles.
+
+The string is matched as printed, so register the form a reader would see.
+"""
+SUPERSEDED = {
+    "HOU-013": [("65,000", "Perry's about page publishes no homes-sold total. "
+                           "The figure was a misreading of a sentence about the "
+                           "markets it builds in."),
+                ("120 communities", "and no community count either"),
+                ("120 active communities", "same")],
+    "HOU-014": [("185", "LGI's own release says 153 active selling communities "
+                        "as of 31 August 2026")],
+    "HOU-081": [("513,000 square feet: 196,000",
+                 "513,000 is the whole ten-block district. Phase one is two "
+                 "warehouses of 15,000 square feet each")],
+    "HOU-006": [("340 apartments", "the firm's own portfolio entry says 341"),
+                ("75,000 square feet office", "no office component appears in "
+                 "the firm's own portfolio entry for The Mill")],
+    "HOU-036": [("360 units", "the opening release says 359, and it opened in "
+                              "2024 rather than opening now")],
 }
