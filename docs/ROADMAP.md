@@ -28,9 +28,18 @@ D.R. Horton, Lennar, Pulte, KB Home, Highland, Tri Pointe and Trendmaker, Toll, 
 
 AMH (American Homes 4 Rent), Tricon, Invitation Homes, Progress Residential, NexMetro, Quinn Residences, Quarterra. For each: Houston units built or under way from the firm's own investor deck or 10-K, whether it builds or buys (AMH builds; Invitation buys), the Houston development lead named on the firm's own page or a dated release, and any method statement. Those that build go on the deck; those that only buy are channel, like the land developers.
 
-## Pass 4. Contact channels
+## Pass 4. Contact channels — done in Build 56
 
-The call list carries 157 named people and no phone number. Add one firm main line per record, taken from the firm's own contact page only, into a `phone` field on the record, with the page URL as source. No personal numbers, no aggregator numbers. Where the firm publishes no number, leave the field empty and say so. The List, firm page and Excel export need the column added; `verify.py` needs a check that every phone on the page has a source URL on the same record.
+143 numbers across 89 records, a stated absence on the other 17, a designation
+rule recorded on every main line, and `phonecheck.py` testing each digit against
+the page cited for it. Two departures from what this pass asked for, both in the
+Build 56 handoff entry: where a page publishes several numbers the rest are kept
+in a directory rather than discarded, and the List gets no column because an
+eighth one fails the responsive gate at 320 pixels.
+
+What is still open here: email. The deck carries no address for any firm or
+person, and several of the seventeen absences above are firms that publish an
+address and a form instead of a number.
 
 ## Pass 5. Open items from the handoff
 

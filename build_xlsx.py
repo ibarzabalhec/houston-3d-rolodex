@@ -43,6 +43,10 @@ COLS = [
     ("Decides the wall", 15), ("How this person was verified", 70),
     ("Firm page for this person", 46), ("Company LinkedIn", 42), ("Leadership page", 42),
     ("Latest press", 70),
+    # Appended rather than inserted. LI_COL, FIND_COL and ST_COL below, the
+    # wrap and centre sets, and the legend prose all name column positions, so
+    # anything slipped into the middle of this list silently moves them.
+    ("Phone", 18), ("Phone label", 26), ("Phone source", 46),
 ]
 LI_COL, FIND_COL, ST_COL = 16, 17, 18   # 1-indexed
 HDR = 6
@@ -63,6 +67,10 @@ ws["A4"] = ("LEGEND. Column Q is a one-click LinkedIn people search for that nam
             "president or director of construction or the head of purchasing; filter it to YES for the call list. "
             "Column W is the evidence behind the name, column X the firm's own page that names them, "
             "and columns Y and Z the company's LinkedIn and leadership pages. "
+            "Columns AB to AD carry the firm's main line, the words the page uses for it, and "
+            "the page it is published on. The number is the firm's, not the person's, so it "
+            "repeats down every row for that firm. A firm whose own pages publish no number "
+            "has all three cells empty. "
             "Example: https://www.linkedin.com/in/jane-doe-1a2b3c4d/")
 ws["A4"].font = Font(name="Arial", size=9, italic=True, color=MUTED)
 ws["A4"].alignment = Alignment(wrap_text=False)
@@ -80,6 +88,11 @@ for t in T:
         url=t.get("homepage_url") or ("no website confirmed" if t.get("no_web_presence") else ""),
         cli=t.get("company_li") or "", team=t.get("team_url") or "",
         screen=t["mvp_screen"],
+        # Firm level, so it repeats down every row for that firm, including the
+        # row a firm with no named contact gets.
+        phone=(lambda d: "(%s) %s-%s" % (d[:3], d[3:6], d[6:]) if d else "")(t.get("phone")),
+        phonelab=t.get("phone_label") or "",
+        phonesrc=t.get("phone_source") or "",
         press=(lambda ps: ("%s %s. %s  %s" % (ps[0]["date"], ps[0]["outlet"],
                                               ps[0]["headline"], ps[0]["url"])).strip()
                if ps else "")(sorted(t.get("press") or [],
@@ -131,7 +144,8 @@ ws.row_dimensions[HDR].height = 22
 
 KEYS = ["name", "firm", "title", "tier", "score", "role", "region", "stat",
         "rep", "repw", "wall", "wallw", "inn", "innw", "cap",
-        "li", None, None, "url", "screen", "dec", "ev", "bio", "cli", "team", "press"]
+        "li", None, None, "url", "screen", "dec", "ev", "bio", "cli", "team", "press",
+        "phone", "phonelab", "phonesrc"]
 
 for ri, r in enumerate(rows):
     row = first + ri

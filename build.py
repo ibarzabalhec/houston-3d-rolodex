@@ -38,9 +38,10 @@ import gap as GAP
 import audit as AUDIT
 import audit2 as AUDIT2
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
+import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 55
+BUILD = 56
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -138,6 +139,15 @@ def finalize(recs):
             t.setdefault(k, [])
         t.setdefault("hue_hex", "#FF4F00")
         t.setdefault("tail", False)
+        # The number layer. Filled by the phones pass below, after the audit
+        # passes have settled which homepage a card actually carries.
+        t.setdefault("phone", None)
+        t.setdefault("phone_label", None)
+        t.setdefault("phone_source", None)
+        t.setdefault("phone_rule", None)
+        t.setdefault("phone_more", [])
+        t.setdefault("phone_note", None)
+        t.setdefault("phone_absent", None)
 
         for _n, _r, _u, _ev, _dec in (TRADE_PEOPLE.get(t["target_id"], [])
                                       + LATE_PEOPLE.get(t["target_id"], [])):
@@ -520,6 +530,49 @@ for t in targets:
     for _u in AUDIT2.SOURCES.get(tid, []):
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
+
+# The number layer, last, because it is keyed on target_id and reads nothing the
+# passes above write. Rule 5 records cases where the page publishes several
+# numbers and designates none of them the main line: those carry a directory and
+# no main line, and the card says so rather than picking one.
+_RULE = {
+    1: "the page publishes one number",
+    2: "a tel: link in the site header or footer, so on every page",
+    3: "the page labels it",
+    4: "the only Houston-area line among several",
+    5: "the page publishes several and designates none",
+}
+for t in targets:
+    tid = t["target_id"]
+    if tid in PHONES.PHONE:
+        _d, _lab, _src, _rule = PHONES.PHONE[tid]
+        t["phone"], t["phone_label"] = _d, _lab
+        t["phone_source"], t["phone_rule"] = _src, _RULE[_rule]
+    elif tid in PHONES.NO_MAIN:
+        t["phone_source"], t["phone_rule"] = PHONES.NO_MAIN[tid], _RULE[5]
+    t["phone_more"] = [{"digits": _d, "label": _l}
+                       for _d, _l in PHONES.MORE.get(tid, [])]
+    t["phone_note"] = PHONES.NOTE.get(tid)
+    t["phone_absent"] = PHONES.ABSENT.get(tid)
+
+# A number with no page behind it is the thing this whole layer exists to
+# prevent. phonecheck.py tests the digits against the bytes; this tests that a
+# page was named at all, and that nothing claims both a number and an absence.
+_nofix = []
+for t in targets:
+    if (t["phone"] or t["phone_more"]) and not t["phone_source"]:
+        _nofix.append("%s prints a number with no page cited for it" % t["target_id"])
+    if t["phone"] and t["phone_absent"]:
+        _nofix.append("%s carries a number and a stated absence" % t["target_id"])
+    if t["phone"] and len(t["phone"]) != 10:
+        _nofix.append("%s: %r is not ten digits" % (t["target_id"], t["phone"]))
+    for _m in t["phone_more"]:
+        if len(_m["digits"]) != 10:
+            _nofix.append("%s: %r is not ten digits" % (t["target_id"], _m["digits"]))
+if _nofix:
+    for _s in _nofix:
+        print("   " + _s)
+    raise SystemExit("FAILED: the number layer is inconsistent")
 
 # A corrected figure that is still printed somewhere else on the same card.
 # Build 53 rewrote eleven synopses and touched nothing else on those cards, and

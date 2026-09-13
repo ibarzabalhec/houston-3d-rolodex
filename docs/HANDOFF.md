@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 55 · 2026-09-13
+Build 56 · 2026-09-13
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -529,6 +529,74 @@ title in either direction of containment, which catches the case where the recor
 carries an extra clause the team page does not. 208 evidence lines became 198. The
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
+
+## Build 56: the number layer
+
+The deck carried 106 firms, 273 named people and no phone number. It now carries
+143 numbers across 89 records, a stated absence on the other 17, and a fourth
+mechanical gate that tests every digit against the page it is cited to.
+
+**Firm level, not person level.** No firm on this deck publishes a direct dial
+for its purchasing officer. The only sources that do are the contact aggregators
+the deck is barred from, and `build.py`'s banned-source sweep would exit on any
+of them. A person's row is unchanged.
+
+**How a main line is designated.** In order, first fit wins, and the rule used is
+recorded on the record and shown on the card:
+
+1. the page publishes exactly one number
+2. a `tel:` link in the site header or footer, so on every page
+3. the page labels it main, office, corporate, general or headquarters
+4. the only Houston-area line among several
+5. none of the above, so no main line is designated
+
+Rule 5 is the point of the list. Three records hit it: Caldwell Homes publishes
+four community sales lines, D.R. Horton publishes a division office in every
+state, Taylor Morrison gives each division a Customer Care number and an Online
+Sales Manager number and calls neither the main line. Those cards print the
+directory and say the page designates none. The first sweep, which took the
+first number on each page, would have published MAREK's residential fax, Read
+King's fax, Braun's fax and Kendall's fax as main lines.
+
+**Nothing published is discarded.** Where a page carries more than one number,
+the card prints one and folds the rest into a `<details>` directory, each with
+the wording the page gives it. Where a page carries more than a directory can
+usefully hold, a note gives the count instead: Ashton Woods publishes a number
+per selling community, fifteen of them in the Houston area, and none for the
+company.
+
+**What a blank means.** Seventeen records ship a sentence rather than an empty
+field. Nine are firms whose own pages route every enquiry through a form:
+Chesmar, LGI, M/I, Greystar, Dinerstein, Harvey Cleary, RSK, Colina, Newland.
+Two are firms that no longer have their own site: Brightland now serves a DRB
+Homes page, and Newland redirects to Brookfield. Six have no page on the card at
+all.
+
+**`phonecheck.py`**, the fourth gate, run by hand like `linkcheck.py` and
+`figures.py`. It fetches every cited page and tests the digits against every
+rendering a page might use. It found nothing wrong with the hand-typed entries
+and two things wrong with itself. Four sites send a browser a page full of
+office numbers and send a script the same page with every number missing,
+because the numbers are assembled by JavaScript: drbhomes, tricoasthomes,
+smithdouglas and dsldhomes. Not finding a number on one of those proves nothing,
+which is the lesson `probe.py` learned about names in Build 53. The guard is
+mechanical: a page with no phone-shaped string anywhere and no `tel:` link is
+unreadable for this purpose and resolves against `PHONES.VERIFIED`, a dated
+record of what a browser showed. Fourteen numbers stand on browser reads.
+
+**No List column.** `ROADMAP.md` asks for one. `verify.py`'s responsive gate
+fails when a list cell sits past the right edge at 320 pixels, and an eighth
+column does that; its `emptyLabelled` check separately fails on a `Phone` cell
+with nothing under it, which is what a firm with no published number produces.
+The number is on the firm page, on the call sheet in printable text, and in both
+workbooks. The List stays a triage table. Deliberate departure, recorded here.
+
+**Files.** `phones.py` (the data, hand written), `phonecheck.py` (the gate),
+`internal/harvest_phones.py` (reconnaissance, not in `make`), plus the number
+layer through `build.py`, `_template.html`, `build_xlsx.py` and `linkcheck.py`.
+`verify.py` gained a shape check that fails the build on a number with no source
+link, a number that is not ten dialable digits, the same number on two firms, or
+a fax printed as a main line.
 
 ## Build 55: the figures gate, and five cards that contradicted themselves
 

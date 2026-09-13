@@ -46,6 +46,46 @@ if _bad:
 print("reason vs mark  : %d reasons, none contradict"
       % sum(len(t["why"]) for t in D["targets"]))
 
+# The number layer, on shape rather than on truth. phonecheck.py tests the
+# digits against the bytes of the page; this tests what the deck can check on
+# its own every time it builds: that a number has a page behind it, that it is
+# ten digits with a dialable area code, and that no two firms print the same
+# line. A number appearing twice is either a transcription slip or a shared
+# office, and both want a person to look.
+_ph, _seen = [], {}
+for _t in D["targets"]:
+    _all = ([(_t["phone"], "main line")] if _t.get("phone") else []) + \
+           [(_m["digits"], _m["label"] or "no label") for _m in _t.get("phone_more") or []]
+    if _all and not _t.get("phone_source"):
+        _ph.append("%s prints a number with no page cited for it" % _t["short"])
+    if _t.get("phone_source") and not _t["phone_source"].startswith("http"):
+        _ph.append("%s: the phone source is not a link" % _t["short"])
+    if _t.get("phone") and _t.get("phone_absent"):
+        _ph.append("%s carries a number and a stated absence" % _t["short"])
+    # A main line that the page calls a fax is the specific error the rules in
+    # phones.py exist to stop. It got four numbers wrong on the first sweep.
+    if _t.get("phone") and "fax" in (_t.get("phone_label") or "").lower():
+        _ph.append("%s prints a fax as its main line" % _t["short"])
+    for _d, _lab in _all:
+        if not (len(_d) == 10 and _d.isdigit()):
+            _ph.append("%s: %r is not ten digits" % (_t["short"], _d))
+        elif _d[0] in "01" or _d[3] in "01":
+            _ph.append("%s: %s cannot be dialled, the area or exchange code "
+                       "starts with %s" % (_t["short"], _d, _d[0] if _d[0] in "01" else _d[3]))
+        if _d in _seen and _seen[_d] != _t["short"]:
+            _ph.append("%s and %s both print %s" % (_seen[_d], _t["short"], _d))
+        _seen[_d] = _t["short"]
+if _ph:
+    for _b in sorted(set(_ph)):
+        print("   " + _b)
+    raise SystemExit("FAILED: the number layer does not hold together")
+_withph = [t for t in D["targets"] if t.get("phone")]
+_nomain = [t for t in D["targets"] if not t.get("phone") and (t.get("phone_more") or [])]
+print("phones          : %d records with a main line, %d with a directory and no "
+      "main line, %d stated absences, %d numbers in all"
+      % (len(_withph), len(_nomain),
+         sum(1 for t in D["targets"] if t.get("phone_absent")), len(_seen)))
+
 
 async def main():
     problems = []
@@ -151,6 +191,50 @@ async def main():
         print("company page     :", "all rendered" if not missing else "missing on " + ", ".join(missing))
         if missing:
             problems.append("company LinkedIn held but not rendered")
+
+        # Every held number reaches the page as a dialable link, its source
+        # link renders beside it, and the directory opens. Sampled across the
+        # three shapes a card can take: one number, one number plus a
+        # directory, and a directory with no main line.
+        _s = [t for t in D["targets"] if t.get("phone") and not t.get("phone_more")][:2] + \
+             [t for t in D["targets"] if t.get("phone") and t.get("phone_more")][:2] + \
+             [t for t in D["targets"] if not t.get("phone") and t.get("phone_more")][:1] + \
+             [t for t in D["targets"] if t.get("phone_absent")][:1]
+        ph_bad, ph_dirs = [], 0
+        for t in _s:
+            await pg.evaluate("document.getElementById('home').click()")
+            await pg.wait_for_timeout(80)
+            await pg.evaluate(
+                "document.querySelector('.chip[data-id=\"%s\"]').click()" % t["target_id"])
+            await pg.wait_for_timeout(120)
+            body = await pg.locator("#firmBody").inner_html()
+            if t.get("phone"):
+                if ('tel:+1%s' % t["phone"]) not in body:
+                    ph_bad.append("%s: the number does not render" % t["short"])
+                # A printed number with no way to check it is the same as no
+                # number, so the source link is part of the number.
+                if t["phone_source"] not in body:
+                    ph_bad.append("%s: the number renders with no source link" % t["short"])
+            for m in (t.get("phone_more") or []):
+                if ('tel:+1%s' % m["digits"]) not in body:
+                    ph_bad.append("%s: %s is held but not in the directory"
+                                  % (t["short"], m["digits"]))
+            if t.get("phone_more"):
+                ph_dirs += await pg.locator("#firmBody details.ftable ul.dial").count()
+            if t.get("phone_absent") and t["phone_absent"][:40] not in body:
+                ph_bad.append("%s: the stated absence does not render" % t["short"])
+        print("phone on card    :", "%d cards sampled, %d directories opened"
+              % (len(_s), ph_dirs), "|", "clean" if not ph_bad else "; ".join(ph_bad))
+        if ph_bad:
+            problems.append("a held number does not reach its card")
+        # The sample above can end on a card with no named contact, and the
+        # call-sheet check below adds whatever firm is open. Put a firm with
+        # people back on screen first.
+        await pg.evaluate("document.getElementById('home').click()")
+        await pg.wait_for_timeout(80)
+        await pg.evaluate(
+            "document.querySelector('.chip[data-id=\"HOU-045\"]').click()")
+        await pg.wait_for_timeout(150)
 
         # the call sheet carries the URL in printable text
         await pg.evaluate("document.querySelector('#firmBody [data-add]').click()")

@@ -65,6 +65,7 @@ def where(d):
         add(t.get("homepage_url"), w)
         add(t.get("team_url"), w + " team")
         add(t.get("company_li"), w + " company page")
+        add(t.get("phone_source"), w + " phone")
         for s in t.get("sources", []):
             add(s.get("url"), w + " source")
         for k in t.get("key_projects", []):
