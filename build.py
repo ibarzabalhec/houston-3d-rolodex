@@ -43,7 +43,7 @@ from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 60
+BUILD = 61
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -902,23 +902,33 @@ DATA = {
                  "b": "In on two of three counts.",
                  "adopter": "Has printed walls standing or contracted with a competitor.",
                  "national": "Purchasing sits at a national desk.",
+                 # The three counts read differently here, and that used to be a
+                 # paragraph in the methodology block at the foot of the page,
+                 # four screens away from the firms it governs. It is one clause
+                 # now, on the section it applies to.
                  "trade": "Concrete, shell and wall contractors, and the general contractors that "
                           "self-perform concrete. Houston builders do not put up their own walls, so "
-                          "the firm that would run a printer is often the one they hire.",
+                          "the firm that would run a printer is often the one they hire. The three "
+                          "counts are asked of the wall rather than of the plan set.",
                  "creative": "Design-led work that does not repeat a plan set. The printed element "
                              "sits inside a conventional project.",
                  "channel": "Owns the ground. The builders inside buy the wall.",
                  "icon": "Already reachable through an existing ICON relationship."},
+ # Build 61. Every number here was already a filter the reader could set by
+ # hand in the bar below, and none of them said so. A figure that describes a
+ # subset should hand you the subset. The fourth element is the filter the stat
+ # names; null resets. Clicking one opens the List, because a filter that leaves
+ # 74 of 96 chips greyed is describing the answer rather than showing it.
  "stat_strip": [
-   [str(n), "firms screened", False],
-   [str(g["a"]), "in on all three counts", False],
+   [str(n), "firms screened", False, None],
+   [str(g["a"]), "in on all three counts", False, {"group": ["a"]}],
    # 43 here and 42 on the market view are two different things, and until
    # Build 59 both were called a decision-maker. This one counts firms with the
    # mark; the market view counts the firms where nobody on that mark carries a
    # caveat. Each label now says which.
-   [str(n_dec), "with a decision-maker named", True],
-   [str(g["adopter"]), "already printing, with a competitor", False],
-   [str(g["trade"]), "contractors who build the wall", False],
+   [str(n_dec), "with a decision-maker named", True, {"dec": "any"}],
+   [str(g["adopter"]), "already printing, with a competitor", False, {"group": ["adopter"]}],
+   [str(g["trade"]), "contractors who build the wall", False, {"group": ["trade"]}],
  ],
  "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two "
         "printers would cover it. Track record: has paid for a new building method before. The first two "
@@ -946,76 +956,52 @@ DATA = {
  "signal_labels": SIGNAL_LABELS,
  "competitor": COMPETITOR,
  "icon_record": ICON_RECORD,
- "competitors": COMPETITORS,
+ # Build 61. The links were added in Build 58 and the competitor's own name sat
+ # above them as plain text, so the one thing a reader would click first was the
+ # one thing that was not a link. The site is read off the link list rather than
+ # assembled: the entry labelled "Their site" or nothing at all. Three firms here
+ # are shut or bankrupt and publish nothing, so those headers stay unlinked,
+ # which is the same distinction the firm cards draw.
+ "competitors": [dict(c, site=next((u for lab, u in (c.get("links") or [])
+                                    if lab.lower().startswith("their site")), None))
+                 for c in COMPETITORS],
  "consolidation": CONSOLIDATION,
 
+ # Build 61. This block ran to nine entries and about nine hundred words, and
+ # seven of the nine described something the page already shows: what a Partly
+ # means is under the counts on every firm page, what is in the contractor
+ # section is the note on the section, what a press item carries is the outlet
+ # and date printed on the item. Text that repeats what a card shows is text a
+ # reader has to get past to reach the cards. What is left is the four things a
+ # card cannot show: how the roster was assembled, where the decision-maker bar
+ # sits, what a contact is evidenced by, and what was deliberately left out.
  "limits": [
-   ["The three counts",
-    "Repetition asks whether a firm builds the same plans in one place. Printer fit asks "
-    "whether one or two printers would cover a share of a year's output: roughly 25 to 400 homes "
-    "a year in a few communities clears it, 400 to 1,500 or a decision that sits with a parent is "
-    "partial, and national purchasing fails. Track record asks whether the firm has ever paid for "
-    "a new way of building. Yes and Partly both count as holding a count. A No does not. A firm in on all three sits in the first section; one gap puts it in the second; the rest are grouped by what they are rather than by what they score."],
-   ["The counts, read for a contractor",
-    "A contractor does not close houses, so the same three questions are asked of the work rather "
-    "than of the plan set. Repetition asks whether the firm puts up the same wall again and again "
-    "inside one metro. Printer fit asks whether one or two printers would cover a share of the wall "
-    "it puts up in a year, on the same bands, with a firm whose purchasing sits at a corporate desk "
-    "scored Partly for the same reason a national builder is. Track record is unchanged."],
-   ["Who decides",
-    "%d of %d firms have a named vice president or director of construction, or head of purchasing, "
-    "and %d of those %d can be reached as named without a caveat. The other %d carry a decider who has "
-    "left, who is listed at a different entity, or whose match is probable rather than confirmed; the "
-    "caveat sits on the contact itself. "
-    "That is the bar, because those roles can change a wall specification. Construction managers, "
-    "superintendents and purchasing agents are excluded: they execute a specification rather than "
-    "choose one. At a contractor the specification belongs to somebody else, so the person marked "
-    "is the one who signs for equipment: the owner, the president or the division head. "
-    # Build 59. This is the number a reader probes first, so it now carries its
-    # own evidence split instead of standing on the word named.
-    "Across those firms %d people carry the mark. %d have a LinkedIn profile, %d have a page that "
-    "names them, and %d have neither, at firms that publish no staff page at all. Those %d are "
-    "marked No link on the card and carry a search rather than a link."
-    % (n_dec, n, n_dec_ok, n_dec, n_dec_chk,
-       len(_dd), n_dec_li, n_dec_src, n_dec_none, n_dec_none)],
-   ["Sources",
-    # Build 59 rewrote this. It had claimed every contact was one of the first
-    # two, which is falsifiable in about four clicks: 40 of the 241 are the third
-    # kind. The search icon on those cards was already telling the truth. This
-    # sentence was the only thing that was not, and the counts are now printed
-    # so a reader can check the claim instead of taking it.
-    "Company filings, company pages and trade press. A contact here is one of three things, and the "
-    "card says which. %d are a LinkedIn profile whose headline names the firm. %d are a page on the "
-    "firm's own site, or dated reporting, that names the person with a title. %d are a name carried "
-    "from a page that named them where the firm publishes no staff page to link, and those carry a "
-    "search rather than a link. The sentence that identified them sits under the name in every case. "
-    "No source URL, title or figure here was inferred. The only built links are the LinkedIn searches "
-    "marked search, which run a keyword query rather than claim a page."
-    % (n_li_p, n_src_p, n_none_p)],
-   ["What is in the contractor section",
-    "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. "
-    "The scope rule above is a builder rule and does not apply to them: most of this trade in Houston "
-    "is commercial and industrial."],
-   ["In the press",
-    "Each item is a headline a search actually returned, with the outlet, the date the result "
-    "carried, and a link read off the result rather than assembled. The headline is the "
-    "publisher's."],
    ["How the list was drawn",
-    "Trade press, the builder lists each master-planned community publishes, the "
-    "Builder 100, and the Greater Houston Builders Association member directory. "
-    "The directory carries 190 companies under Builder, Single Family and six "
-    "further categories: Build-to-Rent, Build On Your Lot, ICF Homes, 50+ "
-    "Communities, Multi-Family and Townhomes, and Developers. Reading all seven "
-    "against this deck, and reading the metro permit leaders against it, added five "
-    "firms. The rest of what the directory holds is custom and infill work of a few "
-    "homes a year, below the volume a printer is bought for."],
+    "Trade press, the builder lists each master-planned community publishes, the Builder 100, "
+    "and the Greater Houston Builders Association member directory. The directory carries 190 "
+    "companies across seven categories. Reading all seven against this deck, and reading the "
+    "metro permit leaders against it, added five firms. The rest is custom and infill work of a "
+    "few homes a year, below the volume a printer is bought for."],
+   ["Who decides",
+    "The mark goes on a vice president or director of construction, or a head of purchasing, "
+    "because those roles can change a wall specification. Construction managers, superintendents "
+    "and purchasing agents execute one. At a contractor it goes on whoever signs for equipment: "
+    "the owner, the president or the division head. On %d of the %d the contact itself carries a "
+    "caveat: the person has left, sits at another entity, or is a probable match."
+    % (n_dec_chk, n_dec)],
+   ["Sources",
+    # The three counts stay because the claim they replaced was falsifiable in
+    # four clicks, and verify.py fails the build if they stop matching the data.
+    "Company filings, company pages and trade press. A contact is one of three things and the "
+    "card says which: %d a LinkedIn profile whose headline names the firm, %d a page on the "
+    "firm's own site or dated reporting that names the person with a title, and %d a name carried "
+    "from a page that named them, at a firm that publishes no staff page to link. No source URL, "
+    "title or figure was inferred. No aggregator was used."
+    % (n_li_p, n_src_p, n_none_p)],
    ["Scope",
-    "Greater Houston and its suburban counties. Architects, engineers and permitting authorities are "
-    "not covered. Firms whose product is retail shell, mid-rise or one-off architecture are held out "
-    "of the deck and kept in the workbook."],
-   ["Figures",
-    "Where two sources disagree, both numbers appear and the disagreement is stated. Where a figure is "
-    "an average across years rather than a current run rate, it says so."],
+    "Greater Houston and its suburban counties. Architects, engineers and permitting authorities "
+    "are not covered. Firms whose product is retail shell, mid-rise or one-off architecture are "
+    "held out of the deck and kept in the workbook."],
  ],
 
 

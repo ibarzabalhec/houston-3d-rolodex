@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 60 · 2026-09-14
+Build 61 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -589,6 +589,53 @@ on that mark carries a caveat. Both labels now say which.
 
 **One thing in the review did not hold.** GreenEco's George Kopecky was reported
 as having no link at all. He has a LinkedIn profile, and it is on the card.
+
+## Build 61: show it, do not say it
+
+Three notes from a read of the shipped page, and one principle under all three:
+a page that explains what it could demonstrate is asking a reader to do work the
+page should have done.
+
+**The methodology block ran to nine entries and about nine hundred words, and
+seven of the nine described something the page already shows.** What a Partly
+means is printed under the counts on every firm page and in the legend on every
+view. What is in the contractor section is the note on the section. What a press
+item carries is the outlet and the date printed on the item itself. Text that
+repeats what a card shows is text a reader has to get past to reach the cards.
+It is **four entries and 264 words** now, and they are the four things a card
+cannot show: how the roster was assembled, where the decision-maker bar sits,
+what a contact is evidenced by, and what was deliberately left out. The one
+paragraph worth keeping, how the three counts read for a contractor, moved onto
+the contractor section's own note, four screens closer to the firms it governs.
+
+**Every number in the stat strip was already a filter, and none of them said
+so.** 96, 13, 43, 3, 22. A reader could set all five by hand in the bar below and
+had no way to know the figures above were the same thing. They are buttons now.
+Clicking one applies its filter and opens the List, because the List drops what
+does not match and the Screen only dims it: 22 contractors shown as 22 rows is
+the answer, 22 contractors shown as 74 grey chips is a description of the answer.
+Clicking the same one again clears it, and the first, the whole roster, resets
+everything. The pressed state is drawn in ink, not orange: orange means the track
+record on this page and it does not get a second job.
+
+`verify.py` clicks all five on every build and fails if a stat prints 22 and its
+filter returns 21. A figure and the set it describes cannot drift apart silently.
+
+**The one thing a reader reaches for first was the one thing that was not a
+link.** The twelve competitor cards in Field got 40 links in Build 58 and the
+competitor's own name sat above them as plain text. Same on every firm page: the
+firm's name was text and its website was a pill four inches below. The name is
+the link now, in both places, and the site is read off the link list rather than
+assembled. Three competitors are shut or bankrupt and publish nothing, so those
+headers stay plain, which is the same distinction the firm cards already draw
+about a missing website.
+
+Two things came out with it. The row labelled "Their site" is gone from each
+competitor's link list, and the Website pill is gone from every firm header:
+both printed a URL the name now carries. On a card with no site, the "No website
+published" tag is also the reason the name is not a link. The build fails if a
+competitor publishes a site and its name is not the link, and forty firm cards
+are checked per build for the same thing.
 
 ## Build 60: the cards that named their evidence and withheld the link
 

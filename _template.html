@@ -130,6 +130,23 @@ header.top .by{margin-top:18px;text-transform:none;letter-spacing:.04em;font-siz
 .stat span{display:block;margin-top:5px;font:600 9.5px/1.35 var(--mono);letter-spacing:.1em;
   text-transform:uppercase;color:var(--ink3)}
 .stat.hot b{color:var(--ink)}
+/* Every one of these numbers is a filter the reader could already set by hand.
+   Making them buttons is the whole change; the type does not move. */
+button.stat{appearance:none;background:none;border:0;border-right:1px solid var(--rule);
+  font:inherit;text-align:left;cursor:pointer;color:inherit;transition:background .12s}
+button.stat:last-child{border-right:0}
+/* Orange means one thing on this page and it is the track record. A pressed
+   filter is shown with ink: the label goes solid and a rule appears under the
+   stat. Nothing here borrows the one colour that already has a job. */
+button.stat{position:relative;padding-bottom:18px}
+button.stat::after{content:"";position:absolute;left:0;right:16px;bottom:0;height:2px;
+  background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .14s}
+button.stat:hover::after,button.stat:focus-visible::after{transform:scaleX(.18)}
+button.stat[aria-pressed="true"]::after{transform:scaleX(1)}
+button.stat[aria-pressed="true"] span{color:var(--ink)}
+button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
+@media(hover:none){button.stat:hover::after{transform:scaleX(0)}
+  button.stat[aria-pressed="true"]:hover::after{transform:scaleX(1)}}
 
 /* ----------------------------------------------------------------- filters */
 .filters{padding:20px 0 18px}
@@ -572,6 +589,22 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .comp dd{margin:0;padding:13px 0;border-top:1px solid var(--rule);font-size:13.5px;
   line-height:1.6;color:var(--ink2)}
 @media(max-width:640px){.comp dl{grid-template-columns:1fr}.comp dd{padding-top:0;border-top:0}}
+
+/* A title that is also a link. The underline sits off the baseline so a 30 to
+   44px display face does not look struck through, and the glyph after it is the
+   thing that says it leaves the page: an underline alone on a heading reads as
+   emphasis. */
+.hlink{color:inherit;text-decoration:underline;text-decoration-thickness:1.5px;
+  text-underline-offset:5px;text-decoration-color:var(--rule2)}
+.hlink:hover,.hlink:focus-visible{text-decoration-color:var(--ink)}
+.hlink .hout{display:inline-block;width:.42em;height:.42em;margin-left:.34em;
+  vertical-align:.16em;color:var(--ink3)}
+/* The display face on a firm page runs to 56px, where .42em is a 23px icon that
+   reads as a button rather than a mark. It scales down, not up. */
+.fhead h2 .hout{width:.26em;height:.26em;margin-left:.26em;vertical-align:.3em}
+.fhead h2 .hlink{text-decoration-thickness:2px;text-underline-offset:.1em}
+.hlink .hout svg{width:100%;height:100%;display:block}
+.hlink:hover .hout,.hlink:focus-visible .hout{color:var(--ink)}
 
 /* limits + footer */
 .limits{margin:54px 0 0;border-top:2px solid var(--ink)}
@@ -1434,8 +1467,35 @@ document.getElementById('sub').textContent=D.sub;
 document.getElementById('ylab').textContent=M.y_label;
 document.getElementById('xtitle').textContent=M.x_label;
 document.getElementById('mnote').innerHTML=D.matrix_note;
-document.getElementById('stats').innerHTML=D.stat_strip.map(function(s){
-  return '<div class="stat'+(s[2]?' hot':'')+'"><b>'+esc(s[0])+'</b><span>'+esc(s[1])+'</span></div>';}).join('');
+/* Each stat is the filter it describes. Clicking one applies that filter and
+   opens the List, because the List drops what does not match and the Screen only
+   dims it: 22 contractors shown as 22 rows is the answer, 22 contractors shown
+   as 74 grey chips is a description of the answer. Clicking the same stat again
+   clears it. The first, which is the whole roster, resets everything. */
+function drawStats(){
+  /* This runs once before the filter state exists, to paint the strip with the
+     rest of the page, and again from render() on every state change. */
+  var ready=(typeof F!=='undefined'&&F&&F.group);
+  document.getElementById('stats').innerHTML=D.stat_strip.map(function(s,i){
+    var f=s[3],on=!ready?!f:(f?statOn(f):(!F.group.length&&!F.count.length&&!F.dec&&!q));
+    return '<button class="stat'+(s[2]?' hot':'')+'" data-stat="'+i+'" type="button"'+
+      ' aria-pressed="'+(on?'true':'false')+'"><b>'+esc(s[0])+'</b><span>'+esc(s[1])+'</span></button>';
+  }).join('');
+}
+function statOn(f){
+  if(f.dec) return F.dec===f.dec;
+  if(f.group) return F.group.length===1&&F.group[0]===f.group[0];
+  return false;
+}
+drawStats();
+document.getElementById('stats').addEventListener('click',function(e){
+  var b=e.target.closest('button.stat'); if(!b) return;
+  var s=D.stat_strip[+b.dataset.stat],f=s[3];
+  var was=f?statOn(f):false;
+  clearFilters(); q=''; var si=document.getElementById('q'); if(si) si.value='';
+  if(f&&!was){ if(f.dec) F.dec=f.dec; if(f.group) F.group=f.group.slice(); mode='list'; }
+  goIndex(); render();
+});
 document.getElementById('limits').innerHTML=D.limits.map(function(l){
   return '<div class="lim"><b>'+esc(l[0])+'</b><span>'+esc(l[1])+'</span></div>';}).join('');
 document.getElementById('foot').innerHTML=esc(D.byline);
@@ -1609,17 +1669,26 @@ function section(label,body){
 function firmPage(t){
   var h=[],cs=t.capital_signals||[];
   h.push('<button class="back" id="back"><span class="arrow">'+SVG.left+'</span>All firms</button>');
-  h.push('<div class="fhead"><h2 class="disp">'+esc(t.entity_name)+'</h2>'+
+  /* Same rule as the Field cards: the firm's name goes to the firm's site. The
+     Website pill below stays, because it is what the filter bar and the call
+     sheet both point at, but a reader should not have to find a pill to reach
+     the company he is reading about. */
+  var fnm=t.homepage_url
+    ?'<a class="hlink" href="'+esc(t.homepage_url)+'" target="_blank" rel="noopener">'+
+      esc(t.entity_name)+'<span class="hout">'+SVG.out+'</span></a>'
+    :esc(t.entity_name);
+  h.push('<div class="fhead"><h2 class="disp">'+fnm+'</h2>'+
     (t.key_stat?'<div class="kst">'+esc(t.key_stat)+'</div>':'')+
     '<div class="tags">'+
       '<span class="tag k">'+esc(D.group_labels[t.group])+'</span>'+
       (t.marks.innovation==='clear'?'<span class="tag o">Has paid for a new method before</span>':'')+
       '<span class="tag q">'+esc(D.role_labels[t.entity_role]||'')+'</span>'+
       '<span class="tag q">'+esc(t.region)+'</span>'+
-      pill(t.homepage_url,'globe','Website')+
-      /* A card with no website says so where the website button would be.
-         The flag existed from the start and reached only the Excel export, so
-         six cards were silent about it on the page itself. */
+      /* The Website pill is gone. The firm's name above it is the link now, and
+         a card that printed the same URL twice, four inches apart, was doing
+         what this deck keeps taking out of its own prose. The tag below stays,
+         because an absent site still has to be stated: it is now also the
+         reason the name is not a link. */
       (!t.homepage_url&&t.no_web_presence?'<span class="tag q">No website published</span>':'')+
       pill(t.company_li,'li','LinkedIn')+
       pill(t.team_url,'out','Leadership page')+
@@ -2135,10 +2204,18 @@ function drawField(){
     var cls=(c.status==='closed'||c.status==='bankrupt')?' dead':(c.status==='sold'||c.status==='stalled'?' warn':'');
     /* Who they are, in links. The section named twelve competitors and gave a
        reader no way to reach any of them until Build 58. */
-    var lk=(c.links||[]).map(function(l){
+    /* The row that says "Their site" is the header, now that the header is the
+       link. Printing it twice is the kind of repetition this deck keeps taking
+       out of the prose. */
+    var lk=(c.links||[]).filter(function(l){return l[1]!==c.site;}).map(function(l){
       return '<li><a href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'+
         '<span class="host">'+esc(host(l[1]).split('/')[0])+'</span></li>';}).join('');
-    return '<div class="cmp"><h3>'+esc(c.name)+'<span class="where">'+esc(c.where)+'</span>'+
+    /* The name is the link. It was the one thing on the card a reader would
+       reach for and the one thing that was not clickable. A firm that has shut
+       and publishes nothing keeps a plain name. */
+    var nm=c.site?'<a class="hlink" href="'+esc(c.site)+'" target="_blank" rel="noopener">'+
+      esc(c.name)+'<span class="hout">'+SVG.out+'</span></a>':esc(c.name);
+    return '<div class="cmp"><h3>'+nm+'<span class="where">'+esc(c.where)+'</span>'+
       '<span class="st'+cls+'">'+esc(c.status)+'</span></h3>'+
       '<p class="cl3">'+esc(c.line)+'</p><dl>'+
       (c.facts||[]).map(function(f){return '<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>';}).join('')+
@@ -2202,6 +2279,8 @@ function render(){
   document.getElementById('vField').setAttribute('aria-pressed',mode==='field');
   document.getElementById('clN').textContent=call.length;
   document.getElementById('openCall').classList.toggle('on',call.length>0);
+  // the strip is a filter control like any other, so it shows what is applied
+  drawStats();
   drawPrintRoster();
 }
 
@@ -2431,6 +2510,7 @@ window.rolodex={
   exportRows:exportRows,
   buildWorkbook:function(list){return buildXlsx(exportRows(list||T.filter(hit)),
     XCOLS.map(function(c){return c[1];}),'Prospects');},
+  open:function(id){ if(byId[id]) openFirm(id); return view; },
   reset:function(){clearFilters();q='';document.getElementById('q').value='';render();}
 };
 })();

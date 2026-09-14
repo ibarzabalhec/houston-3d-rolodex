@@ -294,6 +294,22 @@ async def main():
         dec = await pg.locator("#firmBody .p1.dec").count()
         ev = await pg.locator("#firmBody .p1 .ev").count()
         li_icons = await pg.locator("#firmBody .ic.li").count()
+        # Build 61. The firm's own name reaches the firm's own site. A card with
+        # no website keeps a plain name and says so where the pill would be.
+        _hb = []
+        for _t in [x for x in D["targets"] if x["group"] != "out"][:40]:
+            await pg.evaluate("window.rolodex.open(%r)" % _t["target_id"])
+            await pg.wait_for_timeout(45)
+            _a = await pg.eval_on_selector_all(
+                "#firmBody .fhead h2 a.hlink", "e=>e.map(x=>x.getAttribute('href'))")
+            if _t.get("homepage_url") and _a[:1] != [_t["homepage_url"]]:
+                _hb.append("%s: the name does not link the site" % _t["short"])
+            if not _t.get("homepage_url") and _a:
+                _hb.append("%s: the name links a site the card does not hold" % _t["short"])
+        print("firm headers    : %d cards sampled, name links the site" % 40)
+        problems.extend(_hb)
+        await pg.evaluate("window.rolodex.open('HOU-045')")
+        await pg.wait_for_timeout(200)
         print("firm page       :", "full width" if (on and idx_hidden) else "NOT taking over",
               "|", dec, "badged deciders,", ev, "evidence lines,", li_icons, "linkedin marks")
         if not on or not idx_hidden:
@@ -498,13 +514,32 @@ async def main():
         # Every link held for a competitor reaches the page. The data can carry
         # them and the render can still drop them, which is how the section
         # went twelve builds with none.
-        _want = sum(len(c.get("links") or []) for c in D.get("competitors", []))
+        # The site link moved onto the name in Build 61, so it is not counted in
+        # the list below it. Every other link still has to render.
+        _want = sum(len([l for l in (c.get("links") or []) if l[1] != c.get("site")])
+                    for c in D.get("competitors", []))
         _got = await pg.locator("#fieldBody .clinks a").count()
         _blocks = await pg.locator("#fieldBody .cmp .clinks").count()
         print("field links     :", "%d of %d rendered across %d competitors"
               % (_got, _want, _blocks))
         if _got < _want or _blocks < len(D.get("competitors", [])):
             problems.append("a competitor link is held but not rendered")
+
+        # Build 61. The name above those links was plain text, so the first thing
+        # a reader reaches for was the one thing that was not a link. Every
+        # competitor that publishes a site carries it on its own name, and the
+        # three that are shut and publish nothing carry a plain name, which is
+        # the same distinction the firm cards draw about a missing website.
+        _sites = [c["name"] for c in D.get("competitors", []) if c.get("site")]
+        _hrefs = await pg.eval_on_selector_all(
+            "#fieldBody .cmp h3 a.hlink", "e=>e.map(x=>x.getAttribute('href'))")
+        print("field headers   : %d of %d competitors link their own site"
+              % (len(_hrefs), len(D.get("competitors", []))))
+        if len(_hrefs) != len(_sites):
+            problems.append("a competitor publishes a site and its name is not the link")
+        for _c in D.get("competitors", []):
+            if _c.get("site") and _c["site"] not in _hrefs:
+                problems.append("%s: the header does not carry its own site" % _c["name"])
 
         # The roster is what a person carries into a meeting.
         await pg.evaluate("document.getElementById('vMatrix').click()")
@@ -678,6 +713,43 @@ async def main():
                 problems.append("filtering to the contractor section returns the wrong count")
             await pg.evaluate("window.rolodex.reset()")
             await pg.wait_for_timeout(200)
+        # Build 61. Every number in the stat strip is now the filter it names, so
+        # every number has to select exactly what it says. A stat that prints 22
+        # and returns 21 firms is worse than one that returns nothing, because a
+        # reader checks the strip against the list and cannot tell which is
+        # wrong. Click each one and count what comes back.
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(250)
+        strip = await pg.evaluate("window.rolodex.data.stat_strip")
+        got = []
+        for i, s in enumerate(strip):
+            if not (len(s) > 3 and s[3]):
+                continue
+            await pg.evaluate("document.getElementById('vMatrix').click()")
+            await pg.wait_for_timeout(180)
+            await pg.click("#stats button.stat >> nth=%d" % i)
+            await pg.wait_for_timeout(300)
+            shown = await pg.evaluate("window.rolodex.shown().length")
+            got.append("%s=%d" % (s[0], shown))
+            if shown != int(s[0]):
+                problems.append("the stat '%s' prints %s and its filter returns %d"
+                                % (s[1], s[0], shown))
+            on_list = await pg.evaluate("!document.getElementById('stageList').hidden")
+            if not on_list:
+                problems.append("the stat '%s' does not open the list" % s[1])
+        print("stat strip      : %s, each filter returns what it prints" % ", ".join(got))
+        # The first stat is the whole roster, so it has to put everything back.
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(180)
+        await pg.click("#stats button.stat >> nth=0")
+        await pg.wait_for_timeout(250)
+        # The roster count, not len(targets): the file carries ten records held
+        # off the deck, and they are in targets and not on the screen.
+        if await pg.evaluate("window.rolodex.shown().length") != D["stats"]["total"]:
+            problems.append("the roster stat does not clear the filters")
+        await pg.evaluate("window.rolodex.reset()")
+        await pg.wait_for_timeout(200)
+
         # a contractor names the person who signs for equipment, not a specification
         badge = await pg.evaluate(
             "(()=>{const t=window.rolodex.data.targets.find(x=>x.group==='trade'"
