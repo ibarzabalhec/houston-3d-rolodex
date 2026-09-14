@@ -8,3 +8,6 @@ __pycache__/
 /houston-data.json
 /rolodex-artifact.html
 # the internal register is tracked but must never be copied into docs/ output
+
+# the internal research register stays local, out of the published repo
+internal/
