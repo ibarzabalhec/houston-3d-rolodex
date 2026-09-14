@@ -106,6 +106,65 @@ print("field links     : %d competitors, %d links, none without one"
       % (len(D.get("competitors", [])),
          sum(len(c.get("links") or []) for c in D.get("competitors", []))))
 
+# The document head, which no view renders and nothing read for thirty builds.
+# It said sixty-one firms while the page said ninety-six, and it is the line a
+# Slack unfurl and a LinkedIn card quote, so the preview of the page contradicted
+# the page. The number in it has to be the roster count.
+_md = D.get("meta_description") or ""
+_mdn = [int(x) for x in re.findall(r"\b\d+\b", _md)]
+_head = D.get("headline") or ""
+_hb = []
+if not _md:
+    _hb.append("there is no meta description")
+elif D["stats"]["total"] not in _mdn:
+    _hb.append("the meta description says %s and the roster is %d"
+               % (_mdn or "no number", D["stats"]["total"]))
+if len(_md) > 320:
+    _hb.append("the meta description is %d characters and will be cut" % len(_md))
+# A title states what the document is. It does not ask the reader a question,
+# and the counts live in the strip, which is four inches below it.
+if _head.rstrip().endswith("?") or "?" in _head:
+    _hb.append("the headline is a question")
+if re.search(r"\d", _head):
+    _hb.append("the headline carries a number, which belongs in the stat strip")
+if _hb:
+    for _b in _hb:
+        print("   " + _b)
+    raise SystemExit("FAILED: the headline or the social preview does not match the deck")
+print("head and title  : description quotes %d firms, headline states rather than asks"
+      % D["stats"]["total"])
+
+# The Sources block prints how each contact is evidenced. Those three numbers
+# have to be the three numbers in the data, because the sentence they replaced
+# was a claim a reader could falsify in four clicks.
+_p = [p for t in D["targets"] if t["group"] != "out" for p in t["principals"]]
+_li = sum(1 for p in _p if p.get("linkedin_url"))
+_sr = sum(1 for p in _p if p.get("source_url") and not p.get("linkedin_url"))
+_nn = sum(1 for p in _p if not p.get("linkedin_url") and not p.get("source_url"))
+_srcblk = "".join(b[1] for b in D.get("limits", []) if b[0] == "Sources")
+_sb = []
+for _v, _w in ((_li, "LinkedIn"), (_sr, "own page"), (_nn, "neither")):
+    if str(_v) not in _srcblk:
+        _sb.append("the Sources block does not carry %d, the %s count" % (_v, _w))
+if _li + _sr + _nn != len(_p):
+    _sb.append("the three evidence counts do not add to %d" % len(_p))
+# Every contact with neither is marked on its own row, or the reader has to
+# infer it from an icon.
+for _t in D["targets"]:
+    for _q in _t["principals"]:
+        _bare = not _q.get("linkedin_url") and not _q.get("source_url")
+        if _q.get("decider") and _bare and not _q.get("unlinked"):
+            _sb.append("%s: %s is a decider with no link and is not marked"
+                       % (_t["short"], _q["name"]))
+        if _q.get("unlinked") and not _bare:
+            _sb.append("%s: %s is marked unlinked and has a link" % (_t["short"], _q["name"]))
+if _sb:
+    for _b in sorted(set(_sb)):
+        print("   " + _b)
+    raise SystemExit("FAILED: the sources claim does not match the contacts")
+print("contact evidence: %d linkedin, %d own page, %d neither, all three printed"
+      % (_li, _sr, _nn))
+
 
 async def main():
     problems = []

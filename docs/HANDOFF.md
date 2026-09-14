@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 58 · 2026-09-14
+Build 59 · 2026-09-14
 
 The internal research register named in places below is kept out of this repository. It is a notebook of open questions, not a statement about any firm.
 
@@ -531,6 +531,66 @@ title in either direction of containment, which catches the case where the recor
 carries an extra clause the team page does not. 208 evidence lines became 198. The
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
+
+## Build 59: what an outside reader found, and why no gate had
+
+Every correction here came from a review of the shipped deck rather than from a
+pass over the data. That is the finding about the method: each one is a sentence
+that was true when it was written and stopped being true when the data moved
+underneath it, and none of the four gates was looking at sentences of that kind.
+
+**The meta description said sixty-one firms.** The roster says ninety-six. It sat
+wrong for thirty builds because it lives in the document head, where no view
+renders it and nothing read it. It is the line a Slack unfurl, a LinkedIn card
+and a search result quote, so the preview of the page contradicted the headline
+of the page it was previewing. It is generated from the roster count now, and
+`verify.py` fails the build if the number in it is not the roster count.
+
+**The Sources block made a claim a reader could falsify in four clicks.** It said
+every contact was either a LinkedIn profile whose headline names the firm or a
+page on the firm's own site. Of 241 contacts, 91 are the first and 111 are the
+second. The other 39 are a third thing: a name carried from a page that named
+them, at a firm that publishes no staff page to link, reachable through a search.
+The search icon on those cards was already telling the truth. The sentence was
+the only thing on the deck that was not. It prints the three counts now, and the
+verifier fails the build if they stop matching the contacts.
+
+**The decider stat is the one a reader probes first, so it carries its own
+evidence.** 62 people hold the mark across 43 firms. 37 have a LinkedIn profile,
+12 have a page that names them, 13 have neither at firms with no staff page at
+all. Those 13 are marked **No link** on their own row rather than leaving a
+reader to infer it from an icon, and the methodology block prints the split.
+
+**Three cards a reviewer could not open, and the flag that existed but rendered
+nowhere.** `no_web_presence` has been in the data from the beginning and reached
+only the Excel export, so six cards said nothing on the page about whether the
+firm has a site. Worse, three carried the flag and three did not, for the same
+condition, because two earlier rounds dropped a dead homepage without setting it.
+The flag now renders as a tag where the website button would be, with a sentence
+saying what was looked at, and the build fails if a roster card has neither a
+homepage nor the flag.
+
+- **Houston Housing Authority** was not an absence at all. The authority now
+  publishes as Housing Alliance HTX on a domain that resolves, with a leadership
+  page carrying both people this deck names. The old URL had not died, it moved.
+  Build 55 had dropped it as dead; this restores it, and gives the chief
+  executive a page instead of a search.
+- **GreenEco Builders** has no site. Its published domain has no DNS record at
+  all, and the similarly spelled domain is a parked lander.
+- **Live Lone Star** answers 401 to a browser and to a script on both hosts. The
+  website button is gone, because a button that 401s is worse than none.
+
+**The headline broke this deck's own rule.** It asked a question and carried the
+counts, which appear in the strip below it anyway. It is a statement now:
+*Greater Houston builders and developers, screened for a construction printer.*
+The verifier fails the build if the headline contains a question mark or a digit.
+
+**43 and 42 were the same word for two different things.** The screen counts
+firms with a decision-maker named; the market view counts the firms where nobody
+on that mark carries a caveat. Both labels now say which.
+
+**One thing in the review did not hold.** GreenEco's George Kopecky was reported
+as having no link at all. He has a LinkedIn profile, and it is on the card.
 
 ## Build 58: the field section gets links, and four of its claims do not survive them
 

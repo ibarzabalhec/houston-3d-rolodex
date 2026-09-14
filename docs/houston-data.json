@@ -1,11 +1,12 @@
 {
  "version": "2.0",
- "build": 58,
+ "build": 59,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
- "headline": "Who in Greater Houston is ready to print? 96 firms, three counts each.",
- "headline_html": "Who in Greater Houston is ready to print?<br><b>96 firms. Three counts each.</b>",
+ "headline": "Greater Houston builders and developers, screened for a construction printer.",
+ "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
+ "meta_description": "96 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Strong target",
@@ -40,7 +41,7 @@
   ],
   [
    "43",
-   "with a named decision-maker",
+   "with a decision-maker named",
    true
   ],
   [
@@ -574,11 +575,11 @@
   ],
   [
    "Who decides",
-   "43 of 96 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 43 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head."
+   "43 of 96 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 43 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head. Across those firms 62 people carry the mark. 37 have a LinkedIn profile, 12 have a page that names them, and 13 have neither, at firms that publish no staff page at all. Those 13 are marked No link on the card and carry a search rather than a link."
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose headline names the firm, or a page on the firm's own site that names the person with a title, and the sentence that identified them sits under the name. No source URL, title or figure here was inferred. The only built links are the LinkedIn searches marked search, which run a keyword query rather than claim a page."
+   "Company filings, company pages and trade press. A contact here is one of three things, and the card says which. 91 are a LinkedIn profile whose headline names the firm. 111 are a page on the firm's own site, or dated reporting, that names the person with a title. 39 are a name carried from a page that named them where the firm publishes no staff page to link, and those carry a search rather than a link. The sentence that identified them sits under the name in every case. No source URL, title or figure here was inferred. The only built links are the LinkedIn searches marked search, which run a keyword query rather than claim a page."
   ],
   [
    "What is in the contractor section",
@@ -18451,6 +18452,7 @@
    "company_li_note": null,
    "team_url": "https://colekleinbuilders.com/about/",
    "team_note": null,
+   "web_absent": "No corporate site was found for the builder. This card stands on dated reporting of the project instead.",
    "vol": null,
    "short": "Cole Klein",
    "cell": "clear|clear",
@@ -18598,6 +18600,7 @@
    "company_li_note": "No LinkedIn company page exists. The firm's only social presence is a Facebook page for San Leon.",
    "team_url": null,
    "team_note": "No company website could be found at all, only a Facebook page and a Texas LLC filing in Dickinson.",
+   "web_absent": "No corporate site was found for the builder. This card stands on dated reporting of the project instead.",
    "vol": null,
    "short": "Commander Homes",
    "cell": "partial|clear",
@@ -18717,6 +18720,7 @@
    "company_li_note": "No LinkedIn company page for Elpis 3D. Searches return unrelated firms using the same word.",
    "team_url": null,
    "team_note": "No company website could be found.",
+   "web_absent": "No corporate site was found for the builder. This card stands on dated reporting of the project instead.",
    "vol": null,
    "short": "Elpis 3D",
    "cell": "fail|partial",
@@ -19902,7 +19906,8 @@
      "name": "Steve Ross",
      "role": "Founder and Chief Executive Officer",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steve%20Ross%20Tiona%20Homes"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steve%20Ross%20Tiona%20Homes",
+     "unlinked": true
     },
     {
      "name": "Jacob Ross",
@@ -20022,7 +20027,8 @@
      "name": "Rame Hruska",
      "role": "Co-founder and Chief Executive Officer, named in trade coverage",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Rame%20Hruska%20Aura%20Dwellings%20and%20Hospitality"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Rame%20Hruska%20Aura%20Dwellings%20and%20Hospitality",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -20884,7 +20890,7 @@
     "developers"
    ],
    "region": "Third Ward / citywide, Harris County",
-   "homepage_url": null,
+   "homepage_url": "https://www.alliancehtx.org/",
    "synopsis": "Public housing authority for the City of Houston, running a five-phase redevelopment of Cuney Homes in the Third Ward, opened 1943, announced 22 October 2025 and running 2025 to 2032 on more than $600 million including a $50 million HUD grant. Unit counts are not disclosed in the announcement. Both domains the authority published, housingauthorityhouston.org and housingforhouston.com, stopped resolving, so the leadership titles below are the last ones it published rather than ones that can be checked today.",
    "key_stat": "$600M+ programme, 5 phases, 2025-2032",
    "principals": [
@@ -20892,14 +20898,17 @@
      "name": "Jamie Bryant",
      "role": "President and Chief Executive Officer, named February 2025",
      "linkedin_url": null,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jamie%20Bryant%20Houston%20Housing%20Authority"
+     "source_evidence": "Her own bio page gives the title and the February 2025 appointment.",
+     "source_url": "https://www.alliancehtx.org/team-members/jamie-bryant"
     },
     {
      "name": "Neal Rackleff",
      "role": "Executive Vice President and Chief Operating Officer, Houston Housing Authority",
      "linkedin_url": "https://www.linkedin.com/in/nealrackleff/",
      "li_evidence": "Executive VP and COO Houston Housing Authority. Houston, Texas. The operating officer over a $600 million five-phase programme, and the office that answers for delivery rather than policy.",
-     "decider": true
+     "decider": true,
+     "source_url": "https://www.alliancehtx.org/leadership",
+     "source_evidence": "The leadership page carries the title."
     }
    ],
    "key_projects": [
@@ -20990,7 +20999,8 @@
    ],
    "company_li": "https://www.linkedin.com/company/houston-housing-authority",
    "company_li_note": null,
-   "team_note": null,
+   "team_url": "https://www.alliancehtx.org/leadership",
+   "team_note": "The authority publishes as Housing Alliance HTX. Its about page carries Houston Housing Authority as the alternate name, and its own releases still use both.",
    "vol": null,
    "short": "Houston Housing Authority",
    "cell": "clear|partial",
@@ -21783,13 +21793,15 @@
      "name": "Franck Boursier",
      "role": "Chief Executive Officer and co-founder, named in the firm's own media coverage",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Franck%20Boursier%20Everlasting%20Homes%20Building%20Group"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Franck%20Boursier%20Everlasting%20Homes%20Building%20Group",
+     "unlinked": true
     },
     {
      "name": "George Mock",
      "role": "General Manager, named in trade coverage of the Braesvalley house",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=George%20Mock%20Everlasting%20Homes%20Building%20Group"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=George%20Mock%20Everlasting%20Homes%20Building%20Group",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -21905,7 +21917,7 @@
    "entity_type": "homebuilder",
    "entity_role": "vertical_buyer",
    "region": "Houston, working Harris and Brazoria",
-   "homepage_url": "https://livelonestar.com/",
+   "homepage_url": null,
    "synopsis": "Developer of factory-built home communities, with a flagship of 420 homes on 55 acres in Pearland and further communities under way in San Antonio and Hockley, selling homes from about $80,000 with a monthly lot rent. Live Lone Star buys homes built to the federal manufactured housing code rather than building them on site. The community figures date from March 2023 and have not been refreshed.",
    "key_stat": "Seven communities and about 3,000 lots in development",
    "principals": [],
@@ -21991,6 +22003,8 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "no_web_presence": true,
+   "web_absent": "livelonestar.com answers 401 Forbidden to a browser and to a script, on both the bare domain and the www host. Nothing the firm publishes about itself can be read, which is also why this card names no one.",
    "vol": null,
    "short": "Live Lone Star",
    "cell": "clear|fail",
@@ -22014,7 +22028,8 @@
      "name": "Ker Thomson",
      "role": "Founder and Designer, named on the firm's own about page",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ker%20Thomson%20Nautilus%20Custom%20Homes"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ker%20Thomson%20Nautilus%20Custom%20Homes",
+     "unlinked": true
     },
     {
      "name": "Jim Kuchenbrod",
@@ -24222,7 +24237,8 @@
      "role": "Owner, named on the firm's own homepage as having owned and operated it since 2002",
      "source_evidence": "Matt Zetlmeisl has no LinkedIn profile. The firm's own site is the only source that names him.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Matt%20Zetlmeisl%20ICF%20Constructors"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Matt%20Zetlmeisl%20ICF%20Constructors",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -24359,7 +24375,8 @@
      "name": "Jose Botello",
      "role": "Founder, named on the firm's own site",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jose%20Botello%20Botello%20Builders"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jose%20Botello%20Botello%20Builders",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -24636,13 +24653,15 @@
      "name": "Ronald Marek",
      "role": "Multifamily Director",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ronald%20Marek%20MAREK"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ronald%20Marek%20MAREK",
+     "unlinked": true
     },
     {
      "name": "Chris Trojanowsky",
      "role": "Single Family Division Manager",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Trojanowsky%20MAREK"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Trojanowsky%20MAREK",
+     "unlinked": true
     },
     {
      "name": "Jorge Rodriguez",
@@ -25044,7 +25063,8 @@
      "role": "Senior Vice President, Self Perform Group, Satterfield and Pontikes, named on the parent's own team page as overseeing Greco Structures, Rollcon, Rocket Pumping and Westway",
      "source_evidence": "Trey Green is named on Satterfield and Pontikes' own team page and returns no LinkedIn result against the parent's name.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trey%20Green%20Greco%20Structures"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trey%20Green%20Greco%20Structures",
+     "unlinked": true
     },
     {
      "name": "George A. Pontikes Jr.",
@@ -25348,7 +25368,8 @@
      "role": "Chief Executive Officer, Orion Group Holdings, quoted in the firm's own release of 29 January 2024",
      "source_evidence": "Travis Boone runs the listed parent, not the Houston concrete business.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Travis%20Boone%20ORION"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Travis%20Boone%20ORION",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -26091,7 +26112,8 @@
      "name": "Jason M. Cooper",
      "role": "President",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jason%20M.%20Cooper%20Arch-Con%20Corporation"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jason%20M.%20Cooper%20Arch-Con%20Corporation",
+     "unlinked": true
     },
     {
      "name": "Daniel J. O'Hare",
@@ -26985,7 +27007,8 @@
      "name": "Trent Mitchell",
      "role": "Owner, named on the firm's own about page, after eighteen years selling ready-mix to the largest general contractors in Houston",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trent%20Mitchell%20Silver%20Spur%20Concrete%20Contractors"
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trent%20Mitchell%20Silver%20Spur%20Concrete%20Contractors",
+     "unlinked": true
     }
    ],
    "key_projects": [
@@ -30758,6 +30781,8 @@
    "team_url": null,
    "team_note": null,
    "clears": 0,
+   "no_web_presence": true,
+   "web_absent": "Its published domain, greenecobuilds.com, has no DNS record at all. The similarly spelled greenecobuilders.com answers, and serves a parked-domain lander. The builder was bought by Rausch Coleman in 2020 and Lennar completed its purchase of Rausch Coleman on 10 February 2025.",
    "vol": null,
    "short": "GreenEco Builders",
    "cell": "partial|partial",
@@ -31771,6 +31796,8 @@
    "team_url": null,
    "team_note": "urbanliving.com refuses automated retrieval, so no team page could be read.",
    "clears": 0,
+   "no_web_presence": true,
+   "web_absent": "The one page the card cited returns nothing to a script and redirects off the firm's own domain in a browser.",
    "vol": null,
    "short": "Urban Living",
    "cell": "fail|fail"

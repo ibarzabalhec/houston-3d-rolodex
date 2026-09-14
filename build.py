@@ -37,11 +37,12 @@ import focus as FOCUS
 import gap as GAP
 import audit as AUDIT
 import audit2 as AUDIT2
+import audit3 as AUDIT3
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 58
+BUILD = 59
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -531,6 +532,41 @@ for t in targets:
         if not any(x.get("url") == _u for x in t["sources"]):
             t["sources"].append({"url": _u, "date": None})
 
+# Round three, from a review of the shipped deck. It runs after the audit passes
+# because two of its entries undo what an earlier round did: the Houston Housing
+# Authority's homepage was dropped as dead and had in fact moved.
+for t in targets:
+    tid = t["target_id"]
+    if tid in AUDIT3.NO_WEB:
+        t["no_web_presence"] = True
+        t["web_absent"] = AUDIT3.NO_WEB[tid]
+    if tid in AUDIT3.DROP_HOMEPAGE:
+        t["homepage_url"] = None
+    if tid in AUDIT3.HOMEPAGE:
+        t["homepage_url"] = AUDIT3.HOMEPAGE[tid]
+    if tid in AUDIT3.TEAM_URL:
+        t["team_url"], t["team_note"] = AUDIT3.TEAM_URL[tid]
+    for p in t["principals"]:
+        _s = AUDIT3.PERSON_SOURCE.get((tid, p["name"]))
+        if _s:
+            p["source_url"], p["source_evidence"] = _s
+            p.pop("find_url", None)
+
+# A record cannot both carry a website and say it has none, and a record with no
+# website has to say why. The three firms that never had a site were flagged and
+# three more with the same condition were not, which is how the deck came to
+# present one fact two ways.
+_web = []
+for t in targets:
+    if t.get("no_web_presence") and t.get("homepage_url"):
+        _web.append("%s says it has no web presence and carries one" % t["target_id"])
+    if t.get("group") != "out" and not t.get("homepage_url") and not t.get("no_web_presence"):
+        _web.append("%s has no homepage and is not flagged as having none" % t["target_id"])
+if _web:
+    for _s in _web:
+        print("   " + _s)
+    raise SystemExit("FAILED: a card is silent about whether the firm has a website")
+
 # The number layer, last, because it is keyed on target_id and reads nothing the
 # passes above write. Rule 5 records cases where the page publishes several
 # numbers and designates none of them the main line: those carry a directory and
@@ -698,6 +734,24 @@ n_dec = sum(1 for t in deck if t["has_decider"])
 n_dec_ok = sum(1 for t in deck if t["decider_confirmed"])
 n_dec_chk = sum(1 for t in deck if t["decider_caveat"])
 n_dec_live = sum(1 for t in deck if t["has_decider"] and t["group"] in ("a", "adopter", "b"))
+
+# How each contact on the deck is actually evidenced. The Sources block prints
+# these three numbers rather than a claim about them, because the claim it used
+# to make was checkable and wrong for 40 of them.
+_pp = [p for t in deck for p in t["principals"]]
+n_li_p = sum(1 for p in _pp if p.get("linkedin_url"))
+n_src_p = sum(1 for p in _pp if p.get("source_url") and not p.get("linkedin_url"))
+n_none_p = sum(1 for p in _pp if not p.get("linkedin_url") and not p.get("source_url"))
+# A decider is the stat a reader probes first, so the same split is carried for
+# them and marked on the card itself.
+_dd = [p for t in deck for p in t["principals"] if p.get("decider")]
+n_dec_li = sum(1 for p in _dd if p.get("linkedin_url"))
+n_dec_src = sum(1 for p in _dd if p.get("source_url") and not p.get("linkedin_url"))
+n_dec_none = sum(1 for p in _dd if not p.get("linkedin_url") and not p.get("source_url"))
+for _t in deck:
+    for _p in _t["principals"]:
+        if _p.get("decider") and not _p.get("linkedin_url") and not _p.get("source_url"):
+            _p["unlinked"] = True
 n_dec_a = sum(1 for t in deck if t["has_decider"] and t["group"] == "a")
 
 
@@ -760,13 +814,23 @@ DATA = {
 
  "kicker": "Greater Houston · business development screen for a construction printer · %s" % TODAY,
 
- "headline": "Who in Greater Houston is ready to print? %d firms, three counts each." % n,
+ # Build 59 made this a statement. It had been a question with the counts inside
+ # it, which broke two of this deck's own rules at once: a title says what the
+ # document is rather than asking the reader something, and a count belongs in
+ # the strip below, where it appears anyway. The counts are four inches down.
+ "headline": "Greater Houston builders and developers, screened for a construction printer.",
  # ICON writes display sentences in two weights: the connective words drop back,
- # the load-bearing ones stay solid. The same device, with the numbers carrying it.
- # A title, not a conclusion. What the document is, and nothing about what to think of it.
- # The counts live in the strip below, where a number belongs.
- "headline_html": ("Who in Greater Houston is ready to print?<br>"
-                   "<b>%d firms. Three counts each.</b>" % n),
+ # the load-bearing ones stay solid.
+ "headline_html": ("Greater Houston builders and developers,<br>"
+                   "<b>screened for a construction printer.</b>"),
+ # The social preview. It was written by hand at 61 firms and the roster grew to
+ # 96 without it, so a Slack unfurl or a LinkedIn card contradicted the headline
+ # of the page it was previewing. It is generated now, and verify.py fails the
+ # build if the number in it stops matching the roster.
+ "meta_description": ("%d Greater Houston builders, developers and wall contractors screened "
+                      "against three counts for a construction printer, with named "
+                      "decision-makers, sources, a market view and the permitting route. "
+                      "By Héctor Ibarzábal." % n),
  # A label is a name, not a sentence. The clause each of these used to carry
  # moved into the group note, where there is room to say it once.
  "group_labels": {"adopter": "Already buying printed walls", "a": "Strong target",
@@ -789,7 +853,11 @@ DATA = {
  "stat_strip": [
    [str(n), "firms screened", False],
    [str(g["a"]), "in on all three counts", False],
-   [str(n_dec), "with a named decision-maker", True],
+   # 43 here and 42 on the market view are two different things, and until
+   # Build 59 both were called a decision-maker. This one counts firms with the
+   # mark; the market view counts the firms where nobody on that mark carries a
+   # caveat. Each label now says which.
+   [str(n_dec), "with a decision-maker named", True],
    [str(g["adopter"]), "already printing, with a competitor", False],
    [str(g["trade"]), "contractors who build the wall", False],
  ],
@@ -843,14 +911,28 @@ DATA = {
     "That is the bar, because those roles can change a wall specification. Construction managers, "
     "superintendents and purchasing agents are excluded: they execute a specification rather than "
     "choose one. At a contractor the specification belongs to somebody else, so the person marked "
-    "is the one who signs for equipment: the owner, the president or the division head."
-    % (n_dec, n, n_dec_ok, n_dec, n_dec_chk)],
+    "is the one who signs for equipment: the owner, the president or the division head. "
+    # Build 59. This is the number a reader probes first, so it now carries its
+    # own evidence split instead of standing on the word named.
+    "Across those firms %d people carry the mark. %d have a LinkedIn profile, %d have a page that "
+    "names them, and %d have neither, at firms that publish no staff page at all. Those %d are "
+    "marked No link on the card and carry a search rather than a link."
+    % (n_dec, n, n_dec_ok, n_dec, n_dec_chk,
+       len(_dd), n_dec_li, n_dec_src, n_dec_none, n_dec_none)],
    ["Sources",
-    "Company filings, company pages and trade press. Every contact is either a LinkedIn profile whose "
-    "headline names the firm, or a page on the firm's own site that names the person with a title, and "
-    "the sentence that identified them sits under the name. No source URL, title or figure here was "
-    "inferred. The only built links are the LinkedIn searches marked search, which run a keyword "
-    "query rather than claim a page."],
+    # Build 59 rewrote this. It had claimed every contact was one of the first
+    # two, which is falsifiable in about four clicks: 40 of the 241 are the third
+    # kind. The search icon on those cards was already telling the truth. This
+    # sentence was the only thing that was not, and the counts are now printed
+    # so a reader can check the claim instead of taking it.
+    "Company filings, company pages and trade press. A contact here is one of three things, and the "
+    "card says which. %d are a LinkedIn profile whose headline names the firm. %d are a page on the "
+    "firm's own site, or dated reporting, that names the person with a title. %d are a name carried "
+    "from a page that named them where the firm publishes no staff page to link, and those carry a "
+    "search rather than a link. The sentence that identified them sits under the name in every case. "
+    "No source URL, title or figure here was inferred. The only built links are the LinkedIn searches "
+    "marked search, which run a keyword query rather than claim a page."
+    % (n_li_p, n_src_p, n_none_p)],
    ["What is in the contractor section",
     "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. "
     "The scope rule above is a builder rule and does not apply to them: most of this trade in Houston "
@@ -999,6 +1081,7 @@ with open("houston-data.json", "w", encoding="utf-8") as f:
 
 blob = json.dumps(DATA, ensure_ascii=False).replace("</script>", "<\\/script>")
 html = (open("_template.html", encoding="utf-8").read()
+        .replace("__DESC__", DATA["meta_description"].replace('"', "&quot;"))
         .replace("__DATA__", blob)
         .replace("__FONTS__", open("_fonts.css", encoding="utf-8").read())
         .replace("__MARKET__", open("_market.js", encoding="utf-8").read()))

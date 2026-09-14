@@ -511,9 +511,10 @@ SYNOPSIS = {
         "co-owners acquiring the company in 2005 and assigns neither a title.",
 }
 
-# Both of the Houston Housing Authority's published domains stopped resolving.
-DROP_HOMEPAGE = {"HOU-032", "HOU-003"}
-DROP_TEAM_URL = {"HOU-003"}
+# Urban Living's page stopped resolving. The Houston Housing Authority's had
+# not died: it moved, and audit3.py restores it under the authority's new name.
+DROP_HOMEPAGE = {"HOU-032"}
+DROP_TEAM_URL = set()
 
 # Wile Interests carried Pagewood's domain as its own homepage.
 HOMEPAGE = {

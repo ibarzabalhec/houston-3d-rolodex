@@ -474,7 +474,11 @@ function drawMarket(){
   var dec=T.filter(function(t){return t.decider_confirmed;}).length;
   document.getElementById('mkStats').innerHTML=[
     [n,'firms screened'],[fit,'a Yes on Printer fit'],[both,'a Yes on Printer fit with a track record'],
-    [yes,'have paid for a new method before'],[dec,'with a confirmed decision-maker']
+    [yes,'have paid for a new method before'],
+    /* Deliberately not the same number as the screen's strip. That one counts
+       every firm with the mark; this one drops the firms whose named person
+       carries a caveat. The two labels have to keep saying which is which. */
+    [dec,'with a decision-maker named and no caveat']
   ].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+esc(s[1])+'</span></div>';}).join('');
   document.getElementById('mkBody').innerHTML=
     figPermits()+figCountyMap()+figCountyMatrix()+figPlaces()+

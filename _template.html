@@ -2,7 +2,7 @@
 <html lang="en" data-theme="light"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Sixty-one Greater Houston builders and developers screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.">
+<meta name="description" content="__DESC__">
 <meta name="author" content="Héctor Ibarzábal">
 <title>Rolodex · Greater Houston</title>
 <style>
@@ -1559,6 +1559,10 @@ function personRow(p,compact,grp){
   return '<div class="p1'+(p.decider?' dec':'')+(p.departed?' gone':'')+'">'+
     '<div><div class="nm">'+esc(p.name)+
       (p.decider?'<span class="badge">'+(grp==='trade'?'Signs for the machine':(grp==='channel'?'Lets a method in':'Specifies the wall'))+'</span>':'')+
+      /* A decider with no profile and no page behind it says so on its own row.
+         The search icon already told the truth; the badge stops a reader having
+         to infer it from an icon. */
+      (p.unlinked?'<span class="badge g">No link</span>':'')+
       (p.departed?'<span class="badge g">Departed</span>':'')+
       (p.probable?'<span class="badge g">Unconfirmed</span>':'')+
       (p.entity_note?'<span class="badge g">Confirm entity</span>':'')+
@@ -1613,6 +1617,10 @@ function firmPage(t){
       '<span class="tag q">'+esc(D.role_labels[t.entity_role]||'')+'</span>'+
       '<span class="tag q">'+esc(t.region)+'</span>'+
       pill(t.homepage_url,'globe','Website')+
+      /* A card with no website says so where the website button would be.
+         The flag existed from the start and reached only the Excel export, so
+         six cards were silent about it on the page itself. */
+      (!t.homepage_url&&t.no_web_presence?'<span class="tag q">No website published</span>':'')+
       pill(t.company_li,'li','LinkedIn')+
       pill(t.team_url,'out','Leadership page')+
       telPill(t.phone,t.phone_label)+
@@ -1630,7 +1638,8 @@ function firmPage(t){
   }
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
     '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
-  h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'));
+  h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'+
+    (t.web_absent?'<p class="note">'+esc(t.web_absent)+'</p>':'')));
 
   /* Who, then what to dial. The two were one section in Build 56 and the
      header lied: it said Who to call and the first thing under it was a
