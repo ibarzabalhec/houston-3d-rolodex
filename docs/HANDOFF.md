@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 61 · 2026-09-14
+Build 62 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -589,6 +589,118 @@ on that mark carries a caveat. Both labels now say which.
 
 **One thing in the review did not hold.** GreenEco's George Kopecky was reported
 as having no link at all. He has a LinkedIn profile, and it is on the card.
+
+## Build 62: the deck was not a contractor list, it was a tilt-up list
+
+Twenty-two contractors, and seventeen of them scoring Partly on printer fit.
+That pattern is the tell. Every one of the 22 was found through tilt-up.org
+project profiles, because that is the one place in this trade where volume is
+public. **The deck did not choose tilt-up. The data chose it**, and a screen that
+measures firms casting 87-ton panels at 70 feet against a machine that prints a
+house wall will keep returning Partly, because the question does not fit.
+
+So the round began by drawing the thing the roster was a slice of: the wall value
+chain, meaning everyone who touches a wall between a cement plant and a finished
+house. Twelve cells. The deck had two.
+
+Six sweeps went at the empty ones and returned **87 candidates**, each one a claim
+about a page. `internal/gate.py` went and read the pages: 75 answered a script,
+six names were not on the page cited for them, fourteen figures were not on the
+firm's own homepage.
+
+**The bar is not sales volume, and working out why is the finding of the round.**
+Of 87 firms, **five publish a volume figure and twenty-four publish years in
+business instead.** Builders publish closings because the Builder 100 makes them.
+Nothing makes a wall contractor publish anything. So screening on volume would
+have selected for having a marketing department: it would have kept the loud
+small firms and cut the large quiet ones, and Houston Gunite has been shooting
+concrete since 1984 and publishes no number at all.
+
+The bar is **what a firm already owns**, because a firm that has financed heavy
+equipment has shown it can finance a machine, and unlike revenue that evidence is
+on the page. A plant, a fleet, a certification that required an audit, a parent
+with a capital process, or an executive bench.
+
+**Four roles, because one flat bar would have cut the best finding.** Applied
+without thought, the capacity test removes all seven gunite crews, which hold the
+single most relevant skill on the list. So:
+
+- **28 could carry a machine** and are on the roster, scored, on the grid.
+- **14 know the volumes.** Post-tension plants, ready-mix producers, a binder
+  trader, an ICF distributor. They will never buy a printer and they hold the
+  numbers this trade does not publish.
+- **7 have the crew.** The gunite and shotcrete firms. Houston Gunite advertises
+  on its own careers page for **nozzlemen, top finishers, bottom finishers and
+  foremen**, which is the print crew roster, already trained, in a metro with one
+  of the largest pool industries in the country.
+- **4 are already inside this market on the other side** and belong in the Field
+  section, not the roster. Eco Material Technologies supplies the near-zero-carbon
+  rapid-set cement for Zuri Gardens, the printed community HiveASMBLD is
+  building: someone has solved material qualification for printing in Houston and
+  it is not ICON. Lone Star Ready Mix and Dynamic Concrete Pumping share a
+  Hockley yard under one family, which is a vertically integrated printing
+  competitor on the way up.
+
+Thirty-one were cut outright, with the reason recorded in `internal/capacity.py`
+for each: retail driveway outfits, two-page sites with no crew and no equipment,
+bridge and utility precast against a bar that is wall, and a truss plant whose
+City of Houston fabricator registration says trusses where its own site says wall
+panels.
+
+**The contractor section now reads in the order a wall gets made.** Places it
+through a hose, pours the horizontal, casts the vertical flat on site, casts it
+off site, manufactures it as a panel, lays it unit by unit, forms it and leaves
+the form in, owns the job. Fifty contractors across eight links, the largest
+holding nine. `verify.py` fails the build if a contractor has no place in the
+chain, if the counts do not add, or **if more than half the section sits in one
+link**, which is the exact shape Build 61 shipped with and nothing noticed.
+
+**The supply panel is deliberately not on the grid.** Scoring a post-tension
+plant against printer fit is a category error dressed as rigour, and a row of
+empty count cells would say those firms failed rather than that they were never
+asked. They sit under the contractor list with what they are and why they matter,
+and the build fails if anything there is also a scored record.
+
+**And the panel carries the third finding: twenty-one firms that publish no
+website at all.** Six in the Greater Houston Builders Association's foundation
+and concrete categories, eleven on the Associated Masonry Contractors of Houston
+roster, four more elsewhere. They are not small by inference, they are unlisted.
+It is also why the slab link is thinner than it should be, and the deck says so
+rather than presenting the roster as the market.
+
+Two records did not survive their own sources, which is the argument for running
+the gate rather than trusting the sweep. **Ecocast Homes** was written up and cut:
+the one page it cited now returns 404, the domain redirects to
+usaprecasthomes.com, and the successor site carries neither the Humble plant nor
+the model that had been quoted. **Tindall** had its expansion figure rewritten,
+because the page says "69 thousand square feet" and the record said 69,000.
+
+Three track-record scores were tightened on review. Manufacturing wall panels is
+this industry's ordinary business rather than a method adoption, so UFP Site
+Built went to No; advertising low-carbon pumping is not the same as having bought
+it, so Brundage-Bone went to No; a published factory tolerance is a manufacturing
+specification, so Texas Lite Gauge went to No.
+
+`figures.py` gained one more fix: **"Eighty-five acres" was being read as the
+figure 80**, because the word eighty matched on its own and the hyphen after it
+was never looked at. Unsourced figures fell from 171 to 162.
+
+The roster stands at **124 firms, 50 of them contractors**, with 21 more in the
+supply panel and 21 named as unlisted.
+
+`linkcheck.py` also learned to retry. Twelve threads against 662 URLs look like
+an attack to a small host, and a trade association directory came back 404 in the
+sweep and 200 three times in a row on its own. A second attempt after a pause now
+separates a host under load from a page that is gone.
+
+**Gates: five, and two known-transient link failures.** `make` builds and
+verifies, `probe.py` reports zero names missing across 154 readable contacts,
+`phonecheck.py` holds 129 numbers, `figures.py` reports 162 of 866 figures
+unbound. `linkcheck.py` sweeps 662 URLs and reports five failures: four are
+rebusinessonline.com, which is down site-wide including its own homepage, and one
+is the AGC Houston directory throttling under the sweep while answering a single
+request. Neither is a dead page and neither is in BLOCKED, because mislabelling
+an outage as a refusal is how a real 404 gets ignored later.
 
 ## Build 61: show it, do not say it
 

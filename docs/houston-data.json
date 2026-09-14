@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 61,
+ "build": 62,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "96 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "124 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Strong target",
@@ -23,14 +23,14 @@
   "b": "In on two of three counts.",
   "adopter": "Has printed walls standing or contracted with a competitor.",
   "national": "Purchasing sits at a national desk.",
-  "trade": "Concrete, shell and wall contractors, and the general contractors that self-perform concrete. Houston builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
+  "trade": "Houston builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set, and the section runs in the order a wall gets made, from the crew with a hose to the contractor that owns the job.",
   "creative": "Design-led work that does not repeat a plan set. The printed element sits inside a conventional project.",
   "channel": "Owns the ground. The builders inside buy the wall.",
   "icon": "Already reachable through an existing ICON relationship."
  },
  "stat_strip": [
   [
-   "96",
+   "124",
    "firms screened",
    false,
    null
@@ -64,7 +64,7 @@
    }
   ],
   [
-   "22",
+   "50",
    "contractors who build the wall",
    false,
    {
@@ -80,28 +80,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 52,
-   "partial": 37,
+   "clear": 78,
+   "partial": 39,
    "fail": 7,
-   "total": 96
+   "total": 124
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 15,
-   "partial": 57,
-   "fail": 24,
-   "total": 96
+   "clear": 20,
+   "partial": 77,
+   "fail": 27,
+   "total": 124
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 17,
-   "partial": 23,
-   "fail": 56,
-   "total": 96
+   "clear": 20,
+   "partial": 29,
+   "fail": 75,
+   "total": 124
   }
  ],
  "matrix": {
@@ -123,7 +123,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top left cell holds <b>8 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 8 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>4</b> have no method record.",
+ "matrix_note": "The top left cell holds <b>11 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 11 here, <b>4</b> have paid for a method that was new at the time, Wan Bridge and DSRS Steel and Future Frame USA, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>5</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -595,6 +595,466 @@
   }
  ],
  "consolidation": "Three of the twelve are gone or going: Diamond Age closed in December 2024 with fifteen houses unfinished, Black Buffalo filed Chapter 11 in December 2025, and Mighty Buildings put itself up for sale in January 2025 after raising more than $150 million.",
+ "chain": [
+  {
+   "key": "nozzle",
+   "label": "Places it through a hose",
+   "note": "A crew here already places cementitious material through a hose onto a surface, to a profile, with no formwork. It is the closest thing in the trade to what a printer does.",
+   "n": 3
+  },
+  {
+   "key": "slab",
+   "label": "Pours the horizontal",
+   "note": "Owns the lot before anyone else arrives, owns the builder relationship and owns the pump. Wall scope would double the revenue per lot with the same customer and no new sale.",
+   "n": 7
+  },
+  {
+   "key": "tiltup",
+   "label": "Casts the vertical flat, on site",
+   "note": "Casts wall flat on the slab and lifts it. The panels are measured in tons and storeys, which is why most of this cell reads Partly on printer fit.",
+   "n": 8
+  },
+  {
+   "key": "precast",
+   "label": "Casts the vertical off site",
+   "note": "A plant, casting beds, a batch plant and a quality lab. The closest existing capital analog to a machine.",
+   "n": 9
+  },
+  {
+   "key": "panel",
+   "label": "Manufactures the vertical as a panel",
+   "note": "Already manufactures wall off site and sells it to the production builders on this deck. The logistics, the builder relationship and the factory economics are solved.",
+   "n": 9
+  },
+  {
+   "key": "masonry",
+   "label": "Lays the vertical unit by unit",
+   "note": "The trade a printed wall most directly displaces. Two firms here already sell a panelised or prefabricated version of their own product.",
+   "n": 5
+  },
+  {
+   "key": "icf",
+   "label": "Forms the vertical and leaves the form in",
+   "note": "Has already sold a customer on a wall that is not stick-built, which is the adoption behaviour that is hardest to find.",
+   "n": 2
+  },
+  {
+   "key": "gc",
+   "label": "Owns the job and self-performs the concrete",
+   "note": "Houston builders do not put up their own walls. The general contractor that self-performs concrete is the one that would run the machine.",
+   "n": 7
+  }
+ ],
+ "supply": [
+  {
+   "name": "Ready Cable",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Two Houston branches within eight Texas locations",
+   "url": "https://www.readycable.net/",
+   "line": "Supplies the full residential slab package, post-tension cable, rebar and lumber, to concrete contractors. Founded 1988.",
+   "why": "Sells to the pouring crews rather than competing with them, and supplies every part of a production slab. The single best source for which Houston crews pour at volume, which no directory publishes.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Builders Post-Tension",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Houston, Richey Road, plus Dallas-Fort Worth and Denver",
+   "url": "https://www.builderspt.com/",
+   "line": "A PTI Type I Category A certified plant supplying concrete reinforcement for residential slabs on ground.",
+   "why": "Nearly every production slab in Katy, Cypress, Conroe, Fulshear and Richmond is post-tensioned, and the tendons come from a plant like this one.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Houston Post Tension",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Houston, San Antonio Road",
+   "url": "https://www.houstonposttension.com/",
+   "line": "Post-tension cable, rebar and lumber for commercial, multifamily, single family, slab on grade and elevated projects. Established 1987.",
+   "why": "Nearly forty years of supplying both the residential and the elevated side, so it sees the whole slab market rather than one end of it.",
+   "people": [
+    {
+     "name": "Chris Myers",
+     "role": "Elevated Rebar and PT Division Manager"
+    }
+   ],
+   "note": null
+  },
+  {
+   "name": "Suncoast Post-Tension",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Houston headquarters, Northchase Drive, with plants nationally",
+   "url": "https://www.suncoast-pt.com/",
+   "line": "Unbonded post-tension with slab on ground as a named line, and in-house engineering producing field installation drawings.",
+   "why": "The only firm in the whole material sweep publishing proprietary product development of its own: the Suncoast Stud Reinforcement System and a barrier cable embed bracket. A supplier that engineers its own hardware is a supplier that will engage on a new method.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Post-Tension Services of Texas",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Houston plant on Aldine Westfield Road, Dallas headquarters",
+   "url": "https://post-tension.com/post-tension-foundation-company/",
+   "line": "A PTI Type I Category A plant serving Texas, Louisiana, Oklahoma, New Mexico and Colorado.",
+   "why": "Three named officers and a Houston plant. Worth knowing that its own page says it uses tried-and-true methods vetted over decades and is in business to cut cable, not corners. A good source and, on its own account, a poor prospect.",
+   "people": [
+    {
+     "name": "Derek Tuttle",
+     "role": "President"
+    },
+    {
+     "name": "Justin Zuckerbrow",
+     "role": "Vice President"
+    },
+    {
+     "name": "Brett Hunter",
+     "role": "National Sales Director"
+    }
+   ],
+   "note": null
+  },
+  {
+   "name": "Core Supply",
+   "kind": "node",
+   "chain": "slab",
+   "region": "Houston, Bammel Road, four Texas locations",
+   "url": "https://thecoresupply.com/",
+   "line": "A PTI Type I Category A plant doing rebar fabrication, post-tension, wood products and concrete accessories. Operating since 2010.",
+   "why": "The newest of the Houston post-tension plants, which usually means the one still winning accounts rather than defending them.",
+   "people": [],
+   "note": "Its own team page names nobody."
+  },
+  {
+   "name": "TransCo Ready Mix",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Houston, multiple locations",
+   "url": "https://www.transcorm.com/",
+   "line": "A ready-mix producer founded in 2023 as a joint venture between TransCo Group and Rasmussen Group.",
+   "why": "A producer two years old is still building a book, which makes it the ready-mix call most likely to be taken and most likely to trial a mix.",
+   "people": [
+    {
+     "name": "Matt Fontenot",
+     "role": "General Manager"
+    },
+    {
+     "name": "Kyle DiNapoli",
+     "role": "Operations Manager"
+    },
+    {
+     "name": "Wade Carroll",
+     "role": "Sales Manager"
+    }
+   ],
+   "note": null
+  },
+  {
+   "name": "On-Site Concrete and Materials",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Greater Houston",
+   "url": "https://www.onsiteconcretetx.com/",
+   "line": "Volumetric mixing: batches at the job rather than at a plant, so the mix is controlled at the point of placement rather than made at a plant and delivered. Twenty-five years in Greater Houston.",
+   "why": "Technically the closest batching arrangement in the metro to a printer's feed, and the firm already says specialty mixes are what it is for.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Alliance Concrete Ready Mix and Materials",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Pinehurst and Porter, with Brookshire and Jacintoport under development",
+   "url": "https://alliancereadymix.us/",
+   "line": "Two plants batching 24 hours a day Monday through Saturday across north and northwest Greater Houston, to ASTM C94.",
+   "why": "Positioned exactly where the production growth is, and building two more plants, which means a company with capital and an appetite for new accounts.",
+   "people": [],
+   "note": "The site answered a stub to a script and was read by hand."
+  },
+  {
+   "name": "Cemex USA, Houston Shell and Concrete",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Houston metro",
+   "url": "https://houston.cemexusa.com/",
+   "line": "The Houston Shell and Concrete brand now redirects to Cemex. Pours Vertua low-carbon concrete in the metro at scale.",
+   "why": "The only Houston ready-mix producer with a published low-carbon product actually poured here in quantity, which is the conversation a printed wall needs its material supplier to have already had.",
+   "people": [],
+   "note": "No Houston plant count could be confirmed: the site is behind a bot defence that returns an encoded blob to a script."
+  },
+  {
+   "name": "SRM Concrete",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Texas-wide including Houston",
+   "url": "https://www.smyrnareadymix.com/",
+   "line": "The largest ready-mixed producer in Texas after acquiring 82 plants and 11 volumetric mixer loading sites from Vulcan Materials.",
+   "why": "The eleven volumetric loading sites are the specific question: volumetric batching is the delivery method a printer feed most resembles.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Texas Materials, a CRH company",
+   "kind": "node",
+   "chain": "readymix",
+   "region": "Eight Houston-area locations, two of which batch concrete",
+   "url": "https://texasmaterials.com/",
+   "line": "Asphalt and concrete plants at FM 529 in Houston and in Katy, plus crushed concrete, inside a group of more than 1,700 locations.",
+   "why": "A Katy batch plant sits inside the densest production housing corridor in the metro.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Otto Cement",
+   "kind": "node",
+   "chain": "binder",
+   "region": "Houston, Market Street",
+   "url": "https://ottocement.com/",
+   "line": "A Houston-based binder trader carrying slag, gray and white cement, calcium aluminate cement, fly ash, aggregate and limestone, by truck, rail and barge.",
+   "why": "White cement and calcium aluminate cement in a Houston book is unusual, and calcium aluminate is the rapid-set chemistry a printed wall needs to stand up between layers.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "NuBuild ICF",
+   "kind": "node",
+   "chain": "icf",
+   "region": "Columbus, Texas, serving the Gulf Coast and Central Texas",
+   "url": "https://nubuildicf.com/",
+   "line": "A Nudura distributor that works through established and experienced contractors rather than installing itself.",
+   "why": "Its president built his own Nudura house before starting the distributorship, and a distributor who sells through crews can name every crew in Houston that actually sets an insulated form.",
+   "people": [
+    {
+     "name": "Ken Moore",
+     "role": "President"
+    },
+    {
+     "name": "Todd Moore",
+     "role": "CAD designer"
+    }
+   ],
+   "note": null
+  },
+  {
+   "name": "Houston Gunite",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Houston, Proctor Street",
+   "url": "https://houstongunite.net/",
+   "line": "A family-owned commercial and residential pool and spa shell contractor, serving Houston since 1984.",
+   "why": "Its own careers page advertises for nozzlemen, top finishers, bottom finishers, foremen and CDL drivers. That is the crew a printer needs, named and recruited by a firm that has been shooting concrete for forty years.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "South Coast Gunite",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Houston to Beaumont, south to Galveston",
+   "url": "https://southcoastgunite.com/",
+   "line": "Family-owned gunite and shotcrete on custom pools, spas, rock features and structural work, over twenty years on the Gulf Coast.",
+   "why": "Runs both methods and does structural work as well as pools: commercial aquatic structures, engineered retaining walls and structural concrete that has to perform under load. Its own page draws the distinction cleanly, that gunite adds water at the nozzle and shotcrete is batched before the hose.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Union Gunite",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Missouri City, Greater Houston",
+   "url": "https://www.uniongunite.com/",
+   "line": "Supply-and-install gunite and shotcrete, from backyard pools to large commercial projects, adept with both and publishing minimal rebound.",
+   "why": "Supply and install means one firm controls both the material and the nozzle, which is the whole operation a printer replaces.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "United Gunite",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Cypress, serving Katy, Sugar Land, Tomball, Humble and The Woodlands",
+   "url": "https://www.unitedgunite.com/",
+   "line": "Gunite placement for pool contractors, publishing real-time precise measurement of quantity used on each job.",
+   "why": "Instrumented placement. A crew already metering how much material goes into a shell in real time has the habit a printed wall's quality control depends on.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "Pool Works",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Houston, West Tidwell, and Liberty Hill",
+   "url": "https://poolworkstx.com/gunite/",
+   "line": "A gunite subcontractor providing shell services to builders and contractors rather than building pools itself, over thirty years.",
+   "why": "Already sells nozzle work as a subcontracted service to other people's projects, which is the commercial shape of running a printer for a builder.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "JR Pool Plastering",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Four Houston locations",
+   "url": "https://jrpoolplastering.com/",
+   "line": "Gunite shell and plaster finish under one firm, serving Greater Houston for over forty years.",
+   "why": "Runs the shell and the finish coat, so it carries both the placement crew and the surface crew. Its own description of a gunite pool as one monolithic structure without seams or joints is the argument a printed wall makes.",
+   "people": [],
+   "note": null
+  },
+  {
+   "name": "CCP Shotcrete and Pumping",
+   "kind": "crew",
+   "chain": "nozzle",
+   "region": "Austin yard, projects across Texas including Houston",
+   "url": "https://www.curtisconcretepumping.com/",
+   "line": "A shotcrete placement contractor for below-grade structural walls, culvert and tunnel linings, shoring, skateparks and architectural applications.",
+   "why": "The purest structural shotcrete description found anywhere in Texas: this is a firm whose business is already shooting structural wall rather than pool shells. Both owners work in the field.",
+   "people": [],
+   "note": "The yard is in Austin. The site names Houston among its project cities."
+  }
+ ],
+ "supply_labels": {
+  "node": "Knows the volumes",
+  "crew": "Has the crew"
+ },
+ "supply_notes": {
+  "node": "Six sweeps established that this trade does not publish its volume. Of 87 firms found, five published a figure and twenty-four published years in business instead. Builders publish closings because the Builder 100 makes them; nothing makes a wall contractor publish anything. The numbers exist at the supplier who batches the concrete, fabricates the tendons or sells the block, and these firms sell to the crews rather than competing with them.",
+  "crew": "A gunite crew already places cementitious material through a hose onto a vertical surface, to a profile, with no formwork. One of these firms advertises on its own careers page for nozzlemen, top finishers, bottom finishers and foremen. None of them has the balance sheet to buy a machine and every one of them has the people to run one."
+ },
+ "no_site": [
+  {
+   "name": "Excell Foundation",
+   "chain": "slab",
+   "region": "Conroe",
+   "note": "Listed by the Greater Houston Builders Association under both Turnkey Concrete and Foundations, and in the Texas Association of Builders directory. The dual turnkey listing is the strongest unconfirmed signal in the set."
+  },
+  {
+   "name": "Noble Concrete Construction",
+   "chain": "slab",
+   "region": "Fulshear",
+   "note": "GHBA Concrete and Turnkey Concrete, and a Texas Association of Builders member."
+  },
+  {
+   "name": "Lexus Concrete",
+   "chain": "slab",
+   "region": "Houston",
+   "note": "GHBA Foundations and Concrete."
+  },
+  {
+   "name": "Titan Foundations",
+   "chain": "slab",
+   "region": "Conroe",
+   "note": "GHBA Concrete."
+  },
+  {
+   "name": "Caymex",
+   "chain": "slab",
+   "region": "Montgomery",
+   "note": "GHBA Concrete and Foundations."
+  },
+  {
+   "name": "Alamo dba Dorsett",
+   "chain": "slab",
+   "region": "Pasadena",
+   "note": "GHBA Concrete."
+  },
+  {
+   "name": "Ranch Masonry",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "A contractor member of the Associated Masonry Contractors of Houston and of the Mason Contractors Association of America. No website in any search result."
+  },
+  {
+   "name": "Galindo and Boyd Houston",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "AMCH member. The firm's own name carries Wall Systems."
+  },
+  {
+   "name": "Hoggatt",
+   "chain": "masonry",
+   "region": "Pasadena",
+   "note": "AMCH member. The page title reads masonry fencing and hardscape, which suggests subdivision masonry fencing at volume."
+  },
+  {
+   "name": "BR Brick and Masonry",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "Appears residential brick oriented, which is the production-homebuilder seam. The site sits in an http redirect loop."
+  },
+  {
+   "name": "D and H Masonry",
+   "chain": "masonry",
+   "region": "Conroe and Spring",
+   "note": "Site in a redirect loop."
+  },
+  {
+   "name": "W.W. Bartlett",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "AMCH contractor member."
+  },
+  {
+   "name": "Surock",
+   "chain": "masonry",
+   "region": "Spring and Magnolia",
+   "note": "AMCH contractor member."
+  },
+  {
+   "name": "Paul Yeatts Enterprises",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "AMCH contractor member."
+  },
+  {
+   "name": "Masonry Revival",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "AMCH contractor member."
+  },
+  {
+   "name": "Ranch Stucco and Masonry",
+   "chain": "masonry",
+   "region": "Houston",
+   "note": "AMCH contractor member."
+  },
+  {
+   "name": "Flexicore of Texas",
+   "chain": "precast",
+   "region": "Houston",
+   "note": "Listed by the Texas precast association under building systems, building products and bridges, with AASHTO beams, structural precast, piles and marine structures. The site forces an https to http redirect no fetcher follows."
+  },
+  {
+   "name": "East Texas Precast",
+   "chain": "precast",
+   "region": "Waller",
+   "note": "Same redirect loop. Waller County is next door to Legacy Precast's Brookshire plant."
+  },
+  {
+   "name": "Valley PreStress Products",
+   "chain": "precast",
+   "region": "Eagle Lake",
+   "note": "No website. The trade directory names David Malaer and gives AASHTO I beams, deck slabs and box girders. About sixty miles west of Houston."
+  },
+  {
+   "name": "Whaley Concrete Pumping",
+   "chain": "nozzle",
+   "region": "Houston",
+   "note": "An American Concrete Pumping Association listing and nothing fetchable."
+  },
+  {
+   "name": "Axis Pumping",
+   "chain": "nozzle",
+   "region": "Houston",
+   "note": "Same."
+  }
+ ],
+ "no_site_note": "Twenty-one firms that meet the profile on trade association category and geography and publish no website at all: six in the Greater Houston Builders Association's foundation and concrete categories, eleven on the Associated Masonry Contractors of Houston roster, and four more. They are not small by inference, they are unlisted. This deck cannot screen them, and says so rather than presenting the roster as the market.",
  "limits": [
   [
    "How the list was drawn",
@@ -606,7 +1066,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. A contact is one of three things and the card says which: 91 a LinkedIn profile whose headline names the firm, 136 a page on the firm's own site or dated reporting that names the person with a title, and 14 a name carried from a page that named them, at a firm that publishes no staff page to link. No source URL, title or figure was inferred. No aggregator was used."
+   "Company filings, company pages and trade press. A contact is one of three things and the card says which: 91 a LinkedIn profile whose headline names the firm, 136 a page on the firm's own site or dated reporting that names the person with a title, and 35 a name carried from a page that named them, at a firm that publishes no staff page to link. No source URL, title or figure was inferred. No aggregator was used."
   ],
   [
    "Scope",
@@ -968,10 +1428,10 @@
    {
     "group": "trade",
     "label": "Builds the wall, not the house",
-    "n": 22,
-    "yes": 2,
-    "partly": 6,
-    "no": 14,
+    "n": 50,
+    "yes": 5,
+    "partly": 12,
+    "no": 33,
     "decider": 15,
     "confirm": 0,
     "linked": 22
@@ -18318,12 +18778,12 @@
   ]
  },
  "stats": {
-  "total": 96,
+  "total": 124,
   "adopters": 3,
   "tier_a": 13,
   "tier_b": 30,
   "out": 0,
-  "principals": 241,
+  "principals": 262,
   "linkedin_held": 91,
   "audit_flags": 0,
   "with_decider": 43,
@@ -24259,6 +24719,347 @@
    "decider_caveat": false
   },
   {
+   "target_id": "HOU-152",
+   "entity_name": "DSRS Steel",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, Pleasantville Drive, plus San Antonio and Central Texas",
+   "homepage_url": "https://dsrssteel.com/",
+   "synopsis": "A cold-formed steel framing contractor offering full turnkey framing covering plan review, engineering, fabrication, delivery, installation, inspections and closeout documentation, and separately selling engineered material packages for self-install. Its published range runs from three million dollar estates to 150-home subdivisions, including the McCann Park development in Houston, and it markets moisture-resilient storm-ready assemblies for the Gulf Coast and fast, predictable framing aimed at production builders.",
+   "key_stat": "A 150-home development on cold-formed steel",
+   "principals": [
+    {
+     "name": "David S. R. Stevens",
+     "role": "Director",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20S.%20R.%20Stevens%20DSRS%20Steel"
+    },
+    {
+     "name": "Michael Henderson",
+     "role": "Head of Operations",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20Henderson%20DSRS%20Steel"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "McCann Park Development",
+     "detail": "A 150-home development in Houston named on the firm's own site.",
+     "signal_type": "repeatable",
+     "fit_signal": "Production housing framed in cold-formed steel, which is a builder already sold on a manufactured wall.",
+     "url": "https://dsrssteel.com/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 3,
+    "innovation": 3,
+    "capital_access": 2
+   },
+   "mvp_screen": "Already sold a Houston production builder a 150-home subdivision framed in something other than wood, and self-performs the installation.",
+   "_verdict": "Already sold a Houston production builder a 150-home subdivision framed in something other than wood, and self-performs the installation.",
+   "_why": [
+    "A manufactured wall system installed repeatedly across Houston subdivisions and custom work in one metro.",
+    "A firm framing subdivisions of this size, self-performing, is the scale where one or two machines would cover a real share of the wall it puts up.",
+    "Its entire business is replacing site-framed wood with a manufactured system, sold to production builders on schedule and resilience. Carrying the engineering, fabrication and installation of a non-conventional wall is the adoption behaviour this count is looking for."
+   ],
+   "sources": [
+    {
+     "url": "https://dsrssteel.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A manufactured wall system installed repeatedly across Houston subdivisions and custom work in one metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A firm framing subdivisions of this size, self-performing, is the scale where one or two machines would cover a real share of the wall it puts up."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Its entire business is replacing site-framed wood with a manufactured system, sold to production builders on schedule and resilience. Carrying the engineering, fabrication and installation of a non-conventional wall is the adoption behaviour this count is looking for."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "DSRS Steel",
+   "cell": "clear|clear",
+   "chain": "panel",
+   "clears": 3,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-146",
+   "entity_name": "Future Frame USA",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "New Caney plant, Conroe office, Montgomery County",
+   "homepage_url": "https://futureframeusa.com/",
+   "synopsis": "An offsite manufacturer built for the Texas home builder, producing wall panels and floor trusses on intelligent high-capacity CNC machines accurate to within one sixteenth of an inch, on a stated claim of reducing construction time by roughly 30 percent. It describes its own product as a new design engineered method of framing offered as a precision alternative to stick framing. It is on the City of Houston's registered fabricator list for trusses and wall panels.",
+   "key_stat": "Automated wall panel line, 17,000 square feet",
+   "principals": [
+    {
+     "name": "Shane McCullough",
+     "role": "President",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Shane%20McCullough%20Future%20Frame%20USA"
+    },
+    {
+     "name": "Glen Gilbert",
+     "role": "General Manager",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Glen%20Gilbert%20Future%20Frame%20USA"
+    },
+    {
+     "name": "Brent Wheat",
+     "role": "Design Manager",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brent%20Wheat%20Future%20Frame%20USA"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "New Caney plant",
+     "detail": "Expanded into a 17,000 square foot space in New Caney in 2023, running CNC machines accurate to within one sixteenth of an inch.",
+     "signal_type": "repeatable",
+     "fit_signal": "An automated wall line already selling to Texas production builders.",
+     "url": "https://communityimpact.com/houston/lake-houston-humble-kingwood/business/2023/07/20/future-frame-usa-expands-into-17000-square-foot-space-in-new-caney/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 3,
+    "innovation": 3,
+    "capital_access": 2
+   },
+   "mvp_screen": "The closest business model on this deck to selling printed wall: an automated plant making wall for Houston production builders, at a size one or two machines would actually cover.",
+   "_verdict": "The closest business model on this deck to selling printed wall: an automated plant making wall for Houston production builders, at a size one or two machines would actually cover.",
+   "_why": [
+    "Wall panels made repeatedly for production builders inside one metro, from one plant.",
+    "A 17,000 square foot plant serving Texas production builders is the scale where one or two machines would cover a real share of the wall it ships.",
+    "It converted a plant to automated CNC panel production and sells the method itself as the product, against stick framing. Paying to replace a building method with a manufactured one is exactly what this count asks."
+   ],
+   "sources": [
+    {
+     "url": "https://futureframeusa.com/",
+     "date": null
+    },
+    {
+     "url": "https://futureframeusa.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://futureframeusa.com/meet-our-team/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonpermittingcenter.org/media/2146/download",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels made repeatedly for production builders inside one metro, from one plant."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A 17,000 square foot plant serving Texas production builders is the scale where one or two machines would cover a real share of the wall it ships."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "It converted a plant to automated CNC panel production and sells the method itself as the product, against stick framing. Paying to replace a building method with a manufactured one is exactly what this count asks."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Future Frame USA",
+   "cell": "clear|clear",
+   "chain": "panel",
+   "clears": 3,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-139",
+   "entity_name": "Locke Solutions",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, Almeda Genoa Road, with a second plant in Alvarado",
+   "homepage_url": "https://lockesolutions.com/",
+   "synopsis": "Custom precast producer in south Houston with an underground tunnel system serving three production bays, working on stormwater, manholes, trench, pull boxes, spread footings, light pole bases, LNG and data centre work. It runs a mobile plant program that produces precast at the customer's own premises or active jobsite. The Texas precast association's directory categorises Locke under structural precast, insulated wall panels and hollow-core slabs, which the firm's own site does not confirm.",
+   "key_stat": "41,750 square foot plant, four 50-ton bridge cranes",
+   "principals": [],
+   "key_projects": [
+    {
+     "name": "Mobile plant program",
+     "detail": "Locke can produce precast on the customer's premises or at an active jobsite rather than only in the plant.",
+     "signal_type": "method_risk",
+     "fit_signal": "The nearest thing on this deck to a producer that has already decided the factory should move to the job.",
+     "url": "https://lockesolutions.com/mobile-plants/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 3,
+    "capital_access": 2
+   },
+   "mvp_screen": "A producer that already moves production to the point of use is solving the same problem a printer solves, from a Houston plant with cranes and bays.",
+   "_verdict": "A producer that already moves production to the point of use is solving the same problem a printer solves, from a Houston plant with cranes and bays.",
+   "_why": [
+    "Custom precast made repeatedly in one Houston plant across three production bays.",
+    "The plant is large enough that a printer would be an added line rather than the business, and the product mix is utility structures rather than wall.",
+    "It runs a mobile plant program, producing precast on the customer's own site rather than shipping it. Standing up production at the point of use is a paid-for change in how the product gets made."
+   ],
+   "sources": [
+    {
+     "url": "https://lockesolutions.com/",
+     "date": null
+    },
+    {
+     "url": "https://lockesolutions.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://lockesolutions.com/mobile-plants/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Custom precast made repeatedly in one Houston plant across three production bays."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "The plant is large enough that a printer would be an added line rather than the business, and the product mix is utility structures rather than wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "It runs a mobile plant program, producing precast on the customer's own site rather than shipping it. Standing up production at the point of use is a paid-for change in how the product gets made."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Locke Solutions",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 2,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "HOU-120",
    "entity_name": "ICF Constructors",
    "entity_type": "contractor",
@@ -24374,6 +25175,7 @@
    "vol": null,
    "short": "ICF Constructors",
    "cell": "clear|partial",
+   "chain": "icf",
    "clears": 2,
    "deciders": [
     "Matt Zetlmeisl"
@@ -24511,6 +25313,7 @@
    "vol": null,
    "short": "Botello Builders",
    "cell": "clear|clear",
+   "chain": "slab",
    "clears": 2,
    "deciders": [
     "Eleazar Botello",
@@ -24519,6 +25322,217 @@
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-164",
+   "entity_name": "All About Concrete",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Tomball, Houston primary, also Dallas-Fort Worth, Austin and San Antonio",
+   "homepage_url": "https://allaboutconcretellc.net/",
+   "synopsis": "A turn-key concrete contractor serving residential production builders, light commercial contractors and developers, handling everything from initial design collaboration to final installation. It records Greater Houston Builders Association Distinguished Member status for 2024, 2025 and 2026.",
+   "key_stat": "Turn-key concrete for production builders",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 3,
+    "innovation": 1,
+    "capital_access": 1
+   },
+   "mvp_screen": "The closest published language on this deck to the firm a printer would sell into: turn-key concrete, for residential production builders, in Houston.",
+   "_verdict": "The closest published language on this deck to the firm a printer would sell into: turn-key concrete, for residential production builders, in Houston.",
+   "_why": [
+    "Turn-key concrete repeated for production builders across the same Houston submarkets.",
+    "A single-office contractor serving production builders is the scale where one or two machines would cover a real share of the work it takes on.",
+    "No record of paying for an unproven method, and no method content on the site at all."
+   ],
+   "sources": [
+    {
+     "url": "https://allaboutconcretellc.net/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "fail",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Turn-key concrete repeated for production builders across the same Houston submarkets."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A single-office contractor serving production builders is the scale where one or two machines would cover a real share of the work it takes on."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method, and no method content on the site at all."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "All About Concrete",
+   "cell": "clear|clear",
+   "chain": "slab",
+   "clears": 2,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-156",
+   "entity_name": "Dee Brown",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Tomball office, Richardson headquarters",
+   "homepage_url": "https://www.deebrowncompanies.com/",
+   "synopsis": "A third-generation stone and masonry contractor founded 31 October 1955, with a Houston-area office in Tomball. Its published services include masonry load-bearing and non-load-bearing brick and CMU systems and prefabricated stone and masonry wall systems, supported by a 7,700 square foot fabrication facility and a fleet of repair trucks. Its own site states an interest in new ways to use terra cotta, porcelain, prefabricated materials and adhered veneers.",
+   "key_stat": "Publishes prefabricated masonry wall systems",
+   "principals": [
+    {
+     "name": "Robert V. Barnes III",
+     "role": "President and Chief Executive Officer",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Robert%20V.%20Barnes%20III%20Dee%20Brown"
+    },
+    {
+     "name": "Tim Hughes",
+     "role": "Senior Vice President, Construction Management",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tim%20Hughes%20Dee%20Brown"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Prefabricated masonry wall systems",
+     "detail": "Published as a service line alongside load-bearing brick and CMU systems, supported by a 7,700 square foot fabrication facility.",
+     "signal_type": "method_risk",
+     "fit_signal": "A masonry contractor that already prefabricates wall has made the argument to its own customers that wall can be made somewhere other than the wall.",
+     "url": "https://www.deebrowncompanies.com/services"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 3
+   },
+   "mvp_screen": "The only masonry contractor screened that already sells a prefabricated wall system and says in its own words that it is looking for new ones.",
+   "_verdict": "The only masonry contractor screened that already sells a prefabricated wall system and says in its own words that it is looking for new ones.",
+   "_why": [
+    "Load-bearing and veneer masonry laid repeatedly across one region for seven decades.",
+    "A firm of this age and reach puts up more wall than one or two printers would cover, and the prefabricated line is one product among many.",
+    "It runs a 7,700 square foot fabrication facility producing prefabricated stone and masonry wall systems, which is capital spent to move wall production off the scaffold. It states an interest in prefabricated materials on its own site."
+   ],
+   "sources": [
+    {
+     "url": "https://www.deebrowncompanies.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.deebrowncompanies.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.deebrowncompanies.com/services",
+     "date": null
+    },
+    {
+     "url": "https://www.deebrowncompanies.com/contact",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Load-bearing and veneer masonry laid repeatedly across one region for seven decades."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A firm of this age and reach puts up more wall than one or two printers would cover, and the prefabricated line is one product among many."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It runs a 7,700 square foot fabrication facility producing prefabricated stone and masonry wall systems, which is capital spent to move wall production off the scaffold. It states an interest in prefabricated materials on its own site."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Dee Brown",
+   "cell": "clear|partial",
+   "chain": "masonry",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -24662,6 +25676,7 @@
    "vol": null,
    "short": "Keystone Concrete Placement",
    "cell": "clear|partial",
+   "chain": "slab",
    "clears": 1,
    "deciders": [
     "Scott Anderson",
@@ -24806,6 +25821,7 @@
    "vol": null,
    "short": "MAREK",
    "cell": "clear|partial",
+   "chain": "panel",
    "clears": 1,
    "deciders": [
     "Phil Nevlud",
@@ -24814,6 +25830,208 @@
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-162",
+   "entity_name": "Omega Industries",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, within a footprint including Dallas, Austin, San Antonio and Los Angeles",
+   "homepage_url": "https://omegaindinc.com/houston/service/gunite-shotcrete/",
+   "synopsis": "A gunite and shotcrete contractor for commercial and industrial projects including retaining walls, swimming pools, tunnels and infrastructure, publishing four distinct methods: dry-mix gunite, wet-mix shotcrete, fibre-reinforced shotcrete and steel-reinforced gunite. Its own site records 30 million dollars of bonding capacity, more than 1,200 completed projects, zero liens and zero OSHA violations.",
+   "key_stat": "$30 million bonding capacity, 1,200-plus projects",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 3
+   },
+   "mvp_screen": "The only firm on this deck that both shoots concrete through a nozzle to a profile and carries an audited balance sheet large enough to buy equipment.",
+   "_verdict": "The only firm on this deck that both shoots concrete through a nozzle to a profile and carries an audited balance sheet large enough to buy equipment.",
+   "_why": [
+    "Shotcrete and gunite placed repeatedly across a multi-city footprint including Houston.",
+    "A contractor bonded at 30 million dollars across four cities places more material than one or two printers would cover.",
+    "It runs four distinct placement methods including fibre-reinforced shotcrete, each requiring different equipment and crew training. Carrying four methods rather than one is capital committed to how material gets placed."
+   ],
+   "sources": [
+    {
+     "url": "https://omegaindinc.com/houston/service/gunite-shotcrete/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Shotcrete and gunite placed repeatedly across a multi-city footprint including Houston."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A contractor bonded at 30 million dollars across four cities places more material than one or two printers would cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It runs four distinct placement methods including fibre-reinforced shotcrete, each requiring different equipment and crew training. Carrying four methods rather than one is capital committed to how material gets placed."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Omega Industries",
+   "cell": "clear|partial",
+   "chain": "nozzle",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-143",
+   "entity_name": "Tindall Corporation, Texas division",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "San Antonio",
+   "homepage_url": "https://tindallcorp.com/",
+   "synopsis": "Precast and prestressed construction elements including a precast modular cell line, serving data centre development and multi-use commercial across the south-central states from a 40-acre San Antonio facility operating since 2008. The plant has nearly doubled production, and an expansion announced on 14 July 2023 added 69 thousand square feet and about 150 people, taking it to 180,000 square feet. Its general manager is quoted on the firm's own site on diversifying capability beyond average precast solutions.",
+   "key_stat": "40-acre plant, 190-plus employees",
+   "principals": [
+    {
+     "name": "Greg Elliott",
+     "role": "Vice President and General Manager, Texas",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Greg%20Elliott%20Tindall%20Corporation%2C%20Texas%20division"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Texas plant expansion",
+     "detail": "Announced 14 July 2023: 69 thousand square feet added and about 150 team members, taking the plant to 180,000 square feet.",
+     "signal_type": "schedule",
+     "fit_signal": "A plant in a capex posture is a plant whose management is already approving equipment.",
+     "url": "https://tindallcorp.com/tindall-texas-expansion/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 3
+   },
+   "mvp_screen": "The closest thing in Texas to a precast producer running a volumetric line, with a general manager on record wanting to widen what the plant makes.",
+   "_verdict": "The closest thing in Texas to a precast producer running a volumetric line, with a general manager on record wanting to widen what the plant makes.",
+   "_why": [
+    "Structural elements and modular cells cast repeatedly from one plant for one region.",
+    "Forty acres and 190 people is more capacity than one or two printers would cover, and the plant's product is commercial and data centre rather than house wall.",
+    "It built a precast modular cell line, which is a different product from structural elements and required new moulds, new handling and a new market. Paying to add a production line is the habit this count looks for, though a modular cell is not a new building method."
+   ],
+   "sources": [
+    {
+     "url": "https://tindallcorp.com/",
+     "date": null
+    },
+    {
+     "url": "https://tindallcorp.com/tindall-texas-expansion/",
+     "date": null
+    },
+    {
+     "url": "https://tindallcorp.com/tindall-celebrates-over-a-decade-of-precast-production-in-texas/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Structural elements and modular cells cast repeatedly from one plant for one region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Forty acres and 190 people is more capacity than one or two printers would cover, and the plant's product is commercial and data centre rather than house wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It built a precast modular cell line, which is a different product from structural elements and required new moulds, new handling and a new market. Paying to add a production line is the habit this count looks for, though a modular cell is not a new building method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Tindall Corporation, Texas division",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -24956,6 +26174,7 @@
    "vol": null,
    "short": "CIVE",
    "cell": "partial|partial",
+   "chain": "gc",
    "clears": 1,
    "deciders": [
     "Hachem Domloj",
@@ -24963,6 +26182,227 @@
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-157",
+   "entity_name": "Camarata Masonry Systems",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, West Hardy Road, with offices in Florida and North Carolina",
+   "homepage_url": "http://www.camaratamasonry.com/",
+   "synopsis": "A masonry, natural stone, tile and terrazzo subcontractor founded 1 August 2004, describing itself as one of the largest in those specialties nationwide, working across arenas, education, entertainment, healthcare, government, religious, residential and multi-family, and retail. Named projects include Minute Maid Park, Reliant Stadium, the Rice University Music and Performing Arts Center and the ExxonMobil World Headquarters campus. Its about page publishes panelisation of natural stone and masonry as a capability.",
+   "key_stat": "Publishes panelisation of stone and masonry",
+   "principals": [
+    {
+     "name": "Kevin M. Camarata",
+     "role": "Founder",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Kevin%20M.%20Camarata%20Camarata%20Masonry%20Systems"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 2
+   },
+   "mvp_screen": "A Houston-headquartered masonry contractor that already panelises stone and masonry, on a project list that runs to stadiums and a corporate campus.",
+   "_verdict": "A Houston-headquartered masonry contractor that already panelises stone and masonry, on a project list that runs to stadiums and a corporate campus.",
+   "_why": [
+    "Masonry and stone laid repeatedly across one metro on large institutional and commercial work.",
+    "A firm of this reach puts up more wall than one or two printers would cover, and multi-family is one sector among eight.",
+    "It publishes panelisation of natural stone and masonry as a capability, which is production moved off the scaffold and into a shop. There is no record of adopting a new material."
+   ],
+   "sources": [
+    {
+     "url": "http://www.camaratamasonry.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.camaratamasonry.com/about-us",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Masonry and stone laid repeatedly across one metro on large institutional and commercial work."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A firm of this reach puts up more wall than one or two printers would cover, and multi-family is one sector among eight."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It publishes panelisation of natural stone and masonry as a capability, which is production moved off the scaffold and into a shop. There is no record of adopting a new material."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Camarata Masonry Systems",
+   "cell": "clear|partial",
+   "chain": "masonry",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-137",
+   "entity_name": "Legacy Precast",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Brookshire, Waller County, about an hour from downtown Houston",
+   "homepage_url": "https://www.legacyprecast.com/",
+   "synopsis": "Precast and prestressed building systems on a 50-acre plot in Brookshire, making wall panels, shear walls, spandrels, double tees, beams, columns and stairs for parking garages, industrial buildings, data centres and schools. Its own site names Houston, Dallas, Austin and San Antonio as its markets. Founded May 2013 by seven partners. It holds PCI plant certification from 2014 and PCI architectural certification from 2018, and it published certified Environmental Product Declarations in June 2022, built on a full year of operating data from the Brookshire plant, to ISO 14025 and ISO 21930.",
+   "key_stat": "50-acre plant, batching well over 100 yards an hour",
+   "principals": [
+    {
+     "name": "Hussein Sinjari",
+     "role": "Vice President",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Hussein%20Sinjari%20Legacy%20Precast"
+    },
+    {
+     "name": "Charles Franke",
+     "role": "Chief of Estimating",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Charles%20Franke%20Legacy%20Precast"
+    }
+   ],
+   "key_projects": [
+    {
+     "name": "Environmental Product Declarations",
+     "detail": "Certified EPDs first issued 3 June 2022, prepared to ISO 14025 and ISO 21930 on a full year of operating data from the Brookshire plant.",
+     "signal_type": "method_risk",
+     "fit_signal": "A producer that measures its own carbon before a customer asks is a producer that has already thought about how it makes things.",
+     "url": "https://www.legacyprecast.com/epd"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 2,
+    "capital_access": 2
+   },
+   "mvp_screen": "The nearest thing in Greater Houston to a printing operation that already exists: a batch plant, casting beds, a QC regime and a business built on making structural wall somewhere other than the site.",
+   "_verdict": "The nearest thing in Greater Houston to a printing operation that already exists: a batch plant, casting beds, a QC regime and a business built on making structural wall somewhere other than the site.",
+   "_why": [
+    "Eight certified structural product lines cast repeatedly on the same beds, in one plant, for one region.",
+    "A plant batching well over 100 yards an hour is larger than one or two printers would cover. A machine would be a line inside it, not the business, which is the same reading a large builder gets.",
+    "It published Environmental Product Declarations in 2022 before any customer required them, on its own operating data. Paying for a measurement nobody asked for is evidence of treating production method as a competitive question, though an EPD is not a new way of building."
+   ],
+   "sources": [
+    {
+     "url": "https://www.legacyprecast.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.legacyprecast.com/epd",
+     "date": null
+    },
+    {
+     "url": "https://www.legacyprecast.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://concreteproducts.com/index.php/2014/09/16/well-anchored/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "holds": 3,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Eight certified structural product lines cast repeatedly on the same beds, in one plant, for one region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A plant batching well over 100 yards an hour is larger than one or two printers would cover. A machine would be a line inside it, not the business, which is the same reading a large builder gets."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It published Environmental Product Declarations in 2022 before any customer required them, on its own operating data. Paying for a measurement nobody asked for is evidence of treating production method as a competitive question, though an EPD is not a new way of building."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Legacy Precast",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -25085,6 +26525,418 @@
    "vol": null,
    "short": "Blazer Building",
    "cell": "clear|partial",
+   "chain": "gc",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-160",
+   "entity_name": "Brundage-Bone Concrete Pumping",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, two yards on West Old Spanish Trail and Sellers Road",
+   "homepage_url": "https://brundagebone.com/locations/houston/",
+   "synopsis": "A concrete pumping contractor with two Houston yards, running boom pumps from 17 to 65 metres in a range of boom styles, line pumps including high pressure pumps for long vertical and horizontal runs, placing booms, and truck-mounted conveyors and telebelts for difficult mixes. All its operators are OSHA 10 and ACPA certified. It advertises specialised services including low carbon and pervious concrete pumping.",
+   "key_stat": "Boom pumps from 17 to 65 metres, plus placing booms",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "A firm whose entire business is placing somebody else's concrete with owned capital equipment, which is the commercial shape of operating a printer for a builder.",
+   "_verdict": "A firm whose entire business is placing somebody else's concrete with owned capital equipment, which is the commercial shape of operating a printer for a builder.",
+   "_why": [
+    "Placement work repeated daily across one metro from two standing yards.",
+    "A fleet spanning 17 to 65 metre booms across two yards is more placement capacity than one or two printers would cover.",
+    "No record of paying for an unproven method. It advertises low carbon and pervious concrete pumping, and advertising a capability is not the same as having bought one."
+   ],
+   "sources": [
+    {
+     "url": "https://brundagebone.com/locations/houston/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Placement work repeated daily across one metro from two standing yards."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A fleet spanning 17 to 65 metre booms across two yards is more placement capacity than one or two printers would cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. It advertises low carbon and pervious concrete pumping, and advertising a capability is not the same as having bought one."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Brundage-Bone Concrete Pumping",
+   "cell": "clear|partial",
+   "chain": "nozzle",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-147",
+   "entity_name": "Builders FirstSource",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Four Houston-area component plants: Conroe, Cut N Shoot, East Houston and Houston",
+   "homepage_url": "https://www.bldr.com/",
+   "synopsis": "The largest supplier of building products and manufactured components in the country, operating about 570 locations in 43 states, with four component plants in the Houston area. Two of them, Conroe and Cut N Shoot, publish their facility type as trusses, wall panels and components. Its own annual report describes manufactured products as factory-built substitutes for job-site framing including wall panels, states that its manufacturing facilities use automated robotic truss lines, and that prefabricated components are engineered offsite using specialised equipment.",
+   "key_stat": "Four Houston-area component plants",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 2,
+    "capital_access": 3
+   },
+   "mvp_screen": "The one counterparty in Houston already treating offsite prefabrication and robotic production as stated strategy in a filing.",
+   "_verdict": "The one counterparty in Houston already treating offsite prefabrication and robotic production as stated strategy in a filing.",
+   "_why": [
+    "Wall panels and components made repeatedly across four Houston-area plants for production builders in the same metro.",
+    "Four plants inside a network of 570 locations is far beyond what one or two printers would cover, and purchasing at this scale sits at a national desk.",
+    "It runs automated robotic truss lines and says so in its own annual report, and has invested in digital solutions around the offsite model. Automating production is the habit, though robotic trusses are an improvement on framing rather than a replacement for it."
+   ],
+   "sources": [
+    {
+     "url": "https://www.bldr.com/products/manufactured-components",
+     "date": null
+    },
+    {
+     "url": "https://www.bldr.com/location/conroe-tx-truss/CONRTXMF",
+     "date": null
+    },
+    {
+     "url": "https://www.bldr.com/location/cut-n-shoot-tx-truss/CUTNTXMF",
+     "date": null
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1316835/000095017024018584/bldr-20231231.htm",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels and components made repeatedly across four Houston-area plants for production builders in the same metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Four plants inside a network of 570 locations is far beyond what one or two printers would cover, and purchasing at this scale sits at a national desk."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "It runs automated robotic truss lines and says so in its own annual report, and has invested in digital solutions around the offsite model. Automating production is the habit, though robotic trusses are an improvement on framing rather than a replacement for it."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Builders FirstSource",
+   "cell": "clear|fail",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-155",
+   "entity_name": "City Masonry",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Tomball, serving Texas and the Gulf Coast",
+   "homepage_url": "https://www.citymasonry.com/",
+   "synopsis": "A commercial, industrial and institutional masonry contractor founded in 1988, working in brick, block and stone from veneer to load-bearing masonry, with published annual revenue of 20 to 40 million dollars and a claim to the largest and best-trained masonry workforce in the state. Its own about page records over four million square feet of masonry laid in the past year.",
+   "key_stat": "Over 4 million square feet of masonry in the past year",
+   "principals": [
+    {
+     "name": "Paul McCurdy",
+     "role": "Chief Executive Officer",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Paul%20McCurdy%20City%20Masonry"
+    },
+    {
+     "name": "Glenn Whitehead",
+     "role": "Chief Operating Officer",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Glenn%20Whitehead%20City%20Masonry"
+    },
+    {
+     "name": "Edwin Rosales",
+     "role": "Vice President of Operations",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Edwin%20Rosales%20City%20Masonry"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "The largest published masonry throughput in the metro, on load-bearing as well as veneer work, which is the wall a printer would replace.",
+   "_verdict": "The largest published masonry throughput in the metro, on load-bearing as well as veneer work, which is the wall a printer would replace.",
+   "_why": [
+    "Four million square feet of the same trade laid repeatedly across one region, on commercial and institutional work.",
+    "Four million square feet a year is more wall than one or two printers would cover. A machine would be a line inside the business.",
+    "No record of paying for an unproven method. The published position is craft and workforce training."
+   ],
+   "sources": [
+    {
+     "url": "https://www.citymasonry.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.citymasonry.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.citymasonry.com/team/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four million square feet of the same trade laid repeatedly across one region, on commercial and institutional work."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Four million square feet a year is more wall than one or two printers would cover. A machine would be a line inside the business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published position is craft and workforce training."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "City Masonry",
+   "cell": "clear|partial",
+   "chain": "masonry",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-141",
+   "entity_name": "Coreslab Structures (Texas)",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Cedar Park plant, with a project consultant covering Houston",
+   "homepage_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+   "synopsis": "Architectural and structural precast for parking garages, cladding and total precast buildings, in the Texas market since 1988, from a plant on Anderson Mill Road in Cedar Park, which is the group's only Texas plant. It assigns project consultants by territory, and the Houston territory carries multifamily in the same title.",
+   "key_stat": "The group's only Texas plant",
+   "principals": [
+    {
+     "name": "Bruce Wardlaw",
+     "role": "Project Consultant, Houston, East Texas and Multifamily",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bruce%20Wardlaw%20Coreslab%20Structures"
+    },
+    {
+     "name": "Garrett Weidman",
+     "role": "Sales Manager",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Garrett%20Weidman%20Coreslab%20Structures"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "The only precast producer screened whose own staffing names Houston and multifamily in the same title, which is the closest this cell gets to residential structure.",
+   "_verdict": "The only precast producer screened whose own staffing names Houston and multifamily in the same title, which is the closest this cell gets to residential structure.",
+   "_why": [
+    "A complete line of architectural and structural products cast repeatedly from one Texas plant since 1988.",
+    "A plant serving the whole state from Cedar Park is larger than one or two printers would cover, and Houston is a sales territory rather than a production location.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+     "date": null
+    },
+    {
+     "url": "https://www.coreslab.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A complete line of architectural and structural products cast repeatedly from one Texas plant since 1988."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A plant serving the whole state from Cedar Park is larger than one or two printers would cover, and Houston is a sales territory rather than a production location."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Coreslab Structures (Texas)",
+   "cell": "clear|partial",
+   "chain": "precast",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -25225,6 +27077,7 @@
    "vol": null,
    "short": "Greco Structures",
    "cell": "clear|partial",
+   "chain": "tiltup",
    "clears": 1,
    "deciders": [
     "Trey Green"
@@ -25391,12 +27244,113 @@
    "vol": null,
    "short": "Harvey Cleary",
    "cell": "clear|partial",
+   "chain": "gc",
    "clears": 1,
    "deciders": [
     "Scott Clarke"
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-142",
+   "entity_name": "Heldenfels Enterprises, a Metromont company",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "San Marcos and Corpus Christi plants",
+   "homepage_url": "https://heldenfels.com/",
+   "synopsis": "Fabricates and installs precast prestressed structures for highway, marine, industrial and building construction, including prestressed wall panels, structural columns, box beams, bridge girders, piles, raker beams, seating risers and stairs. Metromont completed its acquisition of the firm on 15 December 2025, with Metromont's chief executive stating the addition expands its precast capabilities in the Texas market.",
+   "key_stat": "85-acre plant in San Marcos",
+   "principals": [
+    {
+     "name": "Chad Petro",
+     "role": "Senior Vice President and General Manager",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chad%20Petro%20Heldenfels%20Enterprises%2C%20a%20Metromont%20company"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "The largest precast footprint inside Houston's supply radius, in the first year under a new parent, which is when a producer entertains new capability.",
+   "_verdict": "The largest precast footprint inside Houston's supply radius, in the first year under a new parent, which is when a producer entertains new capability.",
+   "_why": [
+    "Prestressed elements cast repeatedly from an 85-acre yard for one region.",
+    "Eighty-five acres of casting is well beyond what one or two printers would cover, and the product is infrastructure and stadium work rather than house wall.",
+    "No record of paying for an unproven method on its own account."
+   ],
+   "sources": [
+    {
+     "url": "https://heldenfels.com/",
+     "date": null
+    },
+    {
+     "url": "https://heldenfels.com/about-us",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Prestressed elements cast repeatedly from an 85-acre yard for one region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Eighty-five acres of casting is well beyond what one or two printers would cover, and the product is infrastructure and stadium work rather than house wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method on its own account."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Heldenfels Enterprises, a Metromont company",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -25502,12 +27456,403 @@
    "vol": null,
    "short": "ORION",
    "cell": "clear|partial",
+   "chain": "tiltup",
    "clears": 1,
    "deciders": [
     "Travis Boone"
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-151",
+   "entity_name": "Texas Building Supply, a US LBM company",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston branch on Railhead Lane, panel plants in San Antonio, Taylor and Van Alstyne",
+   "homepage_url": "https://texasbuildingsupply.com/",
+   "synopsis": "The Texas banner for US LBM, formed from Oldham, Foxworth-Galbraith, JP Hart and Arrowhead Stairs and Trim. Its component line publishes interior and exterior wall panels in 2x4, 2x6, 2x8, 2x10 and 2x12 framing including raked and tall walls, roof trusses up to 14 feet tall and wood-webbed floor trusses up to 24 inches deep and 40 feet long. The three sites branded as component plants are San Antonio, Taylor and Van Alstyne, so the Houston location is a branch fed by out-of-market panel lines.",
+   "key_stat": "Wall panels trucked into a Houston branch",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "Already trucks manufactured wall into Houston from plants elsewhere, which is the logistics problem a local machine removes.",
+   "_verdict": "Already trucks manufactured wall into Houston from plants elsewhere, which is the logistics problem a local machine removes.",
+   "_why": [
+    "Wall panels made repeatedly across three Texas plants and delivered into Houston.",
+    "Three panel plants inside a national parent is more capacity than one or two printers would cover, and Houston is distribution rather than production.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://texasbuildingsupply.com/products/components/",
+     "date": null
+    },
+    {
+     "url": "https://texasbuildingsupply.com/locations",
+     "date": null
+    },
+    {
+     "url": "https://uslbm.com/family_of_companies/texas-building-supply-3/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonpermittingcenter.org/media/2146/download",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels made repeatedly across three Texas plants and delivered into Houston."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Three panel plants inside a national parent is more capacity than one or two printers would cover, and Houston is distribution rather than production."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Texas Building Supply, a US LBM company",
+   "cell": "clear|partial",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-149",
+   "entity_name": "UFP Site Built",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Huntsville plant, about 70 miles north, within five Texas plants",
+   "homepage_url": "https://ufpsitebuilt.com/",
+   "synopsis": "A component manufacturer whose Huntsville plant makes roof trusses, floor trusses, floor cassettes, wall panels, timber trusses and stair systems, one of five Texas plants alongside Hillsboro, Kyle, San Antonio and Temple. Its own offsite page states that offsite is the new onsite, that floor cassettes integrate sheathing and bracing in advance in a controlled environment, and that wall panels let a builder stand walls with fewer people, lower overhead, shorter schedules and less loose product stored on site.",
+   "key_stat": "Five Texas plants, wall panels at Huntsville",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "A wall panel plant 70 miles from Houston inside a parent that publishes offsite manufacturing as its stated argument.",
+   "_verdict": "A wall panel plant 70 miles from Houston inside a parent that publishes offsite manufacturing as its stated argument.",
+   "_why": [
+    "Wall panels and cassettes made repeatedly from one Texas plant for builders across the region.",
+    "One plant within five Texas plants is more capacity than one or two printers would cover, though a single plant is the closer end of that range.",
+    "No record of paying for an unproven method. Manufacturing wall panels is this industry's ordinary business rather than an adoption, and the offsite argument on its site is marketing for the product it already sells."
+   ],
+   "sources": [
+    {
+     "url": "https://ufpsitebuilt.com/our-locations",
+     "date": null
+    },
+    {
+     "url": "https://ufpsitebuilt.com/our-locations/huntsville-tx",
+     "date": null
+    },
+    {
+     "url": "https://ufpsitebuilt.com/woodsolutions",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels and cassettes made repeatedly from one Texas plant for builders across the region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "One plant within five Texas plants is more capacity than one or two printers would cover, though a single plant is the closer end of that range."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. Manufacturing wall panels is this industry's ordinary business rather than an adoption, and the offsite argument on its site is marketing for the product it already sells."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "UFP Site Built",
+   "cell": "clear|partial",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-144",
+   "entity_name": "Wells, Hillsboro plants",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Hillsboro, two plants on North Waco Street",
+   "homepage_url": "https://wells.build/contact/locations/hillsboro-texas/",
+   "synopsis": "Two plants on one street, one dedicated to architectural systems and one to structural systems, together 102,000 square feet with 320-plus team members and 30-plus projects a year, carrying AA architectural certification. The structural plant occupies about 25 acres of a 50-acre site, leaving the rest for expansion, and produces double tees, inverted T beams, lite walls, shear walls, columns, stairs and spandrels.",
+   "key_stat": "102,000 combined square feet, 320-plus people",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "A two-plant campus making both architectural and structural wall, with half its site still empty.",
+   "_verdict": "A two-plant campus making both architectural and structural wall, with half its site still empty.",
+   "_why": [
+    "Wall and structural elements cast repeatedly across two dedicated plants.",
+    "A hundred thousand square feet across two plants is beyond what one or two printers would cover.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://wells.build/contact/locations/hillsboro-texas/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall and structural elements cast repeatedly across two dedicated plants."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A hundred thousand square feet across two plants is beyond what one or two printers would cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Wells, Hillsboro plants",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-138",
+   "entity_name": "Wells, Pearland plant",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Pearland, Brazoria County",
+   "homepage_url": "https://wells.build/contact/locations/pearland-texas/",
+   "synopsis": "Hollowcore building systems from a plant on Veterans Drive in Pearland, with design assist through installation and maintenance, serving Houston, Austin and projects across the state. The plant carries C21 architectural certification. Wells is a top-three North American producer of architectural and structural precast, rolled up from heritage Wells, Gate Precast and Spancrete, running 13 production facilities. KPS Capital Partners agreed to acquire the company with closing expected at the end of March 2026.",
+   "key_stat": "32,000 square foot plant, 125-plus projects a year",
+   "principals": [
+    {
+     "name": "Dan Juntunen",
+     "role": "Chief Executive Officer, Wells",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dan%20Juntunen%20Wells%2C%20Pearland%20plant"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "The only precast plant inside the Houston metro proper, and a narrow one: hollowcore is a single product line rather than a flexible casting yard.",
+   "_verdict": "The only precast plant inside the Houston metro proper, and a narrow one: hollowcore is a single product line rather than a flexible casting yard.",
+   "_why": [
+    "One product made repeatedly in one plant for one region.",
+    "A plant turning 125-plus projects a year is bigger than one or two machines would cover, and hollowcore is a plank product rather than a wall product, so a printer would serve a line the plant does not currently run.",
+    "No record of paying for an unproven method. The published history is consolidation and certification, not experiment."
+   ],
+   "sources": [
+    {
+     "url": "https://wells.build/contact/locations/pearland-texas/",
+     "date": null
+    },
+    {
+     "url": "https://concreteproducts.com/index.php/2026/02/10/private-equity-operator-kps-outlines-wells-acquisition-agreement/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "One product made repeatedly in one plant for one region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A plant turning 125-plus projects a year is bigger than one or two machines would cover, and hollowcore is a plank product rather than a wall product, so a printer would serve a line the plant does not currently run."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published history is consolidation and certification, not experiment."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Wells, Pearland plant",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -25628,12 +27973,103 @@
    "vol": null,
    "short": "Encore Concrete Construction",
    "cell": "clear|partial",
+   "chain": "tiltup",
    "deciders": [
     "Mark Scully",
     "Tim Manherz"
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-145",
+   "entity_name": "NAPCO Precast",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "San Antonio, Low Bid Lane",
+   "homepage_url": "https://www.napcoprecast.com/",
+   "synopsis": "Precast and prestressed products for parking structures, multi-family residential, commercial buildings and sports and entertainment, from a single San Antonio facility operating since 1994. Its own site counts more than 500 completed projects including more than 20 HEB stores, and more than 30 years of precast and prestressed experience.",
+   "key_stat": "500-plus projects since 1994",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "One of only two precast producers screened whose published markets include multi-family residential.",
+   "_verdict": "One of only two precast producers screened whose published markets include multi-family residential.",
+   "_why": [
+    "Parking structures and multi-family elements cast repeatedly from one plant since 1994.",
+    "A single plant serving the whole state is larger than one or two printers would cover, though smaller than the multi-plant producers on this deck.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.napcoprecast.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Parking structures and multi-family elements cast repeatedly from one plant since 1994."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A single plant serving the whole state is larger than one or two printers would cover, though smaller than the multi-plant producers on this deck."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "NAPCO Precast",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -25775,6 +28211,193 @@
    "vol": null,
    "short": "Rino Construction",
    "cell": "clear|partial",
+   "chain": "tiltup",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-165",
+   "entity_name": "Solid Foundations",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Conroe, Montgomery County, and across the state",
+   "homepage_url": "https://solidfoundationsltd.com/about.php",
+   "synopsis": "A full service concrete contractor founded in 1999, running a dedicated rebar-foundation and post-tension service line, describing itself as a turn-key contractor in the Houston area and throughout the state. Its published project list runs to churches, parking garages, shopping centres, banks and university buildings.",
+   "key_stat": "Founded 1999, rebar and post-tension foundations",
+   "principals": [
+    {
+     "name": "Don Jackson",
+     "role": "Owner and President",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Don%20Jackson%20Solid%20Foundations"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 3,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "A Conroe contractor with a standing post-tension line, positioned in the north Houston growth corridor where the production communities are.",
+   "_verdict": "A Conroe contractor with a standing post-tension line, positioned in the north Houston growth corridor where the production communities are.",
+   "_why": [
+    "A standing post-tension foundation line repeated across the region, though the published project list is commercial rather than production residential.",
+    "A single-office contractor of this size is the scale where one or two machines would cover a real share of the work it takes on.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://solidfoundationsltd.com/about.php",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A standing post-tension foundation line repeated across the region, though the published project list is commercial rather than production residential."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A single-office contractor of this size is the scale where one or two machines would cover a real share of the work it takes on."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Solid Foundations",
+   "cell": "partial|clear",
+   "chain": "slab",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-161",
+   "entity_name": "Texan Pumpers Company",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Kingwood, serving a 150-mile radius",
+   "homepage_url": "https://texconpumping.com/",
+   "synopsis": "A concrete pumping company founded in 2017, operating over 30 pump trucks from 32-metre to 65-metre boom pumps out of a Kingwood office across a 150-mile radius, with 40-plus staff and reported year-over-year growth of 45 to 50 percent. Its published customer base is major contractors, home builders and industrial clients across Texas.",
+   "key_stat": "Over 30 pump trucks, 45 to 50 percent annual growth",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "The fastest-growing pumping fleet in the metro, already selling placement to home builders, and still buying equipment.",
+   "_verdict": "The fastest-growing pumping fleet in the metro, already selling placement to home builders, and still buying equipment.",
+   "_why": [
+    "Placement repeated daily for home builders and contractors across one region from one yard.",
+    "Thirty-plus trucks is more placement capacity than one or two printers would cover, though a single-yard operation is the closer end of that range.",
+    "No record of paying for an unproven method. The published position is fleet growth and service."
+   ],
+   "sources": [
+    {
+     "url": "https://texconpumping.com/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Placement repeated daily for home builders and contractors across one region from one yard."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Thirty-plus trucks is more placement capacity than one or two printers would cover, though a single-yard operation is the closer end of that range."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published position is fleet growth and service."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Texan Pumpers Company",
+   "cell": "clear|partial",
+   "chain": "nozzle",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -25894,12 +28517,499 @@
    "vol": null,
    "short": "Texas A&M Concrete",
    "cell": "clear|partial",
+   "chain": "tiltup",
    "clears": 1,
    "deciders": [
     "David Buzzelli"
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-140",
+   "entity_name": "Tricon Precast",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, Henry Road, with a second Texas plant",
+   "homepage_url": "https://www.triconprecast.com",
+   "synopsis": "Houston-headquartered precast producer running two Texas manufacturing facilities and operations offices in Florida, serving the Gulf Coast. The published product line is bridges and highways, precast substructures, retaining walls and sound walls, with an industrial division serving petrochemical, LNG, oil and gas, pipeline and power. Quality control teams hold ACI field, strength and aggregate certifications and PCI Level 1, and technicians carry NPCA production quality school certification. The facilities run SOTA batching equipment.",
+   "key_stat": "ACI and PCI Level 1 certified quality control",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "A Houston precast plant with a certified QC regime and a batching line, on a product mix that is infrastructure rather than building wall.",
+   "_verdict": "A Houston precast plant with a certified QC regime and a batching line, on a product mix that is infrastructure rather than building wall.",
+   "_why": [
+    "Bridge and substructure elements cast repeatedly from two Texas plants.",
+    "Two plants running certified batching is more capacity than one or two printers would cover, and none of the published product is building wall.",
+    "No record of paying for an unproven method. The published position is certification and quality control."
+   ],
+   "sources": [
+    {
+     "url": "https://www.triconprecast.com",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Bridge and substructure elements cast repeatedly from two Texas plants."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Two plants running certified batching is more capacity than one or two printers would cover, and none of the published product is building wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published position is certification and quality control."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Tricon Precast",
+   "cell": "clear|partial",
+   "chain": "precast",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-150",
+   "entity_name": "Trussworks Operations",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Caldwell plant, about 90 minutes from Houston",
+   "homepage_url": "https://www.trussworksllc.net/",
+   "synopsis": "A component manufacturer with plants in Caldwell and Mabank, Texas, plus five more across Oklahoma, Missouri, Arizona, Arkansas and Colorado and one opening in Florida in January 2027. The published product line is roof trusses, floor trusses, wall panels, LVL beams and timber truss, and the stated customer segment is large-scale multifamily, commercial and production builder projects. It is on the City of Houston's registered fabricator list.",
+   "key_stat": "Wall panels for production builder projects",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "A wall panel plant inside Houston's trucking radius whose own stated customer segment is production builders and multifamily.",
+   "_verdict": "A wall panel plant inside Houston's trucking radius whose own stated customer segment is production builders and multifamily.",
+   "_why": [
+    "Wall panels made repeatedly from one plant for production builders across the region.",
+    "Two Texas plants inside a seven-plant group is more than one or two printers would cover, and Caldwell is a regional plant rather than a Houston one.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://www.trussworksllc.net/",
+     "date": null
+    },
+    {
+     "url": "https://www.trussworksllc.net/locations",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonpermittingcenter.org/media/2146/download",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels made repeatedly from one plant for production builders across the region."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Two Texas plants inside a seven-plant group is more than one or two printers would cover, and Caldwell is a regional plant rather than a Houston one."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Trussworks Operations",
+   "cell": "clear|partial",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-159",
+   "entity_name": "Veazey Enterprises",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston, Appleton Street, serving Greater Houston and Galveston",
+   "homepage_url": "https://vzmasonry.com/",
+   "synopsis": "A masonry contractor serving hospitals, colleges, office buildings, churches, hotels, shopping centres, banks and fire stations across Greater Houston and Galveston, employing its own superintendents and foremen. The firm traces to Veazey Corporation, founded 1964, and was established under its present name in 1998.",
+   "key_stat": "Four generations, operating since the early 1960s",
+   "principals": [
+    {
+     "name": "David Veazey",
+     "role": "President",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Veazey%20Veazey%20Enterprises"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "Four generations of commercial masonry inside the metro, on the institutional work where load-bearing block is still specified.",
+   "_verdict": "Four generations of commercial masonry inside the metro, on the institutional work where load-bearing block is still specified.",
+   "_why": [
+    "Commercial masonry laid repeatedly across one metro for four generations.",
+    "A firm running its own superintendents across hospitals, colleges and hotels puts up more wall than one or two printers would cover.",
+    "No record of paying for an unproven method."
+   ],
+   "sources": [
+    {
+     "url": "https://vzmasonry.com/",
+     "date": null
+    },
+    {
+     "url": "https://masoncontractors.org/5-on-5/veazey-enterprises/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Commercial masonry laid repeatedly across one metro for four generations."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A firm running its own superintendents across hospitals, colleges and hotels puts up more wall than one or two printers would cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Veazey Enterprises",
+   "cell": "clear|partial",
+   "chain": "masonry",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-158",
+   "entity_name": "Winco Masonry",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Porter, Montgomery County",
+   "homepage_url": "http://www.wincomasonry.com/",
+   "synopsis": "A commercial masonry subcontractor working in face brick veneer, cast stone, concrete masonry units, natural stone and glass-fibre reinforced concrete, certified by the Air Barrier Association of America for building envelope work. Published project categories are education, government, healthcare, higher education, hotels and residential, office and recreational, and religious.",
+   "key_stat": "Serving Texas for over 52 years",
+   "principals": [
+    {
+     "name": "Gerald Guzman",
+     "role": "President",
+     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Gerald%20Guzman%20Winco%20Masonry"
+    }
+   ],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2
+   },
+   "mvp_screen": "Fifty-two years of commercial masonry from Montgomery County, with an envelope certification that required an audit.",
+   "_verdict": "Fifty-two years of commercial masonry from Montgomery County, with an envelope certification that required an audit.",
+   "_why": [
+    "Brick, block and cast stone laid repeatedly across one region for more than half a century.",
+    "A firm with projects running all over town at once puts up more wall than one or two printers would cover.",
+    "No record of paying for an unproven method. The published position is envelope certification and schedule reliability."
+   ],
+   "sources": [
+    {
+     "url": "http://www.wincomasonry.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.wincomasonry.com/office-recreational",
+     "date": null
+    },
+    {
+     "url": "https://members.agchouston.org/directory/Details/winco-masonry-inc-2123266",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "partial",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Brick, block and cast stone laid repeatedly across one region for more than half a century."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "A firm with projects running all over town at once puts up more wall than one or two printers would cover."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published position is envelope certification and schedule reliability."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Winco Masonry",
+   "cell": "clear|partial",
+   "chain": "masonry",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-153",
+   "entity_name": "Texas Lite Gauge Steel MFG",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Texas, Houston telephone exchange",
+   "homepage_url": "https://txlitegaugesteel.com/",
+   "synopsis": "Custom light gauge steel design, supply and install, producing commercial stud and track, truss packages, prefab walls and, on request, residential prefab walls and trusses, to a stated factory tolerance of plus or minus 0.3mm, on 25 years of construction experience. Its own site says the product can be used in both residential and commercial projects and that it ships anywhere in the continental United States.",
+   "key_stat": "Prefab walls to plus or minus 0.3mm",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 3,
+    "innovation": 1,
+    "capital_access": 1
+   },
+   "mvp_screen": "Manufactures and installs prefabricated wall to a published tolerance, at a size where a machine would be a real share of the business.",
+   "_verdict": "Manufactures and installs prefabricated wall to a published tolerance, at a size where a machine would be a real share of the business.",
+   "_why": [
+    "Prefabricated wall made and installed repeatedly, though the site names no market, no city and no repeat customer.",
+    "A single-line steel fabricator is the scale where one or two machines would cover a real share of what it ships.",
+    "No record of paying for an unproven method. A published factory tolerance is a manufacturing specification, not a change of method."
+   ],
+   "sources": [
+    {
+     "url": "https://txlitegaugesteel.com/",
+     "date": null
+    },
+    {
+     "url": "https://txlitegaugesteel.com/?loc=aboutcontent",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "holds": 2,
+   "capital_mark": "fail",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Prefabricated wall made and installed repeatedly, though the site names no market, no city and no repeat customer."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A single-line steel fabricator is the scale where one or two machines would cover a real share of what it ships."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. A published factory tolerance is a manufacturing specification, not a change of method."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Texas Lite Gauge Steel MFG",
+   "cell": "partial|clear",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -26023,12 +29133,217 @@
    "vol": null,
    "short": "Baker Construction",
    "cell": "clear|fail",
+   "chain": "tiltup",
    "clears": 1,
    "deciders": [
     "Martin Jordana"
    ],
    "has_decider": true,
    "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-163",
+   "entity_name": "Tealstone Residential Concrete",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Entire Houston region, plus Dallas-Fort Worth, Austin and San Antonio",
+   "homepage_url": "https://www.tealstonelp.com/",
+   "synopsis": "A residential concrete contractor pouring single-family foundations and flatwork for production builders, as a subsidiary of Sterling Infrastructure, a publicly traded infrastructure group. Its own residential page records more than 10,000 slabs placed annually, 500 million dollars of bonding capacity, and more than 2,000 home foundations placed for D.R. Horton across more than 20 communities. Sterling's own site states that Tealstone builds foundations for single family homes throughout the Dallas-Fort Worth, Houston and Phoenix areas.",
+   "key_stat": "10,000-plus slabs placed a year",
+   "principals": [],
+   "key_projects": [
+    {
+     "name": "D.R. Horton foundations",
+     "detail": "More than 2,000 home foundations placed for D.R. Horton across more than 20 communities, on the firm's own residential page.",
+     "signal_type": "repeatable",
+     "fit_signal": "The only published contractor-to-builder relationship found anywhere in this sweep, and it is with the largest builder in the country.",
+     "url": "https://tealstonelp.com/residential/"
+    }
+   ],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "The largest residential slab operation found in Texas, owned by a public infrastructure group with a capital allocation process, and the only contractor on this deck that publishes which builder it pours for.",
+   "_verdict": "The largest residential slab operation found in Texas, owned by a public infrastructure group with a capital allocation process, and the only contractor on this deck that publishes which builder it pours for.",
+   "_why": [
+    "Ten thousand foundations a year for production builders, repeated across the same communities in the same metros.",
+    "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line inside a very large business.",
+    "No record of paying for an unproven method. The published position is scale, bonding and builder relationships."
+   ],
+   "sources": [
+    {
+     "url": "https://www.tealstonelp.com/",
+     "date": null
+    },
+    {
+     "url": "https://tealstonelp.com/residential/",
+     "date": null
+    },
+    {
+     "url": "https://www.strlco.com/who-we-are/our-companies/",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "holds": 1,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Ten thousand foundations a year for production builders, repeated across the same communities in the same metros."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line inside a very large business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. The published position is scale, bonding and builder relationships."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Tealstone Residential Concrete",
+   "cell": "clear|fail",
+   "chain": "slab",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "HOU-148",
+   "entity_name": "Trussway Manufacturing",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "region": "Houston headquarters, Alcorn Street",
+   "homepage_url": "https://trussway.com/products/",
+   "synopsis": "A Houston-headquartered manufacturer of prefabricated wall panels, roof trusses, floor trusses, components and rough openings, weighted toward multifamily, founded 1972 and running six manufacturing facilities with about $340 million of annualised sales, 1,000 employees and more than 340 customer accounts. Builders FirstSource acquired it in 2022. Its own product page states that prefabricated wall panels save time on the job site, reduce waste and increase structural quality.",
+   "key_stat": "About $340 million in sales, 1,000 employees",
+   "principals": [],
+   "key_projects": [],
+   "capital_signals": [],
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "mvp_screen": "A wall panel manufacturer headquartered in Houston, selling into the multifamily builders on this deck, now inside a national parent.",
+   "_verdict": "A wall panel manufacturer headquartered in Houston, selling into the multifamily builders on this deck, now inside a national parent.",
+   "_why": [
+    "Wall panels made repeatedly from a Houston plant for multifamily builders in the same metro.",
+    "Six plants and $340 million of sales is beyond what one or two printers would cover, and purchasing now sits with a national parent.",
+    "No record of paying for an unproven method on its own account."
+   ],
+   "sources": [
+    {
+     "url": "https://trussway.com/products/",
+     "date": null
+    },
+    {
+     "url": "https://www.sbcacomponents.com/tmat-directory/trussway",
+     "date": null
+    },
+    {
+     "url": "https://www.bldr.com/who-we-are/in-the-news/builders-firstsource-acquires-trussway",
+     "date": null
+    }
+   ],
+   "audit_flags": [],
+   "hue_hex": "#FF4F00",
+   "tail": false,
+   "new_layer": true,
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "holds": 1,
+   "capital_mark": "clear",
+   "phone": null,
+   "phone_label": null,
+   "phone_source": null,
+   "phone_rule": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "group": "trade",
+   "tier": "W",
+   "press": [],
+   "last_verified": "2026-09-11",
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: puts up the same wall, in one metro",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Wall panels made repeatedly from a Houston plant for multifamily builders in the same metro."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Six plants and $340 million of sales is beyond what one or two printers would cover, and purchasing now sits with a national parent."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method on its own account."
+    }
+   ],
+   "company_li": null,
+   "company_li_note": null,
+   "team_url": null,
+   "team_note": null,
+   "vol": null,
+   "short": "Trussway Manufacturing",
+   "cell": "clear|fail",
+   "chain": "panel",
+   "clears": 1,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -26133,6 +29448,7 @@
    "vol": null,
    "short": "Leola Construction",
    "cell": "clear|fail",
+   "chain": "gc",
    "clears": 1,
    "deciders": [],
    "has_decider": false,
@@ -26295,6 +29611,7 @@
    "vol": null,
    "short": "Arch-Con Corporation",
    "cell": "partial|partial",
+   "chain": "gc",
    "clears": 0,
    "deciders": [
     "Michael G. Scheurich",
@@ -26433,6 +29750,7 @@
    "vol": null,
    "short": "Building Concrete Solutions",
    "cell": "partial|partial",
+   "chain": "tiltup",
    "deciders": [
     "Trent Tellepsen",
     "Daniel Lara"
@@ -26563,6 +29881,7 @@
    "vol": null,
    "short": "M.L. Deer Construction",
    "cell": "partial|partial",
+   "chain": "icf",
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -26679,6 +29998,7 @@
    "vol": null,
    "short": "T&T Construction",
    "cell": "partial|partial",
+   "chain": "gc",
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -26795,6 +30115,7 @@
    "vol": null,
    "short": "Andrade Construction Companies",
    "cell": "partial|partial",
+   "chain": "slab",
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -26914,6 +30235,7 @@
    "vol": null,
    "short": "Burton Construction",
    "cell": "partial|partial",
+   "chain": "gc",
    "clears": 0,
    "deciders": [
     "Shawn McAlpin",
@@ -27040,6 +30362,7 @@
    "vol": null,
    "short": "HTX Concrete",
    "cell": "partial|partial",
+   "chain": "tiltup",
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
@@ -27145,6 +30468,7 @@
    "vol": null,
    "short": "Silver Spur Concrete Contractors",
    "cell": "partial|partial",
+   "chain": "slab",
    "deciders": [
     "Trent Mitchell"
    ],

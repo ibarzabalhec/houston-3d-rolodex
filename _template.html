@@ -590,6 +590,48 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   line-height:1.6;color:var(--ink2)}
 @media(max-width:640px){.comp dl{grid-template-columns:1fr}.comp dd{padding-top:0;border-top:0}}
 
+/* The supply panel, under the contractor list. Not a table, because these are
+   not scored and a row of empty count cells would say they failed rather than
+   that they were never asked. */
+.sup{margin:52px 0 0;border-top:2px solid var(--ink);padding-top:20px}
+.sup .lab{font:600 10.5px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.supnote{margin:10px 0 0;max-width:74ch;font-size:13.5px;line-height:1.62;color:var(--ink2)}
+.suplist,.nosite{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:0}
+.suplist li{padding:18px 0;border-top:1px solid var(--rule)}
+.sh{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px}
+.sh a,.sh{font:700 17px/1.25 var(--sans);letter-spacing:-.01em;color:var(--ink)}
+.swhere{font:500 10.5px/1.4 var(--mono);letter-spacing:.06em;color:var(--ink3);
+  text-transform:uppercase}
+.sl{margin:8px 0 0;max-width:80ch;font-size:13.5px;line-height:1.6;color:var(--ink2)}
+.sw{margin:7px 0 0;max-width:80ch;font-size:13.5px;line-height:1.6;color:var(--ink)}
+.sp{margin:9px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px;
+  font:600 12.5px/1.4 var(--sans);color:var(--ink)}
+.sp i{font-style:normal;font-weight:500;color:var(--ink3);margin-left:7px}
+.nosite li{padding:11px 0;border-top:1px solid var(--rule);display:grid;
+  grid-template-columns:230px 150px 1fr;gap:16px;align-items:baseline}
+.nosite b{font:600 13.5px/1.4 var(--sans)}
+.nosite em{font-style:normal;font-size:12.5px;line-height:1.55;color:var(--ink3)}
+@media(max-width:720px){.nosite li{grid-template-columns:1fr;gap:3px}}
+
+/* The links of the wall chain, inside the contractor section. The class is chn,
+   not lnk: .lnk is already this deck's inline link button, and reusing the name
+   put a 9.5px mono uppercase button style on a whole table row and collapsed it
+   to the width of the first column.
+   Subordinate to a
+   section header and clearly above a firm row: a rule above, the label in ink,
+   the count, and the sentence that says why the link matters. */
+#stageList tr.chn td{border-top:1px solid var(--rule2);border-bottom:0;
+  padding:22px 0 8px;background:transparent}
+#stageList tr.chn b{font:600 10.5px/1.4 var(--mono);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink)}
+#stageList tr.chn .n{display:inline-block;margin-left:10px;padding:1px 7px;
+  border:1px solid var(--rule2);border-radius:10px;
+  font:600 10px/1.5 var(--mono);color:var(--ink3);vertical-align:1px}
+#stageList tr.chn em{display:block;margin-top:5px;max-width:64ch;font-style:normal;
+  font-size:12.5px;line-height:1.55;color:var(--ink3)}
+@media(max-width:640px){#stageList tr.chn{display:block}
+  #stageList tr.chn td{display:block;padding:20px 0 6px}}
+
 /* A title that is also a link. The underline sits off the baseline so a 30 to
    44px display face does not look struck through, and the glyph after it is the
    thing that says it leaves the page: an underline alone on a heading reads as
@@ -910,6 +952,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
     <div class="swipe" id="listSwipe"><div class="lab swipe-hint" aria-hidden="true">Swipe sideways for the counts</div><div class="scroll"><table><thead><tr>
       <th>Firm</th><th>Repetition</th><th>Printer fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline figure</th><th class="ac"><span class="vh">Call list</span></th>
     </tr></thead><tbody id="tb"></tbody></table></div></div>
+    <div id="supplyBody"></div>
   </div>
 </div>
 
@@ -1565,6 +1608,46 @@ function drawMatrix(){
     (activeFilters().length?' with the filters applied':'')+'. '+T.length+' firms are screened.');
 }
 
+/* Twenty-one firms that will never buy a machine and should be called before
+   most of the roster. They are not on the grid, because scoring a post-tension
+   plant against printer fit is a category error dressed as rigour, and they are
+   not hidden either: one of them is the only way to learn what any Houston crew
+   actually pours in a year. Shown under the list, below the contractors, and
+   only when the contractor section is on screen. */
+function drawSupply(){
+  var el=document.getElementById('supplyBody'); if(!el) return;
+  var sup=D.supply||[];
+  var showing=(!F.group.length||F.group.indexOf('trade')>=0);
+  if(!sup.length||!showing){ el.innerHTML=''; return; }
+  var SL=D.supply_labels||{}, SN=D.supply_notes||{}, h='';
+  ['node','crew'].forEach(function(kind){
+    var rows=sup.filter(function(s){return s.kind===kind;});
+    if(!rows.length) return;
+    h+='<section class="sup"><div class="lab">'+esc(SL[kind]||kind)+
+       ' &middot; '+rows.length+'</div>'+
+       '<p class="supnote">'+esc(SN[kind]||'')+'</p><ul class="suplist">'+
+      rows.map(function(s){
+        return '<li><div class="sh">'+
+          (s.url?'<a class="hlink" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+
+                 esc(s.name)+'<span class="hout">'+SVG.out+'</span></a>':esc(s.name))+
+          '<span class="swhere">'+esc(s.region)+'</span></div>'+
+          '<p class="sl">'+esc(s.line)+'</p>'+
+          '<p class="sw">'+esc(s.why)+'</p>'+
+          (s.people&&s.people.length?'<p class="sp">'+s.people.map(function(p){
+             return esc(p.name)+'<i>'+esc(p.role)+'</i>';}).join('')+'</p>':'')+
+          (s.note?'<p class="note">'+esc(s.note)+'</p>':'')+
+          '</li>';}).join('')+'</ul></section>';
+  });
+  var ns=D.no_site||[];
+  if(ns.length){
+    h+='<section class="sup"><div class="lab">Publishes no website &middot; '+ns.length+'</div>'+
+       '<p class="supnote">'+esc(D.no_site_note||'')+'</p><ul class="nosite">'+
+       ns.map(function(n){return '<li><b>'+esc(n.name)+'</b><span class="swhere">'+
+         esc(n.region)+'</span><em>'+esc(n.note)+'</em></li>';}).join('')+'</ul></section>';
+  }
+  el.innerHTML=h;
+}
+
 function drawList(){
   var groups=['adopter','a','b','trade','creative','national','channel','icon'].map(function(k){
     return [k,GL[k]||'',GN[k]||''];}),h='';
@@ -1572,6 +1655,12 @@ function drawList(){
   groups.forEach(function(g){
     var rows=T.filter(function(t){return t.group===g[0]&&hit(t);});
     if(!rows.length) return;
+    if(g[0]==='trade'&&D.chain){
+      var ord={}; D.chain.forEach(function(c,i){ord[c.key]=i;});
+      rows=rows.slice().sort(function(a,b){
+        var d=(ord[a.chain]===undefined?99:ord[a.chain])-(ord[b.chain]===undefined?99:ord[b.chain]);
+        return d||volSort(a,b);});
+    }
     shown+=rows.length;
     var ids=rows.map(function(t){return t.target_id;}).join(',');
     var allIn=rows.every(function(t){return call.indexOf(t.target_id)>=0;});
@@ -1579,7 +1668,19 @@ function drawList(){
        (g[2]?'<em>'+esc(g[2])+'</em>':'')+
        '<button class="grpadd" data-addmany="'+ids+'">'+(allIn?'Remove all':'Add all')+'</button>'+
        '</td></tr>';
+    /* The contractor section reads in the order a wall gets made. A flat list
+       of 51 firms hides the thing worth seeing, which is that the first
+       contractor pass found 22 firms all sitting in one link of the chain. */
+    var chain=(g[0]==='trade')?(D.chain||[]):[];
+    var seen={};
     rows.forEach(function(t){
+      if(chain.length&&t.chain&&!seen[t.chain]){
+        seen[t.chain]=1;
+        var c=chain.filter(function(x){return x.key===t.chain;})[0];
+        var inLink=rows.filter(function(r){return r.chain===t.chain;}).length;
+        if(c) h+='<tr class="chn"><td colspan="7"><b>'+esc(c.label)+'</b>'+
+          '<span class="n">'+inLink+'</span><em>'+esc(c.note)+'</em></td></tr>';
+      }
       var inCall=call.indexOf(t.target_id)>=0;
       h+='<tr><td class="f"><button class="fbtn2" data-id="'+t.target_id+'">'+
           esc(t.entity_name)+'</button></td>'+
@@ -1595,6 +1696,7 @@ function drawList(){
           (inCall?'\u2713':'+')+'</button></td></tr>';
     });
   });
+  drawSupply();
   document.getElementById('tb').innerHTML=h||
     '<tr><td colspan="7" class="empty">No match'+(q?' for \u201c'+esc(q)+'\u201d':'')+'.</td></tr>';
 }

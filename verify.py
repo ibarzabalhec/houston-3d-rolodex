@@ -217,6 +217,69 @@ if _rb:
     raise SystemExit("FAILED: a role string claims a page the card does not link")
 print("role strings    : none asserts a page without linking it")
 
+# Build 62. The wall value chain. The first contractor pass returned 22 firms
+# that were all one link of it and read as a market, so the section is ordered
+# by the chain and every contractor has to have a place in it. A contractor with
+# no link is a record nobody classified, which is how 22 tilt-up firms came to
+# stand for the whole trade.
+_ch = {c["key"]: c for c in D.get("chain", [])}
+_cb = []
+if not _ch:
+    _cb.append("the deck publishes no wall chain")
+_tr = [t for t in D["targets"] if t.get("group") == "trade"]
+for _t in _tr:
+    if not _t.get("chain"):
+        _cb.append("%s is a contractor with no link in the chain" % _t["short"])
+    elif _t["chain"] not in _ch:
+        _cb.append("%s sits in a link the chain does not publish: %s"
+                   % (_t["short"], _t["chain"]))
+for _k, _c in _ch.items():
+    _n = sum(1 for t in _tr if t.get("chain") == _k)
+    if _n != _c["n"]:
+        _cb.append("the chain says %d in %s and the roster has %d" % (_c["n"], _k, _n))
+    if not _c.get("note"):
+        _cb.append("%s has no note saying why the link matters" % _k)
+if sum(c["n"] for c in _ch.values()) != len(_tr):
+    _cb.append("the chain counts do not add to the %d contractors" % len(_tr))
+# A single link holding most of the trade is the condition Build 62 was for.
+if _ch:
+    _big = max(_ch.values(), key=lambda c: c["n"])
+    if _big["n"] > len(_tr) * 0.5:
+        _cb.append("%d of %d contractors sit in one link, %s, which is the "
+                   "shape the first pass had" % (_big["n"], len(_tr), _big["key"]))
+if _cb:
+    for _b in _cb:
+        print("   " + _b)
+    raise SystemExit("FAILED: the contractor section does not describe the wall chain")
+print("wall chain      : %d contractors across %d links, largest %d"
+      % (len(_tr), len(_ch), max(c["n"] for c in _ch.values())))
+
+# The supply panel. These are deliberately not on the grid, so the check is the
+# reverse of the roster's: nothing here may also be a scored record, and every
+# entry has to say what it is for.
+_names = {t["entity_name"] for t in D["targets"]}
+_sb = []
+for _s in D.get("supply", []):
+    if _s["kind"] not in D.get("supply_labels", {}):
+        _sb.append("%s carries a kind the deck does not label: %s" % (_s["name"], _s["kind"]))
+    if not _s.get("why"):
+        _sb.append("%s is in the supply panel and does not say why" % _s["name"])
+    if _s["name"] in _names:
+        _sb.append("%s is in the supply panel and also a scored record" % _s["name"])
+    if not _s.get("url"):
+        _sb.append("%s carries no link" % _s["name"])
+for _n in D.get("no_site", []):
+    if _n["name"] in _names:
+        _sb.append("%s is listed as publishing no website and is on the roster" % _n["name"])
+if D.get("supply") and not D.get("no_site_note"):
+    _sb.append("the unlisted firms are shown with no explanation")
+if _sb:
+    for _b in sorted(set(_sb)):
+        print("   " + _b)
+    raise SystemExit("FAILED: the supply panel overlaps the roster or does not explain itself")
+print("supply panel    : %d not on the grid, %d publishing no website at all"
+      % (len(D.get("supply", [])), len(D.get("no_site", []))))
+
 
 async def main():
     problems = []
@@ -261,7 +324,7 @@ async def main():
 
         await pg.keyboard.press("Escape")
         await pg.wait_for_timeout(120)
-        for v, sel in (("vList", "#tb tr:not(.grp)"), ("vScroll", ".cf-card")):
+        for v, sel in (("vList", "#tb tr:not(.grp):not(.chn)"), ("vScroll", ".cf-card")):
             await pg.evaluate("document.getElementById('%s').click()" % v)
             await pg.wait_for_timeout(450)
             got = await pg.locator(sel).count()
@@ -689,10 +752,14 @@ async def main():
         await pg.evaluate("document.getElementById('vList').click()")
         await pg.wait_for_timeout(300)
         hdr = await pg.locator("#tb tr.grp", has_text="Builds the wall, not the house").count()
+        # Build 62 put a header row on each link of the wall chain inside this
+        # section, so a firm row is now anything that is neither a section
+        # header nor a link header.
         rows_trade = await pg.evaluate(
             "(()=>{const r=[...document.querySelectorAll('#tb tr')];"
             "let on=false,n=0;for(const x of r){if(x.classList.contains('grp')){"
-            "on=x.textContent.indexOf('Builds the wall')>=0;continue;}if(on)n++;}return n})()")
+            "on=x.textContent.indexOf('Builds the wall')>=0;continue;}"
+            "if(x.classList.contains('chn'))continue;if(on)n++;}return n})()")
         print("contractors     :", len(trade), "in data |", rows_trade, "listed")
         if hdr != 1 or rows_trade != len(trade):
             problems.append("the contractor section does not list its firms")

@@ -22,7 +22,7 @@ BLOCKED holds the hosts that refuse scripted requests and are live in a browser.
 They are reported separately rather than as failures. Add to it only after
 opening the URL in a browser and confirming the page is there.
 """
-import json, pathlib, re, ssl, sys, urllib.error, urllib.request
+import json, pathlib, re, ssl, sys, time, urllib.error, urllib.request
 import concurrent.futures as cf
 from urllib.parse import urlparse
 
@@ -62,7 +62,30 @@ BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            "andradeconstructioncompanies.com",
            # Build 60. Marek Brothers answers a scripted HEAD with a 403 and a
            # GET with the article. Read 14 September 2026.
-           "marekbros.com"}
+           "marekbros.com",
+           # Build 62, with the wall supply chain. Three conditions, all of which
+           # look identical in this report and are not the same thing, so each
+           # says which it is.
+           #
+           # Refuses a script and serves a browser:
+           "wells.build",      # 403 to a script and to headless Chromium; read
+                               # through a fetcher that carries a full browser
+                               # profile, 14 September 2026.
+           #
+           # Reachable, and not from this container: the agent proxy's egress
+           # allowlist answers 403 before the request leaves. That is a fact
+           # about where this script runs, not about the site.
+           "camaratamasonry.com",   # read 14 September 2026: masonry, natural
+                                    # stone, tile, terrazzo, architectural
+                                    # precast and specialty.
+           "wincomasonry.com",      # read 14 September 2026.
+           #
+           # Live, with an intermittent upstream: trussway.com answers a
+           # certificate error to urllib and 502 through the proxy, and serves
+           # its full product page otherwise. Read 14 September 2026: roof
+           # trusses, floor trusses, wall panels, components and rough openings,
+           # beams and hardware.
+           "trussway.com"}
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
@@ -98,20 +121,40 @@ def where(d):
     return out
 
 
+def _once(u, meth):
+    try:
+        r = urllib.request.Request(u, method=meth, headers=UA)
+        with urllib.request.urlopen(r, timeout=30, context=CTX) as resp:
+            return resp.status, None
+    except urllib.error.HTTPError as e:
+        return e.code, None
+    except Exception as e:
+        return None, type(e).__name__
+
+
 def status(u):
-    for meth in ("HEAD", "GET"):
-        try:
-            r = urllib.request.Request(u, method=meth, headers=UA)
-            with urllib.request.urlopen(r, timeout=30, context=CTX) as resp:
-                return u, resp.status
-        except urllib.error.HTTPError as e:
-            if meth == "HEAD" and e.code in (403, 405, 501):
-                continue
-            return u, e.code
-        except Exception as e:
-            if meth == "HEAD":
-                continue
-            return u, type(e).__name__
+    """Twelve threads hitting one small host look like an attack to it.
+
+    Build 62 ran this against 662 urls and a trade association directory came
+    back 404 in the sweep and 200 three times in a row on its own. That is rate
+    limiting, and reporting it as a dead source sends a person to check a page
+    that was never broken. A second attempt, after a pause, separates a host
+    under load from a page that is gone.
+    """
+    for attempt in (0, 1):
+        for meth in ("HEAD", "GET"):
+            code, err = _once(u, meth)
+            if code is not None:
+                if meth == "HEAD" and code in (403, 405, 501):
+                    continue
+                if code in (404, 429, 500, 502, 503) and attempt == 0:
+                    break          # worth one retry: could be load, not absence
+                return u, code
+            if meth == "GET" and attempt == 0:
+                break              # a connection-level failure is worth a retry
+            if meth == "GET":
+                return u, err
+        time.sleep(2.5)
     return u, "?"
 
 

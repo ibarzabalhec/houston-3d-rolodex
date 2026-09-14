@@ -39,11 +39,14 @@ import audit as AUDIT
 import audit2 as AUDIT2
 import audit3 as AUDIT3
 import audit4 as AUDIT4
+from trades2 import (WALL, WALL_IDS, CELL as WALL_CELL, CELL_ORDER,
+                     CELL_LABEL, CELL_NOTE)
+import supply as SUPPLY
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 61
+BUILD = 62
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -201,7 +204,7 @@ def finalize(recs):
             t["group"], t["tier"] = "channel", "M"
         elif t["target_id"] in NATIONAL:
             t["group"], t["tier"] = "national", "N"
-        elif t["target_id"] in TRADES:
+        elif t["target_id"] in TRADES or t["target_id"] in WALL_IDS:
             t["group"], t["tier"] = "trade", "W"
         elif t["target_id"] in CREATIVE:
             t["group"], t["tier"] = "creative", "X"
@@ -361,6 +364,10 @@ SHORT = {
 _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_CREATIVE)
         + expand_builders(NEW_TRADES, "contractor", "wall_trade")
+        # Build 62. The wall supply chain: the cells the first contractor pass
+        # left empty, because it found its firms through tilt-up project
+        # profiles and so found tilt-up.
+        + expand_builders(WALL, "contractor", "wall_trade")
         + expand_builders(NEW_METHOD)
         + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer")
         + expand_builders(GAP.GAP)
@@ -724,6 +731,15 @@ for t in targets:
 for t in targets:
     t["short"] = SHORT.get(t["target_id"], t["entity_name"])
     t["cell"] = t["marks"]["repeatability"] + "|" + t["marks"]["machine_fit"]
+    # Build 62. Where a contractor sits in the wall value chain. The first
+    # contractor pass returned 22 firms that were all one link of it and looked
+    # like a market, so the section now reads in chain order and says which link
+    # each firm is. Builders have no position in it: they buy the finished wall.
+    if t["group"] == "trade":
+        t["chain"] = WALL_CELL.get(t["target_id"])
+        if not t["chain"]:
+            raise SystemExit("FAILED: %s is a contractor with no place in the "
+                             "wall chain" % t["target_id"])
     ch = CHANNEL.get(t["target_id"])
     if ch:
         t["channel_line"], t["channel_builders"] = ch
@@ -906,10 +922,11 @@ DATA = {
                  # paragraph in the methodology block at the foot of the page,
                  # four screens away from the firms it governs. It is one clause
                  # now, on the section it applies to.
-                 "trade": "Concrete, shell and wall contractors, and the general contractors that "
-                          "self-perform concrete. Houston builders do not put up their own walls, so "
-                          "the firm that would run a printer is often the one they hire. The three "
-                          "counts are asked of the wall rather than of the plan set.",
+                 "trade": "Houston builders do not put up their own walls, so the firm that would "
+                          "run a printer is often the one they hire. The three counts are asked of "
+                          "the wall rather than of the plan set, and the section runs in the order "
+                          "a wall gets made, from the crew with a hose to the contractor that owns "
+                          "the job.",
                  "creative": "Design-led work that does not repeat a plan set. The printed element "
                              "sits inside a conventional project.",
                  "channel": "Owns the ground. The builders inside buy the wall.",
@@ -966,6 +983,54 @@ DATA = {
                                     if lab.lower().startswith("their site")), None))
                  for c in COMPETITORS],
  "consolidation": CONSOLIDATION,
+
+ # Build 62. The wall value chain, in the order a wall gets made, with the count
+ # in each link. The contractor section reads in this order instead of one flat
+ # list, because the first contractor pass returned 22 firms that were all one
+ # link and looked like a market.
+ "chain": [{"key": k, "label": CELL_LABEL[k], "note": CELL_NOTE[k],
+            "n": sum(1 for t in deck if t.get("chain") == k)}
+           for k in CELL_ORDER if any(t.get("chain") == k for t in deck)],
+
+ # Twenty-one firms that are not printer prospects and should be called first.
+ # A post-tension plant will never buy a machine, so scoring one against printer
+ # fit and putting it on the grid would be a category error dressed as rigour.
+ # Nodes hold the volumes this trade does not publish. Crews hold the hands.
+ "supply": [{"name": _n, "kind": _k, "chain": _cl, "region": _r, "url": _u,
+             "line": _l, "why": _w,
+             "people": [{"name": _pn, "role": _pr} for _pn, _pr in _pp],
+             "note": _nt}
+            for _key, _n, _k, _cl, _r, _u, _l, _w, _pp, _nt in SUPPLY.SUPPLY],
+ "supply_labels": {
+     "node": "Knows the volumes",
+     "crew": "Has the crew",
+ },
+ "supply_notes": {
+     "node": "Six sweeps established that this trade does not publish its "
+             "volume. Of 87 firms found, five published a figure and "
+             "twenty-four published years in business instead. Builders publish "
+             "closings because the Builder 100 makes them; nothing makes a wall "
+             "contractor publish anything. The numbers exist at the supplier "
+             "who batches the concrete, fabricates the tendons or sells the "
+             "block, and these firms sell to the crews rather than competing "
+             "with them.",
+     "crew": "A gunite crew already places cementitious material through a hose "
+             "onto a vertical surface, to a profile, with no formwork. One of "
+             "these firms advertises on its own careers page for nozzlemen, top "
+             "finishers, bottom finishers and foremen. None of them has the "
+             "balance sheet to buy a machine and every one of them has the "
+             "people to run one.",
+ },
+ # The third finding, and the reason the slab link is thinner than it should be.
+ "no_site": [{"name": _n, "chain": _c, "region": _r, "note": _nt}
+             for _n, _c, _r, _nt in SUPPLY.NO_SITE],
+ "no_site_note":
+     "Twenty-one firms that meet the profile on trade association category and "
+     "geography and publish no website at all: six in the Greater Houston "
+     "Builders Association's foundation and concrete categories, eleven on the "
+     "Associated Masonry Contractors of Houston roster, and four more. They are "
+     "not small by inference, they are unlisted. This deck cannot screen them, "
+     "and says so rather than presenting the roster as the market.",
 
  # Build 61. This block ran to nine entries and about nine hundred words, and
  # seven of the nine described something the page already shows: what a Partly

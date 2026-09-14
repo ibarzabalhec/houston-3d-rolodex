@@ -173,7 +173,11 @@ def figures_in(text):
             continue
         found.append((tok.strip(), max(0, m.start() - 55), m.end() + 25))
     for w, n in WORDS.items():
-        for m in re.finditer(r"\b%s\b" % re.escape(w), text or "", re.I):
+        # Build 62. "Eighty-five acres" was being read as the figure 80, because
+        # the word eighty matched on its own and the hyphen after it was not
+        # looked at. A compound number word is one number, not two, and the
+        # second half is what carries the value.
+        for m in re.finditer(r"\b%s\b(?!\s*-\s*\w)" % re.escape(w), text or "", re.I):
             if n >= FLOOR:
                 found.append((str(n), max(0, m.start() - 55), m.end() + 25))
     return found
