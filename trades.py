@@ -93,7 +93,7 @@ NEW_TRADES = [
    "printed wall would stand on.",
    "https://www.keystoneconcrete.com/residential"),
   ("Driscoll Apartments", "Named on the firm's own structural placement page.",
-   "repeatable", "Multifamily placement work, the closest published example of a repeated wall on its record.",
+   "repeatable", "Multifamily placement work, a repeated wall on a published project.",
    "https://www.keystoneconcrete.com/")],
  ["https://www.keystoneconcrete.com/", "https://www.keystoneconcrete.com/residential"],
  ["No executive is named anywhere on the firm's own site. Its contact page says only that it is a "
@@ -105,9 +105,9 @@ NEW_TRADES = [
 ("HOU-102", "Harvey Cleary", "Houston, with Austin, San Antonio, Denver and Washington",
  "https://www.harveycleary.com/",
  "$2 billion in volume, 700-plus employees, founded 1957",
- "General contractor founded in 1957 that self-performs an unusually deep set of structural trades "
- "through IQI Construction LLC, described on its own site as a captured company and solely owned "
- "and operated entity, and that runs a standing residential market alongside its commercial work.",
+ "General contractor founded in 1957 that self-performs its structural trades through IQI "
+ "Construction LLC, described on its own site as a captured company, solely owned and operated. "
+ "It runs a standing residential market alongside its commercial work.",
  (3, 2, 1, 3),
  "It owns formwork, rebar, place and finish, tiltwall erection, architectural precast and tower "
  "crane erection, and it builds apartments. No other firm screened discloses that much owned trade.",
@@ -145,7 +145,7 @@ NEW_TRADES = [
  "Turnkey concrete contractor that supplies, forms, places and finishes its own work, with a "
  "tilt-up record carried in the Tilt-Up Concrete Association's own project archive.",
  (3, 2, 1, 2),
- "Two award-listed tilt-up jobs in Houston, one at 79 panels and 52,116 square feet of wall. "
+ "Two award-listed tilt-up jobs in Houston. "
  "Panels repeat; the buildings behind them do not.",
  ("Tilt-up panel production repeats inside one metro even when the buildings differ.",
   "The firm's own site gives a job range of $500,000 to $15 million. A printer would be one line "
@@ -219,9 +219,7 @@ NEW_TRADES = [
  "https://grecostructures.com/",
  "49 panels, tallest 52 feet 7 inches, on one job",
  "Concrete subcontractor inside the Satterfield and Pontikes family of companies, working for "
- "general contractors across elevated post-tensioned decks, mass concrete and tilt-up, with an "
- "award-listed panel record at the top of the height range the trade attempts and multifamily "
- "among the markets it lists.",
+ "general contractors across elevated post-tensioned decks, mass concrete and tilt-up.",
  (3, 2, 1, 3),
  "Panels at 52 feet and elevated post-tensioned decks. The work repeats inside one metro and is "
  "bought by general contractors rather than by owners.",
@@ -412,7 +410,7 @@ NEW_TRADES = [
  "Houston industrial office inside a national business of more than 12,500 people, named as the "
  "concrete subcontractor on the tallest tilt-wall job under way in the metro.",
  (3, 1, 1, 3),
- "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of "
+ "The top of "
  "what the trade attempts here. The firm is national.",
  ("Panel and structural concrete work recurring across the Houston market.",
   "More than 12,500 people across the United States on the firm's own count, and first on a "
@@ -641,7 +639,7 @@ NEW_TRADES = [
   "figure is a Partly.",
   "It built and staffed a prefabrication plant producing wall panels and interior components "
   "offsite, and publishes what that saved on a hospital project. That is paying to move wall work "
-  "into a factory, which is the nearest thing to the argument for a printer."),
+  "into a factory."),
  [("Phil Nevlud", "Division President"),
   ("Ronald Marek", "Multifamily Director"),
   ("Chris Trojanowsky", "Single Family Division Manager"),
@@ -827,8 +825,8 @@ PRINTED_ADOPTERS = [
  "https://www.boxerproperty.com/",
  "Paid for a printed house in Fort Worth",
  "Houston-headquartered commercial property owner and manager founded in 1992, overseeing more "
- "than 15 million square feet across 16 cities, which partnered on a printed house in Fort Worth "
- "and whose founder said in print that the future is printed houses made out of concrete.",
+ "than 15 million square feet across 16 cities. It partnered on a printed house in Fort Worth, "
+ "and its founder said in print that the future is printed houses made out of concrete.",
  (2, 2, 3, 3),
  "A Houston owner with 15 million square feet that has paid for a printed building, in Fort Worth, "
  "and said in print why.",

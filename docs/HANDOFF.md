@@ -1,6 +1,6 @@
-# Greater Houston Rolodex — handoff
+# Greater Houston Rolodex, handoff
 
-Build 63 · 2026-09-14
+Build 64 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -589,6 +589,78 @@ on that mark carries a caveat. Both labels now say which.
 
 **One thing in the review did not hold.** GreenEco's George Kopecky was reported
 as having no link at all. He has a LinkedIn profile, and it is on the card.
+
+## Build 64: the deck was telling the reader what to think
+
+Every string the page renders was pulled out and read: **1,067 strings, 24,712
+words**. The deck's own rule is that whatever text is there to read adds a fact,
+not a claim about the facts. Fourteen strings had stopped doing that.
+
+They were all the same shape. *The nearest thing in Greater Houston to a
+printing operation that already exists. The closest published seat to
+construction. The closest published example of a repeated wall. Which is the
+nearest thing to the argument for a printer.* Each one hands the reader a
+conclusion instead of the evidence, and none of them is checkable. A hiring
+team reading a work sample can verify "a batch plant, casting beds, and a
+quality regime"; it cannot verify "the nearest thing to". Every one was cut back
+to what the page can show:
+
+> *before* The nearest thing in Greater Houston to a printing operation that
+> already exists: a batch plant, casting beds, a quality regime, and a business
+> built on making structural wall somewhere other than the site.
+>
+> *after* A batch plant, casting beds, a quality regime, and a business built on
+> making structural wall somewhere other than the site.
+
+The sentence lost six words and no facts.
+
+**Five cards restated their own headline figure one line down.** Commander,
+Kendall, Texas A&M Concrete and Baker Construction each printed a number in the
+key stat and then printed it again in the screen line directly beneath it.
+Johnson Development's innovation reason repeated its synopsis verbatim. A reader
+who notices this stops reading the second sentence of every card.
+
+**The grid note went from 106 words to 34.** It had been explaining the axes,
+the chip colour, the sort order inside a cell, and what to do next, above a
+diagram that shows all four. It now states only the thing the diagram cannot:
+that the two counts overlap and the third is ignored. It names no corner, which
+is what made the Build 59 error possible.
+
+**City Masonry carried a claim to the largest and best-trained masonry workforce
+in the state.** That is the firm's marketing copy, quoted as though it were a
+finding. Cut. Borrowed superlatives are the easiest kind to ship, because
+someone else wrote them.
+
+Four sentences over 44 words were split at a boundary that cost nothing:
+Trussway's person line, Boxer, Harvey Cleary, UFP Site Built, Hillwood's
+72-word community list, The Deal Co. The Deal Co. also said the same thing
+twice, once in each of two sentences: 55 acres, 27 buildings, 18 historic, two
+million square feet, then fifty-five acres, twenty-seven buildings, eighteen
+reclaimed, two million square feet. One of them is gone.
+
+### The gate
+
+`verify.py` now reads every rendered string on the page and **fails the build**
+on three families: the unverifiable comparative (*nearest thing, closest,
+purest, sharpest, strongest signal, single most, best-fit*), the evaluative
+adjective (*remarkable, impressive, striking, compelling, truly, very*), and the
+em dash. It reports words swept so the number is visible:
+
+```
+prose           : 24,712 words rendered, no rhetoric, no evaluative adjective, no em dash
+```
+
+Countable claims are deliberately left alone. *The only Texas plant* and *the
+largest published figure* both survive the gate, because a reader can check
+them against the data on the page. The gate is aimed at the ones he cannot.
+
+Three association and trade pages started answering this container a 403 or a
+bare 404 while serving the record to a reader, and went into `linkcheck.py`'s
+blocked list after each was opened by hand on 14 September 2026: the AGC
+Houston entry naming Gerald Guzman president of Winco Masonry, the ASA entry
+naming Sharon Stelter vice president of Veazey Enterprises, and the D CEO piece
+of 24 August 2023 on Dee Brown. Five gates clear: `make`, `probe.py` 0 names
+missing, `linkcheck.py` 0 dead across 706 URLs, `figures.py`, `phonecheck.py`.
 
 ## Build 63: the 28 new records could not be called
 

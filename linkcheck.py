@@ -56,6 +56,14 @@ BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            # out on every attempt. Opened by hand on 14 September 2026: the site
            # loads, and its footer still carries the number the deck holds.
            "landtejas.com",
+           # Build 64. Three pages answer a script a 403 or a bare 404 and serve
+           # the record to a reader. Each was opened on 14 September 2026 and the
+           # claim the card rests on was read off the page: the AGC Houston entry
+           # names Gerald Guzman president of Winco Masonry, the ASA entry names
+           # Sharon Stelter vice president of Veazey Enterprises, and the D CEO
+           # piece of 24 August 2023 quotes Robert Barnes III and dates his
+           # succession to 2015.
+           "members.agchouston.org", "members.asaonline.com", "dmagazine.com",
            # Build 60. HTTP only, and it answers an HTTPS request with a 302 back
            # to HTTP, so anything that upgrades the scheme loops. Read with curl
            # on 14 September 2026: the about page is there and names the founder.

@@ -46,6 +46,64 @@ if _bad:
 print("reason vs mark  : %d reasons, none contradict"
       % sum(len(t["why"]) for t in D["targets"]))
 
+# Build 64, a rhetoric pass. The deck's rule is that whatever text is there to
+# read adds a fact, not a claim about the facts. Fourteen strings had drifted
+# into the family below: the nearest thing, the closest analog, the purest
+# description, the single most useful line. Each of them tells a reader the
+# conclusion instead of showing him the evidence, and none of them is checkable,
+# which is the difference between these and "the only Texas plant" or "the
+# largest published figure", both of which stay.
+_RHET = re.compile(
+    r"\b(?:the |a )?(?:nearest thing|closest (?:thing|analog|analogue|business|"
+    r"published|existing)|purest|sharpest|strongest signal|single most|"
+    r"most useful line|best[- ]fit\b)", re.I)
+# Evaluative adjectives the deck does not use about its own subjects.
+_ADJ = re.compile(r"\b(remarkabl[ey]|impressive(?:ly)?|striking(?:ly)?|compelling|"
+                  r"exciting|extraordinar(?:y|ily)|unusually deep|truly|very )", re.I)
+_EM = re.compile(r"[\u2013\u2014]")
+
+def _rendered():
+    for _t in D["targets"]:
+        if _t["group"] == "out":
+            continue
+        yield _t["short"] + " screen", _t.get("mvp_screen") or ""
+        yield _t["short"] + " synopsis", _t.get("synopsis") or ""
+        for _w in _t.get("why", []):
+            yield _t["short"] + " why/" + _w["axis"], _w["text"]
+        for _k in _t.get("key_projects", []):
+            yield _t["short"] + " evidence", _k.get("fit_signal") or ""
+        for _pp in _t.get("principals", []):
+            yield (_t["short"] + " person",
+                   _pp.get("li_evidence") or _pp.get("source_evidence") or "")
+    for _a, _b in D.get("limits", []):
+        yield "limits/" + _a, _b
+    for _k, _v in (D.get("group_notes") or {}).items():
+        yield "group note/" + _k, _v
+    for _c in D.get("chain", []):
+        yield "chain/" + _c["key"], _c["note"]
+    for _k, _v in (D.get("supply_notes") or {}).items():
+        yield "supply note/" + _k, _v
+    for _sp in D.get("supply", []):
+        yield "supply/" + _sp["name"], _sp.get("why") or ""
+    for _k in ("kicker", "headline", "sub", "matrix_note", "consolidation",
+               "no_site_note"):
+        yield _k, D.get(_k) or ""
+
+_rh, _words = [], 0
+for _where, _txt in _rendered():
+    _words += len(_txt.split())
+    for _pat, _what in ((_RHET, "rhetoric"), (_ADJ, "an evaluative adjective"),
+                        (_EM, "an em dash")):
+        _m = _pat.search(_txt)
+        if _m:
+            _rh.append("%s carries %s: %r" % (_where, _what, _txt[max(0, _m.start()-30):_m.end()+40]))
+if _rh:
+    for _b in sorted(set(_rh))[:20]:
+        print("   " + _b)
+    raise SystemExit("FAILED: the page tells the reader a conclusion instead of showing the evidence")
+print("prose           : %d words rendered, no rhetoric, no evaluative adjective, no em dash"
+      % _words)
+
 # The number layer, on shape rather than on truth. phonecheck.py tests the
 # digits against the bytes of the page; this tests what the deck can check on
 # its own every time it builds: that a number has a page behind it, that it is
@@ -166,39 +224,37 @@ print("contact evidence: %d linkedin, %d own page, %d neither, all three printed
       % (_li, _sr, _nn))
 
 # The note under the grid said "the top right cell" for the life of the deck.
-# The cell is the top left one. The hero paragraph four hundred pixels above it
-# says so in words, so the front page contradicted itself, and a reader who
-# checked one sentence against the other found the document wrong about its own
-# diagram. Nothing caught it because the corner was typed, not derived.
-#
-# So derive it. The template walks both axes from the end of `order` down, which
-# means the first cell it emits is the last entry on each axis, and the grid is
-# three columns wide. That fixes the row and the column, and the row and the
-# column name the corner. If the order is ever reversed, or a row is added, this
-# recomputes and the sentence has to follow.
+# The cell was the top left one. Build 64 stopped naming a corner at all, which
+# removes that whole class of error: the cell header prints its own count and
+# both verdicts, and the chips carry the names, so the corner never needed
+# saying. What the note still carries is the one thing a reader cannot see, that
+# the grid ignores the third count and this cell is therefore not the strip's
+# headline number. Both figures in that sentence are derived, so both are checked.
 _ord = D["matrix"]["order"]
 _first = "%s|%s" % (_ord[-1], _ord[-1])
 _rows = [t for t in D["targets"] if t.get("cell") == _first]
-_vert = "top" if len(_ord) > 1 else ""
-_horz = "left"
-_corner = ("the %s %s cell" % (_vert, _horz)).replace("  ", " ").strip()
+_all3 = sum(1 for t in D["targets"] if t.get("group") == "a")
 _note = D.get("matrix_note") or ""
 _nb = []
 if _first != "clear|clear":
     _nb.append("the first cell drawn is %s, not the one that clears both counts" % _first)
-if _corner not in _note.lower():
-    _nb.append("the note does not call it %s" % _corner)
-for _bad in ("top right", "bottom left", "bottom right"):
-    if _bad != _corner[4:] and ("the %s cell" % _bad) in _note.lower():
-        _nb.append("the note calls it the %s cell" % _bad)
-if ("<b>%d " % len(_rows)) not in _note:
-    _nb.append("the note does not open on %d, the count in that cell" % len(_rows))
+if ("<b>%d " % len(_rows)) not in _note and ("<b>%d</b>" % len(_rows)) not in _note:
+    _nb.append("the note does not carry %d, the count in that cell" % len(_rows))
+if ("<b>%d</b>" % _all3) not in _note:
+    _nb.append("the note does not carry %d, the firms in on all three counts" % _all3)
+for _bad in ("top right", "top left", "bottom left", "bottom right"):
+    if _bad in _note.lower():
+        _nb.append("the note names a corner (%s), which is the claim that was "
+                   "wrong for the life of the deck and does not need making" % _bad)
+if len(_note.split()) > 45:
+    _nb.append("the note runs to %d words, and the grid says most of it itself"
+               % len(_note.split()))
 if _nb:
     for _b in _nb:
         print("   " + _b)
     raise SystemExit("FAILED: the note under the grid does not describe the grid")
-print("grid note       : %s, %d firms, both derived from the grid"
-      % (_corner, len(_rows)))
+print("grid note       : %d firms and %d, both derived, %d words, no corner named"
+      % (len(_rows), _all3, len(_note.split())))
 
 # A role string that names a page has to carry that page. Eighteen contacts read
 # "named on the firm's own about page" with no link on the row, which is the

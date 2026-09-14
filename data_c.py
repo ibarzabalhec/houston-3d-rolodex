@@ -352,7 +352,7 @@ MID = [
  "target_id": "HOU-037", "entity_name": "The Deal Company (Sawyer Yards)", "entity_type": "developer", "entity_role": "vertical_buyer",
  "categories": ["developers", "adaptive_reuse"], "region": "Washington Corridor, Harris County",
  "homepage_url": "https://www.dealco.net/",
- "synopsis": "Developer of Sawyer Yards, launched in 2005 with the conversion of a 75,000 square foot warehouse and grown with co-developers Lovett Commercial and Silver Street Capital into a 55-acre campus of 27 buildings, 18 of them historic, holding more than two million square feet and over 600 creative tenants.",
+ "synopsis": "Developer of Sawyer Yards, launched in 2005 with the conversion of a 75,000 square foot warehouse. Co-developers Lovett Commercial and Silver Street Capital grew it into a 55-acre campus of 27 buildings, 18 of them historic, holding more than two million square feet and over 600 creative tenants.",
  "key_stat": "55 acres, 27 buildings, 2M+ sf",
  "principals": P(("Jon Deal", "Founder and Chief Executive Officer")),
  "key_projects": PJ(

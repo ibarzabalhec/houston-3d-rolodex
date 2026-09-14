@@ -47,7 +47,7 @@ from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 63
+BUILD = 64
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -930,19 +930,17 @@ def _n(k, one, many):
 # A description of the cell and of how it differs from the strip. Nothing about
 # what the work in Houston is; the reader draws that. Plurals agree at any count.
 MATRIX_NOTE = (
-    # Build 60. This said "top right" for the life of the deck. The cell is the
-    # top left one, and the hero paragraph four hundred pixels above says so:
-    # both axes run outward from the top left. A reader checking one sentence
-    # against the other found the document wrong about its own diagram.
-    "The top left cell holds <b>%s</b> that repeat a plan set and build at a volume one or two machines "
-    "would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the "
-    "%d that are in on all three counts in the strip above; %s in both. Of the %d here, <b>%d</b> "
-    "%s paid for a method that was new at the time, %s. <b>%d</b> %s partial evidence. The other <b>%d</b> %s no "
-    "method record."
-    % (_n(len(best), "firm", "firms"), g["a"], _n(_overlap, "firm appears", "firms appear"),
-       len(best), len(best_yes), "has" if len(best_yes) == 1 else "have", _yes,
-       len(best_part), "shows" if len(best_part) == 1 else "show",
-       len(best_no), "has" if len(best_no) == 1 else "have")
+    # Build 64. This ran to 106 words and most of them described the grid. The
+    # cell header prints its own count and both verdicts, the chips carry the
+    # names, and the legend says what the colour means, so the note said all of
+    # it a second time. What a reader cannot see is that the grid ignores the
+    # third count, which makes this cell look like the strip's headline number
+    # when it is a different set. Build 60 also had the corner wrong here for
+    # the life of the deck, and naming no corner is one fewer thing to get wrong.
+    "<b>%s</b> clear both counts on the grid. It is placed on two and ignores the third, so these are "
+    "not the <b>%d</b> in on all three counts above; <b>%s</b> in both."
+    % (_n(len(best), "firm", "firms"), g["a"],
+       _n(_overlap, "firm is", "firms are"))
 )
 
 # A contractor closes no homes, so the closings figure is drawn against the
@@ -998,9 +996,7 @@ DATA = {
                  # now, on the section it applies to.
                  "trade": "Houston builders do not put up their own walls, so the firm that would "
                           "run a printer is often the one they hire. The three counts are asked of "
-                          "the wall rather than of the plan set, and the section runs in the order "
-                          "a wall gets made, from the crew with a hose to the contractor that owns "
-                          "the job.",
+                          "the wall rather than of the plan set.",
                  "creative": "Design-led work that does not repeat a plan set. The printed element "
                              "sits inside a conventional project.",
                  "channel": "Owns the ground. The builders inside buy the wall.",
@@ -1083,9 +1079,9 @@ DATA = {
      "crew": "Has the crew",
  },
  "supply_notes": {
-     "node": "Six sweeps established that this trade does not publish its "
-             "volume. Of 87 firms found, five published a figure and "
-             "twenty-four published years in business instead. Builders publish "
+     "node": "This trade does not publish its volume. Of 87 firms found, five "
+             "published a figure and twenty-four published years in business "
+             "instead. Builders publish "
              "closings because the Builder 100 makes them; nothing makes a wall "
              "contractor publish anything. The numbers exist at the supplier "
              "who batches the concrete, fabricates the tendons or sells the "
@@ -1106,8 +1102,7 @@ DATA = {
      "geography and publish no website at all: six in the Greater Houston "
      "Builders Association's foundation and concrete categories, eleven on the "
      "Associated Masonry Contractors of Houston roster, and four more. They are "
-     "not small by inference, they are unlisted. This deck cannot screen them, "
-     "and says so rather than presenting the roster as the market.",
+     "not small by inference, they are unlisted. This deck cannot screen them.",
 
  # Build 61. This block ran to nine entries and about nine hundred words, and
  # seven of the nine described something the page already shows: what a Partly
@@ -1125,20 +1120,18 @@ DATA = {
     "metro permit leaders against it, added five firms. The rest is custom and infill work of a "
     "few homes a year, below the volume a printer is bought for."],
    ["Who decides",
-    "The mark goes on a vice president or director of construction, or a head of purchasing, "
-    "because those roles can change a wall specification. Construction managers, superintendents "
-    "and purchasing agents execute one. At a contractor it goes on whoever signs for equipment: "
-    "the owner, the president or the division head. On %d of the %d the contact itself carries a "
-    "caveat: the person has left, sits at another entity, or is a probable match."
+    "The mark goes on a vice president or director of construction, or a head of purchasing: those "
+    "roles can change a wall specification. Construction managers, superintendents and purchasing "
+    "agents execute one. At a contractor it goes on whoever signs for equipment. On %d of the %d the "
+    "contact carries a caveat: the person has left, sits at another entity, or is a probable match."
     % (n_dec_chk, n_dec)],
    ["Sources",
     # The three counts stay because the claim they replaced was falsifiable in
     # four clicks, and verify.py fails the build if they stop matching the data.
-    "Company filings, company pages and trade press. A contact is one of three things and the "
-    "card says which: %d a LinkedIn profile whose headline names the firm, %d a page on the "
-    "firm's own site or dated reporting that names the person with a title, and %d a name carried "
-    "from a page that named them, at a firm that publishes no staff page to link. No source URL, "
-    "title or figure was inferred. No aggregator was used."
+    "Company filings, company pages and trade press. Each contact rests on one of three, and "
+    "says which: %d a LinkedIn headline naming the firm, %d the firm's own site or dated "
+    "reporting, %d a name carried from a page that named them, where no staff page exists to "
+    "link. Nothing was inferred. No aggregator was used."
     % (n_li_p, n_src_p, n_none_p)],
    ["Scope",
     "Greater Houston and its suburban counties. Architects, engineers and permitting authorities "

@@ -223,7 +223,7 @@ FIRM_NOTES = {
   "Michael Hsu Office of Architecture works for Radom here and for ICON at Mueller in Austin. The same architect has already drawn a printed building."
  ],
  "HOU-037": [
-  "Sawyer Yards is more than two million square feet across twenty-seven buildings on fifty-five acres, eighteen of them reclaimed. Every project on record is a conversion."
+  "Every project on record is a conversion."
  ],
  "HOU-038": [
   "The unit count is stated only as up to 100.",

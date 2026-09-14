@@ -68,8 +68,8 @@ PEOPLE = {
     ("HOU-001", "Keith Clipp"): (
         "Executive Vice President, Development and Operations",
         "https://wanbridge.com/leadership/",
-        "The closest published seat to construction. Wan Bridge names seven "
-        "leaders and none of them holds construction or purchasing."),
+        "Wan Bridge names seven leaders and none of them holds construction or "
+        "purchasing."),
     ("HOU-001", "Kyle Spicer"): (
         "Senior Vice President of Land Acquisition",
         "https://wanbridge.com/leadership/", None),
@@ -98,8 +98,7 @@ PEOPLE = {
     ("HOU-035", "Angela Guerrero"): (
         "Director, Asset Management and Realty Services",
         "https://avenuecdc.org/about-us/board-staff/",
-        "The closest published seat to how the houses get built. Avenue names no "
-        "construction officer."),
+        "Avenue names no construction officer on its staff page."),
 }
 
 DECIDER = {
@@ -276,13 +275,13 @@ SYNOPSIS = {
 
     "HOU-133":
         "Residential land development arm of Hillwood, the Perot family company. "
-        "Three Greater Houston master-planned communities: Pomona in Manvel; "
-        "Valencia in Manvel, 440 acres and 938 single-family lots on 45 to 70 foot "
-        "homesites from the $300s to the $800s, with Beazer Homes, Coventry Homes, "
-        "Perry Homes and Pulte Homes building; and Legacy in League City, more "
-        "than 700 acres from $400,000 to above $1 million, with ten builders "
-        "including Coventry Homes, David Weekley Homes, Partners in Building, "
-        "Perry Homes and Westin Homes. Pomona took the Greater Houston Builders "
+        "Three Greater Houston master-planned communities. Pomona in Manvel. "
+        "Valencia in Manvel: 440 acres, 938 single-family lots on 45 to 70 foot "
+        "homesites, from the $300s to the $800s, with Beazer Homes, Coventry "
+        "Homes, Perry Homes and Pulte Homes building. Legacy in League City: "
+        "more than 700 acres, from $400,000 to above $1 million, with ten "
+        "builders including Coventry Homes, David Weekley Homes, Partners in "
+        "Building, Perry Homes and Westin Homes. Pomona took the Greater Houston Builders "
         "Association Prism award for Master-Planned Community of the Year in 2022 "
         "and 2023. Hillwood Communities is also the developer of Wolf Ranch in "
         "Georgetown, where ICON and Lennar built the hundred-home Genesis "

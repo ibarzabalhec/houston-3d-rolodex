@@ -50,9 +50,8 @@ claim Houston, this file does not claim it either.
 WALL = [
 
 # ==================================================================== precast
-# Nine plants. Structurally the closest existing analog to a printer: off-site
-# production of structural wall, capital equipment already on the books, a QC
-# lab and a batch plant. The count that separates them is not repetition, which
+# Nine plants. Off-site production of structural wall, with capital equipment
+# already on the books, a QC lab and a batch plant. The count that separates them is not repetition, which
 # they all clear, but whether one or two printers would be a line inside the
 # business or the business itself.
 
@@ -69,9 +68,8 @@ WALL = [
  "certified Environmental Product Declarations in June 2022, built on a full "
  "year of operating data from the Brookshire plant, to ISO 14025 and ISO 21930.",
  (3, 2, 2, 2),
- "The nearest thing in Greater Houston to a printing operation that already "
- "exists: a batch plant, casting beds, a QC regime and a business built on "
- "making structural wall somewhere other than the site.",
+ "A batch plant, casting beds, a quality regime, and a business built on making "
+ "structural wall somewhere other than the site.",
  ("Eight certified structural product lines cast repeatedly on the same beds, "
   "in one plant, for one region.",
   "A plant batching well over 100 yards an hour is larger than one or two "
@@ -152,8 +150,7 @@ WALL = [
    "Locke can produce precast on the customer's premises or at an active "
    "jobsite rather than only in the plant.",
    "method_risk",
-   "The nearest thing on this deck to a producer that has already decided the "
-   "factory should move to the job.",
+   "A producer that has already decided the factory should move to the job.",
    "https://lockesolutions.com/mobile-plants/")],
  ["https://lockesolutions.com/", "https://lockesolutions.com/about-us/",
   "https://lockesolutions.com/mobile-plants/"],
@@ -203,8 +200,7 @@ WALL = [
  "and the Houston territory carries multifamily in the same title.",
  (3, 2, 1, 3),
  "The only precast producer screened whose own staffing names Houston and "
- "multifamily in the same title, which is the closest this cell gets to "
- "residential structure.",
+ "multifamily in one title.",
  ("A complete line of architectural and structural products cast repeatedly "
   "from one Texas plant since 1988.",
   "A plant serving the whole state from Cedar Park is larger than one or two "
@@ -259,8 +255,8 @@ WALL = [
  "manager is quoted on the firm's own site on diversifying capability beyond "
  "average precast solutions.",
  (3, 2, 2, 3),
- "The closest thing in Texas to a precast producer running a volumetric line, "
- "with a general manager on record wanting to widen what the plant makes.",
+ "A precast producer running a volumetric modular line, with a general manager "
+ "on record wanting to widen what the plant makes.",
  ("Structural elements and modular cells cast repeatedly from one plant for "
   "one region.",
   "Forty acres and 190 people is more capacity than one or two printers would "
@@ -351,9 +347,8 @@ WALL = [
  "stick framing. It is on the City of Houston's registered fabricator list for "
  "trusses and wall panels.",
  (3, 3, 3, 2),
- "The closest business model on this deck to selling printed wall: an "
- "automated plant making wall for Houston production builders, at a size one "
- "or two machines would actually cover.",
+ "An automated plant making wall for Houston production builders, at a size one "
+ "or two machines would cover.",
  ("Wall panels made repeatedly for production builders inside one metro, from "
   "one plant.",
   "A 17,000 square foot plant serving Texas production builders is the scale "
@@ -445,10 +440,9 @@ WALL = [
  "A component manufacturer whose Huntsville plant makes roof trusses, floor "
  "trusses, floor cassettes, wall panels, timber trusses and stair systems, one "
  "of five Texas plants alongside Hillsboro, Kyle, San Antonio and Temple. Its "
- "own offsite page states that offsite is the new onsite, that floor cassettes "
- "integrate sheathing and bracing in advance in a controlled environment, and "
- "that wall panels let a builder stand walls with fewer people, lower overhead, "
- "shorter schedules and less loose product stored on site.",
+ "own offsite page argues the case for the model: wall panels let a builder "
+ "stand walls with fewer people, on a shorter schedule, with less loose product "
+ "stored on site.",
  (3, 2, 1, 3),
  "A wall panel plant 70 miles from Houston inside a parent that publishes "
  "offsite manufacturing as its stated argument.",
@@ -594,10 +588,9 @@ WALL = [
  "https://www.citymasonry.com/",
  "Over 4 million square feet of masonry in the past year",
  "A commercial, industrial and institutional masonry contractor founded in "
- "1988, working in brick, block and stone from veneer to load-bearing masonry, "
- "with published annual revenue of 20 to 40 million dollars and a claim to the "
- "largest and best-trained masonry workforce in the state. Its own about page "
- "records over four million square feet of masonry laid in the past year.",
+ "1988, working in brick, block and stone from veneer to load-bearing masonry. "
+ "Its own about page publishes annual revenue of 20 to 40 million dollars and "
+ "over four million square feet of masonry laid in the past year.",
  (3, 2, 1, 3),
  "The largest published masonry throughput in the metro, on load-bearing as "
  "well as veneer work, which is the wall a printer would replace.",
@@ -849,7 +842,7 @@ WALL = [
  ("Ten thousand foundations a year for production builders, repeated across "
   "the same communities in the same metros.",
   "Ten thousand slabs a year is far beyond what one or two printers would "
-  "cover. A machine would be a pilot line inside a very large business.",
+  "cover. A machine would be a pilot line, not a replacement for the slab business.",
   "No record of paying for an unproven method. The published position is scale, "
   "bonding and builder relationships."),
  [],
@@ -877,8 +870,8 @@ WALL = [
  "design collaboration to final installation. It records Greater Houston "
  "Builders Association Distinguished Member status for 2024, 2025 and 2026.",
  (3, 3, 1, 1),
- "The closest published language on this deck to the firm a printer would sell "
- "into: turn-key concrete, for residential production builders, in Houston.",
+ "Turn-key concrete for residential production builders in Houston, in the "
+ "firm's own words.",
  ("Turn-key concrete repeated for production builders across the same Houston "
   "submarkets.",
   "A single-office contractor serving production builders is the scale where "
@@ -943,16 +936,15 @@ CELL_LABEL = {
 
 CELL_NOTE = {
     "nozzle":  "A crew here already places cementitious material through a hose "
-               "onto a surface, to a profile, with no formwork. It is the "
-               "closest thing in the trade to what a printer does.",
+               "onto a surface, to a profile, with no formwork.",
     "slab":    "Owns the lot before anyone else arrives, owns the builder "
                "relationship and owns the pump. Wall scope would double the "
                "revenue per lot with the same customer and no new sale.",
     "tiltup":  "Casts wall flat on the slab and lifts it. The panels are "
                "measured in tons and storeys, which is why most of this cell "
                "reads Partly on printer fit.",
-    "precast": "A plant, casting beds, a batch plant and a quality lab. The "
-               "closest existing capital analog to a machine.",
+    "precast": "A plant, casting beds and a quality lab. The equipment a printer "
+               "would sit beside is already financed.",
     "panel":   "Already manufactures wall off site and sells it to the "
                "production builders on this deck. The logistics, the builder "
                "relationship and the factory economics are solved.",

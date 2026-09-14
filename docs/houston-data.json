@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 63,
+ "build": 64,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -23,7 +23,7 @@
   "b": "In on two of three counts.",
   "adopter": "Has printed walls standing or contracted with a competitor.",
   "national": "Purchasing sits at a national desk.",
-  "trade": "Houston builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set, and the section runs in the order a wall gets made, from the crew with a hose to the contractor that owns the job.",
+  "trade": "Houston builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
   "creative": "Design-led work that does not repeat a plan set. The printed element sits inside a conventional project.",
   "channel": "Owns the ground. The builders inside buy the wall.",
   "icon": "Already reachable through an existing ICON relationship."
@@ -123,7 +123,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top left cell holds <b>11 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 11 here, <b>4</b> have paid for a method that was new at the time, Wan Bridge and DSRS Steel and Future Frame USA, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>5</b> have no method record.",
+ "matrix_note": "<b>11 firms</b> clear both counts on the grid. It is placed on two and ignores the third, so these are not the <b>13</b> in on all three counts above; <b>3 firms are</b> in both.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -599,7 +599,7 @@
   {
    "key": "nozzle",
    "label": "Places it through a hose",
-   "note": "A crew here already places cementitious material through a hose onto a surface, to a profile, with no formwork. It is the closest thing in the trade to what a printer does.",
+   "note": "A crew here already places cementitious material through a hose onto a surface, to a profile, with no formwork.",
    "n": 3
   },
   {
@@ -617,7 +617,7 @@
   {
    "key": "precast",
    "label": "Casts the vertical off site",
-   "note": "A plant, casting beds, a batch plant and a quality lab. The closest existing capital analog to a machine.",
+   "note": "A plant, casting beds and a quality lab. The equipment a printer would sit beside is already financed.",
    "n": 9
   },
   {
@@ -761,7 +761,7 @@
    "region": "Greater Houston",
    "url": "https://www.onsiteconcretetx.com/",
    "line": "Volumetric mixing: batches at the job rather than at a plant, so the mix is controlled at the point of placement rather than made at a plant and delivered. Twenty-five years in Greater Houston.",
-   "why": "Technically the closest batching arrangement in the metro to a printer's feed, and the firm already says specialty mixes are what it is for.",
+   "why": "Batching at the point of placement, and the firm says specialty mixes are what it is for.",
    "people": [],
    "note": null
   },
@@ -913,7 +913,7 @@
    "region": "Austin yard, projects across Texas including Houston",
    "url": "https://www.curtisconcretepumping.com/",
    "line": "A shotcrete placement contractor for below-grade structural walls, culvert and tunnel linings, shoring, skateparks and architectural applications.",
-   "why": "The purest structural shotcrete description found anywhere in Texas: this is a firm whose business is already shooting structural wall rather than pool shells. Both owners work in the field.",
+   "why": "Its business is shooting structural wall rather than pool shells. Both owners work in the field.",
    "people": [],
    "note": "The yard is in Austin. The site names Houston among its project cities."
   }
@@ -923,7 +923,7 @@
   "crew": "Has the crew"
  },
  "supply_notes": {
-  "node": "Six sweeps established that this trade does not publish its volume. Of 87 firms found, five published a figure and twenty-four published years in business instead. Builders publish closings because the Builder 100 makes them; nothing makes a wall contractor publish anything. The numbers exist at the supplier who batches the concrete, fabricates the tendons or sells the block, and these firms sell to the crews rather than competing with them.",
+  "node": "This trade does not publish its volume. Of 87 firms found, five published a figure and twenty-four published years in business instead. Builders publish closings because the Builder 100 makes them; nothing makes a wall contractor publish anything. The numbers exist at the supplier who batches the concrete, fabricates the tendons or sells the block, and these firms sell to the crews rather than competing with them.",
   "crew": "A gunite crew already places cementitious material through a hose onto a vertical surface, to a profile, with no formwork. One of these firms advertises on its own careers page for nozzlemen, top finishers, bottom finishers and foremen. None of them has the balance sheet to buy a machine and every one of them has the people to run one."
  },
  "no_site": [
@@ -1054,7 +1054,7 @@
    "note": "Same."
   }
  ],
- "no_site_note": "Twenty-one firms that meet the profile on trade association category and geography and publish no website at all: six in the Greater Houston Builders Association's foundation and concrete categories, eleven on the Associated Masonry Contractors of Houston roster, and four more. They are not small by inference, they are unlisted. This deck cannot screen them, and says so rather than presenting the roster as the market.",
+ "no_site_note": "Twenty-one firms that meet the profile on trade association category and geography and publish no website at all: six in the Greater Houston Builders Association's foundation and concrete categories, eleven on the Associated Masonry Contractors of Houston roster, and four more. They are not small by inference, they are unlisted. This deck cannot screen them.",
  "limits": [
   [
    "How the list was drawn",
@@ -1062,11 +1062,11 @@
   ],
   [
    "Who decides",
-   "The mark goes on a vice president or director of construction, or a head of purchasing, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents execute one. At a contractor it goes on whoever signs for equipment: the owner, the president or the division head. On 1 of the 63 the contact itself carries a caveat: the person has left, sits at another entity, or is a probable match."
+   "The mark goes on a vice president or director of construction, or a head of purchasing: those roles can change a wall specification. Construction managers, superintendents and purchasing agents execute one. At a contractor it goes on whoever signs for equipment. On 1 of the 63 the contact carries a caveat: the person has left, sits at another entity, or is a probable match."
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. A contact is one of three things and the card says which: 112 a LinkedIn profile whose headline names the firm, 168 a page on the firm's own site or dated reporting that names the person with a title, and 15 a name carried from a page that named them, at a firm that publishes no staff page to link. No source URL, title or figure was inferred. No aggregator was used."
+   "Company filings, company pages and trade press. Each contact rests on one of three, and says which: 112 a LinkedIn headline naming the firm, 168 the firm's own site or dated reporting, 15 a name carried from a page that named them, where no staff page exists to link. Nothing was inferred. No aggregator was used."
   ],
   [
    "Scope",
@@ -18974,7 +18974,7 @@
     "capital_access": 1,
     "machine_fit": 3
    },
-   "mvp_screen": "23 of 26 homes printed. Owner cites 50 percent faster and 5 to 7 percent cheaper. HiveASMBLD supplies it.",
+   "mvp_screen": "The owner cites 50 percent faster and 5 to 7 percent cheaper. HiveASMBLD supplies it.",
    "sources": [
     {
      "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
@@ -19230,7 +19230,7 @@
      "name": "Keith Clipp",
      "role": "Executive Vice President, Development and Operations",
      "source_url": "https://wanbridge.com/leadership/",
-     "source_evidence": "The closest published seat to construction. Wan Bridge names seven leaders and none of them holds construction or purchasing."
+     "source_evidence": "Wan Bridge names seven leaders and none of them holds construction or purchasing."
     },
     {
      "name": "Kyle Spicer",
@@ -19701,7 +19701,7 @@
    "entity_role": "vertical_buyer",
    "region": "Houston, Harris",
    "homepage_url": "https://www.boxerproperty.com/",
-   "synopsis": "Houston-headquartered commercial property owner and manager founded in 1992, overseeing more than 15 million square feet across 16 cities, which partnered on a printed house in Fort Worth and whose founder said in print that the future is printed houses made out of concrete. The printed house is in Fort Worth. The firm is headquartered in Houston; the project is not.",
+   "synopsis": "Houston-headquartered commercial property owner and manager founded in 1992, overseeing more than 15 million square feet across 16 cities. It partnered on a printed house in Fort Worth, and its founder said in print that the future is printed houses made out of concrete. The printed house is in Fort Worth. The firm is headquartered in Houston; the project is not.",
    "key_stat": "Paid for a printed house in Fort Worth",
    "principals": [
     {
@@ -23048,7 +23048,7 @@
      "name": "Angela Guerrero",
      "role": "Director, Asset Management and Realty Services",
      "source_url": "https://avenuecdc.org/about-us/board-staff/",
-     "source_evidence": "The closest published seat to how the houses get built. Avenue names no construction officer."
+     "source_evidence": "Avenue names no construction officer on its staff page."
     }
    ],
    "key_projects": [
@@ -23537,8 +23537,8 @@
     "innovation": 0,
     "capital_access": 1
    },
-   "mvp_screen": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
-   "_verdict": "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of communities in one corridor. A named vice president of construction.",
+   "mvp_screen": "Above 100 homes a year on average, across a small set of communities in one corridor. A named vice president of construction.",
+   "_verdict": "Above 100 homes a year on average, across a small set of communities in one corridor. A named vice president of construction.",
    "_why": [
     "Communities clustered in Conroe, Willis and New Caney rather than spread across the metro.",
     "More than 4,000 homes since 1993 is an average above 100 a year, inside the band a machine serves.",
@@ -24912,8 +24912,8 @@
     "innovation": 3,
     "capital_access": 2
    },
-   "mvp_screen": "The closest business model on this deck to selling printed wall: an automated plant making wall for Houston production builders, at a size one or two machines would actually cover.",
-   "_verdict": "The closest business model on this deck to selling printed wall: an automated plant making wall for Houston production builders, at a size one or two machines would actually cover.",
+   "mvp_screen": "An automated plant making wall for Houston production builders, at a size one or two machines would cover.",
+   "_verdict": "An automated plant making wall for Houston production builders, at a size one or two machines would cover.",
    "_why": [
     "Wall panels made repeatedly for production builders inside one metro, from one plant.",
     "A 17,000 square foot plant serving Texas production builders is the scale where one or two machines would cover a real share of the wall it ships.",
@@ -25039,7 +25039,7 @@
      "name": "Mobile plant program",
      "detail": "Locke can produce precast on the customer's premises or at an active jobsite rather than only in the plant.",
      "signal_type": "method_risk",
-     "fit_signal": "The nearest thing on this deck to a producer that has already decided the factory should move to the job.",
+     "fit_signal": "A producer that has already decided the factory should move to the job.",
      "url": "https://lockesolutions.com/mobile-plants/"
     }
    ],
@@ -25431,8 +25431,8 @@
     "innovation": 1,
     "capital_access": 1
    },
-   "mvp_screen": "The closest published language on this deck to the firm a printer would sell into: turn-key concrete, for residential production builders, in Houston.",
-   "_verdict": "The closest published language on this deck to the firm a printer would sell into: turn-key concrete, for residential production builders, in Houston.",
+   "mvp_screen": "Turn-key concrete for residential production builders in Houston, in the firm's own words.",
+   "_verdict": "Turn-key concrete for residential production builders in Houston, in the firm's own words.",
    "_why": [
     "Turn-key concrete repeated for production builders across the same Houston submarkets.",
     "A single-office contractor serving production builders is the scale where one or two machines would cover a real share of the work it takes on.",
@@ -25682,7 +25682,7 @@
      "name": "Driscoll Apartments",
      "detail": "Named on the firm's own structural placement page.",
      "signal_type": "repeatable",
-     "fit_signal": "Multifamily placement work, the closest published example of a repeated wall on its record.",
+     "fit_signal": "Multifamily placement work, a repeated wall on a published project.",
      "url": "https://www.keystoneconcrete.com/"
     },
     {
@@ -25857,7 +25857,7 @@
    "_why": [
     "Interior wall and ceiling packages repeating across multifamily and single family work in one metro.",
     "No employee count or annual unit figure is published. On the bands, a firm with no published figure is a Partly.",
-    "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory, which is the nearest thing to the argument for a printer."
+    "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory."
    ],
    "sources": [
     {
@@ -25927,7 +25927,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory, which is the nearest thing to the argument for a printer."
+     "text": "It built and staffed a prefabrication plant producing wall panels and interior components offsite, and publishes what that saved on a hospital project. That is paying to move wall work into a factory."
     }
    ],
    "company_li": null,
@@ -26082,8 +26082,8 @@
     "innovation": 2,
     "capital_access": 3
    },
-   "mvp_screen": "The closest thing in Texas to a precast producer running a volumetric line, with a general manager on record wanting to widen what the plant makes.",
-   "_verdict": "The closest thing in Texas to a precast producer running a volumetric line, with a general manager on record wanting to widen what the plant makes.",
+   "mvp_screen": "A precast producer running a volumetric modular line, with a general manager on record wanting to widen what the plant makes.",
+   "_verdict": "A precast producer running a volumetric modular line, with a general manager on record wanting to widen what the plant makes.",
    "_why": [
     "Structural elements and modular cells cast repeatedly from one plant for one region.",
     "Forty acres and 190 people is more capacity than one or two printers would cover, and the plant's product is commercial and data centre rather than house wall.",
@@ -26472,8 +26472,8 @@
     "innovation": 2,
     "capital_access": 2
    },
-   "mvp_screen": "The nearest thing in Greater Houston to a printing operation that already exists: a batch plant, casting beds, a QC regime and a business built on making structural wall somewhere other than the site.",
-   "_verdict": "The nearest thing in Greater Houston to a printing operation that already exists: a batch plant, casting beds, a QC regime and a business built on making structural wall somewhere other than the site.",
+   "mvp_screen": "A batch plant, casting beds, a quality regime, and a business built on making structural wall somewhere other than the site.",
+   "_verdict": "A batch plant, casting beds, a quality regime, and a business built on making structural wall somewhere other than the site.",
    "_why": [
     "Eight certified structural product lines cast repeatedly on the same beds, in one plant, for one region.",
     "A plant batching well over 100 yards an hour is larger than one or two printers would cover. A machine would be a line inside it, not the business, which is the same reading a large builder gets.",
@@ -26928,7 +26928,7 @@
    "entity_role": "wall_trade",
    "region": "Tomball, serving Texas and the Gulf Coast",
    "homepage_url": "https://www.citymasonry.com/",
-   "synopsis": "A commercial, industrial and institutional masonry contractor founded in 1988, working in brick, block and stone from veneer to load-bearing masonry, with published annual revenue of 20 to 40 million dollars and a claim to the largest and best-trained masonry workforce in the state. Its own about page records over four million square feet of masonry laid in the past year.",
+   "synopsis": "A commercial, industrial and institutional masonry contractor founded in 1988, working in brick, block and stone from veneer to load-bearing masonry. Its own about page publishes annual revenue of 20 to 40 million dollars and over four million square feet of masonry laid in the past year.",
    "key_stat": "Over 4 million square feet of masonry in the past year",
    "principals": [
     {
@@ -27086,8 +27086,8 @@
     "innovation": 1,
     "capital_access": 3
    },
-   "mvp_screen": "The only precast producer screened whose own staffing names Houston and multifamily in the same title, which is the closest this cell gets to residential structure.",
-   "_verdict": "The only precast producer screened whose own staffing names Houston and multifamily in the same title, which is the closest this cell gets to residential structure.",
+   "mvp_screen": "The only precast producer screened whose own staffing names Houston and multifamily in one title.",
+   "_verdict": "The only precast producer screened whose own staffing names Houston and multifamily in one title.",
    "_why": [
     "A complete line of architectural and structural products cast repeatedly from one Texas plant since 1988.",
     "A plant serving the whole state from Cedar Park is larger than one or two printers would cover, and Houston is a sales territory rather than a production location.",
@@ -27169,7 +27169,7 @@
    "entity_role": "wall_trade",
    "region": "Houston, working Harris and Fort Bend",
    "homepage_url": "https://grecostructures.com/",
-   "synopsis": "Concrete subcontractor inside the Satterfield and Pontikes family of companies, working for general contractors across elevated post-tensioned decks, mass concrete and tilt-up, with an award-listed panel record at the top of the height range the trade attempts and multifamily among the markets it lists. The parent describes Greco as a turnkey commercial concrete contractor operating throughout Texas, running for more than thirty years and established under the Greco name about ten years ago, with a pumping arm of two pump trucks. Greco lists multifamily among its markets but names no multifamily project. The parent's own site names Greco among the Satterfield and Pontikes family of companies.",
+   "synopsis": "Concrete subcontractor inside the Satterfield and Pontikes family of companies, working for general contractors across elevated post-tensioned decks, mass concrete and tilt-up. The parent describes Greco as a turnkey commercial concrete contractor operating throughout Texas, running for more than thirty years and established under the Greco name about ten years ago, with a pumping arm of two pump trucks. Greco lists multifamily among its markets but names no multifamily project. The parent's own site names Greco among the Satterfield and Pontikes family of companies.",
    "key_stat": "49 panels, tallest 52 feet 7 inches, on one job",
    "principals": [
     {
@@ -27313,7 +27313,7 @@
    "entity_role": "wall_trade",
    "region": "Houston, with Austin, San Antonio, Denver and Washington",
    "homepage_url": "https://www.harveycleary.com/",
-   "synopsis": "General contractor founded in 1957 that self-performs an unusually deep set of structural trades through IQI Construction LLC, described on its own site as a captured company and solely owned and operated entity, and that runs a standing residential market alongside its commercial work. Harvey Cleary's residential work is apartments and senior living rather than for-sale houses.",
+   "synopsis": "General contractor founded in 1957 that self-performs its structural trades through IQI Construction LLC, described on its own site as a captured company, solely owned and operated. It runs a standing residential market alongside its commercial work. Harvey Cleary's residential work is apartments and senior living rather than for-sale houses.",
    "key_stat": "$2 billion in volume, 700-plus employees, founded 1957",
    "principals": [
     {
@@ -27837,7 +27837,7 @@
    "entity_role": "wall_trade",
    "region": "Huntsville plant, about 70 miles north, within five Texas plants",
    "homepage_url": "https://ufpsitebuilt.com/",
-   "synopsis": "A component manufacturer whose Huntsville plant makes roof trusses, floor trusses, floor cassettes, wall panels, timber trusses and stair systems, one of five Texas plants alongside Hillsboro, Kyle, San Antonio and Temple. Its own offsite page states that offsite is the new onsite, that floor cassettes integrate sheathing and bracing in advance in a controlled environment, and that wall panels let a builder stand walls with fewer people, lower overhead, shorter schedules and less loose product stored on site.",
+   "synopsis": "A component manufacturer whose Huntsville plant makes roof trusses, floor trusses, floor cassettes, wall panels, timber trusses and stair systems, one of five Texas plants alongside Hillsboro, Kyle, San Antonio and Temple. Its own offsite page argues the case for the model: wall panels let a builder stand walls with fewer people, on a shorter schedule, with less loose product stored on site.",
    "key_stat": "Five Texas plants, wall panels at Huntsville",
    "principals": [
     {
@@ -28781,8 +28781,8 @@
     "innovation": 1,
     "capital_access": 2
    },
-   "mvp_screen": "Two award-listed tilt-up jobs in Houston, one at 79 panels and 52,116 square feet of wall. Panels repeat; the buildings behind them do not.",
-   "_verdict": "Two award-listed tilt-up jobs in Houston, one at 79 panels and 52,116 square feet of wall. Panels repeat; the buildings behind them do not.",
+   "mvp_screen": "Two award-listed tilt-up jobs in Houston. Panels repeat; the buildings behind them do not.",
+   "_verdict": "Two award-listed tilt-up jobs in Houston. Panels repeat; the buildings behind them do not.",
    "_why": [
     "Tilt-up panel production repeats inside one metro even when the buildings differ.",
     "The firm's own site gives a job range of $500,000 to $15 million. A printer would be one line in a book that size.",
@@ -29451,8 +29451,8 @@
     "innovation": 1,
     "capital_access": 3
    },
-   "mvp_screen": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here. The firm is national.",
-   "_verdict": "Named on a 61-panel job at 70 feet, with the heaviest panel at about 87 tons. That is the top of what the trade attempts here. The firm is national.",
+   "mvp_screen": "The top of what the trade attempts here. The firm is national.",
+   "_verdict": "The top of what the trade attempts here. The firm is national.",
    "_why": [
     "Panel and structural concrete work recurring across the Houston market.",
     "More than 12,500 people across the United States on the firm's own count, and first on a national ranking of concrete specialty contractors. A machine purchase at that size runs through a national desk, which the bands score as a No.",
@@ -29586,7 +29586,7 @@
    "_verdict": "The largest residential slab operation found in Texas, owned by a public infrastructure group with a capital allocation process, and the only contractor on this deck that publishes which builder it pours for.",
    "_why": [
     "Ten thousand foundations a year for production builders, repeated across the same communities in the same metros.",
-    "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line inside a very large business.",
+    "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line, not a replacement for the slab business.",
     "No record of paying for an unproven method. The published position is scale, bonding and builder relationships."
    ],
    "sources": [
@@ -29644,7 +29644,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line inside a very large business."
+     "text": "Ten thousand slabs a year is far beyond what one or two printers would cover. A machine would be a pilot line, not a replacement for the slab business."
     },
     {
      "axis": "innovation",
@@ -29684,7 +29684,7 @@
      "name": "Brandon Buskohl",
      "role": "Assistant General Manager",
      "linkedin_url": "https://www.linkedin.com/in/brandon-buskohl-40649a75/",
-     "li_evidence": "His profile headline names Trussway Manufacturing as a Builders FirstSource company, so it is current. An assistant general manager is below the bar this deck sets for a decision-maker, and he is the only plant-level leader the firm could be shown to have: trussway.com presents a certificate chain that fails verification through every route, so nothing on it could be read."
+     "li_evidence": "His profile headline names Trussway Manufacturing as a Builders FirstSource company, so it is current. An assistant general manager is below the bar this deck sets for a decision-maker. He is also the only plant-level leader the firm could be shown to have. trussway.com presents a certificate chain that fails verification through every route, so nothing on it could be read."
     }
    ],
    "key_projects": [],
@@ -31233,7 +31233,7 @@
    ],
    "region": "Washington Corridor, Harris County",
    "homepage_url": "https://www.dealco.net/",
-   "synopsis": "Developer of Sawyer Yards, launched in 2005 with the conversion of a 75,000 square foot warehouse and grown with co-developers Lovett Commercial and Silver Street Capital into a 55-acre campus of 27 buildings, 18 of them historic, holding more than two million square feet and over 600 creative tenants. Sawyer Yards is more than two million square feet across twenty-seven buildings on fifty-five acres, eighteen of them reclaimed. Every project on record is a conversion.",
+   "synopsis": "Developer of Sawyer Yards, launched in 2005 with the conversion of a 75,000 square foot warehouse. Co-developers Lovett Commercial and Silver Street Capital grew it into a 55-acre campus of 27 buildings, 18 of them historic, holding more than two million square feet and over 600 creative tenants. Every project on record is a conversion.",
    "key_stat": "55 acres, 27 buildings, 2M+ sf",
    "principals": [
     {
@@ -33697,7 +33697,7 @@
    "entity_role": "channel",
    "region": "Dallas HQ / Manvel, Pearland, League City",
    "homepage_url": "https://www.hillwoodcommunities.com/",
-   "synopsis": "Residential land development arm of Hillwood, the Perot family company. Three Greater Houston master-planned communities: Pomona in Manvel; Valencia in Manvel, 440 acres and 938 single-family lots on 45 to 70 foot homesites from the $300s to the $800s, with Beazer Homes, Coventry Homes, Perry Homes and Pulte Homes building; and Legacy in League City, more than 700 acres from $400,000 to above $1 million, with ten builders including Coventry Homes, David Weekley Homes, Partners in Building, Perry Homes and Westin Homes. Pomona took the Greater Houston Builders Association Prism award for Master-Planned Community of the Year in 2022 and 2023. Hillwood Communities is also the developer of Wolf Ranch in Georgetown, where ICON and Lennar built the hundred-home Genesis Collection to a Bjarke Ingels Group design.",
+   "synopsis": "Residential land development arm of Hillwood, the Perot family company. Three Greater Houston master-planned communities. Pomona in Manvel. Valencia in Manvel: 440 acres, 938 single-family lots on 45 to 70 foot homesites, from the $300s to the $800s, with Beazer Homes, Coventry Homes, Perry Homes and Pulte Homes building. Legacy in League City: more than 700 acres, from $400,000 to above $1 million, with ten builders including Coventry Homes, David Weekley Homes, Partners in Building, Perry Homes and Westin Homes. Pomona took the Greater Houston Builders Association Prism award for Master-Planned Community of the Year in 2022 and 2023. Hillwood Communities is also the developer of Wolf Ranch in Georgetown, where ICON and Lennar built the hundred-home Genesis Collection to a Bjarke Ingels Group design.",
    "key_stat": "Three Houston masterplans, 700 acres at Legacy alone",
    "principals": [
     {
