@@ -86,6 +86,26 @@ print("phones          : %d records with a main line, %d with a directory and no
       % (len(_withph), len(_nomain),
          sum(1 for t in D["targets"] if t.get("phone_absent")), len(_seen)))
 
+# The field section. A competitor a reader cannot look up is a name in a list.
+# Every one carries at least one link, and every link is a real one.
+_cf = []
+for _c in D.get("competitors", []):
+    _ls = _c.get("links") or []
+    if not _ls:
+        _cf.append("%s carries no link" % _c["name"])
+    for _lab, _u in _ls:
+        if not _u.startswith("http"):
+            _cf.append("%s: %r is not a link" % (_c["name"], _u))
+        if not _lab or len(_lab) < 4:
+            _cf.append("%s: a link with no label" % _c["name"])
+if _cf:
+    for _b in sorted(set(_cf)):
+        print("   " + _b)
+    raise SystemExit("FAILED: the field section has a competitor a reader cannot follow")
+print("field links     : %d competitors, %d links, none without one"
+      % (len(D.get("competitors", [])),
+         sum(len(c.get("links") or []) for c in D.get("competitors", []))))
+
 
 async def main():
     problems = []
@@ -363,6 +383,17 @@ async def main():
         dis = await pg.evaluate("document.getElementById('q').disabled")
         if not dis:
             problems.append("search looks live on the field view and does nothing")
+
+        # Every link held for a competitor reaches the page. The data can carry
+        # them and the render can still drop them, which is how the section
+        # went twelve builds with none.
+        _want = sum(len(c.get("links") or []) for c in D.get("competitors", []))
+        _got = await pg.locator("#fieldBody .clinks a").count()
+        _blocks = await pg.locator("#fieldBody .cmp .clinks").count()
+        print("field links     :", "%d of %d rendered across %d competitors"
+              % (_got, _want, _blocks))
+        if _got < _want or _blocks < len(D.get("competitors", [])):
+            problems.append("a competitor link is held but not rendered")
 
         # The roster is what a person carries into a meeting.
         await pg.evaluate("document.getElementById('vMatrix').click()")

@@ -46,7 +46,16 @@ BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            "archpaper.com", "homes.com", "har.com", "investing.com",
            "kinder.rice.edu", "risewellhomes.com", "ravennahomes.com",
            "rskrealestatepartners.com", "codes.findlaw.com", "livelonestar.com",
-           "benzinga.com", "linkedin.com", "oriongroupholdingsinc.com"}
+           "benzinga.com", "linkedin.com", "oriongroupholdingsinc.com",
+           # Added in Build 58 with the field section's links. Each was opened
+           # in a browser by hand before it went in here: cobod.com answers a
+           # script 454 and a browser the full site, 3dprinting.com answers 403
+           # and renders the article, voxelmatters answers a 202 stub.
+           "cobod.com", "3dprinting.com", "voxelmatters.com",
+           # landtejas.com answered scripts until Build 57 and now times them
+           # out on every attempt. Opened by hand on 14 September 2026: the site
+           # loads, and its footer still carries the number the deck holds.
+           "landtejas.com"}
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
@@ -73,6 +82,12 @@ def where(d):
         for p in t.get("principals", []):
             add(p.get("linkedin_url"), w + " / " + p["name"])
             add(p.get("source_url"), w + " / " + p["name"])
+    # The field section. These are not firm cards, so the loop above never saw
+    # them, and twelve competitors shipped with no link checked at all until
+    # Build 58.
+    for c in d.get("competitors", []):
+        for lab, u in c.get("links", []):
+            add(u, "field: " + c["name"])
     return out
 
 

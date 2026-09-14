@@ -342,6 +342,9 @@ VERIFIED = {
     "https://www.smithdouglas.com/":
         "2026-09-13: 877-552-3727, in the header as Get In Touch and again as "
         "a Call Now button, on every page.",
+    "https://landtejas.com/":
+        "2026-09-14: the site stopped answering scripts between builds. In a "
+        "browser it loads and carries one tel: link, 713-783-6702.",
     "https://www.taylormorrison.com/contact-us":
         "2026-09-13: a block per division, each with an email address, an "
         "Online Sales Manager number and a Customer Care number. Houston, at "

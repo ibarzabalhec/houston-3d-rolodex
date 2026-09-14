@@ -5,9 +5,8 @@ Two things a Houston buyer will ask that this section has to answer. Who else
 can print my walls, and why has ICON not built here yet.
 
 The honest answer to the second is that it has not. Every ICON project on the
-public record is in Austin or Georgetown. HiveASMBLD, PERI and Sunconomy all
-have named Houston-area activity. That absence is the point the screen
-is built to address.
+public record is in Austin or Georgetown. HiveASMBLD and PERI both have named
+Houston activity. That absence is the point the screen is built to address.
 """
 
 # ICON's own record, stated from published sources.
@@ -35,8 +34,9 @@ ICON = {
    "confirmed anywhere else, so it is not quoted as fact here."],
   ["Houston",
    "No ICON project, partnership or public statement specific to Houston could be found. The "
-   "newsroom, the site and general search all return nothing. HiveASMBLD, PERI and "
-   "Sunconomy each have named Houston-area activity."],
+   "newsroom, the site and general search all return nothing. HiveASMBLD has "
+   "repeat production work inside Greater Houston and PERI printed a house "
+   "inside the city limits."],
  ],
 }
 
@@ -44,15 +44,31 @@ ICON = {
 COMPETITORS = [
 {
  "name": "HiveASMBLD",
+ "links": [
+  ["Their site",
+   "https://www.hiveasmbld.com/"],
+  ["The merger and the two chief executives",
+   "https://www.hiveasmbld.com/about"],
+  ["Their own project list",
+   "https://www.hiveasmbld.com/projects"],
+  ["Texas Tribune on the material partner, 6 October 2023",
+   "https://www.texastribune.org/2023/10/06/texas-houses-3D-printers-climate/"],
+ ],
  "where": "Houston",
  "status": "live",
  "line": "The only printer with repeat production work inside Greater Houston.",
  "facts": [
+  # The date discrepancy this used to note came from a contact aggregator, which
+  # the deck does not cite for anything else either.
   ["Formed", "January 2024, merging Hive3D, founded by Timothy Lankau in 2022, and ASMBLD Modular, "
-             "founded by Ethan Wong. Co-chief executives, Houston. PitchBook lists 2023, which conflicts."],
-  ["Material", "Green Cement of Jewett, Texas, with David McNitt as Director of Technology. Green "
-               "Cement is a subsidiary of Eco Material Technologies, bought by CRH plc for $2.1 "
-               "billion in July 2025. The material supply sits behind a major building-products group."],
+             "founded by Ethan Wong. Both are named as co-chief executive on the firm's own about "
+             "page, in Houston."],
+  # Build 58 cut this back. It had named a cement company in Jewett, Texas, a
+  # director of technology, a parent and a $2.1 billion sale, and not one of
+  # those strings is on any page the card can cite. The Texas Tribune names the
+  # material partner and nothing else here survives.
+  ["Material", "The Texas Tribune reports Hive3D partnered with Eco Material Technologies of Utah, "
+               "whose chief executive is quoted on the emissions claim for the cement it supplies."],
   ["In market", "Zuri Gardens, 80 homes, with a $1.8 million City of Houston subsidy. Gulf Shore "
                 "Estates, 23 of 26 homes. Avenue J, a two-unit duplex. Lumen Villas in Marfa. None "
                 "is confirmed complete."],
@@ -69,6 +85,18 @@ COMPETITORS = [
 },
 {
  "name": "PERI 3D Construction",
+ "links": [
+  ["Their site",
+   "https://www.peri3dconstruction.com/en"],
+  ["The Spring Branch project page",
+   "https://www.peri-usa.com/projects/houston-3d.html"],
+  ["Their own release on the Houston house",
+   "https://www.peri-usa.com/company/press/houston-3d.html"],
+  ["PERI on the COBOD BOD2 it distributes",
+   "https://www.peri3dconstruction.com/en/cobod-bod2"],
+  ["ABC13 Houston on the build",
+   "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/"],
+ ],
  "where": "Germany, printing in Houston",
  "status": "live",
  "line": "Printed in Spring Branch, inside the city. Houston is not a Hive monopoly.",
@@ -85,6 +113,14 @@ COMPETITORS = [
 },
 {
  "name": "COBOD International",
+ "links": [
+  ["Their site",
+   "https://cobod.com/"],
+  ["Their company page, which names the shareholders",
+   "https://cobod.com/company/"],
+  ["The BOD2 product page",
+   "https://cobod.com/technology/3d-construction-printers/bod2/"],
+ ],
  "where": "Denmark",
  "status": "live",
  "line": "Sells the printer to anyone, which is the model Titan now competes with directly.",
@@ -97,6 +133,16 @@ COMPETITORS = [
 },
 {
  "name": "PRINT3D Technologies",
+ "links": [
+  ["Their site",
+   "https://www.print3dtechnologies.com/"],
+  ["Their model list with starting prices",
+   "https://www.print3dtechnologies.com/builds"],
+  ["The two founders",
+   "https://www.print3dtechnologies.com/about"],
+  ["Community Impact on the build count and prices, 26 May 2026",
+   "https://communityimpact.com/dallas-fort-worth/allen/real-estate/2026/05/26/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/"],
+ ],
  "where": "Allen, Texas",
  "status": "live",
  "line": "Selling finished printed houses in North Texas at $103,000 and $175,000.",
@@ -108,6 +154,14 @@ COMPETITORS = [
 },
 {
  "name": "Apis Cor",
+ "links": [
+  ["Their site",
+   "https://apis-cor.com/"],
+  ["Their printing technology",
+   "https://apis-cor.com/technologies"],
+  ["The D.R. Horton investment release, 11 March 2024",
+   "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html"],
+ ],
  "where": "Melbourne, Florida",
  "status": "live",
  "line": "D.R. Horton put strategic money into it in March 2024. Horton builds in Greater Houston.",
@@ -119,30 +173,62 @@ COMPETITORS = [
 },
 {
  "name": "Sunconomy",
- "where": "Montgomery, Texas",
+ "links": [
+  ["3D Printing Industry on the Lago Vista permit, 8 January 2019",
+   "https://3dprintingindustry.com/news/sunconomy-to-develop-3d-printed-concrete-homes-in-texas-146575/"],
+ ],
+ # Build 58 moved this out of Montgomery. The 110-home eco village and the
+ # Montgomery location came off the firm's own page, which now answers 403 to a
+ # browser as well as to a script, so neither can be checked or linked. What is
+ # left is the one page that still resolves.
+ "where": "Texas",
  "status": "stalled",
- "line": "Inside the Houston footprint, and seven years without a building.",
+ "line": "Signed with Apis Cor in 2016, permitted one house in 2019, and published nothing since.",
  "facts": [
-  ["The project", "A 110-home eco-village in Montgomery County, announced with Apis Cor and still "
-                  "unbuilt after more than seven years."],
-  ["Why it matters", "It is the local precedent a cautious builder will raise: a printed community "
-                     "announced in this metro that never got built."],
+  ["The record", "3D Printing Industry reported in January 2019 that Sunconomy had permits for its "
+                 "first printed house, in Lago Vista, and that it had signed with Apis Cor in 2016. "
+                 "No completion has been published in the seven years since."],
+  ["Its own site", "sunconomy.com answers a browser with 403 Forbidden, so nothing the firm "
+                   "publishes about itself can be read or cited here."],
+  ["Why it matters", "It is the precedent a cautious builder will raise: a printed programme "
+                     "announced in Texas with an Apis Cor machine that produced no published "
+                     "building."],
  ],
 },
 {
  "name": "Alquist 3D",
- "where": "Colorado and Iowa",
+ "links": [
+  ["Their site",
+   "https://www.alquist3d.com/"],
+  ["Construction Dive on the Walmart work and the leasing model, 2 December 2025",
+   "https://www.constructiondive.com/news/walmart-3d-print-alquist-retailers/806851/"],
+  ["The A1 and A1X launch and a fourteen-robot sale, 15 April 2026",
+   "https://www.prnewswire.com/news-releases/alquist-sells-14-3d-construction-printing-robots-launches-a1-series-to-enable-national-scale-deployment-302742621.html"],
+  ["The 2026 retail rollout, 24 November 2025",
+   "https://www.prnewswire.com/news-releases/alquist-to-scale-3d-print-construction-technology-via-walmart-and-other-commercial-retail-projects-in-2026-302623710.html"],
+ ],
+ # Build 58 dropped Iowa and Virginia. Neither word is on either source the card
+ # cites, and no other reachable page carried them.
+ "where": "Greeley, Colorado",
  "status": "live",
  "line": "Pivoted to selling printers and doing commercial work for Walmart. No Texas project found.",
  "facts": [
-  ["What changed", "Moved from printing houses to selling its A1 and A1X machines, plus a Walmart "
-                   "commercial rollout."],
-  ["Texas", "No Texas project found. Its work is in Colorado, Virginia, Tennessee, Alabama and, "
-            "from 2026, Missouri."],
+  ["What changed", "Moved from printing houses to selling its A1 and A1X machines. The A1X is "
+                   "leased to contractors through an equipment rental partner rather than sold "
+                   "outright, and the printing is done for retail clients."],
+  ["Texas", "No Texas project found. Construction Dive names Colorado, Tennessee and Missouri."],
  ],
 },
 {
  "name": "Mighty Buildings",
+ "links": [
+  ["Their site, now carrying a LUMUS byline",
+   "https://www.mightybuildings.com/about-us"],
+  ["3D Printing Industry on the sale process, 21 January 2025",
+   "https://3dprintingindustry.com/news/mighty-buildings-up-for-sale-following-headcount-reduction-235813/"],
+  ["3DPrint.com on the same sale process",
+   "https://3dprint.com/315768/house-3d-printing-company-mighty-buildings-up-for-sale/"],
+ ],
  "where": "Oakland, California",
  "status": "sold",
  "line": "Put itself up for sale in January 2025 after raising more than $150 million.",
@@ -154,17 +240,38 @@ COMPETITORS = [
 },
 {
  "name": "Diamond Age",
+ "links": [
+  ["HousingWire on the shutdown, 12 December 2024",
+   "https://www.housingwire.com/articles/diamond-age-shuts-down-after-hard-battle-for-new-investment/"],
+  ["3D Printing Industry on the asset auction, 17 January 2025",
+   "https://3dprintingindustry.com/news/diamond-age-to-sell-assets-in-new-online-auction-235736/"],
+ ],
  "where": "Phoenix, Arizona",
+ # Build 58 corrected the denominator. The card said fifteen of forty-three
+ # contracted homes. Forty-three is on neither source. HousingWire gives thirty
+ # printed between 2022 and early 2024 and fifteen still being built at the end.
  "status": "closed",
- "line": "Shut down on 12 December 2024, leaving 15 of 43 contracted homes unfinished.",
+ "line": "Shut down on 12 December 2024 with fifteen houses still being built.",
  "facts": [
-  ["What happened", "Closed entirely, with fifteen of forty-three contracted houses left unfinished."],
+  ["What happened", "HousingWire reports the founders confirmed the shutdown on 12 December 2024. "
+                    "The company had printed thirty homes at Mountain View Estates between 2022 "
+                    "and early 2024, and was still building the final fifteen when it stopped."],
   ["Why it matters", "A printer supplier that fails mid-community leaves the builder holding the "
-                     "site. Fifteen of forty-three is the figure on record."],
+                     "site. Fifteen houses were open when this one stopped."],
  ],
 },
 {
  "name": "Black Buffalo 3D",
+ "links": [
+  ["3D Printing Industry on the Chapter 11 filing",
+   "https://3dprintingindustry.com/news/3d-construction-printer-maker-black-buffalo-3d-files-for-bankruptcy-247981/"],
+  ["3DPrint.com on the same filing",
+   "https://3dprint.com/323054/black-buffalo-3d-files-for-chapter-11-bankruptcy/"],
+  ["VoxelMatters on the Fort Worth live print, 24 May 2024",
+   "https://www.voxelmatters.com/black-buffalo-3d-live-print-home-texas/"],
+  ["CandysDirt on the Fort Worth address and Boxer's lot, 28 May 2024",
+   "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/"],
+ ],
  "where": "New Jersey",
  "status": "bankrupt",
  "line": "Filed Chapter 11 on 24 December 2025.",
@@ -177,6 +284,16 @@ COMPETITORS = [
 },
 {
  "name": "SQ4D",
+ "links": [
+  ["Their site",
+   "https://www.sq4d.com/"],
+  ["Their own project index, which lists four",
+   "https://www.sq4d.com/projects/"],
+  ["Their page on the largest permitted printed home",
+   "https://www.sq4d.com/largest-3d-printed-home/"],
+  ["3D Printing Industry on the 1,900 square foot build",
+   "https://3dprintingindustry.com/news/sq4d-3d-prints-1900-sq-ft-home-in-48-hours-167141/"],
+ ],
  "where": "Long Island, New York",
  "status": "live",
  "line": "Four units in about six years, none in Texas.",
@@ -185,6 +302,14 @@ COMPETITORS = [
 },
 {
  "name": "CyBe Construction",
+ "links": [
+  ["Their site",
+   "https://cybe.eu/"],
+  ["Their own case page for the Florida house",
+   "https://cybe.eu/cases/3d-printed-houses-florida/"],
+  ["3DPrinting.com on the Florida villa, 23 March 2023",
+   "https://3dprinting.com/news/cybe-to-3d-print-floridas-first-villa/"],
+ ],
  "where": "Netherlands and Florida",
  "status": "live",
  "line": "One confirmed American house, in Florida.",

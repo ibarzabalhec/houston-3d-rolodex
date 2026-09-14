@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 57 · 2026-09-14
+Build 58 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -529,6 +529,68 @@ title in either direction of containment, which catches the case where the recor
 carries an extra clause the team page does not. 208 evidence lines became 198. The
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
+
+## Build 58: the field section gets links, and four of its claims do not survive them
+
+The Field section named twelve competitors and carried not one link. A reader
+who wanted to know who the competition is had twelve names and no way to reach
+any of them. It now carries **40 links across all twelve**, each with the host
+printed beside the label so a reader can see whose page it is before clicking:
+the firm's own site, or somebody reporting on them.
+
+Every link was gated the way the contact layer is: fetched, and tested for the
+company's name in the page bytes. 36 passed outright. Of the twelve that did
+not, two were dead and are gone (`bb3d.io/3d-printing/` 404s, and the LUMUS page
+404s), one was a 301 to a homepage and is gone (`cybe.eu/cybe-florida/`), two
+were redirects whose destinations are now cited instead (COBOD moved
+`/about-us/ownership-structure/` to `/company/` and `/solution/bod2/` to
+`/technology/3d-construction-printers/bod2/`), and the rest are hosts that
+refuse scripts and render in a browser, each opened by hand before it shipped.
+Two builderonline URLs were dropped rather than carried on a browser read,
+because both companies already had cleaner links.
+
+**Four claims did not survive their own sources**, which is the argument for
+doing the links at all:
+
+- **HiveASMBLD's material.** The card named a cement company in Jewett, Texas, a
+  director of technology, a parent, and a $2.1 billion sale. None of those
+  strings is on any page the card can cite. The Texas Tribune names Eco Material
+  Technologies of Utah as the partner, and that is now all the card says.
+- **Diamond Age.** The card said fifteen of forty-three contracted homes were
+  left unfinished. Forty-three is on neither source. HousingWire gives thirty
+  homes printed between 2022 and early 2024, and fifteen still being built when
+  the founders confirmed the shutdown on 12 December 2024.
+- **Alquist 3D.** Located as "Colorado and Iowa", with work in "Colorado,
+  Virginia, Tennessee, Alabama and Missouri". Iowa and Virginia appear on
+  neither source. It is Greeley, Colorado, and Construction Dive names Colorado,
+  Tennessee and Missouri.
+- **Sunconomy.** The 110-home Montgomery eco village came off the firm's own
+  page, which now answers 403 to a browser as well as to a script, so it cannot
+  be checked or cited. The one page that still resolves reports a permit for a
+  house in Lago Vista in January 2019 and an Apis Cor agreement signed in 2016.
+  The card says that, and says its own site no longer answers. The Houston
+  footprint claim went with it, including from ICON's own block, which had
+  listed Sunconomy alongside HiveASMBLD and PERI as named Houston activity.
+
+A reference to a contact aggregator as the source of a disputed founding date
+also came out of the HiveASMBLD block. The deck does not cite those for a name
+or a title and should not cite one for a year either.
+
+**Gates.** `linkcheck.py` now harvests competitor links, so all 581 URLs on the
+deck are swept for status and for banned sources. `verify.py` fails the build if
+a competitor carries no link, if a link has no label, or if a link held in the
+data does not reach the page. That last one is the check that matters: the data
+can carry a link and the render can still drop it, which is how the section went
+twelve builds with none.
+
+**One unrelated thing the sweep caught.** `landtejas.com` answered scripts until
+Build 57 and now times them out on every attempt. Opened by hand: the site loads
+and its footer still carries the number the deck holds. It is recorded as
+blocked-to-scripts with the date, in both `linkcheck.BLOCKED` and
+`phones.VERIFIED`.
+
+**Still open here.** ICON's own block in the same section carries no links. It is
+the only block in the Field section without them.
 
 ## Build 57: the number gets its own row
 

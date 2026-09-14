@@ -542,6 +542,16 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .cmp .st.dead{background:var(--ink2)}
 .cmp .st.warn{border:1px solid var(--ink3);color:var(--ink3);background:none}
 .cmp .cl3{margin:10px 0 0;font-size:16px;line-height:1.5;letter-spacing:-.01em;max-width:70ch}
+/* The link list under each competitor. The host is printed beside the label so
+   a reader can see whose page it is before clicking: the firm's own site, or
+   somebody reporting on them. */
+.clinks{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:0}
+.clinks li{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;padding:9px 0;
+  border-top:1px solid var(--rule)}
+.clinks a{font-size:13.5px;line-height:1.45;color:var(--ink);text-decoration:underline;
+  text-decoration-color:var(--rule2);text-underline-offset:3px}
+.clinks a:hover{text-decoration-color:var(--ink)}
+.clinks .host{font:500 10.5px/1.4 var(--mono);color:var(--ink3);white-space:nowrap}
 .cmp dl,.us dl{margin:16px 0 0;display:grid;grid-template-columns:190px 1fr;gap:0}
 .cmp dt,.us dt{font:600 9.5px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   color:var(--ink3);padding:12px 16px 12px 0;border-top:1px solid var(--rule)}
@@ -2114,11 +2124,18 @@ function drawField(){
     '</dl></div>';
   h+=C.map(function(c){
     var cls=(c.status==='closed'||c.status==='bankrupt')?' dead':(c.status==='sold'||c.status==='stalled'?' warn':'');
+    /* Who they are, in links. The section named twelve competitors and gave a
+       reader no way to reach any of them until Build 58. */
+    var lk=(c.links||[]).map(function(l){
+      return '<li><a href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'+
+        '<span class="host">'+esc(host(l[1]).split('/')[0])+'</span></li>';}).join('');
     return '<div class="cmp"><h3>'+esc(c.name)+'<span class="where">'+esc(c.where)+'</span>'+
       '<span class="st'+cls+'">'+esc(c.status)+'</span></h3>'+
       '<p class="cl3">'+esc(c.line)+'</p><dl>'+
       (c.facts||[]).map(function(f){return '<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>';}).join('')+
-      '</dl></div>';}).join('');
+      '</dl>'+
+      (lk?'<ul class="clinks">'+lk+'</ul>':'')+
+      '</div>';}).join('');
   var K=D.code||{};
   if(K.items&&K.items.length){
     var row=function(a,b,u,l){return '<tr><td class="q">'+esc(a)+'</td><td>'+esc(b)+'</td>'+

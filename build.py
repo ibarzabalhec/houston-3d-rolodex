@@ -41,7 +41,7 @@ from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 57
+BUILD = 58
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
