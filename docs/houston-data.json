@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 62,
+ "build": 63,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -46,7 +46,7 @@
    }
   ],
   [
-   "43",
+   "63",
    "with a decision-maker named",
    true,
    {
@@ -74,7 +74,7 @@
    }
   ]
  ],
- "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two printers would cover it. Track record: has paid for a new building method before. The first two place a firm on the grid; the third is the chip colour. Both axes run outward from the top left, so the first cell holds the firms that clear both counts, and inside every cell the largest published builder is first. Open a firm for the evidence, add it to a call list, and export the list to Excel or paper.",
+ "sub": "Three counts per firm: repetition, printer fit, and a track record of paying for a new building method.",
  "axes": [
   {
    "key": "repeatability",
@@ -1062,11 +1062,11 @@
   ],
   [
    "Who decides",
-   "The mark goes on a vice president or director of construction, or a head of purchasing, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents execute one. At a contractor it goes on whoever signs for equipment: the owner, the president or the division head. On 1 of the 43 the contact itself carries a caveat: the person has left, sits at another entity, or is a probable match."
+   "The mark goes on a vice president or director of construction, or a head of purchasing, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents execute one. At a contractor it goes on whoever signs for equipment: the owner, the president or the division head. On 1 of the 63 the contact itself carries a caveat: the person has left, sits at another entity, or is a probable match."
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. A contact is one of three things and the card says which: 91 a LinkedIn profile whose headline names the firm, 136 a page on the firm's own site or dated reporting that names the person with a title, and 35 a name carried from a page that named them, at a firm that publishes no staff page to link. No source URL, title or figure was inferred. No aggregator was used."
+   "Company filings, company pages and trade press. A contact is one of three things and the card says which: 112 a LinkedIn profile whose headline names the firm, 168 a page on the firm's own site or dated reporting that names the person with a title, and 15 a name carried from a page that named them, at a firm that publishes no staff page to link. No source URL, title or figure was inferred. No aggregator was used."
   ],
   [
    "Scope",
@@ -1432,9 +1432,9 @@
     "yes": 5,
     "partly": 12,
     "no": 33,
-    "decider": 15,
+    "decider": 35,
     "confirm": 0,
-    "linked": 22
+    "linked": 48
    },
    {
     "group": "creative",
@@ -18783,12 +18783,12 @@
   "tier_a": 13,
   "tier_b": 30,
   "out": 0,
-  "principals": 262,
-  "linkedin_held": 91,
+  "principals": 295,
+  "linkedin_held": 112,
   "audit_flags": 0,
-  "with_decider": 43,
+  "with_decider": 63,
   "with_decider_live": 19,
-  "with_decider_confirmed": 42,
+  "with_decider_confirmed": 62,
   "with_decider_caveat": 1
  },
  "targets": [
@@ -19308,7 +19308,8 @@
    "phone_more": [
     {
      "digits": "2816537948",
-     "label": "leasing"
+     "label": "leasing",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -19502,19 +19503,23 @@
    "phone_more": [
     {
      "digits": "2816646776",
-     "label": "Chambers Creek"
+     "label": "Chambers Creek",
+     "source": null
     },
     {
      "digits": "2813783364",
-     "label": "Towne Lake"
+     "label": "Towne Lake",
+     "source": null
     },
     {
      "digits": "7137706066",
-     "label": "The Highlands"
+     "label": "The Highlands",
+     "source": null
     },
     {
      "digits": "9794315544",
-     "label": "Mission Ranch"
+     "label": "Mission Ranch",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -19643,7 +19648,8 @@
    "phone_more": [
     {
      "digits": "7134261156",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -21042,19 +21048,23 @@
    "phone_more": [
     {
      "digits": "7138764219",
-     "label": "Pedregal sales, Kathi"
+     "label": "Pedregal sales, Kathi",
+     "source": null
     },
     {
      "digits": "2817946106",
-     "label": "Pedregal sales, Susan"
+     "label": "Pedregal sales, Susan",
+     "source": null
     },
     {
      "digits": "7138990437",
-     "label": "Pedregal sales, Chris"
+     "label": "Pedregal sales, Chris",
+     "source": null
     },
     {
      "digits": "2817487450",
-     "label": "Pedregal sales, Pam"
+     "label": "Pedregal sales, Pam",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -21860,6 +21870,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "people_absent": "The builder's own site renders its people from script, so a fetch returns the page without them. The same rendering is why no number could be read off it either.",
    "vol": 324,
    "short": "Smith Douglas Homes",
    "cell": "clear|partial",
@@ -22342,11 +22353,13 @@
    "phone_more": [
     {
      "digits": "3104646046",
-     "label": "Greater Los Angeles"
+     "label": "Greater Los Angeles",
+     "source": null
     },
     {
      "digits": "8665597456",
-     "label": "toll free"
+     "label": "toll free",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -22488,6 +22501,7 @@
    "team_note": null,
    "no_web_presence": true,
    "web_absent": "livelonestar.com answers 401 Forbidden to a browser and to a script, on both the bare domain and the www host. Nothing the firm publishes about itself can be read, which is also why this card names no one.",
+   "people_absent": "livelonestar.com answers 401 Forbidden to a browser and to a script on both hosts, so nothing the firm publishes about itself can be read, including who runs it.",
    "vol": null,
    "short": "Live Lone Star",
    "cell": "clear|fail",
@@ -22710,6 +22724,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "people_absent": "The builder publishes no leadership page and names no one on the pages that could be read. Its ICF adoption is documented and its people are not.",
    "vol": null,
    "short": "Seaside Construction",
    "cell": "fail|partial",
@@ -22940,7 +22955,8 @@
    "phone_more": [
     {
      "digits": "2812403252",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -23552,7 +23568,8 @@
    "phone_more": [
     {
      "digits": "2813984011",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -23687,7 +23704,8 @@
    "phone_more": [
     {
      "digits": "2815436360",
-     "label": "sales"
+     "label": "sales",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -23814,7 +23832,8 @@
    "phone_more": [
     {
      "digits": "9362364896",
-     "label": "call today, beside a named consultant"
+     "label": "call today, beside a named consultant",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -24189,15 +24208,18 @@
    "phone_more": [
     {
      "digits": "7373874393",
-     "label": "Austin"
+     "label": "Austin",
+     "source": null
     },
     {
      "digits": "9723668789",
-     "label": "Dallas and Fort Worth"
+     "label": "Dallas and Fort Worth",
+     "source": null
     },
     {
      "digits": "2107916860",
-     "label": "San Antonio"
+     "label": "San Antonio",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -24438,15 +24460,18 @@
    "phone_more": [
     {
      "digits": "2104629050",
-     "label": "San Antonio design studio"
+     "label": "San Antonio design studio",
+     "source": null
     },
     {
      "digits": "5124560963",
-     "label": "Austin design studio"
+     "label": "Austin design studio",
+     "source": null
     },
     {
      "digits": "2108175948",
-     "label": null
+     "label": null,
+     "source": null
     }
    ],
    "phone_note": null,
@@ -24729,14 +24754,17 @@
    "key_stat": "A 150-home development on cold-formed steel",
    "principals": [
     {
-     "name": "David S. R. Stevens",
-     "role": "Director",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20S.%20R.%20Stevens%20DSRS%20Steel"
+     "name": "Dean Shultis",
+     "role": "Co-founder",
+     "source_url": "https://www.mccannpark.com/about",
+     "source_evidence": "The development company that shares this firm's telephone line names Dean Shultis and Ralph Sharp as its founders, and the contact address published in the steel firm's own footer is dshultis@dsrssteel.com. DSRS is the two surnames.",
+     "decider": true
     },
     {
-     "name": "Michael Henderson",
-     "role": "Head of Operations",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Michael%20Henderson%20DSRS%20Steel"
+     "name": "Ralph Sharp",
+     "role": "Co-founder",
+     "source_url": "https://www.mccannpark.com/about",
+     "source_evidence": "Named as co-founder on the same page."
     }
    ],
    "key_projects": [
@@ -24779,12 +24807,12 @@
    },
    "holds": 3,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "5129649960",
+   "phone_label": "the only number published",
+   "phone_source": "https://dsrssteel.com/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
-   "phone_note": null,
+   "phone_note": "One line serves both this firm and DSRS Development, and it carries an Austin area code on a Houston address.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -24817,14 +24845,19 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "The three executives published on the firm's own site could not be corroborated anywhere and are not carried here. The founders named on the development company that shares its phone line are."
+   ],
    "vol": null,
    "short": "DSRS Steel",
    "cell": "clear|clear",
    "chain": "panel",
    "clears": 3,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Dean Shultis"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -24840,17 +24873,27 @@
     {
      "name": "Shane McCullough",
      "role": "President",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Shane%20McCullough%20Future%20Frame%20USA"
+     "source_url": "https://futureframeusa.com/meet-our-team/",
+     "source_evidence": "The firm's own team page. Top officer of a single-plant manufacturer.",
+     "decider": true
     },
     {
      "name": "Glen Gilbert",
      "role": "General Manager",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Glen%20Gilbert%20Future%20Frame%20USA"
+     "source_url": "https://futureframeusa.com/meet-our-team/",
+     "source_evidence": "The firm's own team page. He runs the New Caney plant, which is the asset a machine would land in.",
+     "decider": true
     },
     {
      "name": "Brent Wheat",
      "role": "Design Manager",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brent%20Wheat%20Future%20Frame%20USA"
+     "source_url": "https://futureframeusa.com/meet-our-team/"
+    },
+    {
+     "name": "Larry Howard",
+     "role": "Senior Account Manager",
+     "linkedin_url": "https://www.linkedin.com/in/larry-howard-ab995b92/",
+     "li_evidence": "The firm's own team page gives this title. His profile headline reads general manager, so one of the two is out of date."
     }
    ],
    "key_projects": [
@@ -24905,10 +24948,10 @@
    },
    "holds": 3,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2812319200",
+   "phone_label": "Conroe office",
+   "phone_source": "https://futureframeusa.com/contact/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -24948,9 +24991,12 @@
    "cell": "clear|clear",
    "chain": "panel",
    "clears": 3,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Shane McCullough",
+    "Glen Gilbert"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -24962,7 +25008,32 @@
    "homepage_url": "https://lockesolutions.com/",
    "synopsis": "Custom precast producer in south Houston with an underground tunnel system serving three production bays, working on stormwater, manholes, trench, pull boxes, spread footings, light pole bases, LNG and data centre work. It runs a mobile plant program that produces precast at the customer's own premises or active jobsite. The Texas precast association's directory categorises Locke under structural precast, insulated wall panels and hollow-core slabs, which the firm's own site does not confirm.",
    "key_stat": "41,750 square foot plant, four 50-ton bridge cranes",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Asher Kazmann, P.E.",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/asherkazmann/",
+     "li_evidence": "The firm's own leadership page, and its own post of 10 September 2025 naming him a Houston Business Journal Most Admired CEO honoree.",
+     "decider": true
+    },
+    {
+     "name": "Ivan Garcia",
+     "role": "Chief Financial Officer",
+     "source_url": "https://lockesolutions.com/people/",
+     "source_evidence": "The firm's own leadership page. The second signature on a capital purchase."
+    },
+    {
+     "name": "David Espino",
+     "role": "Director of Operations",
+     "source_url": "https://lockesolutions.com/people/"
+    },
+    {
+     "name": "Chad Arpe",
+     "role": "Director of Sales and Marketing",
+     "linkedin_url": "https://www.linkedin.com/in/chad-arpe-b1981050/",
+     "li_evidence": "The firm's own leadership page. He is the name the precast trade directory lists as Locke's contact, and the title resolves him as sales."
+    }
+   ],
    "key_projects": [
     {
      "name": "Mobile plant program",
@@ -25011,10 +25082,10 @@
    },
    "holds": 3,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "8328047062",
+   "phone_label": "the only number published",
+   "phone_source": "https://lockesolutions.com/contact-us/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -25054,9 +25125,11 @@
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 2,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Asher Kazmann, P.E."
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -25136,7 +25209,8 @@
    "phone_more": [
     {
      "digits": "2813983806",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -25274,7 +25348,8 @@
    "phone_more": [
     {
      "digits": "2817910117",
-     "label": null
+     "label": null,
+     "source": null
     }
    ],
    "phone_note": null,
@@ -25333,7 +25408,21 @@
    "homepage_url": "https://allaboutconcretellc.net/",
    "synopsis": "A turn-key concrete contractor serving residential production builders, light commercial contractors and developers, handling everything from initial design collaboration to final installation. It records Greater Houston Builders Association Distinguished Member status for 2024, 2025 and 2026.",
    "key_stat": "Turn-key concrete for production builders",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Nathan Frazier",
+     "role": "Founder and Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/nathan-frazier-frazier-528106104",
+     "li_evidence": "High Street Capital's announcement of its investment, August 2026, names him as founder and confirms him continuing as chief executive. The firm's own site has a Leadership heading that names nobody.",
+     "decider": true
+    },
+    {
+     "name": "Don Edwards",
+     "role": "Chief Operating Officer",
+     "source_url": "https://www.highstreetcapital.com/news/high-street-capital-invests-in-all-about-concrete/",
+     "source_evidence": "Named in the same announcement as continuing chief operating officer."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -25366,10 +25455,10 @@
    },
    "holds": 2,
    "capital_mark": "fail",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2813704470",
+   "phone_label": "Tomball",
+   "phone_source": "https://allaboutconcretellc.net/partner-with-us/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -25404,14 +25493,20 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "High Street Capital announced its investment in August 2026, keeping the founder as chief executive. A sponsor now sits behind the signature.",
+    "The Texas Association of Builders directory names a different person as president and chief executive. The dated August 2026 announcement is the better source and the conflict is unresolved."
+   ],
    "vol": null,
    "short": "All About Concrete",
    "cell": "clear|clear",
    "chain": "slab",
    "clears": 2,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Nathan Frazier"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -25427,12 +25522,19 @@
     {
      "name": "Robert V. Barnes III",
      "role": "President and Chief Executive Officer",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Robert%20V.%20Barnes%20III%20Dee%20Brown"
+     "source_url": "https://www.dmagazine.com/publications/d-ceo/2023/august/third-generation-family-run-company-dee-brown-inc-has-had-a-hand-in-some-of-north-texas-most-iconic-buildings/",
+     "source_evidence": "Named as president and chief executive in D CEO of 24 August 2023, which records that he took the seat in 2015 from his father. Also on the firm's own about page. No Houston division head is published, so the Tomball office has no separate signing authority.",
+     "decider": true
     },
     {
      "name": "Tim Hughes",
      "role": "Senior Vice President, Construction Management",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Tim%20Hughes%20Dee%20Brown"
+     "source_url": "https://www.deebrowncompanies.com/about"
+    },
+    {
+     "name": "David Barnes",
+     "role": "Senior Vice President, Operations",
+     "source_url": "https://www.deebrowncompanies.com/about"
     }
    ],
    "key_projects": [
@@ -25487,11 +25589,17 @@
    },
    "holds": 3,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "2815470030",
+   "phone_label": "Houston office",
+   "phone_source": "https://www.deebrowncompanies.com/contact",
+   "phone_rule": "the page labels it",
+   "phone_more": [
+    {
+     "digits": "2143216443",
+     "label": "Dallas office",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -25530,9 +25638,11 @@
    "cell": "clear|partial",
    "chain": "masonry",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Robert V. Barnes III"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -25629,15 +25739,18 @@
    "phone_more": [
     {
      "digits": "5129313033",
-     "label": "Austin"
+     "label": "Austin",
+     "source": null
     },
     {
      "digits": "2106514055",
-     "label": "San Antonio"
+     "label": "San Antonio",
+     "source": null
     },
     {
      "digits": "8667944385",
-     "label": null
+     "label": null,
+     "source": null
     }
    ],
    "phone_note": null,
@@ -25774,15 +25887,18 @@
    "phone_more": [
     {
      "digits": "7136816540",
-     "label": "fax, commercial"
+     "label": "fax, commercial",
+     "source": null
     },
     {
      "digits": "7136819213",
-     "label": "residential, Piney Woods Drive"
+     "label": "residential, Piney Woods Drive",
+     "source": null
     },
     {
      "digits": "7136810446",
-     "label": "fax, residential"
+     "label": "fax, residential",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -25874,12 +25990,12 @@
    },
    "holds": 3,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "9725323340",
+   "phone_label": "Dallas, the only number published",
+   "phone_source": "https://omegaindinc.com/houston/contact-us/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
-   "phone_note": null,
+   "phone_note": "A Dallas number. Houston is a service area page rather than a staffed office: no Houston address and no Houston line is published.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -25912,6 +26028,10 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "people_absent": "No founder, owner, president or officer is named anywhere on the firm's own site, in its blog, on its careers page or in any coverage found. The only personal names on the site are two first names in customer testimonials.",
+   "card_notes": [
+    "No founder, owner or officer is named anywhere on the firm's site or in any coverage found."
+   ],
    "vol": null,
    "short": "Omega Industries",
    "cell": "clear|partial",
@@ -25934,8 +26054,16 @@
    "principals": [
     {
      "name": "Greg Elliott",
-     "role": "Vice President and General Manager, Texas",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Greg%20Elliott%20Tindall%20Corporation%2C%20Texas%20division"
+     "role": "Vice President, and the outgoing Texas general manager",
+     "linkedin_url": "https://www.linkedin.com/in/greg-elliott-824a1458/",
+     "li_evidence": "The same release identifies him as vice president and the outgoing general manager. His own profile headline still carries the general manager title, so a reader searching him will find the old seat."
+    },
+    {
+     "name": "Cecil Casinger",
+     "role": "General Manager, Tindall Building Systems Texas",
+     "source_url": "https://tindallcorp.com/tindall-corporation-welcomes-new-general-manager/",
+     "source_evidence": "The firm's own release of 5 August 2025 welcoming him as general manager of the Texas division, with eighteen years in precast.",
+     "decider": true
     }
    ],
    "key_projects": [
@@ -25986,10 +26114,10 @@
    },
    "holds": 3,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "8002801215",
+   "phone_label": "Texas division main",
+   "phone_source": "https://tindallcorp.com/contact/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -26024,14 +26152,19 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "The Texas general manager changed on 5 August 2025. Greg Elliott's own profile still carries the general manager title, so a reader searching him will find the seat he has left."
+   ],
    "vol": null,
    "short": "Tindall Corporation, Texas division",
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Cecil Casinger"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26196,8 +26329,10 @@
    "principals": [
     {
      "name": "Kevin M. Camarata",
-     "role": "Founder",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Kevin%20M.%20Camarata%20Camarata%20Masonry%20Systems"
+     "role": "Founder and Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/kevin-camarata-6883731b9/",
+     "li_evidence": "The firm's own about page gives him as founder, dated 1 August 2004. AGC Houston and his own profile headline both carry the chief executive title. He also chairs the Natural Stone Foundation.",
+     "decider": true
     }
    ],
    "key_projects": [],
@@ -26236,11 +26371,22 @@
    },
    "holds": 3,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "2818761111",
+   "phone_label": "main",
+   "phone_source": "http://www.camaratamasonry.com/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
+   "phone_more": [
+    {
+     "digits": "9544268352",
+     "label": "Florida office",
+     "source": null
+    },
+    {
+     "digits": "9803089922",
+     "label": "North Carolina office",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -26279,9 +26425,11 @@
    "cell": "clear|partial",
    "chain": "masonry",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Kevin M. Camarata"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26297,12 +26445,15 @@
     {
      "name": "Hussein Sinjari",
      "role": "Vice President",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Hussein%20Sinjari%20Legacy%20Precast"
+     "linkedin_url": "https://www.linkedin.com/in/hussein-sinjari-53376545",
+     "li_evidence": "The firm's own contact page carries him as vice president. It publishes no president, owner or founder, so this is the highest rank Legacy discloses.",
+     "decider": true
     },
     {
      "name": "Charles Franke",
      "role": "Chief of Estimating",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Charles%20Franke%20Legacy%20Precast"
+     "source_url": "https://www.legacyprecast.com/contact-us",
+     "source_evidence": "The firm's own contact page. Estimating prices a method rather than choosing one."
     }
    ],
    "key_projects": [
@@ -26357,11 +26508,17 @@
    },
    "holds": 3,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "2813752050",
+   "phone_label": "direct line",
+   "phone_source": "https://www.legacyprecast.com/contact-us",
+   "phone_rule": "the page publishes several and designates none",
+   "phone_more": [
+    {
+     "digits": "8554425502",
+     "label": "toll free",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -26400,9 +26557,11 @@
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Hussein Sinjari"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26541,7 +26700,21 @@
    "homepage_url": "https://brundagebone.com/locations/houston/",
    "synopsis": "A concrete pumping contractor with two Houston yards, running boom pumps from 17 to 65 metres in a range of boom styles, line pumps including high pressure pumps for long vertical and horizontal runs, placing booms, and truck-mounted conveyors and telebelts for difficult mixes. All its operators are OSHA 10 and ACPA certified. It advertises specialised services including low carbon and pervious concrete pumping.",
    "key_stat": "Boom pumps from 17 to 65 metres, plus placing booms",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Jonas Barboza",
+     "role": "Regional Director South, Texas",
+     "linkedin_url": "https://www.linkedin.com/in/jonas-barboza-9794a1136/",
+     "li_evidence": "The firm's own management page. Regional director sits between the branch and the vice president of operations, and the Texas region is his. The vice president of operations named on that page has a scope that excludes Texas, so Houston escalates to the division president rather than through him.",
+     "decider": true
+    },
+    {
+     "name": "Mark Young",
+     "role": "President, US Concrete Pumping",
+     "source_url": "https://brundagebone.com/about/",
+     "source_evidence": "The firm's own management page, and the parent's investor page. The division president above the Texas region, and not the public parent's chief executive."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -26574,12 +26747,18 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
-   "phone_note": null,
+   "phone": "7134551464",
+   "phone_label": "West Old Spanish Trail yard",
+   "phone_source": "https://brundagebone.com/locations/houston/",
+   "phone_rule": "the page publishes several and designates none",
+   "phone_more": [
+    {
+     "digits": "2815288484",
+     "label": "Sellers Road yard, trading as HiTech",
+     "source": null
+    }
+   ],
+   "phone_note": "Two Houston yards, neither designated the main line. Corporate is in Denver and is not carried here.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -26617,9 +26796,11 @@
    "cell": "clear|partial",
    "chain": "nozzle",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Jonas Barboza"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26631,7 +26812,14 @@
    "homepage_url": "https://www.bldr.com/",
    "synopsis": "The largest supplier of building products and manufactured components in the country, operating about 570 locations in 43 states, with four component plants in the Houston area. Two of them, Conroe and Cut N Shoot, publish their facility type as trusses, wall panels and components. Its own annual report describes manufactured products as factory-built substitutes for job-site framing including wall panels, states that its manufacturing facilities use automated robotic truss lines, and that prefabricated components are engineered offsite using specialised equipment.",
    "key_stat": "Four Houston-area component plants",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Jeff Oliver",
+     "role": "Director of Truss and Wall Panels",
+     "linkedin_url": "https://www.linkedin.com/in/jeff-oliver-ab686814/",
+     "li_evidence": "His profile headline names the company and the product line. No geography is visible on it, so whether the Houston plants sit under him is not established. Builders FirstSource publishes corporate officers only and names no manager on any of its four Houston-area plant pages."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -26676,11 +26864,17 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "9367032950",
+   "phone_label": "Cut N Shoot plant",
+   "phone_source": "https://www.bldr.com/location/cut-n-shoot-tx-truss/CUTNTXMF",
+   "phone_rule": "the page labels it",
+   "phone_more": [
+    {
+     "digits": "9362732256",
+     "label": "Conroe plant",
+     "source": "https://www.bldr.com/location/conroe-tx-truss/CONRTXMF"
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -26714,6 +26908,9 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "No Houston-area or Texas leader is published. Two of the four Houston plant pages render only a corporate shell to a fetcher, so their facility types could not be confirmed."
+   ],
    "vol": null,
    "short": "Builders FirstSource",
    "cell": "clear|fail",
@@ -26737,17 +26934,24 @@
     {
      "name": "Paul McCurdy",
      "role": "Chief Executive Officer",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Paul%20McCurdy%20City%20Masonry"
+     "source_url": "https://www.citymasonry.com/team/",
+     "source_evidence": "The firm's own team page, and the Associated Masonry Contractors of Houston names him as the firm's principal contact with the same main line.",
+     "decider": true
     },
     {
      "name": "Glenn Whitehead",
      "role": "Chief Operating Officer",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Glenn%20Whitehead%20City%20Masonry"
+     "source_url": "https://www.citymasonry.com/team/"
     },
     {
      "name": "Edwin Rosales",
      "role": "Vice President of Operations",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Edwin%20Rosales%20City%20Masonry"
+     "source_url": "https://www.citymasonry.com/team/"
+    },
+    {
+     "name": "Brad Burrows",
+     "role": "Chief Financial Officer",
+     "source_url": "https://www.citymasonry.com/team/"
     }
    ],
    "key_projects": [],
@@ -26790,10 +26994,10 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "7136911000",
+   "phone_label": "main office",
+   "phone_source": "https://www.citymasonry.com/contact-us/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -26833,9 +27037,11 @@
    "cell": "clear|partial",
    "chain": "masonry",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Paul McCurdy"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26851,12 +27057,25 @@
     {
      "name": "Bruce Wardlaw",
      "role": "Project Consultant, Houston, East Texas and Multifamily",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Bruce%20Wardlaw%20Coreslab%20Structures"
+     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+     "source_evidence": "The plant's own page. The only staffing on this deck that names Houston and multifamily in one title."
     },
     {
      "name": "Garrett Weidman",
      "role": "Sales Manager",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Garrett%20Weidman%20Coreslab%20Structures"
+    },
+    {
+     "name": "Garrett Weidman, P.E.",
+     "role": "Sales Manager",
+     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+     "source_evidence": "The plant's own page, with a direct line."
+    },
+    {
+     "name": "Robb Harrington",
+     "role": "Project Consultant, Dallas-Fort Worth and North Texas",
+     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+     "source_evidence": "The plant's own page, which completes the Texas coverage map."
     }
    ],
    "key_projects": [],
@@ -26895,10 +27114,10 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "5122500755",
+   "phone_label": "main",
+   "phone_source": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -27038,7 +27257,8 @@
    "phone_more": [
     {
      "digits": "2819550311",
-     "label": null
+     "label": null,
+     "source": null
     }
    ],
    "phone_note": null,
@@ -27265,8 +27485,21 @@
    "principals": [
     {
      "name": "Chad Petro",
-     "role": "Senior Vice President and General Manager",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chad%20Petro%20Heldenfels%20Enterprises%2C%20a%20Metromont%20company"
+     "role": "President and Chief Executive Officer",
+     "linkedin_url": "https://www.linkedin.com/in/chad-petro-89b7a913/",
+     "li_evidence": "Metromont's chief executive names him as the continuing president and chief executive in the acquisition coverage of 9 February 2026. The firm's own about page still says Senior Vice President and General Manager and has not been updated.",
+     "decider": true
+    },
+    {
+     "name": "Larry Miller, P.E.",
+     "role": "Vice President, Preconstruction and Business Development",
+     "source_url": "https://heldenfels.com/contact/"
+    },
+    {
+     "name": "Fred W. Heldenfels IV",
+     "role": "Founder",
+     "source_url": "https://heldenfels.com/about-us/",
+     "source_evidence": "The firm's own about page: he formed the company in 1995 and bought the precast and prestressed division assets. He sold to Metromont in December 2025 and is likely exiting."
     }
    ],
    "key_projects": [],
@@ -27305,11 +27538,17 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "5123962376",
+   "phone_label": "San Marcos main",
+   "phone_source": "https://heldenfels.com/contact/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
+   "phone_more": [
+    {
+     "digits": "3615331031",
+     "label": "Corpus Christi office",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -27343,14 +27582,20 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "Metromont completed its acquisition on 15 December 2025 and retained Chad Petro. The first year under a new parent is when a producer's capital budget gets rewritten.",
+    "The firm's own about page still carries his pre-acquisition title."
+   ],
    "vol": null,
    "short": "Heldenfels Enterprises, a Metromont company",
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Chad Petro"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -27474,7 +27719,14 @@
    "homepage_url": "https://texasbuildingsupply.com/",
    "synopsis": "The Texas banner for US LBM, formed from Oldham, Foxworth-Galbraith, JP Hart and Arrowhead Stairs and Trim. Its component line publishes interior and exterior wall panels in 2x4, 2x6, 2x8, 2x10 and 2x12 framing including raked and tall walls, roof trusses up to 14 feet tall and wood-webbed floor trusses up to 24 inches deep and 40 feet long. The three sites branded as component plants are San Antonio, Taylor and Van Alstyne, so the Houston location is a branch fed by out-of-market panel lines.",
    "key_stat": "Wall panels trucked into a Houston branch",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Mark Furse",
+     "role": "Market President",
+     "linkedin_url": "https://www.linkedin.com/in/mark-furse-02b1b717/",
+     "li_evidence": "His profile headline names Texas Building Supply and a market president is a regional profit-and-loss seat. Which market is not visible on it, and he is separately associated with the San Antonio legacy banner, so whether he covers Houston is unconfirmed. The company publishes no leadership at all on its own site."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -27519,11 +27771,22 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "2814470384",
+   "phone_label": "Houston branch",
+   "phone_source": "https://texasbuildingsupply.com/locations",
+   "phone_rule": "the page labels it",
+   "phone_more": [
+    {
+     "digits": "2103376474",
+     "label": "San Antonio and Taylor component plants",
+     "source": null
+    },
+    {
+     "digits": "9037120071",
+     "label": "Van Alstyne component plant",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -27576,7 +27839,15 @@
    "homepage_url": "https://ufpsitebuilt.com/",
    "synopsis": "A component manufacturer whose Huntsville plant makes roof trusses, floor trusses, floor cassettes, wall panels, timber trusses and stair systems, one of five Texas plants alongside Hillsboro, Kyle, San Antonio and Temple. Its own offsite page states that offsite is the new onsite, that floor cassettes integrate sheathing and bracing in advance in a controlled environment, and that wall panels let a builder stand walls with fewer people, lower overhead, shorter schedules and less loose product stored on site.",
    "key_stat": "Five Texas plants, wall panels at Huntsville",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Dwain Hutton",
+     "role": "Executive Vice President, UFP Site Built",
+     "source_url": "https://ufpsitebuilt.com/leadershipteam",
+     "source_evidence": "The division's own leadership page. He heads the Site Built division, which is one level below UFP Industries corporate and the lowest published rung that would sign for a plant. Every regional role the page names is West, and the Huntsville plant page names nobody.",
+     "decider": true
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -27617,11 +27888,22 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "9362953411",
+   "phone_label": "Huntsville plant",
+   "phone_source": "https://ufpsitebuilt.com/our-locations/huntsville-tx",
+   "phone_rule": "the page labels it",
+   "phone_more": [
+    {
+     "digits": "2545802846",
+     "label": "Hillsboro plant",
+     "source": "https://ufpsitebuilt.com/our-locations"
+    },
+    {
+     "digits": "2542464767",
+     "label": "Temple plant",
+     "source": "https://ufpsitebuilt.com/our-locations"
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -27660,9 +27942,11 @@
    "cell": "clear|partial",
    "chain": "panel",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Dwain Hutton"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -27674,7 +27958,15 @@
    "homepage_url": "https://wells.build/contact/locations/hillsboro-texas/",
    "synopsis": "Two plants on one street, one dedicated to architectural systems and one to structural systems, together 102,000 square feet with 320-plus team members and 30-plus projects a year, carrying AA architectural certification. The structural plant occupies about 25 acres of a 50-acre site, leaving the rest for expansion, and produces double tees, inverted T beams, lite walls, shear walls, columns, stairs and spandrels.",
    "key_stat": "102,000 combined square feet, 320-plus people",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Dan Juntunen",
+     "role": "Chief Executive Officer, Wells",
+     "linkedin_url": "https://www.linkedin.com/in/dan-juntunen-b2765a14/",
+     "li_evidence": "The Hillsboro page names nobody, and this plant is the former Gate Precast architectural yard whose own leadership pages went when gateprecast.com started redirecting to wells.build. Corporate is the only published authority for either Texas site.",
+     "decider": true
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -27707,12 +27999,12 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2545827200",
+   "phone_label": "Hillsboro plant",
+   "phone_source": "https://wells.build/contact/locations/hillsboro-texas/",
+   "phone_rule": "the page labels it",
    "phone_more": [],
-   "phone_note": null,
+   "phone_note": "The plant's own line. Wells names no Texas leader at either plant, so an escalation from here goes to the corporate office rather than to a manager on site.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -27750,9 +28042,11 @@
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Dan Juntunen"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -27768,7 +28062,9 @@
     {
      "name": "Dan Juntunen",
      "role": "Chief Executive Officer, Wells",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dan%20Juntunen%20Wells%2C%20Pearland%20plant"
+     "linkedin_url": "https://www.linkedin.com/in/dan-juntunen-b2765a14/",
+     "li_evidence": "Quoted as chief executive in KPS Capital Partners' acquisition release of 10 February 2026. Wells publishes no Texas leader and no plant manager: its company team page lists 36 people and not one carries a state or a plant in the title, so the corporate officer is the only published authority.",
+     "decider": true
     }
    ],
    "key_projects": [],
@@ -27807,12 +28103,12 @@
    },
    "holds": 2,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2814853273",
+   "phone_label": "Pearland plant",
+   "phone_source": "https://wells.build/contact/locations/pearland-texas/",
+   "phone_rule": "the page labels it",
    "phone_more": [],
-   "phone_note": null,
+   "phone_note": "The plant's own line. Wells publishes a corporate switchboard as well, and it is the same number for both Texas plants, so it is not carried on either record.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -27845,14 +28141,19 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "KPS Capital Partners agreed to acquire Wells on 10 February 2026. A sponsor change puts capital authority in motion."
+   ],
    "vol": null,
    "short": "Wells, Pearland plant",
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Dan Juntunen"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -27991,7 +28292,21 @@
    "homepage_url": "https://www.napcoprecast.com/",
    "synopsis": "Precast and prestressed products for parking structures, multi-family residential, commercial buildings and sports and entertainment, from a single San Antonio facility operating since 1994. Its own site counts more than 500 completed projects including more than 20 HEB stores, and more than 30 years of precast and prestressed experience.",
    "key_stat": "500-plus projects since 1994",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Kevin Medlin",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/kevin-medlin-8693832b/",
+     "li_evidence": "The firm's own history, in the present tense: with president Kevin Medlin leading the company, NAPCO is expanding its portfolio and additional product lines.",
+     "decider": true
+    },
+    {
+     "name": "Jaime Iragorri",
+     "role": "Founder",
+     "source_url": "https://www.napcoprecast.com/the-company/our-story",
+     "source_evidence": "The firm's own history: established NAPCO in 1995."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -28024,10 +28339,10 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2105099100",
+   "phone_label": "the only number published",
+   "phone_source": "https://www.napcoprecast.com/contact",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -28067,9 +28382,11 @@
    "cell": "clear|partial",
    "chain": "precast",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Kevin Medlin"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -28168,11 +28485,13 @@
    "phone_more": [
     {
      "digits": "2812070707",
-     "label": "fax, Houston"
+     "label": "fax, Houston",
+     "source": null
     },
     {
      "digits": "5123993026",
-     "label": "Austin and Central Texas"
+     "label": "Austin and Central Texas",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -28231,7 +28550,9 @@
     {
      "name": "Don Jackson",
      "role": "Owner and President",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Don%20Jackson%20Solid%20Foundations"
+     "linkedin_url": "https://www.linkedin.com/in/don-jackson-2366351a/",
+     "li_evidence": "The firm's own about page: started in 1999 by its owner and president. His profile headline carries the firm, which matters because the name is a common one. The only person this firm publishes.",
+     "decider": true
     }
    ],
    "key_projects": [],
@@ -28266,10 +28587,10 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2817984821",
+   "phone_label": "main",
+   "phone_source": "https://solidfoundationsltd.com/about.php",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -28309,9 +28630,11 @@
    "cell": "partial|clear",
    "chain": "slab",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Don Jackson"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -28323,7 +28646,14 @@
    "homepage_url": "https://texconpumping.com/",
    "synopsis": "A concrete pumping company founded in 2017, operating over 30 pump trucks from 32-metre to 65-metre boom pumps out of a Kingwood office across a 150-mile radius, with 40-plus staff and reported year-over-year growth of 45 to 50 percent. Its published customer base is major contractors, home builders and industrial clients across Texas.",
    "key_stat": "Over 30 pump trucks, 45 to 50 percent annual growth",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Francisco Trevino",
+     "role": "",
+     "linkedin_url": "https://www.linkedin.com/in/francisco-trevino-3b122822b/",
+     "li_evidence": "His profile headline names the company. No title is visible on it and the firm publishes no leadership anywhere on its own site, where his name appears only in a page's author metadata. He is the only person this firm can be connected to in any source this deck will use, and his role is unknown."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -28356,10 +28686,10 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "7135883500",
+   "phone_label": "the only number published",
+   "phone_source": "https://texconpumping.com/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -28394,6 +28724,9 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "The firm publishes no leadership. The one name attached to it appears in a page's author metadata and on a profile headline, with no title on either."
+   ],
    "vol": null,
    "short": "Texan Pumpers Company",
    "cell": "clear|partial",
@@ -28535,7 +28868,14 @@
    "homepage_url": "https://www.triconprecast.com",
    "synopsis": "Houston-headquartered precast producer running two Texas manufacturing facilities and operations offices in Florida, serving the Gulf Coast. The published product line is bridges and highways, precast substructures, retaining walls and sound walls, with an industrial division serving petrochemical, LNG, oil and gas, pipeline and power. Quality control teams hold ACI field, strength and aggregate certifications and PCI Level 1, and technicians carry NPCA production quality school certification. The facilities run SOTA batching equipment.",
    "key_stat": "ACI and PCI Level 1 certified quality control",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Robert May",
+     "role": "Business Development",
+     "linkedin_url": "https://www.linkedin.com/in/robert-may-18560560",
+     "li_evidence": "The Texas precast association names him as Tricon's contact and his own profile headline gives the function. Tricon publishes no leadership of any kind on any page that could be read, so there is no decision-maker to mark."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -28568,11 +28908,17 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
+   "phone": "2819319832",
+   "phone_label": "Houston, Henry Road",
+   "phone_source": "https://tricon-industrial.com/contact",
+   "phone_rule": "the page labels it",
+   "phone_more": [
+    {
+     "digits": "8773874266",
+     "label": "toll free",
+     "source": null
+    }
+   ],
    "phone_note": null,
    "phone_absent": null,
    "group": "trade",
@@ -28625,7 +28971,32 @@
    "homepage_url": "https://www.trussworksllc.net/",
    "synopsis": "A component manufacturer with plants in Caldwell and Mabank, Texas, plus five more across Oklahoma, Missouri, Arizona, Arkansas and Colorado and one opening in Florida in January 2027. The published product line is roof trusses, floor trusses, wall panels, LVL beams and timber truss, and the stated customer segment is large-scale multifamily, commercial and production builder projects. It is on the City of Houston's registered fabricator list.",
    "key_stat": "Wall panels for production builder projects",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Don Groom",
+     "role": "President, Chief Executive Officer and Managing Partner",
+     "linkedin_url": "https://www.linkedin.com/in/don-groom-a60811147",
+     "li_evidence": "His own staff page on the firm's site. Managing partner is ownership, not just office.",
+     "decider": true
+    },
+    {
+     "name": "Justin Groom",
+     "role": "Executive Vice President, Manufacturing and Distribution",
+     "source_url": "https://www.trussworksllc.net/our-team",
+     "source_evidence": "The firm's own team page. He owns the plant floor.",
+     "decider": true
+    },
+    {
+     "name": "Mike Bellows",
+     "role": "Partner",
+     "source_url": "https://www.trussworksllc.net/our-team"
+    },
+    {
+     "name": "Tony Urban",
+     "role": "Partner",
+     "source_url": "https://www.trussworksllc.net/our-team"
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -28666,12 +29037,12 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "9795670400",
+   "phone_label": "the line published against every location",
+   "phone_source": "https://www.trussworksllc.net/locations",
+   "phone_rule": "the page publishes several and designates none",
    "phone_more": [],
-   "phone_note": null,
+   "phone_note": "The firm prints this one line against all eight of its locations, so it is a central number rather than the Caldwell plant.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -28709,9 +29080,12 @@
    "cell": "clear|partial",
    "chain": "panel",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Don Groom",
+    "Justin Groom"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -28727,7 +29101,15 @@
     {
      "name": "David Veazey",
      "role": "President",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Veazey%20Veazey%20Enterprises"
+     "linkedin_url": "https://www.linkedin.com/in/david-veazey-0b585b17/",
+     "li_evidence": "His profile headline carries the title, and he writes the Mason Contractors Association interview under his own byline. The firm's own site names nobody.",
+     "decider": true
+    },
+    {
+     "name": "Sharon Stelter",
+     "role": "Vice President",
+     "source_url": "https://members.asaonline.com/directory/Details/veazey-enterprises-inc-542938",
+     "source_evidence": "The American Subcontractors Association directory."
     }
    ],
    "key_projects": [],
@@ -28766,10 +29148,10 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "7136956500",
+   "phone_label": "main line",
+   "phone_source": "https://vzmasonry.com/",
+   "phone_rule": "a tel: link in the site header or footer, so on every page",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -28809,9 +29191,11 @@
    "cell": "clear|partial",
    "chain": "masonry",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "David Veazey"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -28827,7 +29211,9 @@
     {
      "name": "Gerald Guzman",
      "role": "President",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Gerald%20Guzman%20Winco%20Masonry"
+     "source_url": "https://members.agchouston.org/directory/Details/winco-masonry-inc-2123266",
+     "source_evidence": "The AGC Houston member directory, which is the only non-aggregator source naming him. Winco's own site publishes no leadership at all: the only people on it are three clients in testimonials.",
+     "decider": true
     }
    ],
    "key_projects": [],
@@ -28870,10 +29256,10 @@
    },
    "holds": 2,
    "capital_mark": "partial",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "2813542515",
+   "phone_label": "the only number on the firm's own site",
+   "phone_source": "http://www.wincomasonry.com/",
+   "phone_rule": "the page publishes one number",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -28913,9 +29299,11 @@
    "cell": "clear|partial",
    "chain": "masonry",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Gerald Guzman"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -28964,12 +29352,18 @@
    },
    "holds": 2,
    "capital_mark": "fail",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
-   "phone_note": null,
+   "phone": "2817991501",
+   "phone_label": "call or text",
+   "phone_source": "https://txlitegaugesteel.com/",
+   "phone_rule": "the page publishes several and designates none",
+   "phone_more": [
+    {
+     "digits": "8324558883",
+     "label": "framing packages",
+     "source": "https://txlitegaugesteel.com/inquiry.html"
+    }
+   ],
+   "phone_note": "Two numbers, neither designated the main line, and the site never states a city. The firm's own social accounts put it in Rosharon.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -29002,6 +29396,7 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "people_absent": "The firm names nobody on any page: not the home page, the about panel, the FAQ or the inquiry page, and no name surfaced in search. It does not state a city either.",
    "vol": null,
    "short": "Texas Lite Gauge Steel MFG",
    "cell": "partial|clear",
@@ -29151,7 +29546,26 @@
    "homepage_url": "https://www.tealstonelp.com/",
    "synopsis": "A residential concrete contractor pouring single-family foundations and flatwork for production builders, as a subsidiary of Sterling Infrastructure, a publicly traded infrastructure group. Its own residential page records more than 10,000 slabs placed annually, 500 million dollars of bonding capacity, and more than 2,000 home foundations placed for D.R. Horton across more than 20 communities. Sterling's own site states that Tealstone builds foundations for single family homes throughout the Dallas-Fort Worth, Houston and Phoenix areas.",
    "key_stat": "10,000-plus slabs placed a year",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Gary Engasser",
+     "role": "President",
+     "linkedin_url": "https://www.linkedin.com/in/gary-engasser-1b39b219/",
+     "li_evidence": "Named as a co-founder staying with the company in Sterling's own acquisition release of 3 April 2017, filed with the SEC, and carried as president on the firm's own leadership page. President of the operating company rather than a Sterling corporate officer.",
+     "decider": true
+    },
+    {
+     "name": "Rick Callihan",
+     "role": "Vice President",
+     "source_url": "https://www.tealstonelp.com/who-we-are/"
+    },
+    {
+     "name": "Logan Lippoldt",
+     "role": "General Superintendent",
+     "source_url": "https://members.ghba.org/memberdirectory/Details/tealstone-residential-concrete-1307510",
+     "source_evidence": "The Greater Houston Builders Association lists him as the primary contact at Tealstone's Houston address on Fernbush Drive. A superintendent executes a specification rather than choosing one, and he is the named Houston contact at a firm whose leadership is in Denton."
+    }
+   ],
    "key_projects": [
     {
      "name": "D.R. Horton foundations",
@@ -29200,12 +29614,18 @@
    },
    "holds": 1,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
-   "phone_more": [],
-   "phone_note": null,
+   "phone": "9403832887",
+   "phone_label": "Denton office, the only number on the firm's own site",
+   "phone_source": "https://www.tealstonelp.com/contact-us/",
+   "phone_rule": "the page publishes one number",
+   "phone_more": [
+    {
+     "digits": "9402686691",
+     "label": "the number registered against the Houston address",
+     "source": "https://members.ghba.org/memberdirectory/Details/tealstone-residential-concrete-1307510"
+    }
+   ],
+   "phone_note": "The firm's own site publishes only the Denton office. The Greater Houston Builders Association carries a Houston address on Fernbush Drive against a second number, which also has a Denton area code.",
    "phone_absent": null,
    "group": "trade",
    "tier": "W",
@@ -29243,9 +29663,11 @@
    "cell": "clear|fail",
    "chain": "slab",
    "clears": 1,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Gary Engasser"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -29257,7 +29679,14 @@
    "homepage_url": "https://trussway.com/products/",
    "synopsis": "A Houston-headquartered manufacturer of prefabricated wall panels, roof trusses, floor trusses, components and rough openings, weighted toward multifamily, founded 1972 and running six manufacturing facilities with about $340 million of annualised sales, 1,000 employees and more than 340 customer accounts. Builders FirstSource acquired it in 2022. Its own product page states that prefabricated wall panels save time on the job site, reduce waste and increase structural quality.",
    "key_stat": "About $340 million in sales, 1,000 employees",
-   "principals": [],
+   "principals": [
+    {
+     "name": "Brandon Buskohl",
+     "role": "Assistant General Manager",
+     "linkedin_url": "https://www.linkedin.com/in/brandon-buskohl-40649a75/",
+     "li_evidence": "His profile headline names Trussway Manufacturing as a Builders FirstSource company, so it is current. An assistant general manager is below the bar this deck sets for a decision-maker, and he is the only plant-level leader the firm could be shown to have: trussway.com presents a certificate chain that fails verification through every route, so nothing on it could be read."
+    }
+   ],
    "key_projects": [],
    "capital_signals": [],
    "scores": {
@@ -29298,10 +29727,10 @@
    },
    "holds": 1,
    "capital_mark": "clear",
-   "phone": null,
-   "phone_label": null,
-   "phone_source": null,
-   "phone_rule": null,
+   "phone": "7136916900",
+   "phone_label": "Houston, Alcorn Street",
+   "phone_source": "https://www.sbcacomponents.com/tmat-directory/trussway",
+   "phone_rule": "the page labels it",
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
@@ -29336,6 +29765,9 @@
    "company_li_note": null,
    "team_url": null,
    "team_note": null,
+   "card_notes": [
+    "trussway.com presents a certificate chain that fails verification through every route tried, so nothing on the firm's own site could be read."
+   ],
    "vol": null,
    "short": "Trussway Manufacturing",
    "cell": "clear|fail",
@@ -29543,11 +29975,13 @@
    "phone_more": [
     {
      "digits": "2144207900",
-     "label": "Dallas"
+     "label": "Dallas",
+     "source": null
     },
     {
      "digits": "5125068000",
-     "label": "Austin"
+     "label": "Austin",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -29710,7 +30144,8 @@
    "phone_more": [
     {
      "digits": "2814478100",
-     "label": null
+     "label": null,
+     "source": null
     }
    ],
    "phone_note": null,
@@ -29841,7 +30276,8 @@
    "phone_more": [
     {
      "digits": "7136811114",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -30188,15 +30624,18 @@
    "phone_more": [
     {
      "digits": "5125381520",
-     "label": "Austin office"
+     "label": "Austin office",
+     "source": null
     },
     {
      "digits": "2104688241",
-     "label": "San Antonio office"
+     "label": "San Antonio office",
+     "source": null
     },
     {
      "digits": "6026105100",
-     "label": "Phoenix office"
+     "label": "Phoenix office",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -30322,7 +30761,8 @@
    "phone_more": [
     {
      "digits": "9369307739",
-     "label": "as printed elsewhere on the same page"
+     "label": "as printed elsewhere on the same page",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -30974,7 +31414,8 @@
    "phone_more": [
     {
      "digits": "7133330811",
-     "label": "published beside the chief operating officer"
+     "label": "published beside the chief operating officer",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -31098,19 +31539,23 @@
    "phone_more": [
     {
      "digits": "9793378293",
-     "label": "Brazos Valley office and model"
+     "label": "Brazos Valley office and model",
+     "source": null
     },
     {
      "digits": "4699023200",
-     "label": "Dallas and Fort Worth office"
+     "label": "Dallas and Fort Worth office",
+     "source": null
     },
     {
      "digits": "9727327800",
-     "label": "Dallas and Fort Worth office"
+     "label": "Dallas and Fort Worth office",
+     "source": null
     },
     {
      "digits": "6154864003",
-     "label": "Nashville office"
+     "label": "Nashville office",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -31221,7 +31666,8 @@
    "phone_more": [
     {
      "digits": "7135410661",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -31903,23 +32349,28 @@
    "phone_more": [
     {
      "digits": "8323445000",
-     "label": "Houston Central and Houston Southeast, Richmond"
+     "label": "Houston Central and Houston Southeast, Richmond",
+     "source": null
     },
     {
      "digits": "9367776600",
-     "label": "Houston North, Conroe"
+     "label": "Houston North, Conroe",
+     "source": null
     },
     {
      "digits": "2815662100",
-     "label": "Houston Southwest, Richmond"
+     "label": "Houston Southwest, Richmond",
+     "source": null
     },
     {
      "digits": "9367776656",
-     "label": "fax, Houston North"
+     "label": "fax, Houston North",
+     "source": null
     },
     {
      "digits": "9793930810",
-     "label": "Brazos Valley, College Station"
+     "label": "Brazos Valley, College Station",
+     "source": null
     }
    ],
    "phone_note": "The contact page lists a division office in every state the builder operates in. The Houston entries are above.",
@@ -32597,11 +33048,13 @@
    "phone_more": [
     {
      "digits": "2815983000",
-     "label": "Houston, customer care"
+     "label": "Houston, customer care",
+     "source": null
     },
     {
      "digits": "2816198241",
-     "label": "Houston, online sales manager"
+     "label": "Houston, online sales manager",
+     "source": null
     }
    ],
    "phone_note": "The contact page gives each division an office address and two numbers under those two headings. The Houston office is on Briarpark Drive.",
@@ -33619,7 +34072,8 @@
    "phone_more": [
     {
      "digits": "9792607000",
-     "label": "College Station"
+     "label": "College Station",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -34594,7 +35048,8 @@
    "phone_more": [
     {
      "digits": "7137829522",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,
@@ -34990,7 +35445,8 @@
    "phone_more": [
     {
      "digits": "7136212999",
-     "label": "fax"
+     "label": "fax",
+     "source": null
     }
    ],
    "phone_note": null,

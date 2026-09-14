@@ -26,6 +26,11 @@ __FONTS__
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
+/* Selected text came up in the browser's default blue, which is the one colour
+   on this page nobody chose. Ink on orange reads at 5.7:1; white on orange is
+   3.3:1 and fails, which is why the highlight keeps the dark text. */
+::selection{background:var(--orange);color:var(--ink)}
+::-moz-selection{background:var(--orange);color:var(--ink)}
 [hidden]{display:none!important}
 /* The ground. A grain dot, a masked grid and three soft washes that drift on a
    slow loop. Same device as the Americas deck, translated to the light palette:
@@ -1810,7 +1815,8 @@ function firmPage(t){
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
     '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
   h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'+
-    (t.web_absent?'<p class="note">'+esc(t.web_absent)+'</p>':'')));
+    (t.web_absent?'<p class="note">'+esc(t.web_absent)+'</p>':'')+
+    ((t.card_notes||[]).map(function(x){return '<p class="note">'+esc(x)+'</p>';}).join(''))));
 
   /* Who, then what to dial. The two were one section in Build 56 and the
      header lied: it said Who to call and the first thing under it was a
@@ -1822,6 +1828,11 @@ function firmPage(t){
     if(t.company_li_note) notes+='<p class="note">'+esc(t.company_li_note)+'</p>';
     if(t.team_note) notes+='<p class="note">'+esc(t.team_note)+'</p>';
     h.push(section('Who to call',ppl+notes));
+  }else if(t.people_absent){
+    /* A blank here meant two different things and looked the same: the firm
+       publishes nobody, or nobody looked. This says which. */
+    h.push(section('Who to call','<p class="verdict">Nobody is published.</p>'+
+      '<p class="note">'+esc(t.people_absent)+'</p>'));
   }
   h.push(section('Phone numbers',phoneBlock(t)));
 

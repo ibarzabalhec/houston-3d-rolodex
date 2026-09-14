@@ -101,7 +101,7 @@ for t in T:
     people = t.get("principals") or []
     if people:
         for p in people:
-            r = dict(base); r["name"] = p["name"]; r["title"] = p["role"]
+            r = dict(base); r["name"] = p["name"]; r["title"] = p.get("role") or ""
             r["li"] = p.get("linkedin_url") or ""
             r["find"] = p.get("find_url") or ""
             r["dec"] = "YES" if p.get("decider") else ""

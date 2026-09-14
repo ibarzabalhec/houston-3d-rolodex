@@ -42,11 +42,12 @@ import audit4 as AUDIT4
 from trades2 import (WALL, WALL_IDS, CELL as WALL_CELL, CELL_ORDER,
                      CELL_LABEL, CELL_NOTE)
 import supply as SUPPLY
+import wall_people as WP
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 62
+BUILD = 63
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -614,6 +615,69 @@ if _tell:
         print("   " + _s)
     raise SystemExit("FAILED: a role string claims a page and the card does not link it")
 
+# Build 63. The contact layer for the 28 records Build 62 added. It shipped
+# with 21 people between them, no profile, no source page, no decision-maker and
+# no number, and 15 of the 28 named nobody at all. Three names come off here as
+# well: a firm published three executives that corroborate nowhere and read as
+# website template filler.
+for t in targets:
+    tid = t["target_id"]
+    if tid in WP.PEOPLE:
+        t["principals"] = [p for p in t["principals"]
+                           if (tid, p["name"]) not in WP.DROP_PEOPLE]
+        for _n, _r, _li, _su, _ev, _dec in WP.PEOPLE[tid]:
+            _p = next((x for x in t["principals"] if x["name"] == _n), None)
+            if _p is None:
+                _p = {"name": _n}
+                t["principals"].append(_p)
+            if _r:
+                _p["role"] = _r
+            # Texan Pumpers publishes no leadership and the one person its site
+            # can be tied to has no title on any page or profile. An empty role
+            # is the honest record; inventing one would be worse.
+            _p.setdefault("role", "")
+            if _li:
+                _p["linkedin_url"], _p["li_evidence"] = _li, _ev
+            elif _su:
+                _p["source_url"], _p["source_evidence"] = _su, _ev
+            if _dec:
+                _p["decider"] = True
+            _p.pop("find_url", None)
+    if tid in WP.NO_PEOPLE:
+        t["people_absent"] = WP.NO_PEOPLE[tid]
+    for _f in WP.FLAGS.get(tid, []):
+        t.setdefault("card_notes", []).append(_f)
+
+# Every entry in the contact layer has to name a card and a person that exist.
+_wpb = ([k for k in WP.PEOPLE if k not in {t["target_id"] for t in targets}]
+        + [k for k in WP.PHONE if k not in {t["target_id"] for t in targets}])
+for (_tid, _nm) in WP.DROP_PEOPLE:
+    if any(p["name"] == _nm for t in targets if t["target_id"] == _tid
+           for p in t["principals"]):
+        _wpb.append("%s still carries %s, which was dropped" % (_tid, _nm))
+if _wpb:
+    for _b in _wpb:
+        print("   %s" % _b)
+    raise SystemExit("FAILED: the contact layer names something that is not on the deck")
+
+# A roster card with nobody on it has to say why. Build 62 shipped fifteen
+# cards with no contact and not one of them said whether the firm publishes no
+# leadership or whether nobody had looked. Those are different facts and a
+# reader cannot tell them apart from a blank. The website absence has followed
+# this rule since Build 59; the contact absence follows it now.
+_pa = []
+for t in targets:
+    if t.get("group") == "out":
+        continue
+    if not t["principals"] and not t.get("people_absent"):
+        _pa.append("%s names nobody and does not say why" % t["target_id"])
+    if t["principals"] and t.get("people_absent"):
+        _pa.append("%s says it names nobody and names somebody" % t["target_id"])
+if _pa:
+    for _b in _pa:
+        print("   " + _b)
+    raise SystemExit("FAILED: a card is silent about why it has no contact")
+
 # A record cannot both carry a website and say it has none, and a record with no
 # website has to say why. The three firms that never had a site were flagged and
 # three more with the same condition were not, which is how the deck came to
@@ -642,15 +706,25 @@ _RULE = {
 }
 for t in targets:
     tid = t["target_id"]
-    if tid in PHONES.PHONE:
-        _d, _lab, _src, _rule = PHONES.PHONE[tid]
+    # Build 63. The wall supply chain shipped with no numbers at all, so the
+    # 28 records added in Build 62 read the same tables from their own pass.
+    _pn = dict(PHONES.PHONE); _pn.update(WP.PHONE)
+    _mo = dict(PHONES.MORE); _mo.update(WP.MORE)
+    _nt = dict(PHONES.NOTE); _nt.update(WP.NOTE)
+    if tid in _pn:
+        _d, _lab, _src, _rule = _pn[tid]
         t["phone"], t["phone_label"] = _d, _lab
         t["phone_source"], t["phone_rule"] = _src, _RULE[_rule]
     elif tid in PHONES.NO_MAIN:
         t["phone_source"], t["phone_rule"] = PHONES.NO_MAIN[tid], _RULE[5]
-    t["phone_more"] = [{"digits": _d, "label": _l}
-                       for _d, _l in PHONES.MORE.get(tid, [])]
-    t["phone_note"] = PHONES.NOTE.get(tid)
+    # A second number may be published on a different page from the main line,
+    # so an entry can carry its own source. Without it the deck cites a number
+    # to a page that does not have it, which is the error this layer exists to
+    # stop, one level down.
+    t["phone_more"] = [{"digits": _e[0], "label": _e[1],
+                        "source": _e[2] if len(_e) > 2 else None}
+                       for _e in _mo.get(tid, [])]
+    t["phone_note"] = _nt.get(tid)
     t["phone_absent"] = PHONES.ABSENT.get(tid)
 
 # A number with no page behind it is the thing this whole layer exists to
@@ -947,12 +1021,15 @@ DATA = {
    [str(g["adopter"]), "already printing, with a competitor", False, {"group": ["adopter"]}],
    [str(g["trade"]), "contractors who build the wall", False, {"group": ["trade"]}],
  ],
- "sub": "Three counts per firm. Repetition: builds the same plans, in one place. Printer fit: one or two "
-        "printers would cover it. Track record: has paid for a new building method before. The first two "
-        "place a firm on the grid; the third is the chip colour. Both axes run outward from the top left, "
-        "so the first cell holds the firms that clear both counts, and inside every cell the largest "
-        "published builder is first. Open a firm for the evidence, add it to a call list, and export the "
-        "list to Excel or paper.",
+ # Build 63. This ran to five sentences and four of them described what the
+ # page already shows. The two grid axes print their own definitions on the
+ # grid, so the sub was repeating them verbatim four hundred pixels above. The
+ # chip colour is in the legend. The sort order is visible in the chips, which
+ # carry the figure they are sorted on. And the last sentence was an instruction
+ # manual for three buttons that are on screen. What is left is the only thing a
+ # reader cannot get from looking: what this document measures.
+ "sub": "Three counts per firm: repetition, printer fit, and a track record of paying for a new "
+        "building method.",
 
  "axes": [
    axis_row("repeatability", "Repetition", ""),

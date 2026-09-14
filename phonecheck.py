@@ -109,8 +109,25 @@ def ships_numbers(vis, raw):
     return bool(ANY.search(vis)) or bool(re.search(r'href=["\']tel:', raw, re.I))
 
 
+class _Merged:
+    """phones.py and wall_people.py, read as one table.
+
+    Build 62 added 28 records and Build 63 gave them numbers, and those live in
+    their own module beside the people they belong to. This gate checks every
+    number the deck prints, so it has to read both. A number that is only in one
+    file is a number nothing tests.
+    """
+    def __init__(self, a, b):
+        self.PHONE = dict(a.PHONE); self.PHONE.update(b.PHONE)
+        self.MORE = dict(a.MORE); self.MORE.update(b.MORE)
+        self.NO_MAIN = dict(a.NO_MAIN)
+        self.VERIFIED = dict(a.VERIFIED); self.VERIFIED.update(b.VERIFIED)
+        self.ABSENT = dict(a.ABSENT)
+
+
 def main():
-    import phones as P
+    import phones as _P, wall_people as _WP
+    P = _Merged(_P, _WP)
     only = [a for a in sys.argv[1:] if a.startswith("HOU-")]
 
     # Every number the deck prints, and the page it is cited to. A number in
@@ -124,14 +141,14 @@ def main():
     for tid, (d, lab, url, _rule) in P.PHONE.items():
         want(tid, d, lab or "main line", url)
     for tid, url in P.NO_MAIN.items():
-        for d, lab in P.MORE.get(tid, []):
-            want(tid, d, lab or "no label", url)
+        for e in P.MORE.get(tid, []):
+            want(tid, e[0], e[1] or "no label", (e[2] if len(e) > 2 else None) or url)
     for tid, extra in P.MORE.items():
         if tid in P.NO_MAIN:
             continue
         url = P.PHONE[tid][2]
-        for d, lab in extra:
-            want(tid, d, lab or "no label", url)
+        for e in extra:
+            want(tid, e[0], e[1] or "no label", (e[2] if len(e) > 2 else None) or url)
 
     n = sum(len(v) for v in jobs.values())
     print("checking %d numbers across %d pages\n" % (n, len(jobs)))

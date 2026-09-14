@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 62 · 2026-09-14
+Build 63 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -589,6 +589,86 @@ on that mark carries a caveat. Both labels now say which.
 
 **One thing in the review did not hold.** GreenEco's George Kopecky was reported
 as having no link at all. He has a LinkedIn profile, and it is on the card.
+
+## Build 63: the 28 new records could not be called
+
+Build 62 added 28 firms and shipped them as a list of company names. Between
+them they carried 21 people, **zero LinkedIn profiles, zero source pages, zero
+decision-maker marks and zero phone numbers**, and **fifteen of the 28 named
+nobody at all**. Builders FirstSource, Tealstone, Brundage-Bone, Trussway and
+Omega, several of the best-fitting firms on the deck, had no human on them.
+
+Underneath that sat the same failure Builds 59 through 61 were all about. The
+stat strip prints **"43 with a decision-maker named."** The number did not
+change, so nothing flagged. But it was **43 of 96 at Build 61 and 43 of 124 at
+Build 62**: the deck's most-probed statistic fell from 45 percent to 35 and the
+page read identically, because the strip prints an absolute where the meaning is
+a proportion. Contacts with neither a profile nor a page went from 14 to 35 at
+the same time. The roster grew by 29 percent and got worse at the one thing a
+rolodex is for.
+
+Four sweeps went back over the 28, and **three of them corrected something
+already shipped**, which is the argument for the pass rather than for trusting
+the first one.
+
+**DSRS Steel published three executives who are probably not people.** David S.
+R. Stevens, Michael Henderson and Sarah Miller appear under a heading reading
+Expert Leadership Texas Roots on the firm's own site and corroborate nowhere: no
+profile, no coverage, no second page. The contact address the same site
+publishes is dshultis@dsrssteel.com, and its telephone line is shared with DSRS
+Development, whose page names **Dean Shultis and Ralph Sharp** as founders. DSRS
+is their two surnames. The three names read as unreplaced website template
+filler and they are off the card. This deck shipped three names that were
+probably never people, and the lesson is that a name on a firm's own site is not
+self-corroborating.
+
+**Tindall's Texas general manager changed on 5 August 2025.** Greg Elliott was
+the outgoing one, and the card quoted him, so it pointed at last year's
+decision-maker. Cecil Casinger has the seat. Elliott's own profile still carries
+the old title, which is on the card as a warning.
+
+**Heldenfels' own about page is stale.** It still says Senior Vice President and
+General Manager; Metromont's acquisition release says President and Chief
+Executive Officer and that he continues in it. The deck was repeating the stale
+title from the firm's own site.
+
+Two more findings change the pitch rather than the record. **All About Concrete
+was bought by High Street Capital in August 2026**, with its founder staying on
+as chief executive, so a sponsor now sits behind the signature. And **Wells is
+under a pending KPS Capital Partners acquisition**. Both are moments when a
+capital budget gets rewritten and both are on their cards.
+
+After the pass, the 28 carry **54 people, 21 LinkedIn profiles, 32 source pages,
+22 decision-makers and 28 phone numbers**, and **two firms name nobody** instead
+of fifteen. The roster stat is **63 of 124, 51 percent**, better than the 45
+percent it stood at before Build 62 broke it.
+
+**Three gates came out of this, because the round should not have been
+necessary.**
+
+- **A card that names nobody has to say why.** Build 62 shipped fifteen silent
+  ones, and a blank meant two different things that look identical: the firm
+  publishes no leadership, or nobody looked. `people_absent` renders where the
+  contacts would, the way `web_absent` has since Build 59, and the build fails
+  if a roster card is silent. It caught three older cards too, at Smith Douglas,
+  Live Lone Star and Seaside Construction.
+- **The decision-maker share is checked, not just the count.** `verify.py` fails
+  if the strip's number stops matching the roster, and fails if fewer than 40
+  percent of records name a decision-maker, because adding records without
+  contacts makes this deck worse at its job while every number on the page
+  stays true.
+- **A second telephone number can carry its own page.** Four numbers were cited
+  to the page their record's main line sits on and are published elsewhere on
+  the same site. `phonecheck.py` caught all four, and the schema now lets an
+  extra number name its own source. That same gate also caught both Wells plants
+  printing one corporate switchboard, which is a shared office rather than a
+  slip, and it is off both records.
+
+`phonecheck.py` now reads the phone tables from both modules. It had been
+reading only the original one, so the 28 new numbers would have shipped
+untested. **161 numbers verified against the pages that publish them, zero
+missing.** `probe.py` probes 122 pages for 213 contacts with **zero names
+missing**, up from 181 contacts at Build 62.
 
 ## Build 62: the deck was not a contractor list, it was a tilt-up list
 

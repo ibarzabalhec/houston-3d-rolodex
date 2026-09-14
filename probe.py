@@ -45,6 +45,15 @@ SKIP_HOST = {"linkedin.com", "www.linkedin.com"}
 # these are reported as read rather than as unknown. Date them and say what you
 # saw, so the next person can tell a stale note from a fresh one.
 VERIFIED = {
+    # Build 63, with the contact layer for the wall supply chain.
+    "https://brundagebone.com/about/":
+        "2026-09-14: a Management block naming Jonas Barboza, Regional Director "
+        "South: Texas, and Mark Young, President US Concrete Pumping. Answers a "
+        "177-byte stub to a script and the full page to a browser.",
+    "https://www.dmagazine.com/publications/d-ceo/2023/august/third-generation-family-run-company-dee-brown-inc-has-had-a-hand-in-some-of-north-texas-most-iconic-buildings/":
+        "2026-09-14: D CEO, 24 August 2023. Quotes President and CEO Robert "
+        "Barnes III, and records that he took the seat in 2015 from his father "
+        "Robert Buddie Barnes Jr.",
     # Serves HTTP only and 302s an HTTPS request back to HTTP, so every fetcher
     # that upgrades the scheme loops and never reads it. curl, which does not
     # upgrade, gets the page.

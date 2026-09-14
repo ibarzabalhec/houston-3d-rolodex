@@ -280,6 +280,49 @@ if _sb:
 print("supply panel    : %d not on the grid, %d publishing no website at all"
       % (len(D.get("supply", [])), len(D.get("no_site", []))))
 
+# Build 63. A card with nobody on it has to say why. Build 62 added 28 records
+# with 21 people between them, no profile, no page, no decision-maker and no
+# number, and fifteen named nobody at all without a word about it. A blank meant
+# two different things that look identical: the firm publishes no leadership, or
+# nobody looked.
+_ab = []
+for _t in D["targets"]:
+    if _t["group"] == "out":
+        continue
+    if not _t["principals"] and not _t.get("people_absent"):
+        _ab.append("%s names nobody and does not say why" % _t["short"])
+    if _t["principals"] and _t.get("people_absent"):
+        _ab.append("%s says nobody is published and lists somebody" % _t["short"])
+if _ab:
+    for _b in _ab:
+        print("   " + _b)
+    raise SystemExit("FAILED: a card is silent about why it has no contact")
+_silent = [t for t in D["targets"] if t["group"] != "out" and not t["principals"]]
+print("contact absence : %d cards name nobody, each saying why" % len(_silent))
+
+# The decision-maker stat is the one a reader probes first, and it prints an
+# absolute where the meaning is a proportion. Build 62 grew the roster by 29
+# percent without adding a single decider, so the figure held at 43 while what
+# it meant fell from 45 percent of the deck to 35, and nothing on the page or in
+# this file noticed. The share is checked now.
+_dec = sum(1 for t in D["targets"] if t["group"] != "out" and t.get("has_decider"))
+_tot = D["stats"]["total"]
+_strip = [s for s in D["stat_strip"] if "decision-maker" in s[1]]
+_db = []
+if not _strip:
+    _db.append("the strip no longer carries the decision-maker count")
+elif int(_strip[0][0]) != _dec:
+    _db.append("the strip says %s deciders and the roster has %d" % (_strip[0][0], _dec))
+if _dec * 100 < _tot * 40:
+    _db.append("only %d of %d records name a decision-maker, %.0f percent. Adding "
+               "records without contacts makes this deck worse at the one thing it "
+               "is for." % (_dec, _tot, _dec / _tot * 100))
+if _db:
+    for _b in _db:
+        print("   " + _b)
+    raise SystemExit("FAILED: the decision-maker coverage does not hold")
+print("decider share   : %d of %d, %.0f%% of the roster" % (_dec, _tot, _dec / _tot * 100))
+
 
 async def main():
     problems = []
