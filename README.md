@@ -54,6 +54,6 @@ docs/                                                   served copies and the ha
 
 ## Handoff
 
-`internal/OPEN_ITEMS.md` is the unresolved research register. It is not published and sits outside the served directory. `docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open. `docs/ROADMAP.md` is the research plan for the next pass.
+`internal/OPEN_ITEMS.md` is the unresolved research register: 110 open notes across 75 firms. It is a working notebook rather than a claim about any firm, and it is deliberately not in this repository. `docs/HANDOFF.md` carries the build history, the audit findings and what changed, the research passes, and what is still open. `docs/ROADMAP.md` is the research plan for the next pass.
 
 Héctor Ibarzábal · September 2026

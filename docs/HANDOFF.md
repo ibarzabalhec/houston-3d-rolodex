@@ -2,6 +2,8 @@
 
 Build 58 · 2026-09-14
 
+The internal research register named in places below is kept out of this repository. It is a notebook of open questions, not a statement about any firm.
+
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
 ## Where it lives
