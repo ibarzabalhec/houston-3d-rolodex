@@ -47,7 +47,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 
 /* ------------------------------------------------------------------- type */
 .disp{font-weight:800;letter-spacing:-.04em;line-height:.94;text-wrap:balance}
-.lab{font:600 10px/1.4 var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--ink3)}
+.lab{font:700 12px/1.35 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink2)}
 .mono{font-family:var(--mono)}
 
 /* -------------------------------------------------------------------- nav */
@@ -331,9 +331,11 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .dial a{font:500 13px/1.4 var(--mono);color:var(--ink)}
 .dial a:hover{text-decoration:underline}
 .dial .q{font-size:12.5px;color:var(--ink3)}
-.dialmain{font:500 19px/1.3 var(--mono);color:var(--ink);letter-spacing:-.01em}
+.dialhead{margin-bottom:2px}
+.dialmain{display:inline-block;font:500 22px/1.25 var(--mono);color:var(--ink);letter-spacing:-.01em}
 .dialmain:hover{text-decoration:underline}
-.syn .q{font-size:13px;color:var(--ink3)}
+.dialmeta{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;margin-top:5px}
+.dialmeta .q{font-size:13px;color:var(--ink3)}
 .row{display:grid;grid-template-columns:186px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--rule)}
 .row>.body{min-width:0}
 @media(max-width:720px){.row{grid-template-columns:1fr;gap:12px;padding:22px 0}}
@@ -1563,9 +1565,12 @@ function phoneBlock(t){
   if(!t.phone && !more.length && !t.phone_absent) return '';
   var h='';
   if(t.phone){
-    h+='<p class="syn"><a class="dialmain" href="tel:+1'+esc(t.phone)+'">'+esc(dial(t.phone))+'</a>'+
-       (t.phone_label?'<span class="q"> '+esc(t.phone_label)+'</span>':'')+' '+
-       src(t.phone_source,'where this is published')+'</p>';
+    h+='<div class="dialhead"><a class="dialmain" href="tel:+1'+esc(t.phone)+'">'+
+       esc(dial(t.phone))+'</a>'+
+       '<div class="dialmeta">'+
+         (t.phone_label?'<span class="q">'+esc(t.phone_label)+'</span>':'')+
+         src(t.phone_source,'where this is published')+
+       '</div></div>';
   } else if(more.length){
     h+='<p class="note">The page publishes '+more.length+' numbers and names none of them '+
        'the main line, so none is printed as one. '+src(t.phone_source,'the page')+'</p>';
@@ -1617,18 +1622,18 @@ function firmPage(t){
     '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
   h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'));
 
-  /* A firm with a number and no named person still gets this section, and a
-     firm with neither says so. Before the number layer, an empty principals
-     list dropped the whole section and the card went quiet about it. */
-  var ppl=(t.principals||[]).slice().sort(function(x,y){return (y.decider?1:0)-(x.decider?1:0);})
-    .map(function(p){return personRow(p,false,t.group);}).join('');
-  var dialled=phoneBlock(t);
-  if(ppl||dialled){
+  /* Who, then what to dial. The two were one section in Build 56 and the
+     header lied: it said Who to call and the first thing under it was a
+     number, which is not a who. */
+  if((t.principals||[]).length){
+    var ppl=t.principals.slice().sort(function(x,y){return (y.decider?1:0)-(x.decider?1:0);})
+      .map(function(p){return personRow(p,false,t.group);}).join('');
     var notes='';
     if(t.company_li_note) notes+='<p class="note">'+esc(t.company_li_note)+'</p>';
     if(t.team_note) notes+='<p class="note">'+esc(t.team_note)+'</p>';
-    h.push(section('Who to call',dialled+ppl+notes));
+    h.push(section('Who to call',ppl+notes));
   }
+  h.push(section('Phone numbers',phoneBlock(t)));
 
   if((t.key_projects||[]).length){
     h.push(section('Evidence',t.key_projects.map(function(p){

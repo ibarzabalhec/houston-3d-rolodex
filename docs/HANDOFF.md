@@ -1,6 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 56 · 2026-09-13
+Build 57 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -529,6 +529,20 @@ title in either direction of containment, which catches the case where the recor
 carries an extra clause the team page does not. 208 evidence lines became 198. The
 187 that stayed say something the name, title and link do not: a title four years
 old, a person listed at the parent, a figure that came from someone's own post.
+
+## Build 57: the number gets its own row
+
+Build 56 put the phone block at the top of **Who to call**, and the heading then
+lied: the first thing under it was a number, which is not a who. The named
+people keep that heading. The numbers, their labels, the source link, the
+directory and the stated absences move to **Phone numbers**, a row of its own
+directly below, whose label is true in all three states.
+
+The main line sits on its own line at 22px with its label and its source link on
+a second line beneath it. The three ran together on one line before.
+
+Section labels in the left column go from 10px at weight 600 to 12px at weight
+700, one step up in contrast.
 
 ## Build 56: the number layer
 
