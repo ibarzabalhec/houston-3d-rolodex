@@ -79,7 +79,36 @@ def flatten(body):
     return re.sub(r"\s+", " ", s)
 
 
+# Pages that answer a script 403 and a browser the full page, read by hand, with
+# the figures that were on them. Without this the five Builder firm pages added
+# in Build 60 read as unfetchable, so every closing figure on those cards kept
+# counting as unsourced after it had been sourced. A page here is treated as read
+# and its text is the text below, which is deliberately only the figures: this is
+# a record of what was checked, not a cache of the page.
+BYHAND = {
+    "https://www.builderonline.com/firms/westin-homes/":
+        "2026-09-14: Westin Homes, Sugar Land TX. 2025 closings 1,062, revenue "
+        "$621 M, Builder 100 rank 60. 2024 closings 1,016, revenue $625 M, rank 67.",
+    "https://www.builderonline.com/firms/colina-homes/":
+        "2026-09-14: Colina Homes, Houston TX. 2025 closings 540, revenue $84 M, "
+        "rank 96. 2024 closings 552, revenue $129 M, rank 97.",
+    "https://www.builderonline.com/firms/sitterle-homes/":
+        "2026-09-14: Sitterle Homes, San Antonio TX. 2022 closings 372, revenue "
+        "$210 M. 2021 closings 323, revenue $185 M. 2022 is the last year carried, "
+        "and the page does not mention Houston.",
+    "https://www.builderonline.com/builder-100/builder-100-list/2026/":
+        "2026-09-14: 2026 The Top 100. First America Homes at rank 75, 750 "
+        "closings, $197 million, for 2025.",
+    "https://www.builderonline.com/firms/castlerock-communities/":
+        "2026-09-14: CastleRock Communities, Houston TX. 2025 closings 1,465, "
+        "revenue $617 M, rank 49. 2024 closings 1,465, revenue $645 M, rank 48. "
+        "No cumulative homes or communities count on the page.",
+}
+
+
 def fetch(url):
+    if url in BYHAND:
+        return flatten(BYHAND[url].encode("utf-8"))
     try:
         with urllib.request.urlopen(
                 urllib.request.Request(url, headers=UA), timeout=30, context=CTX) as r:
@@ -107,12 +136,23 @@ def variants(tok):
         if unit == "million":
             out |= {"%s million" % m.group(1), "%d,000,000" % int(n * 1e6) if n == int(n) else ""}
             out.add("{:,}".format(int(n * 1e6)) if n == int(n) else "")
+            # Build 60. Trade tables abbreviate: Builder prints "$621 M" where the
+            # card writes "$621 million". Five real, checked figures on three cards
+            # were reported unsourced on that difference alone, which is the kind
+            # of false positive that trains a reader to skim the report.
+            out |= {"%s m" % m.group(1), "%sm" % m.group(1),
+                    "%s mm" % m.group(1), "%s mil" % m.group(1)}
         if unit == "billion":
             out.add("{:,}".format(int(n * 1e9)) if n == int(n) else "")
+            out |= {"%s b" % m.group(1), "%sb" % m.group(1), "%s bn" % m.group(1)}
         if unit == "percent":
             out |= {"%s%%" % m.group(1), "%s per cent" % m.group(1)}
     if bare.isdigit():
         out.add("{:,}".format(int(bare)))
+        # Marketing counters round to thousands: CastleRock's own about page says
+        # "20k+ Homes since 2004" where the card says 20,000.
+        if int(bare) >= 1000 and int(bare) % 1000 == 0:
+            out |= {"%dk" % (int(bare) // 1000), "%d k" % (int(bare) // 1000)}
     return {v for v in out if v}
 
 

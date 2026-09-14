@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 59,
+ "build": 60,
  "last_updated": "2026-09-11",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-11",
  "kicker": "Greater Houston · business development screen for a construction printer · 2026-09-11",
@@ -104,7 +104,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "The top right cell holds <b>8 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 8 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>4</b> have no method record.",
+ "matrix_note": "The top left cell holds <b>8 firms</b> that repeat a plan set and build at a volume one or two machines would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the 13 that are in on all three counts in the strip above; 3 firms appear in both. Of the 8 here, <b>2</b> have paid for a method that was new at the time, Wan Bridge, plus Cole Klein, who is already printing with a competitor. <b>2</b> show partial evidence. The other <b>4</b> have no method record.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -575,11 +575,11 @@
   ],
   [
    "Who decides",
-   "43 of 96 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 43 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head. Across those firms 62 people carry the mark. 37 have a LinkedIn profile, 12 have a page that names them, and 13 have neither, at firms that publish no staff page at all. Those 13 are marked No link on the card and carry a search rather than a link."
+   "43 of 96 firms have a named vice president or director of construction, or head of purchasing, and 42 of those 43 can be reached as named without a caveat. The other 1 carry a decider who has left, who is listed at a different entity, or whose match is probable rather than confirmed; the caveat sits on the contact itself. That is the bar, because those roles can change a wall specification. Construction managers, superintendents and purchasing agents are excluded: they execute a specification rather than choose one. At a contractor the specification belongs to somebody else, so the person marked is the one who signs for equipment: the owner, the president or the division head. Across those firms 62 people carry the mark. 37 have a LinkedIn profile, 21 have a page that names them, and 4 have neither, at firms that publish no staff page at all. Those 4 are marked No link on the card and carry a search rather than a link."
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. A contact here is one of three things, and the card says which. 91 are a LinkedIn profile whose headline names the firm. 111 are a page on the firm's own site, or dated reporting, that names the person with a title. 39 are a name carried from a page that named them where the firm publishes no staff page to link, and those carry a search rather than a link. The sentence that identified them sits under the name in every case. No source URL, title or figure here was inferred. The only built links are the LinkedIn searches marked search, which run a keyword query rather than claim a page."
+   "Company filings, company pages and trade press. A contact here is one of three things, and the card says which. 91 are a LinkedIn profile whose headline names the firm. 136 are a page on the firm's own site, or dated reporting, that names the person with a title. 14 are a name carried from a page that named them where the firm publishes no staff page to link, and those carry a search rather than a link. The sentence that identified them sits under the name in every case. No source URL, title or figure here was inferred. The only built links are the LinkedIn searches marked search, which run a keyword query rather than claim a page."
   ],
   [
    "What is in the contractor section",
@@ -941,7 +941,7 @@
     "no": 0,
     "decider": 8,
     "confirm": 0,
-    "linked": 11
+    "linked": 12
    },
    {
     "group": "b",
@@ -952,7 +952,7 @@
     "no": 25,
     "decider": 11,
     "confirm": 0,
-    "linked": 25
+    "linked": 27
    },
    {
     "group": "trade",
@@ -963,7 +963,7 @@
     "no": 14,
     "decider": 15,
     "confirm": 0,
-    "linked": 17
+    "linked": 22
    },
    {
     "group": "creative",
@@ -19660,6 +19660,10 @@
     {
      "url": "https://www.firstamericahomes.com/blog/first-america-homes-construction-the-real-difference-is-in-the-walls/",
      "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -20025,10 +20029,10 @@
    "principals": [
     {
      "name": "Rame Hruska",
-     "role": "Co-founder and Chief Executive Officer, named in trade coverage",
+     "role": "Co-founder and Chief Executive Officer",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Rame%20Hruska%20Aura%20Dwellings%20and%20Hospitality",
-     "unlinked": true
+     "source_url": "https://www.marekbros.com/the-future-is-factory-built/",
+     "source_evidence": "Quoted in AGC Houston's Cornerstone for winter 2025 to 2026, reposted 25 February 2026, as a co-founder and chief executive of Aura Dwellings and Hospitality. The company's own site names no one."
     }
    ],
    "key_projects": [
@@ -20061,6 +20065,10 @@
     },
     {
      "url": "https://urbanland.uli.org/development-and-construction/top-down-construction-mass-timber-and-nanotechnology-reshape-building",
+     "date": null
+    },
+    {
+     "url": "https://www.marekbros.com/the-future-is-factory-built/",
      "date": null
     }
    ],
@@ -21540,7 +21548,7 @@
    ],
    "region": "Houston HQ / Fort Bend",
    "homepage_url": "https://www.c-rock.com/",
-   "synopsis": "Privately held homebuilder founded April 1, 2004 in Houston with more than 20,000 homes built across 300-plus communities and a 2020 milestone of over 1,600 closings in a single year. Ranked 49th on the 2025 USA Top Builders list. Daiwa House Industry holds 80 percent, acquired for about $408 million and announced 10 August 2021, funding expansion into Arizona, Tennessee and Alabama. Builder in Austin Point Phase I. Its own about page names two people: a chief executive and a senior executive vice president. No technology transfer, prefab pilot, board seat or joint statement between CastleRock and Daiwa House is on record, and CastleRock publishes no construction-method content.",
+   "synopsis": "Privately held homebuilder founded April 1, 2004 in Houston with more than 20,000 homes built across 300-plus communities and a 2020 milestone of over 1,600 closings in a single year. Its own about page ranks it 49th on the 2025 USA Top Builders list. Builder records 1,465 closings and $617 million in 2025, rank 49 on the Builder 100. Daiwa House Industry holds 80 percent, acquired for about $408 million and announced 10 August 2021, funding expansion into Arizona, Tennessee and Alabama. Builder in Austin Point Phase I. Its own about page names two people: a chief executive and a senior executive vice president. No technology transfer, prefab pilot, board seat or joint statement between CastleRock and Daiwa House is on record, and CastleRock publishes no construction-method content.",
    "key_stat": "20,000+ homes, 300+ communities",
    "principals": [
     {
@@ -21596,6 +21604,10 @@
     {
      "url": "https://shoppingcenterbusiness.com/signorelli-co-announces-phase-i-of-4700-acre-master-planned-development-near-houston/",
      "date": "2023-09-22"
+    },
+    {
+     "url": "https://www.builderonline.com/firms/castlerock-communities/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -21791,17 +21803,17 @@
    "principals": [
     {
      "name": "Franck Boursier",
-     "role": "Chief Executive Officer and co-founder, named in the firm's own media coverage",
+     "role": "Chief Executive Officer and co-founder",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Franck%20Boursier%20Everlasting%20Homes%20Building%20Group",
-     "unlinked": true
+     "source_url": "https://www.everlastinghomesgroup.com/",
+     "source_evidence": "The firm's own site carries him as chief executive and a founder in the business record it publishes."
     },
     {
      "name": "George Mock",
-     "role": "General Manager, named in trade coverage of the Braesvalley house",
+     "role": "General Manager",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=George%20Mock%20Everlasting%20Homes%20Building%20Group",
-     "unlinked": true
+     "source_url": "https://www.everlastinghomesgroup.com/",
+     "source_evidence": "The firm's own site carries him as general manager and a founder in the business record it publishes."
     }
    ],
    "key_projects": [
@@ -22026,15 +22038,16 @@
    "principals": [
     {
      "name": "Ker Thomson",
-     "role": "Founder and Designer, named on the firm's own about page",
+     "role": "Founder and Designer",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ker%20Thomson%20Nautilus%20Custom%20Homes",
-     "unlinked": true
+     "source_url": "https://www.nautiluscustomhomes.com/about-us",
+     "source_evidence": "The firm's own about page: in design and layout since the late 1990s, and in 2007 formed Nautilus's predecessor, Durable Residential Builders, out of a building-systems project with Texas A&M."
     },
     {
      "name": "Jim Kuchenbrod",
-     "role": "Construction lead, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jim%20Kuchenbrod%20Nautilus%20Custom%20Homes"
+     "role": "Construction lead",
+     "source_url": "https://www.nautiluscustomhomes.com/about-us",
+     "source_evidence": "The firm's own about page: a navy veteran, in all aspects of residential construction for more than thirty-five years."
     }
    ],
    "key_projects": [
@@ -22121,8 +22134,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.nautiluscustomhomes.com/about-us",
+   "team_note": "Two names, with paragraphs rather than titles.",
    "vol": null,
    "short": "Nautilus Custom Homes",
    "cell": "fail|partial",
@@ -22432,6 +22445,10 @@
     {
      "url": "https://www.westin-homes.com/communities/houston",
      "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/westin-homes/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -22712,6 +22729,10 @@
     },
     {
      "url": "https://www.colinahomes.com/communities",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/colina-homes/",
      "date": null
     }
    ],
@@ -23922,6 +23943,10 @@
     {
      "url": "https://sitterlehomes.com/about-us/",
      "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/sitterle-homes/",
+     "date": null
     }
    ],
    "audit_flags": [],
@@ -24234,11 +24259,10 @@
    "principals": [
     {
      "name": "Matt Zetlmeisl",
-     "role": "Owner, named on the firm's own homepage as having owned and operated it since 2002",
-     "source_evidence": "Matt Zetlmeisl has no LinkedIn profile. The firm's own site is the only source that names him.",
+     "role": "Owner",
+     "source_evidence": "The firm's own about page: owned and operated by Matt Zetlmeisl since 2002.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Matt%20Zetlmeisl%20ICF%20Constructors",
-     "unlinked": true
+     "source_url": "https://icfconstructors.com/about/"
     }
    ],
    "key_projects": [
@@ -24359,24 +24383,28 @@
    "principals": [
     {
      "name": "Eleazar Botello",
-     "role": "Founder, named on the firm's own site",
+     "role": "Founder",
      "linkedin_url": "https://www.linkedin.com/in/eleazarbotello/",
      "li_evidence": "Headline reads President at Botello Builders Corporation. Houston, Texas. The firm's own site calls him a founder and gives no title.",
-     "decider": true
+     "decider": true,
+     "source_url": "https://www.botellobuilders.com/",
+     "source_evidence": "The firm's own site: founded in early 2007 by Eleazar, Eden and Jose Botello, starting in residential work."
     },
     {
      "name": "Eden Botello",
-     "role": "Founder, named on the firm's own site",
+     "role": "Founder",
      "linkedin_url": "https://www.linkedin.com/in/eden-botello-28a5691b5/",
      "li_evidence": "Headline reads Operations Manager at Botello Builders Corporation. Houston, Texas.",
-     "decider": true
+     "decider": true,
+     "source_url": "https://www.botellobuilders.com/",
+     "source_evidence": "The firm's own site: founded in early 2007 by Eleazar, Eden and Jose Botello, starting in residential work."
     },
     {
      "name": "Jose Botello",
-     "role": "Founder, named on the firm's own site",
+     "role": "Founder",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jose%20Botello%20Botello%20Builders",
-     "unlinked": true
+     "source_url": "https://www.botellobuilders.com/",
+     "source_evidence": "The firm's own site: founded in early 2007 by Eleazar, Eden and Jose Botello, starting in residential work."
     }
    ],
    "key_projects": [
@@ -24467,8 +24495,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.botellobuilders.com/",
+   "team_note": "One line on the home page naming the three brothers who founded it.",
    "vol": null,
    "short": "Botello Builders",
    "cell": "clear|clear",
@@ -24938,23 +24966,27 @@
    "principals": [
     {
      "name": "Chris Richardson",
-     "role": "Listed under Senior Leadership on the firm's own team page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chris%20Richardson%20Blazer%20Building"
+     "role": "Founder",
+     "source_url": "https://www.blazerbuilding.com/team/chris-richardson/",
+     "source_evidence": "His own bio page on the firm's site: founded the company in 1978. The Who We Are page lists him under Senior Leadership."
     },
     {
      "name": "Chad Hillman",
-     "role": "Listed under Senior Leadership on the firm's own team page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Chad%20Hillman%20Blazer%20Building"
+     "role": "President, Blazer Building Southwest",
+     "source_url": "https://www.blazerbuilding.com/team/chad-hillman/",
+     "source_evidence": "His own bio page: president of Blazer Building Southwest, over operations, project management, financial oversight and relationships with owners, developers, lenders and subcontractors. Before it, vice president of construction, general superintendent and superintendent."
     },
     {
      "name": "Matt Fuqua",
-     "role": "Listed under Senior Leadership on the firm's own team page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Matt%20Fuqua%20Blazer%20Building"
+     "role": "Business Development",
+     "source_url": "https://www.blazerbuilding.com/team/matt-fuqua/",
+     "source_evidence": "His own bio page: business development, affordable and conventional multi-family and active adult housing, over twenty years with Blazer."
     },
     {
      "name": "Brian Henderson",
-     "role": "Listed under Senior Leadership and Construction Supervision on the firm's own team page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Brian%20Henderson%20Blazer%20Building"
+     "role": "Vice President of Construction",
+     "source_url": "https://www.blazerbuilding.com/team/brian-henderson/",
+     "source_evidence": "His own bio page: joined in 2014, served as assistant superintendent and superintendent, now vice president of construction. The Who We Are page lists him under both Senior Leadership and Construction Supervision."
     }
    ],
    "key_projects": [
@@ -25037,8 +25069,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.blazerbuilding.com/who-we-are/",
+   "team_note": "The roster is on the Who We Are page. It lists names under Senior Leadership and Construction Supervision and publishes no titles. Each name links to a bio page that does.",
    "vol": null,
    "short": "Blazer Building",
    "cell": "clear|partial",
@@ -25060,16 +25092,16 @@
    "principals": [
     {
      "name": "Trey Green",
-     "role": "Senior Vice President, Self Perform Group, Satterfield and Pontikes, named on the parent's own team page as overseeing Greco Structures, Rollcon, Rocket Pumping and Westway",
-     "source_evidence": "Trey Green is named on Satterfield and Pontikes' own team page and returns no LinkedIn result against the parent's name.",
+     "role": "Senior Vice President, Self Perform Group, Satterfield and Pontikes",
+     "source_evidence": "The parent's own team page: he oversees the Self Perform group of Greco Structures, Rollcon, Rocket Pumping and Westway Construction.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trey%20Green%20Greco%20Structures",
-     "unlinked": true
+     "source_url": "https://www.satpon.com/about/team/"
     },
     {
      "name": "George A. Pontikes Jr.",
      "role": "Chief Executive Officer and Chairman, Satterfield and Pontikes",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=George%20A.%20Pontikes%20Jr.%20Greco%20Structures"
+     "source_url": "https://www.satpon.com/about/team/",
+     "source_evidence": "The parent's own team page: he founded Satterfield and Pontikes with Tommy Satterfield in 1989."
     },
     {
      "name": "Thomas Valentine",
@@ -25177,8 +25209,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.satpon.com/about/team/",
+   "team_note": "The parent's roster. Greco Structures publishes none of its own.",
    "vol": null,
    "short": "Greco Structures",
    "cell": "clear|partial",
@@ -25202,18 +25234,21 @@
    "principals": [
     {
      "name": "David E. Harvey Sr.",
-     "role": "Founder, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20E.%20Harvey%20Sr.%20Harvey%20Cleary"
+     "role": "Founder",
+     "source_url": "https://www.harveycleary.com/about-us/",
+     "source_evidence": "The firm's own about page: David E. Harvey, Sr. and Gerald D. Hines founded it in 1957, and Harvey was already a proponent of tiltwall."
     },
     {
      "name": "David Harvey Jr.",
-     "role": "Took ownership in 1987, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=David%20Harvey%20Jr.%20Harvey%20Cleary"
+     "role": "Took ownership in 1987",
+     "source_url": "https://www.harveycleary.com/about-us/",
+     "source_evidence": "The firm's own about page: he and Joseph Cleary both started at Harvey, in 1977 and 1976, and both took ownership in 1987, renaming it Harvey Cleary."
     },
     {
      "name": "Joseph Cleary",
-     "role": "Took ownership in 1987, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Joseph%20Cleary%20Harvey%20Cleary"
+     "role": "Took ownership in 1987",
+     "source_url": "https://www.harveycleary.com/about-us/",
+     "source_evidence": "The firm's own about page: he and David Harvey, Jr. both took ownership in 1987, renaming Harvey Builders to Harvey Cleary."
     },
     {
      "name": "Scott Clarke",
@@ -25340,8 +25375,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.harveycleary.com/about-us/",
+   "team_note": "A company history rather than a roster. It names the founders and the two who bought the firm in 1987.",
    "vol": null,
    "short": "Harvey Cleary",
    "cell": "clear|partial",
@@ -25365,11 +25400,10 @@
    "principals": [
     {
      "name": "Travis Boone",
-     "role": "Chief Executive Officer, Orion Group Holdings, quoted in the firm's own release of 29 January 2024",
-     "source_evidence": "Travis Boone runs the listed parent, not the Houston concrete business.",
+     "role": "Chief Executive Officer, Orion Group Holdings",
+     "source_evidence": "Quoted as chief executive in the firm's own release of 29 January 2024, announcing that TAS Concrete Construction would trade as Orion.",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Travis%20Boone%20ORION",
-     "unlinked": true
+     "source_url": "https://www.oriongroupholdingsinc.com/investors/press-release/2024/29-01-2024-120203346"
     }
    ],
    "key_projects": [
@@ -25603,18 +25637,21 @@
    "principals": [
     {
      "name": "Steve Salverino",
-     "role": "Chief Executive Officer, named on the firm's own leadership page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steve%20Salverino%20Rino%20Construction"
+     "role": "Chief Executive Officer",
+     "source_url": "https://rino-con.com/leadership/",
+     "source_evidence": "The firm's own leadership page carries the title."
     },
     {
      "name": "Jacob Aswad",
-     "role": "President, named on the firm's own leadership page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jacob%20Aswad%20Rino%20Construction"
+     "role": "President",
+     "source_url": "https://rino-con.com/leadership/",
+     "source_evidence": "The firm's own leadership page carries the title."
     },
     {
      "name": "Justin Henderson",
-     "role": "Vice President, named on the firm's own leadership page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Justin%20Henderson%20Rino%20Construction"
+     "role": "Vice President",
+     "source_url": "https://rino-con.com/leadership/",
+     "source_evidence": "The firm's own leadership page carries the title."
     },
     {
      "name": "Jeff Rager",
@@ -25722,8 +25759,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://rino-con.com/leadership/",
+   "team_note": "Three officers, with titles. The page renders its roster from script, so a fetch returns none of the names.",
    "vol": null,
    "short": "Rino Construction",
    "cell": "clear|partial",
@@ -26532,18 +26569,21 @@
    "principals": [
     {
      "name": "Ryan Taylor",
-     "role": "Third generation, took leadership in 2001, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ryan%20Taylor%20T%26T%20Construction"
+     "role": "Third generation, assumed leadership in 2001",
+     "source_url": "https://tandtconstruction.com/about-us/",
+     "source_evidence": "The firm's own about page: C.A. Taylor started the firm in Pasadena in 1969, his son Jeff joined and it became Taylor and Taylor, and Jeff's son Ryan joined in 1988 and assumed leadership in 2001. The page uses first names after the founder and does not print the surname beside Ryan."
     },
     {
      "name": "Jeff Taylor",
-     "role": "Second-generation co-owner, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Jeff%20Taylor%20T%26T%20Construction"
+     "role": "Second-generation co-owner",
+     "source_url": "https://tandtconstruction.com/about-us/",
+     "source_evidence": "The firm's own about page: Jeff and his wife Dianna continued the family business as co-owners. The page uses first names after the founder."
     },
     {
      "name": "Dianna Taylor",
-     "role": "Second-generation co-owner, named on the firm's own about page",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Dianna%20Taylor%20T%26T%20Construction"
+     "role": "Second-generation co-owner",
+     "source_url": "https://tandtconstruction.com/about-us/",
+     "source_evidence": "The firm's own about page: Jeff and his wife Dianna continued the family business as co-owners. The page uses first names after the founder."
     }
    ],
    "key_projects": [
@@ -26622,8 +26662,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://tandtconstruction.com/about-us/",
+   "team_note": "A family history rather than a roster. It names the founder and then uses first names.",
    "clears": 0,
    "vol": null,
    "short": "T&T Construction",
@@ -26645,8 +26685,9 @@
    "principals": [
     {
      "name": "Victor Andrade",
-     "role": "Founder, named on the firm's own about page as having started the firm in 2003",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Victor%20Andrade%20Andrade%20Construction%20Companies"
+     "role": "Founder",
+     "source_url": "http://andradeconstructioncompanies.com/about-us/",
+     "source_evidence": "The firm's own about page: founded by Victor Andrade in 2003 in residential construction, into commercial in 2013."
     },
     {
      "name": "Eric Rice",
@@ -27005,10 +27046,10 @@
    "principals": [
     {
      "name": "Trent Mitchell",
-     "role": "Owner, named on the firm's own about page, after eighteen years selling ready-mix to the largest general contractors in Houston",
+     "role": "Owner",
      "decider": true,
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Trent%20Mitchell%20Silver%20Spur%20Concrete%20Contractors",
-     "unlinked": true
+     "source_url": "https://www.silverspurconcrete.com/about-silver-spur-concrete-contractors/",
+     "source_evidence": "The firm's own about page names him as owner and lists ExxonMobil World Headquarters, the Texas Children's maternity ward and Baylor College of Medicine among his commercial and industrial work."
     }
    ],
    "key_projects": [
@@ -27087,8 +27128,8 @@
    ],
    "company_li": null,
    "company_li_note": null,
-   "team_url": null,
-   "team_note": null,
+   "team_url": "https://www.silverspurconcrete.com/about-silver-spur-concrete-contractors/",
+   "team_note": "One name, the owner's.",
    "clears": 0,
    "vol": null,
    "short": "Silver Spur Concrete Contractors",

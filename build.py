@@ -38,11 +38,12 @@ import gap as GAP
 import audit as AUDIT
 import audit2 as AUDIT2
 import audit3 as AUDIT3
+import audit4 as AUDIT4
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
 from urllib.parse import quote
 
-BUILD = 59
+BUILD = 60
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -552,6 +553,60 @@ for t in targets:
             p["source_url"], p["source_evidence"] = _s
             p.pop("find_url", None)
 
+# Round four. It runs after round three because both write person sources, and
+# because the synopsis edits below have to be the last thing that touches the
+# prose: an exact-substring replacement is only safe against text nothing else
+# is still rewriting.
+for t in targets:
+    tid = t["target_id"]
+    for _u in AUDIT4.SOURCES.get(tid, []):
+        if not any(x.get("url") == _u for x in t["sources"]):
+            t["sources"].append({"url": _u, "date": None})
+    if tid in AUDIT4.TEAM_URL:
+        t["team_url"], t["team_note"] = AUDIT4.TEAM_URL[tid]
+    # The meta description was wrong for thirty builds because a sentence was
+    # typed once and the data moved. A replacement that has to find its own old
+    # text, exactly once, cannot go quietly stale: it fails the build instead.
+    for _old, _new in AUDIT4.SYNOPSIS.get(tid, []):
+        if t["synopsis"].count(_old) != 1:
+            raise SystemExit("FAILED: %s synopsis does not carry the text audit4 "
+                             "replaces, exactly once: %r" % (tid, _old[:60]))
+        t["synopsis"] = t["synopsis"].replace(_old, _new)
+    for p in t["principals"]:
+        _e = AUDIT4.PERSON.get((tid, p["name"]))
+        if _e:
+            p["role"], p["source_url"], p["source_evidence"] = _e
+            p.pop("find_url", None)
+
+# Every entry in audit4 names a person or a card that has to exist. A typo in a
+# key is otherwise a silent no-op, which is how a correction gets written, read,
+# reviewed and never applied.
+_ids = {t["target_id"] for t in targets}
+_pairs = {(t["target_id"], p["name"]) for t in targets for p in t["principals"]}
+_miss = ([k for k in AUDIT4.PERSON if k not in _pairs]
+         + [(i, "") for i in list(AUDIT4.SOURCES) + list(AUDIT4.TEAM_URL)
+            + list(AUDIT4.SYNOPSIS) if i not in _ids])
+if _miss:
+    for _m in _miss:
+        print("   audit4 names %s %s, which is not on the deck" % _m)
+    raise SystemExit("FAILED: audit4 has an entry that matches nothing")
+
+# A role string is a role. It is not the place to say where the role came from,
+# because a card that names its evidence in prose and carries no link is asking
+# a reader to take its word for something it could have shown him. Eighteen did.
+_tell = []
+for t in targets:
+    for p in t["principals"]:
+        _r = (p.get("role") or "").lower()
+        if any(s in _r for s in ("named on", "named in", "listed under", "quoted in",
+                                 "the firm's own", "own team page", "own about page")):
+            if not p.get("source_url"):
+                _tell.append("%s / %s: %s" % (t["target_id"], p["name"], p["role"][:70]))
+if _tell:
+    for _s in _tell:
+        print("   " + _s)
+    raise SystemExit("FAILED: a role string claims a page and the card does not link it")
+
 # A record cannot both carry a website and say it has none, and a record with no
 # website has to say why. The three firms that never had a site were flagged and
 # three more with the same condition were not, which is how the deck came to
@@ -785,7 +840,11 @@ def _n(k, one, many):
 # A description of the cell and of how it differs from the strip. Nothing about
 # what the work in Houston is; the reader draws that. Plurals agree at any count.
 MATRIX_NOTE = (
-    "The top right cell holds <b>%s</b> that repeat a plan set and build at a volume one or two machines "
+    # Build 60. This said "top right" for the life of the deck. The cell is the
+    # top left one, and the hero paragraph four hundred pixels above says so:
+    # both axes run outward from the top left. A reader checking one sentence
+    # against the other found the document wrong about its own diagram.
+    "The top left cell holds <b>%s</b> that repeat a plan set and build at a volume one or two machines "
     "would cover. The cell is placed on two counts and ignores the third, so it is not the same set as the "
     "%d that are in on all three counts in the strip above; %s in both. Of the %d here, <b>%d</b> "
     "%s paid for a method that was new at the time, %s. <b>%d</b> %s partial evidence. The other <b>%d</b> %s no "

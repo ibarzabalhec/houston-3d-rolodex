@@ -165,6 +165,58 @@ if _sb:
 print("contact evidence: %d linkedin, %d own page, %d neither, all three printed"
       % (_li, _sr, _nn))
 
+# The note under the grid said "the top right cell" for the life of the deck.
+# The cell is the top left one. The hero paragraph four hundred pixels above it
+# says so in words, so the front page contradicted itself, and a reader who
+# checked one sentence against the other found the document wrong about its own
+# diagram. Nothing caught it because the corner was typed, not derived.
+#
+# So derive it. The template walks both axes from the end of `order` down, which
+# means the first cell it emits is the last entry on each axis, and the grid is
+# three columns wide. That fixes the row and the column, and the row and the
+# column name the corner. If the order is ever reversed, or a row is added, this
+# recomputes and the sentence has to follow.
+_ord = D["matrix"]["order"]
+_first = "%s|%s" % (_ord[-1], _ord[-1])
+_rows = [t for t in D["targets"] if t.get("cell") == _first]
+_vert = "top" if len(_ord) > 1 else ""
+_horz = "left"
+_corner = ("the %s %s cell" % (_vert, _horz)).replace("  ", " ").strip()
+_note = D.get("matrix_note") or ""
+_nb = []
+if _first != "clear|clear":
+    _nb.append("the first cell drawn is %s, not the one that clears both counts" % _first)
+if _corner not in _note.lower():
+    _nb.append("the note does not call it %s" % _corner)
+for _bad in ("top right", "bottom left", "bottom right"):
+    if _bad != _corner[4:] and ("the %s cell" % _bad) in _note.lower():
+        _nb.append("the note calls it the %s cell" % _bad)
+if ("<b>%d " % len(_rows)) not in _note:
+    _nb.append("the note does not open on %d, the count in that cell" % len(_rows))
+if _nb:
+    for _b in _nb:
+        print("   " + _b)
+    raise SystemExit("FAILED: the note under the grid does not describe the grid")
+print("grid note       : %s, %d firms, both derived from the grid"
+      % (_corner, len(_rows)))
+
+# A role string that names a page has to carry that page. Eighteen contacts read
+# "named on the firm's own about page" with no link on the row, which is the
+# card telling a reader where to check and not letting him.
+_rb = []
+for _t in D["targets"]:
+    for _q in _t["principals"]:
+        _rl = (_q.get("role") or "").lower()
+        if any(s in _rl for s in ("named on", "named in", "listed under", "quoted in",
+                                  "own team page", "own about page", "the firm's own")):
+            if not _q.get("source_url"):
+                _rb.append("%s: %s claims a page and links none" % (_t["short"], _q["name"]))
+if _rb:
+    for _b in _rb:
+        print("   " + _b)
+    raise SystemExit("FAILED: a role string claims a page the card does not link")
+print("role strings    : none asserts a page without linking it")
+
 
 async def main():
     problems = []

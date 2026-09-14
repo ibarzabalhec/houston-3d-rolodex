@@ -1,8 +1,6 @@
 # Greater Houston Rolodex — handoff
 
-Build 59 · 2026-09-14
-
-The internal research register named in places below is kept out of this repository. It is a notebook of open questions, not a statement about any firm.
+Build 60 · 2026-09-14
 
 The tool is called **Rolodex**, not ICON. It is built in ICON's visual language and screens for the Titan, but it does not wear ICON's name. It is outward-facing: no build numbers, no research narration, no internal memos on the page.
 
@@ -591,6 +589,85 @@ on that mark carries a caveat. Both labels now say which.
 
 **One thing in the review did not hold.** GreenEco's George Kopecky was reported
 as having no link at all. He has a LinkedIn profile, and it is on the card.
+
+## Build 60: the cards that named their evidence and withheld the link
+
+Build 59 ended on a lesson rather than a fix: an outside reader found six real
+defects in one pass, and the gates found none of them, because every one was a
+sentence rather than a value. This round is that lesson applied. Nothing below
+was corrected by hand and left corrected. Each one became a check, and each check
+then found cases the review had missed.
+
+**The front page contradicted itself.** The note under the grid read *the top
+right cell holds 8 firms*. Eight firms do clear both counts. They are in the
+**top left** cell, and the hero paragraph four hundred pixels above says so in
+words: both axes run outward from the top left. A reader checking one sentence
+against the other found the document wrong about its own diagram. The corner was
+typed and the count was generated, so nothing compared them. `verify.py` now
+derives both from the grid — the template walks each axis from the end of
+`order`, which fixes the row and the column — and fails the build if the sentence
+names a different corner or a different count. Reverse the axis order and the
+sentence has to follow.
+
+**Eighteen contacts claimed a page and linked none.** Their role strings read,
+verbatim, *Founder, named on the firm's own about page* and *Listed under Senior
+Leadership on the firm's own team page*, with `source_url` null on every one.
+That is the card telling a reader exactly where to check and then not letting
+him: the same defect the reviewer caught in the Sources block, one level down.
+The role is a role again, the assertion moved into the evidence line, and the
+page is one click away. The build fails if a role string names a page the card
+does not carry — and the gate found **eight more** the review's list had missed,
+at Harvey Cleary, Botello Builders and Nautilus Custom Homes. Twenty-six in all.
+
+**Opening every one of those pages cost four claims.** Which is the argument for
+the round, because each was asserted with confidence and none was true:
+
+- **Blazer Building's roster is not a team page.** It is called Who We Are, and
+  it publishes names under Senior Leadership with **no titles at all**. Four
+  people were carried with the sentence "Listed under Senior Leadership" standing
+  in for a title. Each has an individual bio page on the same site that gives a
+  real one: Chris Richardson founded the firm in 1978, Chad Hillman is president
+  of Blazer Building Southwest, Brian Henderson is vice president of construction,
+  and Matt Fuqua is **business development** — the single most useful line on a
+  card in a business-development rolodex, and it was not on it.
+- **T&T Construction's about page never writes the names.** It names the founder,
+  C.A. Taylor, and then uses first names: Jeff, Dianna, Ryan. Three contacts
+  asserted a full name the page does not print. The evidence line now says what
+  the page says, and says that it uses first names.
+- **Silver Spur's owner lost a clause.** He was carried "after eighteen years
+  selling ready-mix to the largest general contractors in Houston". That is on
+  neither page the card cites. It is gone. What the page does carry, ExxonMobil
+  World Headquarters and Baylor College of Medicine among his work, is there
+  instead.
+- **Aura Dwellings' chief executive was sourced to a page no one can read.** The
+  Urban Land article answers 403 to every script, and the company's own site names
+  nobody at all: eight pages fetched, zero occurrences of the surname. Rame Hruska
+  is real, and an AGC Houston *Cornerstone* interview republished by Marek
+  Brothers carries the exact title, in bytes a script can check. That is the
+  citation now, and the evidence line says the company publishes no one.
+
+**Five cards named an outlet and cited nothing.** Westin, Colina, Sitterle, First
+America and CastleRock each say *Builder reports* this or *ranked Nth* that, and
+not one carried a `builderonline.com` link. The figures were right. They were
+assertions anyway. All five now carry the page — and one of the five was about to
+be filed against the wrong one: First America's firm page on builderonline does
+not say rank 75, it says rank 109, because it has not been updated. Rank 75 is on
+the 2026 Builder 100 list itself. Citing the firm page would have pointed a
+reader at a number that contradicts the card.
+
+**`figures.py` was reporting sourced figures as unsourced, on notation.** Builder
+prints `$621 M` where a card writes `$621 million`, and CastleRock's own page
+prints `20k+` where the card writes 20,000. Every one of those read as a figure
+on no page the card cites. The variant table now covers the abbreviations, and
+the five Builder pages are recorded in a `BYHAND` block with the figures that
+were read off them, the way `probe.py` records a page that refuses scripts. The
+unsourced count fell from **205 to 160**, and 45 of those were never findings.
+
+**Gates: five, all green.** `make` builds and verifies, `probe.py` reports zero
+names missing from the page cited for them across 153 readable contacts,
+`linkcheck.py` sweeps 595 URLs with none dead and no banned source,
+`figures.py` reports 160 of 783 figures unbound, and `phonecheck.py` holds 129
+numbers against the pages that publish them.
 
 ## Build 58: the field section gets links, and four of its claims do not survive them
 

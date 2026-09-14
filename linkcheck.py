@@ -55,7 +55,14 @@ BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            # landtejas.com answered scripts until Build 57 and now times them
            # out on every attempt. Opened by hand on 14 September 2026: the site
            # loads, and its footer still carries the number the deck holds.
-           "landtejas.com"}
+           "landtejas.com",
+           # Build 60. HTTP only, and it answers an HTTPS request with a 302 back
+           # to HTTP, so anything that upgrades the scheme loops. Read with curl
+           # on 14 September 2026: the about page is there and names the founder.
+           "andradeconstructioncompanies.com",
+           # Build 60. Marek Brothers answers a scripted HEAD with a 403 and a
+           # GET with the article. Read 14 September 2026.
+           "marekbros.com"}
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",

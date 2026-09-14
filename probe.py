@@ -45,6 +45,20 @@ SKIP_HOST = {"linkedin.com", "www.linkedin.com"}
 # these are reported as read rather than as unknown. Date them and say what you
 # saw, so the next person can tell a stale note from a fresh one.
 VERIFIED = {
+    # Serves HTTP only and 302s an HTTPS request back to HTTP, so every fetcher
+    # that upgrades the scheme loops and never reads it. curl, which does not
+    # upgrade, gets the page.
+    "http://andradeconstructioncompanies.com/about-us/":
+        "2026-09-14: 108KB, one name. Andrade Construction Companies was founded "
+        "by Victor Andrade in 2003, starting in residential construction.",
+    # Answers a script the full page most of the time and an empty body the rest,
+    # which is worse than a steady refusal: the same run reports a name found and
+    # then unreadable. Read on a run that returned it, and by hand.
+    "https://www.nautiluscustomhomes.com/about-us":
+        "2026-09-14: 5,709 words, two names. HUGH KER THOMSON, in design and "
+        "layout since the late 1990s, formed Nautilus's predecessor Durable "
+        "Residential Builders in 2007. JIM KUTCHENBROD, a navy veteran, in "
+        "residential construction for more than thirty-five years.",
     "https://burtonconstruction.com/leadership/":
         "2026-09-12: eight names. Shawn McAlpin CEO, Cullen Burton President.",
     "https://investor.lgihomes.com/corporate-governance/management":
