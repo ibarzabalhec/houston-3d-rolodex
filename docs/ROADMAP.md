@@ -1,6 +1,6 @@
 # Research roadmap · Greater Houston Rolodex
 
-For the next research session. Everything below is a research pass on the data modules, not a change to the page. Read `docs/HANDOFF.md` and `README.md` first. Build with `make`; it fails on any banned source, any unsourced figure it can detect, and any of about forty page checks.
+For the next research session. Everything below is a research pass on the data modules, not a change to the page. Read `docs/HANDOFF.md` and `README.md` first. Build with `make`; it fails on any banned source, any unsourced figure it can detect, and any of about eighty page checks. Four more gates run by hand and are not optional before a push: `probe.py` (a name must be in the bytes of the page cited for it), `linkcheck.py` (every source URL swept for status and for a banned host), `figures.py` (a figure must be in the bytes of the page cited for it), `phonecheck.py` (the same for phone digits).
 
 ## The rules that do not move
 
@@ -20,7 +20,11 @@ Run `make` first. It builds, writes the workbook and runs about fifty headless c
 
 Two faults in this file were both of the same kind, and a third of the same kind is the thing most likely to be there still: a section or a field was added to the page without being added to the code that fills it. The contractor reasons block was empty for two builds. Blank headline figures sat in a column for longer than that. When you add a section, a field or a count, grep for every place the existing ones are listed by name, and add a verifier check in the same commit.
 
-## Pass 2. The nationals as records
+## Pass 2. The nationals as records (done, Build 51)
+
+Run in Build 51. What follows is the original brief, kept because the same
+method applies to any national added later.
+
 
 D.R. Horton, Lennar, Pulte, KB Home, Highland, Tri Pointe and Trendmaker, Toll, Beazer, Long Lake, Saratoga, Rausch Coleman (now Lennar). Our own Johnson page lists several as "not screened". For each: Houston closings from Builder 100 or the 10-K segment table (the firm's own filing on its investor site, not a summary), the Houston division president and VP of construction from the firm's own division page or a dated release, where the wall assembly is decided (corporate or division, from the 10-K or a stated purchasing structure), and any printed-wall or method statement on record. Lennar's Wolf Ranch and D.R. Horton's Apis Cor investment are already in the field; the record should carry the source line, not the interpretation. They go into the national section, which already exists.
 
@@ -40,6 +44,29 @@ eighth one fails the responsive gate at 320 pixels.
 What is still open here: email. The deck carries no address for any firm or
 person, and several of the seventeen absences above are firms that publish an
 address and a form instead of a number.
+
+## Pass 7. The wall value chain (done, Builds 62 and 63)
+
+Six sweeps established that the original 22 contractors were all tilt-up, because
+tilt-up.org is the only place panel counts are public. The section is now 50
+contractors ordered along the chain a printed wall would displace: nozzle, slab,
+tilt-up, precast, panel, masonry, ICF, general contractor. Beside it sit a 21-firm
+supply panel (material and crew base, not buyers) and 21 firms that meet the
+profile and publish no website at all. Build 63 gave the 28 new records their
+people, profiles, sources and phone numbers.
+
+The finding that governs any future contractor pass: **this trade does not publish
+volume.** Of 87 candidates, 5 published a figure and 24 published years in
+business. Builders publish closings because the Builder 100 makes them. So the
+capital bar on a contractor is what the firm already owns, never sales volume.
+
+## Pass 8. The outside review, tiers 2 and 3
+
+Not started. The list is in `docs/HANDOFF.md` under Still open, in the order a
+reader hits it. GreenEco's only source never names GreenEco, and it sits in the
+group an ICON reader opens first. Six headline figures are arithmetic presented as
+published. Seven headline figures are not Houston figures. 99 of 256 source
+entries are bound to no claim. Then the mobile faults.
 
 ## Pass 5. Open items from the handoff
 
