@@ -60,7 +60,13 @@ def down(host):
     return e if (_dt.date.today() - seen).days <= DOWN_DAYS else None
 
 
-BLOCKED = {"investors.bldr.com", "builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
+BLOCKED = {"investors.bldr.com", "builderonline.com",
+           # Build 68, the Dallas-Fort Worth deck. Each answered a script 403,
+           # 401 or 404 and a fetcher the page, read 24 September 2026.
+           "fortworthinc.com", "investor.kbhome.com", "investors.amh.com",
+           "investors.tripointehomes.com", "avillarailhead.com", "cyreneatpaintedtree.com",
+           "grandhomes.com", "livabl.com", "sekisuihouse-global.com", "cowtownmaterials.com",
+           "erw-sitesolutions.com", "bizjournals.com", "houstonagentmagazine.com",
            "members.ghba.org", "members.texasbuilders.org", "housingwire.com",
            "houstonchronicle.com", "sec.gov", "globenewswire.com", "businesswire.com",
            "concreteproducts.com", "urbanland.uli.org", "knowledge.uli.org",

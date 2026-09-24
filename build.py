@@ -53,7 +53,7 @@ import audit5 as AUDIT5
 import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 67
+BUILD = 68
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -222,8 +222,7 @@ def finalize(recs):
         # Build 67. Outside the area the deck covers, by the firm's own account.
         if t["target_id"] in AUDIT6.OFF_DECK:
             hard = True
-            if AUDIT6.OFF_DECK[t["target_id"]] not in t["audit_flags"]:
-                t["audit_flags"].append(AUDIT6.OFF_DECK[t["target_id"]])
+            t["off_reason"] = AUDIT6.OFF_DECK[t["target_id"]]
         if t["entity_role"] == "proven_adopter":
             t["group"], t["tier"] = "adopter", "P"
         elif t["target_id"] in ICON_CLIENT:
@@ -1286,6 +1285,10 @@ DATA = {
    "sources": [{"url": u, "label": l} for u, l in
                [PM.SOURCE[k] for k in ("socds", "defs", "txdot")]],
  })(),
+ # Build 68. What the page calls this market, for the strings the template used
+ # to hard-code.
+ "place": {"key": "houston", "name": "Greater Houston", "short": "Houston", "file": "Houston",
+           "outline": "TxDOT", "local": "Houston|San Leon"},
  "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"],
            "principals": n_people, "linkedin_held": n_li, "audit_flags": n_flags,
            "with_decider": n_dec, "with_decider_live": n_dec_live,
@@ -1460,33 +1463,13 @@ if _banned:
 with open("houston-data.json", "w", encoding="utf-8") as f:
     json.dump(DATA, f, ensure_ascii=False, indent=1)
 
-blob = json.dumps(DATA, ensure_ascii=False).replace("</script>", "<\\/script>")
-html = (open("_template.html", encoding="utf-8").read()
-        .replace("__DESC__", DATA["meta_description"].replace('"', "&quot;"))
-        .replace("__DATA__", blob)
-        .replace("__FONTS__", open("_fonts.css", encoding="utf-8").read())
-        .replace("__MARKET__", open("_market.js", encoding="utf-8").read()))
-open("ICON_Greater_Houston_Rolodex.html", "w", encoding="utf-8").write(html)
-
-# The hosted copy. The claude.ai viewer wraps a page in its own document
-# skeleton (charset, viewport, a small reset), so the artifact body is the
-# same page with the document wrapper removed and the title kept at the top.
-_a = html
-_a = _a.split("<style>", 1)[1]          # drop doctype, html, head opening, meta, title
-# Build 67. The theme is settled by a script in the head, before first paint.
-# Dropping the head would drop it, so it is carried across on its own.
-_ti = html.index("<script>\n/* Build 67. The theme is settled")
-_theme = html[_ti:html.index("</script>", _ti) + len("</script>")]
-_a = "<title>Rolodex · Greater Houston</title>\n" + _theme + "\n<style>" + _a
-_a = _a.replace("</head><body>", "", 1).replace("</body></html>", "", 1)
-open("rolodex-artifact.html", "w", encoding="utf-8").write(_a)
-
-# The served copies. GitHub Pages serves /docs, so index.html there is the page.
+# Build 68. The page is written by emit.py, after the Dallas-Fort Worth build, so
+# one file can carry both markets. This writes the Houston data and its served
+# copy only.
 import os, shutil
 os.makedirs("docs", exist_ok=True)
-shutil.copy("ICON_Greater_Houston_Rolodex.html", "docs/index.html")
-shutil.copy("ICON_Greater_Houston_Rolodex.html", "docs/ICON_Greater_Houston_Rolodex.html")
 shutil.copy("houston-data.json", "docs/houston-data.json")
+html = ""
 
 # The README said Ninety for thirty builds while the deck grew to 124. It is now
 # written here, from the same counts the page prints, so it cannot drift again.
@@ -1496,6 +1479,8 @@ _rd = (open("_README.md", encoding="utf-8").read()
        .replace("__NP__", "%d" % n_people)
        .replace("__NS__", "%d" % len(DATA.get("supply", [])))
        .replace("__NN__", "%d" % len(DATA.get("no_site", [])))
+       .replace("__DFW_N__", "%d" % (json.load(open("dfw/dfw-data.json", encoding="utf-8"))["stats"]["total"]
+                                     if os.path.exists("dfw/dfw-data.json") else 0))
        .replace("__SECTIONS__", "\n".join(
            "- **%s**, %d" % (DATA["group_labels"][k], g[k]) for k in _ORDER if g.get(k))))
 open("README.md", "w", encoding="utf-8").write(_rd)
@@ -1511,4 +1496,3 @@ for a in DATA["axes"]:
     print("  %-16s clear %2d  partial %2d  fail %2d" % (a["label"], a["clear"], a["partial"], a["fail"]))
 print("principals        %d  (linkedin held %d)" % (n_people, n_li))
 print("open items        %d" % n_flags)
-print("html bytes        %d" % len(html))

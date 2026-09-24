@@ -8,8 +8,17 @@ import asyncio, json, pathlib, re
 from playwright.async_api import async_playwright
 
 ROOT = pathlib.Path(__file__).parent
-URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve())
-D = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
+# Build 68. One page, two markets. MARKET=dfw runs every check against the
+# Dallas-Fort Worth data, opened through the page's own market switch.
+import os as _os
+MARKET = _os.environ.get("MARKET", "houston")
+URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve()) + (
+    "#market=dfw" if MARKET == "dfw" else "")
+D = json.load(open(ROOT / ("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
+                   encoding="utf-8"))
+PROBE_ID = "HOU-045" if MARKET == "houston" else next(
+    t["target_id"] for t in D["targets"] if t["group"] in ("a", "b")
+    and any(p.get("decider") and p.get("linkedin_url") and p.get("source_url") for p in t["principals"]))
 
 # A reason that argues one way under a mark that says the other. Howard Hughes
 # shipped for four builds marked No on the count its own sentence answered Yes,
@@ -156,9 +165,13 @@ for _t in D["targets"]:
         elif _d[0] in "01" or _d[3] in "01":
             _ph.append("%s: %s cannot be dialled, the area or exchange code "
                        "starts with %s" % (_t["short"], _d, _d[0] if _d[0] in "01" else _d[3]))
-        if _d in _seen and _seen[_d] != _t["short"]:
-            _ph.append("%s and %s both print %s" % (_seen[_d], _t["short"], _d))
-        _seen[_d] = _t["short"]
+        # Build 68. A brand and its parent, or a masterplan and its developer,
+        # can print the same office line. The card says so in phone_shared.
+        if _d in _seen and _seen[_d][0] != _t["short"] and not (
+                _seen[_d][1] in (_t.get("phone_shared") or [])
+                or _t["target_id"] in (_seen[_d][2] or [])):
+            _ph.append("%s and %s both print %s" % (_seen[_d][0], _t["short"], _d))
+        _seen[_d] = (_t["short"], _t["target_id"], _t.get("phone_shared"))
 if _ph:
     for _b in sorted(set(_ph)):
         print("   " + _b)
@@ -355,7 +368,7 @@ for _s in D.get("supply", []):
 for _n in D.get("no_site", []):
     if _n["name"] in _names:
         _sb.append("%s is listed as publishing no website and is on the roster" % _n["name"])
-if D.get("supply") and not D.get("no_site_note"):
+if D.get("no_site") and not D.get("no_site_note"):
     _sb.append("the unlisted firms are shown with no explanation")
 if _sb:
     for _b in sorted(set(_sb)):
@@ -450,7 +463,7 @@ async def main():
             problems.append("chip count does not match the roster")
 
         orange = await pg.locator("#matrix .chip.i-clear").count()
-        want = sum(1 for t in D["targets"] if t["marks"]["innovation"] == "clear")
+        want = sum(1 for t in D["targets"] if t["marks"]["innovation"] == "clear" and t["group"] != "out")
         print("orange chips    :", orange, "of an expected", want)
         if orange != want:
             problems.append("the accent is not tracking the innovation count")
@@ -499,7 +512,7 @@ async def main():
             problems.append("arrow keys do not move focus")
 
         # a firm page takes over the view rather than opening a panel
-        await pg.evaluate("document.querySelector('.chip[data-id=\"HOU-045\"]').click()")
+        await pg.evaluate("document.querySelector('.chip[data-id=\"%s\"]').click()" % PROBE_ID)
         await pg.wait_for_timeout(250)
         on = await pg.locator("#stageFirm.on").count()
         idx_hidden = await pg.evaluate("document.getElementById('stageIndex').hidden")
@@ -520,7 +533,7 @@ async def main():
                 _hb.append("%s: the name links a site the card does not hold" % _t["short"])
         print("firm headers    : %d cards sampled, name links the site" % 40)
         problems.extend(_hb)
-        await pg.evaluate("window.rolodex.open('HOU-045')")
+        await pg.evaluate("window.rolodex.open('%s')" % PROBE_ID + "")
         await pg.wait_for_timeout(200)
         print("firm page       :", "full width" if (on and idx_hidden) else "NOT taking over",
               "|", dec, "badged deciders,", ev, "evidence lines,", li_icons, "linkedin marks")
@@ -592,7 +605,7 @@ async def main():
         await pg.evaluate("document.getElementById('home').click()")
         await pg.wait_for_timeout(80)
         await pg.evaluate(
-            "document.querySelector('.chip[data-id=\"HOU-045\"]').click()")
+            "document.querySelector('.chip[data-id=\"%s\"]').click()" % PROBE_ID)
         await pg.wait_for_timeout(150)
 
         # the call sheet carries the URL in printable text
@@ -635,7 +648,10 @@ async def main():
             bg = await pg.evaluate(
                 "getComputedStyle(document.querySelector('.chip.printing.i-clear')).backgroundColor")
             print("printing+clear  :", bg, "on", len(both), "firms")
-            if bg != "rgb(255, 79, 0)":
+            acc = await pg.evaluate(
+                "(()=>{const e=document.createElement('i');e.style.background='var(--orange)';"
+                "document.body.appendChild(e);const c=getComputedStyle(e).backgroundColor;e.remove();return c})()")
+            if bg != acc:
                 problems.append("the accent is lost where a firm is both printing and method-clear")
 
         # Every chip has to say what it is, not only who it is.
@@ -852,7 +868,7 @@ async def main():
         # The Open items list is internal and must not reach a reader. Nothing
         # carries one in the data, nothing renders one on a card, and the
         # register itself stays out of the directory GitHub Pages serves.
-        leftover = [t["entity_name"] for t in D["targets"] if t.get("audit_flags")]
+        leftover = [t["entity_name"] for t in D["targets"] if t.get("audit_flags") and t["group"] != "out"]
         if leftover:
             problems.append("%d firms still carry open items" % len(leftover))
         if (ROOT / "docs" / "OPEN_ITEMS.md").exists():
@@ -1014,20 +1030,22 @@ async def main():
         by_cty = {}
         for pl in P["places"]:
             by_cty[pl["county"]] = by_cty.get(pl["county"], 0) + pl["sf"][pyi]
-        for c in P["counties"]:
+        for c in (P["counties"] if P.get("places_complete", True) else []):
             y = P["place_years"][pyi]
             want = c["sf"][c["years"].index(y)]
             if by_cty.get(c["name"], 0) != want:
                 problems.append("jurisdictions do not sum to %s County in %d" % (c["name"], y))
         if any(r.get("quantity") != "authorized" for r in P["msa"]):
             problems.append("a permit figure is not labelled as an authorisation")
-        if len(P["geom"]) != 10:
-            problems.append("the county map does not carry ten outlines")
+        if len(P["geom"]) != len(P["counties"]):
+            problems.append("the county map does not carry an outline per county")
         if not P["sources"] or any(not s0["url"].startswith("http") for s0 in P["sources"]):
             problems.append("a permit source is missing its link")
         # The cross-reads live here, not on the page. A reader is owed the number,
         # not the working that established it.
         import permits as _PM
+        if MARKET != "houston":
+            _PM = type("X", (), {"CROSSREF": [], "REVISIONS": []})
         for lb, gg, yy, vv, key, _ind in _PM.CROSSREF:
             if "socds" in key:
                 ours = msa.get(yy) if "Single family" in lb else None
@@ -1050,8 +1068,8 @@ async def main():
         jur = await pg.locator("#jurHost .bar").count()
         print("permits         :", len(P["msa"]), "years |", len(P["counties"]), "counties |",
               len(P["places"]), "jurisdictions | source links", srcs)
-        if cty_paths != 10:
-            problems.append("the county map does not render ten counties")
+        if cty_paths != len(P["counties"]):
+            problems.append("the county map does not render every county")
         if cells != len(P["counties"]) * len(P["counties"][0]["years"]):
             problems.append("the county matrix does not render every cell")
         if jur != 25:

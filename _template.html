@@ -10,6 +10,11 @@
    one is stored on this device, otherwise the system setting, which it then
    follows live. */
 (function(){var d=document.documentElement,K='rolodex-theme',t=null;
+  /* Build 68. Which market, settled before paint so the accent is right on the
+     first frame: the address says, else the last one opened here, else Houston. */
+  var mk=null,h=(location.hash||'').match(/market=(houston|dfw)/);
+  if(h) mk=h[1]; else {try{mk=localStorage.getItem('rolodex-market')}catch(e){}}
+  d.setAttribute('data-market',mk==='dfw'?'dfw':'houston');
   try{t=localStorage.getItem(K)}catch(e){}
   var mq=window.matchMedia?window.matchMedia('(prefers-color-scheme: dark)'):null;
   d.setAttribute('data-theme',t||(mq&&mq.matches?'dark':'light'));
@@ -46,6 +51,14 @@ __FONTS__
   --sans:"Archivo",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
+/* Build 68. Each market carries its own accent. Houston is ICON orange; Dallas-Fort
+   Worth is Dallas blue. The accent keeps its one meaning in both, and the text on
+   it is whichever of ink or paper reads at 4.5:1 or better. */
+:root[data-market="dfw"]{--orange:#0A3A8C; --accent-warm:#0A3A8C; --on-orange:#FFFFFF}
+@media (prefers-color-scheme: dark){
+  :root[data-market="dfw"]:not([data-theme="light"]){--orange:#5E9BFF; --accent-warm:#5E9BFF; --on-orange:#0F1012}
+}
+:root[data-market="dfw"][data-theme="dark"]{--orange:#5E9BFF; --accent-warm:#5E9BFF; --on-orange:#0F1012}
 /* Build 67. Dark theme. The page follows the system setting unless the reader
    picks one with the toggle in the bar, which is remembered on this device. The
    orange keeps its one meaning and keeps dark text on it in both themes. Print is
@@ -123,6 +136,10 @@ nav{position:sticky;top:0;z-index:60;background:var(--nav-bg);backdrop-filter:bl
   border:1px solid var(--ink);border-radius:2px;padding:9px 12px;display:flex;gap:8px;align-items:center}
 .cbtn b{font:700 10px/1 var(--mono)}
 .cbtn.on{background:var(--ink);color:var(--on-ink)}
+.mktsw{display:inline-flex;margin:0 0 18px;max-width:100%}
+.mktsw button{padding:10px 14px;white-space:nowrap}
+@media(max-width:420px){.mktsw button{padding:10px 10px;letter-spacing:.06em}}
+@media print{.mktsw{display:none}}
 .thm{width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;
   border:1px solid var(--rule2);border-radius:2px;color:var(--ink)}
 .thm:hover{border-color:var(--ink)}
@@ -291,7 +308,7 @@ button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
 .chead b .of{font:500 11px/1 var(--mono);font-style:normal;color:var(--ink3);letter-spacing:0}
 .chip .vol{margin-left:7px;font:500 9.5px/1 var(--mono);font-style:normal;
   color:var(--ink3);font-variant-numeric:tabular-nums}
-.chip.i-clear .vol{color:var(--ink)}
+.chip.i-clear .vol{color:var(--on-orange)}
 .chip.printing .vol{color:var(--on-ink-dim)}
 .chip.sel{box-shadow:0 0 0 2px var(--ink)}
 .chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
@@ -988,6 +1005,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
     <header class="top">
       <div class="hero-grid">
         <div class="hero-copy">
+          <div class="seg mktsw" id="mktSw" role="group" aria-label="Market"></div>
           <div class="lab" id="kick"></div>
           <h1 class="disp" id="hl"></h1>
           <p class="sub" id="sub"></p>
@@ -1036,7 +1054,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   <div class="wrap" id="stageMarket" hidden>
     <div class="fhead" style="border-bottom:1px solid var(--ink)">
       <div class="lab">The market</div>
-      <h2 class="disp">Greater Houston in figures</h2>
+      <h2 class="disp" id="mkTitle">Greater Houston in figures</h2>
       <p class="syn" style="margin-top:16px;max-width:76ch">Figures drawn from the same records as the list. Each carries its sources and a table.</p>
     </div>
     <div class="stats mk" id="mkStats"></div>
@@ -1290,7 +1308,7 @@ function initAtmosphere() {
     // Corner coordinate marker — elegant, just the survey label
     ctx.globalAlpha = colors.alphaLabel * 1.1;
     ctx.font = '10px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
-    ctx.fillText('29°N  /  95°W', 24, h - 24);
+    ctx.fillText(document.documentElement.getAttribute('data-market') === 'dfw' ? '32°N  /  97°W' : '29°N  /  95°W', 24, h - 24);
     ctx.restore();
   }
 
@@ -1500,11 +1518,21 @@ function initAtmosphere() {
 }
 initAtmosphere();
 </script>
-<script id="rolodex-data" type="application/json">__DATA__</script>
+<script id="rolodex-houston" type="application/json">__DATA__</script>
+<script id="rolodex-dfw" type="application/json">__DATA_DFW__</script>
 <script>
 (function(){
 "use strict";
-var D=JSON.parse(document.getElementById('rolodex-data').textContent),T=D.targets;
+/* Build 68. Two markets in one file. The head script chose one before paint;
+   only that one is parsed. A market with no data falls back to Houston. */
+var MKT=document.documentElement.getAttribute('data-market')||'houston';
+var _src=document.getElementById('rolodex-'+MKT);
+if(!_src||!/^\s*\{/.test(_src.textContent)){MKT='houston';_src=document.getElementById('rolodex-houston');
+  document.documentElement.setAttribute('data-market','houston');}
+var D=JSON.parse(_src.textContent),T=D.targets;
+var PL=D.place||{name:'Greater Houston',short:'Houston',file:'Houston'};
+var MARKETS=[['houston','Greater Houston'],['dfw','Dallas-Fort Worth']].filter(function(m){
+  var e=document.getElementById('rolodex-'+m[0]);return e&&/^\s*\{/.test(e.textContent);});
 var M=D.matrix,ORD=M.order,W=M.words,byId={};
 var GL=D.group_labels||{},GN=D.group_notes||{};
 /* short column names for the stacked phone layout */
@@ -1516,7 +1544,7 @@ var call=[],mode='list',q='',view='index',viewing=null;
 /* The call list is the only thing here a person creates, so it outlives the
    tab. Wrapped because storage throws in a private window and the tool has to
    work anyway. */
-var CKEY='rolodex.call.v1';
+var CKEY=MKT==='houston'?'rolodex.call.v1':'rolodex.call.'+MKT+'.v1';
 try{var _c=localStorage.getItem(CKEY); if(_c) call=JSON.parse(_c)||[];}catch(e){call=[];}
 function saveCall(){try{localStorage.setItem(CKEY,JSON.stringify(call));}catch(e){}}
 
@@ -1563,7 +1591,24 @@ function src(url,label){
   return url?'<a class="src" href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(label||'source')+'</a>':'';}
 
 /* ----------------------------------------------------------------- header */
-document.getElementById('stamp').textContent='Greater Houston';
+document.getElementById('stamp').textContent=PL.name;
+document.title='Rolodex \u00b7 '+PL.name;
+try{localStorage.setItem('rolodex-market',MKT);}catch(e){}
+/* The market switch, on the home screen. Switching reloads the page on the
+   other market, because every count, filter and chart is built from one. */
+(function(){
+  var box=document.getElementById('mktSw'); if(!box) return;
+  if(MARKETS.length<2){box.hidden=true;return;}
+  box.innerHTML=MARKETS.map(function(m){
+    return '<button type="button" data-mkt="'+m[0]+'" aria-pressed="'+(m[0]===MKT)+'">'+esc(m[1])+'</button>';}).join('');
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('[data-mkt]'); if(!b||b.getAttribute('data-mkt')===MKT) return;
+    var k=b.getAttribute('data-mkt');
+    try{localStorage.setItem('rolodex-market',k);}catch(x){}
+    var base=location.href.replace(/#.*$/,'');
+    location.replace(base+'#market='+k); location.reload();
+  });
+})();
 
 /* Sideways scroll cue. .more while the table has columns off the right edge. */
 (function(){
@@ -1622,7 +1667,7 @@ document.getElementById('sub').textContent=D.sub;
      ' builders and developers on the deck publish an annual closings figure. Solid is a Yes on Printer fit, grey a Partly, hollow a No.</text>'+
      (over.length?'<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">Above 1,500 and off this strip: '+
        over.map(function(r){return esc(r.short)+' '+String(r.high).replace(/\B(?=(\d{3})+(?!\d))/g,',')+(r.wide?'†':'');}).join(', ')+'.</text>':'')+
-     '<text class="hcap" x="'+L+'" y="'+(axisY+(over.length?72:56))+'">'+(all.some(function(r){return r.wide;})?'† counts more than Greater Houston. ':'')+'The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
+     '<text class="hcap" x="'+L+'" y="'+(axisY+(over.length?72:56))+'">'+(all.some(function(r){return r.wide;})?'† counts more than '+PL.name+'. ':'')+'The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
   h+='</svg>';
   document.getElementById('heroFig').innerHTML=h;
 })();
@@ -2347,7 +2392,7 @@ function downloadXlsx(list,label){
   if(!list.length) return;
   var rows=exportRows(list);
   var blob=buildXlsx(rows,XCOLS.map(function(c){return c[1];}),'Prospects');
-  var name='Houston_Prospects_'+label+'_'+(D.last_updated||'').replace(/-/g,'')+'.xlsx';
+  var name=(PL.file||'Houston')+'_Prospects_'+label+'_'+(D.last_updated||'').replace(/-/g,'')+'.xlsx';
   var n=rows.length-1;
   var hosted=!!(window.claude&&typeof window.claude.use==='function');
   if(hosted){
@@ -2483,7 +2528,8 @@ function cfStep(k,focusCard){
 
 function drawField(){
   var R=D.icon_record||{},C=D.competitors||[];
-  document.getElementById('fieldTitle').textContent='Twelve printers, and ICON\u2019s own record';
+  var NW=['None','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen'];
+  document.getElementById('fieldTitle').textContent=(NW[C.length]||String(C.length))+' printers, and ICON\u2019s own record';
   document.getElementById('fieldLine').textContent=D.consolidation||'';
   var h='';
   h+='<div class="us"><h3>ICON</h3><p class="cl3">'+esc(R.line||'')+'</p><dl>'+

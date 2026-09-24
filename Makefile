@@ -9,9 +9,13 @@ export PYTHONDONTWRITEBYTECODE = 1
 all: build xlsx verify
 build:
 	python3 build.py
+	python3 build_dfw.py
+	python3 emit.py
 xlsx: build
 	python3 build_xlsx.py
+	MARKET=dfw python3 build_xlsx.py
 verify: build
 	python3 verify.py
+	MARKET=dfw python3 verify.py
 clean:
-	rm -rf __pycache__ ICON_Greater_Houston_Rolodex.html ICON_Greater_Houston_Rolodex.xlsx houston-data.json rolodex-artifact.html
+	rm -rf __pycache__ ICON_Greater_Houston_Rolodex.html ICON_Greater_Houston_Rolodex.xlsx houston-data.json rolodex-artifact.html dfw/dfw-data.json DFW_Rolodex.xlsx

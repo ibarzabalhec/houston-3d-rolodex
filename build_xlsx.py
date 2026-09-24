@@ -9,7 +9,12 @@ from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-D = json.load(open("houston-data.json", encoding="utf-8"))
+# Build 68. MARKET=dfw writes the Dallas-Fort Worth workbook from its own data.
+import os as _os
+MARKET = _os.environ.get("MARKET", "houston")
+D = json.load(open("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json", encoding="utf-8"))
+PLACE = (D.get("place") or {}).get("name", "Greater Houston")
+OUT = "DFW_Rolodex.xlsx" if MARKET == "dfw" else "ICON_Greater_Houston_Rolodex.xlsx"
 WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 # Build 66. The workbook had its own names for the sections, four of them
 # different from the page's. It takes the page's now.
@@ -61,7 +66,7 @@ HDR = 6
 first = HDR + 1
 
 # ---------------------------------------------------------------- header block
-ws["A1"] = "Rolodex · Greater Houston · contacts"
+ws["A1"] = "Rolodex · %s · contacts" % PLACE
 ws["A1"].font = Font(name="Arial", size=15, bold=True, color=INK)
 ws["A2"] = "Héctor Ibarzábal · %s" % D["last_updated"]
 ws["A2"].font = Font(name="Arial", size=9, color=MUTED)
@@ -194,7 +199,7 @@ note = ws.cell(row=last + 2, column=1,
            "than guessed, because a fabricated slug passes visual inspection and then fails in front of the person "
            "it names. The Find column searches for the empty ones in your own session. Each of the three counts reads "
            "Yes, Partly or No, with the reason in the column beside it. Yes and Partly both count as holding a count. A No does not. "
-           "Holds counts how many of the three are Yes or Partly. Rolodex, Greater Houston, %s." % D["last_updated"]))
+           "Holds counts how many of the three are Yes or Partly. Rolodex, %s, %s." % (PLACE, D["last_updated"])))
 note.font = Font(name="Arial", size=9, italic=True, color=MUTED)
 
 # ------------------------------------------------------------------ permits
@@ -251,10 +256,10 @@ if P:
         ps.column_dimensions[get_column_letter(3 + j)].width = 9
     ps.freeze_panes = "C5"
 
-wb.save("ICON_Greater_Houston_Rolodex.xlsx")
+wb.save(OUT)
 import shutil, os
 os.makedirs("docs", exist_ok=True)
-shutil.copy("ICON_Greater_Houston_Rolodex.xlsx", "docs/ICON_Greater_Houston_Rolodex.xlsx")
+shutil.copy(OUT, "docs/" + OUT)
 print("rows %d  (people %d, firms without a contact %d)" % (
     len(rows),
     sum(len(t["principals"]) for t in T),

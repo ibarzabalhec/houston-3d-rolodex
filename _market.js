@@ -50,11 +50,11 @@ function figClosings(){
   var nw=rows.filter(function(r){return r.wide;}).length;
   var tbl='<table class="ftab"><thead><tr><th>Firm</th><th class="num">Homes a year</th><th>Year</th><th>Covers</th><th>Source</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
-      '</td><td>'+r.year+'</td><td>'+esc(r.wide||'Greater Houston')+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
+      '</td><td>'+r.year+'</td><td>'+esc(r.wide||PL.name)+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
     'How big each builder is, in houses closed a year. '+rows.length+' of the '+NB+
     ' builders and developers on the deck publish a figure; the rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000: a broken bar runs past it, and its figure is printed.'+
-    (nw?' A † marks the '+nw+' figures that count more than Greater Houston; the table says what each covers.':''),
+    (nw?' A † marks the '+nw+' figures that count more than '+PL.name+'; the table says what each covers.':''),
     h, tbl, null, 'figClosings',
     (D.bands_method&&D.bands_method.text?'<div class="bandnote"><span class="lab">The printer-fit bands</span><p>'+
       esc(D.bands_method.text)+'</p><p class="figsrc">'+(D.bands_method.sources||[]).map(function(s){
@@ -151,9 +151,9 @@ function figPrinted(){
   var tbl='<table class="ftab"><thead><tr><th>Project</th><th>Place</th><th>Printer</th><th>Units</th><th>Status</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.project)+'</td><td>'+esc(r.place)+'</td><td>'+esc(r.printer)+'</td><td>'+r.units+'</td><td>'+esc(r.status)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Printed homes in Texas on the public record',
-    (function(){var hs=rows.filter(function(r){return /Houston|San Leon/.test(r.place);});
+    (function(){var rx=new RegExp(PL.local||'Houston|San Leon'),hs=rows.filter(function(r){return rx.test(r.place);});
       return 'Units printed, under way or committed, by project, with the printer. The '+hs.length+
-        ' Greater Houston projects total '+hs.reduce(function(a,r){return a+r.units;},0)+' units.';})(),
+        ' '+PL.name+' projects total '+hs.reduce(function(a,r){return a+r.units;},0)+' units.';})(),
     h, tbl);
 }
 
@@ -228,8 +228,15 @@ function showSegment(key){
    ink: the accent stays reserved for the third count. */
 var PM=D.permits||{};
 var PSRC=PM.sources||[];
+/* Build 68. A market's sources can name the figures they serve ("use"); a
+   market whose sources do not is matched on the URL, as Houston's are. */
 function psrc(){var a=[].slice.call(arguments);
-  return PSRC.filter(function(s){return a.some(function(k){return s.url.indexOf(k)>-1;});});}
+  if(PSRC.some(function(s){return s.use;})){
+    var tag=(a.filter(function(k){return k.charAt(0)==='#';})[0]||'').slice(1)||PUSE[a[0]]||a[0];
+    return PSRC.filter(function(s){return (s.use||[]).indexOf(tag)>-1;});}
+  return PSRC.filter(function(s){return a.some(function(k){return k.charAt(0)!=='#'&&s.url.indexOf(k)>-1;});});}
+var PUSE={huduser:'county',definitions:'metro'};
+function nword(n){return ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen'][n]||String(n);}
 /* Build 67. Magnitude runs from the paper to the ink in either theme, so the
    dark theme has its own ramp, and the label on a cell is whichever of the two
    inks reads on it. */
@@ -272,9 +279,9 @@ function figPermits(){
     '</tbody></table>';
   var g=PM.geo||{};
   return figure('Single-family units authorised, '+(g.name||''),
-    'Building permits issued across the ten counties, 1980 to '+rows[rows.length-1].year+
+    'Building permits issued across the '+nword((PM.counties||[]).length)+' counties, '+rows[0].year+' to '+rows[rows.length-1].year+
     '. A permit is an authorisation, not a completed house and not a closing: the builder figures below count houses handed over. Census counts townhouses and row houses as single family.',
-    h, tbl, psrc('huduser','definitions'));
+    h, tbl, PSRC.some(function(s){return s.use;})?PSRC.filter(function(s){return (s.use||[]).indexOf('metro')>-1;}):psrc('huduser','definitions'));
 }
 
 /* 8. The ten counties, drawn. Outlines are TxDOT's, at a fidelity where a shared
@@ -282,6 +289,9 @@ function figPermits(){
    line. Fill is the sequential ramp; labels sit at each county's pole of
    inaccessibility rather than its centroid, so they stay inside the shape. */
 var PYEAR=2025;
+/* The county with the most single-family permits in the last year drawn. */
+function bigCounty(){var C=(PM.counties||[]).slice();if(!C.length) return 'the largest county';
+  C.sort(function(a,b){return b.sf[b.sf.length-1]-a.sf[a.sf.length-1];});return C[0].name;}
 function figCountyMap(){
   var G=PM.geom||[], C=PM.counties||[]; if(!G.length||!C.length) return '';
   var yrs=C[0].years, W=680,H=470, PAD=26;
@@ -391,7 +401,7 @@ function figCountyMap(){
     var host=document.getElementById('mapHost'); if(host) host.innerHTML=h;
   };
   return figure('Where the permits are',
-    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to Harris. Outlines are TxDOT’s. Drag the year.',
+    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to '+bigCounty()+'. Outlines are '+(PL.outline||'TxDOT')+'’s. Drag the year.',
     body, tbl, psrc('huduser','txdot'), 'figMap');
 }
 
@@ -438,7 +448,7 @@ function figCountyMatrix(){
     var host=document.getElementById('mtxHost'); if(host) host.innerHTML=h;
   };
   return figure('The same counties, year by year',
-    'Every county across '+yrs[0]+' to '+yrs[yrs.length-1]+'. Share of metro shades each county-year against the metro total for that year, so a county gaining ground darkens even while Harris stays the largest. Against its own peak shades each row against that county\u2019s own busiest year, which is the cycle rather than the rank. Units are in the tooltip and in the table.',
+    'Every county across '+yrs[0]+' to '+yrs[yrs.length-1]+'. Share of metro shades each county-year against the metro total for that year, so a county gaining ground darkens even while '+bigCounty()+' stays the largest. Against its own peak shades each row against that county\u2019s own busiest year, which is the cycle rather than the rank. Units are in the tooltip and in the table.',
     body, tbl, psrc('huduser'));
 }
 
@@ -473,10 +483,13 @@ function figPlaces(){
     var host=document.getElementById('jurHost'); if(host) host.innerHTML=h;
   };
   return figure('Which jurisdiction issues the permit',
-    P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the ten counties exactly. The top 25 are drawn; all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does; solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
+    (function(){var i=yrs.length-1,a=0,c=0;P.forEach(function(p){a+=p.sf[i]||0;});
+      (PM.counties||[]).forEach(function(k){var j=k.years.indexOf(yrs[i]);c+=j>-1?k.sf[j]:0;});
+      return Math.abs(a-c)<=Math.max(5,c*0.001)?P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the '+nword((PM.counties||[]).length)+' counties exactly.':
+        P.length+' permit-issuing jurisdictions are in the table, together '+Math.round(100*a/c)+' percent of the metro\u2019s single-family units in '+yrs[i]+'.';})()+' The top 25 are drawn; all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does; solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
       P.forEach(function(p){a+=p.sf[i]||0; if(/Unincorporated/i.test(p.name)) u+=p.sf[i]||0;});
       return a?'In '+yrs[i]+', '+fmt(u)+' of '+fmt(a)+' single-family units, '+Math.round(100*u/a)+' percent, were permitted by a county rather than a city.':'';})(),
-    body, tbl, psrc('huduser'));
+    body, tbl, psrc('huduser','#place'));
 }
 
 function figure(title,caption,body,table,sources,id,extra){
@@ -492,6 +505,7 @@ function figure(title,caption,body,table,sources,id,extra){
 
 var W_=W;
 function drawMarket(){
+  var _mt=document.getElementById('mkTitle'); if(_mt) _mt.textContent=PL.name+' in figures';
   var n=T.length, yes=T.filter(function(t){return t.marks.innovation==='clear';}).length;
   var fit=T.filter(function(t){return t.marks.machine_fit==='clear';}).length;
   var both=T.filter(function(t){return t.marks.machine_fit==='clear'&&t.marks.innovation!=='fail';}).length;

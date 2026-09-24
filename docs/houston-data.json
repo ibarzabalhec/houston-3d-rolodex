@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 67,
+ "build": 68,
  "last_updated": "2026-09-24",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-24",
  "kicker": "Rolodex · Greater Houston · 2026-09-24",
@@ -18988,6 +18988,14 @@
    }
   ]
  },
+ "place": {
+  "key": "houston",
+  "name": "Greater Houston",
+  "short": "Houston",
+  "file": "Houston",
+  "outline": "TxDOT",
+  "local": "Houston|San Leon"
+ },
  "stats": {
   "total": 126,
   "adopters": 3,
@@ -35797,6 +35805,7 @@
    "phone_more": [],
    "phone_note": null,
    "phone_absent": null,
+   "off_reason": "Off the deck: its chief executive said in June 2026 that Stylecraft exited the Houston metro two to three years earlier. It still lists homes at Ladera Creek in Conroe.",
    "group": "out",
    "tier": "D",
    "press": [

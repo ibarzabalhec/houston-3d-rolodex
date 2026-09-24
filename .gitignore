@@ -11,3 +11,7 @@ __pycache__/
 
 # the internal research register stays local, out of the published repo
 internal/
+
+# Build 68: the Dallas-Fort Worth build product; its served copy lives in docs/
+/dfw/dfw-data.json
+/DFW_Rolodex.xlsx
