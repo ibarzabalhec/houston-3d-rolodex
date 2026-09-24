@@ -53,7 +53,7 @@ import audit5 as AUDIT5
 import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 71
+BUILD = 72
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -89,6 +89,8 @@ for _tid, _sc in R2.SCORES.items():
     CSCORES.setdefault(_tid, {}).update(_sc)
 for _tid, _fl in R2.FLAGS.items():
     CFLAGS.setdefault(_tid, []).extend(_fl)
+# Build 72. The rubric, applied to every verdict (audit8.py). Last, so it wins.
+import audit8 as AUDIT8
 TODAY = "2026-09-24"
 
 SCREENS = ["repeatability", "machine_fit", "innovation"]
@@ -849,6 +851,20 @@ if _stale:
         print("   " + _s)
     raise SystemExit("FAILED: a superseded figure is still printed on its card")
 
+# Build 72. The rubric, applied last to every verdict it moves (audit8.py).
+for t in targets:
+    _sc = AUDIT8.HOU_SCORE.get(t["target_id"])
+    if not _sc:
+        continue
+    t["scores"].update(_sc)
+    for _k, _v in _sc.items():
+        t["marks"][_k] = mark(_v)
+    t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
+    t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
+    for _w in t["why"]:
+        _w["mark"] = t["marks"][_w["axis"]]
+        _w["verdict"] = VERDICT_WORD[_w["mark"]]
+
 # A count that moves can move a record between sections, and the section was
 # assigned before the audit ran. Only the plain tiers are re-derived: adopter,
 # icon, channel, national, trade and creative are assigned by what the firm is,
@@ -929,6 +945,8 @@ targets.sort(key=lambda t: (GROUP_ORDER[t["group"]], -t["clears"], -t["holds"],
 # Build 71. A person listed twice on one card is one contact.
 import audit7 as AUDIT7
 AUDIT7.dedupe_people(targets)
+# Build 72. The rubric's reasons, and one decision-maker rule on both decks.
+AUDIT8.houston_late(targets)
 
 deck = [t for t in targets if t["group"] != "out"]
 n_off = len(targets) - len(deck) + len(DROPPED)
@@ -1204,9 +1222,11 @@ DATA = {
     "metro permit leaders against it, added five firms. The rest is custom and infill work of a "
     "few homes a year, below the volume a printer is bought for."],
    ["Who decides",
-    "The mark goes on a vice president or director of construction, or a head of purchasing: those "
-    "roles can change a wall specification. Construction managers, superintendents and purchasing "
-    "agents execute one. At a contractor it goes on whoever signs for equipment. On %d of the %d the "
+    "The mark goes on a vice president or director of construction, a head of purchasing, or a "
+    "division president: those roles can change a wall specification. Construction managers, "
+    "superintendents and purchasing agents execute one. At a builder of 400 homes a year or fewer "
+    "that publishes none of those roles, it goes on the owner. At a contractor it goes on whoever "
+    "signs for equipment. On %d of the %d the "
     "contact carries a caveat: the person has left, sits at another entity, or is a probable match."
     % (n_dec_chk, n_dec)],
    ["Sources",
@@ -1465,6 +1485,8 @@ AUDIT7.strip_working(DATA)
 AUDIT7.fix_market(DATA)
 _bad7 = AUDIT7.apply(DATA, "hou", AUDIT7.HOU_PERSON, AUDIT7.HOU_VERDICT)
 _bad7 += AUDIT7.houston(DATA)
+AUDIT8.houston_why(DATA["targets"])
+AUDIT8.dates(DATA)
 AUDIT7.tidy(DATA)
 if _bad7:
     for _b in _bad7:

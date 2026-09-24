@@ -10,9 +10,10 @@ function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
    column, so at 1440 its labels grew past body text and at 390 they fell to
    4 to 6 px. It now stops growing at its drawn width. On a phone the table
    under it opens by default, because the table is the readable form there. */
-function svgOpen(w,h,cls){return '<svg class="fig'+(cls?' '+cls:'')+'" viewBox="0 0 '+w+' '+h+
-  '" width="100%" style="max-width:'+w+'px" preserveAspectRatio="xMinYMin meet" role="img" aria-hidden="false">';}
 var NARROW=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
+function svgOpen(w,h,cls){return '<svg class="fig'+(cls?' '+cls:'')+'" viewBox="0 0 '+w+' '+h+
+  '" width="100%" style="max-width:'+w+'px'+(NARROW&&cls!=='map'?';min-width:'+Math.round(w*0.95)+'px':'')+
+  '" preserveAspectRatio="xMinYMin meet" role="img" aria-hidden="false">';}
 function tipAttr(t){return ' data-tip="'+esc(t)+'"';}
 
 /* 1. Published annual closings, one bar per firm, with the machine-fit bands. */

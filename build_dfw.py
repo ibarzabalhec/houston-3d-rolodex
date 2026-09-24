@@ -19,13 +19,14 @@ The build fails on any of it.
 import collections, copy, json, pathlib, re, sys
 
 import audit7 as AUDIT7
+import audit8 as AUDIT8
 ROOT = pathlib.Path(__file__).parent
 PACK = json.load(open(ROOT / "dfw" / "pack" / "03_dfw-data.json", encoding="utf-8"))
 EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards.json", encoding="utf-8"))}
 LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
 HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 TODAY = "2026-09-24"
-BUILD = 71
+BUILD = 72
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}
@@ -254,6 +255,8 @@ def build_targets():
             v, txt = e["why"][ax]["verdict"], e["why"][ax]["text"]
             if tid in REVERT and REVERT[tid][0] == ax:
                 v, txt = REVERT[tid][1], REVERT[tid][2]
+            if (tid, ax) in AUDIT8.DFW_VERDICT:
+                v, txt = AUDIT8.DFW_VERDICT[(tid, ax)]
             why.append({"axis": ax, "title": TITLE[ax], "verdict": v, "mark": V[v], "text": txt})
         if tid in PARITY:
             hid, srcs = PARITY[tid]
@@ -287,7 +290,7 @@ def build_targets():
         src += [fix(u) for u in e.get("add_sources", [])]
         if tid in PARITY:
             src += PARITY[tid][1]
-        src += SOURCE_ADD.get(tid, [])
+        src += SOURCE_ADD.get(tid, []) + AUDIT8.DFW_SOURCES.get(tid, [])
         if "Local Leaders" in " ".join(filter(None, [t["key_stat"], t["synopsis"], t["mvp_screen"]]
                                                  + [w["text"] for w in why])):
             src.append(LL)
@@ -407,6 +410,7 @@ def main():
             p["decider"] = True
     # Build 71. A contact whose own card says they have left, or who is only a
     # probable match, is marked so, as Houston marks them.
+    AUDIT8.dfw_people(targets)
     _bad7 = AUDIT7.people({t["target_id"]: t for t in targets}, AUDIT7.DFW_PERSON)
     if _bad7:
         raise SystemExit("FAILED: " + "; ".join(_bad7))
@@ -426,6 +430,7 @@ def main():
     n_people = sum(len(t["principals"]) for t in deck)
     n_li = sum(1 for t in deck for p in t["principals"] if p.get("linkedin_url"))
     n_dec = sum(1 for t in deck if t["has_decider"])
+    n_chk = sum(1 for t in deck if t["decider_caveat"])
     _pp = [p for t in deck for p in t["principals"]]
     n_li_p = sum(1 for p in _pp if p.get("linkedin_url"))
     n_src_p = sum(1 for p in _pp if p.get("source_url") and not p.get("linkedin_url"))
@@ -505,8 +510,11 @@ def main():
              "page it cites, and what no page supports was cut."],
             ["Who decides",
              "The mark goes on a vice president or director of construction, a head of purchasing, or a "
-             "division president: those roles can change a wall specification. At a contractor it goes on "
-             "whoever signs for equipment."],
+             "division president: those roles can change a wall specification. Construction managers, "
+             "superintendents and purchasing agents execute one. At a builder of 400 homes a year or fewer "
+             "that publishes none of those roles, it goes on the owner. At a contractor it goes on whoever "
+             "signs for equipment.%s" % ((" On %d of the %d the contact carries a caveat: the person has "
+             "left, sits at another entity, or is a probable match." % (n_chk, n_dec)) if n_chk else "")],
             ["Sources",
              "Company filings, company pages and trade press. Each contact rests on one of three, and says "
              "which: %d a LinkedIn headline naming the firm, %d the firm's own site or dated reporting, %d a "
@@ -571,6 +579,7 @@ def main():
     AUDIT7.fix_market(D)
     _bad7 = AUDIT7.apply(D, "dfw")
     AUDIT7.dfw(D)
+    AUDIT8.dates(D)
     AUDIT7.tidy(D)
     if _bad7:
         for b in _bad7:

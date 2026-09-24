@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 71,
+ "build": 72,
  "last_updated": "2026-09-24",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-24",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-24",
  "headline": "Dallas-Fort Worth builders and developers, screened for a construction printer.",
  "headline_html": "Dallas-Fort Worth builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "126 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "125 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,13 +29,13 @@
  },
  "stat_strip": [
   [
-   "126",
+   "125",
    "firms screened",
    false,
    null
   ],
   [
-   "7",
+   "6",
    "builders and developers holding all three counts",
    false,
    {
@@ -45,7 +45,7 @@
    }
   ],
   [
-   "85",
+   "75",
    "with a decision-maker named",
    true,
    {
@@ -80,27 +80,27 @@
    "label": "Repetition",
    "blurb": "",
    "clear": 115,
-   "partial": 11,
+   "partial": 10,
    "fail": 0,
-   "total": 126
+   "total": 125
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 5,
-   "partial": 70,
-   "fail": 51,
-   "total": 126
+   "clear": 4,
+   "partial": 71,
+   "fail": 50,
+   "total": 125
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
    "clear": 10,
-   "partial": 18,
-   "fail": 98,
-   "total": 126
+   "partial": 16,
+   "fail": 99,
+   "total": 125
   }
  ],
  "matrix": {
@@ -122,7 +122,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "<b>5 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>1</b> of the 5 holds all three counts.",
+ "matrix_note": "<b>3 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>0</b> of the 3 hold all three counts.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -805,11 +805,11 @@
   ],
   [
    "Who decides",
-   "The mark goes on a vice president or director of construction, a head of purchasing, or a division president: those roles can change a wall specification. At a contractor it goes on whoever signs for equipment."
+   "The mark goes on a vice president or director of construction, a head of purchasing, or a division president: those roles can change a wall specification. Construction managers, superintendents and purchasing agents execute one. At a builder of 400 homes a year or fewer that publishes none of those roles, it goes on the owner. At a contractor it goes on whoever signs for equipment."
   ],
   [
    "Sources",
-   "Company filings, company pages and trade press. Each contact rests on one of three, and says which: 46 a LinkedIn headline naming the firm, 158 the firm's own site or dated reporting, 0 a name with no page to link. A LinkedIn link is kept only where a search result showed it with the person's name and the firm. No aggregator was used."
+   "Company filings, company pages and trade press. Each contact rests on one of three, and says which: 46 a LinkedIn headline naming the firm, 160 the firm's own site or dated reporting, 0 a name with no page to link. A LinkedIn link is kept only where a search result showed it with the person's name and the firm. No aggregator was used."
   ],
   [
    "Scope",
@@ -974,19 +974,6 @@
     "method": "fail",
     "group": "national",
     "wide": null
-   },
-   {
-    "id": "DFW-056",
-    "name": "Drees Homes",
-    "short": "Drees",
-    "low": 2286,
-    "high": 2286,
-    "year": 2025,
-    "source": "BUILDER firm page",
-    "fit": "partial",
-    "method": "fail",
-    "group": "b",
-    "wide": "company-wide"
    },
    {
     "id": "DFW-041",
@@ -1204,7 +1191,7 @@
     "high": 286,
     "year": 2025,
     "source": "BUILDER firm page",
-    "fit": "partial",
+    "fit": "clear",
     "method": "fail",
     "group": "creative",
     "wide": "company-wide"
@@ -1263,7 +1250,7 @@
    }
   ],
   "closings_missing": 41,
-  "closings_base": 66,
+  "closings_base": 65,
   "bands": [
    [
     25,
@@ -1291,13 +1278,13 @@
    {
     "group": "a",
     "label": "Holds all three counts",
-    "n": 7,
+    "n": 6,
     "yes": 1,
-    "partly": 6,
+    "partly": 5,
     "no": 0,
-    "decider": 7,
+    "decider": 4,
     "confirm": 0,
-    "linked": 7
+    "linked": 6
    },
    {
     "group": "b",
@@ -1306,7 +1293,7 @@
     "yes": 0,
     "partly": 1,
     "no": 34,
-    "decider": 29,
+    "decider": 22,
     "confirm": 0,
     "linked": 34
    },
@@ -1315,11 +1302,11 @@
     "label": "Builds the wall, not the house",
     "n": 39,
     "yes": 4,
-    "partly": 7,
-    "no": 28,
+    "partly": 6,
+    "no": 29,
     "decider": 29,
     "confirm": 0,
-    "linked": 30
+    "linked": 31
    },
    {
     "group": "creative",
@@ -1337,8 +1324,8 @@
     "label": "National builder",
     "n": 20,
     "yes": 2,
-    "partly": 3,
-    "no": 15,
+    "partly": 4,
+    "no": 14,
     "decider": 13,
     "confirm": 0,
     "linked": 20
@@ -1348,8 +1335,8 @@
     "label": "Land owner, not the buyer",
     "n": 21,
     "yes": 0,
-    "partly": 1,
-    "no": 20,
+    "partly": 0,
+    "no": 21,
     "decider": 4,
     "confirm": 0,
     "linked": 20
@@ -1384,8 +1371,8 @@
      },
      {
       "name": "Drees",
-      "id": "DFW-056",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Highland Homes",
@@ -1431,8 +1418,8 @@
      },
      {
       "name": "Drees",
-      "id": "DFW-056",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Normandy",
@@ -1547,8 +1534,8 @@
      },
      {
       "name": "Drees",
-      "id": "DFW-056",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Highland Homes",
@@ -1611,8 +1598,8 @@
      },
      {
       "name": "Drees",
-      "id": "DFW-056",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Highland Homes",
@@ -1653,8 +1640,8 @@
      },
      {
       "name": "Drees",
-      "id": "DFW-056",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Grenadier",
@@ -16681,16 +16668,16 @@
   "local": "Fort Worth|Dallas|Allen|Collin"
  },
  "stats": {
-  "total": 126,
+  "total": 125,
   "adopters": 1,
-  "tier_a": 7,
+  "tier_a": 6,
   "tier_b": 35,
-  "principals": 204,
+  "principals": 206,
   "linkedin_held": 46,
   "audit_flags": 0,
-  "with_decider": 85,
-  "with_decider_live": 37,
-  "with_decider_confirmed": 85,
+  "with_decider": 75,
+  "with_decider_live": 27,
+  "with_decider_confirmed": 75,
   "with_decider_caveat": 0
  },
  "targets": [
@@ -16741,9 +16728,9 @@
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "About seven structures built by May 2026, per Community Impact, is within what one printer covers, and it runs its own."
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "About seven structures by May 2026, per Community Impact, is under the 25 to 400 band."
     },
     {
      "axis": "innovation",
@@ -16755,19 +16742,19 @@
    ],
    "marks": {
     "repeatability": "clear",
-    "machine_fit": "clear",
+    "machine_fit": "partial",
     "innovation": "clear"
    },
    "scores": {
     "repeatability": 3,
-    "machine_fit": 3,
+    "machine_fit": 2,
     "innovation": 3,
     "capital_access": 2,
     "wall_share": 3
    },
    "holds": 3,
-   "clears": 3,
-   "cell": "clear|clear",
+   "clears": 2,
+   "cell": "clear|partial",
    "group": "adopter",
    "tier": "P",
    "key_projects": [
@@ -17188,23 +17175,20 @@
      "role": "Chief Executive Officer",
      "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
      "source_evidence": "Named Chief Executive Officer in a December 14, 2022 post on the firm's blog, after serving as President and Chief Operating Officer since 2010.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Paul Miller",
      "role": "President and Chief Operating Officer",
      "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
      "source_evidence": "Named President and Chief Operating Officer in the same December 14, 2022 post on the firm's blog.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": 636,
-   "deciders": [
-    "Kevin Egan",
-    "Paul Miller"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -17468,23 +17452,20 @@
      "source_evidence": "Named on the firm's Our Legacy page as President from January 1, 2024.",
      "linkedin_url": "https://www.linkedin.com/in/zac-thompson-09260044/",
      "li_evidence": "Indexed title reads Zac Thompson - President, HistoryMaker Homes.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Nelson Mitchell",
      "role": "Chief Executive Officer",
      "source_url": "https://www.historymaker.com/blog/historymaker-homes-announces-retirement-of-company-president-and-successor/",
      "source_evidence": "Quoted as CEO in a company blog post of July 31, 2023.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": 728,
-   "deciders": [
-    "Zac Thompson",
-    "Nelson Mitchell"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -17612,257 +17593,6 @@
    "vol": null,
    "deciders": [
     "Charlie Coleman"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-042",
-   "entity_name": "Coventry Homes",
-   "short": "Coventry",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.coventryhomes.com/",
-   "company_li": "https://www.linkedin.com/company/coventryhomes/",
-   "team_url": "https://www.coventryhomes.com/about-us/",
-   "chain": null,
-   "phone": "9723668789",
-   "phone_source": "https://www.coventryhomes.com/connect/",
-   "phone_more": [
-    {
-     "digits": "7139032596",
-     "label": "Houston",
-     "source": null
-    },
-    {
-     "digits": "7373874393",
-     "label": "Austin",
-     "source": null
-    },
-    {
-     "digits": "2107916860",
-     "label": "San Antonio",
-     "source": null
-    }
-   ],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "More than 55,000 Texas homes closed, its own count",
-   "mvp_screen": "Its current listings identify the homes as Environments for Living and Energy Star Certified, under its EcoSmart program.",
-   "synopsis": "Texas brand of Dream Finders Homes (NASDAQ: DFH). Its about page claims more than 55,000 homes closed across four Texas markets and close to 100 communities. The Houston Chronicle reported that MHI, its owner before Dream Finders, closed over 2,000 homes across Houston, Dallas, Austin and San Antonio in 2020. In DFW it builds at Painted Tree in McKinney, Ramble by Hillwood in Celina and Meadow Vista in Anna. Its EcoSmart program builds to Environments for Living standards with third-party verification.",
-   "region": "Dallas-Fort Worth, with communities in McKinney, Celina and Anna",
-   "phone_label": "Dallas and Fort Worth line",
-   "phone_note": null,
-   "company_li_note": null,
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Production plans across close to 100 communities in four Texas metros, with no DFW count published."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No DFW closings figure, and a public parent, Dream Finders Homes."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "EcoSmart pays for Environments for Living standards with third-party verification, and current listings carry Energy Star certification. That is above-code performance, not a new wall method."
-    }
-   ],
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 3,
-   "clears": 0,
-   "cell": "partial|partial",
-   "group": "a",
-   "tier": "A",
-   "key_projects": [
-    {
-     "name": "Painted Tree and Ramble",
-     "detail": "Listed as a builder at Painted Tree in McKinney and Ramble by Hillwood in Celina.",
-     "url": "https://paintedtreetx.com/homes-districts/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.coventryhomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.coventryhomes.com/about-us/",
-     "date": null
-    },
-    {
-     "url": "https://www.coventryhomes.com/connect/",
-     "date": null
-    },
-    {
-     "url": "https://paintedtreetx.com/homes-districts/",
-     "date": null
-    },
-    {
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "date": null
-    },
-    {
-     "url": "https://dellroseliving.com/coventry-homes-in-dellrose-are-eco-smart/",
-     "date": null
-    },
-    {
-     "url": "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Chris Terhune",
-     "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.coventryhomes.com/blog/coventry-homes-expands-to-meadow-vista-with-award-winning-home-designs/",
-     "source_evidence": "Quoted on Coventry's own blog as Division President, on the Meadow Vista expansion in Anna.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Chris Terhune"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-BTR-006",
-   "entity_name": "AHV Communities",
-   "short": "AHV",
-   "entity_type": "btr_developer_builder_operator",
-   "entity_role": "channel",
-   "homepage_url": "https://ahvcommunities.com/",
-   "company_li": "https://www.linkedin.com/company/ahv-communities/",
-   "team_url": null,
-   "chain": null,
-   "phone": "9495082099",
-   "phone_source": "https://ahvcommunities.com/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2024",
-     "outlet": "DALTX Real Estate",
-     "headline": "San Antonio company finds a sweet spot with first North Texas project",
-     "url": "https://daltxrealestate.com/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/"
-    }
-   ],
-   "key_stat": "157-home first DFW project on 38 acres, McKinney",
-   "mvp_screen": "Develops, builds and operates its own rental communities. It does not publish whether it builds its own walls in DFW.",
-   "synopsis": "Build-to-rent developer, builder and operator, headquartered in San Antonio after moving from Costa Mesa, California. CandysDirt reported its first North Texas project in July 2022: 157 homes on a 38-acre site at Custer Road and U.S. 380 in McKinney. The same article quotes Mark Wolf, co-founder and CEO.",
-   "region": "San Antonio headquarters, first DFW project in McKinney",
-   "phone_label": "Main line, on the firm's homepage",
-   "phone_note": null,
-   "company_li_note": "AHV Communities company page.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Rental plans repeated on one 38-acre McKinney site."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "157 homes in its first North Texas project sits in the 25 to 400 band, if it builds its own walls."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record about construction method. Its product change is rental tenure and operations, not structure."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "clear",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 3,
-    "innovation": 1,
-    "capital_access": 2,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 2,
-   "cell": "clear|clear",
-   "group": "b",
-   "tier": "B",
-   "key_projects": [
-    {
-     "name": "McKinney build-to-rent",
-     "detail": "157 homes on 38 acres at Custer Road and U.S. 380, reported in July 2022.",
-     "url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://ahvcommunities.com/",
-     "date": null
-    },
-    {
-     "url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Mark Wolf",
-     "role": "Co-founder and CEO",
-     "source_url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
-     "source_evidence": "Quoted in a July 2022 CandysDirt article as co-founder and CEO of AHV Communities.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Mark Wolf"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -18348,15 +18078,13 @@
      "role": "Executive Vice President of Development",
      "source_url": "https://www.prnewswire.com/news-releases/american-homes-4-rent-ranks-41-on-2022-builder-100-list-301565032.html",
      "source_evidence": "Quoted in an American Homes 4 Rent release on PR Newswire as Executive Vice President of Development, on Development Program deliveries.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Brent Landry"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -19201,6 +18929,117 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-BTR-006",
+   "entity_name": "AHV Communities",
+   "short": "AHV",
+   "entity_type": "btr_developer_builder_operator",
+   "entity_role": "channel",
+   "homepage_url": "https://ahvcommunities.com/",
+   "company_li": "https://www.linkedin.com/company/ahv-communities/",
+   "team_url": null,
+   "chain": null,
+   "phone": "9495082099",
+   "phone_source": "https://ahvcommunities.com/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [
+    {
+     "date": "2024",
+     "outlet": "DALTX Real Estate",
+     "headline": "San Antonio company finds a sweet spot with first North Texas project",
+     "url": "https://daltxrealestate.com/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/"
+    }
+   ],
+   "key_stat": "157-home first DFW project on 38 acres, McKinney",
+   "mvp_screen": "Develops, builds and operates its own rental communities. It does not publish whether it builds its own walls in DFW.",
+   "synopsis": "Build-to-rent developer, builder and operator, headquartered in San Antonio after moving from Costa Mesa, California. CandysDirt reported its first North Texas project in July 2022: 157 homes on a 38-acre site at Custer Road and U.S. 380 in McKinney. The same article quotes Mark Wolf, co-founder and CEO.",
+   "region": "San Antonio headquarters, first DFW project in McKinney",
+   "phone_label": "Main line, on the firm's homepage",
+   "phone_note": null,
+   "company_li_note": "AHV Communities company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Rental plans repeated on one 38-acre McKinney site."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "157 homes is the total for its first North Texas project, not a yearly figure. On the bands, a firm with no published yearly figure is a Partly."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record about construction method. Its product change is rental tenure and operations, not structure."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2,
+    "wall_share": 2
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "McKinney build-to-rent",
+     "detail": "157 homes on 38 acres at Custer Road and U.S. 380, reported in July 2022.",
+     "url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://ahvcommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Mark Wolf",
+     "role": "Co-founder and CEO",
+     "source_url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
+     "source_evidence": "Quoted in a July 2022 CandysDirt article as co-founder and CEO of AHV Communities.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Mark Wolf"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "DFW-078",
    "entity_name": "Cadence Homes",
    "short": "Cadence Homes",
@@ -19434,23 +19273,20 @@
      "source_evidence": "Named Chief Executive Officer in Camillo's own release of August 4, 2025.",
      "linkedin_url": "https://www.linkedin.com/in/dan-miller/",
      "li_evidence": "Indexed title reads Dan Miller - Chief Executive Officer at Camillo Companies.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Matt Hansen",
      "role": "President, SimplyHome",
      "source_url": "https://www.camillocompanies.com/blog/camillo-companies-names-tanya-rizzo-president-legend-homes-matt-hansen-president-simplyhome",
      "source_evidence": "Named President of SimplyHome on Camillo's own blog, May 22, 2023.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Dan Miller",
-    "Matt Hansen"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -20150,7 +19986,7 @@
      "role": "President and Chairman",
      "source_url": "https://www.impressionhomes.net/about-us/meet-the-team/",
      "source_evidence": "Named on the firm's own team page as President and Chairman, named President in 2024.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Bruce Heikkinen",
@@ -20160,11 +19996,9 @@
     }
    ],
    "vol": 406,
-   "deciders": [
-    "Steve Garza"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -20384,23 +20218,20 @@
      "role": "Co-Founder, Megatel Group",
      "source_url": "https://www.megatelhomes.com/about-us",
      "source_evidence": "Named on Megatel's own about page, with Zach Ipour, as co-founder of Megatel Group.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Zach Ipour",
      "role": "Co-Founder, Megatel Group",
      "source_url": "https://www.megatelhomes.com/about-us",
      "source_evidence": "Named on Megatel's own about page, with Aaron Ipour, as co-founder of Megatel Group.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": 696,
-   "deciders": [
-    "Aaron Ipour",
-    "Zach Ipour"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -20614,15 +20445,13 @@
      "role": "President and Chief Executive Officer",
      "source_url": "https://www.builder100.com/speaker/matthew-r-zaist/",
      "source_evidence": "Named President and CEO of Risewell Homes in a Builder 100 speaker bio, which says he joined predecessor New Home Co. in that role in September 2021.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Matthew R. Zaist"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -20736,15 +20565,13 @@
      "role": "President and Founder",
      "source_url": "https://www.riversidehomebuilders.com/about/",
      "source_evidence": "Names himself president and founder on the firm's about page.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": 649,
-   "deciders": [
-    "Tim Fleet"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -21348,15 +21175,13 @@
      "role": "Owner and Executive Chair, Perry Homes",
      "source_url": "https://www.perryhomes.com/about-perry-homes",
      "source_evidence": "Named on the Perry Homes about page as Owner and Executive Chair of the parent company.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Kathy Britton"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -21497,6 +21322,146 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-042",
+   "entity_name": "Coventry Homes",
+   "short": "Coventry",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.coventryhomes.com/",
+   "company_li": "https://www.linkedin.com/company/coventryhomes/",
+   "team_url": "https://www.coventryhomes.com/about-us/",
+   "chain": null,
+   "phone": "9723668789",
+   "phone_source": "https://www.coventryhomes.com/connect/",
+   "phone_more": [
+    {
+     "digits": "7139032596",
+     "label": "Houston",
+     "source": null
+    },
+    {
+     "digits": "7373874393",
+     "label": "Austin",
+     "source": null
+    },
+    {
+     "digits": "2107916860",
+     "label": "San Antonio",
+     "source": null
+    }
+   ],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "More than 55,000 Texas homes closed, its own count",
+   "mvp_screen": "Its current listings identify the homes as Environments for Living and Energy Star Certified, under its EcoSmart program.",
+   "synopsis": "Texas brand of Dream Finders Homes (NASDAQ: DFH). Its about page claims more than 55,000 homes closed across four Texas markets and close to 100 communities. The Houston Chronicle reported that MHI, its owner before Dream Finders, closed over 2,000 homes across Houston, Dallas, Austin and San Antonio in 2020. In DFW it builds at Painted Tree in McKinney, Ramble by Hillwood in Celina and Meadow Vista in Anna. Its EcoSmart program builds to Environments for Living standards with third-party verification.",
+   "region": "Dallas-Fort Worth, with communities in McKinney, Celina and Anna",
+   "phone_label": "Dallas and Fort Worth line",
+   "phone_note": null,
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Production plans across close to 100 communities in four Texas metros, with no DFW count published."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No DFW closings figure, and a public parent, Dream Finders Homes."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "EcoSmart and Energy Star appear on some communities and listings, which is a certification on some homes, not every home. Nothing on record about a new wall method."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 2,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 2
+   },
+   "holds": 2,
+   "clears": 0,
+   "cell": "partial|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "Painted Tree and Ramble",
+     "detail": "Listed as a builder at Painted Tree in McKinney and Ramble by Hillwood in Celina.",
+     "url": "https://paintedtreetx.com/homes-districts/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.coventryhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.coventryhomes.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.coventryhomes.com/connect/",
+     "date": null
+    },
+    {
+     "url": "https://paintedtreetx.com/homes-districts/",
+     "date": null
+    },
+    {
+     "url": "https://www.ramblebyhillwood.com/new-homes/",
+     "date": null
+    },
+    {
+     "url": "https://dellroseliving.com/coventry-homes-in-dellrose-are-eco-smart/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Chris Terhune",
+     "role": "Division President, Dallas-Fort Worth",
+     "source_url": "https://www.coventryhomes.com/blog/coventry-homes-expands-to-meadow-vista-with-award-winning-home-designs/",
+     "source_evidence": "Quoted on Coventry's own blog as Division President, on the Meadow Vista expansion in Anna.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Chris Terhune"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "DFW-036",
    "entity_name": "Belclaire Homes",
    "short": "Belclaire",
@@ -21605,125 +21570,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-056",
-   "entity_name": "Drees Homes",
-   "short": "Drees",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.dreeshomes.com/",
-   "company_li": "https://www.linkedin.com/company/drees-homes/",
-   "team_url": null,
-   "chain": null,
-   "phone": "9729534500",
-   "phone_source": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "2,286 company-wide closings in 2025, BUILDER records",
-   "mvp_screen": "Sells in DFW as Drees Custom Homes, on the builder lists at Hillwood's Ramble and at Painted Tree. Its product leans to luxury and custom.",
-   "synopsis": "Multi-state family builder that sells in DFW as Drees Custom Homes. The published builder lists at Hillwood's Ramble and at Painted Tree both name it. Its product leans to luxury and custom homes. BUILDER records 2,286 company-wide closings in 2025, and no DFW figure is published. A Drees press release of 23 September 2024 named Tim Terrell President, with David Drees continuing as CEO. Its DFW office and design center are in Irving.",
-   "region": "Irving office, with communities in DFW masterplans",
-   "phone_label": "DFW office and design center, Irving",
-   "phone_note": null,
-   "company_li_note": "Drees Homes company page.",
-   "team_note": "No DFW Division President is named.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Plans sold inside DFW masterplans, with a custom and luxury lean that limits repetition."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "2,286 closings in 2025 are company-wide, across several states, and no DFW figure is published."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Its roster copy cites four generations of Drees family craft. Nothing on record for a new building method."
-    }
-   ],
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "partial",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 2,
-    "innovation": 1,
-    "capital_access": 2,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 0,
-   "cell": "partial|partial",
-   "group": "b",
-   "tier": "B",
-   "key_projects": [
-    {
-     "name": "Ramble and Painted Tree",
-     "detail": "Listed as Drees Custom Homes on both masterplans' builder rosters.",
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.dreeshomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "date": null
-    },
-    {
-     "url": "https://paintedtreetx.com/homes-districts/",
-     "date": null
-    },
-    {
-     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/firms/drees-homes/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Tim Terrell",
-     "role": "President",
-     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/",
-     "source_evidence": "Named President in a Drees Homes press release of 23 September 2024."
-    },
-    {
-     "name": "David Drees",
-     "role": "Chief Executive Officer",
-     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/",
-     "source_evidence": "Named as continuing CEO in the same Drees press release of 23 September 2024."
-    }
-   ],
-   "vol": 2286,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-073",
    "entity_name": "Huntington Homes",
    "short": "Huntington",
@@ -21818,15 +21664,13 @@
      "source_evidence": "Named in Builder and Developer, August 6, 2026, as Chairman and CEO of Highland Homes, Huntington's parent brand.",
      "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/",
      "li_evidence": "Indexed title reads Aaron Graham - Highland Homes.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Aaron Graham"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -22054,7 +21898,7 @@
    "phone_label": "Texas plant and sales",
    "phone_note": null,
    "company_li_note": "Future Frame USA company page.",
-   "team_note": "Joe Mazzenga's LinkedIn profile shows him at Future Frame USA only from September 2021 to May 2022. The about page names no current lead.",
+   "team_note": "Joe Mazzenga's LinkedIn profile shows him at Future Frame USA only from September 2021 to May 2022.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -22114,9 +21958,31 @@
     {
      "url": "https://communityimpact.com/houston/lake-houston-humble-kingwood/impacts/2022/02/24/future-frame-usa-now-open-in-east-montgomery-county-industrial-park/",
      "date": null
+    },
+    {
+     "url": "https://futureframeusa.com/meet-our-team/",
+     "date": null
     }
    ],
    "principals": [
+    {
+     "name": "Glen Gilbert",
+     "role": "General Manager",
+     "decider": true,
+     "source_url": "https://futureframeusa.com/meet-our-team/",
+     "source_evidence": "Named on the firm's own Meet Our Team page as General Manager.",
+     "linkedin_url": null,
+     "li_evidence": null
+    },
+    {
+     "name": "Shane McCullough",
+     "role": "President",
+     "decider": true,
+     "source_url": "https://futureframeusa.com/meet-our-team/",
+     "source_evidence": "Named on the firm's own Meet Our Team page as President.",
+     "linkedin_url": null,
+     "li_evidence": null
+    },
     {
      "name": "Joe Mazzenga",
      "role": "General Manager in 2022",
@@ -22127,9 +21993,12 @@
     }
    ],
    "vol": null,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Glen Gilbert",
+    "Shane McCullough"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -22554,7 +22423,7 @@
     },
     {
      "name": "Tim Hughes",
-     "role": "Vice President, Construction Management",
+     "role": "Senior Vice President, Construction Management",
      "source_url": "https://www.deebrowncompanies.com/about",
      "source_evidence": "Named on the firm's about page as Vice President, Construction Management.",
      "decider": true
@@ -22935,7 +22804,7 @@
      "role": "Project Consultant, Dallas/Ft. Worth and North Texas",
      "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
      "source_evidence": "Named on the Cedar Park plant page as Project Consultant for Dallas/Ft. Worth and North Texas, with a direct line.",
-     "decider": true
+     "decider": false
     },
     {
      "name": "Garrett Weidman",
@@ -22945,8 +22814,109 @@
     }
    ],
    "vol": null,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-TR-026",
+   "entity_name": "Harvey Cleary",
+   "short": "Harvey Cleary",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "homepage_url": "https://www.harveycleary.com/",
+   "company_li": "https://www.linkedin.com/company/harvey-cleary/",
+   "team_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
+   "chain": "tiltup",
+   "phone": "5129289300",
+   "phone_source": "https://www.harveycleary.com/about-us/locations/austin-tx/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Texas tilt-wall general contractor, no DFW office listed",
+   "mvp_screen": "Its locations pages list Austin, Houston, San Antonio, Denver and Washington, DC, and no office in Dallas-Fort Worth.",
+   "synopsis": "General contractor with tilt-wall and design-build delivery, rooted in Austin and working across Texas. ENR describes it as a diversified Texas general contractor. Its locations pages list offices in Austin, Houston, San Antonio, Denver and Washington, DC. Its Austin location page names Scott Clarke as Chief Operating Officer and Managing Partner.",
+   "region": "Austin, with Texas offices in Houston and San Antonio",
+   "phone_label": "Austin office",
+   "phone_note": null,
+   "company_li_note": "Company page, Harvey Cleary.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Tilt-wall and commercial shells built repeatedly across Texas markets."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "$2 billion in construction volume and more than 700 employees on the firm's own count. One or two printers would be a line inside a business that size rather than the business."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 3
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "trade",
+   "tier": "W",
+   "key_projects": [],
+   "sources": [
+    {
+     "url": "https://www.harveycleary.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.harveycleary.com/about-us/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Scott Clarke",
+     "role": "Chief Operating Officer and Managing Partner",
+     "source_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
+     "source_evidence": "Named on the firm's Austin location page as Chief Operating Officer and Managing Partner.",
+     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
+     "li_evidence": "Indexed title reads Scott Clarke - Harvey-Cleary Builders.",
+     "decider": true
+    }
+   ],
+   "vol": null,
    "deciders": [
-    "Robb Harrington"
+    "Scott Clarke"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -23001,7 +22971,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "Nothing on record about a new wall method. Its precast line is described as architectural and structural, and walls are not named."
+     "text": "Nothing on record about a new wall method. Its line includes prestressed wall panels, which is its normal product."
     }
    ],
    "marks": {
@@ -23257,111 +23227,6 @@
    "deciders": [
     "Robert Miller",
     "Terry Fowler"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-TR-011",
-   "entity_name": "UFP Site Built, Hillsboro",
-   "short": "UFP Hillsboro",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "homepage_url": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
-   "company_li": "https://www.linkedin.com/company/ufpconstruction-sitebuilt/",
-   "team_url": null,
-   "chain": "panel",
-   "phone": "2545802846",
-   "phone_source": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "Truss and component plant in Hillsboro",
-   "mvp_screen": "One plant inside UFP Industries' national network, which supplies trusses and wall panels to production builders.",
-   "synopsis": "UFP Site Built runs a truss manufacturing location in Hillsboro, Texas, serving the DFW area. It is part of UFP Industries' site-built components network, which supplies wall panels and trusses to production builders. Its leadership team page names Dwain Hutton as Executive Vice President and Mike Mizell as Vice President Operations West.",
-   "region": "Hillsboro, serving DFW",
-   "phone_label": "Hillsboro plant",
-   "phone_note": null,
-   "company_li_note": "UFP Site Built company page.",
-   "team_note": "The Hillsboro location page names no plant manager.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Trusses and components made repeatedly at the Hillsboro plant for Texas production builders."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "The plant sits inside UFP Industries' national network, and purchasing is corporate."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Offsite component manufacturing is its stated business. That improves framing rather than replacing the wall."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 3
-   },
-   "holds": 2,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "trade",
-   "tier": "W",
-   "key_projects": [],
-   "sources": [
-    {
-     "url": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
-     "date": null
-    },
-    {
-     "url": "https://ufpsitebuilt.com/leadershipteam/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Dwain Hutton",
-     "role": "Executive Vice President, UFP Site Built",
-     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
-     "source_evidence": "Named on UFP Site Built's own leadership team page as Executive Vice President.",
-     "decider": true
-    },
-    {
-     "name": "Mike Mizell",
-     "role": "Vice President Operations West, UFP Site Built",
-     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
-     "source_evidence": "Named on UFP Site Built's own leadership team page as Vice President Operations West.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Dwain Hutton",
-    "Mike Mizell"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -23697,15 +23562,13 @@
      "role": "Primary contact",
      "source_url": "https://www.blackknightconstruction.com/",
      "source_evidence": "Named on the firm's homepage through its contact email and a client testimonial. No surname is published.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": null,
-   "deciders": [
-    "Sergio"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -24390,13 +24253,13 @@
      "role": "Chief Financial Officer",
      "source_url": "https://www.fenimoreblythe.com/team/",
      "source_evidence": "Named on the firm's own team page as CFO, who bought the firm in 1999.",
-     "decider": true
+     "decider": false,
+     "departed": true
     }
    ],
    "vol": null,
    "deciders": [
-    "David Grzesiak",
-    "Mark Grzesiak"
+    "David Grzesiak"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -25552,105 +25415,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-TR-026",
-   "entity_name": "Harvey Cleary",
-   "short": "Harvey Cleary",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "homepage_url": "https://www.harveycleary.com/",
-   "company_li": "https://www.linkedin.com/company/harvey-cleary/",
-   "team_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
-   "chain": "tiltup",
-   "phone": "5129289300",
-   "phone_source": "https://www.harveycleary.com/about-us/locations/austin-tx/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "Texas tilt-wall general contractor, no DFW office listed",
-   "mvp_screen": "Its locations pages list Austin, Houston, San Antonio, Denver and Washington, DC, and no office in Dallas-Fort Worth.",
-   "synopsis": "General contractor with tilt-wall and design-build delivery, rooted in Austin and working across Texas. ENR describes it as a diversified Texas general contractor. Its locations pages list offices in Austin, Houston, San Antonio, Denver and Washington, DC. Its Austin location page names Scott Clarke as Chief Operating Officer and Managing Partner.",
-   "region": "Austin, with Texas offices in Houston and San Antonio",
-   "phone_label": "Austin office",
-   "phone_note": null,
-   "company_li_note": "Company page, Harvey Cleary.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Tilt-wall and commercial shells built repeatedly across Texas markets."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "A multi-market general contractor, where a printer purchase is a corporate decision."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 1,
-    "capital_access": 3,
-    "wall_share": 3
-   },
-   "holds": 1,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "trade",
-   "tier": "W",
-   "key_projects": [],
-   "sources": [
-    {
-     "url": "https://www.harveycleary.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Scott Clarke",
-     "role": "Chief Operating Officer and Managing Partner",
-     "source_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
-     "source_evidence": "Named on the firm's Austin location page as Chief Operating Officer and Managing Partner.",
-     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
-     "li_evidence": "Indexed title reads Scott Clarke - Harvey-Cleary Builders.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Scott Clarke"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-TR-024",
    "entity_name": "Manhattan Construction Company, Dallas",
    "short": "Manhattan Dallas",
@@ -25953,14 +25717,143 @@
     {
      "url": "https://www.strlco.com/wp-content/uploads/2021/11/Tealstone_Brochure.pdf",
      "date": null
+    },
+    {
+     "url": "https://www.tealstonelp.com/who-we-are/",
+     "date": null
     }
    ],
-   "principals": [],
-   "people_absent": "Its own pages name no officer.",
+   "principals": [
+    {
+     "name": "Rick Callihan",
+     "role": "Vice President",
+     "source_url": "https://www.tealstonelp.com/who-we-are/",
+     "source_evidence": "Named on the firm's own Who We Are page as Vice President.",
+     "linkedin_url": null,
+     "li_evidence": null
+    },
+    {
+     "name": "Gary Engasser",
+     "role": "President",
+     "decider": true,
+     "source_url": "https://www.tealstonelp.com/who-we-are/",
+     "source_evidence": "Named on the firm's own Who We Are page as President.",
+     "linkedin_url": null,
+     "li_evidence": null
+    }
+   ],
+   "people_absent": null,
    "vol": null,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
+   "deciders": [
+    "Gary Engasser"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-TR-011",
+   "entity_name": "UFP Site Built, Hillsboro",
+   "short": "UFP Hillsboro",
+   "entity_type": "contractor",
+   "entity_role": "wall_trade",
+   "homepage_url": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
+   "company_li": "https://www.linkedin.com/company/ufpconstruction-sitebuilt/",
+   "team_url": null,
+   "chain": "panel",
+   "phone": "2545802846",
+   "phone_source": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Truss and component plant in Hillsboro",
+   "mvp_screen": "One plant inside UFP Industries' national network, which supplies trusses and wall panels to production builders.",
+   "synopsis": "UFP Site Built runs a truss manufacturing location in Hillsboro, Texas, serving the DFW area. It is part of UFP Industries' site-built components network, which supplies wall panels and trusses to production builders. Its leadership team page names Dwain Hutton as Executive Vice President and Mike Mizell as Vice President Operations West.",
+   "region": "Hillsboro, serving DFW",
+   "phone_label": "Hillsboro plant",
+   "phone_note": null,
+   "company_li_note": "UFP Site Built company page.",
+   "team_note": "The Hillsboro location page names no plant manager.",
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Trusses and components made repeatedly at the Hillsboro plant for Texas production builders."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "The plant sits inside UFP Industries' national network, and purchasing is corporate."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "No record of paying for an unproven method. Manufacturing wall panels is this industry's ordinary business rather than an adoption."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 3
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "trade",
+   "tier": "W",
+   "key_projects": [],
+   "sources": [
+    {
+     "url": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
+     "date": null
+    },
+    {
+     "url": "https://ufpsitebuilt.com/leadershipteam/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Dwain Hutton",
+     "role": "Executive Vice President, UFP Site Built",
+     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
+     "source_evidence": "Named on UFP Site Built's own leadership team page as Executive Vice President.",
+     "decider": true
+    },
+    {
+     "name": "Mike Mizell",
+     "role": "Vice President Operations West, UFP Site Built",
+     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
+     "source_evidence": "Named on UFP Site Built's own leadership team page as Vice President Operations West.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Dwain Hutton",
+    "Mike Mizell"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -26114,9 +26007,9 @@
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "286 closings in 2025 per BUILDER, company-wide across Texas and Tennessee. Its own story page gives about 300 a year. No DFW share is published."
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "286 closings in 2025 per BUILDER, company-wide across Texas and Tennessee, sits in the 25 to 400 band."
     },
     {
      "axis": "innovation",
@@ -26128,19 +26021,19 @@
    ],
    "marks": {
     "repeatability": "partial",
-    "machine_fit": "partial",
+    "machine_fit": "clear",
     "innovation": "fail"
    },
    "scores": {
     "repeatability": 2,
-    "machine_fit": 2,
+    "machine_fit": 3,
     "innovation": 1,
     "capital_access": 3,
     "wall_share": 2
    },
    "holds": 2,
-   "clears": 0,
-   "cell": "partial|partial",
+   "clears": 1,
+   "cell": "partial|clear",
    "group": "creative",
    "tier": "X",
    "key_projects": [],
@@ -26179,13 +26072,12 @@
      "role": "Chairman",
      "source_url": "https://partnersinbuilding.com/our-story",
      "source_evidence": "Named on the firm's story page as Chief Executive Officer from 2010, and in Realty News Report, June 2026, as moving to Chairman.",
-     "decider": true
+     "decider": false
     }
    ],
    "vol": 286,
    "deciders": [
-    "Chris Lemming",
-    "Jim Lemming"
+    "Chris Lemming"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -26769,6 +26661,122 @@
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-060",
+   "entity_name": "Century Communities",
+   "short": "Century",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.centurycommunities.com/",
+   "company_li": "https://www.linkedin.com/company/century-communities/",
+   "team_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+   "chain": null,
+   "phone": "8178662980",
+   "phone_source": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "National builder, DFW communities from Anna to Ferris",
+   "mvp_screen": "National plan collections, such as Classic, repeated across DFW communities, with purchasing above the metro.",
+   "synopsis": "National homebuilder with a Dallas-Fort Worth metro page. It lists communities including Anna Town Square, Miraverde South in Crowley, Overland Grove in Forney, Summerwood Estates in Red Oak, Middlefield Village in Dallas, Ambergrove in Royse City and Sperling Farms in Ferris, plus its Century Complete product. Its site markets DFW homes from the low $200,000s to the high $500,000s. A company press release of April 15, 2026, on Anna Town Square, quotes Taylor Humphrey as Division President.",
+   "region": "Dallas-Fort Worth, from Anna to Ferris",
+   "phone_label": "DFW available-homes line",
+   "phone_note": null,
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "National plan collections, including Classic, repeated across the communities on its DFW metro page."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "A national builder, with purchasing above the metro."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Record 112-day cycle and a 5 percent direct-cost cut, per HousingWire on its Q2 2026 results, but no change of method."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 2,
+    "capital_access": 3,
+    "wall_share": 2
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "national",
+   "tier": "N",
+   "key_projects": [
+    {
+     "name": "Overland Grove, Forney",
+     "detail": "Classic collection. A model home and grand opening were announced in 2026.",
+     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/forney/overland-grove/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
+     "date": null
+    },
+    {
+     "url": "https://www.centurycommunities.com/insights/dallas-fort-worth-metro/",
+     "date": null
+    },
+    {
+     "url": "https://www.centurycommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Taylor Humphrey",
+     "role": "Division President, Dallas-Fort Worth",
+     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+     "source_evidence": "Quoted in a Century press release on PR Newswire, April 15, 2026, as Division President, on Anna Town Square.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Taylor Humphrey"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -27495,118 +27503,6 @@
    "vol": null,
    "deciders": [
     "Scott Bryson"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-060",
-   "entity_name": "Century Communities",
-   "short": "Century",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.centurycommunities.com/",
-   "company_li": "https://www.linkedin.com/company/century-communities/",
-   "team_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-   "chain": null,
-   "phone": "8178662980",
-   "phone_source": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "National builder, DFW communities from Anna to Ferris",
-   "mvp_screen": "National plan collections, such as Classic, repeated across DFW communities, with purchasing above the metro.",
-   "synopsis": "National homebuilder with a Dallas-Fort Worth metro page. It lists communities including Anna Town Square, Miraverde South in Crowley, Overland Grove in Forney, Summerwood Estates in Red Oak, Middlefield Village in Dallas, Ambergrove in Royse City and Sperling Farms in Ferris, plus its Century Complete product. Its site markets DFW homes from the low $200,000s to the high $500,000s. A company press release of April 15, 2026, on Anna Town Square, quotes Taylor Humphrey as Division President.",
-   "region": "Dallas-Fort Worth, from Anna to Ferris",
-   "phone_label": "DFW available-homes line",
-   "phone_note": null,
-   "company_li_note": null,
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "National plan collections, including Classic, repeated across the communities on its DFW metro page."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "A national builder, with purchasing above the metro."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record about wall method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 1,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 1,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "national",
-   "tier": "N",
-   "key_projects": [
-    {
-     "name": "Overland Grove, Forney",
-     "detail": "Classic collection. A model home and grand opening were announced in 2026.",
-     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/forney/overland-grove/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
-     "date": null
-    },
-    {
-     "url": "https://www.centurycommunities.com/insights/dallas-fort-worth-metro/",
-     "date": null
-    },
-    {
-     "url": "https://www.centurycommunities.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Taylor Humphrey",
-     "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-     "source_evidence": "Quoted in a Century press release on PR Newswire, April 15, 2026, as Division President, on Anna Town Square.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Taylor Humphrey"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -28668,144 +28564,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-CH-001",
-   "entity_name": "Hillwood Communities",
-   "short": "Hillwood",
-   "entity_type": "mpc_developer",
-   "entity_role": "channel",
-   "homepage_url": "https://www.hillwoodcommunities.com/",
-   "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
-   "team_url": "https://www.hillwoodcommunities.com/leadership/",
-   "chain": null,
-   "phone": "2144490914",
-   "phone_source": "https://www.hillwoodcommunities.com/contact/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "DFW masterplan developer, including Ramble and Liberty",
-   "mvp_screen": "Sells lots. Ramble's builder roster names American Legend, Coventry, Drees, Highland and Perry.",
-   "synopsis": "Residential land arm of Hillwood, the Perot family company, at 3000 Turtle Creek Blvd, Dallas. It develops DFW masterplans including Liberty in Melissa and Ramble in Celina, and publishes a builder roster for each. Its leadership page names Fred Balda as President and several DFW project managers. Ramble's published builders are American Legend, Coventry, Drees, Highland and Perry.",
-   "region": "Dallas headquarters, with masterplans in Celina and Melissa",
-   "phone_label": "Main office, Dallas",
-   "phone_note": null,
-   "company_li_note": "Hillwood Communities company page.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Several DFW masterplans at once, each with a published multi-builder roster."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "It develops lots and sells them to builders. The builders buy the wall."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "A hundred printed homes were built inside one of its own communities. Hillwood developed the ground. Lennar bought the printing."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 0
-   },
-   "holds": 2,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "channel",
-   "tier": "M",
-   "key_projects": [
-    {
-     "name": "Ramble, Celina, and Liberty, Melissa",
-     "detail": "Ramble's published builders are American Legend, Coventry, Drees, Highland and Perry.",
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.hillwoodcommunities.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.hillwoodcommunities.com/leadership/",
-     "date": null
-    },
-    {
-     "url": "https://www.hillwoodcommunities.com/contact/",
-     "date": null
-    },
-    {
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "date": null
-    },
-    {
-     "url": "https://www.hillwoodcommunities.com/lifestyle-communities/liberty/",
-     "date": null
-    },
-    {
-     "url": "https://www.hillwoodcommunities.com/blog/the-future-of-housing-3d-printed-homes-in-georgetown-texas/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Fred Balda",
-     "role": "President",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Named on Hillwood Communities' leadership page as President."
-    },
-    {
-     "name": "Elaine Eatman",
-     "role": "Senior Vice President, DFW Project Manager for Ramble and Union Park",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Named in the DFW project managers section of Hillwood's leadership page, for Ramble and Union Park.",
-     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10",
-     "li_evidence": "Indexed title reads Elaine Eatman - Senior Vice President at Hillwood.",
-     "decider": true
-    },
-    {
-     "name": "Angie Mastrocola",
-     "role": "Senior Vice President, DFW Project Manager for Harvest",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Named in the DFW project managers section of Hillwood's leadership page, for Harvest.",
-     "linkedin_url": "https://www.linkedin.com/in/angie-waddle-mastrocola-94766213/",
-     "li_evidence": "Indexed title reads Angie (Waddle) Mastrocola - Hillwood Development.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Elaine Eatman",
-    "Angie Mastrocola"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-CH-015",
    "entity_name": "Cambridge Crossing (Celina, Cambridge Companies)",
    "short": "Cambridge Crossing",
@@ -29018,6 +28776,144 @@
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-CH-001",
+   "entity_name": "Hillwood Communities",
+   "short": "Hillwood",
+   "entity_type": "mpc_developer",
+   "entity_role": "channel",
+   "homepage_url": "https://www.hillwoodcommunities.com/",
+   "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
+   "team_url": "https://www.hillwoodcommunities.com/leadership/",
+   "chain": null,
+   "phone": "2144490914",
+   "phone_source": "https://www.hillwoodcommunities.com/contact/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "DFW masterplan developer, including Ramble and Liberty",
+   "mvp_screen": "Sells lots. Ramble's builder roster names American Legend, Coventry, Drees, Highland and Perry.",
+   "synopsis": "Residential land arm of Hillwood, the Perot family company, at 3000 Turtle Creek Blvd, Dallas. It develops DFW masterplans including Liberty in Melissa and Ramble in Celina, and publishes a builder roster for each. Its leadership page names Fred Balda as President and several DFW project managers. Ramble's published builders are American Legend, Coventry, Drees, Highland and Perry.",
+   "region": "Dallas headquarters, with masterplans in Celina and Melissa",
+   "phone_label": "Main office, Dallas",
+   "phone_note": null,
+   "company_li_note": "Hillwood Communities company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Several DFW masterplans at once, each with a published multi-builder roster."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "It develops lots and sells them to builders. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record about paying for a construction method. A hundred printed homes were built inside one of its own communities, and Lennar paid for the printing."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 0
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "channel",
+   "tier": "M",
+   "key_projects": [
+    {
+     "name": "Ramble, Celina, and Liberty, Melissa",
+     "detail": "Ramble's published builders are American Legend, Coventry, Drees, Highland and Perry.",
+     "url": "https://www.ramblebyhillwood.com/new-homes/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.hillwoodcommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/contact/",
+     "date": null
+    },
+    {
+     "url": "https://www.ramblebyhillwood.com/new-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/lifestyle-communities/liberty/",
+     "date": null
+    },
+    {
+     "url": "https://www.hillwoodcommunities.com/blog/the-future-of-housing-3d-printed-homes-in-georgetown-texas/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Fred Balda",
+     "role": "President",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "source_evidence": "Named on Hillwood Communities' leadership page as President."
+    },
+    {
+     "name": "Elaine Eatman",
+     "role": "Senior Vice President, DFW Project Manager for Ramble and Union Park",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "source_evidence": "Named in the DFW project managers section of Hillwood's leadership page, for Ramble and Union Park.",
+     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10",
+     "li_evidence": "Indexed title reads Elaine Eatman - Senior Vice President at Hillwood.",
+     "decider": true
+    },
+    {
+     "name": "Angie Mastrocola",
+     "role": "Senior Vice President, DFW Project Manager for Harvest",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/",
+     "source_evidence": "Named in the DFW project managers section of Hillwood's leadership page, for Harvest.",
+     "linkedin_url": "https://www.linkedin.com/in/angie-waddle-mastrocola-94766213/",
+     "li_evidence": "Indexed title reads Angie (Waddle) Mastrocola - Hillwood Development.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Elaine Eatman",
+    "Angie Mastrocola"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {

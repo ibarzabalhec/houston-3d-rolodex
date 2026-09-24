@@ -860,6 +860,20 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 }
 .fig{display:block;max-width:100%;height:auto;font-family:var(--sans)}
 .fig.tl{max-width:760px}
+/* Build 72. Every figure keeps a working size on a phone and scrolls inside its
+   own wrapper, as the map does, so no label renders below about 9 pixels. Tap
+   targets on a phone are at least 32 pixels. */
+@media(max-width:640px){
+  .rowadd{width:32px;height:32px}
+  .fbtn2{min-height:32px}
+  .back{min-height:36px}
+  .seg button{min-height:32px}
+  .cbtn,.thm{min-height:32px}
+  .ftable summary{padding:11px 0}
+  .lnk{min-height:32px}
+  .mark{padding:8px 0}
+  .yrctl input[type=range]{height:32px}
+}
 /* The field timeline, as a list. Columns: year, month, mark, event. The rule
    runs down the mark column. */
 .tline{list-style:none;margin:6px 0 0;padding:0;position:relative;max-width:700px}

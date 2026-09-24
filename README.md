@@ -22,8 +22,8 @@ Yes and Partly both count as holding. A No does not. Sections are assigned befor
 
 - **Already buying printed walls**, 3
 - **Lennar and the firms it owns**, 3
-- **Holds all three counts**, 12
-- **One gap**, 31
+- **Holds all three counts**, 11
+- **One gap**, 32
 - **Builds the wall, not the house**, 50
 - **National builder**, 10
 - **Custom and hybrid job**, 10
