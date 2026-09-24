@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 70,
+ "build": 71,
  "last_updated": "2026-09-24",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-24",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-24",
@@ -22,7 +22,7 @@
   "b": "In on two of three counts.",
   "adopter": "Has printed walls standing or contracted with a competitor.",
   "national": "Purchasing runs at company level, across several states.",
-  "trade": "DFW builders do not put up their own walls either, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
+  "trade": "DFW builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
   "creative": "Design-led work that does not repeat a plan set. The printed element sits inside a conventional project.",
   "channel": "Owns the ground. The builders inside buy the wall.",
   "icon": "Lennar's DFW business. LEN X invested in ICON in August 2021, and Lennar built Wolf Ranch with ICON."
@@ -45,7 +45,7 @@
    }
   ],
   [
-   "88",
+   "85",
    "with a decision-maker named",
    true,
    {
@@ -122,7 +122,7 @@
   "machine_fit": "Printer fit: one or two printers would cover it",
   "innovation": "Track record: has paid for a new building method before"
  },
- "matrix_note": "<b>5 firms</b> read Yes on both axes of this grid. The grid leaves out track record; <b>1</b> of the 5 hold all three counts.",
+ "matrix_note": "<b>5 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>1</b> of the 5 holds all three counts.",
  "role_labels": {
   "vertical_buyer": "Buys walls",
   "wall_trade": "Builds the wall",
@@ -138,11 +138,11 @@
  },
  "competitor": null,
  "icon_record": {
-  "line": "Every ICON project on the public record is in the Austin area. None is in Dallas-Fort Worth.",
+  "line": "Three ICON housing programmes, in Georgetown and Austin, and the Titan's published terms.",
   "facts": [
    [
     "Wolf Ranch, Georgetown",
-    "100 homes with Lennar, designed by Bjarke Ingels Group, printed on Vulcan. Eight floor plans and twenty-four elevations, 1,500 to 2,112 square feet. Lennar's November 2022 announcement put prices from the mid $400,000s; later coverage says $400,000. ICON's own page gives a 2025 completion, and by August 2024 ninety-eight of the hundred wall systems were printed."
+    "100 homes with Lennar, designed by Bjarke Ingels Group, printed on Vulcan. Eight floor plans and twenty-four elevations, 1,574 to 2,112 square feet. Lennar's November 2022 announcement put prices from the mid $400,000s. Later coverage says $400,000. ICON's own page gives a 2025 completion, and by August 2024 ninety-eight of the hundred wall systems were printed."
    ],
    [
     "Lennar in DFW",
@@ -161,8 +161,8 @@
     "A wall-system cost target of about $20 a square foot against a stated $30 to $35 conventional baseline. Reservations are open on a $5,000 deposit, training is set for the third quarter of 2026 and deliveries from early 2027. No total machine price and no maximum print height has been published by ICON."
    ],
    [
-    "Dallas-Fort Worth",
-    "ICON has published no DFW project. The one printed house on record in the metro is Black Buffalo's, at 100 W. Bolt St., Fort Worth, printed in May 2024. PRINT3D Technologies of Allen sells printed houses in North Texas."
+    "Printing in DFW",
+    "Black Buffalo printed a house at 100 W. Bolt St., Fort Worth, in May 2024. PRINT3D Technologies of Allen sells printed houses in North Texas."
    ]
   ]
  },
@@ -193,11 +193,7 @@
    "facts": [
     [
      "Track record",
-     "Seven structures on its own count, including three houses and a storage facility, sold between 2024 and 2026."
-    ],
-    [
-     "Why it matters",
-     "The lowest published price for a printed house in Texas."
+     "Seven structures by Community Impact's count, including three houses and a storage facility, sold between 2024 and 2026."
     ]
    ],
    "site": "https://www.print3dtechnologies.com/"
@@ -305,6 +301,10 @@
     [
      "Texas Tribune on the material partner, 6 October 2023",
      "https://www.texastribune.org/2023/10/06/texas-houses-3D-printers-climate/"
+    ],
+    [
+     "Homes.com on Commander Home Builders' figures",
+     "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/"
     ]
    ],
    "where": "Houston",
@@ -324,16 +324,12 @@
      "Zuri Gardens, 80 homes, with a $1.8 million City of Houston subsidy. Gulf Shore Estates, 23 of 26 homes. Avenue J, a two-unit duplex. Lumen Villas in Marfa. None is confirmed complete."
     ],
     [
-     "Their claim",
-     "Steve Commander of Commander Home Builders is on record at roughly 50 percent faster and 5 to 7 percent cheaper."
+     "A customer's figures",
+     "Steve Commander of Commander Home Builders told Homes.com the build timeline fell roughly 50 percent, with 5 to 7 percent cost savings."
     ],
     [
-     "Where they are soft",
-     "Published compressive strength appears as both 6,500 and 8,000 psi across outlets. A four-day whole-house estimate was called potentially optimistic by their own staff after clogged nozzles and blown hoses. No funding figure is public, and their own chief development officer has acknowledged a gap between demonstration and production scale."
-    ],
-    [
-     "The timing problem",
-     "They are building now. Titan deliveries start early 2027. Anyone who signs with them this year is unavailable until their next phase."
+     "Schedule",
+     "HiveASMBLD had Gulf Shore Estates and Avenue J under construction in spring 2026. Titan deliveries start early 2027."
     ]
    ],
    "site": "https://www.hiveasmbld.com/"
@@ -364,19 +360,19 @@
    ],
    "where": "Germany, printing in Houston",
    "status": "live",
-   "line": "Printed in Spring Branch, inside the city. Houston is not a Hive monopoly.",
+   "line": "Printed a house in Spring Branch, Houston, on a COBOD BOD2.",
    "facts": [
     [
      "The project",
-     "A house in Spring Branch, Houston, marketed as the nation's largest printed home. Published area figures conflict sharply between outlets, from 4,000 to 30,000 square feet, and the build paused for months without explanation."
+     "A house in Spring Branch, Houston, marketed as the nation's largest printed home. Published area figures conflict between outlets, from 4,000 to 30,000 square feet, and the build paused for months without explanation."
     ],
     [
      "The machine",
-     "PERI prints with COBOD's BOD2, so the capability is available to anyone in Texas who buys the same machine. PERI is a customer of the printer, not its maker."
+     "PERI prints with COBOD's BOD2. PERI is a customer of the printer, not its maker."
     ],
     [
-     "Why it matters here",
-     "Houston is not a single-supplier market. A European formwork group printed a showcase house inside the city limits, on a machine any Texas contractor can buy."
+     "In Houston",
+     "A German formwork group printed a house inside the Houston city limits on a COBOD BOD2."
     ]
    ],
    "site": "https://www.peri3dconstruction.com/en"
@@ -399,15 +395,15 @@
    ],
    "where": "Denmark",
    "status": "live",
-   "line": "Sells the printer to anyone, which is the model Titan now competes with directly.",
+   "line": "Sells the printer to contractors.",
    "facts": [
     [
      "What it is",
      "A printer manufacturer rather than a builder, backed by GE, CEMEX, Holcim and PERI. It sells the BOD2 to contractors."
     ],
     [
-     "Why it matters",
-     "Titan is a machine sale. COBOD sells machines to contractors in Texas today, so a builder pricing a printer can price both."
+     "Sales model",
+     "Titan is a machine sale. COBOD sells machines to contractors, PERI among them."
     ]
    ],
    "site": "https://cobod.com/"
@@ -430,11 +426,11 @@
     ],
     [
      "Its own site",
-     "sunconomy.com answers a browser with 403 Forbidden, so nothing the firm publishes about itself can be read or cited here."
+     "sunconomy.com returns 403 Forbidden."
     ],
     [
-     "Why it matters",
-     "It is the precedent a cautious builder will raise: a printed programme announced in Texas with an Apis Cor machine that produced no published building."
+     "Outcome",
+     "A printed programme announced in Texas with an Apis Cor machine, and no published building."
     ]
    ],
    "site": null
@@ -461,7 +457,7 @@
    ],
    "where": "Greeley, Colorado",
    "status": "live",
-   "line": "Pivoted to selling printers and doing commercial work for Walmart. No Texas project found.",
+   "line": "Pivoted to selling printers and doing commercial work for Walmart. No Texas project is on record.",
    "facts": [
     [
      "What changed",
@@ -469,7 +465,7 @@
     ],
     [
      "Texas",
-     "No Texas project found. Construction Dive names Colorado, Tennessee and Missouri."
+     "No Texas project is on record. Construction Dive names Colorado, Tennessee and Missouri."
     ]
    ],
    "site": "https://www.alquist3d.com/"
@@ -496,7 +492,7 @@
    "facts": [
     [
      "What happened",
-     "Headcount cut, then the whole company offered for sale in January 2025, having raised over $150 million from well-known investors. Since acquired and rebranded under LUMUS."
+     "Headcount cut, then the whole company offered for sale in January 2025, having raised over $150 million. Since acquired and rebranded under LUMUS."
     ]
    ],
    "site": "https://www.mightybuildings.com/about-us"
@@ -522,8 +518,8 @@
      "HousingWire reports the founders confirmed the shutdown on 12 December 2024. The company had printed thirty homes at Mountain View Estates between 2022 and early 2024, and was still building the final fifteen when it stopped."
     ],
     [
-     "Why it matters",
-     "A printer supplier that fails mid-community leaves the builder holding the site. Fifteen houses were open when this one stopped."
+     "At closure",
+     "Fifteen houses were open when it stopped."
     ]
    ],
    "site": null
@@ -592,49 +588,49 @@
   {
    "key": "nozzle",
    "label": "Pumps or sprays concrete",
-   "note": "Omega sprays gunite and shotcrete onto a surface. Brundage-Bone and Texan Pumpers pump concrete into forms.",
+   "note": "Brundage-Bone places concrete with boom pumps and placing booms.",
    "n": 1
   },
   {
    "key": "slab",
    "label": "Pours the horizontal",
-   "note": "Owns the lot before anyone else arrives, owns the builder relationship and owns the pump. Wall scope would double the revenue per lot with the same customer and no new sale.",
+   "note": "Owns the lot before anyone else arrives, owns the builder relationship and owns the pump.",
    "n": 5
   },
   {
    "key": "tiltup",
    "label": "Casts the vertical flat, on site",
-   "note": "Casts wall flat on the slab and lifts it. The panels are measured in tons and storeys, which is why most of this cell reads Partly on printer fit.",
+   "note": "Casts wall flat on the slab and lifts it. The panels are measured in tons and storeys, which is why this cell reads Partly or No on printer fit.",
    "n": 6
   },
   {
    "key": "precast",
    "label": "Casts the vertical off site",
-   "note": "A plant, casting beds and a quality lab. The equipment a printer would sit beside is already financed.",
+   "note": "A plant, casting beds and a quality lab.",
    "n": 3
   },
   {
    "key": "panel",
    "label": "Manufactures the vertical as a panel",
-   "note": "Already manufactures wall off site and sells it to the production builders on this deck. The logistics, the builder relationship and the factory economics are solved.",
+   "note": "Already manufactures wall off site and sells it to the production builders on this deck.",
    "n": 7
   },
   {
    "key": "masonry",
    "label": "Lays the vertical unit by unit",
-   "note": "The trade a printed wall most directly displaces. Two firms here already sell a panelised or prefabricated version of their own product.",
+   "note": "Two firms here already sell a panelised or prefabricated version of their own product.",
    "n": 11
   },
   {
    "key": "icf",
    "label": "Forms the vertical and leaves the form in",
-   "note": "Has already sold a customer on a wall that is not stick-built, which is the adoption behaviour that is hardest to find.",
+   "note": "Has already sold a customer on a wall that is not stick-built.",
    "n": 2
   },
   {
    "key": "gc",
    "label": "General contractor",
-   "note": "Two of the seven self-perform concrete on the record: Harvey Cleary, through IQI Construction, and T&T. The rest publish no self-performed concrete, or say they hire it out.",
+   "note": "Of the four, Capform self-performs structural concrete and formwork, per its own site.",
    "n": 4
   }
  ],
@@ -688,7 +684,7 @@
    "region": "DFW batch plants, a CRH company",
    "url": "https://texasmaterials.com/locations-regional/",
    "line": "CRH's ready-mix and aggregates business in Texas, with published DFW batch plants.",
-   "why": "A printed wall is a mix-design and volume conversation with a ready-mix supplier first.",
+   "why": "Batches ready-mix at published DFW plants.",
    "people": [],
    "note": null
   },
@@ -699,7 +695,7 @@
    "region": "Dallas and Fort Worth plants",
    "url": "https://www.smyrnareadymix.com/company/team",
    "line": "Ready-mix producer whose Red River Division covers DFW.",
-   "why": "Runs volumetric mixer sites, the delivery method a printer's material feed most resembles.",
+   "why": "Runs volumetric mixer sites.",
    "people": [
     {
      "name": "Brian Genovese",
@@ -715,7 +711,7 @@
    "region": "Terminals in Dallas and Roanoke",
    "url": "https://www.texaslehigh.com/locations",
    "line": "A cement joint venture of Heidelberg Materials and Eagle Materials, with North Texas terminals in Dallas and Roanoke.",
-   "why": "The cement terminal a DFW print mix would draw on.",
+   "why": "Supplies cement from terminals in Dallas and Roanoke.",
    "people": [],
    "note": null
   },
@@ -776,7 +772,7 @@
    "region": "Irving headquarters",
    "url": "https://www.cmc.com/en-us/contact-us",
    "line": "Rebar producer and fabricator headquartered in Irving.",
-   "why": "The reinforcement conversation for any concrete wall in the metro, printed or cast.",
+   "why": "Produces and fabricates rebar for concrete work.",
    "people": [],
    "note": null
   },
@@ -787,7 +783,7 @@
    "region": "6151 Cowley Road, Fort Worth",
    "url": "https://voidform.com/contact/our-locations/",
    "line": "Makes void forms that isolate slabs from expansive soil, headquartered in Fort Worth.",
-   "why": "Every foundation crew on DFW's expansive clay buys from it.",
+   "why": "Sells void forms to foundation crews that pour on DFW's expansive clay.",
    "people": [],
    "note": null
   }
@@ -805,7 +801,7 @@
  "limits": [
   [
    "How the list was drawn",
-   "BUILDER's Local Leaders table for Dallas-Fort Worth, BUILDER firm pages, the builder lists each master-planned community publishes, trade press and firm websites. A separate research tool drew the first list. Every name, number and link on it was then checked against the page it cites, and what no page supports was cut."
+   "BUILDER's Local Leaders table for Dallas-Fort Worth, BUILDER firm pages, the builder lists each master-planned community publishes, trade press and firm websites. Every name, number and link was checked against the page it cites, and what no page supports was cut."
   ],
   [
    "Who decides",
@@ -857,7 +853,7 @@
     "q": "Can a city or county refuse it?",
     "a": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, in force 1 September 2019. Exceptions: historic districts, state- or federally-funded housing.",
     "url": "https://www.tml.org/DocumentCenter/View/2892/HB--2439-Building-Materials-QA-Sep-2021",
-    "source": "Texas Government Code 3000; TML Q&A"
+    "source": "Texas Government Code 3000 and TML Q&A"
    }
   ],
   "precedent": [
@@ -879,7 +875,7 @@
   "quotes": [
    {
     "text": "The walls are intended for use as bearing walls, non-load bearing walls and shear walls with wall heights up to 12 feet (3.7 m) tall in Seismic Design Categories A or B.",
-    "who": "ICC-ES ESR-4652, ICON 3D-Printed Concrete Wall Systems, Section 2.0, Uses; reissued June 2026",
+    "who": "ICC-ES ESR-4652, ICON 3D-Printed Concrete Wall Systems, Section 2.0, Uses, reissued June 2026",
     "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4652.pdf",
     "source": "ICC-ES ESR-4652"
    },
@@ -898,14 +894,14 @@
   },
   {
    "title": "Yes, Partly, No",
-   "text": "Each verdict is written per firm with its reason, from the sources on the firm's page. A Partly records partial evidence; a No records an absent record, not a finding against the firm. Yes and Partly both count as holding a count. A No does not."
+   "text": "Each verdict is written per firm with its reason, from the sources on the firm's page. A Partly records partial evidence. A No records an absent record, not a finding against the firm. Yes and Partly both count as holding a count. A No does not."
   },
   {
    "title": "Annual closings",
-   "text": "Only published figures are drawn: Builder 100 firm pages, HousingWire, or the firm's own site, each named in the tooltip and the table. A range is the firm's own range. Where a figure is dated, the year is shown. The count is against the builders on the deck: a contractor closes no homes and is not drawn."
+   "text": "Only published figures are drawn: BUILDER's Local Leaders table for DFW figures, BUILDER firm pages and the Builder 100 for company-wide figures, or the firm's own site, each named in the tooltip and the table. A range is the firm's own range. Where a figure is dated, the year is shown. The count is against the builders on the deck: a contractor closes no homes and is not drawn."
   },
   {
-   "title": "Machine-fit bands",
+   "title": "Printer-fit bands",
    "text": "The bands are an assumption, not a published figure. The Yes band, 25 to 400 homes a year for one or two printers, assumes a Titan prints the walls of up to about 200 houses a year. What is published is slower. At Wolf Ranch one Vulcan and one crew took about three weeks a home by August 2024, on the order of seventeen a year (Engadget, 8 August 2024). At Zuri Gardens the cement supplier states its mix lets a robot finish a home shell in about two weeks (Eco Material). ICON has published no Titan rate: a $20 per square foot wall target, a $5,000 deposit, training in the third quarter of 2026 and deliveries from early 2027 (ICON newsroom, 11 March 2026), and a market-opening threshold of six to ten printers in one market (Builder). The bands will be redrawn when ICON publishes a rate."
   },
   {
@@ -914,7 +910,7 @@
   },
   {
    "title": "Contacts",
-   "text": "A LinkedIn URL is held only where a retrieved page shows the person's name and the firm together; the sentence under the name says which page. Aggregators were not used. A URL was never constructed."
+   "text": "A LinkedIn URL is held only where a retrieved page shows the person's name and the firm together. The sentence under the name says which page. Aggregators were not used. A URL was never constructed."
   }
  ],
  "bands_method": {
@@ -1310,7 +1306,7 @@
     "yes": 0,
     "partly": 1,
     "no": 34,
-    "decider": 30,
+    "decider": 29,
     "confirm": 0,
     "linked": 34
    },
@@ -1321,7 +1317,7 @@
     "yes": 4,
     "partly": 7,
     "no": 28,
-    "decider": 30,
+    "decider": 29,
     "confirm": 0,
     "linked": 30
    },
@@ -1343,7 +1339,7 @@
     "yes": 2,
     "partly": 3,
     "no": 15,
-    "decider": 14,
+    "decider": 13,
     "confirm": 0,
     "linked": 20
    },
@@ -1394,7 +1390,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Perry Homes",
@@ -1411,7 +1407,7 @@
      {
       "name": "Bloomfield Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "CB JENI",
@@ -1478,7 +1474,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Toll Brothers",
@@ -1495,7 +1491,7 @@
      {
       "name": "Brightland",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "CastleRock",
@@ -1557,7 +1553,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Perry Homes",
@@ -1579,7 +1575,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Perry Homes",
@@ -1606,7 +1602,7 @@
      {
       "name": "Bloomfield Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Cadence Homes",
@@ -1621,7 +1617,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Homebound",
@@ -1668,7 +1664,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": false
+      "off": true
      },
      {
       "name": "Shaddock",
@@ -1722,7 +1718,7 @@
     "place": "Allen and North Texas",
     "printer": "PRINT3D",
     "units": 7,
-    "status": "Seven structures on its own count, 2024 to 2026"
+    "status": "Seven structures by Community Impact's count, 2024 to 2026"
    },
    {
     "project": "Avenue J",
@@ -1746,11 +1742,11 @@
     "status": "Paused for months"
    },
    {
-    "project": "Sunconomy eco-village",
-    "place": "Montgomery",
+    "project": "Sunconomy house",
+    "place": "Lago Vista",
     "printer": "Apis Cor",
     "units": 0,
-    "status": "Announced 2019, unbuilt"
+    "status": "Permitted January 2019, no completion published"
    }
   ],
   "timeline": [
@@ -1763,9 +1759,16 @@
    },
    {
     "year": 2019,
-    "month": 6,
+    "month": 1,
     "label": "Sunconomy permits a printed house in Lago Vista",
     "kind": "in",
+    "when": null
+   },
+   {
+    "year": 2021,
+    "month": 10,
+    "label": "Lennar and ICON announce 100 printed homes in Georgetown",
+    "kind": "icon",
     "when": null
    },
    {
@@ -1785,7 +1788,7 @@
    {
     "year": 2022,
     "month": 11,
-    "label": "Lennar and ICON announce Wolf Ranch, 100 homes",
+    "label": "Wolf Ranch printing under way",
     "kind": "icon",
     "when": null
    },
@@ -16685,9 +16688,9 @@
   "principals": 204,
   "linkedin_held": 46,
   "audit_flags": 0,
-  "with_decider": 88,
-  "with_decider_live": 38,
-  "with_decider_confirmed": 88,
+  "with_decider": 85,
+  "with_decider_live": 37,
+  "with_decider_confirmed": 85,
   "with_decider_caveat": 0
  },
  "targets": [
@@ -16701,7 +16704,6 @@
    "company_li": "https://www.linkedin.com/company/print3d-technologies/",
    "team_url": "https://www.print3dtechnologies.com/about",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9723427605",
    "phone_source": "https://www.print3dtechnologies.com/",
    "phone_more": [],
@@ -16726,7 +16728,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -16809,8 +16810,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Lance Thrailkill",
@@ -16830,7 +16829,6 @@
    "company_li": "https://www.linkedin.com/company/wan-bridge-group/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "7132199400",
    "phone_source": "https://wanbridge.com/contact/",
    "phone_more": [],
@@ -16848,7 +16846,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -16944,8 +16941,6 @@
      "source_evidence": "Listed on the firm's leadership page as Co-Founder."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Danting Li",
@@ -16965,7 +16960,6 @@
    "company_li": "https://www.linkedin.com/company/trophysignaturehomes/",
    "team_url": "https://greenbrickpartners.com/team-member/chris-wicker/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695736721",
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
@@ -16983,7 +16977,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17071,19 +17064,12 @@
     },
     {
      "name": "Jed Dolson",
-     "role": "Chief Operating Officer and Executive Vice President, Green Brick Partners",
+     "role": "President and Chief Operating Officer, Green Brick Partners",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "His LinkedIn title reads COO and EVP of Green Brick Partners, the parent, and he was earlier its Texas Region President over Trophy.",
+     "source_evidence": "Named on Green Brick's leadership page as President and Chief Operating Officer, previously President of the Texas region over the DFW brands.",
      "linkedin_url": "https://www.linkedin.com/in/jed-dolson/",
      "li_evidence": "Indexed title reads Jed Dolson - Chief Operating Officer and Executive Vice President - Green Brick Partners, Inc."
     }
-   ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-003",
-    "DFW-003b",
-    "DFW-003c",
-    "DFW-014"
    ],
    "vol": null,
    "deciders": [
@@ -17103,7 +17089,6 @@
    "company_li": "https://www.linkedin.com/company/american-legend-homes/",
    "team_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9724105701",
    "phone_source": "https://www.amlegendhomes.com/",
    "phone_more": [],
@@ -17121,7 +17106,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17214,10 +17198,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-036"
-   ],
    "vol": 636,
    "deciders": [
     "Kevin Egan",
@@ -17237,7 +17217,6 @@
    "company_li": "https://www.linkedin.com/company/grand-homes/",
    "team_url": "https://www.grandhomes.com/index.cfm?p=about_us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9723876087",
    "phone_source": "https://www.grandhomes.com/blog/",
    "phone_more": [
@@ -17261,7 +17240,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17345,8 +17323,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 400,
    "deciders": [
     "Stephen H. Brooks"
@@ -17365,7 +17341,6 @@
    "company_li": "https://www.linkedin.com/company/history-maker-homes/",
    "team_url": "https://www.historymaker.com/our-legacy",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8337111949",
    "phone_source": "https://www.historymaker.com/contact-us",
    "phone_more": [
@@ -17401,7 +17376,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17504,8 +17478,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 728,
    "deciders": [
     "Zac Thompson",
@@ -17525,7 +17497,6 @@
    "company_li": "https://www.linkedin.com/company/homebound-construction/",
    "team_url": "https://www.homebound.com/about",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2148511912",
    "phone_source": "https://www.homebound.com/upcoming-communities/mosaic",
    "phone_more": [],
@@ -17543,7 +17514,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17639,8 +17609,6 @@
      "source_evidence": "Named on Homebound's own about page as VP, Homebuilding Operations."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Charlie Coleman"
@@ -17659,7 +17627,6 @@
    "company_li": "https://www.linkedin.com/company/coventryhomes/",
    "team_url": "https://www.coventryhomes.com/about-us/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9723668789",
    "phone_source": "https://www.coventryhomes.com/connect/",
    "phone_more": [
@@ -17693,7 +17660,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17783,8 +17749,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Chris Terhune"
@@ -17803,7 +17767,6 @@
    "company_li": "https://www.linkedin.com/company/ahv-communities/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9495082099",
    "phone_source": "https://ahvcommunities.com/",
    "phone_more": [],
@@ -17828,7 +17791,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -17898,8 +17860,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Mark Wolf"
@@ -17918,7 +17878,6 @@
    "company_li": "https://www.linkedin.com/company/landon-homes/",
    "team_url": "https://landonhomes.com/our-story/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695679303",
    "phone_source": "https://landonhomes.com/",
    "phone_more": [
@@ -17942,7 +17901,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18033,8 +17991,6 @@
      "source_evidence": "Named on the firm's own Our Story page as Vice President of Development."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 259,
    "deciders": [
     "John Landon",
@@ -18054,7 +18010,6 @@
    "company_li": "https://www.linkedin.com/company/ourcountryhomes/",
    "team_url": "https://www.ourcountryhomes.com/about-us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8172290344",
    "phone_source": "https://www.ourcountryhomes.com/",
    "phone_more": [],
@@ -18072,7 +18027,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18160,8 +18114,6 @@
      "source_evidence": "Named on BUILDER's firm page for Our Country Homes as CEO."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 259,
    "deciders": [
     "Dustin Austin"
@@ -18180,7 +18132,6 @@
    "company_li": "https://www.linkedin.com/company/sandlin-custom-homes/",
    "team_url": "https://www.sandlinhomes.com/meet-the-team",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8008214663",
    "phone_source": "https://www.sandlinhomes.com/",
    "phone_more": [],
@@ -18198,7 +18149,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18292,8 +18242,6 @@
      "source_evidence": "Named on the firm's own Meet the Team page as an owner."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 177,
    "deciders": [
     "Scott Sandlin"
@@ -18312,7 +18260,6 @@
    "company_li": "https://www.linkedin.com/company/amhliving/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8337368264",
    "phone_source": "https://www.amh.com/offices",
    "phone_more": [],
@@ -18330,7 +18277,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18405,8 +18351,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Brent Landry"
@@ -18425,7 +18369,6 @@
    "company_li": "https://www.linkedin.com/company/cb-jeni-homes/",
    "team_url": "https://greenbrickpartners.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695736721",
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
@@ -18443,7 +18386,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18518,13 +18460,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-003",
-    "DFW-003a",
-    "DFW-003c",
-    "DFW-014"
-   ],
    "vol": null,
    "deciders": [
     "Steve Schermerhorn"
@@ -18543,7 +18478,6 @@
    "company_li": "https://www.linkedin.com/company/centre-living-homes/",
    "team_url": "https://greenbrickpartners.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695673518",
    "phone_source": "https://centrelivinghomes.com/contact/",
    "phone_more": [],
@@ -18561,7 +18495,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18640,8 +18573,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Trevor Brickman"
@@ -18660,7 +18591,6 @@
    "company_li": "https://www.linkedin.com/company/nexmetro-communities/",
    "team_url": "https://www.nexmetro.com/directory.php",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692491819",
    "phone_source": "https://www.nexmetro.com/contact.php",
    "phone_more": [
@@ -18691,7 +18621,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18754,10 +18683,6 @@
      "date": null
     },
     {
-     "url": "https://www.multifamilybiz.com/pressreleases/18015/national_buildtorent_developer_nexmetro_communitie...",
-     "date": null
-    },
-    {
      "url": "https://daltxrealestate.com/national-build-to-rent-developer-nexmetro-opens-16th-community-in-dallas-fort-worth-market/",
      "date": null
     },
@@ -18810,8 +18735,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Bernadette Bendit",
@@ -18831,7 +18754,6 @@
    "company_li": "https://www.linkedin.com/company/normandy-homes/",
    "team_url": "https://greenbrickpartners.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695736721",
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
@@ -18849,7 +18771,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -18937,13 +18858,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-003",
-    "DFW-003a",
-    "DFW-003b",
-    "DFW-003c"
-   ],
    "vol": null,
    "deciders": [
     "Steve Schermerhorn"
@@ -18962,7 +18876,6 @@
    "company_li": "https://www.linkedin.com/company/pacesetter-homes-texas/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4697127401",
    "phone_source": "https://pacesetterhomestexas.com/about-pacesetter/",
    "phone_more": [],
@@ -18993,7 +18906,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19064,8 +18976,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 482,
    "deciders": [
     "Blake Friesenhahn"
@@ -19084,7 +18994,6 @@
    "company_li": "https://www.linkedin.com/company/southgate-homes/",
    "team_url": "https://greenbrickpartners.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695736721",
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
@@ -19102,7 +19011,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19181,13 +19089,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-003",
-    "DFW-003a",
-    "DFW-003b",
-    "DFW-014"
-   ],
    "vol": null,
    "deciders": [
     "Steve Schermerhorn"
@@ -19206,7 +19107,6 @@
    "company_li": "https://www.linkedin.com/company/william-ryan-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": null,
    "phone_source": null,
    "phone_more": [],
@@ -19231,7 +19131,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19294,9 +19193,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The Dallas Morning News named Scott Dettmer division manager in 2023. No current DFW division head is named.",
-   "phone_shared": [],
    "vol": 436,
    "deciders": [],
    "has_decider": false,
@@ -19313,7 +19210,6 @@
    "company_li": "https://www.linkedin.com/company/cadence-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692940196",
    "phone_source": "https://cadencehomestx.com/",
    "phone_more": [
@@ -19342,7 +19238,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19420,8 +19315,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Bruno Pasquinelli"
@@ -19440,7 +19333,6 @@
    "company_li": "https://www.linkedin.com/company/camillo-companies/",
    "team_url": "https://www.camillocompanies.com/camillo-companies-names-dan-miller-as-ceo",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8882349451",
    "phone_source": "https://www.camillocompanies.com/",
    "phone_more": [],
@@ -19458,7 +19350,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19553,8 +19444,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Dan Miller",
@@ -19574,13 +19463,12 @@
    "company_li": "https://www.linkedin.com/company/cheldan-homes/",
    "team_url": "https://www.cheldanhomes.com/meet-the-team",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8172443450",
    "phone_source": "https://www.cheldanhomes.com/contact-us",
    "phone_more": [
     {
      "digits": "8177813996",
-     "label": "Ask Nicole — New Home Sales",
+     "label": "Ask Nicole, New Home Sales",
      "source": null
     }
    ],
@@ -19598,7 +19486,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19692,8 +19579,6 @@
      "source_evidence": "Named on the firm's own Meet the Team page as Vice President of Sales and Marketing."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Joey Goss"
@@ -19712,7 +19597,6 @@
    "company_li": "https://www.linkedin.com/company/curvedevelopment/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8778533717",
    "phone_source": "https://www.cyreneatpaintedtree.com/",
    "phone_more": [],
@@ -19730,7 +19614,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19804,8 +19687,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Nathan Pile"
@@ -19824,7 +19705,6 @@
    "company_li": "https://www.linkedin.com/company/first-texas-homes/",
    "team_url": "https://www.firsttexashomes.com/about/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2146133400",
    "phone_source": "https://www.firsttexashomes.com/about/",
    "phone_more": [],
@@ -19849,7 +19729,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -19923,11 +19802,9 @@
      "name": "Randall Van Wolfswinkel",
      "role": "Chief Executive Officer (as of 2010)",
      "source_url": "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
-     "source_evidence": "Named in a 2010 Dallas News article as CEO of First Texas, spelled Randall."
+     "source_evidence": "Named in a 2010 Dallas News article as CEO of First Texas."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1170,
    "deciders": [],
    "has_decider": false,
@@ -19944,7 +19821,6 @@
    "company_li": "https://www.linkedin.com/company/grenadier-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2142240095",
    "phone_source": "https://grenadierhomes.com/contact-us/",
    "phone_more": [],
@@ -19962,7 +19838,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20047,8 +19922,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Anthony Natale",
@@ -20068,7 +19941,6 @@
    "company_li": "https://www.linkedin.com/company/hhs-residential-llc/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9727893535",
    "phone_source": "https://hhsresidential.com/",
    "phone_more": [],
@@ -20093,7 +19965,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20164,17 +20035,14 @@
      "role": "Vice President",
      "source_url": "https://triconhomes.com/resources/insights/tricon-residential-opens-new-community-in-arlington-texas-add-to-housing-supply/",
      "source_evidence": "Quoted in a Tricon Residential release as Vice President at HHS Residential.",
-     "decider": true
+     "decider": false,
+     "departed": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
-   "deciders": [
-    "Matthew McGhee"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -20187,7 +20055,6 @@
    "company_li": "https://www.linkedin.com/company/impression-homes/",
    "team_url": "https://www.impressionhomes.net/about-us/meet-the-team/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8177193111",
    "phone_source": "https://www.impressionhomes.net/about-us/meet-the-team/",
    "phone_more": [],
@@ -20205,7 +20072,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20293,8 +20159,6 @@
      "source_evidence": "Named on the firm's own team page as founder, in 2009, and board member."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 406,
    "deciders": [
     "Steve Garza"
@@ -20313,7 +20177,6 @@
    "company_li": "https://www.linkedin.com/company/john-houston-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9729374085",
    "phone_source": "https://jhoustonhomes.com/contact/",
    "phone_more": [],
@@ -20331,7 +20194,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20411,8 +20273,6 @@
      "source_evidence": "Named on the firm's purpose page as co-founder with John Houston."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "John Houston"
@@ -20431,7 +20291,6 @@
    "company_li": "https://www.linkedin.com/company/megatelhomes/",
    "team_url": "https://www.megatelhomes.com/about-us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9723390159",
    "phone_source": "https://www.megatelhomes.com/",
    "phone_more": [
@@ -20455,7 +20314,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20536,8 +20394,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 696,
    "deciders": [
     "Aaron Ipour",
@@ -20557,7 +20413,6 @@
    "company_li": "https://www.linkedin.com/company/paul-taylor-homes-dallas/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4699023200",
    "phone_source": "https://paultaylorhomes.com/about-us",
    "phone_more": [],
@@ -20575,7 +20430,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20643,21 +20497,17 @@
    "principals": [
     {
      "name": "Chris Lemming",
-     "role": "Division President, Dallas-Fort Worth, Partners In Building",
-     "source_url": "https://www.housingwire.com/articles/a-semi-custom-production-hybrid-fit-for-bumpier-times/",
-     "source_evidence": "Named in HousingWire, February 24, 2022, as Dallas-Fort Worth Division President of Partners In Building at the Paul Taylor acquisition.",
+     "role": "President, Partners In Building, since June 2026. Previously Division President, Dallas-Fort Worth",
+     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/",
+     "source_evidence": "Named President in Realty News Report, June 11, 2026, after serving as Division President for DFW.",
      "decider": true
     },
     {
      "name": "Jim Lemming",
-     "role": "Chief Executive Officer, Partners In Building",
-     "source_url": "https://partnersinbuilding.com/our-story",
-     "source_evidence": "Named on the Partners In Building story page as Chief Executive Officer from 2010."
+     "role": "Chairman, Partners In Building, since June 2026",
+     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/",
+     "source_evidence": "Named in Realty News Report, June 2026, as moving from Chief Executive Officer to Chairman."
     }
-   ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-048"
    ],
    "vol": null,
    "deciders": [
@@ -20677,7 +20527,6 @@
    "company_li": "https://www.linkedin.com/company/risewell-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8888274421",
    "phone_source": "https://risewellhomes.com/contact",
    "phone_more": [],
@@ -20695,7 +20544,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20769,8 +20617,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Matthew R. Zaist"
@@ -20789,7 +20635,6 @@
    "company_li": "https://www.linkedin.com/company/riversidehomebuilders/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8177348528",
    "phone_source": "https://www.riversidehomebuilders.com/contact-us/",
    "phone_more": [
@@ -20813,7 +20658,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -20895,8 +20739,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 649,
    "deciders": [
     "Tim Fleet"
@@ -20915,7 +20757,6 @@
    "company_li": "https://www.linkedin.com/company/starlight-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9724491907",
    "phone_source": "https://www2.starlighthomes.com/lower-rates-lower-payments-dallas",
    "phone_more": [],
@@ -20933,7 +20774,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21026,8 +20866,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Lindsay Motley",
@@ -21047,7 +20885,6 @@
    "company_li": "https://www.linkedin.com/company/stonehollow-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692376320",
    "phone_source": "https://www.stonehollowhomes.com/about-us",
    "phone_more": [],
@@ -21065,7 +20902,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21156,8 +20992,6 @@
      "source_evidence": "Named with Ryan Hayes in the same December 2025 company post, with no title given."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 176,
    "deciders": [],
    "has_decider": false,
@@ -21174,7 +21008,6 @@
    "company_li": "https://www.linkedin.com/company/traditonhomes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692024663",
    "phone_source": "https://www.traditionhomes.com/",
    "phone_more": [],
@@ -21193,13 +21026,12 @@
    "region": "McKinney, with communities in Prosper and Celina",
    "phone_label": "Office, McKinney",
    "phone_note": null,
-   "company_li_note": "Tradition Homes company page, McKinney. Its LinkedIn slug is spelled traditonhomes.",
+   "company_li_note": "Tradition Homes company page, McKinney.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21290,8 +21122,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Zach Schneider",
@@ -21311,7 +21141,6 @@
    "company_li": "https://www.linkedin.com/company/unionmainhomes/",
    "team_url": "https://www.unionmainhomes.com/about",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4698138700",
    "phone_source": "https://www.unionmainhomes.com/contact",
    "phone_more": [],
@@ -21329,7 +21158,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21411,8 +21239,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Tim Gehan"
@@ -21431,7 +21257,6 @@
    "company_li": "https://www.linkedin.com/company/britton-homes-texas/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8002473779",
    "phone_source": "https://www.brittonhomestexas.com/contact-us/",
    "phone_more": [],
@@ -21449,7 +21274,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21527,10 +21351,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-010"
-   ],
    "vol": null,
    "deciders": [
     "Kathy Britton"
@@ -21549,7 +21369,6 @@
    "company_li": "https://www.linkedin.com/company/chesmar-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": null,
    "phone_source": null,
    "phone_more": [],
@@ -21564,12 +21383,15 @@
    "company_li_note": "Company page, Chesmar Homes.",
    "team_note": null,
    "capital_signals": [
-    "Owned by Sekisui House, brought into Sekisui House U.S. beginning in 2026"
+    {
+     "text": "Owned by Sekisui House, brought into Sekisui House U.S. beginning in 2026",
+     "date": null,
+     "url": null
+    }
    ],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21668,8 +21490,6 @@
      "li_evidence": "Indexed title reads Randy McGillem - Chesmar Homes."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1779,
    "deciders": [],
    "has_decider": false,
@@ -21686,7 +21506,6 @@
    "company_li": "https://www.linkedin.com/company/the-bright-companies/",
    "team_url": "https://www.belclairehomes.com/about-us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9724105701",
    "phone_source": "https://www.belclairehomes.com/",
    "phone_more": [],
@@ -21704,7 +21523,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21778,10 +21596,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-029"
-   ],
    "vol": null,
    "deciders": [
     "Chris Bright"
@@ -21800,7 +21614,6 @@
    "company_li": "https://www.linkedin.com/company/drees-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9729534500",
    "phone_source": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/",
    "phone_more": [],
@@ -21818,7 +21631,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -21905,8 +21717,6 @@
      "source_evidence": "Named as continuing CEO in the same Drees press release of 23 September 2024."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 2286,
    "deciders": [],
    "has_decider": false,
@@ -21923,7 +21733,6 @@
    "company_li": "https://www.linkedin.com/company/huntington-custom-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9727893500",
    "phone_source": "https://www.huntingtonhomestx.com/",
    "phone_more": [],
@@ -21941,7 +21750,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22013,10 +21821,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-004"
-   ],
    "vol": null,
    "deciders": [
     "Aaron Graham"
@@ -22035,7 +21839,6 @@
    "company_li": "https://www.linkedin.com/company/shaddock-homes/",
    "team_url": "https://www.shaddockhomes.com/contact-us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2142259360",
    "phone_source": "https://www.shaddockhomes.com/contact-us",
    "phone_more": [],
@@ -22060,7 +21863,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22138,8 +21940,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 374,
    "deciders": [
     "Peter H. Shaddock"
@@ -22158,7 +21958,6 @@
    "company_li": null,
    "team_url": null,
    "chain": "icf",
-   "last_verified": "2026-09-24",
    "phone": "9702752366",
    "phone_source": "https://dnrconcrete.com/",
    "phone_more": [],
@@ -22176,7 +21975,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22227,9 +22025,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The firm's site names no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -22246,7 +22042,6 @@
    "company_li": "https://www.linkedin.com/company/future-frame-usa/",
    "team_url": "https://futureframeusa.com/",
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "2812319200",
    "phone_source": "https://futureframeusa.com/",
    "phone_more": [],
@@ -22264,7 +22059,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22328,17 +22122,14 @@
      "role": "General Manager in 2022",
      "source_url": "https://communityimpact.com/houston/lake-houston-humble-kingwood/impacts/2022/02/24/future-frame-usa-now-open-in-east-montgomery-county-industrial-park/",
      "source_evidence": "Named General Manager in a February 24, 2022 Community Impact article on the plant opening.",
-     "decider": true
+     "decider": false,
+     "departed": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
-   "deciders": [
-    "Joe Mazzenga"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -22351,7 +22142,6 @@
    "company_li": "https://www.linkedin.com/company/monster-constructors/",
    "team_url": "https://monsterconstructors.com/about-us/",
    "chain": "icf",
-   "last_verified": "2026-09-24",
    "phone": "9725338678",
    "phone_source": "https://monsterconstructors.com/contact-us/",
    "phone_more": [],
@@ -22369,7 +22159,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22436,8 +22225,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Mark Womack"
@@ -22456,7 +22243,6 @@
    "company_li": "https://www.linkedin.com/company/baker-triangle/",
    "team_url": "https://bakertriangle.com/who-we-are/leadership",
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "2142173280",
    "phone_source": "https://bakerprefab.com/contact",
    "phone_more": [],
@@ -22474,7 +22260,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22497,7 +22282,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "Its core product is offsite wall panels, including StoPanel systems. A panel shop making its normal product reads Partly, as Builders FirstSource's panel plants do."
+     "text": "Its core product is offsite wall panels, including StoPanel systems. That changes where the wall is made, not what the wall is."
     }
    ],
    "marks": {
@@ -22545,8 +22330,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Keith Giddens"
@@ -22565,7 +22348,6 @@
    "company_li": "https://www.linkedin.com/company/greatermetroplexinteriors/",
    "team_url": null,
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "8174810029",
    "phone_source": "https://gmitexas.com/contact/",
    "phone_more": [],
@@ -22583,7 +22365,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22650,8 +22431,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Barry Corey"
@@ -22670,7 +22449,6 @@
    "company_li": "https://www.linkedin.com/company/dee-brown-companies/",
    "team_url": "https://www.deebrowncompanies.com/about",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "2143216443",
    "phone_source": "https://www.deebrowncompanies.com/contact",
    "phone_more": [
@@ -22701,7 +22479,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22783,8 +22560,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Robert V. \"Rob\" Barnes III",
@@ -22804,7 +22579,6 @@
    "company_li": "https://www.linkedin.com/company/paladin-general-construction/",
    "team_url": null,
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "2145077681",
    "phone_source": "https://www.callpaladin.com/",
    "phone_more": [],
@@ -22822,7 +22596,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22885,8 +22658,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Michael \"Paladin\" Hasty"
@@ -22897,7 +22668,7 @@
   },
   {
    "target_id": "DFW-TR-012",
-   "entity_name": "84 Lumber — DFW manufacturing presence",
+   "entity_name": "84 Lumber, DFW",
    "short": "84 Lumber DFW",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -22905,15 +22676,14 @@
    "company_li": "https://www.linkedin.com/company/84-lumber/",
    "team_url": null,
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "9402438484",
    "phone_source": "https://84lumber.com/store-locator/store-detail?storeId=1941",
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "Dallas door shop, DFW wall-panel plant not confirmed",
-   "mvp_screen": "Supplies components to DFW builders from a national manufacturing line. No wall-panel plant inside the Metroplex is confirmed.",
-   "synopsis": "National building-materials dealer and manufacturer. Company press describes a Dallas door shop serving DFW, and its manufacturing page describes a national components line. No structural wall-panel plant inside the Metroplex is confirmed. Its Denton store, number 1941, lists Matt Born under store management.",
+   "key_stat": "Dallas door shop, no DFW wall-panel plant published",
+   "mvp_screen": "Supplies components to DFW builders from a national manufacturing line. No wall-panel plant inside the Metroplex is published.",
+   "synopsis": "National building-materials dealer and manufacturer. Company press describes a Dallas door shop serving DFW, and its manufacturing page describes a national components line. Neither page lists a structural wall-panel plant inside the Metroplex. Its Denton store, number 1941, lists Matt Born under store management.",
    "region": "Dallas door shop and Denton store, serving DFW",
    "phone_label": "Denton store 1941",
    "phone_note": null,
@@ -22923,7 +22693,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -22978,9 +22747,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The Denton store page lists Matt Born under Store Management, with no other title.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -22989,7 +22756,7 @@
   },
   {
    "target_id": "DFW-TR-010",
-   "entity_name": "Builders FirstSource — Fort Worth Truss / Trussway",
+   "entity_name": "Builders FirstSource, Fort Worth Truss (formerly Trussway)",
    "short": "BFS Fort Worth Truss",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -22997,7 +22764,6 @@
    "company_li": "https://www.linkedin.com/company/builders-firstsource/",
    "team_url": null,
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "8175891467",
    "phone_source": "https://www.bldr.com/location/ft-worth-tx-truss-trussway/FORTTXMF",
    "phone_more": [],
@@ -23015,7 +22781,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23070,9 +22835,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The plant page names no manager.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -23081,7 +22844,7 @@
   },
   {
    "target_id": "DFW-TR-031",
-   "entity_name": "Coreslab Structures (Texas) — DFW territory",
+   "entity_name": "Coreslab Structures (Texas)",
    "short": "Coreslab Texas",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -23089,7 +22852,6 @@
    "company_li": "https://www.linkedin.com/company/coreslab-structures/",
    "team_url": null,
    "chain": "precast",
-   "last_verified": "2026-09-24",
    "phone": "5122500755",
    "phone_source": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
    "phone_more": [
@@ -23118,7 +22880,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23183,8 +22944,6 @@
      "source_evidence": "Named on the plant page as Garrett Weidman, P.E., Sales Manager."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Robb Harrington"
@@ -23203,7 +22962,6 @@
    "company_li": "https://www.linkedin.com/company/heldenfels-enterprises/",
    "team_url": "https://heldenfels.com/contact/",
    "chain": "precast",
-   "last_verified": "2026-09-24",
    "phone": "5123962376",
    "phone_source": "https://heldenfels.com/contact/",
    "phone_more": [],
@@ -23221,7 +22979,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23288,8 +23045,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Larry Miller"
@@ -23308,7 +23063,6 @@
    "company_li": "https://www.linkedin.com/company/kaufman-concrete-erwss/",
    "team_url": "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/",
    "chain": "slab",
-   "last_verified": "2026-09-24",
    "phone": null,
    "phone_source": null,
    "phone_more": [],
@@ -23326,7 +23080,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23392,8 +23145,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Eric Dyess"
@@ -23412,7 +23163,6 @@
    "company_li": "https://www.linkedin.com/company/miller-sierra-contractors-inc./",
    "team_url": "https://www.millersierra.com/who-we-are/",
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "8174618802",
    "phone_source": "https://www.millersierra.com/contact-us/",
    "phone_more": [],
@@ -23430,7 +23180,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23446,7 +23195,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "More than 1,500 staff and millions of square feet a year, per its own site. One or two printers would be a pilot at most."
+     "text": "More than 1,500 staff and millions of square feet a year, per its own site."
     },
     {
      "axis": "innovation",
@@ -23504,8 +23253,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Robert Miller",
@@ -23517,7 +23264,7 @@
   },
   {
    "target_id": "DFW-TR-011",
-   "entity_name": "UFP Site Built — Hillsboro, TX",
+   "entity_name": "UFP Site Built, Hillsboro",
    "short": "UFP Hillsboro",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -23525,7 +23272,6 @@
    "company_li": "https://www.linkedin.com/company/ufpconstruction-sitebuilt/",
    "team_url": null,
    "chain": "panel",
-   "last_verified": "2026-09-24",
    "phone": "2545802846",
    "phone_source": "https://ufpsitebuilt.com/our-locations/hillsboro-tx",
    "phone_more": [],
@@ -23543,7 +23289,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23613,8 +23358,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Dwain Hutton",
@@ -23626,7 +23369,7 @@
   },
   {
    "target_id": "DFW-TR-030",
-   "entity_name": "Wells — Hillsboro TX (ex-GATE Precast)",
+   "entity_name": "Wells, Hillsboro plants",
    "short": "Wells Hillsboro",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -23634,7 +23377,6 @@
    "company_li": "https://www.linkedin.com/company/wellsbuilds/",
    "team_url": null,
    "chain": "precast",
-   "last_verified": "2026-09-24",
    "phone": "2545827200",
    "phone_source": "https://business.hillsborochamber.org/members/member/wells-build-177",
    "phone_more": [],
@@ -23656,12 +23398,15 @@
    "company_li_note": "Wells corporate company page.",
    "team_note": null,
    "capital_signals": [
-    "Wells bought GATE Precast in July 2024."
+    {
+     "text": "Wells bought GATE Precast in July 2024.",
+     "date": null,
+     "url": null
+    }
    ],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23752,8 +23497,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Dan Juntunen",
@@ -23773,7 +23516,6 @@
    "company_li": "https://www.linkedin.com/company/all-about-concrete-llc/",
    "team_url": "https://allaboutconcretellc.net/",
    "chain": "slab",
-   "last_verified": "2026-09-24",
    "phone": "2813704470",
    "phone_source": "https://allaboutconcretellc.net/partner-with-us/",
    "phone_more": [],
@@ -23788,12 +23530,15 @@
    "company_li_note": "Company page, All About Concrete LLC.",
    "team_note": null,
    "capital_signals": [
-    "High Street Capital investment, August 2026, in partnership with founder Nathan Frazier"
+    {
+     "text": "High Street Capital investment, August 2026, in partnership with founder Nathan Frazier",
+     "date": null,
+     "url": null
+    }
    ],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23862,8 +23607,6 @@
      "source_evidence": "Named in the same High Street Capital announcement as COO."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Nathan Frazier"
@@ -23882,7 +23625,6 @@
    "company_li": null,
    "team_url": "https://www.blackknightconstruction.com/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "2145662009",
    "phone_source": "https://www.blackknightconstruction.com/",
    "phone_more": [],
@@ -23894,13 +23636,12 @@
    "region": "Dallas-Fort Worth Metroplex",
    "phone_label": "Main office",
    "phone_note": null,
-   "company_li_note": "No DFW company page found. The Black Knight Construction page belongs to a St. Louis firm.",
+   "company_li_note": "No LinkedIn company page for this firm. The Black Knight Construction page belongs to a St. Louis firm.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -23959,8 +23700,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Sergio"
@@ -23979,7 +23718,6 @@
    "company_li": "https://www.linkedin.com/company/brick-and-stone-master/",
    "team_url": "https://www.brickandstonemaster.com/aboutus",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "8174857200",
    "phone_source": "https://www.brickandstonemaster.com/home/about",
    "phone_more": [],
@@ -23997,7 +23735,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24072,8 +23809,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Bill Schultheis"
@@ -24092,7 +23827,6 @@
    "company_li": "https://www.linkedin.com/company/brick-experts-dfw/",
    "team_url": "https://brickexpertsdfw.net/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "8179010236",
    "phone_source": "https://brickexpertsdfw.net/",
    "phone_more": [],
@@ -24110,7 +23844,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24172,11 +23905,9 @@
      "name": "David Andrews",
      "role": "Co-Founder",
      "source_url": "https://brickexpertsdfw.net/",
-     "source_evidence": "Co-Founder section: David helped start Brick Experts in 2015; master brick mason 30 years prior."
+     "source_evidence": "Co-Founder section: David helped start Brick Experts in 2015, after 30 years as a master brick mason."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Jacob Andrews"
@@ -24195,7 +23926,6 @@
    "company_li": "https://www.linkedin.com/company/cardinal-foundation-services/",
    "team_url": "https://cardinalfoundationservices.com/",
    "chain": "slab",
-   "last_verified": "2026-09-24",
    "phone": "9726568251",
    "phone_source": "https://cardinalfoundationservices.com/new-construction/concrete-flatwork/",
    "phone_more": [],
@@ -24213,7 +23943,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24280,11 +24009,10 @@
      "role": "Owner and Principal Engineer",
      "source_url": "https://cardinalfoundationservices.com/",
      "source_evidence": "Named on the firm's site as Owner and Principal Engineer, a PE since 2012.",
-     "decider": true
+     "decider": true,
+     "probable": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Josh Lavelle",
@@ -24304,7 +24032,6 @@
    "company_li": "https://www.linkedin.com/company/correamasonry/",
    "team_url": null,
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "4698543445",
    "phone_source": "https://correamasonryllc.com/",
    "phone_more": [],
@@ -24322,7 +24049,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24373,9 +24099,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The firm's site names no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24392,7 +24116,6 @@
    "company_li": null,
    "team_url": "https://daydmasonry.com/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "8177130046",
    "phone_source": "https://daydmasonry.com/",
    "phone_more": [],
@@ -24410,7 +24133,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24461,9 +24183,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The site names no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24480,7 +24200,6 @@
    "company_li": null,
    "team_url": "https://sites.google.com/view/efrendehoyos/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "2142784005",
    "phone_source": "https://www.efrenmasonry.com/",
    "phone_more": [],
@@ -24492,13 +24211,12 @@
    "region": "Dallas County and nearby cities",
    "phone_label": "Main line",
    "phone_note": null,
-   "company_li_note": "No company page found.",
+   "company_li_note": "No LinkedIn company page.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24563,8 +24281,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Efren De Hoyos"
@@ -24583,7 +24299,6 @@
    "company_li": "https://www.linkedin.com/company/fenimore-blythe-commercial-masonry/",
    "team_url": "https://www.fenimoreblythe.com/team/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "8178346301",
    "phone_source": "https://www.fenimoreblythe.com/contact/",
    "phone_more": [],
@@ -24601,7 +24316,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24679,8 +24393,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "David Grzesiak",
@@ -24700,7 +24412,6 @@
    "company_li": null,
    "team_url": null,
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "2143079841",
    "phone_source": "https://generalcontractorsofdfw.com/services/tilt-wall-construction",
    "phone_more": [],
@@ -24712,13 +24423,12 @@
    "region": "Dallas-Fort Worth",
    "phone_label": "Main line",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page found.",
+   "company_li_note": "No LinkedIn company page.",
    "team_note": "Its Who We Are and about pages name no owner or officer.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24773,9 +24483,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "Its Who We Are and about pages name no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24792,7 +24500,6 @@
    "company_li": null,
    "team_url": null,
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "6826888436",
    "phone_source": "https://grapevine-masonry.com/",
    "phone_more": [],
@@ -24804,13 +24511,12 @@
    "region": "Southlake, serving Grapevine and the mid-cities",
    "phone_label": "Main office, Southlake",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page found.",
+   "company_li_note": "No LinkedIn company page.",
    "team_note": "Its site names no owner or officer.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24861,9 +24567,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "Its site names no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24880,7 +24584,6 @@
    "company_li": null,
    "team_url": "https://originallymasonry.com/",
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "2146096292",
    "phone_source": "https://originallymasonry.com/",
    "phone_more": [],
@@ -24892,13 +24595,12 @@
    "region": "Grand Prairie, working across DFW",
    "phone_label": "Grand Prairie office",
    "phone_note": null,
-   "company_li_note": "No company page found.",
+   "company_li_note": "No LinkedIn company page.",
    "team_note": "The firm's pages name no owner or officer.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -24949,9 +24651,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The firm's pages name no owner or officer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24968,7 +24668,6 @@
    "company_li": "https://www.linkedin.com/company/post-tension-services-of-texas/",
    "team_url": null,
    "chain": "slab",
-   "last_verified": "2026-09-24",
    "phone": "9728455500",
    "phone_source": "https://post-tension.com/post-tension-concrete-slab-construction/",
    "phone_more": [],
@@ -24986,7 +24685,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25053,8 +24751,6 @@
      "li_evidence": "Indexed title reads Justin Zuckerbrow - Vice President and Owner at Post-Tension Services."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Derek Tuttle"
@@ -25073,7 +24769,6 @@
    "company_li": "https://www.linkedin.com/company/steele-freeman-inc/",
    "team_url": "https://steelefreeman.com/about-us/",
    "chain": "gc",
-   "last_verified": "2026-09-24",
    "phone": "8172324742",
    "phone_source": "https://steelefreeman.com/about-us/",
    "phone_more": [],
@@ -25091,7 +24786,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25161,8 +24855,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Mike Freeman",
@@ -25182,7 +24874,6 @@
    "company_li": "https://www.linkedin.com/company/texcon-llc/",
    "team_url": "https://texconllc.com/about/",
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "9724839266",
    "phone_source": "https://texconllc.com/contact-us/",
    "phone_more": [
@@ -25206,7 +24897,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25277,8 +24967,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Warren Nugent"
@@ -25297,7 +24985,6 @@
    "company_li": "https://www.linkedin.com/company/wilks-masonry-corp/",
    "team_url": null,
    "chain": "masonry",
-   "last_verified": "2026-09-24",
    "phone": "6825878150",
    "phone_source": "https://www.wilksmasonry.com/contact",
    "phone_more": [],
@@ -25315,7 +25002,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25385,8 +25071,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Farris Wilks",
@@ -25406,7 +25090,6 @@
    "company_li": "https://www.linkedin.com/company/austin-commercial/",
    "team_url": null,
    "chain": "gc",
-   "last_verified": "2026-09-24",
    "phone": "2144435700",
    "phone_source": "https://www.austin-ind.com/locations/dallas",
    "phone_more": [],
@@ -25424,7 +25107,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25502,8 +25184,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "David Yeagy",
@@ -25523,7 +25203,6 @@
    "company_li": "https://www.linkedin.com/company/bakerconstruction/",
    "team_url": "https://bakerconstruction.com/about-us/leadership/",
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "8005392224",
    "phone_source": "https://bakerconstruction.com/",
    "phone_more": [],
@@ -25541,7 +25220,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25564,7 +25242,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "Large tilt panels, such as the 75-foot panels at Harris Health, are hard work with an existing method, not a new one."
+     "text": "Tilt panels, such as the 75-foot panels at Harris Health, use an existing method, not a new one."
     }
    ],
    "marks": {
@@ -25629,8 +25307,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Karl Watson",
@@ -25652,7 +25328,6 @@
    "company_li": "https://www.linkedin.com/company/brundage-bone-/",
    "team_url": null,
    "chain": "nozzle",
-   "last_verified": "2026-09-24",
    "phone": "9725794444",
    "phone_source": "https://brundagebone.com/locations/dallas/",
    "phone_more": [
@@ -25670,7 +25345,7 @@
    "phone_absent": null,
    "press": [],
    "key_stat": "National concrete pumping contractor with a Dallas branch",
-   "mvp_screen": "Places concrete with boom pumps and placing booms, a trade next to print-crew skills. It does not own walls.",
+   "mvp_screen": "Places concrete with boom pumps and placing booms. It does not own walls.",
    "synopsis": "National concrete pumping contractor running boom pumps and placing booms, trading as Brundage-Bone under U.S. Concrete Pumping. Its locations page lists a Dallas branch. The parent, Concrete Pumping Holdings, names Bruce Young as Chief Executive Officer, appointed in 2008. It names Mark Young as President of U.S. Concrete Pumping and general manager of Brundage-Bone since 2018.",
    "region": "National, with a Dallas branch",
    "phone_label": "Dallas branch",
@@ -25681,7 +25356,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25751,8 +25425,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Mark Young",
@@ -25772,7 +25444,6 @@
    "company_li": "https://www.linkedin.com/company/capform-inc/",
    "team_url": "https://capforminc.com/CFI2019/contact/",
    "chain": "gc",
-   "last_verified": "2026-09-24",
    "phone": "9722457292",
    "phone_source": "https://capforminc.com/CFI2019/",
    "phone_more": [],
@@ -25790,7 +25461,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25871,8 +25541,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "David Dozzo",
@@ -25893,7 +25561,6 @@
    "company_li": "https://www.linkedin.com/company/harvey-cleary/",
    "team_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "5129289300",
    "phone_source": "https://www.harveycleary.com/about-us/locations/austin-tx/",
    "phone_more": [],
@@ -25911,7 +25578,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -25976,8 +25642,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Scott Clarke"
@@ -25988,7 +25652,7 @@
   },
   {
    "target_id": "DFW-TR-024",
-   "entity_name": "Manhattan Construction Company — Dallas",
+   "entity_name": "Manhattan Construction Company, Dallas",
    "short": "Manhattan Dallas",
    "entity_type": "contractor",
    "entity_role": "wall_trade",
@@ -25996,7 +25660,6 @@
    "company_li": "https://www.linkedin.com/company/manhattan-construction-group/",
    "team_url": null,
    "chain": "gc",
-   "last_verified": "2026-09-24",
    "phone": "2143577400",
    "phone_source": "https://manhattanconstructiongroup.com/manhattan-construction-company/locations/dallas/",
    "phone_more": [],
@@ -26014,7 +25677,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26030,7 +25692,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "The regional arm of a national construction group, so a machine purchase runs through a large desk."
+     "text": "The regional arm of a national construction group, so a machine purchase runs through the group."
     },
     {
      "axis": "innovation",
@@ -26080,8 +25742,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Travis Porter",
@@ -26101,7 +25761,6 @@
    "company_li": "https://www.linkedin.com/company/rogersobrien/",
    "team_url": "https://r-o.com/people/corporate/",
    "chain": "tiltup",
-   "last_verified": "2026-09-24",
    "phone": "2149623000",
    "phone_source": "https://r-o.com/contact-us/",
    "phone_more": [],
@@ -26119,7 +25778,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26193,8 +25851,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Justin McAfee",
@@ -26214,7 +25870,6 @@
    "company_li": "https://www.linkedin.com/company/tealstone-residential-concrete-inc./",
    "team_url": "https://tealstonelp.com/what-we-do/",
    "chain": "slab",
-   "last_verified": "2026-09-24",
    "phone": "9403832887",
    "phone_source": "https://tealstonelp.com/contact-us/",
    "phone_more": [],
@@ -26232,7 +25887,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26248,7 +25902,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "No",
      "mark": "fail",
-     "text": "10,000+ slabs a year on its own site is far beyond what one or two printers would cover. A machine would be a pilot line inside the slab business."
+     "text": "10,000+ slabs a year on its own site is far beyond what one or two printers would cover."
     },
     {
      "axis": "innovation",
@@ -26302,9 +25956,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
-   "people_absent": "Its own pages name no officer. The one name found elsewhere rests on a contractor directory this deck does not cite.",
-   "phone_shared": [],
+   "people_absent": "Its own pages name no officer.",
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -26321,7 +25973,6 @@
    "company_li": null,
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": null,
    "phone_source": null,
    "phone_more": [],
@@ -26333,13 +25984,12 @@
    "region": "Lewisville and Plano area, with a DOE project in Garland",
    "phone_label": null,
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page found.",
+   "company_li_note": "No LinkedIn company page.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26409,8 +26059,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Steve Brown"
@@ -26429,7 +26077,6 @@
    "company_li": "https://www.linkedin.com/company/partners-in-building/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4699023200",
    "phone_source": "https://partnersinbuilding.com/contact",
    "phone_more": [],
@@ -26454,7 +26101,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26536,10 +26182,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-031"
-   ],
    "vol": 286,
    "deciders": [
     "Chris Lemming",
@@ -26559,7 +26201,6 @@
    "company_li": "https://www.linkedin.com/company/dr-horton/",
    "team_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8173908200",
    "phone_source": "https://www.drhorton.com/contact-us-page",
    "phone_more": [
@@ -26606,7 +26247,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26711,8 +26351,6 @@
      "source_evidence": "Quoted on the Apis Cor investment release as D.R. Horton's Senior Vice President of Business Development."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 8191,
    "deciders": [],
    "has_decider": false,
@@ -26729,7 +26367,6 @@
    "company_li": "https://www.linkedin.com/company/pultegroup/",
    "team_url": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9722003727",
    "phone_source": "https://www.pulte.com/homes/texas/dallas",
    "phone_more": [],
@@ -26754,7 +26391,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -26848,8 +26484,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1564,
    "deciders": [
     "Scott Bryson"
@@ -26868,7 +26502,6 @@
    "company_li": "https://www.linkedin.com/company/david-weekley-homes/",
    "team_url": "https://www.davidweekleyhomes.com/about-us",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8779335539",
    "phone_source": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
    "phone_more": [
@@ -26892,19 +26525,18 @@
      "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
     }
    ],
-   "key_stat": "943 closings in 2025 by its DFW division",
+   "key_stat": "943 Dallas-division closings in 2025, its own press kit",
    "mvp_screen": "A private national builder whose Carrollton division builds in 67 DFW communities. Its chief operating officer was previously Area President in Dallas.",
    "synopsis": "Privately held national homebuilder, founded in Houston, which describes itself as the largest privately held homebuilder in the US. It expanded to Dallas in 1985 and runs its Dallas/Ft. Worth division from 3301 North I-35, Carrollton. Its press kit gives 198 Dallas team members, 67 communities, and 778 homes sold and 943 closed in Dallas in 2025. The Dallas Morning News list of Zonda starts ranks it 10th in DFW for April 2024 to March 2025, with 987 starts. David Weekley is Chairman, Jay Brown Chief Executive Officer and Chris Weekley President.",
    "region": "Carrollton division office, with communities across DFW",
    "phone_label": "Dallas/Ft. Worth homes page line",
    "phone_note": null,
-   "company_li_note": "Company page, matches David Weekley Homes.",
+   "company_li_note": "David Weekley Homes company page.",
    "team_note": "The about page does not name a sitting DFW Division President.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27003,8 +26635,6 @@
      "source_evidence": "Named on the firm's about page as Chief Operating Officer over all division operations, and previously Area President in Dallas."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -27021,7 +26651,6 @@
    "company_li": "https://www.linkedin.com/company/castlerock-communities/",
    "team_url": "https://www.c-rock.com/about/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "7136007000",
    "phone_source": "https://www.c-rock.com/",
    "phone_more": [],
@@ -27036,13 +26665,20 @@
    "company_li_note": "CastleRock Communities company page.",
    "team_note": "No DFW division leader is named on the firm's own pages.",
    "capital_signals": [
-    "Daiwa House USA Holdings completed an equity acquisition in September 2021.",
-    "Bought The Jones Company of Tennessee in January 2024."
+    {
+     "text": "Daiwa House USA Holdings completed an equity acquisition in September 2021.",
+     "date": null,
+     "url": null
+    },
+    {
+     "text": "Bought The Jones Company of Tennessee in January 2024.",
+     "date": null,
+     "url": null
+    }
    ],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27129,8 +26765,6 @@
      "source_evidence": "Named on CastleRock's own about page as partner and Senior Executive Vice President, over land."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1465,
    "deciders": [],
    "has_decider": false,
@@ -27147,7 +26781,6 @@
    "company_li": "https://www.linkedin.com/company/mattamy-homes/",
    "team_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695516812",
    "phone_source": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
    "phone_more": [],
@@ -27172,7 +26805,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27256,8 +26888,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "John Kuntz"
@@ -27276,7 +26906,6 @@
    "company_li": "https://www.linkedin.com/company/meritage-homes/",
    "team_url": "https://investors.meritagehomes.com/company-information/management-team",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4694877973",
    "phone_source": "https://www.meritagehomes.com/state/tx/dallasft-worth",
    "phone_more": [],
@@ -27295,13 +26924,12 @@
    "region": "Dallas-Fort Worth, part of a national builder",
    "phone_label": "Dallas/Ft. Worth sales team",
    "phone_note": null,
-   "company_li_note": "Official company page, name matches.",
+   "company_li_note": "Meritage Homes company page.",
    "team_note": "The management page does not name a current DFW Division President.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27392,8 +27020,6 @@
      "li_evidence": "Indexed title reads Austin Woffinden - Meritage Homes."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1589,
    "deciders": [],
    "has_decider": false,
@@ -27410,7 +27036,6 @@
    "company_li": "https://www.linkedin.com/company/ashton-woods-homes/",
    "team_url": "https://www.ashtonwoods.com/corporate-info",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "7709989663",
    "phone_source": "https://www.ashtonwoods.com/corporate-info",
    "phone_more": [],
@@ -27435,7 +27060,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27535,8 +27159,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 1155,
    "deciders": [
     "Lindsay Motley",
@@ -27557,7 +27179,6 @@
    "company_li": "https://www.linkedin.com/company/perry-homes/",
    "team_url": "https://www.perryhomes.com/about-perry-homes",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8002473779",
    "phone_source": "https://www.perryhomes.com/contact-us",
    "phone_more": [],
@@ -27582,7 +27203,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27663,10 +27283,6 @@
      "li_evidence": "Indexed title reads Todd Chachere - Perry Homes."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-024"
-   ],
    "vol": 1132,
    "deciders": [],
    "has_decider": false,
@@ -27683,7 +27299,6 @@
    "company_li": "https://www.linkedin.com/company/beazer-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4696306077",
    "phone_source": "https://www.beazer.com/dallas-TX/midlothian/goodland",
    "phone_more": [],
@@ -27701,7 +27316,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27771,8 +27385,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Troy Radelat"
@@ -27791,7 +27403,6 @@
    "company_li": "https://www.linkedin.com/company/centex-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9726341226",
    "phone_source": "https://www.centex.com/homes/texas/dallas/forney/arbordale-211042",
    "phone_more": [],
@@ -27809,7 +27420,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27882,8 +27492,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Scott Bryson"
@@ -27902,7 +27510,6 @@
    "company_li": "https://www.linkedin.com/company/century-communities/",
    "team_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8178662980",
    "phone_source": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
    "phone_more": [],
@@ -27920,7 +27527,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -27998,8 +27604,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Taylor Humphrey"
@@ -28018,7 +27622,6 @@
    "company_li": "https://www.linkedin.com/company/del-webb/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9727369368",
    "phone_source": "https://www.delwebb.com/homes/texas/dallas/mckinney/del-webb-at-trinity-falls-210272",
    "phone_more": [],
@@ -28036,7 +27639,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28116,8 +27718,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Scott Bryson"
@@ -28136,7 +27736,6 @@
    "company_li": "https://www.linkedin.com/company/green-brick-partners/",
    "team_url": "https://greenbrickpartners.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695736721",
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
@@ -28161,7 +27760,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28262,13 +27860,6 @@
      "li_evidence": "Indexed title reads Jeffery Cox - Green Brick Partners, Inc."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-003a",
-    "DFW-003b",
-    "DFW-003c",
-    "DFW-014"
-   ],
    "vol": 2899,
    "deciders": [],
    "has_decider": false,
@@ -28285,7 +27876,6 @@
    "company_li": "https://www.linkedin.com/company/k--hovnanian-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8884251427",
    "phone_source": "https://www.khov.com/new-construction-homes/texas/fort-worth/wellington-estates-south/",
    "phone_more": [],
@@ -28303,7 +27893,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28381,8 +27970,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Chris Hartley"
@@ -28401,7 +27988,6 @@
    "company_li": "https://www.linkedin.com/company/kb-home/",
    "team_url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-OPENS-ELEVON-A-SOUGHT-AFTER-MASTER-PLANNED-COMMUNITY-IN-A-DESIRABLE-DALLAS-AREA-LOCATION/default.aspx",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695306107",
    "phone_source": "https://www.kbhome.com/new-homes-dallas-fort-worth",
    "phone_more": [
@@ -28430,7 +28016,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28500,8 +28085,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Ben Clark"
@@ -28520,7 +28103,6 @@
    "company_li": "https://www.linkedin.com/company/lgi-homes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8555816400",
    "phone_source": "https://www.lgihomes.com/texas/dallas-fort-worth/college-park",
    "phone_more": [],
@@ -28538,7 +28120,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28616,8 +28197,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Stacy Conley"
@@ -28636,7 +28215,6 @@
    "company_li": "https://www.linkedin.com/company/mihomes/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9726194200",
    "phone_source": "https://www.mihomes.com/agent/dallas-fort-worth-metroplex/agent-info",
    "phone_more": [],
@@ -28654,7 +28232,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28728,8 +28305,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Chad Tschetter"
@@ -28748,7 +28323,6 @@
    "company_li": "https://www.linkedin.com/company/taylor-morrison/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692522306",
    "phone_source": "https://www.taylormorrison.com/contact-us",
    "phone_more": [
@@ -28772,7 +28346,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28843,17 +28416,14 @@
      "role": "Dallas Division President (as of June 2025)",
      "source_url": "https://www.localprofile.com/real-estate/home-builders-betting-big-celina-10833314",
      "source_evidence": "Named in Local Profile on June 19, 2025 as Taylor Morrison's Dallas Division President, quoted on Ranch at Uptown Celina.",
-     "decider": true
+     "decider": false,
+     "departed": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
-   "deciders": [
-    "Tom Cawthon"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -28866,7 +28436,6 @@
    "company_li": "https://www.linkedin.com/company/toll-brothers/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8552898656",
    "phone_source": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Prestwick-Grove",
    "phone_more": [],
@@ -28891,7 +28460,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -28971,8 +28539,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Jay Saunders"
@@ -28991,7 +28557,6 @@
    "company_li": "https://www.linkedin.com/company/tri-pointe-homes/",
    "team_url": "https://www.tripointehomes.com/about/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2147650570",
    "phone_source": "https://investors.tripointehomes.com/contact-us/",
    "phone_more": [],
@@ -29009,7 +28574,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29095,8 +28659,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Sean Ricks"
@@ -29115,7 +28677,6 @@
    "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
    "team_url": "https://www.hillwoodcommunities.com/leadership/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2144490914",
    "phone_source": "https://www.hillwoodcommunities.com/contact/",
    "phone_more": [],
@@ -29133,7 +28694,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29236,10 +28796,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-020"
-   ],
    "vol": null,
    "deciders": [
     "Elaine Eatman",
@@ -29251,7 +28807,7 @@
   },
   {
    "target_id": "DFW-CH-015",
-   "entity_name": "Cambridge Crossing (Celina — Cambridge Companies)",
+   "entity_name": "Cambridge Crossing (Celina, Cambridge Companies)",
    "short": "Cambridge Crossing",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -29259,7 +28815,6 @@
    "company_li": null,
    "team_url": "https://cambridgecos.com/about/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2147717305",
    "phone_source": "https://cambridgecrossingcelina.com/builders/",
    "phone_more": [],
@@ -29271,13 +28826,12 @@
    "region": "Celina, near the Tollway and Outer Loop",
    "phone_label": "Community office, Celina",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page matches the Dallas developer.",
+   "company_li_note": "No LinkedIn company page for the Dallas developer.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29362,8 +28916,6 @@
      "source_evidence": "Named on Cambridge Companies' own about page as Chief Development Officer."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29380,7 +28932,6 @@
    "company_li": "https://www.linkedin.com/company/centurion-american/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4698927200",
    "phone_source": "https://centurionamerican.com/contact/",
    "phone_more": [],
@@ -29398,7 +28949,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29464,8 +29014,6 @@
      "source_evidence": "Named on the firm's leadership page as President and CEO, and as founder of Centurion American Custom Homes in 1990."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29482,7 +29030,6 @@
    "company_li": "https://www.linkedin.com/company/huffines-communities/",
    "team_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2147501800",
    "phone_source": "https://huffinescommunities.com/",
    "phone_more": [],
@@ -29500,7 +29047,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29583,11 +29129,6 @@
      "source_evidence": "Named on the firm's Who We Are page as co-founder, with his twin brother Phillip, in 1985."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-011",
-    "DFW-CH-019"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29604,7 +29145,6 @@
    "company_li": "https://www.linkedin.com/company/huntrealtyinvestments/",
    "team_url": "https://huntrealty.com/team/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2149788690",
    "phone_source": "https://huntrealty.com/contact/",
    "phone_more": [],
@@ -29622,7 +29162,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29717,8 +29256,6 @@
      "li_evidence": "Indexed title reads Todd Watson - Hunt Realty Investments, Inc."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29735,7 +29272,6 @@
    "company_li": "https://www.linkedin.com/company/the-johnson-development-corp/",
    "team_url": "https://www.johnsondevelopment.com/our-leaders",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "7139609977",
    "phone_source": "https://www.johnsondevelopment.com/our-leaders",
    "phone_more": [],
@@ -29753,7 +29289,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29832,10 +29367,6 @@
      "source_evidence": "Named on the firm's own leadership page as President and Chief Executive Officer."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-012"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29844,7 +29375,7 @@
   },
   {
    "target_id": "DFW-CH-008",
-   "entity_name": "Light Farms (Republic — Celina)",
+   "entity_name": "Light Farms (Celina, Republic)",
    "short": "Light Farms",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -29852,7 +29383,6 @@
    "company_li": "https://www.linkedin.com/company/republic-property-group/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2146184542",
    "phone_source": "https://republicpropertygroup.com/communities/light-farms/",
    "phone_more": [],
@@ -29870,7 +29400,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -29955,8 +29484,6 @@
      "source_evidence": "Named on the Republic Property Group team page as Co-CEO and Partner."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29973,7 +29500,6 @@
    "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2144490914",
    "phone_source": "https://www.hillwoodcommunities.com/contact/",
    "phone_more": [],
@@ -29985,13 +29511,12 @@
    "region": "Celina and Prosper area",
    "phone_label": "Hillwood Communities main office",
    "phone_note": null,
-   "company_li_note": "Hillwood Communities company page, used for the community.",
+   "company_li_note": "Hillwood Communities company page, the developer.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30073,10 +29598,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-001"
-   ],
    "vol": null,
    "deciders": [
     "Huawei “Howie” Yin"
@@ -30087,7 +29608,7 @@
   },
   {
    "target_id": "DFW-CH-016",
-   "entity_name": "Mosaic (Celina — Tellus Group)",
+   "entity_name": "Mosaic (Celina, Tellus Group)",
    "short": "Mosaic",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -30095,7 +29616,6 @@
    "company_li": "https://www.linkedin.com/company/tellusgroupllc/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695320689",
    "phone_source": "https://tellusgroupllc.com/contact/",
    "phone_more": [],
@@ -30113,7 +29633,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30190,10 +29709,6 @@
      "source_evidence": "Named on Tellus Group's team page as Founder and Chief Executive Officer."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-017"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30210,7 +29725,6 @@
    "company_li": "https://www.linkedin.com/company/oxland-advisors-llc/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": null,
    "phone_source": null,
    "phone_more": [],
@@ -30228,7 +29742,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30298,9 +29811,7 @@
     }
    ],
    "principals": [],
-   "phone_rule": null,
    "people_absent": "The community's own site names no officer of its developer.",
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30317,7 +29828,6 @@
    "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4692120524",
    "phone_source": "https://www.ramblebyhillwood.com/",
    "phone_more": [],
@@ -30329,13 +29839,12 @@
    "region": "Celina, Collin County",
    "phone_label": "Ramble contact line, Celina",
    "phone_note": null,
-   "company_li_note": "No separate company page for Ramble. The card uses the Hillwood Communities page.",
+   "company_li_note": "No separate company page for Ramble. The link goes to the Hillwood Communities page.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30421,8 +29930,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Elaine Eatman"
@@ -30441,7 +29948,6 @@
    "company_li": "https://www.linkedin.com/company/republic-property-group/",
    "team_url": "https://republicpropertygroup.com/team/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2142923410",
    "phone_source": "https://republicpropertygroup.com/contact/",
    "phone_more": [],
@@ -30459,7 +29965,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30468,7 +29973,7 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "Large multi-phase masterplans, Walsh and Light Farms, with long buildouts."
+     "text": "Multi-phase masterplans, Walsh and Light Farms, with long buildouts."
     },
     {
      "axis": "machine_fit",
@@ -30560,10 +30065,6 @@
      "source_evidence": "Named on the firm's about page as COO."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-005"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30572,7 +30073,7 @@
   },
   {
    "target_id": "DFW-CH-011",
-   "entity_name": "Serenade (Celina — Huffines Communities)",
+   "entity_name": "Serenade (Celina, Huffines Communities)",
    "short": "Serenade",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -30580,7 +30081,6 @@
    "company_li": "https://www.linkedin.com/company/huffines-communities/",
    "team_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2147501800",
    "phone_source": "https://huffinescommunities.com/projects/serenade/",
    "phone_more": [],
@@ -30598,7 +30098,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30685,11 +30184,6 @@
      "source_evidence": "Named on the firm's Who We Are page as co-founder, with his twin brother Phillip, in 1985."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-018",
-    "DFW-CH-019"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30698,7 +30192,7 @@
   },
   {
    "target_id": "DFW-CH-019",
-   "entity_name": "Solterra (Mesquite — Huffines Communities)",
+   "entity_name": "Solterra (Mesquite, Huffines Communities)",
    "short": "Solterra",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -30706,7 +30200,6 @@
    "company_li": "https://www.linkedin.com/company/huffines-communities/",
    "team_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2147501800",
    "phone_source": "https://huffinescommunities.com/",
    "phone_more": [],
@@ -30724,7 +30217,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30803,11 +30295,6 @@
      "source_evidence": "Named on the firm's who-we-are page as co-founder, with his twin brother Phillip, in 1985."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-011",
-    "DFW-CH-018"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30816,7 +30303,7 @@
   },
   {
    "target_id": "DFW-CH-009",
-   "entity_name": "Star Trail (Prosper — Blue Star Land / Jones family)",
+   "entity_name": "Star Trail (Prosper, Blue Star Land)",
    "short": "Star Trail",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -30824,7 +30311,6 @@
    "company_li": null,
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9728671886",
    "phone_source": "https://startrailprosper.com/developer/",
    "phone_more": [],
@@ -30836,13 +30322,12 @@
    "region": "Prosper",
    "phone_label": "Blue Star Land LP, developer",
    "phone_note": null,
-   "company_li_note": "No company page found for Star Trail or Blue Star Land LP.",
+   "company_li_note": "No LinkedIn company page for Star Trail or Blue Star Land LP.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -30915,8 +30400,6 @@
      "source_evidence": "Named by Jerry Jones in a Prosper EDC investor spotlight as head of the Blue Star Land team."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -30933,7 +30416,6 @@
    "company_li": "https://www.linkedin.com/company/tellusgroupllc/",
    "team_url": "https://tellusgroupllc.com/team/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "4695320689",
    "phone_source": "https://tellusgroupllc.com/contact/",
    "phone_more": [],
@@ -30951,7 +30433,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31030,10 +30511,6 @@
      "source_evidence": "Named on the firm's team page as Chief Operating Officer."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-016"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -31050,7 +30527,6 @@
    "company_li": "https://www.linkedin.com/company/tricon-residential/",
    "team_url": "https://triconhomes.com/about/our-people/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8448742661",
    "phone_source": "https://triconhomes.com/resources/insights/tricon-residential-opens-new-community-in-arlington-texas-add-to-housing-supply/",
    "phone_more": [],
@@ -31075,7 +30551,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31166,8 +30641,6 @@
      "source_evidence": "Named on Tricon's own Our People page as VP Operations for Dallas and markets in Minnesota, Illinois, Wisconsin and Iowa."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -31176,7 +30649,7 @@
   },
   {
    "target_id": "DFW-CH-012",
-   "entity_name": "Trinity Falls (Johnson Development — McKinney)",
+   "entity_name": "Trinity Falls (McKinney, Johnson Development)",
    "short": "Trinity Falls",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -31184,7 +30657,6 @@
    "company_li": "https://www.linkedin.com/company/the-johnson-development-corp/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "7139609977",
    "phone_source": "https://www.johnsondevelopment.com/mckinney-tx/mpc_trinity_falls",
    "phone_more": [],
@@ -31196,13 +30668,12 @@
    "region": "McKinney, Collin County",
    "phone_label": "Johnson Development corporate line, the developer",
    "phone_note": null,
-   "company_li_note": "No separate company page for Trinity Falls. The card uses the Johnson Development page.",
+   "company_li_note": "No separate company page for Trinity Falls. The link goes to the Johnson Development page.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31271,10 +30742,6 @@
      "source_evidence": "Quoted in McKinney Today on September 15, 2026 as General Manager and Vice President of Trinity Falls for Johnson Development."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-014"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -31291,7 +30758,6 @@
    "company_li": "https://www.linkedin.com/company/hillwoodcommunities/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9725738781",
    "phone_source": "https://www.unionparkbyhillwood.com/",
    "phone_more": [],
@@ -31303,13 +30769,12 @@
    "region": "Little Elm, on US 380",
    "phone_label": "Community office, Little Elm",
    "phone_note": null,
-   "company_li_note": "Hillwood Communities company page, used for the community.",
+   "company_li_note": "Hillwood Communities company page, the developer.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31387,8 +30852,6 @@
      "decider": true
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [
     "Elaine Eatman"
@@ -31407,7 +30870,6 @@
    "company_li": "https://www.linkedin.com/company/republic-property-group/",
    "team_url": null,
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "2142923410",
    "phone_source": "https://republicpropertygroup.com/contact/",
    "phone_more": [],
@@ -31425,7 +30887,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31510,10 +30971,6 @@
      "source_evidence": "Named on Republic Property Group's team page as Co-CEO."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-CH-002"
-   ],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -31522,7 +30979,7 @@
   },
   {
    "target_id": "DFW-CH-013",
-   "entity_name": "Windsong Ranch (Tellus Group — Prosper)",
+   "entity_name": "Windsong Ranch (Prosper, Tellus Group)",
    "short": "Windsong Ranch",
    "entity_type": "mpc",
    "entity_role": "channel",
@@ -31530,7 +30987,6 @@
    "company_li": "https://www.linkedin.com/company/tellusgroupllc/",
    "team_url": "https://windsongranchliving.com/craig-martin-dallas-500/",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "9723479270",
    "phone_source": "https://windsongranchliving.com/",
    "phone_more": [],
@@ -31545,12 +31001,15 @@
    "company_li_note": "Tellus Group's company page. The community has none of its own.",
    "team_note": null,
    "capital_signals": [
-    "Tellus Group bought Windsong Ranch from Terra Verde Group in 2018, per D Magazine."
+    {
+     "text": "Tellus Group bought Windsong Ranch from Terra Verde Group in 2018, per D Magazine.",
+     "date": null,
+     "url": null
+    }
    ],
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31559,7 +31018,7 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "A large Prosper masterplan with nine builders on its roster and phases still opening."
+     "text": "A Prosper masterplan with nine builders on its roster and phases still opening."
     },
     {
      "axis": "machine_fit",
@@ -31635,8 +31094,6 @@
      "source_evidence": "Named on a 2016 Windsong Ranch page as the community's developer and founding partner, then with Terra Verde Group."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -31653,7 +31110,6 @@
    "company_li": "https://www.linkedin.com/company/lennar/",
    "team_url": "https://www.lennar.com/about/leadership/david-grove",
    "chain": null,
-   "last_verified": "2026-09-24",
    "phone": "8663144477",
    "phone_source": "https://www.lennar.com/contact?divisionNumber=DFWLEN&market=DAL",
    "phone_more": [],
@@ -31678,7 +31134,6 @@
    "email": null,
    "email_label": null,
    "email_source": null,
-   "audit_flags": [],
    "tail": false,
    "capital_mark": null,
    "why": [
@@ -31773,522 +31228,11 @@
      "li_evidence": "Indexed title reads David Grove - Division President - Lennar Homes."
     }
    ],
-   "phone_rule": null,
-   "phone_shared": [],
    "vol": 5513,
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-TR-052",
-   "entity_name": "Titan ICF",
-   "short": "Titan ICF",
-   "entity_type": "contractor",
-   "entity_role": "wall_trade",
-   "homepage_url": "https://titanicf.com/",
-   "company_li": "https://www.linkedin.com/company/titan-icf/",
-   "team_url": "https://titanicf.com/icf-installation-services/",
-   "chain": "icf",
-   "last_verified": "2026-09-24",
-   "phone": "9562667802",
-   "phone_source": "https://titanicf.com/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "Texas ICF installer, wall-only or full shell",
-   "mvp_screen": "Already installs concrete walls in ICF, mostly on homes.",
-   "synopsis": "Texas ICF materials and installation firm, formerly South Texas ICF. It offers wall-only or complete ICF shell assembly, bracing rental and 3D design. Its portfolio is mostly residential ICF homes. Its pages publish a phone with a 956 area code, from the Rio Grande Valley.",
-   "region": "Installs across Texas",
-   "phone_label": "Main line, Rio Grande Valley area code",
-   "phone_note": null,
-   "company_li_note": "Company page, Titan ICF, Fort Worth.",
-   "team_note": "No officer is named on its public pages.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "audit_flags": [],
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "The same ICF wall and shell system installed repeatedly on homes and light commercial jobs across Texas."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No published home count."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Its core offer is ICF, a concrete wall system it installs as its own method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "clear"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 3,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 2,
-   "cell": "clear|partial",
-   "off_reason": "No page the firm controls gives a DFW address, and its published phone is a Rio Grande Valley number.",
-   "group": "out",
-   "tier": "C",
-   "key_projects": [],
-   "sources": [
-    {
-     "url": "https://titanicf.com/",
-     "date": null
-    },
-    {
-     "url": "https://titanicf.com/icf-installation-services/",
-     "date": null
-    },
-    {
-     "url": "https://titanicf.com/icf-installation-projects/",
-     "date": null
-    }
-   ],
-   "principals": [],
-   "phone_rule": null,
-   "people_absent": "No officer is named on its public pages.",
-   "phone_shared": [],
-   "vol": null,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-005",
-   "entity_name": "Bloomfield Homes",
-   "short": "Bloomfield",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.bloomfieldhomes.com/",
-   "company_li": "https://www.linkedin.com/company/bloomfield-homes/",
-   "team_url": "https://www.bloomfieldhomes.com/about-us/",
-   "chain": null,
-   "last_verified": "2026-09-24",
-   "phone": "8174161572",
-   "phone_source": "https://www.bloomfieldhomes.com/about-us/",
-   "phone_more": [
-    {
-     "digits": "9728771508",
-     "label": "VP, Sales",
-     "source": null
-    }
-   ],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-09-19",
-     "outlet": "Dallas Builders Association",
-     "headline": "Don Dykstra of Bloomfield Homes Is 2025 Hugh Prather Award Honoree",
-     "url": "https://www.dallasbuilders.org/don-dykstra-of-bloomfield-homes-is-2025-hugh-prather-award-honoree/"
-    },
-    {
-     "date": "2025-01-13",
-     "outlet": "Dallas Morning News",
-     "headline": "D-FW home builders saw hot 2024 end on sour note",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/01/13/d-fw-home-builders-saw-hot-2024-end-on-sour-note-they-want-to-give-buyers-money/"
-    }
-   ],
-   "key_stat": "2,036 DFW closings in 2024, 4.6% share",
-   "mvp_screen": "Family-owned, and its about page describes it as a land purchaser and developer.",
-   "synopsis": "Family-owned production builder headquartered at 1900 W. Kirkwood Blvd., Suite 2300B, Southlake. Its about page states more than 20,000 homes built and describes the firm as a land purchaser and developer. BUILDER's Local Leaders table credits it with 2,036 DFW closings in 2024, a 4.6 percent share. The Dallas Builders Association names Don Dykstra as co-founder and chairman and calls Bloomfield the fifth largest home builder in DFW.",
-   "region": "Southlake, with communities across Dallas-Fort Worth",
-   "phone_label": "Corporate office, Southlake",
-   "phone_note": null,
-   "company_li_note": "Bloomfield Homes company page.",
-   "team_note": "No president, construction or purchasing officer is named on the firm's own pages.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "audit_flags": [],
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Production plans across DFW communities from a Southlake headquarters that also develops land."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "2,036 DFW closings in 2024 on BUILDER's Local Leaders table, above 1,500."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record. Press coverage covers buyer incentives and community giving."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 1,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 1,
-   "clears": 1,
-   "cell": "clear|fail",
-   "off_reason": "Holds one of the three counts.",
-   "group": "out",
-   "tier": "C",
-   "key_projects": [
-    {
-     "name": "Land and community programme",
-     "detail": "Its about page describes the firm as a land purchaser and developer, with neighborhoods that often include schools, trails and parks.",
-     "url": "https://www.bloomfieldhomes.com/about-us/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
-     "date": null
-    },
-    {
-     "url": "https://www.bloomfieldhomes.com/about-us/",
-     "date": null
-    },
-    {
-     "url": "https://www.dallasbuilders.org/don-dykstra-of-bloomfield-homes-is-2025-hugh-prather-award-honoree/",
-     "date": null
-    },
-    {
-     "url": "https://www.dallasnews.com/business/real-estate/2025/01/13/d-fw-home-builders-saw-hot-2024-end-on-sour-note-they-want-to-give-buyers-money/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Don Dykstra",
-     "role": "Co-founder and Chairman",
-     "source_url": "https://www.dallasbuilders.org/don-dykstra-of-bloomfield-homes-is-2025-hugh-prather-award-honoree/",
-     "source_evidence": "Named on the Dallas Builders Association's 2025 Hugh Prather Award page as co-founder and chairman.",
-     "linkedin_url": "https://www.linkedin.com/in/dondykstra",
-     "li_evidence": "Indexed title reads Don Dykstra - Chairman - Bloomfield Homes."
-    }
-   ],
-   "phone_rule": null,
-   "phone_shared": [],
-   "vol": 2036,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-004",
-   "entity_name": "Highland Homes",
-   "short": "Highland Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.highlandhomes.com/",
-   "company_li": "https://www.linkedin.com/company/highland-homes/",
-   "team_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-   "chain": null,
-   "last_verified": "2026-09-24",
-   "phone": "9727893500",
-   "phone_source": "https://www.highlandhomes.com/contact",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
-   "key_stat": "2,115 DFW closings in 2024, 4.8% share",
-   "mvp_screen": "Employee-owned, building in four Texas metros, with a build-to-rent arm, HHS Residential. Supply chain reports to the Chief Operating Officer.",
-   "synopsis": "Employee-owned production builder headquartered in Plano. Its homepage and careers pages state ESOP ownership and operations in Dallas-Fort Worth, Houston, Austin and San Antonio. BUILDER's 2025 Local Leaders table credits it with 2,115 DFW closings in 2024, a 4.8 percent share. HHS Residential is its build-to-rent company, at the same Plano address, with Tricon partnerships including Viridian in Arlington. Builder and Developer reported on August 6, 2026 a division-led restructuring, with Aaron Graham as Chairman and CEO and Stephen Chambers promoted to Chief Operating Officer.",
-   "region": "Plano, building across Dallas-Fort Worth, Houston, Austin and San Antonio",
-   "phone_label": "DFW office, Plano",
-   "phone_note": null,
-   "company_li_note": "Company page for Highland Homes, Plano.",
-   "team_note": "Its own pages name no executives. The names here come from Builder and Developer.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "audit_flags": [],
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Production plans repeated across four Texas metros under one builder."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "2,115 DFW closings in 2024 on BUILDER's 2025 Local Leaders table, above 1,500."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record about wall or structural method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 1,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 1,
-   "clears": 1,
-   "cell": "clear|fail",
-   "off_reason": "Holds one of the three counts.",
-   "group": "out",
-   "tier": "C",
-   "key_projects": [
-    {
-     "name": "HHS Residential",
-     "detail": "Highland's build-to-rent company, at the same Plano address. Tricon partnerships include the Viridian community in Arlington.",
-     "url": "https://hhsresidential.com/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
-     "date": null
-    },
-    {
-     "url": "https://www.highlandhomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.highlandhomes.com/contact/careers",
-     "date": null
-    },
-    {
-     "url": "https://hhsresidential.com/",
-     "date": null
-    },
-    {
-     "url": "https://triconhomes.com/resources/insights/tricon-residential-opens-new-community-in-arlington-texas-add-to-housing-supply/",
-     "date": null
-    },
-    {
-     "url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "date": null
-    },
-    {
-     "url": "https://www.highlandhomes.com/contact",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Aaron Graham",
-     "role": "Chairman and Chief Executive Officer",
-     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Named in Builder and Developer, August 6, 2026, as Chairman and CEO of Highland Homes.",
-     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/",
-     "li_evidence": "Indexed title reads Aaron Graham - Highland Homes."
-    },
-    {
-     "name": "Stephen Chambers",
-     "role": "Chief Operating Officer",
-     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Named in the same Builder and Developer article as promoted to Chief Operating Officer, over architectural services, new product development, supply chain, IT and marketing."
-    },
-    {
-     "name": "Amy Jones",
-     "role": "Senior Vice President of Sales and Marketing, Dallas-Fort Worth",
-     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Named in the same article as promoted to Senior Vice President of Sales and Marketing in Dallas-Fort Worth.",
-     "linkedin_url": "https://www.linkedin.com/in/amy-jones-ba6324191",
-     "li_evidence": "Indexed title reads Amy Jones - Senior Vice President of Sales at Highland Homes."
-    }
-   ],
-   "phone_rule": null,
-   "phone_shared": [
-    "DFW-073"
-   ],
-   "vol": 2115,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-040",
-   "entity_name": "Brightland Homes",
-   "short": "Brightland",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.brightlandhomes.com/",
-   "company_li": "https://www.linkedin.com/company/brightlandhomes/",
-   "team_url": "https://press.brightlandhomes.com/gehan-homes-announces-name-change-to-brightland-homes",
-   "chain": null,
-   "last_verified": "2026-09-24",
-   "phone": null,
-   "phone_source": null,
-   "phone_more": [],
-   "phone_absent": "No phone is published on the firm's site, which uses contact forms only.",
-   "press": [
-    {
-     "date": "2023",
-     "outlet": "Dallas Innovates",
-     "headline": "Addison’s Gehan Homes Rebrands Its Business as Brightland Homes",
-     "url": "https://dallasinnovates.com/addisons-gehan-homes-rebrands-its-business-as-brightland-homes/"
-    }
-   ],
-   "key_stat": "3,162 closings company-wide in 2024, per BUILDER",
-   "mvp_screen": "Folded into DRB Group on April 1, 2025. Both are subsidiaries of Sumitomo Forestry America.",
-   "synopsis": "Formerly Gehan Homes of Addison, renamed Brightland Homes in February 2023. It builds in several states, with its historic core in DFW. BUILDER records 3,162 closings company-wide in 2024. Brightland was folded into DRB Group on April 1, 2025, and both are Sumitomo Forestry America subsidiaries.",
-   "region": "Addison origin, building in DFW and other states",
-   "phone_label": null,
-   "phone_note": null,
-   "company_li_note": "Brightland Homes company page.",
-   "team_note": "John Winniford has since become President of First America Homes, about September 2025.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "audit_flags": [],
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Production plans historically across DFW, on a multi-state platform that spreads repetition across metros."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "3,162 closings company-wide in 2024 is above 1,500, and since April 1, 2025 the firm sits inside DRB Group."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Nothing on record about construction method. The 2023 rebrand was a change of name."
-    }
-   ],
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "fail",
-    "innovation": "fail"
-   },
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 1,
-    "innovation": 1,
-    "capital_access": 2,
-    "wall_share": 2
-   },
-   "holds": 1,
-   "clears": 0,
-   "cell": "partial|fail",
-   "off_reason": "Holds one of the three counts.",
-   "group": "out",
-   "tier": "C",
-   "key_projects": [
-    {
-     "name": "Gehan to Brightland rebrand",
-     "detail": "Gehan Homes of Addison renamed itself Brightland Homes in February 2023.",
-     "url": "https://www.brightlandhomes.com/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.brightlandhomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://dallasinnovates.com/addisons-gehan-homes-rebrands-its-business-as-brightland-homes/",
-     "date": null
-    },
-    {
-     "url": "https://press.brightlandhomes.com/gehan-homes-announces-name-change-to-brightland-homes",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/firms/brightland-homes_o",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/money/m-a/brightland-homes-consolidates-under-drb-group_o/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "John Winniford",
-     "role": "Former President and CEO",
-     "source_url": "https://press.brightlandhomes.com/gehan-homes-announces-name-change-to-brightland-homes",
-     "source_evidence": "Named President and CEO in the firm's February 21, 2023 rebrand release."
-    }
-   ],
-   "phone_rule": null,
-   "phone_shared": [],
-   "vol": 3162,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
   }
- ],
- "_derived": {}
+ ]
 }

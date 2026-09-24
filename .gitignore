@@ -15,3 +15,12 @@ internal/
 # Build 68: the Dallas-Fort Worth build product; its served copy lives in docs/
 /dfw/dfw-data.json
 /DFW_Rolodex.xlsx
+
+# Build 71. The tool is external. Research notes stay on this machine: the Grok
+# research pack, the DFW edit files and hand readings, the audit's edit files,
+# and the build log and roadmap, which now live in internal/.
+/dfw/pack/
+/dfw/edit/
+/dfw/hand.json
+/dfw/FINDINGS_R1.md
+/audit7/

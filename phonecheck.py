@@ -53,6 +53,9 @@ def _fetch(url):
             if not any(k in ct for k in ("html", "xml", "text")):
                 return None, "not html (%s)" % ct.split(";")[0]
             body = r.read(3_000_000)
+            if body[:2] == b"\x1f\x8b":        # gzipped unasked, as probe.fetch notes
+                import zlib
+                body = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(body, 40_000_000)
             if len(body) < 2000:
                 return None, "stub of %d bytes, a bot challenge" % len(body)
             return body.decode("utf-8", "replace"), None

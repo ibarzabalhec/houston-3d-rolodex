@@ -23,7 +23,7 @@
     if(!s)d.setAttribute('data-theme',e.matches?'dark':'light');});
 })();
 </script>
-<title>Rolodex · Greater Houston</title>
+<title>Rolodex · Greater Houston and Dallas-Fort Worth</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23FF4F00%22/%3E%3Crect x=%228%22 y=%229%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3Crect x=%228%22 y=%2215%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3Crect x=%228%22 y=%2221%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3C/svg%3E">
 <style>
 /* Archivo (variable, 400-800) and IBM Plex Mono, latin subset, embedded so the
@@ -132,6 +132,8 @@ nav{position:sticky;top:0;z-index:60;background:var(--nav-bg);backdrop-filter:bl
 .seg button{font:600 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   padding:9px 12px;color:var(--ink3)}
 .seg button[aria-pressed="true"]{background:var(--ink);color:var(--on-ink)}
+.seg button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
+.seg button[aria-pressed="true"]:focus-visible{outline-color:var(--on-ink)}
 .cbtn{font:600 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   border:1px solid var(--ink);border-radius:2px;padding:9px 12px;display:flex;gap:8px;align-items:center}
 .cbtn b{font:700 10px/1 var(--mono)}
@@ -300,7 +302,7 @@ button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
 .chip.i-clear{background:var(--orange);border-color:var(--orange);color:var(--on-orange);font-weight:700}
 .chip.i-partial{border-color:var(--ink3);color:var(--ink);background:var(--paper3)}
 .chip.printing{background:var(--ink);border-color:var(--ink);color:var(--on-ink);font-weight:600}
-.chip.printing.i-clear{color:var(--ink)}
+.chip.printing.i-clear{color:var(--on-orange)}
 .chip.printing.i-clear{background:var(--orange);border-color:var(--orange)}
 .chip.printing::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
   background:var(--on-ink);margin-left:7px;vertical-align:middle}
@@ -310,6 +312,7 @@ button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
   color:var(--ink3);font-variant-numeric:tabular-nums}
 .chip.i-clear .vol{color:var(--on-orange)}
 .chip.printing .vol{color:var(--on-ink-dim)}
+.chip.printing.i-clear .vol{color:var(--on-orange)}
 .chip.sel{box-shadow:0 0 0 2px var(--ink)}
 .chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .xrow{display:grid;grid-template-columns:repeat(3,1fr);margin-left:34px}
@@ -836,7 +839,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .yrctl input[type=range]{flex:1;max-width:420px;accent-color:var(--ink)}
 .yrctl output{font:600 13px var(--mono);font-variant-numeric:tabular-nums;min-width:4ch}
 .mtxctl{margin:0 0 14px}
-.mtxctl .seg{display:inline-flex}
+.mtxctl .seg{display:inline-flex;flex-wrap:wrap;max-width:100%}
 .ftab.wide{width:100%;border-collapse:collapse;font-size:13px}
 .ftab.wide.mt{margin-top:22px}
 .ftab.wide caption{caption-side:top;text-align:left;padding:0 0 8px;
@@ -982,6 +985,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   .end{color:#555}
 }
 @media print{
+  :root[data-market="dfw"]:not(#_){--orange:#0A3A8C; --accent-warm:#0A3A8C; --on-orange:#FFFFFF}
   :root:not(#_){--paper:#FFFFFF; --paper2:#FAFAFA; --paper3:#F2F2F2; --ink:#111111; --ink2:#3D3D3D; --ink3:#6B6B6B; --ink4:#767676; --rule:#E4E4E4; --rule2:#CFCFCF; --on-ink:#FFFFFF; --on-ink-dim:rgba(255,255,255,.72); --on-ink-rule:rgba(255,255,255,.35); --text-primary:#111111; --shade:17,17,17; --grain:17,17,17; color-scheme:light;}
 }
 </style>
@@ -1013,7 +1017,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
           <p class="sub" id="sub"></p>
           <div class="lab by" id="by"></div>
         </div>
-        <figure class="hero-fig" id="heroFig" aria-label="Published annual closings against the machine-fit bands"></figure>
+        <figure class="hero-fig" id="heroFig" aria-label="Published annual closings against the printer-fit bands"></figure>
       </div>
       <div class="stats" id="stats"></div>
     </header>
@@ -1548,6 +1552,10 @@ var call=[],mode='list',q='',view='index',viewing=null;
    work anyway. */
 var CKEY=MKT==='houston'?'rolodex.call.v1':'rolodex.call.'+MKT+'.v1';
 try{var _c=localStorage.getItem(CKEY); if(_c) call=JSON.parse(_c)||[];}catch(e){call=[];}
+if(!Array.isArray(call)) call=[];
+/* Build 71. An id from an older deck, or from the other market, is dropped
+   rather than breaking the call sheet. */
+call=call.filter(function(id){return T.some(function(t){return t.target_id===id;});});
 function saveCall(){try{localStorage.setItem(CKEY,JSON.stringify(call));}catch(e){}}
 
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){
@@ -1595,6 +1603,13 @@ function src(url,label){
 /* ----------------------------------------------------------------- header */
 document.getElementById('stamp').textContent=PL.name;
 document.title='Rolodex \u00b7 '+PL.name;
+/* Build 71. The tab icon wears the market's accent, and a link that names the
+   other market switches to it, as the switch does. */
+(function(){var ic=document.querySelector('link[rel=icon]');
+  if(ic&&MKT==='dfw') ic.href=ic.href.replace('%23FF4F00','%230A3A8C');})();
+window.addEventListener('hashchange',function(){
+  var h=(location.hash||'').match(/market=(houston|dfw)/);
+  if(h&&h[1]!==MKT){try{localStorage.setItem('rolodex-market',h[1]);}catch(e){} location.reload();}});
 try{localStorage.setItem('rolodex-market',MKT);}catch(e){}
 /* The market switch, on the home screen. Switching reloads the page on the
    other market, because every count, filter and chart is built from one. */
@@ -2014,7 +2029,7 @@ function firmPage(t){
         var b=T.filter(function(x){return x.entity_name===nm;})[0];
         return b?'<button class="lnk" data-id="'+b.target_id+'">'+esc(nm)+'</button>'
                 :'<span class="tag q">'+esc(nm)+'</span>';}).join('')+'</div>'
-        :'<p class="note">No builder in this file is confirmed inside these communities yet.</p>')));
+        :'<p class="note">No builder on this deck is named inside these communities.</p>')));
   }
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
     '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
@@ -2070,7 +2085,7 @@ function firmPage(t){
 function callPage(){
   var h=['<button class="back" id="back"><span class="arrow">'+SVG.left+'</span>All firms</button>'];
   h.push('<div class="fhead"><h1 class="disp">Call list</h1><div class="kst">'+
-    call.length+' firm'+(call.length===1?'':'s')+' &middot; '+esc(D.byline)+'</div></div>');
+    esc(PL.name)+' &middot; '+call.length+' firm'+(call.length===1?'':'s')+' &middot; '+esc(D.byline)+'</div></div>');
   if(!call.length){
     h.push('<p class="empty">Add firms from any view with the + on a row or the button on a firm page. '+
       'The sheet prints, and exports to Excel, with names, roles and links.</p>');
@@ -2104,7 +2119,7 @@ function rememberOrigin(){
   returnTo=(a&&a!==document.body&&document.getElementById('stageIndex').contains(a))?a:null;
 }
 function pushView(){
-  try{history.pushState({v:'firm'},'','#firm');}catch(e){}
+  try{history.pushState({v:'firm'},'','#firm&market='+MKT);}catch(e){}
 }
 window.addEventListener('popstate',function(){ if(view==='firm') goIndex(true);
   if(homeNext){homeNext=false;render();window.scrollTo(0,0);} });
@@ -2134,7 +2149,9 @@ function openCall(){
 }
 function goIndex(fromPop){
   if(!fromPop&&view==='firm'&&history.state&&history.state.v==='firm'){history.back();return;}
+  var was=view;
   view='index';viewing=null;swap();
+  if(was!=='firm') return;
   if(returnTo&&document.body.contains(returnTo)){returnTo.focus();returnTo=null;}
   else{var m=document.querySelector('.seg[aria-label=View] button[aria-pressed="true"]'); if(m) m.focus({preventScroll:true});}
 }

@@ -53,7 +53,7 @@ import audit5 as AUDIT5
 import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 70
+BUILD = 71
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -926,6 +926,10 @@ for t in targets:
 targets.sort(key=lambda t: (GROUP_ORDER[t["group"]], -t["clears"], -t["holds"],
                             -t["scores"]["capital_access"], t["entity_name"]))
 
+# Build 71. A person listed twice on one card is one contact.
+import audit7 as AUDIT7
+AUDIT7.dedupe_people(targets)
+
 deck = [t for t in targets if t["group"] != "out"]
 n_off = len(targets) - len(deck) + len(DROPPED)
 n = len(deck)
@@ -1013,9 +1017,9 @@ MATRIX_NOTE = (
     # Build 66. The note compared the grid with one section and called the
     # section "all three counts", which it is not: adopters and contractors that
     # hold all three sit in their own sections. It now counts holds directly.
-    "<b>%s</b> read Yes on both axes of this grid. The grid leaves out track record; "
-    "<b>%d</b> of the %d hold all three counts."
-    % (_n(len(best), "firm", "firms"), _hold3, len(best))
+    "<b>%s</b> read Yes on both axes of this grid. The grid leaves out track record. "
+    "<b>%d</b> of the %d %s all three counts."
+    % (_n(len(best), "firm", "firms"), _hold3, len(best), "holds" if _hold3 == 1 else "hold")
 )
 
 # A contractor closes no homes, so the closings figure is drawn against the
@@ -1453,6 +1457,20 @@ if _bad6:
         print("   " + _b)
     raise SystemExit("FAILED: the audit6 figures pass")
 
+# Build 71. The pre-publication audit (audit7.py): the hidden competitor block
+# and the working fields no longer ship, and four readers' findings are applied.
+import audit7 as AUDIT7
+DATA.pop("competitor", None)
+AUDIT7.strip_working(DATA)
+AUDIT7.fix_market(DATA)
+_bad7 = AUDIT7.apply(DATA, "hou", AUDIT7.HOU_PERSON, AUDIT7.HOU_VERDICT)
+_bad7 += AUDIT7.houston(DATA)
+AUDIT7.tidy(DATA)
+if _bad7:
+    for _b in _bad7:
+        print("   " + _b)
+    raise SystemExit("FAILED: an audit7 edit did not land")
+
 DATA = _strip_trailing(DATA)
 _banned = _scan_for_banned(DATA)
 if _banned:
@@ -1468,7 +1486,7 @@ with open("houston-data.json", "w", encoding="utf-8") as f:
 # copy only.
 import os, shutil
 os.makedirs("docs", exist_ok=True)
-shutil.copy("houston-data.json", "docs/houston-data.json")
+# Build 71. emit.py writes the served copy, stripped to what the page shows.
 html = ""
 
 # The README said Ninety for thirty builds while the deck grew to 124. It is now

@@ -1400,6 +1400,103 @@ async def main():
             problems.append("dark theme: page errors %s" % derr[:2])
         await dctx.close()
 
+        # Build 71. The pre-publication audit's page findings, held.
+        a7 = await b.new_context(viewport={"width": 390, "height": 844})
+        ap = await a7.new_page()
+        aerr = []
+        ap.on("pageerror", lambda e: aerr.append(str(e)))
+        await ap.goto(URL)
+        await ap.wait_for_timeout(400)
+        mkt = await ap.evaluate("document.documentElement.getAttribute('data-market')")
+        ckey = "rolodex.call.v1" if mkt == "houston" else "rolodex.call.%s.v1" % mkt
+        good = next(t["target_id"] for t in D["targets"] if t["group"] != "out")
+        # a saved call list holding an id this deck does not carry still opens
+        await ap.evaluate("localStorage.setItem(%r, JSON.stringify(['X-NOPE-1', %r]))" % (ckey, good))
+        await ap.reload()
+        await ap.wait_for_timeout(400)
+        await ap.click("#openCall")
+        await ap.wait_for_timeout(300)
+        sheet = await ap.evaluate("(document.getElementById('firmBody')||{}).textContent||''")
+        n_call = await ap.evaluate("window.rolodex.callList().length")
+        print("stale call id   : list holds %d, sheet %s" % (n_call, "opens" if "Call list" in sheet else "BROKEN"))
+        if n_call != 1 or "Call list" not in sheet:
+            problems.append("a stale id in the saved call list breaks the call sheet")
+        if (D.get("place") or {}).get("name", "") not in sheet:
+            problems.append("the call sheet does not name its market")
+        await ap.evaluate("window.rolodex.setCallList([])")
+        await ap.goto(URL)
+        await ap.wait_for_timeout(300)
+        # the firm page keeps the market in the address
+        await ap.evaluate("window.rolodex.open(%r)" % good)
+        await ap.wait_for_timeout(300)
+        h = await ap.evaluate("location.hash")
+        print("firm address    :", h)
+        if "market=%s" % mkt not in h:
+            problems.append("opening a firm drops the market from the address")
+        await ap.go_back()
+        await ap.wait_for_timeout(300)
+        # a view button pressed from the keyboard keeps the focus
+        await ap.focus("#vMatrix")
+        await ap.keyboard.press("Enter")
+        await ap.wait_for_timeout(300)
+        fid = await ap.evaluate("document.activeElement&&document.activeElement.id")
+        print("view key focus  :", fid)
+        if fid != "vMatrix":
+            problems.append("a view button pressed from the keyboard loses the focus to %s" % fid)
+        # text on the accent chip that also carries the printing dot
+        chip = await ap.evaluate(
+            "(()=>{const e=document.querySelector('.chip.printing.i-clear');"
+            "return e?[getComputedStyle(e).color,getComputedStyle(e).backgroundColor]:null})()")
+        if chip:
+            print("printing chip   : %.1f:1" % _cr(chip[0], chip[1]))
+            if _cr(chip[0], chip[1]) < 4.5:
+                problems.append("the printing-and-clear chip reads %.1f:1" % _cr(chip[0], chip[1]))
+        # every jurisdiction year button sits on the screen, and no held-off
+        # builder reads "not screened"
+        await ap.evaluate("document.getElementById('vMarket').click()")
+        await ap.wait_for_timeout(500)
+        yb = await ap.evaluate(
+            "(()=>{const b=[...document.querySelectorAll('[data-jyr]')];"
+            "return b.filter(x=>{const r=x.getBoundingClientRect();return r.right>innerWidth+1}).length})()")
+        held = {t["entity_name"] for t in D["targets"] if t["group"] == "out"}
+        wrong = [bb["name"] for o in D["market"].get("owners", []) for bb in o["builders"]
+                 if bb["name"] in held and not bb.get("off")]
+        print("year buttons    : %d past the edge at 390 | held-off builders read as unscreened: %d" % (yb, len(wrong)))
+        if yb:
+            problems.append("%d jurisdiction year buttons run off a phone screen" % yb)
+        if wrong:
+            problems.append("the owners chart calls held-off builders unscreened: %s" % ", ".join(wrong))
+        # a capital line always carries its text
+        blank = [t["target_id"] for t in D["targets"] for c in t.get("capital_signals") or []
+                 if not isinstance(c, dict) or not (c.get("text") or "").strip()]
+        if blank:
+            problems.append("capital lines render blank on %s" % ", ".join(blank[:5]))
+        # working fields and the retired competitor block do not ship
+        leak = [k for t in D["targets"] for k in t if k.startswith("_")] + (["competitor"] if D.get("competitor") else [])
+        if leak:
+            problems.append("working fields ship in the data: %s" % ", ".join(sorted(set(leak))[:5]))
+        if aerr:
+            problems.append("audit checks: page errors %s" % aerr[:2])
+        # the page and the served copy ship the deck and nothing held off it
+        shipped = await ap.evaluate(
+            "(()=>{const d=window.rolodex.data;return {out:d.targets.filter(t=>t.group==='out').length,"
+            "priv:d.targets.filter(t=>'off_reason' in t||'audit_flags' in t||'phone_rule' in t).length,"
+            "under:Object.keys(d).filter(k=>k.startsWith('_')).length}})()")
+        served = json.load(open(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
+                                encoding="utf-8"))
+        s_out = sum(1 for t in served["targets"] if t["group"] == "out")
+        print("public data     : page holds %d held-off firms, %d private fields; served copy %d held off"
+              % (shipped["out"], shipped["priv"], s_out))
+        if shipped["out"] or shipped["priv"] or shipped["under"] or s_out:
+            problems.append("the page or its served data carries firms held off the deck or internal fields")
+        extra = sorted(p.name for p in (ROOT / "docs").iterdir()
+                       if p.name not in ("index.html", "ICON_Greater_Houston_Rolodex.html", "houston-data.json",
+                                         "dfw-data.json", "ICON_Greater_Houston_Rolodex.xlsx", "DFW_Rolodex.xlsx",
+                                         ".nojekyll", "CNAME"))
+        if extra:
+            problems.append("docs/ serves files that are not the tool: %s" % ", ".join(extra))
+        await a7.close()
+
         await b.close()
 
     if problems:

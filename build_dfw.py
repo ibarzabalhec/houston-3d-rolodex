@@ -18,13 +18,14 @@ The build fails on any of it.
 """
 import collections, copy, json, pathlib, re, sys
 
+import audit7 as AUDIT7
 ROOT = pathlib.Path(__file__).parent
 PACK = json.load(open(ROOT / "dfw" / "pack" / "03_dfw-data.json", encoding="utf-8"))
 EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards.json", encoding="utf-8"))}
 LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
 HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 TODAY = "2026-09-24"
-BUILD = 70
+BUILD = 71
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}
@@ -404,11 +405,18 @@ def main():
             pick = []
         for p in pick:
             p["decider"] = True
+    # Build 71. A contact whose own card says they have left, or who is only a
+    # probable match, is marked so, as Houston marks them.
+    _bad7 = AUDIT7.people({t["target_id"]: t for t in targets}, AUDIT7.DFW_PERSON)
+    if _bad7:
+        raise SystemExit("FAILED: " + "; ".join(_bad7))
     for t in targets:
         t["deciders"] = [p["name"] for p in t["principals"] if p.get("decider")]
         t["has_decider"] = bool(t["deciders"])
-        t["decider_confirmed"] = t["has_decider"]
-        t["decider_caveat"] = False
+        _clean = [p for p in t["principals"] if p.get("decider")
+                  and not p.get("departed") and not p.get("probable") and not p.get("entity_note")]
+        t["decider_confirmed"] = bool(_clean)
+        t["decider_caveat"] = t["has_decider"] and not _clean
     GO = {"adopter": 0, "a": 1, "b": 2, "trade": 3, "creative": 4, "national": 5, "channel": 6, "icon": 7, "out": 8}
     targets.sort(key=lambda t: (GO[t["group"]], -t["clears"], -t["holds"],
                                 -t["scores"].get("capital_access", 0), t["entity_name"]))
@@ -473,8 +481,9 @@ def main():
         "axes": [axis_row("repeatability", "Repetition"), axis_row("machine_fit", "Printer fit"),
                  axis_row("innovation", "Track record")],
         "matrix": HOU["matrix"], "axis_titles": HOU["axis_titles"],
-        "matrix_note": ("<b>%s</b> read Yes on both axes of this grid. The grid leaves out track record; "
-                        "<b>%d</b> of the %d hold all three counts." % (nn(len(best), "firm", "firms"), hold3, len(best))),
+        "matrix_note": ("<b>%s</b> read Yes on both axes of this grid. The grid leaves out track record. "
+                        "<b>%d</b> of the %d %s all three counts."
+                        % (nn(len(best), "firm", "firms"), hold3, len(best), "holds" if hold3 == 1 else "hold")),
         "role_labels": HOU["role_labels"], "signal_labels": HOU["signal_labels"],
         "competitor": None,
         "icon_record": COMP["icon_record"],
@@ -523,7 +532,7 @@ def main():
                  "partly": sum(1 for t in deck if t["group"] == gk and t["marks"]["innovation"] == "partial"),
                  "no": sum(1 for t in deck if t["group"] == gk and t["marks"]["innovation"] == "fail"),
                  "decider": sum(1 for t in deck if t["group"] == gk and t["decider_confirmed"]),
-                 "confirm": 0,
+                 "confirm": sum(1 for t in deck if t["group"] == gk and t["decider_caveat"]),
                  "linked": sum(1 for t in deck if t["group"] == gk
                                and any(p.get("linkedin_url") or p.get("source_url") for p in t["principals"]))}
                 for gk in ("adopter", "a", "b", "trade", "creative", "national", "channel", "icon")
@@ -538,18 +547,35 @@ def main():
         "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"],
                   "principals": n_people, "linkedin_held": n_li, "audit_flags": 0,
                   "with_decider": n_dec, "with_decider_live": sum(1 for t in deck if t["has_decider"] and t["group"] in ("a", "b", "adopter")),
-                  "with_decider_confirmed": n_dec, "with_decider_caveat": 0},
+                  "with_decider_confirmed": sum(1 for t in deck if t["decider_confirmed"]),
+                  "with_decider_caveat": sum(1 for t in deck if t["decider_caveat"])},
         "targets": targets,
         "_derived": {},
     }
     D["group_labels"]["icon"] = "Lennar"
     # owners: every builder id must be a card on the deck, or None
     ids = {t["target_id"] for t in deck}
+    held = {t["target_id"] for t in targets if t["group"] == "out"}
+    held_names = {t["entity_name"]: t["target_id"] for t in targets if t["group"] == "out"}
     for o in D["market"]["owners"]:
         for b in o["builders"]:
+            # Build 71. A builder that has a card held off the deck is screened,
+            # and says so, rather than reading "not screened".
+            if b.get("id") in held or b.get("name") in held_names:
+                b["off"] = True
             if b.get("id") not in ids:
                 b["id"] = None
     D["market"]["owners"] = [o for o in D["market"]["owners"] if o["id"] in ids]
+    # Build 71. The pre-publication audit (audit7.py).
+    AUDIT7.strip_working(D)
+    AUDIT7.fix_market(D)
+    _bad7 = AUDIT7.apply(D, "dfw")
+    AUDIT7.dfw(D)
+    AUDIT7.tidy(D)
+    if _bad7:
+        for b in _bad7:
+            print("   " + b)
+        raise SystemExit("FAILED: an audit7 edit did not land")
     gate(D)
     json.dump(D, open(ROOT / "dfw" / "dfw-data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))
@@ -610,6 +636,8 @@ STYLE = [
 
 
 def _visible(t):
+    yield t.get("entity_name") or ""
+    yield t.get("short") or ""
     yield t["key_stat"] or ""
     yield t["mvp_screen"] or ""
     yield t["synopsis"] or ""

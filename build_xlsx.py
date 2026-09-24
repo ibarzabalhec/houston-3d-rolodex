@@ -19,7 +19,8 @@ WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 # Build 66. The workbook had its own names for the sections, four of them
 # different from the page's. It takes the page's now.
 GROUP = dict(D["group_labels"]); GROUP["out"] = "Held off the deck"
-T = D["targets"]
+# Build 71. The workbook is served beside the page, so it carries what the page does: the deck.
+T = [t for t in D["targets"] if t["group"] != "out"]
 
 def WHYT(t, i):
     w = t.get("why") or []
@@ -126,7 +127,7 @@ for t in T:
 last = HDR + len(rows)
 
 # counters, all formulas
-ws["A3"] = "Contacts"
+ws["A3"] = "Rows"
 ws["B3"] = "=COUNTA($A$%d:$A$%d)" % (first, last)
 ws["C3"] = "LinkedIn held"
 ws["D3"] = '=COUNTIF($%s$%d:$%s$%d,"ok")' % (L("Status"), first, L("Status"), last)
@@ -216,10 +217,18 @@ if P:
 
     ps.cell(row=1, column=1, value="Single-family units authorised by building permit, %s"
             % P["geo"]["name"]).font = Font(name="Arial", size=11, bold=True, color=INK)
-    ps.cell(row=2, column=1, value=("Source: HUD SOCDS, republishing the Census Building Permits Survey. "
-            "An authorisation is not a start, a completion or a closing. Census counts townhouses and row "
-            "houses as single family. The jurisdictions sum to the counties and the counties sum to the "
-            "metro exactly, in every year.")).font = Font(name="Arial", size=9, italic=True, color=MUTED)
+    # Build 71. The header names this market's own source, and says whether its
+    # jurisdictions sum to the counties. Dallas-Fort Worth's fifty do not.
+    _src = [s["label"] for s in P.get("sources", []) if "county" in (s.get("use") or ["county"])
+            or "huduser" in s.get("url", "")]
+    _sum = ("The jurisdictions sum to the counties and the counties sum to the metro exactly, in every year."
+            if P.get("places_complete", True) else
+            "The counties sum to the metro. The jurisdictions are the largest %d and do not sum to the "
+            "counties." % len(P.get("places", [])))
+    ps.cell(row=2, column=1, value=("Source: %s. An authorisation is not a start, a completion or a closing. "
+            "Census counts townhouses and row houses as single family. %s"
+            % ((_src or ["the Census Building Permits Survey"])[0], _sum))).font = Font(
+            name="Arial", size=9, italic=True, color=MUTED)
 
     r = 4
     ps.cell(row=r, column=1, value="County").font = hdr

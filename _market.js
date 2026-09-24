@@ -53,7 +53,7 @@ function figClosings(){
       '</td><td>'+r.year+'</td><td>'+esc(r.wide||PL.name)+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
     'How big each builder is, in houses closed a year. '+rows.length+' of the '+NB+
-    ' builders and developers on the deck publish a figure; the rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000: a broken bar runs past it, and its figure is printed.'+
+    ' builders and developers on the deck publish a figure. The rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000. A broken bar runs past it, and its figure is printed.'+
     (nw?' A † marks the '+nw+' figures that count more than '+PL.name+'; the table says what each covers.':''),
     h, tbl, null, 'figClosings',
     (D.bands_method&&D.bands_method.text?'<div class="bandnote"><span class="lab">The printer-fit bands</span><p>'+
@@ -125,7 +125,7 @@ function figOwners(){
     (MK.owners||[]).map(function(o){return '<tr><td>'+esc(o.short)+'</td><td>'+esc(o.line)+'</td><td>'+
       (o.builders.length?o.builders.map(function(b){return esc(b.name);}).join(', '):'none on this screen')+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Land owners and the builders inside their communities',
-    'Left, the masterplan owners screened here; right, the builders each one lists in its communities. A name opens the firm; a grey name is not on this deck.',
+    'Left, the masterplan owners screened here. Right, the builders each one lists in its communities. A name opens the firm; a grey name is not on this deck.',
     h, tbl);
 }
 
@@ -150,7 +150,7 @@ function figPrinted(){
   h+='</svg>';
   var tbl='<table class="ftab"><thead><tr><th>Project</th><th>Place</th><th>Printer</th><th>Units</th><th>Status</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.project)+'</td><td>'+esc(r.place)+'</td><td>'+esc(r.printer)+'</td><td>'+r.units+'</td><td>'+esc(r.status)+'</td></tr>';}).join('')+'</tbody></table>';
-  return figure('Printed homes in Texas on the public record',
+  return figure('Printed housing projects in Texas, by units',
     (function(){var rx=new RegExp(PL.local||'Houston|San Leon'),hs=rows.filter(function(r){return rx.test(r.place);});
       return 'Units printed, under way or committed, by project, with the printer. The '+hs.length+
         ' '+PL.name+' projects total '+hs.reduce(function(a,r){return a+r.units;},0)+' units.';})(),
@@ -506,7 +506,7 @@ function figPlaces(){
     (function(){var i=yrs.length-1,a=0,c=0;P.forEach(function(p){a+=p.sf[i]||0;});
       (PM.counties||[]).forEach(function(k){var j=k.years.indexOf(yrs[i]);c+=j>-1?k.sf[j]:0;});
       return Math.abs(a-c)<=Math.max(5,c*0.001)?P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the '+nword((PM.counties||[]).length)+' counties exactly.':
-        P.length+' permit-issuing jurisdictions are in the table, together '+Math.round(100*a/c)+' percent of the metro\u2019s single-family units in '+yrs[i]+'.';})()+' The top 25 are drawn; all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does; solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
+        P.length+' permit-issuing jurisdictions are in the table, together '+Math.round(100*a/c)+' percent of the metro\u2019s single-family units in '+yrs[i]+'.';})()+' The top 25 are drawn, and all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does. Solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
       P.forEach(function(p){a+=p.sf[i]||0; if(/Unincorporated/i.test(p.name)) u+=p.sf[i]||0;});
       return a?'In '+yrs[i]+', '+fmt(u)+' of '+fmt(a)+' single-family units, '+Math.round(100*u/a)+' percent, were permitted by a county rather than a city.':'';})(),
     body, tbl, psrc('huduser','#place'));

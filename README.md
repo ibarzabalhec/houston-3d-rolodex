@@ -1,6 +1,6 @@
 # Rolodex · Greater Houston and Dallas-Fort Worth
 
-126 Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with 296 named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
+126 Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with 295 named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
 
 Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
@@ -39,7 +39,7 @@ One filter system across List, Screen and Cover. The call list persists in the b
 
 ## Sourcing
 
-Every number is a count of records, a published figure with its source named, or an assumption stated as one. A contact rests on a LinkedIn headline naming the firm, the firm's own site, or dated reporting, and the card says which. Phone numbers and email addresses come only from the firm's own pages. No data aggregator was used, no URL was constructed, and no wiki is cited. The build refuses all three.
+Every number is a count of records, a published figure with its source named, or an assumption stated as one. A contact rests on a LinkedIn headline naming the firm, the firm's own site, or dated reporting, and the card says which. Phone numbers and email addresses come only from the firm's own pages. No data aggregator was used, no source URL was constructed, and no wiki is cited. The build refuses all three. The LinkedIn search links beside a name are searches, not sources.
 
 ## Build
 
@@ -52,4 +52,3 @@ python3 phonecheck.py   # every phone and email is in the bytes of its page
 python3 marketcheck.py dfw/dfw-data.json   # the same four gates for Dallas-Fort Worth
 ```
 
-`docs/HANDOFF.md` is the build log. `docs/ROADMAP.md` is the research queue.

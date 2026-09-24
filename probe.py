@@ -164,6 +164,12 @@ def fetch(url):
             if "html" not in ct and "xml" not in ct and "text" not in ct:
                 return None, "not html (%s)" % ct.split(";")[0]
             body = r.read(3_000_000)
+            # Build 71. Some servers gzip the body whether or not it was asked
+            # for. DSLD Homes began doing so on 24 September 2026, and its phone
+            # number vanished from a script's view of a page that still carries it.
+            if body[:2] == b"\x1f\x8b":
+                import zlib
+                body = zlib.decompressobj(16 + zlib.MAX_WBITS).decompress(body, 40_000_000)
             # A bot challenge answers 200 or 202 with a stub. Burton Construction
             # returns 182 bytes to a script and a full leadership roster to a
             # browser, and the first version of this probe called a real person
