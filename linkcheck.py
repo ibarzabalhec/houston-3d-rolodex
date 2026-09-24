@@ -36,6 +36,30 @@ BANNED = ["wikipedia", "wikimedia", "zoominfo", "rocketreach", "apollo.io",
           "manta.com", "bizapedia", "corporationwiki", "spokeo", "whitepages"]
 
 # Live in a browser, closed to a script. Confirmed by hand.
+# Build 65. A whole domain that stops answering is a different fact from one
+# page that moved, and a different fact again from a host that refuses a script.
+# It is reported under its own heading with the date it was seen, and the entry
+# expires: three weeks after the date, the host counts as dead again, so an
+# outage cannot quietly become a permanent exemption.
+DOWN = {
+    "napcoprecast.com": ("2026-09-24",
+        "Every path 404s, the homepage included, to this script and to a separate "
+        "fetcher; plain http answers 403. Read in full on 2026-09-14. Main Street "
+        "Capital still lists NAPCO as a current portfolio company, so this reads as "
+        "an outage or a re-platform, not a closure."),
+}
+DOWN_DAYS = 21
+
+
+def down(host):
+    import datetime as _dt
+    e = DOWN.get(host.replace("www.", ""))
+    if not e:
+        return None
+    seen = _dt.date.fromisoformat(e[0])
+    return e if (_dt.date.today() - seen).days <= DOWN_DAYS else None
+
+
 BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            "members.ghba.org", "members.texasbuilders.org", "housingwire.com",
            "houstonchronicle.com", "sec.gov", "globenewswire.com", "businesswire.com",
@@ -64,6 +88,10 @@ BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            # piece of 24 August 2023 quotes Robert Barnes III and dates his
            # succession to 2015.
            "members.agchouston.org", "members.asaonline.com", "dmagazine.com",
+           # Build 65. Both opened by a separate fetcher on 24 September 2026 and
+           # read: the PulteGroup releases for Ryehill and Del Webb Fulshear, and
+           # Multi-Housing News on Tricon Peek Road. Both answer this script 403.
+           "pultegroupinc.com", "multihousingnews.com",
            # Build 60. HTTP only, and it answers an HTTPS request with a 302 back
            # to HTTP, so anything that upgrades the scheme loops. Read with curl
            # on 14 September 2026: the about page is there and names the founder.
@@ -153,7 +181,10 @@ def status(u):
         for meth in ("HEAD", "GET"):
             code, err = _once(u, meth)
             if code is not None:
-                if meth == "HEAD" and code in (403, 405, 501):
+                # Build 65. PulteGroup's three brand sites answer HEAD with 404
+                # and GET with the page, so a 404 on HEAD is not an answer. GET
+                # decides.
+                if meth == "HEAD" and code in (403, 404, 405, 501):
                     continue
                 if code in (404, 429, 500, 502, 503) and attempt == 0:
                     break          # worth one retry: could be load, not absence
@@ -188,12 +219,19 @@ def main():
     with cf.ThreadPoolExecutor(24) as ex:
         res = list(ex.map(status, todo))
 
-    dead, blocked = [], []
+    dead, blocked, out = [], [], []
     for u, s in res:
         if isinstance(s, int) and s < 400:
             continue
-        (blocked if urlparse(u).netloc.lower().replace("www.", "") in BLOCKED
-         else dead).append((u, s))
+        _h = urlparse(u).netloc.lower().replace("www.", "")
+        if down(_h):
+            out.append((u, s))
+            continue
+        (blocked if _h in BLOCKED else dead).append((u, s))
+    if out:
+        print("\n%d on a host that is down, seen and dated, re-check before a push:" % len(out))
+        for _h in sorted({urlparse(u).netloc.lower().replace("www.", "") for u, _s in out}):
+            print("  %s  %s: %s" % (_h, DOWN[_h][0], DOWN[_h][1]))
 
     print("\n%d dead, %d blocked to scripts and live in a browser"
           % (len(dead), len(blocked)))

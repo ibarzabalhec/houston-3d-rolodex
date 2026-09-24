@@ -92,7 +92,7 @@ BUILDERS = [
  "Family builder founded in 1993, selling from the $300,000s to the $800,000s across Conroe, "
  "Willis, New Caney and the Lake Conroe corridor.",
  (3, 3, 0, 1),
- "More than 4,000 homes since 1993, which averages above 100 a year, across a small set of "
+ "Above 100 homes a year on average, across a small set of "
  "communities in one corridor. A named vice president of construction.",
  ("Communities clustered in Conroe, Willis and New Caney rather than spread across the metro.",
   "More than 4,000 homes since 1993 is an average above 100 a year, inside the band a machine serves.",

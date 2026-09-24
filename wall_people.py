@@ -193,8 +193,8 @@ PEOPLE = {
   "https://www.linkedin.com/in/brandon-buskohl-40649a75/", None,
   "His profile headline names Trussway Manufacturing as a Builders FirstSource "
   "company, so it is current. An assistant general manager is below the bar "
-  "this deck sets for a decision-maker, and he is the only plant-level leader "
-  "the firm could be shown to have: trussway.com presents a certificate chain "
+  "this deck sets for a decision-maker. He is also the only plant-level leader "
+  "the firm could be shown to have. trussway.com presents a certificate chain "
   "that fails verification through every route, so nothing on it could be read.",
   False)],
 

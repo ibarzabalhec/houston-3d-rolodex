@@ -11,10 +11,9 @@ from openpyxl.utils import get_column_letter
 
 D = json.load(open("houston-data.json", encoding="utf-8"))
 WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
-GROUP = {"adopter": "Already buying printed walls", "a": "Strong target",
-         "b": "Worth pursuing, one gap", "trade": "Builds the wall, not the house", "national": "National scale, pilot not purchase", "creative": "Creative project, hybrid job",
-         "channel": "Masterplan owner", "icon": "Already working with ICON",
-         "out": "Off deck, screened out"}
+# Build 66. The workbook had its own names for the sections, four of them
+# different from the page's. It takes the page's now.
+GROUP = dict(D["group_labels"]); GROUP["out"] = "Held off the deck"
 T = D["targets"]
 
 def WHYT(t, i):
@@ -37,7 +36,7 @@ COLS = [
     ("Role", 13), ("Region", 30), ("Headline figure", 30),
     ("Repetition", 12), ("Repetition why", 48),
     ("Printer fit", 12), ("Printer fit why", 48),
-    ("Track record", 13), ("Track record why", 48), ("Capital", 10),
+    ("Track record", 13), ("Track record why", 48),
     ("LinkedIn URL", 40), ("Find", 9), ("Status", 14), ("Company URL", 34),
     ("Screen result", 80),
     ("Decides the wall", 15), ("How this person was verified", 70),
@@ -47,31 +46,35 @@ COLS = [
     # wrap and centre sets, and the legend prose all name column positions, so
     # anything slipped into the middle of this list silently moves them.
     ("Phone", 18), ("Phone label", 26), ("Phone source", 46),
+    ("Email", 32), ("Email source", 46),
 ]
-LI_COL, FIND_COL, ST_COL = 16, 17, 18   # 1-indexed
+# Build 66. The legend named columns by letter and every letter from V on was
+# one to the right of the column it meant, so the deciders counter summed the
+# evidence column and read 0. Letters are now looked up from the names. The
+# Capital column is gone: it was a fourth mark the page never shows.
+def CI(name):
+    return next(i for i, (n, _w) in enumerate(COLS, 1) if n == name)
+def L(name):
+    return get_column_letter(CI(name))
+LI_COL, FIND_COL, ST_COL = CI("LinkedIn URL"), CI("Find"), CI("Status")
 HDR = 6
 first = HDR + 1
 
 # ---------------------------------------------------------------- header block
-ws["A1"] = "ICON · Greater Houston screen · contact workbench"
+ws["A1"] = "Rolodex · Greater Houston · contacts"
 ws["A1"].font = Font(name="Arial", size=15, bold=True, color=INK)
-ws["A2"] = ("Generated from houston-data.json · build %d · %s · public render. "
-            "Do not hand-edit the HTML deck; it regenerates from the same file."
-            % (D["build"], D["last_updated"]))
+ws["A2"] = "Héctor Ibarzábal · %s" % D["last_updated"]
 ws["A2"].font = Font(name="Arial", size=9, color=MUTED)
 
-ws["A4"] = ("LEGEND. Column Q is a one-click LinkedIn people search for that name at that firm, run in your own "
-            "signed-in session. Paste the profile URL into the shaded cell in column P and column R flips from "
-            "ADD LINKEDIN to ok, with the counters in row 3 updating live. Every other column is generated and is "
-            "overwritten on the next build. Column V marks the people who can change a wall specification, a vice "
-            "president or director of construction or the head of purchasing; filter it to YES for the call list. "
-            "Column W is the evidence behind the name, column X the firm's own page that names them, "
-            "and columns Y and Z the company's LinkedIn and leadership pages. "
-            "Columns AB to AD carry the firm's main line, the words the page uses for it, and "
-            "the page it is published on. The number is the firm's, not the person's, so it "
-            "repeats down every row for that firm. A firm whose own pages publish no number "
-            "has all three cells empty. "
-            "Example: https://www.linkedin.com/in/jane-doe-1a2b3c4d/")
+ws["A4"] = ("Column %s is a LinkedIn people search for that name at that firm. Paste a profile URL into the "
+            "shaded cell in column %s and column %s changes from ADD LINKEDIN to ok. Column %s marks the "
+            "people who can change a wall specification; filter it to YES for the call list. Column %s is the "
+            "evidence behind the name and column %s the firm's own page that names them. Columns %s to %s "
+            "carry the firm's main line, its label and the page it is published on, and columns %s and %s "
+            "the firm's email and its page. Both are the firm's, not the person's."
+            % (L("Find"), L("LinkedIn URL"), L("Status"), L("Decides the wall"),
+               L("How this person was verified"), L("Firm page for this person"),
+               L("Phone"), L("Phone source"), L("Email"), L("Email source")))
 ws["A4"].font = Font(name="Arial", size=9, italic=True, color=MUTED)
 ws["A4"].alignment = Alignment(wrap_text=False)
 
@@ -83,7 +86,7 @@ for t in T:
         role=D["role_labels"].get(t["entity_role"], t["entity_role"]),
         region=t["region"], stat=t.get("key_stat") or "",
         rep=WORD[t["marks"]["repeatability"]], wall=WORD[t["marks"]["machine_fit"]],
-        inn=WORD[t["marks"]["innovation"]], cap=WORD[t["capital_mark"]],
+        inn=WORD[t["marks"]["innovation"]],
         repw=WHYT(t, 0), wallw=WHYT(t, 1), innw=WHYT(t, 2),
         url=t.get("homepage_url") or ("no website confirmed" if t.get("no_web_presence") else ""),
         cli=t.get("company_li") or "", team=t.get("team_url") or "",
@@ -93,6 +96,8 @@ for t in T:
         phone=(lambda d: "(%s) %s-%s" % (d[:3], d[3:6], d[6:]) if d else "")(t.get("phone")),
         phonelab=t.get("phone_label") or "",
         phonesrc=t.get("phone_source") or "",
+        email=t.get("email") or "",
+        emailsrc=t.get("email_source") or "",
         press=(lambda ps: ("%s %s. %s  %s" % (ps[0]["date"], ps[0]["outlet"],
                                               ps[0]["headline"], ps[0]["url"])).strip()
                if ps else "")(sorted(t.get("press") or [],
@@ -119,14 +124,14 @@ last = HDR + len(rows)
 ws["A3"] = "Contacts"
 ws["B3"] = "=COUNTA($A$%d:$A$%d)" % (first, last)
 ws["C3"] = "LinkedIn held"
-ws["D3"] = '=COUNTIF($R$%d:$R$%d,"ok")' % (first, last)
+ws["D3"] = '=COUNTIF($%s$%d:$%s$%d,"ok")' % (L("Status"), first, L("Status"), last)
 ws["E3"] = "Still to add"
-ws["F3"] = '=COUNTIF($R$%d:$R$%d,"ADD LINKEDIN")' % (first, last)
+ws["F3"] = '=COUNTIF($%s$%d:$%s$%d,"ADD LINKEDIN")' % (L("Status"), first, L("Status"), last)
 ws["I3"] = "Wall deciders"
-ws["J3"] = '=COUNTIF($V$%d:$V$%d,"YES")' % (first, last)
-ws["G3"] = "Strong targets"
-ws["H3"] = '=SUMPRODUCT((COUNTIF(OFFSET($B$%d,ROW($B$%d:$B$%d)-ROW($B$%d),0,1,1),$B$%d:$B$%d)>0)*($D$%d:$D$%d="Strong target")/COUNTIF($B$%d:$B$%d,$B$%d:$B$%d&""))' % (
-    first, first, last, first, first, last, first, last, first, last, first, last)
+ws["J3"] = '=COUNTIF($%s$%d:$%s$%d,"YES")' % (L("Decides the wall"), first, L("Decides the wall"), last)
+ws["G3"] = GROUP["a"]
+ws["H3"] = '=SUMPRODUCT((COUNTIF(OFFSET($B$%d,ROW($B$%d:$B$%d)-ROW($B$%d),0,1,1),$B$%d:$B$%d)>0)*($D$%d:$D$%d="%s")/COUNTIF($B$%d:$B$%d,$B$%d:$B$%d&""))' % (
+    first, first, last, first, first, last, first, last, GROUP["a"], first, last, first, last)
 for c in ("A3", "C3", "E3", "G3", "I3"):
     ws[c].font = Font(name="Arial", size=9, color=MUTED)
 for c in ("B3", "D3", "F3", "H3", "J3"):
@@ -142,30 +147,33 @@ for i, (label, width) in enumerate(COLS, 1):
     ws.column_dimensions[get_column_letter(i)].width = width
 ws.row_dimensions[HDR].height = 22
 
+WRAP = {CI(n) for n in ("Repetition why", "Printer fit why", "Track record why",
+                        "Screen result", "How this person was verified")}
+CENTRE = [CI(n) for n in ("Holds", "Repetition", "Printer fit", "Track record")]
 KEYS = ["name", "firm", "title", "tier", "score", "role", "region", "stat",
-        "rep", "repw", "wall", "wallw", "inn", "innw", "cap",
+        "rep", "repw", "wall", "wallw", "inn", "innw",
         "li", None, None, "url", "screen", "dec", "ev", "bio", "cli", "team", "press",
-        "phone", "phonelab", "phonesrc"]
+        "phone", "phonelab", "phonesrc", "email", "emailsrc"]
 
 for ri, r in enumerate(rows):
     row = first + ri
     band = (ri % 2 == 1)
     for ci, key in enumerate(KEYS, 1):
         if ci == ST_COL:
-            v = '=IF(P%d="","ADD LINKEDIN","ok")' % row
+            v = '=IF(%s%d="","ADD LINKEDIN","ok")' % (L("LinkedIn URL"), row)
         elif ci == FIND_COL:
             v = ('=HYPERLINK("%s","search")' % r["find"].replace('"', '""')) if r.get("find") else ""
         else:
             v = r.get(key, "")
         c = ws.cell(row=row, column=ci, value=v)
         c.font = Font(name="Arial", size=10, color=INK)
-        c.alignment = Alignment(vertical="top", wrap_text=(ci in (10, 12, 14, 20, 22)))
+        c.alignment = Alignment(vertical="top", wrap_text=(ci in WRAP))
         c.border = Border(bottom=thin)
         if band and ci != LI_COL:
             c.fill = PatternFill("solid", fgColor=BAND)
     ws.cell(row=row, column=4).font = Font(name="Arial", size=10, bold=True, color=INK)
     ws.cell(row=row, column=4).alignment = Alignment(horizontal="left", vertical="top")
-    for ci in (5, 9, 11, 13, 15):
+    for ci in CENTRE:
         ws.cell(row=row, column=ci).alignment = Alignment(horizontal="center", vertical="top")
     # editable LinkedIn cell
     li = ws.cell(row=row, column=LI_COL)
@@ -182,11 +190,11 @@ ws.sheet_view.showGridLines = False
 # assumption note at the end of the table
 note = ws.cell(row=last + 2, column=1,
     value=("NOTE. A filled LinkedIn cell means the profile was opened or the search result read and the headline "
-           "named the firm; column W records what was read. Where that test failed the cell is left empty rather "
+           "named the firm; the verification column records what was read. Where that test failed the cell is left empty rather "
            "than guessed, because a fabricated slug passes visual inspection and then fails in front of the person "
-           "it names. Column Q searches for the empty ones in your own session. Each of the three counts reads "
+           "it names. The Find column searches for the empty ones in your own session. Each of the three counts reads "
            "Yes, Partly or No, with the reason in the column beside it. Yes and Partly both count as holding a count. A No does not. "
-           "Holds counts how many of the three are Yes or Partly. Capital is a qualifier, not a count. Source: ICON Greater Houston screen, build %d, %s." % (D["build"], D["last_updated"])))
+           "Holds counts how many of the three are Yes or Partly. Rolodex, Greater Houston, %s." % D["last_updated"]))
 note.font = Font(name="Arial", size=9, italic=True, color=MUTED)
 
 # ------------------------------------------------------------------ permits

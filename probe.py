@@ -45,6 +45,10 @@ SKIP_HOST = {"linkedin.com", "www.linkedin.com"}
 # these are reported as read rather than as unknown. Date them and say what you
 # saw, so the next person can tell a stale note from a fresh one.
 VERIFIED = {
+    # Build 65. pultegroupinc.com answers a script 403 and a fetcher the release.
+    "https://www.pultegroupinc.com/investor-relations/news/news-details/2024/PulteGroup-Breaks-Ground-on-New-Master-Planned-Ryehill-Communities-in-Sugar-Land/default.aspx":
+        "2026-09-24: release of 3 July 2024. Quotes Lindy Oliva, Houston Division "
+        "President, on Ryehill.",
     # Build 63, with the contact layer for the wall supply chain.
     "https://brundagebone.com/about/":
         "2026-09-14: a Management block naming Jonas Barboza, Regional Director "

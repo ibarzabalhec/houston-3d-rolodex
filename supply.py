@@ -7,8 +7,8 @@ and scoring it against printer fit is a category error dressed as rigour. Two
 kinds of firm are in that position, and both are more useful than most of the
 roster.
 
-NODES sell to every crew in the metro. Six sweeps established that this trade
-does not publish volume: of 87 candidates, five published a figure you could put
+NODES sell to every crew in the metro. This trade does not publish volume: of
+87 candidates, five published a figure you could put
 on an axis and twenty-four published years in business instead. Builders publish
 closings because the Builder 100 makes them. Nothing makes a wall contractor
 publish anything. So the volumes exist, and they exist at the supplier who
@@ -28,8 +28,7 @@ NO_SITE is the third finding and the reason the slab cell on the roster is thin.
 Six firms listed in the Greater Houston Builders Association's foundation and
 concrete categories, and eleven masonry contractors on the Associated Masonry
 Contractors of Houston roster, publish no website at all. They are not small by
-inference; they are unlisted. This deck cannot screen them and says so rather
-than pretending the roster is the market.
+inference; they are unlisted. This deck cannot screen them.
 """
 
 # (key, name, kind, cell, region, url, line, why, people, note)
@@ -114,8 +113,8 @@ SUPPLY = [
  "Volumetric mixing: batches at the job rather than at a plant, so the mix is "
  "controlled at the point of placement rather than made at a plant and "
  "delivered. Twenty-five years in Greater Houston.",
- "Technically the closest batching arrangement in the metro to a printer's "
- "feed, and the firm already says specialty mixes are what it is for.",
+ "Batching at the point of placement, and the firm says specialty mixes are "
+ "what it is for.",
  [], None),
 
 ("alliance-rm", "Alliance Concrete Ready Mix and Materials", "node", "readymix",
@@ -240,9 +239,8 @@ SUPPLY = [
  "https://www.curtisconcretepumping.com/",
  "A shotcrete placement contractor for below-grade structural walls, culvert "
  "and tunnel linings, shoring, skateparks and architectural applications.",
- "The purest structural shotcrete description found anywhere in Texas: this is "
- "a firm whose business is already shooting structural wall rather than pool "
- "shells. Both owners work in the field.",
+ "Its business is shooting structural wall rather than pool shells. Both owners "
+ "work in the field.",
  [], "The yard is in Austin. The site names Houston among its project cities."),
 ]
 

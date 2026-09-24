@@ -86,6 +86,27 @@ def flatten(body):
 # and its text is the text below, which is deliberately only the figures: this is
 # a record of what was checked, not a cache of the page.
 BYHAND = {
+    "https://www.multihousingnews.com/tricon-completes-texas-single-family-rentals/":
+        "2026-09-24: 4 April 2025. Tricon Peek Road, developed in a partnership with "
+        "Johnson Development and HHS Residential, comprises 175 new single-family homes "
+        "in Katy. Tricon Trinity Falls, 126 homes in McKinney, also with HHS Residential.",
+    "https://www.pultegroupinc.com/investor-relations/news/news-details/2022/Del-Webb-Opens-Third-Houston-Area-Community-Del-Webb-Fulshear/default.aspx":
+        "2026-09-24: release of 6 October 2022. Del Webb Fulshear opens 8 October 2022, "
+        "the third Del Webb community in the Houston area. Lindy Oliva, President of "
+        "PulteGroup's Houston Division.",
+    "https://www.pultegroupinc.com/investor-relations/news/news-details/2024/PulteGroup-Breaks-Ground-on-New-Master-Planned-Ryehill-Communities-in-Sugar-Land/default.aspx":
+        "2026-09-24: release of 3 July 2024, Ryehill, Sugar Land, about 2,500 homes "
+        "across Ryehill and Del Webb Sugar Land. Lindy Oliva, Houston Division President.",
+    # Build 65. Read through a separate fetcher on 2026-09-24; builderonline
+    # refuses this script. The whole table, so every card that cites it can be
+    # checked against the same text.
+    "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/":
+        "2026-09-24: 2026 Local Leaders, Houston-Pasadena-The Woodlands, TX. 2025 "
+        "closings and 2025 market share. 1 Lennar Corp. 6,362 17.0%. 2 D.R. Horton "
+        "4,925 13.1%. 3 Perry Homes 1,809 4.8%. 4 Meritage Homes 1,428 3.8%. 5 "
+        "PulteGroup 1,146 3.1%. 6 Ashton Woods Homes 1,115 3.0%. 7 Sekisui House U.S. "
+        "1,087 2.9%. 8 Dream Finders Homes 1,048 2.8%. 9 Century Communities 1,017 "
+        "2.7%. 10 Highland Homes 968 2.6%. Top ten: 20,905 closings, 55.7%.",
     "https://www.builderonline.com/firms/westin-homes/":
         "2026-09-14: Westin Homes, Sugar Land TX. 2025 closings 1,062, revenue "
         "$621 M, Builder 100 rank 60. 2024 closings 1,016, revenue $625 M, rank 67.",
@@ -156,8 +177,16 @@ def variants(tok):
     return {v for v in out if v}
 
 
+# The printer-fit bands are the deck's own declared assumption, stated in the
+# method block with what they rest on. A reason that names the band it is read
+# against is quoting the rubric, not citing a figure, so the band's own edges are
+# not looked for on the firm's pages.
+BAND = re.compile(r"\b(?:25 to 400|400 to 1,500|25 to 1,500)(?= band\b)")
+
+
 def figures_in(text):
     found = []
+    text = BAND.sub(lambda m: " " * len(m.group(0)), text or "")
     for m in NUM.finditer(text or ""):
         tok = m.group(0)
         bare = re.sub(r"[^\d.]", "", tok)

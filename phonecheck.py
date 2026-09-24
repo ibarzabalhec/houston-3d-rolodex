@@ -35,7 +35,17 @@ UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
 
 
-def fetch(url):
+def fetch(url, _again=True):
+    """One retry on a rate limit or a timeout, as linkcheck does. A 429 on a
+    sixteen-thread sweep is this script's fault, not the page's."""
+    body, err = _fetch(url)
+    if body is None and _again and err in ("http 429", "TimeoutError", "URLError", "timeout"):
+        import time; time.sleep(4)
+        return fetch(url, False)
+    return body, err
+
+
+def _fetch(url):
     try:
         with urllib.request.urlopen(
                 urllib.request.Request(url, headers=UA), timeout=30, context=CTX) as r:
@@ -117,17 +127,23 @@ class _Merged:
     number the deck prints, so it has to read both. A number that is only in one
     file is a number nothing tests.
     """
-    def __init__(self, a, b):
+    def __init__(self, a, b, c=None):
         self.PHONE = dict(a.PHONE); self.PHONE.update(b.PHONE)
         self.MORE = dict(a.MORE); self.MORE.update(b.MORE)
+        # Build 65: leaders.py carries the three Local Leaders cards' numbers and
+        # the deck's first email addresses. Same rule, same gate.
+        self.EMAIL = {}
+        if c is not None:
+            self.PHONE.update(c.PHONE); self.MORE.update(c.MORE)
+            self.EMAIL = dict(c.EMAIL)
         self.NO_MAIN = dict(a.NO_MAIN)
         self.VERIFIED = dict(a.VERIFIED); self.VERIFIED.update(b.VERIFIED)
         self.ABSENT = dict(a.ABSENT)
 
 
 def main():
-    import phones as _P, wall_people as _WP
-    P = _Merged(_P, _WP)
+    import phones as _P, wall_people as _WP, leaders as _L
+    P = _Merged(_P, _WP, _L)
     only = [a for a in sys.argv[1:] if a.startswith("HOU-")]
 
     # Every number the deck prints, and the page it is cited to. A number in
@@ -153,7 +169,7 @@ def main():
     n = sum(len(v) for v in jobs.values())
     print("checking %d numbers across %d pages\n" % (n, len(jobs)))
 
-    missing, byhand, unread, ok = [], [], [], 0
+    missing, byhand, unread, ok, downs = [], [], [], 0, []
 
     def run(u):
         return (u,) + fetch(u)
@@ -161,8 +177,14 @@ def main():
     with cf.ThreadPoolExecutor(16) as ex:
         for url, body, err in ex.map(run, sorted(jobs)):
             if body is None:
+                from urllib.parse import urlparse as _up
+                import linkcheck as _lc
+                _dn = _lc.down(_up(url).netloc.lower())
                 for tid, d, lab in jobs[url]:
-                    (byhand if url in P.VERIFIED else unread).append((tid, d, lab, url, err))
+                    if _dn:
+                        downs.append((tid, d, lab, url, _dn))
+                    else:
+                        (byhand if url in P.VERIFIED else unread).append((tid, d, lab, url, err))
                 continue
             vis, raw = haystack(body)
             if not ships_numbers(vis, raw):
@@ -196,6 +218,42 @@ def main():
               "note stands for it: %d" % len(unread))
         for tid, d, lab, url, err in sorted(unread):
             print("  %-9s (%s) %s-%s   %-22s %s" % (tid, d[:3], d[3:6], d[6:], err, url))
+
+    # An email address is held to the same rule as a number: it has to be in the
+    # bytes of the page cited for it. Cloudflare rewrites a published address into
+    # a hex blob behind /cdn-cgi/l/email-protection, so that form is decoded too.
+    def _cf(raw):
+        out = []
+        for h in re.findall(r'data-cfemail="([0-9a-fA-F]+)"', raw):
+            k = int(h[:2], 16)
+            out.append("".join(chr(int(h[i:i + 2], 16) ^ k) for i in range(2, len(h), 2)))
+        return " ".join(out)
+    emiss, eok, eunread = [], 0, []
+    for tid, (addr, lab, url) in sorted(P.EMAIL.items()):
+        if only and tid not in only:
+            continue
+        body, err = fetch(url)
+        if body is None:
+            (byhand if url in P.VERIFIED else eunread).append((tid, addr, lab, url, err))
+            continue
+        hay = (body + " " + _html.unescape(body) + " " + _cf(body)).lower()
+        if addr.lower() in hay:
+            eok += 1
+        else:
+            emiss.append((tid, addr, url))
+    print("\nMISSING, the address is not in the page cited for it: %d" % len(emiss))
+    for tid, addr, url in emiss:
+        print("  %-9s %s\n      %s" % (tid, addr, url))
+    for tid, addr, lab, url, err in eunread:
+        print("  %-9s %s  could not be read: %s  %s" % (tid, addr, err, url))
+    missing += [(t, "", a, u) for t, a, u in emiss]
+    unread += [(t, "", a, u, e) for t, a, _l, u, e in eunread]
+    print("addresses found on the page cited: %d of %d" % (eok, len(P.EMAIL)))
+
+    if downs:
+        print("\non a host that is down, dated in linkcheck.DOWN: %d numbers" % len(downs))
+        for tid, d, lab, url, (seen, why) in downs:
+            print("  %-9s (%s) %s-%s   %s  seen %s" % (tid, d[:3], d[3:6], d[6:], url, seen))
 
     print("\ndigits found on the page cited: %d" % ok)
     print("records with a main line: %d. no main line designated: %d. "

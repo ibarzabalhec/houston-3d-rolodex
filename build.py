@@ -45,9 +45,14 @@ import supply as SUPPLY
 import wall_people as WP
 from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
+# Build 65. BUILDER's Local Leaders table for Greater Houston, read against the
+# deck: three missing cards, six firms now carrying a published Houston figure,
+# and one mark that did not follow its own reason.
+import leaders as LEAD
+import audit5 as AUDIT5
 from urllib.parse import quote
 
-BUILD = 64
+BUILD = 66
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -59,13 +64,31 @@ DECIDERS.update(TRADE_DECIDERS)
 DECIDERS.update(GAP.DECIDERS)
 NATIONAL.update(GAP.NATIONAL)
 CHANNEL.update(GAP.CHANNEL)
+NATIONAL.update(LEAD.NATIONAL)
+for _tid, _sc in AUDIT5.SCORE.items():
+    CSCORES.setdefault(_tid, {}).update(_sc)
+CLOSINGS.update(AUDIT5.CLOSINGS)
+PHONES.ABSENT.update(AUDIT5.PHONE_ABSENT)
+for _tid, (_line, _bl) in AUDIT5.CHANNEL.items():
+    CHANNEL[_tid] = (_line, _bl if _bl is not None else CHANNEL[_tid][1])
+ICON_CLIENT.update(LEAD.ICON_CLIENT)
+CLOSINGS.update(LEAD.CLOSINGS)
+for _tid, _sc in LEAD.SCORE.items():
+    CSCORES.setdefault(_tid, {}).update(_sc)
+for _tid in LEAD.HOMEPAGE:
+    AUDIT3.NO_WEB.pop(_tid, None)
+WP.PEOPLE.update(LEAD.PEOPLE)
+WP.PHONE.update(LEAD.PHONE)
+WP.MORE.update(LEAD.MORE)
+PHONES.ABSENT.update(LEAD.PHONE_ABSENT)
+SUPPLY.SUPPLY.extend(LEAD.SUPPLY_ROWS)
 for _tid, _ppl in R2.PEOPLE.items():
     NEW_PEOPLE.setdefault(_tid, []).extend(_ppl)
 for _tid, _sc in R2.SCORES.items():
     CSCORES.setdefault(_tid, {}).update(_sc)
 for _tid, _fl in R2.FLAGS.items():
     CFLAGS.setdefault(_tid, []).extend(_fl)
-TODAY = "2026-09-11"
+TODAY = "2026-09-24"
 
 SCREENS = ["repeatability", "machine_fit", "innovation"]
 
@@ -361,6 +384,7 @@ SHORT = {
  "HOU-001": "Wan Bridge", "HOU-005": "Radom Capital", "HOU-006": "Triten",
  "HOU-031": "Read King", "HOU-032": "Urban Living", "HOU-036": "Midway",
 }
+SHORT.update(LEAD.SHORT)
 
 _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_CREATIVE)
@@ -372,7 +396,8 @@ _all = (A_TIER + REST + MID + expand_tail(TAIL) + expand_builders(BUILDERS)
         + expand_builders(NEW_METHOD)
         + expand_builders(PRINTED_ADOPTERS, "developer", "vertical_buyer")
         + expand_builders(GAP.GAP)
-        + expand_builders(GAP.CHANNEL_ROWS, "mpc_developer", "channel"))
+        + expand_builders(GAP.CHANNEL_ROWS, "mpc_developer", "channel")
+        + expand_builders(LEAD.NEW))
 _all = [t for t in _all if t["target_id"] not in DROPPED or t["target_id"] in CREATIVE]
 targets = finalize(_all)
 
@@ -693,6 +718,48 @@ if _web:
         print("   " + _s)
     raise SystemExit("FAILED: a card is silent about whether the firm has a website")
 
+# Build 65. The Local Leaders pass runs after every other layer has written its
+# prose, because it corrects some of that prose, and before the number layer,
+# because it sets a homepage the number layer reads. Every replacement has to
+# find its own old text exactly once, and every key has to name a card.
+_ll = []
+for t in targets:
+    tid = t["target_id"]
+    if tid in LEAD.KEY_STAT:
+        t["key_stat"] = LEAD.KEY_STAT[tid]
+    if tid in LEAD.HOMEPAGE:
+        t["homepage_url"] = LEAD.HOMEPAGE[tid]
+        t.pop("no_web_presence", None); t.pop("web_absent", None)
+    if tid in LEAD.SCREEN:
+        t["mvp_screen"] = LEAD.SCREEN[tid]
+    for w in t.get("why", []):
+        if (tid, w["axis"]) in LEAD.WHY:
+            w["text"] = LEAD.WHY[(tid, w["axis"])]
+    for _old, _new in LEAD.SYNOPSIS.get(tid, []):
+        if t["synopsis"].count(_old) != 1:
+            _ll.append("%s synopsis does not carry %r exactly once" % (tid, _old[:50]))
+        t["synopsis"] = t["synopsis"].replace(_old, _new)
+    for _u in LEAD.SOURCES.get(tid, []):
+        if not any(x.get("url") == _u for x in t["sources"]):
+            t["sources"].append({"url": _u, "date": None})
+    _e = LEAD.EMAIL.get(tid)
+    t["email"], t["email_label"], t["email_source"] = _e if _e else (None, None, None)
+_ids = {t["target_id"] for t in targets}
+_keys = (list(LEAD.KEY_STAT) + list(LEAD.SCREEN) + list(LEAD.SYNOPSIS) + list(LEAD.SOURCES)
+         + list(LEAD.EMAIL) + list(LEAD.HOMEPAGE) + [k for k, _a in LEAD.WHY])
+_ll += ["leaders.py names %s, which is not on the deck" % k for k in _keys if k not in _ids]
+for (_tid, _ax) in LEAD.WHY:
+    if not any(w["axis"] == _ax for t in targets if t["target_id"] == _tid for w in t["why"]):
+        _ll.append("%s has no %s reason to replace" % (_tid, _ax))
+# An address with no page behind it is the same fault as a number with none.
+for t in targets:
+    if t.get("email") and (not t.get("email_source") or "@" not in t["email"]):
+        _ll.append("%s prints an email with no page cited for it" % t["target_id"])
+if _ll:
+    for _b in _ll:
+        print("   " + _b)
+    raise SystemExit("FAILED: the Local Leaders pass did not apply cleanly")
+
 # The number layer, last, because it is keyed on target_id and reads nothing the
 # passes above write. Rule 5 records cases where the page publishes several
 # numbers and designates none of them the main line: those carry a directory and
@@ -923,6 +990,7 @@ if best_printing:
     _yes += (", plus " if best_open else "") + _names(best_printing) + ", who is already printing with a competitor"
 
 _overlap = len([t for t in best if t["group"] == "a"])
+_hold3 = len([t for t in best if t["holds"] == 3])
 
 def _n(k, one, many):
     return "%d %s" % (k, one if k == 1 else many)
@@ -937,15 +1005,19 @@ MATRIX_NOTE = (
     # third count, which makes this cell look like the strip's headline number
     # when it is a different set. Build 60 also had the corner wrong here for
     # the life of the deck, and naming no corner is one fewer thing to get wrong.
-    "<b>%s</b> clear both counts on the grid. It is placed on two and ignores the third, so these are "
-    "not the <b>%d</b> in on all three counts above; <b>%s</b> in both."
-    % (_n(len(best), "firm", "firms"), g["a"],
-       _n(_overlap, "firm is", "firms are"))
+    # Build 66. The note compared the grid with one section and called the
+    # section "all three counts", which it is not: adopters and contractors that
+    # hold all three sit in their own sections. It now counts holds directly.
+    "<b>%s</b> read Yes on both axes of this grid. The grid leaves out track record; "
+    "<b>%d</b> of the %d hold all three counts."
+    % (_n(len(best), "firm", "firms"), _hold3, len(best))
 )
 
 # A contractor closes no homes, so the closings figure is drawn against the
 # builders on the deck and nothing else. One number, used everywhere it is said.
-_n_builders = sum(1 for t in deck if t["group"] != "trade")
+# Build 66: land owners sell lots and close no houses either, so they are out
+# of the base too. The captions say builders and developers.
+_n_builders = sum(1 for t in deck if t["group"] not in ("trade", "channel"))
 _n_nocontact = sum(1 for t in deck if not t["principals"])
 _n_press = sum(1 for t in deck if t.get("press"))
 _n_nocontact_trade = sum(1 for t in deck if not t["principals"] and t["group"] == "trade")
@@ -959,7 +1031,10 @@ DATA = {
  # workbook and the verifier, and off the page a reader sees.
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · %s" % TODAY,
 
- "kicker": "Greater Houston · business development screen for a construction printer · %s" % TODAY,
+# Build 66. The kicker repeated the headline beneath it word for word:
+ # "screen for a construction printer" over "screened for a construction
+ # printer". It now carries only what the headline does not.
+ "kicker": "Rolodex · Greater Houston · %s" % TODAY,
 
  # Build 59 made this a statement. It had been a question with the counts inside
  # it, which broke two of this deck's own rules at once: a title says what the
@@ -980,12 +1055,12 @@ DATA = {
                       "By Héctor Ibarzábal." % n),
  # A label is a name, not a sentence. The clause each of these used to carry
  # moved into the group note, where there is room to say it once.
- "group_labels": {"adopter": "Already buying printed walls", "a": "Strong target",
+ "group_labels": {"adopter": "Already buying printed walls", "a": "Holds all three counts",
                   "b": "One gap", "national": "National builder",
                   "trade": "Builds the wall, not the house",
                   "creative": "Custom and hybrid job",
                   "channel": "Land owner, not the buyer",
-                  "icon": "Already working with ICON", "out": ""},
+                  "icon": "Lennar and the firms it owns"},
  "group_notes": {"a": "In on all three counts.",
                  "b": "In on two of three counts.",
                  "adopter": "Has printed walls standing or contracted with a competitor.",
@@ -1008,7 +1083,7 @@ DATA = {
  # 74 of 96 chips greyed is describing the answer rather than showing it.
  "stat_strip": [
    [str(n), "firms screened", False, None],
-   [str(g["a"]), "in on all three counts", False, {"group": ["a"]}],
+   [str(g["a"]), "builders and developers holding all three counts", False, {"group": ["a"]}],
    # 43 here and 42 on the market view are two different things, and until
    # Build 59 both were called a decision-maker. This one counts firms with the
    # mark; the market view counts the firms where nobody on that mark carries a
@@ -1170,15 +1245,16 @@ DATA = {
         "confirm": sum(1 for t in deck if t["group"] == gk and t["decider_caveat"]),
         "linked": sum(1 for t in deck if t["group"] == gk
                       and any(p.get("linkedin_url") or p.get("source_url") for p in t["principals"]))}
-       for gk, lbl in [("adopter", "Already buying printed walls"), ("a", "Strong target"),
+       for gk, lbl in [("adopter", "Already buying printed walls"), ("a", "Holds all three counts"),
                        ("b", "One gap"), ("trade", "Builds the wall, not the house"),
                        ("creative", "Custom and hybrid job"),
                        ("national", "National builder"), ("channel", "Land owner, not the buyer"),
-                       ("icon", "Already working with ICON")]],
+                       ("icon", "Lennar and the firms it owns")]],
    "owners": [
        {"id": t["target_id"], "short": t["short"], "line": t.get("channel_line", ""),
         "builders": [{"name": b,
-                      "id": next((x["target_id"] for x in deck if x["entity_name"] == b), None),
+                      "id": (AUDIT5.OWNER_ALIAS[b] if b in AUDIT5.OWNER_ALIAS else
+                             next((x["target_id"] for x in deck if x["entity_name"] == b), None)),
                       "off": any(x["entity_name"] == b for x in targets if x["group"] == "out")}
                      for b in t.get("channel_builders", [])]}
        for t in deck if t["group"] == "channel"],
@@ -1202,7 +1278,7 @@ DATA = {
    "sources": [{"url": u, "label": l} for u, l in
                [PM.SOURCE[k] for k in ("socds", "defs", "txdot")]],
  })(),
- "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"], "out": g["out"],
+ "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"],
            "principals": n_people, "linkedin_held": n_li, "audit_flags": n_flags,
            "with_decider": n_dec, "with_decider_live": n_dec_live,
            "with_decider_confirmed": n_dec_ok, "with_decider_caveat": n_dec_chk},
@@ -1249,6 +1325,63 @@ def _scan_for_banned(obj, path=""):
     return found
 
 
+# Build 66. Every correction from the fifth audit round, applied to the finished
+# page data. Each has to find its old text exactly once inside the scope it names.
+def _strings(obj):
+    # Keys that start with an underscore are the build's working copies (the
+    # verdict and reasons as first written) and never reach the page, so they
+    # do not count toward "exactly once". They are still rewritten below.
+    if isinstance(obj, str):
+        yield obj
+    elif isinstance(obj, dict):
+        for k, v in obj.items():
+            if not str(k).startswith("_"):
+                yield from _strings(v)
+    elif isinstance(obj, list):
+        for v in obj:
+            yield from _strings(v)
+
+
+def _edit_scope(obj, old, new, hits):
+    if isinstance(obj, dict):
+        for k, v in list(obj.items()):
+            if isinstance(v, str) and old in v:
+                hits.append(1)
+                obj[k] = None if (new is None and v == old) else v.replace(old, new or "")
+            else:
+                _edit_scope(v, old, new, hits)
+    elif isinstance(obj, list):
+        for i, v in enumerate(obj):
+            if isinstance(v, str) and old in v:
+                hits.append(1)
+                obj[i] = None if (new is None and v == old) else v.replace(old, new or "")
+            else:
+                _edit_scope(v, old, new, hits)
+_bad5 = []
+for _t in DATA["targets"]:
+    if _t["target_id"] in AUDIT5.SCREEN:
+        _t["mvp_screen"] = AUDIT5.SCREEN[_t["target_id"]]
+_bad5 += ["audit5.SCREEN names %s, not on the deck" % k for k in AUDIT5.SCREEN
+          if not any(t["target_id"] == k for t in DATA["targets"])]
+for _scope, _old, _new in AUDIT5.EDITS:
+    if _scope.startswith("HOU-"):
+        _tgt = next((t for t in DATA["targets"] if t["target_id"] == _scope), None)
+    else:
+        _tgt = DATA.get(_scope)
+    if _tgt is None:
+        _bad5.append("%s is not in the page data" % _scope); continue
+    _occ = sum(_s.count(_old) for _s in _strings(_tgt))
+    if _occ != 1:
+        _bad5.append("%s: %r found %d times" % (_scope, _old[:60], _occ)); continue
+    if isinstance(_tgt, str):
+        DATA[_scope] = _tgt.replace(_old, _new or "")
+    else:
+        _edit_scope(_tgt, _old, _new, [])
+if _bad5:
+    for _b in _bad5:
+        print("   " + _b)
+    raise SystemExit("FAILED: an audit5 edit did not find its text exactly once")
+
 DATA = _strip_trailing(DATA)
 _banned = _scan_for_banned(DATA)
 if _banned:
@@ -1282,6 +1415,18 @@ os.makedirs("docs", exist_ok=True)
 shutil.copy("ICON_Greater_Houston_Rolodex.html", "docs/index.html")
 shutil.copy("ICON_Greater_Houston_Rolodex.html", "docs/ICON_Greater_Houston_Rolodex.html")
 shutil.copy("houston-data.json", "docs/houston-data.json")
+
+# The README said Ninety for thirty builds while the deck grew to 124. It is now
+# written here, from the same counts the page prints, so it cannot drift again.
+_ORDER = ["adopter", "icon", "a", "b", "trade", "national", "creative", "channel"]
+_rd = (open("_README.md", encoding="utf-8").read()
+       .replace("__N__", "%d" % n)
+       .replace("__NP__", "%d" % n_people)
+       .replace("__NS__", "%d" % len(DATA.get("supply", [])))
+       .replace("__NN__", "%d" % len(DATA.get("no_site", [])))
+       .replace("__SECTIONS__", "\n".join(
+           "- **%s**, %d" % (DATA["group_labels"][k], g[k]) for k in _ORDER if g.get(k))))
+open("README.md", "w", encoding="utf-8").write(_rd)
 
 print("entities          %d" % n)
 print("already printing  %d" % g["adopter"])

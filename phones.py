@@ -60,7 +60,9 @@ PHONE = {
     "HOU-040": ("7139609977", None, "https://www.johnsondevelopment.com/", 1),
     "HOU-042": ("2818751552", None, "https://friendswooddevelopment.com/contact-us", 1),
     "HOU-048": ("7136211700", None, "https://www.wulfe.com/", 1),
-    "HOU-061": ("8889047172", None, "https://www.myaltahomes.com/", 1),
+    # Build 65: the homepage replaced its 888 line with this one. It is the only
+    # number on the page and it is also the tel: link in the header.
+    "HOU-061": ("9362994373", None, "https://www.myaltahomes.com/", 1),
     "HOU-067": ("7137898004", None, "https://www.jpatrickhomes.com/", 1),
     "HOU-071": ("8328580755", None, "https://jamestownestatehomes.com/", 1),
     "HOU-073": ("5123346775", None, "https://www.brohnhomes.com/", 1),

@@ -56,7 +56,16 @@ print("reason vs mark  : %d reasons, none contradict"
 _RHET = re.compile(
     r"\b(?:the |a )?(?:nearest thing|closest (?:thing|analog|analogue|business|"
     r"published|existing)|purest|sharpest|strongest signal|single most|"
-    r"most useful line|best[- ]fit\b)", re.I)
+    r"most useful line|best[- ]fit\b|"
+    # Build 66. Nine cards carried an "only" that another card on the deck
+    # disproved: the only precast plant, the only masonry firm selling a
+    # prefabricated wall, the only residential division. A claim ranked against
+    # the rest of this deck is checkable only by reading the whole deck, and nine
+    # of them failed that. Ranked against the world, "the only Texas plant", it
+    # stays.
+    r"the only\b[^.]{0,90}\b(?:screened|on this deck|in this section|in the whole)|"
+    r"one of two \w+ screened|which no other|the one documented case|"
+    r"the largest single roster)", re.I)
 # Evaluative adjectives the deck does not use about its own subjects.
 _ADJ = re.compile(r"\b(remarkabl[ey]|impressive(?:ly)?|striking(?:ly)?|compelling|"
                   r"exciting|extraordinar(?:y|ily)|unusually deep|truly|very )", re.I)
@@ -88,6 +97,23 @@ def _rendered():
     for _k in ("kicker", "headline", "sub", "matrix_note", "consolidation",
                "no_site_note"):
         yield _k, D.get(_k) or ""
+
+# Build 66. The screen line prints directly under the headline figure, and on
+# 30 cards its first sentence said the figure again. The first sentence of the
+# screen may not carry a number the headline figure already carries.
+_rep = []
+for _t in D["targets"]:
+    if _t["group"] == "out":
+        continue
+    _nums = set(re.findall(r"\d[\d,]*", _t.get("key_stat") or "")) - {"2024", "2025", "2026"}
+    _first = (_t.get("mvp_screen") or "").split(". ")[0]
+    if any(re.search(r"(?<![\d,])%s(?![\d,])" % re.escape(x), _first) for x in _nums):
+        _rep.append("%s: %r" % (_t["short"], _first[:70]))
+if _rep:
+    for _b in _rep:
+        print("   " + _b)
+    raise SystemExit("FAILED: a screen line opens by restating its headline figure")
+print("screen lines    : none restates its headline figure")
 
 _rh, _words = [], 0
 for _where, _txt in _rendered():
@@ -233,7 +259,9 @@ print("contact evidence: %d linkedin, %d own page, %d neither, all three printed
 _ord = D["matrix"]["order"]
 _first = "%s|%s" % (_ord[-1], _ord[-1])
 _rows = [t for t in D["targets"] if t.get("cell") == _first]
-_all3 = sum(1 for t in D["targets"] if t.get("group") == "a")
+# Build 66: the note now counts the firms in that cell that hold all three,
+# which is the fact the grid hides, rather than comparing it with a section.
+_all3 = sum(1 for t in _rows if t.get("holds") == 3)
 _note = D.get("matrix_note") or ""
 _nb = []
 if _first != "clear|clear":
@@ -241,7 +269,7 @@ if _first != "clear|clear":
 if ("<b>%d " % len(_rows)) not in _note and ("<b>%d</b>" % len(_rows)) not in _note:
     _nb.append("the note does not carry %d, the count in that cell" % len(_rows))
 if ("<b>%d</b>" % _all3) not in _note:
-    _nb.append("the note does not carry %d, the firms in on all three counts" % _all3)
+    _nb.append("the note does not carry %d, the firms in that cell holding all three" % _all3)
 for _bad in ("top right", "top left", "bottom left", "bottom right"):
     if _bad in _note.lower():
         _nb.append("the note names a corner (%s), which is the claim that was "
@@ -391,6 +419,28 @@ async def main():
         await pg.goto(URL)
         await pg.wait_for_timeout(400)
 
+        # Build 65. The page opens on the List, which is the working surface, with
+        # every section showing: a pre-filtered landing would hide the 50
+        # contractors from a reader told they matter. The checks below were
+        # written against the Screen, so they switch to it once here.
+        opened = await pg.evaluate(
+            "(()=>({mode:document.getElementById('vList').getAttribute('aria-pressed'),"
+            "rows:document.querySelectorAll('#tb tr:not(.grp):not(.chn)').length,"
+            "first:document.querySelector('.seg[aria-label=View] button').id,"
+            "head:!document.querySelector('header.top').hidden&&"
+            "document.getElementById('hl').getBoundingClientRect().height>0}))()")
+        print("opens on        :", "List" if opened["mode"] == "true" else "not the List",
+              "with", opened["rows"], "rows, first button", opened["first"])
+        if opened["mode"] != "true" or opened["first"] != "vList":
+            problems.append("the page does not open on the List")
+        if not opened["head"]:
+            problems.append("the page opens with no masthead saying what it is")
+        if opened["rows"] != D["stats"]["total"]:
+            problems.append("the opening List is filtered (%d of %d)"
+                            % (opened["rows"], D["stats"]["total"]))
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(300)
+
         chips = await pg.locator("#matrix .chip").count()
         print("console errors  :", errs or "none")
         print("chips in matrix :", chips, "of", D["stats"]["total"])
@@ -463,7 +513,7 @@ async def main():
             await pg.evaluate("window.rolodex.open(%r)" % _t["target_id"])
             await pg.wait_for_timeout(45)
             _a = await pg.eval_on_selector_all(
-                "#firmBody .fhead h2 a.hlink", "e=>e.map(x=>x.getAttribute('href'))")
+                "#firmBody .fhead h1 a.hlink", "e=>e.map(x=>x.getAttribute('href'))")
             if _t.get("homepage_url") and _a[:1] != [_t["homepage_url"]]:
                 _hb.append("%s: the name does not link the site" % _t["short"])
             if not _t.get("homepage_url") and _a:
@@ -568,8 +618,12 @@ async def main():
         want_a = sum(1 for t in D["targets"] if t["group"] == "a")
         lab = [x for x in strip if "all three counts" in x]
         print("stat strip      :", lab)
-        if not lab or ("in on all three counts" not in lab[0]):
-            problems.append("the three-count stat is not labelled as holding")
+        # Build 66: the number is the section, builders and developers holding
+        # all three. Adopters and contractors holding all three are in their own
+        # sections, so the label has to say whose count it is.
+        if not lab or ("holding all three counts" not in lab[0]
+                       or "builders and developers" not in lab[0]):
+            problems.append("the three-count stat does not say whose holds it counts")
         if str(want_a) not in (lab[0] if lab else ""):
             problems.append("the three-count stat does not match the group count")
 
@@ -735,6 +789,8 @@ async def main():
         await pg.evaluate("rolodex.setCallList(['%s'])" % D["targets"][0]["target_id"])
         await pg.reload()
         await pg.wait_for_timeout(500)
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(200)
         kept = await pg.inner_text("#clN")
         print("call list keeps :", kept)
         if kept != "1":
@@ -1014,6 +1070,73 @@ async def main():
         if bars != want_bars:
             problems.append("bar count does not match the published figures (%d vs %d)"
                             % (bars, want_bars))
+        # Build 65. Both closings figures used to clamp at 1,200 with Math.min,
+        # which was harmless while the largest figure was 1,062 and would have
+        # drawn Lennar's 6,362 at 1,200 without a word. A bar past the axis now
+        # has to carry a break mark, and the hero has to name every firm it
+        # leaves off rather than pile them on its right edge.
+        brk = await pg.locator("#mkBody .fig .brk").count()
+        want_brk = sum(1 for r in D["market"]["closings"] if r["low"] > 2000)
+        print("broken bars     :", brk, "of", want_brk, "past the 2,000 axis")
+        if brk != want_brk:
+            problems.append("a closings bar runs past the axis without a break mark")
+        hero = await pg.evaluate(
+            "(()=>({dots:document.querySelectorAll('#heroFig .hdot').length,"
+            "cap:document.getElementById('heroFig').textContent}))()")
+        _over = [r for r in D["market"]["closings"] if r["high"] > 1500]
+        if hero["dots"] != len(D["market"]["closings"]) - len(_over):
+            problems.append("the hero strip draws a firm outside its bands")
+        for r in _over:
+            if r["short"] not in hero["cap"]:
+                problems.append("the hero strip leaves %s off without naming it" % r["short"])
+        print("hero strip      :", hero["dots"], "dots,", len(_over), "named above 1,500")
+        # Build 66. The landing said how the bands were set was on this view,
+        # and nothing here rendered it.
+        band = await pg.evaluate("(()=>{var b=document.querySelector('#mkBody .bandnote');"
+                                 "return b?b.textContent:''})()")
+        if "assumption" not in band or "200" not in band:
+            problems.append("the printer-fit band assumption is not on the Market view")
+        print("band note       :", "rendered" if band else "missing")
+        # ---- Build 66, the fifth audit round's interaction findings
+        await pg.evaluate("rolodex.reset()")
+        await pg.evaluate("document.getElementById('vScroll').click()")
+        await pg.wait_for_timeout(300)
+        await pg.focus("#cfNext")
+        await pg.keyboard.press("Enter")
+        await pg.wait_for_timeout(250)
+        v66 = await pg.evaluate("(()=>({firm:document.getElementById('stageFirm').classList.contains('on'),"
+                                "ae:document.activeElement&&document.activeElement.id}))()")
+        if v66["firm"]:
+            problems.append("Enter on the Cover's Next button opens a firm instead")
+            await pg.evaluate("history.back()"); await pg.wait_for_timeout(250)
+        await pg.evaluate("document.getElementById('vList').click()")
+        await pg.wait_for_timeout(250)
+        await pg.evaluate("document.querySelector('#tb .rowadd').focus()")
+        await pg.keyboard.press("Enter")
+        await pg.wait_for_timeout(250)
+        fk = await pg.evaluate("(()=>{var a=document.activeElement;return a&&a.getAttribute('data-add')})()")
+        await pg.evaluate("rolodex.setCallList([])")
+        if not fk:
+            problems.append("focus leaves the + on a List row after it is pressed")
+        _yp = sum(1 for t in D["targets"] if t["group"] != "out"
+                  and t["marks"]["machine_fit"] in ("clear", "partial"))
+        orn = await pg.evaluate("(()=>{rolodex.reset();rolodex.setFilters({count:"
+                                "['machine_fit:clear','machine_fit:partial']});"
+                                "return rolodex.shown().length})()")
+        await pg.evaluate("rolodex.reset()")
+        if orn != _yp:
+            problems.append("two choices on one count do not combine as either (%d vs %d)" % (orn, _yp))
+        await pg.fill("#q", "zzzzqq")
+        await pg.wait_for_timeout(400)
+        sup = await pg.evaluate("document.getElementById('supplyBody').textContent.trim().length")
+        await pg.fill("#q", "")
+        await pg.wait_for_timeout(300)
+        if sup:
+            problems.append("a search with no match still shows the supply and no-website lists")
+        print("audit round 5   : cover keys, row focus, same-count OR (%d), supply search" % orn)
+        await pg.evaluate("document.getElementById('vMarket').click()")
+        await pg.wait_for_timeout(500)
+
         # a segment opens the firms it counts, and the list survives an add
         await pg.click('.fig .seg[data-seg="a:partial"]', position={"x": 100, "y": 10})
         await pg.wait_for_timeout(300)
@@ -1055,6 +1178,20 @@ async def main():
                 problems.append("view buttons are not tappable at %dpx" % w)
             if over > 0:
                 problems.append("horizontal overflow at %dpx" % w)
+
+            # Build 66. Firm pages scrolled sideways on a phone, 22 of them,
+            # because a long source URL had no break point. Every firm page is
+            # opened at this width and measured.
+            fw = await pg.evaluate(
+                "(()=>{var bad=[];rolodex.firms.forEach(function(t){rolodex.open(t.target_id);"
+                "var o=document.documentElement.scrollWidth-document.documentElement.clientWidth;"
+                "if(o>0) bad.push(t.short+' '+o);history.back();});return bad;})()")
+            await pg.wait_for_timeout(300)
+            await pg.evaluate("(()=>{if(document.getElementById('stageFirm').classList.contains('on'))"
+                              "document.getElementById('back')&&document.getElementById('back').click();})()")
+            await pg.wait_for_timeout(200)
+            if fw:
+                problems.append("firm pages scroll sideways at %dpx: %s" % (w, ", ".join(fw[:6])))
 
             # the list stops being a table on a phone. Seven columns inside a
             # 358px column used to mean a sideways swipe past a sticky firm

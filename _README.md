@@ -1,6 +1,6 @@
 # Rolodex · Greater Houston
 
-127 Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with 300 named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
+__N__ Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with __NP__ named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
 
 Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
@@ -18,16 +18,9 @@ Yes and Partly both count as holding. A No does not. Sections are assigned befor
 
 ## Sections
 
-- **Already buying printed walls**, 3
-- **Lennar and the firms it owns**, 3
-- **Holds all three counts**, 13
-- **One gap**, 31
-- **Builds the wall, not the house**, 50
-- **National builder**, 10
-- **Custom and hybrid job**, 10
-- **Land owner, not the buyer**, 7
+__SECTIONS__
 
-The contractors are ordered along the wall value chain a printed wall would displace: nozzle, slab, tilt-up, precast, panel, masonry, ICF, general contractor. Beside them sit a 22-firm supply panel and 21 firms that meet the profile and publish no website.
+The contractors are ordered along the wall value chain a printed wall would displace: nozzle, slab, tilt-up, precast, panel, masonry, ICF, general contractor. Beside them sit a __NS__-firm supply panel and __NN__ firms that meet the profile and publish no website.
 
 ## Five views
 

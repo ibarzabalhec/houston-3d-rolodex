@@ -69,19 +69,26 @@ PRECEDENT = [
 
 # The machine-fit bands, and what they rest on. Stated once, here, and shown
 # wherever the bands are drawn.
+# Build 66. The landing's caption pointed here for "how the bands were set" and
+# nothing on the page rendered it. It is drawn under the closings figure now, and
+# the assumption is a number: a band that says one or two printers cover 400
+# homes a year says each covers up to about 200.
 BANDS_METHOD = (
- "The bands are an assumption, not a published figure. What is published: at Wolf Ranch one "
- "Vulcan printer and one crew took about three weeks to print a home's walls by August 2024, which is "
- "on the order of seventeen wall systems a year per printer (Engadget, 8 August 2024). ICON has "
- "published no throughput for Titan: a $20 per square foot wall target, a $5,000 deposit, training in "
- "the third quarter of 2026 and deliveries from early 2027 (ICON newsroom, 11 March 2026), and a "
- "market-opening threshold of six to ten printers in one market (Builder). The bands assume Titan runs "
- "materially faster than Vulcan did at Wolf Ranch and will be redrawn when ICON publishes a rate."
+ "The bands are an assumption, not a published figure. The Yes band, 25 to 400 homes a year "
+ "for one or two printers, assumes a Titan prints the walls of up to about 200 houses a year. "
+ "What is published is slower. At Wolf Ranch one Vulcan and one crew took about three weeks a "
+ "home by August 2024, on the order of seventeen a year (Engadget, 8 August 2024). At Zuri "
+ "Gardens the cement supplier states its mix lets a robot finish a home shell in about two weeks "
+ "(Eco Material). ICON has published no Titan rate: a $20 per square foot wall target, a $5,000 "
+ "deposit, training in the third quarter of 2026 and deliveries from early 2027 (ICON newsroom, "
+ "11 March 2026), and a market-opening threshold of six to ten printers in one market (Builder). "
+ "The bands will be redrawn when ICON publishes a rate."
 )
 BANDS_SOURCES = [
  ("https://www.engadget.com/home/a-robotics-company-has-3d-printed-nearly-a-hundred-homes-in-texas-225830931.html", "Engadget, 8 August 2024"),
  ("https://www.iconbuild.com/newsroom/icon-announces-first-commercial-rollout-of-its-3d-printing-construction-technology-for-builders", "ICON newsroom, 11 March 2026"),
  ("https://www.builderonline.com/design/technology/icons-next-phase-building-a-scalable-platform-for-3d-printed-housing/", "Builder"),
+ ("https://ecomaterial.com/projects/", "Eco Material, projects"),
 ]
 
 # How each number on the page is produced. Shown on the Market view.

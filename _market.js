@@ -6,8 +6,13 @@
    with no published figure is absent and the caption says how many that is. */
 var MK=D.market||{};
 function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
+/* Build 66. A chart is drawn in a fixed coordinate box and scaled to the
+   column, so at 1440 its labels grew past body text and at 390 they fell to
+   4 to 6 px. It now stops growing at its drawn width. On a phone the table
+   under it opens by default, because the table is the readable form there. */
 function svgOpen(w,h,cls){return '<svg class="fig'+(cls?' '+cls:'')+'" viewBox="0 0 '+w+' '+h+
-  '" width="100%" preserveAspectRatio="xMinYMin meet" role="img" aria-hidden="false">';}
+  '" width="100%" style="max-width:'+w+'px" preserveAspectRatio="xMinYMin meet" role="img" aria-hidden="false">';}
+var NARROW=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
 function tipAttr(t){return ' data-tip="'+esc(t)+'"';}
 
 /* 1. Published annual closings, one bar per firm, with the machine-fit bands. */
@@ -15,10 +20,14 @@ var NB=(D.market&&D.market.closings_base)||0;
 function figClosings(){
   var rows=MK.closings||[]; if(!rows.length) return '';
   var W=900,L=190,R=110,rowH=30,top=26,H=top+rows.length*rowH+30;
-  var max=1200, X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
+  /* Two builders close several times what the rest do. A linear axis to 6,362
+     would flatten twenty bars into the first fifth of the chart, so the axis
+     stops at 2,000 and a bar that runs past it is broken, with its full figure
+     printed. Nothing is drawn at a length it does not have without saying so. */
+  var max=2000, X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
   var h=svgOpen(W,H);
   // gridlines
-  [0,200,400,600,800,1000,1200].forEach(function(v){
+  [0,250,500,750,1000,1250,1500,1750,2000].forEach(function(v){
     h+='<line x1="'+X(v)+'" y1="'+(top-8)+'" x2="'+X(v)+'" y2="'+(top+rows.length*rowH)+'" class="grid"/>'+
        '<text x="'+X(v)+'" y="'+(top+rows.length*rowH+18)+'" class="axt">'+fmt(v)+'</text>';
   });
@@ -28,6 +37,8 @@ function figClosings(){
             ' homes a year, '+r.year+'. '+r.source+'.';
     h+='<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end" data-id="'+r.id+'">'+esc(r.short)+'</text>';
     h+='<rect x="'+X(0)+'" y="'+y+'" width="'+(X(r.low)-X(0))+'" height="'+bh+'" rx="0" class="bar"'+tipAttr(tip)+'/>';
+    if(r.low>max){var bx=X(max)-22;
+      h+='<path class="brk" d="M'+bx+' '+(y+bh+3)+' L'+(bx+7)+' '+(y-3)+' M'+(bx+7)+' '+(y+bh+3)+' L'+(bx+14)+' '+(y-3)+'"/>';}
     if(r.high>r.low){
       h+='<line x1="'+X(r.low)+'" y1="'+cy+'" x2="'+X(r.high)+'" y2="'+cy+'" class="range"'+tipAttr(tip)+'/>'+
          '<line x1="'+X(r.high)+'" y1="'+(cy-5)+'" x2="'+X(r.high)+'" y2="'+(cy+5)+'" class="range"/>';
@@ -40,9 +51,13 @@ function figClosings(){
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
       '</td><td>'+r.year+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
-    'How big each builder actually is, in houses closed a year. '+rows.length+' of the '+NB+
-    ' builders on the deck publish a figure; the rest do not and are not drawn. Contractors close no houses and are not counted. A range is drawn to its low end with a line to its high end.',
-    h, tbl);
+    'How big each builder is, in houses closed a year. '+rows.length+' of the '+NB+
+    ' builders and developers on the deck publish a figure; the rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000: a broken bar runs past it, and its figure is printed.',
+    h, tbl, null, 'figClosings',
+    (D.bands_method&&D.bands_method.text?'<div class="bandnote"><span class="lab">The printer-fit bands</span><p>'+
+      esc(D.bands_method.text)+'</p><p class="figsrc">'+(D.bands_method.sources||[]).map(function(s){
+        return '<a class="src" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a>';}).join('')+
+      '</p></div>':''));
 }
 
 /* 2. Track record and named decision-makers, by section. */
@@ -108,7 +123,7 @@ function figOwners(){
     (MK.owners||[]).map(function(o){return '<tr><td>'+esc(o.short)+'</td><td>'+esc(o.line)+'</td><td>'+
       (o.builders.length?o.builders.map(function(b){return esc(b.name);}).join(', '):'none on this screen')+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Land owners and the builders inside their communities',
-    'Left, the masterplan owners screened here; right, the builders each one lists in its communities. A name opens the firm. Howard Hughes lists none of the builders screened.',
+    'Left, the masterplan owners screened here; right, the builders each one lists in its communities. A name opens the firm; a grey name is not on this deck.',
     h, tbl);
 }
 
@@ -452,18 +467,21 @@ function figPlaces(){
     var host=document.getElementById('jurHost'); if(host) host.innerHTML=h;
   };
   return figure('Which jurisdiction issues the permit',
-    P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the ten counties exactly. The top 25 are drawn; all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does; solid bars are a city. On this evidence most single-family permitting in Greater Houston happens outside a city limit.',
+    P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the ten counties exactly. The top 25 are drawn; all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does; solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
+      P.forEach(function(p){a+=p.sf[i]||0; if(/Unincorporated/i.test(p.name)) u+=p.sf[i]||0;});
+      return a?'In '+yrs[i]+', '+fmt(u)+' of '+fmt(a)+' single-family units, '+Math.round(100*u/a)+' percent, were permitted by a county rather than a city.':'';})(),
     body, tbl, psrc('huduser'));
 }
 
-function figure(title,caption,body,table,sources,id){
+function figure(title,caption,body,table,sources,id,extra){
   var src=(sources||[]).map(function(s){
     return '<a class="src" href="'+esc(s.url)+'" target="_blank" rel="noopener">'+esc(s.label)+'</a>';}).join('');
   return '<section class="figs"'+(id?' id="'+id+'"':'')+'><h3>'+esc(title)+'</h3>'+
     '<p class="fcap">'+esc(caption)+'</p>'+
     '<div class="fwrap">'+body+'</div>'+
     (src?'<p class="figsrc"><span class="lab">Source</span>'+src+'</p>':'')+
-    '<details class="ftable"><summary>As a table</summary>'+table+'</details></section>';
+    (extra||'')+
+    '<details class="ftable"'+(NARROW?' open':'')+'><summary>As a table</summary>'+table+'</details></section>';
 }
 
 var W_=W;

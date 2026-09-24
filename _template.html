@@ -5,6 +5,7 @@
 <meta name="description" content="__DESC__">
 <meta name="author" content="Héctor Ibarzábal">
 <title>Rolodex · Greater Houston</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 fill=%22%23FF4F00%22/%3E%3Crect x=%228%22 y=%229%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3Crect x=%228%22 y=%2215%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3Crect x=%228%22 y=%2221%22 width=%2216%22 height=%223%22 fill=%22%23000%22/%3E%3C/svg%3E">
 <style>
 /* Archivo (variable, 400-800) and IBM Plex Mono, latin subset, embedded so the
    file reads the same from disk, offline and in the hosted viewer. */
@@ -17,7 +18,7 @@ __FONTS__
    are the four devices the site actually uses.                            */
 :root{
   --paper:#FFFFFF; --paper2:#FAFAFA; --paper3:#F2F2F2;
-  --ink:#111111; --ink2:#3D3D3D; --ink3:#6B6B6B; --ink4:#8C8C8C;
+  --ink:#111111; --ink2:#3D3D3D; --ink3:#6B6B6B; --ink4:#767676;
   --rule:#E4E4E4; --rule2:#CFCFCF;
   --orange:#FF4F00;
   /* aliases the ported Americas atmosphere reads */
@@ -113,7 +114,8 @@ header.top{padding:56px 0 30px}
 .hero-fig .hlab{font:600 9px var(--mono);letter-spacing:.08em;text-transform:uppercase;fill:var(--ink3)}
 .hero-fig .hdot{fill:var(--ink);stroke:var(--paper);stroke-width:2;paint-order:stroke;cursor:pointer}
 .hero-fig .hdot.partial{fill:var(--ink3)}
-.hero-fig .hdot:hover{fill:var(--orange)}
+.hero-fig .hdot.fail{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.hero-fig .hdot:hover{fill:var(--ink2)}
 .hero-fig .hname{font:600 12px var(--sans);fill:var(--ink)}
 .hero-fig .hname.sub{fill:var(--ink3);font-weight:500}
 .hero-fig .hcap{font:500 12px/1.5 var(--sans);fill:var(--ink3)}
@@ -129,7 +131,10 @@ header.top h1 b{color:var(--ink);font-weight:700}
 header.top .sub{margin:22px 0 0;max-width:62ch;font-size:15px;color:var(--ink2);line-height:1.62}
 header.top .by{margin-top:18px;text-transform:none;letter-spacing:.04em;font-size:11px}
 .stats{display:flex;flex-wrap:wrap;gap:0;margin:34px 0 0;border-top:1px solid var(--ink)}
-.stat{flex:1 1 150px;padding:14px 16px 16px 0;border-right:1px solid var(--rule)}
+.stat{flex:1 1 150px;padding:14px 16px 16px 0;border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;justify-content:flex-start}
+.stat + .stat{padding-left:16px}
+.stat span{min-height:2.7em}
 .stat:last-child{border-right:0}
 .stat b{display:block;font:800 38px/1 var(--sans);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
 .stat span{display:block;margin-top:5px;font:600 9.5px/1.35 var(--mono);letter-spacing:.1em;
@@ -234,10 +239,11 @@ button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
 .chip.printing.i-clear{background:var(--orange);border-color:var(--orange)}
 .chip.printing::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
   background:#fff;margin-left:7px;vertical-align:middle}
-.chip.dim{opacity:.2}
+.chip.dim{opacity:.45}
+.chead b .of{font:500 11px/1 var(--mono);font-style:normal;color:var(--ink3);letter-spacing:0}
 .chip .vol{margin-left:7px;font:500 9.5px/1 var(--mono);font-style:normal;
   color:var(--ink3);font-variant-numeric:tabular-nums}
-.chip.i-clear .vol{color:rgba(255,255,255,.72)}
+.chip.i-clear .vol{color:var(--ink)}
 .chip.printing .vol{color:rgba(255,255,255,.72)}
 .chip.sel{box-shadow:0 0 0 2px var(--ink)}
 .chip:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
@@ -325,7 +331,7 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
   display:inline-flex;align-items:center;justify-content:center;flex:none}
 .arrow svg{width:9px;height:9px}
 .fhead{padding:26px 0 30px;border-bottom:1px solid var(--ink)}
-.fhead h2{margin:0;font-size:clamp(32px,5.4vw,66px)}
+.fhead h1,.fhead h2{margin:0;font-size:clamp(32px,5.4vw,66px)}
 .fhead .kst{margin:16px 0 0;font:600 11px/1.5 var(--mono);letter-spacing:.09em;
   text-transform:uppercase;color:var(--ink3)}
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 0;align-items:center}
@@ -356,6 +362,12 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .dialhead{margin-bottom:2px}
 .dialmain{display:inline-block;font:500 22px/1.25 var(--mono);color:var(--ink);letter-spacing:-.01em}
 .dialmain:hover{text-decoration:underline}
+.mailline{margin:14px 0 0}
+.mailline>a{display:inline-block;font:500 17px/1.3 var(--mono);color:var(--ink);overflow-wrap:anywhere}
+.mailline>a:hover{text-decoration:underline}
+.dialhead+.mailline{margin-top:18px}
+/* an address is case-sensitive to the eye even where it is not to the server */
+.lnk.mail{text-transform:none;letter-spacing:.01em}
 .dialmeta{display:flex;flex-wrap:wrap;align-items:baseline;gap:14px;margin-top:5px}
 .dialmeta .q{font-size:13px;color:var(--ink3)}
 .row{display:grid;grid-template-columns:186px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--rule)}
@@ -375,7 +387,7 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .vv.fail{color:var(--ink3)}
 /* orange means one thing on this page: the firm has paid for an unproven method */
 .why li.inn .vv.clear{background:var(--orange);color:var(--ink);
-  border-radius:2px;padding:3px 7px;margin-left:-7px;display:inline-block;justify-self:start}
+  border-radius:2px;padding:3px 7px;margin-left:0;display:inline-block;justify-self:start}
 .why b{display:block;font:600 13.5px/1.35 var(--sans);margin-bottom:4px}
 .why .tx{display:block;font-size:13.5px;line-height:1.6;color:var(--ink2)}
 
@@ -383,7 +395,7 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .p1{display:grid;grid-template-columns:1fr auto;gap:10px 14px;align-items:start;
   padding:14px 0;border-top:1px solid var(--rule)}
 .p1:first-child{border-top:0}
-.p1.dec{background:var(--paper2);border-radius:3px;padding:14px 12px;margin:0 -12px}
+.p1.dec{background:var(--paper2);border-radius:3px;padding:14px 12px;margin:0}
 .p1 .nm{font:600 15px/1.3 var(--sans);letter-spacing:-.01em}
 .p1 .rl{font-size:13px;color:var(--ink3);margin-top:2px}
 .p1 .rl.warn{color:var(--ink);font-weight:600;margin-top:6px;max-width:60ch}
@@ -418,13 +430,22 @@ ul.flags li{color:var(--ink2)}
 blockquote{margin:0;font-size:19px;line-height:1.5;letter-spacing:-.012em;max-width:62ch}
 blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.1em;
   text-transform:uppercase;color:var(--ink3)}
-.src{display:inline-flex;align-items:center;gap:5px;font:600 9.5px/1 var(--mono);
+.src{display:inline-flex;align-items:center;gap:5px;font:600 9.5px/1.4 var(--mono);
+  overflow-wrap:anywhere;word-break:break-word;min-width:0;max-width:100%;
   letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);border-bottom:1px solid var(--rule2)}
 .src:hover{color:var(--ink);border-color:var(--ink)}
 .note{font-size:13px;line-height:1.6;color:var(--ink3);font-style:italic}
 .addbtn{font:600 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   border:1px solid var(--ink);border-radius:2px;padding:12px 16px;margin-top:26px}
 .addbtn.on{background:var(--ink);color:#fff}
+.fhead .hadd{margin-top:18px}
+.clbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:18px 0 6px}
+.clbar .addbtn{margin:0}
+.cl h3 .fbtn2{font:inherit;padding:0;text-align:left;text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:.15em}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:16px;top:10px;z-index:100;background:var(--ink);color:#fff;padding:10px 14px;
+  font:600 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .clact{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:30px;
   padding-top:24px;border-top:1px solid var(--rule)}
 .clact .addbtn{margin-top:0}
@@ -496,7 +517,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   mask-image:linear-gradient(to right,transparent 0,#000 7%,#000 93%,transparent 100%)}
 .cf-stage.dragging{cursor:grabbing}
 .cf-scene{position:absolute;top:0;left:50%;width:0;height:100%;transform-style:preserve-3d}
-.cf-card{position:absolute;top:50%;left:0;width:300px;height:300px;margin-top:-150px;
+.cf-card{position:absolute;top:50%;left:0;width:min(300px,calc(100vw - 48px));height:300px;margin-top:-150px;
   margin-left:-150px;transform-style:preserve-3d;will-change:transform,opacity;cursor:pointer}
 .cf-card:focus{outline:none}
 .cf-card:focus-visible .tile{outline:2px solid var(--ink);outline-offset:3px}
@@ -518,7 +539,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .cf-card .csyn{font-size:12px;line-height:1.5;color:var(--ink2);position:relative;z-index:2;
   overflow:hidden;flex:1}
 .cf-card .crow{display:flex;gap:4px;position:relative;z-index:2;flex-wrap:wrap}
-.cf-card .crow span{font:700 7.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;
+.cf-card .crow span{font:700 9.5px/1 var(--mono);letter-spacing:.05em;text-transform:uppercase;
   border:1px solid var(--rule2);border-radius:2px;padding:5px 5px;color:var(--ink3);white-space:nowrap}
 .cf-card .crow span.clear{color:var(--ink);border-color:var(--ink3)}
 .cf-card .crow span.m2.clear{background:var(--orange);border-color:var(--orange);color:var(--ink)}
@@ -548,7 +569,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   border:1px solid var(--rule2);border-radius:2px;padding:10px 14px;color:var(--ink2)}
 .cf-btn:hover{border-color:var(--ink);color:var(--ink)}
 .cf-scrub{position:relative;height:3px;width:min(420px,38vw);background:var(--rule)}
-.cf-scrub i{position:absolute;top:-3px;width:3px;height:9px;background:var(--orange);
+.cf-scrub i{position:absolute;top:-3px;width:3px;height:9px;background:var(--ink);
   transition:left 90ms linear}
 .cf-count{font:600 10px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);
   min-width:92px;text-align:center}
@@ -648,8 +669,8 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   vertical-align:.16em;color:var(--ink3)}
 /* The display face on a firm page runs to 56px, where .42em is a 23px icon that
    reads as a button rather than a mark. It scales down, not up. */
-.fhead h2 .hout{width:.26em;height:.26em;margin-left:.26em;vertical-align:.3em}
-.fhead h2 .hlink{text-decoration-thickness:2px;text-underline-offset:.1em}
+.fhead h1 .hout,.fhead h2 .hout{width:.26em;height:.26em;margin-left:.26em;vertical-align:.3em}
+.fhead h1 .hlink,.fhead h2 .hlink{text-decoration-thickness:2px;text-underline-offset:.1em}
 .hlink .hout svg{width:100%;height:100%;display:block}
 .hlink:hover .hout,.hlink:focus-visible .hout{color:var(--ink)}
 
@@ -664,7 +685,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
    swiping to reach, so the counts were unreachable. Each firm is now one
    stacked block: name, then the three counts and the decision-maker as labelled
    chips, with the call-list button in the corner. No sideways scroll at all. */
-@media(max-width:640px){
+@media(max-width:900px){
   #stageList .scroll{overflow-x:visible;border-top:0}
   #stageList table{min-width:0;display:block}
   #stageList thead{display:none}
@@ -774,7 +795,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .fig .grid{stroke:var(--rule);stroke-width:1}
 .fig .axis{stroke:var(--ink);stroke-width:1}
 .fig .tick{stroke:var(--ink3);stroke-width:1}
-.fig .now{stroke:var(--orange);stroke-width:1.5}
+.fig .now{stroke:var(--ink);stroke-width:1.2;stroke-dasharray:4 3}
 .fig .axt{font:500 10px var(--mono);fill:var(--ink3);text-anchor:middle}
 .fig .axs,.fig .axe{font:500 10px var(--mono);fill:var(--ink3);font-variant-numeric:tabular-nums}
 .fig .axs{text-anchor:start}
@@ -789,6 +810,10 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .fig .bar.partial{fill:var(--ink3)}
 .fig .bar.uninc{fill:var(--paper);stroke:var(--ink);stroke-width:1.2}
 .fig .range{stroke:var(--ink3);stroke-width:2}
+.fig .brk{stroke:var(--paper);stroke-width:3;fill:none}
+.bandnote{margin:18px 0 6px;padding:14px 0 0;border-top:1px solid var(--rule);max-width:76ch}
+.bandnote p{margin:6px 0 0;font-size:13.5px;line-height:1.62;color:var(--ink2)}
+.bandnote .figsrc{display:flex;flex-wrap:wrap;gap:6px 14px}
 .fig .seg.clear{fill:var(--orange)}
 .fig .seg.partial{fill:var(--rule2)}
 .fig .seg.fail{fill:var(--paper);stroke:var(--rule2);stroke-width:1}
@@ -802,7 +827,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 .fig .dot{stroke:var(--paper);stroke-width:2;paint-order:stroke}
 .fig .dot.in{fill:var(--ink)}
 .fig .dot.out{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
-.fig .dot.icon{fill:var(--orange)}
+.fig .dot.icon{fill:var(--ink)}
 .fig .evl{font:500 12px var(--sans);fill:var(--ink)}
 .fig [data-tip]{cursor:default}
 .fig .seg[data-seg]{cursor:pointer}
@@ -842,9 +867,11 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 /* call sheet */
 .sheet h2{margin:0 0 6px;font-size:clamp(28px,4.4vw,50px);letter-spacing:-.03em;font-weight:700}
 .cl{padding:26px 0;border-top:1px solid var(--rule)}
+.cl.gone{opacity:.4}
 .cl h3{margin:0 0 8px;font:700 22px/1.15 var(--sans);letter-spacing:-.025em}
 .urlline{font:500 11px/1.5 var(--mono);color:var(--ink3);word-break:break-all;margin-top:5px}
-.clph{font:500 13px/1 var(--mono);color:var(--ink2);margin-left:12px;letter-spacing:-.01em}
+.clph{font:500 13px/1.3 var(--mono);color:var(--ink2);margin-left:12px;letter-spacing:-.01em;
+  overflow-wrap:anywhere;display:inline-block}
 /* The screen views are interactive and do not print. The roster does: it is the
    thing a person carries into a meeting, so it is rendered separately for paper
    and appears on any index view. */
@@ -852,7 +879,8 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 @media print{
   nav,.filters,.legend,#stageMatrix,#stageList,#stageScroll,#stageField,#stageMarket,
   .addbtn,.back,.seg,.cbtn,#q,.rowadd,.grpadd,.ac{display:none!important}
-  body{font-size:10pt}.cl{page-break-inside:avoid}
+  body{font-size:10pt}.cl{page-break-inside:auto}.p1{page-break-inside:avoid}
+  .icons,.clbar,.skip{display:none!important}
   .wrap{max-width:none;padding:0}
   header.top{display:block!important}
   header.top h1{font-size:26pt;color:#111}
@@ -871,6 +899,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 }
 </style>
 </head><body>
+<a class="skip" href="#main">Skip to the firms</a>
 <canvas id="atmos" aria-hidden="true"></canvas>
 <div class="bg" aria-hidden="true"><div class="grain"></div></div>
 
@@ -879,11 +908,12 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   <div class="navsp"></div>
   <div class="navtools">
     <input id="q" type="search" placeholder="Search firm, person, project" aria-label="Search firm, person, project">
-    <div class="seg" role="group" aria-label="View"><button id="vMatrix" aria-pressed="true">Screen</button><button id="vList" aria-pressed="false">List</button><button id="vScroll" aria-pressed="false">Cover</button><button id="vField" aria-pressed="false">Field</button><button id="vMarket" aria-pressed="false">Market</button></div>
+    <div class="seg" role="group" aria-label="View"><button id="vList" aria-pressed="true">List</button><button id="vMatrix" aria-pressed="false">Screen</button><button id="vScroll" aria-pressed="false">Cover</button><button id="vField" aria-pressed="false">Field</button><button id="vMarket" aria-pressed="false">Market</button></div>
   </div>
   <button class="cbtn" id="openCall">Call list<b id="clN">0</b></button>
 </div></nav>
 
+<main id="main" tabindex="-1">
 <div id="stageIndex">
   <div class="wrap">
     <header class="top">
@@ -906,13 +936,13 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   </div>
 
   <div class="wrap" id="stageMatrix">
+    <p class="mzero" id="mzero" role="status" hidden></p>
     <div class="mwrap">
       <div class="ylab" id="ylab"></div>
-      <div class="matrix" id="matrix" role="grid" aria-label="Firms by repetition and machine fit"></div>
+      <div class="matrix" id="matrix" role="group" aria-label="Firms by repetition and machine fit"></div>
     </div>
     <div class="xrow" id="xrow"></div>
     <div class="xtitle" id="xtitle"></div>
-    <p class="mzero" id="mzero" role="status" hidden></p>
     <p class="mnote" id="mnote"></p>
     <section class="comp" id="comp"></section>
     <div class="limits" id="limits"></div>
@@ -938,7 +968,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
     <div class="fhead" style="border-bottom:1px solid var(--ink)">
       <div class="lab">The market</div>
       <h2 class="disp">Greater Houston in figures</h2>
-      <p class="syn" style="margin-top:16px;max-width:76ch">Five figures drawn from the same records as the screen. Each carries its sources, and each has a table under it.</p>
+      <p class="syn" style="margin-top:16px;max-width:76ch">Figures drawn from the same records as the list. Each carries its sources and a table.</p>
     </div>
     <div class="stats mk" id="mkStats"></div>
     <div id="mkBody"></div>
@@ -962,6 +992,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 </div>
 
 <div class="wrap" id="stageFirm"><div id="firmBody"></div></div>
+</main>
 
 <script>
 /* ------------------------------------------------------------------ ground
@@ -1411,7 +1442,8 @@ var GL=D.group_labels||{},GN=D.group_notes||{};
 var AT={repeatability:'Repetition',machine_fit:'Printer fit',innovation:'Track record'};
 T.forEach(function(t){byId[t.target_id]=t;});
 T=T.filter(function(t){return t.group!=='out';});
-var call=[],mode='matrix',q='',view='index',viewing=null;
+try{if(!document.documentElement.lang) document.documentElement.lang='en';}catch(e){}
+var call=[],mode='list',q='',view='index',viewing=null;
 /* The call list is the only thing here a person creates, so it outlives the
    tab. Wrapped because storage throws in a private window and the tool has to
    work anyway. */
@@ -1430,6 +1462,7 @@ var SVG={
  doc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h6"/></svg>',
  globe:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></svg>',
  left:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 5 7 12l7 7"/></svg>',
+ mail:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>',
  phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>'
 };
 /* Ten digits in, one printed form out. Stored bare so nothing downstream has to
@@ -1441,6 +1474,12 @@ function telPill(d,label){
   if(!d) return '';
   return '<a class="lnk" href="tel:+1'+esc(d)+'">'+SVG.phone+esc(dial(d))+
     (label?'<span class="lnkq">'+esc(label)+'</span>':'')+'</a>';
+}
+/* A firm inbox, never a person's address. Same reasoning as tel: above: a
+   mailto: opens the reader's own mail client and is not an external page. */
+function mailPill(a){
+  if(!a) return '';
+  return '<a class="lnk mail" href="mailto:'+esc(a)+'">'+SVG.mail+esc(a)+'</a>';
 }
 function icon(url,kind,title){
   if(!url) return '';
@@ -1472,19 +1511,23 @@ document.getElementById('by').innerHTML='Prepared by '+esc(D.byline.split(' · '
 document.getElementById('hl').innerHTML=D.headline_html;
 document.getElementById('sub').textContent=D.sub;
 (function heroFigure(){
-  var NB=(D.market&&D.market.closings_base)||T.filter(function(t){return t.group!=='trade';}).length;
-  var MK=D.market||{}, rows=(MK.closings||[]).slice(); if(!rows.length) return;
-  var W=1040,H=178,L=8,R=8,axisY=104,max=1200;
+  var NB=(D.market&&D.market.closings_base)||T.filter(function(t){return t.group!=='trade'&&t.group!=='channel';}).length;
+  var MK=D.market||{}, all=(MK.closings||[]).slice(); if(!all.length) return;
+  /* The strip is the bands. A firm above them is not squeezed onto the right
+     edge, which would draw 6,362 where 1,200 is; it is named in the caption. */
+  var CAP=1500, rows=all.filter(function(r){return r.high<=CAP;}),
+      over=all.filter(function(r){return r.high>CAP;}).sort(function(a,b){return b.high-a.high;});
+  var W=1040,H=194,L=8,R=8,axisY=104,max=CAP;
   var X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
   var h='<svg viewBox="0 0 '+W+' '+H+'" role="img">';
   (MK.bands||[]).forEach(function(b,i){
     var x0=X(b[0]),x1=X(Math.min(b[1],max));
     h+='<rect class="hband b'+i+'" x="'+x0+'" y="22" width="'+(x1-x0)+'" height="'+(axisY-22)+'"/>'+
-       '<text class="hlab" x="'+(x0+6)+'" y="14">'+esc(b[2])+(b[1]>max?', to 1,500':'')+'</text>';
+       '<text class="hlab" x="'+(x0+6)+'" y="14">'+esc(b[2])+'</text>';
   });
-  [0,200,400,600,800,1000,1200].forEach(function(v){
+  [0,250,500,750,1000,1250,1500].forEach(function(v){
     h+='<line class="hgrid" x1="'+X(v)+'" y1="22" x2="'+X(v)+'" y2="'+axisY+'"/>'+
-       '<text class="hax" x="'+X(v)+'" y="'+(axisY+16)+'">'+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,',')+'</text>';
+       '<text class="hax" x="'+X(v)+'" y="'+(axisY+16)+'"'+(v===max?' text-anchor="end"':'')+'>'+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,',')+'</text>';
   });
   h+='<line class="hbase" x1="'+L+'" y1="'+axisY+'" x2="'+(W-R)+'" y2="'+axisY+'"/>';
   // dots: spread vertically where firms crowd the same value, so none hides another
@@ -1506,9 +1549,11 @@ document.getElementById('sub').textContent=D.sub;
      '<text class="hname sub" x="'+(lx+6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="start">'+esc(lo.short)+', '+lo.high+' a year</text>';
   h+='<line class="hgrid" x1="'+hx+'" y1="'+(axisY-22-lanes*18)+'" x2="'+hx+'" y2="'+(axisY-24)+'"/>'+
      '<text class="hname" x="'+(hx-6)+'" y="'+(axisY-26-lanes*18)+'" text-anchor="end">'+esc(hi.short)+', '+String(hi.high).replace(/\B(?=(\d{3})+(?!\d))/g,',')+' a year</text>';
-  h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+rows.length+' of the '+NB+
-     ' builders on the deck publish an annual closings figure, each a dot. Solid is a Yes on Printer fit; grey is a Partly.</text>'+
-     '<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
+  h+='<text class="hcap" x="'+L+'" y="'+(axisY+40)+'">'+all.length+' of the '+NB+
+     ' builders and developers on the deck publish an annual closings figure. Solid is a Yes on Printer fit, grey a Partly, hollow a No.</text>'+
+     (over.length?'<text class="hcap" x="'+L+'" y="'+(axisY+56)+'">Above 1,500 and off this strip: '+
+       over.map(function(r){return esc(r.short)+' '+String(r.high).replace(/\B(?=(\d{3})+(?!\d))/g,',');}).join(', ')+'.</text>':'')+
+     '<text class="hcap" x="'+L+'" y="'+(axisY+(over.length?72:56))+'">The bands are an assumption. How they were set, and every source, is on the Market view.</text>';
   h+='</svg>';
   document.getElementById('heroFig').innerHTML=h;
 })();
@@ -1531,8 +1576,9 @@ function drawStats(){
   }).join('');
 }
 function statOn(f){
-  if(f.dec) return F.dec===f.dec;
-  if(f.group) return F.group.length===1&&F.group[0]===f.group[0];
+  var bare=!q&&!F.count.length&&!F.ph;
+  if(f.dec) return bare&&!F.group.length&&F.dec===f.dec;
+  if(f.group) return bare&&!F.dec&&F.group.length===1&&F.group[0]===f.group[0];
   return false;
 }
 drawStats();
@@ -1542,8 +1588,18 @@ document.getElementById('stats').addEventListener('click',function(e){
   var was=f?statOn(f):false;
   clearFilters(); q=''; var si=document.getElementById('q'); if(si) si.value='';
   if(f&&!was){ if(f.dec) F.dec=f.dec; if(f.group) F.group=f.group.slice(); mode='list'; }
-  goIndex(); render();
+  if(view!=='index') goIndex();
+  render(); toTool();
 });
+/* Build 66. With the masthead above the List, the first result sat 1,100px
+   below the stat that asked for it. After a stat or a search the page scrolls
+   so the filter bar sits under the navigation, with the results below it. */
+function toTool(){
+  var f=document.getElementById('filters'); if(!f||f.hidden) return;
+  var nav=document.querySelector('nav'), top=f.getBoundingClientRect().top+window.scrollY-
+    (nav?nav.getBoundingClientRect().height:0)-8;
+  if(top>window.scrollY+40||top<window.scrollY-40) window.scrollTo(0,Math.max(0,top));
+}
 document.getElementById('limits').innerHTML=D.limits.map(function(l){
   return '<div class="lim"><b>'+esc(l[0])+'</b><span>'+esc(l[1])+'</span></div>';}).join('');
 document.getElementById('foot').innerHTML=esc(D.byline);
@@ -1560,11 +1616,16 @@ document.getElementById('legend').innerHTML=
   '<i><span class="sw k"></span>already buying printed walls</i>'+
   '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed.</i>';
 
-T.forEach(function(t){t._b=[t.entity_name,t.short,t.region,t.synopsis,t.key_stat,t.mvp_screen,
+function norm(s){
+  s=String(s||'').toLowerCase();
+  try{s=s.normalize('NFD').replace(/[\u0300-\u036f]/g,'');}catch(e){}
+  return s.replace(/[.\u2019'\u2018,&-]/g,'').replace(/\s+/g,' ');
+}
+T.forEach(function(t){t._b=norm([t.entity_name,t.short,t.region,t.synopsis,t.key_stat,t.mvp_screen,
   (t.principals||[]).map(function(p){return p.name+' '+p.role;}).join(' '),
   (t.key_projects||[]).map(function(p){return p.name+' '+p.detail+' '+p.fit_signal;}).join(' ')
-].join(' ').toLowerCase();});
-function textHit(t){return !q||t._b.indexOf(q)>=0;}
+].join(' '));});
+function textHit(t){return !q||t._b.indexOf(norm(q))>=0;}
 function hit(t){return textHit(t)&&inFilters(t);}
 
 /* ----------------------------------------------------------------- matrix */
@@ -1584,9 +1645,12 @@ function drawMatrix(){
       var y=ORD[yi],x=ORD[xi],key=x+'|'+y;
       var rows=T.filter(function(t){return t.cell===key;}).sort(volSort);
       var best=(x==='clear'&&y==='clear');
-      html+='<div class="cell'+(best?' best':'')+'" role="gridcell" aria-label="'+
+      /* Build 66. With filters on, the counter said 7 of 127 and the cells still
+         summed to 127. A cell now says how many of its firms are showing. */
+      var on=rows.filter(hit).length, fil=(on!==rows.length)||q||activeFilters().length;
+      html+='<div class="cell'+(best?' best':'')+'" role="group" aria-label="'+
         'Repetition '+W[x]+', Printer fit '+W[y]+', '+rows.length+' firms">'+
-        '<div class="chead"><b>'+rows.length+'</b><span>Repetition '+W[x]+' &middot; Printer fit '+W[y]+'</span></div>'+
+        '<div class="chead"><b>'+(fil?on+'<i class="of"> of '+rows.length+'</i>':rows.length)+'</b><span>Repetition '+W[x]+' &middot; Printer fit '+W[y]+'</span></div>'+
         '<div class="chips">'+rows.map(function(t){
           var al=t.entity_name+'. Repetition '+W[t.marks.repeatability]+
             ', Printer fit '+W[t.marks.machine_fit]+
@@ -1622,8 +1686,16 @@ function drawMatrix(){
 function drawSupply(){
   var el=document.getElementById('supplyBody'); if(!el) return;
   var sup=D.supply||[];
-  var showing=(!F.group.length||F.group.indexOf('trade')>=0);
+  /* Build 66. These are not roster firms, so the count and contact filters
+     have nothing to say about them and hide them. A search runs over them too:
+     "No match" above a list of 43 names was the page contradicting itself. */
+  var showing=(!F.group.length||F.group.indexOf('trade')>=0)&&!F.count.length&&!F.dec&&!F.ph;
   if(!sup.length||!showing){ el.innerHTML=''; return; }
+  var nq=q?norm(q):'';
+  var sHit=function(s){return !nq||norm([s.name,s.region,s.line,s.why,
+      (s.people||[]).map(function(p){return p.name+' '+p.role;}).join(' ')].join(' ')).indexOf(nq)>=0;};
+  var nHit=function(n){return !nq||norm([n.name,n.region,n.note].join(' ')).indexOf(nq)>=0;};
+  sup=sup.filter(sHit);
   var SL=D.supply_labels||{}, SN=D.supply_notes||{}, h='';
   ['node','crew'].forEach(function(kind){
     var rows=sup.filter(function(s){return s.kind===kind;});
@@ -1643,7 +1715,7 @@ function drawSupply(){
           (s.note?'<p class="note">'+esc(s.note)+'</p>':'')+
           '</li>';}).join('')+'</ul></section>';
   });
-  var ns=D.no_site||[];
+  var ns=(D.no_site||[]).filter(nHit);
   if(ns.length){
     h+='<section class="sup"><div class="lab">Publishes no website &middot; '+ns.length+'</div>'+
        '<p class="supnote">'+esc(D.no_site_note||'')+'</p><ul class="nosite">'+
@@ -1671,7 +1743,9 @@ function drawList(){
     var allIn=rows.every(function(t){return call.indexOf(t.target_id)>=0;});
     h+='<tr class="grp"><td colspan="7">'+esc(g[1])+' &middot; '+rows.length+
        (g[2]?'<em>'+esc(g[2])+'</em>':'')+
-       '<button class="grpadd" data-addmany="'+ids+'">'+(allIn?'Remove all':'Add all')+'</button>'+
+       '<button class="grpadd" data-addmany="'+ids+'" aria-pressed="'+allIn+'" aria-label="'+
+         (allIn?'Remove all ':'Add all ')+esc(g[1])+(allIn?' from':' to')+' the call list">'+
+         (allIn?'Remove all':'Add all')+'</button>'+
        '</td></tr>';
     /* The contractor section reads in the order a wall gets made. A flat list
        of 51 firms hides the thing worth seeing, which is that the first
@@ -1743,7 +1817,7 @@ function personRow(p,compact,grp){
    page behind it is the thing the layer exists to prevent. */
 function phoneBlock(t){
   var more=t.phone_more||[];
-  if(!t.phone && !more.length && !t.phone_absent) return '';
+  if(!t.phone && !more.length && !t.phone_absent && !t.email) return '';
   var h='';
   if(t.phone){
     h+='<div class="dialhead"><a class="dialmain" href="tel:+1'+esc(t.phone)+'">'+
@@ -1765,6 +1839,13 @@ function phoneBlock(t){
            (m.label?'<span class="q">'+esc(m.label)+'</span>':'')+'</li>';}).join('')+
        '</ul></details>';
   }
+  if(t.email){
+    h+='<div class="mailline"><a href="mailto:'+esc(t.email)+'">'+esc(t.email)+'</a>'+
+       '<div class="dialmeta">'+
+         (t.email_label?'<span class="q">'+esc(t.email_label)+'</span>':'')+
+         src(t.email_source,'where this is published')+
+       '</div></div>';
+  }
   if(t.phone_note) h+='<p class="note">'+esc(t.phone_note)+'</p>';
   if(t.phone_absent) h+='<p class="note">'+esc(t.phone_absent)+'</p>';
   return h;
@@ -1784,7 +1865,8 @@ function firmPage(t){
     ?'<a class="hlink" href="'+esc(t.homepage_url)+'" target="_blank" rel="noopener">'+
       esc(t.entity_name)+'<span class="hout">'+SVG.out+'</span></a>'
     :esc(t.entity_name);
-  h.push('<div class="fhead"><h2 class="disp">'+fnm+'</h2>'+
+  var inTop=call.indexOf(t.target_id)>=0;
+  h.push('<div class="fhead"><h1 class="disp">'+fnm+'</h1>'+
     (t.key_stat?'<div class="kst">'+esc(t.key_stat)+'</div>':'')+
     '<div class="tags">'+
       '<span class="tag k">'+esc(D.group_labels[t.group])+'</span>'+
@@ -1800,7 +1882,13 @@ function firmPage(t){
       pill(t.company_li,'li','LinkedIn')+
       pill(t.team_url,'out','Leadership page')+
       telPill(t.phone,t.phone_label)+
-    '</div></div>');
+      mailPill(t.email)+
+    '</div>'+
+    /* Build 66. The call-list button sat only at the foot of the page, about
+       2,400px below the name. It is here as well, beside what it acts on. */
+    '<button class="addbtn hadd'+(inTop?' on':'')+'" data-add="'+t.target_id+'" aria-pressed="'+inTop+'">'+
+      (inTop?'Remove from call list':'Add to call list')+'</button>'+
+    '</div>');
 
   h.push(section('The screen','<p class="verdict">'+esc(t.mvp_screen)+'</p>'));
   if(t.channel_line){
@@ -1834,7 +1922,7 @@ function firmPage(t){
     h.push(section('Who to call','<p class="verdict">Nobody is published.</p>'+
       '<p class="note">'+esc(t.people_absent)+'</p>'));
   }
-  h.push(section('Phone numbers',phoneBlock(t)));
+  h.push(section(t.email?(t.phone||(t.phone_more||[]).length?'Phone and email':'Email'):'Phone numbers',phoneBlock(t)));
 
   if((t.key_projects||[]).length){
     h.push(section('Evidence',t.key_projects.map(function(p){
@@ -1858,36 +1946,38 @@ function firmPage(t){
   }).join('')+'</ul>'));
 
   var inList=call.indexOf(t.target_id)>=0;
-  h.push('<button class="addbtn'+(inList?' on':'')+'" data-add="'+t.target_id+'">'+
+  h.push('<button class="addbtn'+(inList?' on':'')+'" data-add="'+t.target_id+'" aria-pressed="'+inList+'">'+
     (inList?'Remove from call list':'Add to call list')+'</button>');
   return h.join('');
 }
 
 function callPage(){
   var h=['<button class="back" id="back"><span class="arrow">'+SVG.left+'</span>All firms</button>'];
-  h.push('<div class="fhead"><h2 class="disp">Call list</h2><div class="kst">'+
+  h.push('<div class="fhead"><h1 class="disp">Call list</h1><div class="kst">'+
     call.length+' firm'+(call.length===1?'':'s')+' &middot; '+esc(D.byline)+'</div></div>');
   if(!call.length){
     h.push('<p class="empty">Add firms from any view with the + on a row or the button on a firm page. '+
       'The sheet prints, and exports to Excel, with names, roles and links.</p>');
   }else{
+    h.push('<div class="clbar">'+
+      '<button class="addbtn on" id="clXlsx">Download Excel</button>'+
+      '<button class="addbtn" id="clPrint">Print call sheet</button>'+
+      '<button class="addbtn" id="clClear">Clear the list</button>'+
+      '<p class="xnote" id="xnote" role="status" hidden></p></div>');
     h.push(call.map(function(id){var t=byId[id];
       /* The number as plain text, because this sheet gets printed and a printed
          hyperlink is useless. Same reason .urlline prints the URLs below. */
-      return '<div class="cl"><h3>'+esc(t.entity_name)+
+      return '<div class="cl"><h3><button class="fbtn2" data-id="'+id+'">'+esc(t.entity_name)+'</button>'+
         (t.phone?'<span class="clph">'+esc(dial(t.phone))+
           (t.phone_label?' &middot; '+esc(t.phone_label):'')+'</span>':'')+
+        (t.email?'<span class="clph">'+esc(t.email)+'</span>':'')+
         '</h3><p class="syn">'+esc(t.mvp_screen)+'</p>'+
         whyList(t)+
         t.principals.slice().sort(function(x,y){return (y.decider?1:0)-(x.decider?1:0);})
           .map(function(p){return personRow(p,true,t.group)+
             '<div class="urlline">'+esc(p.linkedin_url||p.source_url||p.find_url||'')+'</div>';}).join('')+
-        '<button class="addbtn" data-add="'+id+'">Remove</button></div>';}).join(''));
-    h.push('<div class="clact">'+
-      '<button class="addbtn on" id="clXlsx">Download Excel</button>'+
-      '<button class="addbtn" id="clPrint">Print call sheet</button>'+
-      '<button class="addbtn" id="clClear">Clear the list</button>'+
-      '<p class="xnote" id="xnote" role="status" hidden></p></div>');
+        '<button class="addbtn" data-add="'+id+'" aria-pressed="true" aria-label="Remove '+
+          esc(t.entity_name)+' from the call list">Remove</button></div>';}).join(''));
   }
   return h.join('');
 }
@@ -1919,7 +2009,7 @@ function goIndex(fromPop){
   if(!fromPop&&view==='firm'&&history.state&&history.state.v==='firm'){history.back();return;}
   view='index';viewing=null;swap();
   if(returnTo&&document.body.contains(returnTo)){returnTo.focus();returnTo=null;}
-  else{var m=document.getElementById('vMatrix'); if(m) m.focus();}
+  else{var m=document.querySelector('.seg[aria-label=View] button[aria-pressed="true"]'); if(m) m.focus({preventScroll:true});}
 }
 function swap(){
   document.getElementById('stageIndex').hidden=(view!=='index');
@@ -1933,17 +2023,23 @@ function swap(){
    that is present whenever anything is on. Five controls: the guidance is that
    a filter bar past about seven controls stops being read, and the seventeen
    chips this replaced were only ever visible on one of the four views. */
-var F={group:[],count:[],dec:''};
+var F={group:[],count:[],dec:'',ph:false};
 
+/* Build 66. Two choices on one count read as "Yes or Partly", which is how the
+   page's own rule reads them. They used to combine with AND, so ticking Yes
+   greyed out Partly and No on the same count. Choices on different counts still
+   combine with AND. */
 function inFilters(t){
   if(F.group.length&&F.group.indexOf(t.group)<0) return false;
   if(F.dec==='any'&&!t.has_decider) return false;
   if(F.dec==='ok'&&!t.decider_confirmed) return false;
   if(F.dec==='chk'&&!t.decider_caveat) return false;
+  if(F.ph&&!(t.phone||t.email)) return false;
+  var ax={};
   for(var i=0;i<F.count.length;i++){
-    var p=F.count[i].split(':');
-    if(t.marks[p[0]]!==p[1]) return false;
+    var p=F.count[i].split(':'); (ax[p[0]]=ax[p[0]]||[]).push(p[1]);
   }
+  for(var k in ax){ if(ax[k].indexOf(t.marks[k])<0) return false; }
   return true;
 }
 function activeFilters(){
@@ -1954,9 +2050,10 @@ function activeFilters(){
   if(F.dec==='any') out.push(['dec','Named decision-maker']);
   if(F.dec==='ok') out.push(['dec','Named and confirmed']);
   if(F.dec==='chk') out.push(['dec','Named, needs confirming']);
+  if(F.ph) out.push(['ph','Phone or email published']);
   return out;
 }
-function clearFilters(){F={group:[],count:[],dec:''};}
+function clearFilters(){F={group:[],count:[],dec:'',ph:false};}
 
 var AXN={repeatability:'Repetition',machine_fit:'Printer fit',innovation:'Track record'};
 var FMENU=null;
@@ -1972,15 +2069,23 @@ document.addEventListener('click',function(e){
   if(!e.target.closest('.fsel')) closeMenu();
 },true);
 document.addEventListener('keydown',function(e){
-  if(e.key==='Escape'&&FMENU){e.stopPropagation();closeMenu();}
+  if(!FMENU) return;
+  if(e.key==='Escape'){var tb=FMENU.querySelector('button');e.stopPropagation();closeMenu();
+    if(tb) tb.focus();return;}
+  if(e.key==='ArrowDown'||e.key==='ArrowUp'){
+    var bs=[].slice.call(FMENU.querySelectorAll('.fmenu button:not([disabled])'));
+    if(!bs.length) return; e.preventDefault();
+    var i=bs.indexOf(document.activeElement);
+    i=(i<0)?0:(i+(e.key==='ArrowDown'?1:-1)+bs.length)%bs.length; bs[i].focus();}
 },true);
 
 /* Counts are taken against everything else currently applied, so a menu never
    offers a choice that would return nothing. */
 function optionCount(kind,key){
-  var save={group:F.group.slice(),count:F.count.slice(),dec:F.dec};
+  var save={group:F.group.slice(),count:F.count.slice(),dec:F.dec,ph:F.ph};
   if(kind==='group'){if(save.group.indexOf(key)<0) save.group=save.group.concat([key]);}
   else if(kind==='count'){if(save.count.indexOf(key)<0) save.count=save.count.concat([key]);}
+  else if(kind==='ph') save.ph=true;
   else save.dec=key;
   var keep=F;F=save;
   var n=T.filter(function(t){return inFilters(t)&&textHit(t);}).length;
@@ -2001,6 +2106,7 @@ function menuFor(kind,axis){
     rows.push(['dec','Named decision-maker', F.dec==='any', optionCount('dec','any')]);
     rows.push(['dec2','Named and confirmed', F.dec==='ok', optionCount('dec','ok')]);
     rows.push(['dec3','Named, needs confirming', F.dec==='chk', optionCount('dec','chk')]);
+    rows.push(['ph','Phone or email published', F.ph, optionCount('ph',true)]);
   }
   return '<div class="fmenu" id="fmenu" role="group">'+rows.map(function(r){
     return '<button role="checkbox" aria-checked="'+r[2]+'" data-f="'+r[0]+'"'+
@@ -2012,14 +2118,14 @@ function drawFilterBar(){
             ['count','repeatability','Repetition'],
             ['count','machine_fit','Printer fit'],
             ['count','innovation','Track record'],
-            ['dec',null,'Decision-maker']];
+            ['dec',null,'Contact']];
   var bar=defs.map(function(d){
     var n=0;
     if(d[0]==='group') n=F.group.length;
     else if(d[0]==='count') n=F.count.filter(function(k){return k.indexOf(d[1]+':')===0;}).length;
-    else n=F.dec?1:0;
+    else n=(F.dec?1:0)+(F.ph?1:0);
     return '<div class="fsel" data-kind="'+d[0]+'" data-axis="'+(d[1]||'')+'">'+
-      '<button aria-expanded="false" aria-haspopup="true">'+esc(d[2])+
+      '<button aria-expanded="false" aria-controls="fmenu">'+esc(d[2])+
       (n?'<span class="nsel">'+n+'</span>':'')+'<span class="car">▼</span></button></div>';
   }).join('');
   var shown=T.filter(function(t){return inFilters(t)&&textHit(t);}).length;
@@ -2140,7 +2246,7 @@ function buildXlsx(rows,widths,sheetName){
 var XCOLS=[['Firm',30],['Section',22],['Repetition',12],['Printer fit',11],['Track record',13],
            ['Region',24],['Headline figure',34],['Contact',22],['Title',34],['Decides the wall',15],
            ['Status',16],['LinkedIn',46],['Named on',46],['Website',34],['The screen',60],
-           ['Phone',18],['Phone label',26],['Phone source',46]];
+           ['Phone',18],['Phone label',26],['Phone source',46],['Email',32],['Email source',46]];
 function exportRows(list){
   var rows=[XCOLS.map(function(c){return c[0];})];
   list.forEach(function(t){
@@ -2149,7 +2255,8 @@ function exportRows(list){
     /* Firm-level, so it rides on every row for that firm and on the empty row
        too. The three cells stay together: a number with no source beside it is
        not something this file ships. */
-    var ph=[t.phone?dial(t.phone):'', t.phone_label||'', t.phone_source||''];
+    var ph=[t.phone?dial(t.phone):'', t.phone_label||'', t.phone_source||'',
+            t.email||'', t.email_source||''];
     var ppl=(t.principals||[]).slice().sort(function(a,b){return (b.decider?1:0)-(a.decider?1:0);});
     if(!ppl.length){
       rows.push(base.concat(['','','','No contact published','','',t.homepage_url||'',
@@ -2344,7 +2451,7 @@ function drawField(){
       '<div class="scroll"><table class="ctab"><thead><tr><th>Question</th><th>Answer</th><th>Source</th></tr></thead><tbody>'+
       K.items.map(function(k){return row(k.q,k.a,k.url,k.source);}).join('')+'</tbody></table></div>'+
       '<div class="lab" style="margin-top:34px">Precedent</div>'+
-      '<div class="scroll"><table class="ctab"><thead><tr><th>Project</th><th>Where</th><th>Permitted and built</th><th>Source</th></tr></thead><tbody>'+
+      '<div class="scroll"><table class="ctab"><thead><tr><th>Project</th><th>Where</th><th>Status</th><th>Source</th></tr></thead><tbody>'+
       (K.precedent||[]).map(function(p){return '<tr><td class="q">'+esc(p.project)+'</td><td>'+esc(p.where)+'</td><td>'+esc(p.what)+
         '</td><td class="s"><a class="src" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.source)+'</a></td></tr>';}).join('')+
       '</tbody></table></div>'+
@@ -2356,7 +2463,26 @@ function drawField(){
   document.getElementById('fieldBody').innerHTML=h;
 }
 
-function render(){
+/* Build 66. Every redraw rebuilds the controls a keyboard user was on, and
+   focus fell back to the page body: after a + on a row, a filter option, a
+   stat. The active control is identified by the attribute that makes it what
+   it is, and the new one with the same attribute takes focus. */
+var FKEYS=['data-add','data-addmany','data-f','data-rm','data-stat','data-id','data-seg'];
+function focusKey(){
+  var a=document.activeElement; if(!a||a===document.body) return null;
+  if(a.id) return ['#'+a.id];
+  for(var i=0;i<FKEYS.length;i++){var v=a.getAttribute&&a.getAttribute(FKEYS[i]);
+    if(v!==null&&v!==undefined) return ['['+FKEYS[i]+'="'+v.replace(/"/g,'\\"')+'"]',a.tagName];}
+  return null;
+}
+function refocus(k){
+  if(!k) return; var a=document.activeElement;
+  if(a&&a!==document.body&&document.body.contains(a)) return;
+  var el=null; try{el=document.querySelector(k[0]);}catch(e){}
+  if(el&&el.offsetParent!==null) el.focus({preventScroll:true});
+}
+function render(){ var fk=focusKey(); renderNow(); refocus(fk); }
+function renderNow(){
   if(mode==='matrix') drawMatrix();
   else if(mode==='list') drawList();
   else if(mode==='scroll') drawScroll();
@@ -2383,10 +2509,12 @@ function render(){
   var qb=document.getElementById('q');
   qb.disabled=(mode==='field'||mode==='market');
   qb.placeholder=qb.disabled?'Search does not apply here':'Search firm, person, project';
-  // the masthead belongs to the screen. The working views start at the tool.
-  // The masthead frames the screen. On the working views it is 400px of scroll
-  // between the reader and the data.
-  document.querySelector('header.top').hidden=(mode!=='matrix');
+  // The masthead says what the document is, and the stat strip is a filter on
+  // the roster, so both sit above the two roster views. Build 65 opened the page
+  // on the List, and with the masthead tied to the Screen alone the first thing a
+  // reader saw was a table with no title. Cover, Field and Market start at the
+  // content, where 400px of masthead is only scroll.
+  document.querySelector('header.top').hidden=!(mode==='matrix'||mode==='list');
   document.getElementById('vMatrix').setAttribute('aria-pressed',mode==='matrix');
   document.getElementById('vList').setAttribute('aria-pressed',mode==='list');
   document.getElementById('vField').setAttribute('aria-pressed',mode==='field');
@@ -2449,6 +2577,7 @@ document.addEventListener('click',function(e){
   if(rm){var r=rm.dataset.rm;
     if(r==='q'){q='';document.getElementById('q').value='';}
     else if(r==='dec') F.dec='';
+    else if(r==='ph') F.ph=false;
     else{var pp=r.split(':'),ar=F[pp[0]],kk=r.slice(pp[0].length+1),ix=ar.indexOf(kk);
       if(ix>=0) ar.splice(ix,1);}
     render();return;}
@@ -2468,6 +2597,7 @@ document.addEventListener('click',function(e){
     if(v==='dec') F.dec=(F.dec==='any'?'':'any');
     else if(v==='dec2') F.dec=(F.dec==='ok'?'':'ok');
     else if(v==='dec3') F.dec=(F.dec==='chk'?'':'chk');
+    else if(v==='ph') F.ph=!F.ph;
     else{var p=v.split(':'),arr=F[p[0]],key=v.slice(p[0].length+1),i=arr.indexOf(key);
       if(i>=0) arr.splice(i,1); else arr.push(key);}
     var host=fb.closest('.fsel');
@@ -2478,7 +2608,8 @@ document.addEventListener('click',function(e){
       if(again){again.classList.add('open');
         again.querySelector('button').setAttribute('aria-expanded','true');
         again.insertAdjacentHTML('beforeend',menuFor(again.dataset.kind,again.dataset.axis));
-        FMENU=again;}
+        FMENU=again;
+        var nb=again.querySelector('[data-f="'+v+'"]'); if(nb) nb.focus({preventScroll:true});}
     }
     return;}
   if(el.closest('#cfPrev')){cfStep(-1);return;}
@@ -2494,7 +2625,20 @@ document.addEventListener('click',function(e){
     if(i>=0) call.splice(i,1); else call.push(id);
     saveCall();
     if(ad.classList.contains('rowadd')){render();return;}
-    render(); if(viewing==='__call') openCall(); else openFirm(id); return;}
+    /* Build 66. This used to rebuild the firm page or the call sheet, which
+       scrolled to the top, added a history entry and dropped focus. It now
+       changes the buttons in place. Removing a firm from the sheet removes its
+       block. */
+    var inn=call.indexOf(id)>=0;
+    document.querySelectorAll('[data-add="'+id+'"]').forEach(function(b){
+      if(b.classList.contains('rowadd')) return;
+      b.classList.toggle('on',inn); b.setAttribute('aria-pressed',inn);
+      b.textContent=viewing==='__call'?(inn?'Remove':'Add back'):(inn?'Remove from call list':'Add to call list');
+    });
+    document.getElementById('clN').textContent=call.length;
+    document.getElementById('openCall').classList.toggle('on',call.length>0);
+    if(viewing==='__call'&&!inn){var blk=ad.closest('.cl'); if(blk) blk.classList.add('gone');}
+    render(); return;}
   var sg=el.closest('[data-seg]');
   if(sg){showSegment(sg.dataset.seg);return;}
   if(el.id==='segClose'){var sb=document.getElementById('segList');if(sb){sb.hidden=true;} SEG_OPEN=null;
@@ -2511,11 +2655,16 @@ document.addEventListener('keydown',function(e){
   if(e.key==='Escape'&&view==='firm'){goIndex();return;}
   var ae=document.activeElement, typing=ae&&(ae.tagName==='INPUT'||ae.tagName==='TEXTAREA');
   if((e.key==='Enter'||e.key===' ')&&ae&&ae.dataset&&ae.dataset.seg){e.preventDefault();showSegment(ae.dataset.seg);return;}
-  if(mode==='scroll'&&view==='index'&&!typing&&(e.key==='Enter'||e.key===' ')){
+  /* Build 66. Enter and Space open the card only when focus is on a card or on
+     nothing in particular. They used to open it from any control on the page,
+     so Next, the view buttons and the call list all opened a firm instead. */
+  var onCv=ae&&ae.classList&&ae.classList.contains('cf-card');
+  var idle=!ae||ae===document.body||ae.id==='main';
+  if(mode==='scroll'&&view==='index'&&!typing&&(onCv||idle)&&(e.key==='Enter'||e.key===' ')){
     var fc=cfArr[cfFocus]; if(fc){e.preventDefault();openFirm(fc.target_id);return;}
   }
   if(e.key.slice(0,5)!=='Arrow') return;
-  if(mode==='scroll'&&view==='index'&&!typing){
+  if(mode==='scroll'&&view==='index'&&!typing&&(onCv||idle||(ae&&ae.closest&&ae.closest('#stageScroll')))){
     var onCard=ae&&ae.classList&&ae.classList.contains('cf-card');
     if(e.key==='ArrowRight'){e.preventDefault();cfStep(1,onCard);return;}
     if(e.key==='ArrowLeft'){e.preventDefault();cfStep(-1,onCard);return;}
@@ -2604,7 +2753,8 @@ function lastChip(cells,i,step){
 var tmr;
 document.getElementById('q').addEventListener('input',function(e){
   clearTimeout(tmr);var v=e.target.value.toLowerCase().trim();
-  tmr=setTimeout(function(){q=v;if(view!=='index')goIndex();render();},110);
+  tmr=setTimeout(function(){var was=q;q=v;if(view!=='index')goIndex();render();
+    if(v&&!was) toTool();},110);
 });
 __MARKET__
 render();
@@ -2615,8 +2765,10 @@ render();
    that are free to change. */
 window.rolodex={
   data:D, firms:T,
-  filters:function(){return {group:F.group.slice(),count:F.count.slice(),dec:F.dec,q:q};},
+  filters:function(){return {group:F.group.slice(),count:F.count.slice(),dec:F.dec,ph:F.ph,q:q};},
   shown:function(){return T.filter(hit);},
+  setFilters:function(f){f=f||{};F={group:(f.group||[]).slice(),count:(f.count||[]).slice(),
+    dec:f.dec||'',ph:!!f.ph};render();return this.filters();},
   callList:function(){return call.slice();},
   setCallList:function(ids){call=(ids||[]).filter(function(i){return byId[i];});
     saveCall();render();return call.slice();},
