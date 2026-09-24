@@ -984,7 +984,9 @@ async def main():
         await pg.evaluate("document.getElementById('vMarket').click()")
         await pg.wait_for_timeout(400)
         figs = await pg.locator(".figs:not(.method)").count()
-        tabs = await pg.locator(".figs .ftable table").count()
+        # Build 67. The timeline is an ordered list, which is its own table.
+        tabs = (await pg.locator(".figs .ftable table").count()
+                + await pg.locator(".figs ol.tline").count())
         bars = await pg.locator("#mkBody .figs .fig .bar").count()
         print("market figures  :", figs, "| tables", tabs, "| closing bars", bars)
         if figs != 9 or tabs != 9:
@@ -1138,7 +1140,12 @@ async def main():
         await pg.wait_for_timeout(500)
 
         # a segment opens the firms it counts, and the list survives an add
-        await pg.click('.fig .seg[data-seg="a:partial"]', position={"x": 100, "y": 10})
+        # Build 67. Clicked at its centre: a fixed x of 100 fell off the segment
+        # once the section held one firm fewer.
+        _sg = pg.locator('.fig .seg[data-seg="a:partial"]')
+        await _sg.scroll_into_view_if_needed()
+        _bb = await _sg.bounding_box()
+        await pg.mouse.click(_bb["x"] + _bb["width"] / 2, _bb["y"] + _bb["height"] / 2)
         await pg.wait_for_timeout(300)
         seg_rows = await pg.locator("#segList .segrow").count()
         want_seg = sum(1 for t in D["targets"] if t["group"] == "a" and t["marks"]["innovation"] == "partial")
@@ -1219,6 +1226,102 @@ async def main():
                     problems.append("a list cell prints its label with nothing under it at %dpx" % w)
                 await pg.evaluate("document.getElementById('vMatrix').click()")
                 await pg.wait_for_timeout(200)
+
+        # Build 67. The timeline. Every event has its own row beside its date,
+        # rows never overlap, today falls between the right two events, and the
+        # Market view does not scroll sideways on a phone.
+        for w in (1280, 390):
+            await pg.set_viewport_size({"width": w, "height": 900})
+            await pg.evaluate("document.getElementById('vMarket').click()")
+            await pg.wait_for_timeout(350)
+            tl = await pg.evaluate(
+                "(()=>{const L=[...document.querySelectorAll('ol.tline li:not(.tnow)')];"
+                "let ov=0;const all=[...document.querySelectorAll('ol.tline li')];"
+                "for(let i=1;i<all.length;i++){if(all[i].getBoundingClientRect().top<"
+                "all[i-1].getBoundingClientRect().bottom-0.5)ov++;}"
+                "const n=document.querySelectorAll('ol.tline li.tnow').length;"
+                "return {rows:L.length,ov:ov,now:n,sw:document.documentElement.scrollWidth,"
+                "cw:document.documentElement.clientWidth}})()")
+            print("timeline at %-4d: %d rows, %d overlaps, today marks %d, width %d of %d"
+                  % (w, tl["rows"], tl["ov"], tl["now"], tl["sw"], tl["cw"]))
+            if tl["rows"] != len(D["market"]["timeline"]):
+                problems.append("the timeline drops events")
+            if tl["ov"]:
+                problems.append("timeline rows overlap at %dpx" % w)
+            if tl["now"] != 1:
+                problems.append("the timeline does not mark today once")
+            if tl["sw"] > tl["cw"] + 1:
+                problems.append("the Market view scrolls sideways at %dpx" % w)
+        await pg.set_viewport_size({"width": 1280, "height": 900})
+
+        # Build 67. Dark theme. It follows the system setting, the toggle flips
+        # it and remembers, and the text that matters keeps its contrast: body
+        # ink on paper, grey on paper, dark text on the orange, and the ink
+        # button's label. Print is the light theme whatever the screen shows.
+        def _lum(rgb):
+            import re as _re
+            v = [int(x) / 255 for x in _re.findall(r"\d+", rgb)[:3]]
+            v = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in v]
+            return 0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]
+
+        def _cr(a, b):
+            la, lb = sorted((_lum(a), _lum(b)), reverse=True)
+            return (la + 0.05) / (lb + 0.05)
+
+        dctx = await b.new_context(viewport={"width": 1280, "height": 900}, color_scheme="dark")
+        dp = await dctx.new_page()
+        derr = []
+        dp.on("pageerror", lambda e: derr.append(str(e)))
+        await dp.goto(URL)
+        await dp.wait_for_timeout(500)
+        th = await dp.evaluate("document.documentElement.getAttribute('data-theme')")
+        col = await dp.evaluate(
+            "(()=>{const g=(s,p)=>{const e=document.querySelector(s);return e?getComputedStyle(e)[p]:null};"
+            "const cs=getComputedStyle(document.documentElement);"
+            "return {bg:getComputedStyle(document.body).backgroundColor,ink:getComputedStyle(document.body).color,"
+            "grey:g('.mark span','color'),"
+            "onOrange:(()=>{const e=document.querySelector('.yn.innovation.clear, .chip.i-clear, .tag.o');"
+            "return e?[getComputedStyle(e).color,getComputedStyle(e).backgroundColor]:null})(),"
+            "btn:[g('.seg button[aria-pressed=true]','color'),g('.seg button[aria-pressed=true]','backgroundColor')]}})()")
+        pairs = [("body text", col["ink"], col["bg"], 7.0), ("grey label", col["grey"], col["bg"], 4.5),
+                 ("pressed button", col["btn"][0], col["btn"][1], 4.5)]
+        if col["onOrange"]:
+            pairs.append(("text on orange", col["onOrange"][0], col["onOrange"][1], 4.5))
+        rep = ", ".join("%s %.1f" % (n, _cr(a, c)) for n, a, c, _m in pairs)
+        print("dark theme      : %s from the system; %s" % (th, rep))
+        if th != "dark":
+            problems.append("the page does not follow a dark system setting")
+        for n, a, c, m in pairs:
+            if _cr(a, c) < m:
+                problems.append("dark theme: %s contrast %.2f is under %.1f" % (n, _cr(a, c), m))
+        await dp.click("#thm")
+        await dp.wait_for_timeout(200)
+        flipped = await dp.evaluate(
+            "(()=>{let s=null;try{s=localStorage.getItem('rolodex-theme')}catch(e){}"
+            "return [document.documentElement.getAttribute('data-theme'),s,"
+            "getComputedStyle(document.body).backgroundColor]})()")
+        print("theme toggle    :", flipped[0], "stored", flipped[1])
+        if flipped[0] != "light" or _lum(flipped[2]) < 0.9:
+            problems.append("the theme toggle does not switch to the light theme")
+        await dp.click("#thm")
+        await dp.wait_for_timeout(200)
+        await dp.evaluate("document.getElementById('vMarket').click()")
+        await dp.wait_for_timeout(400)
+        cells = await dp.evaluate(
+            "(()=>{const t=[...document.querySelectorAll('#mapHost text.ctyl')];"
+            "return t.map(e=>[e.getAttribute('fill'),e.getAttribute('stroke')])})()")
+        badcell = [c for c in cells if c[1] and _cr("rgb(%d,%d,%d)" % tuple(int(c[0][i:i+2], 16) for i in (1, 3, 5)),
+                                                     "rgb(%d,%d,%d)" % tuple(int(c[1][i:i+2], 16) for i in (1, 3, 5))) < 4.5]
+        print("dark map labels :", len(cells), "labels,", len(badcell), "under 4.5:1")
+        if badcell:
+            problems.append("dark theme: %d county labels read under 4.5:1 on their fill" % len(badcell))
+        await dp.emulate_media(media="print")
+        pbg = await dp.evaluate("getComputedStyle(document.body).backgroundColor")
+        if _lum(pbg) < 0.9:
+            problems.append("print is not the light theme")
+        if derr:
+            problems.append("dark theme: page errors %s" % derr[:2])
+        await dctx.close()
 
         await b.close()
 

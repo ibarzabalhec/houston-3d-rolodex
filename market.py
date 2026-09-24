@@ -54,6 +54,8 @@ TIMELINE = [
     (2025, 7, "CRH buys Eco Material, HiveASMBLD's cement supplier", "in"),
     (2025, 7, "ICON prints at Mueller, Austin", "icon"),
     (2025, 12, "Black Buffalo files Chapter 11", "out"),
-    (2026, 9, "Titan training, third quarter", "icon"),
-    (2027, 1, "Titan deliveries begin", "icon"),
+    # ICON gives a quarter and "early 2027", not a month. The month places the
+    # mark; the fifth field is what the page prints.
+    (2026, 9, "Titan training", "icon", "Q3 2026"),
+    (2027, 1, "Titan deliveries begin", "icon", "Early 2027"),
 ]

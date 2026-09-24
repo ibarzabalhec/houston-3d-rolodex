@@ -50,9 +50,10 @@ import phones as PHONES
 # and one mark that did not follow its own reason.
 import leaders as LEAD
 import audit5 as AUDIT5
+import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 66
+BUILD = 67
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -218,6 +219,11 @@ def finalize(recs):
                 t["audit_flags"].append(_n)
 
         hard = any("Do not approach" in f for f in t["audit_flags"])
+        # Build 67. Outside the area the deck covers, by the firm's own account.
+        if t["target_id"] in AUDIT6.OFF_DECK:
+            hard = True
+            if AUDIT6.OFF_DECK[t["target_id"]] not in t["audit_flags"]:
+                t["audit_flags"].append(AUDIT6.OFF_DECK[t["target_id"]])
         if t["entity_role"] == "proven_adopter":
             t["group"], t["tier"] = "adopter", "P"
         elif t["target_id"] in ICON_CLIENT:
@@ -1229,7 +1235,8 @@ DATA = {
         "low": lo, "high": hi, "year": yr, "source": src,
         "fit": next(t["marks"]["machine_fit"] for t in deck if t["target_id"] == tid),
         "method": next(t["marks"]["innovation"] for t in deck if t["target_id"] == tid),
-        "group": next(t["group"] for t in deck if t["target_id"] == tid)}
+        "group": next(t["group"] for t in deck if t["target_id"] == tid),
+        "wide": AUDIT6.CLOSINGS_WIDE.get(tid)}
        for tid, (lo, hi, yr, src) in CLOSINGS.items() if any(t["target_id"] == tid for t in deck)],
        key=lambda r: -r["high"]),
    "closings_missing": _n_builders - _n_closings,
@@ -1260,7 +1267,8 @@ DATA = {
        for t in deck if t["group"] == "channel"],
    "printed": [{"project": a, "place": b, "printer": c, "units": d, "status": e}
                for a, b, c, d, e in PRINTED],
-   "timeline": [{"year": y, "month": m, "label": l, "kind": k} for y, m, l, k in TIMELINE],
+   "timeline": [{"year": e[0], "month": e[1], "label": e[2], "kind": e[3],
+                 "when": e[4] if len(e) > 4 else None} for e in TIMELINE],
  })(),
  "permits": (lambda: {
    "quantity": PM.QUANTITY,
@@ -1382,6 +1390,66 @@ if _bad5:
         print("   " + _b)
     raise SystemExit("FAILED: an audit5 edit did not find its text exactly once")
 
+# Build 67. The figures pass (audit6.py): sources added for figures that were on
+# no cited page, figures corrected to the page, and headlines that say whose
+# closings they count.
+_bad6 = []
+_T6 = {t["target_id"]: t for t in DATA["targets"]}
+_named6 = (list(AUDIT6.SOURCES) + list(AUDIT6.DROP_SOURCES) + list(AUDIT6.KEY_STAT)
+           + list(AUDIT6.SCREEN) + [k for k, _u in AUDIT6.PROJECT_URL]
+           + [k for k, _n in AUDIT6.PERSON] + [k for k, _o, _n in AUDIT6.EDITS])
+_bad6 += ["audit6 names %s, not in the page data" % k for k in _named6 if k not in _T6]
+for _tid, _v in AUDIT6.KEY_STAT.items():
+    if _tid in _T6:
+        _T6[_tid]["key_stat"] = _v
+for _tid, _v in AUDIT6.SCREEN.items():
+    if _tid in _T6:
+        _T6[_tid]["mvp_screen"] = _v
+for _scope, _old, _new in AUDIT6.EDITS:
+    _tgt = _T6.get(_scope)
+    if _tgt is None:
+        continue
+    _occ = sum(_s.count(_old) for _s in _strings(_tgt))
+    if _occ != 1:
+        _bad6.append("%s: %r found %d times" % (_scope, _old[:60], _occ)); continue
+    _edit_scope(_tgt, _old, _new, [])
+for _tid, _urls in AUDIT6.SOURCES.items():
+    for _u in _urls:
+        if _tid in _T6 and not any(x.get("url") == _u for x in _T6[_tid]["sources"]):
+            _T6[_tid]["sources"].append({"url": _u, "date": None})
+for _tid, _urls in AUDIT6.DROP_SOURCES.items():
+    for _u in _urls:
+        _n0 = len(_T6[_tid]["sources"])
+        _T6[_tid]["sources"] = [x for x in _T6[_tid]["sources"] if x.get("url") != _u]
+        if len(_T6[_tid]["sources"]) == _n0:
+            _bad6.append("%s does not cite %s" % (_tid, _u))
+for (_tid, _old), _new in AUDIT6.PROJECT_URL.items():
+    _hit = [k for k in _T6[_tid]["key_projects"] if k.get("url") == _old]
+    if not _hit:
+        _bad6.append("%s has no project at %s" % (_tid, _old))
+    for k in _hit:
+        k["url"] = _new
+    if not any(x.get("url") == _new for x in _T6[_tid]["sources"]):
+        _T6[_tid]["sources"].append({"url": _new, "date": None})
+for (_tid, _name), _fields in AUDIT6.PERSON.items():
+    _p = [p for p in _T6[_tid]["principals"] if p.get("name") == _name]
+    if len(_p) != 1:
+        _bad6.append("%s has %d principals named %s" % (_tid, len(_p), _name)); continue
+    _p[0].update(_fields)
+# A headline that counts closings says whose closings they are.
+import re
+_GEO = re.compile(r"Houston|company-wide|Texas|Austin|Montgomery County|nationally", re.I)
+for t in DATA["targets"]:
+    if t["group"] == "out" or t["target_id"] in AUDIT6.CLOSINGS_WAIVER:
+        continue
+    if re.search(r"\bclosings\b", t.get("key_stat") or "") and not _GEO.search(t["key_stat"]):
+        _bad6.append("%s headline counts closings without saying whose: %r"
+                     % (t["target_id"], t["key_stat"]))
+if _bad6:
+    for _b in _bad6:
+        print("   " + _b)
+    raise SystemExit("FAILED: the audit6 figures pass")
+
 DATA = _strip_trailing(DATA)
 _banned = _scan_for_banned(DATA)
 if _banned:
@@ -1405,7 +1473,11 @@ open("ICON_Greater_Houston_Rolodex.html", "w", encoding="utf-8").write(html)
 # same page with the document wrapper removed and the title kept at the top.
 _a = html
 _a = _a.split("<style>", 1)[1]          # drop doctype, html, head opening, meta, title
-_a = "<title>Rolodex · Greater Houston</title>\n<style>" + _a
+# Build 67. The theme is settled by a script in the head, before first paint.
+# Dropping the head would drop it, so it is carried across on its own.
+_ti = html.index("<script>\n/* Build 67. The theme is settled")
+_theme = html[_ti:html.index("</script>", _ti) + len("</script>")]
+_a = "<title>Rolodex · Greater Houston</title>\n" + _theme + "\n<style>" + _a
 _a = _a.replace("</head><body>", "", 1).replace("</body></html>", "", 1)
 open("rolodex-artifact.html", "w", encoding="utf-8").write(_a)
 

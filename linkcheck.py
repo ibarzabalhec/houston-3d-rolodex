@@ -60,7 +60,7 @@ def down(host):
     return e if (_dt.date.today() - seen).days <= DOWN_DAYS else None
 
 
-BLOCKED = {"builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
+BLOCKED = {"investors.bldr.com", "builderonline.com", "bizjournals.com", "houstonagentmagazine.com",
            "members.ghba.org", "members.texasbuilders.org", "housingwire.com",
            "houstonchronicle.com", "sec.gov", "globenewswire.com", "businesswire.com",
            "concreteproducts.com", "urbanland.uli.org", "knowledge.uli.org",
@@ -218,6 +218,21 @@ def main():
 
     with cf.ThreadPoolExecutor(24) as ex:
         res = list(ex.map(status, todo))
+
+    # Build 67. Four of five "dead" links in one sweep answered 200 one at a
+    # time a minute later: a 429 from a small host, a 400 and two timeouts
+    # under twenty-four parallel threads. Anything that failed in the sweep is
+    # asked again, alone and slowly, before it is reported.
+    def _bad(s):
+        return not (isinstance(s, int) and s < 400)
+    again = [u for u, s in res if _bad(s)
+             and urlparse(u).netloc.lower().replace("www.", "") not in BLOCKED]
+    if again:
+        fixed = {}
+        for u in again:
+            time.sleep(1.5)
+            fixed[u] = status(u)[1]
+        res = [(u, fixed.get(u, s)) for u, s in res]
 
     dead, blocked, out = [], [], []
     for u, s in res:

@@ -109,7 +109,8 @@ EDITS = [
  ("limits", "Firms whose product is retail shell, mid-rise or one-off architecture are "
             "held out of the deck and kept in the workbook.",
   "One-off and retail work sits in the Custom and hybrid section. Mid-rise "
-  "multifamily is held out of the deck and kept in the workbook."),
+  "multifamily is held out of the deck and kept in the workbook, and so is a builder "
+  "whose own chief executive says it has left the metro."),
 
  # ---- ICON's own record
  ("icon_record", "100 further printed homes with Mobile Loaves and Fishes. ICON's "

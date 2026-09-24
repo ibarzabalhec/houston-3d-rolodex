@@ -34,7 +34,7 @@ function figClosings(){
   rows.forEach(function(r,i){
     var y=top+i*rowH, bh=18, cy=y+bh/2;
     var tip=r.name+': '+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
-            ' homes a year, '+r.year+'. '+r.source+'.';
+            ' homes a year, '+r.year+(r.wide?', '+r.wide:'')+'. '+r.source+'.';
     h+='<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end" data-id="'+r.id+'">'+esc(r.short)+'</text>';
     h+='<rect x="'+X(0)+'" y="'+y+'" width="'+(X(r.low)-X(0))+'" height="'+bh+'" rx="0" class="bar"'+tipAttr(tip)+'/>';
     if(r.low>max){var bx=X(max)-22;
@@ -44,15 +44,17 @@ function figClosings(){
          '<line x1="'+X(r.high)+'" y1="'+(cy-5)+'" x2="'+X(r.high)+'" y2="'+(cy+5)+'" class="range"/>';
     }
     h+='<text x="'+(X(r.high)+8)+'" y="'+(cy+4)+'" class="val">'+
-       (r.low===r.high?fmt(r.high):fmt(r.low)+'–'+fmt(r.high))+' <tspan class="yr">'+r.year+'</tspan></text>';
+       (r.low===r.high?fmt(r.high):fmt(r.low)+'–'+fmt(r.high))+(r.wide?'†':'')+' <tspan class="yr">'+r.year+'</tspan></text>';
   });
   h+='</svg>';
-  var tbl='<table class="ftab"><thead><tr><th>Firm</th><th class="num">Homes a year</th><th>Year</th><th>Source</th></tr></thead><tbody>'+
+  var nw=rows.filter(function(r){return r.wide;}).length;
+  var tbl='<table class="ftab"><thead><tr><th>Firm</th><th class="num">Homes a year</th><th>Year</th><th>Covers</th><th>Source</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
-      '</td><td>'+r.year+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
+      '</td><td>'+r.year+'</td><td>'+esc(r.wide||'Greater Houston')+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Published annual closings',
     'How big each builder is, in houses closed a year. '+rows.length+' of the '+NB+
-    ' builders and developers on the deck publish a figure; the rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000: a broken bar runs past it, and its figure is printed.',
+    ' builders and developers on the deck publish a figure; the rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000: a broken bar runs past it, and its figure is printed.'+
+    (nw?' A † marks the '+nw+' figures that count more than Greater Houston; the table says what each covers.':''),
     h, tbl, null, 'figClosings',
     (D.bands_method&&D.bands_method.text?'<div class="bandnote"><span class="lab">The printer-fit bands</span><p>'+
       esc(D.bands_method.text)+'</p><p class="figsrc">'+(D.bands_method.sources||[]).map(function(s){
@@ -158,41 +160,36 @@ function figPrinted(){
 /* 5. The field in time. Vertical, so a cluster of dates in one year can still
    carry a full label each: a label is pushed down until it clears the one
    above, and a leader line keeps it tied to its date. */
+/* Build 67. The field in time. Years were drawn to scale, so 2017 to 2022 took
+   half the figure with three events in it and 2024 to 2026 packed eleven into a
+   third. Labels were pushed down to clear each other until they sat a year from
+   their mark, the TODAY line ran through one of them, and four marks overlapped.
+   It is now an ordered list, one row per event with its date beside it, so it
+   cannot collide and it wraps on a phone instead of shrinking to 6px type. Time
+   between rows still shows as extra space, capped. The list is its own table. */
 function figTimeline(){
   var ev=(MK.timeline||[]).slice(); if(!ev.length) return '';
-  var W=700,top=20,bottom=24,axisX=64,minGap=24,dotX=64+18;
-  var t0=2017,t1=2027.25,span=t1-t0,pxPerYear=66;
-  var H=top+bottom+span*pxPerYear;
-  var Y=function(y,m){return top+(y+(m-1)/12-t0)*pxPerYear;};
-  ev.sort(function(a,b){return (a.year+(a.month-1)/12)-(b.year+(b.month-1)/12);});
-  var h=svgOpen(W,H,'tl');
-  h+='<line x1="'+axisX+'" y1="'+top+'" x2="'+axisX+'" y2="'+(H-bottom)+'" class="axis"/>';
-  for(var y=2017;y<=2027;y++){
-    h+='<line x1="'+(axisX-5)+'" y1="'+Y(y,1)+'" x2="'+(axisX+5)+'" y2="'+Y(y,1)+'" class="tick"/>'+
-       '<text x="'+(axisX-12)+'" y="'+(Y(y,1)+4)+'" class="axt" text-anchor="end">'+y+'</text>';
-  }
-  var now=Y(2026,9);
-  h+='<line x1="'+(axisX-40)+'" y1="'+now+'" x2="'+(W-20)+'" y2="'+now+'" class="now"/>'+
-     '<text x="'+(W-20)+'" y="'+(now-6)+'" class="axl" text-anchor="end">today</text>';
-  var lastLabel=-999, body='';
+  var tv=function(e){return e.year+(e.month-1)/12;};
+  ev.sort(function(a,b){return tv(a)-tv(b);});
+  var lu=(D.last_updated||'').split('-'), today=lu.length>1?(+lu[0])+(+lu[1]-1)/12:null;
+  var h='<ol class="tline" aria-label="Events, oldest first">', lastYear=null, prev=null, nowDone=false;
   ev.forEach(function(e){
-    var y=Y(e.year,e.month), ly=Math.max(y,lastLabel+minGap); lastLabel=ly;
-    var tip=e.label+' ('+e.year+').';
-    h+='<line x1="'+axisX+'" y1="'+y+'" x2="'+(dotX-6)+'" y2="'+y+'" class="stem"/>';
-    h+='<line x1="'+(dotX+7)+'" y1="'+y+'" x2="'+(dotX+26)+'" y2="'+ly+'" class="stem"/>';
-    if(e.kind==='out') h+='<circle cx="'+dotX+'" cy="'+y+'" r="5" class="dot out"'+tipAttr(tip)+'/>';
-    else if(e.kind==='icon') h+='<rect x="'+(dotX-5)+'" y="'+(y-5)+'" width="10" height="10" class="dot icon"'+tipAttr(tip)+'/>';
-    else h+='<circle cx="'+dotX+'" cy="'+y+'" r="5" class="dot in"'+tipAttr(tip)+'/>';
-    h+='<text x="'+(dotX+32)+'" y="'+(ly+4)+'" class="evl">'+esc(e.label)+
-       ' <tspan class="cnt">'+MONTHS[e.month-1]+' '+e.year+'</tspan></text>';
+    if(!nowDone&&today!==null&&tv(e)>today){
+      h+='<li class="tnow" aria-label="Today"><span></span><span></span><span></span><span class="tnl">Today</span></li>';
+      nowDone=true;
+    }
+    var gap=prev?Math.min(34,Math.max(0,(tv(e)-tv(prev))-0.25)*14):0;
+    var when=e.when||(MONTHS[e.month-1]+' '+e.year);
+    h+='<li'+(gap?' style="margin-top:'+Math.round(gap)+'px"':'')+'>'+
+       '<span class="ty">'+(e.year!==lastYear?e.year:'')+'</span>'+
+       '<span class="tm">'+esc(e.when?e.when.replace(/\s*\d{4}$/,''):MONTHS[e.month-1])+'</span>'+
+       '<span class="tk '+e.kind+'" aria-hidden="true"></span>'+
+       '<span class="tl-l"><span class="vh">'+esc(when)+': </span>'+esc(e.label)+'</span></li>';
+    lastYear=e.year; prev=e;
   });
-  H=Math.max(H,lastLabel+bottom);
-  h=h.replace(/viewBox="0 0 \d+ \d+"/,'viewBox="0 0 '+W+' '+Math.ceil(H)+'"');
-  h+='</svg>';
+  h+='</ol>';
   var leg='<div class="flegend"><i><span class="dk in"></span>Entry or launch</i><i><span class="dk out"></span>Closure, sale or filing</i><i><span class="dk icon"></span>ICON</i></div>';
-  var tbl='<table class="ftab"><thead><tr><th>When</th><th>Event</th></tr></thead><tbody>'+
-    ev.map(function(e){return '<tr><td>'+MONTHS[e.month-1]+' '+e.year+'</td><td>'+esc(e.label)+'</td></tr>';}).join('')+'</tbody></table>';
-  return figure('The field, 2017 to 2027', 'Entries, closures and ICON’s own dates, from company releases, filings and trade press.', leg+h, tbl);
+  return figure('The field, 2017 to 2027', 'Entries, closures and ICON’s own dates, from company releases, filings and trade press. The space between rows grows with the time between events, up to a limit.', leg+h, '');
 }
 var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
@@ -233,13 +230,22 @@ var PM=D.permits||{};
 var PSRC=PM.sources||[];
 function psrc(){var a=[].slice.call(arguments);
   return PSRC.filter(function(s){return a.some(function(k){return s.url.indexOf(k)>-1;});});}
-var RAMP=['#EDEDED','#D6D6D6','#B6B6B6','#8A8A8A','#4F4F4F','#111111'];
+/* Build 67. Magnitude runs from the paper to the ink in either theme, so the
+   dark theme has its own ramp, and the label on a cell is whichever of the two
+   inks reads on it. */
+var LRAMP=['#EDEDED','#D6D6D6','#B6B6B6','#8A8A8A','#4F4F4F','#111111'];
+var DRAMP=['#1D1F23','#34363B','#50535A','#7C7F86','#B5B7BB','#ECECEC'];
+function isDark(){return document.documentElement.getAttribute('data-theme')==='dark';}
+function ramp(){return isDark()?DRAMP:LRAMP;}
 function shade(v,max){ /* 0..1 -> paper to ink, five steps, printable */
-  if(!max) return RAMP[0];
+  if(!max) return ramp()[0];
   var t=Math.sqrt(v/max), i=Math.min(5,Math.floor(t*5.999));
-  return RAMP[i];
+  return ramp()[i];
 }
-function inkOn(hex){return (hex==='#4F4F4F'||hex==='#111111')?'#FFFFFF':'#111111';}
+function inkOn(hex){
+  var n=parseInt(hex.slice(1),16), r=(n>>16)&255, g=(n>>8)&255, b=n&255;
+  return (0.2126*r+0.7152*g+0.0722*b)/255<0.45?'#FFFFFF':'#111111';
+}
 
 /* 7. The metro series. One column a year, single family only. */
 function figPermits(){
@@ -375,9 +381,9 @@ function figCountyMap(){
     /* key: a continuous strip, two labels, no ladder of numbers */
     var KW=170, kx=14, ky=H-34;
     h+='<text x="'+kx+'" y="'+(ky-9)+'" class="axl">Units authorised, '+PYEAR+'</text>';
-    RAMP.forEach(function(fill,b){
+    ramp().forEach(function(fill,b){
       h+='<rect x="'+(kx+b*(KW/6)).toFixed(1)+'" y="'+ky+'" width="'+(KW/6).toFixed(1)+'" height="9" fill="'+fill+'" '+
-         'stroke="#CFCFCF" stroke-width=".5"/>';
+         'style="stroke:var(--rule2)" stroke-width=".5"/>';
     });
     h+='<text x="'+kx+'" y="'+(ky+20)+'" class="axs">0</text>'+
        '<text x="'+(kx+KW)+'" y="'+(ky+20)+'" class="axe">'+fmt(max)+'</text>';
@@ -481,7 +487,7 @@ function figure(title,caption,body,table,sources,id,extra){
     '<div class="fwrap">'+body+'</div>'+
     (src?'<p class="figsrc"><span class="lab">Source</span>'+src+'</p>':'')+
     (extra||'')+
-    '<details class="ftable"'+(NARROW?' open':'')+'><summary>As a table</summary>'+table+'</details></section>';
+    (table?'<details class="ftable"'+(NARROW?' open':'')+'><summary>As a table</summary>'+table+'</details>':'')+'</section>';
 }
 
 var W_=W;

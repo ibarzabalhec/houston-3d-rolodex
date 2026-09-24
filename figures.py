@@ -107,6 +107,117 @@ BYHAND = {
         "PulteGroup 1,146 3.1%. 6 Ashton Woods Homes 1,115 3.0%. 7 Sekisui House U.S. "
         "1,087 2.9%. 8 Dream Finders Homes 1,048 2.8%. 9 Century Communities 1,017 "
         "2.7%. 10 Highland Homes 968 2.6%. Top ten: 20,905 closings, 55.7%.",
+    # Build 67. Each read on 2026-09-24 through a separate fetcher, because this
+    # script is refused, is served a Cloudflare challenge, or cannot see text that
+    # a page renders from script or prints in an image label. Only the figures and
+    # the words around them are recorded.
+    "https://houstonagentmagazine.com/2026/03/19/m-i-homes-meritage-homes-trinity-landing/":
+        "2026-09-24: 19 March 2026. M/I Homes and Meritage Homes closed on 309 acres "
+        "along Highway 90 in Dayton for Trinity Landing. Plans for the community include "
+        "1,000 homes on 45-, 50- and 60-foot lots. Trinity Landing is M/I Homes' third "
+        "land purchase in the past six months.",
+    "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/":
+        "2026-09-24: ranging in size from about 1,000 to 2,100 square feet. Prices will "
+        "range from the low $200,000s to about $385,000. Each residence in the duplex will "
+        "be about 1,727 square feet. Pricing for each unit is $365,000.",
+    "https://brundagebone.com/locations/houston/":
+        "2026-09-24: Concrete Boom Pumps (17m - 65m). Two Houston addresses. All "
+        "operators are OSHA 10 and ACPA certified.",
+    "https://wells.build/contact/locations/hillsboro-texas/":
+        "2026-09-24: 102K combined sq ft facility. 320+ team members. 30+ projects each "
+        "year. AA architectural certification.",
+    "https://wells.build/contact/locations/pearland-texas/":
+        "2026-09-24: 32K sq ft facility. 125+ projects each year. 3201 Veterans Dr. C21 "
+        "architectural certification.",
+    "https://concreteproducts.com/index.php/2026/02/10/private-equity-operator-kps-outlines-wells-acquisition-agreement/":
+        "2026-09-24: 10 February 2026. 13 production facilities. A top three North "
+        "American player. Projected closing by the end of March.",
+    "https://www.globenewswire.com/news-release/2022/06/10/2460684/0/en/Sekisui-House-Japan-s-Leading-Homebuilder-and-Diversified-Developer-Announces-Agreement-to-Acquire-Chesmar-Homes-of-Texas.html":
+        "2026-09-24: June 10, 2022. Approximately $514 million. Plans to acquire an "
+        "interest in Chesmar Homes on July 1, 2022.",
+    "https://investors.bldr.com/news/news-details/2026/Builders-FirstSource-Reports-First-Quarter-2026-Results/default.aspx":
+        "2026-09-24: approximately 570 locations across 43 states.",
+    "https://www.sec.gov/Archives/edgar/data/1981792/000162828026053303/hhhsupplemental2q26.htm":
+        "2026-09-24: land bank at June 30, 2026, residential saleable acres. Bridgeland "
+        "1,142, sellout 2032. The Woodlands Hills 597, sellout 2035. The Woodlands 63, "
+        "sellout 2031.",
+    "https://www.globenewswire.com/news-release/2025/05/05/3073918/0/en/Pershing-Square-to-Invest-900-million-to-Acquire-Nine-Million-Newly-Issued-Shares-of-Howard-Hughes-Holdings-and-Transform-HHH-Into-a-Diversified-Holding-Company.html":
+        "2026-09-24: Pershing Square will now own 46.9% of HHH shares outstanding.",
+    "https://developingresilience.uli.org/case/bridgeland/":
+        "2026-09-24: an 11,400-acre master-planned community, home to 65,000 residents "
+        "when complete in 2037. Began construction in October 2003, home sales began in 2006.",
+    "https://investor.howardhughes.com/news-releases/news-release-details/howard-hughes-corporationr-breaks-ground-woodlands-hills":
+        "2026-09-24: November 15, 2017. A 2,000-acre development. More than 4,500 residences.",
+    "https://www.builderonline.com/builder-100/smith-douglas-homes-enters-houston-market-with-devon-street-homes-acquisition_o":
+        "2026-09-24: In 2022, Devon Street closed 324 homes across 15 communities with "
+        "revenues in excess of $100 million. Currently controls nearly 1,500 lots in the "
+        "area.",
+    "https://benzinga.com/real-estate/22/03/26269992/dallas-based-real-estate-developer-launches-private-equity-offering-for-development-of-build-to-rent":
+        "2026-09-24: 24 March 2022. Target investor IRR: 18% - 22%. Target equity "
+        "multiple: 1.9x - 2.2x. seven parcHAUS single-family rental communities.",
+    "https://concreteproducts.com/index.php/2014/09/16/well-anchored/":
+        "2026-09-24: Output is equal to well over 100 yd./hour of self-consolidating "
+        "concrete mixes. 50-acre plot. Founded in May 2013 by seven partners.",
+    "https://www.newquest.com/about-us/":
+        "2026-09-24: 12M SF Retail Space Managed. $3.1B Owned Assets Portfolio. The "
+        "138-acre tract of land sale to CBL REIT for the 800,000-square-foot Pearland "
+        "Town Center Mall that opened in 2008.",
+    "https://ravennahomes.com/":
+        "2026-09-24: The Woodlands Hills From The $500's. Seven communities listed.",
+    "https://www.tricoasthomes.com/":
+        "2026-09-24: Canterra Creek 60' Iowa Colony From the $399's. La Segarra 40' "
+        "Brookshire From the $279's. Sunterra 40' & 50' Katy From the $324's. Lago Mar "
+        "Texas City From the $364's.",
+    "https://www.tricoasthomes.com/communities":
+        "2026-09-24: Showing 9 Communities.",
+    "https://www.tricoasthomes.com/plans":
+        "2026-09-24: Showing 9 Available Plans.",
+    "https://lagomarintexascity.com/tricoast-homes-joins-the-fun-in-lago-mar/":
+        "2026-09-24: 2 March 2021. Founded in 2020. Taylor Morrison, Toll Brothers and "
+        "Ryland Homes. Seven floor plans to Lago Mar starting in the $280,000s.",
+    "https://sunterratx.com/homebuilders/":
+        "2026-09-24: eighteen builder names listed under New Homes for Sale.",
+    "https://www.globenewswire.com/news-release/2026/08/06/3340350/0/en/Citing-strong-market-fundamentals-Signorelli-chooses-rapid-Texas-expansion-for-award-winning-homebuilding-division.html":
+        "2026-09-24: expected to deliver more than 1,300 single-family homes. The Azalea "
+        "District at Valley Ranch in northeast Montgomery County will feature 359 homes by "
+        "First America Homes, pricing starting in the $300s. More than 16 master-planned "
+        "and neighborhood communities. Over 23,000 paper lots in the pipeline.",
+    "https://www.globenewswire.com/news-release/2026/09/04/3356358/28788/en/LGI-Homes-Inc-Reports-August-2026-Home-Closings.html":
+        "2026-09-24: As of August 31, 2026, the Company had 153 active selling "
+        "communities. Closed over 80,000 homes since its founding in 2003.",
+    "https://www.builderonline.com/firms/tilson-homes/":
+        "2026-09-24: 2024 closings 425, revenue $199 M, rank 119. 2023 closings 745, "
+        "revenue $328 M, rank 75.",
+    "https://www.builderonline.com/firms/newmark-homes/":
+        "2026-09-24: 2025 closings 483, revenue $306 M. 2024 closings 511, revenue $322 M.",
+    "https://www.builderonline.com/firms/long-lake-limited/":
+        "2026-09-24: 2025 closings 782, revenue $259 M, rank 74. 2024 closings 912, "
+        "revenue $357 M.",
+    "https://www.builderonline.com/firms/dsld-homes/":
+        "2026-09-24: 2026 rank 25. 2025 closings 3,989. 2024 closings 4,116. Detached for "
+        "sale 3,642. Single-family build-to-rent 347.",
+    "https://www.dsldhomes.com/about-us":
+        "2026-09-24: have built homes for over 41,000 families. actively building in more "
+        "than 120 communities.",
+    "https://www.encoreconcrete.com/":
+        "2026-09-24: 100 percent employee-owned mark on the homepage, as an image label.",
+    "https://kendallhomes.net/":
+        "2026-09-24: priced from the $300s to the $800s.",
+    "https://www.housingwire.com/articles/stylecraft-builders-margin-pace-and-growth/":
+        "2026-09-24: 11 June 2026. Selling 973 homes for $310 million. Sales volume up "
+        "17.0% from 2024 to 2025. Exit the Houston metro two to three years ago.",
+    "https://www.builderonline.com/builder-100/strategy/new-home-co-and-landsea-homes-unite-as-risewell-homes-following-merger/":
+        "2026-09-24: 2 December 2025. Landsea Homes closed 2,831 homes in 2024. New Home "
+        "Co. closed 1,123 homes.",
+    "https://www.daiwahouse.com/English/about/release/pdf/release_20210810e.pdf":
+        "2026-09-24: 10 August 2021. 80.0%. Approx. US$408 million.",
+    "https://investor.drhorton.com/~/media/Files/D/D-R-Horton-IR/documents/quarterly-reports/2025-dhi-annual-report.pdf":
+        "2026-09-24: At September 30, 2025, we owned 62% of Forestar Group. Forestar sold "
+        "14,240 lots, of which 83% were sold to D.R. Horton.",
+    "https://houstonagentmagazine.com/2020/02/06/making-moves-newmark-homes-appoints-top-leaders-edward-jones-becomes-latest-tenant-bridgeland/":
+        "2026-09-24: February 2020. Jeff has been with Newmark for 21 years.",
+    "https://www.sec.gov/Archives/edgar/data/1981792/000162828026009701/hhhearningsreleaseq42025.htm":
+        "2026-09-24: sale of 621 residential acres at an average price of $890,000 per acre.",
     "https://www.builderonline.com/firms/westin-homes/":
         "2026-09-14: Westin Homes, Sugar Land TX. 2025 closings 1,062, revenue "
         "$621 M, Builder 100 rank 60. 2024 closings 1,016, revenue $625 M, rank 67.",
@@ -127,9 +238,33 @@ BYHAND = {
 }
 
 
+# Build 67. Two ways a page read as readable when it was not. A Cloudflare
+# challenge is two thousand bytes of HTML, so it passed the length test and every
+# figure on the card was then checked against the challenge text. And a server
+# that compresses whatever it is asked for returned bytes that decoded to noise:
+# DSLD's about page sat in the cache as 948,000 characters of it.
+CHALLENGE = re.compile(r"Attention Required! \| Cloudflare|Just a moment\.\.\.|"
+                       r"cf-browser-verification|Enable JavaScript and cookies to continue")
+
+
+def _noise(txt):
+    return txt.count("\ufffd") > max(50, len(txt) // 200)
+
+
+# Build 67. A figure the card computed from published parts, where every part is
+# printed on the card and on a page it cites. The check passes the sum only if
+# every part is on the cited pages, so the register cannot hide an invented
+# component. The card must print the parts; verify.py does not check that, a
+# person reading the card does.
+DERIVED = {
+    "HOU-136": {"465": ["368", "97"]},          # Willow at Marvida + Sierra Vista
+    "HOU-044": {"366": ["156", "210"]},         # two Katy duplex projects
+    "HOU-011": {"1,802": ["1,142", "597", "63"]},  # land bank, three MPCs
+    "HOU-019": {"389": ["200", "189"]},         # Long Meadow Farms + Woodmill Creek
+}
+
+
 def fetch(url):
-    if url in BYHAND:
-        return flatten(BYHAND[url].encode("utf-8"))
     try:
         with urllib.request.urlopen(
                 urllib.request.Request(url, headers=UA), timeout=30, context=CTX) as r:
@@ -137,11 +272,31 @@ def fetch(url):
             if not any(k in ct for k in ("html", "xml", "text")):
                 return None
             body = r.read(3_000_000)
+            enc = (r.headers.get("Content-Encoding") or "").lower()
+            if "gzip" in enc:
+                import gzip
+                body = gzip.decompress(body)
+            elif "br" in enc:
+                try:
+                    import brotli
+                    body = brotli.decompress(body)
+                except Exception:
+                    return None
             if len(body) < 2000:
                 return None
-            return flatten(body)
+            txt = flatten(body)
+            if CHALLENGE.search(txt[:5000]) or _noise(txt):
+                return None
+            return txt
     except Exception:
         return None
+
+
+def page_text(cache, url):
+    """What the check reads for one URL: the fetched text, plus anything read by
+    hand for it. A hand reading adds to a page; it never replaces one."""
+    return " ".join(x for x in (cache.get(url) or "", flatten(BYHAND[url].encode("utf-8"))
+                                if url in BYHAND else "") if x)
 
 
 def variants(tok):
@@ -168,6 +323,14 @@ def variants(tok):
             out |= {"%s b" % m.group(1), "%sb" % m.group(1), "%s bn" % m.group(1)}
         if unit == "percent":
             out |= {"%s%%" % m.group(1), "%s per cent" % m.group(1)}
+    # Build 67. Price bands print in hundreds: J. Patrick's page says "from the
+    # $370s" and Tricoast's "From the $279's" where the card writes $370,000s.
+    if bare.isdigit() and len(bare) >= 6 and bare.endswith("000"):
+        k = bare[:-3]
+        out |= {"%ss" % k, "%s's" % k, "%s’s" % k, "%sk" % k}
+    m = re.match(r"^(\d+) percent$", t)
+    if m:
+        out |= {"%s.0%%" % m.group(1), "%s.0 percent" % m.group(1)}
     if bare.isdigit():
         out.add("{:,}".format(int(bare)))
         # Marketing counters round to thousands: CastleRock's own about page says
@@ -184,9 +347,32 @@ def variants(tok):
 BAND = re.compile(r"\b(?:25 to 400|400 to 1,500|25 to 1,500)(?= band\b)")
 
 
+# Build 67. Not quantities: the day in a date ("17 September 2025", "March 19,
+# 2026"), the name of a list ("the Builder 100") and a street number. Each was
+# reported as an unsourced figure, and a report that is one part noise gets
+# skimmed.
+_MON = (r"(?:January|February|March|April|May|June|July|August|September|"
+        r"October|November|December)")
+NOTFIG = re.compile(
+    r"\b(\d{1,2})(?=\s+%s\b)|%s\s(\d{1,2})(?=,?\s+(?:19|20)\d\d)"
+    r"|Builder (100)\b|\b(\d{3,6})(?=\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+)*\s+"
+    r"(?:Parkway|Street|St|Road|Rd|Drive|Dr|Boulevard|Blvd|Avenue|Ave|Lane|Way|Freeway|Highway)\b)"
+    % (_MON, _MON))
+
+
+def _blank(m):
+    s = m.group(0)
+    for i in range(1, 5):
+        if m.group(i):
+            a, b = m.start(i) - m.start(0), m.end(i) - m.start(0)
+            s = s[:a] + " " * (b - a) + s[b:]
+    return s
+
+
 def figures_in(text):
     found = []
     text = BAND.sub(lambda m: " " * len(m.group(0)), text or "")
+    text = NOTFIG.sub(_blank, text)
     for m in NUM.finditer(text or ""):
         tok = m.group(0)
         bare = re.sub(r"[^\d.]", "", tok)
@@ -220,6 +406,8 @@ def main():
     cache = {}
     if CACHE.exists():
         cache = json.load(open(CACHE, encoding="utf-8"))
+    for u in [u for u, v in cache.items() if v and (CHALLENGE.search(v[:5000]) or _noise(v))]:
+        del cache[u]
 
     want = set()
     for t in targets:
@@ -239,13 +427,14 @@ def main():
 
     n_fig = n_off = 0
     off_cards = 0
+    blind = []
     for t in targets:
         urls = [u for u in ([t.get("homepage_url")]
                             + [s.get("url") for s in t.get("sources", [])]
                             + [k.get("url") for k in t.get("key_projects", [])])
                 if u and u.startswith("http") and not any(h in u for h in SKIP_HOST)]
-        readable = [u for u in urls if cache.get(u)]
-        blob = " ".join(cache.get(u, "") for u in readable).lower()
+        readable = [u for u in urls if page_text(cache, u)]
+        blob = " ".join(page_text(cache, u) for u in readable).lower()
 
         text = " ".join(filter(None, [
             t.get("synopsis"), t.get("key_stat"),
@@ -255,11 +444,17 @@ def main():
         hits = figures_in(text)
         n_fig += len(hits)
         if not readable:
+            if hits:
+                blind.append(t["target_id"])
             continue
         miss = []
+        der = DERIVED.get(t["target_id"], {})
         for tok, a, b in hits:
-            if not any(v in blob for v in variants(tok)):
-                miss.append((tok, re.sub(r"\s+", " ", text[a:b]).strip()))
+            if any(v in blob for v in variants(tok)):
+                continue
+            if tok in der and all(any(v in blob for v in variants(p)) for p in der[tok]):
+                continue
+            miss.append((tok, re.sub(r"\s+", " ", text[a:b]).strip()))
         if miss:
             off_cards += 1
             n_off += len(miss)
@@ -272,6 +467,8 @@ def main():
                 seen.add(tok)
                 print("   %-14s ...%s..." % (tok, ctx[:88]))
 
+    if blind:
+        print("\nNo cited page readable, so not checked: %s" % ", ".join(blind))
     print("\n%d figures across %d cards. %d on no page the card cites, over %d cards."
           % (n_fig, len(targets), n_off, off_cards))
     print("A figure here is invented, derived, or from a source the card does not "
