@@ -24,7 +24,7 @@ EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards
 LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
 HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 TODAY = "2026-09-24"
-BUILD = 69
+BUILD = 70
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}
@@ -534,7 +534,7 @@ def main():
         },
         "permits": permits(),
         "place": {"key": "dfw", "name": "Dallas-Fort Worth", "short": "DFW", "file": "DFW",
-                  "outline": "the Census Bureau", "local": "Fort Worth|Dallas|Allen|Collin"},
+                  "outline": "TxDOT", "local": "Fort Worth|Dallas|Allen|Collin"},
         "stats": {"total": n, "adopters": g["adopter"], "tier_a": g["a"], "tier_b": g["b"],
                   "principals": n_people, "linkedin_held": n_li, "audit_flags": 0,
                   "with_decider": n_dec, "with_decider_live": sum(1 for t in deck if t["has_decider"] and t["group"] in ("a", "b", "adopter")),
@@ -562,11 +562,16 @@ def main():
 
 def permits():
     P = copy.deepcopy(PACK["permits"])
-    # Houston's rings are polygons of rings; the pack's are single rings.
-    for f in P.get("geom", []):
-        r = f["rings"]
-        if r and isinstance(r[0][0][0], (int, float)):
-            f["rings"] = [[ring] for ring in r]
+    # Build 70. The pack drew the counties from the Census 1:5,000,000 files.
+    # These are TxDOT's, the layer Houston's map uses, simplified the same way,
+    # with TxDOT's lakes above 1,000 acres. dfw/geo/outline.py makes both.
+    geo = ROOT / "dfw" / "geo"
+    outl = {g["fips"]: g for g in json.load(open(geo / "outlines.json", encoding="utf-8"))}
+    have = {c["fips"] for c in P["counties"]}
+    assert set(outl) == have, "the TxDOT outlines and the permit counties differ"
+    P["geom"] = [{"fips": f, "name": outl[f]["name"], "rings": outl[f]["rings"]} for f in sorted(outl)]
+    P["water"] = [{"name": w["name"], "rings": w["rings"]}
+                  for w in json.load(open(geo / "water.json", encoding="utf-8"))]
     P["places"] = [p for p in P.get("places", []) if any(p.get("sf", []))]
     # The pack carries the fifty largest jurisdictions, not every one, so they
     # do not sum to the counties the way Houston's do.
@@ -580,6 +585,10 @@ def permits():
          "label": "Census Building Permits Survey, annual place files"},
         {"url": "https://www.census.gov/construction/bps/definitions.html", "use": ["metro"],
          "label": "Census Building Permits Survey, definitions"},
+        {"url": "https://gis-txdot.opendata.arcgis.com/datasets/texas-county-boundaries/geoservice", "use": ["map"],
+         "label": "TxDOT, Texas County Boundaries"},
+        {"url": "https://services.arcgis.com/KTcxiTD9dsQw4r7Z/arcgis/rest/services/Texas_Water_Bodies/FeatureServer",
+         "use": ["map"], "label": "TxDOT, Texas Water Bodies"},
     ]
     P.pop("retrieval_note", None)
     return P

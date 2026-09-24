@@ -1077,6 +1077,27 @@ async def main():
         if srcs < 5:
             problems.append("permit figures are missing their source links")
 
+        # Build 70. Lakes, where a market carries them: every one drawn, clipped
+        # to the metro, credited on the map, and no county label standing in one.
+        lakes = await pg.evaluate(
+            "(()=>{const w=[...document.querySelectorAll('#figMap .water path')];"
+            "const ls=[...document.querySelectorAll('#figMap .ctyl')];"
+            "const wet=ls.filter(t=>{const x=+t.getAttribute('x'),y=+t.getAttribute('y')+2;"
+            "return w.some(p=>p.isPointInFill(new DOMPoint(x,y)));}).map(t=>t.textContent);"
+            "const g=document.querySelector('#figMap .water');"
+            "const cap=(document.querySelector('#figMap')||{}).textContent||'';"
+            "return {n:w.length,clip:!!(g&&g.getAttribute('clip-path')),wet:wet,"
+            "credit:/lakes are/i.test(cap),src:/Water Bodies/i.test(cap)}})()")
+        want = len(P.get("water") or [])
+        print("lakes           :", lakes["n"], "drawn of", want, "| clipped", lakes["clip"],
+              "| labels in water", len(lakes["wet"]))
+        if lakes["n"] != want:
+            problems.append("the county map does not draw every lake the data holds")
+        if want and not (lakes["clip"] and lakes["credit"] and lakes["src"]):
+            problems.append("the lakes are unclipped or uncredited")
+        if lakes["wet"]:
+            problems.append("a county label sits in a lake: " + ", ".join(lakes["wet"]))
+
         # the two quantities never share a figure
         mixed = await pg.evaluate(
             "(()=>{const t=[...document.querySelectorAll('#mkBody .figs')];"

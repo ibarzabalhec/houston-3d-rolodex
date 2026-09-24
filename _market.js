@@ -232,8 +232,9 @@ var PSRC=PM.sources||[];
    market whose sources do not is matched on the URL, as Houston's are. */
 function psrc(){var a=[].slice.call(arguments);
   if(PSRC.some(function(s){return s.use;})){
-    var tag=(a.filter(function(k){return k.charAt(0)==='#';})[0]||'').slice(1)||PUSE[a[0]]||a[0];
-    return PSRC.filter(function(s){return (s.use||[]).indexOf(tag)>-1;});}
+    var tags=a.filter(function(k){return k.charAt(0)==='#';}).map(function(k){return k.slice(1);});
+    if(!tags.length) tags=[PUSE[a[0]]||a[0]];
+    return PSRC.filter(function(s){return (s.use||[]).some(function(u){return tags.indexOf(u)>-1;});});}
   return PSRC.filter(function(s){return a.some(function(k){return k.charAt(0)!=='#'&&s.url.indexOf(k)>-1;});});}
 var PUSE={huduser:'county',definitions:'metro'};
 function nword(n){return ['no','one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen'][n]||String(n);}
@@ -319,17 +320,24 @@ function figCountyMap(){
     }
     return on;
   }
-  function labelPoint(r){
+  /* Build 70. A lake is a hole: the label sits on land, clear of the shore. */
+  function labelPoint(r,holes){
     var x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;
     r.forEach(function(p){x0=Math.min(x0,p[0]);y0=Math.min(y0,p[1]);x1=Math.max(x1,p[0]);y1=Math.max(y1,p[1]);});
+    holes=(holes||[]).filter(function(h){return h.some(function(p){return p[0]>=x0&&p[0]<=x1&&p[1]>=y0&&p[1]<=y1;});});
+    var edges=[r].concat(holes);
     var best=null, bd=-1, step=Math.max((x1-x0),(y1-y0))/22;
     function scan(cx0,cy0,cx1,cy1,st){
       for(var x=cx0;x<=cx1;x+=st) for(var y=cy0;y<=cy1;y+=st){
         if(!inside(x,y,r)) continue;
+        if(holes.some(function(h){return inside(x,y,h);})) continue;
         var d=1e9;
-        for(var i=0,j=r.length-1;i<r.length;j=i++){
-          d=Math.min(d,ptSeg(x,y,r[i][0],r[i][1],r[j][0],r[j][1]));
-          if(d<bd) break;
+        for(var e=0;e<edges.length&&d>bd;e++){
+          var q=edges[e];
+          for(var i=0,j=q.length-1;i<q.length;j=i++){
+            d=Math.min(d,ptSeg(x,y,q[i][0],q[i][1],q[j][0],q[j][1]));
+            if(d<bd) break;
+          }
         }
         if(d>bd){bd=d;best=[x,y];}
       }
@@ -340,6 +348,8 @@ function figCountyMap(){
     return {p:best||[(x0+x1)/2,(y0+y1)/2], r:bd};
   }
   /* placed once, in screen space, and cached: the projection never changes */
+  var WAT=PM.water||[];
+  var LAKES=[]; WAT.forEach(function(w){w.rings.forEach(function(p){LAKES.push(p[0].map(PX));});});
   var ANCHOR={};
   G.forEach(function(f){
     var big=null, ba=-1;
@@ -348,7 +358,7 @@ function figCountyMap(){
       for(var j=0;j<r.length;j++){var q=r[j],w=r[(j+1)%r.length];a+=q[0]*w[1]-w[0]*q[1];}
       a=Math.abs(a/2); if(a>ba){ba=a;big=r;}
     });
-    ANCHOR[f.fips]=labelPoint(big.map(PX));
+    ANCHOR[f.fips]=labelPoint(big.map(PX),LAKES);
   });
 
   var body='<div class="yrctl"><label for="pyr">Year</label>'+
@@ -377,7 +387,16 @@ function figCountyMap(){
       h+='<path d="'+D_[f.fips]+'" class="cty" fill="'+fill+'"'+
          tipAttr(c.name+' County, '+PYEAR+': '+fmt(v)+' single-family units authorised')+'/>';
     });
-    h+='</g><g class="ctyedge">'+G.map(function(f){return '<path d="'+D_[f.fips]+'"/>';}).join('')+
+    h+='</g>';
+    /* lakes, clipped to the metro so a reservoir on the edge stops at the county line */
+    if(WAT.length){
+      h+='<clipPath id="mapClip">'+G.map(function(f){return '<path d="'+D_[f.fips]+'"/>';}).join('')+'</clipPath>'+
+         '<g class="water" clip-path="url(#mapClip)">'+WAT.map(function(w){
+           return '<path fill-rule="evenodd" d="'+w.rings.map(function(poly){return poly.map(function(ring){
+             return 'M'+ring.map(function(pt){var q=PX(pt);return q[0].toFixed(1)+' '+q[1].toFixed(1);}).join('L')+'Z';}).join('');}).join('')+
+             '"><title>'+esc(w.name)+'</title></path>';}).join('')+'</g>';
+    }
+    h+='<g class="ctyedge">'+G.map(function(f){return '<path d="'+D_[f.fips]+'"/>';}).join('')+
        '</g><g class="ctyls">';
     G.forEach(function(f){
       var c=C.filter(function(x){return x.fips===f.fips;})[0]; if(!c) return;
@@ -401,8 +420,9 @@ function figCountyMap(){
     var host=document.getElementById('mapHost'); if(host) host.innerHTML=h;
   };
   return figure('Where the permits are',
-    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to '+bigCounty()+'. Outlines are '+(PL.outline||'TxDOT')+'’s. Drag the year.',
-    body, tbl, psrc('huduser','txdot'), 'figMap');
+    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to '+bigCounty()+'. '+
+    (WAT.length?'Outlines and lakes are ':'Outlines are ')+(PL.outline||'TxDOT')+'’s. Drag the year.',
+    body, tbl, psrc('huduser','txdot','#county','#map'), 'figMap');
 }
 
 /* 9. The same ten counties as a matrix, which is where the movement shows. */
