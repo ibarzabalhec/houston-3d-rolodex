@@ -24,7 +24,7 @@ EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards
 LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
 HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 TODAY = "2026-09-24"
-BUILD = 68
+BUILD = 69
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}

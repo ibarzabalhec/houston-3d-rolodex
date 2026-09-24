@@ -1245,6 +1245,44 @@ async def main():
                 await pg.evaluate("document.getElementById('vMatrix').click()")
                 await pg.wait_for_timeout(200)
 
+        # Build 69. The wordmark goes home from anywhere: from the Market view
+        # with a filter and a search on, and from a firm page. Home is the page
+        # as it opens: the List, unfiltered, no search, at the top.
+        async def _home_state():
+            return await pg.evaluate(
+                "(()=>({list:document.getElementById('vList').getAttribute('aria-pressed'),"
+                "rows:document.querySelectorAll('#tb tr:not(.grp):not(.chn)').length,"
+                "q:document.getElementById('q').value,y:Math.round(window.scrollY),"
+                "firm:document.getElementById('stageFirm').classList.contains('on'),"
+                "head:!document.querySelector('header.top').hidden}))()")
+        await pg.set_viewport_size({"width": 1280, "height": 900})
+        await pg.evaluate("document.getElementById('vList').click()")
+        await pg.wait_for_timeout(200)
+        await pg.fill("#q", "concrete")
+        await pg.wait_for_timeout(300)
+        await pg.evaluate("window.rolodex.setFilters({group:['trade']})")
+        await pg.evaluate("document.getElementById('vMarket').click()")
+        await pg.wait_for_timeout(300)
+        await pg.evaluate("window.scrollTo(0,1500)")
+        await pg.click("#home")
+        await pg.wait_for_timeout(350)
+        h1 = await _home_state()
+        await pg.evaluate("window.rolodex.open('%s')" % PROBE_ID)
+        await pg.wait_for_timeout(250)
+        await pg.click("#home")
+        await pg.wait_for_timeout(450)
+        h2 = await _home_state()
+        print("wordmark home   : from Market %s, from a firm page %s"
+              % ("home" if h1["list"] == "true" and h1["rows"] == D["stats"]["total"] and not h1["q"]
+                 and h1["y"] == 0 else h1,
+                 "home" if h2["list"] == "true" and not h2["firm"] and h2["rows"] == D["stats"]["total"]
+                 else h2))
+        for _h in (h1, h2):
+            if (_h["list"] != "true" or _h["rows"] != D["stats"]["total"] or _h["q"] or _h["y"] != 0
+                    or _h["firm"] or not _h["head"]):
+                problems.append("the wordmark does not return to the home screen: %s" % _h)
+                break
+
         # Build 67. The timeline. Every event has its own row beside its date,
         # rows never overlap, today falls between the right two events, and the
         # Market view does not scroll sideways on a phone.

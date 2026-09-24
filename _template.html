@@ -989,7 +989,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 <div class="bg" aria-hidden="true"><div class="grain"></div></div>
 
 <nav><div class="wrap navin">
-  <a class="mark" href="#" id="home">ROLODEX<i></i><span id="stamp"></span></a>
+  <a class="mark" href="#" id="home" aria-label="Rolodex, home" title="Home">ROLODEX<i></i><span id="stamp"></span></a>
   <div class="navsp"></div>
   <div class="navtools">
     <input id="q" type="search" placeholder="Search firm, person, project" aria-label="Search firm, person, project">
@@ -2104,7 +2104,18 @@ function rememberOrigin(){
 function pushView(){
   try{history.pushState({v:'firm'},'','#firm');}catch(e){}
 }
-window.addEventListener('popstate',function(){ if(view==='firm') goIndex(true); });
+window.addEventListener('popstate',function(){ if(view==='firm') goIndex(true);
+  if(homeNext){homeNext=false;render();window.scrollTo(0,0);} });
+/* Build 69. The wordmark is the way home: the List, unfiltered, at the top of
+   the page, the way the page opens. From a firm page it goes back through the
+   history entry the firm page added, so Back does not return to the firm. */
+var homeNext=false;
+function goHome(){
+  clearFilters(); q=''; var qq=document.getElementById('q'); if(qq) qq.value='';
+  mode='list'; returnTo=null;
+  if(view==='firm'&&history.state&&history.state.v==='firm'){homeNext=true;history.back();return;}
+  view='index';viewing=null;swap();render();window.scrollTo(0,0);
+}
 function openFirm(id){
   rememberOrigin();pushView();
   viewing=id;view='firm';
@@ -2672,7 +2683,7 @@ function drawPrintRoster(){
 
 document.addEventListener('click',function(e){
   var el=e.target;
-  if(el.closest('#home')){e.preventDefault();goIndex();return;}
+  if(el.closest('#home')){e.preventDefault();goHome();return;}
   if(el.closest('#back')){goIndex();return;}
   if(el.id==='clPrint'){window.print();return;}
   if(el.id==='clXlsx'){downloadXlsx(call.map(function(i){return byId[i];}),'call_list');return;}
