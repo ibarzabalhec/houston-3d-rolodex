@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 82,
+ "build": 83,
  "last_updated": "2026-09-24",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-24",
  "kicker": "Rolodex · Greater Houston · 2026-09-24",
@@ -148,16 +148,20 @@
     "Titan reservations include Ghost Factory, Cole Klein Builders and Moderne Development, per The Real Deal. Cole Klein builds Zuri Gardens, Houston, which HiveASMBLD prints."
    ],
    [
-    "Lennar in Houston",
-    "Lennar's Houston division, its land arm Friendswood, and GreenEco, via Rausch Coleman, February 2025."
-   ],
-   [
     "Wolf Ranch, Georgetown",
     "100 homes with Lennar, designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community (June 2026)."
    ],
    [
     "Austin and the Hill Country",
     "Community First! Village: 100 more, December 2024. Mueller: one-bedrooms from $195,000, about a dozen two- and three-bedrooms, printing from July 2025. Wimberley Springs: eight homes, upper $800,000s, July 2024."
+   ],
+   [
+    "Lennar in Houston",
+    "Lennar's Houston division, its land arm Friendswood, and GreenEco, via Rausch Coleman, February 2025."
+   ],
+   [
+    "Houston",
+    "Mars Dune Alpha: 1,700 square foot NASA habitat at Johnson Space Center, 2021. Second crew mission inside: 19 October 2025 to 31 October 2026. No ICON housing in Houston, per its own site. HiveASMBLD has repeat production work here, PERI a house inside city limits."
    ],
    [
     "The Army",
@@ -170,10 +174,6 @@
    [
     "The company",
     "Structures completed: over 245 per ICON in March 2026, 263 on its site now. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, led by Norwest and Tiger Global."
-   ],
-   [
-    "Houston",
-    "Mars Dune Alpha: 1,700 square foot NASA habitat at Johnson Space Center, 2021. Second crew mission inside: 19 October 2025 to 31 October 2026. No ICON housing in Houston, per its own site. HiveASMBLD has repeat production work here, PERI a house inside city limits."
    ]
   ],
   "links": [
@@ -1135,6 +1135,10 @@
  "no_site_note": "Twenty-one firms that meet the profile on trade association category and geography and publish no working website: six in the Greater Houston Builders Association's foundation and concrete categories, ten on the Associated Masonry Contractors of Houston roster, three precast plants and two pumpers. This deck cannot screen them.",
  "limits": [
   [
+   "Scope",
+   "Greater Houston and its suburban counties. Not covered: architects, engineers, permitting authorities. One-off and retail work: the Custom and hybrid section. Held out, kept in the workbook: mid-rise multifamily, and a builder whose chief executive says it left the metro."
+  ],
+  [
    "How the list was drawn",
    "Trade press, masterplan builder lists, the Builder 100, BUILDER's Local Leaders table and the Greater Houston Builders Association directory. Directory: 190 companies, five on this deck. Local Leaders added Lennar, PulteGroup and Highland Homes."
   ],
@@ -1145,10 +1149,6 @@
   [
    "Sources",
    "Company filings, company pages, trade press. Each contact names its page: 109 LinkedIn headlines naming the firm, 173 firm sites or dated reports, 14 names with no page to link. No aggregator. Nothing inferred."
-  ],
-  [
-   "Scope",
-   "Greater Houston and its suburban counties. Not covered: architects, engineers, permitting authorities. One-off and retail work: the Custom and hybrid section. Held out, kept in the workbook: mid-rise multifamily, and a builder whose chief executive says it left the metro."
   ]
  ],
  "code": {
@@ -27183,7 +27183,7 @@
    "region": "Cedar Park plant, with a project consultant covering Houston",
    "homepage_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
    "synopsis": "Architectural and structural precast for parking garages, cladding and total precast buildings. It casts from a plant on Anderson Mill Road in Cedar Park, the group's only Texas plant. It assigns project consultants by territory.",
-   "key_stat": "Serving the Texas market since 1988",
+   "key_stat": "The group's only Texas plant",
    "principals": [
     {
      "name": "Bruce Wardlaw",
@@ -28227,7 +28227,7 @@
    "region": "Spring, Harris and Montgomery",
    "homepage_url": "https://www.encoreconcrete.com/",
    "synopsis": "Commercial concrete contractor pouring tilt-up warehouses, retail centres, schools and data centres. Its job in Humble, for general contractor Arch-Con, won a 2025 Tilt-Up Achievement Award with 32 panels across four floors.",
-   "key_stat": "Employee-owned, established in 2017",
+   "key_stat": "Employee-owned, and lists elevated multifamily as a project type",
    "principals": [
     {
      "name": "Mark Scully",
@@ -34827,7 +34827,7 @@
    "region": "Houston / Montgomery, Galveston",
    "homepage_url": "https://friendswooddevelopment.com/",
    "synopsis": "Land developer founded in 1962. It has been a wholly owned Lennar subsidiary since 2000. Lennar built a hundred printed homes with ICON, and its Houston division is a separate record on this deck.",
-   "key_stat": "More than 60 years of masterplans, and Lennar builds",
+   "key_stat": "Sells lots inside its own masterplans, and Lennar builds",
    "principals": [
     {
      "name": "Michael Reamer",

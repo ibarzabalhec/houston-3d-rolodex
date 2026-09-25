@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 82,
+ "build": 83,
  "last_updated": "2026-09-24",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-24",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-24",
@@ -149,16 +149,20 @@
     "Titan reservations include Ghost Factory, Cole Klein Builders and Moderne Development, per The Real Deal. Cole Klein builds Zuri Gardens, Houston, which HiveASMBLD prints."
    ],
    [
-    "Lennar in DFW",
-    "Lennar's DFW business: second on BUILDER's 2026 DFW Local Leaders table, 5,724 closings in 2025."
-   ],
-   [
     "Wolf Ranch, Georgetown",
     "100 homes with Lennar, designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community (June 2026)."
    ],
    [
     "Austin and the Hill Country",
     "Community First! Village: 100 more, December 2024. Mueller: one-bedrooms from $195,000, about a dozen two- and three-bedrooms, printing from July 2025. Wimberley Springs: eight homes, upper $800,000s, July 2024."
+   ],
+   [
+    "Lennar in DFW",
+    "Lennar's DFW business: second on BUILDER's 2026 DFW Local Leaders table, 5,724 closings in 2025."
+   ],
+   [
+    "Dallas-Fort Worth",
+    "No ICON project in the metro, per its own site. Its one Houston structure: Mars Dune Alpha, a 1,700 square foot NASA habitat, 2021. Black Buffalo printed a Fort Worth house in May 2024. PRINT3D Technologies of Allen sells printed houses."
    ],
    [
     "The Army",
@@ -171,10 +175,6 @@
    [
     "The company",
     "Structures completed: over 245 per ICON in March 2026, 263 on its site now. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, led by Norwest and Tiger Global."
-   ],
-   [
-    "Dallas-Fort Worth",
-    "No ICON project in the metro, per its own site. Its one Houston structure: Mars Dune Alpha, a 1,700 square foot NASA habitat, 2021. Black Buffalo printed a Fort Worth house in May 2024. PRINT3D Technologies of Allen sells printed houses."
    ]
   ],
   "links": [
@@ -906,6 +906,10 @@
  "no_site_note": "",
  "limits": [
   [
+   "Scope",
+   "The Dallas-Fort Worth-Arlington metro. Not covered: architects, engineers, permitting authorities. Held out: retail shell, mid-rise and one-off architecture."
+  ],
+  [
    "How the list was drawn",
    "BUILDER's Local Leaders table, BUILDER firm pages, masterplan builder lists, trade press and firm websites. A research tool drew the first list. Every name, number and link was then checked against its page. What no page supports was cut."
   ],
@@ -916,10 +920,6 @@
   [
    "Sources",
    "Company filings, company pages, trade press. Each contact names its page: 46 LinkedIn headlines naming the firm, 159 firm sites or dated reports, 0 names with no page to link. No aggregator. Nothing inferred. A LinkedIn link is kept only where a search result showed the name and the firm."
-  ],
-  [
-   "Scope",
-   "The Dallas-Fort Worth-Arlington metro. Not covered: architects, engineers, permitting authorities. Held out: retail shell, mid-rise and one-off architecture."
   ]
  ],
  "code": {
@@ -22833,7 +22833,7 @@
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "Trussway had six plants and 1,000 staff when bought, 2022",
+   "key_stat": "Fort Worth truss and wall-panel plant, formerly Trussway",
    "mvp_screen": "Already makes wall panels for DFW production builders, but it is one plant under a national purchasing desk.",
    "synopsis": "Builders FirstSource plant on Enterprise Avenue in Fort Worth, making trusses, wall panels and components. It serves Hurst, North Richland Hills, Bedford, Haltom City, Arlington and surrounding DFW. The parent took over this former Trussway site.",
    "region": "Fort Worth plant, corporate office in Irving",
@@ -22932,7 +22932,7 @@
    ],
    "phone_absent": null,
    "press": [],
-   "key_stat": "Serving the Texas market since 1988",
+   "key_stat": "Cedar Park precast plant, named North Texas consultant",
    "mvp_screen": "Its only Texas plant is in Cedar Park, so DFW is a sales territory only.",
    "synopsis": "Coreslab Structures (Texas) makes architectural and structural precast. Its plant is at 15916 Anderson Mill Road, in Central Texas. Robb Harrington is its Project Consultant for North Texas, direct line 512-592-2702, and Garrett Weidman is sales manager.",
    "region": "Cedar Park plant, selling into DFW and North Texas",

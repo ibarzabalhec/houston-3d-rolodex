@@ -243,19 +243,26 @@ function figThreshold(){
   var mlo=mid.reduce(function(a,r){return a+r.low;},0), mhi=mid.reduce(function(a,r){return a+r.high;},0);
   function rng(a,b){return a===b?fmt(a):fmt(a)+' to '+fmt(b);}
   function ti(a,b){var x=Math.floor(a/TITAN_A_YEAR), y=Math.ceil(b/TITAN_A_YEAR);return x===y?String(x):x+' to '+y;}
-  var st=[['6 to 10','printers of demand in one market, ICON’s test for a full market opening'],
-    [String(band.length),'builders on this deck publish a yearly figure for '+PL.name+' alone inside the 25 to 400 band'],
-    [band.length?rng(lo,hi):'0','homes a year, those '+nword(band.length)+' together']];
-  if(band.length) st.push([ti(lo,hi),'Titans that volume would keep working, at an assumed '+TITAN_A_YEAR+' houses a year each']);
-  st.push([String(mid.length),'builders publish a '+PL.name+' figure between 400 and 1,500, together '+rng(mlo,mhi)+' homes a year']);
-  var body='<div class="stats mk thr">'+st.map(function(x){return '<div class="stat"><b>'+x[0]+'</b><span>'+esc(x[1])+'</span></div>';}).join('')+'</div>';
+  /* Build 83. One comparison, read across: each band's builders, their homes
+     a year, and the Titans that volume would keep working, set against ICON's
+     six to ten. It was five separate numbers in a row. */
+  var wlo=wideBand.reduce(function(a,r){return a+r.low;},0), whi=wideBand.reduce(function(a,r){return a+r.high;},0);
+  var rowsT=[['25 to 400 homes a year, one or two printers each',band.length,band.length?rng(lo,hi):'0',band.length?ti(lo,hi):'0'],
+             ['400 to 1,500 homes a year',mid.length,mid.length?rng(mlo,mhi):'0',mid.length?ti(mlo,mhi):'0']];
+  /* A builder inside the band whose figure also counts other markets is shown
+     on its own row and not turned into Titans: its local share is unknown. */
+  if(wideBand.length) rowsT.splice(1,0,['25 to 400, a figure that also counts other markets',wideBand.length,rng(wlo,whi),'not counted']);
+  var body='<table class="thtab"><thead><tr><th>Builders who publish homes closed a year</th><th class="num">Builders</th>'+
+    '<th class="num">Homes a year</th><th class="num">Titans, at '+TITAN_A_YEAR+' a year</th></tr></thead><tbody>'+
+    rowsT.map(function(r){return '<tr><td>'+esc(r[0])+'</td><td class="num">'+r[1]+'</td><td class="num">'+r[2]+'</td><td class="num">'+r[3]+'</td></tr>';}).join('')+
+    '<tr class="test"><td>ICON\u2019s test for a full market opening</td><td></td><td></td><td class="num">6 to 10 printers</td></tr>'+
+    '</tbody></table>';
   var tbl='<table class="ftab"><thead><tr><th>Builder</th><th class="num">Homes a year</th><th>Year</th><th>Band</th></tr></thead><tbody>'+
     band.concat(mid).map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+rng(r.low,r.high)+'</td><td>'+r.year+
       '</td><td>'+(r.high<=400?'25 to 400':'400 to 1,500')+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('ICON’s six-to-ten printer test, against published volume',
     'ICON (BUILDER, 11 March 2026): demand for six to ten printers makes a market a candidate for a full opening. Target: small and mid-sized builders. '+
-    'Counts use '+PL.name+'-only closings figures'+(wideBand.length?', leaving out '+nword(wideBand.length)+' that cover other markets':'')+'. '+
-    'Titans assume '+TITAN_A_YEAR+' houses a year each. ICON has not published a rate.',
+    'Titans: from '+PL.name+'-only figures, at an assumed '+TITAN_A_YEAR+' houses a year each. ICON has not published a rate.',
     body, tbl, [{url:ICON_MKT,label:'BUILDER, 11 March 2026'}], 'figThreshold');
 }
 
@@ -636,7 +643,7 @@ function drawMarket(){
       last?'single-family units permitted in '+last.year+', whole metro':'no permit series'],
     ['mkBuyers','Who builds them',cl.length+' of '+NB,'builders and developers publish homes closed a year'],
     ['mkFit','Fit for one or two printers',String(band.length),
-      'builders publish '+PL.name+' volume inside the band one or two printers would cover'],
+      (band.length===1?'builder publishes ':'builders publish ')+PL.name+' volume inside the band one or two printers would cover'],
     ['mkPrint','Printing in Texas',fmt(pu),'printed homes in '+PL.name+', built, under way or committed'],
     ['mkNews','News since 1 March 2026',String(nn),'dated items on firms in the top sections']];
   document.getElementById('mkStats').innerHTML=steps.map(function(s,i){

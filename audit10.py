@@ -155,9 +155,25 @@ BANDS = ("An assumption, not a published figure. Yes: 25 to 400 homes a year, on
          "publishes a rate.")
 
 
+# Build 83. ICON's record reads in the order a buyer asks: what is for sale,
+# who has reserved it, what it has built, what it has here, then the rest of
+# the business. The limits open with what the deck covers.
+ICON_ORDER = ["Titan, on the record", "The first reservations", "Wolf Ranch, Georgetown",
+              "Austin and the Hill Country", "Lennar in Houston", "Lennar in DFW", "Houston",
+              "Dallas-Fort Worth", "The Army", "ICON Prime", "The company"]
+LIMITS_ORDER = ["Scope", "How the list was drawn", "Who decides", "Sources"]
+
+
 def final_copy(D, mk):
     """Returns a list of problems; empty when every block was found."""
     bad = []
+    ir = D.get("icon_record") or {}
+    if ir.get("facts"):
+        rank = {k: i for i, k in enumerate(ICON_ORDER)}
+        ir["facts"].sort(key=lambda f: rank.get(f[0], 99))
+    if D.get("limits"):
+        rank = {k: i for i, k in enumerate(LIMITS_ORDER)}
+        D["limits"].sort(key=lambda l: rank.get(l[0], 99))
     for lim in D.get("limits", []):
         head, text = lim[0], lim[1]
         if head == "How the list was drawn":

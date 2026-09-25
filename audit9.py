@@ -23,18 +23,15 @@ GRBK_10K = "https://www.sec.gov/Archives/edgar/data/1373670/000162828026037547/a
 LL26 = "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/"
 
 # target_id: (headline, page that carries the figure)
+# Build 83. Five figures found in Build 80 are dropped again: a founding year or
+# an acquired company's size said nothing about the firm's walls, so the old
+# line, which does, is back. HOU-141, HOU-105, HOU-042, DFW-TR-010, DFW-TR-031.
 HEADLINE = {
     # Greater Houston
     "HOU-126": ("Factory-built ADUs from $99,000 turnkey in Houston",
                 "https://www.auradwellings.com/"),
-    "HOU-141": ("Serving the Texas market since 1988",
-                "https://www.coreslab.com/locations/austin-texas-precast-concrete/"),
-    "HOU-105": ("Employee-owned, established in 2017",
-                "https://www.encoreconcrete.com/"),
     "HOU-082": ("About 513,000 sq ft in the East Blocks first phase",
                 "https://therealdeal.com/texas/houston/2023/11/13/pagewood-wile-to-convert-eado-houston-warehouses/"),
-    "HOU-042": ("More than 60 years of masterplans, and Lennar builds",
-                "https://friendswooddevelopment.com/about-fdc"),
     # Dallas-Fort Worth
     "DFW-003b": ("11 DFW townhome communities listed on its site", "https://cbjenihomes.com/communities/"),
     "DFW-003d": ("Seven selling communities at the end of 2025, per Green Brick", GRBK_10K),
@@ -64,10 +61,6 @@ HEADLINE = {
                    "https://obrienarch.com/project/gmi-corporate-headquarters-pre-fab-facility/"),
     "DFW-TR-012": ("60,000 sq ft Dallas door shop, no DFW panel plant",
                    "https://hbsdealer.com/84-lumber-opens-dallas-door-shop"),
-    "DFW-TR-010": ("Trussway had six plants and 1,000 staff when bought, 2022",
-                   "https://www.bldr.com/who-we-are/in-the-news/builders-firstsource-acquires-trussway"),
-    "DFW-TR-031": ("Serving the Texas market since 1988",
-                   "https://www.coreslab.com/locations/austin-texas-precast-concrete/"),
     "DFW-TR-085": ("Fifteen to twenty slabs a week, per First Texas Homes",
                    "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/"),
     "DFW-TR-060": ("Over 750 mobile machines in its fleet, company-wide", "https://brundagebone.com/about/"),
