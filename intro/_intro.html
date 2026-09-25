@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Rolodex Intro</title>
+<style>
+/*__FONTS__*/
+:root{--paper:#FFFFFF;--ink:#111111;--ink3:#6B6B6B;--rule2:#CFCFCF}
+html,body{margin:0;height:100%;background:var(--paper);overflow:hidden}
+canvas{display:block;width:100vw;height:100vh;height:100dvh;touch-action:manipulation;cursor:pointer}
+.ctl{position:fixed;right:max(16px,env(safe-area-inset-right));bottom:calc(16px + env(safe-area-inset-bottom));
+  display:flex;gap:8px;opacity:0;pointer-events:none;transition:opacity .2s}
+.ctl.on{opacity:1;pointer-events:auto}
+.ctl button{font:600 12px/1 'IBM Plex Mono',ui-monospace,monospace;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink);background:var(--paper);border:1px solid var(--ink);border-radius:2px;padding:0 14px;height:40px;cursor:pointer}
+.ctl button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.ctl button:active{transform:translateY(1px)}
+.ctl button:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+</style>
+</head>
+<body>
+<canvas id="cv" aria-label="Rolodex intro: Greater Houston builders and developers, screened for a construction printer."></canvas>
+<div class="ctl" id="ctl">
+  <button id="slow" aria-pressed="false" title="Play at half speed">Half speed</button>
+  <button id="replay" title="Play again">Replay</button>
+</div>
+<script>
+(function(){
+"use strict";
+const D = __DATA__;
+const C = {paper:'#FFFFFF', paper2:'#FAFAFA', paper3:'#F0F0F0', ink:'#111111', ink2:'#3D3D3D', ink3:'#6B6B6B',
+  rule:'#E4E4E4', rule2:'#CFCFCF', acc:D.accent, night:'#0F1012', dgrey:'#474B54', light:'#ECECEC', lgrey:'#9D9D9D'};
+const DUR = 5.0;                     // seconds
+const HITS = [0, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5];   // 120 bpm, the strong beats
+const SANS = 'Archivo, "Helvetica Neue", Arial, sans-serif';
+const MONO = '"IBM Plex Mono", ui-monospace, Menlo, monospace';
+
+const cv = document.getElementById('cv'), ctx = cv.getContext('2d');
+let W = 0, H = 0, DPR = 1, L = null;
+
+/* ---------- small math ---------- */
+const clamp = (v,a,b) => v < a ? a : v > b ? b : v;
+const seg = (t,a,b) => clamp((t-a)/(b-a), 0, 1);
+const lerp = (a,b,k) => a + (b-a)*k;
+const E = {
+  outExpo: k => k >= 1 ? 1 : 1 - Math.pow(2, -10*k),
+  outCubic: k => 1 - Math.pow(1-k, 3),
+  inCubic: k => k*k*k,
+  inOutCubic: k => k < .5 ? 4*k*k*k : 1 - Math.pow(-2*k+2, 3)/2,
+  outBack: k => { const c1 = 1.5, c3 = c1+1; return 1 + c3*Math.pow(k-1,3) + c1*Math.pow(k-1,2); }
+};
+function rng(seed){ return () => { seed |= 0; seed = seed + 0x6D2B79F5 | 0; let t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+  t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
+const fmt = n => n.toLocaleString('en-US');
+
+/* ---------- layout ---------- */
+function font(w, px, fam){ return w + ' ' + px + 'px ' + (fam || SANS); }
+
+function wrap(text, max, f){
+  ctx.font = f; const words = text.split(' '), out = []; let cur = '';
+  for (const w of words){ const t = cur ? cur + ' ' + w : w;
+    if (ctx.measureText(t).width > max && cur){ out.push(cur); cur = w; } else cur = t; }
+  if (cur) out.push(cur); return out;
+}
+
+function layout(){
+  const m = Math.round(Math.max(16, Math.min(W, H) * 0.06));
+  const S = {m};
+  const narrow = W < 640;
+  S.cs = clamp(Math.round(W * 0.0115), 11, 15);           // mono caption size
+  S.bf = Math.round(Math.min(H * 0.2, W * 0.16));          // the big figure in the top-left slot
+
+  /* the hook: the permit count, cropped by the frame */
+  const hs = fmt(D.permits), two = H / W > 1.3 && hs.includes(',');
+  const parts = two ? [hs.slice(0, hs.indexOf(',') + 1), hs.slice(hs.indexOf(',') + 1)] : [hs];
+  ctx.font = font(800, 100);
+  const w100 = Math.max(...parts.map(q => ctx.measureText(q).width));
+  let fs = 100 * (W * (two ? 1.04 : 1.08)) / w100;
+  fs = two ? Math.min(fs, H * 0.6 / 1.64) : Math.min(fs, H * 0.62);
+  S.hfs = fs; ctx.font = font(800, fs);
+  const hw = w100 * fs / 100;
+  S.hx = (W - hw) / 2;
+  const b1 = two ? H / 2 - fs * 0.05 : H * 0.5 + fs * 0.36;
+  S.lines = parts.map((q, j) => ({q, b: b1 + j * fs * 0.82}));
+  S.hb = S.lines[S.lines.length - 1].b;
+  S.chars = [];
+  for (const ln of S.lines){ let x = S.hx; for (const ch of ln.q){ const w = ctx.measureText(ch).width; S.chars.push({ch, x, w, b: ln.b}); x += w; } }
+  S.cap1 = wrap(('Single-family homes permitted · ' + D.place + ' · ' + D.permits_year).toUpperCase(),
+                W - 2*m, font(600, S.cs, MONO));
+  S.src1 = ('Source: ' + D.permits_source).toUpperCase();
+
+  /* sample the hook's glyphs: one point per firm, spread by farthest-point sampling */
+  const oc = document.createElement('canvas'); oc.width = Math.ceil(W); oc.height = Math.ceil(H);
+  const o = oc.getContext('2d'); o.fillStyle = '#000'; o.font = font(800, fs); o.textBaseline = 'alphabetic';
+  for (const ln of S.lines) o.fillText(ln.q, S.hx, ln.b);
+  const img = o.getImageData(0, 0, oc.width, oc.height).data;
+  const step = Math.max(3, Math.round(fs / 45)), pts = [];
+  for (let yy = 0; yy < oc.height; yy += step) for (let xx = 0; xx < oc.width; xx += step)
+    if (img[(yy * oc.width + xx) * 4 + 3] > 140) pts.push([xx, yy]);
+  const N = D.n, pick = [];
+  if (pts.length){
+    const dmin = new Float64Array(pts.length).fill(Infinity);
+    let cur = 0; for (let i = 1; i < pts.length; i++) if (pts[i][0] < pts[cur][0]) cur = i;
+    for (let k = 0; k < N; k++){
+      pick.push(pts[cur]); let best = -1, bi = 0;
+      for (let i = 0; i < pts.length; i++){
+        const dx = pts[i][0] - pts[cur][0], dy = pts[i][1] - pts[cur][1], d = dx*dx + dy*dy;
+        if (d < dmin[i]) dmin[i] = d; if (dmin[i] > best){ best = dmin[i]; bi = i; }
+      }
+      cur = bi;
+    }
+  }
+  while (pick.length < N) pick.push([W/2, H/2]);
+  S.rs = Math.max(2, step * 0.9);
+
+  /* the roster grid: 126 = cols x rows, shaped to the frame */
+  const gx0 = m, gx1 = W - m, gy0 = narrow ? H * 0.3 : H * 0.34, gy1 = H - m * 1.5;
+  const asp = (gx1 - gx0) / (gy1 - gy0);
+  let best = null;
+  for (let c = 1; c <= N; c++){ if (N % c) continue; const r = N / c;
+    const sc = Math.abs(Math.log((c / r) / asp)); if (!best || sc < best.sc) best = {c, r, sc}; }
+  const cell = Math.min((gx1 - gx0) / best.c, (gy1 - gy0) / best.r);
+  const ox = (gx0 + gx1) / 2 - cell * best.c / 2, oy = (gy0 + gy1) / 2 - cell * best.r / 2;
+  S.rg = cell * 0.27; S.cell = cell;
+  const slots = [];
+  for (let i = 0; i < N; i++){ const col = i % best.c, row = Math.floor(i / best.c);
+    slots.push({x: ox + cell * (col + .5), y: oy + cell * (row + .5), col, row}); }
+
+  /* glyph points go to slots in column order, so the burst reads left to right */
+  const byX = pick.slice().sort((a, b) => a[0] - b[0] || a[1] - b[1]);
+  const slotOrder = slots.map((s, i) => i).sort((a, b) => slots[a].col - slots[b].col || slots[a].row - slots[b].row);
+  const Q = new Array(N); slotOrder.forEach((si, k) => { Q[si] = {x: byX[k][0], y: byX[k][1]}; });
+
+  /* the axis: homes closed a year, log scale */
+  const ax0 = m, ax1 = W - m, lo = Math.log(20), hi = Math.log(8000);
+  S.ax = v => ax0 + (Math.log(v) - lo) / (hi - lo) * (ax1 - ax0);
+  S.base = H * 0.8; S.bandTop = H * 0.47;
+  S.ra = Math.min(S.rg * 1.0, (ax1 - ax0) / 52);
+  const pubs = D.firms.map((f, i) => ({i, v: f.v})).filter(p => p.v).sort((a, b) => a.v - b.v);
+  const placed = [], A = {};
+  for (const p of pubs){
+    const x = S.ax(p.v); let y = S.base - S.ra - 2;
+    let moved = true;
+    while (moved){ moved = false;
+      for (const q of placed){ if (Math.hypot(q.x - x, q.y - y) < 2*S.ra + 2){ y = q.y - (2*S.ra + 2); moved = true; } } }
+    placed.push({x, y}); A[p.i] = {x, y};
+  }
+  S.focus = {x: (S.ax(D.band[0]) + S.ax(D.band[1])) / 2 + (W < 640 ? W * 0.12 : 0), y: S.base - H * 0.16};
+
+  /* the final frame: wordmark, its dot, the title printed line by line */
+  ctx.font = font(700, 100);
+  const we = ctx.measureText('ROLODEX').width / 100 - 0.14;   // drawn at -0.02em tracking
+  S.wf = Math.round(Math.min(W * 0.2, H * 0.22, (W - 2 * m) / (we + 0.62)));
+  S.ww = we * S.wf;
+  S.tf = Math.round(clamp(S.wf * 0.3, 16, 44));
+  const tl = [];
+  D.title.forEach((line, j) => { for (const l of wrap(line, W - 2*m, font(j ? 700 : 400, S.tf))) tl.push({l, b: j > 0}); });
+  S.tl = tl;
+  const blockH = S.wf * 0.78 + S.tf * 0.9 + tl.length * S.tf * 1.22;
+  S.wy = Math.round(H / 2 - blockH / 2 + S.wf * 0.74);     // wordmark baseline
+  S.wx = m;
+  S.dot = {x: S.wx + S.ww + S.wf * 0.12 + S.wf * 0.115, y: S.wy - S.wf * 0.58, r: S.wf * 0.115};
+  S.ty = S.wy + S.wf * 0.28 + S.tf * 1.2;
+
+  /* per-firm constants */
+  let ti = 0, di = 0; const r = rng(7);
+  S.F = D.firms.map((f, i) => ({...f, G: slots[i], Q: Q[i], A: A[i] || null,
+    stag: slots[i].col / Math.max(1, best.c - 1) * 0.7 + r() * 0.3,
+    ti: f.tr ? ti++ : -1, di: f.dec ? di++ : -1}));
+  return S;
+}
+
+/* ---------- camera ---------- */
+function kick(t, upto){ let k = 0; for (const h of HITS){ if (upto !== undefined && h > upto) continue; if (t >= h && t < h + .35) k += Math.exp(-(t - h) / .07); } return k; }
+function cam(t){
+  let s = 1, fx = W/2, fy = H/2, r = 0;
+  const push = E.inOutCubic(seg(t, 1.5, 2.05));
+  const whip = E.outExpo(seg(t, 2.5, 2.72));
+  const p = push * (1 - whip);
+  s = lerp(1, 1.2, p); fx = lerp(W/2, L.focus.x, p); fy = lerp(H/2, L.focus.y, p);
+  r = lerp(0, -0.045, seg(t, 1.5, 1.52)) * (1 - E.outCubic(seg(t, 1.5, 1.95))) * (1 - whip);
+  r += 0.03 * (1 - E.outExpo(seg(t, 2.5, 2.75))) * (t >= 2.5 ? 1 : 0);
+  s *= 1 + 0.018 * kick(t, 4.0);
+  return {s, fx, fy, r};
+}
+function apply(c, x, y){
+  const dx = (x - c.fx) * c.s, dy = (y - c.fy) * c.s, cs = Math.cos(c.r), sn = Math.sin(c.r);
+  return {x: W/2 + dx*cs - dy*sn, y: H/2 + dx*sn + dy*cs};
+}
+function withCam(c, fn){ ctx.save(); ctx.translate(W/2, H/2); ctx.rotate(c.r); ctx.scale(c.s, c.s); ctx.translate(-c.fx, -c.fy); fn(); ctx.restore(); }
+
+/* ---------- a firm's dot at time t, in world space ---------- */
+function mix(a, b, k){
+  const pa = parseInt(a.slice(1), 16), pb = parseInt(b.slice(1), 16);
+  const ch = s => [(s >> 16) & 255, (s >> 8) & 255, s & 255];
+  const A = ch(pa), B = ch(pb);
+  return 'rgb(' + A.map((v, i) => Math.round(lerp(v, B[i], k))).join(',') + ')';
+}
+function dotAt(f, t){
+  if (t < 0.75) return null;
+  let x, y, r, a = 1, col = C.ink, hollow = false;
+  if (t < 1.0){
+    const k = E.outCubic(seg(t, .75, .9));
+    return {x: f.Q.x, y: f.Q.y, r: L.rs * k, a, col};
+  }
+  const d2 = f.stag * .12, k2 = E.outBack(seg(t, 1.0 + d2, 1.3 + d2));
+  x = lerp(f.Q.x, f.G.x, k2); y = lerp(f.Q.y, f.G.y, k2); r = lerp(L.rs, L.rg, clamp(k2, 0, 1));
+  if (t < 1.5) return {x, y, r, a, col};
+  if (t < 2.5){
+    const d3 = f.stag * .1, k3 = E.inOutCubic(seg(t, 1.5 + d3, 1.92 + d3));
+    if (f.A){
+      x = lerp(f.G.x, f.A.x, k3); y = lerp(f.G.y, f.A.y, k3); r = lerp(L.rg, L.ra, k3);
+      if (k3 > .6){ if (f.fit === 'partial') col = C.ink3; else if (f.fit === 'fail') hollow = true; }
+    } else { a = 1 - k3; y += k3 * H * .06; r *= 1 - .45 * k3; }
+    return {x, y, r, a, col, hollow};
+  }
+  /* night: back to the roster */
+  const d4 = f.stag * .08, k4 = E.outExpo(seg(t, 2.5 + d4, 2.74 + d4));
+  if (f.A){ x = lerp(f.A.x, f.G.x, k4); y = lerp(f.A.y, f.G.y, k4); r = lerp(L.ra, L.rg, k4); }
+  else { x = f.G.x; y = f.G.y; r = L.rg * E.outBack(k4); a = clamp(k4 * 1.4, 0, 1); }
+  col = C.dgrey;
+  if (t >= 3.0 && t < 4.0 && f.tr){
+    const k = seg(t, 3.0 + f.ti * .018, 3.07 + f.ti * .018);
+    if (k > 0){ col = C.acc; r *= 1 + .45 * Math.sin(Math.PI * k) + .12; }
+  }
+  if (t >= 3.5 && t < 4.0){
+    const i = Math.floor((t - 3.5) / .125), t0 = 3.5 + i * .125;
+    if (f.cat === i){ col = C.light; a = 1; r *= 1 + .3 * Math.sin(Math.PI * seg(t, t0, t0 + .07)); }
+    else { col = C.dgrey; a = .3; }
+  }
+  if (t >= 4.0){
+    col = C.dgrey;
+    if (f.dec){ const k = seg(t, 4.0 + f.di * .0028, 4.05 + f.di * .0028); if (k > 0){ col = C.light; r *= 1 + .3 * Math.sin(Math.PI * k); } }
+  }
+  if (t >= 4.25){
+    const d = f.stag * .1, k = E.inCubic(seg(t, 4.25 + d, 4.47 + d));
+    if (k >= 1) return null;
+    x = lerp(x, L.dot.x, k); y = lerp(y, L.dot.y, k); r = lerp(r, L.dot.r * .7, k);
+    if (k > .35) col = C.acc;
+  }
+  return {x, y, r, a, col, hollow};
+}
+
+/* ---------- pieces ---------- */
+function flood(t){
+  /* the flood prints in layers from the bottom, each pass the other way; it lifts from the top */
+  const n = 8, lh = H / n;
+  for (let k = 0; k < n; k++){
+    const y = H - (k + 1) * lh, ltr = k % 2 === 0;
+    const kin = E.inOutCubic(seg(t, 2.47 + k * .026, 2.56 + k * .026));
+    const kout = E.inOutCubic(seg(t, 4.25 + (n - 1 - k) * .022, 4.33 + (n - 1 - k) * .022));
+    if (kin <= 0 || kout >= 1) continue;
+    let x0, x1;
+    if (kout > 0){ if (ltr){ x0 = W * kout; x1 = W; } else { x0 = 0; x1 = W * (1 - kout); } }
+    else if (ltr){ x0 = 0; x1 = W * kin; } else { x0 = W * (1 - kin); x1 = W; }
+    ctx.fillStyle = C.night; ctx.fillRect(x0, y - .5, x1 - x0, lh + 1);
+    const head = kout > 0 ? (ltr ? x0 : x1) : (ltr ? x1 : x0);
+    if ((kin > 0 && kin < 1) || (kout > 0 && kout < 1)){
+      ctx.fillStyle = C.acc; ctx.fillRect(head - 2, y - .5, 4, lh + 1);
+    }
+  }
+}
+function night(t){ return t >= 2.56 && t < 4.44; }
+
+function hook(t){
+  if (t >= .97) return;
+  const fade = 1 - seg(t, .75, .95);
+  ctx.save(); ctx.globalAlpha = fade; ctx.fillStyle = C.ink; ctx.font = font(800, L.hfs); ctx.textBaseline = 'alphabetic';
+  L.chars.forEach((c, j) => {
+    const k = E.outExpo(seg(t, j * .032 - .05, j * .032 + .15));
+    if (k <= 0) return;
+    const sc = lerp(1.45, 1, k), dy = lerp(H * .07, 0, k);
+    ctx.save(); ctx.globalAlpha = fade * clamp(k * 3, 0, 1);
+    ctx.translate(c.x + c.w/2, c.b - L.hfs * .36 + dy); ctx.scale(sc, sc);
+    ctx.fillText(c.ch, -c.w/2, L.hfs * .36); ctx.restore();
+  });
+  /* the bead under it, then the caption typed on */
+  const ry = Math.min(H - L.m * 2.6, L.hb + L.m * .9), kr = E.inOutCubic(seg(t, .18, .4));
+  ctx.fillStyle = C.ink; ctx.fillRect(L.m, ry, (W - 2*L.m) * kr, 2);
+  if (kr > 0 && kr < 1){ ctx.fillStyle = C.acc; ctx.fillRect(L.m + (W - 2*L.m) * kr - 3, ry - 2, 6, 6); }
+  ctx.font = font(600, L.cs, MONO); ctx.fillStyle = C.ink; ctx.textBaseline = 'top';
+  const all = L.cap1.join('\n'), shown = Math.floor(all.length * seg(t, .28, .6));
+  let used = 0; L.cap1.forEach((line, j) => {
+    const n = clamp(shown - used, 0, line.length); used += line.length + 1;
+    spaced(line.slice(0, n), L.m, ry + L.cs * 1.1 + j * L.cs * 1.5, .1);
+  });
+  if (t > .5){ ctx.fillStyle = C.ink3; ctx.font = font(500, Math.max(10, L.cs - 2), MONO);
+    ctx.globalAlpha = fade * seg(t, .5, .6); spaced(L.src1, L.m, ry + L.cs * 1.1 + L.cap1.length * L.cs * 1.5 + 4, .08); }
+  ctx.restore();
+}
+
+function spaced(s, x, y, em){  // mono with tracking
+  const px = parseFloat(ctx.font.match(/(\d+(?:\.\d+)?)px/)[1]), sp = px * em;
+  if ('letterSpacing' in ctx){ ctx.letterSpacing = sp + 'px'; ctx.fillText(s, x, y); ctx.letterSpacing = '0px'; return; }
+  for (const ch of s){ ctx.fillText(ch, x, y); x += ctx.measureText(ch).width + sp; }
+}
+
+/* the big figure in the top-left slot: in on its beat with a punch, out on the next with a cut */
+function big(t, t0, t1, text, col, label, lcol, size){
+  if (t < t0 || t >= t1) return;
+  const k = E.outExpo(seg(t, t0, t0 + .16)), sz = size || L.bf;
+  const y = L.m + sz * .74;
+  ctx.save();
+  ctx.beginPath(); ctx.rect(0, 0, L.m + (W) * k, H); ctx.clip();
+  ctx.translate(L.m, y); const sc = lerp(1.08, 1, k) * (1 + .02 * kick(t)); ctx.scale(sc, sc);
+  ctx.fillStyle = col; ctx.font = font(800, sz); ctx.textBaseline = 'alphabetic'; ctx.fillText(text, 0, 0);
+  ctx.restore();
+  if (label){
+    ctx.save(); ctx.fillStyle = lcol; ctx.font = font(600, L.cs, MONO); ctx.textBaseline = 'top';
+    ctx.globalAlpha = seg(t, t0 + .05, t0 + .14);
+    wrap(label.toUpperCase(), W - 2*L.m, font(600, L.cs, MONO)).forEach((l, j) => spaced(l, L.m, y + sz * .16 + j * L.cs * 1.5, .1));
+    ctx.restore();
+  }
+}
+
+function axis(t){
+  if (t < 1.95 || t >= 2.6) return;
+  const k = seg(t, 2.0, 2.2), k2 = seg(t, 2.08, 2.3), a = 1 - seg(t, 2.5, 2.58);
+  ctx.save(); ctx.globalAlpha = a;
+  const x0 = L.ax(D.band[0]), x1 = L.ax(D.band[1]), x2 = L.ax(D.band2[1]);
+  const top = L.bandTop, bh = L.base - L.bandTop;
+  ctx.fillStyle = C.paper3; ctx.fillRect(x0, top, (x1 - x0) * E.inOutCubic(k), bh);
+  ctx.fillStyle = C.paper2; ctx.fillRect(x2 - (x2 - x1) * E.inOutCubic(k2), top, (x2 - x1) * E.inOutCubic(k2), bh);
+  if (k > 0 && k < 1){ ctx.fillStyle = C.acc; ctx.fillRect(x0 + (x1 - x0) * E.inOutCubic(k) - 2, top, 4, bh); }
+  ctx.fillStyle = C.ink; ctx.fillRect(L.m, L.base, (W - 2*L.m) * E.outExpo(seg(t, 1.95, 2.15)), 1.5);
+  ctx.font = font(500, Math.max(10, L.cs - 1), MONO); ctx.fillStyle = C.ink3; ctx.textBaseline = 'top'; ctx.textAlign = 'center';
+  ctx.globalAlpha = a * seg(t, 2.05, 2.15);
+  for (const v of [25, 100, 400, 1500, 6000]) ctx.fillText(fmt(v), L.ax(v), L.base + 8);
+  ctx.textAlign = 'left'; ctx.restore();
+}
+
+function dots(t){
+  const c = cam(t), cp = cam(t - 1/60);
+  for (const f of L.F){
+    const d = dotAt(f, t); if (!d || d.r <= 0 || d.a <= 0) continue;
+    const p = apply(c, d.x, d.y), r = d.r * c.s;
+    const dp = dotAt(f, t - 1/60); let q = p;
+    if (dp){ q = apply(cp, dp.x, dp.y); }
+    ctx.globalAlpha = d.a;
+    const len = Math.hypot(p.x - q.x, p.y - q.y);
+    if (d.hollow){
+      ctx.strokeStyle = C.ink; ctx.lineWidth = Math.max(1.25, r * .28); ctx.fillStyle = C.paper;
+      ctx.beginPath(); ctx.arc(p.x, p.y, r - ctx.lineWidth/2, 0, Math.PI*2); ctx.fill(); ctx.stroke();
+    } else if (len > 1.5){
+      ctx.strokeStyle = d.col; ctx.lineCap = 'round'; ctx.lineWidth = r * 2;
+      ctx.beginPath(); ctx.moveTo(q.x, q.y); ctx.lineTo(p.x, p.y); ctx.stroke();
+    } else {
+      ctx.fillStyle = d.col; ctx.beginPath(); ctx.arc(p.x, p.y, r, 0, Math.PI*2); ctx.fill();
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+/* the categories: one kind of firm per eighth note, its dots lit in the roster */
+function catsBeat(t){
+  if (t < 3.5 || t >= 4.0) return;
+  const i = clamp(Math.floor((t - 3.5) / .125), 0, D.cats.length - 1), c = D.cats[i];
+  if (!c) return;
+  ctx.font = font(800, 100); const sz = Math.min(L.bf, 100 * (W - 2*L.m) / ctx.measureText(c.label).width);
+  const t0 = 3.5 + i * .125, k = E.outExpo(seg(t, t0, t0 + .06));
+  ctx.save(); ctx.fillStyle = C.light; ctx.font = font(800, sz); ctx.textBaseline = 'alphabetic';
+  const y = L.m + L.bf * .74; ctx.translate(L.m + lerp(-sz * .15, 0, k) * (i % 2 ? -1 : 1), y);
+  ctx.fillText(c.label, 0, 0); ctx.restore();
+  ctx.save(); ctx.fillStyle = C.lgrey; ctx.font = font(600, L.cs, MONO); ctx.textBaseline = 'top';
+  spaced((c.n + ' of ' + D.n).toUpperCase(), L.m, y + L.bf * .16, .1); ctx.restore();
+}
+
+function finale(t){
+  if (t < 4.5) return;
+  const k = E.outExpo(seg(t, 4.5, 4.66));
+  ctx.save(); ctx.fillStyle = C.ink; ctx.font = font(700, L.wf); ctx.textBaseline = 'alphabetic';
+  ctx.beginPath(); ctx.rect(L.wx - 4, 0, (L.ww + L.wf) * k + 4, H); ctx.clip();
+  if ('letterSpacing' in ctx) ctx.letterSpacing = (-.02 * L.wf) + 'px';
+  ctx.fillText('ROLODEX', L.wx + lerp(-L.wf * .2, 0, k), L.wy);
+  if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
+  ctx.restore();
+  /* the dot lands last, on the beat after the word */
+  const kd = seg(t, 4.5, 4.64), pop = kd < 1 ? E.outBack(kd) : 1;
+  ctx.fillStyle = C.acc; ctx.beginPath(); ctx.arc(L.dot.x, L.dot.y, L.dot.r * pop, 0, Math.PI*2); ctx.fill();
+  /* the title prints one line at a time behind a bead, each pass the other way */
+  L.tl.forEach((ln, j) => {
+    const t0 = 4.6 + j * .075, kk = E.inOutCubic(seg(t, t0, t0 + .13));
+    if (kk <= 0) return;
+    ctx.save(); ctx.font = font(ln.b ? 700 : 400, L.tf); ctx.fillStyle = ln.b ? C.ink : C.ink2; ctx.textBaseline = 'alphabetic';
+    const w = ctx.measureText(ln.l).width + 2, y = L.ty + j * L.tf * 1.22, ltr = j % 2 === 0;
+    const cx = ltr ? L.wx : L.wx + w * (1 - kk);
+    ctx.beginPath(); ctx.rect(cx, y - L.tf, w * kk, L.tf * 1.35); ctx.clip(); ctx.fillText(ln.l, L.wx, y); ctx.restore();
+    if (kk < 1){ ctx.fillStyle = C.acc; ctx.fillRect((ltr ? L.wx + w * kk : L.wx + w * (1 - kk)) - 2, y - L.tf * .85, 4, L.tf * 1.05); }
+  });
+  ctx.save(); ctx.globalAlpha = seg(t, 4.85, 4.98); ctx.fillStyle = C.ink3; ctx.font = font(600, Math.max(10, L.cs - 1), MONO);
+  ctx.textBaseline = 'alphabetic'; spaced(('Prepared by ' + D.by).toUpperCase(), L.m, H - L.m - 4, .12); ctx.restore();
+}
+
+function progress(t){
+  if (t >= 4.55) return;
+  const a = 1 - seg(t, 4.4, 4.55), y = H - 3, nt = night(t);
+  ctx.save(); ctx.globalAlpha = a;
+  ctx.fillStyle = nt ? '#2A2C31' : C.rule; ctx.fillRect(0, y, W, 3);
+  ctx.fillStyle = nt ? C.lgrey : C.ink; ctx.fillRect(0, y, W * t / DUR, 3);
+  for (const h of HITS){ const x = W * h / DUR; ctx.fillRect(x - .5, y - 4, 1, 4); }
+  ctx.restore();
+}
+
+/* ---------- the frame ---------- */
+function render(t){
+  t = clamp(t, 0, DUR);
+  ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+  ctx.fillStyle = C.paper; ctx.fillRect(0, 0, W, H);
+  withCam(cam(t), () => axis(t));
+  flood(t);
+  hook(t);
+  dots(t);
+  const nt = night(t);
+  big(t, 1.0, 1.5, fmt(D.n), C.ink, 'Firms screened', C.ink);
+  big(t, 2.0, 2.5, D.band[0] + ' to ' + D.band[1], C.ink, 'Homes closed a year · one or two printers', C.ink);
+  big(t, 3.0, 3.5, String(D.track), C.acc, 'Have paid for a new building method', C.light);
+  catsBeat(t);
+  big(t, 4.0, 4.25, String(D.dec), C.light, 'of ' + D.n + ' with a decision-maker named', C.light);
+  finale(t);
+  progress(t);
+}
+
+/* ---------- playback ---------- */
+const ctl = document.getElementById('ctl'), bReplay = document.getElementById('replay'), bSlow = document.getElementById('slow');
+let start = 0, speed = 1, playing = false, raf = 0, ready = false;
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+function size(){
+  W = innerWidth; H = innerHeight; DPR = Math.min(devicePixelRatio || 1, 2);
+  cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR);
+  L = layout();
+}
+function frame(now){
+  const t = (now - start) / 1000 * speed;
+  render(t);
+  if (t < DUR){ raf = requestAnimationFrame(frame); } else { playing = false; ctl.classList.add('on'); }
+}
+function play(){
+  cancelAnimationFrame(raf); ctl.classList.remove('on'); playing = true;
+  start = performance.now(); raf = requestAnimationFrame(frame);
+}
+function finish(){ cancelAnimationFrame(raf); playing = false; render(DUR); ctl.classList.add('on'); }
+
+cv.addEventListener('click', () => { if (!ready) return; playing ? finish() : play(); });
+addEventListener('keydown', e => { if (!ready) return;
+  if (e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); playing ? finish() : play(); } });
+bReplay.addEventListener('click', play);
+bSlow.addEventListener('click', () => { speed = speed === 1 ? .5 : 1; bSlow.setAttribute('aria-pressed', String(speed !== 1)); play(); });
+addEventListener('resize', () => { const was = playing; size(); if (!was) render(DUR); });
+
+/* for frame capture: window.renderAt(t) draws one frame and stops playback */
+window.renderAt = t => { cancelAnimationFrame(raf); playing = false; render(t); };
+window.introReady = (async () => {
+  try { await Promise.all(['400 40px Archivo', '700 40px Archivo', '800 40px Archivo', '600 12px "IBM Plex Mono"', '500 12px "IBM Plex Mono"']
+    .map(f => document.fonts.load(f))); } catch (e) {}
+  size(); ready = true;
+  if (reduce || /[?&]still\b/.test(location.search)) { render(DUR); ctl.classList.add('on'); bReplay.textContent = 'Play'; }
+  else if (!/[?&]capture\b/.test(location.search)) play();
+})();
+})();
+</script>
+</body>
+</html>

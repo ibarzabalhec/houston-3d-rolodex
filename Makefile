@@ -5,8 +5,8 @@
 export PYTHONDONTWRITEBYTECODE = 1
 
 # One command builds the page, the workbook, and checks both in a headless browser.
-.PHONY: all build xlsx verify clean
-all: build xlsx verify
+.PHONY: all build xlsx intro verify clean
+all: build xlsx intro verify
 build:
 	python3 build.py
 	python3 build_dfw.py
@@ -14,6 +14,11 @@ build:
 xlsx: build
 	python3 build_xlsx.py
 	MARKET=dfw python3 build_xlsx.py
+# The five-second intro reel reads its numbers from the served data, so it is
+# rebuilt with the page. Frames and video are made by hand: intro/frames.py and
+# intro/export.py need a browser and ffmpeg.
+intro: build
+	python3 intro/build_intro.py
 verify: build
 	python3 verify.py
 	MARKET=dfw python3 verify.py

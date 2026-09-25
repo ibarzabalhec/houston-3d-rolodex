@@ -24,3 +24,6 @@ internal/
 /dfw/hand.json
 /dfw/FINDINGS_R1.md
 /audit7/
+# intro reel: videos and frame sheets are rebuilt by hand, not committed
+intro/*.mp4
+intro/_frames/
