@@ -31373,5 +31373,916 @@
    "decider_confirmed": false,
    "decider_caveat": false
   }
- ]
+ ],
+ "reel": {
+  "place": "Dallas-Fort Worth",
+  "key": "dfw",
+  "permits": 39790,
+  "permits_year": 2025,
+  "permits_source": "Census Building Permits Survey, via HUD SOCDS",
+  "firms": [
+   {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 636.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": 400.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 728.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "clear",
+    "dec": true,
+    "v": 259.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "clear",
+    "dec": true,
+    "v": 259.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "clear",
+    "dec": true,
+    "v": 177.0
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": 482.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 436.0
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 1034.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 406.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 696.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 649.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 176.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 1779.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": 374.0
+   },
+   {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 2,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 2,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 2,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 2,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 3,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": true,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "clear",
+    "dec": true,
+    "v": 286.0
+   },
+   {
+    "cat": 0,
+    "tr": true,
+    "fit": "fail",
+    "dec": false,
+    "v": 7058.0
+   },
+   {
+    "cat": 0,
+    "tr": true,
+    "fit": "fail",
+    "dec": true,
+    "v": 1083.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 1465.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 1833.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": 1289.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 1132.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 3196.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": 889.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": true,
+    "fit": "fail",
+    "dec": false,
+    "v": 5724.0
+   }
+  ],
+  "n": 124,
+  "track": 10,
+  "dec": 74,
+  "band": [
+   25,
+   400
+  ],
+  "band2": [
+   400,
+   1500
+  ],
+  "cats": [
+   {
+    "label": "Homebuilders",
+    "n": 56
+   },
+   {
+    "label": "Developers",
+    "n": 7
+   },
+   {
+    "label": "General contractors",
+    "n": 4
+   },
+   {
+    "label": "Concrete casters",
+    "n": 9
+   }
+  ],
+  "title": [
+   "Dallas-Fort Worth builders and developers,",
+   "screened for a construction printer."
+  ],
+  "by": "Héctor Ibarzábal"
+ }
 }

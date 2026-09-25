@@ -14,9 +14,10 @@ build:
 xlsx: build
 	python3 build_xlsx.py
 	MARKET=dfw python3 build_xlsx.py
-# The five-second intro reel reads its numbers from the served data, so it is
-# rebuilt with the page. Frames and video are made by hand: intro/frames.py and
-# intro/export.py need a browser and ffmpeg.
+# The page carries the intro reel (emit.py adds its numbers, _reel.js draws it).
+# This rebuilds the standalone copy in intro/ from the same code and data. Frames
+# and video are made by hand: intro/frames.py and intro/export.py need a browser
+# and ffmpeg.
 intro: build
 	python3 intro/build_intro.py
 verify: build

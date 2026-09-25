@@ -12,7 +12,9 @@ ROOT = pathlib.Path(__file__).parent
 # Dallas-Fort Worth data, opened through the page's own market switch.
 import os as _os
 MARKET = _os.environ.get("MARKET", "houston")
-URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve()) + (
+# The intro reel plays first on a fresh session; ?intro=0 keeps it off for every
+# check but its own, at the end.
+URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve()) + "?intro=0" + (
     "#market=dfw" if MARKET == "dfw" else "")
 D = json.load(open(ROOT / ("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
                    encoding="utf-8"))
@@ -1676,6 +1678,81 @@ async def main():
         await pg.evaluate("document.getElementById('back').click()")
         if dsk != "none":
             problems.append("the phone firm bar shows on a desktop")
+
+        # The intro reel plays first. It covers the page on a fresh session, a
+        # tap ends it without reaching the page under it, it does not play twice
+        # in a session or with reduced motion, it lifts by itself at the end
+        # with the headline at rest, and its numbers are the records'.
+        base = URL.split("?")[0]
+        hsh = "#market=dfw" if MARKET == "dfw" else ""
+        rctx = await b.new_context(viewport={"width": 1280, "height": 800})
+        rp = await rctx.new_page()
+        rerr = []
+        rp.on("pageerror", lambda e: rerr.append(str(e)))
+        await rp.goto(base + hsh)
+        await rp.wait_for_timeout(700)
+        r1 = await rp.evaluate(
+            "(()=>{const r=document.getElementById('reel'),c=r&&r.querySelector('canvas'),"
+            "e=document.elementFromPoint(innerWidth/2,innerHeight/2);"
+            "return {on:!!r&&getComputedStyle(r).display!=='none',top:!!(e&&e.closest('#reel')),w:c?c.width:0}})()")
+        await rp.mouse.click(640, 400)
+        await rp.wait_for_timeout(500)
+        r2 = await rp.evaluate(
+            "(()=>({gone:!document.getElementById('reel'),firm:document.getElementById('stageFirm').classList.contains('on'),"
+            "cls:document.documentElement.classList.contains('reel'),scroll:getComputedStyle(document.body).overflow}))()")
+        await rp.reload()
+        await rp.wait_for_timeout(400)
+        r3 = await rp.evaluate("!document.documentElement.classList.contains('reel')&&!document.getElementById('reel')")
+        await rp.goto(base + "?intro=1" + hsh)
+        await rp.wait_for_timeout(6600)
+        r4 = await rp.evaluate(
+            "(()=>({gone:!document.getElementById('reel'),beads:document.querySelectorAll('.pbead').length,"
+            "clip:document.getElementById('hl').style.clipPath||'',cls:document.documentElement.classList.contains('reel')}))()")
+        rd = await rp.evaluate("window.rolodex.data.reel")
+        # Every frame shape lays out and draws. Two dots exactly one step apart
+        # once kept the stacking loop running forever at 1280 by 800.
+        shapes = [(w, h) for w in (320, 390, 430, 768, 1024, 1280, 1440, 1920) for h in (568, 720, 800, 844, 1080)]
+        try:
+            laid = await asyncio.wait_for(rp.evaluate("""async (shapes) => {
+                const c = document.createElement('canvas'); c.style.cssText = 'position:fixed;left:0;top:0';
+                document.body.appendChild(c); let n = 0;
+                for (const [w, h] of shapes){ c.style.width = w + 'px'; c.style.height = h + 'px';
+                  const R = window.RolodexReel(c, window.rolodex.data.reel, {}); await R.ready;
+                  for (const t of [0.5, 1.2, 2.2, 3.2, 3.7, 4.1, 4.8]) R.renderAt(t); n++; }
+                c.remove(); return n; }""", shapes), 60)
+        except Exception as e:
+            laid = "hung (%s)" % type(e).__name__
+        print("reel shapes     : %s of %d frame shapes lay out and draw" % (laid, len(shapes)))
+        if laid != len(shapes):
+            problems.append("the reel does not lay out at every frame shape: %s" % laid)
+        await rctx.close()
+        qctx = await b.new_context(viewport={"width": 1280, "height": 800}, reduced_motion="reduce")
+        qp = await qctx.new_page()
+        await qp.goto(base + hsh)
+        await qp.wait_for_timeout(300)
+        r5 = await qp.evaluate("!document.documentElement.classList.contains('reel')&&!document.getElementById('reel')")
+        await qctx.close()
+        deck = [t for t in D["targets"] if t.get("group") != "out"]
+        want = {"n": len(deck), "track": sum(t["marks"]["innovation"] == "clear" for t in deck),
+                "dec": sum(bool(t.get("has_decider")) for t in deck)}
+        got = {k: (rd or {}).get(k) for k in want}
+        print("intro reel      : covers %s, tap ends %s, opens a firm %s, replays %s, ends clean %s, "
+              "reduced motion %s | %s" % (r1["on"] and r1["top"], r2["gone"], r2["firm"], not r3,
+                                          r4["gone"] and not r4["beads"] and not r4["clip"], "off" if r5 else "ON", got))
+        if not (r1["on"] and r1["top"] and r1["w"]):
+            problems.append("the intro reel does not cover the page on a fresh session: %s" % r1)
+        if not r2["gone"] or r2["firm"] or r2["cls"] or r2["scroll"] == "hidden":
+            problems.append("a tap on the reel does not end it cleanly: %s" % r2)
+        if not r3:
+            problems.append("the intro reel plays twice in one session")
+        if not r4["gone"] or r4["beads"] or r4["clip"] or r4["cls"]:
+            problems.append("the reel does not lift by itself with the headline at rest: %s" % r4)
+        if not r5:
+            problems.append("the intro reel plays with reduced motion on")
+        if got != want:
+            problems.append("the reel's numbers differ from the records: %s against %s" % (got, want))
+        if rerr:
+            problems.append("the intro reel raises page errors: %s" % rerr[:2])
 
         await b.close()
 

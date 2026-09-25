@@ -8,6 +8,8 @@ built ships as an empty slot, and the switch hides itself.
 """
 import copy, json, os, pathlib, shutil
 
+import reel
+
 ROOT = pathlib.Path(__file__).parent
 
 
@@ -27,6 +29,9 @@ def public(d):
             t.pop(k, None)
     for k in [k for k in d if k.startswith("_")]:
         d.pop(k)
+    # The intro reel's numbers, read from the records the page renders. reel.py
+    # stops the build if a count differs from the page's strip.
+    d["reel"] = reel.reel_data(d)
     return d
 
 
@@ -56,7 +61,8 @@ def main():
             .replace("__DATA_DFW__", _blob(ROOT / "dfw" / "dfw-data.json"))
             .replace("__DATA__", _blob(ROOT / "houston-data.json"))
             .replace("__FONTS__", open(ROOT / "_fonts.css", encoding="utf-8").read())
-            .replace("__MARKET__", open(ROOT / "_market.js", encoding="utf-8").read()))
+            .replace("__MARKET__", open(ROOT / "_market.js", encoding="utf-8").read())
+            .replace("__REEL__", open(ROOT / "_reel.js", encoding="utf-8").read()))
     open(ROOT / "ICON_Greater_Houston_Rolodex.html", "w", encoding="utf-8").write(html)
 
     # The hosted copy. The claude.ai viewer wraps a page in its own document
