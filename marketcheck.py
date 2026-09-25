@@ -179,7 +179,8 @@ def figures(d, path, cache):
     urls = set()
     for t in d["targets"]:
         for u in ([t.get("homepage_url")] + [s.get("url") for s in t.get("sources", [])]
-                  + [k.get("url") for k in t.get("key_projects", [])]):
+                  + [k.get("url") for k in t.get("key_projects", [])]
+                  + [n.get("url") for n in t.get("news", [])]):
             if u and u.startswith("http") and "linkedin.com" not in u:
                 urls.add(u)
     _pages(sorted(urls), cache)
@@ -187,7 +188,8 @@ def figures(d, path, cache):
     out, blind = [], []
     for t in d["targets"]:
         us = [u for u in dict.fromkeys([t.get("homepage_url")] + [s.get("url") for s in t.get("sources", [])]
-                                       + [k.get("url") for k in t.get("key_projects", [])])
+                                       + [k.get("url") for k in t.get("key_projects", [])]
+                                       + [n.get("url") for n in t.get("news", [])])
               if u and u.startswith("http") and "linkedin.com" not in u]
         texts = []
         for u in us:
@@ -202,10 +204,11 @@ def figures(d, path, cache):
         blob = " ".join(texts).lower()
         text = " ".join(filter(None, [t.get("synopsis"), t.get("key_stat"), t.get("mvp_screen"),
                                       " ".join(w["text"] for w in t.get("why", [])),
-                                      " ".join((k.get("detail") or "") for k in t.get("key_projects", []))]))
+                                      " ".join((k.get("detail") or "") for k in t.get("key_projects", [])),
+                                      " ".join(n["what"] for n in t.get("news", []))]))
         # The band edges are the deck's own rubric, quoted, not a figure about the firm.
         text = re.sub(r"\b(?:above|below|over|under|past|beyond) 1,500\b|\b25 to 400\b|\b400 to 1,500\b|"
-                      r"\bthe 1,500\b", lambda m: " " * len(m.group(0)), text)
+                      r"\bthe 1,500\b", lambda m: " " * len(m.group(0)), text, flags=re.I)
         hits = FG.figures_in(text)
         n_fig += len(hits)
         if not texts:

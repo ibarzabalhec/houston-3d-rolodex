@@ -153,6 +153,12 @@ def fix_market(D):
             e.update(year=2021, month=10, label="Lennar and ICON announce 100 printed homes in Georgetown")
             tl.append({"year": 2022, "month": 11, "label": "Wolf Ranch printing under way",
                        "kind": "icon", "when": None})
+    # Build 73. ICON's own dates, from its newsroom.
+    for y, m, lab in ((2021, 8, "ICON prints Mars Dune Alpha for NASA, Houston"),
+                      (2026, 3, "ICON opens Titan to outside builders"),
+                      (2026, 7, "ICON delivers ten barracks at Fort Bliss")):
+        if not any(e["label"] == lab for e in tl):
+            tl.append({"year": y, "month": m, "label": lab, "kind": "icon", "when": None})
     tl.sort(key=lambda e: (e["year"], e["month"]))
 
 
@@ -164,6 +170,14 @@ def fix_icon(D, place, local_fact):
     Austin area, so the line now names the three housing programmes the facts
     below it cite, and the metro fact describes printing by others there.
     """
+    # Build 73. The record is rewritten whole from fresh sources (audit8.icon_record).
+    import audit8
+    lf = next((list(f) for f in D["icon_record"]["facts"] if f[0].startswith("Lennar in")), None)
+    if lf and place == "Dallas-Fort Worth":
+        lf[1] = ("Lennar's DFW business is on this deck, second on BUILDER's 2026 DFW Local Leaders table "
+                 "with 5,724 closings in 2025.")
+    audit8.icon_record(D, place, lf)
+    return
     R = D["icon_record"]
     R["line"] = "Three ICON housing programmes, in Georgetown and Austin, and the Titan's published terms."
     for f in R["facts"]:
@@ -213,6 +227,8 @@ def fix_competitors(D):
         c["facts"] = facts
         if c["name"] == "HiveASMBLD" and not any(l[1] == HOMES for l in c.get("links", [])):
             c["links"].append(["Homes.com on Commander Home Builders' figures", HOMES])
+    import audit8
+    audit8.competitors73(D)
     for p in D["market"]["printed"]:
         if p["project"] == "PRINT3D Technologies":
             p["status"] = "Seven structures by Community Impact's count, 2024 to 2026"
@@ -292,6 +308,11 @@ def houston(D):
     m["closings_missing"] = m["closings_base"] - len(m["closings"])
     for (tid, k), v in HOU_FIELDS.items():
         T[tid][k] = v
+    import audit8
+    for tid, urls in audit8.HOU_SOURCES73.items():
+        for u in urls:
+            if u not in {s["url"] for s in T[tid].get("sources", [])}:
+                T[tid].setdefault("sources", []).append({"url": u})
     for tid, urls in HOU_SOURCES.items():
         have = {s["url"] for s in T[tid].get("sources", [])}
         for u in urls:
@@ -327,9 +348,12 @@ DFW_PERSON = {
                            "Officer to Chairman."},
     # The leadership page both Green Brick cards cite.
     ("DFW-003a", "Jed Dolson"): {
-        "role": "President and Chief Operating Officer, Green Brick Partners",
+        "role": "President and Chief Operating Officer, Green Brick Partners. Co-Chief Executive Officer "
+                "from 15 October 2026",
         "source_evidence": "Named on Green Brick's leadership page as President and Chief Operating "
-                           "Officer, previously President of the Texas region over the DFW brands."},
+                           "Officer, previously President of the Texas region over the DFW brands. Green "
+                           "Brick's 30 July 2026 release names him Co-Chief Executive Officer from 15 "
+                           "October 2026."},
 }
 DFW_DROP_SOURCE = {
     # The pack held this link cut off mid-slug. It does not resolve as written.

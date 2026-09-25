@@ -39,7 +39,7 @@ ws.title = "Contacts"
 
 COLS = [
     ("Name", 26), ("Firm", 34), ("Title", 34), ("Group", 26), ("Holds", 7),
-    ("Role", 13), ("Region", 30), ("Headline figure", 30),
+    ("Role", 13), ("Region", 30), ("Headline", 30),
     ("Repetition", 12), ("Repetition why", 48),
     ("Printer fit", 12), ("Printer fit why", 48),
     ("Track record", 13), ("Track record why", 48),

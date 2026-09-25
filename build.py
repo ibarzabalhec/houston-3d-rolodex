@@ -53,7 +53,7 @@ import audit5 as AUDIT5
 import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 72
+BUILD = 82
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -946,6 +946,8 @@ targets.sort(key=lambda t: (GROUP_ORDER[t["group"]], -t["clears"], -t["holds"],
 import audit7 as AUDIT7
 AUDIT7.dedupe_people(targets)
 # Build 72. The rubric's reasons, and one decision-maker rule on both decks.
+import audit9 as AUDIT9
+AUDIT9.houston_people(targets)
 AUDIT8.houston_late(targets)
 
 deck = [t for t in targets if t["group"] != "out"]
@@ -1109,15 +1111,15 @@ DATA = {
  # names; null resets. Clicking one opens the List, because a filter that leaves
  # 74 of 96 chips greyed is describing the answer rather than showing it.
  "stat_strip": [
+   # Build 82. The strip reads in the List's own order, in the List's own
+   # words: the roster, the firms already buying printed walls, the firms that
+   # hold all three counts, the contractors, then how many of the roster have a
+   # named decision-maker, with its denominator.
    [str(n), "firms screened", False, None],
-   [str(g["a"]), "builders and developers holding all three counts", False, {"group": ["a"]}],
-   # 43 here and 42 on the market view are two different things, and until
-   # Build 59 both were called a decision-maker. This one counts firms with the
-   # mark; the market view counts the firms where nobody on that mark carries a
-   # caveat. Each label now says which.
-   [str(n_dec), "with a decision-maker named", True, {"dec": "any"}],
-   [str(g["adopter"]), "already printing, with a competitor", False, {"group": ["adopter"]}],
-   [str(g["trade"]), "contractors who build the wall", False, {"group": ["trade"]}],
+   [str(g["adopter"]), "already buying printed walls", False, {"group": ["adopter"]}],
+   [str(g["a"]), "builders and developers hold all three counts", False, {"group": ["a"]}],
+   [str(g["trade"]), "contractors build the wall", False, {"group": ["trade"]}],
+   [str(n_dec), "of %d with a decision-maker named" % n, True, {"dec": "any"}],
  ],
  # Build 63. This ran to five sentences and four of them described what the
  # page already shows. The two grid axes print their own definitions on the
@@ -1488,12 +1490,26 @@ _bad7 += AUDIT7.houston(DATA)
 AUDIT8.houston_why(DATA["targets"])
 AUDIT8.dates(DATA)
 AUDIT7.tidy(DATA)
+# Build 80. Content (audit9.py): headlines, news since March, one rule stated once.
+_bad7 += AUDIT9.finish(DATA)
 if _bad7:
     for _b in _bad7:
         print("   " + _b)
     raise SystemExit("FAILED: an audit7 edit did not land")
 
 DATA = _strip_trailing(DATA)
+# Build 81. Distilling (audit10.py): every card cut to its facts.
+import audit10 as AUDIT10
+_d10, _s10 = AUDIT10.apply(DATA, "hou")
+_g10, _gs10 = AUDIT10.apply_global(DATA, "hou")
+_d10 += _g10
+_s10 += _gs10
+_bad10 = AUDIT10.final_copy(DATA, "hou")
+if _bad10:
+    raise SystemExit("FAILED: " + "; ".join(_bad10))
+print("distilled         %d edits, %d stale" % (_d10, len(_s10)))
+for _x in _s10[:20]:
+    print("   stale " + _x)
 _banned = _scan_for_banned(DATA)
 if _banned:
     for where, what in _banned:

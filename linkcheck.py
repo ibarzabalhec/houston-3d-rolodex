@@ -61,6 +61,9 @@ def down(host):
 
 
 BLOCKED = {"investors.bldr.com", "builderonline.com",
+           # Build 73, ICON's own record. Each answered a script 403 and a fetcher
+           # the page, read 25 September 2026.
+           "axios.com", "army.mil", "all3dp.com",
            # Build 68, the Dallas-Fort Worth deck. Each answered a script 403,
            # 401 or 404 and a fetcher the page, read 24 September 2026.
            "fortworthinc.com", "investor.kbhome.com", "investors.amh.com",
@@ -98,6 +101,10 @@ BLOCKED = {"investors.bldr.com", "builderonline.com",
            # read: the PulteGroup releases for Ryehill and Del Webb Fulshear, and
            # Multi-Housing News on Tricon Peek Road. Both answer this script 403.
            "pultegroupinc.com", "multihousingnews.com",
+           # Build 80. hbsdealer.com answered a script 403 and a fetcher the page on
+           # 25 September 2026. dfwagentmagazine.com answered a script 403 and a
+           # fetcher 429, rate limiting, which is a live host.
+           "hbsdealer.com", "dfwagentmagazine.com",
            # Build 60. HTTP only, and it answers an HTTPS request with a 302 back
            # to HTTP, so anything that upgrades the scheme loops. Read with curl
            # on 14 September 2026: the about page is there and names the founder.
@@ -151,6 +158,11 @@ def where(d):
             add(s.get("url"), w + " source")
         for k in t.get("key_projects", []):
             add(k.get("url"), w + " evidence")
+        # Build 80. Press and news links were published unchecked.
+        for k in t.get("press", []):
+            add(k.get("url"), w + " press")
+        for k in t.get("news", []):
+            add(k.get("url"), w + " news")
         for p in t.get("principals", []):
             add(p.get("linkedin_url"), w + " / " + p["name"])
             add(p.get("source_url"), w + " / " + p["name"])
@@ -160,6 +172,9 @@ def where(d):
     for c in d.get("competitors", []):
         for lab, u in c.get("links", []):
             add(u, "field: " + c["name"])
+    # Build 73. ICON's own record now carries its sources.
+    for lab, u in (d.get("icon_record") or {}).get("links", []):
+        add(u, "field: ICON")
     return out
 
 

@@ -1,0 +1,1322 @@
+[
+ {
+  "market": "hou",
+  "path": "competitors.0.line",
+  "old": "Projects at Zuri Gardens, Gulf Shore Estates and Avenue J, all inside Greater Houston.",
+  "new": "Houston area: Zuri Gardens, Gulf Shore Estates, Avenue J."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.0.facts.0",
+  "old": "January 2024, merging Hive3D, founded by Timothy Lankau in 2022, and ASMBLD Modular, founded by Ethan Wong. Both are named as co-chief executive on the firm's own about page, in Houston.",
+  "new": "January 2024 merger of Hive3D, founded 2022 by Timothy Lankau, and ASMBLD Modular, founded by Ethan Wong. Both co-chief executives. Houston."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.0.facts.1",
+  "old": "The Texas Tribune reports Hive3D partnered with Eco Material Technologies of Utah, whose chief executive is quoted on the emissions claim for the cement it supplies.",
+  "new": "Cement: Eco Material Technologies of Utah, per The Texas Tribune. The emissions claim is its chief executive's."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.0.facts.2",
+  "old": "Zuri Gardens, 80 homes, with a $1.8 million City of Houston subsidy. Gulf Shore Estates, 23 of 26 homes. Avenue J, a two-unit duplex. Lumen Villas in Marfa. None is confirmed complete.",
+  "new": "Zuri Gardens: 80 homes, $1.8 million city subsidy. Gulf Shore Estates: 23 of 26. Avenue J: duplex. Marfa: Lumen Villas. None confirmed complete."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.0.facts.3",
+  "old": "Steve Commander of Commander Home Builders told Homes.com the build timeline fell roughly 50 percent, with 5 to 7 percent cost savings.",
+  "new": "Build time down roughly 50 percent, costs down 5 to 7 percent, per Steve Commander of Commander Home Builders."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.0.facts.4",
+  "old": "HiveASMBLD had Gulf Shore Estates and Avenue J under construction in spring 2026. Titan deliveries start early 2027.",
+  "new": "Spring 2026: Gulf Shore Estates and Avenue J under way. Titan deliveries from early 2027."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.1.line",
+  "old": "Printed in Spring Branch, inside the city.",
+  "new": "Printed in Spring Branch, inside city limits."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.1.facts.0",
+  "old": "A house in Spring Branch, Houston, marketed as the nation's largest printed home. Published area figures differ between PERI's release and ABC13's coverage, and the build paused for months without explanation.",
+  "new": "Marketed as the nation's largest printed home. PERI's release and ABC13 differ on area. Build paused for months, unexplained."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.1.facts.1",
+  "old": "PERI prints with COBOD's BOD2. PERI is a customer of the printer, not its maker.",
+  "new": "Prints on COBOD's BOD2, as a customer."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.1.facts.2",
+  "old": "A German formwork group printed a house inside the Houston city limits on a COBOD BOD2.",
+  "new": "A German formwork group printing inside Houston."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.2.facts.0",
+  "old": "A printer manufacturer rather than a builder, backed by GE, CEMEX, Holcim and PERI. It sells the BOD2 to contractors.",
+  "new": "Printer manufacturer. Sells the BOD2 to contractors. Backers: PERI, GE, CEMEX, Holcim."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.2.facts.1",
+  "old": "Titan is a machine sale. COBOD sells machines to contractors, PERI among them.",
+  "new": "Sells machines to contractors, PERI among them. Same model as Titan."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.3.line",
+  "old": "Selling finished printed houses in North Texas at $103,000 and $175,000.",
+  "new": "Sells finished printed houses in North Texas: $103,000 and $175,000."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.3.facts.0",
+  "old": "Seven structures by Community Impact's count, including three houses and a storage facility, sold between 2024 and 2026.",
+  "new": "Seven structures sold 2024 to 2026, three of them houses, by Community Impact's count."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.4.line",
+  "old": "D.R. Horton put strategic money into it in March 2024. Horton builds in Greater Houston.",
+  "new": "D.R. Horton invested strategically in March 2024. Houston is a Horton market."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.4.facts.0",
+  "old": "Strategic investment from D.R. Horton, announced March 2024, amount undisclosed.",
+  "new": "D.R. Horton, March 2024, amount undisclosed."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.4.facts.1",
+  "old": "Its one Texas connection is Sunconomy, which permitted a printed house in Lago Vista in 2019 and has published no completion.",
+  "new": "Only Texas link: Sunconomy. Lago Vista house permitted 2019, no completion published."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.5.line",
+  "old": "Signed with Apis Cor in 2016, permitted one house in 2019, and published nothing since.",
+  "new": "Apis Cor deal 2016. One house permitted 2019. Nothing published since."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.5.facts.0",
+  "old": "3D Printing Industry reported in January 2019 that Sunconomy had permits for its first printed house, in Lago Vista, and that it had signed with Apis Cor in 2016. No completion has been published in the seven years since.",
+  "new": "January 2019: permits for its first printed house, in Lago Vista, per 3D Printing Industry. No completion in seven years."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.5.facts.1",
+  "old": "Nothing from the firm's own site is cited.",
+  "new": "Nothing cited."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.5.facts.2",
+  "old": "A printed programme announced in Texas with an Apis Cor machine, and no published building.",
+  "new": "Texas programme on an Apis Cor machine. No published building."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.6.line",
+  "old": "Pivoted to selling printers and doing commercial work for Walmart.",
+  "new": "Pivoted to selling printers. Walmart is a commercial client."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.6.facts.0",
+  "old": "Moved from printing houses to selling its A1 and A1X machines. The A1X is leased to contractors through an equipment rental partner rather than sold outright, and the printing is done for retail clients.",
+  "new": "Stopped printing houses to sell A1 and A1X machines. Contractors lease the A1X via a rental partner. Prints for retail clients."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.6.facts.1",
+  "old": "Construction Dive names Colorado, Tennessee and Missouri.",
+  "new": "Missouri, Colorado, Tennessee, per Construction Dive."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.7.line",
+  "old": "Put itself up for sale in January 2025. LUMUS now owns its technologies.",
+  "new": "Put up for sale January 2025. LUMUS owns its technologies."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.7.facts.0",
+  "old": "Headcount cut, then the whole company offered for sale in January 2025, having raised over $150 million. Its own site now says it is a brand of LUMUS Inc., which acquired its technologies.",
+  "new": "Raised over $150 million. Cut staff, then went up for sale. Now a LUMUS brand, per its own site."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.8.line",
+  "old": "Shut down on 12 December 2024 with fifteen houses still being built.",
+  "new": "Shut down 12 December 2024, fifteen houses unfinished."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.8.facts.0",
+  "old": "HousingWire reports the founders confirmed the shutdown on 12 December 2024. The company had printed thirty homes at Mountain View Estates between 2022 and early 2024, and was still building the final fifteen when it stopped.",
+  "new": "Founders confirmed the 12 December 2024 shutdown, per HousingWire. Thirty homes printed at Mountain View Estates, 2022 to early 2024."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.8.facts.1",
+  "old": "Fifteen houses were open when it stopped.",
+  "new": "Fifteen houses open at closure."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.9.line",
+  "old": "Filed Chapter 11 on 24 December 2025.",
+  "new": "Filed Chapter 11, 24 December 2025."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.9.facts.0",
+  "old": "Chapter 11 on 24 December 2025. Its Texas presence was one house in Fort Worth, printed live over two days in May 2024 with Boxer Property of Houston as the development partner. No coverage after June 2024 confirms it was completed.",
+  "new": "Texas: a Fort Worth house printed live over two days, May 2024, with Boxer Property of Houston. No completion reported after June 2024."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.10.line",
+  "old": "Four units in about six years, none in Texas.",
+  "new": "Four units in about six years. Texas: none."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.10.facts.0",
+  "old": "Four units built since 2017, all on Long Island. Specifications and pricing are not published.",
+  "new": "Four units since 2017. No published specifications or pricing."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.11.line",
+  "old": "One confirmed American house, in Florida.",
+  "new": "Florida: one confirmed American house."
+ },
+ {
+  "market": "hou",
+  "path": "competitors.11.facts.0",
+  "old": "One named United States home, in Florida. No Texas project and no published funding.",
+  "new": "Florida: one named United States home. No Texas project or funding published."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.line",
+  "old": "ICON's published record: housing in Central Texas, Army barracks in Texas and Louisiana, a NASA habitat in Houston, and the terms of the Titan, its first system sold to outside builders.",
+  "new": "Central Texas housing. Army barracks in Texas and Louisiana. NASA habitat in Houston. Titan: its first system for outside builders."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.0",
+  "old": "Announced 11 March 2026. ICON states multi-storey wall systems at roughly $20 a square foot, a $5,000 reservation deposit, training from the third quarter of 2026 and first deliveries in early 2027. Its reservation page publishes no price. Axios and All3DP report a price from $899,000, and The Real Deal reports leases first, with sales from the first quarter of 2027. Jason Ballard told Builder the target is small and mid-sized builders.",
+  "new": "Announced 11 March 2026. ICON: multi-storey walls at roughly $20 a square foot, $5,000 deposit, training third quarter 2026, deliveries early 2027. ICON lists no price. Axios, All3DP: from $899,000. The Real Deal: leases first, sales first quarter 2027. Jason Ballard to Builder: the target is small and mid-sized builders."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.1",
+  "old": "The Real Deal names Ghost Factory, Cole Klein Builders and Moderne Development among the firms that have reserved a Titan. Cole Klein is the Houston builder of Zuri Gardens, which HiveASMBLD prints.",
+  "new": "Titan reservations include Ghost Factory, Cole Klein Builders and Moderne Development, per The Real Deal. Cole Klein builds Zuri Gardens, Houston, which HiveASMBLD prints."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.2",
+  "old": "Lennar's Houston division is on this deck, with Friendswood, its Houston land arm, and GreenEco, which came with Rausch Coleman in February 2025.",
+  "new": "Lennar's Houston division, its land arm Friendswood, and GreenEco, via Rausch Coleman, February 2025."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.3",
+  "old": "100 homes with Lennar, designed by BIG and printed on Vulcan. Lennar announced the community on 26 October 2021, and printing was under way by November 2022. Eight floor plans of 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community, sold with Lennar's own mortgage arm (June 2026).",
+  "new": "100 homes with Lennar, designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community (June 2026)."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.4",
+  "old": "100 more homes under way at Community First! Village (December 2024). Affordable one-bedroom homes from $195,000 and about a dozen two- and three-bedroom homes at Mueller, printing from July 2025. Eight homes at Wimberley Springs from the upper $800,000s (July 2024).",
+  "new": "Community First! Village: 100 more, December 2024. Mueller: one-bedrooms from $195,000, about a dozen two- and three-bedrooms, printing from July 2025. Wimberley Springs: eight homes, upper $800,000s, July 2024."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.5",
+  "old": "Ten barracks at Fort Bliss, El Paso, 78,000 square feet for up to 560 soldiers, under a $62.8 million Army contract. ICON announced delivery on 28 July 2026. Stars and Stripes reported two of the ten open that day and the rest due in September. Both ICON and the Army call it the largest deployment of robotic construction for the Department of War. A $67.9 million award at Fort Polk, Louisiana followed in March 2026, with vertical construction scheduled for September 2026.",
+  "new": "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. Stars and Stripes: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.6",
+  "old": "A government division launched on 14 April 2026, with Will Hurd as its president. ICON states more than $360 million in government contracts.",
+  "new": "Government division launched 14 April 2026. President: Will Hurd. Over $360 million in government contracts, per ICON."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.7",
+  "old": "More than 245 homes and structures completed, per ICON in March 2026, and its site now counts 263 structures built. It filed to lay off 114 people, more than a quarter of its staff, in January 2025, and closed a $56 million Series C led by Norwest and Tiger Global in February 2025, per TechCrunch. Jason Ballard is co-founder and chief executive.",
+  "new": "Structures completed: over 245 per ICON in March 2026, 263 on its site now. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, led by Norwest and Tiger Global."
+ },
+ {
+  "market": "hou",
+  "path": "icon_record.facts.8",
+  "old": "ICON printed Mars Dune Alpha, a 1,700 square foot habitat for NASA at Johnson Space Center, and delivered it in 2021. NASA's second year-long crew mission inside it runs from 19 October 2025 to 31 October 2026. ICON has published no housing in Houston: its own site says the homes it has sold are in Central and West Texas. HiveASMBLD has repeat production work inside Greater Houston, and PERI printed a house inside the city limits.",
+  "new": "Mars Dune Alpha: 1,700 square foot NASA habitat at Johnson Space Center, 2021. Second crew mission inside: 19 October 2025 to 31 October 2026. No ICON housing in Houston, per its own site. HiveASMBLD has repeat production work here, PERI a house inside city limits."
+ },
+ {
+  "market": "hou",
+  "path": "supply.0.line",
+  "old": "Supplies the full residential slab package, post-tension cable, rebar and lumber, to concrete contractors. Founded 1988.",
+  "new": "Residential slab packages for concrete contractors: post-tension cable, rebar, lumber. Founded 1988."
+ },
+ {
+  "market": "hou",
+  "path": "supply.0.why",
+  "old": "Sells to the pouring crews rather than competing with them, and supplies every part of a production slab.",
+  "new": "Supplies pouring crews every part of a production slab. Not a competitor."
+ },
+ {
+  "market": "hou",
+  "path": "supply.1.line",
+  "old": "A PTI Type I Category A certified plant supplying concrete reinforcement for residential slabs on ground.",
+  "new": "PTI Type I Category A certified plant. Reinforcement for residential slabs on ground."
+ },
+ {
+  "market": "hou",
+  "path": "supply.1.why",
+  "old": "Nearly every production slab in Katy, Cypress, Conroe, Fulshear and Richmond is post-tensioned, and the tendons come from a plant like this one.",
+  "new": "Katy, Cypress, Conroe, Fulshear and Richmond production slabs are nearly all post-tensioned. Plants like this make the tendons."
+ },
+ {
+  "market": "hou",
+  "path": "supply.2.line",
+  "old": "Post-tension cable, rebar and lumber for commercial, multifamily, single family, slab on grade and elevated projects. Established 1987.",
+  "new": "Post-tension cable, rebar and lumber, slab on grade to elevated. Established 1987."
+ },
+ {
+  "market": "hou",
+  "path": "supply.2.why",
+  "old": "Nearly forty years of supplying both the residential and the elevated side, so it sees the whole slab market rather than one end of it.",
+  "new": "Nearly forty years supplying residential and elevated slabs. Sees the whole slab market."
+ },
+ {
+  "market": "hou",
+  "path": "supply.3.line",
+  "old": "Unbonded post-tension with slab on ground as a named line, and in-house engineering producing field installation drawings.",
+  "new": "Unbonded post-tension, slab on ground a named line. Field installation drawings in-house."
+ },
+ {
+  "market": "hou",
+  "path": "supply.3.why",
+  "old": "Publishes hardware of its own design: the Suncoast Stud Reinforcement System and a barrier cable embed bracket.",
+  "new": "Its own hardware: Suncoast Stud Reinforcement System, barrier cable embed bracket."
+ },
+ {
+  "market": "hou",
+  "path": "supply.4.line",
+  "old": "A PTI Type I Category A plant serving Texas, Louisiana, Oklahoma, New Mexico and Colorado.",
+  "new": "PTI Type I Category A plant. Markets: Colorado, Louisiana, New Mexico, Oklahoma, Texas."
+ },
+ {
+  "market": "hou",
+  "path": "supply.4.why",
+  "old": "Three named officers and a Houston plant. Its own page says it uses tried-and-true methods vetted over decades and is in business to cut cable, not corners.",
+  "new": "Three named officers and a Houston plant. Claims tried-and-true methods vetted over decades."
+ },
+ {
+  "market": "hou",
+  "path": "supply.5.line",
+  "old": "A PTI Type I Category A plant doing rebar fabrication, post-tension, wood products and concrete accessories. Operating since 2010.",
+  "new": "PTI Type I Category A plant: rebar fabrication, post-tension, wood products, concrete accessories. Since 2010."
+ },
+ {
+  "market": "hou",
+  "path": "supply.5.note",
+  "old": "Its own team page names nobody.",
+  "new": "Team page names nobody."
+ },
+ {
+  "market": "hou",
+  "path": "supply.6.line",
+  "old": "A ready-mix producer founded in 2023 as a joint venture between TransCo Group and Rasmussen Group.",
+  "new": "Ready-mix producer. 2023 joint venture of TransCo Group and Rasmussen Group."
+ },
+ {
+  "market": "hou",
+  "path": "supply.6.why",
+  "old": "Founded in 2023, with a named general manager, operations manager and sales manager.",
+  "new": "Founded 2023. Named general, operations and sales managers."
+ },
+ {
+  "market": "hou",
+  "path": "supply.7.line",
+  "old": "Volumetric mixing: batches at the job rather than at a plant, so the mix is controlled at the point of placement rather than made at a plant and delivered. Twenty-five years in Greater Houston.",
+  "new": "Volumetric mixing, batched at the job and controlled at placement. Houston area for twenty-five years."
+ },
+ {
+  "market": "hou",
+  "path": "supply.7.why",
+  "old": "Batching at the point of placement, and the firm says specialty mixes are what it is for.",
+  "new": "Batches at the point of placement. Specialty mixes are its stated focus."
+ },
+ {
+  "market": "hou",
+  "path": "supply.8.line",
+  "old": "Two plants batching 24 hours a day Monday through Saturday across north and northwest Greater Houston, to ASTM C94.",
+  "new": "Two north and northwest Houston plants batching 24 hours Monday to Saturday, ASTM C94."
+ },
+ {
+  "market": "hou",
+  "path": "supply.8.why",
+  "old": "Two plants in the north and northwest of the metro, and two more under development at Brookshire and Jacintoport.",
+  "new": "Jacintoport and Brookshire: two more plants under development."
+ },
+ {
+  "market": "hou",
+  "path": "supply.9.why",
+  "old": "Publishes Vertua, a low-carbon concrete, as poured in the Houston metro.",
+  "new": "Vertua low-carbon concrete, poured in the Houston metro."
+ },
+ {
+  "market": "hou",
+  "path": "supply.10.line",
+  "old": "A ready-mixed producer that acquired 82 plants and 11 volumetric mixer loading sites from Vulcan Materials.",
+  "new": "Ready-mixed producer. Bought 82 plants and 11 volumetric mixer loading sites from Vulcan."
+ },
+ {
+  "market": "hou",
+  "path": "supply.10.why",
+  "old": "The eleven volumetric loading sites are the specific question: volumetric batching is the delivery method a printer feed most resembles.",
+  "new": "Eleven volumetric loading sites. Volumetric batching is closest to a printer feed."
+ },
+ {
+  "market": "hou",
+  "path": "supply.11.line",
+  "old": "Asphalt and concrete plants at FM 529 in Houston and in Katy, plus crushed concrete, inside a group of more than 1,700 locations.",
+  "new": "Asphalt and concrete plants at FM 529, Houston, and Katy. Crushed concrete. Over 1,700 group locations."
+ },
+ {
+  "market": "hou",
+  "path": "supply.11.why",
+  "old": "One of its two Houston-area batch plants is in Katy.",
+  "new": "Katy: one of its two Houston-area batch plants."
+ },
+ {
+  "market": "hou",
+  "path": "supply.12.line",
+  "old": "A Houston-based binder trader carrying slag, gray and white cement, calcium aluminate cement, fly ash, aggregate and limestone, by truck, rail and barge.",
+  "new": "Houston binder trader: slag, gray, white and calcium aluminate cement, fly ash, aggregate, limestone. Truck, rail, barge."
+ },
+ {
+  "market": "hou",
+  "path": "supply.12.why",
+  "old": "Stocks calcium aluminate cement, which sets rapidly, and white cement.",
+  "new": "Stocks rapid-setting calcium aluminate cement and white cement."
+ },
+ {
+  "market": "hou",
+  "path": "supply.13.line",
+  "old": "A Nudura distributor that works through established and experienced contractors rather than installing itself.",
+  "new": "Nudura distributor. Works through established contractors, does not install."
+ },
+ {
+  "market": "hou",
+  "path": "supply.13.why",
+  "old": "Its president built his own Nudura house before starting the distributorship, and a distributor who sells through crews can name every crew in Houston that actually sets an insulated form.",
+  "new": "Its president built his own Nudura house. It can name every Houston crew setting insulated forms."
+ },
+ {
+  "market": "hou",
+  "path": "supply.14.line",
+  "old": "A family-owned commercial and residential pool and spa shell contractor, serving Houston since 1984.",
+  "new": "Family-owned pool and spa shell contractor. Houston since 1984."
+ },
+ {
+  "market": "hou",
+  "path": "supply.14.why",
+  "old": "Its own careers page advertises for nozzlemen, top finishers, bottom finishers, foremen and CDL drivers. That is the crew a printer needs, named and recruited by a firm that has been shooting concrete for forty years.",
+  "new": "Hiring nozzlemen, top and bottom finishers, foremen and CDL drivers. The crew a printer needs. Forty years shooting concrete."
+ },
+ {
+  "market": "hou",
+  "path": "supply.15.line",
+  "old": "Family-owned gunite and shotcrete on custom pools, spas, rock features and structural work, over twenty years on the Gulf Coast.",
+  "new": "Family-owned gunite and shotcrete: custom pools, spas, rock features, structural work. Over twenty years."
+ },
+ {
+  "market": "hou",
+  "path": "supply.15.why",
+  "old": "Runs both methods and does structural work as well as pools: commercial aquatic structures, engineered retaining walls and structural concrete that has to perform under load. Its own page draws the distinction that gunite adds water at the nozzle and shotcrete is batched before the hose.",
+  "new": "Runs gunite and shotcrete. Structural work too: commercial aquatic structures, engineered retaining walls, load-bearing concrete."
+ },
+ {
+  "market": "hou",
+  "path": "supply.16.line",
+  "old": "Supply-and-install gunite and shotcrete, from backyard pools to large commercial projects, working in both and publishing minimal rebound.",
+  "new": "Supply-and-install gunite and shotcrete, backyard pools to large commercial projects. Publishes minimal rebound."
+ },
+ {
+  "market": "hou",
+  "path": "supply.16.why",
+  "old": "Supply and install means one firm controls both the material and the nozzle, which is the whole operation a printer replaces.",
+  "new": "Controls both material and nozzle, the whole operation a printer replaces."
+ },
+ {
+  "market": "hou",
+  "path": "supply.17.line",
+  "old": "Gunite placement for pool contractors, publishing real-time precise measurement of quantity used on each job.",
+  "new": "Gunite placement for pool contractors. Publishes real-time measurement of quantity per job."
+ },
+ {
+  "market": "hou",
+  "path": "supply.17.why",
+  "old": "Instrumented placement. A crew already metering how much material goes into a shell in real time has the habit a printed wall's quality control depends on.",
+  "new": "Instrumented placement. Crews meter material per shell in real time, a habit printed-wall quality control needs."
+ },
+ {
+  "market": "hou",
+  "path": "supply.18.line",
+  "old": "A gunite subcontractor providing shell services to builders and contractors rather than building pools itself, over thirty years.",
+  "new": "Gunite shell subcontractor to builders and contractors, over thirty years."
+ },
+ {
+  "market": "hou",
+  "path": "supply.18.why",
+  "old": "Already sells nozzle work as a subcontracted service to other people's projects, which is the commercial shape of running a printer for a builder.",
+  "new": "Sells nozzle work as a subcontract, the model for running a printer for a builder."
+ },
+ {
+  "market": "hou",
+  "path": "supply.19.line",
+  "old": "Gunite shell and plaster finish under one firm, serving Greater Houston for over forty years.",
+  "new": "Gunite shell and plaster finish, one firm. Greater Houston, over forty years."
+ },
+ {
+  "market": "hou",
+  "path": "supply.19.why",
+  "old": "Runs the shell and the finish coat, so it carries both the placement crew and the surface crew. Its own description of a gunite pool as one monolithic structure without seams or joints is the argument a printed wall makes.",
+  "new": "Carries placement and surface crews. Calls a gunite pool one monolithic structure without seams or joints, the printed-wall argument."
+ },
+ {
+  "market": "hou",
+  "path": "supply.20.line",
+  "old": "A shotcrete placement contractor for below-grade structural walls, culvert and tunnel linings, shoring, skateparks and architectural applications.",
+  "new": "Shotcrete placement: below-grade structural walls, culvert and tunnel linings, shoring, skateparks, architectural work."
+ },
+ {
+  "market": "hou",
+  "path": "supply.20.why",
+  "old": "Its business is shooting structural wall rather than pool shells. Both owners work in the field.",
+  "new": "Shoots structural wall, no pool shells. Both owners work in the field."
+ },
+ {
+  "market": "hou",
+  "path": "supply.20.note",
+  "old": "The yard is in Austin. The site names Houston among its project cities.",
+  "new": "Austin yard. Houston among its project cities."
+ },
+ {
+  "market": "hou",
+  "path": "supply.21.line",
+  "old": "Makes PozzoCem Vite, a rapid-setting near-zero-carbon cement, and PozzoSlag. CRH completed its $2.1 billion purchase on 22 September 2025.",
+  "new": "PozzoSlag and PozzoCem Vite, rapid-setting near-zero-carbon cement. CRH closed its $2.1 billion purchase 22 September 2025."
+ },
+ {
+  "market": "hou",
+  "path": "supply.21.why",
+  "old": "Its PozzoCem Vite is the printed mix in the 80 homes at Zuri Gardens, and its own projects page says the mix lets a robot finish a home shell in about two weeks.",
+  "new": "PozzoCem Vite: the printed mix in 80 Zuri Gardens homes. Its claim: a robot finishes a home shell in about two weeks."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.0.note",
+  "old": "Listed by the Greater Houston Builders Association under both Turnkey Concrete and Foundations, and in the Texas Association of Builders directory.",
+  "new": "Greater Houston Builders Association: Turnkey Concrete and Foundations. Texas Association of Builders directory."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.1.note",
+  "old": "GHBA Concrete and Turnkey Concrete, and a Texas Association of Builders member.",
+  "new": "GHBA Concrete and Turnkey Concrete. Texas Association of Builders member."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.6.note",
+  "old": "A contractor member of the Associated Masonry Contractors of Houston and of the Mason Contractors Association of America.",
+  "new": "Member: Associated Masonry Contractors of Houston, Mason Contractors Association."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.7.note",
+  "old": "AMCH member. The firm's own name carries Wall Systems.",
+  "new": "AMCH member. Its name says wall systems."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.8.note",
+  "old": "AMCH member. The page title reads masonry fencing and hardscape.",
+  "new": "AMCH member. Masonry fencing and hardscape."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.16.note",
+  "old": "Listed by the Texas precast association under building systems, building products and bridges, with AASHTO beams, structural precast, piles and marine structures.",
+  "new": "Texas precast association: building systems, building products, bridges. AASHTO beams, structural precast, piles, marine structures."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.18.note",
+  "old": "No website. The trade directory names David Malaer and gives AASHTO I beams, deck slabs and box girders. About sixty miles west of Houston.",
+  "new": "No website. Trade directory: David Malaer. AASHTO I beams, deck slabs, box girders. Houston: about sixty miles east."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.19.note",
+  "old": "An American Concrete Pumping Association listing.",
+  "new": "American Concrete Pumping Association listing."
+ },
+ {
+  "market": "hou",
+  "path": "no_site.20.note",
+  "old": "An American Concrete Pumping Association listing.",
+  "new": "American Concrete Pumping Association listing."
+ },
+ {
+  "market": "hou",
+  "path": "code.items.0.a",
+  "old": "No. Houston has no zoning. Chapter 42 governs subdivision, setbacks and parking. A masterplan's deed restrictions are where an exterior material can be refused.",
+  "new": "No. Houston has no zoning. Chapter 42: subdivision, setbacks, parking. Masterplan deed restrictions can refuse an exterior material."
+ },
+ {
+  "market": "hou",
+  "path": "code.items.1.a",
+  "old": "2021 IRC, in force 1 January 2024. Appendix AW (3D-printed construction) is not adopted, so a printed wall enters under R104.11, alternative materials and methods, on an ICC-ES report to AC509.",
+  "new": "2021 IRC, in force 1 January 2024. Appendix AW not adopted. Printed walls enter under R104.11, alternative materials and methods, on an ICC-ES report to AC509."
+ },
+ {
+  "market": "hou",
+  "path": "code.items.2.a",
+  "old": "Yes. ESR-4652, reissued June 2026: bearing, non-bearing and shear walls to 12 feet, Seismic Design Categories A and B, special inspection required.",
+  "new": "Yes. ESR-4652, reissued June 2026: bearing, non-bearing and shear walls to 12 feet. Seismic Design Categories A and B. Special inspection."
+ },
+ {
+  "market": "hou",
+  "path": "code.items.3.a",
+  "old": "The IRC in force at the county seat (LGC 233.153), with third-party inspection at foundation, framing and completion (233.154). Harris County's seat is Houston.",
+  "new": "The county seat's IRC (LGC 233.153). Third-party inspection at foundation, framing and completion (233.154). Houston is Harris County's seat."
+ },
+ {
+  "market": "hou",
+  "path": "code.items.4.a",
+  "old": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, in force 1 September 2019. Exceptions: historic districts, state- or federally-funded housing.",
+  "new": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, effective 1 September 2019. Exceptions: historic districts, state- or federally-funded housing."
+ },
+ {
+  "market": "hou",
+  "path": "code.precedent.0.what",
+  "old": "80 printed homes. $1.8 million in TIRZ bond proceeds approved by council, plus HCDD infrastructure reimbursement. Sales from summer 2026.",
+  "new": "80 printed homes. $1.8 million TIRZ bond proceeds, council-approved, plus HCDD infrastructure reimbursement. Sales from summer 2026."
+ },
+ {
+  "market": "hou",
+  "path": "code.precedent.1.what",
+  "old": "One duplex, Elpis 3D Home Builders with HiveASMBLD, started March 2026. No completion published.",
+  "new": "Elpis 3D Home Builders and HiveASMBLD duplex, started March 2026. No completion published."
+ },
+ {
+  "market": "hou",
+  "path": "code.precedent.2.what",
+  "old": "26 homes planned, 23 to be printed, Commander Home Builders with HiveASMBLD. One under construction in April 2026.",
+  "new": "26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. One under construction, April 2026."
+ },
+ {
+  "market": "hou",
+  "path": "chain.0.note",
+  "old": "Omega sprays gunite and shotcrete onto a surface. Brundage-Bone and Texan Pumpers pump concrete into forms.",
+  "new": "Omega sprays gunite and shotcrete. Brundage-Bone and Texan Pumpers pump into forms."
+ },
+ {
+  "market": "hou",
+  "path": "chain.1.note",
+  "old": "Owns the lot before anyone else arrives, owns the builder relationship and owns the pump.",
+  "new": "On the lot before anyone else. Owns the builder relationship and the pump."
+ },
+ {
+  "market": "hou",
+  "path": "chain.2.note",
+  "old": "Casts wall flat on the slab and lifts it. The panels are measured in tons and storeys, which is why most of this cell reads Partly on printer fit.",
+  "new": "Casts wall flat on the slab and lifts it. Panels weigh tons, rise storeys. Mostly Partly on printer fit."
+ },
+ {
+  "market": "hou",
+  "path": "chain.3.note",
+  "old": "A plant, casting beds and a quality lab.",
+  "new": "Plant, casting beds, quality lab."
+ },
+ {
+  "market": "hou",
+  "path": "chain.4.note",
+  "old": "Already manufactures wall off site and sells it to the production builders on this deck.",
+  "new": "Already makes wall off site and sells it to production builders."
+ },
+ {
+  "market": "hou",
+  "path": "chain.5.note",
+  "old": "Two firms here already sell a panelised or prefabricated version of their own product.",
+  "new": "Two firms already sell panelised or prefabricated versions of their product."
+ },
+ {
+  "market": "hou",
+  "path": "chain.6.note",
+  "old": "Has already sold a customer on a wall that is not stick-built.",
+  "new": "Already sells a non-stick-built wall."
+ },
+ {
+  "market": "hou",
+  "path": "chain.7.note",
+  "old": "Two of the seven self-perform concrete on the record: Harvey Cleary, through IQI Construction, and T&T. The rest publish no self-performed concrete, or say they hire it out.",
+  "new": "Two of seven self-perform concrete: T&T and Harvey Cleary, through IQI Construction. The rest hire it out or publish none."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.a",
+  "old": "Builders and developers. Adopters and contractors that hold all three sit in their own sections.",
+  "new": "Builders and developers. Adopters and contractors with all three sit apart."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.b",
+  "old": "In on two of three counts.",
+  "new": "Two of three counts."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.adopter",
+  "old": "Has printed walls standing or contracted with a competitor.",
+  "new": "Printed walls standing, or a competitor contract."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.national",
+  "old": "Purchasing runs at company level, across several states.",
+  "new": "Company-level purchasing across several states."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.trade",
+  "old": "Houston builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
+  "new": "Houston builders hire out walls. Their wall firm would often run the printer. The three counts judge the wall."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.creative",
+  "old": "Design-led work that does not repeat a plan set. The printed element sits inside a conventional project.",
+  "new": "Design-led, no repeat plan set. Printed element inside a conventional project."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.channel",
+  "old": "Owns the ground. The builders inside buy the wall.",
+  "new": "Owns the ground. Its builders buy the wall."
+ },
+ {
+  "market": "hou",
+  "path": "group_notes.icon",
+  "old": "Lennar's Houston division and two firms Lennar owns. LEN X invested in ICON in August 2021, and Lennar built Wolf Ranch with ICON.",
+  "new": "Lennar's Houston division and two firms it owns. LEN X invested in ICON, August 2021. Partners on Wolf Ranch."
+ },
+ {
+  "market": "hou",
+  "path": "consolidation",
+  "old": "Three of the twelve are gone or going: Diamond Age closed in December 2024 with fifteen houses unfinished, Black Buffalo filed Chapter 11 in December 2025, and Mighty Buildings put itself up for sale in January 2025 after raising more than $150 million.",
+  "new": "Three of twelve gone or going. Diamond Age: closed December 2024, fifteen houses unfinished. Black Buffalo: Chapter 11, December 2025. Mighty Buildings: for sale January 2025, over $150 million raised."
+ },
+ {
+  "market": "hou",
+  "path": "supply_notes.node",
+  "old": "This trade does not publish its volume. Of 87 candidates, five publish a figure and twenty-four publish years in business instead. Builders publish closings because the Builder 100 makes them. Nothing makes a wall contractor publish anything. The numbers exist at the supplier who batches the concrete, fabricates the tendons or sells the block, and these firms sell to the crews rather than competing with them.",
+  "new": "Wall trades publish no volume. Of 87 candidates, five publish a figure, twenty-four only years in business. Builder 100 makes builders publish closings. Suppliers of concrete, tendons and block hold the numbers. They sell to the crews."
+ },
+ {
+  "market": "hou",
+  "path": "supply_notes.crew",
+  "old": "A gunite crew places cementitious material through a hose onto a surface, to a profile. One of these firms advertises on its own careers page for nozzlemen, top finishers, bottom finishers and foremen.",
+  "new": "Gunite crews hose cementitious material onto a surface, to a profile. One firm here recruits nozzlemen, top and bottom finishers, foremen."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.0.line",
+  "old": "Selling finished printed houses in North Texas at $103,000 and $175,000.",
+  "new": "Sells finished printed houses in North Texas: $103,000 and $175,000."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.0.facts.0",
+  "old": "Seven structures by Community Impact's count, including three houses and a storage facility, sold between 2024 and 2026.",
+  "new": "Seven structures sold 2024 to 2026, three of them houses, by Community Impact's count."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.1.line",
+  "old": "Filed Chapter 11 on 24 December 2025.",
+  "new": "Filed Chapter 11, 24 December 2025."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.1.facts.0",
+  "old": "Chapter 11 on 24 December 2025. Its Texas presence was one house in Fort Worth, printed live over two days in May 2024 with Boxer Property of Houston as the development partner. No coverage after June 2024 confirms it was completed.",
+  "new": "Texas: a Fort Worth house printed live over two days, May 2024, with Boxer Property of Houston. No completion reported after June 2024."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.2.line",
+  "old": "D.R. Horton put strategic money into it in March 2024. Horton is first on BUILDER's DFW Local Leaders table.",
+  "new": "D.R. Horton invested strategically in March 2024. First on BUILDER's DFW Local Leaders table."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.2.facts.0",
+  "old": "Strategic investment from D.R. Horton, announced March 2024, amount undisclosed.",
+  "new": "D.R. Horton, March 2024, amount undisclosed."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.2.facts.1",
+  "old": "Its one Texas connection is Sunconomy, which permitted a printed house in Lago Vista in 2019 and has published no completion.",
+  "new": "Only Texas link: Sunconomy. Lago Vista house permitted 2019, no completion published."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.3.line",
+  "old": "A Dallas startup that began printing a house near Nevada, in Collin County, in December 2021.",
+  "new": "Dallas startup. Began printing a house near Nevada, Collin County, December 2021."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.3.facts.0",
+  "old": "About 1,700 square feet and three bedrooms near Nevada, in Collin County, begun in December 2021 on a Total Kustom printer. Dallas Innovates reported in August 2022 a switch to geopolymer concrete for the Texas heat and a target to finish by the end of October 2022. No completion has been published.",
+  "new": "About 1,700 square feet, three bedrooms, Total Kustom printer. Dallas Innovates, August 2022: geopolymer concrete for the Texas heat, finish by end of October 2022. No completion published."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.3.facts.1",
+  "old": "Treyvon Perry, chief executive, and Sebin Joseph, chief technology officer.",
+  "new": "Treyvon Perry, chief executive. Sebin Joseph, chief technology officer."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.line",
+  "old": "Prints production homes in Greater Houston, at Zuri Gardens and Gulf Shore Estates. No DFW project is on record.",
+  "new": "Prints production homes in Greater Houston. No DFW project on record."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.facts.0",
+  "old": "January 2024, merging Hive3D, founded by Timothy Lankau in 2022, and ASMBLD Modular, founded by Ethan Wong. Both are named as co-chief executive on the firm's own about page, in Houston.",
+  "new": "January 2024 merger of Hive3D, founded 2022 by Timothy Lankau, and ASMBLD Modular, founded by Ethan Wong. Both co-chief executives. Houston."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.facts.1",
+  "old": "The Texas Tribune reports Hive3D partnered with Eco Material Technologies of Utah, whose chief executive is quoted on the emissions claim for the cement it supplies.",
+  "new": "Cement: Eco Material Technologies of Utah, per The Texas Tribune. The emissions claim is its chief executive's."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.facts.2",
+  "old": "Zuri Gardens, 80 homes, with a $1.8 million City of Houston subsidy. Gulf Shore Estates, 23 of 26 homes. Avenue J, a two-unit duplex. Lumen Villas in Marfa. None is confirmed complete.",
+  "new": "Zuri Gardens: 80 homes, $1.8 million city subsidy. Gulf Shore Estates: 23 of 26. Avenue J: duplex. Marfa: Lumen Villas. None confirmed complete."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.facts.3",
+  "old": "Steve Commander of Commander Home Builders told Homes.com the build timeline fell roughly 50 percent, with 5 to 7 percent cost savings.",
+  "new": "Build time down roughly 50 percent, costs down 5 to 7 percent, per Steve Commander of Commander Home Builders."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.4.facts.4",
+  "old": "HiveASMBLD had Gulf Shore Estates and Avenue J under construction in spring 2026. Titan deliveries start early 2027.",
+  "new": "Spring 2026: Gulf Shore Estates and Avenue J under way. Titan deliveries from early 2027."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.5.line",
+  "old": "Printed a house in Spring Branch, Houston, on a COBOD BOD2.",
+  "new": "Printed in Spring Branch, Houston, on a COBOD BOD2."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.5.facts.0",
+  "old": "A house in Spring Branch, Houston, marketed as the nation's largest printed home. Published area figures conflict between outlets, from 4,000 to 30,000 square feet, and the build paused for months without explanation.",
+  "new": "Marketed as the nation's largest printed home. Outlets differ on area: 4,000 to 30,000 square feet. Build paused for months, unexplained."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.5.facts.1",
+  "old": "PERI prints with COBOD's BOD2. PERI is a customer of the printer, not its maker.",
+  "new": "Prints on COBOD's BOD2, as a customer."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.5.facts.2",
+  "old": "A German formwork group printed a house inside the Houston city limits on a COBOD BOD2.",
+  "new": "A German formwork group printing inside Houston."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.6.facts.0",
+  "old": "A printer manufacturer rather than a builder, backed by GE, CEMEX, Holcim and PERI. It sells the BOD2 to contractors.",
+  "new": "Printer manufacturer. Sells the BOD2 to contractors. Backers: PERI, GE, CEMEX, Holcim."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.6.facts.1",
+  "old": "Titan is a machine sale. COBOD sells machines to contractors, PERI among them.",
+  "new": "Sells machines to contractors, PERI among them. Same model as Titan."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.7.line",
+  "old": "Signed with Apis Cor in 2016, permitted one house in 2019, and published nothing since.",
+  "new": "Apis Cor deal 2016. One house permitted 2019. Nothing published since."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.7.facts.0",
+  "old": "3D Printing Industry reported in January 2019 that Sunconomy had permits for its first printed house, in Lago Vista, and that it had signed with Apis Cor in 2016. No completion has been published in the seven years since.",
+  "new": "January 2019: permits for its first printed house, in Lago Vista, per 3D Printing Industry. No completion in seven years."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.7.facts.2",
+  "old": "A printed programme announced in Texas with an Apis Cor machine, and no published building.",
+  "new": "Texas programme on an Apis Cor machine. No published building."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.8.line",
+  "old": "Pivoted to selling printers and doing commercial work for Walmart. No Texas project is on record.",
+  "new": "Pivoted to selling printers. Walmart is a commercial client. No Texas project."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.8.facts.0",
+  "old": "Moved from printing houses to selling its A1 and A1X machines. The A1X is leased to contractors through an equipment rental partner rather than sold outright, and the printing is done for retail clients.",
+  "new": "Stopped printing houses to sell A1 and A1X machines. Contractors lease the A1X via a rental partner. Prints for retail clients."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.8.facts.1",
+  "old": "No Texas project is on record. Construction Dive names Colorado, Tennessee and Missouri.",
+  "new": "No Texas project. Missouri, Colorado and Tennessee, per Construction Dive."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.9.line",
+  "old": "Put itself up for sale in January 2025. LUMUS now owns its technologies.",
+  "new": "Put up for sale January 2025. LUMUS owns its technologies."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.9.facts.0",
+  "old": "Headcount cut, then the whole company offered for sale in January 2025, having raised over $150 million. Its own site now says it is a brand of LUMUS Inc., which acquired its technologies.",
+  "new": "Raised over $150 million. Cut staff, then went up for sale. Now a LUMUS brand, per its own site."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.10.line",
+  "old": "Shut down on 12 December 2024 with fifteen houses still being built.",
+  "new": "Shut down 12 December 2024, fifteen houses unfinished."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.10.facts.0",
+  "old": "HousingWire reports the founders confirmed the shutdown on 12 December 2024. The company had printed thirty homes at Mountain View Estates between 2022 and early 2024, and was still building the final fifteen when it stopped.",
+  "new": "Founders confirmed the 12 December 2024 shutdown, per HousingWire. Thirty homes printed at Mountain View Estates, 2022 to early 2024."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.10.facts.1",
+  "old": "Fifteen houses were open when it stopped.",
+  "new": "Fifteen houses open at closure."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.11.line",
+  "old": "Four units in about six years, none in Texas.",
+  "new": "Four units in about six years. Texas: none."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.11.facts.0",
+  "old": "Four units built since 2017, all on Long Island. Specifications and pricing are not published.",
+  "new": "Four units since 2017. No published specifications or pricing."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.12.line",
+  "old": "One confirmed American house, in Florida.",
+  "new": "Florida: one confirmed American house."
+ },
+ {
+  "market": "dfw",
+  "path": "competitors.12.facts.0",
+  "old": "One named United States home, in Florida. No Texas project and no published funding.",
+  "new": "Florida: one named United States home. No Texas project or funding published."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.line",
+  "old": "ICON's published record: housing in Central Texas, Army barracks in Texas and Louisiana, a NASA habitat in Houston, and the terms of the Titan, its first system sold to outside builders.",
+  "new": "Central Texas housing. Army barracks in Texas and Louisiana. NASA habitat in Houston. Titan: its first system for outside builders."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.0",
+  "old": "Announced 11 March 2026. ICON states multi-storey wall systems at roughly $20 a square foot, a $5,000 reservation deposit, training from the third quarter of 2026 and first deliveries in early 2027. Its reservation page publishes no price. Axios and All3DP report a price from $899,000, and The Real Deal reports leases first, with sales from the first quarter of 2027. Jason Ballard told Builder the target is small and mid-sized builders.",
+  "new": "Announced 11 March 2026. ICON: multi-storey walls at roughly $20 a square foot, $5,000 deposit, training third quarter 2026, deliveries early 2027. ICON lists no price. Axios, All3DP: from $899,000. The Real Deal: leases first, sales first quarter 2027. Jason Ballard to Builder: the target is small and mid-sized builders."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.1",
+  "old": "The Real Deal names Ghost Factory, Cole Klein Builders and Moderne Development among the firms that have reserved a Titan. Cole Klein is the Houston builder of Zuri Gardens, which HiveASMBLD prints.",
+  "new": "Titan reservations include Ghost Factory, Cole Klein Builders and Moderne Development, per The Real Deal. Cole Klein builds Zuri Gardens, Houston, which HiveASMBLD prints."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.2",
+  "old": "Lennar's DFW business is on this deck, second on BUILDER's 2026 DFW Local Leaders table with 5,724 closings in 2025.",
+  "new": "Lennar's DFW business: second on BUILDER's 2026 DFW Local Leaders table, 5,724 closings in 2025."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.3",
+  "old": "100 homes with Lennar, designed by BIG and printed on Vulcan. Lennar announced the community on 26 October 2021, and printing was under way by November 2022. Eight floor plans of 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community, sold with Lennar's own mortgage arm (June 2026).",
+  "new": "100 homes with Lennar, designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community (June 2026)."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.4",
+  "old": "100 more homes under way at Community First! Village (December 2024). Affordable one-bedroom homes from $195,000 and about a dozen two- and three-bedroom homes at Mueller, printing from July 2025. Eight homes at Wimberley Springs from the upper $800,000s (July 2024).",
+  "new": "Community First! Village: 100 more, December 2024. Mueller: one-bedrooms from $195,000, about a dozen two- and three-bedrooms, printing from July 2025. Wimberley Springs: eight homes, upper $800,000s, July 2024."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.5",
+  "old": "Ten barracks at Fort Bliss, El Paso, 78,000 square feet for up to 560 soldiers, under a $62.8 million Army contract. ICON announced delivery on 28 July 2026. Stars and Stripes reported two of the ten open that day and the rest due in September. Both ICON and the Army call it the largest deployment of robotic construction for the Department of War. A $67.9 million award at Fort Polk, Louisiana followed in March 2026, with vertical construction scheduled for September 2026.",
+  "new": "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. Stars and Stripes: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.6",
+  "old": "A government division launched on 14 April 2026, with Will Hurd as its president. ICON states more than $360 million in government contracts.",
+  "new": "Government division launched 14 April 2026. President: Will Hurd. Over $360 million in government contracts, per ICON."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.7",
+  "old": "More than 245 homes and structures completed, per ICON in March 2026, and its site now counts 263 structures built. It filed to lay off 114 people, more than a quarter of its staff, in January 2025, and closed a $56 million Series C led by Norwest and Tiger Global in February 2025, per TechCrunch. Jason Ballard is co-founder and chief executive.",
+  "new": "Structures completed: over 245 per ICON in March 2026, 263 on its site now. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, led by Norwest and Tiger Global."
+ },
+ {
+  "market": "dfw",
+  "path": "icon_record.facts.8",
+  "old": "ICON has published no project in the metro: its own site says the homes it has sold are in Central and West Texas. Its one Houston structure is Mars Dune Alpha, a 1,700 square foot habitat for NASA at Johnson Space Center, delivered in 2021. In DFW, Black Buffalo printed a house at 100 W. Bolt St., Fort Worth, in May 2024, and PRINT3D Technologies of Allen sells printed houses in North Texas.",
+  "new": "No ICON project in the metro, per its own site. Its one Houston structure: Mars Dune Alpha, a 1,700 square foot NASA habitat, 2021. Black Buffalo printed a Fort Worth house in May 2024. PRINT3D Technologies of Allen sells printed houses."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.0.line",
+  "old": "The Irving branch of a national post-tension supplier, with slab-on-ground as a named line.",
+  "new": "Irving branch of a national post-tension supplier. Named slab-on-ground line."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.0.why",
+  "old": "Sells tendons to the DFW crews that pour slabs, so it knows which of them pour at volume.",
+  "new": "Sells tendons to DFW slab crews. Knows which pour at volume."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.1.line",
+  "old": "A post-tension plant serving Houston and DFW since 2001, selling residential and commercial slab reinforcement and stressing.",
+  "new": "Post-tension plant, Houston and DFW, since 2001. Residential and commercial slab reinforcement, stressing."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.1.why",
+  "old": "Sells the whole residential slab package to Metroplex crews from a Haltom City plant.",
+  "new": "Whole residential slab package to Metroplex crews from Haltom City."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.2.line",
+  "old": "Founded in 1988. Supplies post-tension cable, rebar and lumber packages to concrete contractors rather than competing with them.",
+  "new": "Founded 1988. Sells post-tension cable, rebar and lumber packages to concrete contractors."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.2.why",
+  "old": "Its headquarters and three of its branches ring DFW, and it sells to the crews that pour.",
+  "new": "Headquarters and three branches ring DFW. Sells to pouring crews."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.3.line",
+  "old": "CRH's ready-mix and aggregates business in Texas, with published DFW batch plants.",
+  "new": "CRH's Texas ready-mix and aggregates business. Published DFW batch plants."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.3.why",
+  "old": "Batches ready-mix at published DFW plants.",
+  "new": "Batches ready-mix at DFW plants."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.4.line",
+  "old": "Ready-mix producer whose Red River Division covers DFW.",
+  "new": "Ready-mix producer. DFW: Red River Division."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.5.line",
+  "old": "A cement joint venture of Heidelberg Materials and Eagle Materials, with North Texas terminals in Dallas and Roanoke.",
+  "new": "Heidelberg Materials and Eagle Materials cement joint venture. Roanoke and Dallas terminals."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.5.why",
+  "old": "Supplies cement from terminals in Dallas and Roanoke.",
+  "new": "Roanoke and Dallas terminals supply cement."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.6.why",
+  "old": "Sells to the contractors who erect tilt panels in DFW, so it knows who they are.",
+  "new": "Sells to DFW tilt-panel contractors. Knows who they are."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.7.line",
+  "old": "The Texas distributor of Nudura insulated concrete forms, based in Fort Worth, with contractor training.",
+  "new": "Texas Nudura distributor in Fort Worth. Trains contractors."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.7.why",
+  "old": "Sells forms to the DFW crews that already build concrete walls on site.",
+  "new": "Sells forms to DFW crews already building concrete walls on site."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.8.line",
+  "old": "Brickmaker headquartered in Fort Worth, a Berkshire Hathaway company.",
+  "new": "Fort Worth brickmaker. Berkshire Hathaway company."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.8.why",
+  "old": "Supplies the masonry that a printed wall would replace on a production house.",
+  "new": "Supplies masonry a printed wall would replace on production houses."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.9.line",
+  "old": "A GMS yard stocking steel studs, track and drywall for DFW commercial and residential jobs.",
+  "new": "GMS yard stocking steel studs, track, drywall. DFW commercial and residential."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.9.why",
+  "old": "Supplies the light-gauge framing a printed wall would also replace in multifamily and commercial work.",
+  "new": "Light-gauge framing, which printed walls would replace in multifamily and commercial."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.10.line",
+  "old": "Rebar producer and fabricator headquartered in Irving.",
+  "new": "Irving rebar producer and fabricator."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.10.why",
+  "old": "Produces and fabricates rebar for concrete work.",
+  "new": "Produces and fabricates rebar."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.11.line",
+  "old": "Makes void forms that isolate slabs from expansive soil, headquartered in Fort Worth.",
+  "new": "Ft. Worth maker of void forms that isolate slabs from expansive soil."
+ },
+ {
+  "market": "dfw",
+  "path": "supply.11.why",
+  "old": "Sells void forms to foundation crews that pour on DFW's expansive clay.",
+  "new": "Sells void forms to foundation crews on DFW's expansive clay."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.0.a",
+  "old": "Yes. Both cities zone, so a printed wall is a zoning question as well as a code question. Inside a masterplan, the deed restrictions can also refuse an exterior material.",
+  "new": "Yes. Both cities zone. Masterplan deed restrictions can also refuse an exterior material."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.1.a",
+  "old": "The 2021 IRC with Dallas amendments, Ordinance 32424, in force with the city's May 2023 construction codes. Appendix AW, 3-D Printed Building Construction, is adopted.",
+  "new": "2021 IRC with Dallas amendments, Ordinance 32424, in force with the May 2023 construction codes. Appendix AW (3-D Printed Building Construction) adopted."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.2.a",
+  "old": "The 2021 IRC, Ordinance 25383-03-2022, in force 1 April 2022. Appendix AW is not among the appendices it adopts, so a printed wall enters under R104.11, alternative materials and methods, on an ICC-ES report.",
+  "new": "2021 IRC, Ordinance 25383-03-2022, in force 1 April 2022. Appendix AW not adopted. Printed walls enter under R104.11, alternative materials and methods, on an ICC-ES report."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.3.a",
+  "old": "Yes. ESR-4652, reissued June 2026: bearing, non-bearing and shear walls to 12 feet, Seismic Design Categories A and B, special inspection required.",
+  "new": "Yes. ESR-4652, reissued June 2026: bearing, non-bearing and shear walls to 12 feet. Seismic Design Categories A and B. Special inspection."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.4.a",
+  "old": "The IRC in force at the county seat (LGC 233.153), with third-party inspection at foundation, framing and completion (233.154). Dallas County's seat is Dallas and Tarrant County's is Fort Worth.",
+  "new": "The county seat's IRC (LGC 233.153). Third-party inspection at foundation, framing and completion (233.154). Dallas County's seat is Dallas. Ft. Worth is Tarrant County's."
+ },
+ {
+  "market": "dfw",
+  "path": "code.items.5.a",
+  "old": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, in force 1 September 2019. Exceptions: historic districts, state- or federally-funded housing.",
+  "new": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, effective 1 September 2019. Exceptions: historic districts, state- or federally-funded housing."
+ },
+ {
+  "market": "dfw",
+  "path": "code.precedent.0.what",
+  "old": "One printed house of about 1,500 square feet, printed live in May 2024 by Black Buffalo 3D with Boxer Property. Black Buffalo filed Chapter 11 in December 2025.",
+  "new": "One house, about 1,500 square feet, printed live May 2024 by Black Buffalo 3D. Chapter 11 followed, December 2025."
+ },
+ {
+  "market": "dfw",
+  "path": "code.precedent.1.what",
+  "old": "Seven structures on its own count, including three houses and a storage facility, sold between 2024 and 2026.",
+  "new": "Seven structures on its own count, three houses among them, sold 2024 to 2026."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.1.note",
+  "old": "Owns the lot before anyone else arrives, owns the builder relationship and owns the pump.",
+  "new": "On the lot before anyone else. Owns the builder relationship and the pump."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.2.note",
+  "old": "Casts wall flat on the slab and lifts it. The panels are measured in tons and storeys, which is why this cell reads Partly or No on printer fit.",
+  "new": "Casts wall flat on the slab and lifts it. Panels weigh tons, rise storeys. Partly or No on printer fit."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.3.note",
+  "old": "A plant, casting beds and a quality lab.",
+  "new": "Plant, casting beds, quality lab."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.4.note",
+  "old": "Already manufactures wall off site and sells it to the production builders on this deck.",
+  "new": "Already makes wall off site and sells it to production builders."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.5.note",
+  "old": "Two firms here already sell a panelised or prefabricated version of their own product.",
+  "new": "Two firms already sell panelised or prefabricated versions of their product."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.6.note",
+  "old": "Has already sold a customer on a wall that is not stick-built.",
+  "new": "Already sells a non-stick-built wall."
+ },
+ {
+  "market": "dfw",
+  "path": "chain.7.note",
+  "old": "Of the four, Capform self-performs structural concrete and formwork, per its own site.",
+  "new": "Of the four, Capform self-performs structural concrete and formwork, per its site."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.a",
+  "old": "Builders and developers. Adopters and contractors that hold all three sit in their own sections.",
+  "new": "Builders and developers. Adopters and contractors with all three sit apart."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.b",
+  "old": "In on two of three counts.",
+  "new": "Two of three counts."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.adopter",
+  "old": "Has printed walls standing or contracted with a competitor.",
+  "new": "Printed walls standing, or a competitor contract."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.national",
+  "old": "Purchasing runs at company level, across several states.",
+  "new": "Company-level purchasing across several states."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.trade",
+  "old": "DFW builders do not put up their own walls, so the firm that would run a printer is often the one they hire. The three counts are asked of the wall rather than of the plan set.",
+  "new": "DFW builders hire out walls. Their wall firm would often run the printer. The three counts judge the wall."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.creative",
+  "old": "Design-led work that does not repeat a plan set. The printed element sits inside a conventional project.",
+  "new": "Design-led, no repeat plan set. Printed element inside a conventional project."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.channel",
+  "old": "Owns the ground. The builders inside buy the wall.",
+  "new": "Owns the ground. Its builders buy the wall."
+ },
+ {
+  "market": "dfw",
+  "path": "group_notes.icon",
+  "old": "Lennar's DFW business. LEN X invested in ICON in August 2021, and Lennar built Wolf Ranch with ICON.",
+  "new": "Lennar's DFW business. LEN X invested in ICON, August 2021. Partners on Wolf Ranch."
+ },
+ {
+  "market": "dfw",
+  "path": "consolidation",
+  "old": "Three of the thirteen are gone or going: Diamond Age closed in December 2024 with fifteen houses unfinished, Black Buffalo filed Chapter 11 in December 2025, eighteen months after printing a house in Fort Worth, and Mighty Buildings put itself up for sale in January 2025 after raising more than $150 million.",
+  "new": "Three of thirteen gone or going. Diamond Age: closed December 2024, fifteen houses unfinished. Black Buffalo: Chapter 11, December 2025, eighteen months after its Fort Worth print. Mighty Buildings: for sale January 2025, over $150 million raised."
+ },
+ {
+  "market": "dfw",
+  "path": "supply_notes.node",
+  "old": "This trade does not publish its volume. The numbers exist at the supplier who batches the concrete, fabricates the tendons or sells the block, and these firms sell to the crews rather than competing with them.",
+  "new": "Wall trades publish no volume. Suppliers of concrete, tendons and block hold the numbers. They sell to the crews."
+ },
+ {
+  "market": "hou",
+  "path": "code.line",
+  "old": "Houston has no zoning. A printed wall is a building-code question.",
+  "new": "Houston: no zoning, the 2021 IRC, and no 3D-printing appendix."
+ }
+]

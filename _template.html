@@ -116,7 +116,7 @@ button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 /* -------------------------------------------------------------------- nav */
 /* The wordmark sits on solid paper. At .88 the contour field behind it ghosts
    through, which reads as a rendering fault rather than a decision. */
-nav{position:sticky;top:0;z-index:60;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--ink)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--nav-bg);backdrop-filter:blur(10px);border-bottom:1px solid var(--ink)}
 .navin{display:flex;align-items:center;gap:14px;height:56px;flex-wrap:wrap}
 .navtools{display:flex;align-items:center;gap:14px;flex:0 0 auto;min-width:0}
 .mark{display:flex;align-items:baseline;gap:9px;font:700 17px/1 var(--sans);letter-spacing:-.02em}
@@ -146,10 +146,13 @@ nav{position:sticky;top:0;z-index:60;background:var(--nav-bg);backdrop-filter:bl
   border:1px solid var(--rule2);border-radius:2px;color:var(--ink)}
 .thm:hover{border-color:var(--ink)}
 @media print{.thm{display:none}}
-@media(max-width:860px){#q{width:150px}.mark span{display:none}}
-/* Below this the four view buttons no longer fit beside the search box. They get
-   their own row rather than being crushed to a hairline by overflow:hidden. */
-@media(max-width:760px){
+@media(max-width:560px){.mark span{display:none}}
+/* Below this the view buttons no longer fit beside the search box. They get
+   their own row rather than being crushed to a hairline by overflow:hidden.
+   Build 77: the line was at 760px, and from there up to about 1030px the call
+   list button wrapped under a 56px nav and sat over the page. Tablets in both
+   orientations were inside that band. */
+@media(max-width:1060px){
   .navin{height:auto;padding-block:10px;gap:10px;row-gap:10px}
   .navtools{order:5;flex:1 0 100%;gap:10px}
   #q{flex:1 1 auto;width:auto;min-width:0}
@@ -191,6 +194,128 @@ header.top{padding:56px 0 30px}
 @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){.hero-fig .rise{animation:none}}
 @media print{.hero-fig{display:none}}
+/* Build 74. Motion, taken from the machine. A printer lays a wall as one bead
+   of material per layer, and each pass runs the other way from the one before.
+   The page uses that bead once, as the opener, and then as the one cue for a
+   change of step: a new view or a firm page arrives with a bead drawn across
+   its top edge and its first blocks set down one layer at a time. Nothing
+   waits on an observer, every rest state is fully visible, and reduced motion
+   turns all of it off. */
+.hero-copy{position:relative}
+.pbead{position:absolute;height:3px;border-radius:2px;background:var(--orange);pointer-events:none;
+  transform-origin:left center;z-index:2}
+.pbead::after{content:"";position:absolute;top:-2.5px;width:8px;height:8px;border-radius:50%;
+  background:var(--orange);box-shadow:0 0 0 3px color-mix(in srgb,var(--orange) 22%,transparent)}
+.pbead.ltr::after{right:-4px}
+.pbead.rtl::after{left:-4px}
+.pbead.done{transition:opacity .45s ease;opacity:0}
+.pbead.done::after{display:none}
+.lyr{position:absolute;right:0;top:0;font:600 10px/1 var(--mono);letter-spacing:.12em;
+  text-transform:uppercase;color:var(--ink3);font-variant-numeric:tabular-nums;transition:opacity .4s ease}
+.lyr b{color:var(--orange);font-weight:700}
+.pre{opacity:0;transform:translateY(8px)}
+.post{transition:opacity .42s ease,transform .42s cubic-bezier(.2,.7,.2,1)}
+/* the view switcher carries the bead under whichever view is on */
+.seg.views{position:relative}
+.vbead{position:absolute;left:0;bottom:0;height:3px;width:0;background:var(--orange);pointer-events:none;
+  transition:transform .34s cubic-bezier(.3,.6,.2,1),width .34s cubic-bezier(.3,.6,.2,1)}
+/* a change of step */
+.sbead{height:2px;margin-bottom:-2px;background:var(--orange);transform-origin:left center;
+  animation:beadrun .42s cubic-bezier(.3,.6,.2,1) both,beadfade .5s .5s ease forwards;pointer-events:none}
+.layerin{animation:layerup .38s cubic-bezier(.2,.7,.2,1) both}
+@keyframes beadrun{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes beadfade{to{opacity:0}}
+@keyframes layerup{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){
+  .sbead,.pbead,.lyr{display:none}
+  .layerin{animation:none}
+  .vbead{transition:none}
+  .pre{opacity:1;transform:none}
+}
+@media print{.sbead,.pbead,.lyr,.vbead{display:none}}
+@media(max-width:640px){.lyr{display:none}}
+/* Build 75. Weight. The page is dense, so every action answers with a small
+   physical response in the market's accent: a press that sinks a pixel, a row
+   that marks where you came back to, a call-list count that jumps, a filter
+   count that ticks, and a scroll line with a print head that steps at each
+   section. The dot in the wordmark beats once for every action, so the eye
+   learns one signal. Reduced motion keeps the marks and drops the motion. */
+.seg button:active,.cbtn:active,.thm:active,.rowadd:active,.addbtn:active,.grpadd:active,
+button.stat:active,.fsel>button:active,.fmenu button:active,.freset:active,.back:active,
+.chip:active,.lnk:active,.mktsw button:active{transform:translateY(1px) scale(.985)}
+.rowadd:active,.addbtn:active{background:color-mix(in srgb,var(--orange) 16%,var(--paper))}
+.rowadd.on:active,.addbtn.on:active{background:var(--ink)}
+/* Build 77. The row under the pointer is where the eye is, so it lifts out of
+   the list: a ground tinted in the market's accent, a rail on its left edge, the
+   name underlined in the accent and nudged a few pixels in, the figure brought
+   up to full ink and the + outlined. The whole row opens the firm, so the
+   target is as large as the highlight. The ground and the rail stay with
+   reduced motion; the nudge does not. */
+#stageList{--rowtint:color-mix(in srgb,var(--orange) 6%,var(--paper))}
+#stageList tbody tr{transition:background-color .16s ease-out}
+#stageList tbody tr .fbtn2{transition:transform .16s ease-out}
+#stageList td.hf{transition:color .16s ease-out}
+@media(hover:hover){
+  #stageList tbody tr:not(.grp):not(.chn):has(.fbtn2){cursor:pointer}
+  #stageList tbody tr:not(.grp):not(.chn):hover{background:var(--rowtint)}
+  #stageList tbody tr:not(.grp):not(.chn):hover td:first-child{box-shadow:inset 3px 0 0 var(--orange)}
+  #stageList tbody tr:not(.grp):not(.chn):hover .fbtn2{text-decoration:underline;
+    text-decoration-color:var(--orange);text-decoration-thickness:2px;text-underline-offset:4px;
+    transform:translateX(4px)}
+  #stageList tbody tr:not(.grp):not(.chn):hover td.hf{color:var(--ink)}
+  #stageList tbody tr:not(.grp):not(.chn):hover .rowadd:not(.on){border-color:var(--ink);color:var(--ink)}
+}
+/* In the card layout the tint runs 12px into the gutter and the rail sits
+   outside the text. Both are shadows, so nothing in the row moves. */
+@media(hover:hover) and (max-width:900px){
+  #stageList tbody tr:not(.grp):not(.chn):hover{box-shadow:-12px 0 0 0 var(--rowtint),
+    -15px 0 0 0 var(--orange),12px 0 0 0 var(--rowtint)}
+  #stageList tbody tr:not(.grp):not(.chn):hover td:first-child{box-shadow:none}
+}
+@media(prefers-reduced-motion:reduce){
+  #stageList tbody tr,#stageList tbody tr .fbtn2,#stageList td.hf{transition:none}
+  #stageList tbody tr:not(.grp):not(.chn):hover .fbtn2{transform:none}
+}
+#stageList tbody tr:not(.grp):not(.chn):has(.fbtn2):active{
+  --rowtint:color-mix(in srgb,var(--orange) 12%,var(--paper));background:var(--rowtint)}
+.landed{animation:landed 1.5s ease-out both}
+.landed td:first-child,.landed.chip,.landed.cmp{box-shadow:inset 3px 0 0 var(--orange)}
+@keyframes landed{from{background:color-mix(in srgb,var(--orange) 16%,var(--paper))}to{background:transparent}}
+.pop{animation:pop .3s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pop{0%{transform:scale(.8)}60%{transform:scale(1.18)}100%{transform:scale(1)}}
+.bump{display:inline-block;animation:bump .42s cubic-bezier(.3,1.5,.5,1)}
+@keyframes bump{0%{transform:scale(1)}35%{transform:scale(1.55);color:var(--orange)}100%{transform:scale(1)}}
+.tick{display:inline-block;animation:tick .38s ease-out}
+@keyframes tick{0%{color:var(--orange);transform:translateY(-3px)}100%{transform:none}}
+.mark i.beat{animation:beat .36s cubic-bezier(.3,1.5,.5,1)}
+@keyframes beat{0%{transform:scale(1)}40%{transform:scale(2.2)}100%{transform:scale(1)}}
+/* the scroll line under the nav, with a head and a tick for each section */
+.sline{position:absolute;left:0;right:0;bottom:-1px;height:2px;pointer-events:none;z-index:2}
+.sline .fill{position:absolute;left:0;top:0;height:2px;width:100%;background:var(--orange);
+  transform-origin:left center;transform:scaleX(0)}
+.sline .head{position:absolute;top:-2px;width:6px;height:6px;margin-left:-3px;border-radius:50%;
+  background:var(--orange);opacity:0;transition:opacity .2s}
+.sline.on .head{opacity:1}
+.sline .head.hit{animation:beat .36s cubic-bezier(.3,1.5,.5,1)}
+.sline .tk{position:absolute;top:-3px;width:1px;height:5px;background:var(--ink3);opacity:.55}
+.sline .tk.past{background:var(--orange);opacity:1}
+.sline.sweep .fill{animation:sweep .7s cubic-bezier(.3,.6,.2,1) forwards}
+@keyframes sweep{0%{transform:scaleX(0);opacity:1}70%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
+html.theming *,html.theming *::before,html.theming *::after{
+  transition:background-color .28s ease,color .28s ease,border-color .28s ease,fill .28s ease!important}
+.thm svg{transition:transform .38s cubic-bezier(.3,1.4,.5,1)}
+.thm.turn svg{transform:rotate(180deg)}
+@media(prefers-reduced-motion:reduce){
+  .landed{animation:none;background:color-mix(in srgb,var(--orange) 10%,var(--paper))}
+  .pop,.bump,.tick,.mark i.beat,.sline .head.hit,.sline.sweep .fill{animation:none}
+  .seg button:active,.cbtn:active,.thm:active,.rowadd:active,.addbtn:active,.grpadd:active,
+  button.stat:active,.fsel>button:active,.fmenu button:active,.freset:active,.back:active,
+  .chip:active,.lnk:active,.mktsw button:active{transform:none}
+  html.theming *{transition:none!important}
+}
+@media print{.sline{display:none}}
+
+
 /* at phone width the strip scales to a hairline; the Market view carries the full figure */
 @media(max-width:760px){.hero-fig{display:none}}
 header.top h1{margin:12px 0 0;font-size:clamp(34px,5.4vw,72px);color:var(--ink3);max-width:20ch}
@@ -491,6 +616,8 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .sig{font:600 9px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   border:1px solid var(--rule2);border-radius:99px;padding:5px 8px;color:var(--ink3)}
 ul.mini{list-style:none;margin:0;padding:0}
+ul.mini.srcs{display:flex;flex-wrap:wrap;gap:4px 18px}
+ul.mini.srcs li{border-top:0;padding:4px 0}
 ul.mini li{padding:11px 0;border-top:1px solid var(--rule);font-size:13.5px;line-height:1.6;color:var(--ink2)}
 ul.mini li:first-child{border-top:0}
 .dt{font:600 10px/1 var(--mono);letter-spacing:.06em;color:var(--ink4);margin-right:9px}
@@ -657,6 +784,11 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
    a reader can see whose page it is before clicking: the firm's own site, or
    somebody reporting on them. */
 .clinks{list-style:none;margin:18px 0 0;padding:0;display:grid;gap:0}
+.clinksd{margin:16px 0 0}
+.clinksd summary{cursor:pointer;font:600 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);padding:10px 0}
+.clinksd summary:hover{color:var(--ink)}
+.clinksd .clinks{margin-top:6px}
+@media print{.clinksd:not([open]) .clinks{display:block}}
 .clinks li{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px 14px;padding:9px 0;
   border-top:1px solid var(--rule)}
 .clinks a{font-size:13.5px;line-height:1.45;color:var(--ink);text-decoration:underline;
@@ -853,11 +985,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 /* the map carries ten labels and two numbers each; below about 700px it stops
    being readable if it scales to the column, so it keeps a working size and
    scrolls inside its own wrapper instead. */
-@media(max-width:700px){
-  #mapHost .fig{min-width:560px}
-  .fig .ctyl{font-size:13px!important;letter-spacing:0}
-  .fig .ctyv{font-size:11px!important}
-}
+
 .fig{display:block;max-width:100%;height:auto;font-family:var(--sans)}
 .fig.tl{max-width:760px}
 /* Build 72. Every figure keeps a working size on a phone and scrolls inside its
@@ -1002,18 +1130,208 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   :root[data-market="dfw"]:not(#_){--orange:#0A3A8C; --accent-warm:#0A3A8C; --on-orange:#FFFFFF}
   :root:not(#_){--paper:#FFFFFF; --paper2:#FAFAFA; --paper3:#F2F2F2; --ink:#111111; --ink2:#3D3D3D; --ink3:#6B6B6B; --ink4:#767676; --rule:#E4E4E4; --rule2:#CFCFCF; --on-ink:#FFFFFF; --on-ink-dim:rgba(255,255,255,.72); --on-ink-rule:rgba(255,255,255,.35); --text-primary:#111111; --shade:17,17,17; --grain:17,17,17; color-scheme:light;}
 }
+
+/* Build 76. One type scale. The page had drifted to some twenty-five sizes, and
+   three of its hierarchies ran backwards: a List section heading was smaller
+   than the rows under it, a firm's name and its headline figure were the same
+   size and colour, and the one figure a firm page exists to show sat in 11px
+   grey capitals under the name. The scale now runs:
+     label 10.5 mono caps · small 13 · secondary 14 · body 15.5 · row title 16
+     · section 18 · lead 19 · block heading 24 · display.
+   Secondary text takes the second ink so the name is always the first thing
+   read. Status pills keep their size: they are marks, not text. */
+th{font-size:10.5px}
+td{font-size:14px}
+#stageList .fbtn2{font-size:16px;line-height:1.35;letter-spacing:-.015em}
+/* Names start where the section heading starts, which keeps the rail clear of
+   the first letter and lines the rows up under their heading. */
+@media(min-width:901px){#stageList td.f .fbtn2{padding-left:12px}#stageList th:first-child{padding-left:12px}}
+#stageList td.hf{font-size:14px;line-height:1.5;color:var(--ink2)}
+tr.grp td{padding:16px 120px 14px 12px;position:relative}
+tr.grp .grpadd{position:absolute;right:14px;top:16px;float:none}
+tr.grp .gl{font:700 18px/1.2 var(--sans);letter-spacing:-.02em;text-transform:none;color:var(--ink)}
+tr.grp .gn{margin-left:10px;font:600 11px/1 var(--mono);letter-spacing:.08em;color:var(--ink3);
+  font-variant-numeric:tabular-nums}
+tr.grp em{display:block;margin:6px 0 0;font-size:13px;line-height:1.5;color:var(--ink2);max-width:80ch}
+.grpadd{font-size:10px;padding:7px 10px}
+#stageList tr.chn b{font-size:12px;letter-spacing:.1em}
+#stageList tr.chn em{font-size:13px;color:var(--ink2)}
+.fcount{font-size:11px}
+.stat span{font-size:10.5px;color:var(--ink2)}
+/* firm page */
+.fhead .kst{margin:14px 0 0;font:500 18px/1.4 var(--sans);letter-spacing:-.01em;text-transform:none;
+  color:var(--ink2);max-width:60ch}
+.syn{font-size:15.5px}
+.why b{font-size:14.5px}
+.why .tx{font-size:14px}
+.p1 .nm{font-size:16px}
+.p1 .rl{font-size:13.5px;color:var(--ink2)}
+.p1 .ev{font-size:13px}
+.tag,.lnk,.src{font-size:10px}
+.badge{font-size:9.5px}
+/* the field */
+.us h3{font-size:28px}
+.cmp h3,.codeblk h3,.figs.method h3,.figs h3{font-size:24px}
+.cmp .cl3,.us .cl3{font-size:17px;line-height:1.45}
+.cmp dt,.us dt{font-size:10.5px}
+.cmp dd,.us dd{font-size:14px}
+.cmp .where{font-size:10.5px}
+.cmp .st{font-size:9.5px}
+.fcap{font-size:14px}
+@media(max-width:640px){
+  #stageList td.f .fbtn2{font-size:17px;line-height:1.3}
+  #stageList td.hf{font-size:14.5px}
+  #stageList td[data-l]::before{font-size:10px}
+  tr.grp .gl{font-size:19px}
+  #stageList tr.grp td{padding:0}
+  #stageList tr.grp .grpadd{position:static}
+  #stageList td[data-l]:not(.hf){flex-wrap:wrap;row-gap:6px}
+  .fhead .kst{font-size:16px}
+}
+/* Build 78. The phone pass.
+   Labels that carry content sit at 10px or more at every width. */
+.chead span,.chip .vol,.sig,.cf-card .t-row,.cf-card .crow span,.cf-title .badge2,.frow > b,
+.fc s,.scname em,.lim b,.ftab th,.ctab th,.fsel > button .nsel{font-size:10px}
+.firmbar{display:none}
+.tbrk{display:none}
+@media(max-width:760px){
+  /* iOS zooms the whole page when a field set under 16px takes focus. */
+  #q{font-size:16px;padding:10px 12px}
+  .navtools .seg button{min-height:40px}
+  .thm{width:40px;height:40px}
+  .cbtn{min-height:40px;padding-inline:12px}
+  /* Field and Market are not searched, so the box leaves the bar there. */
+  html[data-mode="field"] #q,html[data-mode="market"] #q{display:none}
+  header.top{padding:26px 0 20px}
+  /* Firm page: the two actions a reader wants at the end of any block sit
+     at the bottom edge, under the thumb. */
+  .firmbar{display:flex;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:58;
+    padding:10px 16px calc(10px + env(safe-area-inset-bottom,0px));
+    background:var(--nav-bg);backdrop-filter:blur(10px);border-top:1px solid var(--ink)}
+  .firmbar .back{margin:0;flex:0 0 auto;min-height:44px;padding-inline:12px}
+  .firmbar .addbtn{flex:1 1 auto;min-height:44px;margin:0}
+  #stageFirm{padding-bottom:96px}
+  .fhead .hadd,#firmBody > .addbtn:last-child{display:none}
+  .fhead .tbrk{display:block;flex:0 0 100%;height:0}
+  .fhead .lnk{min-height:36px;padding-inline:10px 12px}
+  .ic{width:40px;height:40px}
+  .dial a{display:inline-block;padding:8px 0}
+  .src{padding-block:6px}
+  .back{min-height:40px}
+  .cf-btn{white-space:nowrap;min-height:44px;padding-inline:14px}
+  .ftable summary{padding:13px 0}
+  #matrix .chip{padding:10px 10px;font-size:13px}
+  #tip{max-width:min(320px,calc(100vw - 24px));font-size:13px}
+  .fmenu button{min-height:42px}
+}
+/* The bar's top rows slide away while reading down and come back on any move
+   up, so the view switcher and the scroll line are all that stay. On a phone
+   held sideways the bar is a quarter of a 390px screen, so it slides there too. */
+@media(max-width:760px),(max-height:500px) and (max-width:1060px){
+  nav{transition:transform .22s ease-out}
+  html.navup nav{transform:translateY(calc(-1 * var(--navhide,0px)))}
+}
+@media(prefers-reduced-motion:reduce){nav{transition:none!important}}
+/* Build 80. News */
+.nwt{display:inline-block;margin-left:10px;font:600 10px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink);border:1px solid var(--orange);border-radius:99px;padding:4px 8px;
+  vertical-align:1px;white-space:nowrap}
+@media(max-width:900px){.nwt{margin:6px 0 0;display:table}}
+.mini.news li{display:grid;grid-template-columns:auto 1fr;column-gap:12px;row-gap:4px;align-items:baseline}
+.mini.news .nwhat{font-size:15px;line-height:1.5;color:var(--ink)}
+.mini.news .nsrc,.mini.news .out{grid-column:2}
+.mini.news .nsrc{font-size:13px;color:var(--ink2);text-decoration:underline;text-decoration-color:var(--rule2);text-underline-offset:3px}
+.mini.news .out{font:600 10px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+@media(max-width:560px){.mini.news li{grid-template-columns:1fr}.mini.news .nsrc,.mini.news .out{grid-column:1}}
+/* Build 80. The news list on the Market view */
+.nlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.nlist li{display:grid;grid-template-columns:96px 1fr;gap:14px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.nlist .nd{font:600 11px/1.6 var(--mono);color:var(--ink3);font-variant-numeric:tabular-nums}
+.nlist .nb{display:flex;flex-direction:column;gap:3px;min-width:0}
+.nlist .nf{font:700 15px/1.3 var(--sans);letter-spacing:-.01em;color:var(--ink);text-align:left;padding:0}
+.nlist .nf:hover{text-decoration:underline;text-underline-offset:3px}
+.nlist .nw{font-size:14px;line-height:1.5;color:var(--ink2)}
+.nlist .src{align-self:flex-start}
+@media(max-width:560px){.nlist li{grid-template-columns:1fr;gap:4px}}
+.stats.thr{margin-top:6px}
+/* Build 82. The Market view's five steps */
+.mksec{margin:54px 0 0}
+.mksec:first-child{margin-top:30px}
+.mksech{display:flex;align-items:baseline;gap:14px;padding:0 0 12px;border-bottom:2px solid var(--ink)}
+.mksech .mkn{font:700 13px/1 var(--mono);color:var(--orange);letter-spacing:.04em}
+.mksech h3{margin:0;font:700 28px/1.1 var(--sans);letter-spacing:-.025em}
+@media(max-width:640px){.mksech h3{font-size:22px}}
+#mkStats button.stat{text-align:left}
+/* the owners figure on a phone */
+.oblist{display:flex;flex-direction:column;gap:0;border-top:1px solid var(--ink)}
+.ob{padding:14px 0;border-bottom:1px solid var(--rule)}
+.obh{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin:0 0 10px}
+.obn{font:700 16px/1.25 var(--sans);letter-spacing:-.015em;color:var(--ink);text-align:left;padding:0}
+.obc{font:600 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
+.ob .chip{padding:9px 10px;font-size:13px}
+.ob .chip.off{color:var(--ink3);background:none;border-style:dashed}
+.ob .chip.off s{text-decoration:none;font:500 10px/1 var(--mono);letter-spacing:.04em;color:var(--ink4);margin-left:4px}
+@media print{.firmbar{display:none!important}}
+/* List cards: name, then its figure, then the four marks. The figure's label
+   is dropped here because its place under the name already says what it is. */
+@media(max-width:900px){
+  #stageList tr:not(.grp):not(.chn){padding:14px 0;row-gap:6px}
+  #stageList td.f,#stageList td.hf{padding-right:52px}
+  #stageList td.f{order:0;margin:0}
+  #stageList td.hf{order:1;margin:0 0 6px;font-size:14.5px;line-height:1.45}
+  #stageList td.hf::before{display:none}
+  #stageList tr:not(.grp) td[data-l]:not(.hf){order:2}
+  #stageList td.ac{top:9px}
+  #stageList .rowadd{width:40px;height:40px;font-size:15px}
+  #stageList .grpadd{padding:12px 14px;font-size:10.5px}
+  /* the section heading is a block here too: heading, note, then Add all */
+  #stageList tr.grp td{padding:0}
+  #stageList tr.grp .grpadd{position:static}
+}
+/* A card wider than 600px has room for the four marks on one line. */
+@media(min-width:601px) and (max-width:900px){
+  #stageList tr:not(.grp) td[data-l]:not(.hf){flex:0 0 auto;margin-right:22px}
+}
+/* Below 360px a label and its verdict no longer fit side by side in half a
+   card, and some wrapped while others did not. Every mark stacks instead. */
+@media(max-width:360px){
+  #stageList tr:not(.grp) td[data-l]:not(.hf){flex-direction:column;align-items:flex-start;gap:4px}
+}
+/* The stat strip as a true two-column grid, so every figure starts on the
+   same two edges. */
+@media(max-width:560px){
+  .stats{display:grid;grid-template-columns:1fr 1fr}
+  .stats .stat{padding:14px 12px 16px 0;border-right:0}
+  .stats .stat:nth-child(even){padding-left:14px;border-left:1px solid var(--rule)}
+  .stats .stat:nth-child(n+3){border-top:1px solid var(--rule)}
+  .stats .stat:last-child:nth-child(odd){grid-column:1 / -1}
+  .stats .stat span{min-height:0}
+  .stat b{font-size:34px}
+}
+/* The code and permitting tables stack on a phone: question, answer, source,
+   each at full width, instead of a 560px table behind a sideways scroll. */
+@media(max-width:640px){
+  .ctab{min-width:0}
+  .ctab thead{display:none}
+  .ctab,.ctab tbody,.ctab tr,.ctab td{display:block;width:auto}
+  .ctab tr{padding:16px 0;border-bottom:1px solid var(--rule)}
+  .ctab td,.ctab td:first-child{border:0;padding:0;position:static;background:none}
+  .ctab td.q{width:auto;margin:0 0 6px;font-size:15px;line-height:1.4}
+  .ctab td.s{width:auto;margin:10px 0 0}
+  .fig .rowl,.fig .node{font-size:13px}
+}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to the firms</a>
 <canvas id="atmos" aria-hidden="true"></canvas>
 <div class="bg" aria-hidden="true"><div class="grain"></div></div>
 
-<nav><div class="wrap navin">
+<nav><div class="sline" id="sline" aria-hidden="true"><div class="fill"></div><div class="head"></div></div><div class="wrap navin">
   <a class="mark" href="#" id="home" aria-label="Rolodex, home" title="Home">ROLODEX<i></i><span id="stamp"></span></a>
   <div class="navsp"></div>
   <div class="navtools">
     <input id="q" type="search" placeholder="Search firm, person, project" aria-label="Search firm, person, project">
-    <div class="seg" role="group" aria-label="View"><button id="vList" aria-pressed="true">List</button><button id="vMatrix" aria-pressed="false">Screen</button><button id="vScroll" aria-pressed="false">Cover</button><button id="vField" aria-pressed="false">Field</button><button id="vMarket" aria-pressed="false">Market</button></div>
+    <div class="seg views" role="group" aria-label="View"><span class="vbead" aria-hidden="true"></span><button id="vList" aria-pressed="true">List</button><button id="vMatrix" aria-pressed="false">Screen</button><button id="vScroll" aria-pressed="false">Cover</button><button id="vField" aria-pressed="false">Field</button><button id="vMarket" aria-pressed="false">Market</button></div>
   </div>
   <button class="thm" id="thm" type="button" aria-label="Use the dark theme" title="Theme"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><circle cx="8" cy="8" r="6.25" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M8 1.75a6.25 6.25 0 0 1 0 12.5z" fill="currentColor"/></svg></button>
   <button class="cbtn" id="openCall">Call list<b id="clN">0</b></button>
@@ -1075,7 +1393,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
     <div class="fhead" style="border-bottom:1px solid var(--ink)">
       <div class="lab">The market</div>
       <h2 class="disp" id="mkTitle">Greater Houston in figures</h2>
-      <p class="syn" style="margin-top:16px;max-width:76ch">Figures drawn from the same records as the list. Each carries its sources and a table.</p>
+      <p class="syn" style="margin-top:16px;max-width:76ch">Same records as the list. Each figure has its sources and a table.</p>
     </div>
     <div class="stats mk" id="mkStats"></div>
     <div id="mkBody"></div>
@@ -1092,7 +1410,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
 
   <div class="wrap" id="stageList" hidden>
     <div class="swipe" id="listSwipe"><div class="lab swipe-hint" aria-hidden="true">Swipe sideways for the counts</div><div class="scroll"><table><thead><tr>
-      <th>Firm</th><th>Repetition</th><th>Printer fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline figure</th><th class="ac"><span class="vh">Call list</span></th>
+      <th>Firm</th><th>Repetition</th><th>Printer fit</th><th>Track record</th><th>Decision-maker</th><th class="hf">Headline</th><th class="ac"><span class="vh">Call list</span></th>
     </tr></thead><tbody id="tb"></tbody></table></div></div>
     <div id="supplyBody"></div>
   </div>
@@ -1759,7 +2077,7 @@ document.getElementById('legend').innerHTML=
   '<i><span class="sw p"></span>partial evidence</i>'+
   '<i><span class="sw"></span>none on record</i>'+
   '<i><span class="sw k"></span>already buying printed walls</i>'+
-  '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed.</i>';
+  '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed. A firm with no published yearly figure reads Partly on printer fit.</i>';
 
 function norm(s){
   s=String(s||'').toLowerCase();
@@ -1886,7 +2204,7 @@ function drawList(){
     shown+=rows.length;
     var ids=rows.map(function(t){return t.target_id;}).join(',');
     var allIn=rows.every(function(t){return call.indexOf(t.target_id)>=0;});
-    h+='<tr class="grp"><td colspan="7">'+esc(g[1])+' &middot; '+rows.length+
+    h+='<tr class="grp"><td colspan="7"><span class="gl">'+esc(g[1])+'</span><span class="gn">'+rows.length+'</span>'+
        (g[2]?'<em>'+esc(g[2])+'</em>':'')+
        '<button class="grpadd" data-addmany="'+ids+'" aria-pressed="'+allIn+'" aria-label="'+
          (allIn?'Remove all ':'Add all ')+esc(g[1])+(allIn?' from':' to')+' the call list">'+
@@ -1913,7 +2231,9 @@ function drawList(){
                  W[t.marks[k]]+'</span></td>';}).join('')+
         '<td data-l="Decision-maker">'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
                  (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':''))+'</td>'+
-        '<td class="hf" data-l="Headline figure">'+esc(t.key_stat||'')+'</td>'+
+        '<td class="hf" data-l="Headline">'+esc(t.key_stat||'')+
+          /* Build 80. A row with dated news since March carries its latest date. */
+          ((t.news||[]).length?'<span class="nwt">News '+esc(nwDate(t.news[0].date))+'</span>':'')+'</td>'+
         '<td class="ac"><button class="rowadd'+(inCall?' on':'')+'" data-add="'+t.target_id+
           '" aria-pressed="'+inCall+'" aria-label="'+(inCall?'Remove ':'Add ')+esc(t.entity_name)+
           ' to call list" title="'+(inCall?'Remove from call list':'Add to call list')+'">'+
@@ -1999,6 +2319,8 @@ function section(label,body){
   return body?'<div class="row"><div class="lab">'+esc(label)+'</div><div class="body">'+body+'</div></div>':'';
 }
 
+var MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function nwDate(d){var p=String(d||'').split('-');return p.length>2?(+p[2])+' '+MON[+p[1]-1]+' '+p[0]:d;}
 function firmPage(t){
   var h=[],cs=t.capital_signals||[];
   h.push('<button class="back" id="back"><span class="arrow">'+SVG.left+'</span>All firms</button>');
@@ -2024,6 +2346,7 @@ function firmPage(t){
          because an absent site still has to be stated: it is now also the
          reason the name is not a link. */
       (!t.homepage_url&&t.no_web_presence?'<span class="tag q">No website published</span>':'')+
+      '<i class="tbrk" aria-hidden="true"></i>'+
       pill(t.company_li,'li','LinkedIn')+
       pill(t.team_url,'out','Leadership page')+
       telPill(t.phone,t.phone_label)+
@@ -2038,7 +2361,7 @@ function firmPage(t){
   h.push(section('The screen','<p class="verdict">'+esc(t.mvp_screen)+'</p>'));
   if(t.channel_line){
     var bl=(t.channel_builders||[]);
-    h.push(section('Who builds here','<p class="syn">'+esc(t.channel_line)+'</p>'+
+    h.push(section('Builders in its communities','<p class="syn">'+esc(t.channel_line)+'</p>'+
       (bl.length?'<div class="tags" style="margin-top:14px">'+bl.map(function(nm){
         var b=T.filter(function(x){return x.entity_name===nm;})[0];
         return b?'<button class="lnk" data-id="'+b.target_id+'">'+esc(nm)+'</button>'
@@ -2046,7 +2369,14 @@ function firmPage(t){
         :'<p class="note">No builder on this deck is named inside these communities.</p>')));
   }
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
-    '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
+    '<p class="cnote">Yes and Partly both count as holding a count. A No does not. A firm with no published '+
+    'yearly figure reads Partly on printer fit.</p>'));
+  /* Build 80. What has happened since March, for the firms in the top sections. */
+  if((t.news||[]).length) h.push(section('News since 1 March 2026','<ul class="mini news">'+
+    t.news.map(function(n){
+      return '<li><span class="dt">'+esc(n.date)+'</span><span class="nwhat">'+esc(n.what)+'</span>'+
+        '<a class="nsrc" href="'+esc(n.url)+'" target="_blank" rel="noopener">'+esc(n.headline)+'</a>'+
+        '<span class="out">'+esc(n.outlet)+'</span></li>';}).join('')+'</ul>'));
   h.push(section('The firm','<p class="syn">'+esc(t.synopsis)+'</p>'+
     (t.web_absent?'<p class="note">'+esc(t.web_absent)+'</p>':'')+
     ((t.card_notes||[]).map(function(x){return '<p class="note">'+esc(x)+'</p>';}).join(''))));
@@ -2075,7 +2405,7 @@ function firmPage(t){
         '<div class="s"><span class="sig">'+esc(D.signal_labels[p.signal_type]||'')+'</span>'+
         esc(p.fit_signal)+' '+src(p.url)+'</div></div>';}).join('')));
   }
-  if(t.quote) h.push(section('On the record','<blockquote>&ldquo;'+esc(t.quote.text)+'&rdquo;<footer>'+
+  if(t.quote) h.push(section('Quote','<blockquote>&ldquo;'+esc(t.quote.text)+'&rdquo;<footer>'+
     esc(t.quote.speaker)+' '+src(t.quote.url)+'</footer></blockquote>'));
   if(cs.length) h.push(section('Capital','<ul class="mini">'+cs.map(function(c){
     return '<li>'+(c.date?'<span class="dt">'+esc(c.date)+'</span>':'')+esc(c.text)+' '+src(c.url)+'</li>';
@@ -2086,11 +2416,20 @@ function firmPage(t){
         '<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.headline)+'</a>'+
         '<span class="out">'+esc(p.outlet)+'</span></li>';
     }).join('')+'</ul>'));
-  if((t.sources||[]).length) h.push(section('Sources','<ul class="mini">'+t.sources.map(function(s){
-    return '<li>'+(s.date?'<span class="dt">'+esc(s.date)+'</span>':'')+src(s.url,s.url)+'</li>';
-  }).join('')+'</ul>'));
+  /* Build 81. A source reads as its site, not its full address. Two from one
+     site are numbered. */
+  if((t.sources||[]).length){ var _seen={};
+    h.push(section('Sources','<ul class="mini srcs">'+t.sources.map(function(s){
+      var hn=host(s.url).split('/')[0]; _seen[hn]=(_seen[hn]||0)+1;
+      return '<li>'+(s.date?'<span class="dt">'+esc(s.date)+'</span>':'')+src(s.url,hn+(_seen[hn]>1?' ('+_seen[hn]+')':''))+'</li>';
+    }).join('')+'</ul>'));}
 
   var inList=call.indexOf(t.target_id)>=0;
+  /* Build 78. On a phone this pair is fixed to the bottom edge; elsewhere it
+     is not drawn, and the button after it is the one at the foot. */
+  h.push('<div class="firmbar"><button class="back" data-back type="button"><span class="arrow">'+SVG.left+
+    '</span>All firms</button><button class="addbtn'+(inList?' on':'')+'" data-add="'+t.target_id+
+    '" aria-pressed="'+inList+'">'+(inList?'Remove from call list':'Add to call list')+'</button></div>');
   h.push('<button class="addbtn'+(inList?' on':'')+'" data-add="'+t.target_id+'" aria-pressed="'+inList+'">'+
     (inList?'Remove from call list':'Add to call list')+'</button>');
   return h.join('');
@@ -2402,7 +2741,7 @@ function buildXlsx(rows,widths,sheetName){
    repeated alongside. A firm with no named contact still gets a row, so the
    gap travels with the list rather than disappearing from it. */
 var XCOLS=[['Firm',30],['Section',22],['Repetition',12],['Printer fit',11],['Track record',13],
-           ['Region',24],['Headline figure',34],['Contact',22],['Title',34],['Decides the wall',15],
+           ['Region',24],['Headline',34],['Contact',22],['Title',34],['Decides the wall',15],
            ['Status',16],['LinkedIn',46],['Named on',46],['Website',34],['The screen',60],
            ['Phone',18],['Phone label',26],['Phone source',46],['Email',32],['Email source',46]];
 function exportRows(list){
@@ -2578,7 +2917,13 @@ function drawField(){
   var h='';
   h+='<div class="us"><h3>ICON</h3><p class="cl3">'+esc(R.line||'')+'</p><dl>'+
     (R.facts||[]).map(function(f){return '<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>';}).join('')+
-    '</dl></div>';
+    '</dl>'+
+    /* Build 73. ICON's own record carries its sources, as every competitor does. */
+    /* Build 81. The sources fold under a count, so the facts end the block. */
+    ((R.links||[]).length?'<details class="clinksd"><summary>Sources, '+R.links.length+'</summary><ul class="clinks">'+R.links.map(function(l){
+      return '<li><a href="'+esc(l[1])+'" target="_blank" rel="noopener">'+esc(l[0])+'</a>'+
+        '<span class="host">'+esc(host(l[1]).split('/')[0])+'</span></li>';}).join('')+'</ul></details>':'')+
+    '</div>';
   h+=C.map(function(c){
     var cls=(c.status==='closed'||c.status==='bankrupt')?' dead':(c.status==='sold'||c.status==='stalled'?' warn':'');
     /* Who they are, in links. The section named twelve competitors and gave a
@@ -2599,7 +2944,7 @@ function drawField(){
       '<p class="cl3">'+esc(c.line)+'</p><dl>'+
       (c.facts||[]).map(function(f){return '<dt>'+esc(f[0])+'</dt><dd>'+esc(f[1])+'</dd>';}).join('')+
       '</dl>'+
-      (lk?'<ul class="clinks">'+lk+'</ul>':'')+
+      (lk?'<details class="clinksd"><summary>Sources, '+(c.links||[]).filter(function(l){return l[1]!==c.site;}).length+'</summary><ul class="clinks">'+lk+'</ul></details>':'')+
       '</div>';}).join('');
   var K=D.code||{};
   if(K.items&&K.items.length){
@@ -2649,6 +2994,7 @@ function renderNow(){
   else drawField();
   document.getElementById('stageMatrix').hidden=(mode!=='matrix');
   document.getElementById('stageList').hidden=(mode!=='list');
+  document.documentElement.setAttribute('data-mode',mode);
   document.getElementById('stageField').hidden=(mode!=='field');
   document.getElementById('stageMarket').hidden=(mode!=='market');
   document.getElementById('vMarket').setAttribute('aria-pressed',mode==='market');
@@ -2708,7 +3054,7 @@ function drawPrintRoster(){
   });
   document.getElementById('printRoster').innerHTML=
     '<table><thead><tr><th>Firm</th><th>Repetition</th><th>Printer fit</th>'+
-    '<th>Track record</th><th>Decision-maker</th><th>Headline figure</th></tr></thead>'+
+    '<th>Track record</th><th>Decision-maker</th><th>Headline</th></tr></thead>'+
     '<tbody>'+(h||'<tr><td colspan="6">No firms match the current filter.</td></tr>')+'</tbody></table>'+
     '<p style="margin-top:14px;font-size:8pt;color:#555">'+shown+' of '+T.length+
     ' firms shown. Yes and Partly both count as holding a count. A No does not. '+esc(D.byline||'')+'</p>';
@@ -2717,7 +3063,7 @@ function drawPrintRoster(){
 document.addEventListener('click',function(e){
   var el=e.target;
   if(el.closest('#home')){e.preventDefault();goHome();return;}
-  if(el.closest('#back')){goIndex();return;}
+  if(el.closest('#back')||el.closest('[data-back]')){goIndex();return;}
   if(el.id==='clPrint'){window.print();return;}
   if(el.id==='clXlsx'){downloadXlsx(call.map(function(i){return byId[i];}),'call_list');return;}
   if(el.id==='fxlsx'){downloadXlsx(T.filter(hit),
@@ -2748,6 +3094,11 @@ document.addEventListener('click',function(e){
       sel.classList.add('open');trig.setAttribute('aria-expanded','true');
       sel.insertAdjacentHTML('beforeend',menuFor(sel.dataset.kind,sel.dataset.axis));
       FMENU=sel;
+      /* Build 78. A menu opened from a button near the right edge of a phone
+         ran off the screen and widened the page. It is pulled back inside. */
+      var mn=sel.querySelector('.fmenu');
+      if(mn){var rr=mn.getBoundingClientRect(),over=rr.right-(document.documentElement.clientWidth-12);
+        if(over>0) mn.style.left=(-Math.min(over,Math.max(0,rr.left-12)))+'px';}
       var first=sel.querySelector('.fmenu button:not([disabled])'); if(first) first.focus();
     }
     return;}
@@ -2798,6 +3149,9 @@ document.addEventListener('click',function(e){
     document.getElementById('openCall').classList.toggle('on',call.length>0);
     if(viewing==='__call'&&!inn){var blk=ad.closest('.cl'); if(blk) blk.classList.add('gone');}
     render(); return;}
+  var gt=el.closest('[data-goto]');
+  if(gt){var tg=document.getElementById(gt.dataset.goto); if(tg){var nv=document.querySelector('nav');
+    window.scrollTo({top:tg.getBoundingClientRect().top+window.scrollY-(nv?nv.offsetHeight:0)-12,behavior:MOTION?'smooth':'auto'});}return;}
   var sg=el.closest('[data-seg]');
   if(sg){showSegment(sg.dataset.seg);return;}
   if(el.id==='segClose'){var sb=document.getElementById('segList');if(sb){sb.hidden=true;} SEG_OPEN=null;
@@ -2806,6 +3160,14 @@ document.addEventListener('click',function(e){
   if(sl){var pp=sl.dataset.seglist.split(':');clearFilters();F.group=[pp[0]];F.count=['innovation:'+pp[1]];
     mode='list';goIndex();render();return;}
   if(el.closest('.cf-card')) return;   // the carousel owns its own taps
+  /* Build 77. Anywhere on a List row opens its firm, except its own buttons and
+     links, and except when the reader is selecting text. */
+  var lr=el.closest('#stageList tbody tr');
+  if(lr&&!lr.classList.contains('grp')&&!lr.classList.contains('chn')&&!el.closest('button,a,input,select,label')){
+    var lb=lr.querySelector('.fbtn2[data-id]');
+    var sel=window.getSelection?String(window.getSelection()):'';
+    if(lb&&!sel){try{lb.focus({preventScroll:true});}catch(_){} openFirm(lb.dataset.id);return;}
+  }
   var c=el.closest('[data-id]'); if(c&&c.dataset.id&&byId[c.dataset.id]){openFirm(c.dataset.id);return;}
   var f=el.closest('.fbtn2[data-id]'); if(f){openFirm(f.dataset.id);return;}
 });
@@ -2917,6 +3279,271 @@ document.getElementById('q').addEventListener('input',function(e){
 });
 __MARKET__
 render();
+
+/* Build 74. The bead: the opener, the view switcher, and the cue for a change
+   of step. See the note on .pbead in the stylesheet. */
+var MOTION=!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+function placeViewBead(){
+  var sg=document.querySelector('.seg.views'), vb=sg&&sg.querySelector('.vbead');
+  var on=sg&&sg.querySelector('button[aria-pressed="true"]');
+  if(!vb) return;
+  if(!on||view!=='index'){vb.style.width='0';return;}
+  vb.style.width=on.offsetWidth+'px';
+  vb.style.transform='translateX('+on.offsetLeft+'px)';
+}
+var _cueMode=null;
+function cueStep(el){
+  if(!MOTION||!el) return;
+  var old=el.querySelector(':scope > .sbead'); if(old) old.remove();
+  var b=document.createElement('div'); b.className='sbead'; b.setAttribute('aria-hidden','true');
+  el.insertBefore(b,el.firstChild);
+  setTimeout(function(){b.remove();},1100);
+  var kids=[].slice.call(el.children).filter(function(k){return k!==b&&!k.hidden&&k.offsetHeight;}).slice(0,6);
+  kids.forEach(function(k,i){
+    k.classList.remove('layerin'); void k.offsetWidth;
+    k.style.animationDelay=(i*45)+'ms'; k.classList.add('layerin');
+    setTimeout(function(){k.classList.remove('layerin');k.style.animationDelay='';},420+i*45+60);
+  });
+}
+var STAGE={matrix:'stageMatrix',list:'stageList',scroll:'stageScroll',field:'stageField',market:'stageMarket'};
+(function(){
+  var _r=renderNow;
+  renderNow=function(){
+    _r();
+    placeViewBead();
+    if(_cueMode!==null&&_cueMode!==mode&&view==='index') cueStep(document.getElementById(STAGE[mode]));
+    _cueMode=mode;
+  };
+  var _o=openFirm; openFirm=function(id){_o(id);placeViewBead();cueStep(document.getElementById('firmBody'));};
+  var _c=openCall; openCall=function(){_c();placeViewBead();cueStep(document.getElementById('firmBody'));};
+  var _g=goIndex; goIndex=function(p){_g(p);placeViewBead();};
+  window.addEventListener('resize',placeViewBead);
+})();
+
+/* The opener. The headline prints one layer per line, each pass running the
+   other way from the last, with a layer count beside the kicker. It plays once
+   per visit, any key, tap or scroll finishes it at once, and the page underneath
+   is already complete: nothing is hidden until the script is running. */
+function printOpener(){
+  var hl=document.getElementById('hl'), host=hl&&hl.parentNode;
+  if(!MOTION||!hl||view!=='index'||document.visibilityState==='hidden') return;
+  var seen=false; try{seen=sessionStorage.getItem('rolodex-opened')==='1';}catch(e){}
+  if(seen) return;
+  try{sessionStorage.setItem('rolodex-opened','1');}catch(e){}
+  var rg=document.createRange(); rg.selectNodeContents(hl);
+  var hb=hl.getBoundingClientRect(), cb=host.getBoundingClientRect();
+  var lines=[];
+  [].slice.call(rg.getClientRects()).forEach(function(r){
+    if(r.width<2) return;
+    var L=lines.filter(function(l){return Math.abs(l.top-r.top)<6;})[0];
+    if(L){L.left=Math.min(L.left,r.left);L.right=Math.max(L.right,r.right);L.bottom=Math.max(L.bottom,r.bottom);}
+    else lines.push({top:r.top,bottom:r.bottom,left:r.left,right:r.right});
+  });
+  lines.sort(function(a,b){return a.top-b.top;});
+  if(!lines.length) return;
+  lines.forEach(function(l){l.top-=hb.top;l.bottom-=hb.top;l.left-=hb.left;l.right-=hb.left;});
+  /* glyphs of one line reach into the next line's box, so each layer ends
+     halfway between the two */
+  lines.forEach(function(l,i){l.cut=(i<lines.length-1)?(l.bottom+lines[i+1].top)/2:null;});
+  var W=hb.width, H=hb.height, n=lines.length;
+  var later=['sub','by','stats'].map(function(i){return document.getElementById(i);}).filter(Boolean);
+  later.forEach(function(e){e.classList.add('pre');});
+  var lyr=document.createElement('div'); lyr.className='lyr'; lyr.setAttribute('aria-hidden','true');
+  var kick=document.getElementById('kick');
+  if(kick){var kr=document.createRange(); kr.selectNodeContents(kick); var kb=kr.getBoundingClientRect();
+    lyr.style.top=(kb.top-cb.top)+'px'; lyr.style.left=(kb.right-cb.left+18)+'px'; lyr.style.right='auto';}
+  host.appendChild(lyr);
+  var beads=[], t0=null, raf=0, over=false;
+  var dur=lines.map(function(l){return Math.min(460,170+(l.right-l.left)*0.34);});
+  var total=dur.reduce(function(a,b){return a+b;},0)+60*(n-1);
+  function ease(p){return p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;}
+  function bead(i){
+    var b=document.createElement('div'); b.className='pbead '+(i%2?'rtl':'ltr');
+    b.setAttribute('aria-hidden','true');
+    b.style.top=(hb.top-cb.top+lines[i].bottom-Math.max(4,(lines[i].bottom-lines[i].top)*.12))+'px';
+    host.appendChild(b); beads[i]=b; return b;
+  }
+  function frame(ts){
+    if(over) return;
+    if(t0===null) t0=ts;
+    var t=ts-t0, acc=0, i=0;
+    while(i<n&&t>acc+dur[i]+60){acc+=dur[i]+60;i++;}
+    if(i>=n){finish();return;}
+    var p=Math.max(0,Math.min(1,(t-acc)/dur[i])), e=ease(p), L=lines[i], ltr=!(i%2);
+    var x=ltr?L.left+(L.right-L.left)*e:L.right-(L.right-L.left)*e;
+    var y0=i?lines[i-1].cut:0, y1=(i===n-1)?H:L.cut;
+    var pts=ltr?['0 0',W+'px 0',W+'px '+y0+'px',x+'px '+y0+'px',x+'px '+y1+'px','0 '+y1+'px']
+               :['0 0',W+'px 0',W+'px '+y1+'px',x+'px '+y1+'px',x+'px '+y0+'px','0 '+y0+'px'];
+    hl.style.clipPath='polygon('+pts.join(',')+')';
+    var b=beads[i]||bead(i);
+    var a=ltr?L.left:x, w=Math.abs(x-(ltr?L.left:L.right));
+    b.style.left=(hb.left-cb.left+a)+'px'; b.style.width=w+'px';
+    for(var j=0;j<i;j++) if(beads[j]&&!beads[j].classList.contains('done')) beads[j].classList.add('done');
+    lyr.innerHTML='Layer <b>'+String(i+1).padStart(2,'0')+'</b> / '+String(n).padStart(2,'0');
+    raf=requestAnimationFrame(frame);
+  }
+  function finish(){
+    if(over) return; over=true; cancelAnimationFrame(raf);
+    hl.style.clipPath='';
+    beads.forEach(function(b){if(b) b.classList.add('done');});
+    later.forEach(function(e,k){e.classList.add('post');
+      setTimeout(function(){e.classList.remove('pre');},40+k*90);
+      setTimeout(function(){e.classList.remove('post');},700+k*90);});
+    lyr.style.opacity='0';
+    setTimeout(function(){lyr.remove();beads.forEach(function(b){if(b) b.remove();});},700);
+    ['keydown','pointerdown','wheel','touchstart'].forEach(function(ev){window.removeEventListener(ev,finish);});
+  }
+  ['keydown','pointerdown','wheel','touchstart'].forEach(function(ev){window.addEventListener(ev,finish,{passive:true});});
+  setTimeout(finish,total+800);
+  hl.style.clipPath='polygon(0 0,0 0,0 0)';
+  raf=requestAnimationFrame(frame);
+}
+(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(function(){
+  requestAnimationFrame(printOpener);});
+
+/* Build 75. Weight. See the note on .landed in the stylesheet. */
+function buzz(ms){if(MOTION&&navigator.vibrate){try{navigator.vibrate(ms);}catch(e){}}}
+function retrigger(el,cls){if(!el) return; el.classList.remove(cls); void el.offsetWidth; el.classList.add(cls);
+  setTimeout(function(){el.classList.remove(cls);},700);}
+function beat(){retrigger(document.querySelector('.mark i'),'beat');}
+function land(el,ms){
+  if(!el) return;
+  var r=el.closest('tr')||el.closest('.chip')||el.closest('.cmp')||el.closest('.cf-card')||el;
+  if(r.classList.contains('cf-card')) return;
+  r.classList.remove('landed'); void r.offsetWidth; r.classList.add('landed');
+  setTimeout(function(){r.classList.remove('landed');},ms||1500);
+}
+/* Every action is read before the page's own handler runs, and answered after
+   it has redrawn. */
+window.addEventListener('click',function(e){
+  var el=e.target; if(!el||!el.closest) return;
+  var ad=el.closest('[data-add]'), many=el.closest('[data-addmany]');
+  if(ad||many){
+    var ids=ad?[ad.dataset.add]:many.dataset.addmany.split(',');
+    var before=call.length;
+    requestAnimationFrame(function(){
+      ids.forEach(function(id){document.querySelectorAll('[data-add="'+id+'"]').forEach(function(b){retrigger(b,'pop');});});
+      if(many) retrigger(document.querySelector('[data-addmany="'+many.dataset.addmany+'"]'),'pop');
+      retrigger(document.getElementById('clN'),'bump');
+      var rb=document.querySelector('.rowadd[data-add="'+ids[0]+'"]'); if(rb) land(rb,900);
+      buzz(call.length>before?10:6); beat();
+    });
+    return;
+  }
+  if(el.closest('.seg.views button')||el.closest('[data-id]')||el.closest('.fbtn2')||el.closest('#openCall')||
+     (el.closest('#stageList tbody tr:not(.grp):not(.chn)')&&!el.closest('button,a'))||
+     el.closest('#home')||el.closest('#back')||el.closest('[data-back]')){buzz(6);beat();return;}
+  if(el.closest('[data-f]')||el.closest('.fsel>button')||el.closest('button.stat')||el.closest('.freset')||
+     el.closest('[data-pmode]')||el.closest('[data-jyr]')||el.closest('[data-seg]')){beat();return;}
+},true);
+/* Build 78. On a phone the bar is three rows, about 140px of an 844px screen.
+   Reading down slides the top two away and leaves the view switcher and the
+   scroll line; any move up brings them back, and so does a change to the call
+   list, so the count that jumps is on screen when it jumps. */
+(function(){
+  var mq=window.matchMedia&&window.matchMedia('(max-width:760px),(max-height:500px) and (max-width:1060px)');
+  var nav=document.querySelector('nav'), root=document.documentElement, last=window.scrollY, acc=0;
+  function hideBy(){var sg=document.querySelector('.navtools .seg.views');
+    if(!sg||!nav) return 0; return Math.max(0,Math.round(sg.getBoundingClientRect().top-nav.getBoundingClientRect().top-8));}
+  function up(){root.classList.remove('navup');}
+  function tick(){
+    if(!mq||!mq.matches){up();last=window.scrollY;return;}
+    var y=window.scrollY, d=y-last; last=y;
+    var ae=document.activeElement;
+    if(ae&&ae.id==='q'){up();return;}
+    if(y<(nav?nav.offsetHeight:140)+40){up();acc=0;return;}
+    acc=(d>0)===(acc>0)?acc+d:d;
+    if(acc>24&&!root.classList.contains('navup')){
+      root.style.setProperty('--navhide',hideBy()+'px'); root.classList.add('navup');}
+    else if(acc<-18) up();
+  }
+  window.addEventListener('scroll',tick,{passive:true});
+  window.addEventListener('resize',function(){up();});
+  document.addEventListener('focusin',function(e){if(e.target&&e.target.closest&&e.target.closest('nav')) up();});
+  var cl=document.getElementById('clN');
+  if(cl&&window.MutationObserver) new MutationObserver(up).observe(cl,{childList:true,characterData:true,subtree:true});
+})();
+/* Back from a firm page marks the row it came from. */
+(function(){
+  var _g=goIndex; goIndex=function(p){var was=view; _g(p);
+    if(was==='firm'){var a=document.activeElement; if(a&&a!==document.body) land(a); beat();}};
+})();
+/* The filter count ticks whenever the set of firms changes, whatever changed it. */
+(function(){
+  var box=document.getElementById('filters'), last=null;
+  if(!box||!window.MutationObserver) return;
+  new MutationObserver(function(){
+    var fc=box.querySelector('.fcount'); if(!fc) return;
+    var v=fc.textContent; if(last!==null&&v!==last){fc.classList.add('tick'); beat();}
+    last=v;
+  }).observe(box,{childList:true,subtree:true,characterData:true});
+})();
+/* The theme toggle turns, and the colours cross over instead of cutting. */
+(function(){
+  var b=document.getElementById('thm'); if(!b) return;
+  b.addEventListener('click',function(){
+    b.classList.toggle('turn');
+    if(!MOTION) return;
+    var h=document.documentElement; h.classList.add('theming');
+    setTimeout(function(){h.classList.remove('theming');},340);
+  },true);
+})();
+/* Switching market: the accent turns to the other city's at once, a line runs
+   under the nav in it, and then the page reloads on that market. */
+(function(){
+  var box=document.getElementById('mktSw'); if(!box) return;
+  box.addEventListener('click',function(e){
+    var b=e.target.closest('[data-mkt]'); if(!b||b.getAttribute('data-mkt')===MKT) return;
+    var k=b.getAttribute('data-mkt');
+    try{sessionStorage.setItem('rolodex-arrive','1');}catch(x){}
+    if(!MOTION) return;
+    e.stopImmediatePropagation(); e.preventDefault();
+    document.documentElement.setAttribute('data-market',k);
+    [].slice.call(box.querySelectorAll('button')).forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+    var sl=document.getElementById('sline'); if(sl){sl.classList.remove('sweep'); void sl.offsetWidth; sl.classList.add('sweep');}
+    buzz(12);
+    try{localStorage.setItem('rolodex-market',k);}catch(x){}
+    var base=location.href.replace(/#.*$/,'');
+    setTimeout(function(){location.replace(base+'#market='+k); location.reload();},300);
+  },true);
+  var arrived=false; try{arrived=sessionStorage.getItem('rolodex-arrive')==='1';sessionStorage.removeItem('rolodex-arrive');}catch(x){}
+  if(arrived&&MOTION){var sl=document.getElementById('sline'); if(sl) sl.classList.add('sweep');
+    setTimeout(function(){if(sl) sl.classList.remove('sweep');},900);
+    cueStep(document.querySelector('.hero-copy'));}
+})();
+/* The scroll line. It fills with the page, and its head steps at each section:
+   the List's sections, the Market's figures, a firm page's blocks. */
+(function(){
+  var sl=document.getElementById('sline'); if(!sl) return;
+  var fill=sl.querySelector('.fill'), head=sl.querySelector('.head'), ticks=[], at=-1, raf=0;
+  function marks(){
+    var sel=view==='firm'?'#firmBody .row':(mode==='list'?'#stageList tr.grp':(mode==='market'?'#mkBody .figs':''));
+    var max=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+    sl.querySelectorAll('.tk').forEach(function(t){t.remove();});
+    ticks=sel?[].slice.call(document.querySelectorAll(sel)).map(function(e){
+      var y=e.getBoundingClientRect().top+scrollY-64; return Math.max(0,Math.min(1,y/max));}):[];
+    ticks.forEach(function(p){var t=document.createElement('i'); t.className='tk'; t.style.left=(p*100)+'%'; sl.appendChild(t);});
+    at=-1; paint();
+  }
+  function paint(){
+    raf=0;
+    var max=Math.max(1,document.documentElement.scrollHeight-innerHeight), p=Math.max(0,Math.min(1,scrollY/max));
+    fill.style.transform='scaleX('+p+')';
+    head.style.left=(p*100)+'%';
+    sl.classList.toggle('on',p>0.002&&p<0.998);
+    var n=0; ticks.forEach(function(t){if(t<=p+0.001) n++;});
+    var tk=sl.querySelectorAll('.tk'); for(var i=0;i<tk.length;i++) tk[i].classList.toggle('past',i<n);
+    if(at>=0&&n!==at&&MOTION){retrigger(head,'hit');}
+    at=n;
+  }
+  addEventListener('scroll',function(){if(!raf) raf=requestAnimationFrame(paint);},{passive:true});
+  addEventListener('resize',function(){setTimeout(marks,60);});
+  var _r=renderNow; renderNow=function(){_r(); requestAnimationFrame(marks);};
+  var _o=openFirm; openFirm=function(id){_o(id); requestAnimationFrame(marks);};
+  var _c=openCall; openCall=function(){_c(); requestAnimationFrame(marks);};
+  var _g=goIndex; goIndex=function(p){_g(p); requestAnimationFrame(marks);};
+  requestAnimationFrame(marks);
+})();
 
 /* Build 67. The theme toggle. It flips to the other theme and remembers the
    choice on this device; the charts drawn with explicit fills redraw. */

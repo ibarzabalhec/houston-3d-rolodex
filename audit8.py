@@ -241,3 +241,177 @@ def dates(D):
                     x["date"] = None
                     n += 1
     return n
+
+
+# ------------------------------------------------------------------ Build 73
+# BUILDER's 2026 Local Leaders table for Dallas-Fort Worth counts 2025 closings.
+# It replaces the 2025 table's 2024 figures for the nine firms on both. Perry is
+# not in the 2026 top ten and keeps its 2024 figure from the 2025 table.
+LL26 = "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/"
+DFW_CLOSINGS = {
+    "DFW-001": (7058, 7058, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-002": (5724, 5724, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-003": (3196, 3196, 2025, "BUILDER Local Leaders 2026, DFW, all Green Brick brands", None),
+    "DFW-004": (1742, 1742, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-005": (1810, 1810, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-006": (1833, 1833, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-007": (1083, 1083, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-008": (1034, 1034, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-009": (1289, 1289, 2025, "BUILDER Local Leaders 2026, DFW", None),
+    "DFW-055": (889, 889, 2025, "BUILDER Local Leaders 2026, DFW", None),
+}
+for _tid in DFW_CLOSINGS:
+    DFW_SOURCES.setdefault(_tid, []).append(LL26)
+for _tid in ("DFW-003a", "DFW-014", "DFW-038"):
+    DFW_SOURCES.setdefault(_tid, []).append(LL26)
+DFW_SOURCES.setdefault("DFW-003", []).append(
+    "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm")
+DFW_SOURCES.setdefault("DFW-003a", []).append(
+    "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm")
+DFW_PERSON[("DFW-003", "Jed Dolson")] = {
+    "role": "President and Chief Operating Officer. Co-Chief Executive Officer from 15 October 2026",
+    "source_evidence": "Named on the leadership page as President and Chief Operating Officer. Green Brick's "
+                       "30 July 2026 release, filed with the SEC, names him Co-Chief Executive Officer from "
+                       "15 October 2026."}
+
+
+# ------------------------------------------------------------------ ICON's own record
+# Rewritten from ICON's newsroom, NASA, the Army and the trade press, read on
+# 25 September 2026. The Build 71 line was cut because it said ICON had built
+# nothing outside the Austin area. It has: a NASA habitat in Houston and Army
+# barracks in El Paso and Louisiana. Every fact here has a link below it.
+ICON_LINE = ("ICON's published record: housing in Central Texas, Army barracks in Texas and Louisiana, a NASA "
+             "habitat in Houston, and the terms of the Titan, its first system sold to outside builders.")
+ICON_FACTS = [
+    ["Titan, on the record",
+     "Announced 11 March 2026. ICON states multi-storey wall systems at roughly $20 a square foot, a $5,000 "
+     "reservation deposit, training from the third quarter of 2026 and first deliveries in early 2027. Its "
+     "reservation page publishes no price. Axios and All3DP report a price from $899,000, and The Real Deal "
+     "reports leases first, with sales from the first quarter of 2027. Jason Ballard told Builder the target "
+     "is small and mid-sized builders."],
+    ["The first reservations",
+     "The Real Deal names Ghost Factory, Cole Klein Builders and Moderne Development among the firms that "
+     "have reserved a Titan. Cole Klein is the Houston builder of Zuri Gardens, which HiveASMBLD prints."],
+    ["Wolf Ranch, Georgetown",
+     "100 homes with Lennar, designed by BIG and printed on Vulcan. Lennar announced the community on 26 "
+     "October 2021, and printing was under way by November 2022. Eight floor plans of 1,574 to 2,112 square "
+     "feet, from the mid $400,000s. ICON calls it its first completed residential community, sold with "
+     "Lennar's own mortgage arm (June 2026)."],
+    ["Austin and the Hill Country",
+     "100 more homes under way at Community First! Village (December 2024). Affordable one-bedroom homes "
+     "from $195,000 and about a dozen two- and three-bedroom homes at Mueller, printing from July 2025. Eight "
+     "homes at Wimberley Springs from the upper $800,000s (July 2024)."],
+    ["The Army",
+     "Ten barracks at Fort Bliss, El Paso, 78,000 square feet for up to 560 soldiers, under a $62.8 million "
+     "Army contract. ICON announced delivery on 28 July 2026. Stars and Stripes reported two of the ten open "
+     "that day and the rest due in September. Both ICON and the Army call it the largest deployment of "
+     "robotic construction for the Department of War. A $67.9 million award at Fort Polk, Louisiana followed "
+     "in March 2026, with vertical construction scheduled for September 2026."],
+    ["ICON Prime",
+     "A government division launched on 14 April 2026, with Will Hurd as its president. ICON states more "
+     "than $360 million in government contracts."],
+    ["The company",
+     "More than 245 homes and structures completed, per ICON in March 2026, and its site now counts 263 structures built. It filed to lay off 114 people, "
+     "more than a quarter of its staff, in January 2025, and closed a $56 million Series C led by Norwest and "
+     "Tiger Global in February 2025, per TechCrunch. Jason Ballard is co-founder and chief executive."],
+]
+ICON_LOCAL = {
+    "Houston": ["Houston",
+        "ICON printed Mars Dune Alpha, a 1,700 square foot habitat for NASA at Johnson Space Center, and "
+        "delivered it in 2021. NASA's second year-long crew mission inside it runs from 19 October 2025 to 31 "
+        "October 2026. ICON has published no housing in Houston: its own site says the homes it has sold are "
+        "in Central and West Texas. HiveASMBLD has repeat production work inside Greater Houston, and PERI "
+        "printed a house inside the city limits."],
+    "Dallas-Fort Worth": ["Dallas-Fort Worth",
+        "ICON has published no project in the metro: its own site says the homes it has sold are in Central "
+        "and West Texas. Its one Houston structure is Mars Dune Alpha, a 1,700 square foot habitat for NASA at "
+        "Johnson Space Center, delivered in 2021. In DFW, Black Buffalo printed a house at 100 W. Bolt St., "
+        "Fort Worth, in May 2024, and PRINT3D Technologies of Allen sells printed houses in North Texas."],
+}
+ICON_LINKS = [
+    ["ICON on the Titan launch, 11 March 2026",
+     "https://www.iconbuild.com/newsroom/icon-announces-first-commercial-rollout-of-its-3d-printing-construction-technology-for-builders"],
+    ["Titan reservations", "https://reservations.iconbuild.com/"],
+    ["Axios on the Titan price, 11 March 2026",
+     "https://www.axios.com/local/austin/2026/03/11/3d-printing-company-icon-expands-austin"],
+    ["All3DP on what the price includes, 13 March 2026",
+     "https://all3dp.com/4/icons-899k-titan-construction-printer-puts-multistory-construction-in-your-hands-shipping-2027/"],
+    ["The Real Deal on leases and the first reservations, March 2026",
+     "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"],
+    ["Builder on ICON's platform for outside builders, 11 March 2026",
+     "https://www.builderonline.com/design/technology/icons-next-phase-building-a-scalable-platform-for-3d-printed-housing/"],
+    ["Lennar announces Wolf Ranch, 26 October 2021",
+     "https://newsroom.lennar.com/2021-10-26-Lennar-To-Build-Worlds-Largest-Neighborhood-Of-3D-Printed-Homes-With-ICON"],
+    ["ICON and Lennar, Wolf Ranch under way, 10 November 2022",
+     "https://www.iconbuild.com/newsroom/icon-and-lennar-announce-community-of-3d-printed-homes-is-now-underway-in-georgetown-tx"],
+    ["ICON and Wells Fargo, 2 June 2026",
+     "https://www.iconbuild.com/newsroom/wells-fargo-named-as-an-icon-preferred-home-mortgage-lender-offering-incentives-to-buyers-of-3d-printed-homes"],
+    ["ICON at Community First! Village, 19 December 2024",
+     "https://www.iconbuild.com/newsroom/icon-announces-construction-is-underway-for-more-3d-printed-homes-to-serve-the-chronically-homeless-in-texas"],
+    ["ICON at Mueller, 31 July 2025",
+     "https://www.iconbuild.com/newsroom/icon-releases-affordable-3d-printed-homes-for-sale-and-breaks-ground-in-austins-mueller-community"],
+    ["ICON at Wimberley Springs, 16 July 2024",
+     "https://www.iconbuild.com/newsroom/new-icon-homes-coming-to-wimberley-texas-and-available-for-sale"],
+    ["ICON on Fort Bliss delivery, 28 July 2026",
+     "https://www.iconbuild.com/newsroom/icon-delivers-largest-robotic-construction-deployment-in-dow-history-at-fort-bliss"],
+    ["U.S. Army on the Fort Bliss barracks, 30 July 2026",
+     "https://www.army.mil/article/294240/fort_bliss_unveils_new_3d_printed_barracks"],
+    ["Stars and Stripes on the opening, 28 July 2026",
+     "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"],
+    ["ICON at Fort Polk, 29 June 2026", "https://www.iconbuild.com/newsroom/fort-polk-ground-break"],
+    ["ICON Prime, 14 April 2026",
+     "https://www.iconbuild.com/newsroom/icon-launches-icon-prime-a-dedicated-government-division-focused-on-military-intelligence-and-space-applications-to-accelerate-robotic-construction-for-national-security"],
+    ["ICON's sold homes, Central and West Texas", "https://www.iconbuild.com/build-with-us"],
+    ["NASA on the second Mars Dune Alpha crew, 5 September 2025",
+     "https://www.nasa.gov/missions/analog-field-testing/chapea/nasa-announces-chapea-crew-for-year-long-mars-mission-simulation/"],
+    ["ICON on Mars Dune Alpha, 6 August 2021",
+     "https://www.iconbuild.com/newsroom/icon-3d-prints-the-first-simulated-mars-surface-habitat-for-nasa-designed-by-renowned-architecture-firm-big-bjarke-ingels-group"],
+    ["TechCrunch on the 2025 layoff, 9 January 2025",
+     "https://techcrunch.com/2025/01/09/icon-a-builder-of-3d-printed-homes-last-valued-around-2-billion-cuts-about-25-of-staff/"],
+    ["TechCrunch on the Series C, 14 February 2025",
+     "https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/"],
+]
+
+
+def icon_record(D, place, lennar_fact):
+    D["icon_record"] = {"line": ICON_LINE,
+                        "facts": [list(f) for f in ICON_FACTS[:2]] + [lennar_fact]
+                                 + [list(f) for f in ICON_FACTS[2:]] + [list(ICON_LOCAL[place])],
+                        "links": [list(l) for l in ICON_LINKS]}
+
+
+# ------------------------------------------------------------------ competitors, Build 73
+TRD = "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
+VONPERRY22 = ("https://dallasinnovates.com/dallas-startup-von-perry-looks-to-raise-2m-to-build-more-"
+              "3d%E2%80%91printed-homes-across-texas/")
+
+
+def competitors73(D):
+    for c in D.get("competitors", []):
+        if c["name"] == "Mighty Buildings":
+            c["line"] = "Put itself up for sale in January 2025. LUMUS now owns its technologies."
+            c["facts"] = [["What happened",
+                           "Headcount cut, then the whole company offered for sale in January 2025, having "
+                           "raised over $150 million. Its own site now says it is a brand of LUMUS Inc., which "
+                           "acquired its technologies."]]
+            c["links"] = [["Their site, now a LUMUS brand", l[1]] if "mightybuildings.com" in l[1] else l
+                          for l in c.get("links", [])]
+        if c["name"] == "Von Perry":
+            c["status"] = "last reported 2022"
+            c["facts"] = [["The house",
+                           "About 1,700 square feet and three bedrooms near Nevada, in Collin County, begun in "
+                           "December 2021 on a Total Kustom printer. Dallas Innovates reported in August 2022 a "
+                           "switch to geopolymer concrete for the Texas heat and a target to finish by the end of "
+                           "October 2022. No completion has been published."]] + \
+                         [f for f in c["facts"] if f[0] != "The house"]
+            if not any(l[1] == VONPERRY22 for l in c["links"]):
+                c["links"].append(["Dallas Innovates on the geopolymer switch, 31 August 2022", VONPERRY22])
+
+HOU_SOURCES73 = {
+    "HOU-002": [TRD],
+    "HOU-001": ["https://www.businesswire.com/news/home/20260318639354/en/Wan-Bridge-Launches-Frontera-Shores-Elevating-Build-To-Rent-Living-in-Lewisville",
+                "https://wanbridge.com/tx/houston/eldridge-tower/"],
+    "HOU-011": ["https://www.globenewswire.com/news-release/2026/08/05/3339652/0/en/howard-hughes-holdings-inc-reports-second-quarter-2026-results.html"],
+}
+DFW_SOURCES.setdefault("DFW-BTR-010", []).append(
+    "https://www.businesswire.com/news/home/20260318639354/en/Wan-Bridge-Launches-Frontera-Shores-Elevating-Build-To-Rent-Living-in-Lewisville")

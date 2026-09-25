@@ -20,13 +20,17 @@ import collections, copy, json, pathlib, re, sys
 
 import audit7 as AUDIT7
 import audit8 as AUDIT8
+import audit9 as AUDIT9
+AUDIT8.DFW_VERDICT.update(AUDIT9.DFW_VERDICT)
+for _k, _v in AUDIT9.DFW_SOURCES.items():
+    AUDIT8.DFW_SOURCES.setdefault(_k, []).extend(_v)
 ROOT = pathlib.Path(__file__).parent
 PACK = json.load(open(ROOT / "dfw" / "pack" / "03_dfw-data.json", encoding="utf-8"))
 EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards.json", encoding="utf-8"))}
 LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
 HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
 TODAY = "2026-09-24"
-BUILD = 72
+BUILD = 82
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}
@@ -229,6 +233,7 @@ CLOSINGS = {
 }
 # David Weekley's press kit gives a Dallas division figure; the pack cited it
 # and no reader checked it, so it is not drawn.
+CLOSINGS.update(AUDIT8.DFW_CLOSINGS)
 BANDS = HOU["market"]["bands"]
 
 
@@ -477,10 +482,10 @@ def main():
                     "Wolf Ranch with ICON."}),
         "stat_strip": [
             [str(n), "firms screened", False, None],
-            [str(g["a"]), "builders and developers holding all three counts", False, {"group": ["a"]}],
-            [str(n_dec), "with a decision-maker named", True, {"dec": "any"}],
-            [str(g["adopter"]), "already printing, with a competitor", False, {"group": ["adopter"]}],
-            [str(g["trade"]), "contractors who build the wall", False, {"group": ["trade"]}],
+            [str(g["adopter"]), "already buying printed walls", False, {"group": ["adopter"]}],
+            [str(g["a"]), "builders and developers hold all three counts", False, {"group": ["a"]}],
+            [str(g["trade"]), "contractors build the wall", False, {"group": ["trade"]}],
+            [str(n_dec), "of %d with a decision-maker named" % n, True, {"dec": "any"}],
         ],
         "sub": HOU["sub"],
         "axes": [axis_row("repeatability", "Repetition"), axis_row("machine_fit", "Printer fit"),
@@ -581,6 +586,18 @@ def main():
     AUDIT7.dfw(D)
     AUDIT8.dates(D)
     AUDIT7.tidy(D)
+    _bad7 += AUDIT9.finish(D)
+    import audit10 as AUDIT10
+    _d10, _s10 = AUDIT10.apply(D, "dfw")
+    _g10, _gs10 = AUDIT10.apply_global(D, "dfw")
+    _d10 += _g10
+    _s10 += _gs10
+    _bad10 = AUDIT10.final_copy(D, "dfw")
+    if _bad10:
+        raise SystemExit("FAILED: " + "; ".join(_bad10))
+    print("distilled         %d edits, %d stale" % (_d10, len(_s10)))
+    for _x in _s10[:20]:
+        print("   stale " + _x)
     if _bad7:
         for b in _bad7:
             print("   " + b)

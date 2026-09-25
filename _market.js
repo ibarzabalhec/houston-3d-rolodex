@@ -10,9 +10,26 @@ function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,',');}
    column, so at 1440 its labels grew past body text and at 390 they fell to
    4 to 6 px. It now stops growing at its drawn width. On a phone the table
    under it opens by default, because the table is the readable form there. */
-var NARROW=window.matchMedia&&window.matchMedia('(max-width:640px)').matches;
+var NARROW=window.matchMedia&&window.matchMedia('(max-width:760px)').matches;
+/* Build 78. On a phone every chart is drawn again at the column's own width,
+   one unit to one pixel, with its labels above the bars instead of beside
+   them. Before this each one was a 855px drawing behind a sideways scroll, so
+   a reader saw 40 per cent of it: bars without their values, a map without
+   its eastern counties, links running off the edge. */
+/* The column is the viewport less the page gutter: 16px a side up to 640px,
+   28px above. Measured when the charts are drawn, and again after a rotate. */
+function colW(){var vw=document.documentElement.clientWidth||390;return vw-(vw<=640?32:56);}
+var CW=NARROW?Math.max(288,Math.min(720,colW())):0;
+function sizeCharts(){
+  NARROW=window.matchMedia&&window.matchMedia('(max-width:760px)').matches;
+  CW=NARROW?Math.max(288,Math.min(720,colW())):0;}
+(function(){var last=null,t=null;
+  window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(function(){
+    var k=(window.matchMedia('(max-width:760px)').matches?'n':'w')+colW();
+    if(k===last) return; last=k;
+    var mk=document.getElementById('mkBody'); if(mk&&mk.innerHTML) drawMarket();},160);});})();
 function svgOpen(w,h,cls){return '<svg class="fig'+(cls?' '+cls:'')+'" viewBox="0 0 '+w+' '+h+
-  '" width="100%" style="max-width:'+w+'px'+(NARROW&&cls!=='map'?';min-width:'+Math.round(w*0.95)+'px':'')+
+  '" width="100%" style="max-width:'+w+'px'+(NARROW&&cls!=='map'&&w>CW+2?';min-width:'+Math.round(w*0.95)+'px':'')+
   '" preserveAspectRatio="xMinYMin meet" role="img" aria-hidden="false">';}
 function tipAttr(t){return ' data-tip="'+esc(t)+'"';}
 
@@ -20,7 +37,7 @@ function tipAttr(t){return ' data-tip="'+esc(t)+'"';}
 var NB=(D.market&&D.market.closings_base)||0;
 function figClosings(){
   var rows=MK.closings||[]; if(!rows.length) return '';
-  var W=900,L=190,R=110,rowH=30,top=26,H=top+rows.length*rowH+30;
+  var ph=NARROW, W=ph?CW:900,L=ph?0:190,R=ph?88:110,rowH=ph?40:30,top=ph?10:26,lab=ph?16:0,H=top+rows.length*rowH+30;
   /* Two builders close several times what the rest do. A linear axis to 6,362
      would flatten twenty bars into the first fifth of the chart, so the axis
      stops at 2,000 and a bar that runs past it is broken, with its full figure
@@ -28,15 +45,16 @@ function figClosings(){
   var max=2000, X=function(v){return L+(W-L-R)*Math.min(v,max)/max;};
   var h=svgOpen(W,H);
   // gridlines
-  [0,250,500,750,1000,1250,1500,1750,2000].forEach(function(v){
+  (ph?[0,500,1000,1500,2000]:[0,250,500,750,1000,1250,1500,1750,2000]).forEach(function(v){
     h+='<line x1="'+X(v)+'" y1="'+(top-8)+'" x2="'+X(v)+'" y2="'+(top+rows.length*rowH)+'" class="grid"/>'+
        '<text x="'+X(v)+'" y="'+(top+rows.length*rowH+18)+'" class="axt">'+fmt(v)+'</text>';
   });
   rows.forEach(function(r,i){
-    var y=top+i*rowH, bh=18, cy=y+bh/2;
+    var y0=top+i*rowH, y=y0+lab, bh=ph?14:18, cy=y+bh/2;
     var tip=r.name+': '+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
             ' homes a year, '+r.year+(r.wide?', '+r.wide:'')+'. '+r.source+'.';
-    h+='<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end" data-id="'+r.id+'">'+esc(r.short)+'</text>';
+    h+=ph?'<text x="0" y="'+(y0+11)+'" class="rowl" data-id="'+r.id+'">'+esc(r.short)+'</text>'
+         :'<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end" data-id="'+r.id+'">'+esc(r.short)+'</text>';
     h+='<rect x="'+X(0)+'" y="'+y+'" width="'+(X(r.low)-X(0))+'" height="'+bh+'" rx="0" class="bar"'+tipAttr(tip)+'/>';
     if(r.low>max){var bx=X(max)-22;
       h+='<path class="brk" d="M'+bx+' '+(y+bh+3)+' L'+(bx+7)+' '+(y-3)+' M'+(bx+7)+' '+(y+bh+3)+' L'+(bx+14)+' '+(y-3)+'"/>';}
@@ -52,10 +70,9 @@ function figClosings(){
   var tbl='<table class="ftab"><thead><tr><th>Firm</th><th class="num">Homes a year</th><th>Year</th><th>Covers</th><th>Source</th></tr></thead><tbody>'+
     rows.map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+(r.low===r.high?fmt(r.high):fmt(r.low)+' to '+fmt(r.high))+
       '</td><td>'+r.year+'</td><td>'+esc(r.wide||PL.name)+'</td><td>'+esc(r.source)+'</td></tr>';}).join('')+'</tbody></table>';
-  return figure('Published annual closings',
-    'How big each builder is, in houses closed a year. '+rows.length+' of the '+NB+
-    ' builders and developers on the deck publish a figure. The rest do not and are not drawn. Contractors and land owners close no houses and are not counted. A range is drawn to its low end with a line to its high end. The axis stops at 2,000. A broken bar runs past it, and its figure is printed.'+
-    (nw?' A † marks the '+nw+' figures that count more than '+PL.name+'; the table says what each covers.':''),
+  return figure('Homes closed a year, as published',
+    rows.length+' of '+NB+' builders and developers publish a figure. The rest are not drawn. Axis stops at 2,000: a broken bar runs past it.'+
+    (nw?' † '+nw+' figures cover more than '+PL.name+'.':''),
     h, tbl, null, 'figClosings',
     (D.bands_method&&D.bands_method.text?'<div class="bandnote"><span class="lab">The printer-fit bands</span><p>'+
       esc(D.bands_method.text)+'</p><p class="figsrc">'+(D.bands_method.sources||[]).map(function(s){
@@ -66,13 +83,14 @@ function figClosings(){
 /* 2. Track record and named decision-makers, by section. */
 function figSections(){
   var rows=MK.by_section||[]; if(!rows.length) return '';
-  var W=900,L=230,R=40,rowH=34,top=30,H=top+rows.length*rowH+12;
+  var ph=NARROW, W=ph?CW:900,L=ph?0:230,R=ph?36:40,rowH=ph?46:34,top=ph?8:30,lab=ph?18:0,H=top+rows.length*rowH+12;
   var max=Math.max.apply(null,rows.map(function(r){return r.n;}));
   var X=function(v){return (W-L-R)*v/max;};
   var h=svgOpen(W,H);
   rows.forEach(function(r,i){
-    var y=top+i*rowH,bh=20,x=L;
-    h+='<text x="'+(L-10)+'" y="'+(y+14)+'" class="rowl" text-anchor="end">'+esc(r.label)+'</text>';
+    var y=top+i*rowH+lab,bh=20,x=L;
+    h+=ph?'<text x="0" y="'+(y-6)+'" class="rowl">'+esc(r.label)+'</text>'
+         :'<text x="'+(L-10)+'" y="'+(y+14)+'" class="rowl" text-anchor="end">'+esc(r.label)+'</text>';
     [['yes','Yes','clear'],['partly','Partly','partial'],['no','No','fail']].forEach(function(s){
       var w=X(r[s[0]]); if(w<=0) return;
       var tip=r.label+': '+r[s[0]]+' of '+r.n+' with track record '+s[1]+'.';
@@ -89,7 +107,7 @@ function figSections(){
     rows.map(function(r){return '<tr><td>'+esc(r.label)+'</td><td>'+r.n+'</td><td>'+r.yes+'</td><td>'+r.partly+'</td><td>'+r.no+'</td><td>'+r.decider+'</td><td>'+r.confirm+'</td><td>'+r.linked+'</td></tr>';}).join('')+
     '</tbody></table>';
   return figure('Track record by section',
-    'Each bar is one section, one segment per verdict. Click a segment for the firms in it. The table under it adds the named decision-maker count and how many firms in each section carry at least one link.',
+    'One bar per section, one segment per verdict. A segment lists its firms.',
     leg+h+'<div class="seglist" id="segList" hidden></div>', tbl);
 }
 
@@ -122,18 +140,31 @@ function figOwners(){
        (id?'':' <tspan class="cnt">'+(off?'held off the deck':'not screened')+'</tspan>')+'</text>';
   });
   h+='</svg>';
+  /* Build 78. Two columns of names with curves between them need about 700px.
+     On a phone the same pairs are a list: each owner, then the builders inside
+     its communities. A builder on the deck opens its firm. */
+  if(NARROW){
+    h='<div class="oblist">'+owners.map(function(o){
+      return '<div class="ob"><div class="obh"><button class="obn" data-id="'+o.id+'">'+esc(o.short)+
+        '</button><span class="obc">'+o.builders.length+(o.builders.length===1?' builder':' builders')+'</span></div>'+
+        '<div class="chips">'+o.builders.map(function(b){
+          return b.id?'<button class="chip" data-id="'+b.id+'">'+esc(b.name)+'</button>'
+            :'<span class="chip off">'+esc(b.name)+' <s>'+(b.off?'held off the deck':'not screened')+'</s></span>';
+        }).join('')+'</div></div>';}).join('')+'</div>';
+  }
   var tbl='<table class="ftab"><thead><tr><th>Land owner</th><th>Communities</th><th>Builders inside, on this screen</th></tr></thead><tbody>'+
     (MK.owners||[]).map(function(o){return '<tr><td>'+esc(o.short)+'</td><td>'+esc(o.line)+'</td><td>'+
       (o.builders.length?o.builders.map(function(b){return esc(b.name);}).join(', '):'none on this screen')+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Land owners and the builders inside their communities',
-    'Left, the masterplan owners screened here. Right, the builders each one lists in its communities. A name opens the firm; a grey name is not on this deck.',
+    (NARROW?'Each masterplan owner, then the builders it lists. Grey: not on this deck.'
+      :'Left: masterplan owners. Right: the builders each lists. Grey: not on this deck.'),
     h, tbl);
 }
 
 /* 4. Printed homes in Texas, on the public record. */
 function figPrinted(){
   var rows=MK.printed||[]; if(!rows.length) return '';
-  var W=900,L=230,R=150,rowH=30,top=12,H=top+rows.length*rowH+30;
+  var ph=NARROW, W=ph?CW:900,L=ph?0:230,R=ph?112:150,rowH=ph?40:30,top=ph?6:12,lab=ph?16:0,H=top+rows.length*rowH+30;
   var max=Math.max.apply(null,rows.map(function(r){return r.units;}))||1;
   var X=function(v){return L+(W-L-R)*v/max;};
   var h=svgOpen(W,H);
@@ -142,9 +173,10 @@ function figPrinted(){
        '<text x="'+X(v)+'" y="'+(top+rows.length*rowH+18)+'" class="axt">'+v+'</text>';
   });
   rows.forEach(function(r,i){
-    var y=top+i*rowH,bh=18,cy=y+bh/2;
+    var y0=top+i*rowH, y=y0+lab,bh=ph?14:18,cy=y+bh/2;
     var tip=r.project+', '+r.place+'. '+r.printer+'. '+r.units+' units. '+r.status+'.';
-    h+='<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end">'+esc(r.project)+'</text>';
+    h+=ph?'<text x="0" y="'+(y0+11)+'" class="rowl">'+esc(r.project)+'</text>'
+         :'<text x="'+(L-10)+'" y="'+(cy+4)+'" class="rowl" text-anchor="end">'+esc(r.project)+'</text>';
     if(r.units>0) h+='<rect x="'+X(0)+'" y="'+y+'" width="'+(X(r.units)-X(0))+'" height="'+bh+'" class="bar clear"'+tipAttr(tip)+'/>';
     h+='<text x="'+(X(r.units)+8)+'" y="'+(cy+4)+'" class="val">'+r.units+' <tspan class="yr">'+esc(r.printer.split(',')[0])+'</tspan></text>';
   });
@@ -153,8 +185,8 @@ function figPrinted(){
     rows.map(function(r){return '<tr><td>'+esc(r.project)+'</td><td>'+esc(r.place)+'</td><td>'+esc(r.printer)+'</td><td>'+r.units+'</td><td>'+esc(r.status)+'</td></tr>';}).join('')+'</tbody></table>';
   return figure('Printed housing projects in Texas, by units',
     (function(){var rx=new RegExp(PL.local||'Houston|San Leon'),hs=rows.filter(function(r){return rx.test(r.place);});
-      return 'Units printed, under way or committed, by project, with the printer. The '+hs.length+
-        ' '+PL.name+' projects total '+hs.reduce(function(a,r){return a+r.units;},0)+' units.';})(),
+      return 'Printed, under way or committed. '+PL.name+': '+hs.length+' projects, '+
+        hs.reduce(function(a,r){return a+r.units;},0)+' units.';})(),
     h, tbl);
 }
 
@@ -190,9 +222,60 @@ function figTimeline(){
   });
   h+='</ol>';
   var leg='<div class="flegend"><i><span class="dk in"></span>Entry or launch</i><i><span class="dk out"></span>Closure, sale or filing</i><i><span class="dk icon"></span>ICON</i></div>';
-  return figure('The field, 2017 to 2027', 'Entries, closures and ICON’s own dates, from company releases, filings and trade press. The space between rows grows with the time between events, up to a limit.', leg+h, '');
+  return figure('Printer companies: entries and exits, 2017 to 2027', 'Entries, closures and ICON\u2019s own dates. Gaps between rows scale with time.', leg+h, '');
 }
 var MONTHS=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+/* Build 80. ICON's own test for opening a market, set against the volume this
+   deck's builders publish for this market. The first line is ICON's, in
+   BUILDER. The counts are the closings figures above, limited to figures that
+   count this market alone. The printer count is arithmetic on the band's
+   assumption of about 200 houses a year per Titan, which ICON has not
+   published, and it says so. */
+var TITAN_A_YEAR=200;
+var ICON_MKT='https://www.builderonline.com/design/technology/icons-next-phase-building-a-scalable-platform-for-3d-printed-housing/';
+function figThreshold(){
+  var rows=(MK.closings||[]).filter(function(r){return !r.wide;});
+  var band=rows.filter(function(r){return r.high>=25&&r.high<=400;});
+  var mid=rows.filter(function(r){return r.high>400&&r.high<=1500;});
+  var wideBand=(MK.closings||[]).filter(function(r){return r.wide&&r.high>=25&&r.high<=400;});
+  var lo=band.reduce(function(a,r){return a+r.low;},0), hi=band.reduce(function(a,r){return a+r.high;},0);
+  var mlo=mid.reduce(function(a,r){return a+r.low;},0), mhi=mid.reduce(function(a,r){return a+r.high;},0);
+  function rng(a,b){return a===b?fmt(a):fmt(a)+' to '+fmt(b);}
+  function ti(a,b){var x=Math.floor(a/TITAN_A_YEAR), y=Math.ceil(b/TITAN_A_YEAR);return x===y?String(x):x+' to '+y;}
+  var st=[['6 to 10','printers of demand in one market, ICON’s test for a full market opening'],
+    [String(band.length),'builders on this deck publish a yearly figure for '+PL.name+' alone inside the 25 to 400 band'],
+    [band.length?rng(lo,hi):'0','homes a year, those '+nword(band.length)+' together']];
+  if(band.length) st.push([ti(lo,hi),'Titans that volume would keep working, at an assumed '+TITAN_A_YEAR+' houses a year each']);
+  st.push([String(mid.length),'builders publish a '+PL.name+' figure between 400 and 1,500, together '+rng(mlo,mhi)+' homes a year']);
+  var body='<div class="stats mk thr">'+st.map(function(x){return '<div class="stat"><b>'+x[0]+'</b><span>'+esc(x[1])+'</span></div>';}).join('')+'</div>';
+  var tbl='<table class="ftab"><thead><tr><th>Builder</th><th class="num">Homes a year</th><th>Year</th><th>Band</th></tr></thead><tbody>'+
+    band.concat(mid).map(function(r){return '<tr><td>'+esc(r.name)+'</td><td class="num">'+rng(r.low,r.high)+'</td><td>'+r.year+
+      '</td><td>'+(r.high<=400?'25 to 400':'400 to 1,500')+'</td></tr>';}).join('')+'</tbody></table>';
+  return figure('ICON’s six-to-ten printer test, against published volume',
+    'ICON (BUILDER, 11 March 2026): demand for six to ten printers makes a market a candidate for a full opening. Target: small and mid-sized builders. '+
+    'Counts use '+PL.name+'-only closings figures'+(wideBand.length?', leaving out '+nword(wideBand.length)+' that cover other markets':'')+'. '+
+    'Titans assume '+TITAN_A_YEAR+' houses a year each. ICON has not published a rate.',
+    body, tbl, [{url:ICON_MKT,label:'BUILDER, 11 March 2026'}], 'figThreshold');
+}
+
+/* Build 80. Dated news on the deck since 1 March 2026, newest first. Each row
+   opens its firm. */
+function figNews(){
+  var rows=[];
+  T.forEach(function(t){(t.news||[]).forEach(function(n){rows.push({t:t,n:n});});});
+  if(!rows.length) return '';
+  rows.sort(function(a,b){return a.n.date<b.n.date?1:a.n.date>b.n.date?-1:0;});
+  var firms={}; rows.forEach(function(r){firms[r.t.target_id]=1;});
+  var h='<ol class="nlist" aria-label="News, newest first">'+rows.map(function(r){
+    return '<li><span class="nd">'+esc(r.n.date)+'</span>'+
+      '<span class="nb"><button class="nf" data-id="'+r.t.target_id+'">'+esc(r.t.short||r.t.entity_name)+'</button>'+
+      '<span class="nw">'+esc(r.n.what)+'</span>'+
+      '<a class="src" href="'+esc(r.n.url)+'" target="_blank" rel="noopener">'+esc(r.n.outlet)+'</a></span></li>';}).join('')+'</ol>';
+  return figure('News on this deck since 1 March 2026',
+    rows.length+' items, '+Object.keys(firms).length+' firms. Land, communities, officers, capital.',
+    h, '', null, 'figNews');
+}
 
 /* A segment opens the firms it counts. Each row opens the firm; the row's +
    adds it to the call list; the header offers the same set as a List filter. */
@@ -259,30 +342,30 @@ function inkOn(hex){
 /* 7. The metro series. One column a year, single family only. */
 function figPermits(){
   var rows=PM.msa||[]; if(!rows.length) return '';
-  var W=940,L=58,R=16,T=30,B=46,H=T+250+B;
+  var ph=NARROW, PH_=ph?200:250, W=ph?CW:940,L=ph?46:58,R=ph?4:16,T=ph?14:30,B=ph?34:46,H=T+PH_+B;
   var max=Math.max.apply(null,rows.map(function(r){return r.sf;}));
   var bw=(W-L-R)/rows.length;
-  var X=function(i){return L+i*bw;}, Y=function(v){return T+250-250*v/max;};
+  var X=function(i){return L+i*bw;}, Y=function(v){return T+PH_-PH_*v/max;};
   var h=svgOpen(W,H);
-  [0,10000,20000,30000,40000,50000].forEach(function(v){
+  (ph?[0,25000,50000]:[0,10000,20000,30000,40000,50000]).filter(function(v){return v<=max*1.02||v===0;}).forEach(function(v){
     h+='<line x1="'+L+'" y1="'+Y(v)+'" x2="'+(W-R)+'" y2="'+Y(v)+'" class="grid"/>'+
-       '<text x="'+(L-8)+'" y="'+(Y(v)+4)+'" class="axt" text-anchor="end">'+fmt(v)+'</text>';
+       '<text x="'+(L-8)+'" y="'+(Y(v)+4)+'" class="axe">'+fmt(v)+'</text>';
   });
   rows.forEach(function(r,i){
     var tip=r.year+': '+fmt(r.sf)+' single-family units authorised, '+fmt(r.all)+' units of all types.';
-    h+='<rect x="'+(X(i)+1)+'" y="'+Y(r.sf)+'" width="'+(bw-2)+'" height="'+(T+250-Y(r.sf))+
+    h+='<rect x="'+(X(i)+(ph?.5:1))+'" y="'+Y(r.sf)+'" width="'+(bw-(ph?1:2))+'" height="'+(T+PH_-Y(r.sf))+
        '" class="bar"'+tipAttr(tip)+'/>';
-    if(r.year%5===0)
-      h+='<text x="'+(X(i)+bw/2)+'" y="'+(T+250+16)+'" class="axt">'+r.year+'</text>';
+    if(r.year%(ph?10:5)===0)
+      h+='<text x="'+(X(i)+bw/2)+'" y="'+(T+PH_+16)+'" class="axt">'+r.year+'</text>';
   });
-  h+='<line x1="'+L+'" y1="'+(T+250)+'" x2="'+(W-R)+'" y2="'+(T+250)+'" class="axis"/></svg>';
+  h+='<line x1="'+L+'" y1="'+(T+PH_)+'" x2="'+(W-R)+'" y2="'+(T+PH_)+'" class="axis"/></svg>';
   var tbl='<table class="ftab"><thead><tr><th>Year</th><th>Single family</th><th>All units</th></tr></thead><tbody>'+
     rows.slice().reverse().map(function(r){return '<tr><td>'+r.year+'</td><td>'+fmt(r.sf)+'</td><td>'+fmt(r.all)+'</td></tr>';}).join('')+
     '</tbody></table>';
   var g=PM.geo||{};
   return figure('Single-family units authorised, '+(g.name||''),
-    'Building permits issued across the '+nword((PM.counties||[]).length)+' counties, '+rows[0].year+' to '+rows[rows.length-1].year+
-    '. A permit is an authorisation, not a completed house and not a closing: the builder figures below count houses handed over. Census counts townhouses and row houses as single family.',
+    'Permits across '+nword((PM.counties||[]).length)+' counties, '+rows[0].year+' to '+rows[rows.length-1].year+
+    '. A permit is not a closing. Townhouses count as single family.',
     h, tbl, PSRC.some(function(s){return s.use;})?PSRC.filter(function(s){return (s.use||[]).indexOf('metro')>-1;}):psrc('huduser','definitions'));
 }
 
@@ -296,7 +379,7 @@ function bigCounty(){var C=(PM.counties||[]).slice();if(!C.length) return 'the l
   C.sort(function(a,b){return b.sf[b.sf.length-1]-a.sf[a.sf.length-1];});return C[0].name;}
 function figCountyMap(){
   var G=PM.geom||[], C=PM.counties||[]; if(!G.length||!C.length) return '';
-  var yrs=C[0].years, W=680,H=470, PAD=26;
+  var yrs=C[0].years, W=NARROW?CW:680,H=NARROW?Math.round(CW*470/680)+34:470, PAD=NARROW?10:26;
   var lo=[999,999],hi=[-999,-999];
   G.forEach(function(f){f.rings.forEach(function(p){p.forEach(function(r){r.forEach(function(c){
     lo[0]=Math.min(lo[0],c[0]);lo[1]=Math.min(lo[1],c[1]);
@@ -404,12 +487,19 @@ function figCountyMap(){
       var v=c.sf[i], fill=shade(v,max), A=ANCHOR[f.fips], x=A.p[0], y=A.p[1];
       var tight=A.r<30, fs=tight?10:12, vs=tight?9:10.5;
       var pen=' fill="'+inkOn(fill)+'" stroke="'+fill+'" stroke-width="'+(tight?2.4:3)+'"';
+      /* On a phone the map is half the size, so a county too small to hold its
+         name carries none; its figure is in the tooltip and the table. */
+      if(NARROW){ if(A.r<10) return; tight=A.r<20; fs=tight?10.5:12; vs=10;
+        pen=' fill="'+inkOn(fill)+'" stroke="'+fill+'" stroke-width="2.4"';
+        h+='<text x="'+x.toFixed(0)+'" y="'+(y+(tight?4:-2)).toFixed(0)+'" class="ctyl" style="font-size:'+fs+'px"'+pen+'>'+esc(c.name)+'</text>'+
+           (tight?'':'<text x="'+x.toFixed(0)+'" y="'+(y+11).toFixed(0)+'" class="ctyv" style="font-size:'+vs+'px"'+pen+'>'+fmt(v)+'</text>');
+        return; }
       h+='<text x="'+x.toFixed(0)+'" y="'+(y-2).toFixed(0)+'" class="ctyl" style="font-size:'+fs+'px"'+pen+'>'+esc(c.name)+'</text>'+
          '<text x="'+x.toFixed(0)+'" y="'+(y+(tight?9:12)).toFixed(0)+'" class="ctyv" style="font-size:'+vs+'px"'+pen+'>'+fmt(v)+'</text>';
     });
     h+='</g>';
     /* key: a continuous strip, two labels, no ladder of numbers */
-    var KW=170, kx=14, ky=H-34;
+    var KW=NARROW?140:170, kx=NARROW?0:14, ky=H-34;
     h+='<text x="'+kx+'" y="'+(ky-9)+'" class="axl">Units authorised, '+PYEAR+'</text>';
     ramp().forEach(function(fill,b){
       h+='<rect x="'+(kx+b*(KW/6)).toFixed(1)+'" y="'+ky+'" width="'+(KW/6).toFixed(1)+'" height="9" fill="'+fill+'" '+
@@ -420,9 +510,9 @@ function figCountyMap(){
     h+='</svg>';
     var host=document.getElementById('mapHost'); if(host) host.innerHTML=h;
   };
-  return figure('Where the permits are',
-    'Single-family units authorised by county, on a square-root scale so the middle of the range stays legible next to '+bigCounty()+'. '+
-    (WAT.length?'Outlines and lakes are ':'Outlines are ')+(PL.outline||'TxDOT')+'’s. Drag the year.',
+  return figure('Single-family permits by county',
+    'Square-root scale. Outlines'+(WAT.length?' and lakes':'')+': '+(PL.outline||'TxDOT')+'. Drag the year.'+
+    (NARROW?' Unlabelled counties are in the table.':''),
     body, tbl, psrc('huduser','txdot','#county','#map'), 'figMap');
 }
 
@@ -442,7 +532,7 @@ function figCountyMatrix(){
   window.__drawMtx=function(){
     var rows=C.slice().sort(function(a,b){return b.sf[b.sf.length-1]-a.sf[a.sf.length-1];});
     var mi={}; (M||[]).forEach(function(m){mi[m.year]=m.sf;});
-    var cw=Math.max(26,Math.min(34,(900-170)/yrs.length)), rh=30, L=170, T=26;
+    var L=NARROW?88:170, cw=NARROW?(CW-L-4)/yrs.length:Math.max(26,Math.min(34,(900-170)/yrs.length)), rh=NARROW?24:30, T=26;
     var W=L+cw*yrs.length+10, H=T+rh*rows.length+34;
     var max=0, peak={};
     rows.forEach(function(c){
@@ -454,22 +544,22 @@ function figCountyMatrix(){
     yrs.forEach(function(y,i){ if(y%5===0||i===yrs.length-1)
       h+='<text x="'+(L+i*cw+cw/2)+'" y="'+(T-8)+'" class="axt">'+String(y).slice(2)+'</text>';});
     rows.forEach(function(c,r){
-      h+='<text x="'+(L-10)+'" y="'+(T+r*rh+rh/2+4)+'" class="rowl" text-anchor="end">'+esc(c.name)+'</text>';
+      h+='<text x="'+(L-(NARROW?8:10))+'" y="'+(T+r*rh+rh/2+4)+'" class="rowl'+(NARROW?' sm':'')+'" text-anchor="end">'+esc(c.name)+'</text>';
       c.sf.forEach(function(v,i){
         var m=mi[yrs[i]];
         var val=(PMODE==='shr')?(m?v/m:0):(peak[c.fips]?v/peak[c.fips]:0);
         var fill=shade(val,max);
         var tip=c.name+' County, '+yrs[i]+': '+fmt(v)+' single-family units authorised'+
           (m?', '+(100*v/m).toFixed(1)+' per cent of the metro':'')+'.';
-        h+='<rect x="'+(L+i*cw)+'" y="'+(T+r*rh)+'" width="'+(cw-2)+'" height="'+(rh-2)+
+        h+='<rect x="'+(L+i*cw)+'" y="'+(T+r*rh)+'" width="'+(cw-(NARROW?1:2))+'" height="'+(rh-2)+
            '" fill="'+fill+'" class="cell"'+tipAttr(tip)+'/>';
       });
     });
     h+='</svg>';
     var host=document.getElementById('mtxHost'); if(host) host.innerHTML=h;
   };
-  return figure('The same counties, year by year',
-    'Every county across '+yrs[0]+' to '+yrs[yrs.length-1]+'. Share of metro shades each county-year against the metro total for that year, so a county gaining ground darkens even while '+bigCounty()+' stays the largest. Against its own peak shades each row against that county\u2019s own busiest year, which is the cycle rather than the rank. Units are in the tooltip and in the table.',
+  return figure('Single-family permits by county and year',
+    yrs[0]+' to '+yrs[yrs.length-1]+'. Share of metro: each county against the metro that year. Own peak: each county against its busiest year.',
     body, tbl, psrc('huduser'));
 }
 
@@ -489,27 +579,28 @@ function figPlaces(){
   window.__drawJur=function(){
     var i=yrs.indexOf(JYEAR); if(i<0) i=yrs.length-1;
     var rows=P.slice().sort(function(a,b){return b.sf[i]-a.sf[i];}).slice(0,25);
-    var W=900,L=260,R=90,rowH=24,T=14,H=T+rows.length*rowH+18;
+    var ph=NARROW, W=ph?CW:900,L=ph?0:260,R=ph?52:90,rowH=ph?34:24,T=ph?4:14,lab=ph?15:0,H=T+rows.length*rowH+18;
     var max=Math.max.apply(null,rows.map(function(r){return r.sf[i];}));
     var X=function(v){return L+(W-L-R)*v/max;};
     var h=svgOpen(W,H);
     rows.forEach(function(p,r){
-      var y=T+r*rowH, tip=p.name+', '+p.county+' County, '+JYEAR+': '+fmt(p.sf[i])+' single-family units authorised.';
-      h+='<text x="'+(L-10)+'" y="'+(y+14)+'" class="rowl sm" text-anchor="end">'+esc(p.name)+'</text>'+
-         '<rect x="'+L+'" y="'+(y+3)+'" width="'+(X(p.sf[i])-L)+'" height="'+(rowH-9)+'" class="bar'+
+      var y=T+r*rowH+lab, tip=p.name+', '+p.county+' County, '+JYEAR+': '+fmt(p.sf[i])+' single-family units authorised.';
+      h+=(ph?'<text x="0" y="'+(y-3)+'" class="rowl sm">'+esc(p.name)+'</text>'
+            :'<text x="'+(L-10)+'" y="'+(y+14)+'" class="rowl sm" text-anchor="end">'+esc(p.name)+'</text>')+
+         '<rect x="'+L+'" y="'+(y+3)+'" width="'+(X(p.sf[i])-L)+'" height="'+(rowH-9-(ph?lab-3:0))+'" class="bar'+
          (/Unincorporated/i.test(p.name)?' uninc':'')+'"'+tipAttr(tip)+'/>'+
          '<text x="'+(X(p.sf[i])+8)+'" y="'+(y+14)+'" class="val">'+fmt(p.sf[i])+'</text>';
     });
     h+='</svg>';
     var host=document.getElementById('jurHost'); if(host) host.innerHTML=h;
   };
-  return figure('Which jurisdiction issues the permit',
+  return figure('Single-family permits by issuing jurisdiction',
     (function(){var i=yrs.length-1,a=0,c=0;P.forEach(function(p){a+=p.sf[i]||0;});
       (PM.counties||[]).forEach(function(k){var j=k.years.indexOf(yrs[i]);c+=j>-1?k.sf[j]:0;});
-      return Math.abs(a-c)<=Math.max(5,c*0.001)?P.length+' permit-issuing jurisdictions sit inside the metro and they sum to the '+nword((PM.counties||[]).length)+' counties exactly.':
-        P.length+' permit-issuing jurisdictions are in the table, together '+Math.round(100*a/c)+' percent of the metro\u2019s single-family units in '+yrs[i]+'.';})()+' The top 25 are drawn, and all of them are in the table. Outlined bars are unincorporated county area, where the county issues the permit and no city does. Solid bars are a city. '+(function(){var i=yrs.length-1,u=0,a=0;
+      return Math.abs(a-c)<=Math.max(5,c*0.001)?P.length+' jurisdictions. They sum to the '+nword((PM.counties||[]).length)+' counties exactly.':
+        P.length+' jurisdictions, '+Math.round(100*a/c)+' percent of '+yrs[i]+' metro units.';})()+' Top 25 drawn. Outlined: unincorporated county. Solid: a city. '+(function(){var i=yrs.length-1,u=0,a=0;
       P.forEach(function(p){a+=p.sf[i]||0; if(/Unincorporated/i.test(p.name)) u+=p.sf[i]||0;});
-      return a?'In '+yrs[i]+', '+fmt(u)+' of '+fmt(a)+' single-family units, '+Math.round(100*u/a)+' percent, were permitted by a county rather than a city.':'';})(),
+      return a?yrs[i]+': '+fmt(u)+' of '+fmt(a)+' units, '+Math.round(100*u/a)+' percent, permitted by a county.':'';})(),
     body, tbl, psrc('huduser','#place'));
 }
 
@@ -521,27 +612,43 @@ function figure(title,caption,body,table,sources,id,extra){
     '<div class="fwrap">'+body+'</div>'+
     (src?'<p class="figsrc"><span class="lab">Source</span>'+src+'</p>':'')+
     (extra||'')+
-    (table?'<details class="ftable"'+(NARROW?' open':'')+'><summary>As a table</summary>'+table+'</details>':'')+'</section>';
+    (table?'<details class="ftable"><summary>As a table</summary>'+table+'</details>':'')+'</section>';
 }
 
 var W_=W;
 function drawMarket(){
+  sizeCharts();
   var _mt=document.getElementById('mkTitle'); if(_mt) _mt.textContent=PL.name+' in figures';
-  var n=T.length, yes=T.filter(function(t){return t.marks.innovation==='clear';}).length;
-  var fit=T.filter(function(t){return t.marks.machine_fit==='clear';}).length;
-  var both=T.filter(function(t){return t.marks.machine_fit==='clear'&&t.marks.innovation!=='fail';}).length;
-  var dec=T.filter(function(t){return t.decider_confirmed;}).length;
-  document.getElementById('mkStats').innerHTML=[
-    [n,'firms screened'],[fit,'a Yes on Printer fit'],[both,'a Yes on Printer fit with a track record'],
-    [yes,'have paid for a new method before'],
-    /* Deliberately not the same number as the screen's strip. That one counts
-       every firm with the mark; this one drops the firms whose named person
-       carries a caveat. The two labels have to keep saying which is which. */
-    [dec,'with a decision-maker named and no caveat']
-  ].map(function(s){return '<div class="stat"><b>'+s[0]+'</b><span>'+esc(s[1])+'</span></div>';}).join('');
+  /* Build 82. The view is one argument in five steps: how many homes get
+     permitted here, who builds them, which of those builders fit one or two
+     printers, who prints here already, and what changed this year. The strip
+     at the top carries one number per step, in the same order, and each opens
+     its step. */
+  var ms=PM.msa||[], last=ms.length?ms[ms.length-1]:null;
+  var cl=MK.closings||[], local=cl.filter(function(r){return !r.wide;});
+  var band=local.filter(function(r){return r.high>=25&&r.high<=400;});
+  var rx=new RegExp(PL.local||'Houston|San Leon');
+  var printed=(MK.printed||[]).filter(function(r){return rx.test(r.place);});
+  var pu=printed.reduce(function(a,r){return a+r.units;},0);
+  var nn=0; T.forEach(function(t){nn+=(t.news||[]).length;});
+  var steps=[
+    ['mkDemand','Homes permitted',last?fmt(last.sf):'0',
+      last?'single-family units permitted in '+last.year+', whole metro':'no permit series'],
+    ['mkBuyers','Who builds them',cl.length+' of '+NB,'builders and developers publish homes closed a year'],
+    ['mkFit','Fit for one or two printers',String(band.length),
+      'builders publish '+PL.name+' volume inside the band one or two printers would cover'],
+    ['mkPrint','Printing in Texas',fmt(pu),'printed homes in '+PL.name+', built, under way or committed'],
+    ['mkNews','News since 1 March 2026',String(nn),'dated items on firms in the top sections']];
+  document.getElementById('mkStats').innerHTML=steps.map(function(s,i){
+    return '<button class="stat" type="button" data-goto="'+s[0]+'"><b>'+s[2]+'</b><span>'+(i+1)+' \u00b7 '+esc(s[3])+'</span></button>';}).join('');
+  function sec(i,body){var s=steps[i];
+    return '<div class="mksec" id="'+s[0]+'"><div class="mksech"><span class="mkn">'+(i+1)+'</span><h3>'+esc(s[1])+'</h3></div>'+body+'</div>';}
   document.getElementById('mkBody').innerHTML=
-    figPermits()+figCountyMap()+figCountyMatrix()+figPlaces()+
-    figClosings()+figSections()+figOwners()+figPrinted()+figTimeline();
+    sec(0,figPermits()+figCountyMap()+figCountyMatrix()+figPlaces())+
+    sec(1,figClosings()+figOwners())+
+    sec(2,figThreshold()+figSections())+
+    sec(3,figPrinted()+figTimeline())+
+    sec(4,figNews());
   if(window.__drawMap) window.__drawMap();
   if(window.__drawMtx) window.__drawMtx();
   if(window.__drawJur) window.__drawJur();
@@ -568,14 +675,29 @@ function drawMarket(){
 (function(){
   var tip=document.createElement('div');tip.id='tip';tip.setAttribute('role','tooltip');tip.hidden=true;
   document.body.appendChild(tip);
-  function show(e){var el=e.target.closest&&e.target.closest('[data-tip]'); if(!el){tip.hidden=true;return;}
+  var touched=0;
+  function show(e){if(Date.now()-touched<900) return;
+    var el=e.target.closest&&e.target.closest('[data-tip]'); if(!el){tip.hidden=true;return;}
     tip.textContent=el.getAttribute('data-tip');tip.hidden=false;move(e);}
-  function move(e){var x=e.clientX+14,y=e.clientY+14;
+  function move(e){if(Date.now()-touched<900) return;
+    var x=e.clientX+14,y=e.clientY+14;
     var r=tip.getBoundingClientRect();
     if(x+r.width>window.innerWidth-12) x=e.clientX-r.width-14;
     if(y+r.height>window.innerHeight-12) y=e.clientY-r.height-14;
-    tip.style.left=x+'px';tip.style.top=y+'px';}
+    tip.style.left=Math.max(12,x)+'px';tip.style.top=y+'px';}
+  /* Build 78. A tap on a mark shows its tip above the finger, centred and kept
+     on screen; a tap anywhere else, or a scroll, puts it away. */
+  document.addEventListener('pointerdown',function(e){
+    if(e.pointerType!=='touch') return; touched=Date.now();
+    var el=e.target.closest&&e.target.closest('[data-tip]'); if(!el){tip.hidden=true;return;}
+    tip.textContent=el.getAttribute('data-tip');tip.hidden=false;
+    var r=tip.getBoundingClientRect();
+    var x=Math.min(Math.max(12,e.clientX-r.width/2),window.innerWidth-r.width-12);
+    var y=e.clientY-r.height-22; if(y<70) y=e.clientY+28;
+    tip.style.left=x+'px';tip.style.top=y+'px';});
+  window.addEventListener('scroll',function(){if(!touched||Date.now()-touched<400) return; tip.hidden=true;},{passive:true});
   document.addEventListener('mouseover',show);
   document.addEventListener('mousemove',function(e){if(!tip.hidden)move(e);});
-  document.addEventListener('mouseout',function(e){if(e.target.closest&&e.target.closest('[data-tip]'))tip.hidden=true;});
+  document.addEventListener('mouseout',function(e){if(Date.now()-touched<900) return;
+    if(e.target.closest&&e.target.closest('[data-tip]'))tip.hidden=true;});
 })();

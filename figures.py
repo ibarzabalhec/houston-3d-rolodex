@@ -86,6 +86,14 @@ def flatten(body):
 # and its text is the text below, which is deliberately only the figures: this is
 # a record of what was checked, not a cache of the page.
 BYHAND = {
+    # Build 80. Read on 2026-09-25 with a fetcher the site allows; scripts are refused.
+    "https://houstonagentmagazine.com/2026/08/17/kresston-mpc-60-80-foot-homesites/":
+        "2026-09-25: 17 August 2026. J. Patrick Homes and Toll Brothers will build on 31 80-foot lots.",
+    "https://www.globenewswire.com/news-release/2026/08/05/3339652/0/en/howard-hughes-holdings-inc-reports-second-quarter-2026-results.html":
+        "2026-09-25: release of 5 August 2026. Completed the acquisition of 100% of Vantage Group Holdings for "
+        "cash consideration of approximately $2.1 billion on June 4, 2026. Issued and sold $1.0 billion of Series A "
+        "Non-Voting Exchangeable Perpetual Preferred Stock to an affiliate of Pershing Square. Sold Creekside Park "
+        "and Creekside Park The Grove in The Woodlands for $127.3 million.",
     "https://www.multihousingnews.com/tricon-completes-texas-single-family-rentals/":
         "2026-09-24: 4 April 2025. Tricon Peek Road, developed in a partnership with "
         "Johnson Development and HHS Residential, comprises 175 new single-family homes "
@@ -412,7 +420,8 @@ def main():
     want = set()
     for t in targets:
         for u in ([t.get("homepage_url")] + [s.get("url") for s in t.get("sources", [])]
-                  + [k.get("url") for k in t.get("key_projects", [])]):
+                  + [k.get("url") for k in t.get("key_projects", [])]
+                  + [n.get("url") for n in t.get("news", [])]):
             if u and u.startswith("http") and not any(h in u for h in SKIP_HOST) \
                     and u not in cache:
                 want.add(u)
@@ -431,7 +440,8 @@ def main():
     for t in targets:
         urls = [u for u in ([t.get("homepage_url")]
                             + [s.get("url") for s in t.get("sources", [])]
-                            + [k.get("url") for k in t.get("key_projects", [])])
+                            + [k.get("url") for k in t.get("key_projects", [])]
+                            + [n.get("url") for n in t.get("news", [])])
                 if u and u.startswith("http") and not any(h in u for h in SKIP_HOST)]
         readable = [u for u in urls if page_text(cache, u)]
         blob = " ".join(page_text(cache, u) for u in readable).lower()
@@ -439,7 +449,8 @@ def main():
         text = " ".join(filter(None, [
             t.get("synopsis"), t.get("key_stat"),
             " ".join(w["text"] for w in t.get("why", [])),
-            " ".join(k["detail"] for k in t.get("key_projects", []))]))
+            " ".join(k["detail"] for k in t.get("key_projects", [])),
+            " ".join(n["what"] for n in t.get("news", []))]))
 
         hits = figures_in(text)
         n_fig += len(hits)

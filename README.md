@@ -1,10 +1,10 @@
 # Rolodex · Greater Houston and Dallas-Fort Worth
 
-126 Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with 295 named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
+126 Greater Houston builders, developers and wall contractors, each read against three counts for a construction printer, with 296 named contacts, a call list, an Excel export, the Houston market in figures, and the code and permitting route for a printed wall.
 
 Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
-A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 126 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
+A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 124 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
 
 One self-contained HTML file. No framework, no runtime network request. `docs/index.html` is the served copy. This README is written by `build.py`, so its counts are the page's counts.
 

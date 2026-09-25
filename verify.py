@@ -634,7 +634,7 @@ async def main():
         # Build 66: the number is the section, builders and developers holding
         # all three. Adopters and contractors holding all three are in their own
         # sections, so the label has to say whose count it is.
-        if not lab or ("holding all three counts" not in lab[0]
+        if not lab or (not re.search(r"(holding|hold) all three counts", lab[0])
                        or "builders and developers" not in lab[0]):
             problems.append("the three-count stat does not say whose holds it counts")
         if str(want_a) not in (lab[0] if lab else ""):
@@ -689,6 +689,52 @@ async def main():
             problems.append("add-all does not reach the call list")
         await pg.evaluate("document.querySelector('.grpadd').click()")
         await pg.wait_for_timeout(200)
+
+        # Build 76. The type scale runs one way: a section heading is larger
+        # than a firm name, a firm name is larger than its figure, and the
+        # figure reads in the second ink. No label that carries content is set
+        # below 10px. Measured at rest, with the pointer off the list.
+        await pg.mouse.move(0, 0)
+        await pg.evaluate("document.querySelectorAll('.landed').forEach(function(e){e.classList.remove('landed')})")
+        await pg.wait_for_timeout(250)
+        ts = await pg.evaluate(
+            "(function(){function s(q){var e=document.querySelector(q);"
+            "return e?parseFloat(getComputedStyle(e).fontSize):0}"
+            "function c(q){var e=document.querySelector(q);return e?getComputedStyle(e).color:''}"
+            "return {gl:s('#stageList tr.grp .gl'),nm:s('#stageList .fbtn2'),"
+            "hf:s('#stageList td.hf'),th:s('#stageList th'),"
+            "nmc:c('#stageList .fbtn2'),hfc:c('#stageList td.hf')}})()")
+        print("list type scale :", ts)
+        if not (ts["gl"] > ts["nm"] > ts["hf"] >= 13):
+            problems.append("list type scale inverted: %r" % ts)
+        if ts["th"] < 10:
+            problems.append("list column labels below 10px: %r" % ts["th"])
+        if ts["nmc"] == ts["hfc"]:
+            problems.append("list figure reads in the same ink as the firm name")
+
+        # Build 77. The row under the pointer lifts out of the list, and a click
+        # anywhere on it, not only on the name, opens the firm.
+        await pg.mouse.move(0, 0)
+        rest = await pg.evaluate(
+            "getComputedStyle(document.querySelector('#stageList tbody tr:not(.grp):not(.chn)')).backgroundColor")
+        row = pg.locator('#stageList tbody tr:not(.grp):not(.chn)').first
+        await row.locator('td.hf').hover()
+        await pg.wait_for_timeout(300)
+        hv = await pg.evaluate(
+            "(function(){var r=document.querySelector('#stageList tbody tr:not(.grp):not(.chn)');"
+            "var cs=getComputedStyle(r),td=getComputedStyle(r.querySelector('td'));"
+            "return {bg:cs.backgroundColor,cur:cs.cursor,rail:td.boxShadow}})()")
+        await row.locator('td.hf').click()
+        await pg.wait_for_timeout(350)
+        opened_row = await pg.evaluate("document.getElementById('stageIndex').hidden")
+        await pg.evaluate("document.getElementById('back').click()")
+        await pg.wait_for_timeout(350)
+        await pg.mouse.move(0, 0)
+        print("row hover       :", rest, "->", hv, "| row click opens firm", opened_row)
+        if hv["bg"] == rest or hv["cur"] != "pointer" or "inset" not in hv["rail"]:
+            problems.append("list row hover does not lift the row: %r" % hv)
+        if not opened_row:
+            problems.append("a click on a list row outside the name does not open the firm")
 
         # Opening and closing a firm must not drop focus on the body.
         await pg.evaluate("document.getElementById('vMatrix').click()")
@@ -1002,11 +1048,13 @@ async def main():
         figs = await pg.locator(".figs:not(.method)").count()
         # Build 67. The timeline is an ordered list, which is its own table.
         tabs = (await pg.locator(".figs .ftable table").count()
-                + await pg.locator(".figs ol.tline").count())
+                + await pg.locator(".figs ol.tline").count()
+                + await pg.locator(".figs ol.nlist").count())
         bars = await pg.locator("#mkBody .figs .fig .bar").count()
         print("market figures  :", figs, "| tables", tabs, "| closing bars", bars)
-        if figs != 9 or tabs != 9:
-            problems.append("the market view does not draw nine figures with tables (%d, %d)"
+        # Build 80: eleven, with ICON's printer test and the news list.
+        if figs != 11 or tabs != 11:
+            problems.append("the market view does not draw eleven figures with tables (%d, %d)"
                             % (figs, tabs))
         # the market tab explains nothing about its own method any more
         if await pg.locator("#mkBody .figs.method").count():
@@ -1087,7 +1135,7 @@ async def main():
             "const g=document.querySelector('#figMap .water');"
             "const cap=(document.querySelector('#figMap')||{}).textContent||'';"
             "return {n:w.length,clip:!!(g&&g.getAttribute('clip-path')),wet:wet,"
-            "credit:/lakes are/i.test(cap),src:/Water Bodies/i.test(cap)}})()")
+            "credit:/lakes: TxDOT|lakes are/i.test(cap),src:/Water Bodies/i.test(cap)}})()")
         want = len(P.get("water") or [])
         print("lakes           :", lakes["n"], "drawn of", want, "| clipped", lakes["clip"],
               "| labels in water", len(lakes["wet"]))
@@ -1475,6 +1523,17 @@ async def main():
         leak = [k for t in D["targets"] for k in t if k.startswith("_")] + (["competitor"] if D.get("competitor") else [])
         if leak:
             problems.append("working fields ship in the data: %s" % ", ".join(sorted(set(leak))[:5]))
+        # Build 74. The opener leaves nothing hidden or clipped once it is over,
+        # and plays once per visit.
+        await ap.goto(URL)
+        await ap.wait_for_timeout(3200)
+        rest = await ap.evaluate(
+            "(()=>{const h=document.getElementById('hl');"
+            "return {clip:h.style.clipPath||'',pre:document.querySelectorAll('.pre').length,"
+            "beads:document.querySelectorAll('.pbead').length}})()")
+        print("opener at rest  :", rest)
+        if rest["clip"] or rest["pre"] or rest["beads"]:
+            problems.append("the opener leaves the hero clipped or hidden: %s" % rest)
         if aerr:
             problems.append("audit checks: page errors %s" % aerr[:2])
         # the page and the served copy ship the deck and nothing held off it
@@ -1496,6 +1555,127 @@ async def main():
         if extra:
             problems.append("docs/ serves files that are not the tool: %s" % ", ".join(extra))
         await a7.close()
+
+        # Build 78. The phone pass, on a touch device at 390.
+        mctx = await b.new_context(viewport={"width": 390, "height": 844}, is_mobile=True,
+                                   has_touch=True, device_scale_factor=2)
+        mp = await mctx.new_page()
+        await mp.add_init_script("try{sessionStorage.setItem('rolodex-opened','1')}catch(e){}")
+        await mp.goto(URL)
+        await mp.wait_for_timeout(900)
+        ph = await mp.evaluate(
+            "(()=>{const q=document.getElementById('q');"
+            "const adds=[...document.querySelectorAll('#stageList .rowadd')].filter(b=>b.offsetParent);"
+            "return {q:parseFloat(getComputedStyle(q).fontSize),"
+            "add:Math.min(...adds.map(b=>Math.min(b.offsetWidth,b.offsetHeight))),"
+            "hfl:getComputedStyle(document.querySelector('#stageList td.hf'),'::before').display}})()")
+        # reading down slides the top of the bar away; a move up brings it back
+        await mp.evaluate("window.scrollTo(0,1400)")
+        await mp.wait_for_timeout(120)
+        await mp.evaluate("window.scrollTo(0,1800)")
+        await mp.wait_for_timeout(300)
+        down = await mp.evaluate("document.documentElement.classList.contains('navup')")
+        vtop = await mp.evaluate("document.querySelector('.navtools .seg.views').getBoundingClientRect().top")
+        await mp.evaluate("window.scrollTo(0,1700)")
+        await mp.wait_for_timeout(300)
+        back = not await mp.evaluate("document.documentElement.classList.contains('navup')")
+        print("phone bar       : search %.0fpx, + %dpx, slides away %s (views at %.0fpx), returns %s"
+              % (ph["q"], ph["add"], down, vtop, back))
+        if ph["q"] < 16:
+            problems.append("the search box is under 16px on a phone, so iOS zooms the page")
+        if ph["add"] < 40:
+            problems.append("a List + is under 40px on a phone")
+        if ph["hfl"] != "none":
+            problems.append("the List card still labels its headline figure on a phone")
+        if not down or vtop < -1 or vtop > 12 or not back:
+            problems.append("the phone bar does not slide away and back with the view switcher left on screen")
+        # every filter menu opens inside the screen
+        await mp.evaluate("window.scrollTo(0,0)")
+        offm = []
+        for i in range(await mp.locator('.fsel > button').count()):
+            bt = mp.locator('.fsel > button').nth(i)
+            await bt.scroll_into_view_if_needed()
+            await bt.tap()
+            await mp.wait_for_timeout(200)
+            r = await mp.evaluate("(()=>{const m=document.getElementById('fmenu');if(!m)return null;"
+                                  "const r=m.getBoundingClientRect();return [Math.round(r.left),Math.round(r.right),"
+                                  "document.documentElement.scrollWidth-document.documentElement.clientWidth]})()")
+            if r and (r[0] < 0 or r[1] > 390 or r[2] > 0):
+                offm.append((i, r))
+            await bt.tap()
+            await mp.wait_for_timeout(150)
+        print("phone menus     :", "all inside" if not offm else offm)
+        if offm:
+            problems.append("a filter menu opens past the edge of a phone: %r" % offm)
+        # every Market figure fits the column, and the tables start closed
+        await mp.evaluate("window.scrollTo(0,0);document.getElementById('vMarket').click()")
+        await mp.wait_for_timeout(700)
+        figs = await mp.evaluate(
+            "[...document.querySelectorAll('.figs .fwrap')].map(w=>[w.closest('.figs').querySelector('h3').textContent.slice(0,30),"
+            "w.scrollWidth-w.clientWidth])")
+        wide = [f for f in figs if f[1] > 1]
+        opened = await mp.evaluate("document.querySelectorAll('.figs details.ftable[open]').length")
+        srch = await mp.evaluate("getComputedStyle(document.getElementById('q')).display")
+        print("phone market    : %d figures, %d wider than the column, %d tables open, search %s"
+              % (len(figs), len(wide), opened, srch))
+        if wide:
+            problems.append("market figures run past a phone column: %s" % wide)
+        if opened:
+            problems.append("market tables start open on a phone")
+        if srch != "none":
+            problems.append("the search box shows on the Market view on a phone")
+        # a tap on a mark shows its tip, on screen, and a tap elsewhere hides it
+        await mp.locator("#figClosings .bar").first.tap()
+        await mp.wait_for_timeout(250)
+        tp = await mp.evaluate(
+            "(()=>{const t=document.getElementById('tip');const r=t.getBoundingClientRect();"
+            "return {shown:!t.hidden,in:r.left>=0&&r.right<=innerWidth&&r.top>=0&&r.bottom<=innerHeight}})()")
+        await mp.locator("#figClosings h3").tap()
+        await mp.wait_for_timeout(200)
+        gone = await mp.evaluate("document.getElementById('tip').hidden")
+        print("phone chart tip :", tp, "| hides on a tap elsewhere", gone)
+        if not tp["shown"] or not tp["in"] or not gone:
+            problems.append("a chart tip does not show on a tap, sits off screen, or stays: %r %r" % (tp, gone))
+        # the code tables stack
+        await mp.evaluate("document.getElementById('vField').click()")
+        await mp.wait_for_timeout(500)
+        ct = await mp.evaluate(
+            "[...document.querySelectorAll('.ctab')].map(t=>t.parentElement.scrollWidth-t.parentElement.clientWidth)")
+        print("phone code table:", ct)
+        if any(x > 1 for x in ct):
+            problems.append("the code tables scroll sideways on a phone")
+        # a firm page carries its two actions at the bottom edge
+        await mp.evaluate("document.getElementById('vList').click()")
+        await mp.wait_for_timeout(300)
+        await mp.evaluate("window.rolodex.open(%r)" % PROBE_ID)
+        await mp.wait_for_timeout(500)
+        fb = await mp.evaluate(
+            "(()=>{const f=document.querySelector('#firmBody .firmbar');if(!f)return null;const r=f.getBoundingClientRect();"
+            "return {bottom:Math.round(innerHeight-r.bottom),h:Math.round(r.height),"
+            "add:!!f.querySelector('[data-add]'),back:!!f.querySelector('[data-back]')}})()")
+        n0 = await mp.inner_text("#clN")
+        await mp.evaluate("document.querySelector('#firmBody .firmbar [data-add]').click()")
+        await mp.wait_for_timeout(200)
+        n1 = await mp.inner_text("#clN")
+        await mp.evaluate("document.querySelector('#firmBody .firmbar [data-add]').click()")
+        await mp.evaluate("document.querySelector('#firmBody .firmbar [data-back]').click()")
+        await mp.wait_for_timeout(400)
+        left = await mp.evaluate("!document.getElementById('stageFirm').classList.contains('on')")
+        print("phone firm bar  :", fb, "| add", n0, "->", n1, "| back leaves the firm", left)
+        if not fb or fb["bottom"] != 0 or not fb["add"] or not fb["back"]:
+            problems.append("the firm page has no action bar at the bottom of a phone: %r" % fb)
+        if n0 == n1:
+            problems.append("the firm bar's add does not reach the call list")
+        if not left:
+            problems.append("the firm bar's back does not leave the firm page")
+        await mctx.close()
+        # and none of it shows on a desktop
+        await pg.evaluate("window.rolodex.open(%r)" % PROBE_ID)
+        await pg.wait_for_timeout(300)
+        dsk = await pg.evaluate("getComputedStyle(document.querySelector('#firmBody .firmbar')).display")
+        await pg.evaluate("document.getElementById('back').click()")
+        if dsk != "none":
+            problems.append("the phone firm bar shows on a desktop")
 
         await b.close()
 
