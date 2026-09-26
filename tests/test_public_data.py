@@ -107,12 +107,16 @@ class PublicData(unittest.TestCase):
 
     def test_every_card_says_what_kind_of_firm_it_is(self):
         for mk, d in self.data.items():
-            labels = d.get("role_labels") or {}
+            labels = dict(d.get("types") or [])
             for t in d["targets"]:
-                self.assertIn(t.get("role"), ("buyer", "client", "land"), (mk, t["target_id"]))
-                self.assertIn(t["role"], labels, (mk, t["target_id"]))
-                self.assertTrue((t.get("kind") or "").strip(), (mk, t["target_id"]))
-                self.assertLessEqual(len(t["kind"].split()), 9, (mk, t["target_id"], t["kind"]))
+                self.assertIn(t.get("type"), labels, (mk, t["target_id"]))
+                self.assertLessEqual(len(labels[t["type"]].split()), 3, (mk, t["type"]))
+                # Build 90. No verdict on the card about who would buy a printer.
+                self.assertNotIn("role", t, (mk, t["target_id"]))
+                self.assertNotIn("kind", t, (mk, t["target_id"]))
+            # Nor an old role vocabulary served beside the cards.
+            for k in ("role_labels", "role_notes", "roles"):
+                self.assertNotIn(k, d, (mk, k))
 
     def test_screen_lines_state_facts(self):
         argue = re.compile(r"\b(%s)\b" % "|".join(audit13.BANNED), re.I)

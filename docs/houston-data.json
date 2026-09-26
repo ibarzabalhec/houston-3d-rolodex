@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 89,
+ "build": 90,
  "last_updated": "2026-09-26",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-26",
  "kicker": "Rolodex · Greater Houston · 2026-09-26",
@@ -35,42 +35,32 @@
    null
   ],
   [
-   "82",
-   "printer buyers",
-   false,
-   {
-    "role": [
-     "buyer"
-    ]
-   }
-  ],
-  [
-   "36",
-   "clients",
-   false,
-   {
-    "role": [
-     "client"
-    ]
-   }
-  ],
-  [
-   "8",
-   "land owners",
-   false,
-   {
-    "role": [
-     "land"
-    ]
-   }
-  ],
-  [
    "3",
    "already buying printed walls",
    false,
    {
     "group": [
      "adopter"
+    ]
+   }
+  ],
+  [
+   "3",
+   "builders and developers hold all three counts",
+   false,
+   {
+    "group": [
+     "a"
+    ]
+   }
+  ],
+  [
+   "50",
+   "contractors and plants",
+   false,
+   {
+    "group": [
+     "trade"
     ]
    }
   ],
@@ -127,17 +117,7 @@
    "fail": "No"
   }
  },
- "axis_titles": {
-  "repeatability": "Repetition: builds the same plans, in one place",
-  "machine_fit": "Printer fit: one or two printers would cover it",
-  "innovation": "Track record: has paid for a new building method before"
- },
  "matrix_note": "<b>4 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>1</b> of the 4 holds all three counts.",
- "role_labels": {
-  "buyer": "Printer buyer",
-  "client": "Client",
-  "land": "Land owner"
- },
  "signal_labels": {
   "method_risk": "Method risk absorbed",
   "repeatable": "Repeatable volume",
@@ -19353,8 +19333,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Homebuilder, printed homes"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-016",
@@ -19491,8 +19470,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Homebuilder, printed homes"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-017",
@@ -19593,8 +19571,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Homebuilder, printed duplex"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-123",
@@ -19692,8 +19669,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "ICF homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-001",
@@ -19859,8 +19835,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Build-to-rent developer and builder"
+   "type": "btr"
   },
   {
    "target_id": "HOU-126",
@@ -19952,8 +19927,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Modular homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-060",
@@ -20067,8 +20041,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-061",
@@ -20183,8 +20156,7 @@
      "what": "Projects 70 closings in 2026, up from about 45 in 2025. Its founder co-founded the outlet's publisher."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-073",
@@ -20273,8 +20245,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-168",
@@ -20432,8 +20403,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production and rental homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-003",
@@ -20543,8 +20513,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Public housing authority"
+   "type": "agency"
   },
   {
    "target_id": "HOU-130",
@@ -20668,8 +20637,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-074",
@@ -20745,8 +20713,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Entry-level homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-131",
@@ -20919,8 +20886,7 @@
      "what": "Released six single-story plans at Chambers Creek in Willis, a 55-and-over community it develops itself."
     }
    ],
-   "role": "buyer",
-   "kind": "Active-adult homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-010",
@@ -21071,8 +21037,7 @@
      "what": "Promoted John Devens, corporate vice president of construction and purchasing since 2017, to Houston division president."
     }
    ],
-   "role": "buyer",
-   "kind": "Build-to-rent builder and owner"
+   "type": "btr"
   },
   {
    "target_id": "HOU-022",
@@ -21191,8 +21156,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-136",
@@ -21304,8 +21268,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Build-to-rent builder"
+   "type": "btr"
   },
   {
    "target_id": "HOU-122",
@@ -21415,8 +21378,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom homebuilder, concrete panel walls"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-007",
@@ -21574,8 +21536,7 @@
      "what": "Began building in the 256-acre Cielo community in Conroe with six floor plans."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-004",
@@ -21699,8 +21660,7 @@
      "what": "Sold the 300th home at Kolbe Farms in Spring Branch and launched its final phase of about 100 lots."
     }
    ],
-   "role": "buyer",
-   "kind": "Townhome builder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-127",
@@ -21782,8 +21742,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Manufactured-home community developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-125",
@@ -21881,8 +21840,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-124",
@@ -21962,8 +21920,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom coastal homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-135",
@@ -22077,8 +22034,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Build-on-your-lot homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-068",
@@ -22212,8 +22168,7 @@
      "what": "One of four builders at The Trails in New Caney, which opened a second phase of 344 lots."
     }
    ],
-   "role": "buyer",
-   "kind": "Semi-custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-064",
@@ -22316,8 +22271,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Affordable production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-076",
@@ -22395,8 +22349,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Entry-level homebuilder, a David Weekley line"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-071",
@@ -22505,8 +22458,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Family homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-063",
@@ -22595,8 +22547,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Family homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-066",
@@ -22720,8 +22671,7 @@
      "what": "Opened Garden Homes on 34th, a 12-home gated community in Garden Oaks with two plans."
     }
    ],
-   "role": "buyer",
-   "kind": "Infill homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-062",
@@ -22833,8 +22783,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-128",
@@ -22950,8 +22899,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Commercial property owner"
+   "type": "owner"
   },
   {
    "target_id": "HOU-020",
@@ -23069,8 +23017,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Industrial and rental developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-075",
@@ -23174,8 +23121,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-026",
@@ -23279,8 +23225,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Build-to-rent operator"
+   "type": "btr"
   },
   {
    "target_id": "HOU-033",
@@ -23417,8 +23362,7 @@
      "what": "One of four builders at The Trails in New Caney, which opened a second phase of 344 lots."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder, a Dream Finders brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-069",
@@ -23533,8 +23477,7 @@
      "what": "Started pre-sales on 40-foot lots at The George in Richmond, planned for 4,000 homes."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-077",
@@ -23654,8 +23597,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-035",
@@ -23793,8 +23735,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Nonprofit housing developer"
+   "type": "nonprofit"
   },
   {
    "target_id": "HOU-045",
@@ -23908,8 +23849,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-067",
@@ -24020,8 +23960,7 @@
      "what": "Began sales on 60-foot homesites at The George, a 1,500-acre Richmond community planned for 4,000 homesites."
     }
    ],
-   "role": "buyer",
-   "kind": "Semi-custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-044",
@@ -24135,8 +24074,7 @@
      "what": "Its 156-duplex build-to-rent community in Katy was due to open near the end of the second quarter of 2026, and the 210-duplex Landing at Katy Pointe in the third."
     }
    ],
-   "role": "buyer",
-   "kind": "Build-to-rent builder"
+   "type": "btr"
   },
   {
    "target_id": "HOU-070",
@@ -24232,8 +24170,7 @@
      "what": "Joined Cross Creek West in Fulshear in 2026 and builds on 60-foot lots in the new north tract."
     }
    ],
-   "role": "buyer",
-   "kind": "Semi-custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-028",
@@ -24343,8 +24280,7 @@
      "what": "Opened Boardwalk Square in Katy, 353 mid-rise apartments that its own affiliates designed and built."
     }
    ],
-   "role": "buyer",
-   "kind": "Apartment developer with its own builder"
+   "type": "developer"
   },
   {
    "target_id": "HOU-152",
@@ -24438,8 +24374,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Steel framing contractor"
+   "type": "trade"
   },
   {
    "target_id": "HOU-146",
@@ -24554,8 +24489,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Wall panel and truss plant"
+   "type": "panel"
   },
   {
    "target_id": "HOU-139",
@@ -24665,8 +24599,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-120",
@@ -24769,8 +24702,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "ICF wall contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-104",
@@ -24886,8 +24818,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-156",
@@ -25000,8 +24931,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "HOU-101",
@@ -25131,8 +25061,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete placement contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-121",
@@ -25256,8 +25185,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Drywall and interiors contractor"
+   "type": "trade"
   },
   {
    "target_id": "HOU-162",
@@ -25327,8 +25255,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Shotcrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-143",
@@ -25430,8 +25357,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-129",
@@ -25557,8 +25483,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Design-build firm"
+   "type": "gc"
   },
   {
    "target_id": "HOU-157",
@@ -25650,8 +25575,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry and stone contractor"
+   "type": "masonry"
   },
   {
    "target_id": "HOU-137",
@@ -25760,8 +25684,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-117",
@@ -25867,8 +25790,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Apartment general contractor"
+   "type": "gc"
   },
   {
    "target_id": "HOU-147",
@@ -25973,8 +25895,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Building products supplier and panel plants"
+   "type": "panel"
   },
   {
    "target_id": "HOU-155",
@@ -26074,8 +25995,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "HOU-141",
@@ -26167,8 +26087,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-106",
@@ -26289,8 +26208,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-102",
@@ -26434,8 +26352,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "General contractor with its own concrete crews"
+   "type": "gc"
   },
   {
    "target_id": "HOU-142",
@@ -26537,8 +26454,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-112",
@@ -26627,8 +26543,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-151",
@@ -26727,8 +26642,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Wall panel plants"
+   "type": "panel"
   },
   {
    "target_id": "HOU-149",
@@ -26824,8 +26738,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Wall panel and truss plant"
+   "type": "panel"
   },
   {
    "target_id": "HOU-144",
@@ -26902,8 +26815,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-138",
@@ -26987,8 +26899,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Hollowcore plank plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-105",
@@ -27091,8 +27002,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-145",
@@ -27179,8 +27089,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-114",
@@ -27307,8 +27216,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor, tilt-up"
+   "type": "gc"
   },
   {
    "target_id": "HOU-165",
@@ -27385,8 +27293,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Foundation contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-161",
@@ -27465,8 +27372,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete pumping company"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-103",
@@ -27565,8 +27471,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-140",
@@ -27648,8 +27553,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "HOU-150",
@@ -27751,8 +27655,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Truss and wall panel plant"
+   "type": "panel"
   },
   {
    "target_id": "HOU-159",
@@ -27839,8 +27742,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "HOU-158",
@@ -27925,8 +27827,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "HOU-164",
@@ -28013,8 +27914,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-153",
@@ -28093,8 +27993,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Light-gauge steel fabricator"
+   "type": "panel"
   },
   {
    "target_id": "HOU-113",
@@ -28201,8 +28100,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up and structural concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-160",
@@ -28291,8 +28189,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete pumping company"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-163",
@@ -28402,8 +28299,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential foundation contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-148",
@@ -28488,8 +28384,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Wall panel and truss plant"
+   "type": "panel"
   },
   {
    "target_id": "HOU-118",
@@ -28577,8 +28472,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Shell contractor"
+   "type": "trade"
   },
   {
    "target_id": "HOU-115",
@@ -28722,8 +28616,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor"
+   "type": "gc"
   },
   {
    "target_id": "HOU-111",
@@ -28838,8 +28731,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-119",
@@ -28947,8 +28839,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor, ICF and tilt-wall"
+   "type": "gc"
   },
   {
    "target_id": "HOU-109",
@@ -29044,8 +28935,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete and civil contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-107",
@@ -29141,8 +29031,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Site and concrete subcontractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-116",
@@ -29245,8 +29134,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor"
+   "type": "gc"
   },
   {
    "target_id": "HOU-108",
@@ -29349,8 +29237,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up and site concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-110",
@@ -29435,8 +29322,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete and metal building contractor"
+   "type": "concrete"
   },
   {
    "target_id": "HOU-006",
@@ -29575,8 +29461,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Apartment and mixed-use developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-072",
@@ -29699,8 +29584,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom homebuilder, build on your lot"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-083",
@@ -29793,8 +29677,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Retail and office developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-005",
@@ -29923,8 +29806,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Mixed-use developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-081",
@@ -30032,8 +29914,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Investment and development firm"
+   "type": "developer"
   },
   {
    "target_id": "HOU-036",
@@ -30163,8 +30044,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Mixed-use developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-037",
@@ -30249,8 +30129,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Adaptive-reuse developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-082",
@@ -30342,8 +30221,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Commercial developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-038",
@@ -30456,8 +30334,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Property manager"
+   "type": "manager"
   },
   {
    "target_id": "HOU-080",
@@ -30577,8 +30454,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Adaptive-reuse developer"
+   "type": "developer"
   },
   {
    "target_id": "HOU-132",
@@ -30744,8 +30620,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-167",
@@ -30868,8 +30743,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-009",
@@ -31005,8 +30879,7 @@
      "what": "Opened in Sunterra Lakes, Brookshire, with two home collections."
     }
    ],
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-134",
@@ -31116,8 +30989,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-014",
@@ -31233,8 +31105,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-012",
@@ -31351,8 +31222,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-008",
@@ -31474,8 +31344,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-025",
@@ -31582,8 +31451,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-024",
@@ -31707,8 +31575,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-023",
@@ -31840,8 +31707,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-013",
@@ -31952,8 +31818,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-034",
@@ -32061,8 +31926,7 @@
    "has_decider": true,
    "decider_confirmed": false,
    "decider_caveat": true,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-011",
@@ -32233,8 +32097,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-015",
@@ -32366,8 +32229,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-041",
@@ -32453,8 +32315,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-133",
@@ -32599,8 +32460,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-039",
@@ -32694,8 +32554,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-040",
@@ -32771,8 +32630,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-043",
@@ -32849,8 +32707,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "HOU-166",
@@ -32977,8 +32834,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder, Houston division"
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-042",
@@ -33054,8 +32910,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer, owned by Lennar"
+   "type": "land"
   },
   {
    "target_id": "HOU-078",
@@ -33140,15 +32995,67 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Entry-level and move-up homebuilder, owned by Lennar"
+   "type": "homebuilder"
   }
  ],
- "role_notes": {
-  "buyer": "Would own and run the printer: small and mid-sized builders, the Titan market ICON names, and the contractors and plants that build walls.",
-  "client": "Pays a builder or contractor to build: developers, owners, public agencies, general contractors that hire out their walls, and national builders, which buy through a national desk.",
-  "land": "Sells lots to builders."
- },
+ "types": [
+  [
+   "homebuilder",
+   "Homebuilder"
+  ],
+  [
+   "btr",
+   "Build-to-rent"
+  ],
+  [
+   "developer",
+   "Developer"
+  ],
+  [
+   "land",
+   "Land developer"
+  ],
+  [
+   "owner",
+   "Owner"
+  ],
+  [
+   "manager",
+   "Property manager"
+  ],
+  [
+   "agency",
+   "Public agency"
+  ],
+  [
+   "nonprofit",
+   "Nonprofit"
+  ],
+  [
+   "gc",
+   "GC"
+  ],
+  [
+   "concrete",
+   "Concrete contractor"
+  ],
+  [
+   "precast",
+   "Precast plant"
+  ],
+  [
+   "panel",
+   "Panel plant"
+  ],
+  [
+   "masonry",
+   "Masonry contractor"
+  ],
+  [
+   "trade",
+   "Trade contractor"
+  ]
+ ],
  "reel": {
   "place": "Greater Houston",
   "key": "houston",

@@ -48,7 +48,7 @@ ws.title = "Contacts"
 
 COLS = [
     ("Name", 26), ("Firm", 34), ("Title", 34), ("Group", 26), ("Holds", 7),
-    ("Role", 14), ("Kind", 30), ("Region", 30), ("Headline", 30),
+    ("Type", 20), ("Region", 30), ("Headline", 30),
     ("Repetition", 12), ("Repetition why", 48),
     ("Printer fit", 12), ("Printer fit why", 48),
     ("Track record", 13), ("Track record why", 48),
@@ -98,7 +98,7 @@ rows = []
 for t in T:
     base = dict(
         firm=t["entity_name"], tier=GROUP[t["group"]], score=t["holds"],
-        role=D["role_labels"][t["role"]], kind=t["kind"],
+        type=dict(D["types"])[t["type"]],
         region=t["region"], stat=t.get("key_stat") or "",
         rep=WORD[t["marks"]["repeatability"]], wall=WORD[t["marks"]["machine_fit"]],
         inn=WORD[t["marks"]["innovation"]],
@@ -173,7 +173,7 @@ ws.row_dimensions[HDR].height = 22
 WRAP = {CI(n) for n in ("Repetition why", "Printer fit why", "Track record why",
                         "Screen result", "How this person was verified")}
 CENTRE = [CI(n) for n in ("Holds", "Repetition", "Printer fit", "Track record")]
-KEYS = ["name", "firm", "title", "tier", "score", "role", "kind", "region", "stat",
+KEYS = ["name", "firm", "title", "tier", "score", "type", "region", "stat",
         "rep", "repw", "wall", "wallw", "inn", "innw",
         "li", None, None, "url", "screen", "dec", "ev", "bio", "cli", "team", "press",
         "phone", "phonelab", "phonesrc", "email", "emailsrc"]

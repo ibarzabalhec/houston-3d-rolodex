@@ -146,13 +146,15 @@ for _t in D["targets"]:
         _sc.append("%s argues (%r): %s" % (_t["short"], _m.group(0), _s[:80]))
     if len(_s.split()) > 26 or len(re.findall(r"[a-z0-9)]\. [A-Z0-9]", _s)) > 1:
         _sc.append("%s runs long: %s" % (_t["short"], _s[:80]))
-    if not _t.get("kind") or _t.get("role") not in ("buyer", "client", "land"):
-        _sc.append("%s has no role or kind" % _t["short"])
+    if _t.get("type") not in dict(D.get("types") or []):
+        _sc.append("%s has no type" % _t["short"])
+    if "role" in _t or "kind" in _t:
+        _sc.append("%s still carries a Build 88 role or kind" % _t["short"])
 if _sc:
     for _b in _sc[:20]:
         print("   " + _b)
-    raise SystemExit("FAILED: a screen line argues instead of stating facts, or a card has no role")
-print("screen facts    : %d lines, none argues, each card has a role and a kind"
+    raise SystemExit("FAILED: a screen line argues instead of stating facts, or a card has no type")
+print("screen facts    : %d lines, none argues, each card has a type"
       % sum(1 for t in D["targets"] if t["group"] != "out"))
 
 _rh, _words = [], 0
@@ -652,21 +654,22 @@ async def main():
         await pg.wait_for_timeout(250)
 
         # The stat strip has to name what it counts. It once said "clear" for a
-        # number that counts holds, where a partial still counts. Build 87: it
-        # counts the three roles, each in the page's own words.
-        strip = await pg.eval_on_selector_all(".stat", "e=>e.map(x=>x.textContent.toLowerCase())")
-        got_roles = []
-        for role, one, many in (("buyer", "printer buyer", "printer buyers"), ("client", "client", "clients"),
-                                ("land", "land owner", "land owners")):
-            want = sum(1 for t in D["targets"] if t["group"] != "out" and t.get("role") == role)
-            if not want:
-                continue
-            word = one if want == 1 else many
-            hit = [x for x in strip if x.strip() == "%d%s" % (want, word)]
-            got_roles.append("%s %d" % (role, want))
-            if not hit:
-                problems.append("the strip does not count %d %s" % (want, word))
-        print("stat strip      : roles", ", ".join(got_roles))
+        # number that counts holds, where a partial still counts. Build 90: the
+        # strip is the List's own order and words again, as before Build 88.
+        strip = await pg.eval_on_selector_all(".stat", "e=>e.map(x=>x.textContent)")
+        want_a = sum(1 for t in D["targets"] if t["group"] == "a")
+        lab = [x for x in strip if "all three counts" in x]
+        print("stat strip      :", lab)
+        # Build 66: the number is the section, builders and developers holding
+        # all three. Adopters and contractors holding all three are in their own
+        # sections, so the label has to say whose count it is.
+        if not lab or (not re.search(r"(holding|hold) all three counts", lab[0])
+                       or "builders and developers" not in lab[0]):
+            problems.append("the three-count stat does not say whose holds it counts")
+        if str(want_a) not in (lab[0] if lab else ""):
+            problems.append("the three-count stat does not match the group count")
+        if any("printer buyer" in x.lower() for x in strip):
+            problems.append("the strip still counts printer buyers")
 
         # A firm that is both already printing and method-clear kept the black
         # ground and silently lost the accent the legend promises.
@@ -1011,7 +1014,7 @@ async def main():
         # the section filter reaches it
         await pg.evaluate("document.getElementById('vMatrix').click()")
         await pg.wait_for_timeout(250)
-        await pg.click('.fsel > button >> nth=0')
+        await pg.click('.fsel[data-kind="group"] > button')
         await pg.wait_for_timeout(200)
         opt = await pg.locator('#fmenu [data-f="group:trade"]').count()
         if opt != 1:
@@ -1958,50 +1961,65 @@ async def main():
         if in_artifact:
             problems.append("the artifact copy carries the page policy")
 
-        # Build 87. A card says what kind of firm it is before anything else: its
-        # role in a printer sale and its kind sit above the name. The screen comes
-        # next, then who to call. One card per role is opened.
+        # Build 90. A card opens on what the firm is: its type above the name, then
+        # The firm, then The screen. No verdict about who would buy a printer. One
+        # card of each type is opened.
         deck = [t for t in D["targets"] if t["group"] != "out"]
+        TL = dict(D["types"])
         firsts = []
-        for role in ("buyer", "client", "land"):
-            t = next((x for x in deck if x.get("role") == role and x.get("principals")), None)
-            if not t:
-                continue
+        for key, label in D["types"]:
+            t = next((x for x in deck if x["type"] == key), None)
             await pg.goto(URL)
-            await pg.wait_for_timeout(300)
-            await pg.evaluate("id=>window.rolodex.open(id)", t["target_id"])
             await pg.wait_for_timeout(250)
+            await pg.evaluate("id=>window.rolodex.open(id)", t["target_id"])
+            await pg.wait_for_timeout(200)
             top = await pg.evaluate("""(()=>{const h=document.querySelector('#firmBody .fhead');
               const k=h&&h.firstElementChild;
               const labs=[...document.querySelectorAll('#firmBody > .row > .lab')].map(x=>x.textContent);
-              return {first:k?k.className:'', chip:k?(k.querySelector('.rk')||{}).className||'':'',
-                      kind:k?(k.querySelector('.fkind')||{}).textContent||'':'', labs:labs.slice(0,2)}})()""")
-            firsts.append("%s %s" % (role, top["labs"]))
-            if top["first"] != "fkick" or ("rk " + role) not in top["chip"] or top["kind"] != t["kind"]:
-                problems.append("%s does not open on its role and kind: %s" % (t["short"], top))
-            if top["labs"] != ["The screen", "Who to call"]:
-                problems.append("%s: the screen and who to call are not the first two sections: %s"
+              return {first:k?k.className:'', text:k?k.textContent:'', labs:labs.slice(0,2),
+                      verdict:/printer buyer/i.test(h?h.textContent:'')}})()""")
+            firsts.append(label)
+            if top["first"] != "ftype" or top["text"] != label or top["verdict"]:
+                problems.append("%s does not open on its type: %s" % (t["short"], top))
+            if top["labs"] != ["The firm", "The screen"]:
+                problems.append("%s: the firm and the screen are not the first two sections: %s"
                                 % (t["short"], top["labs"]))
-        print("card top        : role and kind above the name, then", "; ".join(firsts))
+        print("card top        : type above the name, then The firm and The screen, on",
+              len(firsts), "types")
 
-        # The role switch counts each role and returns it.
+        # Build 90. Each List row carries its type, and the Type menu returns what
+        # it counts.
         await pg.goto(URL)
         await pg.wait_for_timeout(300)
-        rb = await pg.evaluate("""[...document.querySelectorAll('.rolebar button')].map(b=>
-            [b.dataset.role,+(b.querySelector('s')||{}).textContent])""")
+        await pg.evaluate("document.getElementById('vList').click()")
+        await pg.wait_for_timeout(200)
+        rowt = await pg.evaluate("""[...document.querySelectorAll('#tb tr .fbtn2')].map(b=>
+            [b.dataset.id,(b.closest('td').querySelector('.tp')||{}).textContent||''])""")
+        byid = {t["target_id"]: t for t in deck}
+        off = [i for i, lab in rowt if i in byid and lab != TL[byid[i]["type"]]]
+        if len(rowt) != len(deck) or off:
+            problems.append("List rows missing their type marker: %d rows, %d wrong" % (len(rowt), len(off)))
+        await pg.click('.fsel[data-kind="type"] > button')
+        await pg.wait_for_timeout(150)
+        menu = await pg.evaluate("""[...document.querySelectorAll('#fmenu button')].map(b=>
+            [b.dataset.f,+(b.querySelector('s')||{}).textContent])""")
         seen = []
-        for role, n in rb:
-            want = sum(1 for t in deck if not role or t.get("role") == role)
-            await pg.evaluate("r=>document.querySelector('.rolebar button[data-role=\"'+r+'\"]').click()", role)
-            await pg.wait_for_timeout(150)
-            shown = await pg.evaluate("window.rolodex.shown().map(t=>t.role)")
-            seen.append("%s %d" % (role or "all", n))
-            if n != want or len(shown) != want or (role and set(shown) != {role}):
-                problems.append("the role switch %r counts %d, returns %d, wants %d" % (role, n, len(shown), want))
-        print("role switch     :", ", ".join(seen))
+        for f, n in menu:
+            key = f.split(":", 1)[1]
+            want = sum(1 for t in deck if t["type"] == key)
+            await pg.evaluate("k=>window.rolodex.setFilters({type:[k]})", key)
+            shown = await pg.evaluate("window.rolodex.shown().map(t=>t.type)")
+            seen.append("%s %d" % (TL[key], n))
+            if n != want or len(shown) != want or set(shown) != {key}:
+                problems.append("the Type menu's %s counts %d, returns %d, wants %d" % (key, n, len(shown), want))
+        if len(menu) != len(D["types"]):
+            problems.append("the Type menu lists %d types, the deck has %d" % (len(menu), len(D["types"])))
+        await pg.evaluate("window.rolodex.setFilters({})")
+        print("type menu       :", ", ".join(seen))
+        if await pg.locator(".rolebar, .rolekey, .rk").count():
+            problems.append("the Build 88 role switch, key or chips still render")
 
         # The List's column labels stay under the navigation while the list scrolls.
-        await pg.evaluate("document.querySelector('.rolebar button[data-role=\"\"]').click()")
         await pg.evaluate("document.getElementById('vList').click()")
         await pg.wait_for_timeout(200)
         await pg.evaluate("document.getElementById('tb').scrollIntoView();window.scrollBy(0,2400)")

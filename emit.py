@@ -36,6 +36,9 @@ PRIVATE = ("audit_flags", "phone_rule", "phone_shared", "off_reason", "last_veri
 # The reel and the ties read some of these, so they are dropped after both run.
 UNREAD = ("tier", "scores", "capital_mark", "hue_hex", "tail", "categories", "entity_type", "entity_role",
           "channel_builders", "clears", "holds", "deciders", "people_absent")
+# Build 90. Market-level fields the page never reads. role_labels is the role
+# vocabulary from before Build 88, still written by build.py for its own use.
+UNREAD_TOP = ("role_labels", "axis_titles")
 
 
 def public(d, mk):
@@ -59,6 +62,8 @@ def public(d, mk):
     for t in d["targets"]:
         for k in UNREAD:
             t.pop(k, None)
+    for k in UNREAD_TOP:
+        d.pop(k, None)
     return d
 
 

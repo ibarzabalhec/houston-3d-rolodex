@@ -10,12 +10,13 @@ reader draws the conclusion.
 
 SCREEN maps a card to the first eight hex digits of the SHA-1 of the line it
 replaces, then the new line. A card whose line changed upstream stops the build,
-so a later fix is never overwritten by this layer. roles.py then sets each card's
-role and kind, and the stat strip counts the roles.
+so a later fix is never overwritten by this layer. firm_types.py then sets each
+card's type. Build 88 set a role and a kind here instead, and counted them in the
+stat strip.
 """
 import hashlib
 
-import roles
+import firm_types
 
 BANNED = ("so", "but", "would", "could", "may", "might", "means", "route", "instead", "likely",
           "probably", "should")
@@ -524,26 +525,8 @@ def _h(s):
     return hashlib.sha1((s or "").encode("utf-8")).hexdigest()[:8]
 
 
-def strip(data):
-    """The stat strip in role order: the roster, the three roles, the firms
-    already buying printed walls, then the decision-maker share."""
-    deck = [t for t in data["targets"] if t.get("group") != "out"]
-    old = data.get("stat_strip") or []
-    first = [s for s in old if not s[3]]
-    adopt = [s for s in old if s[3] and s[3].get("group") == ["adopter"]]
-    dec = [s for s in old if s[3] and "dec" in s[3]]
-    words = {"buyer": ("printer buyer", "printer buyers"), "client": ("client", "clients"),
-             "land": ("land owner", "land owners")}
-    by_role = []
-    for r in roles.ROLES:
-        n = sum(1 for t in deck if t["role"] == r)
-        if n:
-            by_role.append([str(n), words[r][n != 1], False, {"role": [r]}])
-    data["stat_strip"] = first + by_role + [s for s in adopt if s[0] != "0"] + dec
-
-
 def final(data, market):
-    """Replace each screen line, then set roles and the strip. Returns problems."""
+    """Replace each screen line, then set each card's type. Returns problems."""
     bad = []
     for t in data["targets"]:
         if t.get("group") == "out":
@@ -557,6 +540,5 @@ def final(data, market):
             bad.append("%s: the screen line changed upstream; rewrite its audit13 entry" % tid)
             continue
         t["mvp_screen"] = new
-    roles.apply(data, market)
-    strip(data)
+    firm_types.apply(data, market)
     return bad

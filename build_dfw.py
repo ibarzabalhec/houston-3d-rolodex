@@ -503,7 +503,7 @@ def main():
             [str(n), "firms screened", False, None],
             [str(g["adopter"]), "already buying printed walls", False, {"group": ["adopter"]}],
             [str(g["a"]), "builders and developers hold all three counts", False, {"group": ["a"]}],
-            [str(g["trade"]), "contractors build the wall", False, {"group": ["trade"]}],
+            [str(g["trade"]), "contractors and plants", False, {"group": ["trade"]}],
             [str(n_dec), "of %d with a decision-maker named" % n, True, {"dec": "any"}],
         ],
         "sub": HOU["sub"],

@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 89,
+ "build": 90,
  "last_updated": "2026-09-26",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-26",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-26",
@@ -35,32 +35,22 @@
    null
   ],
   [
-   "75",
-   "printer buyers",
+   "2",
+   "builders and developers hold all three counts",
    false,
    {
-    "role": [
-     "buyer"
+    "group": [
+     "a"
     ]
    }
   ],
   [
-   "27",
-   "clients",
+   "39",
+   "contractors and plants",
    false,
    {
-    "role": [
-     "client"
-    ]
-   }
-  ],
-  [
-   "20",
-   "land owners",
-   false,
-   {
-    "role": [
-     "land"
+    "group": [
+     "trade"
     ]
    }
   ],
@@ -117,17 +107,7 @@
    "fail": "No"
   }
  },
- "axis_titles": {
-  "repeatability": "Repetition: builds the same plans, in one place",
-  "machine_fit": "Printer fit: one or two printers would cover it",
-  "innovation": "Track record: has paid for a new building method before"
- },
  "matrix_note": "<b>3 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>0</b> of the 3 hold all three counts.",
- "role_labels": {
-  "buyer": "Printer buyer",
-  "client": "Client",
-  "land": "Land owner"
- },
  "signal_labels": {
   "method_risk": "Method risk absorbed",
   "repeatable": "Repeatable volume",
@@ -17019,8 +16999,7 @@
      "what": "Near completion of The Reserve at Red Oak, 166 build-to-rent homes on 18 acres, leasing begun."
     }
    ],
-   "role": "buyer",
-   "kind": "Build-to-rent developer and builder"
+   "type": "btr"
   },
   {
    "target_id": "DFW-020",
@@ -17159,8 +17138,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-032",
@@ -17275,8 +17253,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-026",
@@ -17382,8 +17359,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-027",
@@ -17495,8 +17471,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production and custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-001",
@@ -17598,8 +17573,7 @@
      "what": "Delivered 651 newly built homes in the second quarter and kept 2026 guidance of 1,300 to 1,500 wholly owned deliveries."
     }
    ],
-   "role": "buyer",
-   "kind": "Single-family rental owner and builder"
+   "type": "btr"
   },
   {
    "target_id": "DFW-003b",
@@ -17697,8 +17671,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Townhome builder, a Green Brick brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-061",
@@ -17816,8 +17789,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder, run from Houston"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-003d",
@@ -17919,8 +17891,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Single-family and townhome builder, a Green Brick brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-005",
@@ -18075,8 +18046,7 @@
      "what": "Opened its 2026 development fund to wealth platforms to raise capital for new build-to-rent projects."
     }
    ],
-   "role": "client",
-   "kind": "Build-to-rent developer"
+   "type": "btr"
   },
   {
    "target_id": "DFW-014",
@@ -18186,8 +18156,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Move-up homebuilder, a Green Brick brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-045",
@@ -18289,8 +18258,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-003c",
@@ -18392,8 +18360,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Luxury homebuilder, a Green Brick brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-003a",
@@ -18538,8 +18505,7 @@
      "what": "Opened sales at Lone Oak in Alvarado, its Victory Series on 50-foot lots."
     }
    ],
-   "role": "buyer",
-   "kind": "Entry-level and move-up homebuilder, a Green Brick brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-079",
@@ -18627,8 +18593,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-006",
@@ -18723,8 +18688,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Build-to-rent developer and builder"
+   "type": "btr"
   },
   {
    "target_id": "DFW-029",
@@ -18844,8 +18808,7 @@
      "what": "Named one of five builders at Meraki in Forney, 1,079 acres with 406 first-phase homesites."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-078",
@@ -18952,8 +18915,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Townhome builder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-008",
@@ -19089,8 +19051,7 @@
      "what": "Hired Jomar Ereso as chief financial officer, based in Houston."
     }
    ],
-   "role": "buyer",
-   "kind": "Build-to-rent builder and owner"
+   "type": "btr"
   },
   {
    "target_id": "DFW-037",
@@ -19208,8 +19169,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Family homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-009",
@@ -19301,8 +19261,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Build-to-rent community"
+   "type": "btr"
   },
   {
    "target_id": "DFW-008",
@@ -19408,8 +19367,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-023",
@@ -19517,8 +19475,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Semi-custom production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-035",
@@ -19621,8 +19578,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Villa and townhome builder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-BTR-007",
@@ -19722,8 +19678,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Build-to-rent builder"
+   "type": "btr"
   },
   {
    "target_id": "DFW-043",
@@ -19846,8 +19801,7 @@
      "what": "Acquired more than 1,000 lots in Dallas, Prosper, Flower Mound and Mansfield, about $731 million."
     }
    ],
-   "role": "buyer",
-   "kind": "Semi-custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-021",
@@ -19962,8 +19916,7 @@
      "what": "Showed nine prototype homes of a new 50-foot series in Justin, to extend to Celina and Rockwall."
     }
    ],
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-034",
@@ -20061,8 +20014,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-022",
@@ -20167,8 +20119,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Homebuilder and developer"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-031",
@@ -20266,8 +20217,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Homebuilder, owned by Partners in Building"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-044",
@@ -20359,8 +20309,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-033",
@@ -20466,8 +20415,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-038",
@@ -20582,8 +20530,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Entry-level homebuilder, an Ashton Woods brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-030",
@@ -20692,8 +20639,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-081",
@@ -20809,8 +20755,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Move-up homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-028",
@@ -20910,8 +20855,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-024",
@@ -21011,8 +20955,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Luxury homebuilder, a Perry Homes brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-042",
@@ -21136,8 +21079,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production homebuilder, a Dream Finders brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-073",
@@ -21227,8 +21169,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Luxury homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-025",
@@ -21331,8 +21272,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Production and semi-custom homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-TR-051",
@@ -21401,8 +21341,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "ICF and concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-074",
@@ -21514,8 +21453,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Wall panel and truss plant"
+   "type": "panel"
   },
   {
    "target_id": "DFW-TR-050",
@@ -21600,8 +21538,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "ICF wall contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-092",
@@ -21694,8 +21631,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Exterior wall panel plant"
+   "type": "panel"
   },
   {
    "target_id": "DFW-TR-091",
@@ -21784,8 +21720,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Framing and interiors contractor"
+   "type": "trade"
   },
   {
    "target_id": "DFW-TR-040",
@@ -21898,8 +21833,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-093",
@@ -21980,8 +21914,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "SIP envelope contractor"
+   "type": "trade"
   },
   {
    "target_id": "DFW-TR-012",
@@ -22058,8 +21991,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Building materials dealer"
+   "type": "supplier"
   },
   {
    "target_id": "DFW-TR-010",
@@ -22132,8 +22064,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Truss and wall panel plant"
+   "type": "panel"
   },
   {
    "target_id": "DFW-TR-031",
@@ -22227,8 +22158,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "DFW-TR-026",
@@ -22315,8 +22245,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "General contractor with its own concrete crews"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-032",
@@ -22401,8 +22330,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "DFW-TR-085",
@@ -22486,8 +22414,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential foundation contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-064",
@@ -22579,8 +22506,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-030",
@@ -22702,8 +22628,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Precast concrete plant"
+   "type": "precast"
   },
   {
    "target_id": "DFW-TR-002",
@@ -22796,8 +22721,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-086",
@@ -22874,8 +22798,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry and stucco contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-083",
@@ -22968,8 +22891,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-081",
@@ -23052,8 +22974,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-084",
@@ -23142,8 +23063,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Foundation contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-089",
@@ -23212,8 +23132,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry and stucco contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-082",
@@ -23282,8 +23201,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry and stucco contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-088",
@@ -23366,8 +23284,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-042",
@@ -23464,8 +23381,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-079",
@@ -23538,8 +23454,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up general contractor"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-090",
@@ -23608,8 +23523,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-071",
@@ -23678,8 +23592,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry contractor"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-087",
@@ -23764,8 +23677,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Post-tension foundation company"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-022",
@@ -23853,8 +23765,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-020",
@@ -23949,8 +23860,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-041",
@@ -24038,8 +23948,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Masonry and precast installer"
+   "type": "masonry"
   },
   {
    "target_id": "DFW-TR-025",
@@ -24135,8 +24044,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Construction manager"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-027",
@@ -24242,8 +24150,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Tilt-up and structural concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-060",
@@ -24346,8 +24253,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Concrete pumping company"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-023",
@@ -24446,8 +24352,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Structural concrete contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-024",
@@ -24531,8 +24436,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-021",
@@ -24624,8 +24528,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "General contractor"
+   "type": "gc"
   },
   {
    "target_id": "DFW-TR-001",
@@ -24735,8 +24638,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Residential foundation contractor"
+   "type": "concrete"
   },
   {
    "target_id": "DFW-TR-011",
@@ -24824,8 +24726,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Truss and wall panel plant"
+   "type": "panel"
   },
   {
    "target_id": "DFW-047",
@@ -24913,8 +24814,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom homebuilder, SIP walls"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-048",
@@ -25021,8 +24921,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "buyer",
-   "kind": "Custom homebuilder, build on your lot"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-001",
@@ -25178,8 +25077,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-007",
@@ -25302,8 +25200,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-011",
@@ -25438,8 +25335,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-010",
@@ -25545,8 +25441,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-052",
@@ -25634,8 +25529,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-063",
@@ -25730,8 +25624,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder, a PulteGroup brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-060",
@@ -25831,8 +25724,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-064",
@@ -25930,8 +25822,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Active-adult homebuilder, a PulteGroup brand"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-003",
@@ -26065,8 +25956,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder and land developer"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-058",
@@ -26162,8 +26052,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-050",
@@ -26262,8 +26151,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-054",
@@ -26359,8 +26247,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-055",
@@ -26456,8 +26343,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-062",
@@ -26566,8 +26452,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-006",
@@ -26687,8 +26572,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-053",
@@ -26787,8 +26671,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-051",
@@ -26893,8 +26776,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National luxury homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-009",
@@ -27023,8 +26905,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-059",
@@ -27128,8 +27009,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   },
   {
    "target_id": "DFW-CH-015",
@@ -27232,8 +27112,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-021",
@@ -27321,8 +27200,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-001",
@@ -27447,8 +27325,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-018",
@@ -27549,8 +27426,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-003",
@@ -27663,8 +27539,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-014",
@@ -27761,8 +27636,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-008",
@@ -27865,8 +27739,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-020",
@@ -27966,8 +27839,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-016",
@@ -28062,8 +27934,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-004",
@@ -28151,8 +28022,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-007",
@@ -28256,8 +28126,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-002",
@@ -28376,8 +28245,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Land developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-011",
@@ -28482,8 +28350,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-019",
@@ -28580,8 +28447,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-009",
@@ -28672,8 +28538,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-017",
@@ -28770,8 +28635,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplan developer"
+   "type": "land"
   },
   {
    "target_id": "DFW-BTR-004",
@@ -28887,8 +28751,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "Single-family rental owner"
+   "type": "owner"
   },
   {
    "target_id": "DFW-CH-012",
@@ -28975,8 +28838,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-010",
@@ -29072,8 +28934,7 @@
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-005",
@@ -29176,8 +29037,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-CH-013",
@@ -29286,8 +29146,7 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "land",
-   "kind": "Masterplanned community"
+   "type": "masterplan"
   },
   {
    "target_id": "DFW-002",
@@ -29415,15 +29274,59 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false,
-   "role": "client",
-   "kind": "National homebuilder"
+   "type": "homebuilder"
   }
  ],
- "role_notes": {
-  "buyer": "Would own and run the printer: small and mid-sized builders, the Titan market ICON names, and the contractors and plants that build walls.",
-  "client": "Pays a builder or contractor to build: developers, owners, public agencies, general contractors that hire out their walls, and national builders, which buy through a national desk.",
-  "land": "Sells lots to builders."
- },
+ "types": [
+  [
+   "homebuilder",
+   "Homebuilder"
+  ],
+  [
+   "btr",
+   "Build-to-rent"
+  ],
+  [
+   "land",
+   "Land developer"
+  ],
+  [
+   "masterplan",
+   "Masterplan"
+  ],
+  [
+   "owner",
+   "Owner"
+  ],
+  [
+   "gc",
+   "GC"
+  ],
+  [
+   "concrete",
+   "Concrete contractor"
+  ],
+  [
+   "precast",
+   "Precast plant"
+  ],
+  [
+   "panel",
+   "Panel plant"
+  ],
+  [
+   "masonry",
+   "Masonry contractor"
+  ],
+  [
+   "trade",
+   "Trade contractor"
+  ],
+  [
+   "supplier",
+   "Supplier"
+  ]
+ ],
  "reel": {
   "place": "Dallas-Fort Worth",
   "key": "dfw",
