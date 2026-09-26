@@ -6,7 +6,7 @@ Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
 A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 122 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
 
-One self-contained HTML file. No framework, no runtime network request. `docs/index.html` is the served copy. This README is written by `build.py`, so its counts are the page's counts.
+One self-contained HTML file. No framework and no runtime network request. A security policy in the page has the browser block any request, and any script not written in the page. `docs/index.html` is the served copy. This README is written by `emit.py` from the page's own data, so its counts are the page's counts.
 
 ## The three counts
 
@@ -14,7 +14,7 @@ One self-contained HTML file. No framework, no runtime network request. `docs/in
 |---|---|---|
 | **Repetition** | Builds the same plans, in one place. For a contractor: puts up the same wall, in one metro | written per firm, with the reason |
 | **Printer fit** | One or two printers would cover it | 25 to 400 homes a year concentrated is a Yes. 400 to 1,500, purchasing at a parent, or no published figure is a Partly. Above 1,500 or a national purchasing desk is a No |
-| **Track record** | Has paid for a new building method before | the only count that uses the accent colour |
+| **Track record** | Has paid for a new building method before. Energy ratings, cycle times and buyer software read No | the only count that uses the accent color |
 
 Yes and Partly both count as holding. A No does not. Sections are assigned before the holds are counted, so a section and a grid cell are different sets.
 
@@ -44,11 +44,24 @@ Every number is a count of records, a published figure with its source named, or
 ## Build
 
 ```
-make            # build, workbook, headless verify
-python3 probe.py        # every name is in the bytes of the page cited for it
-python3 linkcheck.py    # every source URL, status and banned-host sweep
-python3 figures.py      # every figure is in the bytes of the page cited for it
-python3 phonecheck.py   # every phone and email is in the bytes of its page
-python3 marketcheck.py dfw/dfw-data.json   # the same four gates for Dallas-Fort Worth
+pip install -r requirements.txt && python3 -m playwright install chromium
+make            # build both markets, the workbooks and the intro, unit tests, headless verify,
+                #   and xsscheck.py: the page built from data with markup on every string
+make check      # ruff and the page's JavaScript (pip install -r requirements-dev.txt)
+make gates      # the network gates, run by hand before sending:
+                #   probe.py       every name is in the bytes of the page cited for it
+                #   linkcheck.py   every source URL, status and banned-host sweep
+                #   figures.py     every figure is in the bytes of the page cited for it
+                #   phonecheck.py  every phone and email is in the bytes of its page
+                #   marketcheck.py the same four for Dallas-Fort Worth
 ```
+
+The data file is the source of truth: `build.py` and `build_dfw.py` write it,
+`emit.py` writes the page from it, and nothing downstream is edited by hand.
+Corrections are late layers (`audit.py` to `audit12.py`), each applied only while
+the text it replaces is still there. The build number and the page's date live in
+`version.py`, and the banned-source list in `policy.py`. Three research inputs stay
+on the build machine and out of this repository (`audit7/`, `dfw/pack/` and
+`dfw/edit/`), so a fresh clone serves the built page from `docs/` but does not
+rebuild it.
 

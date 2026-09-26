@@ -9,6 +9,7 @@ firm builds.
 
 Applied last, so it overrides whatever the layers below produced.
 """
+import re as _re
 
 # target_id -> replacement synopsis
 SYNOPSIS = {
@@ -242,7 +243,6 @@ WHY = {
 #
 # Returns True when a line is only the title restated, with or without a clause
 # naming the page the icon already links to.
-import re as _re
 
 
 def _norm(s):

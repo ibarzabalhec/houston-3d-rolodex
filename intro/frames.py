@@ -3,7 +3,8 @@
 
     python3 intro/frames.py            desktop 1280x720 and phone 390x844
 """
-import pathlib, sys
+import pathlib
+import sys
 from playwright.sync_api import sync_playwright
 from PIL import Image, ImageDraw
 
@@ -19,8 +20,8 @@ with sync_playwright() as p:
     for key, (w, h, dpr) in SIZES.items():
         pg = b.new_page(viewport={"width": w, "height": h}, device_scale_factor=dpr)
         errs = []
-        pg.on("console", lambda m: errs.append(m.text) if m.type == "error" else None)
-        pg.on("pageerror", lambda e: errs.append(str(e)))
+        pg.on("console", lambda m, errs=errs: errs.append(m.text) if m.type == "error" else None)
+        pg.on("pageerror", lambda e, errs=errs: errs.append(str(e)))
         pg.goto((HERE / "intro.html").as_uri() + "?capture")
         pg.evaluate("window.introReady")
         shots = []
@@ -38,7 +39,7 @@ with sync_playwright() as p:
         rows = (len(ims) + cols - 1) // cols
         sheet = Image.new("RGB", (cols * (tw + 8) + 8, rows * (th + 30) + 8), "#888")
         d = ImageDraw.Draw(sheet)
-        for i, ((t, _), im) in enumerate(zip(shots, ims)):
+        for i, ((t, _), im) in enumerate(zip(shots, ims, strict=True)):
             x, y = 8 + (i % cols) * (tw + 8), 8 + (i // cols) * (th + 30)
             sheet.paste(im.convert("RGB").resize((tw, th)), (x, y + 22))
             d.text((x, y + 4), "t=%.2f" % t, fill="#000")

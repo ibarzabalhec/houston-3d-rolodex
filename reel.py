@@ -62,7 +62,7 @@ def reel_data(P):
         "band": P["market"]["bands"][0][:2],
         "band2": P["market"]["bands"][1][:2],
         "cats": [{"label": lab, "n": sum(f["cat"] == i for f in firms)} for i, (lab, _) in enumerate(cats)],
-        "title": [l.strip() for l in head.split("\n") if l.strip()],
+        "title": [ln.strip() for ln in head.split("\n") if ln.strip()],
         "by": P["byline"].split(" · ")[0],
     }
     strip = {s[1]: s[0] for s in P["stat_strip"]}

@@ -36,8 +36,15 @@ of them. Small integers are noise because "three communities" matches any page
 with a three on it.
 """
 import html as _html
-import json, pathlib, re, ssl, sys, urllib.error, urllib.request
+import pathlib
+import re
+import ssl
+import sys
+import urllib.error
+import urllib.request
 import concurrent.futures as cf
+
+import jsonio
 
 ROOT = pathlib.Path(__file__).parent
 CACHE = ROOT / "internal" / "figures_pages.json"
@@ -45,7 +52,9 @@ CACHE = ROOT / "internal" / "figures_pages.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,*/*"}
-CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+# The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here
+# worked in one container and nowhere else.
+CTX = ssl.create_default_context()
 
 SKIP_HOST = ("linkedin.com",)
 
@@ -326,7 +335,7 @@ def variants(tok):
     if m:
         n, unit = float(m.group(1)), m.group(2)
         if unit == "million":
-            out |= {"%s million" % m.group(1), "%d,000,000" % int(n * 1e6) if n == int(n) else ""}
+            out |= {"%s million" % m.group(1), "%d,000,000" % int(n) if n == int(n) else ""}
             out.add("{:,}".format(int(n * 1e6)) if n == int(n) else "")
             # Build 60. Trade tables abbreviate: Builder prints "$621 M" where the
             # card writes "$621 million". Five real, checked figures on three cards
@@ -415,13 +424,13 @@ def figures_in(text):
 
 
 def main():
-    d = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
+    d = jsonio.read(ROOT / "houston-data.json")
     only = [a for a in sys.argv[1:] if a.startswith("HOU-")]
     targets = [t for t in d["targets"] if not only or t["target_id"] in only]
 
     cache = {}
     if CACHE.exists():
-        cache = json.load(open(CACHE, encoding="utf-8"))
+        cache = jsonio.read(CACHE)
     for u in [u for u, v in cache.items() if v and (CHALLENGE.search(v[:5000]) or _noise(v))]:
         del cache[u]
 
@@ -437,10 +446,10 @@ def main():
     if want:
         print("fetching %d pages not already cached" % len(want), file=sys.stderr)
         with cf.ThreadPoolExecutor(16) as ex:
-            for u, txt in zip(sorted(want), ex.map(fetch, sorted(want))):
+            for u, txt in zip(sorted(want), ex.map(fetch, sorted(want)), strict=True):
                 cache[u] = txt or ""
         CACHE.parent.mkdir(exist_ok=True)
-        json.dump(cache, open(CACHE, "w"), ensure_ascii=False)
+        jsonio.write(cache, CACHE, ensure_ascii=False)
 
     n_fig = n_off = 0
     off_cards = 0

@@ -46,17 +46,6 @@ FLAGS = {
         "John Winniford holds the title President, Homebuilding at Signorelli and is also president "
         "of First America Homes. Signorelli itself names a commercial-division construction manager "
         "and land-development managers, and no vice president or director of construction."],
-    "HOU-045": [
-        "Chesmar's construction and purchasing leadership sits in Houston, not at the McKinney head "
-        "office. A vice president of construction for Houston North, a company-wide vice president of "
-        "construction operations and a vice president of purchasing are all Houston-based, so a wall "
-        "decision does not have to travel out of the metro. The separate McKinney and San Antonio "
-        "vice presidents cover their own divisions."],
-    "HOU-034": [
-        "Brightland lost the chief executive who had run it for nearly a decade. John Winniford left "
-        "in September 2025 for First America Homes, also screened here, after delivering "
-        "more than 22,000 homes from 2016 and expanding the company into Colorado, Florida and "
-        "Tennessee. The firm publishes no leadership page."],
     "HOU-003": [
         "The authority's board voted in January 2026 to operate as Housing Alliance HTX, reported by "
         "the Houston Chronicle and on the authority's own news page. The Cuney Homes announcement was "
@@ -64,10 +53,6 @@ FLAGS = {
     "HOU-043": [
         "Newland's own leadership page redirects to Brookfield Residential, which announces the "
         "acquisition and names nobody."],
-    "HOU-057": [
-        "Both entities now have a citable leadership page: Hartman's own team page names Allen "
-        "Hartman, and Silver Star's names Gerald Haddock as chief executive and chairman. The "
-        "do-not-approach attaches to the Silver Star side only."],
     "HOU-027": [
         "Greystar's Houston LinkedIn presence is property management, community managers, leasing "
         "managers, maintenance supervisors. No development or construction lead for Summerwell "
@@ -162,6 +147,29 @@ FLAGS = {
         "entity, and the principal is the same person Silver Star sued.",
     ],
 }
+
+# Three firms carried two FLAGS entries each, and a dict literal keeps only the
+# last value for a repeated key, so the first finding on each never reached the
+# build. They are kept here and put ahead of the later entry.
+_EARLIER = {
+    "HOU-045": [
+        "Chesmar's construction and purchasing leadership sits in Houston, not at the McKinney head "
+        "office. A vice president of construction for Houston North, a company-wide vice president of "
+        "construction operations and a vice president of purchasing are all Houston-based, so a wall "
+        "decision does not have to travel out of the metro. The separate McKinney and San Antonio "
+        "vice presidents cover their own divisions."],
+    "HOU-034": [
+        "Brightland lost the chief executive who had run it for nearly a decade. John Winniford left "
+        "in September 2025 for First America Homes, also screened here, after delivering "
+        "more than 22,000 homes from 2016 and expanding the company into Colorado, Florida and "
+        "Tennessee. The firm publishes no leadership page."],
+    "HOU-057": [
+        "Both entities now have a citable leadership page: Hartman's own team page names Allen "
+        "Hartman, and Silver Star's names Gerald Haddock as chief executive and chairman. The "
+        "do-not-approach attaches to the Silver Star side only."],
+}
+for _tid, _flags in _EARLIER.items():
+    FLAGS[_tid] = _flags + FLAGS[_tid]
 
 # target_id -> per-axis score override, applied before marks are computed.
 # Only ever move a score on new evidence, and write the evidence into FLAGS.

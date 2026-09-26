@@ -28,7 +28,10 @@ about three pixels across at the size the map draws, is left as water.
 
     python3 dfw/geo/outline.py      writes dfw/geo/outlines.json and water.json
 """
-import json, math, pathlib
+import itertools
+import json
+import math
+import pathlib
 
 HERE = pathlib.Path(__file__).parent
 TOL_M = 130.0
@@ -50,7 +53,8 @@ def dp(pts, tol, lat0):
     stack = [(0, len(pts) - 1)]
     while stack:
         a, b = stack.pop()
-        ax, ay = xy[a]; bx, by = xy[b]
+        ax, ay = xy[a]
+        bx, by = xy[b]
         dx, dy = bx - ax, by - ay
         L = math.hypot(dx, dy)
         best, bi = -1.0, None
@@ -62,11 +66,11 @@ def dp(pts, tol, lat0):
         if bi is not None and best > tol:
             keep[bi] = True
             stack += [(a, bi), (bi, b)]
-    return [p for p, k in zip(pts, keep) if k]
+    return [p for p, k in zip(pts, keep, strict=True) if k]
 
 
 def main():
-    src = json.load(open(HERE / "txdot_dfw_counties.geojson", encoding="utf-8"))
+    src = json.loads((HERE / "txdot_dfw_counties.geojson").read_text(encoding="utf-8"))
     rings = {}
     names = {}
     for f in src["features"]:
@@ -110,7 +114,7 @@ def main():
             junction = junction[start:] + junction[:start]
             idx = [i for i, j in enumerate(junction) if j] + [n]
             pts = []
-            for a, b in zip(idx, idx[1:]):
+            for a, b in itertools.pairwise(idx):
                 arc = [r[i % n] for i in range(a, b + 1)]
                 s = simplify_arc(arc)
                 pts += s[:-1]
@@ -123,21 +127,22 @@ def main():
             polys.append([ring])
         out.append({"fips": fips, "name": names[fips], "rings": polys})
     out.sort(key=lambda g: g["name"])
-    json.dump(out, open(HERE / "outlines.json", "w"), separators=(",", ":"))
+    (HERE / "outlines.json").write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
     for g in out:
         print("%-10s %4d points" % (g["name"], sum(len(r) for p in g["rings"] for r in p)))
 
 
 def area_km2(r, lat0):
-    kx = 111.320 * math.cos(math.radians(lat0)); ky = 110.540
+    kx = 111.320 * math.cos(math.radians(lat0))
+    ky = 110.540
     a = 0.0
-    for (x0, y0), (x1, y1) in zip(r, r[1:] + r[:1]):
+    for (x0, y0), (x1, y1) in zip(r, r[1:] + r[:1], strict=True):
         a += (x0 * kx) * (y1 * ky) - (x1 * kx) * (y0 * ky)
     return abs(a) / 2
 
 
 def water():
-    src = json.load(open(HERE / "txdot_dfw_lakes.geojson", encoding="utf-8"))
+    src = json.loads((HERE / "txdot_dfw_lakes.geojson").read_text(encoding="utf-8"))
     out = []
     for f in src["features"]:
         g = f["geometry"]
@@ -164,7 +169,7 @@ def water():
         if keep:
             out.append({"name": f["properties"]["name"], "acres": f["properties"]["acres"], "rings": keep})
     out.sort(key=lambda w: -w["acres"])
-    json.dump(out, open(HERE / "water.json", "w"), separators=(",", ":"))
+    (HERE / "water.json").write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
     for w in out:
         print("%-24s %6d acres %4d points, %d islands" % (w["name"], w["acres"],
               sum(len(r) for p in w["rings"] for r in p), sum(len(p) - 1 for p in w["rings"])))

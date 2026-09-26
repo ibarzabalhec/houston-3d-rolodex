@@ -10,11 +10,14 @@ self-contained copy with the page's fonts embedded, plus replay and half speed.
 
 Writes intro/intro.html (or intro/intro-dfw.html).
 """
-import json, pathlib, sys
+import json
+import pathlib
+import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
+import jsonio  # noqa: E402
 import reel  # noqa: E402
 
 ACCENT = {"houston": "#FF4F00", "dfw": "#0A3A8C"}
@@ -22,7 +25,7 @@ ACCENT = {"houston": "#FF4F00", "dfw": "#0A3A8C"}
 
 def main(mk="houston"):
     src = ROOT / "docs" / ("houston-data.json" if mk == "houston" else "dfw-data.json")
-    P = json.load(open(src, encoding="utf-8"))
+    P = jsonio.read(src)
     D = reel.reel_data(P)
     D["accent"] = ACCENT[mk]
     page = (HERE / "_intro.html").read_text(encoding="utf-8")

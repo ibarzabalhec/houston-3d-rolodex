@@ -8,7 +8,9 @@ Build 2 changes the presentation, not the evidence. The 0-12 composite is gone.
 Three screens, each of which either holds or does not. Tier A holds all three.
 Capital is shown as a visible qualifier rather than folded into a hidden total.
 """
-import json, sys, collections
+import json
+import sys
+import collections
 
 sys.path.insert(0, '.')
 from data_a import A_TIER
@@ -43,7 +45,7 @@ from trades2 import (WALL, WALL_IDS, CELL as WALL_CELL, CELL_ORDER,
                      CELL_LABEL, CELL_NOTE)
 import supply as SUPPLY
 import wall_people as WP
-from code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
+from building_code import CODE, CODE_LINE, PRECEDENT, QUOTES, BANDS_METHOD, BANDS_SOURCES, METHOD
 import phones as PHONES
 # Build 65. BUILDER's Local Leaders table for Greater Houston, read against the
 # deck: three missing cards, six firms now carrying a published Houston figure,
@@ -53,7 +55,7 @@ import audit5 as AUDIT5
 import audit6 as AUDIT6
 from urllib.parse import quote
 
-BUILD = 83
+from version import BUILD, DATE
 
 # The second research pass is folded into the same layers the first one wrote
 # to, so every downstream rule (verification, deciders, source links) applies
@@ -96,7 +98,7 @@ import audit12 as AUDIT12
 NATIONAL.update(AUDIT12.HOU_NATIONAL)
 for _tid, _sc in AUDIT12.HOU_SCORE.items():
     AUDIT8.HOU_SCORE.setdefault(_tid, {}).update(_sc)
-TODAY = "2026-09-24"
+TODAY = DATE
 
 SCREENS = ["repeatability", "machine_fit", "innovation"]
 
@@ -485,7 +487,7 @@ for t in targets:
         t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
         t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
     if tid in AUDIT.WHY:
-        for _w, _txt in zip(t["why"], AUDIT.WHY[tid]):
+        for _w, _txt in zip(t["why"], AUDIT.WHY[tid], strict=True):
             _w["text"] = _txt
     for _w in t["why"]:
         _w["mark"] = t["marks"][_w["axis"]]
@@ -554,7 +556,7 @@ for t in targets:
         t["holds"] = sum(1 for _k in SCREENS if t["marks"][_k] != "fail")
         t["clears"] = sum(1 for _k in SCREENS if t["marks"][_k] == "clear")
     if tid in AUDIT2.WHY:
-        for _w, _txt in zip(t["why"], AUDIT2.WHY[tid]):
+        for _w, _txt in zip(t["why"], AUDIT2.WHY[tid], strict=True):
             _w["text"] = _txt
     for _w in t["why"]:
         _w["mark"] = t["marks"][_w["axis"]]
@@ -741,7 +743,8 @@ for t in targets:
         t["key_stat"] = LEAD.KEY_STAT[tid]
     if tid in LEAD.HOMEPAGE:
         t["homepage_url"] = LEAD.HOMEPAGE[tid]
-        t.pop("no_web_presence", None); t.pop("web_absent", None)
+        t.pop("no_web_presence", None)
+        t.pop("web_absent", None)
     if tid in LEAD.SCREEN:
         t["mvp_screen"] = LEAD.SCREEN[tid]
     for w in t.get("why", []):
@@ -787,9 +790,12 @@ for t in targets:
     tid = t["target_id"]
     # Build 63. The wall supply chain shipped with no numbers at all, so the
     # 28 records added in Build 62 read the same tables from their own pass.
-    _pn = dict(PHONES.PHONE); _pn.update(WP.PHONE)
-    _mo = dict(PHONES.MORE); _mo.update(WP.MORE)
-    _nt = dict(PHONES.NOTE); _nt.update(WP.NOTE)
+    _pn = dict(PHONES.PHONE)
+    _pn.update(WP.PHONE)
+    _mo = dict(PHONES.MORE)
+    _mo.update(WP.MORE)
+    _nt = dict(PHONES.NOTE)
+    _nt.update(WP.NOTE)
     if tid in _pn:
         _d, _lab, _src, _rule = _pn[tid]
         t["phone"], t["phone_label"] = _d, _lab
@@ -1258,7 +1264,7 @@ DATA = {
                         for p, w, x, u, src in PRECEDENT],
           "quotes": [{"text": q, "who": w, "url": u, "source": src} for q, w, u, src in QUOTES]},
  "method": [{"title": a, "text": t} for a, t in METHOD],
- "bands_method": {"text": BANDS_METHOD, "sources": [{"url": u, "label": l} for u, l in BANDS_SOURCES]},
+ "bands_method": {"text": BANDS_METHOD, "sources": [{"url": u, "label": lab} for u, lab in BANDS_SOURCES]},
  "market": (lambda: {
    "closings": sorted([
        {"id": tid, "name": next(t["entity_name"] for t in deck if t["target_id"] == tid),
@@ -1314,7 +1320,7 @@ DATA = {
    "places": [{"name": nm, "county": ct, "sf": v, "quantity": PM.QUANTITY}
               for nm, ct, v in PM.PLACE if any(v)],
    "geom": PM.GEOM,
-   "sources": [{"url": u, "label": l} for u, l in
+   "sources": [{"url": u, "label": lab} for u, lab in
                [PM.SOURCE[k] for k in ("socds", "defs", "txdot")]],
  })(),
  # Build 68. What the page calls this market, for the strings the template used
@@ -1332,12 +1338,9 @@ DATA = {
 # not citations for a business-development file, and a single one of them in a
 # footnote is enough for a reader to discount the rest. The build refuses them
 # rather than relying on whoever writes the next record to remember.
-BANNED_SOURCES = ("wikipedia.", "wikiwand.", "dbpedia.", "fandom.", ".wiki/", "wiki.",
-                  "everipedia.", "infogalactic.",
-                  # contact-data aggregators. A person's title is held from the firm's own
-                  # page or from a LinkedIn headline, never from a resold database.
-                  "zoominfo.", "rocketreach.", "apollo.io", "crunchbase.", "buzzfile.",
-                  "signalhire.", "lusha.", "leadiq.", "dnb.com", "bbb.org", "yelp.com")
+# One list for every build and gate (policy.py). A person's title is held from
+# the firm's own page or from a LinkedIn headline, never from a resold database.
+from policy import BANNED as BANNED_SOURCES
 
 
 def _strip_trailing(obj):
@@ -1412,10 +1415,12 @@ for _scope, _old, _new in AUDIT5.EDITS:
     else:
         _tgt = DATA.get(_scope)
     if _tgt is None:
-        _bad5.append("%s is not in the page data" % _scope); continue
+        _bad5.append("%s is not in the page data" % _scope)
+        continue
     _occ = sum(_s.count(_old) for _s in _strings(_tgt))
     if _occ != 1:
-        _bad5.append("%s: %r found %d times" % (_scope, _old[:60], _occ)); continue
+        _bad5.append("%s: %r found %d times" % (_scope, _old[:60], _occ))
+        continue
     if isinstance(_tgt, str):
         DATA[_scope] = _tgt.replace(_old, _new or "")
     else:
@@ -1446,7 +1451,8 @@ for _scope, _old, _new in AUDIT6.EDITS:
         continue
     _occ = sum(_s.count(_old) for _s in _strings(_tgt))
     if _occ != 1:
-        _bad6.append("%s: %r found %d times" % (_scope, _old[:60], _occ)); continue
+        _bad6.append("%s: %r found %d times" % (_scope, _old[:60], _occ))
+        continue
     _edit_scope(_tgt, _old, _new, [])
 for _tid, _urls in AUDIT6.SOURCES.items():
     for _u in _urls:
@@ -1469,7 +1475,8 @@ for (_tid, _old), _new in AUDIT6.PROJECT_URL.items():
 for (_tid, _name), _fields in AUDIT6.PERSON.items():
     _p = [p for p in _T6[_tid]["principals"] if p.get("name") == _name]
     if len(_p) != 1:
-        _bad6.append("%s has %d principals named %s" % (_tid, len(_p), _name)); continue
+        _bad6.append("%s has %d principals named %s" % (_tid, len(_p), _name))
+        continue
     _p[0].update(_fields)
 # A headline that counts closings says whose closings they are.
 import re
@@ -1537,24 +1544,12 @@ with open("houston-data.json", "w", encoding="utf-8") as f:
 # Build 68. The page is written by emit.py, after the Dallas-Fort Worth build, so
 # one file can carry both markets. This writes the Houston data and its served
 # copy only.
-import os, shutil
+import os
 os.makedirs("docs", exist_ok=True)
 # Build 71. emit.py writes the served copy, stripped to what the page shows.
 html = ""
 
-# The README said Ninety for thirty builds while the deck grew to 124. It is now
-# written here, from the same counts the page prints, so it cannot drift again.
-_ORDER = ["adopter", "icon", "a", "b", "trade", "national", "creative", "channel"]
-_rd = (open("_README.md", encoding="utf-8").read()
-       .replace("__N__", "%d" % n)
-       .replace("__NP__", "%d" % n_people)
-       .replace("__NS__", "%d" % len(DATA.get("supply", [])))
-       .replace("__NN__", "%d" % len(DATA.get("no_site", [])))
-       .replace("__DFW_N__", "%d" % (json.load(open("dfw/dfw-data.json", encoding="utf-8"))["stats"]["total"]
-                                     if os.path.exists("dfw/dfw-data.json") else 0))
-       .replace("__SECTIONS__", "\n".join(
-           "- **%s**, %d" % (DATA["group_labels"][k], g[k]) for k in _ORDER if g.get(k))))
-open("README.md", "w", encoding="utf-8").write(_rd)
+# Build 86. README.md is written by emit.py, after both markets are built.
 
 print("entities          %d" % n)
 print("already printing  %d" % g["adopter"])

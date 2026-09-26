@@ -4,22 +4,26 @@
 One row per person. The LinkedIn column is editable and highlighted where empty,
 because that is the column somebody will sit and fill in. Every count is a formula.
 """
-import json
-import audit11
+import os
+import shutil
+
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
+import audit11
+import jsonio
+
 # Build 68. MARKET=dfw writes the Dallas-Fort Worth workbook from its own data.
-import os as _os
-MARKET = _os.environ.get("MARKET", "houston")
-D = json.load(open("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json", encoding="utf-8"))
+MARKET = os.environ.get("MARKET", "houston")
+D = jsonio.read("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json")
 PLACE = (D.get("place") or {}).get("name", "Greater Houston")
 OUT = "DFW_Rolodex.xlsx" if MARKET == "dfw" else "ICON_Greater_Houston_Rolodex.xlsx"
 WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 # Build 66. The workbook had its own names for the sections, four of them
 # different from the page's. It takes the page's now.
-GROUP = dict(D["group_labels"]); GROUP["out"] = "Held off the deck"
+GROUP = dict(D["group_labels"])
+GROUP["out"] = "Held off the deck"
 # Build 71. The workbook is served beside the page, so it carries what the page does: the deck.
 T = [t for t in D["targets"] if t["group"] != "out"]
 
@@ -113,7 +117,9 @@ for t in T:
     people = t.get("principals") or []
     if people:
         for p in people:
-            r = dict(base); r["name"] = p["name"]; r["title"] = p.get("role") or ""
+            r = dict(base)
+            r["name"] = p["name"]
+            r["title"] = p.get("role") or ""
             r["li"] = p.get("linkedin_url") or ""
             r["find"] = p.get("find_url") or ""
             r["dec"] = "YES" if p.get("decider") else ""
@@ -121,8 +127,14 @@ for t in T:
             r["bio"] = p.get("source_url") or ""
             rows.append(r)
     else:
-        r = dict(base); r["name"] = "no contact identified"; r["title"] = ""; r["li"] = ""; r["find"] = ""
-        r["dec"] = ""; r["ev"] = ""; r["bio"] = ""
+        r = dict(base)
+        r["name"] = "no contact identified"
+        r["title"] = ""
+        r["li"] = ""
+        r["find"] = ""
+        r["dec"] = ""
+        r["ev"] = ""
+        r["bio"] = ""
         rows.append(r)
 
 last = HDR + len(rows)
@@ -235,7 +247,9 @@ if P:
     ps.cell(row=r, column=1, value="County").font = hdr
     ps.cell(row=r, column=1).fill = fill
     for j, y in enumerate(yrs):
-        c = ps.cell(row=r, column=2 + j, value=y); c.font = hdr; c.fill = fill
+        c = ps.cell(row=r, column=2 + j, value=y)
+        c.font = hdr
+        c.fill = fill
     for c2 in sorted(P["counties"], key=lambda x: -x["sf"][-1]):
         r += 1
         ps.cell(row=r, column=1, value=c2["name"]).font = Font(name="Arial", size=10, color=INK)
@@ -253,7 +267,9 @@ if P:
     ps.cell(row=r, column=2, value="County").font = hdr
     ps.cell(row=r, column=2).fill = fill
     for j, y in enumerate(P["place_years"]):
-        c = ps.cell(row=r, column=3 + j, value=y); c.font = hdr; c.fill = fill
+        c = ps.cell(row=r, column=3 + j, value=y)
+        c.font = hdr
+        c.fill = fill
     for pl in sorted(P["places"], key=lambda x: -x["sf"][-1]):
         r += 1
         ps.cell(row=r, column=1, value=pl["name"]).font = Font(name="Arial", size=10, color=INK)
@@ -267,7 +283,6 @@ if P:
     ps.freeze_panes = "C5"
 
 wb.save(OUT)
-import shutil, os
 os.makedirs("docs", exist_ok=True)
 shutil.copy(OUT, "docs/" + OUT)
 print("rows %d  (people %d, firms without a contact %d)" % (

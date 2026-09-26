@@ -1,2 +1,4 @@
-openpyxl>=3.1
-playwright>=1.45
+# Runtime: the build writes the workbook with openpyxl, and verify.py and
+# jscheck.py drive a headless Chromium through Playwright.
+openpyxl~=3.1.5
+playwright~=1.56

@@ -17,14 +17,24 @@ marks publishers use to lock an article:
 Run by hand, like linkcheck.py. A finding is a lead: open the page before
 acting on it, since metered sites open a few articles free.
 """
-import concurrent.futures as cf, gzip, json, pathlib, re, ssl, sys, urllib.request, zlib
+import concurrent.futures as cf
+import pathlib
+import re
+import ssl
+import sys
+import urllib.request
+import zlib
 from urllib.parse import urlparse
+
+import jsonio
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "internal" / "paywall.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36", "Accept": "text/html,*/*"}
-CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+# The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here
+# worked in one container and nowhere else.
+CTX = ssl.create_default_context()
 
 # Hosts that lock their articles behind a subscription. Used only when the page
 # itself cannot be read; otherwise the page's own marks decide.
@@ -56,7 +66,7 @@ def urls():
         elif isinstance(o, str) and o.startswith("http") and "linkedin.com" not in o:
             out.setdefault(o, set()).add(where)
     for mk, f in (("houston", "docs/houston-data.json"), ("dfw", "docs/dfw-data.json")):
-        P = json.load(open(ROOT / f, encoding="utf-8"))
+        P = jsonio.read(ROOT / f)
         for t in P["targets"]:
             walk(t, "%s:%s" % (mk, t["target_id"]))
         walk({k: v for k, v in P.items() if k != "targets"}, "%s:page" % mk)
@@ -81,10 +91,14 @@ def read(u):
     host = urlparse(u).netloc.lower().replace("www.", "")
     marks = []
     if body and len(body) > 2000:
-        if LD.search(body): marks.append("ld")
-        if TIER.search(body): marks.append("tier")
-        if TEXT.search(body): marks.append("text")
-        if REG.search(body): marks.append("register")
+        if LD.search(body):
+            marks.append("ld")
+        if TIER.search(body):
+            marks.append("tier")
+        if TEXT.search(body):
+            marks.append("text")
+        if REG.search(body):
+            marks.append("register")
     if not marks and (not body or len(body) <= 2000) and any(host == h or host.endswith("." + h) for h in LOCKED):
         marks.append("host")
     if not marks and any(host == h or host.endswith("." + h) for h in LOCKED):
@@ -98,9 +112,10 @@ def main():
     res = {}
     with cf.ThreadPoolExecutor(12) as ex:
         for u, r in ex.map(read, sorted(U)):
-            r["cited_on"] = sorted(U[u]); res[u] = r
+            r["cited_on"] = sorted(U[u])
+            res[u] = r
     OUT.parent.mkdir(exist_ok=True)
-    json.dump(res, open(OUT, "w", encoding="utf-8"), indent=1)
+    jsonio.write(res, OUT, indent=1)
     locked = {u: r for u, r in res.items() if set(r["marks"]) & {"ld", "tier", "text", "host", "host-known"}}
     reg = {u: r for u, r in res.items() if r["marks"] == ["register"]}
     by = {}

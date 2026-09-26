@@ -117,7 +117,7 @@ function figOwners(){
     builders:o.builders.filter(function(b){return b.id;})};}).filter(function(o){return o.builders.length;});
   if(!owners.length) return '';
   var names=[];owners.forEach(function(o){o.builders.forEach(function(b){if(names.indexOf(b.name)<0)names.push(b.name);});});
-  var W=900,L=40,R=40,colL=230,colR=W-260,rowH=30,top=24;
+  var W=900,colL=230,colR=W-260,rowH=30,top=24;
   var H=top+Math.max(owners.length,names.length)*rowH+10;
   var yo=function(i){return top+i*rowH+(Math.max(0,names.length-owners.length)*rowH/2);};
   var yb=function(i){return top+i*rowH+(Math.max(0,owners.length-names.length)*rowH/2);};
@@ -136,7 +136,6 @@ function figOwners(){
   });
   names.forEach(function(nm,j){
     var id=null; owners.forEach(function(o){o.builders.forEach(function(b){if(b.name===nm&&b.id)id=b.id;});});
-    var off=false; owners.forEach(function(o){o.builders.forEach(function(b){if(b.name===nm&&b.off)off=true;});});
     h+='<text x="'+colR+'" y="'+(yb(j)+14)+'" class="node'+(id?'':' off')+'"'+(id?' data-id="'+id+'"':'')+'>'+esc(nm)+
        '</text>';
   });
@@ -382,9 +381,6 @@ function figPermits(){
    line. Fill is the sequential ramp; labels sit at each county's pole of
    inaccessibility rather than its centroid, so they stay inside the shape. */
 var PYEAR=2025;
-/* The county with the most single-family permits in the last year drawn. */
-function bigCounty(){var C=(PM.counties||[]).slice();if(!C.length) return 'the largest county';
-  C.sort(function(a,b){return b.sf[b.sf.length-1]-a.sf[a.sf.length-1];});return C[0].name;}
 function figCountyMap(){
   var G=PM.geom||[], C=PM.counties||[]; if(!G.length||!C.length) return '';
   var yrs=C[0].years, W=NARROW?CW:680,H=NARROW?Math.round(CW*470/680)+34:470, PAD=NARROW?10:26;
@@ -623,7 +619,6 @@ function figure(title,caption,body,table,sources,id,extra){
     (table?'<details class="ftable"><summary>As a table</summary>'+table+'</details>':'')+'</section>';
 }
 
-var W_=W;
 function drawMarket(){
   sizeCharts();
   var _mt=document.getElementById('mkTitle'); if(_mt) _mt.textContent=PL.name+' in figures';

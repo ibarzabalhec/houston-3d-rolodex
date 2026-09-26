@@ -14,14 +14,17 @@ change to a card is never overwritten by a stale cut. Each was checked on the
 way in: no longer than the original, no number or name the card did not
 already carry, no em dash, semicolon or evaluative word.
 """
-import json, pathlib, re
+import pathlib
+import re
+
+import jsonio
 
 ROOT = pathlib.Path(__file__).resolve().parent
 
 
 def _load(mk):
     p = ROOT / "distill" / ("%s.json" % mk)
-    return json.load(open(p, encoding="utf-8")) if p.exists() else []
+    return jsonio.read(p) if p.exists() else []
 
 
 def apply(D, mk):
@@ -100,7 +103,7 @@ def _resolve(D, path):
 def apply_global(D, mk):
     """The same cut for the Field, code, supply and section notes."""
     p = ROOT / "distill" / "global.json"
-    rows = json.load(open(p, encoding="utf-8")) if p.exists() else []
+    rows = jsonio.read(p) if p.exists() else []
     done, stale = 0, []
     for r in rows:
         if r["market"] != mk:
@@ -173,7 +176,7 @@ def final_copy(D, mk):
         ir["facts"].sort(key=lambda f: rank.get(f[0], 99))
     if D.get("limits"):
         rank = {k: i for i, k in enumerate(LIMITS_ORDER)}
-        D["limits"].sort(key=lambda l: rank.get(l[0], 99))
+        D["limits"].sort(key=lambda lim: rank.get(lim[0], 99))
     for lim in D.get("limits", []):
         head, text = lim[0], lim[1]
         if head == "How the list was drawn":

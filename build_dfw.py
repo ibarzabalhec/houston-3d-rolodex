@@ -16,22 +16,29 @@ What it holds to, the same as Houston:
   - a closings figure says whose figure it is.
 The build fails on any of it.
 """
-import collections, copy, json, pathlib, re, sys
+import collections
+import copy
+import json
+import pathlib
+import re
 
 import audit7 as AUDIT7
 import audit8 as AUDIT8
 import audit9 as AUDIT9
-AUDIT8.DFW_VERDICT.update(AUDIT9.DFW_VERDICT)
 import audit12 as AUDIT12
+import policy as POLICY
+from version import BUILD, DATE
+import jsonio
+
+AUDIT8.DFW_VERDICT.update(AUDIT9.DFW_VERDICT)
 for _k, _v in AUDIT9.DFW_SOURCES.items():
     AUDIT8.DFW_SOURCES.setdefault(_k, []).extend(_v)
 ROOT = pathlib.Path(__file__).parent
-PACK = json.load(open(ROOT / "dfw" / "pack" / "03_dfw-data.json", encoding="utf-8"))
-EDIT = {c["target_id"]: c for c in json.load(open(ROOT / "dfw" / "edit" / "cards.json", encoding="utf-8"))}
-LIV = json.load(open(ROOT / "dfw" / "edit" / "linkedin_verified.json", encoding="utf-8"))
-HOU = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
-TODAY = "2026-09-24"
-BUILD = 83
+PACK = jsonio.read(ROOT / "dfw" / "pack" / "03_dfw-data.json")
+EDIT = {c["target_id"]: c for c in jsonio.read(ROOT / "dfw" / "edit" / "cards.json")}
+LIV = jsonio.read(ROOT / "dfw" / "edit" / "linkedin_verified.json")
+HOU = jsonio.read(ROOT / "houston-data.json")
+TODAY = DATE
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
 S = {"clear": 3, "partial": 2, "fail": 1}
@@ -308,7 +315,8 @@ def build_targets():
         seen, S2 = set(), []
         for u in src:
             if u and _n(u) not in drop and _n(u) not in seen:
-                seen.add(_n(u)); S2.append({"url": u, "date": None})
+                seen.add(_n(u))
+                S2.append({"url": u, "date": None})
         t["sources"] = S2
         t["homepage_url"] = fix(t["homepage_url"])
         t["team_url"] = fix(t["team_url"])
@@ -378,7 +386,8 @@ def build_targets():
         blob = [x for x in _visible(T[tid])]
         n = sum(x.count(old_) for x in blob)
         if n != 1:
-            bad.append("%s: %r found %d times" % (tid, old_[:50], n)); continue
+            bad.append("%s: %r found %d times" % (tid, old_[:50], n))
+            continue
         for k in ("key_stat", "mvp_screen", "synopsis", "region"):
             if T[tid].get(k) and old_ in T[tid][k]:
                 T[tid][k] = T[tid][k].replace(old_, new_)
@@ -453,7 +462,8 @@ def main():
 
     best = [t for t in deck if t["cell"] == "clear|clear"]
     hold3 = len([t for t in best if t["holds"] == 3])
-    nn = lambda k, a, b: "%d %s" % (k, a if k == 1 else b)
+    def nn(k, a, b):
+        return "%d %s" % (k, a if k == 1 else b)
     n_builders = sum(1 for t in deck if t["group"] not in ("trade", "channel"))
     closings = sorted([
         {"id": tid, "name": t["entity_name"], "short": t["short"], "low": lo, "high": hi, "year": yr,
@@ -464,10 +474,10 @@ def main():
 
     # supply, curated: the pack's panel less the firms that already have a card,
     # the out-of-metro entries and anything no page supports.
-    SUP = json.load(open(ROOT / "dfw" / "edit" / "supply.json", encoding="utf-8"))
+    SUP = jsonio.read(ROOT / "dfw" / "edit" / "supply.json")
 
     # the field: Houston's audited entries for the same firms, with DFW's own two
-    COMP = json.load(open(ROOT / "dfw" / "edit" / "field.json", encoding="utf-8"))
+    COMP = jsonio.read(ROOT / "dfw" / "edit" / "field.json")
 
     D = {
         "version": "2.0", "build": BUILD, "last_updated": TODAY,
@@ -617,7 +627,7 @@ def main():
     if _bad12:
         raise SystemExit("FAILED: " + "; ".join(_bad12))
     gate(D)
-    json.dump(D, open(ROOT / "dfw" / "dfw-data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    jsonio.write(D, ROOT / "dfw" / "dfw-data.json", ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))
     print("sections          %s" % dict(g))
     for a in D["axes"]:
@@ -632,12 +642,12 @@ def permits():
     # These are TxDOT's, the layer Houston's map uses, simplified the same way,
     # with TxDOT's lakes above 1,000 acres. dfw/geo/outline.py makes both.
     geo = ROOT / "dfw" / "geo"
-    outl = {g["fips"]: g for g in json.load(open(geo / "outlines.json", encoding="utf-8"))}
+    outl = {g["fips"]: g for g in jsonio.read(geo / "outlines.json")}
     have = {c["fips"] for c in P["counties"]}
     assert set(outl) == have, "the TxDOT outlines and the permit counties differ"
     P["geom"] = [{"fips": f, "name": outl[f]["name"], "rings": outl[f]["rings"]} for f in sorted(outl)]
     P["water"] = [{"name": w["name"], "rings": w["rings"]}
-                  for w in json.load(open(geo / "water.json", encoding="utf-8"))]
+                  for w in jsonio.read(geo / "water.json")]
     P["places"] = [p for p in P.get("places", []) if any(p.get("sf", []))]
     # The pack carries the fifty largest jurisdictions, not every one, so they
     # do not sum to the counties the way Houston's do.
@@ -661,10 +671,7 @@ def permits():
 
 
 # ------------------------------------------------------------------ gates
-BANNED = ("wikipedia", "wikimedia", "zoominfo", "rocketreach", "apollo.io", "crunchbase", "pitchbook",
-          "buzzfile", "signalhire", "lusha", "leadiq", "dnb.com", "bbb.org", "yelp.", "theorg.com",
-          "glassdoor", "zippia", "wiza.", "leadar", "contactout", "whitepages", "spokeo", "manta.com",
-          "bizapedia", "corporationwiki", "buildzoom", "houzz")
+BANNED = POLICY.BANNED
 STYLE = [
     (r"—", "an em dash"),
     (r"\s–\s", "a spaced en dash"),

@@ -496,11 +496,11 @@ def icon(D, mk):
             "Houston" if mk == "hou" else "Dallas-Fort Worth"}
     if need - have:
         bad.append("audit12: the ICON record lacks %s" % sorted(need - have))
-    urls = {l[1] for l in ir["links"]}
-    for l in ir["links"]:
-        if l[1] == TRD:
-            l[0] = "The Real Deal on the first reservations, March 2026"
-    ir["links"] += [l for l in ICON_LINKS if l[1] not in urls]
+    urls = {link[1] for link in ir["links"]}
+    for link in ir["links"]:
+        if link[1] == TRD:
+            link[0] = "The Real Deal on the first reservations, March 2026"
+    ir["links"] += [link for link in ICON_LINKS if link[1] not in urls]
     return bad
 
 
@@ -589,8 +589,8 @@ def field(D, mk):
             x[0][1] = text
         for title in f.get("drop") or []:
             c["facts"] = [x for x in c.get("facts") or [] if x[0] != title]
-        have = {l[1] for l in c.get("links") or []}
-        c["links"] = (c.get("links") or []) + [l for l in f.get("links") or [] if l[1] not in have]
+        have = {link[1] for link in c.get("links") or []}
+        c["links"] = (c.get("links") or []) + [link for link in f.get("links") or [] if link[1] not in have]
     if mk == "dfw" and D.get("consolidation"):
         D["consolidation"] = D["consolidation"].replace("eighteen months after its Fort Worth print",
                                                         "nineteen months after its Fort Worth print")

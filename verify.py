@@ -4,20 +4,25 @@
 Fails loudly rather than printing a clean report, so a broken build cannot be
 sent by accident.
 """
-import asyncio, json, pathlib, re
+import asyncio
+import json
+import os as _os
+import pathlib
+import re
+
 from playwright.async_api import async_playwright
+
+import jsonio
 
 ROOT = pathlib.Path(__file__).parent
 # Build 68. One page, two markets. MARKET=dfw runs every check against the
 # Dallas-Fort Worth data, opened through the page's own market switch.
-import os as _os
 MARKET = _os.environ.get("MARKET", "houston")
 # The intro reel plays first on a fresh session; ?intro=0 keeps it off for every
 # check but its own, at the end.
 URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve()) + "?intro=0" + (
     "#market=dfw" if MARKET == "dfw" else "")
-D = json.load(open(ROOT / ("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
-                   encoding="utf-8"))
+D = jsonio.read(ROOT / ("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json"))
 PROBE_ID = "HOU-045" if MARKET == "houston" else next(
     t["target_id"] for t in D["targets"] if t["group"] in ("a", "b")
     and any(p.get("decider") and p.get("linkedin_url") and p.get("source_url") for p in t["principals"]))
@@ -625,7 +630,6 @@ async def main():
         # The stat strip has to name what it counts. It once said "clear" for a
         # number that counts holds, where a partial still counts.
         strip = await pg.eval_on_selector_all(".stat", "e=>e.map(x=>x.textContent)")
-        holds = sum(1 for t in D["targets"] if t["holds"] == 3 and t["group"] != "out")
         want_a = sum(1 for t in D["targets"] if t["group"] == "a")
         lab = [x for x in strip if "all three counts" in x]
         print("stat strip      :", lab)
@@ -792,7 +796,7 @@ async def main():
         # went twelve builds with none.
         # The site link moved onto the name in Build 61, so it is not counted in
         # the list below it. Every other link still has to render.
-        _want = sum(len([l for l in (c.get("links") or []) if l[1] != c.get("site")])
+        _want = sum(len([link for link in (c.get("links") or []) if link[1] != c.get("site")])
                     for c in D.get("competitors", []))
         _got = await pg.locator("#fieldBody .clinks a").count()
         _blocks = await pg.locator("#fieldBody .cmp .clinks").count()
@@ -1092,7 +1096,7 @@ async def main():
         import permits as _PM
         if MARKET != "houston":
             _PM = type("X", (), {"CROSSREF": [], "REVISIONS": []})
-        for lb, gg, yy, vv, key, _ind in _PM.CROSSREF:
+        for lb, _gg, yy, vv, key, _ind in _PM.CROSSREF:
             if "socds" in key:
                 ours = msa.get(yy) if "Single family" in lb else None
                 if ours is not None and ours != vv:
@@ -1195,7 +1199,8 @@ async def main():
                                 "ae:document.activeElement&&document.activeElement.id}))()")
         if v66["firm"]:
             problems.append("Enter on the Cover's Next button opens a firm instead")
-            await pg.evaluate("history.back()"); await pg.wait_for_timeout(250)
+            await pg.evaluate("history.back()")
+            await pg.wait_for_timeout(250)
         await pg.evaluate("document.getElementById('vList').click()")
         await pg.wait_for_timeout(250)
         await pg.evaluate("document.querySelector('#tb .rowadd').focus()")
@@ -1539,8 +1544,7 @@ async def main():
             "(()=>{const d=window.rolodex.data;return {out:d.targets.filter(t=>t.group==='out').length,"
             "priv:d.targets.filter(t=>'off_reason' in t||'audit_flags' in t||'phone_rule' in t).length,"
             "under:Object.keys(d).filter(k=>k.startsWith('_')).length}})()")
-        served = json.load(open(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
-                                encoding="utf-8"))
+        served = jsonio.read(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"))
         s_out = sum(1 for t in served["targets"] if t["group"] == "out")
         print("public data     : page holds %d held-off firms, %d private fields; served copy %d held off"
               % (shipped["out"], shipped["priv"], s_out))
@@ -1679,8 +1683,7 @@ async def main():
         # on the deck opens its card, the section is never empty, and on a phone
         # the chart stays inside the screen. Links behind a subscription carry
         # their label.
-        PUB = json.load(open(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
-                             encoding="utf-8"))
+        PUB = jsonio.read(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"))
         TI = PUB.get("ties") or []
         ondeck = {t["target_id"] for t in PUB["targets"]}
         want_rel = {}
@@ -1866,6 +1869,25 @@ async def main():
         if rerr:
             problems.append("the intro reel raises page errors: %s" % rerr[:2])
 
+        # Build 86. The served page carries a policy that allows no request and no
+        # script but its own, by hash, and nothing the page did in this run
+        # tripped it. The hosted artifact sits under the viewer's own policy and
+        # carries none.
+        pol = await pg.evaluate(
+            "(document.querySelector('meta[http-equiv=\"Content-Security-Policy\"]')||{}).content||''")
+        scripts = pol.split("script-src", 1)[1].split(";", 1)[0] if "script-src" in pol else ""
+        strict = pol.startswith("default-src 'none'") and "'sha256-" in scripts and "unsafe" not in scripts
+        blocked = [e for e in errs if "Content Security Policy" in e]
+        in_artifact = "Content-Security-Policy" in (ROOT / "rolodex-artifact.html").read_text(encoding="utf-8")
+        print("page policy     :", "no requests, %d scripts by hash" % scripts.count("'sha256-") if strict
+              else "missing", "| blocked in this run", len(blocked), "| in the artifact copy", in_artifact)
+        if not strict:
+            problems.append("the page carries no policy limiting it to its own scripts")
+        if blocked:
+            problems.append("the page policy blocked something the page does: %s" % blocked[:2])
+        if in_artifact:
+            problems.append("the artifact copy carries the page policy")
+
         await b.close()
 
     if problems:
@@ -1873,4 +1895,5 @@ async def main():
     print("all checks passed")
 
 
-asyncio.run(main())
+if __name__ == "__main__":
+    asyncio.run(main())

@@ -172,7 +172,7 @@ def apply(D, mk):
             bad.append("audit11: the ICON record's Army line changed")
         else:
             f[1] = f[1].replace(ICON_FACT[1], ICON_FACT[2])
-        if not any(l[1] == STRIPES for l in ir.get("links", [])):
+        if not any(link[1] == STRIPES for link in ir.get("links", [])):
             bad.append("audit11: the Stars and Stripes link left the ICON record")
     if mk == "dfw":
         # The Trinity Falls roster pointed Del Webb at PulteGroup's card. Del Webb
@@ -211,7 +211,7 @@ def second(D):
                 t[k] = _paid_last(t[k], lambda x: x.get("url"))
     ir = D.get("icon_record") or {}
     if ir.get("links"):
-        ir["links"] = _paid_last(ir["links"], lambda l: l[1])
+        ir["links"] = _paid_last(ir["links"], lambda link: link[1])
 
 
 def urls(o, out=None):

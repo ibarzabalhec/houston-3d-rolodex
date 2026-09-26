@@ -27,7 +27,9 @@ card here.
 import re
 from ties_text import card_text, norm
 
-E = lambda k, a, b, rel, card, cite: {"k": k, "a": a, "b": b, "rel": rel, "card": card, "cite": cite}
+def E(k, a, b, rel, card, cite):
+    """One tie: kind, the two ends, the caption, the card that states it and the phrase quoted."""
+    return {"k": k, "a": a, "b": b, "rel": rel, "card": card, "cite": cite}
 
 HOU = [
     # Ownership

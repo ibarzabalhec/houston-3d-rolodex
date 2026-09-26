@@ -18,10 +18,14 @@ A page a script cannot read is not a finding either way. It resolves against a
 dated hand reading in the market's HAND register, which records only what was
 seen, or it is reported as unread.
 """
-import json, pathlib, re, sys, time
+import pathlib
+import re
+import sys
+import time
 import concurrent.futures as cf
 from urllib.parse import urlparse
 
+import jsonio
 import linkcheck as LC
 import probe as PR
 import phonecheck as PC
@@ -37,7 +41,7 @@ def _cache(path):
 def _hand(path):
     """The market's hand readings: {url: text seen, dated}."""
     p = pathlib.Path(path).parent / "hand.json"
-    h = json.load(open(p, encoding="utf-8")) if p.exists() else {}
+    h = jsonio.read(p) if p.exists() else {}
     return _Norm({k.rstrip("/").lower(): v for k, v in h.items()})
 
 
@@ -78,7 +82,7 @@ def links(d, path):
         res = list(ex.map(LC.status, todo))
     bad = [(u, s) for u, s in res if not (isinstance(s, int) and s < 400)]
     again = {}
-    for u, s in bad:
+    for u, _status in bad:
         h = urlparse(u).netloc.lower().replace("www.", "")
         if h in LC.BLOCKED or "linkedin.com" in h:
             continue
@@ -243,9 +247,9 @@ def figures(d, path, cache):
 def main():
     path = sys.argv[1]
     which = sys.argv[2:] or ["links", "names", "phones", "figures"]
-    d = json.load(open(path, encoding="utf-8"))
+    d = jsonio.read(path)
     cp = _cache(path)
-    cache = json.load(open(cp, encoding="utf-8")) if cp.exists() else {}
+    cache = jsonio.read(cp) if cp.exists() else {}
     res = {}
     try:
         for w in which:
@@ -254,8 +258,8 @@ def main():
                       globals()[w](d, path, cache))
     finally:
         cp.parent.mkdir(exist_ok=True)
-        json.dump(cache, open(cp, "w", encoding="utf-8"), ensure_ascii=False)
-        json.dump(res, open(str(cp).replace(".json", "_report.json"), "w"), ensure_ascii=False,
+        jsonio.write(cache, cp, ensure_ascii=False)
+        jsonio.write(res, str(cp).replace(".json", "_report.json"), ensure_ascii=False,
                   indent=1, default=list)
     bad = sum(len(v.get("dead", [])) + len(v.get("banned", [])) + len(v.get("missing", []))
               + len(v.get("off", [])) for v in res.values())

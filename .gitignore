@@ -27,3 +27,8 @@ internal/
 # intro reel: videos and frame sheets are rebuilt by hand, not committed
 intro/*.mp4
 intro/_frames/
+
+# tool caches
+.ruff_cache/
+.pytest_cache/
+.DS_Store

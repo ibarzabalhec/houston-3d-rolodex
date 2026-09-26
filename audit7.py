@@ -15,7 +15,9 @@ stripped before the edits run and never ship.
     PERSON   (card, name) -> fields to set on that contact
     VERDICT  (card, axis) -> (verdict, reason) where the card breaks its rubric
 """
-import json, pathlib
+import pathlib
+
+import jsonio
 
 HERE = pathlib.Path(__file__).parent
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
@@ -68,7 +70,7 @@ def load(market):
                          "on the build machine, outside the repository.")
     out = []
     for p in sorted((HERE / "audit7").glob(market + "_*.json")):
-        for row in json.load(open(p, encoding="utf-8")):
+        for row in jsonio.read(p):
             scope, old, new = row[0], row[1], row[2]
             out.append((p.name, scope, old, new))
     return out
@@ -89,10 +91,12 @@ def apply(D, market, person=None, verdict=None):
     for fn, scope, old, new in load(market):
         tgt, key = scope_of(D, scope)
         if tgt is None:
-            bad.append("%s: %s is not in the page data" % (fn, scope)); continue
+            bad.append("%s: %s is not in the page data" % (fn, scope))
+            continue
         n = sum(s.count(old) for s in strings(tgt))
         if n != 1:
-            bad.append("%s: %s %r found %d times" % (fn, scope, old[:70], n)); continue
+            bad.append("%s: %s %r found %d times" % (fn, scope, old[:70], n))
+            continue
         if isinstance(tgt, str):
             D[key] = tgt.replace(old, new)
         else:
@@ -102,7 +106,8 @@ def apply(D, market, person=None, verdict=None):
     for (tid, axis), (v, text) in (verdict or {}).items():
         ws = [w for w in T.get(tid, {}).get("why", []) if w["axis"] == axis]
         if len(ws) != 1:
-            bad.append("verdict %s %s matched %d" % (tid, axis, len(ws))); continue
+            bad.append("verdict %s %s matched %d" % (tid, axis, len(ws)))
+            continue
         ws[0].update(verdict=v, mark=V[v], text=text)
     return bad
 
@@ -112,19 +117,20 @@ def people(T, person):
     for (tid, name), fields in person.items():
         ps = [p for p in T.get(tid, {}).get("principals", []) if p.get("name") == name]
         if len(ps) != 1:
-            bad.append("person %s %s matched %d" % (tid, name, len(ps))); continue
+            bad.append("person %s %s matched %d" % (tid, name, len(ps)))
+            continue
         ps[0].update(fields)
     return bad
 
 
 def check(market, data_path):
     """Dry run for an edit file: how often each old string occurs in its scope."""
-    D = json.load(open(data_path, encoding="utf-8"))
+    D = jsonio.read(data_path)
     strip_working(D)
     D.pop("competitor", None)
     rows = load(market)
     ok = 0
-    for fn, scope, old, new in rows:
+    for fn, scope, old, _new in rows:
         tgt, _ = scope_of(D, scope)
         n = -1 if tgt is None else sum(s.count(old) for s in strings(tgt))
         if n == 1:
@@ -225,7 +231,7 @@ def fix_competitors(D):
                 f = list(FACTS[k])
             facts.append(f)
         c["facts"] = facts
-        if c["name"] == "HiveASMBLD" and not any(l[1] == HOMES for l in c.get("links", [])):
+        if c["name"] == "HiveASMBLD" and not any(link[1] == HOMES for link in c.get("links", [])):
             c["links"].append(["Homes.com on Commander Home Builders' figures", HOMES])
     import audit8
     audit8.competitors73(D)
@@ -301,7 +307,8 @@ def houston(D):
     for (tid, url), d in HOU_SOURCE_DATE.items():
         hit = [s for s in T[tid]["sources"] if s["url"] == url]
         if len(hit) != 1:
-            bad.append("source date: %s %s" % (tid, url)); continue
+            bad.append("source date: %s %s" % (tid, url))
+            continue
         hit[0]["date"] = d
     m = D["market"]
     m["closings"] = [c for c in m["closings"] if c["id"] not in HOU_CLOSINGS_DROP]

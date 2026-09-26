@@ -26,9 +26,16 @@ claimed either way: a host that refuses scripts, a JavaScript team page that
 ships no names in its HTML, a PDF. Those need a human with a browser.
 """
 import html as _html
-import json, pathlib, re, ssl, sys, urllib.error, urllib.request
+import pathlib
+import re
+import ssl
+import sys
+import urllib.error
+import urllib.request
 import concurrent.futures as cf
 from urllib.parse import urlparse
+
+import jsonio
 
 ROOT = pathlib.Path(__file__).parent
 OUT = ROOT / "internal" / "probe.json"
@@ -36,7 +43,9 @@ OUT = ROOT / "internal" / "probe.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,*/*"}
-CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+# The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here
+# worked in one container and nowhere else.
+CTX = ssl.create_default_context()
 
 SKIP_HOST = {"linkedin.com", "www.linkedin.com"}
 
@@ -184,7 +193,7 @@ def fetch(url):
 
 
 def main():
-    d = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
+    d = jsonio.read(ROOT / "houston-data.json")
     want_titles = "--titles" in sys.argv
 
     jobs, li_only = {}, []
@@ -218,7 +227,7 @@ def main():
     with cf.ThreadPoolExecutor(16) as ex:
         for u, body, err in ex.map(run, sorted(jobs)):
             if err:
-                for firm, nm, role, dec in jobs[u]:
+                for firm, nm, _role, dec in jobs[u]:
                     review.append((firm, nm, dec, u, err))
                 continue
             text, raw = text_of(body), raw_of(body)
@@ -229,15 +238,15 @@ def main():
             # few hundred words of chrome. DSLD's about page and Smith Douglas's
             # acquisition post both do this, and both looked like findings.
             if len(text.split()) < 400 and not any(found):
-                for firm, nm, role, dec in jobs[u]:
+                for firm, nm, _role, dec in jobs[u]:
                     review.append((firm, nm, dec, u,
                                    "%d words, the page renders from script" % len(text.split())))
                 continue
             if len(found) > 1 and not any(found):
-                for firm, nm, role, dec in jobs[u]:
+                for firm, nm, _role, dec in jobs[u]:
                     review.append((firm, nm, dec, u, "no name on the page renders"))
                 continue
-            for (firm, nm, role, dec), f in zip(jobs[u], found):
+            for (firm, nm, role, dec), f in zip(jobs[u], found, strict=True):
                 if f:
                     ok += 1
                     if want_titles and role:
@@ -265,7 +274,7 @@ def main():
     rest = [r for r in review if r[3] not in VERIFIED]
     print("\nnot claimed either way, the page could not be read: %d" % len(rest))
     seen = set()
-    for firm, nm, dec, u, why in rest:
+    for firm, _nm, _dec, u, why in rest:
         if (u, why) in seen:
             continue
         seen.add((u, why))
@@ -278,8 +287,7 @@ def main():
     print("* marks a contact flagged as the person who can change a wall spec")
 
     OUT.parent.mkdir(exist_ok=True)
-    json.dump({"missing": missing, "review": [list(r) for r in review], "ok": ok},
-              open(OUT, "w"), indent=1)
+    jsonio.write({"missing": missing, "review": [list(r) for r in review], "ok": ok}, OUT, indent=1)
     return 1 if missing else 0
 
 

@@ -22,18 +22,22 @@ BLOCKED holds the hosts that refuse scripted requests and are live in a browser.
 They are reported separately rather than as failures. Add to it only after
 opening the URL in a browser and confirming the page is there.
 """
-import json, pathlib, re, ssl, sys, time, urllib.error, urllib.request
+import pathlib
+import ssl
+import sys
+import time
+import urllib.error
+import urllib.request
 import concurrent.futures as cf
 from urllib.parse import urlparse
+
+import jsonio
+import policy as POLICY
 
 ROOT = pathlib.Path(__file__).parent
 CACHE = ROOT / ".linkcheck.json"
 
-BANNED = ["wikipedia", "wikimedia", "zoominfo", "rocketreach", "apollo.io",
-          "crunchbase", "buzzfile", "signalhire", "lusha", "leadiq", "dnb.com",
-          "bbb.org", "yelp.com", "theorg.com", "glassdoor", "zippia", "wiza",
-          "leadar", "contactout", "hunter.io", "clearbit", "datanyze", "owler",
-          "manta.com", "bizapedia", "corporationwiki", "spokeo", "whitepages"]
+BANNED = POLICY.BANNED
 
 # Live in a browser, closed to a script. Confirmed by hand.
 # Build 65. A whole domain that stops answering is a different fact from one
@@ -139,7 +143,9 @@ BLOCKED = {"investors.bldr.com", "builderonline.com",
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,*/*"}
-CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+# The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here
+# worked in one container and nowhere else.
+CTX = ssl.create_default_context()
 
 
 def where(d):
@@ -170,10 +176,10 @@ def where(d):
     # them, and twelve competitors shipped with no link checked at all until
     # Build 58.
     for c in d.get("competitors", []):
-        for lab, u in c.get("links", []):
+        for _lab, u in c.get("links", []):
             add(u, "field: " + c["name"])
     # Build 73. ICON's own record now carries its sources.
-    for lab, u in (d.get("icon_record") or {}).get("links", []):
+    for _lab, u in (d.get("icon_record") or {}).get("links", []):
         add(u, "field: ICON")
     return out
 
@@ -219,7 +225,7 @@ def status(u):
 
 
 def main():
-    d = json.load(open(ROOT / "houston-data.json", encoding="utf-8"))
+    d = jsonio.read(ROOT / "houston-data.json")
     urls = where(d)
 
     hits = [u for u in urls if any(b in u.lower() for b in BANNED)]
@@ -233,7 +239,7 @@ def main():
 
     todo = sorted(urls)
     if "--new" in sys.argv and CACHE.exists():
-        seen = set(json.load(open(CACHE)))
+        seen = set(jsonio.read(CACHE))
         todo = [u for u in todo if u not in seen]
         print("checking %d urls not seen in the last run" % len(todo))
 
@@ -276,7 +282,7 @@ def main():
         for w in sorted(urls[u]):
             print("%22s %s" % ("on:", w))
 
-    json.dump(sorted(urls), open(CACHE, "w"))
+    jsonio.write(sorted(urls), CACHE)
     return 1 if (dead or hits) else 0
 
 

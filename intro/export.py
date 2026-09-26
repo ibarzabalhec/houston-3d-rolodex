@@ -5,7 +5,10 @@
 
 The last frame is held for one second so the clip does not end on a cut.
 """
-import pathlib, shutil, subprocess, tempfile
+import pathlib
+import shutil
+import subprocess
+import tempfile
 from playwright.sync_api import sync_playwright
 
 HERE = pathlib.Path(__file__).resolve().parent

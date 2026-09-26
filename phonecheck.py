@@ -24,7 +24,12 @@ reported as confirmed, because this script did not confirm them.
     python3 phonecheck.py HOU-121
 """
 import html as _html
-import json, pathlib, re, ssl, sys, urllib.error, urllib.request
+import pathlib
+import re
+import ssl
+import sys
+import urllib.error
+import urllib.request
 import concurrent.futures as cf
 
 ROOT = pathlib.Path(__file__).parent
@@ -32,7 +37,9 @@ ROOT = pathlib.Path(__file__).parent
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
       "Accept": "text/html,application/xhtml+xml,*/*"}
-CTX = ssl.create_default_context(cafile="/root/.ccr/ca-bundle.crt")
+# The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here
+# worked in one container and nowhere else.
+CTX = ssl.create_default_context()
 
 
 def fetch(url, _again=True):
@@ -40,7 +47,8 @@ def fetch(url, _again=True):
     sixteen-thread sweep is this script's fault, not the page's."""
     body, err = _fetch(url)
     if body is None and _again and err in ("http 429", "TimeoutError", "URLError", "timeout"):
-        import time; time.sleep(4)
+        import time
+        time.sleep(4)
         return fetch(url, False)
     return body, err
 
@@ -131,21 +139,27 @@ class _Merged:
     file is a number nothing tests.
     """
     def __init__(self, a, b, c=None):
-        self.PHONE = dict(a.PHONE); self.PHONE.update(b.PHONE)
-        self.MORE = dict(a.MORE); self.MORE.update(b.MORE)
+        self.PHONE = dict(a.PHONE)
+        self.PHONE.update(b.PHONE)
+        self.MORE = dict(a.MORE)
+        self.MORE.update(b.MORE)
         # Build 65: leaders.py carries the three Local Leaders cards' numbers and
         # the deck's first email addresses. Same rule, same gate.
         self.EMAIL = {}
         if c is not None:
-            self.PHONE.update(c.PHONE); self.MORE.update(c.MORE)
+            self.PHONE.update(c.PHONE)
+            self.MORE.update(c.MORE)
             self.EMAIL = dict(c.EMAIL)
         self.NO_MAIN = dict(a.NO_MAIN)
-        self.VERIFIED = dict(a.VERIFIED); self.VERIFIED.update(b.VERIFIED)
+        self.VERIFIED = dict(a.VERIFIED)
+        self.VERIFIED.update(b.VERIFIED)
         self.ABSENT = dict(a.ABSENT)
 
 
 def main():
-    import phones as _P, wall_people as _WP, leaders as _L
+    import phones as _P
+    import wall_people as _WP
+    import leaders as _L
     P = _Merged(_P, _WP, _L)
     only = [a for a in sys.argv[1:] if a.startswith("HOU-")]
 
@@ -210,7 +224,7 @@ def main():
         seen = set()
         print("\nread in a browser by hand, not by this script: %d numbers"
               % len(byhand))
-        for tid, d, lab, url, err in sorted(byhand):
+        for tid, d, lab, url, _err in sorted(byhand):
             print("  %-9s (%s) %s-%s   %s" % (tid, d[:3], d[3:6], d[6:], lab))
             if url not in seen:
                 seen.add(url)
@@ -219,7 +233,7 @@ def main():
     if unread:
         print("\nnot claimed either way, the page could not be read and no browser "
               "note stands for it: %d" % len(unread))
-        for tid, d, lab, url, err in sorted(unread):
+        for tid, d, _lab, url, err in sorted(unread):
             print("  %-9s (%s) %s-%s   %-22s %s" % (tid, d[:3], d[3:6], d[6:], err, url))
 
     # An email address is held to the same rule as a number: it has to be in the
@@ -247,7 +261,7 @@ def main():
     print("\nMISSING, the address is not in the page cited for it: %d" % len(emiss))
     for tid, addr, url in emiss:
         print("  %-9s %s\n      %s" % (tid, addr, url))
-    for tid, addr, lab, url, err in eunread:
+    for tid, addr, _lab, url, err in eunread:
         print("  %-9s %s  could not be read: %s  %s" % (tid, addr, err, url))
     missing += [(t, "", a, u) for t, a, u in emiss]
     unread += [(t, "", a, u, e) for t, a, _l, u, e in eunread]
@@ -255,7 +269,7 @@ def main():
 
     if downs:
         print("\non a host that is down, dated in linkcheck.DOWN: %d numbers" % len(downs))
-        for tid, d, lab, url, (seen, why) in downs:
+        for tid, d, _lab, url, (seen, _why) in downs:
             print("  %-9s (%s) %s-%s   %s  seen %s" % (tid, d[:3], d[3:6], d[6:], url, seen))
 
     print("\ndigits found on the page cited: %d" % ok)

@@ -1,0 +1,20 @@
+# Tool settings for the Rolodex build. The build is a set of scripts run by
+# make, not an installable package, so there is no [project] table.
+
+[tool.ruff]
+line-length = 120
+# Python 3.10 or later: zip(strict=) and itertools.pairwise.
+target-version = "py310"
+# Research registers and inputs that never ship, and the served output.
+extend-exclude = ["internal", "raw", "dfw/pack", "dfw/edit", "audit7", "docs"]
+
+[tool.ruff.lint]
+# pyflakes, the pycodestyle error classes that catch real mistakes, and bugbear.
+select = ["E4", "E7", "E9", "F", "W6", "B"]
+# E501 is off on purpose: the data modules hold long quoted source text that a
+# reviewer reads whole, and wrapping it changes nothing that runs.
+
+[tool.ruff.lint.per-file-ignores]
+# build.py applies its correction layers in order, and imports each layer at the
+# point where it applies, so the file reads top to bottom as the build runs.
+"build.py" = ["E402"]

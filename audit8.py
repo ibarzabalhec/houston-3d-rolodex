@@ -377,7 +377,7 @@ def icon_record(D, place, lennar_fact):
     D["icon_record"] = {"line": ICON_LINE,
                         "facts": [list(f) for f in ICON_FACTS[:2]] + [lennar_fact]
                                  + [list(f) for f in ICON_FACTS[2:]] + [list(ICON_LOCAL[place])],
-                        "links": [list(l) for l in ICON_LINKS]}
+                        "links": [list(link) for link in ICON_LINKS]}
 
 
 # ------------------------------------------------------------------ competitors, Build 73
@@ -394,8 +394,8 @@ def competitors73(D):
                            "Headcount cut, then the whole company offered for sale in January 2025, having "
                            "raised over $150 million. Its own site now says it is a brand of LUMUS Inc., which "
                            "acquired its technologies."]]
-            c["links"] = [["Their site, now a LUMUS brand", l[1]] if "mightybuildings.com" in l[1] else l
-                          for l in c.get("links", [])]
+            c["links"] = [["Their site, now a LUMUS brand", link[1]] if "mightybuildings.com" in link[1] else link
+                          for link in c.get("links", [])]
         if c["name"] == "Von Perry":
             c["status"] = "last reported 2022"
             c["facts"] = [["The house",
@@ -404,7 +404,7 @@ def competitors73(D):
                            "switch to geopolymer concrete for the Texas heat and a target to finish by the end of "
                            "October 2022. No completion has been published."]] + \
                          [f for f in c["facts"] if f[0] != "The house"]
-            if not any(l[1] == VONPERRY22 for l in c["links"]):
+            if not any(link[1] == VONPERRY22 for link in c["links"]):
                 c["links"].append(["Dallas Innovates on the geopolymer switch, 31 August 2022", VONPERRY22])
 
 HOU_SOURCES73 = {

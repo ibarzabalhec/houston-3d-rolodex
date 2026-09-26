@@ -1,0 +1,4 @@
+# Checks run by `make check`. The unit tests use the standard library's
+# unittest, so they need nothing beyond requirements.txt.
+-r requirements.txt
+ruff~=0.15
