@@ -5,6 +5,7 @@ One row per person. The LinkedIn column is editable and highlighted where empty,
 because that is the column somebody will sit and fill in. Every count is a formula.
 """
 import json
+import audit11
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
@@ -106,8 +107,8 @@ for t in T:
         emailsrc=t.get("email_source") or "",
         press=(lambda ps: ("%s %s. %s  %s" % (ps[0]["date"], ps[0]["outlet"],
                                               ps[0]["headline"], ps[0]["url"])).strip()
-               if ps else "")(sorted(t.get("press") or [],
-                                     key=lambda p: p["date"], reverse=True)),
+               if ps else "")(sorted(sorted(t.get("press") or [], key=lambda p: p["date"], reverse=True),
+                                     key=lambda p: p["url"] in audit11.PAID)),
     )
     people = t.get("principals") or []
     if people:

@@ -1749,14 +1749,21 @@ async def main():
         paid = PUB.get("paid") or []
         lab = None
         if paid:
+            # a card that cites both kinds, so the order can be read
             holder = next((t["target_id"] for t in PUB["targets"]
-                           if any(s.get("url") in paid for s in t.get("sources") or [])), None)
+                           if any(s.get("url") in paid for s in t.get("sources") or [])
+                           and any(s.get("url") not in paid for s in t.get("sources") or [])), None)
             if holder:
                 await pg.evaluate("window.rolodex.open(%r)" % holder)
                 await pg.wait_for_timeout(150)
                 lab = await pg.evaluate(
                     "(()=>{const a=[...document.querySelectorAll('#firmBody .srcs a')].filter(x=>%s.includes(x.getAttribute('href')));"
                     "return a.map(x=>getComputedStyle(x,'::after').content)})()" % json.dumps(paid))
+                order = await pg.evaluate(
+                    "(()=>{const P=%s;return ['.srcs','.mini.press','.mini.news'].map(c=>[...document.querySelectorAll('#firmBody '+c+' a')]"
+                    ".map(x=>P.includes(x.getAttribute('href'))))})()" % json.dumps(paid))
+                if any(o != sorted(o) for o in order):
+                    problems.append("%s lists a subscription link before a free one" % holder)
         await pg.evaluate("document.getElementById('home').click()")
         await pg.wait_for_timeout(120)
         print("related firms   : %d ties, %d cards checked, missing %d, empty %d, stray %s, hop %s, phone %s, "

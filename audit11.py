@@ -4,20 +4,23 @@
 paywall.py fetched every page the deck links and read it for the marks
 publishers set on a locked article. It found 34 links behind a subscription on
 ten outlets. A citation the reader cannot open is a citation in name only, so
-each one was handled by one of three rules, in this order:
+each one is kept, labelled and placed second:
 
-  drop   a line in a card's "In the press" list. The list points a reader at
-         coverage. It carries no fact, so a locked line is removed.
-  swap   a free page on the record carries the same fact. The locked link is
-         removed or replaced by that page. Every free page here was read before
-         it was used, and every one was already on a card or reached from a
-         page that was.
-  mark   no free page on the record carries the fact. The fact stays and so
-         does the link, and the page labels it "Subscription" beside it.
+  label  the page prints "Subscription" beside every link in PAID.
+  order  in a card's Sources, In the press and News lists, and in the ICON
+         record's links, free links come first and subscription links after
+         them, each group in its own order.
+  lead   where a field holds one link (a contact's source, a precedent row), a
+         free page that carries the same fact takes the slot, and the
+         subscription page follows it as a second link. Every free page here
+         was read for the fact before it was used, and every one was already on
+         a card or reached from a page that was.
 
-The marked links are the queue for a session with a search budget. PAID below
-is the whole list. emit.py labels them on the page, and stops the build if a
-link on a locked outlet reaches the page without a label.
+A link is never removed for being locked (Héctor, 26 September: "If paywalls
+are secondary, we don't need to remove them, just place them second"). PAID is
+the whole list, and the ones no free page backs are the queue for a session
+with a search budget. emit.py stops the build if a link on a locked outlet
+reaches the page without a label.
 """
 from urllib.parse import urlparse
 
@@ -84,32 +87,33 @@ PAID = {
         "The 80,000 square foot Richardson plant",
     "https://www.dallasnews.com/abode/2026/03/08/new-homes-and-amenities-take-center-stage/":
         "The lazy river opening, November 2025",
+    # Second to a free page that carries the same fact, or a press line.
+    GALV: "Commander on Gulf Shore Estates. Homes.com and ABC13 lead",
+    "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html":
+        "Press line, Commander",
+    "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php":
+        "Avenue J. Homes.com leads",
+    "https://www.houstonchronicle.com/business/article/houston-real-estate-3d-printed-home-hiveasmbld-20824540.php":
+        "Gulf Shore Estates precedent. Homes.com leads",
+    "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php":
+        "Press line, Wan Bridge",
+    "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html":
+        "Press line, Wan Bridge",
+    "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549":
+        "Press line, CIVE",
+    "https://www.enr.com/toplists/2026-Top-400-Contractors-1": "Press line, Harvey Cleary",
+    "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm":
+        "Press line, Harvey Cleary",
+    "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo":
+        "Jamie Bryant's appointment. The Housing Alliance HTX bio leads",
+    "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php":
+        "Axelrad. Concept Neighborhood's projects page leads",
+    STRIPES: "The Fort Bliss opening. The Army's article leads",
 }
 
-# Press-list lines removed: the list carries no fact.
-DROP_PRESS = {
-    GALV,
-    "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html",
-    "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php",
-    "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php",
-    "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html",
-    "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549",
-    "https://www.enr.com/toplists/2026-Top-400-Contractors-1",
-    "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm",
-    "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/",
-    "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
-}
-
-# Source entries removed because a free page on the same card carries the fact.
-#   HOU-003  the Housing Alliance HTX bio gives the February 2025 appointment
-#   HOU-080  Concept Neighborhood's projects page gives Axelrad's 1890s building
+# Free pages added where they carry what a locked page on the card says.
 #   HOU-016  Homes.com quotes Steve Commander and carries the plan, the prices and
 #            the 5 to 7 percent; ABC13 carries construction under way, April 2026
-DROP_SOURCE = {
-    ("HOU-003", "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo"),
-    ("HOU-080", "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php"),
-    ("HOU-016", GALV),
-}
 ADD_SOURCE = {"HOU-016": [{"url": ABC13, "date": "2026-04-22"},
                          {"url": "https://realtynewsreport.com/3d-printed-homes-coming-to-galveston-county-coast/",
                           "date": "2026-04-10"}]}
@@ -120,15 +124,12 @@ CARD_TEXT = [("HOU-016", "synopsis", "about 40 miles southeast of downtown Houst
 PRINCIPAL_SOURCE = {("HOU-016", "Steve Commander"): (GALV, HOMES)}
 
 # Page-level text. The Army's own article gives two open on the day and the rest
-# due in September, so Stars and Stripes comes off.
+# due in September, so the line names the Army, and Stars and Stripes follows
+# the Army's link.
 ICON_FACT = ("The Army", "Stars and Stripes: two open that day, the rest in September.",
              "The Army: two open that day, the rest in September.")
-PRECEDENT = {
-    "Avenue J": {"url": HOMES, "source": "Homes.com"},
-    "Gulf Shore Estates": {"url": HOMES, "source": "Homes.com",
-                           "what": ("26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. "
-                                    "Announced April 2026.")},
-}
+PRECEDENT = {"Avenue J": {"url": HOMES, "source": "Homes.com"},
+             "Gulf Shore Estates": {"url": HOMES, "source": "Homes.com"}}
 
 
 def host(u):
@@ -144,17 +145,6 @@ def apply(D, mk):
     """Apply the drops and swaps. Returns a list of failures."""
     bad = []
     T = {t["target_id"]: t for t in D["targets"]}
-    for t in D["targets"]:
-        if t.get("press"):
-            t["press"] = [p for p in t["press"] if p.get("url") not in DROP_PRESS]
-    for tid, u in DROP_SOURCE:
-        t = T.get(tid)
-        if not t:
-            continue
-        n = len(t.get("sources") or [])
-        t["sources"] = [s for s in t["sources"] if s.get("url") != u]
-        if len(t["sources"]) == n:
-            bad.append("audit11: %s has no source %s" % (tid, u))
     for tid, add in ADD_SOURCE.items():
         t = T.get(tid)
         if t:
@@ -182,7 +172,8 @@ def apply(D, mk):
             bad.append("audit11: the ICON record's Army line changed")
         else:
             f[1] = f[1].replace(ICON_FACT[1], ICON_FACT[2])
-        ir["links"] = [l for l in ir.get("links", []) if l[1] != STRIPES]
+        if not any(l[1] == STRIPES for l in ir.get("links", [])):
+            bad.append("audit11: the Stars and Stripes link left the ICON record")
     if mk == "dfw":
         # The Trinity Falls roster pointed Del Webb at PulteGroup's card. Del Webb
         # has its own card.
@@ -201,8 +192,26 @@ def apply(D, mk):
             if not p:
                 bad.append("audit11: no precedent %s" % name)
             else:
+                # The locked page stays, as the row's second link.
+                p["more"] = [{"url": p["url"], "source": p["source"]}]
                 p.update(new)
+    second(D)
     return bad
+
+
+def _paid_last(xs, url):
+    return [x for x in xs if url(x) not in PAID] + [x for x in xs if url(x) in PAID]
+
+
+def second(D):
+    """Free links first, subscription links after them, in every link list."""
+    for t in D["targets"]:
+        for k in ("sources", "press", "news"):
+            if t.get(k):
+                t[k] = _paid_last(t[k], lambda x: x.get("url"))
+    ir = D.get("icon_record") or {}
+    if ir.get("links"):
+        ir["links"] = _paid_last(ir["links"], lambda l: l[1])
 
 
 def urls(o, out=None):
@@ -219,7 +228,13 @@ def urls(o, out=None):
 
 
 def paid(d):
-    """The labelled links on this page, and any locked link without a label."""
+    """The labelled links on this page, and any locked link without a label.
+    Also any list that puts a subscription link before a free one."""
     on = urls(d)
     unlabelled = sorted(u for u in on if locked(u) and u not in PAID)
+    for t in d["targets"]:
+        for k in ("sources", "press", "news"):
+            f = [x.get("url") in PAID for x in t.get(k) or []]
+            if f != sorted(f):
+                unlabelled.append("%s %s puts a subscription link first" % (t["target_id"], k))
     return sorted(u for u in on if u in PAID), unlabelled

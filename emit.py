@@ -40,7 +40,7 @@ def public(d):
     d["ties"] = ties.ties(d, "dfw" if d["targets"][0]["target_id"].startswith("DFW") else "hou")
     d["paid"], loose = audit11.paid(d)
     if loose:
-        raise SystemExit("unlabelled subscription links: " + ", ".join(loose))
+        raise SystemExit("subscription links unlabelled or listed first: " + ", ".join(loose))
     return d
 
 

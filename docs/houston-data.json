@@ -194,10 +194,6 @@
     "https://all3dp.com/4/icons-899k-titan-construction-printer-puts-multistory-construction-in-your-hands-shipping-2027/"
    ],
    [
-    "The Real Deal on leases and the first reservations, March 2026",
-    "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
-   ],
-   [
     "Builder on ICON's platform for outside builders, 11 March 2026",
     "https://www.builderonline.com/design/technology/icons-next-phase-building-a-scalable-platform-for-3d-printed-housing/"
    ],
@@ -260,6 +256,14 @@
    [
     "TechCrunch on the Series C, 14 February 2025",
     "https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/"
+   ],
+   [
+    "The Real Deal on leases and the first reservations, March 2026",
+    "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
+   ],
+   [
+    "Stars and Stripes on the opening, 28 July 2026",
+    "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
    ]
   ]
  },
@@ -1194,14 +1198,26 @@
     "where": "City of Houston, East End",
     "what": "Elpis 3D Home Builders and HiveASMBLD duplex, started March 2026. No completion published.",
     "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
-    "source": "Homes.com"
+    "source": "Homes.com",
+    "more": [
+     {
+      "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php",
+      "source": "Houston Chronicle"
+     }
+    ]
    },
    {
     "project": "Gulf Shore Estates",
     "where": "Unincorporated Galveston County, San Leon",
-    "what": "26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. Announced April 2026.",
+    "what": "26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. One under construction, April 2026.",
     "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
-    "source": "Homes.com"
+    "source": "Homes.com",
+    "more": [
+     {
+      "url": "https://www.houstonchronicle.com/business/article/houston-real-estate-3d-printed-home-hiveasmbld-20824540.php",
+      "source": "Houston Chronicle"
+     }
+    ]
    }
   ],
   "quotes": [
@@ -19304,6 +19320,10 @@
     {
      "url": "https://realtynewsreport.com/3d-printed-homes-coming-to-galveston-county-coast/",
      "date": "2026-04-10"
+    },
+    {
+     "url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
+     "date": null
     }
    ],
    "hue_hex": "#FF4F00",
@@ -19347,6 +19367,18 @@
      "outlet": "Realty News Report",
      "headline": "3D Printed Homes Coming to Galveston County Coast",
      "url": "https://realtynewsreport.com/3d-printed-homes-coming-to-galveston-county-coast/"
+    },
+    {
+     "date": "2026-04-10",
+     "outlet": "The Galveston County Daily News",
+     "headline": "Printing the future: San Leon project tests new model for coastal housing",
+     "url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html"
+    },
+    {
+     "date": "2026-04-03",
+     "outlet": "Houston Business Journal",
+     "headline": "Houston-based company to build 3D-printed home community in San Leon",
+     "url": "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html"
     }
    ],
    "why": [
@@ -19460,6 +19492,12 @@
      "outlet": "Homes.com",
      "headline": "Houston's 3D-printed housing push grows with two new developments",
      "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/"
+    },
+    {
+     "date": "",
+     "outlet": "Houston Chronicle",
+     "headline": "3D-printed duplex under construction in Houston's East End",
+     "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php"
     }
    ],
    "why": [
@@ -19632,6 +19670,18 @@
      "outlet": "Wan Bridge",
      "headline": "In The News, the firm's own index, which carries a March 2026 launch at Frontera Shores",
      "url": "https://wanbridge.com/in-the-news/"
+    },
+    {
+     "date": "2026-04-25",
+     "outlet": "Houston Chronicle",
+     "headline": "Why Houston's booming build-to-rent sector could slow",
+     "url": "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php"
+    },
+    {
+     "date": "2025-03-14",
+     "outlet": "Houston Business Journal",
+     "headline": "Wan Bridge readjusts build-to-rent development goal",
+     "url": "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html"
     }
    ],
    "why": [
@@ -19978,12 +20028,12 @@
      "date": "2026-09-10"
     },
     {
-     "url": "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
-     "date": "2026-07-23"
-    },
-    {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
      "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
+     "date": "2026-07-23"
     }
    ],
    "hue_hex": "#8FA37E",
@@ -21541,6 +21591,10 @@
     {
      "url": "https://communityimpact.com/houston/bellaire-meyerland-west-university/development/2025/10/27/houston-housing-authority-to-redevelop-citys-oldest-public-housing-community-in-7-year-plan/",
      "date": "2025-10-27"
+    },
+    {
+     "url": "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo",
+     "date": "2025-02-01"
     }
    ],
    "hue_hex": "#C8102E",
@@ -22710,11 +22764,11 @@
    "mvp_screen": "It buys finished factory homes delivered to the lot, so a site printer does not fit.",
    "sources": [
     {
-     "url": "https://therealdeal.com/texas/houston/2023/03/10/live-lone-star-opens-its-first-manufactured-home-development/",
+     "url": "https://thelandingatpearland.com/",
      "date": null
     },
     {
-     "url": "https://thelandingatpearland.com/",
+     "url": "https://therealdeal.com/texas/houston/2023/03/10/live-lone-star-opens-its-first-manufactured-home-development/",
      "date": null
     }
    ],
@@ -26503,6 +26557,12 @@
      "outlet": "Construction In Focus",
      "headline": "CIVE, Construction and Design at their Finest",
      "url": "https://constructioninfocus.com/2025/03/cive-construction-and-design-at-their-finest/"
+    },
+    {
+     "date": "2023-02-07",
+     "outlet": "Bisnow Houston",
+     "headline": "Next Stop, Apartments: 2-Story 3D-Printed House Lays Foundation For Bigger Projects Ahead",
+     "url": "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549"
     }
    ],
    "why": [
@@ -26944,11 +27004,11 @@
      "date": null
     },
     {
-     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
+     "url": "https://investors.bldr.com/news/news-details/2026/Builders-FirstSource-Reports-First-Quarter-2026-Results/default.aspx",
      "date": null
     },
     {
-     "url": "https://investors.bldr.com/news/news-details/2026/Builders-FirstSource-Reports-First-Quarter-2026-Results/default.aspx",
+     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
      "date": null
     }
    ],
@@ -27482,7 +27542,20 @@
    "phone_absent": "Five offices, Houston included. Contact form only, no numbers.",
    "group": "trade",
    "tier": "W",
-   "press": [],
+   "press": [
+    {
+     "date": "2026",
+     "outlet": "Engineering News-Record",
+     "headline": "ENR 2026 Top 400 Contractors, where the firm is ranked 72",
+     "url": "https://www.enr.com/toplists/2026-Top-400-Contractors-1"
+    },
+    {
+     "date": "2023-08-08",
+     "outlet": "Engineering News-Record",
+     "headline": "Harvey, Harvey-Cleary, a Little Bit of Everything Firm",
+     "url": "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm"
+    }
+   ],
    "why": [
     {
      "axis": "repeatability",
@@ -29494,10 +29567,6 @@
    "mvp_screen": "Its Houston tilt-wall work sits inside a national firm, so purchases run through a national desk.",
    "sources": [
     {
-     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
-     "date": null
-    },
-    {
      "url": "https://bakerconstruction.com/",
      "date": null
     },
@@ -29507,6 +29576,10 @@
     },
     {
      "url": "https://bakerconstruction.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
      "date": null
     }
    ],
@@ -32212,6 +32285,10 @@
     {
      "url": "https://kinder.rice.edu/urbanedge/plant-second-ward-walkable-houston-east-end",
      "date": null
+    },
+    {
+     "url": "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php",
+     "date": null
     }
    ],
    "hue_hex": "#FF4F00",
@@ -32515,10 +32592,6 @@
      "date": null
     },
     {
-     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
-     "date": null
-    },
-    {
      "url": "https://www.constructiondive.com/news/construction-robot-ai-florida-pultegroup/740963/",
      "date": null
     },
@@ -32528,6 +32601,10 @@
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
      "date": null
     }
    ],
@@ -33195,11 +33272,11 @@
    "mvp_screen": "Runs Yardly, a national build-to-rent brand, but its Houston division president is unconfirmed, last dated 2018.",
    "sources": [
     {
-     "url": "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php",
+     "url": "https://www.builderonline.com/land/development/two-years-of-yardly-how-taylor-morrisons-build-to-rent-brand-has-evolved_o",
      "date": null
     },
     {
-     "url": "https://www.builderonline.com/land/development/two-years-of-yardly-how-taylor-morrisons-build-to-rent-brand-has-evolved_o",
+     "url": "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php",
      "date": null
     }
    ],
@@ -36464,6 +36541,7 @@
   }
  ],
  "paid": [
+  "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo",
   "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
   "https://therealdeal.com/texas/houston/2023/03/10/live-lone-star-opens-its-first-manufactured-home-development/",
   "https://therealdeal.com/texas/houston/2023/11/13/pagewood-wile-to-convert-eado-houston-warehouses/",
@@ -36473,10 +36551,21 @@
   "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
   "https://www.bisnow.com/houston/news/industrial/provident-realty-advisors-hires-christen-vestal-to-lead-forthcoming-houston-office-116393",
   "https://www.bisnow.com/houston/news/office/modernized-medical-office-building-to-break-ground-in-katy-90935",
+  "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549",
+  "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html",
+  "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html",
+  "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm",
+  "https://www.enr.com/toplists/2026-Top-400-Contractors-1",
+  "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
   "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
   "https://www.housingwire.com/articles/partners-building-succession-plan/",
   "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
+  "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php",
   "https://www.houstonchronicle.com/business/article/Frank-Liu-s-big-bets-on-urban-living-pay-off-15053303.php",
-  "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php"
+  "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php",
+  "https://www.houstonchronicle.com/business/article/houston-real-estate-3d-printed-home-hiveasmbld-20824540.php",
+  "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php",
+  "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php",
+  "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
  ]
 }

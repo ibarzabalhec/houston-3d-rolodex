@@ -195,10 +195,6 @@
     "https://all3dp.com/4/icons-899k-titan-construction-printer-puts-multistory-construction-in-your-hands-shipping-2027/"
    ],
    [
-    "The Real Deal on leases and the first reservations, March 2026",
-    "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
-   ],
-   [
     "Builder on ICON's platform for outside builders, 11 March 2026",
     "https://www.builderonline.com/design/technology/icons-next-phase-building-a-scalable-platform-for-3d-printed-housing/"
    ],
@@ -261,6 +257,14 @@
    [
     "TechCrunch on the Series C, 14 February 2025",
     "https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/"
+   ],
+   [
+    "The Real Deal on leases and the first reservations, March 2026",
+    "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
+   ],
+   [
+    "Stars and Stripes on the opening, 28 July 2026",
+    "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
    ]
   ]
  },
@@ -17755,11 +17759,11 @@
      "date": null
     },
     {
-     "url": "https://therealdeal.com/texas/2026/03/05/homebound-lines-up-1000-plus-dallas-fort-worth-home-lots/",
+     "url": "https://www.homebound.com/about",
      "date": null
     },
     {
-     "url": "https://www.homebound.com/about",
+     "url": "https://therealdeal.com/texas/2026/03/05/homebound-lines-up-1000-plus-dallas-fort-worth-home-lots/",
      "date": null
     }
    ],
@@ -19078,7 +19082,14 @@
    "phone_source": null,
    "phone_more": [],
    "phone_absent": "No phone published. Design center address only.",
-   "press": [],
+   "press": [
+    {
+     "date": "2023-07-07",
+     "outlet": "Dallas Morning News",
+     "headline": "Chicago builder that left D-FW returns to area, takes 1,500 home sites",
+     "url": "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/"
+    }
+   ],
    "key_stat": "436 company-wide closings in 2025, BUILDER rank 117",
    "mvp_screen": "Came back in 2023 with lots under contract across North Texas, but names no sitting DFW division head.",
    "synopsis": "Production builder selling a repeated floor-plan catalog. It builds in Forney, Midlothian, Justin, Celina, McKinney and Anna, among others. It left DFW in 2009 and, per the Dallas Morning News, returned aiming for about 500 homes a year.",
@@ -19144,11 +19155,11 @@
      "date": null
     },
     {
-     "url": "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/",
+     "url": "https://www.builderonline.com/firms/william-ryan-homes",
      "date": null
     },
     {
-     "url": "https://www.builderonline.com/firms/william-ryan-homes",
+     "url": "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/",
      "date": null
     }
    ],
@@ -19800,7 +19811,14 @@
    "phone_source": "https://www.firsttexashomes.com/about/",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "1,034 DFW closings in 2025, 2.5% share",
    "mvp_screen": "Locally owned with no parent company above it, but its about and contact pages name no officers.",
    "synopsis": "Production builder with sister brands Gallery Custom Homes and Harwood Homes. It has built in DFW for more than 40 years, from a Dallas office. BUILDER ranks it ninth in the metro. A 2010 Dallas News article names Randall Van Wolfswinkel chief executive.",
@@ -19877,11 +19895,11 @@
      "date": null
     },
     {
-     "url": "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
      "date": null
     },
     {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "url": "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
      "date": null
     }
    ],
@@ -26300,6 +26318,12 @@
      "outlet": "PR Newswire / Apis Cor",
      "headline": "Apis Cor announces strategic investment by D.R. Horton",
      "url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html"
+    },
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
     }
    ],
    "key_stat": "7,058 DFW closings in 2025, first on BUILDER's Local Leaders",
@@ -26376,10 +26400,6 @@
      "date": null
     },
     {
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
-     "date": null
-    },
-    {
      "url": "https://www.drhorton.com/contact-us-page",
      "date": null
     },
@@ -26393,6 +26413,10 @@
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
      "date": null
     }
    ],
@@ -26442,7 +26466,14 @@
    "phone_source": "https://www.pulte.com/homes/texas/dallas",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "1,083 DFW closings in 2025, 2.7% share",
    "mvp_screen": "Has piloted a robotic wall, but materials are negotiated nationally or regionally, so a method change is a corporate pilot.",
    "synopsis": "National production builder selling Pulte, Centex and Del Webb plans through a Dallas division. Its own release cites about 1,600 Dallas closings and $700 million in revenue in 2024. Scott Bryson has led the Dallas division since August 2025.",
@@ -26529,15 +26560,15 @@
      "date": null
     },
     {
-     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
-     "date": null
-    },
-    {
      "url": "https://www.constructiondive.com/news/construction-robot-ai-florida-pultegroup/740963/",
      "date": null
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
      "date": null
     }
    ],
@@ -26585,7 +26616,14 @@
     }
    ],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "943 Dallas-division closings in 2025, its own press kit",
    "mvp_screen": "Private builder repeating a national plan library across 67 DFW communities, and its chief operating officer once ran Dallas.",
    "synopsis": "Houston-founded national homebuilder, in Dallas since 1985. Its division office is at 3301 North I-35, Carrollton. Its press kit gives 198 Dallas team members and 778 Dallas homes sold in 2025. Jay Brown is Chief Executive Officer and Chris Weekley President.",
@@ -26650,10 +26688,6 @@
    ],
    "sources": [
     {
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
-     "date": null
-    },
-    {
      "url": "https://www.davidweekleyhomes.com/news/press-kit",
      "date": null
     },
@@ -26663,6 +26697,10 @@
     },
     {
      "url": "https://www.davidweekleyhomes.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
      "date": null
     }
    ],
@@ -27087,7 +27125,14 @@
    "phone_source": "https://www.meritagehomes.com/state/tx/dallasft-worth",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "1,833 DFW closings in 2025, 4.5% share",
    "mvp_screen": "Sells a national energy-efficient plan library, but its record stresses efficiency and cycle time, with nothing structural.",
    "synopsis": "National production builder listed on the NYSE as MTH, selling across Dallas-Fort Worth. It ranks fourth in DFW closings for 2025, per BUILDER. Austin Woffinden, Division President for DFW from 2018 to 2025, became EVP of Corporate Operations and Strategy on 1 January 2026.",
@@ -27214,7 +27259,14 @@
    "phone_source": "https://www.ashtonwoods.com/corporate-info",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "1,289 DFW closings in 2025, 3.2% share",
    "mvp_screen": "Purchasing sits at the parent, and one regional president covers its Texas markets.",
    "synopsis": "Privately held national builder based in Alpharetta, Georgia. Its DFW communities include Aster Park in McKinney and Collin Creek in Plano. It ranked seventh in DFW closings, per BUILDER. Adam Weaver is Senior Vice President of Purchasing, and Lindsay Motley is Regional President over Texas.",
@@ -27354,7 +27406,14 @@
    "phone_source": "https://www.perryhomes.com/contact-us",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "1,132 DFW closings in 2024, 2.6% share",
    "mvp_screen": "Run from Houston with purchasing across several markets, and no DFW construction or purchasing officer is named.",
    "synopsis": "Family-owned homebuilder founded in 1967. It builds in Houston, Austin, Dallas-Fort Worth and San Antonio, with a Dallas office at 5055 West Park Boulevard. It is not in BUILDER's 2026 top ten. Kathy Perry Britton is Executive Chair and Todd Chachere Chief Executive Officer.",
@@ -27796,7 +27855,14 @@
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "3,196 DFW closings in 2025, 7.8% share",
    "mvp_screen": "Parent volume is above 1,500 closings, per BUILDER, and it claims technological advancement but has paid for no new wall method.",
    "synopsis": "NYSE-listed homebuilder and land developer (GRBK) based in Plano, with seven subsidiary builders. Five of them build in DFW, including Trophy Signature, CB JENI and Southgate. BUILDER ranks it third in DFW closings. Jed Dolson, its President, becomes Co-Chief Executive Officer on 15 October 2026.",
@@ -31183,7 +31249,14 @@
    "phone_source": "https://www.lennar.com/contact?divisionNumber=DFWLEN&market=DAL",
    "phone_more": [],
    "phone_absent": null,
-   "press": [],
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
    "key_stat": "5,724 DFW closings in 2025, 14.1% share",
    "mvp_screen": "It already built the 100-home Wolf Ranch with ICON, but its DFW volume is above the band one or two printers cover.",
    "synopsis": "Miami-based national production builder, selling one Everything's Included plan library across DFW. BUILDER ranks it second in DFW closings. David Grove, DFW Division President from 2017, was named Executive Vice President of homebuilding on June 5, 2026. Its pages name no current DFW division president.",
@@ -31252,10 +31325,6 @@
      "date": null
     },
     {
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
-     "date": null
-    },
-    {
      "url": "https://www.lennar.com/contact?divisionNumber=DFWLEN&market=DAL",
      "date": null
     },
@@ -31281,6 +31350,10 @@
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
      "date": null
     }
    ],
@@ -32918,6 +32991,7 @@
   "https://www.enr.com/articles/46027-pursuit-of-innovation-drives-success",
   "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
   "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
-  "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php"
+  "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php",
+  "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
  ]
 }

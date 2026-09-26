@@ -3176,7 +3176,9 @@ function drawField(){
       '<div class="lab" style="margin-top:34px">Precedent</div>'+
       '<div class="scroll"><table class="ctab"><thead><tr><th>Project</th><th>Where</th><th>Status</th><th>Source</th></tr></thead><tbody>'+
       (K.precedent||[]).map(function(p){return '<tr><td class="q">'+esc(p.project)+'</td><td>'+esc(p.where)+'</td><td>'+esc(p.what)+
-        '</td><td class="s"><a class="src" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.source)+'</a></td></tr>';}).join('')+
+        '</td><td class="s"><a class="src" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.source)+'</a>'+
+        (p.more||[]).map(function(m){return ' <a class="src" href="'+esc(m.url)+'" target="_blank" rel="noopener">'+esc(m.source)+'</a>';}).join('')+
+        '</td></tr>';}).join('')+
       '</tbody></table></div>'+
       ((K.quotes&&K.quotes.length)?'<div class="lab" style="margin-top:34px">In the documents</div>'+
         K.quotes.map(function(q){return '<blockquote class="cq"><p>'+esc(q.text)+'</p>'+
