@@ -24,7 +24,7 @@ Yes and Partly both count as holding. A No does not. Sections are assigned befor
 - **Lennar and the firms it owns**, 3
 - **Holds all three counts**, 3
 - **One gap**, 38
-- **Builds the wall, not the house**, 50
+- **Contractors and plants**, 50
 - **National builder**, 12
 - **Custom and hybrid job**, 10
 - **Land owner, not the buyer**, 7

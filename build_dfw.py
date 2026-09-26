@@ -26,6 +26,7 @@ import audit7 as AUDIT7
 import audit8 as AUDIT8
 import audit9 as AUDIT9
 import audit12 as AUDIT12
+import audit13 as AUDIT13
 import policy as POLICY
 from version import BUILD, DATE
 import jsonio
@@ -186,7 +187,9 @@ OFF.update(AUDIT12.DFW_OFF)
 # Build-to-rent operators that build their own homes are builders here, as
 # Camillo, Clay and RSK are in Houston. Owners that buy from a builder stay with
 # the land owners.
-GROUP_FIX = {"DFW-002": "icon"}
+# CastleRock is run from Houston and sits in One gap on the Houston deck. A firm
+# on both decks reads the same on both, so it leaves the national section here.
+GROUP_FIX = {"DFW-002": "icon", "DFW-061": "b"}
 
 # A brand and its parent, or a masterplan and its developer, that print one
 # office line. Each group shares a number on purpose; the page says whose it is.
@@ -626,6 +629,10 @@ def main():
     _bad12 = AUDIT12.final(D, "dfw")
     if _bad12:
         raise SystemExit("FAILED: " + "; ".join(_bad12))
+    # Build 87. Screen lines in fact form, and each card's role and kind (audit13.py).
+    _bad13 = AUDIT13.final(D, "dfw")
+    if _bad13:
+        raise SystemExit("FAILED: " + "; ".join(_bad13))
     gate(D)
     jsonio.write(D, ROOT / "dfw" / "dfw-data.json", ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))

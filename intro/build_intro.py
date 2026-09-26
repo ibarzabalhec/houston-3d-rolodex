@@ -18,7 +18,6 @@ HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent
 sys.path.insert(0, str(ROOT))
 import jsonio  # noqa: E402
-import reel  # noqa: E402
 
 ACCENT = {"houston": "#FF4F00", "dfw": "#0A3A8C"}
 
@@ -26,7 +25,8 @@ ACCENT = {"houston": "#FF4F00", "dfw": "#0A3A8C"}
 def main(mk="houston"):
     src = ROOT / "docs" / ("houston-data.json" if mk == "houston" else "dfw-data.json")
     P = jsonio.read(src)
-    D = reel.reel_data(P)
+    # The served data carries the reel's numbers, computed once by emit.py.
+    D = P["reel"]
     D["accent"] = ACCENT[mk]
     page = (HERE / "_intro.html").read_text(encoding="utf-8")
     out = (page.replace("/*__FONTS__*/", (ROOT / "_fonts.css").read_text(encoding="utf-8"))

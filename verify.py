@@ -12,6 +12,7 @@ import re
 
 from playwright.async_api import async_playwright
 
+import audit13 as _A13
 import jsonio
 
 ROOT = pathlib.Path(__file__).parent
@@ -130,6 +131,28 @@ if _rep:
         print("   " + _b)
     raise SystemExit("FAILED: a screen line opens by restating its headline figure")
 print("screen lines    : none restates its headline figure")
+
+# Build 87. A screen line states facts: one or two short sentences, none of the
+# words that turn a fact into an argument (so, but, would and the rest).
+_argue = re.compile(r"\b(%s)\b" % "|".join(_A13.BANNED), re.I)
+_sc = []
+for _t in D["targets"]:
+    if _t["group"] == "out":
+        continue
+    _s = _t.get("mvp_screen") or ""
+    _m = _argue.search(_s)
+    if _m:
+        _sc.append("%s argues (%r): %s" % (_t["short"], _m.group(0), _s[:80]))
+    if len(_s.split()) > 26 or len(re.findall(r"[a-z0-9)]\. [A-Z0-9]", _s)) > 1:
+        _sc.append("%s runs long: %s" % (_t["short"], _s[:80]))
+    if not _t.get("kind") or _t.get("role") not in ("buyer", "client", "land"):
+        _sc.append("%s has no role or kind" % _t["short"])
+if _sc:
+    for _b in _sc[:20]:
+        print("   " + _b)
+    raise SystemExit("FAILED: a screen line argues instead of stating facts, or a card has no role")
+print("screen facts    : %d lines, none argues, each card has a role and a kind"
+      % sum(1 for t in D["targets"] if t["group"] != "out"))
 
 _rh, _words = [], 0
 for _where, _txt in _rendered():
@@ -628,19 +651,21 @@ async def main():
         await pg.wait_for_timeout(250)
 
         # The stat strip has to name what it counts. It once said "clear" for a
-        # number that counts holds, where a partial still counts.
-        strip = await pg.eval_on_selector_all(".stat", "e=>e.map(x=>x.textContent)")
-        want_a = sum(1 for t in D["targets"] if t["group"] == "a")
-        lab = [x for x in strip if "all three counts" in x]
-        print("stat strip      :", lab)
-        # Build 66: the number is the section, builders and developers holding
-        # all three. Adopters and contractors holding all three are in their own
-        # sections, so the label has to say whose count it is.
-        if not lab or (not re.search(r"(holding|hold) all three counts", lab[0])
-                       or "builders and developers" not in lab[0]):
-            problems.append("the three-count stat does not say whose holds it counts")
-        if str(want_a) not in (lab[0] if lab else ""):
-            problems.append("the three-count stat does not match the group count")
+        # number that counts holds, where a partial still counts. Build 87: it
+        # counts the three roles, each in the page's own words.
+        strip = await pg.eval_on_selector_all(".stat", "e=>e.map(x=>x.textContent.toLowerCase())")
+        got_roles = []
+        for role, one, many in (("buyer", "printer buyer", "printer buyers"), ("client", "client", "clients"),
+                                ("land", "land owner", "land owners")):
+            want = sum(1 for t in D["targets"] if t["group"] != "out" and t.get("role") == role)
+            if not want:
+                continue
+            word = one if want == 1 else many
+            hit = [x for x in strip if x.strip() == "%d%s" % (want, word)]
+            got_roles.append("%s %d" % (role, want))
+            if not hit:
+                problems.append("the strip does not count %d %s" % (want, word))
+        print("stat strip      : roles", ", ".join(got_roles))
 
         # A firm that is both already printing and method-clear kept the black
         # ground and silently lost the accent the legend promises.
@@ -970,14 +995,14 @@ async def main():
             problems.append("the contractor section is missing or short")
         await pg.evaluate("document.getElementById('vList').click()")
         await pg.wait_for_timeout(300)
-        hdr = await pg.locator("#tb tr.grp", has_text="Builds the wall, not the house").count()
+        hdr = await pg.locator("#tb tr.grp", has_text="Contractors and plants").count()
         # Build 62 put a header row on each link of the wall chain inside this
         # section, so a firm row is now anything that is neither a section
         # header nor a link header.
         rows_trade = await pg.evaluate(
             "(()=>{const r=[...document.querySelectorAll('#tb tr')];"
             "let on=false,n=0;for(const x of r){if(x.classList.contains('grp')){"
-            "on=x.textContent.indexOf('Builds the wall')>=0;continue;}"
+            "on=x.textContent.indexOf('Contractors and plants')>=0;continue;}"
             "if(x.classList.contains('chn'))continue;if(on)n++;}return n})()")
         print("contractors     :", len(trade), "in data |", rows_trade, "listed")
         if hdr != 1 or rows_trade != len(trade):
@@ -1931,6 +1956,62 @@ async def main():
             problems.append("the page policy blocked something the page does: %s" % blocked[:2])
         if in_artifact:
             problems.append("the artifact copy carries the page policy")
+
+        # Build 87. A card says what kind of firm it is before anything else: its
+        # role in a printer sale and its kind sit above the name. The screen comes
+        # next, then who to call. One card per role is opened.
+        deck = [t for t in D["targets"] if t["group"] != "out"]
+        firsts = []
+        for role in ("buyer", "client", "land"):
+            t = next((x for x in deck if x.get("role") == role and x.get("principals")), None)
+            if not t:
+                continue
+            await pg.goto(URL)
+            await pg.wait_for_timeout(300)
+            await pg.evaluate("id=>window.rolodex.open(id)", t["target_id"])
+            await pg.wait_for_timeout(250)
+            top = await pg.evaluate("""(()=>{const h=document.querySelector('#firmBody .fhead');
+              const k=h&&h.firstElementChild;
+              const labs=[...document.querySelectorAll('#firmBody > .row > .lab')].map(x=>x.textContent);
+              return {first:k?k.className:'', chip:k?(k.querySelector('.rk')||{}).className||'':'',
+                      kind:k?(k.querySelector('.fkind')||{}).textContent||'':'', labs:labs.slice(0,2)}})()""")
+            firsts.append("%s %s" % (role, top["labs"]))
+            if top["first"] != "fkick" or ("rk " + role) not in top["chip"] or top["kind"] != t["kind"]:
+                problems.append("%s does not open on its role and kind: %s" % (t["short"], top))
+            if top["labs"] != ["The screen", "Who to call"]:
+                problems.append("%s: the screen and who to call are not the first two sections: %s"
+                                % (t["short"], top["labs"]))
+        print("card top        : role and kind above the name, then", "; ".join(firsts))
+
+        # The role switch counts each role and returns it.
+        await pg.goto(URL)
+        await pg.wait_for_timeout(300)
+        rb = await pg.evaluate("""[...document.querySelectorAll('.rolebar button')].map(b=>
+            [b.dataset.role,+(b.querySelector('s')||{}).textContent])""")
+        seen = []
+        for role, n in rb:
+            want = sum(1 for t in deck if not role or t.get("role") == role)
+            await pg.evaluate("r=>document.querySelector('.rolebar button[data-role=\"'+r+'\"]').click()", role)
+            await pg.wait_for_timeout(150)
+            shown = await pg.evaluate("window.rolodex.shown().map(t=>t.role)")
+            seen.append("%s %d" % (role or "all", n))
+            if n != want or len(shown) != want or (role and set(shown) != {role}):
+                problems.append("the role switch %r counts %d, returns %d, wants %d" % (role, n, len(shown), want))
+        print("role switch     :", ", ".join(seen))
+
+        # The List's column labels stay under the navigation while the list scrolls.
+        await pg.evaluate("document.querySelector('.rolebar button[data-role=\"\"]').click()")
+        await pg.evaluate("document.getElementById('vList').click()")
+        await pg.wait_for_timeout(200)
+        await pg.evaluate("document.getElementById('tb').scrollIntoView();window.scrollBy(0,2400)")
+        await pg.wait_for_timeout(300)
+        stick = await pg.evaluate("""(()=>{const th=document.querySelector('#stageList thead th');
+            const nav=document.querySelector('nav');
+            return {th:Math.round(th.getBoundingClientRect().top),nav:Math.round(nav.getBoundingClientRect().bottom),
+                    y:Math.round(window.scrollY)}})()""")
+        print("list header     : at %dpx under a %dpx bar, %dpx down the page" % (stick["th"], stick["nav"], stick["y"]))
+        if abs(stick["th"] - stick["nav"]) > 2:
+            problems.append("the List's column labels do not stay under the navigation: %s" % stick)
 
         await b.close()
 

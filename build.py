@@ -1098,7 +1098,7 @@ DATA = {
  # moved into the group note, where there is room to say it once.
  "group_labels": {"adopter": "Already buying printed walls", "a": "Holds all three counts",
                   "b": "One gap", "national": "National builder",
-                  "trade": "Builds the wall, not the house",
+                  "trade": "Contractors and plants",
                   "creative": "Custom and hybrid job",
                   "channel": "Land owner, not the buyer",
                   "icon": "Lennar and the firms it owns"},
@@ -1290,7 +1290,7 @@ DATA = {
         "linked": sum(1 for t in deck if t["group"] == gk
                       and any(p.get("linkedin_url") or p.get("source_url") for p in t["principals"]))}
        for gk, lbl in [("adopter", "Already buying printed walls"), ("a", "Holds all three counts"),
-                       ("b", "One gap"), ("trade", "Builds the wall, not the house"),
+                       ("b", "One gap"), ("trade", "Contractors and plants"),
                        ("creative", "Custom and hybrid job"),
                        ("national", "National builder"), ("channel", "Land owner, not the buyer"),
                        ("icon", "Lennar and the firms it owns")]],
@@ -1532,6 +1532,11 @@ if _bad11:
 _bad12 = AUDIT12.final(DATA, "hou")
 if _bad12:
     raise SystemExit("FAILED: " + "; ".join(_bad12))
+# Build 87. Screen lines in fact form, and each card's role and kind (audit13.py).
+import audit13 as AUDIT13
+_bad13 = AUDIT13.final(DATA, "hou")
+if _bad13:
+    raise SystemExit("FAILED: " + "; ".join(_bad13))
 _banned = _scan_for_banned(DATA)
 if _banned:
     for where, what in _banned:

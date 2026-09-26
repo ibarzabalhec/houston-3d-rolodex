@@ -30,6 +30,11 @@ ROOT = pathlib.Path(__file__).parent
 # dates and the figures register stay in the build's own data files, which the
 # gates read, and never reach the page or the served JSON.
 PRIVATE = ("audit_flags", "phone_rule", "phone_shared", "off_reason", "last_verified", "new_layer")
+# Build 87. Fields the page never reads. The scores and tier letters are the
+# build's own ranking, and an outside reader has no use for a working field.
+# The reel and the ties read some of these, so they are dropped after both run.
+UNREAD = ("tier", "scores", "capital_mark", "hue_hex", "tail", "categories", "entity_type", "entity_role",
+          "channel_builders", "clears", "holds", "deciders", "people_absent")
 
 
 def public(d, mk):
@@ -50,6 +55,9 @@ def public(d, mk):
     d["paid"], loose = audit11.paid(d)
     if loose:
         raise SystemExit("subscription links unlabelled or listed first: " + ", ".join(loose))
+    for t in d["targets"]:
+        for k in UNREAD:
+            t.pop(k, None)
     return d
 
 
