@@ -441,6 +441,41 @@ button.stat:hover span,button.stat:focus-visible span{color:var(--ink2)}
 .chip.printing::after{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;
   background:var(--on-ink);margin-left:7px;vertical-align:middle}
 .chip.dim{opacity:.45}
+/* Build 87. A filter left the grid looking unchanged. A matching firm was the
+   ordinary grey chip, a firm that did not match was the same chip at 45 per
+   cent, and on the dark theme the two were hard to tell apart. Now a match is
+   inked and sits first in its cell, the cell that holds it is outlined with its
+   count set large, a cell with no match recedes, and a chip that does not match
+   drops to a trace. The strip above the grid names each cell holding a match,
+   with its count and, for a slice of twenty firms or fewer, the firms. Ink, not
+   orange: orange means only the track record. */
+.matrix.fil .chip.dim{opacity:.22}
+.matrix.fil .chip.dim:hover{opacity:.6}
+.chip.match{border-color:var(--ink);color:var(--ink);font-weight:700;background:var(--paper3)}
+.chip.match .vol{color:var(--ink2)}
+.chip.match.i-clear{background:var(--orange);color:var(--on-orange);border-color:var(--ink)}
+.chip.match.i-clear .vol{color:var(--on-orange)}
+.chip.match.printing{background:var(--ink);color:var(--on-ink)}
+.chip.match.printing .vol{color:var(--on-ink-dim)}
+.chip.match.printing.i-clear{background:var(--orange);color:var(--on-orange)}
+.cell.hit{box-shadow:inset 0 0 0 2px var(--ink)}
+.cell.hit .chead b{font-size:28px}
+.cell.hit .chead span{color:var(--ink)}
+.cell.miss .chead b,.cell.miss .chead b .of,.cell.miss .chead span{color:var(--ink4)}
+.mhits{margin:0 0 18px;padding:14px 0 12px;border-top:1px solid var(--ink);border-bottom:1px solid var(--rule)}
+.mhits[hidden]{display:none}
+.mh-tot{margin:0 0 8px;font:600 10.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.mh-tot b{font:800 24px/1 var(--sans);letter-spacing:-.02em;color:var(--ink);margin-right:8px}
+.mh-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:6px 0}
+.mh-line{display:flex;flex-wrap:wrap;gap:0 28px}
+.mh-line .mh-row{padding:2px 0}
+.mh-cell{display:inline-flex;align-items:baseline;gap:8px;min-height:32px;padding:4px 8px 4px 0;
+  background:none;border:0;cursor:pointer;text-align:left;color:var(--ink);
+  font:600 10.5px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.mh-cell b{font:800 18px/1 var(--sans);letter-spacing:-.02em}
+.mh-cell:hover span{text-decoration:underline;text-underline-offset:3px}
+.mh-cell:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media print{.mhits{display:none}}
 .chead b .of{font:500 11px/1 var(--mono);font-style:normal;color:var(--ink3);letter-spacing:0}
 .chip .vol{margin-left:7px;font:500 9.5px/1 var(--mono);font-style:normal;
   color:var(--ink3);font-variant-numeric:tabular-nums}
@@ -1465,6 +1500,7 @@ html.reel body{overflow:hidden}
 
   <div class="wrap" id="stageMatrix">
     <p class="mzero" id="mzero" role="status" hidden></p>
+    <div class="mhits" id="mhits" role="status" aria-label="Where the filtered firms sit" hidden></div>
     <div class="mwrap">
       <div class="ylab" id="ylab"></div>
       <div class="matrix" id="matrix" role="group" aria-label="Firms by repetition and machine fit"></div>
@@ -2309,35 +2345,59 @@ function volSort(a,b){
   if(av!==bv) return bv-av;
   return a.short.localeCompare(b.short);
 }
+function matrixChip(t,fil){
+  var al=t.entity_name+'. Repetition '+W[t.marks.repeatability]+
+    ', Printer fit '+W[t.marks.machine_fit]+
+    ', track record '+W[t.marks.innovation]+
+    (t.group==='adopter'?', already buying printed walls':'')+
+    (t.has_decider?', decision-maker named':'')+'.';
+  return '<button class="chip i-'+t.marks.innovation+(t.group==='adopter'?' printing':'')+
+    (hit(t)?(fil?' match':''):' dim')+(call.indexOf(t.target_id)>=0?' sel':'')+
+    '" data-id="'+t.target_id+'" title="'+esc(t.entity_name)+
+    '" aria-label="'+esc(al)+'">'+esc(t.short)+
+    (t.vol?'<i class="vol">'+String(t.vol).replace(/\B(?=(\d{3})+(?!\d))/g,',')+'</i>':'')+
+    '</button>';
+}
 function drawMatrix(){
-  var html='';
+  var html='', fil=!!(q||activeFilters().length), found=[];
   for(var yi=ORD.length-1;yi>=0;yi--){
     for(var xi=ORD.length-1;xi>=0;xi--){
-      var y=ORD[yi],x=ORD[xi],key=x+'|'+y;
+      var y=ORD[yi],x=ORD[xi],key=x+'|'+y,cid='mc-'+x+'-'+y;
       var rows=T.filter(function(t){return t.cell===key;}).sort(volSort);
       var best=(x==='clear'&&y==='clear');
       /* Build 66. With filters on, the counter said 7 of 127 and the cells still
-         summed to 127. A cell now says how many of its firms are showing. */
-      var on=rows.filter(hit).length, fil=(on!==rows.length)||q||activeFilters().length;
-      html+='<div class="cell'+(best?' best':'')+'" role="group" aria-label="'+
-        'Repetition '+W[x]+', Printer fit '+W[y]+', '+rows.length+' firms">'+
+         summed to 127. A cell now says how many of its firms are showing.
+         Build 87. The ones showing come first in their cell. */
+      var hits=rows.filter(hit), on=hits.length;
+      if(fil){
+        rows=hits.concat(rows.filter(function(t){return !hit(t);}));
+        if(on) found.push({id:cid,x:x,y:y,rows:hits});
+      }
+      html+='<div class="cell'+(best?' best':'')+(fil?(on?' hit':' miss'):'')+'" id="'+cid+'" role="group" aria-label="'+
+        'Repetition '+W[x]+', Printer fit '+W[y]+', '+(fil?on+' of ':'')+rows.length+' firms">'+
         '<div class="chead"><b>'+(fil?on+'<i class="of"> of '+rows.length+'</i>':rows.length)+'</b><span>Repetition '+W[x]+' &middot; Printer fit '+W[y]+'</span></div>'+
-        '<div class="chips">'+rows.map(function(t){
-          var al=t.entity_name+'. Repetition '+W[t.marks.repeatability]+
-            ', Printer fit '+W[t.marks.machine_fit]+
-            ', track record '+W[t.marks.innovation]+
-            (t.group==='adopter'?', already buying printed walls':'')+
-            (t.has_decider?', decision-maker named':'')+'.';
-          return '<button class="chip i-'+t.marks.innovation+(t.group==='adopter'?' printing':'')+
-            (hit(t)?'':' dim')+(call.indexOf(t.target_id)>=0?' sel':'')+
-            '" data-id="'+t.target_id+'" title="'+esc(t.entity_name)+
-            '" aria-label="'+esc(al)+'">'+esc(t.short)+
-            (t.vol?'<i class="vol">'+String(t.vol).replace(/\B(?=(\d{3})+(?!\d))/g,',')+'</i>':'')+
-            '</button>';
-        }).join('')+'</div></div>';
+        '<div class="chips">'+rows.map(function(t){return matrixChip(t,fil);}).join('')+'</div></div>';
     }
   }
-  document.getElementById('matrix').innerHTML=html;
+  var mx=document.getElementById('matrix');
+  mx.innerHTML=html;
+  mx.classList.toggle('fil',fil);
+  /* Build 87. The cells that hold the filtered firms can sit below the fold, so
+     the strip above the grid says where they are: each cell, its count, and the
+     firms when there are few enough to read. A cell opens at a tap. */
+  var mh=document.getElementById('mhits'), nf=0;
+  found.forEach(function(s){nf+=s.rows.length;});
+  if(mh){
+    mh.hidden=!nf;
+    mh.innerHTML=nf?('<p class="mh-tot"><b>'+nf+'</b>of '+T.length+' firms &middot; '+
+      found.length+(found.length===1?' cell':' cells')+'</p>'+
+      '<div class="'+(nf<=20?'mh-list':'mh-line')+'">'+
+      found.map(function(s){
+        return '<div class="mh-row"><button class="mh-cell" data-goto="'+s.id+'"><b>'+s.rows.length+'</b>'+
+          '<span>Repetition '+W[s.x]+' &middot; Printer fit '+W[s.y]+'</span></button>'+
+          (nf<=20?s.rows.map(function(t){return matrixChip(t,true);}).join(''):'')+'</div>';
+      }).join('')+'</div>'):'';
+  }
   document.getElementById('xrow').innerHTML=ORD.slice().reverse().map(function(x){
     return '<div class="'+(x==='clear'?'hi':'')+'">Repetition '+W[x]+'</div>';}).join('');
   // Every chip dimmed and nothing said so. The grid looked broken rather than empty.

@@ -1036,6 +1036,50 @@ async def main():
         await pg.evaluate("window.rolodex.reset()")
         await pg.wait_for_timeout(200)
 
+        # Build 87. A filter on the Screen has to show where its firms landed:
+        # each matching chip inked and first in its cell, each cell holding one
+        # outlined, each cell without one receding, the other chips a trace, and
+        # a strip above the grid whose counts add to the slice. Run on the
+        # smallest section, so the strip also names its firms.
+        await pg.evaluate("document.getElementById('vMatrix').click()")
+        await pg.wait_for_timeout(180)
+        fr = await pg.evaluate("""(()=>{
+          const R=window.rolodex, gs=[...new Set(R.firms.map(t=>t.group))];
+          let g=null, n=1e9;
+          gs.forEach(x=>{R.setFilters({group:[x]});const k=R.shown().length;if(k>0&&k<n){n=k;g=x;}});
+          R.setFilters({group:[g]});
+          const mh=document.getElementById('mhits');
+          const cells=[...document.querySelectorAll('#matrix .cell')];
+          const order=cells.every(c=>{const ch=[...c.querySelectorAll('.chip')];
+            const i=ch.findIndex(e=>!e.classList.contains('match'));
+            return i<0||ch.slice(i).every(e=>!e.classList.contains('match'));});
+          const strip=[...mh.querySelectorAll('.mh-cell b')].reduce((a,b)=>a+(+b.textContent),0);
+          const dim=document.querySelector('#matrix .chip.dim');
+          return {g:g,shown:n,hidden:mh.hidden,strip:strip,
+            match:document.querySelectorAll('#matrix .chip.match').length,
+            named:mh.querySelectorAll('.chip[data-id]').length,
+            hit:cells.filter(c=>c.classList.contains('hit')).length,
+            withMatch:cells.filter(c=>c.querySelector('.chip.match')).length,
+            miss:cells.filter(c=>c.classList.contains('miss')).length, cells:cells.length,
+            order:order, dimop:dim?+getComputedStyle(dim).opacity:0};
+        })()""")
+        print("screen filter   : %s, %d firms, strip %d, %d cells outlined, dim %.2f"
+              % (fr["g"], fr["shown"], fr["strip"], fr["hit"], fr["dimop"]))
+        if fr["hidden"] or fr["strip"] != fr["shown"]:
+            problems.append("the Screen strip does not count the filtered firms")
+        if fr["match"] != fr["shown"] or not fr["order"]:
+            problems.append("filtered firms are not marked, or not first in their cells")
+        if fr["hit"] != fr["withMatch"] or fr["hit"] + fr["miss"] != fr["cells"]:
+            problems.append("a cell's outline does not follow whether it holds a match")
+        if fr["shown"] <= 20 and fr["named"] != fr["shown"]:
+            problems.append("the Screen strip does not name the firms of a small slice")
+        if fr["dimop"] > 0.3:
+            problems.append("chips outside the filter are not dimmed enough to tell apart")
+        await pg.evaluate("window.rolodex.reset()")
+        await pg.wait_for_timeout(200)
+        if not await pg.evaluate("document.getElementById('mhits').hidden"):
+            problems.append("the Screen strip stays up with no filter applied")
+
         # a contractor names the person who signs for equipment, not a specification
         badge = await pg.evaluate(
             "(()=>{const t=window.rolodex.data.targets.find(x=>x.group==='trade'"
