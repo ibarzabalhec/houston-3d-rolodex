@@ -602,6 +602,11 @@ def main():
         for b in _bad7:
             print("   " + b)
         raise SystemExit("FAILED: an audit7 edit did not land")
+    # Build 84. Sources a reader can open (audit11.py).
+    import audit11 as AUDIT11
+    _bad11 = AUDIT11.apply(D, "dfw")
+    if _bad11:
+        raise SystemExit("FAILED: " + "; ".join(_bad11))
     gate(D)
     json.dump(D, open(ROOT / "dfw" / "dfw-data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))

@@ -1463,7 +1463,7 @@ async def main():
         # a saved call list holding an id this deck does not carry still opens
         await ap.evaluate("localStorage.setItem(%r, JSON.stringify(['X-NOPE-1', %r]))" % (ckey, good))
         await ap.reload()
-        await ap.wait_for_timeout(400)
+        await ap.wait_for_timeout(900)
         await ap.click("#openCall")
         await ap.wait_for_timeout(300)
         sheet = await ap.evaluate("(document.getElementById('firmBody')||{}).textContent||''")
@@ -1679,6 +1679,102 @@ async def main():
         if dsk != "none":
             problems.append("the phone firm bar shows on a desktop")
 
+        # Build 84. Related firms. Every tie shows on both cards it joins, a node
+        # on the deck opens its card, the section is never empty, and on a phone
+        # the chart stays inside the screen. Links behind a subscription carry
+        # their label.
+        PUB = json.load(open(ROOT / "docs" / ("dfw-data.json" if MARKET == "dfw" else "houston-data.json"),
+                             encoding="utf-8"))
+        TI = PUB.get("ties") or []
+        ondeck = {t["target_id"] for t in PUB["targets"]}
+        want_rel = {}
+        for e in TI:
+            for me, other in ((e["a"], e["b"]), (e["b"], e["a"])):
+                if me in ondeck:
+                    want_rel.setdefault(me, set()).add(other)
+        rel_missing, rel_empty = [], []
+        ids = sorted(want_rel)
+        for tid in ids[::max(1, len(ids) // 45)]:
+            await pg.evaluate("window.rolodex.open(%r)" % tid)
+            await pg.wait_for_timeout(120)
+            got = await pg.evaluate(
+                "(()=>{const r=[...document.querySelectorAll('#firmBody .row')].find(x=>x.querySelector('.lab')"
+                "&&x.querySelector('.lab').textContent.trim()==='Related firms');if(!r)return null;"
+                "return {ids:[...r.querySelectorAll('.onode[data-id]')].map(x=>x.dataset.id),"
+                "txt:[...r.querySelectorAll('.onode')].map(x=>x.querySelector('.onm').textContent),"
+                "cur:r.querySelectorAll('.onode.cur').length,n:r.querySelectorAll('.onode').length}})()")
+            if not got or not got["n"]:
+                rel_empty.append(tid)
+                continue
+            names = {t["target_id"]: t["short"] for t in PUB["targets"]}
+            for o in want_rel[tid]:
+                if o not in got["ids"] and names.get(o, o) not in got["txt"]:
+                    rel_missing.append("%s lacks %s" % (tid, o))
+        without = [t["target_id"] for t in PUB["targets"] if t["target_id"] not in want_rel][:1]
+        stray = False
+        if without:
+            await pg.evaluate("window.rolodex.open(%r)" % without[0])
+            await pg.wait_for_timeout(120)
+            stray = await pg.evaluate("[...document.querySelectorAll('#firmBody .lab')].some(x=>x.textContent.trim()==='Related firms')")
+        # a node opens the card it names, and that card points back
+        src = next((e["b"] for e in TI if e["k"] == "owns" and e["a"] in ondeck and e["b"] in ondeck), None)
+        hop = None
+        if src:
+            await pg.evaluate("window.rolodex.open(%r)" % src)
+            await pg.wait_for_timeout(150)
+            to = await pg.evaluate("(()=>{const b=document.querySelector('#firmBody button.onode[data-id]');"
+                                   "if(!b)return null;const i=b.dataset.id;b.click();return i})()")
+            await pg.wait_for_timeout(250)
+            hop = await pg.evaluate("(()=>{const h=document.querySelector('#firmBody .onode.cur');"
+                                    "return {cur:h?h.textContent:'',back:!!document.querySelector("
+                                    "'#firmBody .onode[data-id=\"%s\"]')}})()" % src)
+            hop["to"] = to
+        # phone: the widest chart stays inside the screen
+        big = max(want_rel, key=lambda k: len(want_rel[k])) if want_rel else None
+        rctxp = await b.new_context(viewport={"width": 390, "height": 844}, is_mobile=True, device_scale_factor=2)
+        rpp = await rctxp.new_page()
+        await rpp.goto(URL)
+        await rpp.wait_for_timeout(500)
+        ph_over = None
+        if big:
+            await rpp.evaluate("window.rolodex.open(%r)" % big)
+            await rpp.wait_for_timeout(250)
+            ph_over = await rpp.evaluate(
+                "(()=>{const o=[...document.querySelectorAll('#firmBody .org')];"
+                "return {page:document.documentElement.scrollWidth-document.documentElement.clientWidth,"
+                "chart:Math.max(0,...o.map(x=>x.scrollWidth-x.clientWidth)),"
+                "out:[...document.querySelectorAll('#firmBody .onode')].filter(x=>x.getBoundingClientRect().right>innerWidth+1).length}})()")
+        await rctxp.close()
+        # subscription labels
+        paid = PUB.get("paid") or []
+        lab = None
+        if paid:
+            holder = next((t["target_id"] for t in PUB["targets"]
+                           if any(s.get("url") in paid for s in t.get("sources") or [])), None)
+            if holder:
+                await pg.evaluate("window.rolodex.open(%r)" % holder)
+                await pg.wait_for_timeout(150)
+                lab = await pg.evaluate(
+                    "(()=>{const a=[...document.querySelectorAll('#firmBody .srcs a')].filter(x=>%s.includes(x.getAttribute('href')));"
+                    "return a.map(x=>getComputedStyle(x,'::after').content)})()" % json.dumps(paid))
+        await pg.evaluate("document.getElementById('home').click()")
+        await pg.wait_for_timeout(120)
+        print("related firms   : %d ties, %d cards checked, missing %d, empty %d, stray %s, hop %s, phone %s, "
+              "paid labels %s" % (len(TI), len(ids[::max(1, len(ids) // 45)]), len(rel_missing), len(rel_empty),
+                                  stray, hop, ph_over, lab))
+        if rel_missing:
+            problems.append("a tie shows on one card and not the other: %s" % rel_missing[:4])
+        if rel_empty:
+            problems.append("a Related firms section is empty: %s" % rel_empty[:4])
+        if stray:
+            problems.append("a card with no ties renders a Related firms section")
+        if src and not (hop and hop["to"] and hop["back"] and hop["cur"]):
+            problems.append("a Related firms node does not open its card, or the card does not point back: %s" % hop)
+        if ph_over and (ph_over["page"] > 1 or ph_over["chart"] > 1 or ph_over["out"]):
+            problems.append("the Related firms chart runs off a phone screen: %s" % ph_over)
+        if paid and (not lab or any("Subscription" not in (c or "") for c in lab)):
+            problems.append("a link behind a subscription has no label: %s" % lab)
+
         # The intro reel plays first. It covers the page on a fresh session, a
         # tap ends it without reaching the page under it, it does not play twice
         # in a session or with reduced motion, it lifts by itself at the end
@@ -1726,6 +1822,19 @@ async def main():
         if laid != len(shapes):
             problems.append("the reel does not lay out at every frame shape: %s" % laid)
         await rctx.close()
+        # A change of market pours the new market's headline again, every time.
+        sctx = await b.new_context(viewport={"width": 1280, "height": 800})
+        sp = await sctx.new_page()
+        await sp.add_init_script("try{sessionStorage.setItem('rolodex-opened','1');sessionStorage.setItem('rolodex-arrive','1')}catch(e){}")
+        await sp.goto(URL)
+        await sp.wait_for_timeout(450)
+        pour = await sp.evaluate("document.querySelectorAll('.pbead').length>0||!!document.getElementById('hl').style.clipPath")
+        await sp.wait_for_timeout(3200)
+        pour_rest = await sp.evaluate("!document.querySelectorAll('.pbead').length&&!document.getElementById('hl').style.clipPath")
+        await sctx.close()
+        print("market switch   : headline pours %s, at rest after %s" % (pour, pour_rest))
+        if not pour or not pour_rest:
+            problems.append("a change of market does not pour the headline and leave it at rest")
         qctx = await b.new_context(viewport={"width": 1280, "height": 800}, reduced_motion="reduce")
         qp = await qctx.new_page()
         await qp.goto(base + hsh)

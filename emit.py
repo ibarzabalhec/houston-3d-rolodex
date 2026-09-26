@@ -9,6 +9,8 @@ built ships as an empty slot, and the switch hides itself.
 import copy, json, os, pathlib, shutil
 
 import reel
+import audit11
+import ties
 
 ROOT = pathlib.Path(__file__).parent
 
@@ -32,6 +34,13 @@ def public(d):
     # The intro reel's numbers, read from the records the page renders. reel.py
     # stops the build if a count differs from the page's strip.
     d["reel"] = reel.reel_data(d)
+    # Build 84. Links behind a subscription carry a label on the page. A link on
+    # a locked outlet with no label stops the build (audit11.py).
+    # Build 84. Who is tied to whom, drawn at the foot of each card (ties.py).
+    d["ties"] = ties.ties(d, "dfw" if d["targets"][0]["target_id"].startswith("DFW") else "hou")
+    d["paid"], loose = audit11.paid(d)
+    if loose:
+        raise SystemExit("unlabelled subscription links: " + ", ".join(loose))
     return d
 
 

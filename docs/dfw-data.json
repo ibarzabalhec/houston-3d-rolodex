@@ -166,7 +166,7 @@
    ],
    [
     "The Army",
-    "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. Stars and Stripes: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
+    "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. The Army: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
    ],
    [
     "ICON Prime",
@@ -233,10 +233,6 @@
    [
     "U.S. Army on the Fort Bliss barracks, 30 July 2026",
     "https://www.army.mil/article/294240/fort_bliss_unveils_new_3d_printed_barracks"
-   ],
-   [
-    "Stars and Stripes on the opening, 28 July 2026",
-    "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
    ],
    [
     "ICON at Fort Polk, 29 June 2026",
@@ -1648,7 +1644,7 @@
      },
      {
       "name": "Del Webb",
-      "id": "DFW-007",
+      "id": "DFW-064",
       "off": false
      },
      {
@@ -19082,14 +19078,7 @@
    "phone_source": null,
    "phone_more": [],
    "phone_absent": "No phone published. Design center address only.",
-   "press": [
-    {
-     "date": "2023-07-07",
-     "outlet": "Dallas Morning News",
-     "headline": "Chicago builder that left D-FW returns to area, takes 1,500 home sites",
-     "url": "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/"
-    }
-   ],
+   "press": [],
    "key_stat": "436 company-wide closings in 2025, BUILDER rank 117",
    "mvp_screen": "Came back in 2023 with lots under contract across North Texas, but names no sitting DFW division head.",
    "synopsis": "Production builder selling a repeated floor-plan catalog. It builds in Forney, Midlothian, Justin, Celina, McKinney and Anna, among others. It left DFW in 2009 and, per the Dallas Morning News, returned aiming for about 500 homes a year.",
@@ -19811,14 +19800,7 @@
    "phone_source": "https://www.firsttexashomes.com/about/",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "1,034 DFW closings in 2025, 2.5% share",
    "mvp_screen": "Locally owned with no parent company above it, but its about and contact pages name no officers.",
    "synopsis": "Production builder with sister brands Gallery Custom Homes and Harwood Homes. It has built in DFW for more than 40 years, from a Dallas office. BUILDER ranks it ninth in the metro. A 2010 Dallas News article names Randall Van Wolfswinkel chief executive.",
@@ -26318,12 +26300,6 @@
      "outlet": "PR Newswire / Apis Cor",
      "headline": "Apis Cor announces strategic investment by D.R. Horton",
      "url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html"
-    },
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
     }
    ],
    "key_stat": "7,058 DFW closings in 2025, first on BUILDER's Local Leaders",
@@ -26466,14 +26442,7 @@
    "phone_source": "https://www.pulte.com/homes/texas/dallas",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "1,083 DFW closings in 2025, 2.7% share",
    "mvp_screen": "Has piloted a robotic wall, but materials are negotiated nationally or regionally, so a method change is a corporate pilot.",
    "synopsis": "National production builder selling Pulte, Centex and Del Webb plans through a Dallas division. Its own release cites about 1,600 Dallas closings and $700 million in revenue in 2024. Scott Bryson has led the Dallas division since August 2025.",
@@ -26616,14 +26585,7 @@
     }
    ],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "943 Dallas-division closings in 2025, its own press kit",
    "mvp_screen": "Private builder repeating a national plan library across 67 DFW communities, and its chief operating officer once ran Dallas.",
    "synopsis": "Houston-founded national homebuilder, in Dallas since 1985. Its division office is at 3301 North I-35, Carrollton. Its press kit gives 198 Dallas team members and 778 Dallas homes sold in 2025. Jay Brown is Chief Executive Officer and Chris Weekley President.",
@@ -27125,14 +27087,7 @@
    "phone_source": "https://www.meritagehomes.com/state/tx/dallasft-worth",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "1,833 DFW closings in 2025, 4.5% share",
    "mvp_screen": "Sells a national energy-efficient plan library, but its record stresses efficiency and cycle time, with nothing structural.",
    "synopsis": "National production builder listed on the NYSE as MTH, selling across Dallas-Fort Worth. It ranks fourth in DFW closings for 2025, per BUILDER. Austin Woffinden, Division President for DFW from 2018 to 2025, became EVP of Corporate Operations and Strategy on 1 January 2026.",
@@ -27259,14 +27214,7 @@
    "phone_source": "https://www.ashtonwoods.com/corporate-info",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "1,289 DFW closings in 2025, 3.2% share",
    "mvp_screen": "Purchasing sits at the parent, and one regional president covers its Texas markets.",
    "synopsis": "Privately held national builder based in Alpharetta, Georgia. Its DFW communities include Aster Park in McKinney and Collin Creek in Plano. It ranked seventh in DFW closings, per BUILDER. Adam Weaver is Senior Vice President of Purchasing, and Lindsay Motley is Regional President over Texas.",
@@ -27406,14 +27354,7 @@
    "phone_source": "https://www.perryhomes.com/contact-us",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "1,132 DFW closings in 2024, 2.6% share",
    "mvp_screen": "Run from Houston with purchasing across several markets, and no DFW construction or purchasing officer is named.",
    "synopsis": "Family-owned homebuilder founded in 1967. It builds in Houston, Austin, Dallas-Fort Worth and San Antonio, with a Dallas office at 5055 West Park Boulevard. It is not in BUILDER's 2026 top ten. Kathy Perry Britton is Executive Chair and Todd Chachere Chief Executive Officer.",
@@ -27855,14 +27796,7 @@
    "phone_source": "https://greenbrickpartners.com/about/",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "3,196 DFW closings in 2025, 7.8% share",
    "mvp_screen": "Parent volume is above 1,500 closings, per BUILDER, and it claims technological advancement but has paid for no new wall method.",
    "synopsis": "NYSE-listed homebuilder and land developer (GRBK) based in Plano, with seven subsidiary builders. Five of them build in DFW, including Trophy Signature, CB JENI and Southgate. BUILDER ranks it third in DFW closings. Jed Dolson, its President, becomes Co-Chief Executive Officer on 15 October 2026.",
@@ -31249,14 +31183,7 @@
    "phone_source": "https://www.lennar.com/contact?divisionNumber=DFWLEN&market=DAL",
    "phone_more": [],
    "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
+   "press": [],
    "key_stat": "5,724 DFW closings in 2025, 14.1% share",
    "mvp_screen": "It already built the 100-home Wolf Ranch with ICON, but its DFW volume is above the band one or two printers cover.",
    "synopsis": "Miami-based national production builder, selling one Everything's Included plan library across DFW. BUILDER ranks it second in DFW closings. David Grove, DFW Division President from 2017, was named Executive Vice President of homebuilding on June 5, 2026. Its pages name no current DFW division president.",
@@ -32284,5 +32211,713 @@
    "screened for a construction printer."
   ],
   "by": "Héctor Ibarzábal"
- }
+ },
+ "ties": [
+  {
+   "k": "owns",
+   "a": "DFW-003",
+   "b": "DFW-003a",
+   "rel": "Green Brick Partners brand",
+   "card": "DFW-003a"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-003",
+   "b": "DFW-003b",
+   "rel": "part of Green Brick Partners",
+   "card": "DFW-003b"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-003",
+   "b": "DFW-003c",
+   "rel": "",
+   "card": "DFW-003c"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-003",
+   "b": "DFW-003d",
+   "rel": "operates under Green Brick",
+   "card": "DFW-003d"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-003",
+   "b": "DFW-014",
+   "rel": "",
+   "card": "DFW-014"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-007",
+   "b": "DFW-063",
+   "rel": "affordable brand",
+   "card": "DFW-063"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-007",
+   "b": "DFW-064",
+   "rel": "active-adult brand",
+   "card": "DFW-064"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-010",
+   "b": "DFW-024",
+   "rel": "luxury brand",
+   "card": "DFW-024"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-009",
+   "b": "DFW-038",
+   "rel": "Ashton Woods brand",
+   "card": "DFW-038"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-048",
+   "b": "DFW-031",
+   "rel": "bought it in February 2022",
+   "card": "DFW-031"
+  },
+  {
+   "k": "owns",
+   "a": "Qualico",
+   "b": "DFW-045",
+   "rel": "part of the family",
+   "card": "DFW-045"
+  },
+  {
+   "k": "owns",
+   "a": "Curve Development",
+   "b": "DFW-BTR-009",
+   "rel": "Cyrene brand",
+   "card": "DFW-BTR-009"
+  },
+  {
+   "k": "owns",
+   "a": "Highland Homes",
+   "b": "DFW-BTR-007",
+   "rel": "part of the family",
+   "card": "DFW-BTR-007"
+  },
+  {
+   "k": "owns",
+   "a": "Daiwa House",
+   "b": "DFW-061",
+   "rel": "acquired its equity, September 2021",
+   "card": "DFW-061"
+  },
+  {
+   "k": "owns",
+   "a": "DFW-061",
+   "b": "The Jones Company of Tennessee",
+   "rel": "bought January 2024",
+   "card": "DFW-061"
+  },
+  {
+   "k": "owns",
+   "a": "Sekisui House",
+   "b": "DFW-041",
+   "rel": "",
+   "card": "DFW-041"
+  },
+  {
+   "k": "owns",
+   "a": "Dream Finders Homes",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-042"
+  },
+  {
+   "k": "owns",
+   "a": "Metromont",
+   "b": "DFW-TR-032",
+   "rel": "acquired it December 15, 2025",
+   "card": "DFW-TR-032"
+  },
+  {
+   "k": "owns",
+   "a": "BakerTriangle",
+   "b": "DFW-TR-092",
+   "rel": "prefab division",
+   "card": "DFW-TR-092"
+  },
+  {
+   "k": "owns",
+   "a": "Builders FirstSource",
+   "b": "DFW-TR-010",
+   "rel": "plant",
+   "card": "DFW-TR-010"
+  },
+  {
+   "k": "owns",
+   "a": "ERW Companies",
+   "b": "DFW-TR-085",
+   "rel": "part of ERW Companies",
+   "card": "DFW-TR-085"
+  },
+  {
+   "k": "owns",
+   "a": "Wells",
+   "b": "DFW-TR-030",
+   "rel": "Wells plants",
+   "card": "DFW-TR-030"
+  },
+  {
+   "k": "owns",
+   "a": "Wells",
+   "b": "GATE Precast",
+   "rel": "bought July 2024",
+   "card": "DFW-TR-030"
+  },
+  {
+   "k": "owns",
+   "a": "Concrete Pumping Holdings",
+   "b": "DFW-TR-060",
+   "rel": "",
+   "card": "DFW-TR-060"
+  },
+  {
+   "k": "owns",
+   "a": "Sterling Infrastructure",
+   "b": "DFW-TR-001",
+   "rel": "subsidiary",
+   "card": "DFW-TR-001"
+  },
+  {
+   "k": "owns",
+   "a": "UFP Industries",
+   "b": "DFW-TR-011",
+   "rel": "part of the site-built components network",
+   "card": "DFW-TR-011"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-001",
+   "b": "DFW-CH-007",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-001",
+   "b": "DFW-CH-020",
+   "rel": "Hillwood Communities masterplan",
+   "card": "DFW-CH-020"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-001",
+   "b": "DFW-CH-010",
+   "rel": "",
+   "card": "DFW-CH-010"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-018",
+   "b": "DFW-CH-011",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-018",
+   "b": "DFW-CH-019",
+   "rel": "",
+   "card": "DFW-CH-019"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-014",
+   "b": "DFW-CH-012",
+   "rel": "Johnson Development masterplan",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-002",
+   "b": "DFW-CH-008",
+   "rel": "develops and markets it",
+   "card": "DFW-CH-008"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-002",
+   "b": "DFW-CH-005",
+   "rel": "",
+   "card": "DFW-CH-005"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-017",
+   "b": "DFW-CH-016",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "develops",
+   "a": "DFW-CH-017",
+   "b": "DFW-CH-013",
+   "rel": "bought it in 2018",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "develops",
+   "a": "Cambridge Companies",
+   "b": "DFW-CH-015",
+   "rel": "masterplanned community",
+   "card": "DFW-CH-015"
+  },
+  {
+   "k": "develops",
+   "a": "Blue Star Land LP",
+   "b": "DFW-CH-009",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "owns",
+   "a": "Jerry Jones Family of Companies",
+   "b": "Blue Star Land LP",
+   "rel": "part of",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "partner",
+   "a": "DFW-CH-021",
+   "b": "DFW-BTR-010",
+   "rel": "build-to-rent joint venture, 2025",
+   "card": "DFW-CH-021"
+  },
+  {
+   "k": "partner",
+   "a": "DFW-BTR-004",
+   "b": "DFW-BTR-007",
+   "rel": "built the homes at Viridian",
+   "card": "DFW-BTR-004"
+  },
+  {
+   "k": "partner",
+   "a": "DFW-029",
+   "b": "Belclaire",
+   "rel": "sister brand",
+   "card": "DFW-029"
+  },
+  {
+   "k": "partner",
+   "a": "DFW-008",
+   "b": "Gallery Custom Homes",
+   "rel": "sister brands",
+   "card": "DFW-008"
+  },
+  {
+   "k": "partner",
+   "a": "DFW-008",
+   "b": "Harwood Homes",
+   "rel": "sister brands",
+   "card": "DFW-008"
+  },
+  {
+   "k": "supplies",
+   "a": "DFW-TR-001",
+   "b": "DFW-001",
+   "rel": "Horton homes",
+   "card": "DFW-TR-001"
+  },
+  {
+   "k": "supplies",
+   "a": "DFW-TR-085",
+   "b": "DFW-008",
+   "rel": "turnkey vendor",
+   "card": "DFW-TR-085"
+  },
+  {
+   "k": "people",
+   "a": "DFW-053",
+   "b": "DFW-081",
+   "rel": "co-founder sold Darling Homes to Taylor Morrison",
+   "card": "DFW-081"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-007",
+   "b": "DFW-029",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-007",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-007",
+   "b": "Drees",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-007",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-007",
+   "b": "DFW-010",
+   "rel": "",
+   "card": "DFW-CH-007"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "Bloomfield Homes",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-003b",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-003d",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-011",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "Drees",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-014",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-003c",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-004",
+   "b": "DFW-059",
+   "rel": "",
+   "card": "DFW-CH-004"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-009",
+   "b": "DFW-029",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-009",
+   "b": "DFW-024",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-009",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-009",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-009",
+   "b": "DFW-051",
+   "rel": "",
+   "card": "DFW-CH-009"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "Brightland",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "DFW-061",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "DFW-020",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "DFW-021",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "DFW-044",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-011",
+   "b": "DFW-028",
+   "rel": "",
+   "card": "DFW-CH-011"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "DFW-078",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "DFW-041",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "DFW-064",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "Drees",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-012",
+   "b": "DFW-010",
+   "rel": "",
+   "card": "DFW-CH-012"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-015",
+   "b": "DFW-042",
+   "rel": "",
+   "card": "DFW-CH-015"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-015",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-015"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-015",
+   "b": "DFW-010",
+   "rel": "",
+   "card": "DFW-CH-015"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-015",
+   "b": "DFW-028",
+   "rel": "",
+   "card": "DFW-CH-015"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "DFW-029",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "Bloomfield Homes",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "DFW-078",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "Drees",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "DFW-043",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "DFW-010",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-016",
+   "b": "DFW-081",
+   "rel": "",
+   "card": "DFW-CH-016"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "DFW-029",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "Belclaire",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "Drees",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "DFW-035",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "Highland Homes",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "DFW-025",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "DFW-003c",
+   "rel": "",
+   "card": "DFW-CH-013"
+  },
+  {
+   "k": "builds",
+   "a": "DFW-CH-013",
+   "b": "DFW-081",
+   "rel": "",
+   "card": "DFW-CH-013"
+  }
+ ],
+ "paid": [
+  "https://therealdeal.com/texas/2026/03/05/homebound-lines-up-1000-plus-dallas-fort-worth-home-lots/",
+  "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
+  "https://www.bisnow.com/news/dallas-ft-worth/deal-sheet/homebound-closes-on-731m-deal-for-north-texas-expansion-the-dfw-deal-sheet-133470",
+  "https://www.dallasnews.com/abode/2026/03/08/new-homes-and-amenities-take-center-stage/",
+  "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/",
+  "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
+  "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
+  "https://www.enr.com/articles/46027-pursuit-of-innovation-drives-success",
+  "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
+  "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
+  "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php"
+ ]
 }

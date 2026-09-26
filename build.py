@@ -1510,6 +1510,11 @@ if _bad10:
 print("distilled         %d edits, %d stale" % (_d10, len(_s10)))
 for _x in _s10[:20]:
     print("   stale " + _x)
+# Build 84. Sources a reader can open (audit11.py).
+import audit11 as AUDIT11
+_bad11 = AUDIT11.apply(DATA, "hou")
+if _bad11:
+    raise SystemExit("FAILED: " + "; ".join(_bad11))
 _banned = _scan_for_banned(DATA)
 if _banned:
     for where, what in _banned:

@@ -608,6 +608,58 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
   vertical-align:middle}
 .badge.g{background:var(--ink4)}
 .icons{display:flex;gap:6px;align-items:center}
+.org{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 0 10px;margin:4px 0 6px}
+.org ul{display:flex;justify-content:center;margin:0;padding:18px 0 0;list-style:none;position:relative}
+.org>ul{padding-top:0;min-width:max-content}
+.org li{position:relative;padding:18px 5px 0;display:flex;flex-direction:column;align-items:center}
+.org li::before,.org li::after{content:'';position:absolute;top:0;right:50%;width:50%;height:18px;border-top:1px solid var(--rule2)}
+.org li::after{right:auto;left:50%;border-left:1px solid var(--rule2)}
+.org li:only-child::before,.org li:only-child::after{display:none}
+.org li:only-child{padding-top:0}
+.org li:first-child::before,.org li:last-child::after{border:0 none}
+.org li:last-child::before{border-right:1px solid var(--rule2);border-radius:0 3px 0 0}
+.org li:first-child::after{border-radius:3px 0 0 0}
+.org ul ul::before{content:'';position:absolute;top:0;left:50%;width:0;height:18px;border-left:1px solid var(--rule2)}
+.onode{display:inline-flex;flex-direction:column;align-items:center;gap:3px;font:600 13px/1.2 var(--sans);
+  color:var(--ink);background:var(--paper);border:1px solid var(--rule2);border-radius:2px;padding:7px 10px;
+  max-width:190px;text-align:center;text-wrap:balance;word-spacing:.08em}
+button.onode{cursor:pointer}
+button.onode:hover{border-color:var(--ink)}
+.onode.off{color:var(--ink2);border-style:dashed}
+.onode.cur{border-color:var(--orange);box-shadow:inset 0 0 0 1px var(--orange)}
+.ocap{font:500 10px/1.3 var(--mono);color:var(--ink3);letter-spacing:.02em}
+.oleaves{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;max-width:600px;margin-top:18px;
+  padding-top:10px;border-top:1px solid var(--rule2);position:relative}
+.oleaves::before{content:'';position:absolute;top:-19px;left:50%;height:18px;border-left:1px solid var(--rule2)}
+.oleaves .onode{font-size:12px;padding:6px 8px}
+.olab{font:700 10px/1.35 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin:18px 0 8px}
+.olab:first-child{margin-top:2px}
+.obin{display:flex;flex-wrap:wrap;gap:6px}
+.oties{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.oties li{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.okind{font:600 9.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink2);
+  border:1px solid var(--rule2);border-radius:2px;padding:3px 5px 2px}
+.orel{font-size:14px;color:var(--ink2)}
+@media(max-width:640px){
+  .org{overflow-x:visible}
+  .org ul{display:block;padding:0 0 0 16px}
+  .org>ul{padding-left:0;min-width:0}
+  .org li{display:block;padding:6px 0 0 16px}
+  .org>ul>li{padding-left:0}
+  .org li::before,.org li:first-child::before,.org li:last-child::before,.org li:only-child::before{display:block;
+    top:0;left:0;right:auto;bottom:0;width:0;height:auto;border:0;border-left:1px solid var(--rule2);border-radius:0}
+  .org li:last-child::before{bottom:auto;height:26px}
+  .org li::after,.org li:first-child::after,.org li:last-child::after,.org li:only-child::after{display:block;
+    top:26px;left:0;right:auto;width:12px;height:0;border:0;border-top:1px solid var(--rule2);border-radius:0}
+  .org li:only-child{padding-top:6px}
+  .org li.oroot::before,.org li.oroot::after{display:none}
+  .org ul ul::before{display:none}
+  .onode{align-items:flex-start;text-align:left;max-width:none}
+  .oleaves{justify-content:flex-start;margin:8px 0 0 16px;border-top:0;padding-top:0;max-width:none}
+  .oleaves::before{display:none}
+}
+@media print{.org{overflow:visible}}
+.ev .sub{display:inline-block;margin-left:.3em;font:600 9.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);border:1px solid var(--rule2);border-radius:2px;padding:2px 4px 1px;vertical-align:.15em;white-space:nowrap}
 .ic{width:30px;height:30px;border:1px solid var(--rule2);border-radius:2px;display:flex;
   align-items:center;justify-content:center;color:var(--ink2);flex:none}
 .ic:hover{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
@@ -1921,6 +1973,76 @@ if(!_src||!/^\s*\{/.test(_src.textContent)){MKT='houston';_src=document.getEleme
   document.documentElement.setAttribute('data-market','houston');}
 var D=JSON.parse(_src.textContent),T=D.targets;
 var PL=D.place||{name:'Greater Houston',short:'Houston',file:'Houston'};
+/* Build 84. Related firms. Each tie is stated on one of the two cards (ties.py
+   checks the words); this draws it on both. */
+var TIES=D.ties||[],TBY={},TUP={},TDN={},TOTH={};
+T.forEach(function(x){TBY[x.target_id]=x;});
+TIES.forEach(function(e){
+  if(e.k==='owns'||e.k==='develops'||e.k==='builds'){(TDN[e.a]=TDN[e.a]||[]).push(e);if(e.k!=='builds') TUP[e.b]=e;}
+  else{(TOTH[e.a]=TOTH[e.a]||[]).push({e:e,o:e.b,me:'a'});(TOTH[e.b]=TOTH[e.b]||[]).push({e:e,o:e.a,me:'b'});}
+});
+function onode(n,cap,cur){
+  var t=TBY[n],inner='<span class="onm">'+esc(t?t.short:n)+'</span>'+(cap?'<span class="ocap">'+esc(cap)+'</span>':'');
+  if(n===cur) return '<span class="onode cur" aria-current="true">'+inner+'</span>';
+  return t?'<button class="onode" type="button" data-id="'+t.target_id+'">'+inner+'</button>'
+          :'<span class="onode off">'+inner+'</span>';
+}
+function kidsOf(n,kinds){return (TDN[n]||[]).filter(function(e){return kinds.indexOf(e.k)>-1;});}
+function otree(n,cap,cur,kinds,open){
+  var ch=open(n)?kidsOf(n,kinds):[];
+  var flat=ch.length>3&&ch.every(function(e){return !(open(e.b)&&kidsOf(e.b,kinds).length);});
+  var s='<li>'+onode(n,cap,cur);
+  if(ch.length) s+=flat?'<div class="oleaves">'+ch.map(function(e){return onode(e.b,e.rel,cur);}).join('')+'</div>'
+    :'<ul>'+ch.map(function(e){return otree(e.b,e.rel,cur,kinds,open);}).join('')+'</ul>';
+  return s+'</li>';
+}
+function orgChart(root,cur,kinds,open){
+  return '<div class="org"><ul>'+otree(root,'',cur,kinds,open).replace('<li>','<li class="oroot">')+'</ul></div>';}
+function relatedFirms(t,lead){
+  var id=t.target_id,h='',OWN=['owns'],COM=['develops','builds'];
+  /* Ownership: the whole family, from the top owner down. */
+  var r=id,g=0; while(TUP[r]&&TUP[r].k==='owns'&&g++<9) r=TUP[r].a;
+  if(r!==id||kidsOf(id,OWN).length)
+    h+='<div class="olab">Ownership</div>'+orgChart(r,id,OWN,function(){return true;});
+  /* A developer's masterplans and the builders in them. A masterplan shows its
+     developer above it and its own builders only. */
+  var up=TUP[id]&&TUP[id].k==='develops'?TUP[id].a:null;
+  if(up){
+    /* The developer's own owners, when a card names them, sit above it. */
+    var ch=[],u=up,g2=0; while(TUP[u]&&TUP[u].k==='owns'&&g2++<9){ch.unshift(TUP[u]);u=TUP[u].a;}
+    var li=otree(up,ch.length?ch[ch.length-1].rel:'',id,COM,function(n){return n===up||n===id;});
+    for(var ci=ch.length-1;ci>=0;ci--) li='<li>'+onode(ch[ci].a,ci?ch[ci-1].rel:'',id)+'<ul>'+li+'</ul></li>';
+    h+='<div class="olab">Developer, masterplans and builders</div>'+
+      '<div class="org"><ul>'+li.replace('<li>','<li class="oroot">')+'</ul></div>';
+  }
+  else if(kidsOf(id,COM).length) h+='<div class="olab">'+
+    (kidsOf(id,['develops']).length?'Masterplans and builders':'Builders in its communities')+'</div>'+
+    orgChart(id,id,COM,function(n){return n===id||kidsOf(n,['builds']).length>0&&(TUP[n]||{}).a===id;});
+  /* Where a builder sells. */
+  var bin=TIES.filter(function(e){return e.k==='builds'&&e.b===id;});
+  if(bin.length) h+='<div class="olab">Masterplans it builds in</div><div class="obin">'+bin.map(function(e){
+    var d=TUP[e.a]&&TUP[e.a].k==='develops'?TUP[e.a].a:null;
+    return onode(e.a,d?(TBY[d]?TBY[d].short:d):'',id);}).join('')+'</div>';
+  var oth=TOTH[id]||[];
+  if(oth.length) h+='<div class="olab">Other ties</div><ul class="oties">'+oth.map(function(x){
+    var k=x.e.k==='partner'?'Partner':x.e.k==='people'?'Founders':(x.me==='a'?'Customer':'Supplier');
+    return '<li>'+onode(x.o,'',id)+'<span class="okind">'+k+'</span><span class="orel">'+esc(x.e.rel)+'</span></li>';
+  }).join('')+'</ul>';
+  return h?(lead||'')+h:'';
+}
+/* Build 84. A link behind a subscription says so wherever it appears. The list
+   is audit11.PAID; the build stops if a link on a locked outlet has no label. */
+var PAID={};(D.paid||[]).forEach(function(u){PAID[u]=1;});
+(function(){
+  if(!D.paid||!D.paid.length) return;
+  var q=function(u){return u.replace(/\\/g,'\\\\').replace(/"/g,'\\"');};
+  var st=document.createElement('style');
+  st.textContent=D.paid.map(function(u){return 'a[href="'+q(u)+'"]:not(.ic)::after';}).join(',')+
+    '{content:"Subscription";display:inline-block;margin-left:.45em;font:600 9.5px/1 var(--mono);'+
+    'letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);border:1px solid var(--rule2);'+
+    'border-radius:2px;padding:2px 4px 1px;vertical-align:.15em;text-decoration:none;white-space:nowrap}';
+  document.head.appendChild(st);
+})();
 /* The intro reel (see #reel in the stylesheet). It reads the page's own colour
    tokens, so it follows the theme and this market's accent, and it stands the
    headline opener down, since its last frame already prints the title. */
@@ -2336,12 +2458,13 @@ function whyList(t){
 
 function personRow(p,compact,grp){
   var links=icon(p.linkedin_url,'li','LinkedIn profile')+
-            icon(p.source_url,'doc','Named on this page')+
+            icon(p.source_url,'doc',PAID[p.source_url]?'Named on this page. Subscription':'Named on this page')+
             (!p.linkedin_url?icon(p.find_url,'find','Search LinkedIn for this person'):'');
   var ev='';
   if(!compact){
     if(p.li_evidence) ev+='<span class="ev"><em>LinkedIn.</em> '+esc(p.li_evidence)+'</span>';
-    if(p.source_evidence) ev+='<span class="ev"><em>Source.</em> '+esc(p.source_evidence)+'</span>';
+    if(p.source_evidence) ev+='<span class="ev"><em>Source.</em> '+esc(p.source_evidence)+
+      (PAID[p.source_url]?' <span class="sub">Subscription</span>':'')+'</span>';
   }
   return '<div class="p1'+(p.decider?' dec':'')+(p.departed?' gone':'')+'">'+
     '<div><div class="nm">'+esc(p.name)+
@@ -2440,19 +2563,6 @@ function firmPage(t){
     '</div>');
 
   h.push(section('The screen','<p class="verdict">'+esc(t.mvp_screen)+'</p>'));
-  if(t.channel_line){
-    var bl=(t.channel_builders||[]);
-    /* Build 83. The line is dropped when it says what the headline says. */
-    var _cw=function(x){return (x||'').toLowerCase().match(/[a-z0-9]+/g)||[];};
-    var _ks=_cw(t.key_stat), _cl=_cw(t.channel_line);
-    var _same=_cl.filter(function(w){return _ks.indexOf(w)>-1;}).length>=Math.min(_cl.length,_ks.length)*0.6;
-    h.push(section('Builders in its communities',(_same?'':'<p class="syn">'+esc(t.channel_line)+'</p>')+
-      (bl.length?'<div class="tags" style="margin-top:14px">'+bl.map(function(nm){
-        var b=T.filter(function(x){return x.entity_name===nm;})[0];
-        return b?'<button class="lnk" data-id="'+b.target_id+'">'+esc(nm)+'</button>'
-                :'<span class="tag q">'+esc(nm)+'</span>';}).join('')+'</div>'
-        :'<p class="note">No builder on this deck is named inside these communities.</p>')));
-  }
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
     '<p class="cnote">Yes and Partly both count as holding a count. A No does not. A firm with no published '+
     'yearly figure reads Partly on printer fit.</p>'));
@@ -2501,6 +2611,16 @@ function firmPage(t){
         '<a href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.headline)+'</a>'+
         '<span class="out">'+esc(p.outlet)+'</span></li>';
     }).join('')+'</ul>'));
+  /* Build 84. Related firms, folded in with the old builders list. The channel
+     line leads it, unless it says what the headline says (Build 83). */
+  var _lead='';
+  if(t.channel_line){
+    var _cw=function(x){return (x||'').toLowerCase().match(/[a-z0-9]+/g)||[];};
+    var _ks=_cw(t.key_stat), _cl=_cw(t.channel_line);
+    if(_cl.filter(function(w){return _ks.indexOf(w)>-1;}).length<Math.min(_cl.length,_ks.length)*0.6)
+      _lead='<p class="syn">'+esc(t.channel_line)+'</p>';
+  }
+  h.push(section('Related firms',relatedFirms(t,_lead)));
   /* Build 81. A source reads as its site, not its full address. Two from one
      site are numbered. */
   if((t.sources||[]).length){ var _seen={};
@@ -3423,11 +3543,12 @@ var STAGE={matrix:'stageMatrix',list:'stageList',scroll:'stageScroll',field:'sta
    other way from the last, with a layer count beside the kicker. It plays once
    per visit, any key, tap or scroll finishes it at once, and the page underneath
    is already complete: nothing is hidden until the script is running. */
-function printOpener(){
+function printOpener(force){
   var hl=document.getElementById('hl'), host=hl&&hl.parentNode;
   if(!MOTION||!hl||view!=='index'||document.visibilityState==='hidden') return;
   var seen=false; try{seen=sessionStorage.getItem('rolodex-opened')==='1';}catch(e){}
-  if(seen) return;
+  /* force: a change of market prints the new market's headline every time */
+  if(seen&&force!==true) return;
   try{sessionStorage.setItem('rolodex-opened','1');}catch(e){}
   var rg=document.createRange(); rg.selectNodeContents(hl);
   var hb=hl.getBoundingClientRect(), cb=host.getBoundingClientRect();
@@ -3606,9 +3727,12 @@ window.addEventListener('click',function(e){
     setTimeout(function(){location.replace(base+'#market='+k); location.reload();},300);
   },true);
   var arrived=false; try{arrived=sessionStorage.getItem('rolodex-arrive')==='1';sessionStorage.removeItem('rolodex-arrive');}catch(x){}
+  /* The new market arrives with the line and its headline poured again, one
+     layer a line, as on a first visit. */
   if(arrived&&MOTION){var sl=document.getElementById('sline'); if(sl) sl.classList.add('sweep');
     setTimeout(function(){if(sl) sl.classList.remove('sweep');},900);
-    cueStep(document.querySelector('.hero-copy'));}
+    (document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(function(){
+      requestAnimationFrame(function(){printOpener(true);});});}
 })();
 /* The scroll line. It fills with the page, and its head steps at each section:
    the List's sections, the Market's figures, a firm page's blocks. */

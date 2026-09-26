@@ -165,7 +165,7 @@
    ],
    [
     "The Army",
-    "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. Stars and Stripes: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
+    "Fort Bliss, El Paso: ten barracks, 78,000 square feet, up to 560 soldiers, $62.8 million. ICON announced delivery 28 July 2026. The Army: two open that day, the rest in September. ICON and the Army: the military's largest robotic construction deployment. Fort Polk, Louisiana: $67.9 million, March 2026, vertical construction from September 2026."
    ],
    [
     "ICON Prime",
@@ -232,10 +232,6 @@
    [
     "U.S. Army on the Fort Bliss barracks, 30 July 2026",
     "https://www.army.mil/article/294240/fort_bliss_unveils_new_3d_printed_barracks"
-   ],
-   [
-    "Stars and Stripes on the opening, 28 July 2026",
-    "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
    ],
    [
     "ICON at Fort Polk, 29 June 2026",
@@ -1197,15 +1193,15 @@
     "project": "Avenue J",
     "where": "City of Houston, East End",
     "what": "Elpis 3D Home Builders and HiveASMBLD duplex, started March 2026. No completion published.",
-    "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php",
-    "source": "Houston Chronicle"
+    "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
+    "source": "Homes.com"
    },
    {
     "project": "Gulf Shore Estates",
     "where": "Unincorporated Galveston County, San Leon",
-    "what": "26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. One under construction, April 2026.",
-    "url": "https://www.houstonchronicle.com/business/article/houston-real-estate-3d-printed-home-hiveasmbld-20824540.php",
-    "source": "Houston Chronicle"
+    "what": "26 homes planned, 23 to print. HiveASMBLD with Commander Home Builders. Announced April 2026.",
+    "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
+    "source": "Homes.com"
    }
   ],
   "quotes": [
@@ -19266,7 +19262,7 @@
    "region": "San Leon, Galveston County",
    "homepage_url": null,
    "no_web_presence": true,
-   "synopsis": "Builds Gulf Shore Estates, printing homes after three conventional builds. It sits in San Leon, about 40 miles southeast of downtown Houston. Homes run 1,000 to 2,100 square feet, from the low $200,000s to about $385,000. It announced the project in April 2026.",
+   "synopsis": "Builds Gulf Shore Estates, printing homes after three conventional builds. It sits in San Leon, about 38 miles from downtown Houston. Homes run 1,000 to 2,100 square feet, from the low $200,000s to about $385,000. It announced the project in April 2026.",
    "key_stat": "23 of 26 planned homes to be printed, one under way",
    "principals": [
     {
@@ -19274,7 +19270,7 @@
      "role": "Owner",
      "linkedin_url": null,
      "source_evidence": "Quoted as developer of the San Leon project.",
-     "source_url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
+     "source_url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
      "find_url": "https://www.linkedin.com/search/results/people/?keywords=Steve%20Commander%20Commander%20Home%20Builders"
     }
    ],
@@ -19302,8 +19298,12 @@
      "date": "2026-04-01"
     },
     {
-     "url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
-     "date": null
+     "url": "https://abc13.com/post/san-leon-development-aims-sustainability-ground/18943368/",
+     "date": "2026-04-22"
+    },
+    {
+     "url": "https://realtynewsreport.com/3d-printed-homes-coming-to-galveston-county-coast/",
+     "date": "2026-04-10"
     }
    ],
    "hue_hex": "#FF4F00",
@@ -19331,22 +19331,10 @@
      "url": "https://houstonagentmagazine.com/2026/04/08/hiveasmbld-3d-printed-gulf-shore-estates-san-leon/"
     },
     {
-     "date": "2026-04-10",
-     "outlet": "The Galveston County Daily News",
-     "headline": "Printing the future: San Leon project tests new model for coastal housing",
-     "url": "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html"
-    },
-    {
      "date": "2026-04-22",
      "outlet": "ABC13 Houston",
      "headline": "San Leon development aims for sustainability from the ground up",
      "url": "https://abc13.com/post/san-leon-development-aims-sustainability-ground/18943368/"
-    },
-    {
-     "date": "2026-04-03",
-     "outlet": "Houston Business Journal",
-     "headline": "Houston-based company to build 3D-printed home community in San Leon",
-     "url": "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html"
     },
     {
      "date": "2026-04-30",
@@ -19467,12 +19455,6 @@
    "group": "adopter",
    "tier": "P",
    "press": [
-    {
-     "date": "",
-     "outlet": "Houston Chronicle",
-     "headline": "3D-printed duplex under construction in Houston's East End",
-     "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php"
-    },
     {
      "date": "2026-04-22",
      "outlet": "Homes.com",
@@ -19639,18 +19621,6 @@
    "group": "a",
    "tier": "A",
    "press": [
-    {
-     "date": "2026-04-25",
-     "outlet": "Houston Chronicle",
-     "headline": "Why Houston's booming build-to-rent sector could slow",
-     "url": "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php"
-    },
-    {
-     "date": "2025-03-14",
-     "outlet": "Houston Business Journal",
-     "headline": "Wan Bridge readjusts build-to-rent development goal",
-     "url": "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html"
-    },
     {
      "date": "2025-11-24",
      "outlet": "Realty News Report",
@@ -21571,10 +21541,6 @@
     {
      "url": "https://communityimpact.com/houston/bellaire-meyerland-west-university/development/2025/10/27/houston-housing-authority-to-redevelop-citys-oldest-public-housing-community-in-7-year-plan/",
      "date": "2025-10-27"
-    },
-    {
-     "url": "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo",
-     "date": "2025-02-01"
     }
    ],
    "hue_hex": "#C8102E",
@@ -26527,12 +26493,6 @@
    "tier": "W",
    "press": [
     {
-     "date": "2023-02-07",
-     "outlet": "Bisnow Houston",
-     "headline": "Next Stop, Apartments: 2-Story 3D-Printed House Lays Foundation For Bigger Projects Ahead",
-     "url": "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549"
-    },
-    {
      "date": "2023-02-24",
      "outlet": "Built Offsite",
      "headline": "Largest 3D printed hybrid home takes shape",
@@ -27522,20 +27482,7 @@
    "phone_absent": "Five offices, Houston included. Contact form only, no numbers.",
    "group": "trade",
    "tier": "W",
-   "press": [
-    {
-     "date": "2026",
-     "outlet": "Engineering News-Record",
-     "headline": "ENR 2026 Top 400 Contractors, where the firm is ranked 72",
-     "url": "https://www.enr.com/toplists/2026-Top-400-Contractors-1"
-    },
-    {
-     "date": "2023-08-08",
-     "outlet": "Engineering News-Record",
-     "headline": "Harvey, Harvey-Cleary, a Little Bit of Everything Firm",
-     "url": "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm"
-    }
-   ],
+   "press": [],
    "why": [
     {
      "axis": "repeatability",
@@ -32265,10 +32212,6 @@
     {
      "url": "https://kinder.rice.edu/urbanedge/plant-second-ward-walkable-houston-east-end",
      "date": null
-    },
-    {
-     "url": "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php",
-     "date": null
     }
    ],
    "hue_hex": "#FF4F00",
@@ -35929,5 +35872,611 @@
    "screened for a construction printer."
   ],
   "by": "Héctor Ibarzábal"
- }
+ },
+ "ties": [
+  {
+   "k": "owns",
+   "a": "Berkshire Hathaway",
+   "b": "Clayton Properties Group",
+   "rel": "part of",
+   "card": "HOU-073"
+  },
+  {
+   "k": "owns",
+   "a": "Clayton Properties Group",
+   "b": "HOU-073",
+   "rel": "",
+   "card": "HOU-073"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-041",
+   "b": "HOU-131",
+   "rel": "",
+   "card": "HOU-131"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-015",
+   "b": "HOU-007",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "owns",
+   "a": "Onsite ICF",
+   "b": "HOU-123",
+   "rel": "division",
+   "card": "HOU-123"
+  },
+  {
+   "k": "owns",
+   "a": "Sekisui House",
+   "b": "HOU-045",
+   "rel": "agreed to buy it in 2022",
+   "card": "HOU-045"
+  },
+  {
+   "k": "owns",
+   "a": "Clay Development & Construction",
+   "b": "HOU-136",
+   "rel": "build-to-rent division",
+   "card": "HOU-136"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-023",
+   "b": "HOU-076",
+   "rel": "a David Weekley Homes line",
+   "card": "HOU-076"
+  },
+  {
+   "k": "owns",
+   "a": "Dream Finders Homes",
+   "b": "McGuyer Homebuilders (MHI)",
+   "rel": "bought in 2021",
+   "card": "HOU-033"
+  },
+  {
+   "k": "owns",
+   "a": "McGuyer Homebuilders (MHI)",
+   "b": "HOU-033",
+   "rel": "",
+   "card": "HOU-033"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-147",
+   "b": "HOU-148",
+   "rel": "",
+   "card": "HOU-148"
+  },
+  {
+   "k": "owns",
+   "a": "Satterfield and Pontikes",
+   "b": "HOU-106",
+   "rel": "part of the family",
+   "card": "HOU-106"
+  },
+  {
+   "k": "owns",
+   "a": "Metromont",
+   "b": "HOU-142",
+   "rel": "bought it 15 December 2025",
+   "card": "HOU-142"
+  },
+  {
+   "k": "owns",
+   "a": "US LBM",
+   "b": "HOU-151",
+   "rel": "Texas banner",
+   "card": "HOU-151"
+  },
+  {
+   "k": "owns",
+   "a": "KPS Capital Partners",
+   "b": "Wells",
+   "rel": "agreed to buy, February 2026",
+   "card": "HOU-138"
+  },
+  {
+   "k": "owns",
+   "a": "Wells",
+   "b": "HOU-138",
+   "rel": "",
+   "card": "HOU-138"
+  },
+  {
+   "k": "owns",
+   "a": "Wells",
+   "b": "HOU-144",
+   "rel": "Wells plants",
+   "card": "HOU-144"
+  },
+  {
+   "k": "owns",
+   "a": "Sterling Infrastructure",
+   "b": "HOU-163",
+   "rel": "",
+   "card": "HOU-163"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-109",
+   "b": "Taylor Made Concrete",
+   "rel": "delivery arm",
+   "card": "HOU-109"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-130",
+   "b": "Woodmere Development",
+   "rel": "land arm",
+   "card": "HOU-130"
+  },
+  {
+   "k": "owns",
+   "a": "Sumitomo Forestry",
+   "b": "HOU-034",
+   "rel": "controlling stake, 2014",
+   "card": "HOU-034"
+  },
+  {
+   "k": "owns",
+   "a": "Daiwa House",
+   "b": "HOU-022",
+   "rel": "holds 80 percent",
+   "card": "HOU-022"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-166",
+   "b": "HOU-042",
+   "rel": "wholly owned subsidiary since 2000",
+   "card": "HOU-042"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-166",
+   "b": "Rausch Coleman Homes",
+   "rel": "bought February 2025",
+   "card": "HOU-078"
+  },
+  {
+   "k": "owns",
+   "a": "Rausch Coleman Homes",
+   "b": "HOU-078",
+   "rel": "bought it in 2020",
+   "card": "HOU-078"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-132",
+   "b": "Forestar Group",
+   "rel": "owned 62 percent",
+   "card": "HOU-132"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-008",
+   "b": "HOU-012",
+   "rel": "co-acquired Trinity Landing",
+   "card": "HOU-008"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-006",
+   "b": "HOU-005",
+   "rel": "bought M-K-T Heights",
+   "card": "HOU-006"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-006",
+   "b": "MetroNational",
+   "rel": "bought M-K-T Heights",
+   "card": "HOU-006"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-005",
+   "b": "MetroNational",
+   "rel": "M-K-T Heights",
+   "card": "HOU-006"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-081",
+   "b": "HOU-082",
+   "rel": "joint-venture partner on East Blocks",
+   "card": "HOU-082"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-025",
+   "b": "HOU-026",
+   "rel": "built the Cypress community",
+   "card": "HOU-026"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-168",
+   "b": "HOU-040",
+   "rel": "rental homes",
+   "card": "HOU-168"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-168",
+   "b": "Tricon",
+   "rel": "Tricon communities",
+   "card": "HOU-168"
+  },
+  {
+   "k": "owns",
+   "a": "HOU-147",
+   "b": "Innovative Construction Group",
+   "rel": "agreed to buy, August 2026",
+   "card": "HOU-147"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-167",
+   "b": "HOU-147",
+   "rel": "framing plant sold in 2026",
+   "card": "HOU-167"
+  },
+  {
+   "k": "partner",
+   "a": "HiveASMBLD",
+   "b": "HOU-002",
+   "rel": "printed homes at Zuri Gardens",
+   "card": "HOU-002"
+  },
+  {
+   "k": "partner",
+   "a": "HiveASMBLD",
+   "b": "HOU-016",
+   "rel": "prints with HiveASMBLD",
+   "card": "HOU-016"
+  },
+  {
+   "k": "partner",
+   "a": "HiveASMBLD",
+   "b": "HOU-017",
+   "rel": "prints with HiveASMBLD",
+   "card": "HOU-017"
+  },
+  {
+   "k": "partner",
+   "a": "Interra Capital Group",
+   "b": "HOU-038",
+   "rel": "kept it as manager",
+   "card": "HOU-038"
+  },
+  {
+   "k": "supplies",
+   "a": "HOU-163",
+   "b": "HOU-132",
+   "rel": "home foundations",
+   "card": "HOU-163"
+  },
+  {
+   "k": "supplies",
+   "a": "HOU-103",
+   "b": "HOU-114",
+   "rel": "concrete",
+   "card": "HOU-114"
+  },
+  {
+   "k": "supplies",
+   "a": "HOU-105",
+   "b": "HOU-115",
+   "rel": "poured its tilt-up panels",
+   "card": "HOU-115"
+  },
+  {
+   "k": "people",
+   "a": "HOU-013",
+   "b": "HOU-070",
+   "rel": "founding brothers were division presidents",
+   "card": "HOU-070"
+  },
+  {
+   "k": "people",
+   "a": "HOU-025",
+   "b": "HOU-062",
+   "rel": "people from Taylor Morrison founded it",
+   "card": "HOU-062"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-013",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-168",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-045",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-033",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-009",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "Beazer Homes",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-068",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "Tri Pointe Homes",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-070",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-069",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-072",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-067",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "HOU-034",
+   "rel": "",
+   "card": "HOU-011"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-041",
+   "b": "HOU-072",
+   "rel": "",
+   "card": "HOU-041"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-041",
+   "b": "HOU-071",
+   "rel": "",
+   "card": "HOU-041"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-041",
+   "b": "HOU-077",
+   "rel": "",
+   "card": "HOU-041"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-041",
+   "b": "HOU-070",
+   "rel": "",
+   "card": "HOU-041"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-041",
+   "b": "HOU-069",
+   "rel": "",
+   "card": "HOU-041"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-013",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-033",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-167",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-168",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-072",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-068",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-039",
+   "b": "HOU-062",
+   "rel": "",
+   "card": "HOU-039"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-039",
+   "b": "HOU-075",
+   "rel": "",
+   "card": "HOU-039"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-039",
+   "b": "Greystar (Summerwell)",
+   "rel": "",
+   "card": "HOU-039"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-068",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-067",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-071",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-069",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-077",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-072",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "Shea Homes",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-043",
+   "b": "HOU-069",
+   "rel": "",
+   "card": "HOU-043"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-042",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-042"
+  }
+ ],
+ "paid": [
+  "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
+  "https://therealdeal.com/texas/houston/2023/03/10/live-lone-star-opens-its-first-manufactured-home-development/",
+  "https://therealdeal.com/texas/houston/2023/11/13/pagewood-wile-to-convert-eado-houston-warehouses/",
+  "https://therealdeal.com/texas/houston/2024/11/25/long-lake-purchased-100-acre-tract-in-houston-area/",
+  "https://therealdeal.com/texas/houston/2025/08/21/radom-capital-asana-partners-secure-houston-multifamily-loan/",
+  "https://therealdeal.com/texas/houston/2025/12/30/brohn-homes-plants-flag-in-houston-with-historymaker-deal/",
+  "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
+  "https://www.bisnow.com/houston/news/industrial/provident-realty-advisors-hires-christen-vestal-to-lead-forthcoming-houston-office-116393",
+  "https://www.bisnow.com/houston/news/office/modernized-medical-office-building-to-break-ground-in-katy-90935",
+  "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
+  "https://www.housingwire.com/articles/partners-building-succession-plan/",
+  "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
+  "https://www.houstonchronicle.com/business/article/Frank-Liu-s-big-bets-on-urban-living-pay-off-15053303.php",
+  "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php"
+ ]
 }
