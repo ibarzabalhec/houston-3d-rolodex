@@ -310,8 +310,17 @@ button.stat:active,.fsel>button:active,.fmenu button:active,.freset:active,.back
 .sline .tk.past{background:var(--orange);opacity:1}
 .sline.sweep .fill{animation:sweep .7s cubic-bezier(.3,.6,.2,1) forwards}
 @keyframes sweep{0%{transform:scaleX(0);opacity:1}70%{transform:scaleX(1);opacity:1}100%{transform:scaleX(1);opacity:0}}
-html.theming *,html.theming *::before,html.theming *::after{
-  transition:background-color .28s ease,color .28s ease,border-color .28s ease,fill .28s ease!important}
+/* Build 91. The theme change. A colour cross-fade ran every element on its own
+   clock, so text flickered through half-tones. Now nothing fades: the page comes
+   apart into its blocks, a printer lays the new ground one bead a layer from the
+   bottom up, each pass the other way, and the blocks set back down, top to
+   bottom, already in the new colours. The swap itself happens under the new
+   ground, with every transition cut. */
+html.thx-cut *,html.thx-cut *::before,html.thx-cut *::after{transition:none!important}
+.thx{position:fixed;inset:0;z-index:2147483000;pointer-events:none;overflow:hidden;contain:strict}
+.thx .ly{position:absolute;left:0;right:0;will-change:clip-path}
+.thx .ly::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;opacity:.5;background:var(--thx-line)}
+.thx .nz{position:absolute;left:0;width:9px;height:9px;margin:-4.5px 0 0 -4.5px;border-radius:50%;will-change:transform}
 .thm svg{transition:transform .38s cubic-bezier(.3,1.4,.5,1)}
 .thm.turn svg{transform:rotate(180deg)}
 @media(prefers-reduced-motion:reduce){
@@ -320,7 +329,6 @@ html.theming *,html.theming *::before,html.theming *::after{
   .seg button:active,.cbtn:active,.thm:active,.rowadd:active,.addbtn:active,.grpadd:active,
   button.stat:active,.fsel>button:active,.fmenu button:active,.freset:active,.back:active,
   .chip:active,.lnk:active,.mktsw button:active{transform:none}
-  html.theming *{transition:none!important}
 }
 @media print{.sline{display:none}}
 
@@ -594,7 +602,8 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .tags{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0 0;align-items:center}
 .tag{font:600 9.5px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;
   background:var(--ink3);color:var(--on-ink);border-radius:99px;padding:7px 11px}
-.tag.k{background:var(--ink)}
+/* Build 91. The section reads as a label, not a stamp: outlined in ink. */
+.tag.k{background:none;color:var(--ink);border:1px solid var(--ink);padding:6px 10px}
 .tag.o{background:var(--orange);color:var(--on-orange)}
 .tag.q{background:none;color:var(--ink3);border:1px solid var(--rule2)}
 .cnote{margin:18px 0 0;font-size:12.5px;color:var(--ink3)}
@@ -630,7 +639,7 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
 .row{display:grid;grid-template-columns:186px 1fr;gap:28px;padding:26px 0;border-bottom:1px solid var(--rule)}
 .row>.body{min-width:0}
 @media(max-width:720px){.row{grid-template-columns:1fr;gap:12px;padding:22px 0}}
-.verdict{margin:0;font-size:18px;line-height:1.5;letter-spacing:-.012em;max-width:70ch}
+.verdict{margin:0;font-size:15.5px;line-height:1.55;color:var(--ink2);max-width:70ch}
 /* Build 90. The firm's description is the first thing a card says, so it reads
    at the screen line's size and ink, not as small grey body text. */
 .syn.lead{font-size:18px;line-height:1.55;letter-spacing:-.012em;color:var(--ink);max-width:70ch}
@@ -663,10 +672,12 @@ tr.grp em{font:400 11px/1.5 var(--sans);letter-spacing:0;text-transform:none;
   border-left:2px solid var(--rule2);padding-left:11px;margin-top:8px}
 .p1 .ev em{font-style:normal;color:var(--ink2);font-weight:600}
 .p1.gone .nm{color:var(--ink3)}
-.badge{display:inline-block;margin-left:9px;font:700 8.5px/1 var(--mono);letter-spacing:.1em;
-  text-transform:uppercase;background:var(--ink);color:var(--on-ink);border-radius:99px;padding:5px 8px;
-  vertical-align:middle}
-.badge.g{background:var(--ink4)}
+/* Build 91. The person marks read as labels, not verdicts: outlined, in the
+   List's own words. */
+.badge{display:inline-block;margin-left:9px;font:600 8.5px/1 var(--mono);letter-spacing:.1em;
+  text-transform:uppercase;background:none;color:var(--ink2);border:1px solid var(--rule2);border-radius:2px;
+  padding:4px 6px;vertical-align:middle}
+.badge.g{color:var(--ink3)}
 .icons{display:flex;gap:6px;align-items:center}
 .org{overflow-x:auto;-webkit-overflow-scrolling:touch;padding:2px 0 10px;margin:4px 0 6px}
 .org ul{display:flex;justify-content:center;margin:0;padding:18px 0 0;list-style:none;position:relative}
@@ -1017,7 +1028,7 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
     letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);white-space:nowrap}
   #stageList td.f{display:block;width:100%;margin:0 0 3px}
   #stageList td.f .fbtn2{padding:0;font-size:15px;line-height:1.3}
-  #stageList td.f .fsub{margin:7px 0 3px}
+  #stageList td.f .fsub{margin:5px 0 0}
   #stageList td.hf{display:block;width:100%;margin:3px 0 0;color:var(--ink2);line-height:1.5}
   #stageList td.hf::before{display:block;margin-bottom:3px}
   #stageList td.hf:empty{display:none}
@@ -1032,6 +1043,14 @@ blockquote footer{margin-top:12px;font:600 10px/1.5 var(--mono);letter-spacing:.
   #stageList tr:not(.grp) td[data-l]:not(.hf){flex:0 0 calc(50% - 9px);margin:0;
     justify-content:flex-start;min-width:0}
   #stageList td[data-l]:not(.hf)::before{flex:0 0 auto}
+  /* Build 91. The four marks sit on one line, each label over its mark, so a
+     firm takes about half the height it did. */
+  #stageList tr:not(.grp){column-gap:10px}
+  #stageList tr:not(.grp) .yn{max-width:100%}
+  #stageList tr:not(.grp) td[data-l]:not(.hf):not(:empty){flex:1 1 auto;min-width:0;display:grid;
+    grid-template-rows:1fr auto;align-items:end;justify-items:start;gap:5px}
+  #stageList tr:not(.grp) td[data-l]:not(.hf)::before{font-size:8.5px;letter-spacing:.06em;white-space:normal;
+    line-height:1.25;align-self:end;overflow-wrap:anywhere}
   #stageList tr:has(td.empty){padding:24px 0}
   .swipe::after{display:none}
   .swipe-hint{display:none!important}
@@ -1333,6 +1352,13 @@ tr.grp em{display:block;margin:6px 0 0;font-size:13px;line-height:1.5;color:var(
   #stageFirm{padding-bottom:96px}
   .fhead .hadd,#firmBody > .addbtn:last-child{display:none}
   .fhead .tbrk{display:block;flex:0 0 100%;height:0}
+  /* Build 91. The description starts higher: the bar at the bottom already
+     holds All firms, so the top one goes, and the place reads as a line of
+     text, not a pill. */
+  #back{display:none}
+  .fhead{padding:18px 0 22px}
+  .fhead .tags{margin-top:14px;gap:6px 8px}
+  .fhead .tag.q{border:0;padding:3px 0;line-height:1.45;letter-spacing:.08em}
   .fhead .lnk{min-height:36px;padding-inline:10px 12px}
   .ic{width:40px;height:40px}
   .dial a{display:inline-block;padding:8px 0}
@@ -2548,7 +2574,7 @@ function whyList(t){
       '<span class="tx">'+esc(w.text)+'</span></span></li>';}).join('')+'</ul>';
 }
 
-function personRow(p,compact,grp){
+function personRow(p,compact){
   var links=icon(p.linkedin_url,'li','LinkedIn profile')+
             icon(p.source_url,'doc',PAID[p.source_url]?'Named on this page. Subscription':'Named on this page')+
             (!p.linkedin_url?icon(p.find_url,'find','Search LinkedIn for this person'):'');
@@ -2560,7 +2586,7 @@ function personRow(p,compact,grp){
   }
   return '<div class="p1'+(p.decider?' dec':'')+(p.departed?' gone':'')+'">'+
     '<div><div class="nm">'+esc(p.name)+
-      (p.decider?'<span class="badge">'+(grp==='trade'?'Signs for the machine':(grp==='channel'?'Lets a method in':'Specifies the wall'))+'</span>':'')+
+      (p.decider?'<span class="badge">Decision-maker</span>':'')+
       /* A decider with no profile and no page behind it says so on its own row.
          The search icon already told the truth; the badge stops a reader having
          to infer it from an icon. */
@@ -3802,15 +3828,10 @@ window.addEventListener('click',function(e){
     last=v;
   }).observe(box,{childList:true,subtree:true,characterData:true});
 })();
-/* The theme toggle turns, and the colours cross over instead of cutting. */
+/* The theme toggle turns as the page changes over (Build 91, below). */
 (function(){
   var b=document.getElementById('thm'); if(!b) return;
-  b.addEventListener('click',function(){
-    b.classList.toggle('turn');
-    if(!MOTION) return;
-    var h=document.documentElement; h.classList.add('theming');
-    setTimeout(function(){h.classList.remove('theming');},340);
-  },true);
+  b.addEventListener('click',function(){ if(!window.__thxBusy) b.classList.toggle('turn'); },true);
 })();
 /* Switching market: the accent turns to the other city's at once, a line runs
    under the nav in it, and then the page reloads on that market. */
@@ -3883,11 +3904,99 @@ window.addEventListener('click',function(e){
   new MutationObserver(function(){label();
     var mk=document.getElementById('mkBody'); if(mk&&mk.innerHTML) drawMarket();
   }).observe(d,{attributes:true,attributeFilter:['data-theme']});
-  b.addEventListener('click',function(){
+  /* The swap with every transition cut, so no colour runs on its own clock. */
+  function set(nx){
+    d.classList.add('thx-cut'); d.setAttribute('data-theme',nx);
+    void getComputedStyle(document.body).backgroundColor;
+    requestAnimationFrame(function(){requestAnimationFrame(function(){d.classList.remove('thx-cut');});});
+  }
+  /* The new theme's ground, ink and accent, read before anything changes. */
+  function palette(nx){
+    var was=d.getAttribute('data-theme'), cs;
+    d.classList.add('thx-cut'); d.setAttribute('data-theme',nx);
+    cs=getComputedStyle(d);
+    var p={paper:cs.getPropertyValue('--paper').trim(),ink:cs.getPropertyValue('--ink').trim(),
+      rule:cs.getPropertyValue('--rule').trim(),acc:cs.getPropertyValue('--orange').trim()};
+    d.setAttribute('data-theme',was); void getComputedStyle(document.body).color; d.classList.remove('thx-cut');
+    return p;
+  }
+  /* The blocks on screen: walk down from the nav and main until a block is small
+     enough to move as one piece, or holds text of its own. */
+  function pieces(){
+    var vw=innerWidth, vh=innerHeight, out=[], cap=110;
+    function onScreen(r){return r.width>0&&r.height>0&&r.bottom>0&&r.top<vh&&r.right>0&&r.left<vw;}
+    function ownText(e){for(var n=e.firstChild;n;n=n.nextSibling){if(n.nodeType===3&&n.textContent.trim()) return true;} return false;}
+    function walk(e,depth){
+      for(var c=e.firstElementChild;c;c=c.nextElementSibling){
+        if(out.length>=cap) return;
+        var tg=c.tagName; if(tg==='SCRIPT'||tg==='STYLE'||tg==='TEMPLATE') continue;
+        var r=c.getBoundingClientRect(); if(!onScreen(r)) continue;
+        var cs=getComputedStyle(c); if(cs.visibility==='hidden'||cs.display==='contents'&&!c.firstElementChild) continue;
+        var big=r.height>vh*0.28||(r.width>vw*0.55&&r.height>90);
+        if(big&&depth<9&&c.firstElementChild&&!ownText(c)&&tg!=='svg'&&tg!=='CANVAS') walk(c,depth+1);
+        else out.push({e:c,r:r,t:cs.transform!=='none'});
+      }
+    }
+    [].forEach.call(document.querySelectorAll('body > nav, body > main'),function(x){walk(x,0);});
+    return out;
+  }
+  function flip(){
     var nx=d.getAttribute('data-theme')==='dark'?'light':'dark';
     try{localStorage.setItem('rolodex-theme',nx);}catch(e){}
-    d.setAttribute('data-theme',nx);
-  });
+    if(!MOTION||!Element.prototype.animate){ set(nx); return; }
+    window.__thxBusy=true;
+    var P=palette(nx), vw=innerWidth, vh=innerHeight, br=b.getBoundingClientRect();
+    var ox=br.left+br.width/2, oy=br.top+br.height/2;
+    var ps=pieces(), far=1;
+    ps.forEach(function(p){var cx=p.r.left+p.r.width/2, cy=p.r.top+p.r.height/2;
+      p.dx=cx-ox; p.dy=cy-oy; p.d=Math.sqrt(p.dx*p.dx+p.dy*p.dy); if(p.d>far) far=p.d;});
+    /* 1. The blocks come apart, from the toggle outward. */
+    ps.forEach(function(p,i){
+      var k=p.d/far, m=40+80*Math.random(), u=p.d||1, j=(i%2?1:-1);
+      var tx=p.dx/u*m+j*14*Math.random(), ty=p.dy/u*m+24+30*Math.random(), rot=j*(2+7*Math.random());
+      var mid=p.t?{opacity:1,offset:.35}:{opacity:1,offset:.35,transform:'translate('+(tx*.18).toFixed(1)+'px,'+(ty*.18).toFixed(1)+'px) rotate('+(rot*.4).toFixed(1)+'deg) scale(.97)'};
+      var to=p.t?{opacity:0}:{opacity:0,transform:'translate('+tx.toFixed(1)+'px,'+ty.toFixed(1)+'px) rotate('+rot.toFixed(1)+'deg) scale(.9)'};
+      var from=p.t?{opacity:1}:{opacity:1,transform:'none'};
+      p.out=p.e.animate([from,mid,to],{duration:440,delay:Math.round(k*260),easing:'cubic-bezier(.5,0,.75,.2)',fill:'forwards'});
+    });
+    /* 2. The new ground, printed a layer at a time from the bottom, each pass the
+       other way from the last, with the nozzle riding the bead. */
+    var ov=document.createElement('div'); ov.className='thx'; ov.setAttribute('aria-hidden','true');
+    ov.style.setProperty('--thx-line',P.ink);
+    var n=Math.max(7,Math.min(14,Math.round(vh/68))), h=vh/n, t0=240, step=330/n, run=270, beads=[];
+    for(var i=0;i<n;i++){
+      var ltr=i%2===0, top=vh-(i+1)*h, delay=t0+i*step;
+      var ly=document.createElement('div'); ly.className='ly';
+      ly.style.cssText='top:'+top.toFixed(2)+'px;height:'+(h+1).toFixed(2)+'px;background:'+P.paper;
+      var nz=document.createElement('div'); nz.className='nz';
+      nz.style.cssText='top:'+top.toFixed(2)+'px;background:'+P.acc+';box-shadow:0 0 0 3px color-mix(in srgb,'+P.acc+' 25%,transparent)';
+      ov.appendChild(ly); ov.appendChild(nz);
+      beads.push(ly.animate([{clipPath:ltr?'inset(0 100% 0 0)':'inset(0 0 0 100%)'},{clipPath:'inset(0 0 0 0)'}],
+        {duration:run,delay:delay,easing:'cubic-bezier(.3,.6,.2,1)',fill:'both'}));
+      nz.animate([{transform:'translateX('+(ltr?0:vw)+'px)',opacity:1},{transform:'translateX('+(ltr?vw:0)+'px)',opacity:1}],
+        {duration:run,delay:delay,easing:'cubic-bezier(.3,.6,.2,1)',fill:'both'});
+      nz.animate([{opacity:1},{opacity:0}],{duration:120,delay:delay+run,fill:'forwards'});
+    }
+    document.body.appendChild(ov);
+    /* 3. Under the new ground, the swap. Then the blocks set back down, top to
+       bottom, and the ground lifts. */
+    function done(a){return a.finished.catch(function(){});}
+    Promise.all(beads.map(done)).then(function(){
+      set(nx);
+      var tops=ps.map(function(p){return p.r.top;}), lo=Math.min.apply(null,tops.concat([0])), hi=Math.max.apply(null,tops.concat([1]));
+      ps.forEach(function(p){
+        if(p.out) p.out.cancel();
+        var k=(p.r.top-lo)/Math.max(1,hi-lo), j=(p.r.left+p.r.width/2<vw/2)?-1:1;
+        var from=p.t?{opacity:0}:{opacity:0,transform:'translate('+(j*16)+'px,34px) rotate('+(j*2)+'deg) scale(.94)'};
+        var to=p.t?{opacity:1}:{opacity:1,transform:'none'};
+        p.back=p.e.animate([from,to],{duration:440,delay:Math.round(80+k*300),easing:'cubic-bezier(.2,1.25,.4,1)',fill:'backwards'});
+      });
+      var lift=ov.animate([{opacity:1},{opacity:0}],{duration:180,delay:40,fill:'forwards'});
+      Promise.all(ps.map(function(p){return done(p.back);}).concat([done(lift)])).then(function(){
+        ov.remove(); window.__thxBusy=false;});
+    });
+  }
+  b.addEventListener('click',function(){ if(window.__thxBusy) return; flip(); });
 })();
 
 /* A deliberate, read-mostly handle on the tool's internals. The verifier drives

@@ -19,6 +19,7 @@ import shutil
 import audit11
 import paths
 import reel
+import strip
 import ties
 from version import BUILD
 
@@ -130,6 +131,8 @@ def render(hou, dfw):
             .replace("__FONTS__", part("_fonts.css"))
             .replace("__MARKET__", part("_market.js"))
             .replace("__REEL__", part("_reel.js")))
+    # Build 91. The page ships without the source's comments (strip.py).
+    html = strip.page(html)
     return html.replace("__CSP__", csp(html), 1)
 
 
@@ -139,8 +142,10 @@ def artifact(html):
     document wrapper or its policy meta. The head script that settles the theme
     and the market before first paint is carried across on its own."""
     a = html.split("<style>", 1)[1]
-    ti = html.index("<script>\n/* Build 67. The theme is settled")
+    ti = html.index("<script>")
     head = html[ti:html.index("</script>", ti) + len("</script>")]
+    if "rolodex-theme" not in head or ti > html.index("<style>"):
+        raise SystemExit("the head script that settles the theme has moved")
     a = "<title>Rolodex</title>\n" + head + "\n<style>" + a
     return a.replace("</head><body>", "", 1).replace("</body></html>", "", 1)
 

@@ -1495,17 +1495,41 @@ async def main():
         for n, a, c, m in pairs:
             if _cr(a, c) < m:
                 problems.append("dark theme: %s contrast %.2f is under %.1f" % (n, _cr(a, c), m))
+        # Build 91. The change comes apart and sets back down, so the swap lands
+        # under the new ground, after the blocks have gone. A second press while
+        # it runs is ignored, and it leaves nothing behind.
         await dp.click("#thm")
-        await dp.wait_for_timeout(200)
+        mid = await dp.evaluate("[document.querySelectorAll('.thx').length,!!window.__thxBusy,"
+                                "document.getAnimations().length]")
+        await dp.click("#thm", force=True)
+        await dp.wait_for_timeout(2200)
         flipped = await dp.evaluate(
             "(()=>{let s=null;try{s=localStorage.getItem('rolodex-theme')}catch(e){}"
             "return [document.documentElement.getAttribute('data-theme'),s,"
-            "getComputedStyle(document.body).backgroundColor]})()")
-        print("theme toggle    :", flipped[0], "stored", flipped[1])
+            "getComputedStyle(document.body).backgroundColor,document.querySelectorAll('.thx').length,"
+            "!!window.__thxBusy,0,[...document.querySelectorAll('main *,nav *')].filter(e=>e.getAnimations().length"
+            "&&getComputedStyle(e).opacity==='0').length]})()")
+        print("theme toggle    :", flipped[0], "stored", flipped[1], "| mid-change: ground %d, pieces moving %d"
+              % (mid[0], mid[2]), "| after: ground %d, busy %s, hidden %d" % (flipped[3], flipped[4], flipped[6]))
         if flipped[0] != "light" or _lum(flipped[2]) < 0.9:
             problems.append("the theme toggle does not switch to the light theme")
+        if mid[0] != 1 or not mid[1] or mid[2] < 10:
+            problems.append("the theme change does not take the page apart")
+        if flipped[3] or flipped[4] or flipped[6]:
+            problems.append("the theme change leaves its ground, its lock or a hidden block behind")
+        rctx = await b.new_context(viewport={"width": 1280, "height": 900}, color_scheme="dark", reduced_motion="reduce")
+        rp = await rctx.new_page()
+        await rp.goto(URL)
+        await rp.wait_for_timeout(400)
+        await rp.click("#thm")
+        rnow = await rp.evaluate("[document.documentElement.getAttribute('data-theme'),"
+                                 "document.querySelectorAll('.thx').length]")
+        print("theme, still    :", rnow[0], "at once, ground", rnow[1])
+        if rnow != ["light", 0]:
+            problems.append("with reduced motion the theme does not change at once")
+        await rctx.close()
         await dp.click("#thm")
-        await dp.wait_for_timeout(200)
+        await dp.wait_for_timeout(2200)
         await dp.evaluate("document.getElementById('vMarket').click()")
         await dp.wait_for_timeout(400)
         cells = await dp.evaluate(

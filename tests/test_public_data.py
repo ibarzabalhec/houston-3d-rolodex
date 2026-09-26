@@ -160,3 +160,27 @@ class Workbooks(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class Strip(unittest.TestCase):
+    """Build 91. The served page carries no code comments, and the stripper
+    reads strings, templates and regular expressions as such."""
+
+    def test_stripper_keeps_code(self):
+        import strip
+        src = ("var a='//not', b=\"/*no*/\", r=/\\/\\/x[/]/g; // gone\n"
+               "var t=`a ${ {k:'}'}.k } // kept ${b}`; /* gone */ var d=a/2/1;\n")
+        out = strip.js(src)
+        for keep in ("'//not'", '"/*no*/"', "/\\/\\/x[/]/g", "`a ${ {k:'}'}.k } // kept ${b}`", "a/2/1"):
+            self.assertIn(keep, out)
+        self.assertNotIn("gone", out)
+        self.assertEqual(strip.css("a{b:'/*x*/'}/* c */d{}"), "a{b:'/*x*/'}d{}")
+
+    def test_page_has_no_comments(self):
+        page = ROOT / "docs" / "index.html"
+        if not page.exists():
+            self.skipTest("build has not run")
+        html = re.sub(r'<script id="rolodex-[a-z]+" type="application/json">.*?</script>', "",
+                      page.read_text(encoding="utf-8"), flags=re.S)
+        self.assertNotIn("/*", html)
+        self.assertIsNone(re.search(r"\bBuild \d", html))
