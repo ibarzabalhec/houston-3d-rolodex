@@ -6,7 +6,7 @@ Dallas-Fort Worth copy, the page itself at four widths in both themes, and the
 numbers against the data. What they found is applied here, after every earlier
 pass, so each change is one line that says what it replaces.
 
-The edits live in audit7/*.json as [scope, old, new] triples. A scope is a card
+The edits live in internal/inputs/audit7/*.json as [scope, old, new] triples. A scope is a card
 id or a top-level key of the page data. The old text must occur exactly once in
 that scope, or the build fails, so an edit cannot land somewhere it was not
 aimed. Fields whose names start with an underscore are working fields: they are
@@ -18,6 +18,7 @@ stripped before the edits run and never ship.
 import pathlib
 
 import jsonio
+import paths
 
 HERE = pathlib.Path(__file__).parent
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
@@ -65,11 +66,11 @@ def strip_working(obj):
 
 
 def load(market):
-    if not (HERE / "audit7").is_dir():
-        raise SystemExit("audit7/ is missing. Its edit files are research notes and are kept "
+    if not paths.AUDIT7.is_dir():
+        raise SystemExit("internal/inputs/audit7/ is missing. Its edit files are research notes and are kept "
                          "on the build machine, outside the repository.")
     out = []
-    for p in sorted((HERE / "audit7").glob(market + "_*.json")):
+    for p in sorted(paths.AUDIT7.glob(market + "_*.json")):
         for row in jsonio.read(p):
             scope, old, new = row[0], row[1], row[2]
             out.append((p.name, scope, old, new))

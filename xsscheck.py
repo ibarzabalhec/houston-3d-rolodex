@@ -24,6 +24,7 @@ from xml.etree import ElementTree
 from playwright.async_api import async_playwright
 
 import emit
+import paths
 
 ROOT = pathlib.Path(__file__).parent
 TEXT = '<img src=x onerror="__x(1)"><svg onload="__x(2)">&amp;'
@@ -121,8 +122,8 @@ async def walk(b, url, market):
 
 
 async def main():
-    hou = emit._load_public(ROOT / "houston-data.json", "hou")
-    dfw = emit._load_public(ROOT / "dfw" / "dfw-data.json", "dfw")
+    hou = emit._load_public(paths.HOU_DATA, "hou")
+    dfw = emit._load_public(paths.DFW_DATA, "dfw")
     if hou is None:
         sys.exit("xsscheck: build the data first (make build)")
     # The policy would stop a payload from running, which is the point of it, and

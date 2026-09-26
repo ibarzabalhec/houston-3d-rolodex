@@ -10,11 +10,13 @@ import json
 import pathlib
 import re
 import unittest
+import zipfile
 
 import audit12
 import audit13
 import emit
 import policy
+from version import DATE
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MARKETS = {"hou": ROOT / "docs" / "houston-data.json", "dfw": ROOT / "docs" / "dfw-data.json"}
@@ -133,6 +135,23 @@ class PublicData(unittest.TestCase):
             for r in d["market"]["printed"]:
                 self.assertIsInstance(r["units"], int)
                 self.assertGreater(r["units"], 0, (mk, r["project"]))
+
+
+class Workbooks(unittest.TestCase):
+    """A workbook built twice from the same data is the same file, so docs/ changes
+    only when the roster does."""
+
+    def test_workbooks_carry_the_page_date_not_the_build_time(self):
+        books = [p for p in (ROOT / "docs").glob("*.xlsx")]
+        if not books:
+            self.skipTest("the workbooks have not been built")
+        for p in books:
+            with zipfile.ZipFile(p) as z:
+                core = z.read("docProps/core.xml").decode("utf-8")
+                stamps = {i.date_time[:3] for i in z.infolist()}
+            self.assertEqual(re.findall(r"<dcterms:(?:created|modified)[^>]*>([^<]*)<", core),
+                             [DATE + "T00:00:00Z"] * 2, p.name)
+            self.assertEqual(stamps, {tuple(int(x) for x in DATE.split("-"))}, p.name)
 
 
 if __name__ == "__main__":

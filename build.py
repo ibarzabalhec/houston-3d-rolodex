@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Build the ICON Greater Houston rolodex: JSON -> HTML card deck + XLSX workbench.
 
-Single source of truth is houston-data.json, generated here from the data modules.
+Single source of truth is build/houston-data.json, generated here from the data modules.
 Never hand-edit the generated HTML or XLSX.
 
 Build 2 changes the presentation, not the evidence. The 0-12 composite is gone.
@@ -11,6 +11,8 @@ Capital is shown as a visible qualifier rather than folded into a hidden total.
 import json
 import sys
 import collections
+
+import paths
 
 sys.path.insert(0, '.')
 from data_a import A_TIER
@@ -1543,7 +1545,7 @@ if _banned:
         print("BANNED SOURCE  %s  %s" % (where, what))
     raise SystemExit("%d banned source references. No encyclopaedia or wiki citations." % len(_banned))
 
-with open("houston-data.json", "w", encoding="utf-8") as f:
+with open(paths.out(paths.HOU_DATA), "w", encoding="utf-8") as f:
     json.dump(DATA, f, ensure_ascii=False, indent=1)
 
 # Build 68. The page is written by emit.py, after the Dallas-Fort Worth build, so

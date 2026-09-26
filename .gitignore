@@ -1,34 +1,36 @@
+# Python and tool caches
 __pycache__/
 *.pyc
+.ruff_cache/
+.pytest_cache/
+.DS_Store
 *.png
 *.pdf
-# build products at the root; the served copies live in docs/
+
+# What the build makes for its own use: the full data files, the standalone page,
+# the artifact copy and the workbooks. The served copies live in docs/. paths.py
+# names every one of them.
+/build/
+
+# Private, never published: the research inputs the build reads, research
+# scripts, fetch caches, the handoff and the archive. internal/START_HERE.md says
+# what is where.
+internal/
+
+# Where build products and research inputs lived before Build 89. Kept, so a
+# stray copy left at an old path stays private.
 /ICON_Greater_Houston_Rolodex.html
 /ICON_Greater_Houston_Rolodex.xlsx
 /houston-data.json
 /rolodex-artifact.html
-# the internal register is tracked but must never be copied into docs/ output
-
-# the internal research register stays local, out of the published repo
-internal/
-
-# Build 68: the Dallas-Fort Worth build product; its served copy lives in docs/
-/dfw/dfw-data.json
 /DFW_Rolodex.xlsx
-
-# Build 71. The tool is external. Research notes stay on this machine: the Grok
-# research pack, the DFW edit files and hand readings, the audit's edit files,
-# and the build log and roadmap, which now live in internal/.
+/dfw/dfw-data.json
 /dfw/pack/
 /dfw/edit/
 /dfw/hand.json
 /dfw/FINDINGS_R1.md
 /audit7/
-# intro reel: videos and frame sheets are rebuilt by hand, not committed
+
+# The intro reel's videos and frame sheets are rebuilt by hand, not committed.
 intro/*.mp4
 intro/_frames/
-
-# tool caches
-.ruff_cache/
-.pytest_cache/
-.DS_Store

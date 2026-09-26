@@ -11,8 +11,8 @@ the same helpers:
   phones   are the ten digits in the bytes of the page cited for them
   figures  is every figure a card prints on a page the card cites
 
-    python3 marketcheck.py dfw/dfw-data.json            all four
-    python3 marketcheck.py dfw/dfw-data.json names      one
+    python3 marketcheck.py build/dfw-data.json          all four
+    python3 marketcheck.py build/dfw-data.json names    one
 
 A page a script cannot read is not a finding either way. It resolves against a
 dated hand reading in the market's HAND register, which records only what was
@@ -26,6 +26,7 @@ import concurrent.futures as cf
 from urllib.parse import urlparse
 
 import jsonio
+import paths
 import linkcheck as LC
 import probe as PR
 import phonecheck as PC
@@ -35,12 +36,12 @@ ROOT = pathlib.Path(__file__).parent
 
 
 def _cache(path):
-    return ROOT / "internal" / ("mc_" + pathlib.Path(path).stem + ".json")
+    return paths.CACHE / ("mc_" + pathlib.Path(path).stem + ".json")
 
 
 def _hand(path):
     """The market's hand readings: {url: text seen, dated}."""
-    p = pathlib.Path(path).parent / "hand.json"
+    p = paths.hand_readings(path)
     h = jsonio.read(p) if p.exists() else {}
     return _Norm({k.rstrip("/").lower(): v for k, v in h.items()})
 

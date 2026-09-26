@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Build 68. Write the page, carrying every market that has been built.
 
-build.py writes houston-data.json and build_dfw.py writes dfw/dfw-data.json.
+build.py writes build/houston-data.json and build_dfw.py writes build/dfw-data.json.
 This puts both into one page. The page parses only the market being viewed, and
 the switch on the home screen moves between them. A market that has not been
 built ships as an empty slot, and the switch hides itself.
@@ -17,6 +17,7 @@ import re
 import shutil
 
 import audit11
+import paths
 import reel
 import ties
 from version import BUILD
@@ -164,12 +165,12 @@ def readme(hou, dfw):
 
 def main():
     # Each market's public copy is made once: the page embeds it and docs/ serves it.
-    hou = _load_public(ROOT / "houston-data.json", "hou")
-    dfw = _load_public(ROOT / "dfw" / "dfw-data.json", "dfw")
+    hou = _load_public(paths.HOU_DATA, "hou")
+    dfw = _load_public(paths.DFW_DATA, "dfw")
     html = render(hou, dfw)
-    page = ROOT / "ICON_Greater_Houston_Rolodex.html"
+    page = paths.out(paths.PAGE)
     page.write_text(html, encoding="utf-8")
-    (ROOT / "rolodex-artifact.html").write_text(artifact(html), encoding="utf-8")
+    paths.ARTIFACT.write_text(artifact(html), encoding="utf-8")
 
     os.makedirs(ROOT / "docs", exist_ok=True)
     shutil.copy(page, ROOT / "docs" / "index.html")

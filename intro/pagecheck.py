@@ -9,7 +9,7 @@ from playwright.async_api import async_playwright
 from PIL import Image, ImageDraw
 
 HERE = pathlib.Path(__file__).resolve().parent
-PAGE = (HERE.parent / "ICON_Greater_Houston_Rolodex.html").resolve().as_uri()
+PAGE = (HERE.parent / "build" / "ICON_Greater_Houston_Rolodex.html").resolve().as_uri()
 OUT = HERE / "_frames"
 OUT.mkdir(exist_ok=True)
 TIMES = [0.3, 1.2, 2.2, 3.2, 3.7, 4.1, 4.8, 6.4]

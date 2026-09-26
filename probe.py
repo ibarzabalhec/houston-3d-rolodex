@@ -36,9 +36,10 @@ import concurrent.futures as cf
 from urllib.parse import urlparse
 
 import jsonio
+import paths
 
 ROOT = pathlib.Path(__file__).parent
-OUT = ROOT / "internal" / "probe.json"
+OUT = paths.CACHE / "probe.json"
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
@@ -193,7 +194,7 @@ def fetch(url):
 
 
 def main():
-    d = jsonio.read(ROOT / "houston-data.json")
+    d = jsonio.read(paths.HOU_DATA)
     want_titles = "--titles" in sys.argv
 
     jobs, li_only = {}, []

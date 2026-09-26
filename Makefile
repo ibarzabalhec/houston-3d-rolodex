@@ -46,6 +46,6 @@ gates: build
 	python3 linkcheck.py
 	python3 figures.py
 	python3 phonecheck.py
-	python3 marketcheck.py dfw/dfw-data.json
+	python3 marketcheck.py build/dfw-data.json
 clean:
-	rm -rf __pycache__ tests/__pycache__ .ruff_cache ICON_Greater_Houston_Rolodex.html ICON_Greater_Houston_Rolodex.xlsx houston-data.json rolodex-artifact.html dfw/dfw-data.json DFW_Rolodex.xlsx
+	rm -rf __pycache__ tests/__pycache__ .ruff_cache build

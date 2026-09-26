@@ -32,6 +32,7 @@ import concurrent.futures as cf
 from urllib.parse import urlparse
 
 import jsonio
+import paths
 import policy as POLICY
 
 ROOT = pathlib.Path(__file__).parent
@@ -225,7 +226,7 @@ def status(u):
 
 
 def main():
-    d = jsonio.read(ROOT / "houston-data.json")
+    d = jsonio.read(paths.HOU_DATA)
     urls = where(d)
 
     hits = [u for u in urls if any(b in u.lower() for b in BANNED)]

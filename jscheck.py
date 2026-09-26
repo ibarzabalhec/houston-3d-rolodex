@@ -23,8 +23,10 @@ import subprocess
 import sys
 import tempfile
 
+import paths
+
 ROOT = pathlib.Path(__file__).parent
-PAGE = ROOT / "ICON_Greater_Houston_Rolodex.html"
+PAGE = paths.PAGE
 
 RULES = {
     "no-undef": "error", "no-redeclare": "error", "no-dupe-keys": "error", "no-unreachable": "error",

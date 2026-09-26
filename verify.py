@@ -14,6 +14,7 @@ from playwright.async_api import async_playwright
 
 import audit13 as _A13
 import jsonio
+import paths
 
 ROOT = pathlib.Path(__file__).parent
 # Build 68. One page, two markets. MARKET=dfw runs every check against the
@@ -21,9 +22,9 @@ ROOT = pathlib.Path(__file__).parent
 MARKET = _os.environ.get("MARKET", "houston")
 # The intro reel plays first on a fresh session; ?intro=0 keeps it off for every
 # check but its own, at the end.
-URL = "file://" + str((ROOT / "ICON_Greater_Houston_Rolodex.html").resolve()) + "?intro=0" + (
+URL = "file://" + str(paths.PAGE) + "?intro=0" + (
     "#market=dfw" if MARKET == "dfw" else "")
-D = jsonio.read(ROOT / ("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json"))
+D = jsonio.read(paths.DFW_DATA if MARKET == "dfw" else paths.HOU_DATA)
 PROBE_ID = "HOU-045" if MARKET == "houston" else next(
     t["target_id"] for t in D["targets"] if t["group"] in ("a", "b")
     and any(p.get("decider") and p.get("linkedin_url") and p.get("source_url") for p in t["principals"]))
@@ -1947,7 +1948,7 @@ async def main():
         scripts = pol.split("script-src", 1)[1].split(";", 1)[0] if "script-src" in pol else ""
         strict = pol.startswith("default-src 'none'") and "'sha256-" in scripts and "unsafe" not in scripts
         blocked = [e for e in errs if "Content Security Policy" in e]
-        in_artifact = "Content-Security-Policy" in (ROOT / "rolodex-artifact.html").read_text(encoding="utf-8")
+        in_artifact = "Content-Security-Policy" in paths.ARTIFACT.read_text(encoding="utf-8")
         print("page policy     :", "no requests, %d scripts by hash" % scripts.count("'sha256-") if strict
               else "missing", "| blocked in this run", len(blocked), "| in the artifact copy", in_artifact)
         if not strict:

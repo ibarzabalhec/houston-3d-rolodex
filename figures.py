@@ -45,9 +45,10 @@ import urllib.request
 import concurrent.futures as cf
 
 import jsonio
+import paths
 
 ROOT = pathlib.Path(__file__).parent
-CACHE = ROOT / "internal" / "figures_pages.json"
+CACHE = paths.CACHE / "figures_pages.json"
 
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124 Safari/537.36",
@@ -97,7 +98,7 @@ def flatten(body):
 BYHAND = {
     # Build 85. Read through a separate fetcher on 2026-09-26; builderonline
     # refuses this script. The Partners in Building page is the one the
-    # Dallas-Fort Worth card cites, read by hand on 2026-09-24 (dfw/hand.json).
+    # Dallas-Fort Worth card cites, read by hand on 2026-09-24 (internal/inputs/dfw-hand.json).
     "https://www.builderonline.com/firms/greeneco-builders/":
         "2026-09-26: GreenECO Builders, Katy, TX. CEO George Kopecky. 2016 closings 185, revenue $38 M. "
         "2015 closings 234, revenue $46 M. Detached for sale, entry level and move-up.",
@@ -424,7 +425,7 @@ def figures_in(text):
 
 
 def main():
-    d = jsonio.read(ROOT / "houston-data.json")
+    d = jsonio.read(paths.HOU_DATA)
     only = [a for a in sys.argv[1:] if a.startswith("HOU-")]
     targets = [t for t in d["targets"] if not only or t["target_id"] in only]
 

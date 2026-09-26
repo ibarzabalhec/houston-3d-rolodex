@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
-"""Generate the single-tab XLSX workbench from houston-data.json.
+"""Generate the single-tab XLSX workbench from build/houston-data.json.
 
 One row per person. The LinkedIn column is editable and highlighted where empty,
 because that is the column somebody will sit and fill in. Every count is a formula.
 """
 import os
+import re
 import shutil
+import zipfile
 
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
@@ -13,12 +15,14 @@ from openpyxl.utils import get_column_letter
 
 import audit11
 import jsonio
+import paths
+from version import DATE
 
 # Build 68. MARKET=dfw writes the Dallas-Fort Worth workbook from its own data.
 MARKET = os.environ.get("MARKET", "houston")
-D = jsonio.read("dfw/dfw-data.json" if MARKET == "dfw" else "houston-data.json")
+D = jsonio.read(paths.DFW_DATA if MARKET == "dfw" else paths.HOU_DATA)
 PLACE = (D.get("place") or {}).get("name", "Greater Houston")
-OUT = "DFW_Rolodex.xlsx" if MARKET == "dfw" else "ICON_Greater_Houston_Rolodex.xlsx"
+OUT = paths.DFW_XLSX if MARKET == "dfw" else paths.HOU_XLSX
 WORD = {"clear": "Yes", "partial": "Partly", "fail": "No"}
 # Build 66. The workbook had its own names for the sections, four of them
 # different from the page's. It takes the page's now.
@@ -282,9 +286,30 @@ if P:
         ps.column_dimensions[get_column_letter(3 + j)].width = 9
     ps.freeze_panes = "C5"
 
-wb.save(OUT)
-os.makedirs("docs", exist_ok=True)
-shutil.copy(OUT, "docs/" + OUT)
+wb.save(paths.out(OUT))
+
+
+def pin(path):
+    """Build 89. openpyxl stamps the save time into docProps/core.xml and onto each
+    zip entry, so an unchanged roster made a changed file and a new commit in docs/
+    on every build. Both now carry the page's date."""
+    y, m, d = (int(x) for x in DATE.split("-"))
+    stamp = ("%sT00:00:00Z" % DATE).encode()
+    with zipfile.ZipFile(path) as z:
+        items = [(i, z.read(i.filename)) for i in z.infolist()]
+    with zipfile.ZipFile(path, "w") as z:
+        for info, data in items:
+            if info.filename == "docProps/core.xml":
+                data = re.sub(rb"(<dcterms:(?:created|modified)[^>]*>)[^<]*", lambda g: g.group(1) + stamp, data)
+            entry = zipfile.ZipInfo(info.filename, date_time=(y, m, d, 0, 0, 0))
+            entry.compress_type = zipfile.ZIP_DEFLATED
+            entry.external_attr = info.external_attr
+            z.writestr(entry, data)
+
+
+pin(OUT)
+os.makedirs(paths.DOCS, exist_ok=True)
+shutil.copy(OUT, paths.DOCS / OUT.name)
 print("rows %d  (people %d, firms without a contact %d)" % (
     len(rows),
     sum(len(t["principals"]) for t in T),

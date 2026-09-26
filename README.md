@@ -4,7 +4,7 @@
 
 Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
-A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 122 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
+A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 122 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it, and `MARKET=dfw` runs the verifier and the workbook against it.
 
 One self-contained HTML file. No framework and no runtime network request. A security policy in the page has the browser block any request, and any script not written in the page. `docs/index.html` is the served copy. This README is written by `emit.py` from the page's own data, so its counts are the page's counts.
 
@@ -56,12 +56,13 @@ make gates      # the network gates, run by hand before sending:
                 #   marketcheck.py the same four for Dallas-Fort Worth
 ```
 
-The data file is the source of truth: `build.py` and `build_dfw.py` write it,
-`emit.py` writes the page from it, and nothing downstream is edited by hand.
-Corrections are late layers (`audit.py` to `audit12.py`), each applied only while
-the text it replaces is still there. The build number and the page's date live in
-`version.py`, and the banned-source list in `policy.py`. Three research inputs stay
-on the build machine and out of this repository (`audit7/`, `dfw/pack/` and
-`dfw/edit/`), so a fresh clone serves the built page from `docs/` but does not
-rebuild it.
+The data file is the source of truth: `build.py` and `build_dfw.py` write it to
+`build/`, `emit.py` writes the page from it, and nothing downstream is edited by
+hand. Corrections are late layers (`audit.py` to `audit13.py`), each applied only
+while the text it replaces is still there. The build number and the page's date
+live in `version.py`, the banned-source list in `policy.py`, and every path the
+build reads or writes in `paths.py`. `docs/` is what GitHub Pages serves. `build/`
+holds the build's own products and is not committed. The research inputs the build
+reads stay on the build machine, in `internal/`, out of this repository, so a
+fresh clone serves the built page from `docs/` but does not rebuild it.
 

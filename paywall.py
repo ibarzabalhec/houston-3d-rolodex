@@ -12,7 +12,7 @@ marks publishers use to lock an article:
   register  a free-account wall ("register to continue", "create a free account")
   host      a host known to lock its articles, when the page itself could not be read
 
-    python3 paywall.py            scan, write internal/paywall.json, print the report
+    python3 paywall.py            scan, write internal/cache/paywall.json, print the report
 
 Run by hand, like linkcheck.py. A finding is a lead: open the page before
 acting on it, since metered sites open a few articles free.
@@ -27,9 +27,10 @@ import zlib
 from urllib.parse import urlparse
 
 import jsonio
+import paths
 
 ROOT = pathlib.Path(__file__).parent
-OUT = ROOT / "internal" / "paywall.json"
+OUT = paths.CACHE / "paywall.json"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
                     "(KHTML, like Gecko) Chrome/124 Safari/537.36", "Accept": "text/html,*/*"}
 # The system trust store, or the bundle SSL_CERT_FILE names. A fixed path here

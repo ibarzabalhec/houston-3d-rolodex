@@ -1,17 +1,17 @@
 # -*- coding: utf-8 -*-
 """Build 68. The Dallas-Fort Worth deck.
 
-The first draft of DFW came as a research pack (dfw/pack/, written by a separate
+The first draft of DFW came as a research pack (internal/inputs/dfw-pack/, written by a separate
 research tool): 130 firm records, a supply panel, the field, a market block and
 Census permits. It was checked with the same four gates as Houston
 (marketcheck.py). Seven readers resolved what failed, and five editors rewrote
-every card in the Houston deck's house style (dfw/edit/cards.json). This file
-applies all of it and writes dfw/dfw-data.json in the shape the page reads.
+every card in the Houston deck's house style (internal/inputs/dfw-edit/cards.json). This file
+applies all of it and writes build/dfw-data.json in the shape the page reads.
 
 What it holds to, the same as Houston:
   - a verdict is Yes, Partly or No per count, and the section follows the holds;
   - a LinkedIn link is kept only where a search result showed the URL with the
-    person's name and the firm (dfw/edit/linkedin_verified.json);
+    person's name and the firm (internal/inputs/dfw-edit/linkedin_verified.json);
   - no aggregator, no encyclopedia, no URL that was not seen;
   - a closings figure says whose figure it is.
 The build fails on any of it.
@@ -30,15 +30,16 @@ import audit13 as AUDIT13
 import policy as POLICY
 from version import BUILD, DATE
 import jsonio
+import paths
 
 AUDIT8.DFW_VERDICT.update(AUDIT9.DFW_VERDICT)
 for _k, _v in AUDIT9.DFW_SOURCES.items():
     AUDIT8.DFW_SOURCES.setdefault(_k, []).extend(_v)
 ROOT = pathlib.Path(__file__).parent
-PACK = jsonio.read(ROOT / "dfw" / "pack" / "03_dfw-data.json")
-EDIT = {c["target_id"]: c for c in jsonio.read(ROOT / "dfw" / "edit" / "cards.json")}
-LIV = jsonio.read(ROOT / "dfw" / "edit" / "linkedin_verified.json")
-HOU = jsonio.read(ROOT / "houston-data.json")
+PACK = jsonio.read(paths.DFW_PACK / "03_dfw-data.json")
+EDIT = {c["target_id"]: c for c in jsonio.read(paths.DFW_EDIT / "cards.json")}
+LIV = jsonio.read(paths.DFW_EDIT / "linkedin_verified.json")
+HOU = jsonio.read(paths.HOU_DATA)
 TODAY = DATE
 
 V = {"Yes": "clear", "Partly": "partial", "No": "fail"}
@@ -477,10 +478,10 @@ def main():
 
     # supply, curated: the pack's panel less the firms that already have a card,
     # the out-of-metro entries and anything no page supports.
-    SUP = jsonio.read(ROOT / "dfw" / "edit" / "supply.json")
+    SUP = jsonio.read(paths.DFW_EDIT / "supply.json")
 
     # the field: Houston's audited entries for the same firms, with DFW's own two
-    COMP = jsonio.read(ROOT / "dfw" / "edit" / "field.json")
+    COMP = jsonio.read(paths.DFW_EDIT / "field.json")
 
     D = {
         "version": "2.0", "build": BUILD, "last_updated": TODAY,
@@ -634,7 +635,7 @@ def main():
     if _bad13:
         raise SystemExit("FAILED: " + "; ".join(_bad13))
     gate(D)
-    jsonio.write(D, ROOT / "dfw" / "dfw-data.json", ensure_ascii=False, indent=1)
+    jsonio.write(D, paths.out(paths.DFW_DATA), ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))
     print("sections          %s" % dict(g))
     for a in D["axes"]:
