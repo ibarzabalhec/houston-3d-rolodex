@@ -9,7 +9,7 @@ Keep each line to one or two short sentences. The evidence blocks carry the deta
 VERDICT = {
 # already printing
 "HOU-002": "80 printed homes on one site, the largest printed project in the metro. HiveASMBLD supplies it.",
-"HOU-016": "23 of 26 homes printed. Owner cites 50 percent faster and 5 to 7 percent cheaper. HiveASMBLD supplies it.",
+"HOU-016": "The owner cites 50 percent faster and 5 to 7 percent cheaper. HiveASMBLD supplies it.",
 "HOU-017": "One printed duplex in the East End. Proof of printed party walls inside the city limits. HiveASMBLD supplies it.",
 
 # all three hold

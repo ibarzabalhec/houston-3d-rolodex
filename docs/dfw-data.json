@@ -6,7 +6,7 @@
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-24",
  "headline": "Dallas-Fort Worth builders and developers, screened for a construction printer.",
  "headline_html": "Dallas-Fort Worth builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "124 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "122 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -18,34 +18,24 @@
   "icon": "Lennar"
  },
  "group_notes": {
-  "a": "Builders and developers. Adopters and contractors with all three sit apart.",
+  "a": "Builders and developers outside the national and custom sections. Adopters and contractors with all three sit apart.",
   "b": "Two of three counts.",
   "adopter": "Printed walls standing, or a competitor contract.",
   "national": "Company-level purchasing across several states.",
-  "trade": "DFW builders hire out walls. Their wall firm would often run the printer. The three counts judge the wall.",
+  "trade": "DFW builders hire out walls. The three counts judge the wall.",
   "creative": "Design-led, no repeat plan set. Printed element inside a conventional project.",
   "channel": "Owns the ground. Its builders buy the wall.",
-  "icon": "Lennar's DFW business. LEN X invested in ICON, August 2021. Partners on Wolf Ranch."
+  "icon": "Lennar's DFW business. LEN X invested in ICON in August 2021 and February 2025. Lennar built Wolf Ranch with ICON."
  },
  "stat_strip": [
   [
-   "124",
+   "122",
    "firms screened",
    false,
    null
   ],
   [
-   "1",
-   "already buying printed walls",
-   false,
-   {
-    "group": [
-     "adopter"
-    ]
-   }
-  ],
-  [
-   "6",
+   "2",
    "builders and developers hold all three counts",
    false,
    {
@@ -65,8 +55,8 @@
    }
   ],
   [
-   "74",
-   "of 124 with a decision-maker named",
+   "73",
+   "of 122 with a decision-maker named",
    true,
    {
     "dec": "any"
@@ -79,28 +69,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 115,
-   "partial": 9,
-   "fail": 0,
-   "total": 124
+   "clear": 114,
+   "partial": 7,
+   "fail": 1,
+   "total": 122
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
    "clear": 4,
-   "partial": 70,
+   "partial": 68,
    "fail": 50,
-   "total": 124
+   "total": 122
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 10,
-   "partial": 16,
-   "fail": 98,
-   "total": 124
+   "clear": 8,
+   "partial": 8,
+   "fail": 106,
+   "total": 122
   }
  ],
  "matrix": {
@@ -138,11 +128,11 @@
  },
  "competitor": null,
  "icon_record": {
-  "line": "Central Texas housing. Army barracks in Texas and Louisiana. NASA habitat in Houston. Titan: its first system for outside builders.",
+  "line": "Central and West Texas housing. Army barracks in Texas, with Louisiana under way. NASA habitat in Houston. Titan: its first system for outside builders.",
   "facts": [
    [
     "Titan, on the record",
-    "Announced 11 March 2026. ICON: multi-storey walls at roughly $20 a square foot, $5,000 deposit, training third quarter 2026, deliveries early 2027. ICON lists no price. Axios, All3DP: from $899,000. The Real Deal: leases first, sales first quarter 2027. Jason Ballard to Builder: the target is small and mid-sized builders."
+    "Announced 11 March 2026. ICON: multi-story walls at roughly $20 a square foot, a $5,000 deposit, training from the third quarter of 2026, deliveries from early 2027. ICON's pricing page, September 2026: $899,000 for printer and pump, print material $620 a cubic yard, designs $2,000 to $5,000. Its Titan page: available to purchase, deliveries beginning in 2027. Jason Ballard to Builder: the target is small and mid-sized builders."
    ],
    [
     "The first reservations",
@@ -150,11 +140,11 @@
    ],
    [
     "Wolf Ranch, Georgetown",
-    "100 homes with Lennar, designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, from the mid $400,000s. ICON calls it its first completed residential community (June 2026)."
+    "100 homes with Lennar, co-designed by BIG. Printer: Vulcan. Announced 26 October 2021, printing by November 2022. Eight plans, 1,574 to 2,112 square feet, expected from the mid $400,000s. Finished 2025, per ICON's project page. ICON, 2 June 2026: its first completed residential community."
    ],
    [
     "Austin and the Hill Country",
-    "Community First! Village: 100 more, December 2024. Mueller: one-bedrooms from $195,000, about a dozen two- and three-bedrooms, printing from July 2025. Wimberley Springs: eight homes, upper $800,000s, July 2024."
+    "Community First! Village: 100 more homes under way from December 2024, with a Lennar Foundation gift. ICON's project page: 117 structures there, 2019 to 2026. Mueller: three one-bedroom homes from $195,000 and nearly a dozen two- and three-bedrooms, printing from July 2025. ICON's page: 12 finished, 2026. Wimberley Springs: eight homes from the upper $800,000s, July 2024. ICON's page: five finished, 2025."
    ],
    [
     "Lennar in DFW",
@@ -162,7 +152,7 @@
    ],
    [
     "Dallas-Fort Worth",
-    "No ICON project in the metro, per its own site. Its one Houston structure: Mars Dune Alpha, a 1,700 square foot NASA habitat, 2021. Black Buffalo printed a Fort Worth house in May 2024. PRINT3D Technologies of Allen sells printed houses."
+    "ICON's site places its 117 sold homes in Central and West Texas. The Army Corps of Engineers' Fort Worth District ran the Fort Bliss agreement, per ICON. Black Buffalo printed a Fort Worth house in May 2024. PRINT3D Technologies of Allen builds printed houses and sells its own printers."
    ],
    [
     "The Army",
@@ -174,7 +164,7 @@
    ],
    [
     "The company",
-    "Structures completed: over 245 per ICON in March 2026, 263 on its site now. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, led by Norwest and Tiger Global."
+    "Homes and structures completed: more than 245, per ICON, 11 March 2026. ICON's site, September 2026: 263 structures built since 2017, 117 homes sold since 2020. TechCrunch: 114 layoffs filed January 2025, over a quarter of staff. $56 million Series C, February 2025, co-led by Norwest and Tiger Global, with LEN X among the existing backers."
    ]
   ],
   "links": [
@@ -259,7 +249,39 @@
     "https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/"
    ],
    [
-    "The Real Deal on leases and the first reservations, March 2026",
+    "ICON's Titan pricing, September 2026",
+    "https://www.iconbuild.com/technology/pricing"
+   ],
+   [
+    "ICON's Titan page, September 2026",
+    "https://www.iconbuild.com/technology"
+   ],
+   [
+    "ICON's Titan specifications",
+    "https://www.iconbuild.com/technology/specs"
+   ],
+   [
+    "ICON's Wolf Ranch project page",
+    "https://www.iconbuild.com/projects/wolf-ranch"
+   ],
+   [
+    "ICON's Mueller project page",
+    "https://www.iconbuild.com/projects/mueller"
+   ],
+   [
+    "ICON's Wimberley Springs project page",
+    "https://www.iconbuild.com/projects/wimberley-springs"
+   ],
+   [
+    "ICON's Community First! Village project page",
+    "https://www.iconbuild.com/projects/community-first-village"
+   ],
+   [
+    "Lennar completes Rausch Coleman, 10 February 2025",
+    "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes"
+   ],
+   [
+    "The Real Deal on the first reservations, March 2026",
     "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
    ],
    [
@@ -291,11 +313,11 @@
    ],
    "where": "Allen, Texas",
    "status": "live",
-   "line": "Sells finished printed houses in North Texas: $103,000 and $175,000.",
+   "line": "Builds printed houses and sells its own printers. Model starting prices run $120,000 to $550,000, on its own list.",
    "facts": [
     [
      "Track record",
-     "Seven structures sold 2024 to 2026, three of them houses, by Community Impact's count."
+     "Seven structures built by May 2026, three of them houses and one a 16-unit storage facility, per Community Impact. The first house, 2024, cost $103,000."
     ]
    ],
    "site": "https://www.print3dtechnologies.com/"
@@ -349,7 +371,7 @@
    ],
    "where": "Melbourne, Florida",
    "status": "live",
-   "line": "D.R. Horton invested strategically in March 2024. First on BUILDER's DFW Local Leaders table.",
+   "line": "D.R. Horton, first on BUILDER's DFW Local Leaders table, invested strategically in March 2024.",
    "facts": [
     [
      "Backing",
@@ -357,7 +379,7 @@
     ],
     [
      "Texas",
-     "Only Texas link: Sunconomy. Lago Vista house permitted 2019, no completion published."
+     "Texas project: Sunconomy's Lago Vista house, permitted 2019, no completion published."
     ]
    ],
    "site": "https://apis-cor.com/"
@@ -366,7 +388,7 @@
    "name": "Von Perry",
    "where": "Dallas",
    "status": "last reported 2022",
-   "line": "Dallas startup. Began printing a house near Nevada, Collin County, December 2021.",
+   "line": "Dallas startup. Began building a printed house near Nevada, Collin County, December 2021.",
    "facts": [
     [
      "The house",
@@ -411,6 +433,10 @@
     [
      "Homes.com on Commander Home Builders' figures",
      "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/"
+    ],
+    [
+     "The Real Deal on the first Titan reservations, March 2026",
+     "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/"
     ]
    ],
    "where": "Houston",
@@ -427,7 +453,7 @@
     ],
     [
      "In market",
-     "Zuri Gardens: 80 homes, $1.8 million city subsidy. Gulf Shore Estates: 23 of 26. Avenue J: duplex. Marfa: Lumen Villas. None confirmed complete."
+     "Zuri Gardens: 80 homes, $1.8 million city subsidy. Gulf Shore Estates: 23 of 26. Avenue J: duplex. Marfa: Lumen Villas, nine homes, started 2025. None confirmed complete."
     ],
     [
      "A customer's figures",
@@ -435,7 +461,7 @@
     ],
     [
      "Schedule",
-     "Spring 2026: Gulf Shore Estates and Avenue J under way. Titan deliveries from early 2027."
+     "Spring 2026: Gulf Shore Estates and Avenue J under way. Cole Klein, its Zuri Gardens customer, reserved an ICON Titan, per The Real Deal."
     ]
    ],
    "site": "https://www.hiveasmbld.com/"
@@ -464,13 +490,13 @@
      "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/"
     ]
    ],
-   "where": "Germany, printing in Houston",
+   "where": "Germany, printed in Houston",
    "status": "live",
    "line": "Printed in Spring Branch, Houston, on a COBOD BOD2.",
    "facts": [
     [
      "The project",
-     "Marketed as the nation's largest printed home. Outlets differ on area: 4,000 to 30,000 square feet. Build paused for months, unexplained."
+     "Marketed as the nation's largest printed home. PERI's page gives 30,000 square feet, ABC13 4,000. Printing ran July 2022 to May 2023, per PERI."
     ],
     [
      "The machine",
@@ -478,7 +504,7 @@
     ],
     [
      "In Houston",
-     "A German formwork group printing inside Houston."
+     "A German formwork group printed a house inside Houston."
     ]
    ],
    "site": "https://www.peri3dconstruction.com/en"
@@ -509,7 +535,7 @@
     ],
     [
      "Sales model",
-     "Sells machines to contractors, PERI among them. Same model as Titan."
+     "Sells machines to contractors, PERI among them."
     ]
    ],
    "site": "https://cobod.com/"
@@ -531,12 +557,8 @@
      "January 2019: permits for its first printed house, in Lago Vista, per 3D Printing Industry. No completion in seven years."
     ],
     [
-     "Its own site",
-     "sunconomy.com returns 403 Forbidden."
-    ],
-    [
      "Outcome",
-     "Texas programme on an Apis Cor machine. No published building."
+     "Texas program on an Apis Cor machine. No published building."
     ]
    ],
    "site": null
@@ -567,11 +589,11 @@
    "facts": [
     [
      "What changed",
-     "Stopped printing houses to sell A1 and A1X machines. Contractors lease the A1X via a rental partner. Prints for retail clients."
+     "Moved from pilots to selling machines: 12 A1X and 2 A1 systems sold, April 2026. FMGI owns and leases the A1X. Prints commercial buildings for Walmart."
     ],
     [
      "Texas",
-     "No Texas project. Missouri, Colorado and Tennessee, per Construction Dive."
+     "No Texas project. Walmart work in Missouri, Tennessee and Alabama, per Construction Dive."
     ]
    ],
    "site": "https://www.alquist3d.com/"
@@ -652,11 +674,11 @@
    ],
    "where": "Long Island, New York",
    "status": "live",
-   "line": "Four units in about six years. Texas: none.",
+   "line": "Four projects on its own list, the first finished January 2020. No Texas project.",
    "facts": [
     [
      "Track record",
-     "Four units since 2017. No published specifications or pricing."
+     "First permitted home, 1,900 square feet, finished January 2020 in Calverton, New York."
     ]
    ],
    "site": "https://www.sq4d.com/"
@@ -675,21 +697,29 @@
     [
      "3DPrinting.com on the Florida villa, 23 March 2023",
      "https://3dprinting.com/news/cybe-to-3d-print-floridas-first-villa/"
+    ],
+    [
+     "Their case page for Las Casitas, Round Top, Texas",
+     "https://cybe.eu/cases/las-casitas/"
+    ],
+    [
+     "Their case page for the SCI home, Ohio",
+     "https://cybe.eu/cases/sci-ohio/"
     ]
    ],
    "where": "Netherlands and Florida",
    "status": "live",
-   "line": "Florida: one confirmed American house.",
+   "line": "Case pages show houses in Florida, Texas and Ohio.",
    "facts": [
     [
      "Track record",
-     "Florida: one named United States home. No Texas project or funding published."
+     "Florida: a house, on its case page. Round Top, Texas: five rental casitas printed by Hive3D Builders on a CyBe RC, from mid 2023. Ohio: a 1,300 square foot home by its partner SCI, October 2024."
     ]
    ],
    "site": "https://cybe.eu/"
   }
  ],
- "consolidation": "Three of thirteen gone or going. Diamond Age: closed December 2024, fifteen houses unfinished. Black Buffalo: Chapter 11, December 2025, eighteen months after its Fort Worth print. Mighty Buildings: for sale January 2025, over $150 million raised.",
+ "consolidation": "Three of thirteen gone or going. Diamond Age: closed December 2024, fifteen houses unfinished. Black Buffalo: Chapter 11, December 2025, nineteen months after its Fort Worth print. Mighty Buildings: for sale January 2025, over $150 million raised.",
  "chain": [
   {
    "key": "nozzle",
@@ -706,7 +736,7 @@
   {
    "key": "tiltup",
    "label": "Casts the vertical flat, on site",
-   "note": "Casts wall flat on the slab and lifts it. Panels weigh tons, rise storeys. Partly or No on printer fit.",
+   "note": "Casts wall flat on the slab and lifts it. Panels weigh tons, rise stories. Partly or No on printer fit.",
    "n": 6
   },
   {
@@ -724,7 +754,7 @@
   {
    "key": "masonry",
    "label": "Lays the vertical unit by unit",
-   "note": "Two firms already sell panelised or prefabricated versions of their product.",
+   "note": "Two firms already sell panelized or prefabricated versions of their product.",
    "n": 11
   },
   {
@@ -748,7 +778,7 @@
    "region": "2215 East Pioneer Drive, Irving",
    "url": "https://www.suncoast-pt.com/contact-us/dallas",
    "line": "Irving branch of a national post-tension supplier. Named slab-on-ground line.",
-   "why": "Sells tendons to DFW slab crews. Knows which pour at volume.",
+   "why": "Sells tendons to DFW slab crews.",
    "people": [],
    "note": null
   },
@@ -828,7 +858,7 @@
    "region": "DFW",
    "url": "https://tufnlite.com/tiltwall-headquarters/",
    "line": "Tilt-wall hardware and services.",
-   "why": "Sells to DFW tilt-panel contractors. Knows who they are.",
+   "why": "Sells to DFW tilt-panel contractors.",
    "people": [],
    "note": null
   },
@@ -850,7 +880,7 @@
    "region": "Fort Worth headquarters",
    "url": "https://brick.com/",
    "line": "Fort Worth brickmaker. Berkshire Hathaway company.",
-   "why": "Supplies masonry a printed wall would replace on production houses.",
+   "why": "Supplies brick for production houses.",
    "people": [
     {
      "name": "Ed Watson",
@@ -867,7 +897,7 @@
    "region": "4025 Mint Way, Dallas",
    "url": "https://cowtownmaterials.com/s/content/dallas",
    "line": "GMS yard stocking steel studs, track, drywall. DFW commercial and residential.",
-   "why": "Light-gauge framing, which printed walls would replace in multifamily and commercial.",
+   "why": "Light-gauge framing for multifamily and commercial.",
    "people": [],
    "note": null
   },
@@ -895,11 +925,11 @@
   }
  ],
  "supply_labels": {
-  "node": "Knows the volumes",
-  "crew": "Has the crew"
+  "node": "Material suppliers",
+  "crew": "Gunite and shotcrete crews"
  },
  "supply_notes": {
-  "node": "Wall trades publish no volume. Suppliers of concrete, tendons and block hold the numbers. They sell to the crews.",
+  "node": "Few wall trades publish volume. Suppliers of concrete, tendons and block hold the numbers. They sell to the crews.",
   "crew": ""
  },
  "no_site": [],
@@ -911,7 +941,7 @@
   ],
   [
    "How the list was drawn",
-   "BUILDER's Local Leaders table, BUILDER firm pages, masterplan builder lists, trade press and firm websites. A research tool drew the first list. Every name, number and link was then checked against its page. What no page supports was cut."
+   "BUILDER's Local Leaders table, BUILDER firm pages, masterplan builder lists, trade press and firm websites."
   ],
   [
    "Who decides",
@@ -919,45 +949,45 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 46 LinkedIn headlines naming the firm, 159 firm sites or dated reports, 0 names with no page to link. No aggregator. Nothing inferred. A LinkedIn link is kept only where a search result showed the name and the firm."
+   "Company filings, company pages, trade press. Each contact names its page: 44 LinkedIn headlines naming the firm, 158 firm sites or dated reports, 0 names with no page to link. No aggregator. A LinkedIn link is kept only where a search result showed the name and the firm."
   ]
  ],
  "code": {
   "line": "Dallas and Fort Worth both zone, and both run the 2021 IRC. Dallas adopted Appendix AW, for 3D-printed construction. Fort Worth did not.",
   "items": [
    {
-    "q": "Does zoning apply?",
-    "a": "Yes. Both cities zone. Masterplan deed restrictions can also refuse an exterior material.",
+    "q": "Zoning",
+    "a": "Both cities zone. Masterplan deed restrictions can also refuse an exterior material.",
     "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/pages/know_code.aspx",
     "source": "City of Dallas Building Inspection"
    },
    {
-    "q": "What code, inside Dallas?",
+    "q": "Code inside Dallas",
     "a": "2021 IRC with Dallas amendments, Ordinance 32424, in force with the May 2023 construction codes. Appendix AW (3-D Printed Building Construction) adopted.",
     "url": "https://dallascityhall.com/departments/sustainabledevelopment/buildinginspection/DCH%20documents/pdf/code_amendments/2021_codes/23-0471.pdf",
     "source": "City of Dallas, 2021 IRC amendments"
    },
    {
-    "q": "What code, inside Fort Worth?",
+    "q": "Code inside Fort Worth",
     "a": "2021 IRC, Ordinance 25383-03-2022, in force 1 April 2022. Appendix AW not adopted. Printed walls enter under R104.11, alternative materials and methods, on an ICC-ES report.",
     "url": "https://codelibrary.amlegal.com/codes/ftworth/latest/ftworth_tx/0-0-0-8128",
     "source": "Fort Worth Code of Ordinances, section 7-61"
    },
    {
-    "q": "Does ICON hold that report?",
-    "a": "Yes. ESR-4652, reissued June 2026: bearing, non-bearing and shear walls to 12 feet. Seismic Design Categories A and B. Special inspection.",
+    "q": "ICON's ICC-ES report",
+    "a": "ESR-4652, reissued June 2026. It covers walls placed with ICON's Vulcan printer, Model 2.5 series: bearing, non-bearing and shear walls to 12 feet, Seismic Design Categories A and B, with special inspection. The report does not name Titan.",
     "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4652.pdf",
     "source": "ICC-ES ESR-4652"
    },
    {
-    "q": "What code, in the county?",
-    "a": "The county seat's IRC (LGC 233.153). Third-party inspection at foundation, framing and completion (233.154). Dallas County's seat is Dallas. Ft. Worth is Tarrant County's.",
+    "q": "Code in unincorporated counties",
+    "a": "The county seat's IRC (LGC 233.153). Third-party inspection at foundation, framing and completion (233.154). Dallas County's seat is Dallas. Tarrant County's is Fort Worth.",
     "url": "https://codes.findlaw.com/tx/local-government-code/loc-gov-t-sect-233-154.html",
     "source": "Texas LGC 233.153, 233.154"
    },
    {
-    "q": "Can a city or county refuse it?",
-    "a": "Not if a national model code approves it within three cycles. Government Code Chapter 3000, effective 1 September 2019. Exceptions: historic districts, state- or federally-funded housing.",
+    "q": "State limit on local refusal",
+    "a": "Government Code Chapter 3000, effective 1 September 2019: a city or county may not bar a material a national model code approves within the last three code cycles. Exceptions include historic designations, state or federal housing programs, and what a building needs for windstorm and hail insurance.",
     "url": "https://www.tml.org/DocumentCenter/View/2892/HB--2439-Building-Materials-QA-Sep-2021",
     "source": "Texas Government Code 3000 and TML Q&A"
    }
@@ -966,14 +996,14 @@
    {
     "project": "Bolt Street house",
     "where": "City of Fort Worth, 100 W. Bolt St.",
-    "what": "One house, about 1,500 square feet, printed live May 2024 by Black Buffalo 3D. Chapter 11 followed, December 2025.",
+    "what": "One house, about 1,500 square feet, printed live May 2024 by Black Buffalo 3D. The Fort Worth Report: said to be the first ICC-ES-approved residence with load-bearing printed walls. Chapter 11 followed, December 2025.",
     "url": "https://fortworthreport.org/2024/06/02/a-3d-printed-home-under-construction-in-fort-worth-may-be-first-of-many/",
     "source": "Fort Worth Report"
    },
    {
     "project": "PRINT3D Technologies",
     "where": "Allen, and North Texas",
-    "what": "Seven structures on its own count, three houses among them, sold 2024 to 2026.",
+    "what": "Seven structures by May 2026, three of them houses. Many cities have no process to inspect a printed home, its co-founder said, so it builds outside city limits.",
     "url": "https://communityimpact.com/dallas-fort-worth/allen/real-estate/2026/05/26/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/",
     "source": "Community Impact"
    }
@@ -982,6 +1012,12 @@
    {
     "text": "The walls are intended for use as bearing walls, non-load bearing walls and shear walls with wall heights up to 12 feet (3.7 m) tall in Seismic Design Categories A or B.",
     "who": "ICC-ES ESR-4652, ICON 3D-Printed Concrete Wall Systems, Section 2.0, Uses, reissued June 2026",
+    "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4652.pdf",
+    "source": "ICC-ES ESR-4652"
+   },
+   {
+    "text": "The ICON wall systems must be placed using the proprietary ICON Vulcan printer, operated by qualified personnel as determined by ICON.",
+    "who": "ICC-ES ESR-4652, Section 4.2, Installation, reissued June 2026",
     "url": "https://icc-es.org/wp-content/uploads/report-directory/ESR-4652.pdf",
     "source": "ICC-ES ESR-4652"
    },
@@ -1008,11 +1044,11 @@
   },
   {
    "title": "Printer-fit bands",
-   "text": "An assumption, not a published figure. Yes: 25 to 400 homes a year, one or two printers, at up to about 200 houses a year per Titan. Published rates are slower. Wolf Ranch: one Vulcan and crew, about three weeks a home by August 2024, about seventeen a year (Engadget, 8 August 2024). Zuri Gardens: a home shell in about two weeks, per the cement supplier (Eco Material). ICON has published no Titan rate: $20 a square foot for walls, a $5,000 deposit, training from the third quarter of 2026, deliveries from early 2027 (ICON newsroom, 11 March 2026). The bands will be redrawn when ICON publishes a rate."
+   "text": "An assumption, not a published figure. Yes: 25 to 400 homes a year, one or two printers. The Titans column assumes up to about 200 houses a year per Titan. ICON's Titan page: a 2,500 square foot home printed in under seven days, and an estimated two to three days of printing for a 2,200 to 4,000 square foot home. Wolf Ranch: one Vulcan and crew, about three weeks a home by August 2024 (Engadget, 8 August 2024). Zuri Gardens: a home shell in about two weeks, per the cement supplier (Eco Material)."
   },
   {
    "title": "Printed units",
-   "text": "As reported by the developer or the printer, outlet named. Announced and unbuilt: drawn at zero."
+   "text": "As reported by the developer or the printer, outlet named."
   },
   {
    "title": "Contacts",
@@ -1020,8 +1056,12 @@
   }
  ],
  "bands_method": {
-  "text": "An assumption, not a published figure. Yes: 25 to 400 homes a year, one or two printers, at up to about 200 houses a year per Titan. Published rates are slower. Wolf Ranch: one Vulcan and crew, about three weeks a home by August 2024, about seventeen a year (Engadget, 8 August 2024). Zuri Gardens: a home shell in about two weeks, per the cement supplier (Eco Material). ICON has published no Titan rate: $20 a square foot for walls, a $5,000 deposit, training from the third quarter of 2026, deliveries from early 2027 (ICON newsroom, 11 March 2026). The bands will be redrawn when ICON publishes a rate.",
+  "text": "An assumption, not a published figure. Yes: 25 to 400 homes a year, one or two printers. The Titans column assumes up to about 200 houses a year per Titan. ICON's Titan page: a 2,500 square foot home printed in under seven days, and an estimated two to three days of printing for a 2,200 to 4,000 square foot home. Wolf Ranch: one Vulcan and crew, about three weeks a home by August 2024 (Engadget, 8 August 2024). Zuri Gardens: a home shell in about two weeks, per the cement supplier (Eco Material).",
   "sources": [
+   {
+    "url": "https://www.iconbuild.com/technology",
+    "label": "ICON's Titan page, September 2026"
+   },
    {
     "url": "https://www.engadget.com/home/a-robotics-company-has-3d-printed-nearly-a-hundred-homes-in-texas-225830931.html",
     "label": "Engadget, 8 August 2024"
@@ -1090,22 +1130,9 @@
     "year": 2025,
     "source": "BUILDER Local Leaders 2026, DFW",
     "fit": "fail",
-    "method": "partial",
+    "method": "fail",
     "group": "national",
     "wide": null
-   },
-   {
-    "id": "DFW-041",
-    "name": "Chesmar Homes",
-    "short": "Chesmar",
-    "low": 1779,
-    "high": 1779,
-    "year": 2022,
-    "source": "BUILDER firm page",
-    "fit": "fail",
-    "method": "partial",
-    "group": "b",
-    "wide": "company-wide"
    },
    {
     "id": "DFW-061",
@@ -1118,7 +1145,7 @@
     "fit": "partial",
     "method": "fail",
     "group": "national",
-    "wide": "company-wide, including Tennessee"
+    "wide": "company-wide, four states"
    },
    {
     "id": "DFW-009",
@@ -1128,7 +1155,7 @@
     "high": 1289,
     "year": 2025,
     "source": "BUILDER Local Leaders 2026, DFW",
-    "fit": "partial",
+    "fit": "fail",
     "method": "fail",
     "group": "national",
     "wide": null
@@ -1171,6 +1198,19 @@
     "method": "fail",
     "group": "b",
     "wide": null
+   },
+   {
+    "id": "DFW-011",
+    "name": "David Weekley Homes",
+    "short": "David Weekley",
+    "low": 943,
+    "high": 943,
+    "year": 2025,
+    "source": "The firm's own press kit, Dallas division",
+    "fit": "partial",
+    "method": "fail",
+    "group": "national",
+    "wide": "Dallas division"
    },
    {
     "id": "DFW-055",
@@ -1233,8 +1273,8 @@
     "year": 2025,
     "source": "BUILDER firm page",
     "fit": "partial",
-    "method": "partial",
-    "group": "a",
+    "method": "fail",
+    "group": "b",
     "wide": "company-wide"
    },
    {
@@ -1285,9 +1325,10 @@
     "year": 2026,
     "source": "The firm's own about page: over 400 a year",
     "fit": "partial",
-    "method": "partial",
-    "group": "a",
-    "wide": null
+    "method": "fail",
+    "group": "b",
+    "wide": null,
+    "over": true
    },
    {
     "id": "DFW-025",
@@ -1368,8 +1409,8 @@
     "wide": "company-wide"
    }
   ],
-  "closings_missing": 39,
-  "closings_base": 64,
+  "closings_missing": 37,
+  "closings_base": 62,
   "bands": [
    [
     25,
@@ -1384,37 +1425,26 @@
   ],
   "by_section": [
    {
-    "group": "adopter",
-    "label": "Already buying printed walls",
-    "n": 1,
-    "yes": 1,
-    "partly": 0,
+    "group": "a",
+    "label": "Holds all three counts",
+    "n": 2,
+    "yes": 0,
+    "partly": 2,
     "no": 0,
     "decider": 1,
     "confirm": 0,
-    "linked": 1
-   },
-   {
-    "group": "a",
-    "label": "Holds all three counts",
-    "n": 6,
-    "yes": 1,
-    "partly": 5,
-    "no": 0,
-    "decider": 4,
-    "confirm": 0,
-    "linked": 6
+    "linked": 2
    },
    {
     "group": "b",
     "label": "One gap",
-    "n": 34,
+    "n": 37,
     "yes": 0,
-    "partly": 1,
-    "no": 33,
-    "decider": 21,
+    "partly": 0,
+    "no": 37,
+    "decider": 24,
     "confirm": 0,
-    "linked": 33
+    "linked": 36
    },
    {
     "group": "trade",
@@ -1443,8 +1473,8 @@
     "label": "National builder",
     "n": 20,
     "yes": 2,
-    "partly": 4,
-    "no": 14,
+    "partly": 0,
+    "no": 18,
     "decider": 13,
     "confirm": 0,
     "linked": 20
@@ -1592,10 +1622,10 @@
    {
     "id": "DFW-CH-011",
     "short": "Serenade",
-    "line": "Its own builders page lists Brightland, CastleRock, HistoryMaker, Impression, Risewell and UnionMain.",
+    "line": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain.",
     "builders": [
      {
-      "name": "Brightland",
+      "name": "DRB Homes",
       "id": null,
       "off": true
      },
@@ -1638,8 +1668,8 @@
      },
      {
       "name": "Chesmar",
-      "id": "DFW-041",
-      "off": false
+      "id": null,
+      "off": true
      },
      {
       "name": "Coventry",
@@ -1796,14 +1826,14 @@
     "place": "Georgetown",
     "printer": "ICON, with Lennar",
     "units": 100,
-    "status": "Completed 2025"
+    "status": "Finished 2025, per ICON"
    },
    {
     "project": "Community First! Village",
     "place": "Austin",
     "printer": "ICON",
     "units": 100,
-    "status": "Programme"
+    "status": "100 under way from December 2024. ICON's page: 117 structures, 2019 to 2026"
    },
    {
     "project": "Zuri Gardens",
@@ -1820,11 +1850,39 @@
     "status": "23 of 26 to be printed"
    },
    {
-    "project": "PRINT3D Technologies",
-    "place": "Allen and North Texas",
+    "project": "Mueller",
+    "place": "Austin",
+    "printer": "ICON",
+    "units": 12,
+    "status": "Finished 2026, per ICON"
+   },
+   {
+    "project": "Lumen Villas",
+    "place": "Marfa",
+    "printer": "HiveASMBLD",
+    "units": 9,
+    "status": "Started 2025, per HiveASMBLD"
+   },
+   {
+    "project": "Wimberley Springs",
+    "place": "Wimberley",
+    "printer": "ICON",
+    "units": 5,
+    "status": "Finished 2025, per ICON. Eight announced, July 2024"
+   },
+   {
+    "project": "Las Casitas",
+    "place": "Round Top",
+    "printer": "Hive3D, on a CyBe printer",
+    "units": 5,
+    "status": "Five rental casitas, from mid 2023, per CyBe"
+   },
+   {
+    "project": "PRINT3D houses",
+    "place": "Mabank and other Texas sites",
     "printer": "PRINT3D",
-    "units": 7,
-    "status": "Seven structures by Community Impact's count, 2024 to 2026"
+    "units": 3,
+    "status": "Three houses among seven structures by May 2026, per Community Impact"
    },
    {
     "project": "Avenue J",
@@ -1834,6 +1892,13 @@
     "status": "One duplex, started March 2026"
    },
    {
+    "project": "Spring Branch house",
+    "place": "Houston",
+    "printer": "PERI, on a COBOD printer",
+    "units": 1,
+    "status": "Printed July 2022 to May 2023, per PERI"
+   },
+   {
     "project": "Bolt Street house",
     "place": "Fort Worth",
     "printer": "Black Buffalo 3D, with Boxer Property",
@@ -1841,32 +1906,25 @@
     "status": "Printed May 2024"
    },
    {
-    "project": "Spring Branch house",
-    "place": "Houston",
-    "printer": "PERI, on a COBOD printer",
+    "project": "Von Perry house",
+    "place": "Nevada, Collin County",
+    "printer": "Von Perry",
     "units": 1,
-    "status": "Paused for months"
-   },
-   {
-    "project": "Sunconomy house",
-    "place": "Lago Vista",
-    "printer": "Apis Cor",
-    "units": 0,
-    "status": "Permitted January 2019, no completion published"
+    "status": "Begun December 2021, last reported August 2022"
    }
   ],
   "timeline": [
    {
-    "year": 2017,
+    "year": 2019,
     "month": 1,
-    "label": "SQ4D prints its first unit, Long Island",
+    "label": "Sunconomy permits a printed house in Lago Vista",
     "kind": "in",
     "when": null
    },
    {
-    "year": 2019,
+    "year": 2020,
     "month": 1,
-    "label": "Sunconomy permits a printed house in Lago Vista",
+    "label": "SQ4D finishes a 1,900 square foot printed house, Calverton, New York",
     "kind": "in",
     "when": null
    },
@@ -1893,10 +1951,10 @@
    },
    {
     "year": 2022,
-    "month": 6,
+    "month": 1,
     "label": "Hive3D founded, Houston",
     "kind": "in",
-    "when": null
+    "when": "2022"
    },
    {
     "year": 2022,
@@ -1942,13 +2000,6 @@
    },
    {
     "year": 2025,
-    "month": 6,
-    "label": "Wolf Ranch completed",
-    "kind": "icon",
-    "when": null
-   },
-   {
-    "year": 2025,
     "month": 7,
     "label": "CRH agrees to buy Eco Material, HiveASMBLD's cement supplier",
     "kind": "in",
@@ -1960,6 +2011,13 @@
     "label": "ICON prints at Mueller, Austin",
     "kind": "icon",
     "when": null
+   },
+   {
+    "year": 2025,
+    "month": 12,
+    "label": "Wolf Ranch finished, per ICON",
+    "kind": "icon",
+    "when": "2025"
    },
    {
     "year": 2025,
@@ -1978,7 +2036,7 @@
    {
     "year": 2026,
     "month": 7,
-    "label": "ICON delivers ten barracks at Fort Bliss",
+    "label": "Fort Bliss barracks open, two of ten",
     "kind": "icon",
     "when": null
    },
@@ -16808,150 +16866,25 @@
   "local": "Fort Worth|Dallas|Allen|Collin"
  },
  "stats": {
-  "total": 124,
-  "adopters": 1,
-  "tier_a": 6,
-  "tier_b": 34,
-  "principals": 205,
-  "linkedin_held": 46,
+  "total": 122,
+  "adopters": 0,
+  "tier_a": 2,
+  "tier_b": 37,
+  "principals": 202,
+  "linkedin_held": 44,
   "audit_flags": 0,
-  "with_decider": 74,
-  "with_decider_live": 26,
-  "with_decider_confirmed": 74,
+  "with_decider": 73,
+  "with_decider_live": 25,
+  "with_decider_confirmed": 73,
   "with_decider_caveat": 0
  },
  "targets": [
-  {
-   "target_id": "DFW-AD-001",
-   "entity_name": "PRINT3D Technologies",
-   "short": "PRINT3D",
-   "entity_type": "construction_3d_print",
-   "entity_role": "proven_adopter",
-   "homepage_url": "https://www.print3dtechnologies.com/",
-   "company_li": "https://www.linkedin.com/company/print3d-technologies/",
-   "team_url": "https://www.print3dtechnologies.com/about",
-   "chain": null,
-   "phone": "9723427605",
-   "phone_source": "https://www.print3dtechnologies.com/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2026-05",
-     "outlet": "Community Impact (Allen)",
-     "headline": "Allen-based Print3D Technologies brings 3D printing innovation to homebuilding",
-     "url": "https://communityimpact.com/allen/real-estate/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/"
-    }
-   ],
-   "key_stat": "About seven printed structures by May 2026",
-   "mvp_screen": "Already prints its own concrete walls in Texas, and is seeking DFW city and builder partners.",
-   "synopsis": "Allen, Texas company that designs and sells concrete wall printers and builds demonstration homes. Its homes include a $175,000 house in Mabank, per Community Impact. Its about page names Craig Pettit founder and president, and Lance Thrailkill is co-founder and chief executive.",
-   "region": "Allen, North Texas",
-   "phone_label": "Main office, Allen",
-   "phone_note": null,
-   "company_li_note": "Company page, PRINT3D Technologies.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "One printed-wall method, repeated across Texas demonstration homes and printer sales."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "About seven structures by May 2026, per Community Impact, under the 25 to 400 band."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Develops, sells and runs its own concrete 3D wall printers."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "clear"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 3,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 2,
-   "cell": "clear|partial",
-   "group": "adopter",
-   "tier": "P",
-   "key_projects": [
-    {
-     "name": "Texas demonstration homes",
-     "detail": "A $175,000 house built in Mabank. A home slated for Lampasas. Community Impact, May 2026.",
-     "url": "https://communityimpact.com/allen/real-estate/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.print3dtechnologies.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.print3dtechnologies.com/about",
-     "date": null
-    },
-    {
-     "url": "https://communityimpact.com/allen/real-estate/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Lance Thrailkill",
-     "role": "Co-founder and CEO",
-     "source_url": "https://communityimpact.com/allen/real-estate/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/",
-     "source_evidence": "Community Impact, May 2026, as co-founder. CEO on related company pages.",
-     "decider": true
-    },
-    {
-     "name": "Craig Pettit",
-     "role": "Founder and President",
-     "source_url": "https://www.print3dtechnologies.com/about",
-     "source_evidence": "Company's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/craig-pettit-a1a875320",
-     "li_evidence": "Indexed title: President, PRINT3D Technologies Corp.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Lance Thrailkill",
-    "Craig Pettit"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
   {
    "target_id": "DFW-BTR-010",
    "entity_name": "Wan Bridge Group",
    "short": "Wan Bridge",
    "entity_type": "btr_operator",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://wanbridge.com/",
    "company_li": "https://www.linkedin.com/company/wan-bridge-group/",
    "team_url": null,
@@ -16993,25 +16926,25 @@
     {
      "axis": "innovation",
      "title": "Track record: has paid for a new building method before",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Six years on its own construction software, plus robotic site inspection."
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Six years on its own construction software, plus robotic site inspection. Software, not a wall method."
     }
    ],
    "marks": {
     "repeatability": "clear",
     "machine_fit": "partial",
-    "innovation": "clear"
+    "innovation": "partial"
    },
    "scores": {
     "repeatability": 3,
     "machine_fit": 2,
-    "innovation": 3,
+    "innovation": 2,
     "capital_access": 3,
     "wall_share": 3
    },
    "holds": 3,
-   "clears": 2,
+   "clears": 1,
    "cell": "clear|partial",
    "group": "a",
    "tier": "A",
@@ -17098,424 +17031,6 @@
    ]
   },
   {
-   "target_id": "DFW-003a",
-   "entity_name": "Trophy Signature Homes",
-   "short": "Trophy Signature",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://trophysignaturehomes.com/",
-   "company_li": "https://www.linkedin.com/company/trophysignaturehomes/",
-   "team_url": "https://greenbrickpartners.com/team-member/chris-wicker/",
-   "chain": null,
-   "phone": "4695736721",
-   "phone_source": "https://greenbrickpartners.com/about/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "Parent Green Brick: 3,196 DFW closings in 2025",
-   "mvp_screen": "Its DFW cycle time is under 90 days, but land and purchasing sit at the parent, Green Brick.",
-   "synopsis": "Green Brick Partners brand, founded in 2018, selling entry-level and move-up single-family homes. It builds in Dallas-Fort Worth and has expanded to Austin and Houston. Green Brick calls it the 7th largest homebuilder in Dallas-Fort Worth. Chris Wicker became its Dallas President in December 2024.",
-   "region": "Dallas-Fort Worth, with Austin and Houston added",
-   "phone_label": "Green Brick Partners corporate office, Plano",
-   "phone_note": null,
-   "company_li_note": "Brand page. Green Brick brand, based in Plano.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Entry-level and move-up plans under one brand. Austin added in 2023, Houston announced in 2024."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "No closing figure published for the brand alone."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Under 90 days average cycle time, the lowest in brand history. Not a new wall method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 3
-   },
-   "holds": 3,
-   "clears": 1,
-   "cell": "clear|partial",
-   "group": "a",
-   "tier": "A",
-   "key_projects": [
-    {
-     "name": "Trophy single-family line",
-     "detail": "Homes from the mid $200s to the mid $700s.",
-     "url": "https://greenbrickpartners.com/brands-services/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://greenbrickpartners.com/brands-services/",
-     "date": null
-    },
-    {
-     "url": "https://greenbrickpartners.com/leadership/",
-     "date": null
-    },
-    {
-     "url": "https://greenbrickpartners.com/team-member/chris-wicker/",
-     "date": null
-    },
-    {
-     "url": "https://trophysignaturehomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.fool.com/earnings/call-transcripts/2026/04/30/green-brick-grbk-q1-2026-earnings-transcript/",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
-     "date": null
-    },
-    {
-     "url": "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Chris Wicker",
-     "role": "President, Trophy Signature Homes Dallas",
-     "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page. Promoted December 2024.",
-     "linkedin_url": "https://www.linkedin.com/in/chris-wicker-08776a66/",
-     "li_evidence": "Indexed title: Trophy Signature Homes.",
-     "decider": true
-    },
-    {
-     "name": "Jed Dolson",
-     "role": "President and Chief Operating Officer, Green Brick Partners. Co-Chief Executive Officer from 15 October 2026",
-     "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page and 30 July 2026 release. Formerly President, Texas region.",
-     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/",
-     "li_evidence": "Indexed title: Chief Operating Officer and Executive Vice President, Green Brick Partners."
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Chris Wicker"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "news": [
-    {
-     "date": "2026-07-30",
-     "outlet": "Green Brick Partners (SEC filing)",
-     "headline": "Green Brick Partners Announces the Promotion of Jed Dolson to Co-CEO",
-     "url": "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm",
-     "what": "The parent named Jed Dolson, who led Trophy from 2022 to 2024, co-CEO from 15 October 2026."
-    },
-    {
-     "date": "2026-03-13",
-     "outlet": "Business Wire",
-     "headline": "Trophy Signature Homes Announces New Nicholson Ranch Community in Lavon, TX",
-     "url": "https://www.businesswire.com/news/home/20260313162521/en/Trophy-Signature-Homes-Announces-New-Nicholson-Ranch-Community-in-Lavon-TX",
-     "what": "Announced Nicholson Ranch in Lavon, 1,635 lots in eight phases on 40 and 50-foot lots."
-    },
-    {
-     "date": "2026-03-13",
-     "outlet": "Business Wire",
-     "headline": "Lone Oak by Trophy Signature Homes Now Open in Alvarado, Texas",
-     "url": "https://www.businesswire.com/news/home/20260313035590/en/Lone-Oak-by-Trophy-Signature-Homes-Now-Open-in-Alvarado-Texas",
-     "what": "Opened sales at Lone Oak in Alvarado, its Victory Series on 50-foot lots."
-    }
-   ]
-  },
-  {
-   "target_id": "DFW-029",
-   "entity_name": "American Legend Homes",
-   "short": "American Legend",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.amlegendhomes.com/",
-   "company_li": "https://www.linkedin.com/company/american-legend-homes/",
-   "team_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-   "chain": null,
-   "phone": "9724105701",
-   "phone_source": "https://www.amlegendhomes.com/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "636 company-wide closings in 2025, 87th on Builder 100",
-   "mvp_screen": "Every home is HERS-rated by an independent energy rater, but its envelope package uses no new wall method.",
-   "synopsis": "Production builder whose plans sell on masterplan builder rosters. It builds in Dallas-Fort Worth, including Ramble by Hillwood, and in Colorado. BUILDER records 744 closings in 2024, company-wide. It is family and employee-owned, with a sister brand, Belclaire.",
-   "region": "Lewisville, with communities across DFW and in Colorado",
-   "phone_label": "Texas corporate office",
-   "phone_note": null,
-   "company_li_note": "Company page, Lewisville.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Production plans sold on masterplan builder rosters."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "636 closings in 2025 across Texas and Colorado. No DFW-only figure published."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Low-E argon windows, TechShield radiant barrier, 16 SEER systems, tankless heaters. No new wall method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 1,
-   "cell": "clear|partial",
-   "group": "a",
-   "tier": "A",
-   "key_projects": [
-    {
-     "name": "Ramble by Hillwood, Celina",
-     "detail": "On the Ramble new-homes builder roster.",
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.amlegendhomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.amlegendhomes.com/new-homes-in-texas-and-colorado",
-     "date": null
-    },
-    {
-     "url": "https://www.ramblebyhillwood.com/new-homes/",
-     "date": null
-    },
-    {
-     "url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-     "date": null
-    },
-    {
-     "url": "https://www.amlegendhomes.com/texas-energy-efficiency",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/firms/american-legend-homes/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Kevin Egan",
-     "role": "Chief Executive Officer",
-     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-     "source_evidence": "Firm's blog post, December 14, 2022. Named Chief Executive Officer after serving as president.",
-     "decider": false
-    },
-    {
-     "name": "Paul Miller",
-     "role": "President and Chief Operating Officer",
-     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-     "source_evidence": "Firm's blog post, December 14, 2022. Named President and Chief Operating Officer.",
-     "decider": false
-    }
-   ],
-   "vol": 636,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "news": [
-    {
-     "date": "2026-04-07",
-     "outlet": "inForney",
-     "headline": "New $1.5 Billion Master-Planned Community Meraki Breaks Ground in Forney",
-     "url": "https://www.inforney.com/local-news/new-15-billion-master-planned-community-meraki-b/article_dd5dd26a-5a69-4e52-bff0-0890c40eeda7.html",
-     "what": "Named one of five builders at Meraki in Forney, 1,079 acres with 406 first-phase homesites."
-    }
-   ]
-  },
-  {
-   "target_id": "DFW-023",
-   "entity_name": "Grand Homes",
-   "short": "Grand Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.grandhomes.com/",
-   "company_li": "https://www.linkedin.com/company/grand-homes/",
-   "team_url": "https://www.grandhomes.com/index.cfm?p=about_us",
-   "chain": null,
-   "phone": "9723876087",
-   "phone_source": "https://www.grandhomes.com/blog/",
-   "phone_more": [
-    {
-     "digits": "2147506528",
-     "label": "Alternate contact on blog footer",
-     "source": null
-    }
-   ],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "Over 400 homes a year, DFW only, own count",
-   "mvp_screen": "Builds only inside the DFW Metroplex, so its whole yearly volume sits in a single market.",
-   "synopsis": "Semi-custom production builder that certifies every home ENERGY STAR, with 2x6 exterior walls. Its about page counts over 35 communities, and also gives 30 neighborhoods. Stephen Brooks founded it in 1986.",
-   "region": "Addison, building only in the Dallas/Fort Worth Metroplex",
-   "phone_label": "General Questions line, Addison office",
-   "phone_note": null,
-   "company_li_note": "Grand Homes company page.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "30 to 35 communities, all inside the DFW Metroplex, on semi-custom production plans."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Over 400 a year across 30 to 35 communities."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Every home ENERGY STAR certified with 2x6 exterior walls. Above-code performance, nothing structural."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 1,
-   "cell": "clear|partial",
-   "group": "a",
-   "tier": "A",
-   "key_projects": [
-    {
-     "name": "DFW semi-custom programme",
-     "detail": "Its about page gives both over 35 communities and 30 neighborhoods.",
-     "url": "https://www.grandhomes.com/index.cfm?p=about_us",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.grandhomes.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.grandhomes.com/index.cfm?p=about_us",
-     "date": null
-    },
-    {
-     "url": "https://www.grandhomes.com/blog/",
-     "date": null
-    },
-    {
-     "url": "https://www.grandhomes.com/index.cfm?p=energy_star",
-     "date": null
-    },
-    {
-     "url": "https://dallasbuilders.com/home-of-the-week-grand-homes/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Stephen H. Brooks",
-     "role": "Founder",
-     "source_url": "https://www.grandhomes.com/index.cfm?p=about_us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/stephen-brooks-6a058412/",
-     "li_evidence": "Indexed title: Stephen Brooks, Grand Homes.",
-     "decider": true
-    }
-   ],
-   "vol": 400,
-   "deciders": [
-    "Stephen H. Brooks"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-020",
    "entity_name": "HistoryMaker Homes",
    "short": "HistoryMaker",
@@ -17582,7 +17097,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "Construction In Focus profile, 2024. Energy Star appliances too. No new wall system."
+     "text": "Some structural elements built off-site, per Construction In Focus, 2024. No new wall system."
     }
    ],
    "marks": {
@@ -17669,145 +17184,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-043",
-   "entity_name": "Homebound",
-   "short": "Homebound",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.homebound.com/",
-   "company_li": "https://www.linkedin.com/company/homebound-construction/",
-   "team_url": "https://www.homebound.com/about",
-   "chain": null,
-   "phone": "2148511912",
-   "phone_source": "https://www.homebound.com/upcoming-communities/mosaic",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "More than 1,000 DFW lots lined up, 2026",
-   "mvp_screen": "Sells its own design and build-tracking software with each home, and its about page names a Texas Regional President.",
-   "synopsis": "Homebuilder founded in 2018, selling semi-custom homes from one plan catalog at about $800,000 to over $1.5 million. It builds on in-town Dallas lots and in Celina, Prosper and Flower Mound, with other markets including Houston and Denver.",
-   "region": "Dallas, Flower Mound, Prosper and Celina, plus Houston, Denver and Tampa",
-   "phone_label": "Mosaic sales office, Celina",
-   "phone_note": null,
-   "company_li_note": "Homebound company page.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "One plan catalog, including Addison, Bandera, Collin, Grayson and Magnolia, repeated across its DFW sites."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Semi-custom, about $800,000 to over $1.5 million. Also Houston, Denver, Tampa. DFW closings not published."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Digital Design Studio lets buyers personalise plans. No new wall method."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 1,
-   "cell": "clear|partial",
-   "group": "a",
-   "tier": "A",
-   "key_projects": [
-    {
-     "name": "Mosaic, Celina",
-     "detail": "70-foot lots. Plans from the high $800s. Models scheduled for 2025 to 2026.",
-     "url": "https://www.homebound.com/upcoming-communities/mosaic",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.homebound.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.homebound.com/upcoming-communities/mosaic",
-     "date": null
-    },
-    {
-     "url": "https://mosaiclivingtx.com/builders/",
-     "date": null
-    },
-    {
-     "url": "https://www.homebound.com/about",
-     "date": null
-    },
-    {
-     "url": "https://therealdeal.com/texas/2026/03/05/homebound-lines-up-1000-plus-dallas-fort-worth-home-lots/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Nikki Pechet",
-     "role": "Co-Founder and Chief Executive Officer",
-     "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page.",
-     "linkedin_url": "https://www.linkedin.com/in/nikki-pechet-4b949210/",
-     "li_evidence": "Indexed title: Nikki Pechet, Homebound."
-    },
-    {
-     "name": "Charlie Coleman",
-     "role": "Texas Regional President",
-     "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page. Formerly Pulte's DFW Division President.",
-     "decider": true
-    },
-    {
-     "name": "Al Tuten",
-     "role": "Vice President, Homebuilding Operations",
-     "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page."
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Charlie Coleman"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "news": [
-    {
-     "date": "2026-03-02",
-     "outlet": "Bisnow",
-     "headline": "Homebound Closes On $731M Deal For North Texas Expansion: The DFW Deal Sheet",
-     "url": "https://www.bisnow.com/news/dallas-ft-worth/deal-sheet/homebound-closes-on-731m-deal-for-north-texas-expansion-the-dfw-deal-sheet-133470",
-     "what": "Acquired more than 1,000 lots in Dallas, Prosper, Flower Mound and Mansfield, about $731 million."
-    }
-   ]
-  },
-  {
    "target_id": "DFW-032",
    "entity_name": "Landon Homes",
    "short": "Landon",
@@ -17835,7 +17211,7 @@
    "phone_label": "Office, Plano",
    "phone_note": null,
    "company_li_note": "Landon Homes company page, Plano.",
-   "team_note": "No construction or purchasing officer named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -17961,7 +17337,7 @@
    "phone_label": "Office, Hurst",
    "phone_note": null,
    "company_li_note": null,
-   "team_note": "About page names no officers.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -18194,7 +17570,7 @@
    "entity_name": "American Homes 4 Rent (AMH)",
    "short": "AMH",
    "entity_type": "btr_operator",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://www.amh.com/homes-for-rent/texas/dallas",
    "company_li": "https://www.linkedin.com/company/amhliving/",
    "team_url": null,
@@ -18540,7 +17916,7 @@
    "entity_name": "NexMetro Communities / Avilla",
    "short": "NexMetro / Avilla",
    "entity_type": "btr_developer_operator",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://www.nexmetro.com/",
    "company_li": "https://www.linkedin.com/company/nexmetro-communities/",
    "team_url": "https://www.nexmetro.com/directory.php",
@@ -18968,7 +18344,7 @@
    "press": [],
    "key_stat": "Five selling communities at the end of 2025, per Green Brick",
    "mvp_screen": "Its president, Steve Schermerhorn, also runs CB JENI and Normandy, so the same contact covers two other Green Brick brands.",
-   "synopsis": "Luxury single-family production builder, priced from the mid $700s to over $1.5 million. It builds in DFW, in communities including The Reserve at Watters, Painted Tree and the Windsong Ranch series. Green Brick owns it, and its SEC filings call it Southgate.",
+   "synopsis": "Luxury single-family production builder. Green Brick gives its price range as $790K to $1,880K, at 31 December 2023. It builds in DFW, in communities including The Reserve at Watters, Painted Tree and the Windsong Ranch series. Green Brick owns it, and its SEC filings call it Southgate.",
    "region": "Dallas-Fort Worth, a Green Brick Partners brand",
    "phone_label": "Green Brick Partners corporate, parent company",
    "phone_note": null,
@@ -19069,6 +18445,166 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-003a",
+   "entity_name": "Trophy Signature Homes",
+   "short": "Trophy Signature",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://trophysignaturehomes.com/",
+   "company_li": "https://www.linkedin.com/company/trophysignaturehomes/",
+   "team_url": "https://greenbrickpartners.com/team-member/chris-wicker/",
+   "chain": null,
+   "phone": "4695736721",
+   "phone_source": "https://greenbrickpartners.com/about/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Parent Green Brick: 3,196 DFW closings in 2025",
+   "mvp_screen": "Its DFW cycle time is under 90 days, but land and purchasing sit at the parent, Green Brick.",
+   "synopsis": "Green Brick Partners brand, founded in 2018, selling entry-level and move-up single-family homes. It builds in Dallas-Fort Worth and has expanded to Austin and Houston. Green Brick calls it the 7th largest homebuilder in Dallas-Fort Worth. Chris Wicker became its Dallas President in December 2024.",
+   "region": "Dallas-Fort Worth, with Austin and Houston added",
+   "phone_label": "Green Brick Partners corporate office, Plano",
+   "phone_note": null,
+   "company_li_note": "Brand page. Green Brick brand, based in Plano.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Entry-level and move-up plans under one brand. Austin added in 2023, Houston announced in 2024."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No closing figure published for the brand alone."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Under 90 days average cycle time, the lowest in brand history. Not a new wall method."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 3
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "Trophy single-family line",
+     "detail": "Homes from the mid $200s to the mid $700s.",
+     "url": "https://greenbrickpartners.com/brands-services/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://greenbrickpartners.com/brands-services/",
+     "date": null
+    },
+    {
+     "url": "https://greenbrickpartners.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://greenbrickpartners.com/team-member/chris-wicker/",
+     "date": null
+    },
+    {
+     "url": "https://trophysignaturehomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/04/30/green-brick-grbk-q1-2026-earnings-transcript/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Chris Wicker",
+     "role": "President, Trophy Signature Homes Dallas",
+     "source_url": "https://greenbrickpartners.com/leadership/",
+     "source_evidence": "Green Brick leadership page. Promoted December 2024.",
+     "linkedin_url": "https://www.linkedin.com/in/chris-wicker-08776a66/",
+     "li_evidence": "Indexed title: Trophy Signature Homes.",
+     "decider": true
+    },
+    {
+     "name": "Jed Dolson",
+     "role": "President and Chief Operating Officer, Green Brick Partners. Co-Chief Executive Officer from 15 October 2026",
+     "source_url": "https://greenbrickpartners.com/leadership/",
+     "source_evidence": "Green Brick leadership page and 30 July 2026 release. Formerly President, Texas region.",
+     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/",
+     "li_evidence": "Indexed title: Chief Operating Officer and Executive Vice President, Green Brick Partners."
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Chris Wicker"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "news": [
+    {
+     "date": "2026-07-30",
+     "outlet": "Green Brick Partners (SEC filing)",
+     "headline": "Green Brick Partners Announces the Promotion of Jed Dolson to Co-CEO",
+     "url": "https://www.sec.gov/Archives/edgar/data/1373670/000162828026050835/ex99pressrelease-dolsonpro.htm",
+     "what": "The parent named Jed Dolson, who led Trophy from 2022 to 2024, co-CEO from 15 October 2026."
+    },
+    {
+     "date": "2026-03-13",
+     "outlet": "Business Wire",
+     "headline": "Trophy Signature Homes Announces New Nicholson Ranch Community in Lavon, TX",
+     "url": "https://www.businesswire.com/news/home/20260313162521/en/Trophy-Signature-Homes-Announces-New-Nicholson-Ranch-Community-in-Lavon-TX",
+     "what": "Announced Nicholson Ranch in Lavon, 1,635 lots in eight phases on 40 and 50-foot lots."
+    },
+    {
+     "date": "2026-03-13",
+     "outlet": "Business Wire",
+     "headline": "Lone Oak by Trophy Signature Homes Now Open in Alvarado, Texas",
+     "url": "https://www.businesswire.com/news/home/20260313035590/en/Lone-Oak-by-Trophy-Signature-Homes-Now-Open-in-Alvarado-Texas",
+     "what": "Opened sales at Lone Oak in Alvarado, its Victory Series on 50-foot lots."
+    }
+   ]
+  },
+  {
    "target_id": "DFW-079",
    "entity_name": "William Ryan Homes",
    "short": "William Ryan",
@@ -19081,7 +18617,7 @@
    "phone": null,
    "phone_source": null,
    "phone_more": [],
-   "phone_absent": "No phone published. Design center address only.",
+   "phone_absent": null,
    "press": [
     {
      "date": "2023-07-07",
@@ -19097,7 +18633,7 @@
    "phone_label": null,
    "phone_note": null,
    "company_li_note": "William Ryan Homes company page.",
-   "team_note": "Scott Dettmer named division manager in 2023, Dallas Morning News. No current head named.",
+   "team_note": "Scott Dettmer named division manager in 2023, Dallas Morning News.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -19164,7 +18700,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "Scott Dettmer named division manager in 2023, Dallas Morning News. No current head named.",
+   "people_absent": null,
    "vol": 436,
    "deciders": [],
    "has_decider": false,
@@ -19176,7 +18712,7 @@
    "entity_name": "AHV Communities",
    "short": "AHV",
    "entity_type": "btr_developer_builder_operator",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://ahvcommunities.com/",
    "company_li": "https://www.linkedin.com/company/ahv-communities/",
    "team_url": null,
@@ -19283,6 +18819,140 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-029",
+   "entity_name": "American Legend Homes",
+   "short": "American Legend",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.amlegendhomes.com/",
+   "company_li": "https://www.linkedin.com/company/american-legend-homes/",
+   "team_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
+   "chain": null,
+   "phone": "9724105701",
+   "phone_source": "https://www.amlegendhomes.com/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "636 company-wide closings in 2025, 87th on Builder 100",
+   "mvp_screen": "Every home is HERS-rated by an independent energy rater, but its envelope package uses no new wall method.",
+   "synopsis": "Production builder whose plans sell on masterplan builder rosters. It builds in Dallas-Fort Worth, including Ramble by Hillwood, and in Colorado. BUILDER records 744 closings in 2024, company-wide. It is family and employee-owned, with a sister brand, Belclaire.",
+   "region": "Lewisville, with communities across DFW and in Colorado",
+   "phone_label": "Texas corporate office",
+   "phone_note": null,
+   "company_li_note": "Company page, Lewisville.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Production plans sold on masterplan builder rosters."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "636 closings in 2025 across Texas and Colorado. No DFW-only figure published."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Low-E argon windows, TechShield radiant barrier, 16 SEER systems, tankless heaters. No new wall method."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2,
+    "wall_share": 3
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "Ramble by Hillwood, Celina",
+     "detail": "On the Ramble new-homes builder roster.",
+     "url": "https://www.ramblebyhillwood.com/new-homes/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.amlegendhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.amlegendhomes.com/new-homes-in-texas-and-colorado",
+     "date": null
+    },
+    {
+     "url": "https://www.ramblebyhillwood.com/new-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
+     "date": null
+    },
+    {
+     "url": "https://www.amlegendhomes.com/texas-energy-efficiency",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/american-legend-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Kevin Egan",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
+     "source_evidence": "Firm's blog post, December 14, 2022. Named Chief Executive Officer after serving as president.",
+     "decider": false
+    },
+    {
+     "name": "Paul Miller",
+     "role": "President and Chief Operating Officer",
+     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
+     "source_evidence": "Firm's blog post, December 14, 2022. Named President and Chief Operating Officer.",
+     "decider": false
+    }
+   ],
+   "vol": 636,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "news": [
+    {
+     "date": "2026-04-07",
+     "outlet": "inForney",
+     "headline": "New $1.5 Billion Master-Planned Community Meraki Breaks Ground in Forney",
+     "url": "https://www.inforney.com/local-news/new-15-billion-master-planned-community-meraki-b/article_dd5dd26a-5a69-4e52-bff0-0890c40eeda7.html",
+     "what": "Named one of five builders at Meraki in Forney, 1,079 acres with 406 first-phase homesites."
+    }
+   ]
+  },
+  {
    "target_id": "DFW-078",
    "entity_name": "Cadence Homes",
    "short": "Cadence Homes",
@@ -19315,7 +18985,7 @@
    "phone_label": "Corporate office, Plano",
    "phone_note": null,
    "company_li_note": "Cadence Homes company page, Plano.",
-   "team_note": "No construction or purchasing officer named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -19410,7 +19080,7 @@
    "entity_name": "Camillo Companies / SimplyHome",
    "short": "Camillo / SimplyHome",
    "entity_type": "btr_developer_operator",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://www.camillocompanies.com/",
    "company_li": "https://www.linkedin.com/company/camillo-companies/",
    "team_url": "https://www.camillocompanies.com/camillo-companies-names-dan-miller-as-ceo",
@@ -19694,7 +19364,7 @@
    "entity_name": "Cyrene at Painted Tree (Curve Development)",
    "short": "Cyrene",
    "entity_type": "btr",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://www.cyreneatpaintedtree.com/",
    "company_li": "https://www.linkedin.com/company/curvedevelopment/",
    "team_url": null,
@@ -19711,7 +19381,7 @@
    "phone_label": "Leasing office, Cyrene at Painted Tree",
    "phone_note": null,
    "company_li_note": "Curve Development company page.",
-   "team_note": "No construction contractor named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -19826,7 +19496,7 @@
    "phone_label": "Corporate office, Dallas",
    "phone_note": null,
    "company_li_note": "Company page, First Texas Homes.",
-   "team_note": "About page names no officers.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -19915,6 +19585,130 @@
    "deciders": [],
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-023",
+   "entity_name": "Grand Homes",
+   "short": "Grand Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.grandhomes.com/",
+   "company_li": "https://www.linkedin.com/company/grand-homes/",
+   "team_url": "https://www.grandhomes.com/index.cfm?p=about_us",
+   "chain": null,
+   "phone": "9723876087",
+   "phone_source": "https://www.grandhomes.com/blog/",
+   "phone_more": [
+    {
+     "digits": "2147506528",
+     "label": "Alternate contact on blog footer",
+     "source": null
+    }
+   ],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Over 400 homes a year, DFW only, own count",
+   "mvp_screen": "Builds only inside the DFW Metroplex, so its whole yearly volume sits in a single market.",
+   "synopsis": "Semi-custom production builder that certifies every home ENERGY STAR, with 2x6 exterior walls. Its about page counts over 35 communities, and also gives 30 neighborhoods. Stephen Brooks founded it in 1986.",
+   "region": "Addison, building only in the Dallas/Fort Worth Metroplex",
+   "phone_label": "General Questions line, Addison office",
+   "phone_note": null,
+   "company_li_note": "Grand Homes company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "30 to 35 communities, all inside the DFW Metroplex, on semi-custom production plans."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Over 400 a year across 30 to 35 communities."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Every home ENERGY STAR certified with 2x6 exterior walls. Above-code performance, nothing structural."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2,
+    "wall_share": 3
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "DFW semi-custom program",
+     "detail": "Its about page gives both over 35 communities and 30 neighborhoods.",
+     "url": "https://www.grandhomes.com/index.cfm?p=about_us",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.grandhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.grandhomes.com/index.cfm?p=about_us",
+     "date": null
+    },
+    {
+     "url": "https://www.grandhomes.com/blog/",
+     "date": null
+    },
+    {
+     "url": "https://www.grandhomes.com/index.cfm?p=energy_star",
+     "date": null
+    },
+    {
+     "url": "https://dallasbuilders.com/home-of-the-week-grand-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Stephen H. Brooks",
+     "role": "Founder",
+     "source_url": "https://www.grandhomes.com/index.cfm?p=about_us",
+     "source_evidence": "Firm's about page.",
+     "linkedin_url": "https://www.linkedin.com/in/stephen-brooks-6a058412/",
+     "li_evidence": "Indexed title: Stephen Brooks, Grand Homes.",
+     "decider": true
+    }
+   ],
+   "vol": 400,
+   "deciders": [
+    "Stephen H. Brooks"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false
   },
   {
@@ -20042,7 +19836,7 @@
    "entity_name": "HHS Residential",
    "short": "HHS Residential",
    "entity_type": "btr_builder",
-   "entity_role": "channel",
+   "entity_role": "vertical_buyer",
    "homepage_url": "https://hhsresidential.com/",
    "company_li": "https://www.linkedin.com/company/hhs-residential-llc/",
    "team_url": null,
@@ -20115,7 +19909,7 @@
    "tier": "B",
    "key_projects": [
     {
-     "name": "Texas build-to-rent programme",
+     "name": "Texas build-to-rent program",
      "detail": "Dallas-Fort Worth, Austin, San Antonio and Houston. Builder partner on a Tricon Residential community in Arlington.",
      "url": "https://hhsresidential.com/",
      "signal": null
@@ -20150,6 +19944,145 @@
    "has_decider": false,
    "decider_confirmed": false,
    "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-043",
+   "entity_name": "Homebound",
+   "short": "Homebound",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.homebound.com/",
+   "company_li": "https://www.linkedin.com/company/homebound-construction/",
+   "team_url": "https://www.homebound.com/about",
+   "chain": null,
+   "phone": "2148511912",
+   "phone_source": "https://www.homebound.com/upcoming-communities/mosaic",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "More than 1,000 DFW lots lined up, 2026",
+   "mvp_screen": "Sells its own design and build-tracking software with each home, and its about page names a Texas Regional President.",
+   "synopsis": "Homebuilder founded in 2018, selling semi-custom homes from one plan catalog at about $800,000 to over $1.5 million. It builds on in-town Dallas lots and in Celina, Prosper and Flower Mound, with other markets including Houston and Denver.",
+   "region": "Dallas, Flower Mound, Prosper and Celina, plus Houston, Denver and Tampa",
+   "phone_label": "Mosaic sales office, Celina",
+   "phone_note": null,
+   "company_li_note": "Homebound company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "One plan catalog, including Addison, Bandera, Collin, Grayson and Magnolia, repeated across its DFW sites."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Semi-custom, about $800,000 to over $1.5 million. Also Houston, Denver, Tampa. DFW closings not published."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Digital Design Studio lets buyers personalize plans. No new wall method."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 2,
+    "innovation": 1,
+    "capital_access": 2,
+    "wall_share": 3
+   },
+   "holds": 2,
+   "clears": 1,
+   "cell": "clear|partial",
+   "group": "b",
+   "tier": "B",
+   "key_projects": [
+    {
+     "name": "Mosaic, Celina",
+     "detail": "70-foot lots. Plans from the high $800s. Models scheduled for 2025 to 2026.",
+     "url": "https://www.homebound.com/upcoming-communities/mosaic",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.homebound.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.homebound.com/upcoming-communities/mosaic",
+     "date": null
+    },
+    {
+     "url": "https://mosaiclivingtx.com/builders/",
+     "date": null
+    },
+    {
+     "url": "https://www.homebound.com/about",
+     "date": null
+    },
+    {
+     "url": "https://therealdeal.com/texas/2026/03/05/homebound-lines-up-1000-plus-dallas-fort-worth-home-lots/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Nikki Pechet",
+     "role": "Co-Founder and Chief Executive Officer",
+     "source_url": "https://www.homebound.com/about",
+     "source_evidence": "Homebound about page.",
+     "linkedin_url": "https://www.linkedin.com/in/nikki-pechet-4b949210/",
+     "li_evidence": "Indexed title: Nikki Pechet, Homebound."
+    },
+    {
+     "name": "Charlie Coleman",
+     "role": "Texas Regional President",
+     "source_url": "https://www.homebound.com/about",
+     "source_evidence": "Homebound about page. Formerly Pulte's DFW Division President.",
+     "decider": true
+    },
+    {
+     "name": "Al Tuten",
+     "role": "Vice President, Homebuilding Operations",
+     "source_url": "https://www.homebound.com/about",
+     "source_evidence": "Homebound about page."
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Charlie Coleman"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "news": [
+    {
+     "date": "2026-03-02",
+     "outlet": "Bisnow",
+     "headline": "Homebound Closes On $731M Deal For North Texas Expansion: The DFW Deal Sheet",
+     "url": "https://www.bisnow.com/news/dallas-ft-worth/deal-sheet/homebound-closes-on-731m-deal-for-north-texas-expansion-the-dfw-deal-sheet-133470",
+     "what": "Acquired more than 1,000 lots in Dallas, Prosper, Flower Mound and Mansfield, about $731 million."
+    }
+   ]
   },
   {
    "target_id": "DFW-021",
@@ -20422,7 +20355,7 @@
    "phone_label": "Corporate office",
    "phone_note": null,
    "company_li_note": "Megatel Homes company page.",
-   "team_note": "No construction or purchasing officer named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -20642,7 +20575,7 @@
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "19 DFW listings now selling and four coming, on its site",
+   "key_stat": "19 DFW listings selling and four coming, September 2026",
    "mvp_screen": "One of six Phase 1 builders signed at Serenade in Celina, but its models there target 2027.",
    "synopsis": "Production builder selling in DFW from a Dallas office at 1320 Greenway Drive, Suite 400. Its contact page gives the Dallas office line, (888) 827-4421. A Builder 100 speaker bio names Matthew Zaist president and chief executive.",
    "region": "Irving office, with communities in DFW",
@@ -20870,7 +20803,7 @@
    "press": [],
    "key_stat": "Ashton Woods brand, parent had 1,289 DFW closings in 2025",
    "mvp_screen": "Repeats streamlined plans across DFW, which its FAQ ties to lower costs, but purchasing sits with the parent.",
-   "synopsis": "Starlight Homes builds entry-level homes, and its FAQ lists Dallas among its markets. Its Dallas home finder covers Cedar Hill, Celina, Fort Worth, Melissa, Princeton and Howe. It lists more than 100 available homes there, and no brand closings figure is published.",
+   "synopsis": "Starlight Homes builds entry-level homes, and its FAQ lists Dallas among its markets. Its Dallas home finder covers Cedar Hill, Celina, Fort Worth, Melissa, Princeton and Howe. In September 2026 it listed more than 100 available homes there.",
    "region": "Dallas-Fort Worth, from Howe to Cedar Hill",
    "phone_label": "Dallas rates page line",
    "phone_note": null,
@@ -21007,7 +20940,7 @@
    "phone_label": "Main office, McKinney",
    "phone_note": null,
    "company_li_note": "Company page, Stonehollow Homes.",
-   "team_note": "About page names no officers.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -21263,7 +21196,7 @@
    "phone_label": "Online sales consultant",
    "phone_note": null,
    "company_li_note": "UnionMain Homes company page.",
-   "team_note": "About page names no construction or purchasing officer.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -21472,143 +21405,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-041",
-   "entity_name": "Chesmar Homes",
-   "short": "Chesmar",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.chesmar.com/",
-   "company_li": "https://www.linkedin.com/company/chesmar-homes/",
-   "team_url": null,
-   "chain": null,
-   "phone": null,
-   "phone_source": null,
-   "phone_more": [],
-   "phone_absent": "Contact page is a form. No phone published.",
-   "press": [],
-   "key_stat": "1,779 company-wide closings in 2022, Sekisui House-owned",
-   "mvp_screen": "Its parent, Sekisui House, will transfer its construction technology into its brands from 2026, but purchasing may sit with that parent.",
-   "synopsis": "Texas production builder with a Richardson-area company, Chesmar Homes DFW. Builder rosters at Trinity Falls and other Johnson Development masterplans list it. It publishes no DFW-only closing figure. Owner Sekisui House of Japan brings its brands into one company beginning in 2026.",
-   "region": "Richardson area, part of a Texas multi-market builder",
-   "phone_label": null,
-   "phone_note": null,
-   "company_li_note": "Company page, Chesmar Homes.",
-   "team_note": null,
-   "capital_signals": [
-    {
-     "text": "Owned by Sekisui House of Japan. Joins Sekisui House U.S. from 2026.",
-     "date": null,
-     "url": null
-    }
-   ],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Production plans across several Texas metros. DFW is one."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Company-wide volume above 1,500. Purchasing may sit with Sekisui House."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Systems named: New 2x4 and SHAWOOD. No changed wall on Chesmar's own pages."
-    }
-   ],
-   "marks": {
-    "repeatability": "partial",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 2,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 0,
-   "cell": "partial|fail",
-   "group": "b",
-   "tier": "B",
-   "key_projects": [
-    {
-     "name": "Dallas communities and Trinity Falls",
-     "detail": "Live Dallas communities page. On Trinity Falls and Johnson Development builder rosters.",
-     "url": "https://www.chesmar.com/communities/dallas",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.chesmar.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.chesmar.com/communities/dallas",
-     "date": null
-    },
-    {
-     "url": "https://www.chesmar.com/about-us/",
-     "date": null
-    },
-    {
-     "url": "https://www.chesmar.com/contact-us/",
-     "date": null
-    },
-    {
-     "url": "https://www.sekisuihouse-global.com/common/pdf/2025_9_4_2_en.pdf",
-     "date": null
-    },
-    {
-     "url": "https://www.sekisuihouse-global.com/common/pdf/overseas_business_english.pdf",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/builder-100/strategy/sekisui-house-finalizes-u-s-rebrand-after-m-d-c-holdings-acquisition/",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/firms/chesmar-homes/",
-     "date": null
-    },
-    {
-     "url": "https://members.texasbuilders.org/builder-directory/Details/chesmar-homes-dfw-ltd-732033",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Randy McGillem",
-     "role": "President and CEO, Chesmar Homes DFW",
-     "source_url": "https://members.texasbuilders.org/builder-directory/Details/chesmar-homes-dfw-ltd-732033",
-     "source_evidence": "Texas Association of Builders directory.",
-     "linkedin_url": "https://www.linkedin.com/in/randy-mcgillem-39a37869",
-     "li_evidence": "Indexed title: Chesmar Homes."
-    }
-   ],
-   "vol": 1779,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-042",
    "entity_name": "Coventry Homes",
    "short": "Coventry",
@@ -21770,7 +21566,7 @@
    "phone_label": "Plano office",
    "phone_note": null,
    "company_li_note": "Company page: Huntington Custom Homes, Cypress headquarters.",
-   "team_note": "Its own pages name no principals.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -21992,8 +21788,8 @@
    "region": "Bells, serving North Texas",
    "phone_label": "Call or text line, Bells",
    "phone_note": null,
-   "company_li_note": "No matching LinkedIn company page.",
-   "team_note": "Site names no owner or officer.",
+   "company_li_note": null,
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -22048,7 +21844,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "Site names no owner or officer.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -22811,7 +22607,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "Denton store lists Matt Born under Store Management. No other title.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -22840,7 +22636,7 @@
    "phone_label": "Fort Worth truss plant",
    "phone_note": null,
    "company_li_note": "Corporate page. The plant has none.",
-   "team_note": "Plant page names no manager.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -22899,7 +22695,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "Plant page names no manager.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -23029,9 +22825,9 @@
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "Texas tilt-wall general contractor, no DFW office listed",
+   "key_stat": "Texas tilt-wall general contractor, offices in Austin, Houston and San Antonio",
    "mvp_screen": "Builds tilt-wall shells across Texas with $2 billion in construction volume, its own count, and has no new method on record.",
-   "synopsis": "General contractor with tilt-wall and design-build delivery, rooted in Austin. Its locations pages list offices in Austin, Houston, San Antonio, Denver and Washington, DC. It counts more than 700 employees. Its Austin location page names Scott Clarke as chief operating officer and managing partner.",
+   "synopsis": "General contractor with tilt-wall and design-build delivery, founded in 1957. Its locations pages list offices in Austin, Houston, San Antonio, Denver and Washington, DC. It counts more than 700 employees. Its Austin location page names Scott Clarke as chief operating officer and managing partner.",
    "region": "Austin, with Texas offices in Houston and San Antonio",
    "phone_label": "Austin office",
    "phone_note": null,
@@ -23133,9 +22929,9 @@
    "phone_absent": null,
    "press": [],
    "key_stat": "85-acre precast plant in San Marcos",
-   "mvp_screen": "Prestressed wall panels are its normal product from one statewide plant, but it publishes no DFW figure.",
+   "mvp_screen": "Prestressed wall panels are its normal product from its San Marcos and Corpus Christi plants, but it publishes no DFW figure.",
    "synopsis": "Texas precast and prestressed concrete producer supplying architectural and structural precast. It trucks to Texas markets, North Texas among them. Metromont acquired it effective December 15, 2025. Its contact page names Larry Miller, PE, as VP of preconstruction and business development.",
-   "region": "San Marcos plant, delivering across Texas including North Texas",
+   "region": "San Marcos and Corpus Christi plants, delivering across Texas",
    "phone_label": "Headquarters, San Marcos",
    "phone_note": null,
    "company_li_note": "Heldenfels Enterprises company page, a Metromont company.",
@@ -23159,7 +22955,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "One statewide plant. No DFW figure published."
+     "text": "Two Texas plants. No DFW figure published."
     },
     {
      "axis": "innovation",
@@ -23231,7 +23027,7 @@
    "phone": null,
    "phone_source": null,
    "phone_more": [],
-   "phone_absent": "No main line published.",
+   "phone_absent": null,
    "press": [],
    "key_stat": "Fifteen to twenty slabs a week, per First Texas Homes",
    "mvp_screen": "Pours conventional post-tensioned slabs for production builders, but its only published rate covers one community.",
@@ -23696,7 +23492,7 @@
    "region": "Dallas-Fort Worth Metroplex",
    "phone_label": "Main office",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page. The Black Knight Construction page is a St. Louis firm.",
+   "company_li_note": null,
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -24102,7 +23898,7 @@
    "phone_label": "Main office, Dallas",
    "phone_note": null,
    "company_li_note": "Correa Masonry & Stucco LLC company page, Dallas.",
-   "team_note": "Site names no owner or officer.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24157,7 +23953,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "Site names no owner or officer.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24186,7 +23982,7 @@
    "phone_label": "North Texas office",
    "phone_note": null,
    "company_li_note": null,
-   "team_note": "No owner or officer named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24241,7 +24037,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "No owner or officer named.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24269,7 +24065,7 @@
    "region": "Dallas County and nearby cities",
    "phone_label": "Main line",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page.",
+   "company_li_note": null,
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -24481,8 +24277,8 @@
    "region": "Dallas-Fort Worth",
    "phone_label": "Main line",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page.",
-   "team_note": "No owner or officer named on its pages.",
+   "company_li_note": null,
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24541,7 +24337,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "No owner or officer named on its pages.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24569,8 +24365,8 @@
    "region": "Southlake, serving Grapevine and the mid-cities",
    "phone_label": "Main office, Southlake",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page.",
-   "team_note": "No owner or officer named.",
+   "company_li_note": null,
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24625,7 +24421,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "No owner or officer named.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -24653,8 +24449,8 @@
    "region": "Grand Prairie, working across DFW",
    "phone_label": "Grand Prairie office",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page.",
-   "team_note": "No owner or officer named.",
+   "company_li_note": null,
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24709,7 +24505,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "No owner or officer named.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -25266,7 +25062,7 @@
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "More than 12,500 craftworkers, its own count",
+   "key_stat": "More than 12,500 co-workers across the U.S., its own count",
    "mvp_screen": "Machine purchases run through a national desk, and its site shows no DFW office.",
    "synopsis": "Structural concrete and tilt-wall specialty contractor, formerly Baker Concrete Construction. Its published Texas tilt jobs are mostly in Houston, such as Harris Health. Karl Watson became Chief Executive Officer in June 2023. Martin Jordana is President of the region that includes Texas.",
    "region": "National, with published Texas work mostly in Houston",
@@ -25404,12 +25200,12 @@
    "press": [],
    "key_stat": "Over 750 mobile machines in its fleet, company-wide",
    "mvp_screen": "Owns no walls, and it buys a national pump fleet at a scale beyond one or two printers.",
-   "synopsis": "Concrete pumping contractor running boom pumps and placing booms. Its locations page lists a Dallas branch. Its parent, Concrete Pumping Holdings, appointed Bruce Young Chief Executive Officer in 2008. Mark Young has been general manager of Brundage-Bone since 2018.",
+   "synopsis": "Concrete pumping contractor running boom pumps and placing booms. Its locations page lists a Dallas branch. Bruce Young has been chief executive since 2008, now of the parent, Concrete Pumping Holdings. Mark Young has been general manager of Brundage-Bone since 2018.",
    "region": "National, with a Dallas branch",
    "phone_label": "Dallas branch",
    "phone_note": null,
    "company_li_note": "Brundage-Bone corporate page, lists DFW locations.",
-   "team_note": "Dallas branch page names no manager.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -25972,7 +25768,7 @@
    "phone_label": "Hillsboro plant",
    "phone_note": null,
    "company_li_note": "UFP Site Built company page.",
-   "team_note": "No plant manager named for Hillsboro.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -26068,7 +25864,7 @@
    "phone": null,
    "phone_source": null,
    "phone_more": [],
-   "phone_absent": "No firm page publishes a main line.",
+   "phone_absent": null,
    "press": [],
    "key_stat": "Structural insulated panels on new homes since 1993",
    "mvp_screen": "Already builds its walls in panels, but as a low-volume custom builder it has no production plan set.",
@@ -26076,7 +25872,7 @@
    "region": "Lewisville and Plano area, with a DOE project in Garland",
    "phone_label": null,
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page.",
+   "company_li_note": null,
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -26182,7 +25978,7 @@
     }
    ],
    "key_stat": "286 company-wide closings in 2025, BUILDER's list rank 153",
-   "mvp_screen": "Builds luxury custom homes from plan libraries, so plans repeat, and its volume sits below the Builder 100.",
+   "mvp_screen": "Every home is one-of-a-kind by its own description, so no plan set repeats, and its volume sits below the Builder 100.",
    "synopsis": "Houston-founded custom builder. It entered Dallas in 2022 by buying Paul Taylor Homes, and runs a DFW office on Midway Road. In June 2026 Chris Lemming, previously its DFW Division President, was named President, per Realty News Report.",
    "region": "Carrollton office, building across Texas and Tennessee",
    "phone_label": "DFW office, Carrollton",
@@ -26199,9 +25995,9 @@
     {
      "axis": "repeatability",
      "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Homes drawn from plan libraries."
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Every home is one-of-a-kind, by its own description."
     },
     {
      "axis": "machine_fit",
@@ -26219,20 +26015,20 @@
     }
    ],
    "marks": {
-    "repeatability": "partial",
+    "repeatability": "fail",
     "machine_fit": "clear",
     "innovation": "fail"
    },
    "scores": {
-    "repeatability": 2,
+    "repeatability": 1,
     "machine_fit": 3,
     "innovation": 1,
     "capital_access": 3,
     "wall_share": 2
    },
-   "holds": 2,
+   "holds": 1,
    "clears": 1,
-   "cell": "partial|clear",
+   "cell": "fail|clear",
    "group": "creative",
    "tier": "X",
    "key_projects": [],
@@ -26592,155 +26388,6 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-011",
-   "entity_name": "David Weekley Homes",
-   "short": "David Weekley",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
-   "company_li": "https://www.linkedin.com/company/david-weekley-homes/",
-   "team_url": "https://www.davidweekleyhomes.com/about-us",
-   "chain": null,
-   "phone": "8779335539",
-   "phone_source": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
-   "phone_more": [
-    {
-     "digits": "8447773717",
-     "label": "Press kit / national customer line",
-     "source": null
-    },
-    {
-     "digits": "7139630500",
-     "label": "Company headquarters, Houston (press kit)",
-     "source": null
-    }
-   ],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
-   "key_stat": "943 Dallas-division closings in 2025, its own press kit",
-   "mvp_screen": "Private builder repeating a national plan library across 67 DFW communities, and its chief operating officer once ran Dallas.",
-   "synopsis": "Houston-founded national homebuilder, in Dallas since 1985. Its division office is at 3301 North I-35, Carrollton. Its press kit gives 198 Dallas team members and 778 Dallas homes sold in 2025. Jay Brown is Chief Executive Officer and Chris Weekley President.",
-   "region": "Carrollton division office, with communities across DFW",
-   "phone_label": "Dallas/Ft. Worth homes page line",
-   "phone_note": null,
-   "company_li_note": "David Weekley Homes company page.",
-   "team_note": "No sitting DFW Division President named.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "67 DFW communities on a national plan library, per the 2025 press kit."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "987 DFW starts, April 2024 to March 2025, on Zonda data. Ranked 10th."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "ENERGY STAR recognition. Nothing structural on record."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "partial",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 2,
-    "innovation": 2,
-    "capital_access": 2,
-    "wall_share": 3
-   },
-   "holds": 3,
-   "clears": 1,
-   "cell": "clear|partial",
-   "group": "national",
-   "tier": "N",
-   "key_projects": [
-    {
-     "name": "Dallas/Ft. Worth division",
-     "detail": "67 communities in the 2025 press kit. Division office at 3301 North I-35, Carrollton.",
-     "url": "https://www.davidweekleyhomes.com/news/press-kit",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.davidweekleyhomes.com/news/press-kit",
-     "date": null
-    },
-    {
-     "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
-     "date": null
-    },
-    {
-     "url": "https://www.davidweekleyhomes.com/about-us",
-     "date": null
-    },
-    {
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Jay Brown",
-     "role": "Chief Executive Officer",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/",
-     "li_evidence": "Indexed title: Jay Brown, David Weekley Homes."
-    },
-    {
-     "name": "Chris Weekley",
-     "role": "President and Vice Chairman",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page."
-    },
-    {
-     "name": "David Weekley",
-     "role": "Chairman",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/david-weekley-507212149",
-     "li_evidence": "Indexed title: Chairman at David Weekley Homes."
-    },
-    {
-     "name": "Ladd Fargo",
-     "role": "Chief Operating Officer",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "About page. Over all division operations."
-    }
-   ],
-   "vol": null,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
    "target_id": "DFW-061",
    "entity_name": "CastleRock Communities",
    "short": "CastleRock",
@@ -26755,14 +26402,14 @@
    "phone_more": [],
    "phone_absent": null,
    "press": [],
-   "key_stat": "1,465 company-wide closings in 2025, Texas and Tennessee",
+   "key_stat": "1,465 company-wide closings in 2025, across four states",
    "mvp_screen": "Run from Houston under Daiwa House ownership, so DFW purchasing sits at the Houston headquarters.",
    "synopsis": "Production builder established in 2004, selling Cobalt, Silver and Gold plan collections. Its DFW communities include Solterra in Mesquite and Summit at Center Stage in Keller, per local press. It bought The Jones Company of Tennessee in January 2024.",
    "region": "Houston headquarters, with DFW communities in Mesquite and Keller",
    "phone_label": "Main office, Houston",
    "phone_note": null,
    "company_li_note": "CastleRock Communities company page.",
-   "team_note": "No DFW division leader named.",
+   "team_note": null,
    "capital_signals": [
     {
      "text": "Daiwa House USA Holdings acquired its equity, September 2021.",
@@ -26871,259 +26518,29 @@
    "decider_caveat": false
   },
   {
-   "target_id": "DFW-060",
-   "entity_name": "Century Communities",
-   "short": "Century",
+   "target_id": "DFW-011",
+   "entity_name": "David Weekley Homes",
+   "short": "David Weekley",
    "entity_type": "homebuilder",
    "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.centurycommunities.com/",
-   "company_li": "https://www.linkedin.com/company/century-communities/",
-   "team_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+   "homepage_url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
+   "company_li": "https://www.linkedin.com/company/david-weekley-homes/",
+   "team_url": "https://www.davidweekleyhomes.com/about-us",
    "chain": null,
-   "phone": "8178662980",
-   "phone_source": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [],
-   "key_stat": "New homes in eight DFW cities, per its own site",
-   "mvp_screen": "Purchasing sits above the metro, and its Q2 2026 direct-cost cut came with no change of method.",
-   "synopsis": "National homebuilder selling plan collections such as Classic. DFW communities include Anna Town Square, Overland Grove in Forney and Sperling Farms in Ferris. Homes run from the low $200,000s to the high $500,000s. A release of April 15, 2026 quotes Taylor Humphrey as division president.",
-   "region": "Dallas-Fort Worth, from Anna to Ferris",
-   "phone_label": "DFW available-homes line",
-   "phone_note": null,
-   "company_li_note": null,
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
+   "phone": "8779335539",
+   "phone_source": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
+   "phone_more": [
     {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "National plan collections, including Classic, repeated across DFW communities."
+     "digits": "8447773717",
+     "label": "Press kit / national customer line",
+     "source": null
     },
     {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "National builder."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "112-day cycle and 5 percent direct-cost cut in Q2 2026, per HousingWire. No change of method."
+     "digits": "7139630500",
+     "label": "Company headquarters, Houston (press kit)",
+     "source": null
     }
    ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "national",
-   "tier": "N",
-   "key_projects": [
-    {
-     "name": "Overland Grove, Forney",
-     "detail": "Classic collection. Model home and grand opening announced in 2026.",
-     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/forney/overland-grove/",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
-     "date": null
-    },
-    {
-     "url": "https://www.centurycommunities.com/insights/dallas-fort-worth-metro/",
-     "date": null
-    },
-    {
-     "url": "https://www.centurycommunities.com/",
-     "date": null
-    },
-    {
-     "url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-     "date": null
-    },
-    {
-     "url": "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Taylor Humphrey",
-     "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-     "source_evidence": "Century release on PR Newswire, April 15, 2026.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "Taylor Humphrey"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-062",
-   "entity_name": "Mattamy Homes",
-   "short": "Mattamy",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://mattamyhomes.com/texas/dallas-fort-worth",
-   "company_li": "https://www.linkedin.com/company/mattamy-homes/",
-   "team_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
-   "chain": null,
-   "phone": "4695516812",
-   "phone_source": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2023-11-15",
-     "outlet": "PR Newswire",
-     "headline": "Four up-and-coming Mattamy communities unveil new model homes in Dallas-Fort Worth",
-     "url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html"
-    }
-   ],
-   "key_stat": "Dallas Division launched 2020, President John Kuntz",
-   "mvp_screen": "Builds across several US metros, so purchasing sits above the Dallas Division at a national desk.",
-   "synopsis": "Privately owned North American homebuilder selling single-family and townhome plan sets. DFW communities include Wildflower Ranch in Justin, Sutton Fields in Celina and Walden Pond in Forney. A Mattamy release of 30 April 2026 announced decorated models at The Bridges at Preston Crossings in Gunter.",
-   "region": "Dallas-Fort Worth, from Justin to Forney",
-   "phone_label": "Wildflower Ranch sales gallery, Justin",
-   "phone_note": null,
-   "company_li_note": "Mattamy Homes company page.",
-   "team_note": null,
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "Single-family and townhome plan sets repeated across DFW masterplans."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "Builds across several US metros."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Markets a HERS Index average of 51 in a DFW community. Nothing structural on record."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "national",
-   "tier": "N",
-   "key_projects": [
-    {
-     "name": "Wildflower Ranch, Justin",
-     "detail": "Sales gallery at 16332 Boston Ivy Drive. Average HERS score of 51.",
-     "url": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
-     "signal": null
-    },
-    {
-     "name": "The Bridges at Preston Crossings, Gunter",
-     "detail": "Decorated models opened, 30 April 2026.",
-     "url": "https://mattamyhomes.mediaroom.com/2026-04-30-Mattamy-Homes-Opens-Decorated-Models-at-The-Bridges-at-Preston-Crossings-in-Gunter,-TX",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://mattamyhomes.com/texas/dallas-fort-worth",
-     "date": null
-    },
-    {
-     "url": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
-     "date": null
-    },
-    {
-     "url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
-     "date": null
-    },
-    {
-     "url": "https://mattamyhomes.mediaroom.com/2026-04-30-Mattamy-Homes-Opens-Decorated-Models-at-The-Bridges-at-Preston-Crossings-in-Gunter,-TX",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "John Kuntz",
-     "role": "President, Dallas Division",
-     "source_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
-     "source_evidence": "PR Newswire release, 15 November 2023.",
-     "decider": true
-    }
-   ],
-   "vol": null,
-   "deciders": [
-    "John Kuntz"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-006",
-   "entity_name": "Meritage Homes Corporation",
-   "short": "Meritage Homes",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
-   "company_li": "https://www.linkedin.com/company/meritage-homes/",
-   "team_url": "https://investors.meritagehomes.com/company-information/management-team",
-   "chain": null,
-   "phone": "4694877973",
-   "phone_source": "https://www.meritagehomes.com/state/tx/dallasft-worth",
-   "phone_more": [],
    "phone_absent": null,
    "press": [
     {
@@ -27133,147 +26550,13 @@
      "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
     }
    ],
-   "key_stat": "1,833 DFW closings in 2025, 4.5% share",
-   "mvp_screen": "Sells a national energy-efficient plan library, but its record stresses efficiency and cycle time, with nothing structural.",
-   "synopsis": "National production builder listed on the NYSE as MTH, selling across Dallas-Fort Worth. It ranks fourth in DFW closings for 2025, per BUILDER. Austin Woffinden, Division President for DFW from 2018 to 2025, became EVP of Corporate Operations and Strategy on 1 January 2026.",
-   "region": "Dallas-Fort Worth, part of a national builder",
-   "phone_label": "Dallas/Ft. Worth sales team",
+   "key_stat": "943 Dallas-division closings in 2025, its own press kit",
+   "mvp_screen": "Private builder repeating a national plan library across 67 DFW communities, and its chief operating officer once ran Dallas.",
+   "synopsis": "Houston-founded national homebuilder, in Dallas since 1985. Its division office is at 3301 North I-35, Carrollton. Its press kit gives 198 Dallas team members and 778 Dallas homes sold in 2025. Jay Brown is Chief Executive Officer and Chris Weekley President.",
+   "region": "Carrollton division office, with communities across DFW",
+   "phone_label": "Dallas/Ft. Worth homes page line",
    "phone_note": null,
-   "company_li_note": "Meritage Homes company page.",
-   "team_note": "No current DFW Division President named.",
-   "capital_signals": [],
-   "email": null,
-   "email_label": null,
-   "email_source": null,
-   "tail": false,
-   "capital_mark": null,
-   "why": [
-    {
-     "axis": "repeatability",
-     "title": "Repetition: builds the same plans, in one place",
-     "verdict": "Yes",
-     "mark": "clear",
-     "text": "National energy-efficient plan library sold across DFW."
-    },
-    {
-     "axis": "machine_fit",
-     "title": "Printer fit: one or two printers would cover it",
-     "verdict": "No",
-     "mark": "fail",
-     "text": "1,833 DFW closings in 2025."
-    },
-    {
-     "axis": "innovation",
-     "title": "Track record: has paid for a new building method before",
-     "verdict": "Partly",
-     "mark": "partial",
-     "text": "Stresses energy efficiency and cycle time. Nothing structural on record."
-    }
-   ],
-   "marks": {
-    "repeatability": "clear",
-    "machine_fit": "fail",
-    "innovation": "partial"
-   },
-   "scores": {
-    "repeatability": 3,
-    "machine_fit": 1,
-    "innovation": 2,
-    "capital_access": 3,
-    "wall_share": 2
-   },
-   "holds": 2,
-   "clears": 1,
-   "cell": "clear|fail",
-   "group": "national",
-   "tier": "N",
-   "key_projects": [
-    {
-     "name": "Dallas/Ft. Worth market",
-     "detail": "Market page for new homes across the metroplex.",
-     "url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
-     "signal": null
-    }
-   ],
-   "sources": [
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
-     "date": null
-    },
-    {
-     "url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
-     "date": null
-    },
-    {
-     "url": "https://investors.meritagehomes.com/company-information/management-team",
-     "date": null
-    },
-    {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
-     "date": null
-    }
-   ],
-   "principals": [
-    {
-     "name": "Phillippe Lord",
-     "role": "Chief Executive Officer",
-     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Investor management page.",
-     "linkedin_url": "https://www.linkedin.com/in/phillippe-lord-72924012/",
-     "li_evidence": "Indexed title: Phillippe Lord, Meritage Homes."
-    },
-    {
-     "name": "Hilla Sferruzza",
-     "role": "Executive Vice President and Chief Financial Officer",
-     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Investor management page.",
-     "linkedin_url": "https://www.linkedin.com/in/hilla-sferruzza-cpa-mba-b3170b8/",
-     "li_evidence": "Indexed title: Hilla Sferruzza, CPA, MBA, Meritage Homes."
-    },
-    {
-     "name": "Austin Woffinden",
-     "role": "Executive Vice President, Corporate Operations and Strategy",
-     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Management page bio. Area President, Dallas Fort Worth and Nashville, in 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/austin-woffinden-692297b/",
-     "li_evidence": "Indexed title: Austin Woffinden, Meritage Homes."
-    }
-   ],
-   "vol": 1833,
-   "deciders": [],
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false
-  },
-  {
-   "target_id": "DFW-009",
-   "entity_name": "Ashton Woods Homes",
-   "short": "Ashton Woods",
-   "entity_type": "homebuilder",
-   "entity_role": "vertical_buyer",
-   "homepage_url": "https://www.ashtonwoods.com/",
-   "company_li": "https://www.linkedin.com/company/ashton-woods-homes/",
-   "team_url": "https://www.ashtonwoods.com/corporate-info",
-   "chain": null,
-   "phone": "7709989663",
-   "phone_source": "https://www.ashtonwoods.com/corporate-info",
-   "phone_more": [],
-   "phone_absent": null,
-   "press": [
-    {
-     "date": "2025-07-24",
-     "outlet": "Dallas Morning News",
-     "headline": "The 10 biggest homebuilders in D-FW",
-     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
-    }
-   ],
-   "key_stat": "1,289 DFW closings in 2025, 3.2% share",
-   "mvp_screen": "Purchasing sits at the parent, and one regional president covers its Texas markets.",
-   "synopsis": "Privately held national builder based in Alpharetta, Georgia. Its DFW communities include Aster Park in McKinney and Collin Creek in Plano. It ranked seventh in DFW closings, per BUILDER. Adam Weaver is Senior Vice President of Purchasing, and Lindsay Motley is Regional President over Texas.",
-   "region": "Dallas-Fort Worth, with communities in McKinney, Celina and Plano",
-   "phone_label": "Corporate headquarters, Alpharetta, Georgia",
-   "phone_note": null,
-   "company_li_note": null,
+   "company_li_note": "David Weekley Homes company page.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -27287,21 +26570,21 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "A national plan library, with Texas markets under one regional president."
+     "text": "67 DFW communities on a national plan library, per the 2025 press kit."
     },
     {
      "axis": "machine_fit",
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "1,289 DFW closings in 2025. Purchasing sits at the parent."
+     "text": "943 Dallas-division closings in 2025, its own press kit."
     },
     {
      "axis": "innovation",
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "Nothing on record."
+     "text": "ENERGY STAR recognition. Nothing structural on record."
     }
    ],
    "marks": {
@@ -27323,73 +26606,64 @@
    "tier": "N",
    "key_projects": [
     {
-     "name": "DFW communities",
-     "detail": "Aster Park in McKinney, Brookshire at Legacy Hills and Century Farms in Celina, Collin Creek in Plano.",
-     "url": "https://www.ashtonwoods.com/",
+     "name": "Dallas/Ft. Worth division",
+     "detail": "67 communities in the 2025 press kit. Division office at 3301 North I-35, Carrollton.",
+     "url": "https://www.davidweekleyhomes.com/news/press-kit",
      "signal": null
     }
    ],
    "sources": [
     {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
+     "url": "https://www.davidweekleyhomes.com/news/press-kit",
      "date": null
     },
     {
-     "url": "https://www.ashtonwoods.com/corporate-info",
+     "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth",
      "date": null
     },
     {
-     "url": "https://www.ashtonwoods.com/",
+     "url": "https://www.davidweekleyhomes.com/about-us",
      "date": null
     },
     {
-     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
      "date": null
     }
    ],
    "principals": [
     {
-     "name": "Ken Balogh",
-     "role": "President and Chief Executive Officer",
-     "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page.",
-     "linkedin_url": "https://www.linkedin.com/in/ken-balogh-02964741/",
-     "li_evidence": "Indexed title: Ken Balogh, Ashton Woods Homes."
+     "name": "Jay Brown",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.davidweekleyhomes.com/about-us",
+     "source_evidence": "Firm's about page.",
+     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/",
+     "li_evidence": "Indexed title: Jay Brown, David Weekley Homes."
     },
     {
-     "name": "Lindsay Motley",
-     "role": "Regional President, Texas",
-     "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page. Promoted to the role in 2022.",
-     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614",
-     "li_evidence": "Indexed title: Regional President at Ashton Woods.",
-     "decider": true
+     "name": "Chris Weekley",
+     "role": "President and Vice Chairman",
+     "source_url": "https://www.davidweekleyhomes.com/about-us",
+     "source_evidence": "Firm's about page."
     },
     {
-     "name": "Adam Weaver",
-     "role": "Senior Vice President of Purchasing",
-     "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page executive team.",
-     "linkedin_url": "https://www.linkedin.com/in/adamweaver/",
-     "li_evidence": "Indexed title: Adam Weaver, Ashton Woods Homes.",
-     "decider": true
+     "name": "David Weekley",
+     "role": "Chairman",
+     "source_url": "https://www.davidweekleyhomes.com/about-us",
+     "source_evidence": "Firm's about page.",
+     "linkedin_url": "https://www.linkedin.com/in/david-weekley-507212149",
+     "li_evidence": "Indexed title: Chairman at David Weekley Homes."
     },
     {
-     "name": "Ken Newman",
-     "role": "Senior Vice President of Construction Operations",
-     "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page executive team.",
-     "decider": true
+     "name": "Ladd Fargo",
+     "role": "Chief Operating Officer",
+     "source_url": "https://www.davidweekleyhomes.com/about-us",
+     "source_evidence": "About page. Over all division operations."
     }
    ],
-   "vol": 1289,
-   "deciders": [
-    "Lindsay Motley",
-    "Adam Weaver",
-    "Ken Newman"
-   ],
-   "has_decider": true,
-   "decider_confirmed": true,
+   "vol": 943,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
    "decider_caveat": false
   },
   {
@@ -27421,7 +26695,7 @@
    "phone_label": "Main line",
    "phone_note": null,
    "company_li_note": "Perry Homes company page.",
-   "team_note": "No DFW construction or purchasing officer named.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -27722,6 +26996,122 @@
    "vol": null,
    "deciders": [
     "Scott Bryson"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-060",
+   "entity_name": "Century Communities",
+   "short": "Century",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.centurycommunities.com/",
+   "company_li": "https://www.linkedin.com/company/century-communities/",
+   "team_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+   "chain": null,
+   "phone": "8178662980",
+   "phone_source": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "New homes in eight DFW cities, per its own site",
+   "mvp_screen": "Purchasing sits above the metro, and its Q2 2026 direct-cost cut came with no change of method.",
+   "synopsis": "National homebuilder selling plan collections such as Classic. DFW communities include Anna Town Square, Overland Grove in Forney and Sperling Farms in Ferris. Homes run from the low $200,000s to the high $500,000s. A release of April 15, 2026 quotes Taylor Humphrey as division president.",
+   "region": "Dallas-Fort Worth, from Anna to Ferris",
+   "phone_label": "DFW available-homes line",
+   "phone_note": null,
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "National plan collections, including Classic, repeated across DFW communities."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "National builder."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "112-day cycle and 5 percent direct-cost cut in Q2 2026, per HousingWire. No change of method."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 2
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "national",
+   "tier": "N",
+   "key_projects": [
+    {
+     "name": "Overland Grove, Forney",
+     "detail": "Classic collection. Model home and grand opening announced in 2026.",
+     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/forney/overland-grove/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.centurycommunities.com/find-your-new-home/texas/dallas-fort-worth-metro/",
+     "date": null
+    },
+    {
+     "url": "https://www.centurycommunities.com/insights/dallas-fort-worth-metro/",
+     "date": null
+    },
+    {
+     "url": "https://www.centurycommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Taylor Humphrey",
+     "role": "Division President, Dallas-Fort Worth",
+     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
+     "source_evidence": "Century release on PR Newswire, April 15, 2026.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "Taylor Humphrey"
    ],
    "has_decider": true,
    "decider_confirmed": true,
@@ -28441,6 +27831,265 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-062",
+   "entity_name": "Mattamy Homes",
+   "short": "Mattamy",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://mattamyhomes.com/texas/dallas-fort-worth",
+   "company_li": "https://www.linkedin.com/company/mattamy-homes/",
+   "team_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
+   "chain": null,
+   "phone": "4695516812",
+   "phone_source": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [
+    {
+     "date": "2023-11-15",
+     "outlet": "PR Newswire",
+     "headline": "Four up-and-coming Mattamy communities unveil new model homes in Dallas-Fort Worth",
+     "url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html"
+    }
+   ],
+   "key_stat": "Dallas Division launched 2020, President John Kuntz",
+   "mvp_screen": "Builds across several US metros, so purchasing sits above the Dallas Division at a national desk.",
+   "synopsis": "Privately owned North American homebuilder selling single-family and townhome plan sets. DFW communities include Wildflower Ranch in Justin, Sutton Fields in Celina and Walden Pond in Forney. A Mattamy release of 30 April 2026 announced decorated models at The Bridges at Preston Crossings in Gunter.",
+   "region": "Dallas-Fort Worth, from Justin to Forney",
+   "phone_label": "Wildflower Ranch sales gallery, Justin",
+   "phone_note": null,
+   "company_li_note": "Mattamy Homes company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Single-family and townhome plan sets repeated across DFW masterplans."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Builds across several US metros."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Markets a HERS Index average of 51 in a DFW community. Nothing structural on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 2
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "national",
+   "tier": "N",
+   "key_projects": [
+    {
+     "name": "Wildflower Ranch, Justin",
+     "detail": "Sales gallery at 16332 Boston Ivy Drive. Average HERS score of 51.",
+     "url": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
+     "signal": null
+    },
+    {
+     "name": "The Bridges at Preston Crossings, Gunter",
+     "detail": "Decorated models opened, 30 April 2026.",
+     "url": "https://mattamyhomes.mediaroom.com/2026-04-30-Mattamy-Homes-Opens-Decorated-Models-at-The-Bridges-at-Preston-Crossings-in-Gunter,-TX",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://mattamyhomes.com/texas/dallas-fort-worth",
+     "date": null
+    },
+    {
+     "url": "https://mattamyhomes.com/texas/dallas-fort-worth/justin/wildflower-ranch",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
+     "date": null
+    },
+    {
+     "url": "https://mattamyhomes.mediaroom.com/2026-04-30-Mattamy-Homes-Opens-Decorated-Models-at-The-Bridges-at-Preston-Crossings-in-Gunter,-TX",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "John Kuntz",
+     "role": "President, Dallas Division",
+     "source_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
+     "source_evidence": "PR Newswire release, 15 November 2023.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "deciders": [
+    "John Kuntz"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
+   "target_id": "DFW-006",
+   "entity_name": "Meritage Homes Corporation",
+   "short": "Meritage Homes",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
+   "company_li": "https://www.linkedin.com/company/meritage-homes/",
+   "team_url": "https://investors.meritagehomes.com/company-information/management-team",
+   "chain": null,
+   "phone": "4694877973",
+   "phone_source": "https://www.meritagehomes.com/state/tx/dallasft-worth",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
+   "key_stat": "1,833 DFW closings in 2025, 4.5% share",
+   "mvp_screen": "Sells a national energy-efficient plan library, but its record stresses efficiency and cycle time, with nothing structural.",
+   "synopsis": "National production builder listed on the NYSE as MTH, selling across Dallas-Fort Worth. It ranks fourth in DFW closings for 2025, per BUILDER. Austin Woffinden, Division President for DFW from 2018 to 2025, became EVP of Corporate Operations and Strategy on 1 January 2026.",
+   "region": "Dallas-Fort Worth, part of a national builder",
+   "phone_label": "Dallas/Ft. Worth sales team",
+   "phone_note": null,
+   "company_li_note": "Meritage Homes company page.",
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "National energy-efficient plan library sold across DFW."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,833 DFW closings in 2025."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Stresses energy efficiency and cycle time. Nothing structural on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 3,
+    "wall_share": 2
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "national",
+   "tier": "N",
+   "key_projects": [
+    {
+     "name": "Dallas/Ft. Worth market",
+     "detail": "Market page for new homes across the metroplex.",
+     "url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.meritagehomes.com/state/tx/dallasft-worth",
+     "date": null
+    },
+    {
+     "url": "https://investors.meritagehomes.com/company-information/management-team",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Phillippe Lord",
+     "role": "Chief Executive Officer",
+     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
+     "source_evidence": "Investor management page.",
+     "linkedin_url": "https://www.linkedin.com/in/phillippe-lord-72924012/",
+     "li_evidence": "Indexed title: Phillippe Lord, Meritage Homes."
+    },
+    {
+     "name": "Hilla Sferruzza",
+     "role": "Executive Vice President and Chief Financial Officer",
+     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
+     "source_evidence": "Investor management page.",
+     "linkedin_url": "https://www.linkedin.com/in/hilla-sferruzza-cpa-mba-b3170b8/",
+     "li_evidence": "Indexed title: Hilla Sferruzza, CPA, MBA, Meritage Homes."
+    },
+    {
+     "name": "Austin Woffinden",
+     "role": "Executive Vice President, Corporate Operations and Strategy",
+     "source_url": "https://investors.meritagehomes.com/company-information/management-team",
+     "source_evidence": "Management page bio. Area President, Dallas Fort Worth and Nashville, in 2025.",
+     "linkedin_url": "https://www.linkedin.com/in/austin-woffinden-692297b/",
+     "li_evidence": "Indexed title: Austin Woffinden, Meritage Homes."
+    }
+   ],
+   "vol": 1833,
+   "deciders": [],
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false
+  },
+  {
    "target_id": "DFW-053",
    "entity_name": "Taylor Morrison",
    "short": "Taylor Morrison",
@@ -28675,6 +28324,153 @@
    "decider_caveat": false
   },
   {
+   "target_id": "DFW-009",
+   "entity_name": "Ashton Woods Homes",
+   "short": "Ashton Woods",
+   "entity_type": "homebuilder",
+   "entity_role": "vertical_buyer",
+   "homepage_url": "https://www.ashtonwoods.com/",
+   "company_li": "https://www.linkedin.com/company/ashton-woods-homes/",
+   "team_url": "https://www.ashtonwoods.com/corporate-info",
+   "chain": null,
+   "phone": "7709989663",
+   "phone_source": "https://www.ashtonwoods.com/corporate-info",
+   "phone_more": [],
+   "phone_absent": null,
+   "press": [
+    {
+     "date": "2025-07-24",
+     "outlet": "Dallas Morning News",
+     "headline": "The 10 biggest homebuilders in D-FW",
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/"
+    }
+   ],
+   "key_stat": "1,289 DFW closings in 2025, 3.2% share",
+   "mvp_screen": "Purchasing is a corporate function, and one regional president covers its Texas markets.",
+   "synopsis": "Privately held national builder based in Alpharetta, Georgia. Its DFW communities include Aster Park in McKinney and Collin Creek in Plano. It ranked seventh in DFW closings, per BUILDER. Adam Weaver is Senior Vice President of Purchasing, and Lindsay Motley is Regional President over Texas.",
+   "region": "Dallas-Fort Worth, with communities in McKinney, Celina and Plano",
+   "phone_label": "Corporate headquarters, Alpharetta, Georgia",
+   "phone_note": null,
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "tail": false,
+   "capital_mark": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "title": "Repetition: builds the same plans, in one place",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A national plan library, with Texas markets under one regional president."
+    },
+    {
+     "axis": "machine_fit",
+     "title": "Printer fit: one or two printers would cover it",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,289 DFW closings in 2025. Purchasing is a corporate function."
+    },
+    {
+     "axis": "innovation",
+     "title": "Track record: has paid for a new building method before",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "scores": {
+    "repeatability": 3,
+    "machine_fit": 1,
+    "innovation": 1,
+    "capital_access": 2,
+    "wall_share": 3
+   },
+   "holds": 1,
+   "clears": 1,
+   "cell": "clear|fail",
+   "group": "national",
+   "tier": "N",
+   "key_projects": [
+    {
+     "name": "DFW communities",
+     "detail": "Aster Park in McKinney, Brookshire at Legacy Hills and Century Farms in Celina, Collin Creek in Plano.",
+     "url": "https://www.ashtonwoods.com/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.ashtonwoods.com/corporate-info",
+     "date": null
+    },
+    {
+     "url": "https://www.ashtonwoods.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Ken Balogh",
+     "role": "President and Chief Executive Officer",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Corporate page.",
+     "linkedin_url": "https://www.linkedin.com/in/ken-balogh-02964741/",
+     "li_evidence": "Indexed title: Ken Balogh, Ashton Woods Homes."
+    },
+    {
+     "name": "Lindsay Motley",
+     "role": "Regional President, Texas",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Corporate page. Promoted to the role in 2022.",
+     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614",
+     "li_evidence": "Indexed title: Regional President at Ashton Woods.",
+     "decider": true
+    },
+    {
+     "name": "Adam Weaver",
+     "role": "Senior Vice President of Purchasing",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Corporate page executive team.",
+     "linkedin_url": "https://www.linkedin.com/in/adamweaver/",
+     "li_evidence": "Indexed title: Adam Weaver, Ashton Woods Homes.",
+     "decider": true
+    },
+    {
+     "name": "Ken Newman",
+     "role": "Senior Vice President of Construction Operations",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Corporate page executive team.",
+     "decider": true
+    }
+   ],
+   "vol": 1289,
+   "deciders": [
+    "Lindsay Motley",
+    "Adam Weaver",
+    "Ken Newman"
+   ],
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false
+  },
+  {
    "target_id": "DFW-059",
    "entity_name": "Tri Pointe Homes",
    "short": "Tri Pointe",
@@ -28815,7 +28611,7 @@
    "region": "Celina, near the Tollway and Outer Loop",
    "phone_label": "Community office, Celina",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page for the Dallas developer.",
+   "company_li_note": null,
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -29029,7 +28825,7 @@
    "phone_absent": null,
    "press": [],
    "key_stat": "Nine current DFW masterplans on its site, 13 in Texas",
-   "mvp_screen": "It sells lots, and when a hundred printed homes went into one of its communities, Lennar paid for the printing.",
+   "mvp_screen": "It sells lots. It developed Wolf Ranch in Georgetown, where ICON printed 100 homes for Lennar.",
    "synopsis": "Residential land arm of Hillwood, the Perot family company, based at 3000 Turtle Creek Blvd. It develops DFW masterplans including Liberty in Melissa and Ramble in Celina, each with a published builder roster. Its leadership page names Fred Balda as President.",
    "region": "Dallas headquarters, with masterplans in Celina and Melissa",
    "phone_label": "Main office, Dallas",
@@ -29062,7 +28858,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "No",
      "mark": "fail",
-     "text": "A hundred printed homes went into one of its communities. Lennar paid for the printing."
+     "text": "Its own blog calls Wolf Ranch a collaboration of ICON, Lennar, BIG and Hillwood."
     }
    ],
    "marks": {
@@ -29177,7 +28973,7 @@
    "phone_label": "Main office, Dallas",
    "phone_note": null,
    "company_li_note": "Company page, Huffines Communities.",
-   "team_note": "Don Huffines was sworn in as Texas Comptroller on August 1, 2026.",
+   "team_note": "Don Huffines was sworn in as Texas Comptroller on 1 August 2026.",
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -29863,7 +29659,7 @@
    "phone": null,
    "phone_source": null,
    "phone_more": [],
-   "phone_absent": "Email only: info@paintedtreetx.com. No phone from the community or Oxland.",
+   "phone_absent": "Email only: info@paintedtreetx.com.",
    "press": [],
    "key_stat": "Eleven names on its districts page, McKinney",
    "mvp_screen": "It sells lots, so ten builders, and Cyrene for its rentals, make the wall buy.",
@@ -29946,7 +29742,7 @@
     }
    ],
    "principals": [],
-   "people_absent": "No developer officer named.",
+   "people_absent": null,
    "vol": null,
    "deciders": [],
    "has_decider": false,
@@ -29974,7 +29770,7 @@
    "region": "Celina, Collin County",
    "phone_label": "Ramble contact line, Celina",
    "phone_note": null,
-   "company_li_note": "No Ramble company page. Links to Hillwood Communities.",
+   "company_li_note": "Links to Hillwood Communities.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -30346,7 +30142,7 @@
    "region": "Mesquite, east of Dallas",
    "phone_label": "Huffines Communities, developer",
    "phone_note": null,
-   "company_li_note": "No Solterra page. Links to Huffines Communities.",
+   "company_li_note": "Links to Huffines Communities.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -30457,7 +30253,7 @@
    "region": "Prosper",
    "phone_label": "Blue Star Land LP, developer",
    "phone_note": null,
-   "company_li_note": "No LinkedIn company page for Star Trail or Blue Star Land LP.",
+   "company_li_note": null,
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -30803,7 +30599,7 @@
    "region": "McKinney, Collin County",
    "phone_label": "Johnson Development corporate line, the developer",
    "phone_note": null,
-   "company_li_note": "No Trinity Falls page. Links to Johnson Development.",
+   "company_li_note": "Links to Johnson Development.",
    "team_note": null,
    "capital_signals": [],
    "email": null,
@@ -31264,7 +31060,7 @@
    "phone_label": "Sales consultant line, Dallas/Ft. Worth",
    "phone_note": null,
    "company_li_note": "Parent company page, Lennar Corporation.",
-   "team_note": "Its published pages name no current DFW division officer.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -31291,7 +31087,7 @@
      "title": "Track record: has paid for a new building method before",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "Lennar built the 100-home Wolf Ranch with ICON. LEN X invested in ICON in August 2021."
+     "text": "Lennar built the 100-home Wolf Ranch with ICON. LEN X invested in ICON in August 2021 and again in February 2025."
     }
    ],
    "marks": {
@@ -31353,6 +31149,10 @@
      "date": null
     },
     {
+     "url": "https://techcrunch.com/2025/02/14/icon-a-pioneer-in-3d-home-printing-raises-56m-led-by-norwest-tiger-global/",
+     "date": null
+    },
+    {
      "url": "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
      "date": null
     }
@@ -31382,39 +31182,11 @@
   "permits_source": "Census Building Permits Survey, via HUD SOCDS",
   "firms": [
    {
-    "cat": -1,
-    "tr": true,
-    "fit": "partial",
-    "dec": true,
-    "v": null
-   },
-   {
     "cat": 1,
-    "tr": true,
-    "fit": "partial",
-    "dec": true,
-    "v": null
-   },
-   {
-    "cat": 0,
     "tr": false,
     "fit": "partial",
     "dec": true,
     "v": null
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "partial",
-    "dec": false,
-    "v": 636.0
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "partial",
-    "dec": true,
-    "v": 400.0
    },
    {
     "cat": 0,
@@ -31422,13 +31194,6 @@
     "fit": "partial",
     "dec": false,
     "v": 728.0
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "partial",
-    "dec": true,
-    "v": null
    },
    {
     "cat": 0,
@@ -31504,6 +31269,13 @@
     "cat": 0,
     "tr": false,
     "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
     "dec": false,
     "v": 436.0
    },
@@ -31513,6 +31285,13 @@
     "fit": "partial",
     "dec": true,
     "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 636.0
    },
    {
     "cat": 0,
@@ -31554,6 +31333,13 @@
     "tr": false,
     "fit": "partial",
     "dec": true,
+    "v": 400.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
     "v": null
    },
    {
@@ -31561,6 +31347,13 @@
     "tr": false,
     "fit": "partial",
     "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
     "v": null
    },
    {
@@ -31639,13 +31432,6 @@
     "fit": "partial",
     "dec": false,
     "v": null
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": 1779.0
    },
    {
     "cat": 0,
@@ -31974,42 +31760,14 @@
     "tr": false,
     "fit": "partial",
     "dec": false,
-    "v": null
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "partial",
-    "dec": false,
     "v": 1465.0
    },
    {
     "cat": 0,
     "tr": false,
-    "fit": "fail",
-    "dec": true,
-    "v": null
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "fail",
-    "dec": true,
-    "v": null
-   },
-   {
-    "cat": 0,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": 1833.0
-   },
-   {
-    "cat": 0,
-    "tr": false,
     "fit": "partial",
-    "dec": true,
-    "v": 1289.0
+    "dec": false,
+    "v": 943.0
    },
    {
     "cat": 0,
@@ -32017,6 +31775,13 @@
     "fit": "partial",
     "dec": false,
     "v": 1132.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -32078,6 +31843,20 @@
     "cat": 0,
     "tr": false,
     "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 1833.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
     "dec": false,
     "v": null
    },
@@ -32087,6 +31866,13 @@
     "fit": "fail",
     "dec": true,
     "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": 1289.0
    },
    {
     "cat": 0,
@@ -32250,9 +32036,9 @@
     "v": 5724.0
    }
   ],
-  "n": 124,
-  "track": 10,
-  "dec": 74,
+  "n": 122,
+  "track": 8,
+  "dec": 73,
   "band": [
    25,
    400
@@ -32264,7 +32050,7 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 56
+    "n": 55
    },
    {
     "label": "Developers",
@@ -32390,13 +32176,6 @@
    "b": "The Jones Company of Tennessee",
    "rel": "bought January 2024",
    "card": "DFW-061"
-  },
-  {
-   "k": "owns",
-   "a": "Sekisui House",
-   "b": "DFW-041",
-   "rel": "",
-   "card": "DFW-041"
   },
   {
    "k": "owns",
@@ -32751,7 +32530,7 @@
   {
    "k": "builds",
    "a": "DFW-CH-011",
-   "b": "Brightland",
+   "b": "DRB Homes",
    "rel": "",
    "card": "DFW-CH-011"
   },
@@ -32800,7 +32579,7 @@
   {
    "k": "builds",
    "a": "DFW-CH-012",
-   "b": "DFW-041",
+   "b": "Chesmar",
    "rel": "",
    "card": "DFW-CH-012"
   },

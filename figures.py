@@ -86,6 +86,14 @@ def flatten(body):
 # and its text is the text below, which is deliberately only the figures: this is
 # a record of what was checked, not a cache of the page.
 BYHAND = {
+    # Build 85. Read through a separate fetcher on 2026-09-26; builderonline
+    # refuses this script. The Partners in Building page is the one the
+    # Dallas-Fort Worth card cites, read by hand on 2026-09-24 (dfw/hand.json).
+    "https://www.builderonline.com/firms/greeneco-builders/":
+        "2026-09-26: GreenECO Builders, Katy, TX. CEO George Kopecky. 2016 closings 185, revenue $38 M. "
+        "2015 closings 234, revenue $46 M. Detached for sale, entry level and move-up.",
+    "https://www.builderonline.com/firms/partners-in-building":
+        "2026-09-24: Closings 2025 286. Revenue 2025 $385 M. 2026 rank 153.",
     # Build 80. Read on 2026-09-25 with a fetcher the site allows; scripts are refused.
     "https://houstonagentmagazine.com/2026/08/17/kresston-mpc-60-80-foot-homesites/":
         "2026-09-25: 17 August 2026. J. Patrick Homes and Toll Brothers will build on 31 80-foot lots.",

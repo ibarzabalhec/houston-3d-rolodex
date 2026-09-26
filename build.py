@@ -91,6 +91,11 @@ for _tid, _fl in R2.FLAGS.items():
     CFLAGS.setdefault(_tid, []).extend(_fl)
 # Build 72. The rubric, applied to every verdict (audit8.py). Last, so it wins.
 import audit8 as AUDIT8
+# Build 85. The ICON BD read (audit12.py): verdicts and sections, with the rubric.
+import audit12 as AUDIT12
+NATIONAL.update(AUDIT12.HOU_NATIONAL)
+for _tid, _sc in AUDIT12.HOU_SCORE.items():
+    AUDIT8.HOU_SCORE.setdefault(_tid, {}).update(_sc)
 TODAY = "2026-09-24"
 
 SCREENS = ["repeatability", "machine_fit", "innovation"]
@@ -949,6 +954,7 @@ AUDIT7.dedupe_people(targets)
 import audit9 as AUDIT9
 AUDIT9.houston_people(targets)
 AUDIT8.houston_late(targets)
+AUDIT12.houston_people(targets)
 
 deck = [t for t in targets if t["group"] != "out"]
 n_off = len(targets) - len(deck) + len(DROPPED)
@@ -1515,6 +1521,10 @@ import audit11 as AUDIT11
 _bad11 = AUDIT11.apply(DATA, "hou")
 if _bad11:
     raise SystemExit("FAILED: " + "; ".join(_bad11))
+# Build 85. The ICON BD read (audit12.py): text, the Field, code and market.
+_bad12 = AUDIT12.final(DATA, "hou")
+if _bad12:
+    raise SystemExit("FAILED: " + "; ".join(_bad12))
 _banned = _scan_for_banned(DATA)
 if _banned:
     for where, what in _banned:

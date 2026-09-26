@@ -1494,7 +1494,7 @@ html.reel body{overflow:hidden}
     <div class="fhead" style="border-bottom:1px solid var(--ink)">
       <div class="lab">The market</div>
       <h2 class="disp" id="mkTitle">Greater Houston in figures</h2>
-      <p class="syn" style="margin-top:16px;max-width:76ch">Same records as the list. Each figure has its sources and a table.</p>
+      <p class="syn" style="margin-top:16px;max-width:76ch">Same records as the list.</p>
     </div>
     <div class="stats mk" id="mkStats"></div>
     <div id="mkBody"></div>
@@ -2280,7 +2280,7 @@ document.getElementById('legend').innerHTML=
   '<i><span class="sw p"></span>partial evidence</i>'+
   '<i><span class="sw"></span>none on record</i>'+
   '<i><span class="sw k"></span>already buying printed walls</i>'+
-  '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed. A firm with no published yearly figure reads Partly on printer fit.</i>';
+  '<i class="rule"><b>Yes</b> and <b>Partly</b> both count as holding a count. A <b>No</b> does not. The section says where the holds landed.</i>';
 
 function norm(s){
   s=String(s||'').toLowerCase();
@@ -2433,7 +2433,7 @@ function drawList(){
           return '<td data-l="'+esc(AT[k]||'')+'"><span class="yn '+k+' '+t.marks[k]+'">'+
                  W[t.marks[k]]+'</span></td>';}).join('')+
         '<td data-l="Decision-maker">'+(t.decider_confirmed?'<span class="yn clear">Named</span>':
-                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Confirm</span>':''))+'</td>'+
+                 (t.decider_caveat?'<span class="yn chk" title="A decision-maker is named, but has left, is listed at a related entity, or is a probable match. The note is on the contact.">Unconfirmed</span>':''))+'</td>'+
         '<td class="hf" data-l="Headline">'+esc(t.key_stat||'')+
           /* Build 80. A row with dated news since March carries its latest date. */
           ((t.news||[]).length?'<span class="nwt">News '+esc(nwDate(t.news[0].date))+'</span>':'')+'</td>'+
@@ -2496,8 +2496,8 @@ function phoneBlock(t){
          src(t.phone_source,'where this is published')+
        '</div></div>';
   } else if(more.length){
-    h+='<p class="note">The page publishes '+more.length+' numbers and names none of them '+
-       'the main line, so none is printed as one. '+src(t.phone_source,'the page')+'</p>';
+    h+='<p class="note">'+more.length+' numbers on the firm\u2019s page, none marked as the main line. '+
+       src(t.phone_source,'the page')+'</p>';
   }
   if(more.length){
     h+='<details class="ftable"><summary>'+
@@ -2564,8 +2564,7 @@ function firmPage(t){
 
   h.push(section('The screen','<p class="verdict">'+esc(t.mvp_screen)+'</p>'));
   if((t.why||[]).length) h.push(section('Three counts',whyList(t)+
-    '<p class="cnote">Yes and Partly both count as holding a count. A No does not. A firm with no published '+
-    'yearly figure reads Partly on printer fit.</p>'));
+    '<p class="cnote">Yes and Partly both count as holding a count. A No does not.</p>'));
   /* Build 80. What has happened since March, for the firms in the top sections. */
   if((t.news||[]).length) h.push(section('News since 1 March 2026','<ul class="mini news">'+
     t.news.map(function(n){
@@ -2586,11 +2585,6 @@ function firmPage(t){
     if(t.company_li_note) notes+='<p class="note">'+esc(t.company_li_note)+'</p>';
     if(t.team_note) notes+='<p class="note">'+esc(t.team_note)+'</p>';
     h.push(section('Who to call',ppl+notes));
-  }else if(t.people_absent){
-    /* A blank here meant two different things and looked the same: the firm
-       publishes nobody, or nobody looked. This says which. */
-    h.push(section('Who to call','<p class="verdict">Nobody is published.</p>'+
-      '<p class="note">'+esc(t.people_absent)+'</p>'));
   }
   h.push(section(t.email?(t.phone||(t.phone_more||[]).length?'Phone and email':'Email'):'Phone numbers',phoneBlock(t)));
 
@@ -3119,7 +3113,7 @@ function cfStep(k,focusCard){
 function drawField(){
   var R=D.icon_record||{},C=D.competitors||[];
   var NW=['None','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen'];
-  document.getElementById('fieldTitle').textContent=(NW[C.length]||String(C.length))+' printers, and ICON\u2019s own record';
+  document.getElementById('fieldTitle').textContent=(NW[C.length]||String(C.length))+' printing firms, and ICON\u2019s own record';
   document.getElementById('fieldLine').textContent=D.consolidation||'';
   var h='';
   h+='<div class="us"><h3>ICON</h3><p class="cl3">'+esc(R.line||'')+'</p><dl>'+
@@ -3171,7 +3165,7 @@ function drawField(){
       '<td class="s"><a class="src" href="'+esc(u)+'" target="_blank" rel="noopener">'+esc(l)+'</a></td></tr>';};
     h+='<section class="codeblk"><div class="lab">Code and permitting</div>'+
       '<h3>'+esc(K.line||'')+'</h3>'+
-      '<div class="scroll"><table class="ctab"><thead><tr><th>Question</th><th>Answer</th><th>Source</th></tr></thead><tbody>'+
+      '<div class="scroll"><table class="ctab"><thead><tr><th>Item</th><th>Answer</th><th>Source</th></tr></thead><tbody>'+
       K.items.map(function(k){return row(k.q,k.a,k.url,k.source);}).join('')+'</tbody></table></div>'+
       '<div class="lab" style="margin-top:34px">Precedent</div>'+
       '<div class="scroll"><table class="ctab"><thead><tr><th>Project</th><th>Where</th><th>Status</th><th>Source</th></tr></thead><tbody>'+

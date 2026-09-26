@@ -22,6 +22,7 @@ import audit7 as AUDIT7
 import audit8 as AUDIT8
 import audit9 as AUDIT9
 AUDIT8.DFW_VERDICT.update(AUDIT9.DFW_VERDICT)
+import audit12 as AUDIT12
 for _k, _v in AUDIT9.DFW_SOURCES.items():
     AUDIT8.DFW_SOURCES.setdefault(_k, []).extend(_v)
 ROOT = pathlib.Path(__file__).parent
@@ -171,6 +172,7 @@ PEOPLE_ABSENT = {
 # A card with no DFW presence on any page it controls.
 OFF = {"DFW-TR-052": "No page the firm controls gives a DFW address, and its published phone "
                      "is a Rio Grande Valley number."}
+OFF.update(AUDIT12.DFW_OFF)
 
 # ------------------------------------------------------------------ groups
 # Section follows the holds, as on Houston. Fixed sections are what a firm is.
@@ -234,6 +236,7 @@ CLOSINGS = {
 # David Weekley's press kit gives a Dallas division figure; the pack cited it
 # and no reader checked it, so it is not drawn.
 CLOSINGS.update(AUDIT8.DFW_CLOSINGS)
+CLOSINGS.update(AUDIT12.DFW_CLOSINGS)
 BANDS = HOU["market"]["bands"]
 
 
@@ -262,6 +265,8 @@ def build_targets():
                 v, txt = REVERT[tid][1], REVERT[tid][2]
             if (tid, ax) in AUDIT8.DFW_VERDICT:
                 v, txt = AUDIT8.DFW_VERDICT[(tid, ax)]
+            # Build 85. The ICON BD read: the verdict word only.
+            v = AUDIT12.DFW_V.get((tid, ax), v)
             why.append({"axis": ax, "title": TITLE[ax], "verdict": v, "mark": V[v], "text": txt})
         if tid in PARITY:
             hid, srcs = PARITY[tid]
@@ -607,6 +612,10 @@ def main():
     _bad11 = AUDIT11.apply(D, "dfw")
     if _bad11:
         raise SystemExit("FAILED: " + "; ".join(_bad11))
+    # Build 85. The ICON BD read (audit12.py): text, the Field, code and market.
+    _bad12 = AUDIT12.final(D, "dfw")
+    if _bad12:
+        raise SystemExit("FAILED: " + "; ".join(_bad12))
     gate(D)
     json.dump(D, open(ROOT / "dfw" / "dfw-data.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     print("dfw entities      %d  (off deck %d)" % (n, len(targets) - n))

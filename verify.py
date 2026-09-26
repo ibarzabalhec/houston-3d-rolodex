@@ -384,20 +384,16 @@ print("supply panel    : %d not on the grid, %d publishing no website at all"
 # number, and fifteen named nobody at all without a word about it. A blank meant
 # two different things that look identical: the firm publishes no leadership, or
 # nobody looked.
-_ab = []
-for _t in D["targets"]:
-    if _t["group"] == "out":
-        continue
-    if not _t["principals"] and not _t.get("people_absent"):
-        _ab.append("%s names nobody and does not say why" % _t["short"])
-    if _t["principals"] and _t.get("people_absent"):
-        _ab.append("%s says nobody is published and lists somebody" % _t["short"])
+# Build 85. An absence is a blank. The sentence that said so is gone from the
+# page, so the check is now that no card carries one.
+_ab = [_t["short"] for _t in D["targets"] if _t["group"] != "out"
+       and (_t.get("people_absent") or _t.get("web_absent"))]
 if _ab:
     for _b in _ab:
         print("   " + _b)
-    raise SystemExit("FAILED: a card is silent about why it has no contact")
+    raise SystemExit("FAILED: a card states an absence")
 _silent = [t for t in D["targets"] if t["group"] != "out" and not t["principals"]]
-print("contact absence : %d cards name nobody, each saying why" % len(_silent))
+print("contact absence : %d cards name nobody, left blank" % len(_silent))
 
 # The decision-maker stat is the one a reader probes first, and it prints an
 # absolute where the meaning is a proportion. Build 62 grew the roster by 29

@@ -4,7 +4,7 @@
 
 Live: https://ibarzabalhec.github.io/houston-3d-rolodex/
 
-A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 124 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
+A second market, Dallas-Fort Worth, sits in the same file behind the switch on the home screen: 122 firms, the same three counts and the same five views, in Dallas blue where Houston uses ICON orange. `build_dfw.py` builds it from `dfw/`, and `MARKET=dfw` runs the verifier and the workbook against it.
 
 One self-contained HTML file. No framework, no runtime network request. `docs/index.html` is the served copy. This README is written by `build.py`, so its counts are the page's counts.
 
@@ -22,10 +22,10 @@ Yes and Partly both count as holding. A No does not. Sections are assigned befor
 
 - **Already buying printed walls**, 3
 - **Lennar and the firms it owns**, 3
-- **Holds all three counts**, 11
-- **One gap**, 32
+- **Holds all three counts**, 3
+- **One gap**, 38
 - **Builds the wall, not the house**, 50
-- **National builder**, 10
+- **National builder**, 12
 - **Custom and hybrid job**, 10
 - **Land owner, not the buyer**, 7
 
