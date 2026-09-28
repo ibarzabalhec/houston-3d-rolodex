@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 103,
+ "build": 104,
  "last_updated": "2026-09-28",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-28",
  "kicker": "Rolodex · Greater Houston · 2026-09-28",
@@ -19311,7 +19311,7 @@
     }
    ],
    "capital_signals": [],
-   "mvp_screen": "Reserved an ICON Titan, per The Real Deal, March 2026. Prints its Zuri Gardens homes with HiveASMBLD.",
+   "mvp_screen": "Prints its Zuri Gardens homes with HiveASMBLD.",
    "sources": [
     {
      "url": "https://www.houstoniamag.com/home-and-real-estate/2025/12/3d-printed-houses-neighborhood-houston",
@@ -20249,7 +20249,7 @@
    "entity_name": "Brohn Homes",
    "region": "Austin, with a Houston division",
    "homepage_url": "https://www.brohnhomes.com/",
-   "synopsis": "Homebuilder that bought HistoryMaker Homes' Houston division and kept its plans. It sells across the north, west and south suburbs. It publishes no Houston closings figure. Its parent, Clayton Properties Group, is part of Berkshire Hathaway.",
+   "synopsis": "Homebuilder that bought HistoryMaker Homes' Houston division and kept its plans. It sells across the north, west and south suburbs. It publishes no Houston closings figure.",
    "key_stat": "Average build time of 3.5 months, company-wide",
    "principals": [
     {
@@ -20539,7 +20539,7 @@
      "url": "https://communityimpact.com/houston/bellaire-meyerland-west-university/development/2025/10/27/houston-housing-authority-to-redevelop-citys-oldest-public-housing-community-in-7-year-plan/"
     }
    ],
-   "mvp_screen": "Redeveloping Cuney Homes in the Third Ward, with a $50 million HUD grant. Federal procurement rewards cost and schedule.",
+   "mvp_screen": "Redeveloping Cuney Homes in the Third Ward, with a $50 million HUD grant.",
    "sources": [
     {
      "url": "https://communityimpact.com/houston/bellaire-meyerland-west-university/development/2025/10/27/houston-housing-authority-to-redevelop-citys-oldest-public-housing-community-in-7-year-plan/",
@@ -20651,7 +20651,7 @@
     }
    ],
    "capital_signals": [],
-   "mvp_screen": "Develops its own land through Woodmere Development. Sells job-built production methods as a control advantage.",
+   "mvp_screen": "Develops its own land through Woodmere Development.",
    "sources": [
     {
      "url": "https://www.longlakeltd.com/",
@@ -23154,7 +23154,7 @@
     }
    ],
    "capital_signals": [],
-   "mvp_screen": "Builds on lots scattered across six Inner Loop neighborhoods. Runs land through final inspection in house.",
+   "mvp_screen": "Builds on lots scattered across six Inner Loop neighborhoods.",
    "sources": [
     {
      "url": "https://www.sandcastlehouston.com/about-sandcastle/",
@@ -23597,7 +23597,7 @@
    "entity_name": "Boxer Property",
    "region": "Houston, Harris",
    "homepage_url": "https://www.boxerproperty.com/",
-   "synopsis": "Houston-headquartered commercial property owner and manager, founded in 1992. It operates in 16 cities, overseeing more than 15 million square feet. It was the partner on the printed house, whose walls printed in under 30 hours in May 2024.",
+   "synopsis": "Houston-headquartered commercial property owner and manager, founded in 1992. It was the partner on the printed house, whose walls printed in under 30 hours in May 2024.",
    "key_stat": "Partner on a printed house in Fort Worth, May 2024",
    "principals": [
     {
@@ -23760,7 +23760,7 @@
      "url": "https://baytownedf.org/news/article/dallas-based-developer-provident-realty-advisors-enters-houston-industrial-market-with-124m-project"
     }
    ],
-   "mvp_screen": "Its parcHAUS program targets seven rental communities across Texas. The firm is run from Dallas.",
+   "mvp_screen": "Its parcHAUS program targets seven rental communities across Texas.",
    "sources": [
     {
      "url": "https://provident.net/",
@@ -24415,7 +24415,7 @@
    "entity_name": "Avenue CDC",
    "region": "Near Northside, Harris County",
    "homepage_url": "https://avenuecdc.org/",
-   "synopsis": "Nonprofit community development corporation building affordable homes since 1991. It has worked in Houston's Near Northside since 2002. The City of Houston put $3.4 million toward the $11.8 million acquisition and rehabilitation of its Avenue Center. Mary Lawler has led it for twenty-five years.",
+   "synopsis": "Nonprofit community development corporation building affordable homes since 1991. It has worked in Houston's Near Northside since 2002. The City of Houston put $3.4 million toward the $11.8 million acquisition and rehabilitation of its Avenue Center.",
    "key_stat": "5 named Near Northside developments",
    "principals": [
     {
@@ -29213,7 +29213,7 @@
     }
    ],
    "capital_signals": [],
-   "mvp_screen": "Runs a Houston industrial office inside a national firm of 12,500-plus people. Purchases run through a national desk.",
+   "mvp_screen": "Runs a Houston industrial office inside a national firm of 12,500-plus people.",
    "sources": [
     {
      "url": "https://bakerconstruction.com/",
@@ -29488,7 +29488,7 @@
    "entity_name": "Trussway Manufacturing",
    "region": "Houston headquarters, Alcorn Street",
    "homepage_url": "https://trussway.com/products/",
-   "synopsis": "Houston-headquartered maker of prefabricated wall panels, roof and floor trusses, components and rough openings, weighted toward multifamily. Its own product page says the panels save time, reduce waste and increase structural quality. Founded in 1972, it runs six manufacturing facilities. Its parent is Builders FirstSource.",
+   "synopsis": "Houston-headquartered maker of prefabricated wall panels, roof and floor trusses, components and rough openings, weighted toward multifamily. Its own product page says the panels save time, reduce waste and increase structural quality. Founded in 1972, it runs six manufacturing facilities.",
    "key_stat": "About $340 million in sales, 1,000 employees, per Builders FirstSource, 2022",
    "principals": [
     {
@@ -31028,7 +31028,7 @@
     }
    ],
    "capital_signals": [],
-   "mvp_screen": "Develops East Blocks, ten contiguous EaDo blocks, in a joint venture. Its build-to-rent line is outside Houston.",
+   "mvp_screen": "Develops East Blocks, ten contiguous EaDo blocks, in a joint venture.",
    "sources": [
     {
      "url": "https://www.pagewood.com/team",
@@ -35798,7 +35798,7 @@
    "entity_name": "Land Tejas",
    "region": "Houston / Katy, Harris-Waller",
    "homepage_url": "https://landtejas.com/",
-   "synopsis": "Land developer of Sunterra in Katy. The Houston Chronicle put Sunterra at 2,303 acres in 2024, but Land Tejas's own page says 1,039. Starwood Capital took a majority interest on December 29, 2021.",
+   "synopsis": "Land developer of Sunterra in Katy. The Houston Chronicle put Sunterra at 2,303 acres in 2024, but Land Tejas's own page says 1,039.",
    "key_stat": "Sunterra in Katy, eighteen builder names on its own page",
    "principals": [
     {

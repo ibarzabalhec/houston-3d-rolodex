@@ -14061,7 +14061,7 @@
        "as_of": "2026-09-27"
       },
       {
-       "builder": "Long Lake",
+       "builder": "Long Lake, Ltd.",
        "custom_members": null,
        "rolodex_id": "HOU-130",
        "section": "Cypress Green",
@@ -14096,7 +14096,7 @@
       "D.R. Horton",
       "DRB Homes",
       "Lennar",
-      "Long Lake"
+      "Long Lake, Ltd."
      ],
      "custom": [],
      "from_min": 249990,
@@ -35626,7 +35626,7 @@
        "as_of": "2026-09-27"
       },
       {
-       "builder": "Long Lake",
+       "builder": "Long Lake, Ltd.",
        "custom_members": null,
        "rolodex_id": "HOU-130",
        "section": "Sunterra Lakes",
@@ -35873,7 +35873,7 @@
       "Davidson Homes",
       "Highland Homes",
       "Lennar",
-      "Long Lake",
+      "Long Lake, Ltd.",
       "Risewell Homes",
       "Tricoast Homes",
       "Village Builders",
@@ -49513,6 +49513,52 @@
      "filer": "LGI Homes"
     },
     {
+     "id": "b-houston-long-lake-ltd",
+     "name": "Long Lake, Ltd.",
+     "rolodex_id": "HOU-130",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Long Lake, Ltd.",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
+     "communities": [
+      "hou-cypress-green",
+      "hou-grand-magnolia",
+      "hou-river-ranch",
+      "hou-sunterra",
+      "hou-sunterra-lakes"
+     ],
+     "n_comm": 5,
+     "counties": [
+      "Harris",
+      "Liberty",
+      "Montgomery",
+      "Waller"
+     ],
+     "from_min": 200000,
+     "from_max": 290000,
+     "from_med": 245000,
+     "lots": [],
+     "qmi_n": 20,
+     "qmi_price": 441790,
+     "qmi_sqft": 2655,
+     "qmi_ppsf": 162,
+     "qmi_ppsf_lo": 160,
+     "qmi_ppsf_hi": 174,
+     "closings": {
+      "low": 782,
+      "high": 782,
+      "year": 2025,
+      "source": "Builder 100 firm page",
+      "wide": null
+     },
+     "filer": null
+    },
+    {
      "id": "b-houston-pulte-homes",
      "name": "Pulte Homes",
      "rolodex_id": "HOU-167",
@@ -49821,49 +49867,6 @@
      "filer": "Hovnanian Enterprises"
     },
     {
-     "id": "b-houston-long-lake-ltd",
-     "name": "Long Lake, Ltd.",
-     "rolodex_id": "HOU-130",
-     "rolodex_section": "One gap",
-     "rolodex_group": "b",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Long Lake, Ltd.",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "partial",
-      "innovation": "fail"
-     },
-     "communities": [
-      "hou-grand-magnolia",
-      "hou-river-ranch",
-      "hou-sunterra-lakes"
-     ],
-     "n_comm": 3,
-     "counties": [
-      "Liberty",
-      "Montgomery",
-      "Waller"
-     ],
-     "from_min": 200000,
-     "from_max": 200000,
-     "from_med": 200000,
-     "lots": [],
-     "qmi_n": 15,
-     "qmi_price": 432990,
-     "qmi_sqft": 2655,
-     "qmi_ppsf": 161,
-     "qmi_ppsf_lo": 155,
-     "qmi_ppsf_hi": 168,
-     "closings": {
-      "low": 782,
-      "high": 782,
-      "year": 2025,
-      "source": "Builder 100 firm page",
-      "wide": null
-     },
-     "filer": null
-    },
-    {
      "id": "b-houston-mckinley-homes",
      "name": "McKinley Homes",
      "rolodex_id": "HOU-212",
@@ -50082,47 +50085,6 @@
      "qmi_ppsf_lo": 148,
      "qmi_ppsf_hi": 153,
      "closings": null,
-     "filer": null
-    },
-    {
-     "id": "b-houston-long-lake",
-     "name": "Long Lake",
-     "rolodex_id": "HOU-130",
-     "rolodex_section": "One gap",
-     "rolodex_group": "b",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Long Lake, Ltd.",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "partial",
-      "innovation": "fail"
-     },
-     "communities": [
-      "hou-cypress-green",
-      "hou-sunterra"
-     ],
-     "n_comm": 2,
-     "counties": [
-      "Harris",
-      "Waller"
-     ],
-     "from_min": 290000,
-     "from_max": 290000,
-     "from_med": 290000,
-     "lots": [],
-     "qmi_n": 5,
-     "qmi_price": 453590,
-     "qmi_sqft": 2778,
-     "qmi_ppsf": 163,
-     "qmi_ppsf_lo": 161,
-     "qmi_ppsf_hi": 180,
-     "closings": {
-      "low": 782,
-      "high": 782,
-      "year": 2025,
-      "source": "Builder 100 firm page",
-      "wide": null
-     },
      "filer": null
     },
     {
@@ -51185,7 +51147,6 @@
       "LGI Homes",
       "Legend Homes",
       "Lennar",
-      "Long Lake",
       "Long Lake, Ltd.",
       "M/I Homes",
       "McKinley Homes",
@@ -51950,7 +51911,7 @@
    "totals": {
     "communities": 74,
     "rows": 687,
-    "builders": 72,
+    "builders": 71,
     "developers": 26,
     "qmi": 1465,
     "qmi_price": 449990,
@@ -93276,7 +93237,7 @@
      ],
      "rows": [
       {
-       "builder": "Ashton Woods Homes",
+       "builder": "Ashton Woods",
        "custom_members": null,
        "rolodex_id": "DFW-009",
        "section": "Inspiration-50s",
@@ -93353,7 +93314,7 @@
        "as_of": "2026-09-27"
       },
       {
-       "builder": "Ashton Woods Homes",
+       "builder": "Ashton Woods",
        "custom_members": null,
        "rolodex_id": "DFW-009",
        "section": "Inspiration-80s",
@@ -93673,7 +93634,7 @@
      ],
      "n_builders": 5,
      "builders": [
-      "Ashton Woods Homes",
+      "Ashton Woods",
       "First Texas Homes",
       "Mercury Luxury Homes",
       "Shaddock Homes",
@@ -124881,6 +124842,59 @@
      "filer": null
     },
     {
+     "id": "b-dfw-ashton-woods",
+     "name": "Ashton Woods",
+     "rolodex_id": "DFW-009",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Ashton Woods",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
+     "communities": [
+      "dfw-alpha-ranch",
+      "dfw-aster-park",
+      "dfw-devonshire",
+      "dfw-furst-ranch",
+      "dfw-gateway-parks",
+      "dfw-inspiration",
+      "dfw-legacy-hills",
+      "dfw-wildflower-ranch"
+     ],
+     "n_comm": 8,
+     "counties": [
+      "Collin",
+      "Denton",
+      "Kaufman"
+     ],
+     "from_min": 299990,
+     "from_max": 744990,
+     "from_med": 443490,
+     "lots": [
+      40,
+      50,
+      60,
+      80
+     ],
+     "qmi_n": 36,
+     "qmi_price": 560852,
+     "qmi_sqft": 2913,
+     "qmi_ppsf": 210,
+     "qmi_ppsf_lo": 192,
+     "qmi_ppsf_hi": 236,
+     "closings": {
+      "low": 1289,
+      "high": 1289,
+      "year": 2025,
+      "source": "BUILDER Local Leaders 2026, DFW",
+      "wide": null
+     },
+     "filer": null
+    },
+    {
      "id": "b-dfw-drees-custom-homes",
      "name": "Drees Custom Homes",
      "rolodex_id": "DFW-203",
@@ -125032,57 +125046,6 @@
      "qmi_ppsf_lo": 167,
      "qmi_ppsf_hi": 196,
      "closings": null,
-     "filer": null
-    },
-    {
-     "id": "b-dfw-ashton-woods",
-     "name": "Ashton Woods",
-     "rolodex_id": "DFW-009",
-     "rolodex_section": "National builder",
-     "rolodex_group": "national",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Ashton Woods",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "fail",
-      "innovation": "fail"
-     },
-     "communities": [
-      "dfw-alpha-ranch",
-      "dfw-aster-park",
-      "dfw-devonshire",
-      "dfw-furst-ranch",
-      "dfw-gateway-parks",
-      "dfw-legacy-hills",
-      "dfw-wildflower-ranch"
-     ],
-     "n_comm": 7,
-     "counties": [
-      "Collin",
-      "Denton",
-      "Kaufman"
-     ],
-     "from_min": 299990,
-     "from_max": 744990,
-     "from_med": 407990,
-     "lots": [
-      40,
-      50,
-      60
-     ],
-     "qmi_n": 29,
-     "qmi_price": 512200,
-     "qmi_sqft": 2808,
-     "qmi_ppsf": 212,
-     "qmi_ppsf_lo": 173,
-     "qmi_ppsf_hi": 239,
-     "closings": {
-      "low": 1289,
-      "high": 1289,
-      "year": 2025,
-      "source": "BUILDER Local Leaders 2026, DFW",
-      "wide": null
-     },
      "filer": null
     },
     {
@@ -126198,48 +126161,6 @@
      "qmi_ppsf_lo": 272,
      "qmi_ppsf_hi": 314,
      "closings": null,
-     "filer": null
-    },
-    {
-     "id": "b-dfw-ashton-woods-homes",
-     "name": "Ashton Woods Homes",
-     "rolodex_id": "DFW-009",
-     "rolodex_section": "National builder",
-     "rolodex_group": "national",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Ashton Woods",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "fail",
-      "innovation": "fail"
-     },
-     "communities": [
-      "dfw-inspiration"
-     ],
-     "n_comm": 1,
-     "counties": [
-      "Collin"
-     ],
-     "from_min": 455990,
-     "from_max": 689990,
-     "from_med": 572990,
-     "lots": [
-      50,
-      80
-     ],
-     "qmi_n": 7,
-     "qmi_price": 789000,
-     "qmi_sqft": 3908,
-     "qmi_ppsf": 206,
-     "qmi_ppsf_lo": 204,
-     "qmi_ppsf_hi": 219,
-     "closings": {
-      "low": 1289,
-      "high": 1289,
-      "year": 2025,
-      "source": "BUILDER Local Leaders 2026, DFW",
-      "wide": null
-     },
      "filer": null
     },
     {
@@ -127553,7 +127474,7 @@
      ],
      "n_comm": 5,
      "builders": [
-      "Ashton Woods Homes",
+      "Ashton Woods",
       "Astoria Homes",
       "Bloomfield Homes",
       "CastleRock Communities",
@@ -128240,7 +128161,7 @@
    "totals": {
     "communities": 72,
     "rows": 483,
-    "builders": 79,
+    "builders": 78,
     "developers": 27,
     "qmi": 1142,
     "qmi_price": 499990,
