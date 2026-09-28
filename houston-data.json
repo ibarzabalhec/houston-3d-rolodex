@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 99,
- "last_updated": "2026-09-27",
- "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-27",
- "kicker": "Rolodex · Greater Houston · 2026-09-27",
+ "build": 102,
+ "last_updated": "2026-09-28",
+ "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-28",
+ "kicker": "Rolodex · Greater Houston · 2026-09-28",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "126 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "156 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "126",
+   "156",
    "firms screened",
    false,
    null
@@ -65,8 +65,8 @@
    }
   ],
   [
-   "74",
-   "of 126 with a decision-maker named",
+   "102",
+   "of 156 with a decision-maker named",
    true,
    {
     "dec": "any"
@@ -79,28 +79,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 80,
-   "partial": 38,
+   "clear": 105,
+   "partial": 43,
    "fail": 8,
-   "total": 126
+   "total": 156
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
    "clear": 9,
-   "partial": 85,
-   "fail": 32,
-   "total": 126
+   "partial": 97,
+   "fail": 50,
+   "total": 156
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 17,
-   "partial": 16,
-   "fail": 93,
-   "total": 126
+   "clear": 18,
+   "partial": 17,
+   "fail": 121,
+   "total": 156
   }
  ],
  "matrix": {
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 109 LinkedIn headlines naming the firm, 173 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 157 LinkedIn headlines naming the firm, 196 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1465,6 +1465,19 @@
     "wide": "Houston and Austin"
    },
    {
+    "id": "HOU-232",
+    "name": "KB Home",
+    "short": "KB Home",
+    "low": 1062,
+    "high": 1062,
+    "year": 2024,
+    "source": "BUILDER Local Leaders 2025, Houston metro",
+    "fit": "fail",
+    "method": "fail",
+    "group": "national",
+    "wide": null
+   },
+   {
     "id": "HOU-033",
     "name": "Coventry Homes",
     "short": "Coventry",
@@ -1475,6 +1488,19 @@
     "fit": "partial",
     "method": "fail",
     "group": "b",
+    "wide": null
+   },
+   {
+    "id": "HOU-206",
+    "name": "K. Hovnanian Homes",
+    "short": "K. Hovnanian Homes",
+    "low": 1030,
+    "high": 1030,
+    "year": 2024,
+    "source": "BUILDER Local Leaders 2025, Houston metro, Hovnanian Enterprises",
+    "fit": "partial",
+    "method": "fail",
+    "group": "national",
     "wide": null
    },
    {
@@ -1660,8 +1686,8 @@
     "wide": null
    }
   ],
-  "closings_missing": 44,
-  "closings_base": 69,
+  "closings_missing": 62,
+  "closings_base": 89,
   "bands": [
    [
     25,
@@ -1700,13 +1726,13 @@
    {
     "group": "b",
     "label": "One gap",
-    "n": 38,
+    "n": 46,
     "yes": 3,
     "partly": 2,
-    "no": 33,
-    "decider": 22,
+    "no": 41,
+    "decider": 29,
     "confirm": 0,
-    "linked": 35
+    "linked": 43
    },
    {
     "group": "trade",
@@ -1733,24 +1759,24 @@
    {
     "group": "national",
     "label": "National builder",
-    "n": 12,
+    "n": 24,
     "yes": 2,
-    "partly": 0,
-    "no": 10,
-    "decider": 6,
+    "partly": 1,
+    "no": 21,
+    "decider": 17,
     "confirm": 1,
-    "linked": 12
+    "linked": 24
    },
    {
     "group": "channel",
     "label": "Land owner, not the buyer",
-    "n": 7,
-    "yes": 1,
+    "n": 17,
+    "yes": 2,
     "partly": 0,
-    "no": 6,
-    "decider": 1,
+    "no": 15,
+    "decider": 11,
     "confirm": 0,
-    "linked": 7
+    "linked": 17
    },
    {
     "group": "icon",
@@ -1807,7 +1833,7 @@
      },
      {
       "name": "Beazer Homes",
-      "id": null,
+      "id": "HOU-201",
       "off": false
      },
      {
@@ -1817,7 +1843,7 @@
      },
      {
       "name": "Tri Pointe Homes",
-      "id": null,
+      "id": "HOU-205",
       "off": false
      },
      {
@@ -1892,6 +1918,12 @@
     ]
    },
    {
+    "id": "HOU-233",
+    "short": "Hines",
+    "line": "",
+    "builders": []
+   },
+   {
     "id": "HOU-133",
     "short": "Hillwood",
     "line": "Pomona, Valencia and Legacy in League City",
@@ -1956,6 +1988,24 @@
     ]
    },
    {
+    "id": "HOU-222",
+    "short": "AIRIA Development Company",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-225",
+    "short": "EMBER Real Estate & Development",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-226",
+    "short": "Forestar Group",
+    "line": "",
+    "builders": []
+   },
+   {
     "id": "HOU-040",
     "short": "Johnson Development",
     "line": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
@@ -1992,10 +2042,46 @@
      },
      {
       "name": "Shea Homes",
-      "id": null,
+      "id": "HOU-204",
       "off": false
      }
     ]
+   },
+   {
+    "id": "HOU-227",
+    "short": "McGrath Real Estate Partners",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-228",
+    "short": "Meristem Communities",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-229",
+    "short": "Oxland Group",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-230",
+    "short": "Precedent Land Company",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-223",
+    "short": "Rise Communities",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-224",
+    "short": "Sam Yager Incorporated",
+    "line": "",
+    "builders": []
    },
    {
     "id": "HOU-043",
@@ -19178,16 +19264,16 @@
   "local": "Houston|San Leon"
  },
  "stats": {
-  "total": 126,
+  "total": 156,
   "adopters": 3,
   "tier_a": 3,
-  "tier_b": 38,
-  "principals": 296,
-  "linkedin_held": 109,
+  "tier_b": 46,
+  "principals": 367,
+  "linkedin_held": 157,
   "audit_flags": 0,
-  "with_decider": 74,
-  "with_decider_live": 28,
-  "with_decider_confirmed": 73,
+  "with_decider": 102,
+  "with_decider_live": 35,
+  "with_decider_confirmed": 101,
   "with_decider_caveat": 1
  },
  "targets": [
@@ -22171,6 +22257,156 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "HOU-211",
+   "entity_name": "Autograph Homes",
+   "short": "Autograph Homes",
+   "homepage_url": "https://autographhomes.com/",
+   "company_li": null,
+   "team_url": "https://autographhomes.com/about",
+   "chain": null,
+   "phone": "2819742656",
+   "phone_source": "https://autographhomes.com/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "7 Houston-area communities on its About page in 2026, a year after its June 2025 launch (Realty News Report)",
+   "mvp_screen": "Opened in 2025. Its About page names a director of purchasing and a VP of operations.",
+   "synopsis": "Autograph Homes is a Houston builder that opened in 2025 under President James A. Miller and Executive VP Wade Bradow, both formerly partners at EHT of Texas, Empire Communities' U.S. division. It sells plan collections in 7 Houston-area communities and design-build homes in Spring Branch.",
+   "region": "Houston office on West Loop South, 7 communities across Greater Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "11 plans in the Trio and Hearth collections at Indigo, and 7 Houston-area communities on its About page."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "7 Houston-area communities on its About page, and no yearly closings figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Indigo",
+     "detail": "Richmond. 11 plans, 1,765 to 2,666 sq ft, from $367,990.",
+     "url": "https://autographhomes.com/community/richmond/indigo",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Riceland",
+     "detail": "Mont Belvieu.",
+     "url": "https://www.ricelandtx.com/builder/autograph-homes/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Two Step Farm",
+     "detail": "Montgomery. 1,765 to 2,497 sq ft, from the $300,000s.",
+     "url": "https://autographhomes.com/community/montgomery/two-step-farm",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://autographhomes.com/about",
+     "date": null
+    },
+    {
+     "url": "https://autographhomes.com/community/richmond/indigo",
+     "date": null
+    },
+    {
+     "url": "https://autographhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/autograph-homes-opens-its-doors/",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2025/07/01/autograph-homes-begins-construction-houston/",
+     "date": null
+    },
+    {
+     "url": "https://www.ricelandtx.com/builder/autograph-homes/",
+     "date": null
+    },
+    {
+     "url": "https://autographhomes.com/community/montgomery/two-step-farm",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "James A. Miller",
+     "role": "President",
+     "source_url": "https://autographhomes.com/about",
+     "source_evidence": "About page, leadership",
+     "linkedin_url": "https://www.linkedin.com/in/james-miller-4877438/",
+     "li_evidence": "Indexed title: James Miller, Autograph Homes Texas.",
+     "decider": true
+    },
+    {
+     "name": "Wade Bradow",
+     "role": "Executive VP",
+     "source_url": "https://autographhomes.com/about",
+     "source_evidence": "About page, leadership",
+     "linkedin_url": "https://www.linkedin.com/in/wade-bradow-238b1878/",
+     "li_evidence": "Indexed title: Wade Bradow, Autograph Homes Texas."
+    },
+    {
+     "name": "Jonathan Edwards",
+     "role": "VP of Operations",
+     "source_url": "https://autographhomes.com/about",
+     "source_evidence": "About page, leadership",
+     "linkedin_url": "https://www.linkedin.com/in/jonathan-edwards-569481b0/",
+     "li_evidence": "Indexed title: Jonathan Edwards, Autograph Homes Texas.",
+     "decider": true
+    },
+    {
+     "name": "Hannah Mills",
+     "role": "Director of Purchasing",
+     "source_url": "https://autographhomes.com/about",
+     "source_evidence": "About page, leadership",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "HOU-064",
    "entity_name": "Colina Homes",
    "region": "Houston, 14 communities",
@@ -22268,6 +22504,190 @@
    "vol": 540,
    "short": "Colina Homes",
    "cell": "clear|partial",
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-210",
+   "entity_name": "Empire Homes",
+   "short": "Empire Homes",
+   "homepage_url": "https://empirehomes.com",
+   "company_li": null,
+   "team_url": "https://empirehomes.com/about/leadership/",
+   "chain": null,
+   "phone": "7138968542",
+   "phone_source": "https://empirehomes.com/us/texas/houston/",
+   "phone_label": "Houston regional office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,056 closings company-wide in 2025, BUILDER 2026 Builder 100 (No. 61)",
+   "mvp_screen": "Names a Houston division president and a Texas regional president on its leadership page. 12 Houston communities.",
+   "synopsis": "Empire Homes, renamed from Empire Communities in 2025, builds in 12 Houston-area communities from $249,000 at Indigo to $700,000 at TownHarbour Estates. It builds in six U.S. states and Ontario, and Willowdale Asset Management is its parent. Tracy Brown is Houston division president.",
+   "region": "Houston office on West Little York, 12 communities across Greater Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Willowdale Asset Management, formerly Empire's corporate division, is the parent company.",
+     "url": "https://empirehomes.com/about/"
+    },
+    {
+     "text": "Empire acquired Charlotte-based SouthCraft Home Builders in February 2025.",
+     "url": "https://www.builderonline.com/builder-100/strategy/empire-homes-rebrands-with-a-focus-on-growth/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "12 Houston-area communities on its Houston page in 2026. River Ranch sells plans on 50' and 60' homesites."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,056 closings company-wide in 2025, BUILDER 2026 Builder 100. Houston is one of eight U.S. markets."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Audubon",
+     "detail": "Magnolia. From $500,000.",
+     "url": "https://audubonliving.com/empire-homes/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Dellrose",
+     "detail": "Hockley.",
+     "url": "https://empirehomes.com/us/texas/houston/hockley/dellrose/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Indigo",
+     "detail": "Richmond. From $249,000.",
+     "url": "https://empirehomes.com/us/texas/houston/richmond/indigo/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "River Ranch",
+     "detail": "Dayton. 50' and 60' homesites, 1,937 to 3,199 sq ft, low $300s to high $400s.",
+     "url": "https://empirehomes.com/us/texas/houston/dayton/river-ranch/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "The George",
+     "detail": "Richmond. From $400,000.",
+     "url": "https://empirehomes.com/us/texas/houston/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/us/texas/houston/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/us/texas/houston/dayton/river-ranch/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/strategy/empire-homes-rebrands-with-a-focus-on-growth/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/about/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/about/",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2025/06/23/empire-homes-st-jude-home-giveaway/",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/empire-homes/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/us/texas/houston/hockley/dellrose/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com/us/texas/houston/richmond/indigo/",
+     "date": null
+    },
+    {
+     "url": "https://empirehomes.com",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Daniel Guizzetti",
+     "role": "Co-Founder & Co-CEO",
+     "source_url": "https://empirehomes.com/about/leadership/"
+    },
+    {
+     "name": "Wendy Hudson",
+     "role": "Chief Operating Officer, USA",
+     "source_url": "https://empirehomes.com/about/leadership/",
+     "linkedin_url": "https://www.linkedin.com/in/wendy-hudson-67910b37/",
+     "li_evidence": "Indexed title: Wendy Hudson, Empire Communities. Empire Communities is the firm's name before Empire Homes."
+    },
+    {
+     "name": "Don Luke",
+     "role": "Regional President, Texas",
+     "source_url": "https://empirehomes.com/about/leadership/",
+     "decider": true
+    },
+    {
+     "name": "Tracy Brown",
+     "role": "Division President, Houston",
+     "source_url": "https://empirehomes.com/about/leadership/",
+     "linkedin_url": "https://www.linkedin.com/in/tracy-brown-a8b1138",
+     "li_evidence": "Tracy Brown - Empire Communities",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
@@ -22550,6 +22970,140 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "HOU-212",
+   "entity_name": "McKinley Homes",
+   "short": "McKinley Homes",
+   "homepage_url": "https://www.mckinleyhomeshouston.com/",
+   "company_li": null,
+   "team_url": "https://www.mckinleyhomes.com/about-mckinley-homes/",
+   "chain": null,
+   "phone": "3467928277",
+   "phone_source": "https://www.mckinleyhomeshouston.com/",
+   "phone_label": "Houston office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "450 closings company-wide in 2025, BUILDER 2026 Builder 100 list (No. 111)",
+   "mvp_screen": "Founder and managing partner Jinsong Yang is the one named executive of a five-state builder, and its Houston arm sells three plan series across 7 communities.",
+   "synopsis": "McKinley Homes is a Peachtree Corners, Georgia builder founded in 2016 by Jinsong Yang. It builds in Alabama, Georgia, New York, North Carolina and Texas, and sells homes and build-to-rent units. In Houston it sells the Freedom, Colonial and Statesman series from the $300s to the $470s.",
+   "region": "Houston office on Sam Houston Park Drive, 7 communities north, east and west of Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "3 plan series, Freedom, Colonial and Statesman, sold across 7 Houston-area communities."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "450 closings company-wide in 2025, BUILDER 2026 Builder 100. Texas is one of five states."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Grand Magnolia",
+     "detail": "Magnolia. 1,738 to 2,994 sq ft, from $345,990.",
+     "url": "https://www.mckinleyhomeshouston.com/communities-homes-list/grand-magnolia",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "River Ranch",
+     "detail": "River Ranch Meadows, Dayton. From $345,990.",
+     "url": "https://www.mckinleyhomeshouston.com/communities-homes-list/river-ranch-meadows",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Two Step Farm",
+     "detail": "Montgomery. The Elevation Series, 12 townhomes from the upper $400s. Models early 2027.",
+     "url": "https://twostepfarm.com/mckinley-homes",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/?next=true",
+     "date": null
+    },
+    {
+     "url": "https://www.mckinleyhomeshouston.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.mckinleyhomeshouston.com/communities-houston",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/mckinley-homes_o/",
+     "date": null
+    },
+    {
+     "url": "https://mckinleyhomes.com",
+     "date": null
+    },
+    {
+     "url": "https://www.mckinleyhomes.com/about-mckinley-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.mckinleyhomeshouston.com/communities-homes-list/grand-magnolia",
+     "date": null
+    },
+    {
+     "url": "https://twostepfarm.com/mckinley-homes",
+     "date": null
+    },
+    {
+     "url": "https://www.mckinleyhomeshouston.com/communities-homes-list/river-ranch-meadows",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jinsong Yang",
+     "role": "Founder and managing partner",
+     "source_url": "https://www.mckinleyhomes.com/about-mckinley-homes/",
+     "source_evidence": "About McKinley Homes page",
+     "linkedin_url": "https://www.linkedin.com/in/jinsong-yang-55691817/",
+     "li_evidence": "Indexed title: Jinsong Yang, McKinley Homes.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "HOU-066",
    "entity_name": "Sandcastle Homes",
    "region": "Inner Loop Houston",
@@ -22671,6 +23225,255 @@
      "what": "Opened Garden Homes on 34th, a 12-home gated community in Garden Oaks with two plans."
     }
    ],
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-220",
+   "entity_name": "Saratoga Homes",
+   "short": "Saratoga Homes",
+   "homepage_url": "https://www.saratogahomestexas.com/",
+   "company_li": null,
+   "team_url": "https://www.saratogahomestexas.com/about/our-story/",
+   "chain": null,
+   "phone": "8322205566",
+   "phone_source": "https://www.saratogahomestexas.com/get-in-touch/",
+   "phone_label": "Houston North office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "695 closings company-wide in 2025, rank 80 on BUILDER's 2026 Builder 100",
+   "mvp_screen": "Sells pre-configured homes in 11 Houston communities from two Houston offices.",
+   "synopsis": "Saratoga Homes is a Texas builder started in 1983 by founder David Bombach, an Army veteran, with headquarters in El Paso. It builds in Austin, El Paso, Houston and Killeen, with 11 Houston communities including Creekhaven, Ashland and Kendall Lakes. Its story page says brothers Charlie and Jack now carry on the business.",
+   "region": "El Paso headquarters, Houston North office in Park Ten and Houston South office in Rosharon",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "11 Houston communities on its 2026 site, and its Why Us page says it pre-configures its homes with built-in features."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "695 closings company-wide in 2025 on BUILDER's 2026 Builder 100, across Austin, El Paso, Houston and Killeen."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Creekhaven",
+     "detail": "Iowa Colony, near Rosharon. Now selling from $289,888.",
+     "url": "https://www.saratogahomestexas.com/community/creekhaven/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.saratogahomestexas.com/community/creekhaven/",
+     "date": null
+    },
+    {
+     "url": "https://www.saratogahomestexas.com/about/why-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.saratogahomestexas.com/about/our-story/",
+     "date": null
+    },
+    {
+     "url": "https://www.saratogahomestexas.com/get-in-touch/",
+     "date": null
+    },
+    {
+     "url": "https://www.saratogahomestexas.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "David Bombach",
+     "role": "Founder",
+     "source_url": "https://www.saratogahomestexas.com/about/our-story/",
+     "source_evidence": "Our Story page",
+     "linkedin_url": "https://www.linkedin.com/in/david-bombach-4b475023/",
+     "li_evidence": "Indexed title: David Bombach, Chief Executive Officer, Saratoga Corporate Management Group."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-216",
+   "entity_name": "StoneManor Homes",
+   "short": "StoneManor Homes",
+   "homepage_url": "https://stonemanorhomes.com/",
+   "company_li": "https://www.linkedin.com/company/stonemanorhomes",
+   "team_url": null,
+   "chain": null,
+   "phone": "8323217284",
+   "phone_source": "https://stonemanorhomes.com/about-us/",
+   "phone_label": "Site call line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "15 communities in its site menu in 2026, 9 of them coming soon (StoneManor site)",
+   "mvp_screen": "Launched in October 2025. Lists 9 of its 15 communities as coming soon.",
+   "synopsis": "StoneManor Homes is a Houston builder founded by John Tucker and Scott Sparks and announced on October 27, 2025. It prices homes from the mid $300s to over $1 million in named plan series (Inspire, Vintage, Vista) across El Lago, Katy, Magnolia, Mont Belvieu, Montgomery, Rosharon and inner-loop Houston. Its launch release cites capital partners without naming them.",
+   "region": "Downtown Houston office, building across Greater Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Launch release of October 27, 2025 says StoneManor is backed by capital partners it does not name.",
+     "url": "https://www.globenewswire.com/news-release/2025/10/27/3174676/0/en/stonemanor-homes-launches-in-houston-under-veteran-leadership.html"
+    },
+    {
+     "text": "StoneManor and Elevated Development broke ground on Acres Legacy, 52 homes in northwest Houston, in September 2026. Realfin Capital's managing partners joined the groundbreaking.",
+     "url": "https://www.globenewswire.com/news-release/2026/09/01/3354433/0/en/development-break-ground-on-52-home-acres-legacy-community-in-northwest-houston.html"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "15 Greater Houston communities on its 2026 site. Grand Magnolia and Sierra Vista sell the same Inspire and Vintage plans, The Maple and The Rainier among them."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No yearly closings figure. The October 27, 2025 launch release said construction would begin by year end."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Grand Magnolia",
+     "detail": "Grand Magnolia East in Stagecoach. Inspire and Vintage Series, from the $300s. First model opened June 20, 2026.",
+     "url": "https://stonemanorhomes.com/community/grand-magnolia/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sierra Vista",
+     "detail": "Rosharon. Vintage, Inspire and Vista Series, from the $300s.",
+     "url": "https://stonemanorhomes.com/community/sierra-vista/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://stonemanorhomes.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://stonemanorhomes.com/community/grand-magnolia/",
+     "date": null
+    },
+    {
+     "url": "https://stonemanorhomes.com/community/sierra-vista/",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2025/10/27/3174676/0/en/stonemanor-homes-launches-in-houston-under-veteran-leadership.html",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/09/01/3354433/0/en/development-break-ground-on-52-home-acres-legacy-community-in-northwest-houston.html",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/06/11/3310757/0/en/StoneManor-Homes-Announces-Grand-Opening-of-its-Inaugural-Model-Home-at-Grand-Magnolia-East-Master-Planned-Community.html",
+     "date": null
+    },
+    {
+     "url": "https://stonemanorhomes.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "John Tucker",
+     "role": "CEO",
+     "source_url": "https://www.globenewswire.com/news-release/2026/09/01/3354433/0/en/development-break-ground-on-52-home-acres-legacy-community-in-northwest-houston.html",
+     "source_evidence": "Press release, 2026-09-01 (Acres Legacy groundbreaking)",
+     "linkedin_url": "https://www.linkedin.com/in/john-tucker-6973b83b/",
+     "li_evidence": "Indexed title: John Tucker, CEO, StoneManor Homes.",
+     "decider": true
+    },
+    {
+     "name": "Scott Sparks",
+     "role": "President",
+     "source_url": "https://www.globenewswire.com/news-release/2026/09/01/3354433/0/en/development-break-ground-on-52-home-acres-legacy-community-in-northwest-houston.html",
+     "source_evidence": "Press release, 2026-09-01 (Acres Legacy groundbreaking)",
+     "linkedin_url": "https://www.linkedin.com/in/scott-sparks-124a392ba/",
+     "li_evidence": "Scott Sparks - StoneManor Homes | LinkedIn",
+     "decider": true
+    },
+    {
+     "name": "Jay Douglas",
+     "role": "President of Land Acquisitions",
+     "source_url": "https://www.globenewswire.com/news-release/2025/10/27/3174676/0/en/stonemanor-homes-launches-in-houston-under-veteran-leadership.html",
+     "source_evidence": "Launch press release, 2025-10-27",
+     "linkedin_url": "https://www.linkedin.com/in/jay-douglas-9016b329/",
+     "li_evidence": "Jay Douglas - StoneManor Homes | LinkedIn"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
    "type": "homebuilder"
   },
   {
@@ -23852,6 +24655,255 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "HOU-215",
+   "entity_name": "Gracepoint Homes",
+   "short": "Gracepoint Homes",
+   "homepage_url": "https://gracepointhomes.com/",
+   "company_li": "https://www.linkedin.com/company/gracepoint-homes",
+   "team_url": "https://gracepointhomes.com/our-team/",
+   "chain": null,
+   "phone": "2816810400",
+   "phone_source": "https://gracepointhomes.com/our-team/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Seven communities on its site in 2026, from Sugar Land north to New Waverly and west to Smithville (Gracepoint homepage)",
+   "mvp_screen": "Tom Cox, Jr. founded Gracepoint in 2006 and runs it as CEO.",
+   "synopsis": "Gracepoint Homes is a Montgomery, Texas builder founded in 2006 by Tom Cox, Jr., a former Houston Division President at Emerald Homes. It sells its own floor plans in Kresston, Chapel Bend, The Manors, Homestead Hill, The Cedars and The Point at Imperial, plus Kellar Farms in Smithville. It also runs a Build On Your Land program.",
+   "region": "Montgomery, building north of Houston and in Sugar Land",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Seven communities on its 2026 site use plans drawn for Gracepoint. One of them, Kellar Farms in Bastrop County, sits outside Greater Houston, and a Build On Your Land program adds scattered lots."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No yearly closings figure appears on its site. Seven communities are listed in 2026."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Imperial",
+     "detail": "The Point at Imperial in Sugar Land. Two-story brownstone townhomes, three plans from $579,990 to $663,990.",
+     "url": "https://gracepointhomes.com/community/the-point-at-imperial/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Kresston",
+     "detail": "65' homesites, from the $690s. Johnson Development community near Magnolia.",
+     "url": "https://kresston.com/builders",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://gracepointhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://gracepointhomes.com/our-team/",
+     "date": null
+    },
+    {
+     "url": "https://gracepointhomes.com/our-story/",
+     "date": null
+    },
+    {
+     "url": "https://gracepointhomes.com/community/the-point-at-imperial/",
+     "date": null
+    },
+    {
+     "url": "https://kresston.com/builders",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Tom Cox, Jr.",
+     "role": "Chief Executive Officer",
+     "source_url": "https://gracepointhomes.com/our-team/",
+     "source_evidence": "Our Team page, founder since 2006",
+     "linkedin_url": "https://www.linkedin.com/in/tom-cox-56998349/",
+     "li_evidence": "Tom Cox - Founder and CEO of Gracepoint Homes Chief ...",
+     "decider": true
+    },
+    {
+     "name": "Brian Borthwick",
+     "role": "Director of Operations",
+     "source_url": "https://gracepointhomes.com/our-team/",
+     "source_evidence": "Our Team page"
+    },
+    {
+     "name": "Justin Hood",
+     "role": "Chief Financial Officer",
+     "source_url": "https://gracepointhomes.com/our-team/",
+     "source_evidence": "Our Team page",
+     "linkedin_url": "https://www.linkedin.com/in/justin-hood-a80b8525/",
+     "li_evidence": "Indexed title: Justin Hood, Gracepoint Homes."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-219",
+   "entity_name": "Huntington Homes",
+   "short": "Huntington Homes",
+   "homepage_url": "https://www.huntingtonhomestx.com/houston",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "9727893500",
+   "phone_source": "https://www.huntingtonhomestx.com/houston",
+   "phone_label": "Plano office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "One Houston community, Kresston 70s, from the $770s (Huntington Houston page, 2026)",
+   "mvp_screen": "Highland Homes' customization brand, with one Houston community. Highland's COO runs supply chain.",
+   "synopsis": "Huntington Homes, trading as Sanders Custom Builder, LLC, is part of Highland Homes, which created it in 1991 for buyers wanting more customization. It builds in Celina, Parker and Prosper in DFW and at Kresston 70s in Montgomery. Highland Homes, employee-owned, had 968 Houston closings in 2025 on BUILDER's Local Leaders list.",
+   "region": "Plano office, one Houston community at Kresston in Montgomery",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Part of Highland Homes, which says its employees own 100 percent of the company.",
+     "url": "https://www.huntingtonhomestx.com/about"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Kresston 70s is its one Houston community in 2026. Its plans also sell in Celina, Parker and Prosper, and its about page describes added customization."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No Huntington closings figure. Parent Highland Homes had 968 Houston closings in 2025 and runs supply chain under its COO."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Kresston",
+     "detail": "Kresston 70s in the Heartland Reserve district. 70' homesites, 3,184 to 4,425 sq ft, from the mid 700s.",
+     "url": "https://kresston.com/builders/huntington-homes",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.huntingtonhomestx.com/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.huntingtonhomestx.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "date": null
+    },
+    {
+     "url": "https://kresston.com/builders",
+     "date": null
+    },
+    {
+     "url": "https://kresston.com/builders/huntington-homes",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jarod Mouton",
+     "role": "Division President, Houston, Highland Homes",
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "source_evidence": "Builder and Developer, 2026-08-06. Title is at the parent, Highland Homes.",
+     "linkedin_url": "https://www.linkedin.com/in/jarod-mouton-75b7a91b/",
+     "li_evidence": "Indexed title: Jarod Mouton, Highland Homes.",
+     "decider": true
+    },
+    {
+     "name": "Stephen Chambers",
+     "role": "Chief Operating Officer, Highland Homes (leads Supply Chain)",
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "source_evidence": "Builder and Developer, 2026-08-06. Title is at the parent, Highland Homes.",
+     "decider": true
+    },
+    {
+     "name": "Aaron Graham",
+     "role": "Chairman and CEO, Highland Homes",
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "source_evidence": "Builder and Developer, 2026-08-06",
+     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "HOU-067",
    "entity_name": "J. Patrick Homes",
    "region": "Houston, 12 submarkets",
@@ -24281,6 +25333,128 @@
     }
    ],
    "type": "developer"
+  },
+  {
+   "target_id": "HOU-213",
+   "entity_name": "William David Homes",
+   "short": "William David Homes",
+   "homepage_url": "https://www.williamdavidhomes.com/",
+   "company_li": null,
+   "team_url": "https://www.williamdavidhomes.com/our-story",
+   "chain": null,
+   "phone": "2812568009",
+   "phone_source": "https://www.williamdavidhomes.com/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Select homes from the $750s on 70' homesites at Austin Point, 3,100 to 4,500 sq ft (Austin Point, 2026)",
+   "mvp_screen": "CEO David Sanders runs the family builder, founded in 2012. Its Select homes reuse proven designs.",
+   "synopsis": "William David Homes is a family-run Cypress builder founded in 2012 by CEO David Sanders. It builds full custom homes and semi-custom Select homes at Austin Point, Cane Island and Towne Lake. GHBA named it Builder of the Year in 2022 and 2023.",
+   "region": "Cypress office, building in Cypress, Richmond, Katy and Montgomery",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "2 lines: Select homes on proven designs at Austin Point (70') and Cane Island (90'), and full custom homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "5 communities named on its site, and no yearly closings figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Austin Point",
+     "detail": "Richmond. 70' homesites, 3,100 to 4,500 sq ft, from the $750s.",
+     "url": "https://www.austinpoint.com/model-homes/william-david-homes-70/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Towne Lake",
+     "detail": "Cypress. From the $900's.",
+     "url": "https://townelaketexas.com/builder/william-david-homes",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Two Step Farm",
+     "detail": "Montgomery. Custom and cottage homes. Models early 2027.",
+     "url": "https://twostepfarm.com/william-david-homes",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.austinpoint.com/model-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.williamdavidhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.williamdavidhomes.com/our-story",
+     "date": null
+    },
+    {
+     "url": "https://www.austinpoint.com/model-homes/william-david-homes-70/",
+     "date": null
+    },
+    {
+     "url": "https://townelaketexas.com/builder/william-david-homes",
+     "date": null
+    },
+    {
+     "url": "https://twostepfarm.com/william-david-homes",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "David Sanders",
+     "role": "CEO",
+     "source_url": "https://www.williamdavidhomes.com/our-story",
+     "source_evidence": "Our Story page",
+     "linkedin_url": "https://www.linkedin.com/in/david-sanders-2950b814/",
+     "li_evidence": "Indexed title: David Sanders, William David Homes.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
   },
   {
    "target_id": "HOU-152",
@@ -30882,6 +32056,727 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "HOU-207",
+   "entity_name": "Brookfield Residential",
+   "short": "Brookfield Residential",
+   "homepage_url": "https://www.brookfieldresidential.com/",
+   "company_li": null,
+   "team_url": "https://houston.brookfieldresidential.com/news/meet-the-team",
+   "chain": null,
+   "phone": "2817176475",
+   "phone_source": "https://houston.brookfieldresidential.com/elyson-overview",
+   "phone_label": "Elyson line, site header",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,483 closings company-wide in 2025, BUILDER's 2026 Builder 100",
+   "mvp_screen": "Master developer or development manager at Elyson, and a builder there too.",
+   "synopsis": "Calgary-based land developer and homebuilder that builds in Houston at Elyson in Katy and at Midline in Webster. The Elyson site names Brookfield Residential Properties ULC or an affiliate as master developer or development manager of the community. BUILDER records 1,483 closings in 2025, up from 1,365 in 2024.",
+   "region": "Katy, at Elyson, and Webster, at Midline",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "5 lot widths at Elyson, from 40-foot alley load to 60-foot, and a second Houston community at Midline in Webster with 40-, 50- and 60-foot homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,483 closings company-wide in 2025, per BUILDER."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Elyson",
+     "detail": "40-foot alley load from $328,740, 45-foot from $419,990, 50-foot from $454,490, 60-foot from $534,990.",
+     "url": "https://www.brookfieldresidential.com/new-homes/texas/houston-area/katy/elyson",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Midline",
+     "detail": "40-, 50- and 60-foot traditional homes, sales center at 18126 Midline Landing, Webster.",
+     "url": "https://houston.brookfieldresidential.com/contact",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.brookfieldresidential.com/new-homes/texas/houston-area/katy/elyson",
+     "date": null
+    },
+    {
+     "url": "https://houston.brookfieldresidential.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/brookfield-residential-properties/",
+     "date": null
+    },
+    {
+     "url": "https://houston.brookfieldresidential.com/news/meet-the-team",
+     "date": null
+    },
+    {
+     "url": "https://houston.brookfieldresidential.com/elyson-overview",
+     "date": null
+    },
+    {
+     "url": "https://www.elyson.com/homes/homebuilders/brookfield-residential/",
+     "date": null
+    },
+    {
+     "url": "https://www.brookfieldresidential.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Adrian Foley",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.builderonline.com/firms/brookfield-residential-properties/",
+     "source_evidence": "BUILDER firm page, Brookfield Residential Properties",
+     "linkedin_url": "https://www.linkedin.com/in/adrian-foley-a9672245/",
+     "li_evidence": "Indexed title: Adrian Foley, Brookfield Residential."
+    },
+    {
+     "name": "Mike Robinson",
+     "role": "Director of Operations",
+     "source_url": "https://houston.brookfieldresidential.com/news/meet-the-team",
+     "source_evidence": "Brookfield Houston Meet the Team page, listed with the Houston building superintendents",
+     "linkedin_url": "https://www.linkedin.com/in/mike-robinson-503aa993/",
+     "li_evidence": "Indexed title: Mike Robinson, Brookfield Residential.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-206",
+   "entity_name": "K. Hovnanian Homes",
+   "short": "K. Hovnanian Homes",
+   "homepage_url": "https://www.khov.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,030 Houston closings in 2024, ninth in the metro, BUILDER Local Leaders 2025",
+   "mvp_screen": "Sells in 24 Houston-area communities from the low $200s. Its 10-K cites national purchasing contracts.",
+   "synopsis": "Public builder founded in 1959 that entered Houston in 2003 by buying Parkside Homes and Brighton Homes. Its Houston page lists 24 communities, among them River Ranch Trails, Grand Magnolia and Marvida. Company-wide it delivered 6,431 homes in fiscal 2025, plus 935 in joint ventures.",
+   "region": "Houston area, 24 communities from Dayton and Magnolia to Cypress",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "24 communities on K. Hovnanian's Houston page, from River Ranch Trails in Dayton to Marvida in Cypress."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,030 Houston closings in 2024, per BUILDER's Local Leaders. The 10-K cites national purchasing contracts with select vendors."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Grand Magnolia",
+     "detail": "50- and 60-foot homes, 2,198 to 3,707 sq. ft., from the low $400s.",
+     "url": "https://www.khov.com/new-construction-homes/texas/magnolia/grand-magnolia/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Marvida",
+     "detail": "Single-family homes from $500,000.",
+     "url": "https://www.khov.com/find-new-homes/texas/cypress/77433/k-hovnanian-homes/marvida",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "River Ranch Trails",
+     "detail": "50-foot homes, 1,486 to 2,563 sq. ft., from the low $200s.",
+     "url": "https://www.khov.com/new-construction-homes/texas/dayton/river-ranch-trails/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/houston-pasadena-the-woodlands-tx",
+     "date": null
+    },
+    {
+     "url": "https://www.khov.com/new-construction-homes/texas/houston-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/357294/000175392625001938/hov-20251031.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.khov.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.khov.com/new-construction-homes/texas/magnolia/grand-magnolia/",
+     "date": null
+    },
+    {
+     "url": "https://www.khov.com/find-new-homes/texas/cypress/77433/k-hovnanian-homes/marvida",
+     "date": null
+    },
+    {
+     "url": "https://www.khov.com/new-construction-homes/texas/dayton/river-ranch-trails/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Ara K. Hovnanian",
+     "role": "Chairman of the Board and Chief Executive Officer",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/357294/000175392625001938/hov-20251031.htm",
+     "source_evidence": "Form 10-K for fiscal 2025, risk factors"
+    }
+   ],
+   "vol": 1030,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-221",
+   "entity_name": "Starlight Homes",
+   "short": "Starlight Homes",
+   "homepage_url": "https://www.starlighthomes.com/houston",
+   "company_li": null,
+   "team_url": "https://www.ashtonwoods.com/corporate-info",
+   "chain": null,
+   "phone": "8322617044",
+   "phone_source": "https://www.starlighthomes.com/houston/sunterra-lakes",
+   "phone_label": "Header line, Sunterra Lakes page",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "13 Houston neighborhoods and 32 floor plans on its Houston page, 2026",
+   "mvp_screen": "An Ashton Woods company. Repeats the same named plans across 13 Houston neighborhoods.",
+   "synopsis": "Starlight Homes is the entry-level brand of Ashton Woods, and its FAQ calls it an Ashton Woods company. Its FAQ lists Houston, Austin, Dallas and San Antonio among its markets and says streamlined floor plans reduce construction costs. The parent, Ashton Woods, had 1,115 Houston closings and 10,067 closings company-wide in 2025 on BUILDER's lists.",
+   "region": "Houston, 13 neighborhoods including Sunterra Lakes in Brookshire",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Brand of Ashton Woods, 10,067 closings company-wide in 2025, rank 11 on BUILDER's 2026 Builder 100.",
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "32 floor plans across 13 Houston neighborhoods in 2026. The Magellan plan alone appears in 10 of them."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No Starlight closings figure. Parent Ashton Woods had 1,115 Houston closings in 2025 and runs purchasing under a corporate SVP."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Sunterra Lakes",
+     "detail": "Brookshire. Single-family, 1,761 to 2,736 sq. ft., one and two stories, from $1,987 a month.",
+     "url": "https://www.starlighthomes.com/houston/sunterra-lakes",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.starlighthomes.com/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.starlighthomes.com/about/faq",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.ashtonwoods.com/corporate-info",
+     "date": null
+    },
+    {
+     "url": "https://www.starlighthomes.com/houston/sunterra-lakes",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Lindsay Motley",
+     "role": "Regional President, Texas markets, Ashton Woods",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Ashton Woods corporate page. Regional President over the Texas markets since 2022.",
+     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614",
+     "decider": true
+    },
+    {
+     "name": "Adam Weaver",
+     "role": "SVP of Purchasing, Ashton Woods",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Ashton Woods corporate page",
+     "linkedin_url": "https://www.linkedin.com/in/adamweaver/",
+     "li_evidence": "Indexed title: Adam Weaver, Ashton Woods Homes.",
+     "decider": true
+    },
+    {
+     "name": "Ken Newman",
+     "role": "Senior Vice President of Construction, Ashton Woods",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Ashton Woods corporate page",
+     "linkedin_url": "https://www.linkedin.com/in/ken-newman-b3696011a/",
+     "li_evidence": "Indexed title: Ken Newman, Ashton Woods Homes.",
+     "decider": true
+    },
+    {
+     "name": "Ken Balogh",
+     "role": "President and Chief Executive Officer, Ashton Woods",
+     "source_url": "https://www.ashtonwoods.com/corporate-info",
+     "source_evidence": "Ashton Woods corporate page",
+     "linkedin_url": "https://www.linkedin.com/in/ken-balogh-02964741/",
+     "li_evidence": "Indexed title: Ken Balogh, Ashton Woods Homes."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-217",
+   "entity_name": "Terrata Homes",
+   "short": "Terrata Homes",
+   "homepage_url": "https://www.terratahomes.com/texas/houston",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "8335733914",
+   "phone_source": "https://www.terratahomes.com/texas/houston/magnolia-woods",
+   "phone_label": "Magnolia Woods sales line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "189 Terrata Homes closings company-wide in 2025, at an average of $672,000 (LGI Homes 10-K for 2025)",
+   "mvp_screen": "LGI Homes' luxury brand. LGI buys some components and materials centrally, from The Woodlands.",
+   "synopsis": "Terrata Homes is the luxury brand of LGI Homes (NASDAQ: LGIH), headquartered in The Woodlands. It sells move-in ready homes with preselected features in four Houston communities: Sunterra, Sierra Vista, Hallimore Ranch and Magnolia Woods. LGI closed 4,788 homes company-wide in 2025, and Terrata was offered in 20 of LGI's active communities at year end.",
+   "region": "The Woodlands headquarters, building in Katy, Iowa Colony, Rosenberg and Magnolia",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Brand of LGI Homes, Inc. (NASDAQ: LGIH), which closed 4,788 homes company-wide in 2025.",
+     "url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-reports-2025-annual-home-closings-and-sets-date-fourth"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four Houston communities in 2026 sell Terrata plan sets, from 4 plans at Magnolia Woods to 11 at Sierra Vista. LGI's 10-K says the brand sells move-in ready homes with preselected features."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "189 Terrata closings company-wide in 2025. Purchasing sits at the parent, which buys some components and materials centrally, per LGI's 2025 10-K."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Magnolia Woods",
+     "detail": "70' homesites in Magnolia. Four plans, 2,348 to 3,101 sq. ft., from $514,900 to $603,900.",
+     "url": "https://www.terratahomes.com/texas/houston/magnolia-woods",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sierra Vista",
+     "detail": "Iowa Colony. 11 plans, 1,662 to 3,178 sq. ft., from $383,900 to $546,900.",
+     "url": "https://www.terratahomes.com/texas/houston/sierra-vista",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1580670/000158067026000019/lgih-20251231.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.terratahomes.com/texas/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.terratahomes.com/texas/houston/sierra-vista",
+     "date": null
+    },
+    {
+     "url": "https://www.terratahomes.com/texas/houston/magnolia-woods",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2025/04/30/3071985/28788/en/Terrata-Homes-Introduces-Lineup-of-Modern-Contemporary-Homes-at-New-Hallimore-Ranch-Community-in-Southwest-Houston.html",
+     "date": null
+    },
+    {
+     "url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-reports-2025-annual-home-closings-and-sets-date-fourth",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Zach Walden",
+     "role": "Vice President of Operations for Houston",
+     "source_url": "https://www.globenewswire.com/news-release/2025/04/30/3071985/28788/en/Terrata-Homes-Introduces-Lineup-of-Modern-Contemporary-Homes-at-New-Hallimore-Ranch-Community-in-Southwest-Houston.html",
+     "source_evidence": "LGI Homes press release, 2025-04-30 (Hallimore Ranch)",
+     "linkedin_url": "https://www.linkedin.com/in/zach-walden-9b917a95/",
+     "li_evidence": "Zach Walden - LGI Homes | LinkedIn",
+     "decider": true
+    },
+    {
+     "name": "Eric Lipar",
+     "role": "Chief Executive Officer and Chairman of the Board, LGI Homes",
+     "source_url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-reports-2025-annual-home-closings-and-sets-date-fourth",
+     "source_evidence": "LGI Homes press release, 2026-01-06",
+     "linkedin_url": "https://www.linkedin.com/in/eric-lipar-31b305/",
+     "li_evidence": "Posts under this profile are indexed as \"Eric Lipar, LGI Homes, Inc.\"."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-203",
+   "entity_name": "Toll Brothers",
+   "short": "Toll Brothers",
+   "homepage_url": "https://www.tollbrothers.com/",
+   "company_li": null,
+   "team_url": "https://investors.tollbrothers.com/corporate-governance/senior-management",
+   "chain": null,
+   "phone": "8332898655",
+   "phone_source": "https://www.tollbrothers.com/blog/toll-brothers-at-kresston-montgomery-texas-grand-openings",
+   "phone_label": "Toll Brothers sales line, the only number on the Kresston opening page",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "11,292 homes delivered company-wide in fiscal 2025, Toll Brothers 10-K",
+   "mvp_screen": "Makes open wall panels in its own plants for the North, Mid-Atlantic and parts of the South. Brian Murray runs the Houston division.",
+   "synopsis": "Public luxury builder based in Fort Washington, Pennsylvania, operating in 24 states and D.C. at October 31, 2025. Its Houston division sells collections by lot width in Sienna, Woodson's Reserve, Dunham Pointe, Kresston, Audubon and Elyson. With Tri Pointe it is building Evergrove, 1,655 homes on 911 acres near Richmond.",
+   "region": "Houston division, selling in Katy, Fulshear, Richmond, Missouri City, Cypress, Magnolia, Montgomery and Webster",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Evergrove, 911 acres near Richmond, 1,655 homes split about evenly with Tri Pointe, presales from June 2026.",
+     "url": "https://coveringkaty.com/business/1-655-homes-planned-for-new-richmond-master-planned-communit/"
+    },
+    {
+     "text": "445 acres along Telge Road near Tomball, 919 homes split roughly evenly with Tri Pointe, reported April 2026.",
+     "url": "https://therealdeal.com/texas/2026/04/06/toll-brothers-tri-pointe-plan-project-in-tomball/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "4,033 sq. ft. is the smallest 80-foot plan at both Audubon and Sienna, and 1,884 sq. ft. the smallest 45-foot plan at Sienna and Woodson's Reserve. Toll sells collections by lot width across Houston master plans."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "11,292 homes delivered company-wide in fiscal 2025."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Toll Integrated Systems, its own subsidiary, makes open wall panels and trusses in Pennsylvania, Virginia, Florida and Massachusetts for the North, Mid-Atlantic and parts of the South region, per the fiscal 2025 10-K. The South region includes Texas."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Sienna",
+     "detail": "45- to 90-foot collections, 1,884 to 6,092 sq. ft., 45-foot from $379,995, 90-foot from $809,995.",
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Sienna",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Woodson's Reserve",
+     "detail": "45- to 80-foot collections, 1,884 to 5,989 sq. ft., priced from $404,995.",
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Woodson%27s-Reserve",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Kresston",
+     "detail": "70-foot homesites, six plans of 3,293 to 4,802 sq. ft., from the low $700,000s.",
+     "url": "https://www.tollbrothers.com/blog/toll-brothers-at-kresston-montgomery-texas-grand-openings",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Dunham Pointe",
+     "detail": "Estate Collection on 80-foot lots, 3,623 to 5,989 sq. ft., starting at $839,995.",
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dunham-Pointe/Estate-Collection",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Audubon",
+     "detail": "80-foot lots, 4,033 to 5,989 sq. ft., anticipated from $749,995.",
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Audubon",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Elyson",
+     "detail": "2,210 to 4,634 sq. ft., starting at $399,995.",
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Elyson",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/794170/000079417025000112/tol-20251031.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Audubon",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Sienna",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Woodson%27s-Reserve",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://investors.tollbrothers.com/corporate-governance/senior-management",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/blog/toll-brothers-at-kresston-montgomery-texas-grand-openings",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes/Houston-TX",
+     "date": null
+    },
+    {
+     "url": "https://coveringkaty.com/business/1-655-homes-planned-for-new-richmond-master-planned-communit/",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Dunham-Pointe/Estate-Collection",
+     "date": null
+    },
+    {
+     "url": "https://www.tollbrothers.com/luxury-homes-for-sale/Texas/Toll-Brothers-at-Elyson",
+     "date": null
+    },
+    {
+     "url": "https://therealdeal.com/texas/2026/04/06/toll-brothers-tri-pointe-plan-project-in-tomball/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Karl K. Mistry",
+     "role": "Chief Executive Officer",
+     "source_url": "https://investors.tollbrothers.com/corporate-governance/senior-management",
+     "source_evidence": "Toll Brothers investor relations, Senior Management page"
+    },
+    {
+     "name": "Seth J. Ring",
+     "role": "President and Chief Operating Officer",
+     "source_url": "https://investors.tollbrothers.com/corporate-governance/senior-management",
+     "source_evidence": "Toll Brothers investor relations, Senior Management page",
+     "linkedin_url": "https://www.linkedin.com/in/seth-ring-79ab2a6/",
+     "li_evidence": "Indexed title: Seth Ring, Toll Brothers."
+    },
+    {
+     "name": "Brian Murray",
+     "role": "Division President of Toll Brothers in Houston",
+     "source_url": "https://www.tollbrothers.com/blog/toll-brothers-at-kresston-montgomery-texas-grand-openings",
+     "source_evidence": "Toll Brothers blog, Kresston opening, 2026-09-01",
+     "linkedin_url": "https://www.linkedin.com/in/brian-murray-63666038/",
+     "li_evidence": "Indexed title: Brian Murray, Toll Brothers.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "HOU-134",
    "entity_name": "DSLD Homes",
    "region": "Baton Rouge HQ / Bonney, Magnolia, Montgomery",
@@ -31821,6 +33716,1023 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "HOU-214",
+   "entity_name": "Adams Homes",
+   "short": "Adams Homes",
+   "homepage_url": "https://www.adamshomes.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "8509340470",
+   "phone_source": "https://www.adamshomes.com/contact-us",
+   "phone_label": "Ask Sales",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "3,218 closings company-wide in 2025, BUILDER 2026 Builder 100 (No. 31)",
+   "mvp_screen": "One numbered plan library through three Houston divisions opened since 2018. 35 divisional offices, run from Pensacola.",
+   "synopsis": "Adams Homes is a Pensacola, Florida builder founded by Wayne Adams in 1991 and run by his son, President Bryan Adams. It opened its Lonestar Region in Houston in 2018, added a West Houston division in 2022, and sells in 12 Texas communities from the low $200s to the mid $300s. It reports over 60,000 homes built.",
+   "region": "North, South and West Houston divisions, 12 Texas communities",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "12 Texas communities sell one numbered plan library, with plans 1635-C, 1717, 1820, 1901 and 2020 at Lago Mar."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "3,218 closings company-wide in 2025, BUILDER 2026 Builder 100. Houston holds 3 of 35 divisional offices."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Lago Mar",
+     "detail": "Texas City. 1,500 to 2,200 sq ft, from the high $200s.",
+     "url": "https://www.adamshomes.com/communities/texas/south-houston/lago-mar",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "River Ranch",
+     "detail": "River Ranch Trails, Dayton. 1,635 to 2,505 sq ft, from the mid $200s.",
+     "url": "https://www.adamshomes.com/communities/texas/north-houston/river-ranch-trails",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/communities/texas",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/communities/texas/south-houston/lago-mar",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/contact-us",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/adams-story",
+     "date": null
+    },
+    {
+     "url": "https://www.adamshomes.com/communities/texas/north-houston/river-ranch-trails",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Bryan Adams",
+     "role": "President",
+     "source_url": "https://www.adamshomes.com/",
+     "source_evidence": "Company timeline, 2014 and 2026 entries, adamshomes.com",
+     "linkedin_url": "https://www.linkedin.com/in/wbryanadams/",
+     "li_evidence": "Indexed title: Bryan Adams, President of Adams Homes.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-201",
+   "entity_name": "Beazer Homes",
+   "short": "Beazer Homes",
+   "homepage_url": "https://www.beazer.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "4,427 closings company-wide in fiscal 2025, Beazer 10-K",
+   "mvp_screen": "Its annual report lists purchasing among its centralized corporate functions.",
+   "synopsis": "Public builder that sells in Dallas/Ft. Worth, Houston and San Antonio inside its West segment. Its Houston division builds production plans in master plans such as Bridgeland, Meridiana, Jubilee and Legacy. The company closed 4,427 homes in fiscal 2025, per its 10-K.",
+   "region": "Houston division, selling from Tomball and Conroe to Manvel, League City and Texas City",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "1,642 to 2,572 sq. ft. plans sell at both Jubilee and Meridiana. The 60- and 65-foot lines at Legacy, Valencia and ARTAVIA all reach 3,908 sq. ft."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "4,427 closings company-wide in fiscal 2025. The 10-K lists purchasing among centralized corporate functions and names national product vendors."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record. A 2023 Houston release cites DOE Zero Energy Ready certification, an energy standard."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Bridgeland",
+     "detail": "40-, 45- and 50-foot homes, 1,642 to 3,196 sq. ft., starting $332,990.",
+     "url": "https://www.beazer.com/houston-TX/cypress/bridgeland",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Meridiana",
+     "detail": "40-foot homes, 1,642 to 2,572 sq. ft., starting $298,990.",
+     "url": "https://www.beazer.com/houston-TX/manvel/meridiana",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Jubilee",
+     "detail": "40-foot homes, 1,642 to 2,572 sq. ft., from the $330's.",
+     "url": "https://www.liveinjubilee.com/home-builders",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Legacy",
+     "detail": "60-foot homes, 2,576 to 3,908 sq. ft., starting $574,273.",
+     "url": "https://www.beazer.com/houston-TX/league-city/legacy",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "ARTAVIA",
+     "detail": "65-foot homes, 2,754 to 3,908 sq. ft., starting $487,990.",
+     "url": "https://www.beazer.com/houston-TX/conroe/artavia",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Amira",
+     "detail": "45- and 50-foot homes, 1,767 to 3,196 sq. ft., starting $349,067.",
+     "url": "https://www.beazer.com/houston-TX/tomball/amira",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/915840/000091584025000075/bzh-20250930.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.liveinjubilee.com/home-builders",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/manvel/meridiana",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/league-city/legacy",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/manvel/valencia",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/conroe/artavia",
+     "date": null
+    },
+    {
+     "url": "https://ir.beazer.com/news-releases/news-release-details/beazer-homes-launches-energy-series-homes-houston-area",
+     "date": null
+    },
+    {
+     "url": "https://ir.beazer.com/news-releases/news-release-details/beazer-homes-breaks-ground-new-texas-city-community-sunrise-cove",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/cypress/bridgeland",
+     "date": null
+    },
+    {
+     "url": "https://www.beazer.com/houston-TX/tomball/amira",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Allan P. Merrill",
+     "role": "Chairman, President and Chief Executive Officer",
+     "source_url": "https://www.sec.gov/Archives/edgar/data/915840/000091584025000075/bzh-20250930.htm",
+     "source_evidence": "Signature page, Form 10-K for fiscal 2025, signed 2025-11-13",
+     "linkedin_url": "https://www.linkedin.com/in/allan-merrill/",
+     "li_evidence": "Indexed title: Allan Merrill, Beazer Homes."
+    },
+    {
+     "name": "Jim Ellison",
+     "role": "President, Houston Division",
+     "source_url": "https://ir.beazer.com/news-releases/news-release-details/beazer-homes-breaks-ground-new-texas-city-community-sunrise-cove",
+     "source_evidence": "Beazer press release, 2023-08-24, Sunrise Cove groundbreaking",
+     "linkedin_url": "https://www.linkedin.com/in/jim-ellison-1a449133",
+     "li_evidence": "Search result: Jim Ellison - Division President at Beazer Homes",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-209",
+   "entity_name": "Davidson Homes",
+   "short": "Davidson Homes",
+   "homepage_url": "https://www.davidsonhomes.com/home-building-blog/2026/05/new-construction-homes-in-houston-tx-davidson-homes-communities/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "2816092144",
+   "phone_source": "https://www.davidsonhomes.com/contact/division-offices/",
+   "phone_label": "Houston division office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,683 closings company-wide in 2025, BUILDER 2026 Builder 100 (No. 43)",
+   "mvp_screen": "Mark Eubanks runs the Houston division, one of six states run from Huntsville, Alabama. 8-plan libraries at Emberly and Lago Mar.",
+   "synopsis": "Davidson Homes is a Huntsville, Alabama builder founded by Adam Davidson in 2009. It entered Houston in 2021 and sells in 15 Houston-area communities from $220,000 to over $470,000. It builds in six states and bought Evermore Homes in Arizona in 2025.",
+   "region": "Katy division office, 15 communities across Greater Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Davidson Homes acquired Evermore Homes, entering Arizona, in 2025.",
+     "url": "https://www.davidsonhomes.com/home-building-blog/2025/03/davidson-homes-acquires-evermore-homes/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "15 Houston-area communities in 2026, per the Nan & Company release. Lago Mar and Emberly each offer 8 plans."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,683 closings company-wide in 2025, BUILDER 2026 Builder 100. Houston is one division in six states."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Emberly",
+     "detail": "Beasley. 8 plans, 1,438 to 2,542 sq ft, $264,990 to $342,990.",
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/beasley/emberly/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Lago Mar",
+     "detail": "Texas City. 8 plans in Signature and Executive series, 1,875 to 2,884 sq ft, $374,990 to $469,990+.",
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/texas-city/lago-mar/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "River Ranch",
+     "detail": "River Ranch Meadows, Dayton. 7 plans, 1,438 to 2,457 sq ft, $284,990 to $349,990+.",
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/dayton/river-ranch-meadows/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sierra Vista",
+     "detail": "Rosharon. From $450,000.",
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/iowa-colony/sierra-vista/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sunterra",
+     "detail": "Katy.",
+     "url": "https://www.davidsonhomes.com/home-building-blog/2026/05/new-construction-homes-in-houston-tx-davidson-homes-communities/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://nanproperties.com/blog/nan-and-company-properties-named-exclusive-sales-and-marketing-partner-for-davidson-homes-houston-communities",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/texas-city/lago-mar/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/beasley/emberly/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/davidson-homes-is-enjoying-the-view-while-climbing-the-mountain_o",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/home-building-blog/2026/07/houston-habitat-for-humanity-and-davidson-homes-celebrate-robins-landing-grand-opening/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/contact/division-offices/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/home-building-blog/2026/05/new-construction-homes-in-houston-tx-davidson-homes-communities/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/home-building-blog/2025/03/davidson-homes-acquires-evermore-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/iowa-colony/sierra-vista/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/houston-market-area/dayton/river-ranch-meadows/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-markets/davidson-homes-expands-into-houston-market_o",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Brandon Jones",
+     "role": "CEO",
+     "source_url": "https://www.builderonline.com/builder-100/davidson-homes-is-enjoying-the-view-while-climbing-the-mountain_o",
+     "source_evidence": "BUILDER Builder 100 profile, 2024"
+    },
+    {
+     "name": "Mark Eubanks",
+     "role": "Houston Division President",
+     "source_url": "https://www.davidsonhomes.com/home-building-blog/2026/07/houston-habitat-for-humanity-and-davidson-homes-celebrate-robins-landing-grand-opening/",
+     "source_evidence": "Davidson Homes blog, Robins Landing grand opening, 2026-07",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-232",
+   "entity_name": "KB Home",
+   "short": "KB Home",
+   "homepage_url": "https://www.kbhome.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "2816683975",
+   "phone_source": "https://www.kbhome.com/new-homes-houston",
+   "phone_label": "Regional Sales Office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,062 Houston closings in 2024, No. 8 in BUILDER's 2025 Local Leaders for Houston",
+   "mvp_screen": "Marc Tindall runs the Houston division. 28 communities on its Houston page, from $172,995.",
+   "synopsis": "Public homebuilder with a Houston division. Its Houston page lists 28 communities, 23 selling and 5 coming soon, priced from $172,995 at Madera Trails in New Caney. The company delivered 12,902 homes in fiscal 2025, per its fourth-quarter release.",
+   "region": "Houston division, selling from Conroe, Magnolia and Tomball to Rosenberg, Manvel and Texas City",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "KB Home named Robert McGibney CEO effective March 1, 2026, with Jeffrey Mezger as Executive Chairman.",
+     "url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-NAMES-ROBERT-MCGIBNEY-CHIEF-EXECUTIVE-OFFICER/default.aspx"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "28 Houston communities on KB Home's Houston page, with one- and two-story plans of up to five bedrooms at Brighton, Davina and Madera."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "12,902 homes delivered company-wide in fiscal 2025 (KB Home)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Brighton Preserve and Brighton Trails",
+     "detail": "Hockley. From $216,995 at Brighton Trails and $258,995 at Brighton Preserve.",
+     "url": "https://www.kbhome.com/new-homes-houston/brighton-preserve",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Davina",
+     "detail": "Rosenberg. From $254,995. Opened March 2026, Lamar ISD.",
+     "url": "https://www.kbhome.com/new-homes-houston/davina",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sweetgrass Village",
+     "detail": "Crosby. From $209,995, inside the Sweetgrass Village master plan.",
+     "url": "https://www.kbhome.com/new-homes-houston/sweetgrass-village",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2025/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.kbhome.com/new-homes-houston",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/kb-home-opens-brighton-new-homes-from-the-low-200ks-in-hockley-texas-302888625.html",
+     "date": null
+    },
+    {
+     "url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-ANNOUNCES-THE-GRAND-OPENING-OF-ITS-NEWEST-COMMUNITY-IN-ROSENBERG-TEXAS/default.aspx",
+     "date": null
+    },
+    {
+     "url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2025/KB-Home-Reports-2025-Fourth-Quarter-and-Full-Year-Results/default.aspx",
+     "date": null
+    },
+    {
+     "url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-NAMES-ROBERT-MCGIBNEY-CHIEF-EXECUTIVE-OFFICER/default.aspx",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/kb-home-announces-the-grand-opening-of-its-newest-community-within-the-highly-desirable-sweetgrass-village-master-plan-in-crosby-texas-302693058.html",
+     "date": null
+    },
+    {
+     "url": "https://www.linkedin.com/in/marc-tindall-7661a012/",
+     "date": null
+    },
+    {
+     "url": "https://www.kbhome.com/new-homes-houston/brighton-preserve",
+     "date": null
+    },
+    {
+     "url": "https://www.kbhome.com/new-homes-houston/davina",
+     "date": null
+    },
+    {
+     "url": "https://www.kbhome.com/new-homes-houston/sweetgrass-village",
+     "date": null
+    },
+    {
+     "url": "https://www.kbhome.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Marc Tindall",
+     "role": "President, KB Home's Houston division",
+     "source_url": "https://www.prnewswire.com/news-releases/kb-home-opens-brighton-new-homes-from-the-low-200ks-in-hockley-texas-302888625.html",
+     "source_evidence": "KB Home press release, 2026-09-24, Brighton opening in Hockley",
+     "linkedin_url": "https://www.linkedin.com/in/marc-tindall-7661a012/",
+     "li_evidence": "Search result: Marc Tindall - KB Home | LinkedIn",
+     "decider": true
+    },
+    {
+     "name": "Robert McGibney",
+     "role": "President and Chief Executive Officer",
+     "source_url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-NAMES-ROBERT-MCGIBNEY-CHIEF-EXECUTIVE-OFFICER/default.aspx",
+     "source_evidence": "KB Home press release, 2026-01-28, effective 2026-03-01"
+    }
+   ],
+   "vol": 1062,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-204",
+   "entity_name": "Shea Homes",
+   "short": "Shea Homes",
+   "homepage_url": "https://www.sheahomes.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "8666967432",
+   "phone_source": "https://www.sheahomes.com/new-homes/texas/houston-area",
+   "phone_label": "Shea Homes new home advisor line, site header",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "2,605 closings company-wide in 2025, BUILDER's 2026 Builder 100",
+   "mvp_screen": "Develops its own Evergreen master plan in Conroe. Sells one 1,529 to 2,588 sq. ft. range on 40-foot lots in three Houston communities.",
+   "synopsis": "Builder whose Houston division was established in 2013. It broke ground in 2022 on Evergreen, its own 740-acre Conroe community of about 2,000 homesites, where Chesmar and Perry also build, and opened Trilogy's first Texas community there in December 2025. BUILDER records 2,605 company-wide closings in 2025.",
+   "region": "Houston division since 2013, building in Conroe, Magnolia, Missouri City, League City, Manvel and Hockley",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "1,529 to 2,588 sq. ft. 40-foot plans sell at Evergreen, Sienna and Woodhavyn. 3,086 to 4,838 sq. ft. 70-foot plans sell at Evergreen, Sienna and Meridiana."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "2,605 closings company-wide in 2025, per BUILDER,."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Evergreen",
+     "detail": "40- to 70-foot lines, 1,529 to 4,838 sq. ft., 40-foot from $339,990, 70-foot from $605,990.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-40",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Woodhavyn",
+     "detail": "40-, 50- and 60-foot lines, 40-foot from $335,990, 60-foot from $490,990.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/magnolia/woodhavyn-40",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sienna",
+     "detail": "40-, 65- and 70-foot lines, priced from $540,990 on 65-foot lots.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-65",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Legacy",
+     "detail": "65-foot homes, 2,671 to 4,136 sq. ft., priced from $639,990.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/league-city/legacy-65",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Meridiana",
+     "detail": "70-foot homes, 3,086 to 4,838 sq. ft., priced from $584,990.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/manvel/meridiana-70",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "The Grand Prairie",
+     "detail": "60-foot homes, priced from $549,990.",
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/hockley/the-grand-prairie",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-40",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-40",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/magnolia/woodhavyn-40",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-70",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-70",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/manvel/meridiana-70",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2025/12/18/shea-homes-trilogy-converde-at-evergreen/",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/news-events/news/htx-shea-homes-breaks-ground-on-evergreen",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/blog/htx-why-we-build-where-we-build",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/houston/cypress/development/2025/10/24/shea-homes-coming-to-the-grand-prairie-development-in-hockley/",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-65",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/league-city/legacy-65",
+     "date": null
+    },
+    {
+     "url": "https://www.sheahomes.com/new-homes/texas/houston-area/hockley/the-grand-prairie",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Keith Luechtefeld",
+     "role": "Houston Division President",
+     "source_url": "https://houstonagentmagazine.com/2025/12/18/shea-homes-trilogy-converde-at-evergreen/",
+     "source_evidence": "Houston Agent Magazine, 2025-12-18, Converde at Evergreen. Same title in Shea's Evergreen release, 2022-09-30",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-205",
+   "entity_name": "Tri Pointe Homes",
+   "short": "Tri Pointe Homes",
+   "homepage_url": "https://www.tripointehomes.com/",
+   "company_li": "https://www.linkedin.com/company/tri-pointe-homes",
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "4,947 homes delivered company-wide in 2025, Tri Pointe 10-K",
+   "mvp_screen": "Sumitomo Forestry completed its purchase of Tri Pointe in 2026. The Houston division reports to Sumitomo Forestry America.",
+   "synopsis": "Builder in 13 states that sells in Houston under the Tri Pointe name, formerly Trendmaker Homes. Its Houston page lists 40 communities, among them Woodson's Reserve, Sienna, Dunham Pointe, Bridgeland and Harvest Green. Sumitomo Forestry completed its acquisition on 14 May 2026.",
+   "region": "Houston division, formerly Trendmaker Homes, with 40 communities on its Houston page",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Sumitomo Forestry completed its acquisition of Tri Pointe on 2026-05-14 at $47.00 a share.",
+     "url": "https://www.globenewswire.com/news-release/2026/05/14/3294972/0/en/sumitomo-forestry-completes-acquisition-of-tri-pointe-homes-creating-a-leading-u-s-homebuilder.html"
+    },
+    {
+     "text": "Evergrove, 911 acres near Richmond, 1,655 homes split about evenly with Toll Brothers.",
+     "url": "https://coveringkaty.com/business/1-655-homes-planned-for-new-richmond-master-planned-communit/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "40 communities on Tri Pointe's Houston page. The Bartlett plan sells at both Dunham Pointe, from $599,900, and Woodson's Reserve, from $590,900."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "4,947 homes delivered company-wide in 2025. Sumitomo Forestry has owned Tri Pointe since May 2026."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Woodson's Reserve",
+     "detail": "50-, 60- and 80-foot lines, from the mid $400s.",
+     "url": "https://www.tripointehomes.com/tx/houston/woodsons-reserve-50",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sienna",
+     "detail": "45-, 60- and 80-foot lines, from the mid $400s.",
+     "url": "https://www.tripointehomes.com/tx/houston/sienna-60",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Dunham Pointe",
+     "detail": "60- and 80-foot lines, from the high $500s.",
+     "url": "https://www.tripointehomes.com/tx/houston/dunham-pointe",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Bridgeland",
+     "detail": "70- and 80-foot lines, priced from the low $800s.",
+     "url": "https://www.tripointehomes.com/tx/houston/bridgeland-70",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Harvest Green",
+     "detail": "75-foot homes, 3,799 to 4,727 sq. ft., from the mid $900s.",
+     "url": "https://www.tripointehomes.com/tx/houston/harvest-green-75",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Jubilee",
+     "detail": "50-foot homes, priced from the high $300s.",
+     "url": "https://www.tripointehomes.com/tx/houston/jubilee-50",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1561680/000156168026000008/tph-20251231.htm",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/find-your-home/tx/houston",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/dunham-pointe",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/woodsons-reserve-60",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/05/14/3294972/0/en/sumitomo-forestry-completes-acquisition-of-tri-pointe-homes-creating-a-leading-u-s-homebuilder.html",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/land/local-markets/tri-pointe-homes-debuts-335-home-community-westridge-cove-in-northwest-houston_o",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://coveringkaty.com/business/1-655-homes-planned-for-new-richmond-master-planned-communit/",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/woodsons-reserve-50",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/sienna-60",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/bridgeland-70",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/harvest-green-75",
+     "date": null
+    },
+    {
+     "url": "https://www.tripointehomes.com/tx/houston/jubilee-50",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonchronicle.com/business/real-estate/article/Trendmaker-Homes-to-rebrand-as-TRI-Pointe-Homes-15882270.php",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Doug Bauer",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.globenewswire.com/news-release/2026/05/14/3294972/0/en/sumitomo-forestry-completes-acquisition-of-tri-pointe-homes-creating-a-leading-u-s-homebuilder.html",
+     "source_evidence": "Sumitomo Forestry press release, 2026-05-14",
+     "linkedin_url": "https://www.linkedin.com/in/doug-bauer-0a6586140",
+     "li_evidence": "Indexed title: Doug Bauer, TRI Pointe Group."
+    },
+    {
+     "name": "Tom Mitchell",
+     "role": "President and Chief Operating Officer",
+     "source_url": "https://www.globenewswire.com/news-release/2026/05/14/3294972/0/en/sumitomo-forestry-completes-acquisition-of-tri-pointe-homes-creating-a-leading-u-s-homebuilder.html",
+     "source_evidence": "Sumitomo Forestry press release, 2026-05-14"
+    },
+    {
+     "name": "Joe Mandola",
+     "role": "Houston Division President",
+     "source_url": "https://www.builderonline.com/land/local-markets/tri-pointe-homes-debuts-335-home-community-westridge-cove-in-northwest-houston_o",
+     "source_evidence": "BUILDER, 2022-08-26, Westridge Cove launch",
+     "linkedin_url": "https://www.linkedin.com/in/joe-mandola-14389511b/",
+     "li_evidence": "Search result: Joe Mandola - Tri Pointe Homes | LinkedIn",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "HOU-034",
    "entity_name": "Brightland Homes",
    "region": "Addison HQ / Montgomery, Harris",
@@ -31926,6 +34838,195 @@
    "has_decider": true,
    "decider_confirmed": false,
    "decider_caveat": true,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "HOU-202",
+   "entity_name": "Drees Custom Homes",
+   "short": "Drees Custom Homes",
+   "homepage_url": "https://www.dreeshomes.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "2816538850",
+   "phone_source": "https://www.dreeshomes.com/new-homes-houston/",
+   "phone_label": "Houston office, 11125 Equity Drive",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "2,286 closings company-wide in 2025, BUILDER's 2026 Builder 100",
+   "mvp_screen": "Sells its plans as custom homes in 11 metro areas. A private company.",
+   "synopsis": "Privately held builder that entered Houston in 2014 and sells there as Drees Custom Homes. It builds in master plans including Everly, Grange, Two Step Farm, Legacy, Audubon and COLTON. BUILDER records 2,286 company-wide closings in 2025, and a January 2025 release puts Drees in 11 metro areas.",
+   "region": "Houston office on Equity Drive, building in Katy, Hockley, Montgomery, Richmond and League City master plans",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Drees bought Monticello Homes of San Antonio, announced 2025-01-31, and now builds in Dallas/Fort Worth, Austin, Houston and San Antonio.",
+     "url": "https://www.dreeshomes.com/press-news/drees-homes-grows-with-addition-of-monticello-homes/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "2,938 to 4,452 sq. ft. front-entry plans sell at both Two Step Farm and Legacy. The Houston brand is Drees Custom Homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "2,286 closings company-wide in 2025, per BUILDER,."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "partial|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Everly",
+     "detail": "45- and 60-foot homes, 1,781 to 3,862 sq. ft., $389,900 to $665,900.",
+     "url": "https://www.dreeshomes.com/new-homes-houston/hockley/comm-everly/everly-45/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Grange",
+     "detail": "55-foot homes, 2,332 to 3,608 sq. ft., $523,900 to $722,900.",
+     "url": "https://www.dreeshomes.com/new-homes-houston/katy/comm-grange/grange-55/?view=floorplans",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Two Step Farm",
+     "detail": "Rear- and front-entry homes, 2,750 to 4,452 sq. ft., $588,900 to $845,900.",
+     "url": "https://www.dreeshomes.com/new-homes-houston/montgomery-tx/comm-two-step-farm/two-step-farm-front/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Legacy",
+     "detail": "70-foot homes, 2,938 to 4,452 sq. ft., from the mid-$650s.",
+     "url": "https://www.legacybyhillwood.com/our-builders/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Audubon",
+     "detail": "80-foot homes, 3,096 to 5,035 sq. ft., from the $730s.",
+     "url": "https://audubonliving.com/drees-custom-homes/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "COLTON",
+     "detail": "70-foot homes, 2,800 to 4,600 sq. ft., from the $590s.",
+     "url": "https://coltontx.com/builders/drees-homes/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-houston/montgomery-tx/comm-two-step-farm/two-step-farm-front/",
+     "date": null
+    },
+    {
+     "url": "https://www.legacybyhillwood.com/our-builders/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/drees-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/press-news/drees-homes-grows-with-addition-of-monticello-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2019/04/02/1795575/0/en/Drees-Custom-Homes-Announces-New-Houston-Division-President.html",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-houston/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-houston/hockley/comm-everly/everly-45/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-houston/katy/comm-grange/grange-55/?view=floorplans",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/drees-custom-homes/",
+     "date": null
+    },
+    {
+     "url": "https://coltontx.com/builders/drees-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "David Drees",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-grows-with-addition-of-monticello-homes/",
+     "source_evidence": "Drees press release, 2025-01-31, Monticello Homes acquisition",
+     "linkedin_url": "https://www.linkedin.com/in/david-drees-2882785a/",
+     "li_evidence": "Indexed title: David Drees, Drees Homes."
+    },
+    {
+     "name": "Tim Terrell",
+     "role": "President",
+     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-grows-with-addition-of-monticello-homes/",
+     "source_evidence": "Drees press release, 2025-01-31, Monticello Homes acquisition"
+    },
+    {
+     "name": "Andrew Howells",
+     "role": "President, Houston Division",
+     "source_url": "https://www.globenewswire.com/news-release/2019/04/02/1795575/0/en/Drees-Custom-Homes-Announces-New-Houston-Division-President.html",
+     "source_evidence": "Drees Custom Homes press release, 2019-04-02, effective that day",
+     "linkedin_url": "https://www.linkedin.com/in/andrew-howells-b8914b86/",
+     "li_evidence": "Search result: Andrew Howells - Drees Custom Homes | LinkedIn",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
    "type": "homebuilder"
   },
   {
@@ -32318,6 +35419,211 @@
    "type": "land"
   },
   {
+   "target_id": "HOU-233",
+   "entity_name": "Hines",
+   "short": "Hines",
+   "homepage_url": "https://www.hines.com/",
+   "company_li": null,
+   "team_url": "https://www.hines.com/about/staff-leadership",
+   "chain": null,
+   "phone": "7136218000",
+   "phone_source": "https://www.hines.com/contact",
+   "phone_label": "Headquarters (Houston)",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Heritage Bend: nearly 3,000 acres and more than 7,000 planned homes near Fulshear (Hines, 2025)",
+   "mvp_screen": "Paid for mass timber at T3 Minneapolis, 2016. Sells lots at four Houston master plans, from Heritage Bend to Sandy Point.",
+   "synopsis": "Houston-based real estate investment manager and developer. Hines announced Wildflower Ranch in 2020, 1,100 acres and 3,300 planned homes in north Fort Worth near Justin, and sold it with six other DFW plans to Starwood Capital in April 2025. Since then it has launched Heritage Bend, nearly 3,000 acres and more than 7,000 homes near Fulshear, and a 1,532-acre, 2,730-lot plan in League City, both in Houston.",
+   "region": "Houston headquarters. Master plans in Fulshear, League City, Iowa Colony and Waller.",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Sold 11 Texas master-planned communities with more than 16,000 remaining lots to Starwood Capital, April 2025.",
+     "url": "https://www.hines.com/news/hines-sells-11-master-planned-communities-in-texas-to-starwood-capital-group"
+    },
+    {
+     "text": "Meadowlark at Wildflower Ranch is a partnership of Hines, PGIM Real Estate and Trez Capital.",
+     "url": "https://www.hines.com/news/hines-launches-leasing-at-single-family-rental-community-meadowlark-at-wildflower-ranch-in-north-texas"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "8 builder partners at Heritage Bend and 5 at League City, both Houston plans. In DFW, 129 rental homes at Meadowlark by William Ryan Homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 7,000 homes planned at Heritage Bend on nearly 3,000 acres (Hines, 2025). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "T3 Minneapolis, 224,000 sq. ft. of mass timber offices completed by Hines in November 2016."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "fail",
+    "innovation": "clear"
+   },
+   "cell": "partial|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Wildflower Ranch",
+     "detail": "North Fort Worth near Justin. 1,100 acres and 3,300 planned homes. Sold to Starwood Capital in April 2025, now developed by a Starwood Land affiliate.",
+     "url": "https://wildflowerranchtx.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Meadowlark at Wildflower Ranch",
+     "detail": "Justin. 129 single-family rental homes by William Ryan Homes, with PGIM Real Estate and Trez Capital. Leasing from August 2025.",
+     "url": "https://www.hines.com/news/hines-launches-leasing-at-single-family-rental-community-meadowlark-at-wildflower-ranch-in-north-texas",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Heritage Bend",
+     "detail": "Fulshear, Houston. Nearly 3,000 acres, more than 7,000 homes. Builders include Toll Brothers, Perry, Highland, Village Builders/Lennar and Westin. Lots from early 2027.",
+     "url": "https://houstonagentmagazine.com/2026/07/22/highland-homes-breaks-ground-heritage-bend-mpc/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "League City master plan",
+     "detail": "League City, Houston. 1,532 acres, 2,730 lots. Highland, Newmark, Westin, David Weekley and Chesmar. Lots late 2027.",
+     "url": "https://www.hines.com/news/hines-acquires-1-500-acres-in-league-city-for-master-planned-community-development",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Sandy Point",
+     "detail": "Iowa Colony, Houston. 954 acres, about 2,100 homes, announced April 2023.",
+     "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-houstons-iowa-colony",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Waller master plan",
+     "detail": "Waller, Harris County. 528 acres, about 1,400 homes. Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock, announced November 2023.",
+     "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.hines.com/news/hines-acquires-nearly-3-000-acres-in-west-houston-for-master-planned-community",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-acquires-1-500-acres-in-league-city-for-master-planned-community-development",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-launches-leasing-at-single-family-rental-community-meadowlark-at-wildflower-ranch-in-north-texas",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/case-studies/t3",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/about/staff-leadership/rob-witte",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-sells-11-master-planned-communities-in-texas-to-starwood-capital-group",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/properties/wildflower-ranch-fort-worth",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-announces-wildflower-ranch-a-new-master-planned-community-in-north-texas",
+     "date": null
+    },
+    {
+     "url": "https://wildflowerranchtx.com/",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2026/07/22/highland-homes-breaks-ground-heritage-bend-mpc/",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-houstons-iowa-colony",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller",
+     "date": null
+    },
+    {
+     "url": "https://www.linkedin.com/in/rob-witte-837b812a/",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/about/staff-leadership",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2025/04/09/developer-sells-7-d-fw-neighborhoods-as-part-of-800-million-deal/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Rob Witte",
+     "role": "Senior Managing Director, Head of Residential Land Development and Self-Storage Americas",
+     "source_url": "https://www.hines.com/about/staff-leadership/rob-witte",
+     "source_evidence": "Hines staff leadership page, Dallas",
+     "linkedin_url": "https://www.linkedin.com/in/rob-witte-837b812a/",
+     "li_evidence": "Search result: Rob Witte - VP at Hines | LinkedIn",
+     "decider": true
+    },
+    {
+     "name": "Ray Lawler",
+     "role": "Managing Partner, Head of Americas",
+     "source_url": "https://www.hines.com/news/hines-sells-11-master-planned-communities-in-texas-to-starwood-capital-group",
+     "source_evidence": "Hines press release, 2025-04-04, Starwood sale"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
    "target_id": "HOU-133",
    "entity_name": "Hillwood Communities",
    "region": "Dallas HQ / Manvel, Pearland, League City",
@@ -32557,6 +35863,454 @@
    "type": "land"
   },
   {
+   "target_id": "HOU-222",
+   "entity_name": "AIRIA Development Company",
+   "short": "AIRIA Development Company",
+   "homepage_url": "https://airiadevco.com/",
+   "company_li": null,
+   "team_url": "https://airiadevco.com/our-team/",
+   "chain": null,
+   "phone": "2818097800",
+   "phone_source": "https://airiadevco.com/contact-us/",
+   "phone_label": "Office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "COLTON: 5,700 acres, about 11,000 single-family homes at build-out (AIRIA, 2024 announcement and COLTON FAQ)",
+   "mvp_screen": "COLTON's first phase splits about 685 lots among 11 builders.",
+   "synopsis": "AIRIA Development Company is a Houston master-plan developer led by President Travis Stone. It formed in 2018 from Aliana Development Company, which built the 2,000-acre Aliana in Richmond. It now develops ARTAVIA, a 2,842-acre community near Conroe, and COLTON, a 5,700-acre community on SH 249 in the Todd Mission ETJ.",
+   "region": "Houston office on SH 249, with master plans in the Conroe area and Todd Mission, north of Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "11 production builders in COLTON phase one, 10 at ARTAVIA, both in Greater Houston."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "About 685 lots in COLTON phase one, and about 6,500 homes planned at ARTAVIA (AIRIA). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "ARTAVIA",
+     "detail": "Conroe area, Montgomery County. 2,842 acres, about 6,500 homes planned. Builders include Beazer, Chesmar, David Weekley, Highland, Perry and Westin, from the high $200s to $800s.",
+     "url": "https://artaviatx.com/builders/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "COLTON",
+     "detail": "Todd Mission ETJ on SH 249. 5,700 acres, about 11,000 single-family homes at build-out. Phase one of about 685 lots, 45 ft. to 80 ft. wide, with 11 builders, from the $340s to $800s.",
+     "url": "https://coltontx.com/community-facts/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://airiadevco.com/airia-development-company-announces-new-5700-acre-community/",
+     "date": null
+    },
+    {
+     "url": "https://coltontx.com/community-facts/",
+     "date": null
+    },
+    {
+     "url": "https://artaviatx.com/builders/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/airia-curates-best-in-texas-homebuilder-lineup-for-colton/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/our-portfolio/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/our-team/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/contact-us/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://airiadevco.com/fact-sheet/",
+     "date": null
+    },
+    {
+     "url": "https://coltontx.com/",
+     "date": null
+    },
+    {
+     "url": "https://coltontx.com/builders/",
+     "date": null
+    },
+    {
+     "url": "https://artaviatx.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "E. Travis Stone, Jr.",
+     "role": "President",
+     "source_url": "https://airiadevco.com/our-team/",
+     "source_evidence": "Our Team page",
+     "decider": true
+    },
+    {
+     "name": "Tyler Stone",
+     "role": "Vice President of Land Development",
+     "source_url": "https://airiadevco.com/our-team/",
+     "source_evidence": "Our Team page",
+     "linkedin_url": "https://www.linkedin.com/in/tyler-stone-45017277/",
+     "li_evidence": "Indexed title: Tyler Stone, Aliana Development Company. Aliana is AIRIA's community.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-225",
+   "entity_name": "EMBER Real Estate & Development",
+   "short": "EMBER Real Estate & Development",
+   "homepage_url": "https://www.ember-grp.com/",
+   "company_li": "https://www.linkedin.com/company/embertx",
+   "team_url": "https://www.ember-grp.com/team/",
+   "chain": null,
+   "phone": "2815717007",
+   "phone_source": "https://www.ember-grp.com/",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "The Grand Prairie: 639 sales in 2025, No. 17 nationally (RCLCO ranking of 2025 master-plan sales)",
+   "mvp_screen": "Sells The Grand Prairie lots to six builders, from Lennar to Village Builders. Lists LightHaven at District West, 117 build-to-rent homes in Katy.",
+   "synopsis": "EMBER is a Houston developer of land, condominiums, multifamily and build-to-rent homes, led by President Jeb Kolby. Its largest project is The Grand Prairie in Hockley, more than 1,700 acres with about 6,000 planned homes. It also develops Windrose Green in Angleton, 154 acres planned for 648 homes.",
+   "region": "Houston office on Westheimer, with master plans in Hockley and Angleton",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "EMBER lists an investor portal and develops for capital partners, per its projects page.",
+     "url": "https://www.ember-grp.com/projects/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Six production builders at The Grand Prairie, on 40' to 70' lots."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "639 Grand Prairie sales in 2025 (RCLCO). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "The Grand Prairie",
+     "detail": "Hockley, Waller ISD. 1,730 acres, about 6,000 planned homes. 639 sales in 2025 (RCLCO). Builders David Weekley, Lennar, Perry, Shea, Village Builders and Westin, from the mid $200s to $700s.",
+     "url": "https://thegrandprairietx.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Windrose Green",
+     "detail": "Angleton. 154 acres planned for 648 single-family homes.",
+     "url": "https://www.ember-grp.com/projects/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "LightHaven at District West",
+     "detail": "Richmond/Katy area. Build-to-rent, 117 detached single-family homes.",
+     "url": "https://www.ember-grp.com/projects/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
+     "date": null
+    },
+    {
+     "url": "https://thegrandprairietx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.ember-grp.com/team/",
+     "date": null
+    },
+    {
+     "url": "https://www.ember-grp.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.ember-grp.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.ember-grp.com/projects/",
+     "date": null
+    },
+    {
+     "url": "https://thegrandprairietx.com/live-here/",
+     "date": null
+    },
+    {
+     "url": "https://thegrandprairietx.com/press/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jeb Kolby",
+     "role": "President",
+     "source_url": "https://www.ember-grp.com/team/",
+     "source_evidence": "Team page, Executive Team",
+     "linkedin_url": "https://www.linkedin.com/in/jkolby/",
+     "li_evidence": "Indexed title: Jeb Kolby, EMBER.",
+     "decider": true
+    },
+    {
+     "name": "Harry Masterson",
+     "role": "Principal",
+     "source_url": "https://www.ember-grp.com/team/",
+     "source_evidence": "Team page, Principals",
+     "linkedin_url": "https://www.linkedin.com/in/harry-masterson-58653215/",
+     "li_evidence": "Indexed title: Harry Masterson, EMBER Real Estate Investment & Development."
+    },
+    {
+     "name": "Jordan Mack",
+     "role": "Principal",
+     "source_url": "https://www.ember-grp.com/team/",
+     "source_evidence": "Team page, Principals",
+     "linkedin_url": "https://www.linkedin.com/in/jordanrmack",
+     "li_evidence": "Indexed title: Jordan Mack, Managing Principal at EMBER Real Estate."
+    },
+    {
+     "name": "Joe Grabinski",
+     "role": "Director of Development",
+     "source_url": "https://www.ember-grp.com/team/",
+     "source_evidence": "Team page, Leadership Team",
+     "linkedin_url": "https://www.linkedin.com/in/joe-grabinski-161936109/",
+     "li_evidence": "Indexed title: Joe Grabinski, Director of Development at Ember Real Estate Investment & Development.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-226",
+   "entity_name": "Forestar Group",
+   "short": "Forestar Group",
+   "homepage_url": "https://www.forestar.com/",
+   "company_li": "https://www.linkedin.com/company/forestar-group-inc/",
+   "team_url": "https://investor.forestar.com/corporate-governance/executive-team",
+   "chain": null,
+   "phone": "8177691860",
+   "phone_source": "https://www.forestar.com/contact-us/",
+   "phone_label": "Corporate office and Texas Region, Arlington",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "14,240 residential lots sold in fiscal 2025, company-wide (Forestar Investor Relations)",
+   "mvp_screen": "289 of the 3,659 lots it sold in the quarter to June 30, 2026 went to buyers other than D.R. Horton.",
+   "synopsis": "Forestar Group is a residential lot developer based in Arlington, Texas and traded on the NYSE as FOR. It lists active projects in 65 markets in 24 states as of June 30, 2026, Houston among them. D.R. Horton acquired a majority stake in 2017.",
+   "region": "Arlington, Texas headquarters, with Houston communities in Magnolia and League City",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Majority-owned subsidiary of D.R. Horton since 2017.",
+     "url": "https://www.forestar.com/about-us/"
+    },
+    {
+     "text": "Owned and controlled 91,700 lots, with 23,500 lots under contract, at June 30, 2026.",
+     "url": "https://investor.forestar.com/press-releases/2026/07-21-2026-113026485"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "One production builder, D.R. Horton, at Mill Creek in Magnolia."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "14,240 lots sold in fiscal 2025, company-wide (Forestar). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Mill Creek",
+     "detail": "Magnolia, off FM 1488 near the Aggie Expressway. D.R. Horton is the one builder, from the high $200s to $350s.",
+     "url": "https://millcreek-community.com/builders",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://investor.forestar.com",
+     "date": null
+    },
+    {
+     "url": "https://millcreek-community.com/builders",
+     "date": null
+    },
+    {
+     "url": "https://investor.forestar.com/corporate-governance/executive-team",
+     "date": null
+    },
+    {
+     "url": "https://www.forestar.com/contact-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.forestar.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.forestar.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.forestar.com/communities/",
+     "date": null
+    },
+    {
+     "url": "https://investor.forestar.com/press-releases/2026/07-21-2026-113026485",
+     "date": null
+    },
+    {
+     "url": "https://millcreek-community.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Anthony W. Oxley",
+     "role": "President and Chief Executive Officer",
+     "source_url": "https://investor.forestar.com/corporate-governance/executive-team",
+     "source_evidence": "Investor Relations, Executive Team page",
+     "decider": true
+    },
+    {
+     "name": "Donald J. Tomnitz",
+     "role": "Executive Chairman",
+     "source_url": "https://investor.forestar.com/corporate-governance/executive-team",
+     "source_evidence": "Investor Relations, Executive Team page"
+    },
+    {
+     "name": "Mark S. Walker",
+     "role": "Executive Vice President and Chief Operating Officer",
+     "source_url": "https://investor.forestar.com/corporate-governance/executive-team",
+     "source_evidence": "Investor Relations, Executive Team page",
+     "linkedin_url": "https://www.linkedin.com/in/mark-walker-42766415/",
+     "li_evidence": "Indexed title: Mark Walker, Forestar Group, Inc.."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
    "target_id": "HOU-040",
    "entity_name": "Johnson Development Corp",
    "region": "Houston / Fort Bend, Montgomery",
@@ -32629,6 +36383,730 @@
    "channel_line": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
    "has_decider": false,
    "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-227",
+   "entity_name": "McGrath Real Estate Partners",
+   "short": "McGrath Real Estate Partners",
+   "homepage_url": "https://www.mcgrathrep.com/",
+   "company_li": null,
+   "team_url": "https://www.mcgrathrep.com/leadership",
+   "chain": null,
+   "phone": "7132685150",
+   "phone_source": "https://www.mcgrathrep.com/contact",
+   "phone_label": "Phone, corporate headquarters",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Riceland: 1,500 acres planned for 4,500 homes (McGrath press release, June 2022)",
+   "mvp_screen": "Sells Riceland lots to five builders, from Autograph to Perry.",
+   "synopsis": "McGrath Real Estate Partners is a family-owned Houston developer led by Michael S. McGrath. It develops multifamily, student housing, build-to-rent and single-family master plans. Its Houston master plan is Riceland, 1,500 acres in Mont Belvieu with a town center planned as the city's downtown.",
+   "region": "Houston office on the Katy Freeway, developing Riceland in Mont Belvieu, Chambers County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Trez Capital provided $25 million for Riceland phase one, June 2022.",
+     "url": "https://www.mcgrathrep.com/news/1-500-acre-riceland-master-planned-community-coming-to-mont-belvieu-texas"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five production builders at Riceland, with nine model homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "4,500 homes planned at Riceland at completion (McGrath, 2022). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Riceland",
+     "detail": "Mont Belvieu, Barbers Hill ISD. 1,500 acres, about 4,500 homes at completion. Builders Autograph, Chesmar, David Weekley, Highland and Perry.",
+     "url": "https://www.ricelandtx.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.mcgrathrep.com/news/1-500-acre-riceland-master-planned-community-coming-to-mont-belvieu-texas",
+     "date": null
+    },
+    {
+     "url": "https://www.ricelandtx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.mcgrathrep.com/leadership",
+     "date": null
+    },
+    {
+     "url": "https://www.mcgrathrep.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.mcgrathrep.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.mcgrathrep.com/company",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Michael S. McGrath",
+     "role": "President & CEO",
+     "source_url": "https://www.mcgrathrep.com/leadership",
+     "linkedin_url": "https://www.linkedin.com/in/michael-mcgrath-89a2b92b/",
+     "li_evidence": "Indexed title: Michael McGrath, McGrath Real Estate Partners.",
+     "decider": true
+    },
+    {
+     "name": "Mike Springs",
+     "role": "Executive Management - SFR Lot Development",
+     "source_url": "https://www.mcgrathrep.com/leadership",
+     "decider": true
+    },
+    {
+     "name": "Alan Hyland",
+     "role": "SVP – Construction & Development",
+     "source_url": "https://www.mcgrathrep.com/leadership"
+    },
+    {
+     "name": "Randy Hopper",
+     "role": "SVP – Acquisitions & Development",
+     "source_url": "https://www.mcgrathrep.com/leadership",
+     "linkedin_url": "https://www.linkedin.com/in/rrhopper/",
+     "li_evidence": "A post under this profile is indexed as \"Randy Hopper's Post, McGrath Real Estate Partners\"."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-228",
+   "entity_name": "Meristem Communities",
+   "short": "Meristem Communities",
+   "homepage_url": "https://meristemcommunities.com/",
+   "company_li": null,
+   "team_url": "https://meristemcommunities.com/our-team",
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Indigo: 235 acres, over 800 homes planned (Realty News Report, 2024)",
+   "mvp_screen": "Indigo mixes cottages, duets and townhomes on car-free mews, across five builders.",
+   "synopsis": "Meristem Communities is a Houston developer founded by partners Scott Snodgrass and Clayton Garrett. Indigo, its first project, is a 235-acre Richmond neighborhood with a 42-acre farm and a 12-acre town center, Indigo Commons. It is planned for over 800 homes from 939 SF to nearly 3,000 SF.",
+   "region": "Houston office on Hammerly Blvd., developing Indigo in Richmond, Fort Bend County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five builders at Indigo, including David Weekley, Empire and Highland."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Over 800 homes planned at Indigo (Realty News Report, 2024). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Indigo",
+     "detail": "Richmond, west of the Grand Parkway. 235 acres, over 800 homes. Single-family, cottages, townhomes, duets and clusters by AR Homes, Autograph, David Weekley, Empire and Highland, from the $200,000s.",
+     "url": "https://www.indigocommunity.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://realtynewsreport.com/800-homes-coming-to-agri-hood-called-indigo/",
+     "date": null
+    },
+    {
+     "url": "https://www.indigocommunity.com/",
+     "date": null
+    },
+    {
+     "url": "https://meristemcommunities.com/our-team",
+     "date": null
+    },
+    {
+     "url": "https://meristemcommunities.com/",
+     "date": null
+    },
+    {
+     "url": "https://meristemcommunities.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://www.indigocommunity.com/meristem-communities",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Scott Snodgrass",
+     "role": "Partner",
+     "source_url": "https://meristemcommunities.com/our-team",
+     "source_evidence": "Our Team page",
+     "decider": true
+    },
+    {
+     "name": "Clayton Garrett",
+     "role": "Partner",
+     "source_url": "https://meristemcommunities.com/our-team",
+     "source_evidence": "Our Team page",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-229",
+   "entity_name": "Oxland Group",
+   "short": "Oxland Group",
+   "homepage_url": "https://www.oxlandgroup.com/",
+   "company_li": "https://www.linkedin.com/company/oxland-advisors-llc/",
+   "team_url": "https://www.oxlandgroup.com/the-team",
+   "chain": null,
+   "phone": "2819711165",
+   "phone_source": "https://twostepfarm.com/",
+   "phone_label": "Two Step Farm, community line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "18,000 lots in 25 residential development projects in Texas (Oxland Group)",
+   "mvp_screen": "Sells Two Step Farm lots to nine builders. JEN Partners is its capital partner.",
+   "synopsis": "Oxland Group is a Houston land developer and the Texas operating partner of JEN Partners, a New York private equity firm. Co-presidents Tom Woliver and Mike Brady lead it. In Houston it develops Two Step Farm, 2,000 acres planned for about 4,000 homes. In DFW its Painted Tree in McKinney recorded 643 sales in 2025 (RCLCO).",
+   "region": "Houston office on Main St., developing Two Step Farm in Montgomery County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Texas operating partner of JEN Partners, a New York private equity firm investing in residential land.",
+     "url": "https://www.oxlandgroup.com/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Nine builders at Two Step Farm, including Pulte, Perry and Highland."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 4,000 homes planned at Two Step Farm (Two Step Farm). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Two Step Farm",
+     "detail": "Montgomery County, north of The Woodlands off FM 1488. 2,000 acres, more than 4,000 homes. Builders Autograph, Coventry, David Weekley, Drees, DSLD, Highland, Partners in Building, Perry and Pulte, from the mid $300s to over $1 million.",
+     "url": "https://twostepfarm.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.oxlandgroup.com/",
+     "date": null
+    },
+    {
+     "url": "https://twostepfarm.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.oxlandgroup.com/the-team",
+     "date": null
+    },
+    {
+     "url": "https://www.oxlandgroup.com/community-development",
+     "date": null
+    },
+    {
+     "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Tom Woliver",
+     "role": "Co-President",
+     "source_url": "https://www.oxlandgroup.com/the-team",
+     "linkedin_url": "https://www.linkedin.com/in/tom-woliver-b0a58413/",
+     "li_evidence": "Oxland Group The Team page, LinkedIn link under Tom Woliver",
+     "decider": true
+    },
+    {
+     "name": "Mike Brady",
+     "role": "Co-President",
+     "source_url": "https://www.oxlandgroup.com/the-team",
+     "linkedin_url": "https://www.linkedin.com/in/michael-brady-14412820/",
+     "li_evidence": "Oxland Group The Team page, LinkedIn link under Mike Brady",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-230",
+   "entity_name": "Precedent Land Company",
+   "short": "Precedent Land Company",
+   "homepage_url": "https://precedentlandco.com/",
+   "company_li": "https://www.linkedin.com/company/precedentlandco/",
+   "team_url": "https://precedentlandco.com/about-us/",
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "4.5K Texas lots developed or sold since entering Texas in 2012 (Precedent Land Company)",
+   "mvp_screen": "Dellrose is in its final phase, with fewer than 100 homesites left. Its open Houston lots are at Emory Glen and Coastal Point.",
+   "synopsis": "Precedent Land Company is a Willowdale Asset Management company with a head office in Vaughan, Ontario. It lists more than 20,000 lots sold across 4,000 acres in 40+ communities. In Texas it lists eight communities in Houston and Austin and 16 homebuilder partners.",
+   "region": "Texas office on S. Gessner in Houston, with communities in Hockley, Magnolia, League City and Hutto",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "A Willowdale Asset Management company.",
+     "url": "https://precedentlandco.com/texas-dellrose/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "16 homebuilder partners across eight Houston and Austin communities."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "4.5K Texas lots developed or sold since 2012 (Precedent). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Dellrose",
+     "detail": "Hockley, off Highway 290 and the Grand Parkway. 600 acres, 1,200 lots on 50', 60' and 70' homesites. Final phase, from the high $200s to the $500s.",
+     "url": "https://precedentlandco.com/texas-dellrose/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://precedentlandco.com/texas/",
+     "date": null
+    },
+    {
+     "url": "https://precedentlandco.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://precedentlandco.com/contact-us/",
+     "date": null
+    },
+    {
+     "url": "https://precedentlandco.com/",
+     "date": null
+    },
+    {
+     "url": "https://precedentlandco.com/texas-dellrose/",
+     "date": null
+    },
+    {
+     "url": "https://dellroseliving.com/",
+     "date": null
+    },
+    {
+     "url": "https://dellroseliving.com/community/developer",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Matt Janke",
+     "role": "President, Texas",
+     "source_url": "https://precedentlandco.com/about-us/",
+     "source_evidence": "About page, Leadership team",
+     "linkedin_url": "https://www.linkedin.com/in/matt-janke-7835508/",
+     "li_evidence": "Precedent Land Company About page, LinkedIn link under Matt Janke",
+     "decider": true
+    },
+    {
+     "name": "Steve Sellers",
+     "role": "President, Texas",
+     "source_url": "https://precedentlandco.com/about-us/",
+     "source_evidence": "About page, Leadership team, leads the Texas Land Division",
+     "decider": true
+    },
+    {
+     "name": "Mark Tutton",
+     "role": "Chief Operating Officer",
+     "source_url": "https://precedentlandco.com/about-us/",
+     "source_evidence": "About page, Leadership team",
+     "linkedin_url": "https://www.linkedin.com/in/mark-tutton-a2484962/",
+     "li_evidence": "Precedent Land Company About page, LinkedIn link under Mark Tutton"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-223",
+   "entity_name": "Rise Communities",
+   "short": "Rise Communities",
+   "homepage_url": null,
+   "company_li": null,
+   "team_url": "https://caneisland.com/about-us",
+   "chain": null,
+   "phone": "2818005360",
+   "phone_source": "https://caneisland.com/about-us",
+   "phone_label": "Cane Island, header line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Meridiana: 527 sales in 2025, No. 24 nationally (RCLCO ranking of 2025 master-plan sales)",
+   "mvp_screen": "Sells Meridiana lots to 10 builders, from Chesmar to Shea. Cane Island has reached close-out.",
+   "synopsis": "Rise Communities LLC formed in 2011 in Las Vegas and developed two Houston master plans, Cane Island in Katy and Meridiana south of Pearland. Meridiana opened with land for 5,500 homes and began selling in 2016. Rise also acquired 3,600 acres near Phoenix for Copper Mountain.",
+   "region": "Master plans in Iowa Colony south of Pearland and in Katy",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "10 production builders listed at Meridiana, including David Weekley, Highland, Perry and Westin."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "527 Meridiana sales in 2025 (RCLCO). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Meridiana",
+     "detail": "Iowa Colony, off Highway 288. 3,000 acres, land for 5,500 homes. 527 sales in 2025 (RCLCO). Builders Chesmar, David Weekley, Imagination, Beazer, Drees, Highland, Newmark, Perry, Shea and Westin, from the $260s to $620s.",
+     "url": "https://www.meridianatexas.com/about-us/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Cane Island",
+     "detail": "Katy, north of I-10. 1,100 acres, opened 2016, now in close-out. Homes from the $400s, custom homes by William David from $1.75M.",
+     "url": "https://caneisland.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.meridianatexas.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://caneisland.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://caneisland.com/",
+     "date": null
+    },
+    {
+     "url": "https://caneisland.com/homes/builders",
+     "date": null
+    },
+    {
+     "url": "https://caneisland.com/news/rise-communities-meridiana-cane-island-land-spots-on-mid-year-rankings-of-nations-top-selling-communities",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Mathew Lawson",
+     "role": "President",
+     "source_url": "https://caneisland.com/about-us",
+     "source_evidence": "Cane Island About Us page, Rise Communities",
+     "linkedin_url": "https://www.linkedin.com/in/mathew-lawson-4015438/",
+     "li_evidence": "Indexed title: Mathew Lawson, Rise Communities.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "no_web_presence": false,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "HOU-224",
+   "entity_name": "Sam Yager Incorporated",
+   "short": "Sam Yager Incorporated",
+   "homepage_url": "https://syi.net/about-us/",
+   "company_li": "https://www.linkedin.com/company/sam-yager-inc/about/",
+   "team_url": "https://syi.net/team/",
+   "chain": null,
+   "phone": "7137830308",
+   "phone_source": "https://syi.net/team/",
+   "phone_label": "Corporate headquarters, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "More than 15,000 lots and 20,000 acres developed to date, company-wide (SYI)",
+   "mvp_screen": "Manages Audubon for Audubon Magnolia Development, LLC. Sells lots to 12 builder listings.",
+   "synopsis": "Sam Yager Incorporated is a Houston land developer founded in 1990 by Sam H. Yager, Jr. and owned by President Sam H. Yager III since 2014. It lists more than $3 billion in assets under management. It manages Audubon, a 3,000-acre Magnolia master plan planned for about 5,000 single-family units, for Audubon Magnolia Development, LLC.",
+   "region": "Houston office on City West Blvd., managing Audubon in Magnolia",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Audubon's owner entity is Audubon Magnolia Development, LLC, managed by SYI.",
+     "url": "https://audubonliving.com/developer/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "12 builder listings at Audubon, including Century, David Weekley, Perry and Smith Douglas."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "About 5,000 single-family units planned at Audubon (SYI). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Audubon",
+     "detail": "Magnolia. 3,000 acres, about 5,000 single-family units and 2,600 multifamily units at build-out. Heron Run district of about 1,424 homesites launched March 2025. Homes from $300k to over $1 million.",
+     "url": "https://audubonliving.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://syi.net/team/",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/",
+     "date": null
+    },
+    {
+     "url": "https://syi.net/syi-projects/audubon/",
+     "date": null
+    },
+    {
+     "url": "https://syi.net/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/developer/",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/news/",
+     "date": null
+    },
+    {
+     "url": "https://audubonliving.com/audubon-launches-new-district-heron-run/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonchronicle.com/business/real-estate/article/magnolia-new-homes-audubon-heron-run-expansion-20232407.php",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Sam H. Yager III",
+     "role": "President",
+     "source_url": "https://syi.net/team/",
+     "source_evidence": "Our Team page",
+     "decider": true
+    },
+    {
+     "name": "Greg Voinis",
+     "role": "Vice President & Chief Operating Officer",
+     "source_url": "https://syi.net/team/",
+     "source_evidence": "Our Team page, oversees all single-family land development",
+     "linkedin_url": "https://www.linkedin.com/in/greg-voinis-7201517/",
+     "li_evidence": "Indexed title: Greg Voinis, Sam Yager Inc.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
    "decider_caveat": false,
    "type": "land"
   },
@@ -33243,7 +37721,21 @@
     "tr": false,
     "fit": "partial",
     "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
     "v": 540.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -33269,9 +37761,30 @@
    {
     "cat": 0,
     "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
     "fit": "clear",
     "dec": true,
     "v": 50.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -33351,6 +37864,20 @@
     "v": null
    },
    {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
     "cat": 1,
     "tr": false,
     "fit": "partial",
@@ -33369,6 +37896,13 @@
     "tr": false,
     "fit": "partial",
     "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
     "v": null
    },
    {
@@ -33815,6 +38349,41 @@
    {
     "cat": 0,
     "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": 1030.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
     "fit": "fail",
     "dec": false,
     "v": 3989.0
@@ -33876,6 +38445,55 @@
     "v": null
    },
    {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": 1062.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
     "cat": -1,
     "tr": true,
     "fit": "fail",
@@ -33898,6 +38516,13 @@
    },
    {
     "cat": -1,
+    "tr": true,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
     "tr": false,
     "fit": "fail",
     "dec": true,
@@ -33914,7 +38539,70 @@
     "cat": -1,
     "tr": false,
     "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
     "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
     "v": null
    },
    {
@@ -33946,9 +38634,9 @@
     "v": null
    }
   ],
-  "n": 126,
-  "track": 17,
-  "dec": 74,
+  "n": 156,
+  "track": 18,
+  "dec": 102,
   "band": [
    25,
    400
@@ -33960,7 +38648,7 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 53
+    "n": 73
    },
    {
     "label": "Developers",
@@ -34349,7 +39037,7 @@
   {
    "k": "builds",
    "a": "HOU-011",
-   "b": "Beazer Homes",
+   "b": "HOU-201",
    "rel": "",
    "card": "HOU-011"
   },
@@ -34363,7 +39051,7 @@
   {
    "k": "builds",
    "a": "HOU-011",
-   "b": "Tri Pointe Homes",
+   "b": "HOU-205",
    "rel": "",
    "card": "HOU-011"
   },
@@ -34552,7 +39240,7 @@
   {
    "k": "builds",
    "a": "HOU-040",
-   "b": "Shea Homes",
+   "b": "HOU-204",
    "rel": "",
    "card": "HOU-040"
   },
@@ -34574,6 +39262,7 @@
  "paid": [
   "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo",
   "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
+  "https://therealdeal.com/texas/2026/04/06/toll-brothers-tri-pointe-plan-project-in-tomball/",
   "https://therealdeal.com/texas/houston/2023/03/10/live-lone-star-opens-its-first-manufactured-home-development/",
   "https://therealdeal.com/texas/houston/2023/11/13/pagewood-wile-to-convert-eado-houston-warehouses/",
   "https://therealdeal.com/texas/houston/2024/11/25/long-lake-purchased-100-acre-tract-in-houston-area/",
@@ -34585,6 +39274,7 @@
   "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549",
   "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html",
   "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html",
+  "https://www.dallasnews.com/business/real-estate/2025/04/09/developer-sells-7-d-fw-neighborhoods-as-part-of-800-million-deal/",
   "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm",
   "https://www.enr.com/toplists/2026-Top-400-Contractors-1",
   "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
@@ -34596,6 +39286,8 @@
   "https://www.houstonchronicle.com/business/article/houston-build-to-rent-housing-21293194.php",
   "https://www.houstonchronicle.com/business/real-estate/article/Exclusive-Axelrad-developers-East-End-17291259.php",
   "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php",
+  "https://www.houstonchronicle.com/business/real-estate/article/Trendmaker-Homes-to-rebrand-as-TRI-Pointe-Homes-15882270.php",
+  "https://www.houstonchronicle.com/business/real-estate/article/magnolia-new-homes-audubon-heron-run-expansion-20232407.php",
   "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
  ]
 }

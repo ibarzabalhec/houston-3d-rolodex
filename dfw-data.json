@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 99,
- "last_updated": "2026-09-27",
- "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-27",
- "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-27",
+ "build": 102,
+ "last_updated": "2026-09-28",
+ "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-28",
+ "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-28",
  "headline": "Dallas-Fort Worth builders and developers, screened for a construction printer.",
  "headline_html": "Dallas-Fort Worth builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "122 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "146 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "122",
+   "146",
    "firms screened",
    false,
    null
@@ -55,8 +55,8 @@
    }
   ],
   [
-   "73",
-   "of 122 with a decision-maker named",
+   "84",
+   "of 146 with a decision-maker named",
    true,
    {
     "dec": "any"
@@ -69,28 +69,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 114,
-   "partial": 7,
+   "clear": 133,
+   "partial": 12,
    "fail": 1,
-   "total": 122
+   "total": 146
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
    "clear": 4,
-   "partial": 68,
-   "fail": 50,
-   "total": 122
+   "partial": 78,
+   "fail": 64,
+   "total": 146
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
    "clear": 8,
-   "partial": 8,
-   "fail": 106,
-   "total": 122
+   "partial": 10,
+   "fail": 128,
+   "total": 146
   }
  ],
  "matrix": {
@@ -937,7 +937,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 44 LinkedIn headlines naming the firm, 158 firm sites or dated reports, 0 names with no page to link. No aggregator. A LinkedIn link is kept only where a search result showed the name and the firm."
+   "Company filings, company pages, trade press. Each contact names its page: 80 LinkedIn headlines naming the firm, 186 firm sites or dated reports, 0 names with no page to link. No aggregator. A LinkedIn link is kept only where a search result showed the name and the firm."
   ]
  ],
  "code": {
@@ -1110,11 +1110,50 @@
     "wide": null
    },
    {
+    "id": "DFW-203",
+    "name": "Drees Custom Homes",
+    "short": "Drees",
+    "low": 2286,
+    "high": 2286,
+    "year": 2025,
+    "source": "BUILDER firm page",
+    "fit": "fail",
+    "method": "fail",
+    "group": "national",
+    "wide": "company-wide"
+   },
+   {
     "id": "DFW-006",
     "name": "Meritage Homes Corporation",
     "short": "Meritage Homes",
     "low": 1833,
     "high": 1833,
+    "year": 2025,
+    "source": "BUILDER Local Leaders 2026, DFW",
+    "fit": "fail",
+    "method": "fail",
+    "group": "national",
+    "wide": null
+   },
+   {
+    "id": "DFW-202",
+    "name": "Bloomfield Homes",
+    "short": "Bloomfield",
+    "low": 1810,
+    "high": 1810,
+    "year": 2025,
+    "source": "BUILDER Local Leaders 2026, DFW",
+    "fit": "fail",
+    "method": "fail",
+    "group": "national",
+    "wide": null
+   },
+   {
+    "id": "DFW-201",
+    "name": "Highland Homes",
+    "short": "Highland",
+    "low": 1742,
+    "high": 1742,
     "year": 2025,
     "source": "BUILDER Local Leaders 2026, DFW",
     "fit": "fail",
@@ -1397,8 +1436,8 @@
     "wide": "company-wide"
    }
   ],
-  "closings_missing": 37,
-  "closings_base": 62,
+  "closings_missing": 49,
+  "closings_base": 77,
   "bands": [
    [
     25,
@@ -1426,13 +1465,13 @@
    {
     "group": "b",
     "label": "One gap",
-    "n": 38,
+    "n": 48,
     "yes": 0,
     "partly": 0,
-    "no": 38,
-    "decider": 24,
+    "no": 48,
+    "decider": 33,
     "confirm": 0,
-    "linked": 37
+    "linked": 47
    },
    {
     "group": "trade",
@@ -1459,24 +1498,24 @@
    {
     "group": "national",
     "label": "National builder",
-    "n": 19,
+    "n": 24,
     "yes": 2,
-    "partly": 0,
-    "no": 17,
+    "partly": 1,
+    "no": 21,
     "decider": 13,
     "confirm": 0,
-    "linked": 19
+    "linked": 24
    },
    {
     "group": "channel",
     "label": "Land owner, not the buyer",
-    "n": 21,
+    "n": 30,
     "yes": 0,
-    "partly": 0,
-    "no": 21,
-    "decider": 4,
+    "partly": 1,
+    "no": 29,
+    "decider": 6,
     "confirm": 0,
-    "linked": 20
+    "linked": 29
    },
    {
     "group": "icon",
@@ -1509,12 +1548,12 @@
      {
       "name": "Drees",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Perry Homes",
@@ -1531,7 +1570,7 @@
      {
       "name": "Bloomfield Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "CB JENI",
@@ -1556,7 +1595,7 @@
      {
       "name": "Drees",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Normandy",
@@ -1598,7 +1637,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Toll Brothers",
@@ -1672,12 +1711,12 @@
      {
       "name": "Drees",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Perry Homes",
@@ -1699,7 +1738,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Perry Homes",
@@ -1726,7 +1765,7 @@
      {
       "name": "Bloomfield Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Cadence Homes",
@@ -1736,12 +1775,12 @@
      {
       "name": "Drees",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Homebound",
@@ -1778,7 +1817,7 @@
      {
       "name": "Drees",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Grenadier",
@@ -1788,7 +1827,7 @@
      {
       "name": "Highland Homes",
       "id": null,
-      "off": true
+      "off": false
      },
      {
       "name": "Shaddock",
@@ -16854,16 +16893,16 @@
   "local": "Fort Worth|Dallas|Allen|Collin"
  },
  "stats": {
-  "total": 122,
+  "total": 146,
   "adopters": 0,
   "tier_a": 2,
-  "tier_b": 38,
-  "principals": 202,
-  "linkedin_held": 44,
+  "tier_b": 48,
+  "principals": 266,
+  "linkedin_held": 80,
   "audit_flags": 0,
-  "with_decider": 73,
-  "with_decider_live": 25,
-  "with_decider_confirmed": 73,
+  "with_decider": 84,
+  "with_decider_live": 34,
+  "with_decider_confirmed": 84,
   "with_decider_caveat": 0
  },
  "targets": [
@@ -20858,6 +20897,834 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "DFW-210",
+   "entity_name": "Astoria Homes",
+   "short": "Astoria",
+   "homepage_url": "https://astoriahomes.net/",
+   "company_li": "https://www.linkedin.com/company/astoria-homes-dfw",
+   "team_url": null,
+   "chain": null,
+   "phone": "2144257718",
+   "phone_source": "https://astoriahomes.net/contact/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "14 DFW communities and five plan designs on its site in 2026.",
+   "mvp_screen": "Sells the Abingdon, Kenilworth, Sheridan, Warwick and Devonshire plans in towns from Godley to Sherman.",
+   "synopsis": "Astoria Homes calls itself a single-family production builder in DFW on its About page. In 2026 it sells five plan designs across 14 communities, from Heartland near Forney to Sherman and Whitesboro. At Heartland its designs run 1,657 to 3,661 sq ft.",
+   "region": "DFW, building in Greenville, Heartland, Godley, Sherman, Waxahachie and seven other towns",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five plan designs, the Abingdon, Kenilworth, Sheridan, Warwick and Devonshire, sell across 14 DFW communities in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "14 DFW communities in 2026 and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Heartland",
+     "detail": "Heartland, near Forney. Abingdon, Kenilworth, Sheridan, Warwick and Devonshire designs, 1,657 to 3,661 sq ft.",
+     "url": "https://astoriahomes.net/community/heartland/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://astoriahomes.net/",
+     "date": null
+    },
+    {
+     "url": "https://astoriahomes.net/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/",
+     "date": null
+    },
+    {
+     "url": "https://astoriahomes.net/contact/",
+     "date": null
+    },
+    {
+     "url": "https://astoriahomes.net/community/heartland/",
+     "date": null
+    },
+    {
+     "url": "https://heartlandtexas.com/builders/astoria-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Leo Bowler",
+     "role": "Founder and Chairman",
+     "source_url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/",
+     "source_evidence": "LinkedIn profile title in search result",
+     "linkedin_url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/",
+     "li_evidence": "Leo Bowler - Founder and Chairman of Astoria Homes ...",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-213",
+   "entity_name": "GFO Home",
+   "short": "GFO",
+   "homepage_url": "https://www.gfohome.com/",
+   "company_li": "https://www.linkedin.com/company/gfohome",
+   "team_url": "https://www.gfohome.com/about-us/",
+   "chain": null,
+   "phone": "4699494735",
+   "phone_source": "https://www.gfohome.com/",
+   "phone_label": "Dallas",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "20 Texas communities on its site in 2026, 10 in DFW and 10 in Austin.",
+   "mvp_screen": "GFO repeats the Johnson, Lincoln, Harrison, Roosevelt and Kennedy plans at Walsh and Wellington, and founder Glenn Gehan runs it as a vertically integrated builder.",
+   "synopsis": "GFO Home builds architect-designed single-family homes from the low $500s in DFW and Austin. Glenn Gehan founded it in Austin in 2018, and it is headquartered in Dallas. Its site says its team has built 25,000 new homes over two decades.",
+   "region": "Dallas headquarters on McKinney Avenue, building in Aledo, Haslet, Celina, Forney and five other DFW towns, plus Austin",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five plans, the Johnson, Lincoln, Harrison, Roosevelt and Kennedy, sell at both Walsh and Wellington in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "10 DFW communities in 2026 and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Walsh",
+     "detail": "Aledo, near Fort Worth. Eight plans, 2,610 to 4,259 sq ft, $565,990 to $752,990.",
+     "url": "https://www.gfohome.com/communities/dallas/walsh/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.gfohome.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.gfohome.com/communities/dallas/walsh/",
+     "date": null
+    },
+    {
+     "url": "https://www.gfohome.com/communities/dallas/wellington/",
+     "date": null
+    },
+    {
+     "url": "https://www.gfohome.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.gfohome.com/about-us/building-process/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Glenn Gehan",
+     "role": "Founder/Principal",
+     "source_url": "https://www.gfohome.com/about-us/",
+     "source_evidence": "About Us page",
+     "linkedin_url": "https://www.linkedin.com/in/glenn-gehan-5190a4150/",
+     "li_evidence": "Indexed title: Glenn Gehan, Principal, GFO Home.",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-218",
+   "entity_name": "Ladera Living",
+   "short": "Ladera",
+   "homepage_url": "https://laderaliving.com/",
+   "company_li": "https://www.linkedin.com/company/ladera-living/",
+   "team_url": "https://laderaliving.com/why-ladera/meet-the-developer/",
+   "chain": null,
+   "phone": "8176314382",
+   "phone_source": "https://laderaliving.com/contact/",
+   "phone_label": "Header line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Six gated active-adult communities in DFW in 2026, planned at 157 to 263 homes each (Ladera communities page).",
+   "mvp_screen": "Ladera repeats the Arabella, Casina, Portico and Verona plans across its gated 55+ communities, and the Delin family owns it.",
+   "synopsis": "Ladera Living builds and develops small gated 55+ communities in DFW, owned by the Delin family, which has built custom homes in Texas for over 30 years. It partners with Epcon Communities on the 55+ model. Its six communities are at Timberbrook in Justin, Little Elm, The Reserve in Mansfield, Prosper, Tavolo Park in Fort Worth and Wylie.",
+   "region": "Gated 55+ communities from Fort Worth and Mansfield to Prosper and Wylie",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Partners with Epcon Communities on its 55+ communities, per its Meet the Developer page.",
+     "url": "https://laderaliving.com/why-ladera/meet-the-developer/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Nine plans, from the Arabella to the Verona, sell at Tavolo Park, Prosper and Little Elm in 2026. The Milan starts at $396,990 at Tavolo Park."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "157 to 263 homes per community across six communities in 2026, project totals. No yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Ladera at Tavolo Park",
+     "detail": "Fort Worth. Gated 55+ community of 228 homes, from the $390s to $600s, the Milan plan from $396,990.",
+     "url": "https://laderaliving.com/55-plus-communities/ladera-at-tavolo-park/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://laderaliving.com/55-plus-communities/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/55-plus-communities/ladera-at-tavolo-park/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/55-plus-communities/ladera-prosper/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/55-plus-communities/ladera-little-elm/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/building-more-than-a-home/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/contact/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/why-ladera/meet-the-developer/",
+     "date": null
+    },
+    {
+     "url": "https://laderaliving.com/why-ladera/giving-back-together/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Cash Grnwalt",
+     "role": "Vice President of Operations",
+     "source_url": "https://laderaliving.com/building-more-than-a-home/",
+     "source_evidence": "Ladera news post, 2026-07-01"
+    },
+    {
+     "name": "Alex Stone",
+     "role": "Construction Manager",
+     "source_url": "https://laderaliving.com/building-more-than-a-home/",
+     "source_evidence": "Ladera news post, 2026-07-01",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-208",
+   "entity_name": "Risland Homes",
+   "short": "Risland",
+   "homepage_url": "https://rislandhomes.com/",
+   "company_li": "https://www.linkedin.com/company/risland-homes/",
+   "team_url": null,
+   "chain": null,
+   "phone": "2142148888",
+   "phone_source": "https://rislandhomes.com/",
+   "phone_label": "Sales inquiries",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Five DFW communities on its site in 2026: Spiritas Ranch, Creekview Meadows, Legacy Gardens, Mantua Point and Wildflower Ranch.",
+   "mvp_screen": "Repeats plans 4102, 4201, 4204 and 4205 at Spiritas Ranch and Wildflower Ranch. Its parent, Risland U.S., develops Mantua.",
+   "synopsis": "Risland Homes is the homebuilding branch of Risland U.S., a subsidiary of Hong Kong-based Risland Holdings. It builds single-family homes on 40- to 60-foot lots in five DFW communities in 2026. Risland U.S. also develops Mantua, 3,000 acres with 6,000 planned homes in Van Alstyne and Anna (Risland, 2023).",
+   "region": "Prosper and Plano, building in Little Elm, Pilot Point, Prosper, Van Alstyne and Justin",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Risland U.S. is a subsidiary of Hong Kong-based Risland Holdings.",
+     "url": "https://www.rislandus.com/about-us"
+    },
+    {
+     "text": "Risland U.S. develops Mantua, 3,000 acres and 6,000 planned homes in Van Alstyne and Anna (Risland, 2023).",
+     "url": "https://www.rislandus.com/mantua-s-amenity-center-the-veranda-grande-opening-heads-or-tails-crawfish-boil"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four numbered plans, 4102, 4201, 4204 and 4205, sell at both Spiritas Ranch and Wildflower Ranch in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Five DFW communities in 2026 and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Spiritas Ranch",
+     "detail": "Little Elm. Seven plans on 40-, 50- and 60-foot lots, 1,946 to 3,624 sq ft, from $395,900.",
+     "url": "https://rislandhomes.com/communities/spiritas-ranch/",
+     "signal": null
+    },
+    {
+     "name": "Wildflower Ranch",
+     "detail": "Justin. Four plans on 50-, 55- and 60-foot lots, 2,263 to 3,250 sq ft, from $435,900.",
+     "url": "https://rislandhomes.com/communities/wildflower-ranch/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://rislandhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://rislandhomes.com/communities/spiritas-ranch/",
+     "date": null
+    },
+    {
+     "url": "https://rislandhomes.com/communities/wildflower-ranch/",
+     "date": null
+    },
+    {
+     "url": "https://www.rislandus.com/mantua-s-amenity-center-the-veranda-grande-opening-heads-or-tails-crawfish-boil",
+     "date": null
+    },
+    {
+     "url": "https://www.rislandus.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasbuilders.org/wp-content/uploads/2025/12/Home-Builder-2025-12-RESIZED-WEB.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2019/10/11/international-builder-risland-grows-us-north-texas-base/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Michael Hanschen",
+     "role": "Vice President of Development, Risland",
+     "source_url": "https://www.rislandus.com/mantua-s-amenity-center-the-veranda-grande-opening-heads-or-tails-crawfish-boil",
+     "source_evidence": "Risland U.S. news post, 2023-04-24",
+     "linkedin_url": "https://www.linkedin.com/in/michael-a-hanschen-0b218813/",
+     "li_evidence": "Michael A. Hanschen - Risland US Holdings LLC | LinkedIn",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-207",
+   "entity_name": "RockWell Homes",
+   "short": "RockWell",
+   "homepage_url": "https://www.rockwell-homes.com/",
+   "company_li": "https://www.linkedin.com/company/rockwellhomes",
+   "team_url": null,
+   "chain": null,
+   "phone": "4697729300",
+   "phone_source": "https://www.rockwell-homes.com/",
+   "phone_label": "Dallas office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Six DFW communities and five Orlando communities on its About page in 2026.",
+   "mvp_screen": "Repeats the Liberty, Patriot, Republic, Freedom and Hero plans on 50-foot lots at Creekside, Walden Pond and Wildflower Ranch.",
+   "synopsis": "RockWell Homes builds single-family homes on 50-foot lots in DFW and Orlando, from $304,900 at Creekside in 2026. A Dallas Builders Association page in August 2024 says Columnar Investments owns it. Its About page credits the support of Traylor Bros. Inc.",
+   "region": "Dallas office on W. Lovers Lane, building in Forney, Royse City, Justin and three other DFW towns, plus Orlando",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Owned by Columnar Investments, per a Dallas Builders Association event page, August 2024.",
+     "url": "https://www.dallasbuilders.org/events/yp-august-2024-108-322/"
+    },
+    {
+     "text": "Its About page names Traylor Bros. Inc. as its support.",
+     "url": "https://www.rockwell-homes.com/about/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Five shared plans, Liberty, Patriot, Republic, Freedom and Hero, sell at Creekside, Walden Pond and Wildflower Ranch in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Six DFW communities in 2026 and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Creekside",
+     "detail": "Royse City. Seven plans on 50-foot lots, 1,658 to 3,352 sq ft, from $304,900.",
+     "url": "https://www.rockwell-homes.com/new-homes/tx/royse-city/creekside/14633/",
+     "signal": null
+    },
+    {
+     "name": "Walden Pond",
+     "detail": "Forney. Six plans on 50-foot front-entry homesites, 2,007 to 3,300 sq ft, from $338,900.",
+     "url": "https://www.rockwell-homes.com/new-homes/tx/forney/walden-pond/14912/",
+     "signal": null
+    },
+    {
+     "name": "Wildflower Ranch",
+     "detail": "Justin. Eight plans on 50-foot front-entry homesites, 1,658 to 3,473 sq ft, from $383,000.",
+     "url": "https://www.rockwell-homes.com/new-homes/tx/fort-worth/wildflower-ranch/17890/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.rockwell-homes.com/about/",
+     "date": null
+    },
+    {
+     "url": "https://www.rockwell-homes.com/new-homes/tx/royse-city/creekside/14633/",
+     "date": null
+    },
+    {
+     "url": "https://www.rockwell-homes.com/new-homes/tx/forney/walden-pond/14912/",
+     "date": null
+    },
+    {
+     "url": "https://www.rockwell-homes.com/new-homes/tx/fort-worth/wildflower-ranch/17890/",
+     "date": null
+    },
+    {
+     "url": "https://www.rockwell-homes.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Dennis Pitt",
+     "role": "President",
+     "source_url": null,
+     "source_evidence": null,
+     "linkedin_url": "https://www.linkedin.com/in/dennis-pitt-ba456611/",
+     "li_evidence": "Dennis Pitt - President/COO RockWell Homes",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-220",
+   "entity_name": "Sixth Element Homes",
+   "short": "Sixth Element",
+   "homepage_url": "https://www.sixthelement.homes/",
+   "company_li": "https://www.linkedin.com/company/sixth-element-homes/posts/?feedView=all",
+   "team_url": "https://www.sixthelement.homes/about-us",
+   "chain": null,
+   "phone": "4699405659",
+   "phone_source": "https://www.sixthelement.homes/",
+   "phone_label": "Irving office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Four DFW communities on its site in 2026: Radiant Springs, Heartland, Lotus Creek Estates and Golden Estates.",
+   "mvp_screen": "EVP of Operations Sid Vadlamudi runs land development and vertical construction, and the company targets $1 billion in enterprise value by 2030.",
+   "synopsis": "Sixth Element Homes is an Irving homebuilder and developer founded and led by CEO Giri Saranu. It is pre-selling at Radiant Springs in Forney and Heartland in Kaufman County, with Lotus Creek Estates in Forney and Golden Estates in Gunter coming soon. It lists Builders First Source as a materials partner and runs construction on Buildertrend.",
+   "region": "Irving headquarters, building in Forney, Heartland and Gunter",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four Sterling Series plans, the Avalon, Bristol, Canton and Eldon, sell at Heartland and five plans sell at Radiant Springs in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Four DFW communities in 2026, two pre-selling and two coming soon, and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Heartland",
+     "detail": "Heartland, Crandall ISD. Sterling Series, four plans of 1,700 to 2,100+ sq. ft., from the mid 200's, pre-selling.",
+     "url": "https://www.sixthelement.homes/community-page/heartland",
+     "signal": null
+    },
+    {
+     "name": "Radiant Springs",
+     "detail": "Forney. Five plans of 2,200 to 3,300+ sq. ft., from the mid 400's, pre-selling.",
+     "url": "https://www.sixthelement.homes/community-page/radiant%20springs",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.sixthelement.homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.sixthelement.homes/community-page/heartland",
+     "date": null
+    },
+    {
+     "url": "https://www.sixthelement.homes/community-page/radiant%20springs",
+     "date": null
+    },
+    {
+     "url": "https://www.sixthelement.homes/about-us",
+     "date": null
+    },
+    {
+     "url": "https://www.sixthelement.homes/team-member/sid",
+     "date": null
+    },
+    {
+     "url": "https://www.sixthelement.homes/faqs",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Giri Saranu",
+     "role": "Founder & CEO",
+     "source_url": "https://www.sixthelement.homes/about-us",
+     "source_evidence": "About Us leadership section",
+     "decider": true
+    },
+    {
+     "name": "Sid Vadlamudi",
+     "role": "EVP of Operations",
+     "source_url": "https://www.sixthelement.homes/team-member/sid",
+     "source_evidence": "Team member page",
+     "linkedin_url": "https://www.linkedin.com/in/siddhartha-vadlamudi/",
+     "li_evidence": "Indexed title: Sid V., Sixth Element Homes."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-222",
+   "entity_name": "Westfield Homes",
+   "short": "Westfield",
+   "homepage_url": "https://westfieldhomestx.com/",
+   "company_li": "https://www.linkedin.com/company/westfield-homes",
+   "team_url": "https://westfieldhomestx.com/leadership-experience/",
+   "chain": null,
+   "phone": "4696291013",
+   "phone_source": "https://westfieldhomestx.com/contact/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Three DFW communities in 2026: Meraki in Forney, Jeans Creek in McKinney and Saddlebrook in Corinth (PR Newswire, April 7, 2026).",
+   "mvp_screen": "Westfield is the for-sale brand of Dallas developer Bridge Tower, and its leadership page names a VP of Construction Operations and a Purchasing Manager.",
+   "synopsis": "Westfield Homes is the for-sale residential brand of Bridge Tower Homes, a subsidiary of Dallas-based Bridge Tower Group. It builds at Meraki in Forney, Jeans Creek in McKinney and Saddlebrook in Corinth. Bridge Tower Homes states over 1,000 homes built and delivered.",
+   "region": "Dallas-based Bridge Tower brand, building in Forney, McKinney and Corinth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Subsidiary of Bridge Tower Group, a Dallas-based real estate investment and development firm.",
+     "url": "https://www.prnewswire.com/news-releases/westfield-homes-closes-lots-at-meraki-master-planned-community-in-forney-texas-302735719.html"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three plans at Meraki, the Clover, Bluebell and Mayfield, from 1,720 to 2,164 sq. ft., in a builder with three DFW communities in 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Over 1,000 homes built by parent Bridge Tower Homes, a total, and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Meraki",
+     "detail": "Forney. Clover, Bluebell and Mayfield plans, 1,720 to 2,200 sq. ft., starting in the low $300s.",
+     "url": "https://westfieldhomestx.com/meraki/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/westfield-homes-closes-lots-at-meraki-master-planned-community-in-forney-texas-302735719.html",
+     "date": null
+    },
+    {
+     "url": "https://westfieldhomestx.com/meraki/",
+     "date": null
+    },
+    {
+     "url": "https://bridgetowerhome.com/",
+     "date": null
+    },
+    {
+     "url": "https://westfieldhomestx.com/leadership-experience/",
+     "date": null
+    },
+    {
+     "url": "https://westfieldhomestx.com/contact/",
+     "date": null
+    },
+    {
+     "url": "https://westfieldhomestx.com/",
+     "date": null
+    },
+    {
+     "url": "https://westfieldhomestx.com/the-westfield-difference/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jackson Su",
+     "role": "Co-CEO",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/",
+     "source_evidence": "Leadership & Experience page"
+    },
+    {
+     "name": "George Huang",
+     "role": "Co-CEO",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/",
+     "source_evidence": "Leadership & Experience page"
+    },
+    {
+     "name": "James Wrigg",
+     "role": "Chief Operating Officer, Graham Hart Home Builder, since August 2026. Earlier SVP of Operations, Westfield Homes.",
+     "source_url": "https://www.grahamhart.com/meet-our-new-chief-operating-officer-a-vision-for-the-future-of-graham-hart-home-builder",
+     "source_evidence": "Graham Hart, 2026-08-04: \"our new Chief Operating Officer, James Wrigg\".",
+     "linkedin_url": "https://www.linkedin.com/in/james-wrigg-a4632359/",
+     "li_evidence": "Indexed title: James Wrigg, Graham Hart Home Builder.",
+     "departed": true
+    },
+    {
+     "name": "Brad Bogovich",
+     "role": "VP of Construction Operations",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/",
+     "source_evidence": "Leadership & Experience page",
+     "decider": true
+    },
+    {
+     "name": "Angela Asplin",
+     "role": "Purchasing Manager",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/",
+     "source_evidence": "Leadership & Experience page",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "DFW-024",
    "entity_name": "Britton Homes",
    "short": "Britton",
@@ -21269,6 +22136,362 @@
     }
    ],
    "vol": 374,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-214",
+   "entity_name": "GROWTH Homes",
+   "short": "GROWTH",
+   "homepage_url": "https://www.growth-homes.com/",
+   "company_li": null,
+   "team_url": "https://www.growth-homes.com/leadership",
+   "chain": null,
+   "phone": "9729458571",
+   "phone_source": "https://www.growth-homes.com/communities/texas/dallas-tx/clearview-ranch/",
+   "phone_label": "Clearview Ranch sales line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Four DFW communities on its Dallas page in 2026: Brierwood, Clearview Ranch, Northspur and Solterra.",
+   "mvp_screen": "Dennis Harold runs new markets and operations for GROWTH, and Northspur opens with GROWTH plans in a 700-acre Terrell community.",
+   "synopsis": "GROWTH Homes builds attainable single-family homes in Atlanta, Birmingham and Dallas from a Washington, DC office. It began as an initiative of the National Community Reinvestment Coalition in 2014 and now calls itself an independent homebuilder. Its Dallas page lists Brierwood in South Dallas, Clearview Ranch in Royse City, Northspur in Terrell and Solterra in Mesquite.",
+   "region": "Washington, DC headquarters, building in Dallas, Royse City, Terrell and Mesquite",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Ed Gorman launched GROWTH with NCRC in 2014, raising $100M, and a second fund, the American Homeownership Innovation Fund, launched in 2023.",
+     "url": "https://www.growth-homes.com/leadership"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Four DFW communities in 2026, with one GROWTH plan library, the Bedrock to the Horizon, sold across Atlanta, Birmingham and Dallas."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "More than 1,200 properties from its first fund since 2014, across 20 cities, a total. No yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Northspur",
+     "detail": "Terrell. 700 acres with more than 1,500 planned homes, four GROWTH plans from 1,647 to 2,068 square feet, coming soon.",
+     "url": "https://www.growth-homes.com/communities/texas/dallas-tx/north-spur/",
+     "signal": null
+    },
+    {
+     "name": "Clearview Ranch",
+     "detail": "Royse City. 408 acres with multiple builders, GROWTH homes from the low 300s, the Haven plan featured.",
+     "url": "https://www.growth-homes.com/communities/texas/dallas-tx/clearview-ranch/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.growth-homes.com/communities/texas/dallas-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/floorplans",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/about-growth/",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/leadership",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/communities/texas/dallas-tx/clearview-ranch/",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.growth-homes.com/communities/texas/dallas-tx/north-spur/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Ed Gorman",
+     "role": "Managing Director",
+     "source_url": "https://www.growth-homes.com/leadership",
+     "source_evidence": "Leadership page"
+    },
+    {
+     "name": "Dennis Harold",
+     "role": "Executive VP, New Markets and Operations",
+     "source_url": "https://www.growth-homes.com/leadership",
+     "source_evidence": "Leadership page",
+     "linkedin_url": "https://www.linkedin.com/in/dennis-harold-193355a/",
+     "li_evidence": "Indexed title: Dennis Harold, GROWTH Homes."
+    },
+    {
+     "name": "Ryan Twiss",
+     "role": "Executive VP, Land Acquisition and General Counsel",
+     "source_url": "https://www.growth-homes.com/leadership",
+     "source_evidence": "Leadership page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-216",
+   "entity_name": "Hark Homes",
+   "short": "Hark",
+   "homepage_url": "https://www.harktx.com/",
+   "company_li": null,
+   "team_url": "https://www.harktx.com/aboutus",
+   "chain": null,
+   "phone": "8174411090",
+   "phone_source": "https://www.harktx.com/contact",
+   "phone_label": "Aledo office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Four active communities and five completed ones on its Communities page in 2026.",
+   "mvp_screen": "Co-founders Andrew Shirley and Justin McCarty own Hark, and its Walsh homes list at $838,800 and $852,800 for January 2027.",
+   "synopsis": "Hark Homes is an Aledo builder of personalized homes west of Fort Worth, at Walsh, Parks of Aledo and The Grasslands among others. Its Available Homes page lists nine homes from $749,800 to $1,588,800. It also builds on buyers' land.",
+   "region": "Aledo, building west of Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Nine listed homes in 2026 run 3,270 to 4,947 sq. ft., and Walsh describes Hark's work as personalized designs and one-of-a-kind builds."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Nine homes listed for sale in 2026 and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Walsh",
+     "detail": "Quail Valley. 14405 and 14409 Highline Drive, $852,800 and $838,800, available January 2027.",
+     "url": "https://www.harktx.com/walshranch",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.harktx.com/communities",
+     "date": null
+    },
+    {
+     "url": "https://www.harktx.com/availablehomes",
+     "date": null
+    },
+    {
+     "url": "https://walshtx.com/our-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.harktx.com/aboutus",
+     "date": null
+    },
+    {
+     "url": "https://www.harktx.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.harktx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.harktx.com/walshranch",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Andrew Shirley",
+     "role": "Co-Founder",
+     "source_url": "https://www.harktx.com/aboutus",
+     "source_evidence": "About Us team page",
+     "linkedin_url": "https://www.linkedin.com/in/andrew-shirley-228954a4/",
+     "li_evidence": "Indexed title: Andrew Shirley, Hark Homes LLC.",
+     "decider": true
+    },
+    {
+     "name": "Justin McCarty",
+     "role": "Co-Founder",
+     "source_url": "https://www.harktx.com/aboutus",
+     "source_evidence": "About Us team page",
+     "decider": true
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-221",
+   "entity_name": "Village Homes",
+   "short": "Village",
+   "homepage_url": "https://homesofcharacter.com/",
+   "company_li": "https://www.linkedin.com/company/village-homes-homes-of-character/",
+   "team_url": "https://homesofcharacter.com/about-us",
+   "chain": null,
+   "phone": "8172330761",
+   "phone_source": "https://homesofcharacter.com/about-us",
+   "phone_label": "Footer line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "More than 1,500 homes built since 1996 across Fort Worth and Parker County (Village Homes press release, September 2026).",
+   "mvp_screen": "Village Homes emerged from Chapter 11 on July 23, 2026 with ownership unchanged, and co-founder Michael Dike still runs it as president.",
+   "synopsis": "Village Homes is a Fort Worth builder founded in 1996 by Michael Dike with financier and developer Jim Harris. It builds homes in pre-war architectural styles in six Fort Worth-area communities, from townhomes in the $470s at Walsh to TCU Colonial Park from $1.39m. It was the first local builder invited to build at Walsh.",
+   "region": "Fort Worth, building in Fort Worth and Parker County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Emerged from Chapter 11 on July 23, 2026, with all seven secured lenders voting for the plan and ownership unchanged.",
+     "url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Named plans at Walsh, the Kendrick, Bradley, Lafayette, Burgundy and Limoges among them, with homes sold as custom across six Fort Worth-area communities."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "More than 1,500 homes since 1996, a 30-year total, and no yearly closings figure on record."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Walsh",
+     "detail": "Aledo ISD. 50' rear-entry homesites from the $550s, townhomes from the $470s.",
+     "url": "https://homesofcharacter.com/community/7/walsh",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026",
+     "date": null
+    },
+    {
+     "url": "https://homesofcharacter.com/neighborhood/47/walsh-50-homesites",
+     "date": null
+    },
+    {
+     "url": "https://homesofcharacter.com/",
+     "date": null
+    },
+    {
+     "url": "https://homesofcharacter.com/about-us",
+     "date": null
+    },
+    {
+     "url": "https://homesofcharacter.com/community/7/walsh",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Michael Dike",
+     "role": "Co-founder and President",
+     "source_url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026",
+     "source_evidence": "Press release on its site, 2026-09-09",
+     "linkedin_url": "https://www.linkedin.com/in/michael-dike-6b025030/",
+     "li_evidence": "Indexed title: Michael Dike, President, Village Homes.",
+     "decider": true
+    },
+    {
+     "name": "James R. Harris",
+     "role": "Longtime business partner and founding financier",
+     "source_url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026",
+     "source_evidence": "Press release on its site, 2026-09-09, and About Us page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
    "has_decider": true,
    "decider_confirmed": true,
    "decider_caveat": false,
@@ -25444,6 +26667,172 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "DFW-205",
+   "entity_name": "DRB Homes",
+   "short": "DRB",
+   "homepage_url": "https://drbhomes.com/",
+   "company_li": "https://www.linkedin.com/company/drb-homes/",
+   "team_url": "https://www.drbhomes.com/about/why-drb",
+   "chain": null,
+   "phone": "3016960200",
+   "phone_source": "https://www.drbhomes.com/drbhomes/contact/contact-us",
+   "phone_label": "Dallas/Fort Worth office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "6,960 closings company-wide in 2025 for DRB Group, No. 15 on the BUILDER 100",
+   "mvp_screen": "Its parent, Sumitomo Forestry, bought a Louisiana sawmill in 2025 to feed DRB and its panel and truss operations. Spencer Wilson runs the DFW division.",
+   "synopsis": "DRB Homes is the homebuilding brand of DRB Group of Rockville, Maryland, a Sumitomo Forestry America subsidiary. Brightland Homes, another Sumitomo builder, took the DRB name on April 1, 2025, bringing DRB into Texas. Its Dallas-Fort Worth page lists 25 communities, starting from $224,990 at Walden Pond in Forney.",
+   "region": "Dallas Parkway office, building across Dallas-Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Brightland Homes consolidated under DRB Group on 2025-04-01. Both are Sumitomo Forestry America subsidiaries.",
+     "url": "https://www.builderonline.com/money/m-a/brightland-homes-consolidates-under-drb-group_o/"
+    },
+    {
+     "text": "Sumitomo's Louisiana sawmill, bought in 2025, supplies DRB, Bloomfield and Sumitomo's panel and truss operations first, HousingWire, 2025-07-08.",
+     "url": "https://www.housingwire.com/articles/sumitomos-timber-complex-sharpens-its-edge-of-integration/"
+    },
+    {
+     "text": "Sumitomo Forestry agreed on 2026-02-13 to buy Tri Pointe Homes for about USD 4.1 to 4.5 billion, and names a goal of 23,000 U.S. homes by 2030.",
+     "url": "https://sfc.jp/english/news/pdf/20260213_Notice_Regarding_the_Acquisition_of_Shares.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "25 communities on its Dallas-Fort Worth page, selling named plans such as the Palm, Juniper and Elm at Wildflower Ranch."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "6,960 closings company-wide in 2025 for DRB Group, BUILDER 100. Dallas-Fort Worth is one of 17 divisions."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "2023: Sumitomo Forestry opened a wall panel and truss plant in Archdale, North Carolina, to supply DRB Group there. That is off-site framing on DRB's North Carolina jobs."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Wildflower Ranch",
+     "detail": "Fort Worth. Palm, Juniper, Oleander and Elm plans, starting from $364,990.",
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/wildflower-ranch/overview",
+     "signal": null
+    },
+    {
+     "name": "Solterra Texas",
+     "detail": "Mesquite. Starting from $399,990.",
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/solterra-texas/overview",
+     "signal": null
+    },
+    {
+     "name": "Walden Pond",
+     "detail": "Forney. 1,400 to 2,740 sq ft, starting from $224,990.",
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/walden-pond/overview",
+     "signal": null
+    },
+    {
+     "name": "Serenade",
+     "detail": "Celina.",
+     "url": "https://serenadetexas.com/builders/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/firms/drb-group/",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/wildflower-ranch/overview",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/about/why-drb",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/sumitomos-timber-complex-sharpens-its-edge-of-integration/",
+     "date": null
+    },
+    {
+     "url": "https://sfc.jp/english/news/pdf/20230210_01.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/money/m-a/brightland-homes-consolidates-under-drb-group_o/",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/contact/contact-us",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://drbhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://sfc.jp/english/news/pdf/20260213_Notice_Regarding_the_Acquisition_of_Shares.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/solterra-texas/overview",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/dallasfort-worth/walden-pond/overview",
+     "date": null
+    },
+    {
+     "url": "https://serenadetexas.com/builders/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Ronny Salameh",
+     "role": "DRB Group CEO",
+     "source_url": "https://www.builderonline.com/money/m-a/brightland-homes-consolidates-under-drb-group_o/",
+     "source_evidence": "BUILDER, Brightland consolidation article, 2025-03-31",
+     "linkedin_url": "https://www.linkedin.com/in/ronny-salameh-46738b79/",
+     "li_evidence": "Indexed title: Ronny Salameh, DRB Group."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "DFW-052",
    "entity_name": "Beazer Homes",
    "short": "Beazer",
@@ -26908,6 +28297,632 @@
    "type": "homebuilder"
   },
   {
+   "target_id": "DFW-202",
+   "entity_name": "Bloomfield Homes",
+   "short": "Bloomfield",
+   "homepage_url": "https://www.bloomfieldhomes.com/",
+   "company_li": "https://linkedin.com/company/bloomfield-homes/",
+   "team_url": null,
+   "chain": null,
+   "phone": "8178098240",
+   "phone_source": "https://www.bloomfieldhomes.com/contact/",
+   "phone_label": "Main contact",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,810 Dallas-Fort Worth closings in 2025, 4.4% of the metro, BUILDER Local Leaders 2026",
+   "mvp_screen": "Sumitomo Forestry holds a controlling stake. The parent runs its own panel and truss business.",
+   "synopsis": "Bloomfield Homes builds single-family homes in its Classic and Elements series in Dallas-Fort Worth only. It says it has built over 20,000 homes since starting in Mansfield, and it closed 1,810 in 2025, BUILDER 100.",
+   "region": "Southlake, building only in Dallas-Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Sumitomo Forestry bought a 50 percent stake in Bloomfield in 2013.",
+     "url": "https://www.probuilder.com/executive-corner-dealing-equity-partners"
+    },
+    {
+     "text": "Sumitomo Forestry raised its stake to 65 percent in May 2017 for USD 36.5 million, making Bloomfield a subsidiary.",
+     "url": "https://sfc.jp/english/news/pdf/20170428_02_e.pdf"
+    },
+    {
+     "text": "Sumitomo's Louisiana sawmill, bought in 2025, supplies DRB, Bloomfield and Sumitomo's panel and truss operations first, HousingWire, 2025-07-08.",
+     "url": "https://www.housingwire.com/articles/sumitomos-timber-complex-sharpens-its-edge-of-integration/"
+    },
+    {
+     "text": "Sumitomo Forestry agreed on 2026-02-13 to buy Tri Pointe Homes for about USD 4.1 to 4.5 billion, and names a goal of 23,000 U.S. homes by 2030.",
+     "url": "https://sfc.jp/english/news/pdf/20260213_Notice_Regarding_the_Acquisition_of_Shares.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "2 home series, Classic and Elements, sold across Dallas-Fort Worth communities such as Devonshire, Waterscape and Painted Tree."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,810 closings in 2025, all in Dallas-Fort Worth, BUILDER Local Leaders."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Devonshire",
+     "detail": "Forney. 50' to 65' homesites, homes from $375,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/forney/devonshire/",
+     "signal": null
+    },
+    {
+     "name": "Waterscape",
+     "detail": "Royse City. 50' and 60' homesites, homes from $365,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/royse-city/waterscape/",
+     "signal": null
+    },
+    {
+     "name": "Wildflower Ranch",
+     "detail": "Justin. 50' to 65' homesites, homes from $384,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/justin/wildflower-ranch/",
+     "signal": null
+    },
+    {
+     "name": "Meraki",
+     "detail": "McLendon-Chisholm. 60' homesites, homes priced $432,990 to $598,136.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/mclendon-chisholm/meraki/",
+     "signal": null
+    },
+    {
+     "name": "Union Park by Hillwood",
+     "detail": "Little Elm. 55' and 60' homesites, homes from $479,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/little-elm/union-park/",
+     "signal": null
+    },
+    {
+     "name": "Villages of Hurricane Creek",
+     "detail": "Anna. 70' and 90' homesites, homes priced $489,990 to $679,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/anna/villages-of-hurricane-creek/",
+     "signal": null
+    },
+    {
+     "name": "Liberty by Hillwood",
+     "detail": "Melissa. Homes priced $499,990 to $694,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/melissa/liberty/",
+     "signal": null
+    },
+    {
+     "name": "Sutton Fields",
+     "detail": "Celina. Homes priced $549,990 to $714,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/celina/sutton-fields/",
+     "signal": null
+    },
+    {
+     "name": "Painted Tree",
+     "detail": "McKinney. 50', 60' and 70' homesites, homes from $559,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/mckinney/painted-tree/",
+     "signal": null
+    },
+    {
+     "name": "Mosaic",
+     "detail": "Celina. 60' homesites, homes priced $599,990 to $764,990.",
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/celina/mosaic/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://sfc.jp/english/business/overseashousing/america/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/forney/devonshire/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/mckinney/painted-tree/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/bloomfield-homes",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/contact/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://sfc.jp/english/news/pdf/20170428_02_e.pdf",
+     "date": null
+    },
+    {
+     "url": "https://sfc.jp/english/news/pdf/20260213_Notice_Regarding_the_Acquisition_of_Shares.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.probuilder.com/executive-corner-dealing-equity-partners",
+     "date": null
+    },
+    {
+     "url": "https://www.housingwire.com/articles/sumitomos-timber-complex-sharpens-its-edge-of-integration/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/royse-city/waterscape/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/justin/wildflower-ranch/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/mclendon-chisholm/meraki/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/little-elm/union-park/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/anna/villages-of-hurricane-creek/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/melissa/liberty/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/celina/sutton-fields/",
+     "date": null
+    },
+    {
+     "url": "https://www.bloomfieldhomes.com/new-homes/tx/celina/mosaic/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Don Dykstra",
+     "role": "Chairman",
+     "source_url": null,
+     "source_evidence": null,
+     "linkedin_url": "https://www.linkedin.com/in/dondykstra",
+     "li_evidence": "Don Dykstra - Chairman - Bloomfield Homes"
+    },
+    {
+     "name": "Tim Stewart",
+     "role": "President",
+     "source_url": null,
+     "source_evidence": null,
+     "linkedin_url": "https://www.linkedin.com/in/tim-stewart-b5948410/",
+     "li_evidence": "Tim Stewart - President at Bloomfield Homes"
+    }
+   ],
+   "vol": 1810,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-206",
+   "entity_name": "Davidson Homes",
+   "short": "Davidson",
+   "homepage_url": "https://www.davidsonhomes.com/",
+   "company_li": "https://www.linkedin.com/company/davidson-homes-llc",
+   "team_url": null,
+   "chain": null,
+   "phone": "4699665416",
+   "phone_source": "https://www.davidsonhomes.com/contact/division-offices/",
+   "phone_label": "Dallas division office, Wylie",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,683 closings company-wide in 2025, No. 43 on the BUILDER 100",
+   "mvp_screen": "Entered Dallas in 2024. Six communities in its Dallas region, its CEO in Huntsville, Alabama.",
+   "synopsis": "Davidson Homes builds single-family homes in Alabama, Tennessee, Georgia, North Carolina, Texas and Arizona from Huntsville, Alabama. It closed 1,683 homes company-wide in 2025, BUILDER 100, and lists 105 active communities. It entered Dallas in 2024 and builds in Anna, Heartland, Josephine, Royse City and Wylie.",
+   "region": "Wylie division office, building east and north of Dallas",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Davidson acquired Evermore Homes, a builder in Alabama, Georgia, Tennessee and Arizona, in March 2025.",
+     "url": "https://www.davidsonhomes.com/home-building-blog/2025/03/davidson-homes-acquires-evermore-homes/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "6 Dallas-region communities selling named plans in Foundation and Classic series, such as the Brazos, San Marcos and Frio at Heartland."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,683 closings company-wide in 2025 across six states, BUILDER 100."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Heartland",
+     "detail": "Heartland. Foundation and Classic series, 1,459 to 2,799 sq ft, move-in-ready homes from $284,990.",
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/heartland/heartland/",
+     "signal": null
+    },
+    {
+     "name": "Parks at Foster Crossing",
+     "detail": "Anna.",
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/anna/parks-at-foster-crossing/",
+     "signal": null
+    },
+    {
+     "name": "Mercer Meadows",
+     "detail": "Royse City.",
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/royse-city/mercer-meadows/",
+     "signal": null
+    },
+    {
+     "name": "Lake Park Villas",
+     "detail": "Wylie.",
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/wylie/lake-park-villas/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/firms/davidson-homes_o/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/heartland/heartland/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/our-story/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/contact/division-offices/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/home-building-blog/2025/03/davidson-homes-acquires-evermore-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/anna/parks-at-foster-crossing/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/royse-city/mercer-meadows/",
+     "date": null
+    },
+    {
+     "url": "https://www.davidsonhomes.com/states/texas/dallas-market-area/wylie/lake-park-villas/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Brandon Jones",
+     "role": "CEO",
+     "source_url": "https://www.builderonline.com/firms/davidson-homes_o/",
+     "source_evidence": "BUILDER firm page, 2026 Builder 100 data"
+    },
+    {
+     "name": "Adam Davidson",
+     "role": "Founder",
+     "source_url": "https://www.davidsonhomes.com/our-story/",
+     "source_evidence": "Davidson Our Story page",
+     "linkedin_url": "https://www.linkedin.com/in/adam-davidson-408a6444/",
+     "li_evidence": "Indexed title: Adam Davidson, Davidson Homes LLC."
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-201",
+   "entity_name": "Highland Homes",
+   "short": "Highland",
+   "homepage_url": "https://www.highlandhomes.com/",
+   "company_li": "https://www.linkedin.com/company/highland-homes",
+   "team_url": null,
+   "chain": null,
+   "phone": "9727893500",
+   "phone_source": "https://www.highlandhomes.com/contact",
+   "phone_label": "Dallas/Fort Worth office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "1,742 Dallas-Fort Worth closings in 2025, 4.3% of the metro, BUILDER Local Leaders 2026",
+   "mvp_screen": "Stephen Chambers became chief operating officer in August 2026, over supply chain and new product development for all of Highland.",
+   "synopsis": "Highland Homes builds single-family homes in Dallas-Fort Worth, Houston, Austin and San Antonio from Plano. It closed 3,482 homes company-wide in 2025, BUILDER 100, and lists 44 communities in Dallas-Fort Worth. Its employees have owned it through an ESOP since 2016.",
+   "region": "Plano headquarters, building across Dallas-Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Highland completed an employee stock ownership plan in March 2016, selling the company to its employees.",
+     "url": "https://www.builderonline.com/builder-100/leadership/top-25-builder-highland-homes-completes-employee-stock-ownership-plan_o"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "44 Dallas-Fort Worth communities on Highland's site, with sections sold by lot width, such as Meraki at 40', 45', 60' and 70'."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "1,742 Dallas-Fort Worth closings in 2025, BUILDER Local Leaders."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Meraki",
+     "detail": "McLendon-Chisholm. 40', 45', 60' and 70' sections, the Rockwell plan from $364,990.",
+     "url": "https://www.highlandhomes.com/dfw/mclendon-chisholm/meraki/40ft-lots/section",
+     "signal": null
+    },
+    {
+     "name": "Goodland",
+     "detail": "Venus. 40', 53' and 60' sections, the Devon plan from $382,990.",
+     "url": "https://www.highlandhomes.com/dfw/venus/goodland/40ft-lots/section",
+     "signal": null
+    },
+    {
+     "name": "Pecan Square",
+     "detail": "Northlake. 40' to 100' homesites, from the $430s.",
+     "url": "https://www.highlandhomes.com/dfw/northlake/pecan-square",
+     "signal": null
+    },
+    {
+     "name": "Mosaic",
+     "detail": "Celina. 40' to 70' homesites, from the $470s.",
+     "url": "https://www.highlandhomes.com/dfw/celina/mosaic",
+     "signal": null
+    },
+    {
+     "name": "Aster Park",
+     "detail": "McKinney. 40' lots from the $440s and 50' lots from the $580s.",
+     "url": "https://www.highlandhomes.com/dfw/mckinney/aster-park/40ft-lots/section",
+     "signal": null
+    },
+    {
+     "name": "Heartland",
+     "detail": "Heartland. Starting at $293,990.",
+     "url": "https://www.highlandhomes.com/dfw/crandall/heartland",
+     "signal": null
+    },
+    {
+     "name": "Landmark by Hillwood",
+     "detail": "Denton. 50' homesites, the Amberley plan from $503,990.",
+     "url": "https://www.highlandhomes.com/dfw/denton/landmark",
+     "signal": null
+    },
+    {
+     "name": "Treeline",
+     "detail": "Justin. 45' homesites, starting at $407,990.",
+     "url": "https://www.highlandhomes.com/dfw/justin/treeline",
+     "signal": null
+    },
+    {
+     "name": "Myrtle Creek",
+     "detail": "Waxahachie. 60' homesites.",
+     "url": "https://www.highlandhomes.com/dfw/waxahachie/myrtle-creek",
+     "signal": null
+    },
+    {
+     "name": "Walsh",
+     "detail": "Fort Worth. Starting at $755,990.",
+     "url": "https://www.highlandhomes.com/dfw/aledo/walsh",
+     "signal": null
+    },
+    {
+     "name": "Furst Ranch",
+     "detail": "Bartonville. 60' and 70' sections, the 213 plan from $865,990.",
+     "url": "https://www.highlandhomes.com/dfw/bartonville/furst-ranch/60ft-lots/section",
+     "signal": null
+    },
+    {
+     "name": "Mustang Lakes",
+     "detail": "Celina. 60' to 86' homesites, from the $690s.",
+     "url": "https://www.highlandhomes.com/dfw/celina/mustang-lakes",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/land/local-leaders-list/2026/dallas-fort-worth-arlington-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/mclendon-chisholm/meraki/40ft-lots/section",
+     "date": null
+    },
+    {
+     "url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/firms/highland-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/leadership/top-25-builder-highland-homes-completes-employee-stock-ownership-plan_o",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/venus/goodland/40ft-lots/section",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/northlake/pecan-square",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/celina/mosaic",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/mckinney/aster-park/40ft-lots/section",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/crandall/heartland",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/denton/landmark",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/justin/treeline",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/waxahachie/myrtle-creek",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/aledo/walsh",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/bartonville/furst-ranch/60ft-lots/section",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/dfw/celina/mustang-lakes",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Aaron Graham",
+     "role": "Chairman and CEO",
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "source_evidence": "Builder and Developer, restructuring article, 2026-08-06",
+     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/",
+     "li_evidence": "Aaron Graham - Chairman and CEO - Highland Homes"
+    },
+    {
+     "name": "Stephen Chambers",
+     "role": "Chief Operating Officer, over architectural services, new product development and supply chain",
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
+     "source_evidence": "Builder and Developer, restructuring article, 2026-08-06"
+    }
+   ],
+   "vol": 1742,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
    "target_id": "DFW-059",
    "entity_name": "Tri Pointe Homes",
    "short": "Tri Pointe",
@@ -27010,6 +29025,348 @@
    "decider_confirmed": true,
    "decider_caveat": false,
    "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-203",
+   "entity_name": "Drees Custom Homes",
+   "short": "Drees",
+   "homepage_url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth",
+   "company_li": "https://www.linkedin.com/company/drees-homes",
+   "team_url": null,
+   "chain": null,
+   "phone": "9729534500",
+   "phone_source": "https://www.dreeshomes.com/new-homes-dallas-ft-worth",
+   "phone_label": "Dallas-Fort Worth division",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "2,286 closings company-wide in 2025, No. 37 on the BUILDER 100",
+   "mvp_screen": "Buyers customize its plans on 60' to 90' homesites. Texas answers to one regional president.",
+   "synopsis": "Drees Custom Homes is the Texas name of Drees Homes, a family-owned builder based in Fort Mitchell, Kentucky. It builds in 10 metros, including Austin, Dallas and Houston, and closed 2,286 homes company-wide in 2025, BUILDER 100. Its Dallas-Fort Worth division office is in Irving.",
+   "region": "Irving division office, building across Dallas-Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "60' and 70' homesites at Walsh, where buyers pick a plan and \"customize it to fit your needs.\" That is semi-custom."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "2,286 closings company-wide in 2025 across 10 metros, BUILDER 100."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "partial|fail",
+   "group": "national",
+   "key_projects": [
+    {
+     "name": "Walsh",
+     "detail": "Fort Worth. 60' and 70' homesites, $729,900 to $1,449,990.",
+     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/ft-worth-tx/walsh",
+     "signal": null
+    },
+    {
+     "name": "Landmark by Hillwood",
+     "detail": "Denton. 60' and 70' homesites.",
+     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/denton-tx/landmark/landmark/",
+     "signal": null
+    },
+    {
+     "name": "Mosaic",
+     "detail": "Celina. Townhomes from $399,990.",
+     "url": "https://mosaiclivingtx.com/builder/drees-custom-homes/",
+     "signal": null
+    },
+    {
+     "name": "Ramble by Hillwood",
+     "detail": "Celina. 74' homesites, from the low $700s.",
+     "url": "https://www.ramblebyhillwood.com/our-builders/drees-custom-homes/",
+     "signal": null
+    },
+    {
+     "name": "Trinity Falls",
+     "detail": "McKinney. 60' homesites, from the low $700s.",
+     "url": "https://www.trinityfalls.com/builders/drees-custom-homes",
+     "signal": null
+    },
+    {
+     "name": "Viridian",
+     "detail": "Arlington. 60' homesites, from the $718s.",
+     "url": "https://www.viridiandfw.com/home-builders/443/drees-custom-homes-elements",
+     "signal": null
+    },
+    {
+     "name": "South Pointe",
+     "detail": "Mansfield. 90' homesites, from the $760s to the $920s.",
+     "url": "https://southpointenewhomes.com/homes/drees/",
+     "signal": null
+    },
+    {
+     "name": "Painted Tree",
+     "detail": "McKinney. From the $700s.",
+     "url": "https://paintedtreetx.com/homebuilders/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.builderonline.com/firms/drees-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/ft-worth-tx/walsh",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/",
+     "date": null
+    },
+    {
+     "url": "https://www.linkedin.com/in/david-harbin-a7b4602a/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth",
+     "date": null
+    },
+    {
+     "url": "https://www.builderonline.com/builder-100/builder-100-list/2026/",
+     "date": null
+    },
+    {
+     "url": "https://www.dreeshomes.com/new-homes-dallas-ft-worth/denton-tx/landmark/landmark/",
+     "date": null
+    },
+    {
+     "url": "https://mosaiclivingtx.com/builder/drees-custom-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.ramblebyhillwood.com/our-builders/drees-custom-homes/",
+     "date": null
+    },
+    {
+     "url": "https://www.trinityfalls.com/builders/drees-custom-homes",
+     "date": null
+    },
+    {
+     "url": "https://www.viridiandfw.com/home-builders/443/drees-custom-homes-elements",
+     "date": null
+    },
+    {
+     "url": "https://southpointenewhomes.com/homes/drees/",
+     "date": null
+    },
+    {
+     "url": "https://paintedtreetx.com/homebuilders/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "David Drees",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.builderonline.com/firms/drees-homes/",
+     "source_evidence": "BUILDER firm page, 2026 Builder 100 data",
+     "linkedin_url": "https://www.linkedin.com/in/david-drees-2882785a/",
+     "li_evidence": "Indexed title: David Drees, Drees Homes."
+    },
+    {
+     "name": "Tim Terrell",
+     "role": "President",
+     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/",
+     "source_evidence": "Drees press release, 2024-09-23"
+    },
+    {
+     "name": "David Harbin",
+     "role": "President - Texas Region",
+     "source_url": "https://www.linkedin.com/in/david-harbin-a7b4602a/",
+     "source_evidence": "LinkedIn profile, as shown in search result title",
+     "linkedin_url": "https://www.linkedin.com/in/david-harbin-a7b4602a/",
+     "li_evidence": "David Harbin - President - Texas Region at Drees Homes"
+    }
+   ],
+   "vol": 2286,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "homebuilder"
+  },
+  {
+   "target_id": "DFW-231",
+   "entity_name": "The Nehemiah Company",
+   "short": "Nehemiah",
+   "homepage_url": "https://www.thenehemiahcompany.com/",
+   "company_li": null,
+   "team_url": "https://www.thenehemiahcompany.com/our-team",
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Karis: 565 acres and 2,025 homesites in Crowley (Karis community site, 2026)",
+   "mvp_screen": "Sells Karis lots to Cadence Homes, Chesmar Homes and David Weekley Homes.",
+   "synopsis": "The Nehemiah Company develops master-planned communities, multifamily and build-to-rent projects in Arlington, DFW and Colorado. Principals Robert Kembel and Howard Porteus lead it. Its DFW master plans are Karis in Crowley, Talia in Mesquite and Viridian in Arlington. Karis won a Dallas Business Journal Best Real Estate Deals award for 2022 projects, in the single-family or master-planned category.",
+   "region": "Arlington and the DFW Metroplex, with master plans in Crowley (Karis) and Mesquite (Talia)",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "2,025 homesites at Karis with Cadence Homes, Chesmar Homes and David Weekley Homes. Talia in Mesquite adds 612 acres with David Weekley and Drees Custom Homes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "2,025 homesites at Karis sold to three builders (Karis). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "TraceAir earthwork-tracking software on Talia, its 612-acre Mesquite master plan (Nehemiah press item, December 2024)."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "partial"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Karis",
+     "detail": "Crowley. 565 acres, 2,025 homesites. Cadence Homes townhomes from the $260s, David Weekley Homes on 35' and 50' lots, Chesmar Homes on 60' lots.",
+     "url": "https://www.karistx.com/builders",
+     "signal": null
+    },
+    {
+     "name": "Talia",
+     "detail": "Mesquite. 612 acres, Forney ISD. Builders include David Weekley and Drees Custom Homes.",
+     "url": "https://www.thenehemiahcompany.com/talia",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.karistx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/talia",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/press/79/tech-driven-precision%3A-how-the-nehemiah-company-uses-traceair-for-efficient-master-planned-development",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/our-team/1/robert-kembel",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/our-team/2/howard-porteus",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/our-team",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/karis",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/press",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/press/69/home-sales-begin-in-karis-in-crowley",
+     "date": null
+    },
+    {
+     "url": "https://www.thenehemiahcompany.com/press/72/karis-community-to-bring-2500-homes-with-mix-of-product-types-to-crowley",
+     "date": null
+    },
+    {
+     "url": "https://www.karistx.com/developer",
+     "date": null
+    },
+    {
+     "url": "https://www.karistx.com/builders",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Robert Kembel",
+     "role": "Partner and President",
+     "source_url": "https://www.thenehemiahcompany.com/our-team/1/robert-kembel",
+     "source_evidence": "Team bio page",
+     "linkedin_url": "https://www.linkedin.com/in/robert-kembel-314738164/",
+     "li_evidence": "Indexed title: Robert Kembel, The Nehemiah Company."
+    },
+    {
+     "name": "Howard Porteus",
+     "role": "Partner and Development Manager",
+     "source_url": "https://www.thenehemiahcompany.com/our-team/2/howard-porteus",
+     "source_evidence": "Team bio page",
+     "linkedin_url": "https://www.linkedin.com/in/howard-porteus-476513241/",
+     "li_evidence": "Indexed title: Howard Porteus, Managing Partner, The Nehemiah Company."
+    },
+    {
+     "name": "Phong Smith",
+     "role": "Chief Investment Officer",
+     "source_url": "https://www.thenehemiahcompany.com/our-team",
+     "source_evidence": "Our Team page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
   },
   {
    "target_id": "DFW-CH-015",
@@ -29149,6 +31506,1317 @@
    "type": "masterplan"
   },
   {
+   "target_id": "DFW-228",
+   "entity_name": "Hanover Property Company",
+   "short": "Hanover",
+   "homepage_url": "https://www.hanoverproperty.com/",
+   "company_li": null,
+   "team_url": "https://www.hanoverproperty.com/about-us/",
+   "chain": null,
+   "phone": "2144452200",
+   "phone_source": "https://www.hanoverproperty.com/contact-us.html",
+   "phone_label": "Main office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "3,086 lots and units on 615 acres at Wellington in Fort Worth, its largest active plan (Hanover portfolio page)",
+   "mvp_screen": "Delivers lots in phases to builders such as Highland Homes, Beazer Homes and K. Hovnanian Homes.",
+   "synopsis": "Hanover Property Company is a Dallas developer that Richard LeBlanc founded in 1984. It began with master-planned communities in DFW and now also does retail, multifamily, self-storage and land. Its active single-family plans are Berkshire and Wellington in Fort Worth, Somerset in Mansfield and FM 548 at Devonshire in Forney. Mira Lagos in Grand Prairie is a legacy community.",
+   "region": "Dallas, on Knox Street, with master plans in Fort Worth, Mansfield, Forney and Grand Prairie",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "4 active DFW single-family plans, with 6 builders at Berkshire and 5 at Wellington."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 2,000 lots developed by EVP Ben Luedtke (Hanover bio). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Mira Lagos",
+     "detail": "Grand Prairie, on a Joe Pool Lake peninsula, with a 43-acre linear park. Legacy community. Builders Beazer, Bloomfield, Grand, First Texas and Innovation Builders.",
+     "url": "https://www.hanoverproperty.com/duplicate-of-steadman-farms.html",
+     "signal": null
+    },
+    {
+     "name": "Wellington",
+     "detail": "Fort Worth. 615 acres, 1,627 single-family lots and 1,459 multifamily units. Builders include Beazer, Gehan, Highland and K Hovnanian.",
+     "url": "https://www.hanoverproperty.com/wellington-sf.html",
+     "signal": null
+    },
+    {
+     "name": "Somerset",
+     "detail": "Mansfield, at SH 360 and US 287. 487 acres, 1,105 single-family lots and 246 townhomes. Builders Innovation Builders, Chesmar, J Houston and Pulte.",
+     "url": "https://www.hanoverproperty.com/somerset-sf.html",
+     "signal": null
+    },
+    {
+     "name": "Berkshire",
+     "detail": "Fort Worth, at FM 156 and US 287. 358 acres, 636 single-family lots and 624 multifamily units. Builders include Meritage, Highland, Ashton Woods and M/I Homes.",
+     "url": "https://www.hanoverproperty.com/berkshire-sf.html",
+     "signal": null
+    },
+    {
+     "name": "FM 548 at Devonshire",
+     "detail": "Forney. 114 acres, 300 lots held for future single-family development.",
+     "url": "https://www.hanoverproperty.com/fm-548-at-devonshire.html",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.hanoverproperty.com/wellington-sf.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/portfolio/",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/berkshire-sf.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/ben-luedtke.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/richard-e-leblanc.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/adam-whitworth.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/contact-us.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/duplicate-of-steadman-farms.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/somerset-sf.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hanoverproperty.com/fm-548-at-devonshire.html",
+     "date": null
+    },
+    {
+     "url": "https://www.miralagoshoa.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Richard LeBlanc",
+     "role": "President",
+     "source_url": "https://www.hanoverproperty.com/richard-e-leblanc.html",
+     "source_evidence": "Biography page. Founded Hanover in 1984",
+     "linkedin_url": "https://www.linkedin.com/in/richard-leblanc-5760ab14",
+     "li_evidence": "Indexed title: Richard LeBlanc, President, Hanover Property Co.."
+    },
+    {
+     "name": "Ben Luedtke",
+     "role": "Executive Vice President",
+     "source_url": "https://www.hanoverproperty.com/ben-luedtke.html",
+     "source_evidence": "Biography page. Oversees entitlement and development of the single-family master plans",
+     "linkedin_url": "https://www.linkedin.com/in/ben-luedtke-a23278364",
+     "li_evidence": "Indexed title: Ben Luedtke, Hanover Property Company."
+    },
+    {
+     "name": "Adam Whitworth",
+     "role": "Project Manager",
+     "source_url": "https://www.hanoverproperty.com/adam-whitworth.html",
+     "source_evidence": "Biography page. Joined full-time in July 2018, formerly VP of Land Development at M/I Homes in DFW"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-229",
+   "entity_name": "MA Partners",
+   "short": "MA Partners",
+   "homepage_url": "https://madev.com/",
+   "company_li": null,
+   "team_url": "https://madev.com/about-us/",
+   "chain": null,
+   "phone": "9452021756",
+   "phone_source": "https://elevontx.com/",
+   "phone_label": "Elevon community line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "407 sales at Elevon in 2025, down 13% from 466 in 2024, #43 nationally (RCLCO, 2025 master-planned community sales ranking)",
+   "mvp_screen": "Sells Elevon lots to nine builders, including D.R. Horton, K. Hovnanian and Trophy Signature Homes.",
+   "synopsis": "MA Partners is a Carrollton land developer led by founder and CEO John Marlin, with a second office in Hutto. It says it has bought more than 35 properties and entitled and sold more than 30,000 lots in Texas and California. In DFW it develops Elevon in Lavon, with over 4,000 homes planned, and earlier sold lots at Woodland Creek in Royse City and Oakpoint in Plano.",
+   "region": "Carrollton, on Midway Road, developing Elevon in Lavon, with an Austin office in Hutto",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "9 builders on one Elevon site in Lavon, with over 4,000 homes planned."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 30,000 lots entitled and sold, company-wide (MA Partners). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Elevon",
+     "detail": "Lavon. Over 4,000 homes and commercial uses planned. Builders include D.R. Horton, HistoryMaker, K. Hovnanian, Pacesetter, Trophy Signature and UnionMain.",
+     "url": "https://elevontx.com/",
+     "signal": null
+    },
+    {
+     "name": "Woodland Creek",
+     "detail": "Royse City. 165 acres. Final phase of 174 home sites sold to a national homebuilder in 2018.",
+     "url": "https://madev.com/portfolio/woodland-creek/",
+     "signal": null
+    },
+    {
+     "name": "Oakpoint",
+     "detail": "Plano. 51 acres, 132 patio homes and 99 townhomes, built by KB Home.",
+     "url": "https://madev.com/portfolio/oakpoint/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
+     "date": null
+    },
+    {
+     "url": "https://elevontx.com/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/contact-us/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/land-development/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/portfolio/elevon/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/portfolio/woodland-creek/",
+     "date": null
+    },
+    {
+     "url": "https://madev.com/portfolio/oakpoint/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "John Marlin",
+     "role": "Founder & Chief Executive Officer",
+     "source_url": "https://madev.com/about-us/",
+     "source_evidence": "About Us page",
+     "linkedin_url": "https://www.linkedin.com/in/john-marlin-8654077/",
+     "li_evidence": "Indexed title: John Marlin, MA Partners."
+    },
+    {
+     "name": "David Howell",
+     "role": "Vice President, Land Development",
+     "source_url": "https://madev.com/about-us/",
+     "source_evidence": "About Us page. Managed over 12,000 lots"
+    },
+    {
+     "name": "Wyatt Henderson",
+     "role": "Co-Founder & Principal, Dallas",
+     "source_url": "https://madev.com/about-us/",
+     "source_evidence": "About Us page. Formerly with KB Home, Lennar and Ashton Woods"
+    },
+    {
+     "name": "Ryan Burton",
+     "role": "Senior Project Manager, Dallas/Fort Worth development",
+     "source_url": "https://madev.com/about-us/",
+     "source_evidence": "About Us page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-230",
+   "entity_name": "PMB Capital Investments",
+   "short": "PMB Capital",
+   "homepage_url": "https://pmbinv.com/",
+   "company_li": null,
+   "team_url": "https://pmbinv.com/",
+   "chain": null,
+   "phone": "2144668144",
+   "phone_source": "https://pmbinv.com/",
+   "phone_label": "Main office, Dallas",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Principals have developed over 5,000 residential lots and made over $750 million in direct real estate acquisitions (PMB Capital Investments, About section)",
+   "mvp_screen": "Manages all development at Woodcreek, where seven builders build.",
+   "synopsis": "PMB Capital Investments is a privately held Dallas real estate investment and development company led by partners Peter Pincoffs, Matt Mildren and Taylor Baird. It develops single-family lot communities across DFW, including Woodcreek in Fate with Southstar Development Partners, Wildcat Ranch in Crandall, Reunion in Wise County and Ventana and Veale Ranch in west Fort Worth. PMB Lending, a subsidiary, makes first lien loans to lot development projects in Texas. A June 2024 Dallas Business Journal excerpt on its site describes a 180-home build-to-rent community, Canopy Homes at Ventana.",
+   "region": "Dallas office on Maple Avenue, with master plans in Fate, Crandall, Wise County, Sachse and west Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "PMB Lending, a subsidiary, formed in 2017 to lend up to $100 million to Texas lot developers and builders (PMB press excerpts).",
+     "url": "https://pmbinv.com/"
+    },
+    {
+     "text": "Trez Capital provided acquisition financing and development funding for Wildcat Ranch, October 2018 (Connect CRE).",
+     "url": "https://www.connectcre.com/stories/903-acre-wildcat-ranch-acquired-mpc-planned/"
+    },
+    {
+     "text": "Bought the 3,800-acre Veale Ranch west of Fort Worth, 2021 (Dallas Morning News excerpt on PMB site).",
+     "url": "https://pmbinv.com/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Seven builders at Woodcreek, including D.R. Horton, Lennar and Pulte. Wildcat Ranch is planned for 3,100 homes with KB Home, Beazer and D.R. Horton."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 5,000 residential lots developed by its principals (PMB Capital Investments). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Woodcreek",
+     "detail": "Fate. 1,600 acres (PMB). Builders D.R. Horton, Tri Pointe, First Texas Homes, Lennar, Pulte and Beazer, plus Canopy Homes for rent, from the mid $200s to the $400s. 322 sales in RCLCO's mid-2021 list, ranked 30th.",
+     "url": "https://woodcreekfate.com/",
+     "signal": null
+    },
+    {
+     "name": "Wildcat Ranch",
+     "detail": "Crandall. 903 acres, 3,100 single-family homes planned. Builders D.R. Horton, Lennar and Summerwell.",
+     "url": "https://wildcatranchtexas.com/community/",
+     "signal": null
+    },
+    {
+     "name": "Reunion",
+     "detail": "Wise County near SH 114 and US 287. 3,100 acres planned for more than 10,000 homes (PMB).",
+     "url": "https://reuniontx.com/",
+     "signal": null
+    },
+    {
+     "name": "Ventana",
+     "detail": "West Fort Worth. $500 million master plan with David Weekley Homes, CalAtlantic Homes and Dunhill Homes (PMB).",
+     "url": "https://ventanatx.com/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://pmbinv.com/",
+     "date": null
+    },
+    {
+     "url": "https://woodcreekfate.com/new-homes/",
+     "date": null
+    },
+    {
+     "url": "https://southstartx.com/who-we-are",
+     "date": null
+    },
+    {
+     "url": "https://woodcreekfate.com/",
+     "date": null
+    },
+    {
+     "url": "https://woodcreekfate.com/developer/",
+     "date": null
+    },
+    {
+     "url": "https://southstartx.com/awards",
+     "date": null
+    },
+    {
+     "url": "https://wildcatranchtexas.com/community/",
+     "date": null
+    },
+    {
+     "url": "https://reuniontx.com/",
+     "date": null
+    },
+    {
+     "url": "https://ventanatx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.connectcre.com/stories/903-acre-wildcat-ranch-acquired-mpc-planned/",
+     "date": null
+    },
+    {
+     "url": "https://daltxrealestate.com/six-dfw-communities-make-mid-year-master-planned-list/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Peter Pincoffs",
+     "role": "Partner",
+     "source_url": "https://pmbinv.com/",
+     "source_evidence": "Team section, PMB homepage",
+     "linkedin_url": "https://www.linkedin.com/in/peterpincoffs/",
+     "li_evidence": "Indexed title: Peter Pincoffs, PMB Capital Investments."
+    },
+    {
+     "name": "Matt Mildren",
+     "role": "Partner",
+     "source_url": "https://pmbinv.com/",
+     "source_evidence": "Team section, PMB homepage",
+     "linkedin_url": "https://www.linkedin.com/in/matt-mildren-17036a3b/",
+     "li_evidence": "Indexed title: Matt Mildren, PMB Capital Investments."
+    },
+    {
+     "name": "Taylor Baird",
+     "role": "Partner",
+     "source_url": "https://pmbinv.com/",
+     "source_evidence": "Team section, PMB homepage",
+     "linkedin_url": "https://www.linkedin.com/in/taylor-baird-7a68a4149/",
+     "li_evidence": "Indexed title: Taylor Baird, PMB Capital Investments."
+    },
+    {
+     "name": "Josh Oyer",
+     "role": "Head of Construction",
+     "source_url": "https://pmbinv.com/",
+     "source_evidence": "Team section, PMB homepage",
+     "linkedin_url": "https://www.linkedin.com/in/joshua-oyer-224648220/",
+     "li_evidence": "Indexed title: Joshua Oyer, Head of Construction, PMB Capital Investments.",
+     "decider": true
+    },
+    {
+     "name": "Thad Rutherford",
+     "role": "President & CEO, Southstar Development Partners (Woodcreek co-developer)",
+     "source_url": "https://southstartx.com/who-we-are",
+     "source_evidence": "Southstar Who We Are page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-225",
+   "entity_name": "Provident Realty Advisors",
+   "short": "Provident",
+   "homepage_url": "https://provident.net/",
+   "company_li": "https://www.linkedin.com/company/provident-realty-advisors",
+   "team_url": "https://provident.net/our-team/",
+   "chain": null,
+   "phone": "9723854100",
+   "phone_source": "https://provident.net/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "22.8K planned and developed lots on 9.8K acres acquired, company-wide (Provident)",
+   "mvp_screen": "Sells Goodland and Tavolo Park lots to builders such as Highland Homes and David Weekley Homes.",
+   "synopsis": "Provident Realty Advisors is a privately held Dallas developer founded in 1991 by Leon Backes. Its master plans include Goodland, a 5,000-acre community south of Mansfield formerly called Prairie Ridge, Tavolo Park in Fort Worth, Hillstead in Lavon and Paloma Creek in Little Elm. It also develops multifamily, industrial, hospitality and data center projects.",
+   "region": "Dallas, on N. Central Expressway, with master plans in south Grand Prairie, Fort Worth, Lavon and Little Elm",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "$24 million Trez Capital loan for Hillstead, a 540-acre Lavon master plan (Dallas Express).",
+     "url": "https://dallasexpress.com/realestate/dfw-city-to-get-masterplanned-community/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four current builders at Goodland and four at Tavolo Park, on two DFW master plans."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "22.8K lots planned and developed, company-wide (Provident). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Goodland",
+     "detail": "South of Mansfield, formerly Prairie Ridge. 5,000 acres, about 900 annexed into Grand Prairie in 2025. Builders Beazer, David Weekley, Grand and Highland, from the mid $300s.",
+     "url": "https://goodlandtx.com/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://provident.net/products/communities/",
+     "date": null
+    },
+    {
+     "url": "https://goodlandtx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.tavolopark.com/homes/",
+     "date": null
+    },
+    {
+     "url": "https://provident.net/our-team/",
+     "date": null
+    },
+    {
+     "url": "https://provident.net/",
+     "date": null
+    },
+    {
+     "url": "https://goodlandtx.com/news/available-homes-in-midlothian-the-texas-home-builders-who-designed-them/",
+     "date": null
+    },
+    {
+     "url": "https://goodlandtx.com/news/900-acres-of-master-planned-community-goodland-annexed-into-the-city-of-grand-prairie/",
+     "date": null
+    },
+    {
+     "url": "https://www.tavolopark.com/",
+     "date": null
+    },
+    {
+     "url": "https://dallasexpress.com/realestate/dfw-city-to-get-masterplanned-community/",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2020/06/11/new-home-community-southwest-of-dallas-will-bring-thousands-of-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jay Hawes",
+     "role": "President",
+     "source_url": "https://provident.net/our-team/",
+     "source_evidence": "Our Team page.",
+     "linkedin_url": "https://www.linkedin.com/in/jay-hawes-23b6398/",
+     "li_evidence": "Jay Hawes - Provident Realty Advisors | LinkedIn"
+    },
+    {
+     "name": "Rylan Yowell",
+     "role": "Managing Director, Master Planned Communities",
+     "source_url": "https://provident.net/our-team/",
+     "source_evidence": "Our Team page.",
+     "linkedin_url": "https://www.linkedin.com/in/rylan-yowell-8395496a/",
+     "li_evidence": "Rylan Yowell - Provident | LinkedIn"
+    },
+    {
+     "name": "Leon J. Backes",
+     "role": "Founder & CEO",
+     "source_url": "https://provident.net/our-team/",
+     "source_evidence": "Our Team page.",
+     "linkedin_url": "https://www.linkedin.com/in/leonbackes/",
+     "li_evidence": "Leon Backes - Provident Realty Advisors | LinkedIn"
+    },
+    {
+     "name": "Daniel Twigge",
+     "role": "Executive Director, Master Planned Communities",
+     "source_url": "https://provident.net/products/communities/",
+     "source_evidence": "Our Team page.",
+     "linkedin_url": "https://www.linkedin.com/in/daniel-twigge-45649bba/",
+     "li_evidence": "Daniel Twigge - Executive Vice President at Provident"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-224",
+   "entity_name": "Starwood Land",
+   "short": "Starwood Land",
+   "homepage_url": "https://starwoodland.com/",
+   "company_li": "https://www.linkedin.com/company/starwood-land",
+   "team_url": "https://starwoodland.com/team/",
+   "chain": null,
+   "phone": "9413880707",
+   "phone_source": "https://starwoodland.com/contact-us/",
+   "phone_label": "Corporate office, Lakewood Ranch, FL",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "11 Texas master-planned communities with more than 16,000 remaining lots, 7 of them in Dallas, bought from Hines for about $800 million (Starwood Capital press release, April 2025)",
+   "mvp_screen": "Sells lots in its DFW master plans to builders such as Highland Homes, D.R. Horton and David Weekley.",
+   "synopsis": "Starwood Land is the land arm of Starwood Capital Group, based in Lakewood Ranch, Florida, with a Dallas office. It lists more than 55,000 lots sold in 100 communities in 11 states since July 2007. In April 2025 it bought 11 Texas master plans from Hines, including Aster Park, Northspur and Furst Ranch in DFW. Starwood Capital also holds a majority interest in Houston developer Land Tejas, bought in December 2021.",
+   "region": "Dallas office on N. Central Expressway, with master plans in McKinney, Fort Worth, Royse City, Terrell, Waxahachie, Midlothian and Argyle",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Bought 11 Texas master plans from Hines for about $800 million, April 2025, with Starwood Capital Group.",
+     "url": "https://www.prnewswire.com/news-releases/starwood-capital-group-acquires-11-master-planned-communities-in-texas-from-hines-302420731.html"
+    },
+    {
+     "text": "Starwood Capital Group bought a majority interest in Houston developer Land Tejas, December 2021, managed by Starwood Land Advisors.",
+     "url": "https://www.prnewswire.com/news-releases/starwood-capital-group-acquires-majority-interest-in-houston-based-land-tejas-301451396.html"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Seven DFW master plans with production builders, including 13 builders at Wildflower Ranch."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "More than 55,000 lots sold since 2007, company-wide (Starwood Land). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Aster Park",
+     "detail": "McKinney. 414 acres, 1,100 homesites. Builders include Highland Homes, Toll Brothers and M/I Homes.",
+     "url": "https://asterparktx.com/",
+     "signal": null
+    },
+    {
+     "name": "Creekside",
+     "detail": "Royse City. 1,135 homes (Starwood Land). Builders RockWell Homes, UnionMain Homes, William Ryan Homes and Lennar, from the high $200s.",
+     "url": "https://creeksideroysecity.com/",
+     "signal": null
+    },
+    {
+     "name": "Furst Ranch",
+     "detail": "Argyle area. High Plains now selling, Prairie Vista and Cross Timbers to follow. Dallas Morning News (2025) reports 2,300 acres and a first phase of about 1,400 homes.",
+     "url": "https://furstranch.com/neighborhoods/",
+     "signal": null
+    },
+    {
+     "name": "Myrtle Creek",
+     "detail": "Waxahachie. 2,500 homes (Starwood Land). Builders include Impression Homes, Perry Homes and David Weekley, from the $300s to $800s.",
+     "url": "https://myrtlecreektx.com/",
+     "signal": null
+    },
+    {
+     "name": "Northspur",
+     "detail": "Terrell. 700 acres, 1,527 single-family homes at completion. Builders Impression Homes, GROWTH Homes and D.R. Horton, from the $200s.",
+     "url": "https://livenorthspur.com/",
+     "signal": null
+    },
+    {
+     "name": "Redden Farms",
+     "detail": "Midlothian. 792 homes (Starwood Land). Builders Risewell Homes, David Weekley Homes, Impression Homes and John Houston Homes, from the $300s.",
+     "url": "https://reddenfarmstx.com/",
+     "signal": null
+    },
+    {
+     "name": "Wildflower Ranch",
+     "detail": "North of Fort Worth on Highway 114. 3,264 homes (Starwood Land). 13 builders, from the $300s to $700s.",
+     "url": "https://wildflowerranchtx.com/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.prnewswire.com/news-releases/starwood-capital-group-acquires-11-master-planned-communities-in-texas-from-hines-302420731.html",
+     "date": null
+    },
+    {
+     "url": "https://wildflowerranchtx.com/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/communities/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/company-overview/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/team/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/executive-management/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/contact-us/",
+     "date": null
+    },
+    {
+     "url": "https://starwoodland.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/starwood-capital-group-acquires-majority-interest-in-houston-based-land-tejas-301451396.html",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/dallas-fort-worth/mckinney/real-estate/2025/04/09/houston-based-hines-sells-area-developments-in-800m-transaction/",
+     "date": null
+    },
+    {
+     "url": "https://asterparktx.com/",
+     "date": null
+    },
+    {
+     "url": "https://creeksideroysecity.com/",
+     "date": null
+    },
+    {
+     "url": "https://furstranch.com/neighborhoods/",
+     "date": null
+    },
+    {
+     "url": "https://myrtlecreektx.com/",
+     "date": null
+    },
+    {
+     "url": "https://livenorthspur.com/",
+     "date": null
+    },
+    {
+     "url": "https://reddenfarmstx.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.dallasnews.com/business/real-estate/2025/07/25/thousands-of-homes-plus-a-new-heb-is-coming-to-northern-d-fw/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Curtis Attaway",
+     "role": "Sr. VP of Development, Dallas",
+     "source_url": "https://starwoodland.com/team/",
+     "source_evidence": "Team page, Dallas office"
+    },
+    {
+     "name": "Mike Moser",
+     "role": "CEO",
+     "source_url": "https://starwoodland.com/executive-management/",
+     "source_evidence": "Executive Management page",
+     "linkedin_url": "https://www.linkedin.com/in/mike-moser-633505a/",
+     "li_evidence": "Mike Moser - Starwood Land | LinkedIn"
+    },
+    {
+     "name": "John Brian",
+     "role": "Chief Operating Officer / East Region President",
+     "source_url": "https://starwoodland.com/executive-management/",
+     "source_evidence": "Executive Management page",
+     "linkedin_url": "https://www.linkedin.com/in/john-brian-3b3ab2158/",
+     "li_evidence": "Indexed title: John Brian, Starwood Land."
+    },
+    {
+     "name": "Hanna Brown",
+     "role": "Vice President, Dallas",
+     "source_url": "https://starwoodland.com/team/",
+     "source_evidence": "Team page, Dallas office",
+     "linkedin_url": "https://www.linkedin.com/in/hanna-brown-aa93302a/",
+     "li_evidence": "Hanna Brown - Vice President at Starwood Land",
+     "decider": true
+    },
+    {
+     "name": "Kendall Hamrick",
+     "role": "Development Director, Dallas",
+     "source_url": "https://starwoodland.com/team/",
+     "source_evidence": "Team page, Dallas office"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": true,
+   "decider_confirmed": true,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-232",
+   "entity_name": "Walton Development and Management",
+   "short": "Walton",
+   "homepage_url": "https://walton.com/",
+   "company_li": "https://www.linkedin.com/company/walton-global/",
+   "team_url": "https://walton.com/leadership/",
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "US $4.44 billion of real estate assets and more than 85,000 acres under ownership or management, company-wide (Walton About Us)",
+   "mvp_screen": "Sold its last 118 acres at Chisholm Trail Ranch in 2022. Holds Rock Creek Ranch, 1,700 acres southwest of Fort Worth, planned for about 3,800 homes.",
+   "synopsis": "Walton Global is a land asset management company founded in Calgary in 1979 and now headquartered in Scottsdale. It manages pre-development land for investors in more than 91 countries across 35 North American markets, including Dallas-Fort Worth. Walton Development and Management delivered 169 lots to builders in the first phase of Chisholm Trail Ranch, a 600-acre Fort Worth master plan, in 2017.",
+   "region": "Scottsdale, Arizona headquarters, with Dallas-Fort Worth land including Chisholm Trail Ranch in southwest Fort Worth",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Launched a co-investment lot banking strategy with GoldenTree Asset Management in 2025 to expand its Finished Lot Program (Walton About Us).",
+     "url": "https://walton.com/about-us/"
+    },
+    {
+     "text": "Builder Land Finance Structure launched 2020, with a 30th acquisition under it in 2025 (Walton About Us).",
+     "url": "https://walton.com/about-us/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "1,000 homes planned at Chisholm Trail Ranch, with Meritage Homes and Trophy Signature Homes building in the Tesoro neighborhood."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "169 lots delivered to builders for Chisholm Trail Ranch phase one, 2017 (Walton). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Chisholm Trail Ranch",
+     "detail": "Southwest Fort Worth, Crowley ISD. 600 acres, 1,000 homes planned (Walton, 2017). Bluestem and Feathergrass built out. Tesoro under construction by Meritage Homes and Trophy Signature Homes.",
+     "url": "https://ctr-ftw.com/ctrresidential",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://walton.com/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/walton-completes-first-phase-of-chisholm-trail-ranch-in-fort-worth/",
+     "date": null
+    },
+    {
+     "url": "https://ctr-ftw.com/ctrresidential",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/development/",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/our-assets/",
+     "date": null
+    },
+    {
+     "url": "https://ctr-ftw.com/",
+     "date": null
+    },
+    {
+     "url": "https://ctr-ftw.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/walton-finalizes-118-acre-sale-with-meritage-homes-of-texas-which-completes-the-chisholm-trail-ranch-residential-development/",
+     "date": null
+    },
+    {
+     "url": "https://walton.com/mixed-use-development-along-chisholm-trail-parkway-will-have-3800-new-homes/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jed Welsh",
+     "role": "Vice President, Real Estate, Texas and Oklahoma",
+     "source_url": "https://walton.com/leadership/",
+     "source_evidence": "Leadership page, Real Estate Team"
+    },
+    {
+     "name": "William (Bill) Doherty",
+     "role": "Chief Executive Officer",
+     "source_url": "https://walton.com/leadership/",
+     "source_evidence": "Leadership page, Global Executive Team"
+    },
+    {
+     "name": "Shane Doherty",
+     "role": "Executive Vice President, Real Estate Operations",
+     "source_url": "https://walton.com/leadership/",
+     "source_evidence": "Leadership page, Real Estate Team"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-234",
+   "entity_name": "Wilbow",
+   "short": "Wilbow",
+   "homepage_url": "https://wilbow.com",
+   "company_li": null,
+   "team_url": "https://wilbow.com/leadership/",
+   "chain": null,
+   "phone": "9724790697",
+   "phone_source": "https://wilbow.com/contact/",
+   "phone_label": "Main contact, Dallas",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Morningstar projected to build out more than 2,350 homes (Wilbow, Morningstar project page)",
+   "mvp_screen": "Lists Morningstar among its completed projects. D.R. Horton, Riverside Homebuilders and Trophy Signature Homes build there.",
+   "synopsis": "Wilbow Corporation, founded in 1988 in Dallas, develops single-family communities across North Texas. It is an independent subsidiary of Wilbow Group of Melbourne, Australia, owned by William Bowness and his family. Communities now selling include Hayes Crossing in Midlothian, Llano Springs in Fort Worth and Sereno Oaks in East Dallas, with Riverstone Estates in Melissa coming soon.",
+   "region": "Dallas office on E. Mockingbird Lane, with communities in Midlothian, Fort Worth, East Dallas, Melissa, Aledo and Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Independent subsidiary of Wilbow Group, Melbourne, owned by William Bowness and family. Self-funded since 1988 (Wilbow).",
+     "url": "https://wilbow.com/history/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "652 homesites at Riverstone Estates with Perry Homes, Drees Custom Homes and Homebound, and 700 homes at Llano Springs in Fort Worth."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "585 single-family lots in Morningstar's Meadows and Lakewood neighborhoods (Wilbow). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Morningstar",
+     "detail": "Aledo ISD, on FM 3325 north of I-20. More than 2,350 homes projected (Wilbow). Builders D.R. Horton, Riverside Homebuilders and Trophy Signature Homes.",
+     "url": "https://www.welcometomorningstar.com/",
+     "signal": null
+    },
+    {
+     "name": "Riverstone Estates",
+     "detail": "Melissa. 268 acres, 652 homesites, 265 in phase one. Perry Homes, Drees Custom Homes and Homebound on 50' and 60' lots.",
+     "url": "https://wilbow.com/portfolio/riverstone-estates/",
+     "signal": null
+    },
+    {
+     "name": "Hayes Crossing",
+     "detail": "Midlothian. 67 acres, 160 lots of 85 feet. John Houston Custom Homes and Bloomfield Homes, in the $400,000s.",
+     "url": "https://wilbow.com/portfolio/hayes-crossing/",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wilbow.com/portfolio/morningstar/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/portfolio/riverstone-estates/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/portfolio/llano-springs/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/contact/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/history/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/strength-in-numbers/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/portfolio/hayes-crossing/",
+     "date": null
+    },
+    {
+     "url": "https://wilbow.com/portfolio/sereno-oaks/",
+     "date": null
+    },
+    {
+     "url": "https://www.welcometomorningstar.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jason Massey",
+     "role": "President",
+     "source_url": "https://wilbow.com/leadership/",
+     "source_evidence": "Leadership page",
+     "linkedin_url": "https://www.linkedin.com/in/jason-massey-b798ba88/",
+     "li_evidence": "Indexed title: Jason Massey, Wilbow Corporation."
+    },
+    {
+     "name": "Brandon Luedke",
+     "role": "Senior Vice President of Land Development",
+     "source_url": "https://wilbow.com/leadership/",
+     "source_evidence": "Leadership page",
+     "linkedin_url": "https://www.linkedin.com/in/brandon-luedke-287a7014/",
+     "li_evidence": "Indexed title: Brandon Luedke, Wilbow Corporation."
+    },
+    {
+     "name": "Grayson Nastri",
+     "role": "Chief Investment Officer",
+     "source_url": "https://wilbow.com/leadership/",
+     "source_evidence": "Leadership page"
+    },
+    {
+     "name": "Michael Ducoté",
+     "role": "Regional Development Manager",
+     "source_url": "https://wilbow.com/leadership/",
+     "source_evidence": "Leadership page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
+   "target_id": "DFW-226",
+   "entity_name": "Bright Realty",
+   "short": "Bright Realty",
+   "homepage_url": "https://www.brightrealty.com/",
+   "company_li": null,
+   "team_url": "https://www.brightrealty.com/team",
+   "chain": null,
+   "phone": "9724106500",
+   "phone_source": "https://www.brightrealty.com/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "4,900 single-family houses and townhomes on 1,000+ acres at Castle Hills, first residents in 1998 (Bright Realty)",
+   "mvp_screen": "Marks Castle Hills as sold. 97 single-family lots planned after 143 townhome lots in 2024.",
+   "synopsis": "Bright Realty is the Bright family's Lewisville developer, founded in the 1950s by H.R. 'Bum' Bright. It developed the 2,900-acre Castle Hills master plan, where residents arrived in 1998. It now develops The Realm, a 324-acre mixed-use district with 1,062 multifamily units and 72 single-family homes, and Crown Centre at Castle Hills.",
+   "region": "Lewisville, at 4400 State Highway 121, developing Castle Hills and The Realm",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "4,900 homes in one 2,900-acre plan, now marked sold, with 97 single-family lots still planned."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "97 single-family lots planned at Castle Hills after 143 townhome lots in 2024 (Bright Realty). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "partial|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Castle Hills",
+     "detail": "Lewisville. 2,900 acres, 4,900 single-family houses and townhomes, marked sold. 143 townhome lots delivered in 2024 and 97 single-family lots planned. American Legend Homes has a model open in Northpointe.",
+     "url": "https://www.brightrealty.com/developments/single-family-residences",
+     "signal": null
+    },
+    {
+     "name": "Enchanted Hill",
+     "detail": "Castle Hills, Lewisville. 76.78 acres, 101 gated estate lots, marked sold.",
+     "url": "https://www.brightrealty.com/developments/enchanted-hill",
+     "signal": null
+    },
+    {
+     "name": "The Realm at Castle Hills",
+     "detail": "Lewisville. 324-acre mixed-use district with 1,062 multifamily units and 72 single-family homes.",
+     "url": "https://www.brightrealty.com/about",
+     "signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.brightrealty.com/developments/single-family-residences",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/developments/the-neighborhood",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/team",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/developments",
+     "date": null
+    },
+    {
+     "url": "https://www.brightrealty.com/developments/enchanted-hill",
+     "date": null
+    },
+    {
+     "url": "https://castlehills.com/",
+     "date": null
+    },
+    {
+     "url": "https://castlehills.com/northpointe-new-homes.php",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Eric Stanley",
+     "role": "President & Chief Operating Officer",
+     "source_url": "https://www.brightrealty.com/team",
+     "source_evidence": "Team page",
+     "linkedin_url": "https://www.linkedin.com/in/eric-stanley-5b037920/",
+     "li_evidence": "Indexed title: Eric Stanley, President and COO Bright Realty, LLC."
+    },
+    {
+     "name": "Parker Bright",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.brightrealty.com/team",
+     "source_evidence": "Team page",
+     "linkedin_url": "https://www.linkedin.com/in/parker-bright-133265250/",
+     "li_evidence": "Indexed title: Parker Bright, Bright Realty."
+    },
+    {
+     "name": "Zach Bright",
+     "role": "Executive Vice President",
+     "source_url": "https://www.brightrealty.com/team",
+     "source_evidence": "Team page"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "has_decider": false,
+   "decider_confirmed": false,
+   "decider_caveat": false,
+   "type": "land"
+  },
+  {
    "target_id": "DFW-002",
    "entity_name": "Lennar Corporation",
    "short": "Lennar",
@@ -29590,6 +33258,55 @@
     "cat": 0,
     "tr": false,
     "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
     "dec": false,
     "v": null
    },
@@ -29613,6 +33330,27 @@
     "fit": "partial",
     "dec": true,
     "v": 374.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "dec": true,
+    "v": null
    },
    {
     "cat": -1,
@@ -29933,6 +33671,13 @@
     "cat": 0,
     "tr": false,
     "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
     "dec": true,
     "v": null
    },
@@ -30031,6 +33776,97 @@
     "cat": 0,
     "tr": false,
     "fit": "fail",
+    "dec": false,
+    "v": 1810.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 1742.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": 2286.0
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
     "dec": true,
     "v": null
    },
@@ -30087,49 +33923,28 @@
     "cat": -1,
     "tr": false,
     "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
     "dec": true,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": true,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
-    "v": null
-   },
-   {
-    "cat": -1,
-    "tr": false,
-    "fit": "fail",
-    "dec": false,
     "v": null
    },
    {
@@ -30165,6 +33980,27 @@
     "tr": false,
     "fit": "fail",
     "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "dec": false,
     "v": null
    },
    {
@@ -30189,9 +34025,9 @@
     "v": 5724.0
    }
   ],
-  "n": 122,
+  "n": 146,
   "track": 8,
-  "dec": 73,
+  "dec": 84,
   "band": [
    25,
    400
@@ -30203,7 +34039,7 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 55
+    "n": 70
    },
    {
     "label": "Developers",
@@ -30917,8 +34753,11 @@
   "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
   "https://www.bisnow.com/news/dallas-ft-worth/deal-sheet/homebound-closes-on-731m-deal-for-north-texas-expansion-the-dfw-deal-sheet-133470",
   "https://www.dallasnews.com/abode/2026/03/08/new-homes-and-amenities-take-center-stage/",
+  "https://www.dallasnews.com/business/real-estate/2019/10/11/international-builder-risland-grows-us-north-texas-base/",
+  "https://www.dallasnews.com/business/real-estate/2020/06/11/new-home-community-southwest-of-dallas-will-bring-thousands-of-homes/",
   "https://www.dallasnews.com/business/real-estate/2023/07/07/chicago-builder-that-left-d-fw-returns-to-area-takes-1500-home-sites/",
   "https://www.dallasnews.com/business/real-estate/2025/07/24/list-who-are-the-10-biggest-homebuilders-in-d-fw/",
+  "https://www.dallasnews.com/business/real-estate/2025/07/25/thousands-of-homes-plus-a-new-heb-is-coming-to-northern-d-fw/",
   "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
   "https://www.enr.com/articles/46027-pursuit-of-innovation-drives-success",
   "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",

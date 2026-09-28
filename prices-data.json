@@ -12,7 +12,7 @@
      "market": "houston",
      "developer": "AIRIA Development Company",
      "developer_raw": "AIRIA Development Company",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-222",
      "website": "https://artaviatx.com/",
      "city": "Conroe",
      "county": "Montgomery",
@@ -63,7 +63,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [
         65
@@ -1411,7 +1411,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Amira 45' and 50' Homesites",
        "lots": [
         45,
@@ -2374,7 +2374,7 @@
      "market": "houston",
      "developer": "Audubon Magnolia Development, LLC (managed by Sam Yager Inc.)",
      "developer_raw": "Audubon Magnolia Development, LLC (managed by Sam Yager Inc.)",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-224",
      "website": "https://audubonliving.com/",
      "city": "Magnolia",
      "county": "Montgomery",
@@ -2717,7 +2717,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": null,
        "lots": [
         80
@@ -2797,7 +2797,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": null,
        "lots": [
         60
@@ -3297,7 +3297,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Pre-Selling By Appointment Only",
        "lots": [
         80
@@ -3648,7 +3648,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "50'",
        "lots": [
         50
@@ -3831,7 +3831,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "35' (Austin Point Summit)",
        "lots": [
         35
@@ -3857,7 +3857,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "70' (Austin Point Showcase)",
        "lots": [
         70
@@ -4332,7 +4332,7 @@
       {
        "builder": "William David Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-213",
        "section": "70'",
        "lots": [
         70
@@ -4492,7 +4492,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Ashbel Cove 50'",
        "lots": [
         50
@@ -4518,7 +4518,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Ashbel Cove 60'",
        "lots": [
         60
@@ -7065,7 +7065,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Bridgeland 40', 45', 50' Homesites",
        "lots": [
         40,
@@ -7161,7 +7161,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Bridgeland 70'",
        "lots": [
         70
@@ -7229,7 +7229,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Bridgeland 80'",
        "lots": [
         80
@@ -7655,7 +7655,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": "Easthaven at Bridgeland Central",
        "lots": [],
        "from": 419990,
@@ -8487,7 +8487,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [
         50,
@@ -8874,7 +8874,7 @@
      "market": "houston",
      "developer": "AIRIA Development Company",
      "developer_raw": "AIRIA Development Company",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-222",
      "website": "https://coltontx.com/",
      "city": "Todd Mission",
      "county": "Montgomery",
@@ -8950,7 +8950,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [
         55
@@ -9356,7 +9356,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": null,
        "lots": [
         70
@@ -11779,7 +11779,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 232990,
@@ -12398,7 +12398,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 294990,
@@ -12446,7 +12446,7 @@
       {
        "builder": "Saratoga Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-220",
        "section": null,
        "lots": [],
        "from": 289888,
@@ -13186,7 +13186,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Toll Brothers - 65'",
        "lots": [
         65
@@ -13658,7 +13658,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": "Cypress Green",
        "lots": [],
        "from": 289990,
@@ -14394,7 +14394,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Estate Collection",
        "lots": [
         80
@@ -14639,7 +14639,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Dunham Pointe 60'",
        "lots": [
         60
@@ -14710,7 +14710,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Dunham Pointe 80'",
        "lots": [
         80
@@ -14877,7 +14877,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": 329990,
@@ -14954,7 +14954,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "40' Alley Load",
        "lots": [
         40
@@ -14980,7 +14980,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "40' Traditional",
        "lots": [
         40
@@ -15006,7 +15006,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "45' Traditional",
        "lots": [
         45
@@ -15032,7 +15032,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "50' Traditional",
        "lots": [
         50
@@ -15058,7 +15058,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "60' Traditional",
        "lots": [
         60
@@ -15084,7 +15084,7 @@
       {
        "builder": "Brookfield Residential",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-207",
        "section": "Quick move-in homes, all collections",
        "lots": [],
        "from": null,
@@ -15677,7 +15677,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Cypress, Sycamore and Aspen Collections",
        "lots": [],
        "from": 399995,
@@ -16107,7 +16107,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-209",
        "section": null,
        "lots": [],
        "from": null,
@@ -16442,7 +16442,7 @@
      "market": "houston",
      "developer": "Shea Homes",
      "developer_raw": "Shea Homes",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-204",
      "website": "https://evergreen-texas.com/",
      "city": "Conroe",
      "county": "Montgomery",
@@ -16493,7 +16493,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Evergreen 40'",
        "lots": [
         40
@@ -16522,7 +16522,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Evergreen 50'",
        "lots": [
         50
@@ -16548,7 +16548,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Evergreen 60'",
        "lots": [
         60
@@ -16574,7 +16574,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Evergreen 70'",
        "lots": [
         70
@@ -16832,7 +16832,7 @@
      "market": "houston",
      "developer": "Johnson Development",
      "developer_raw": "Johnson Land Ventures",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-040",
      "website": "https://www.everlytx.com/",
      "city": "Hockley",
      "county": "Harris",
@@ -17077,7 +17077,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Everly - 45'",
        "lots": [
         45
@@ -17165,7 +17165,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Everly - 60'",
        "lots": [
         60
@@ -17968,7 +17968,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": null,
        "lots": [
         60
@@ -18436,7 +18436,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 304990,
@@ -18460,7 +18460,7 @@
       {
        "builder": "K. Hovnanian Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-206",
        "section": "50' Collection and 60's Collection (coming soon)",
        "lots": [
         50,
@@ -18756,7 +18756,7 @@
       {
        "builder": "McKinley Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-212",
        "section": null,
        "lots": [],
        "from": 345990,
@@ -18824,7 +18824,7 @@
       {
        "builder": "StoneManor Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-216",
        "section": "Vintage Series",
        "lots": [],
        "from": 374990,
@@ -18912,7 +18912,7 @@
       {
        "builder": "StoneManor Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-216",
        "section": "Inspire Series",
        "lots": [],
        "from": 349990,
@@ -19003,7 +19003,7 @@
       {
        "builder": "StoneManor Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-216",
        "section": "Prestige Series",
        "lots": [],
        "from": null,
@@ -19299,7 +19299,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Grange 55'",
        "lots": [
         55
@@ -20214,7 +20214,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Harvest Green 75'",
        "lots": [
         75
@@ -20361,7 +20361,7 @@
      "market": "houston",
      "developer": "Meristem Communities",
      "developer_raw": "Meristem Communities",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-228",
      "website": "https://www.indigocommunity.com/",
      "city": "Richmond",
      "county": "Fort Bend",
@@ -20483,7 +20483,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "Cottages",
        "lots": [],
        "from": null,
@@ -20510,7 +20510,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "Townhomes 5-Plex",
        "lots": [],
        "from": null,
@@ -20583,7 +20583,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "Duets",
        "lots": [],
        "from": null,
@@ -20650,7 +20650,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "Clusters",
        "lots": [],
        "from": null,
@@ -20717,7 +20717,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "50' Homesites",
        "lots": [
         50
@@ -20775,7 +20775,7 @@
       {
        "builder": "Autograph Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-211",
        "section": "Trio Collection",
        "lots": [],
        "from": 367990,
@@ -20838,7 +20838,7 @@
       {
        "builder": "Autograph Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-211",
        "section": "Hearth Collection",
        "lots": [],
        "from": 405990,
@@ -21312,7 +21312,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": 331990,
@@ -22374,7 +22374,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Beazer Homes 40'",
        "lots": [
         40
@@ -22719,7 +22719,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Jubilee 50'",
        "lots": [
         50
@@ -23163,7 +23163,7 @@
       {
        "builder": "Gracepoint Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-215",
        "section": null,
        "lots": [
         65
@@ -23357,7 +23357,7 @@
       {
        "builder": "Huntington Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-219",
        "section": null,
        "lots": [
         70
@@ -23571,7 +23571,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "2 Collections",
        "lots": [
         70
@@ -23942,7 +23942,7 @@
       {
        "builder": "Adams Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-214",
        "section": null,
        "lots": [],
        "from": 200000,
@@ -24247,7 +24247,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-209",
        "section": "Signature Series",
        "lots": [],
        "from": null,
@@ -25275,7 +25275,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "60'",
        "lots": [
         60
@@ -25501,7 +25501,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Legacy 65'",
        "lots": [
         65
@@ -25530,7 +25530,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "70'",
        "lots": [
         70
@@ -25710,7 +25710,7 @@
       {
        "builder": "K. Hovnanian Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-206",
        "section": null,
        "lots": [],
        "from": 500000,
@@ -26384,7 +26384,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": null,
@@ -26449,7 +26449,7 @@
      "market": "houston",
      "developer": "Rise Communities",
      "developer_raw": "Rise Communities",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-223",
      "website": "https://www.meridianatexas.com/",
      "city": "Iowa Colony",
      "county": "Brazoria",
@@ -26640,7 +26640,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "40'",
        "lots": [
         40
@@ -28237,7 +28237,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Meridiana 70'",
        "lots": [
         70
@@ -28266,7 +28266,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Model at 5406 Elegance Place",
        "lots": [],
        "from": 620000,
@@ -28290,7 +28290,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Model at 5410 Elegance Place",
        "lots": [],
        "from": null,
@@ -28417,7 +28417,7 @@
      "market": "houston",
      "developer": "Forestar",
      "developer_raw": "Forestar",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-226",
      "website": "https://millcreek-community.com/",
      "city": "Magnolia",
      "county": "Montgomery",
@@ -29444,7 +29444,7 @@
      "market": "houston",
      "developer": "McGrath Real Estate Partners",
      "developer_raw": "McGrath Real Estate Partners",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-227",
      "website": "https://www.ricelandtx.com/",
      "city": "Mont Belvieu",
      "county": "Chambers",
@@ -29520,7 +29520,7 @@
       {
        "builder": "Autograph Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-211",
        "section": "Hearth Collection, 42' Alley Loaded",
        "lots": [
         42
@@ -30388,7 +30388,7 @@
       {
        "builder": "Adams Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-214",
        "section": "River Ranch Trails",
        "lots": [],
        "from": 200000,
@@ -30786,7 +30786,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-209",
        "section": "River Ranch Meadows",
        "lots": [],
        "from": 284990,
@@ -30864,7 +30864,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": "River Ranch",
        "lots": [],
        "from": 255990,
@@ -31100,7 +31100,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "River Ranch",
        "lots": [
         50,
@@ -31211,7 +31211,7 @@
       {
        "builder": "K. Hovnanian Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-206",
        "section": "River Ranch Trails",
        "lots": [
         50
@@ -31499,7 +31499,7 @@
       {
        "builder": "McKinley Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-212",
        "section": "River Ranch Meadows",
        "lots": [],
        "from": 345990,
@@ -32148,7 +32148,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "Signature Collection",
        "lots": [],
        "from": 294990,
@@ -32520,7 +32520,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Premier Collection",
        "lots": [
         45
@@ -32610,7 +32610,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Villa Collection",
        "lots": [
         50
@@ -32717,7 +32717,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Select Collection",
        "lots": [
         60
@@ -32760,7 +32760,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Executive Collection",
        "lots": [
         70
@@ -32818,7 +32818,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Estate Collection",
        "lots": [
         80
@@ -32876,7 +32876,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Signature Collection",
        "lots": [
         90
@@ -33232,7 +33232,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Sienna 45' (Coming Soon)",
        "lots": [
         45
@@ -33261,7 +33261,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Sienna 60'",
        "lots": [
         60
@@ -33331,7 +33331,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Sienna 80'",
        "lots": [
         80
@@ -33858,7 +33858,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Sienna 40'",
        "lots": [
         40
@@ -33884,7 +33884,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Sienna 65'",
        "lots": [
         65
@@ -33913,7 +33913,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Sienna 70'",
        "lots": [
         70
@@ -34346,7 +34346,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-209",
        "section": null,
        "lots": [],
        "from": null,
@@ -34384,7 +34384,7 @@
       {
        "builder": "StoneManor Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-216",
        "section": "Vintage, Inspire and Vista Series",
        "lots": [],
        "from": 329990,
@@ -34513,7 +34513,7 @@
       {
        "builder": "Terrata Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-217",
        "section": null,
        "lots": [],
        "from": 383900,
@@ -34634,7 +34634,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": 281990,
@@ -35050,7 +35050,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": 349391,
@@ -35366,7 +35366,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-209",
        "section": null,
        "lots": [],
        "from": 302990,
@@ -35540,7 +35540,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 299990,
@@ -36669,7 +36669,7 @@
       {
        "builder": "Starlight Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-221",
        "section": "Sunterra Lakes",
        "lots": [],
        "from": null,
@@ -37223,7 +37223,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "45' Homesites",
        "lots": [
         45
@@ -37673,7 +37673,7 @@
      "market": "houston",
      "developer": "EMBER Real Estate & Development",
      "developer_raw": "EMBER Real Estate & Development",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-225",
      "website": "https://thegrandprairietx.com/",
      "city": "Hockley",
      "county": "Harris",
@@ -37890,7 +37890,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "60’ homesites",
        "lots": [
         60
@@ -38160,7 +38160,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": null,
        "lots": [],
        "from": 349062,
@@ -38729,7 +38729,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": null,
        "lots": [],
        "from": 650000,
@@ -39874,7 +39874,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 315990,
@@ -40580,7 +40580,7 @@
       {
        "builder": "William David Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-213",
        "section": "Custom builders",
        "lots": [],
        "from": 900000,
@@ -40652,7 +40652,7 @@
      "market": "houston",
      "developer": "Oxland Group",
      "developer_raw": "Oxland Group",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-229",
      "website": "https://twostepfarm.com/",
      "city": "Montgomery",
      "county": "Montgomery",
@@ -41761,7 +41761,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Two Step Farm Showcase",
        "lots": [],
        "from": 588900,
@@ -41794,7 +41794,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": "Two Step Farm Signature",
        "lots": [],
        "from": 665900,
@@ -41908,7 +41908,7 @@
       {
        "builder": "Autograph Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-211",
        "section": "Trio Collection",
        "lots": [],
        "from": 335990,
@@ -41998,7 +41998,7 @@
       {
        "builder": "Autograph Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-211",
        "section": "Symphony Collection",
        "lots": [],
        "from": 424900,
@@ -42103,7 +42103,7 @@
       {
        "builder": "Trilogy by Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Trilogy at Two Step Farm (55+, coming 2027)",
        "lots": [],
        "from": 300000,
@@ -42127,7 +42127,7 @@
       {
        "builder": "McKinley Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-212",
        "section": "The Elevation Series townhomes (coming early 2027)",
        "lots": [],
        "from": 400000,
@@ -42151,7 +42151,7 @@
       {
        "builder": "William David Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-213",
        "section": "Custom and cottage homes (coming 2027)",
        "lots": [],
        "from": null,
@@ -42282,7 +42282,7 @@
       {
        "builder": "Beazer Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-201",
        "section": "60'",
        "lots": [
         60
@@ -43478,7 +43478,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-034",
        "section": null,
        "lots": [],
        "from": 269990,
@@ -43502,7 +43502,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-202",
        "section": null,
        "lots": [],
        "from": null,
@@ -44018,7 +44018,7 @@
      "market": "houston",
      "developer": "Shea Homes",
      "developer_raw": "Shea Homes",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-204",
      "website": "https://woodhavyn.com/",
      "city": "Magnolia",
      "county": "Montgomery",
@@ -44176,7 +44176,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Woodhavyn 40'",
        "lots": [
         40
@@ -44277,7 +44277,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Woodhavyn 50'",
        "lots": [
         50
@@ -44379,7 +44379,7 @@
       {
        "builder": "Shea Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-204",
        "section": "Woodhavyn 60'",
        "lots": [
         60
@@ -44469,7 +44469,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": null,
        "lots": [
         60
@@ -44573,7 +44573,7 @@
      "market": "houston",
      "developer": "Toll Brothers",
      "developer_raw": "Toll Brothers",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-203",
      "website": "https://woodsonsreserve.com/",
      "city": "Spring",
      "county": "Montgomery",
@@ -44639,7 +44639,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Rosewood Collection",
        "lots": [
         45
@@ -44684,7 +44684,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Cypress Collection",
        "lots": [
         50
@@ -44760,7 +44760,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Sycamore Collection",
        "lots": [
         60
@@ -44805,7 +44805,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Aspen Collection",
        "lots": [
         70
@@ -44865,7 +44865,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Magnolia Collection",
        "lots": [
         80
@@ -44925,7 +44925,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Woodson's Reserve 50'",
        "lots": [
         50
@@ -44992,7 +44992,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Woodson's Reserve 60'",
        "lots": [
         60
@@ -45062,7 +45062,7 @@
       {
        "builder": "Tri Pointe Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-205",
        "section": "Woodson's Reserve 80'",
        "lots": [
         80
@@ -45637,7 +45637,7 @@
      "market": "houston",
      "developer": "Rise Communities",
      "developer_raw": "Rise Communities",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-223",
      "website": "https://caneisland.com/",
      "city": "Katy",
      "county": "Harris",
@@ -45728,7 +45728,7 @@
       {
        "builder": "William David Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-213",
        "section": "Custom Builders, 100' Model",
        "lots": [
         100
@@ -45804,7 +45804,7 @@
      "market": "houston",
      "developer": "Johnson Development",
      "developer_raw": "Johnson Development",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-040",
      "website": "https://www.johnsondevelopment.com/fulshear-tx/mpc_cross_creek_ranch",
      "city": "Fulshear",
      "county": "Fort Bend",
@@ -45898,7 +45898,7 @@
      "market": "houston",
      "developer": "Precedent Land Company",
      "developer_raw": "Precedent Land Company",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-230",
      "website": "https://dellroseliving.com/",
      "city": "Hockley",
      "county": "Harris",
@@ -45979,7 +45979,7 @@
       {
        "builder": "Empire Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-210",
        "section": "Classic Series",
        "lots": [],
        "from": 300000,
@@ -46297,7 +46297,7 @@
       {
        "builder": "Gracepoint Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-215",
        "section": "The Point at Imperial",
        "lots": [],
        "from": 579990,
@@ -46454,7 +46454,7 @@
       {
        "builder": "Terrata Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-217",
        "section": "Magnolia Woods - 70'",
        "lots": [
         70
@@ -46643,7 +46643,7 @@
      "market": "houston",
      "developer": "Toll Brothers",
      "developer_raw": "Toll Brothers",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "HOU-203",
      "website": "https://northgrovetx.com/",
      "city": "Magnolia",
      "county": "Montgomery",
@@ -46739,7 +46739,7 @@
       {
        "builder": "Toll Brothers",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "HOU-203",
        "section": "Villa Collection",
        "lots": [],
        "from": null,
@@ -48344,12 +48344,16 @@
     {
      "id": "b-houston-beazer-homes",
      "name": "Beazer Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-201",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Beazer Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-amira",
       "hou-artavia",
@@ -48651,12 +48655,16 @@
     {
      "id": "b-houston-drees-custom-homes",
      "name": "Drees Custom Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-202",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Drees Custom Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-audubon",
       "hou-austin-point",
@@ -48702,12 +48710,16 @@
     {
      "id": "b-houston-drb-homes",
      "name": "DRB Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-034",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Brightland",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-bridgeland",
       "hou-brookewater",
@@ -48855,12 +48867,16 @@
     {
      "id": "b-houston-toll-brothers",
      "name": "Toll Brothers",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-203",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Toll Brothers",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "partial"
+     },
      "communities": [
       "hou-audubon",
       "hou-cross-creek-west",
@@ -49192,12 +49208,16 @@
     {
      "id": "b-houston-shea-homes",
      "name": "Shea Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-204",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Shea Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-evergreen",
       "hou-grand-prairie",
@@ -49236,12 +49256,16 @@
     {
      "id": "b-houston-tri-pointe-homes",
      "name": "Tri Pointe Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-205",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Tri Pointe Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-bridgeland",
       "hou-dunham-pointe",
@@ -49366,12 +49390,16 @@
     {
      "id": "b-houston-davidson-homes",
      "name": "Davidson Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-209",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Davidson Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-emberly",
       "hou-lago-mar",
@@ -49403,12 +49431,16 @@
     {
      "id": "b-houston-empire-homes",
      "name": "Empire Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-210",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Empire Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-audubon",
       "hou-dellrose",
@@ -49628,12 +49660,16 @@
     {
      "id": "b-houston-autograph-homes",
      "name": "Autograph Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-211",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Autograph Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-indigo",
       "hou-riceland",
@@ -49741,12 +49777,16 @@
     {
      "id": "b-houston-k-hovnanian-homes",
      "name": "K. Hovnanian Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-206",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "K. Hovnanian Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-grand-magnolia",
       "hou-marvida",
@@ -49771,7 +49811,13 @@
      "qmi_ppsf": null,
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
-     "closings": null,
+     "closings": {
+      "low": 1030,
+      "high": 1030,
+      "year": 2024,
+      "source": "BUILDER Local Leaders 2025, Houston metro, Hovnanian Enterprises",
+      "wide": null
+     },
      "filer": "Hovnanian Enterprises"
     },
     {
@@ -49820,12 +49866,16 @@
     {
      "id": "b-houston-mckinley-homes",
      "name": "McKinley Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-212",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "McKinley Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-grand-magnolia",
       "hou-river-ranch",
@@ -49852,12 +49902,16 @@
     {
      "id": "b-houston-william-david-homes",
      "name": "William David Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-213",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "William David Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-austin-point",
       "hou-towne-lake",
@@ -49887,12 +49941,16 @@
     {
      "id": "b-houston-adams-homes",
      "name": "Adams Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-214",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Adams Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-lago-mar",
       "hou-river-ranch"
@@ -49957,12 +50015,16 @@
     {
      "id": "b-houston-gracepoint-homes",
      "name": "Gracepoint Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-215",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Gracepoint Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-imperial",
       "hou-kresston"
@@ -50101,12 +50163,16 @@
     {
      "id": "b-houston-stonemanor-homes",
      "name": "StoneManor Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-216",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "StoneManor Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-grand-magnolia",
       "hou-sierra-vista"
@@ -50132,12 +50198,16 @@
     {
      "id": "b-houston-terrata-homes",
      "name": "Terrata Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-217",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Terrata Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-magnolia-woods",
       "hou-sierra-vista"
@@ -50312,12 +50382,16 @@
     {
      "id": "b-houston-brookfield-residential",
      "name": "Brookfield Residential",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-207",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Brookfield Residential",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-elyson"
      ],
@@ -50568,12 +50642,16 @@
     {
      "id": "b-houston-huntington-homes",
      "name": "Huntington Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-219",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Huntington Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-kresston"
      ],
@@ -50758,12 +50836,16 @@
     {
      "id": "b-houston-saratoga-homes",
      "name": "Saratoga Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-220",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Saratoga Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-creekhaven"
      ],
@@ -50829,12 +50911,16 @@
     {
      "id": "b-houston-starlight-homes",
      "name": "Starlight Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-221",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Starlight Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-sunterra-lakes"
      ],
@@ -50922,12 +51008,16 @@
     {
      "id": "b-houston-trilogy-by-shea-homes",
      "name": "Trilogy by Shea Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-204",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Shea Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-two-step-farm"
      ],
@@ -50951,12 +51041,16 @@
     {
      "id": "b-houston-william-david-custom-homes",
      "name": "William David Custom Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "HOU-213",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "William David Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "hou-cane-island"
      ],
@@ -51300,7 +51394,7 @@
     {
      "id": "d-houston-airia-development-company",
      "name": "AIRIA Development Company",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-222",
      "communities": [
       "hou-artavia",
       "hou-colton"
@@ -51329,8 +51423,12 @@
      "qmi_n": 94,
      "qmi_price": 518690,
      "qmi_ppsf": 179,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-caldwell-companies",
@@ -51377,7 +51475,7 @@
     {
      "id": "d-houston-rise-communities",
      "name": "Rise Communities",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-223",
      "communities": [
       "hou-meridiana",
       "hou-cane-island"
@@ -51402,13 +51500,17 @@
      "qmi_n": 73,
      "qmi_price": 524900,
      "qmi_ppsf": 201,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-shea-homes",
      "name": "Shea Homes",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-204",
      "communities": [
       "hou-evergreen",
       "hou-woodhavyn"
@@ -51427,13 +51529,17 @@
      "qmi_n": 22,
      "qmi_price": 436990,
      "qmi_ppsf": 196,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "National builder",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-toll-brothers",
      "name": "Toll Brothers",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-203",
      "communities": [
       "hou-woodsons-reserve",
       "hou-northgrove"
@@ -51453,8 +51559,12 @@
      "qmi_n": 18,
      "qmi_price": 697100,
      "qmi_ppsf": 204,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "National builder",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "partial"
+     }
     },
     {
      "id": "d-houston-archie-dunham",
@@ -51483,7 +51593,7 @@
     {
      "id": "d-houston-audubon-magnolia-development-llc-managed-by-sam-yager-inc",
      "name": "Audubon Magnolia Development, LLC (managed by Sam Yager Inc.)",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-224",
      "communities": [
       "hou-audubon"
      ],
@@ -51508,8 +51618,12 @@
      "qmi_n": 42,
      "qmi_price": 568995,
      "qmi_ppsf": 196,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-brookfield-residential",
@@ -51570,7 +51684,7 @@
     {
      "id": "d-houston-ember-real-estate-development",
      "name": "EMBER Real Estate & Development",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-225",
      "communities": [
       "hou-grand-prairie"
      ],
@@ -51589,13 +51703,17 @@
      "qmi_n": 3,
      "qmi_price": 629990,
      "qmi_ppsf": 224,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-forestar",
      "name": "Forestar",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-226",
      "communities": [
       "hou-mill-creek"
      ],
@@ -51609,8 +51727,12 @@
      "qmi_n": 8,
      "qmi_price": 307490,
      "qmi_ppsf": 158,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-lgi-homes",
@@ -51660,7 +51782,7 @@
     {
      "id": "d-houston-mcgrath-real-estate-partners",
      "name": "McGrath Real Estate Partners",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-227",
      "communities": [
       "hou-riceland"
      ],
@@ -51678,13 +51800,17 @@
      "qmi_n": 29,
      "qmi_price": 525000,
      "qmi_ppsf": 193,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-meristem-communities",
      "name": "Meristem Communities",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-228",
      "communities": [
       "hou-indigo"
      ],
@@ -51702,13 +51828,17 @@
      "qmi_n": 35,
      "qmi_price": 415000,
      "qmi_ppsf": 203,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-oxland-group",
      "name": "Oxland Group",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-229",
      "communities": [
       "hou-two-step-farm"
      ],
@@ -51733,13 +51863,17 @@
      "qmi_n": 56,
      "qmi_price": 442450,
      "qmi_ppsf": 190,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-precedent-land-company",
      "name": "Precedent Land Company",
-     "rolodex_id": null,
+     "rolodex_id": "HOU-230",
      "communities": [
       "hou-dellrose"
      ],
@@ -51757,8 +51891,12 @@
      "qmi_n": 0,
      "qmi_price": null,
      "qmi_ppsf": null,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-houston-pultegroup",
@@ -85069,7 +85207,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": "https://asterparktx.com/",
      "city": "McKinney",
      "county": "Collin",
@@ -85170,7 +85308,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Aster Park: 40ft. lots",
        "lots": [
         40
@@ -85196,7 +85334,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Aster Park: 50ft. lots",
        "lots": [
         50
@@ -85913,7 +86051,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 50ft. lots",
        "lots": [
         50
@@ -85987,7 +86125,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 74ft. lots",
        "lots": [
         74
@@ -86325,7 +86463,7 @@
      "market": "dfw",
      "developer": "Bright Realty",
      "developer_raw": "Bright Realty",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-226",
      "website": "https://castlehills.com/",
      "city": "Lewisville",
      "county": "Denton",
@@ -86646,7 +86784,7 @@
      "market": "dfw",
      "developer": "Walton Development and Management",
      "developer_raw": "Walton Development and Management",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-232",
      "website": "https://ctr-ftw.com/",
      "city": "Fort Worth",
      "county": "Tarrant",
@@ -86679,6 +86817,11 @@
        "text": "Three neighborhoods: Bluestem and Feathergrass fully developed; Tesoro under construction by Meritage Homes and Trophy Signature Homes.",
        "url": "https://ctr-ftw.com/ctrresidential",
        "date": null
+      },
+      {
+       "text": "Walton sold the final residential phase, 118 acres, to Meritage Homes of Texas and Green Brick Partners in January 2022.",
+       "url": "https://walton.com/walton-finalizes-118-acre-sale-with-meritage-homes-of-texas-which-completes-the-chisholm-trail-ranch-residential-development/",
+       "date": "2022-01-21"
       }
      ],
      "sources": [
@@ -86867,7 +87010,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": "https://creeksideroysecity.com/",
      "city": "Royse City",
      "county": "Rockwall",
@@ -87034,7 +87177,7 @@
       {
        "builder": "RockWell Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-207",
        "section": null,
        "lots": [
         50
@@ -87341,8 +87484,8 @@
      "id": "dfw-devonshire",
      "name": "Devonshire",
      "market": "dfw",
-     "developer": "Wheelock Communities",
-     "developer_raw": "Wheelock Communities",
+     "developer": "Haynes Development",
+     "developer_raw": "Haynes Development",
      "developer_rolodex_id": null,
      "website": "https://www.devonshireliving.com/",
      "city": "Forney",
@@ -87512,7 +87655,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "45' homesites",
        "lots": [
         45
@@ -87538,7 +87681,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "60' homesites",
        "lots": [
         60
@@ -87564,7 +87707,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Devonshire Classic 50-55",
        "lots": [
         50,
@@ -87671,7 +87814,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Devonshire Classic 60-65",
        "lots": [
         60,
@@ -88274,7 +88417,7 @@
      "market": "dfw",
      "developer": "MA Partners",
      "developer_raw": "MA Partners",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-229",
      "website": "https://elevontx.com/",
      "city": "Lavon",
      "county": "Collin",
@@ -89706,7 +89849,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land (acquired from Hines, 2025)",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": null,
      "city": "Flower Mound / Argyle / Bartonville",
      "county": "Denton",
@@ -90153,7 +90296,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Furst Ranch 60' lots",
        "lots": [
         60
@@ -90259,7 +90402,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Furst Ranch 70' lots",
        "lots": [
         70
@@ -90890,7 +91033,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [
         50,
@@ -90990,7 +91133,7 @@
      "market": "dfw",
      "developer": "Provident Realty Advisors",
      "developer_raw": "Provident Realty Advisors",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-225",
      "website": "https://goodlandtx.com/",
      "city": "Venus",
      "county": "Ellis",
@@ -91564,7 +91707,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Goodland 40' lots",
        "lots": [
         40
@@ -91637,7 +91780,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Goodland 53' lots",
        "lots": [
         53
@@ -91710,7 +91853,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Goodland 60' lots",
        "lots": [
         60
@@ -92274,7 +92417,7 @@
       {
        "builder": "Sixth Element Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-220",
        "section": "Now Pre-Selling",
        "lots": [],
        "from": null,
@@ -92298,7 +92441,7 @@
       {
        "builder": "Astoria Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-210",
        "section": "Coming soon",
        "lots": [],
        "from": null,
@@ -92322,7 +92465,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-206",
        "section": "Foundation Series",
        "lots": [],
        "from": null,
@@ -92409,7 +92552,7 @@
       {
        "builder": "Davidson Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-206",
        "section": "Classic Series",
        "lots": [],
        "from": null,
@@ -92782,7 +92925,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [],
        "from": 293990,
@@ -93576,7 +93719,7 @@
      "market": "dfw",
      "developer": "The Nehemiah Company",
      "developer_raw": "The Nehemiah Company",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-231",
      "website": "https://www.karistx.com/",
      "city": "Crowley",
      "county": "Tarrant",
@@ -94608,7 +94751,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Landmark Showcase - Alley Entry (60' and 70' rear entry)",
        "lots": [
         60,
@@ -94638,7 +94781,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Landmark - Front Entry (70')",
        "lots": [
         70
@@ -94667,7 +94810,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Landmark 50' front entry",
        "lots": [
         50
@@ -96878,7 +97021,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Liberty (Classic Series)",
        "lots": [],
        "from": 499990,
@@ -97676,7 +97819,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Meraki Signature Series (60' lots)",
        "lots": [
         60
@@ -97787,7 +97930,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Meraki 40' lots",
        "lots": [
         40
@@ -97813,7 +97956,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Meraki 45' lots",
        "lots": [
         45
@@ -97885,7 +98028,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Meraki 60' lots",
        "lots": [
         60
@@ -97976,7 +98119,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Meraki 70' lots",
        "lots": [
         70
@@ -98071,7 +98214,7 @@
       {
        "builder": "Westfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-222",
        "section": "Meraki 40' lots",
        "lots": [
         40
@@ -98199,7 +98342,7 @@
      "market": "dfw",
      "developer": "Hanover Property Company",
      "developer_raw": "Hanover Property Company",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-228",
      "website": "https://www.miralagoshoa.com/",
      "city": "Grand Prairie",
      "county": "Tarrant",
@@ -98830,7 +98973,7 @@
      "market": "dfw",
      "developer": "Wilbow",
      "developer_raw": "Wilbow",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-234",
      "website": "https://www.welcometomorningstar.com/",
      "city": "Aledo",
      "county": "Parker",
@@ -99464,7 +99607,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Mosaic (Signature Series)",
        "lots": [
         60
@@ -99596,7 +99739,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Townhomes",
        "lots": [],
        "from": 399990,
@@ -99620,7 +99763,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 40ft. lots",
        "lots": [
         40
@@ -99692,7 +99835,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 50ft. lots",
        "lots": [
         50
@@ -99765,7 +99908,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 60ft. lots",
        "lots": [
         60
@@ -99839,7 +99982,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 70ft. lots",
        "lots": [
         70
@@ -100619,7 +100762,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 60ft. lots",
        "lots": [
         60
@@ -100645,7 +100788,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 60s Model and Quick Move-Ins",
        "lots": [
         60
@@ -100720,7 +100863,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 74ft. lots",
        "lots": [
         74
@@ -100794,7 +100937,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 86ft. lots",
        "lots": [
         86
@@ -101302,7 +101445,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": "https://myrtlecreektx.com/",
      "city": "Waxahachie",
      "county": "Ellis",
@@ -101650,7 +101793,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [
         60
@@ -102004,7 +102147,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": "https://livenorthspur.com/",
      "city": "Terrell",
      "county": "Kaufman",
@@ -102256,7 +102399,7 @@
       {
        "builder": "GROWTH Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-214",
        "section": null,
        "lots": [],
        "from": null,
@@ -102421,7 +102564,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Painted Tree Woodland District 50",
        "lots": [
         50
@@ -102526,7 +102669,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Painted Tree Woodland District 60",
        "lots": [
         60
@@ -102634,7 +102777,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Painted Tree Woodland District 70",
        "lots": [
         70
@@ -103286,7 +103429,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Painted Tree Woodlands",
        "lots": [],
        "from": 700000,
@@ -104762,7 +104905,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 40ft. lots",
        "lots": [
         40
@@ -104832,7 +104975,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 50ft. lots",
        "lots": [
         50
@@ -104904,7 +105047,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 60ft. lots",
        "lots": [
         60
@@ -104979,7 +105122,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 100ft. lots",
        "lots": [
         100
@@ -105557,7 +105700,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Ramble 74' (rear entry)",
        "lots": [
         74
@@ -105583,7 +105726,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 50ft. lots",
        "lots": [
         50
@@ -105656,7 +105799,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 74ft. lots",
        "lots": [
         74
@@ -105834,7 +105977,7 @@
      "market": "dfw",
      "developer": "Land Tejas / Starwood Land",
      "developer_raw": "Starwood Land",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-224",
      "website": null,
      "city": "Midlothian",
      "county": "Ellis",
@@ -106860,7 +107003,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 45ft. lots",
        "lots": [
         45
@@ -106933,7 +107076,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 50ft. lots",
        "lots": [
         50
@@ -107005,7 +107148,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes in New Builds - 60ft Lots",
        "lots": [
         60
@@ -107031,7 +107174,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes in Quick Move-Ins - 60ft. lots",
        "lots": [
         60
@@ -107106,7 +107249,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 70ft. lots",
        "lots": [
         70
@@ -108005,7 +108148,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-205",
        "section": null,
        "lots": [],
        "from": 399990,
@@ -108639,7 +108782,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "90' home sites",
        "lots": [
         90
@@ -109473,7 +109616,7 @@
       {
        "builder": "Risland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-208",
        "section": "50' Lot",
        "lots": [
         50
@@ -110161,7 +110304,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 55ft. lots",
        "lots": [
         55
@@ -110187,7 +110330,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 65ft. lots",
        "lots": [
         65
@@ -110213,7 +110356,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Homes on 86ft. lots",
        "lots": [
         86
@@ -110239,7 +110382,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Star Trail quick move-ins (all lot sizes)",
        "lots": [],
        "from": null,
@@ -111037,7 +111180,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Classic Series",
        "lots": [],
        "from": 549990,
@@ -111623,7 +111766,7 @@
      "market": "dfw",
      "developer": "Provident Realty Advisors",
      "developer_raw": "Provident Realty Advisors",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-225",
      "website": "https://www.tavolopark.com/",
      "city": "Fort Worth",
      "county": "Tarrant",
@@ -111679,7 +111822,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [],
        "from": null,
@@ -111808,7 +111951,7 @@
       {
        "builder": "Ladera Living",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-218",
        "section": "Ladera at Tavolo Park (55+, gated)",
        "lots": [],
        "from": 390000,
@@ -112837,7 +112980,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [
         45
@@ -113594,7 +113737,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "60' homesites",
        "lots": [
         60
@@ -113660,7 +113803,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Artisan Series Homes - 40ft lots",
        "lots": [
         40
@@ -113686,7 +113829,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "Artisan Series Homes - 50ft lots",
        "lots": [
         50
@@ -114126,7 +114269,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Union Park Classic 55",
        "lots": [
         55
@@ -114229,7 +114372,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Union Park Classic 60",
        "lots": [
         60
@@ -114932,7 +115075,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "50ft. Lots (coming soon)",
        "lots": [
         50
@@ -114958,7 +115101,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "70ft. Lots (coming soon)",
        "lots": [
         70
@@ -115726,7 +115869,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Classic Series",
        "lots": [
         70,
@@ -116666,7 +116809,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": "Elements 60' (55+)",
        "lots": [
         60
@@ -116826,7 +116969,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-205",
        "section": "Walden Pond East",
        "lots": [],
        "from": 224990,
@@ -117011,7 +117154,7 @@
       {
        "builder": "RockWell Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-207",
        "section": "Walden Pond South",
        "lots": [
         50
@@ -117918,7 +118061,7 @@
       {
        "builder": "Drees Custom Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-203",
        "section": null,
        "lots": [
         60,
@@ -117945,7 +118088,7 @@
       {
        "builder": "GFO Home",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-213",
        "section": null,
        "lots": [],
        "from": 565990,
@@ -118033,7 +118176,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": null,
        "lots": [],
        "from": 755990,
@@ -118124,7 +118267,7 @@
       {
        "builder": "Village Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-221",
        "section": "Walsh 50' Homesites",
        "lots": [
         50
@@ -118150,7 +118293,7 @@
       {
        "builder": "Village Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-221",
        "section": "Walsh Townhomes",
        "lots": [],
        "from": 470000,
@@ -118174,7 +118317,7 @@
       {
        "builder": "Hark Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-216",
        "section": "Walsh - Quail Valley",
        "lots": [],
        "from": null,
@@ -118500,7 +118643,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Waterscape Classic 50s",
        "lots": [
         50
@@ -118607,7 +118750,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Waterscape Classic 60s",
        "lots": [
         60
@@ -118722,7 +118865,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "40ft. Lots",
        "lots": [
         40
@@ -118748,7 +118891,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "50ft. Lots",
        "lots": [
         50
@@ -119375,7 +119518,7 @@
      "market": "dfw",
      "developer": "SOCFM Developer LLC and PMB Capital Investments",
      "developer_raw": "SOCFM Developer LLC and PMB Capital Investments",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-230",
      "website": "https://wildcatranchtexas.com/",
      "city": "Crandall",
      "county": "Kaufman",
@@ -119816,9 +119959,9 @@
      "id": "dfw-wildflower-ranch",
      "name": "Wildflower Ranch",
      "market": "dfw",
-     "developer": "Hines",
-     "developer_raw": "Hines",
-     "developer_rolodex_id": null,
+     "developer": "Land Tejas / Starwood Land",
+     "developer_raw": "Starwood Land",
+     "developer_rolodex_id": "DFW-224",
      "website": "https://wildflowerranchtx.com/",
      "city": "Fort Worth",
      "county": "Denton",
@@ -119842,6 +119985,11 @@
        "text": "1,100 acre master-planned community; 3,300 single-family homes at completion.",
        "url": "https://www.hines.com/properties/wildflower-ranch-fort-worth",
        "date": null
+      },
+      {
+       "text": "Hines sold Wildflower Ranch and six other DFW master plans to a Starwood Capital and Starwood Land joint venture on April 4, 2025.",
+       "url": "https://www.hines.com/news/hines-sells-11-master-planned-communities-in-texas-to-starwood-capital-group",
+       "date": "2025-04-04"
       }
      ],
      "sources": [
@@ -120229,7 +120377,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Wildflower Ranch 50-55",
        "lots": [
         50,
@@ -120256,7 +120404,7 @@
       {
        "builder": "Bloomfield Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-202",
        "section": "Wildflower Ranch 60-65",
        "lots": [
         60,
@@ -120362,7 +120510,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "50ft. Lots",
        "lots": [
         50
@@ -120419,7 +120567,7 @@
       {
        "builder": "Highland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-201",
        "section": "60ft. Lots",
        "lots": [
         60
@@ -120577,7 +120725,7 @@
       {
        "builder": "Risland Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-208",
        "section": null,
        "lots": [
         50,
@@ -120639,7 +120787,7 @@
       {
        "builder": "RockWell Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-207",
        "section": null,
        "lots": [
         50
@@ -121139,7 +121287,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-205",
        "section": null,
        "lots": [],
        "from": 364990,
@@ -121986,7 +122134,7 @@
      "market": "dfw",
      "developer": "PMB Capital Investments and Southstar Development",
      "developer_raw": "PMB Capital Investments and Southstar Development",
-     "developer_rolodex_id": null,
+     "developer_rolodex_id": "DFW-230",
      "website": "https://woodcreekfate.com/",
      "city": "Fate",
      "county": "Rockwall",
@@ -123521,7 +123669,7 @@
       {
        "builder": "DRB Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-205",
        "section": null,
        "lots": [],
        "from": null,
@@ -123957,12 +124105,16 @@
     {
      "id": "b-dfw-highland-homes",
      "name": "Highland Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-201",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Highland",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-aster-park",
       "dfw-cambridge-crossing",
@@ -124020,7 +124172,13 @@
      "qmi_ppsf": 229,
      "qmi_ppsf_lo": 210,
      "qmi_ppsf_hi": 265,
-     "closings": null,
+     "closings": {
+      "low": 1742,
+      "high": 1742,
+      "year": 2025,
+      "source": "BUILDER Local Leaders 2026, DFW",
+      "wide": null
+     },
      "filer": null
     },
     {
@@ -124449,12 +124607,16 @@
     {
      "id": "b-dfw-bloomfield-homes",
      "name": "Bloomfield Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-202",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Bloomfield",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-devonshire",
       "dfw-liberty",
@@ -124491,7 +124653,13 @@
      "qmi_ppsf": 184,
      "qmi_ppsf_lo": 170,
      "qmi_ppsf_hi": 206,
-     "closings": null,
+     "closings": {
+      "low": 1810,
+      "high": 1810,
+      "year": 2025,
+      "source": "BUILDER Local Leaders 2026, DFW",
+      "wide": null
+     },
      "filer": null
     },
     {
@@ -124715,12 +124883,16 @@
     {
      "id": "b-dfw-drees-custom-homes",
      "name": "Drees Custom Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-203",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Drees",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-landmark-by-hillwood",
       "dfw-mosaic",
@@ -124754,7 +124926,13 @@
      "qmi_ppsf": 210,
      "qmi_ppsf_lo": 204,
      "qmi_ppsf_hi": 211,
-     "closings": null,
+     "closings": {
+      "low": 2286,
+      "high": 2286,
+      "year": 2025,
+      "source": "BUILDER firm page",
+      "wide": "company-wide"
+     },
      "filer": null
     },
     {
@@ -125451,12 +125629,16 @@
     {
      "id": "b-dfw-drb-homes",
      "name": "DRB Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-205",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "DRB",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "partial"
+     },
      "communities": [
       "dfw-serenade",
       "dfw-solterra",
@@ -125685,12 +125867,16 @@
     {
      "id": "b-dfw-rockwell-homes",
      "name": "RockWell Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-207",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "RockWell",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-creekside-royse-city",
       "dfw-walden-pond",
@@ -125869,12 +126055,16 @@
     {
      "id": "b-dfw-risland-homes",
      "name": "Risland Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-208",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Risland",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-spiritas-ranch",
       "dfw-wildflower-ranch"
@@ -126055,12 +126245,16 @@
     {
      "id": "b-dfw-astoria-homes",
      "name": "Astoria Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-210",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Astoria",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-heartland"
      ],
@@ -126302,12 +126496,16 @@
     {
      "id": "b-dfw-davidson-homes",
      "name": "Davidson Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-206",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Davidson",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-heartland"
      ],
@@ -126399,12 +126597,16 @@
     {
      "id": "b-dfw-gfo-home",
      "name": "GFO Home",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-213",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "GFO",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-walsh"
      ],
@@ -126428,12 +126630,16 @@
     {
      "id": "b-dfw-growth-homes",
      "name": "GROWTH Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-214",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "GROWTH",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-northspur"
      ],
@@ -126515,12 +126721,16 @@
     {
      "id": "b-dfw-hark-homes",
      "name": "Hark Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-216",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Hark",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-walsh"
      ],
@@ -126705,12 +126915,16 @@
     {
      "id": "b-dfw-ladera-living",
      "name": "Ladera Living",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-218",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Ladera",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-tavolo-park"
      ],
@@ -126975,12 +127189,16 @@
     {
      "id": "b-dfw-sixth-element-homes",
      "name": "Sixth Element Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-220",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Sixth Element",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-heartland"
      ],
@@ -127004,12 +127222,16 @@
     {
      "id": "b-dfw-village-homes",
      "name": "Village Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-221",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Village",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-walsh"
      ],
@@ -127035,12 +127257,16 @@
     {
      "id": "b-dfw-westfield-homes",
      "name": "Westfield Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-222",
+     "rolodex_section": "One gap",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Westfield",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
      "communities": [
       "dfw-meraki"
      ],
@@ -127223,6 +127449,58 @@
      }
     },
     {
+     "id": "d-dfw-land-tejas-starwood-land",
+     "name": "Land Tejas / Starwood Land",
+     "rolodex_id": "DFW-224",
+     "communities": [
+      "dfw-aster-park",
+      "dfw-creekside-royse-city",
+      "dfw-furst-ranch",
+      "dfw-myrtle-creek",
+      "dfw-northspur",
+      "dfw-redden-farms",
+      "dfw-wildflower-ranch"
+     ],
+     "n_comm": 7,
+     "builders": [
+      "Ashton Woods",
+      "Beazer Homes",
+      "Bloomfield Homes",
+      "Coventry Homes",
+      "D.R. Horton",
+      "DRB Homes",
+      "David Weekley Homes",
+      "GROWTH Homes",
+      "Highland Homes",
+      "Impression Homes",
+      "John Houston Homes",
+      "Lennar",
+      "M/I Homes",
+      "Mattamy Homes",
+      "Perry Homes",
+      "Risewell Homes",
+      "Risewell Homes (formerly Landsea Homes)",
+      "Risland Homes",
+      "RockWell Homes",
+      "Shaddock Homes",
+      "Toll Brothers",
+      "UnionMain Homes",
+      "William Ryan Homes"
+     ],
+     "acres": 6015,
+     "from_min": 268990,
+     "from_max": 1125995,
+     "qmi_n": 167,
+     "qmi_price": 568990,
+     "qmi_ppsf": 198,
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
+    },
+    {
      "id": "d-dfw-green-brick-partners",
      "name": "Green Brick Partners",
      "rolodex_id": "DFW-003",
@@ -127251,48 +127529,6 @@
       "machine_fit": "fail",
       "innovation": "fail"
      }
-    },
-    {
-     "id": "d-dfw-land-tejas-starwood-land",
-     "name": "Land Tejas / Starwood Land",
-     "rolodex_id": null,
-     "communities": [
-      "dfw-aster-park",
-      "dfw-creekside-royse-city",
-      "dfw-furst-ranch",
-      "dfw-myrtle-creek",
-      "dfw-northspur",
-      "dfw-redden-farms"
-     ],
-     "n_comm": 6,
-     "builders": [
-      "Ashton Woods",
-      "Coventry Homes",
-      "D.R. Horton",
-      "David Weekley Homes",
-      "GROWTH Homes",
-      "Highland Homes",
-      "Impression Homes",
-      "John Houston Homes",
-      "Lennar",
-      "M/I Homes",
-      "Perry Homes",
-      "Risewell Homes",
-      "Risewell Homes (formerly Landsea Homes)",
-      "RockWell Homes",
-      "Shaddock Homes",
-      "Toll Brothers",
-      "UnionMain Homes",
-      "William Ryan Homes"
-     ],
-     "acres": 4915,
-     "from_min": 268990,
-     "from_max": 1125995,
-     "qmi_n": 108,
-     "qmi_price": 599990,
-     "qmi_ppsf": 211,
-     "rolodex_section": null,
-     "marks": null
     },
     {
      "id": "d-dfw-huffines-communities",
@@ -127486,7 +127722,7 @@
     {
      "id": "d-dfw-provident-realty-advisors",
      "name": "Provident Realty Advisors",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-225",
      "communities": [
       "dfw-goodland",
       "dfw-tavolo-park"
@@ -127506,8 +127742,12 @@
      "qmi_n": 38,
      "qmi_price": 592490,
      "qmi_ppsf": 207,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-republic-property-group",
@@ -127612,7 +127852,7 @@
     {
      "id": "d-dfw-bright-realty",
      "name": "Bright Realty",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-226",
      "communities": [
       "dfw-castle-hills"
      ],
@@ -127630,8 +127870,12 @@
      "qmi_n": 5,
      "qmi_price": 643000,
      "qmi_ppsf": 262,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-brookfield-residential",
@@ -127707,7 +127951,7 @@
     {
      "id": "d-dfw-hanover-property-company",
      "name": "Hanover Property Company",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-228",
      "communities": [
       "dfw-mira-lagos"
      ],
@@ -127722,38 +127966,37 @@
      "qmi_n": 5,
      "qmi_price": 772913,
      "qmi_ppsf": 204,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
-     "id": "d-dfw-hines",
-     "name": "Hines",
+     "id": "d-dfw-haynes-development",
+     "name": "Haynes Development",
      "rolodex_id": null,
      "communities": [
-      "dfw-wildflower-ranch"
+      "dfw-devonshire"
      ],
      "n_comm": 1,
      "builders": [
       "Ashton Woods",
-      "Beazer Homes",
       "Bloomfield Homes",
-      "Coventry Homes",
-      "D.R. Horton",
-      "DRB Homes",
       "Highland Homes",
-      "Mattamy Homes",
-      "Risland Homes",
-      "RockWell Homes",
-      "Toll Brothers",
-      "UnionMain Homes",
+      "HistoryMaker Homes",
+      "Perry Homes",
+      "Shaddock Homes",
+      "Trophy Signature Homes",
       "William Ryan Homes"
      ],
-     "acres": 1100,
-     "from_min": 331990,
-     "from_max": 520000,
-     "qmi_n": 59,
-     "qmi_price": 510151,
-     "qmi_ppsf": 188,
+     "acres": 925,
+     "from_min": 280000,
+     "from_max": 500000,
+     "qmi_n": 13,
+     "qmi_price": 425000,
+     "qmi_ppsf": 177,
      "rolodex_section": null,
      "marks": null
     },
@@ -127784,7 +128027,7 @@
     {
      "id": "d-dfw-ma-partners",
      "name": "MA Partners",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-229",
      "communities": [
       "dfw-elevon"
      ],
@@ -127808,8 +128051,12 @@
      "qmi_n": 40,
      "qmi_price": 342220,
      "qmi_ppsf": 168,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-oxland-group",
@@ -127847,7 +128094,7 @@
     {
      "id": "d-dfw-pmb-capital-investments-and-southstar-development",
      "name": "PMB Capital Investments and Southstar Development",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-230",
      "communities": [
       "dfw-woodcreek"
      ],
@@ -127867,13 +128114,17 @@
      "qmi_n": 3,
      "qmi_price": 592950,
      "qmi_ppsf": 179,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-socfm-developer-llc-and-pmb-capital-investments",
      "name": "SOCFM Developer LLC and PMB Capital Investments",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-230",
      "communities": [
       "dfw-wildcat-ranch"
      ],
@@ -127891,13 +128142,17 @@
      "qmi_n": 6,
      "qmi_price": 260615,
      "qmi_ppsf": 158,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-the-nehemiah-company",
      "name": "The Nehemiah Company",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-231",
      "communities": [
       "dfw-karis"
      ],
@@ -127913,13 +128168,17 @@
      "qmi_n": 6,
      "qmi_price": 319490,
      "qmi_ppsf": 164,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "partial"
+     }
     },
     {
      "id": "d-dfw-walton-development-and-management",
      "name": "Walton Development and Management",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-232",
      "communities": [
       "dfw-chisholm-trail-ranch"
      ],
@@ -127934,40 +128193,17 @@
      "qmi_n": 5,
      "qmi_price": 415490,
      "qmi_ppsf": 141,
-     "rolodex_section": null,
-     "marks": null
-    },
-    {
-     "id": "d-dfw-wheelock-communities",
-     "name": "Wheelock Communities",
-     "rolodex_id": null,
-     "communities": [
-      "dfw-devonshire"
-     ],
-     "n_comm": 1,
-     "builders": [
-      "Ashton Woods",
-      "Bloomfield Homes",
-      "Highland Homes",
-      "HistoryMaker Homes",
-      "Perry Homes",
-      "Shaddock Homes",
-      "Trophy Signature Homes",
-      "William Ryan Homes"
-     ],
-     "acres": 925,
-     "from_min": 280000,
-     "from_max": 500000,
-     "qmi_n": 13,
-     "qmi_price": 425000,
-     "qmi_ppsf": 177,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     },
     {
      "id": "d-dfw-wilbow",
      "name": "Wilbow",
-     "rolodex_id": null,
+     "rolodex_id": "DFW-234",
      "communities": [
       "dfw-morningstar"
      ],
@@ -127983,15 +128219,19 @@
      "qmi_n": 9,
      "qmi_price": 384960,
      "qmi_ppsf": 182,
-     "rolodex_section": null,
-     "marks": null
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     }
    ],
    "totals": {
     "communities": 72,
     "rows": 483,
     "builders": 79,
-    "developers": 28,
+    "developers": 27,
     "qmi": 1142,
     "qmi_price": 499990,
     "qmi_sqft": 2621,
