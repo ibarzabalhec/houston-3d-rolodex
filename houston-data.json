@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 102,
+ "build": 103,
  "last_updated": "2026-09-28",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-28",
  "kicker": "Rolodex · Greater Houston · 2026-09-28",
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 157 LinkedIn headlines naming the firm, 196 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 195 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1867,7 +1867,7 @@
       "off": false
      },
      {
-      "name": "Brightland Homes",
+      "name": "DRB Homes",
       "id": "HOU-034",
       "off": false
      }
@@ -19269,7 +19269,7 @@
   "tier_a": 3,
   "tier_b": 46,
   "principals": 367,
-  "linkedin_held": 157,
+  "linkedin_held": 158,
   "audit_flags": 0,
   "with_decider": 102,
   "with_decider_live": 35,
@@ -20637,7 +20637,7 @@
    "key_projects": [
     {
      "name": "The 38-plan library",
-     "detail": "Briarwood, Discovery, Lake Ridge, Lakewood. Creekwood Crossing sells plans 218, 252, 254, 264, 265 and 269, 1,876 to 2,837 square feet.",
+     "detail": "Briarwood, Discovery, Lake Ridge, Lakewood. Creekwood Crossing has homes for sale on plans 210, 218, 254, 264, 265 and 269, 1,582 to 2,837 square feet.",
      "signal_type": "repeatable",
      "fit_signal": "A wall change reaches all 22 communities at once.",
      "url": "https://www.longlakeltd.com/new-homes/communities/creekwood-crossing/"
@@ -20671,6 +20671,10 @@
     },
     {
      "url": "https://sunterratx.com/homebuilders/long-lake/",
+     "date": null
+    },
+    {
+     "url": "https://www.longlakeltd.com/new-homes/communities/creekwood-crossing/",
      "date": null
     }
    ],
@@ -21331,7 +21335,7 @@
      "title": "Printer fit: one or two printers would cover it",
      "verdict": "Partly",
      "mark": "partial",
-     "text": "465 homes across two communities, a project total above 400."
+     "text": "465 homes across two communities, a project total."
     },
     {
      "axis": "innovation",
@@ -24035,7 +24039,7 @@
    "entity_name": "Coventry Homes",
    "region": "Houston HQ, Harris County",
    "homepage_url": "https://www.coventryhomes.com/",
-   "synopsis": "Houston production builder founded in 1988. It runs close to 100 communities across Houston, Dallas-Fort Worth, Austin and San Antonio. It has closed more than 55,000 homes company-wide. Dream Finders Homes bought its parent MHI in 2021 for $150 million in preferred stock.",
+   "synopsis": "Houston production builder founded in 1988. It runs close to 100 communities across Houston, Dallas-Fort Worth, Austin and San Antonio. It has closed more than 55,000 homes company-wide. Dream Finders Homes bought the assets of its parent MHI in October 2021 for $471 million in cash.",
    "key_stat": "1,048 Houston closings in 2025 under Dream Finders, eighth in the metro",
    "principals": [
     {
@@ -24074,6 +24078,10 @@
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer",
      "date": null
     }
    ],
@@ -31764,7 +31772,7 @@
      "title": "Repetition: builds the same plans, in one place",
      "verdict": "Yes",
      "mark": "clear",
-     "text": "65 Houston communities, 668 standing homes, one national plan library."
+     "text": "65 Houston communities, one national plan library."
     },
     {
      "axis": "machine_fit",
@@ -33527,7 +33535,7 @@
     },
     {
      "name": "2026 National Preferred Partners",
-     "detail": "27 suppliers: James Hardie cladding, GAF roofing, DuPont weather barrier, Owens Corning, Simpson Strong-Tie connectors, Weyerhaeuser Trus Joist framing.",
+     "detail": "Named suppliers include James Hardie cladding, GAF roofing, DuPont weather barrier, Owens Corning, Simpson Strong-Tie connectors, Weyerhaeuser Trus Joist framing.",
      "signal_type": "method_risk",
      "fit_signal": "Named supplier per wall layer, the list a printed wall must enter.",
      "url": "https://www.prnewswire.com/news-releases/david-weekley-homes-announces-2026-national-preferred-partners-302809074.html"
@@ -34734,18 +34742,19 @@
   },
   {
    "target_id": "HOU-034",
-   "entity_name": "Brightland Homes",
+   "entity_name": "DRB Homes",
    "region": "Addison HQ / Montgomery, Harris",
    "homepage_url": "https://www.brightlandhomes.com/",
-   "synopsis": "Production homebuilder founded in 1994 as Gehan Homes. In Houston it builds at The Woodlands Hills, and its local listings show no vice president or director. Sumitomo Forestry took a controlling stake in 2014, and Brightland joined The DRB Group in April 2025.",
-   "key_stat": "110 communities and 17,000+ homes company-wide at its 2023 rename",
+   "synopsis": "Production homebuilder founded in 1994 as Gehan Homes. In Houston it sells as DRB Homes at Bridgeland, Sunterra, The Woodlands Hills and other master plans, and its local listings show no vice president or director. Sumitomo Forestry took a controlling stake in 2014, and Brightland joined The DRB Group in April 2025.",
+   "key_stat": "110 communities and 17,000+ homes company-wide at its 2023 rename to Brightland",
    "principals": [
     {
      "name": "Ronny Salameh",
      "role": "President and Chief Executive Officer, The DRB Group",
+     "linkedin_url": "https://www.linkedin.com/in/ronny-salameh-46738b79/",
+     "li_evidence": "Indexed title: Ronny Salameh, DRB Group.",
      "source_url": "https://www.drbgroup.com/about",
-     "source_evidence": "DRB Group, Brightland's owner.",
-     "find_url": "https://www.linkedin.com/search/results/people/?keywords=Ronny%20Salameh%20Brightland%20Homes"
+     "source_evidence": "DRB Group, Brightland's owner."
     },
     {
      "name": "Young Nam",
@@ -34774,7 +34783,7 @@
      "url": "https://www.businesswire.com/news/home/20140501005392/en/Texas-Homebuilder-Gehan-Homes-Sells-Stake-Sumitomo"
     }
    ],
-   "mvp_screen": "Its parent, Sumitomo Forestry, bought a sawmill in 2025 to supply wood framing across DRB. Builds at The Woodlands Hills.",
+   "mvp_screen": "Its parent, Sumitomo Forestry, bought a sawmill in 2025 to supply wood framing across DRB. Builds at Bridgeland, Sunterra and The Woodlands Hills.",
    "sources": [
     {
      "url": "https://press.brightlandhomes.com/gehan-homes-announces-name-change-to-brightland-homes",
@@ -34786,6 +34795,22 @@
     },
     {
      "url": "https://www.housingwire.com/articles/sumitomos-timber-complex-sharpens-its-edge-of-integration/",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/about/news-events/brightland-homes-has-joined-drb-homes",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/houston/bridgeland-central/overview",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/houston/sunterra/overview",
+     "date": null
+    },
+    {
+     "url": "https://www.drbhomes.com/drbhomes/find-your-home/communities/texas/houston/the-woodlands-hills/overview",
      "date": null
     }
    ],
@@ -34833,7 +34858,7 @@
    "email_label": null,
    "email_source": null,
    "vol": null,
-   "short": "Brightland",
+   "short": "DRB Homes",
    "cell": "partial|fail",
    "has_decider": true,
    "decider_confirmed": false,
@@ -39250,6 +39275,13 @@
    "b": "HOU-069",
    "rel": "",
    "card": "HOU-043"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-011",
+   "b": "Brightland Homes",
+   "rel": "",
+   "card": "HOU-011"
   },
   {
    "k": "builds",

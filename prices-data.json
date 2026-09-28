@@ -48714,7 +48714,7 @@
      "rolodex_section": "National builder",
      "rolodex_group": "national",
      "rolodex_type": "homebuilder",
-     "rolodex_card": "Brightland",
+     "rolodex_card": "DRB Homes",
      "marks": {
       "repeatability": "partial",
       "machine_fit": "fail",
@@ -122884,7 +122884,7 @@
       {
        "builder": "CalAtlantic Homes",
        "custom_members": null,
-       "rolodex_id": null,
+       "rolodex_id": "DFW-002",
        "section": null,
        "lots": [],
        "from": null,
@@ -126369,12 +126369,16 @@
     {
      "id": "b-dfw-calatlantic-homes",
      "name": "CalAtlantic Homes",
-     "rolodex_id": null,
-     "rolodex_section": null,
-     "rolodex_group": null,
-     "rolodex_type": null,
-     "rolodex_card": null,
-     "marks": null,
+     "rolodex_id": "DFW-002",
+     "rolodex_section": "Lennar",
+     "rolodex_group": "icon",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Lennar",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "clear"
+     },
      "communities": [
       "dfw-bluewood"
      ],
@@ -126392,7 +126396,13 @@
      "qmi_ppsf": null,
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
-     "closings": null,
+     "closings": {
+      "low": 5724,
+      "high": 5724,
+      "year": 2025,
+      "source": "BUILDER Local Leaders 2026, DFW",
+      "wide": null
+     },
      "filer": null
     },
     {
