@@ -6,11 +6,11 @@
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-28",
  "headline": "Dallas-Fort Worth builders and developers, screened for a construction printer.",
  "headline_html": "Dallas-Fort Worth builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "146 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named decision-makers, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "146 Dallas-Fort Worth builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
-  "b": "One gap",
+  "b": "Two of three counts",
   "national": "National builder",
   "trade": "Contractors and plants",
   "creative": "Custom and hybrid job",
@@ -19,7 +19,7 @@
  },
  "group_notes": {
   "a": "Builders and developers outside the national and custom sections. Adopters and contractors with all three sit apart.",
-  "b": "Two of three counts.",
+  "b": "One count reads No.",
   "adopter": "Printed walls standing, or a competitor contract.",
   "national": "Company-level purchasing across several states.",
   "trade": "DFW builders hire out walls. The three counts judge the wall.",
@@ -56,7 +56,7 @@
   ],
   [
    "84",
-   "of 146 with a decision-maker named",
+   "of 146 with an executive named",
    true,
    {
     "dec": "any"
@@ -932,8 +932,8 @@
    "BUILDER's Local Leaders table, BUILDER firm pages, masterplan builder lists, trade press and firm websites."
   ],
   [
-   "Who decides",
-   "Marked: a vice president or director of construction, a head of purchasing, or a division president. These roles can change a wall specification. At a builder of 400 homes a year or fewer that names none, the owner. At a contractor, whoever signs for equipment."
+   "Executive named",
+   "Named: a vice president or director of construction, a head of purchasing, or a division president. At a builder of 400 homes a year or fewer that names none, the owner. At a contractor, whoever signs for equipment."
   ],
   [
    "Sources",
@@ -1458,19 +1458,17 @@
     "yes": 0,
     "partly": 2,
     "no": 0,
-    "decider": 1,
-    "confirm": 0,
+    "named": 1,
     "linked": 2
    },
    {
     "group": "b",
-    "label": "One gap",
+    "label": "Two of three counts",
     "n": 48,
     "yes": 0,
     "partly": 0,
     "no": 48,
-    "decider": 33,
-    "confirm": 0,
+    "named": 33,
     "linked": 47
    },
    {
@@ -1480,8 +1478,7 @@
     "yes": 4,
     "partly": 6,
     "no": 29,
-    "decider": 29,
-    "confirm": 0,
+    "named": 29,
     "linked": 31
    },
    {
@@ -1491,8 +1488,7 @@
     "yes": 1,
     "partly": 0,
     "no": 1,
-    "decider": 2,
-    "confirm": 0,
+    "named": 2,
     "linked": 2
    },
    {
@@ -1502,8 +1498,7 @@
     "yes": 2,
     "partly": 1,
     "no": 21,
-    "decider": 13,
-    "confirm": 0,
+    "named": 13,
     "linked": 24
    },
    {
@@ -1513,8 +1508,7 @@
     "yes": 0,
     "partly": 1,
     "no": 29,
-    "decider": 6,
-    "confirm": 0,
+    "named": 6,
     "linked": 29
    },
    {
@@ -1524,8 +1518,7 @@
     "yes": 1,
     "partly": 0,
     "no": 0,
-    "decider": 0,
-    "confirm": 0,
+    "named": 0,
     "linked": 1
    }
   ],
@@ -16895,15 +16888,8 @@
  "stats": {
   "total": 146,
   "adopters": 0,
-  "tier_a": 2,
-  "tier_b": 48,
   "principals": 266,
-  "linkedin_held": 80,
-  "audit_flags": 0,
-  "with_decider": 84,
-  "with_decider_live": 34,
-  "with_decider_confirmed": 84,
-  "with_decider_caveat": 0
+  "with_executive": 84
  },
  "targets": [
   {
@@ -17000,28 +16986,20 @@
     {
      "name": "Danting Li",
      "role": "Chief Operating Officer and Co-Founder",
-     "source_url": "https://wanbridge.com/leadership/",
-     "source_evidence": "Firm's leadership page.",
-     "decider": true
+     "source_url": "https://wanbridge.com/leadership/"
     },
     {
      "name": "Keith Clipp",
      "role": "Executive Vice President, Development and Operations",
-     "source_url": "https://wanbridge.com/leadership/",
-     "source_evidence": "Firm's leadership page.",
-     "decider": true
+     "source_url": "https://wanbridge.com/leadership/"
     },
     {
      "name": "Ting Qiao",
      "role": "Co-Founder",
-     "source_url": "https://wanbridge.com/leadership/",
-     "source_evidence": "Firm's leadership page."
+     "source_url": "https://wanbridge.com/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-04-14",
@@ -17038,7 +17016,8 @@
      "what": "Near completion of The Reserve at Red Oak, 166 build-to-rent homes on 18 acres, leasing begun."
     }
    ],
-   "type": "btr"
+   "type": "btr",
+   "exec_named": true
   },
   {
    "target_id": "DFW-020",
@@ -17160,24 +17139,17 @@
      "name": "Zac Thompson",
      "role": "President",
      "source_url": "https://www.historymaker.com/our-legacy",
-     "source_evidence": "Our Legacy page. President from January 1, 2024.",
-     "linkedin_url": "https://www.linkedin.com/in/zac-thompson-09260044/",
-     "li_evidence": "Indexed title: President, HistoryMaker Homes.",
-     "decider": false
+     "linkedin_url": "https://www.linkedin.com/in/zac-thompson-09260044/"
     },
     {
      "name": "Nelson Mitchell",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.historymaker.com/blog/historymaker-homes-announces-retirement-of-company-president-and-successor/",
-     "source_evidence": "Company blog post, July 31, 2023. Quoted as CEO.",
-     "decider": false
+     "source_url": "https://www.historymaker.com/blog/historymaker-homes-announces-retirement-of-company-president-and-successor/"
     }
    ],
    "vol": 728,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-032",
@@ -17270,29 +17242,22 @@
     {
      "name": "John Landon",
      "role": "Owner and Chief Executive Officer",
-     "source_url": "https://landonhomes.com/our-story/",
-     "source_evidence": "Our Story page.",
-     "decider": true
+     "source_url": "https://landonhomes.com/our-story/"
     },
     {
      "name": "Carly Landon Huffman",
      "role": "President",
-     "source_url": "https://landonhomes.com/our-story/",
-     "source_evidence": "Our Story page.",
-     "decider": true
+     "source_url": "https://landonhomes.com/our-story/"
     },
     {
      "name": "Rusty Landon",
      "role": "Vice President of Development",
-     "source_url": "https://landonhomes.com/our-story/",
-     "source_evidence": "Our Story page."
+     "source_url": "https://landonhomes.com/our-story/"
     }
    ],
    "vol": 259,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-026",
@@ -17383,22 +17348,17 @@
     {
      "name": "Dustin Austin",
      "role": "Owner",
-     "source_url": "https://fortworthreport.org/2024/05/01/fort-worth-business-owner-dustin-austin-to-join-jps-board-of-managers/",
-     "source_evidence": "Fort Worth Report, May 1, 2024.",
-     "decider": true
+     "source_url": "https://fortworthreport.org/2024/05/01/fort-worth-business-owner-dustin-austin-to-join-jps-board-of-managers/"
     },
     {
      "name": "Mey-Ling Pauri",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.builderonline.com/firms/our-country-homes_o/",
-     "source_evidence": "BUILDER's firm page."
+     "source_url": "https://www.builderonline.com/firms/our-country-homes_o/"
     }
    ],
    "vol": 259,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-027",
@@ -17414,7 +17374,7 @@
    "phone_absent": null,
    "press": [],
    "key_stat": "177 company-wide closings in 2023, BUILDER rank 194",
-   "mvp_screen": "Family-owned, with owner and CEO Scott Sandlin the named decision-maker.",
+   "mvp_screen": "Family-owned. Scott Sandlin is owner and CEO.",
    "synopsis": "Family-owned builder of production and custom homes. It is based in North Richland Hills and builds in North Texas. Its team page names four family owners, including Mike and Terry Sandlin.",
    "region": "North Richland Hills, building across North Texas",
    "phone_label": "Main line",
@@ -17481,36 +17441,28 @@
     {
      "name": "Scott Sandlin",
      "role": "Owner and Chief Executive Officer",
-     "source_url": "https://www.sandlinhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page.",
-     "decider": true
+     "source_url": "https://www.sandlinhomes.com/meet-the-team"
     },
     {
      "name": "Mike Sandlin",
      "role": "Owner",
-     "source_url": "https://www.sandlinhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page."
+     "source_url": "https://www.sandlinhomes.com/meet-the-team"
     },
     {
      "name": "Terry Sandlin",
      "role": "Owner",
      "source_url": "https://www.sandlinhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/terry-sandlin-69a496b5/",
-     "li_evidence": "Indexed title: Sandlin Custom Homes."
+     "linkedin_url": "https://www.linkedin.com/in/terry-sandlin-69a496b5/"
     },
     {
      "name": "Matt Speight",
      "role": "Owner",
-     "source_url": "https://www.sandlinhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page."
+     "source_url": "https://www.sandlinhomes.com/meet-the-team"
     }
    ],
    "vol": 177,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-BTR-001",
@@ -17594,15 +17546,10 @@
     {
      "name": "Brent Landry",
      "role": "Executive Vice President of Development",
-     "source_url": "https://www.prnewswire.com/news-releases/american-homes-4-rent-ranks-41-on-2022-builder-100-list-301565032.html",
-     "source_evidence": "American Homes 4 Rent release, PR Newswire.",
-     "decider": false
+     "source_url": "https://www.prnewswire.com/news-releases/american-homes-4-rent-ranks-41-on-2022-builder-100-list-301565032.html"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-07-30",
@@ -17612,7 +17559,8 @@
      "what": "Delivered 651 newly built homes in the second quarter and kept 2026 guidance of 1,300 to 1,500 wholly owned deliveries."
     }
    ],
-   "type": "btr"
+   "type": "btr",
+   "exec_named": false
   },
   {
    "target_id": "DFW-003b",
@@ -17700,17 +17648,12 @@
      "name": "Steve Schermerhorn",
      "role": "President, CB JENI Lifestyle, Normandy and Southgate Homes",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page, Division Presidents.",
-     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/",
-     "li_evidence": "Indexed title: President at CB JENI, Normandy.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-061",
@@ -17812,23 +17755,17 @@
     {
      "name": "Lance Wright",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.c-rock.com/about/",
-     "source_evidence": "CastleRock's about page. Founding partner and CEO, over sales, construction, purchasing and marketing.",
-     "decider": false
+     "source_url": "https://www.c-rock.com/about/"
     },
     {
      "name": "Kirk Breitenwischer",
      "role": "Senior Executive Vice President",
-     "source_url": "https://www.c-rock.com/about/",
-     "source_evidence": "CastleRock's about page. Partner and Senior Executive Vice President, over land.",
-     "decider": false
+     "source_url": "https://www.c-rock.com/about/"
     }
    ],
    "vol": 1465,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-003d",
@@ -17920,17 +17857,12 @@
      "name": "Trevor Brickman",
      "role": "President",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page. Founder, President since 2012.",
-     "linkedin_url": "https://www.linkedin.com/in/trevor-brickman-3a52b582/",
-     "li_evidence": "Indexed title: Centre Living Homes LLC.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/trevor-brickman-3a52b582/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-BTR-005",
@@ -18046,36 +17978,27 @@
    ],
    "principals": [
     {
-     "name": "Josh E. Hartmann",
-     "role": "Chief Executive Officer",
-     "source_url": "https://www.nexmetro.com/directory.php",
-     "source_evidence": "NexMetro directory."
-    },
-    {
-     "name": "Drew Klasing",
-     "role": "Regional Managing Director, Dallas and Tampa",
-     "source_url": "https://www.nexmetro.com/directory.php",
-     "source_evidence": "NexMetro directory."
-    },
-    {
      "name": "Bernadette Bendit",
      "role": "National Purchasing Manager",
-     "source_url": "https://www.nexmetro.com/directory.php",
-     "source_evidence": "NexMetro directory.",
-     "decider": true
+     "source_url": "https://www.nexmetro.com/directory.php"
     },
     {
      "name": "Mark Barton",
      "role": "Director of Construction",
-     "source_url": "https://www.nexmetro.com/directory.php",
-     "source_evidence": "NexMetro directory.",
-     "decider": true
+     "source_url": "https://www.nexmetro.com/directory.php"
+    },
+    {
+     "name": "Josh E. Hartmann",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.nexmetro.com/directory.php"
+    },
+    {
+     "name": "Drew Klasing",
+     "role": "Regional Managing Director, Dallas and Tampa",
+     "source_url": "https://www.nexmetro.com/directory.php"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-04-21",
@@ -18085,7 +18008,8 @@
      "what": "Opened its 2026 development fund to wealth platforms to raise capital for new build-to-rent projects."
     }
    ],
-   "type": "btr"
+   "type": "btr",
+   "exec_named": true
   },
   {
    "target_id": "DFW-014",
@@ -18185,17 +18109,12 @@
      "name": "Steve Schermerhorn",
      "role": "President, CB JENI Lifestyle, Normandy and Southgate Homes",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page, Division Presidents.",
-     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/",
-     "li_evidence": "Indexed title: President at CB JENI, Normandy.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-045",
@@ -18288,16 +18207,12 @@
     {
      "name": "Blake Friesenhahn",
      "role": "Vice President, Pacesetter Homes Dallas-Fort Worth",
-     "source_url": "https://www.qualico.com/news/pacesetter-homes-texas-earns-spot-on-builder-100-list-for-the-ninth-consecutive-year",
-     "source_evidence": "Qualico news release, May 29, 2025.",
-     "decider": true
+     "source_url": "https://www.qualico.com/news/pacesetter-homes-texas-earns-spot-on-builder-100-list-for-the-ninth-consecutive-year"
     }
    ],
    "vol": 482,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-003c",
@@ -18389,17 +18304,12 @@
      "name": "Steve Schermerhorn",
      "role": "President, CB JENI Lifestyle, Normandy and Southgate Homes",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page.",
-     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/",
-     "li_evidence": "Indexed title: President at CB JENI, Normandy.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/steve-schermerhorn-0b39605/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-003a",
@@ -18503,24 +18413,16 @@
      "name": "Chris Wicker",
      "role": "President, Trophy Signature Homes Dallas",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page. Promoted December 2024.",
-     "linkedin_url": "https://www.linkedin.com/in/chris-wicker-08776a66/",
-     "li_evidence": "Indexed title: Trophy Signature Homes.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/chris-wicker-08776a66/"
     },
     {
      "name": "Jed Dolson",
      "role": "President and Chief Operating Officer, Green Brick Partners. Co-Chief Executive Officer from 15 October 2026",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Green Brick leadership page and 30 July 2026 release. Formerly President, Texas region.",
-     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/",
-     "li_evidence": "Indexed title: Chief Operating Officer and Executive Vice President, Green Brick Partners."
+     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-07-30",
@@ -18544,7 +18446,8 @@
      "what": "Opened sales at Lone Oak in Alvarado, its Victory Series on 50-foot lots."
     }
    ],
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-079",
@@ -18629,10 +18532,8 @@
    ],
    "principals": [],
    "vol": 436,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-BTR-006",
@@ -18718,16 +18619,12 @@
     {
      "name": "Mark Wolf",
      "role": "Co-founder and CEO",
-     "source_url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/",
-     "source_evidence": "CandysDirt article, July 2022.",
-     "decider": true
+     "source_url": "https://candysdirt.com/2022/07/10/san-antonio-company-finds-a-sweet-spot-with-first-north-texas-project/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "btr"
+   "type": "btr",
+   "exec_named": true
   },
   {
    "target_id": "DFW-029",
@@ -18822,22 +18719,15 @@
     {
      "name": "Kevin Egan",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-     "source_evidence": "Firm's blog post, December 14, 2022. Named Chief Executive Officer after serving as president.",
-     "decider": false
+     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team"
     },
     {
      "name": "Paul Miller",
      "role": "President and Chief Operating Officer",
-     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team",
-     "source_evidence": "Firm's blog post, December 14, 2022. Named President and Chief Operating Officer.",
-     "decider": false
+     "source_url": "https://www.amlegendhomes.com/blog/american-legend-homes-announces-new-ceo-and-leadership-team"
     }
    ],
    "vol": 636,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-04-07",
@@ -18847,7 +18737,8 @@
      "what": "Named one of five builders at Meraki in Forney, 1,079 acres with 406 first-phase homesites."
     }
    ],
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-078",
@@ -18945,16 +18836,12 @@
     {
      "name": "Bruno Pasquinelli",
      "role": "Founder",
-     "source_url": "https://cadencehomestx.com/",
-     "source_evidence": "Trinity Falls builder page. Over 30 years of experience.",
-     "decider": true
+     "source_url": "https://cadencehomestx.com/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-BTR-008",
@@ -19050,23 +18937,15 @@
      "name": "Dan Miller",
      "role": "Chief Executive Officer, Camillo Companies",
      "source_url": "https://www.camillocompanies.com/camillo-companies-names-dan-miller-as-ceo",
-     "source_evidence": "Camillo release, August 4, 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/dan-miller/",
-     "li_evidence": "Indexed title: Chief Executive Officer at Camillo Companies.",
-     "decider": false
+     "linkedin_url": "https://www.linkedin.com/in/dan-miller/"
     },
     {
      "name": "Matt Hansen",
      "role": "President, SimplyHome",
-     "source_url": "https://www.camillocompanies.com/blog/camillo-companies-names-tanya-rizzo-president-legend-homes-matt-hansen-president-simplyhome",
-     "source_evidence": "Camillo blog, May 22, 2023.",
-     "decider": false
+     "source_url": "https://www.camillocompanies.com/blog/camillo-companies-names-tanya-rizzo-president-legend-homes-matt-hansen-president-simplyhome"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-07-30",
@@ -19090,7 +18969,8 @@
      "what": "Hired Jomar Ereso as chief financial officer, based in Houston."
     }
    ],
-   "type": "btr"
+   "type": "btr",
+   "exec_named": false
   },
   {
    "target_id": "DFW-037",
@@ -19187,28 +19067,22 @@
     {
      "name": "Joey Goss",
      "role": "Chief Executive Officer and Founder",
-     "source_url": "https://www.cheldanhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page.",
-     "decider": true
+     "source_url": "https://www.cheldanhomes.com/meet-the-team"
     },
     {
      "name": "Trey Hart",
      "role": "Vice President of Operations",
-     "source_url": "https://www.cheldanhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page."
+     "source_url": "https://www.cheldanhomes.com/meet-the-team"
     },
     {
      "name": "Chelsea Brown",
      "role": "Vice President of Sales and Marketing",
-     "source_url": "https://www.cheldanhomes.com/meet-the-team",
-     "source_evidence": "Meet the Team page."
+     "source_url": "https://www.cheldanhomes.com/meet-the-team"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-BTR-009",
@@ -19291,16 +19165,12 @@
     {
      "name": "Nathan Pile",
      "role": "President, Curve Development",
-     "source_url": "https://www.prweb.com/releases/construction-commences-for-new-build-for-rent-community-within-master-planned-community-of-painted-tree-in-dallas-area-302029396.html",
-     "source_evidence": "Curve release, January 9, 2024.",
-     "decider": true
+     "source_url": "https://www.prweb.com/releases/construction-commences-for-new-build-for-rent-community-within-master-planned-community-of-painted-tree-in-dallas-area-302029396.html"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "btr"
+   "type": "btr",
+   "exec_named": true
   },
   {
    "target_id": "DFW-008",
@@ -19398,15 +19268,12 @@
     {
      "name": "Randall Van Wolfswinkel",
      "role": "Chief Executive Officer (as of 2010)",
-     "source_url": "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/",
-     "source_evidence": "Dallas News, 2010."
+     "source_url": "https://www.dallasnews.com/news/2010/02/08/first-texas-homes-moves-from-arlington-to-uptown-dallas/"
     }
    ],
    "vol": 1034,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-023",
@@ -19504,17 +19371,12 @@
      "name": "Stephen H. Brooks",
      "role": "Founder",
      "source_url": "https://www.grandhomes.com/index.cfm?p=about_us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/stephen-brooks-6a058412/",
-     "li_evidence": "Indexed title: Stephen Brooks, Grand Homes.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/stephen-brooks-6a058412/"
     }
    ],
    "vol": 400,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-035",
@@ -19601,23 +19463,17 @@
     {
      "name": "Anthony Natale",
      "role": "Co-founder",
-     "source_url": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/",
-     "source_evidence": "Windsong Ranch builders article.",
-     "decider": true
+     "source_url": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
     },
     {
      "name": "John Egnatis",
      "role": "Co-founder",
-     "source_url": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/",
-     "source_evidence": "Windsong Ranch builders article.",
-     "decider": true
+     "source_url": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-BTR-007",
@@ -19708,16 +19564,12 @@
      "name": "Matthew McGhee",
      "role": "Vice President",
      "source_url": "https://triconhomes.com/resources/insights/tricon-residential-opens-new-community-in-arlington-texas-add-to-housing-supply/",
-     "source_evidence": "Tricon Residential release. Now at Bluprint Ventures.",
-     "decider": false,
      "departed": true
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "btr"
+   "type": "btr",
+   "exec_named": false
   },
   {
    "target_id": "DFW-043",
@@ -19806,31 +19658,23 @@
    ],
    "principals": [
     {
+     "name": "Charlie Coleman",
+     "role": "Texas Regional President",
+     "source_url": "https://www.homebound.com/about"
+    },
+    {
      "name": "Nikki Pechet",
      "role": "Co-Founder and Chief Executive Officer",
      "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page.",
-     "linkedin_url": "https://www.linkedin.com/in/nikki-pechet-4b949210/",
-     "li_evidence": "Indexed title: Nikki Pechet, Homebound."
-    },
-    {
-     "name": "Charlie Coleman",
-     "role": "Texas Regional President",
-     "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page. Formerly Pulte's DFW Division President.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/nikki-pechet-4b949210/"
     },
     {
      "name": "Al Tuten",
      "role": "Vice President, Homebuilding Operations",
-     "source_url": "https://www.homebound.com/about",
-     "source_evidence": "Homebound about page."
+     "source_url": "https://www.homebound.com/about"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-03-02",
@@ -19840,7 +19684,8 @@
      "what": "Acquired more than 1,000 lots in Dallas, Prosper, Flower Mound and Mansfield, about $731 million."
     }
    ],
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-021",
@@ -19931,21 +19776,15 @@
     {
      "name": "Steve Garza",
      "role": "President and Chairman",
-     "source_url": "https://www.impressionhomes.net/about-us/meet-the-team/",
-     "source_evidence": "Firm's team page. President since 2024.",
-     "decider": false
+     "source_url": "https://www.impressionhomes.net/about-us/meet-the-team/"
     },
     {
      "name": "Bruce Heikkinen",
      "role": "Founder and Board Member",
-     "source_url": "https://www.impressionhomes.net/about-us/meet-the-team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://www.impressionhomes.net/about-us/meet-the-team/"
     }
    ],
    "vol": 406,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
    "news": [
     {
      "date": "2026-08-19",
@@ -19955,7 +19794,8 @@
      "what": "Showed nine prototype homes of a new 50-foot series in Justin, to extend to Celina and Rockwall."
     }
    ],
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-034",
@@ -20038,22 +19878,17 @@
     {
      "name": "John Houston",
      "role": "Co-founder",
-     "source_url": "https://jhoustonhomes.com/our-purpose/",
-     "source_evidence": "Firm's purpose page.",
-     "decider": true
+     "source_url": "https://jhoustonhomes.com/our-purpose/"
     },
     {
      "name": "Tracy Houston",
      "role": "Co-founder",
-     "source_url": "https://jhoustonhomes.com/our-purpose/",
-     "source_evidence": "Firm's purpose page."
+     "source_url": "https://jhoustonhomes.com/our-purpose/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-022",
@@ -20142,23 +19977,17 @@
     {
      "name": "Aaron Ipour",
      "role": "Co-Founder, Megatel Group",
-     "source_url": "https://www.megatelhomes.com/about-us",
-     "source_evidence": "Megatel about page.",
-     "decider": false
+     "source_url": "https://www.megatelhomes.com/about-us"
     },
     {
      "name": "Zach Ipour",
      "role": "Co-Founder, Megatel Group",
-     "source_url": "https://www.megatelhomes.com/about-us",
-     "source_evidence": "Megatel about page.",
-     "decider": false
+     "source_url": "https://www.megatelhomes.com/about-us"
     }
    ],
    "vol": 696,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-031",
@@ -20241,22 +20070,17 @@
     {
      "name": "Chris Lemming",
      "role": "President, Partners In Building, since June 2026. Previously Division President, Dallas-Fort Worth",
-     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/",
-     "source_evidence": "Realty News Report, June 11, 2026.",
-     "decider": true
+     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/"
     },
     {
      "name": "Jim Lemming",
      "role": "Chairman, Partners In Building, since June 2026",
-     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/",
-     "source_evidence": "Realty News Report, June 2026. Formerly Chief Executive Officer."
+     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-044",
@@ -20339,16 +20163,12 @@
     {
      "name": "Matthew R. Zaist",
      "role": "President and Chief Executive Officer",
-     "source_url": "https://www.builder100.com/speaker/matthew-r-zaist/",
-     "source_evidence": "Builder 100 speaker bio. Joined New Home Co. in that role, September 2021.",
-     "decider": false
+     "source_url": "https://www.builder100.com/speaker/matthew-r-zaist/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-033",
@@ -20445,16 +20265,12 @@
     {
      "name": "Tim Fleet",
      "role": "President and Founder",
-     "source_url": "https://www.riversidehomebuilders.com/about/",
-     "source_evidence": "Firm's about page.",
-     "decider": false
+     "source_url": "https://www.riversidehomebuilders.com/about/"
     }
    ],
    "vol": 649,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-038",
@@ -20550,26 +20366,18 @@
      "name": "Lindsay Motley",
      "role": "Regional President, Texas, Ashton Woods",
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Ashton Woods corporate page. Texas markets since 2022.",
-     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614",
-     "li_evidence": "Indexed title: Regional President at Ashton Woods.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614"
     },
     {
      "name": "Adam Weaver",
      "role": "Senior Vice President of Purchasing, Ashton Woods",
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Ashton Woods corporate page.",
-     "linkedin_url": "https://www.linkedin.com/in/adamweaver/",
-     "li_evidence": "Indexed title: Ashton Woods Homes.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/adamweaver/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-030",
@@ -20664,21 +20472,17 @@
     {
      "name": "Ryan Hayes",
      "role": "Title not published",
-     "source_url": "https://www.linkedin.com/posts/stonehollow-homes_stonehollow-homes-is-hitting-the-screen-activity-7405267233117159424-txNB",
-     "source_evidence": "Company LinkedIn post, December 2025, with Tami Hayes. No title given."
+     "source_url": "https://www.linkedin.com/posts/stonehollow-homes_stonehollow-homes-is-hitting-the-screen-activity-7405267233117159424-txNB"
     },
     {
      "name": "Tami Hayes",
      "role": "Title not published",
-     "source_url": "https://www.linkedin.com/posts/stonehollow-homes_stonehollow-homes-is-hitting-the-screen-activity-7405267233117159424-txNB",
-     "source_evidence": "Same December 2025 post. No title given."
+     "source_url": "https://www.linkedin.com/posts/stonehollow-homes_stonehollow-homes-is-hitting-the-screen-activity-7405267233117159424-txNB"
     }
    ],
    "vol": 176,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-081",
@@ -20778,23 +20582,17 @@
     {
      "name": "Zach Schneider",
      "role": "President and CEO, co-founder",
-     "source_url": "https://www.traditionhomes.com/",
-     "source_evidence": "Firm's homepage. LinkedIn profile gives President and CEO.",
-     "decider": true
+     "source_url": "https://www.traditionhomes.com/"
     },
     {
      "name": "Bill Darling",
      "role": "Co-founder",
-     "source_url": "https://www.traditionhomes.com/longtime-dfw-builder-bill-darling-leaps-back-into-high-end-homes-in-celinas-light-farms/",
-     "source_evidence": "Dallas Business Journal article, hosted on the firm's site.",
-     "decider": true
+     "source_url": "https://www.traditionhomes.com/longtime-dfw-builder-bill-darling-leaps-back-into-high-end-homes-in-celinas-light-farms/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-028",
@@ -20885,16 +20683,12 @@
     {
      "name": "Tim Gehan",
      "role": "Chief Executive Officer",
-     "source_url": "https://dallasbuilders.com/home-of-the-week-unionmain-homes-7/",
-     "source_evidence": "Dallas Builders Association feature on Walden Pond, Forney.",
-     "decider": true
+     "source_url": "https://dallasbuilders.com/home-of-the-week-unionmain-homes-7/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-210",
@@ -20987,18 +20781,13 @@
      "name": "Leo Bowler",
      "role": "Founder and Chairman",
      "source_url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/",
-     "source_evidence": "LinkedIn profile title in search result",
-     "linkedin_url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/",
-     "li_evidence": "Leo Bowler - Founder and Chairman of Astoria Homes ...",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/leo-bowler-a2ba7a7/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-213",
@@ -21087,18 +20876,13 @@
      "name": "Glenn Gehan",
      "role": "Founder/Principal",
      "source_url": "https://www.gfohome.com/about-us/",
-     "source_evidence": "About Us page",
-     "linkedin_url": "https://www.linkedin.com/in/glenn-gehan-5190a4150/",
-     "li_evidence": "Indexed title: Glenn Gehan, Principal, GFO Home.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/glenn-gehan-5190a4150/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-218",
@@ -21205,25 +20989,20 @@
    ],
    "principals": [
     {
-     "name": "Cash Grnwalt",
-     "role": "Vice President of Operations",
-     "source_url": "https://laderaliving.com/building-more-than-a-home/",
-     "source_evidence": "Ladera news post, 2026-07-01"
-    },
-    {
      "name": "Alex Stone",
      "role": "Construction Manager",
-     "source_url": "https://laderaliving.com/building-more-than-a-home/",
-     "source_evidence": "Ladera news post, 2026-07-01",
-     "decider": true
+     "source_url": "https://laderaliving.com/building-more-than-a-home/"
+    },
+    {
+     "name": "Cash Grnwalt",
+     "role": "Vice President of Operations",
+     "source_url": "https://laderaliving.com/building-more-than-a-home/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-208",
@@ -21335,18 +21114,13 @@
      "name": "Michael Hanschen",
      "role": "Vice President of Development, Risland",
      "source_url": "https://www.rislandus.com/mantua-s-amenity-center-the-veranda-grande-opening-heads-or-tails-crawfish-boil",
-     "source_evidence": "Risland U.S. news post, 2023-04-24",
-     "linkedin_url": "https://www.linkedin.com/in/michael-a-hanschen-0b218813/",
-     "li_evidence": "Michael A. Hanschen - Risland US Holdings LLC | LinkedIn",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/michael-a-hanschen-0b218813/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-207",
@@ -21456,18 +21230,13 @@
      "name": "Dennis Pitt",
      "role": "President",
      "source_url": null,
-     "source_evidence": null,
-     "linkedin_url": "https://www.linkedin.com/in/dennis-pitt-ba456611/",
-     "li_evidence": "Dennis Pitt - President/COO RockWell Homes",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/dennis-pitt-ba456611/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-220",
@@ -21565,25 +21334,19 @@
     {
      "name": "Giri Saranu",
      "role": "Founder & CEO",
-     "source_url": "https://www.sixthelement.homes/about-us",
-     "source_evidence": "About Us leadership section",
-     "decider": true
+     "source_url": "https://www.sixthelement.homes/about-us"
     },
     {
      "name": "Sid Vadlamudi",
      "role": "EVP of Operations",
      "source_url": "https://www.sixthelement.homes/team-member/sid",
-     "source_evidence": "Team member page",
-     "linkedin_url": "https://www.linkedin.com/in/siddhartha-vadlamudi/",
-     "li_evidence": "Indexed title: Sid V., Sixth Element Homes."
+     "linkedin_url": "https://www.linkedin.com/in/siddhartha-vadlamudi/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-222",
@@ -21682,47 +21445,37 @@
    ],
    "principals": [
     {
+     "name": "Brad Bogovich",
+     "role": "VP of Construction Operations",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/"
+    },
+    {
+     "name": "Angela Asplin",
+     "role": "Purchasing Manager",
+     "source_url": "https://westfieldhomestx.com/leadership-experience/"
+    },
+    {
      "name": "Jackson Su",
      "role": "Co-CEO",
-     "source_url": "https://westfieldhomestx.com/leadership-experience/",
-     "source_evidence": "Leadership & Experience page"
+     "source_url": "https://westfieldhomestx.com/leadership-experience/"
     },
     {
      "name": "George Huang",
      "role": "Co-CEO",
-     "source_url": "https://westfieldhomestx.com/leadership-experience/",
-     "source_evidence": "Leadership & Experience page"
+     "source_url": "https://westfieldhomestx.com/leadership-experience/"
     },
     {
      "name": "James Wrigg",
      "role": "Chief Operating Officer, Graham Hart Home Builder, since August 2026. Earlier SVP of Operations, Westfield Homes.",
      "source_url": "https://www.grahamhart.com/meet-our-new-chief-operating-officer-a-vision-for-the-future-of-graham-hart-home-builder",
-     "source_evidence": "Graham Hart, 2026-08-04: \"our new Chief Operating Officer, James Wrigg\".",
      "linkedin_url": "https://www.linkedin.com/in/james-wrigg-a4632359/",
-     "li_evidence": "Indexed title: James Wrigg, Graham Hart Home Builder.",
      "departed": true
-    },
-    {
-     "name": "Brad Bogovich",
-     "role": "VP of Construction Operations",
-     "source_url": "https://westfieldhomestx.com/leadership-experience/",
-     "source_evidence": "Leadership & Experience page",
-     "decider": true
-    },
-    {
-     "name": "Angela Asplin",
-     "role": "Purchasing Manager",
-     "source_url": "https://westfieldhomestx.com/leadership-experience/",
-     "source_evidence": "Leadership & Experience page",
-     "decider": true
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-024",
@@ -21813,16 +21566,12 @@
     {
      "name": "Kathy Britton",
      "role": "Owner and Executive Chair, Perry Homes",
-     "source_url": "https://www.perryhomes.com/about-perry-homes",
-     "source_evidence": "Perry Homes about page.",
-     "decider": false
+     "source_url": "https://www.perryhomes.com/about-perry-homes"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-042",
@@ -21937,16 +21686,12 @@
     {
      "name": "Chris Terhune",
      "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.coventryhomes.com/blog/coventry-homes-expands-to-meadow-vista-with-award-winning-home-designs/",
-     "source_evidence": "Coventry blog, on the Meadow Vista expansion in Anna.",
-     "decider": true
+     "source_url": "https://www.coventryhomes.com/blog/coventry-homes-expands-to-meadow-vista-with-award-winning-home-designs/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-073",
@@ -22026,17 +21771,12 @@
      "name": "Aaron Graham",
      "role": "Chairman and Chief Executive Officer, Highland Homes",
      "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Builder and Developer, August 6, 2026. Title is at the parent brand.",
-     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/",
-     "li_evidence": "Indexed title: Highland Homes.",
-     "decider": false
+     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-025",
@@ -22130,16 +21870,12 @@
     {
      "name": "Peter H. Shaddock",
      "role": "President",
-     "source_url": "https://www.natlawreview.com/press-releases/peter-h-shaddock-shaddock-homes-celebrates-60-years-excellence-luxury",
-     "source_evidence": "Company press release.",
-     "decider": true
+     "source_url": "https://www.natlawreview.com/press-releases/peter-h-shaddock-shaddock-homes-celebrates-60-years-excellence-luxury"
     }
    ],
    "vol": 374,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-214",
@@ -22246,30 +21982,24 @@
     {
      "name": "Ed Gorman",
      "role": "Managing Director",
-     "source_url": "https://www.growth-homes.com/leadership",
-     "source_evidence": "Leadership page"
+     "source_url": "https://www.growth-homes.com/leadership"
     },
     {
      "name": "Dennis Harold",
      "role": "Executive VP, New Markets and Operations",
      "source_url": "https://www.growth-homes.com/leadership",
-     "source_evidence": "Leadership page",
-     "linkedin_url": "https://www.linkedin.com/in/dennis-harold-193355a/",
-     "li_evidence": "Indexed title: Dennis Harold, GROWTH Homes."
+     "linkedin_url": "https://www.linkedin.com/in/dennis-harold-193355a/"
     },
     {
      "name": "Ryan Twiss",
      "role": "Executive VP, Land Acquisition and General Counsel",
-     "source_url": "https://www.growth-homes.com/leadership",
-     "source_evidence": "Leadership page"
+     "source_url": "https://www.growth-homes.com/leadership"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-216",
@@ -22366,25 +22096,18 @@
      "name": "Andrew Shirley",
      "role": "Co-Founder",
      "source_url": "https://www.harktx.com/aboutus",
-     "source_evidence": "About Us team page",
-     "linkedin_url": "https://www.linkedin.com/in/andrew-shirley-228954a4/",
-     "li_evidence": "Indexed title: Andrew Shirley, Hark Homes LLC.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/andrew-shirley-228954a4/"
     },
     {
      "name": "Justin McCarty",
      "role": "Co-Founder",
-     "source_url": "https://www.harktx.com/aboutus",
-     "source_evidence": "About Us team page",
-     "decider": true
+     "source_url": "https://www.harktx.com/aboutus"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-221",
@@ -22478,24 +22201,18 @@
      "name": "Michael Dike",
      "role": "Co-founder and President",
      "source_url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026",
-     "source_evidence": "Press release on its site, 2026-09-09",
-     "linkedin_url": "https://www.linkedin.com/in/michael-dike-6b025030/",
-     "li_evidence": "Indexed title: Michael Dike, President, Village Homes.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/michael-dike-6b025030/"
     },
     {
      "name": "James R. Harris",
      "role": "Longtime business partner and founding financier",
-     "source_url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026",
-     "source_evidence": "Press release on its site, 2026-09-09, and About Us page"
+     "source_url": "https://homesofcharacter.com/post/an-important-update-from-village-homes-september-2026"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-051",
@@ -22561,10 +22278,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-074",
@@ -22586,7 +22301,7 @@
    "phone_label": "Texas plant and sales",
    "phone_note": null,
    "company_li_note": "Future Frame USA company page.",
-   "team_note": "Joe Mazzenga's LinkedIn shows him there only from September 2021 to May 2022.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -22648,35 +22363,25 @@
     {
      "name": "Glen Gilbert",
      "role": "General Manager",
-     "decider": true,
      "source_url": "https://futureframeusa.com/meet-our-team/",
-     "source_evidence": "Meet Our Team page.",
-     "linkedin_url": null,
-     "li_evidence": null
+     "linkedin_url": null
     },
     {
      "name": "Shane McCullough",
      "role": "President",
-     "decider": true,
      "source_url": "https://futureframeusa.com/meet-our-team/",
-     "source_evidence": "Meet Our Team page.",
-     "linkedin_url": null,
-     "li_evidence": null
+     "linkedin_url": null
     },
     {
      "name": "Joe Mazzenga",
      "role": "General Manager in 2022",
      "source_url": "https://communityimpact.com/houston/lake-houston-humble-kingwood/impacts/2022/02/24/future-frame-usa-now-open-in-east-montgomery-county-industrial-park/",
-     "source_evidence": "Community Impact article, February 24, 2022. Named General Manager at the plant opening.",
-     "decider": false,
      "departed": true
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "panel"
+   "type": "panel",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-050",
@@ -22752,16 +22457,12 @@
     {
      "name": "Mark Womack",
      "role": "Owner",
-     "source_url": "https://monsterconstructors.com/about-us/",
-     "source_evidence": "About page. Acquired the firm in 2010.",
-     "decider": true
+     "source_url": "https://monsterconstructors.com/about-us/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-092",
@@ -22845,16 +22546,12 @@
     {
      "name": "Keith Giddens",
      "role": "President, BakerTriangle Prefab",
-     "source_url": "https://bakertriangle.com/who-we-are/leadership",
-     "source_evidence": "BakerTriangle leadership page.",
-     "decider": true
+     "source_url": "https://bakertriangle.com/who-we-are/leadership"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "panel"
+   "type": "panel",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-091",
@@ -22934,16 +22631,12 @@
     {
      "name": "Barry Corey",
      "role": "Vice President",
-     "source_url": "https://gmitexas.com/prefabrication/",
-     "source_evidence": "Quoted on its prefabrication page.",
-     "decider": true
+     "source_url": "https://gmitexas.com/prefabrication/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "trade"
+   "type": "trade",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-040",
@@ -23040,23 +22733,17 @@
     {
      "name": "Robert V. \"Rob\" Barnes III",
      "role": "President and CEO",
-     "source_url": "https://www.deebrowncompanies.com/about",
-     "source_evidence": "About page. In the role since 2015.",
-     "decider": true
+     "source_url": "https://www.deebrowncompanies.com/about"
     },
     {
      "name": "Tim Hughes",
      "role": "Senior Vice President, Construction Management",
-     "source_url": "https://www.deebrowncompanies.com/about",
-     "source_evidence": "About page lists him as Vice President, Construction Management.",
-     "decider": true
+     "source_url": "https://www.deebrowncompanies.com/about"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-093",
@@ -23128,16 +22815,12 @@
     {
      "name": "Michael \"Paladin\" Hasty",
      "role": "Founder and Owner",
-     "source_url": "https://www.callpaladin.com/about.html",
-     "source_evidence": "Firm's about page.",
-     "decider": true
+     "source_url": "https://www.callpaladin.com/about.html"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "trade"
+   "type": "trade",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-012",
@@ -23211,10 +22894,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "supplier"
+   "type": "supplier",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-010",
@@ -23284,10 +22965,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "panel"
+   "type": "panel",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-031",
@@ -23366,22 +23045,17 @@
     {
      "name": "Robb Harrington",
      "role": "Project Consultant, Dallas/Ft. Worth and North Texas",
-     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
-     "source_evidence": "Cedar Park plant page, with a direct line.",
-     "decider": false
+     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/"
     },
     {
      "name": "Garrett Weidman",
      "role": "Sales Manager",
-     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/",
-     "source_evidence": "Plant page. Listed as P.E."
+     "source_url": "https://www.coreslab.com/locations/austin-texas-precast-concrete/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "precast"
+   "type": "precast",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-026",
@@ -23458,17 +23132,12 @@
      "name": "Scott Clarke",
      "role": "Chief Operating Officer and Managing Partner",
      "source_url": "https://www.harveycleary.com/about-us/locations/austin-tx/",
-     "source_evidence": "Austin location page.",
-     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/",
-     "li_evidence": "Indexed title: Harvey-Cleary Builders.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/scott-clarke-a2a1a521/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-032",
@@ -23544,16 +23213,12 @@
     {
      "name": "Larry Miller",
      "role": "VP of Preconstruction and Business Development",
-     "source_url": "https://heldenfels.com/contact/",
-     "source_evidence": "Firm's contact page.",
-     "decider": true
+     "source_url": "https://heldenfels.com/contact/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "precast"
+   "type": "precast",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-085",
@@ -23628,16 +23293,12 @@
     {
      "name": "Eric Dyess",
      "role": "President and COO",
-     "source_url": "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/",
-     "source_evidence": "Kaufman Concrete page.",
-     "decider": true
+     "source_url": "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-064",
@@ -23713,23 +23374,17 @@
     {
      "name": "Robert Miller",
      "role": "Chief Executive Officer",
-     "source_url": "https://www.millersierra.com/who-we-are/",
-     "source_evidence": "Leadership team page.",
-     "decider": true
+     "source_url": "https://www.millersierra.com/who-we-are/"
     },
     {
      "name": "Terry Fowler",
      "role": "President",
-     "source_url": "https://www.millersierra.com/who-we-are/",
-     "source_evidence": "Who We Are page.",
-     "decider": true
+     "source_url": "https://www.millersierra.com/who-we-are/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-030",
@@ -23832,26 +23487,18 @@
      "name": "Dan Juntunen",
      "role": "President and Chief Executive Officer, The Wells Companies",
      "source_url": "https://wells.build/company/news/wells-announces-acquisition-of-gate-precast/",
-     "source_evidence": "Wells release, July 15, 2024.",
-     "linkedin_url": "https://www.linkedin.com/in/dan-juntunen-b2765a14/",
-     "li_evidence": "Indexed title: Wells Concrete.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/dan-juntunen-b2765a14/"
     },
     {
      "name": "Dean Gwin",
      "role": "President and Chief Operating Officer, GATE Precast",
      "source_url": "https://wells.build/company/news/wells-announces-acquisition-of-gate-precast/",
-     "source_evidence": "Same Wells release. Title held at the July 2024 acquisition.",
-     "linkedin_url": "https://www.linkedin.com/in/dean-gwin-102a1991/",
-     "li_evidence": "Indexed title: Wells.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/dean-gwin-102a1991/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "precast"
+   "type": "precast",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-002",
@@ -23929,22 +23576,17 @@
     {
      "name": "Nathan Frazier",
      "role": "CEO and Founder",
-     "source_url": "https://www.highstreetcapital.com/news/high-street-capital-invests-in-all-about-concrete/",
-     "source_evidence": "High Street Capital announcement, August 2026.",
-     "decider": true
+     "source_url": "https://www.highstreetcapital.com/news/high-street-capital-invests-in-all-about-concrete/"
     },
     {
      "name": "Don Edwards",
      "role": "Chief Operating Officer",
-     "source_url": "https://www.highstreetcapital.com/news/high-street-capital-invests-in-all-about-concrete/",
-     "source_evidence": "Same announcement. Stays on as COO."
+     "source_url": "https://www.highstreetcapital.com/news/high-street-capital-invests-in-all-about-concrete/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-086",
@@ -24012,16 +23654,12 @@
     {
      "name": "Sergio",
      "role": "Primary contact",
-     "source_url": "https://www.blackknightconstruction.com/",
-     "source_evidence": "Firm's homepage, contact email and testimonial. No surname published.",
-     "decider": false
+     "source_url": "https://www.blackknightconstruction.com/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-083",
@@ -24105,16 +23743,12 @@
     {
      "name": "Bill Schultheis",
      "role": "Owner",
-     "source_url": "https://www.brickandstonemaster.com/blog/crack-repair-vs-full-brick-restoration-entrance-sign",
-     "source_evidence": "Firm's blog. In masonry since 1983.",
-     "decider": true
+     "source_url": "https://www.brickandstonemaster.com/blog/crack-repair-vs-full-brick-restoration-entrance-sign"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-081",
@@ -24182,22 +23816,17 @@
     {
      "name": "Jacob Andrews",
      "role": "Owner & CEO",
-     "source_url": "https://brickexpertsdfw.net/",
-     "source_evidence": "Owner & CEO section. Attended Ouachita Baptist University.",
-     "decider": true
+     "source_url": "https://brickexpertsdfw.net/"
     },
     {
      "name": "David Andrews",
      "role": "Co-Founder",
-     "source_url": "https://brickexpertsdfw.net/",
-     "source_evidence": "Co-Founder section. Master brick mason for 30 years."
+     "source_url": "https://brickexpertsdfw.net/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-084",
@@ -24219,7 +23848,7 @@
    "phone_label": "Main line",
    "phone_note": null,
    "company_li_note": "Cardinal Foundation Services company page, Fort Worth.",
-   "team_note": "Daneel Nortier's LinkedIn profile lists Freese and Nichols, not Cardinal.",
+   "team_note": null,
    "capital_signals": [],
    "email": null,
    "email_label": null,
@@ -24269,24 +23898,18 @@
     {
      "name": "Josh Lavelle",
      "role": "Owner",
-     "source_url": "https://cardinalfoundationservices.com/",
-     "source_evidence": "Firm's site.",
-     "decider": true
+     "source_url": "https://cardinalfoundationservices.com/"
     },
     {
      "name": "Daneel Nortier",
      "role": "Owner and Principal Engineer",
      "source_url": "https://cardinalfoundationservices.com/",
-     "source_evidence": "Firm's site. PE since 2012.",
-     "decider": true,
      "probable": true
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-089",
@@ -24352,10 +23975,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-082",
@@ -24421,10 +24042,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-088",
@@ -24497,17 +24116,12 @@
      "name": "Efren De Hoyos",
      "role": "Owner",
      "source_url": "https://sites.google.com/view/efrendehoyos/",
-     "source_evidence": "Firm's Google Sites page, same phone and email as efrenmasonry.com.",
-     "linkedin_url": "https://www.linkedin.com/in/efren-de-hoyos-a26434234/",
-     "li_evidence": "Indexed title: Efren De Hoyos, Efren Masonry.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/efren-de-hoyos-a26434234/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-042",
@@ -24587,24 +24201,18 @@
     {
      "name": "David Grzesiak",
      "role": "President and Preconstruction Manager",
-     "source_url": "https://www.fenimoreblythe.com/team/",
-     "source_evidence": "Firm's team page.",
-     "decider": true
+     "source_url": "https://www.fenimoreblythe.com/team/"
     },
     {
      "name": "Mark Grzesiak",
      "role": "Chief Financial Officer",
      "source_url": "https://www.fenimoreblythe.com/team/",
-     "source_evidence": "Firm's team page.",
-     "decider": false,
      "departed": true
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-079",
@@ -24674,10 +24282,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-090",
@@ -24743,10 +24349,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-071",
@@ -24812,10 +24416,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": false
   },
   {
    "target_id": "DFW-TR-087",
@@ -24883,24 +24485,18 @@
     {
      "name": "Derek Tuttle",
      "role": "President",
-     "source_url": "https://post-tension.com/about/",
-     "source_evidence": "Firm's Meet Our Team page.",
-     "decider": true
+     "source_url": "https://post-tension.com/about/"
     },
     {
      "name": "Justin Zuckerbrow",
      "role": "Vice President",
      "source_url": "https://post-tension.com/about/",
-     "source_evidence": "Firm's Meet Our Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/justin-zuckerbrow-033a429/",
-     "li_evidence": "Indexed title: Vice President and Owner at Post-Tension Services."
+     "linkedin_url": "https://www.linkedin.com/in/justin-zuckerbrow-033a429/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-022",
@@ -24972,23 +24568,17 @@
     {
      "name": "Mike Freeman",
      "role": "Chief Executive Officer",
-     "source_url": "https://steelefreeman.com/about-us/",
-     "source_evidence": "Firm's about page. Second generation, bought the company in 2005.",
-     "decider": true
+     "source_url": "https://steelefreeman.com/about-us/"
     },
     {
      "name": "Reilly Freeman",
      "role": "President",
-     "source_url": "https://steelefreeman.com/about-us/",
-     "source_evidence": "About page. Runs day-to-day operations and client relationships.",
-     "decider": true
+     "source_url": "https://steelefreeman.com/about-us/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-020",
@@ -25074,16 +24664,12 @@
     {
      "name": "Warren Nugent",
      "role": "Owner, Founder and CEO",
-     "source_url": "https://texconllc.com/about/",
-     "source_evidence": "Firm's about page. Owner, founder and CEO.",
-     "decider": true
+     "source_url": "https://texconllc.com/about/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-041",
@@ -25155,23 +24741,17 @@
     {
      "name": "Farris Wilks",
      "role": "Co-founder",
-     "source_url": "https://www.wilksmasonry.com/history",
-     "source_evidence": "Firm's history page.",
-     "decider": true
+     "source_url": "https://www.wilksmasonry.com/history"
     },
     {
      "name": "Dan Wilks",
      "role": "Co-founder",
-     "source_url": "https://www.wilksmasonry.com/history",
-     "source_evidence": "Firm's history page.",
-     "decider": true
+     "source_url": "https://www.wilksmasonry.com/history"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masonry"
+   "type": "masonry",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-025",
@@ -25237,37 +24817,29 @@
    ],
    "principals": [
     {
-     "name": "Dani V. Nicholas",
-     "role": "Business Development Director",
-     "source_url": "https://www.austin-ind.com/locations/dallas",
-     "source_evidence": "Austin Industries Dallas location page."
-    },
-    {
-     "name": "Andrew Henry",
-     "role": "Business Development Director",
-     "source_url": "https://www.austin-ind.com/locations/dallas",
-     "source_evidence": "Austin Industries Dallas location page."
-    },
-    {
      "name": "David Yeagy",
      "role": "President, Austin Commercial",
-     "source_url": "https://www.austin-ind.com/news/david-yeagy-named-president-of-austin-commercial-2",
-     "source_evidence": "Austin Industries news post, July 28, 2025.",
-     "decider": true
+     "source_url": "https://www.austin-ind.com/news/david-yeagy-named-president-of-austin-commercial-2"
     },
     {
      "name": "Elliott Goodman",
      "role": "Senior Vice President, Dallas-Fort Worth",
-     "source_url": "https://www.austin-ind.com/our-company/leadership",
-     "source_evidence": "Leadership page. Oversees large programs in North Texas.",
-     "decider": true
+     "source_url": "https://www.austin-ind.com/our-company/leadership"
+    },
+    {
+     "name": "Dani V. Nicholas",
+     "role": "Business Development Director",
+     "source_url": "https://www.austin-ind.com/locations/dallas"
+    },
+    {
+     "name": "Andrew Henry",
+     "role": "Business Development Director",
+     "source_url": "https://www.austin-ind.com/locations/dallas"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-027",
@@ -25343,37 +24915,27 @@
     {
      "name": "Karl Watson",
      "role": "Chief Executive Officer, Baker Construction Enterprises",
-     "source_url": "https://bakerconstruction.com/about-us/leadership/",
-     "source_evidence": "Leadership page. CEO since June 2023.",
-     "decider": true
+     "source_url": "https://bakerconstruction.com/about-us/leadership/"
     },
     {
      "name": "Dan T. Baker",
      "role": "Executive Vice Chair of the Board and President, Baker Construction Enterprises",
-     "source_url": "https://bakerconstruction.com/about-us/leadership/",
-     "source_evidence": "Leadership page. In the role from June 2023.",
-     "decider": true
+     "source_url": "https://bakerconstruction.com/about-us/leadership/"
     },
     {
      "name": "Gary Benson",
      "role": "Chief Operating Officer, Baker Construction Enterprises",
-     "source_url": "https://bakerconstruction.com/about-us/leadership/",
-     "source_evidence": "Leadership page.",
-     "decider": true
+     "source_url": "https://bakerconstruction.com/about-us/leadership/"
     },
     {
      "name": "Martin Jordana",
      "role": "President, Central and Great West Region",
-     "source_url": "https://bakerconstruction.com/about-us/leadership/",
-     "source_evidence": "Leadership page. His region includes Texas.",
-     "decider": true
+     "source_url": "https://bakerconstruction.com/about-us/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-060",
@@ -25460,23 +25022,17 @@
     {
      "name": "Mark Young",
      "role": "President, U.S. Concrete Pumping (Brundage-Bone)",
-     "source_url": "https://www.concretepumpingholdings.com/team/management-team",
-     "source_evidence": "Parent's management page. General manager of Brundage-Bone since 2018.",
-     "decider": true
+     "source_url": "https://www.concretepumpingholdings.com/team/management-team"
     },
     {
      "name": "Bruce Young",
      "role": "Chief Executive Officer, Concrete Pumping Holdings",
-     "source_url": "https://www.concretepumpingholdings.com/team/management-team",
-     "source_evidence": "Same page. With Brundage-Bone since 1985, CEO since 2008.",
-     "decider": true
+     "source_url": "https://www.concretepumpingholdings.com/team/management-team"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-023",
@@ -25552,30 +25108,22 @@
     {
      "name": "David Dozzo",
      "role": "President and Owner",
-     "source_url": "https://capforminc.com/CFI2019/contact/",
-     "source_evidence": "Capform contact page.",
-     "decider": true
+     "source_url": "https://capforminc.com/CFI2019/contact/"
     },
     {
      "name": "Luc Lafleur",
      "role": "Chief Executive Officer",
-     "source_url": "https://capforminc.com/CFI2019/contact/",
-     "source_evidence": "Capform officers page.",
-     "decider": true
+     "source_url": "https://capforminc.com/CFI2019/contact/"
     },
     {
      "name": "Tuan Pho",
      "role": "Vice President of Pre-Construction Services",
-     "source_url": "https://capforminc.com/CFI2019/contact/",
-     "source_evidence": "Capform officers page.",
-     "decider": true
+     "source_url": "https://capforminc.com/CFI2019/contact/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-024",
@@ -25643,23 +25191,17 @@
     {
      "name": "Travis Porter",
      "role": "Regional Leader",
-     "source_url": "https://manhattanconstructiongroup.com/manhattan-construction-company/locations/dallas/",
-     "source_evidence": "Dallas location page.",
-     "decider": true
+     "source_url": "https://manhattanconstructiongroup.com/manhattan-construction-company/locations/dallas/"
     },
     {
      "name": "Tim Willson",
      "role": "Director of Preconstruction Services",
-     "source_url": "https://manhattanconstructiongroup.com/manhattan-construction-company/locations/dallas/",
-     "source_evidence": "Dallas location page.",
-     "decider": true
+     "source_url": "https://manhattanconstructiongroup.com/manhattan-construction-company/locations/dallas/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-021",
@@ -25735,23 +25277,17 @@
     {
      "name": "Justin McAfee",
      "role": "Chief Executive Officer",
-     "source_url": "https://r-o.com/people/corporate/",
-     "source_evidence": "Corporate people page.",
-     "decider": true
+     "source_url": "https://r-o.com/people/corporate/"
     },
     {
      "name": "Mike Dempsey",
      "role": "President and Chief Operating Officer",
-     "source_url": "https://r-o.com/people/corporate/",
-     "source_evidence": "Corporate people page.",
-     "decider": true
+     "source_url": "https://r-o.com/people/corporate/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "gc"
+   "type": "gc",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-001",
@@ -25840,28 +25376,21 @@
    ],
    "principals": [
     {
+     "name": "Gary Engasser",
+     "role": "President",
+     "source_url": "https://www.tealstonelp.com/who-we-are/",
+     "linkedin_url": null
+    },
+    {
      "name": "Rick Callihan",
      "role": "Vice President",
      "source_url": "https://www.tealstonelp.com/who-we-are/",
-     "source_evidence": "Firm's Who We Are page.",
-     "linkedin_url": null,
-     "li_evidence": null
-    },
-    {
-     "name": "Gary Engasser",
-     "role": "President",
-     "decider": true,
-     "source_url": "https://www.tealstonelp.com/who-we-are/",
-     "source_evidence": "Firm's Who We Are page.",
-     "linkedin_url": null,
-     "li_evidence": null
+     "linkedin_url": null
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "concrete"
+   "type": "concrete",
+   "exec_named": true
   },
   {
    "target_id": "DFW-TR-011",
@@ -25933,23 +25462,17 @@
     {
      "name": "Dwain Hutton",
      "role": "Executive Vice President, UFP Site Built",
-     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
-     "source_evidence": "UFP Site Built leadership page.",
-     "decider": true
+     "source_url": "https://ufpsitebuilt.com/leadershipteam/"
     },
     {
      "name": "Mike Mizell",
      "role": "Vice President Operations West, UFP Site Built",
-     "source_url": "https://ufpsitebuilt.com/leadershipteam/",
-     "source_evidence": "UFP Site Built leadership page.",
-     "decider": true
+     "source_url": "https://ufpsitebuilt.com/leadershipteam/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "panel"
+   "type": "panel",
+   "exec_named": true
   },
   {
    "target_id": "DFW-047",
@@ -26028,16 +25551,12 @@
     {
      "name": "Steve Brown",
      "role": "Owner and President",
-     "source_url": "https://www.energy.gov/sites/prod/files/2015/06/f22/DOE_ZEH_CarlFranklin_09-20-14.pdf",
-     "source_evidence": "2014 DOE case study. Mitsubishi Comfort case study calls him president.",
-     "decider": true
+     "source_url": "https://www.energy.gov/sites/prod/files/2015/06/f22/DOE_ZEH_CarlFranklin_09-20-14.pdf"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-048",
@@ -26128,23 +25647,17 @@
     {
      "name": "Chris Lemming",
      "role": "President",
-     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/",
-     "source_evidence": "Realty News Report, June 11, 2026. Previously Division President for DFW.",
-     "decider": true
+     "source_url": "https://realtynewsreport.com/houston-home-builder-names-new-leader/"
     },
     {
      "name": "Jim Lemming",
      "role": "Chairman",
-     "source_url": "https://partnersinbuilding.com/our-story",
-     "source_evidence": "CEO from 2010, per story page. Moved to Chairman, June 2026.",
-     "decider": false
+     "source_url": "https://partnersinbuilding.com/our-story"
     }
    ],
    "vol": 286,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-001",
@@ -26274,33 +25787,27 @@
     {
      "name": "Paul J. Romanowski",
      "role": "President and Chief Executive Officer",
-     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
-     "source_evidence": "Investor executive officers page."
+     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers"
     },
     {
      "name": "Michael J. Murray",
      "role": "Executive Vice President and Chief Operating Officer",
-     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
-     "source_evidence": "Investor executive officers page."
+     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers"
     },
     {
      "name": "David V. Auld",
      "role": "Executive Chairman",
-     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers",
-     "source_evidence": "Investor executive officers page."
+     "source_url": "https://investor.drhorton.com/corporate-governance/executive-officers"
     },
     {
      "name": "Brad Conlon",
      "role": "Senior Vice President of Business Development",
-     "source_url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html",
-     "source_evidence": "Quoted on the Apis Cor investment release."
+     "source_url": "https://www.prnewswire.com/news-releases/apis-cor-a-manufacturer-of-construction-3d-printing-robots-announces-strategic-investment-by-dr-horton-302084850.html"
     }
    ],
    "vol": 7058,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-007",
@@ -26413,17 +25920,12 @@
      "name": "Scott Bryson",
      "role": "Dallas Division President",
      "source_url": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President",
-     "source_evidence": "PulteGroup release, August 21, 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/",
-     "li_evidence": "Indexed title: Scott Bryson, PulteGroup.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/"
     }
    ],
    "vol": 1083,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-011",
@@ -26529,36 +26031,28 @@
      "name": "Jay Brown",
      "role": "Chief Executive Officer",
      "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/",
-     "li_evidence": "Indexed title: Jay Brown, David Weekley Homes."
+     "linkedin_url": "https://www.linkedin.com/in/jay-brown-14305a12/"
     },
     {
      "name": "Chris Weekley",
      "role": "President and Vice Chairman",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page."
+     "source_url": "https://www.davidweekleyhomes.com/about-us"
     },
     {
      "name": "David Weekley",
      "role": "Chairman",
      "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "Firm's about page.",
-     "linkedin_url": "https://www.linkedin.com/in/david-weekley-507212149",
-     "li_evidence": "Indexed title: Chairman at David Weekley Homes."
+     "linkedin_url": "https://www.linkedin.com/in/david-weekley-507212149"
     },
     {
      "name": "Ladd Fargo",
      "role": "Chief Operating Officer",
-     "source_url": "https://www.davidweekleyhomes.com/about-us",
-     "source_evidence": "About page. Over all division operations."
+     "source_url": "https://www.davidweekleyhomes.com/about-us"
     }
    ],
    "vol": 943,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-010",
@@ -26648,23 +26142,18 @@
     {
      "name": "Kathy Britton",
      "role": "Owner and Executive Chair",
-     "source_url": "https://www.perryhomes.com/about-perry-homes",
-     "source_evidence": "Perry about page."
+     "source_url": "https://www.perryhomes.com/about-perry-homes"
     },
     {
      "name": "Todd Chachere",
      "role": "Chief Executive Officer",
      "source_url": "https://www.perryhomes.com/about-perry-homes",
-     "source_evidence": "Perry about page.",
-     "linkedin_url": "https://www.linkedin.com/in/todd-chachere-9516193b/",
-     "li_evidence": "Indexed title: Todd Chachere, Perry Homes."
+     "linkedin_url": "https://www.linkedin.com/in/todd-chachere-9516193b/"
     }
    ],
    "vol": 1132,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-205",
@@ -26820,17 +26309,13 @@
      "name": "Ronny Salameh",
      "role": "DRB Group CEO",
      "source_url": "https://www.builderonline.com/money/m-a/brightland-homes-consolidates-under-drb-group_o/",
-     "source_evidence": "BUILDER, Brightland consolidation article, 2025-03-31",
-     "linkedin_url": "https://www.linkedin.com/in/ronny-salameh-46738b79/",
-     "li_evidence": "Indexed title: Ronny Salameh, DRB Group."
+     "linkedin_url": "https://www.linkedin.com/in/ronny-salameh-46738b79/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-052",
@@ -26909,16 +26394,12 @@
     {
      "name": "Troy Radelat",
      "role": "Area President",
-     "source_url": "https://superagingnews.com/age-restricted-housing-developments-are-booming/",
-     "source_evidence": "SuperAging, April 25, 2024. Spoke on Gatherings communities in six metros.",
-     "decider": true
+     "source_url": "https://superagingnews.com/age-restricted-housing-developments-are-booming/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-063",
@@ -27003,17 +26484,12 @@
      "name": "Scott Bryson",
      "role": "Dallas Division President, PulteGroup",
      "source_url": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President",
-     "source_evidence": "PulteGroup release, August 21, 2025. It does not mention Centex.",
-     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/",
-     "li_evidence": "Indexed title: Scott Bryson, PulteGroup.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-060",
@@ -27104,16 +26580,12 @@
     {
      "name": "Taylor Humphrey",
      "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html",
-     "source_evidence": "Century release on PR Newswire, April 15, 2026.",
-     "decider": true
+     "source_url": "https://www.prnewswire.com/news-releases/century-communities-plans-april-grand-opening-in-fast-growing-anna-tx-302743467.html"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-064",
@@ -27201,17 +26673,12 @@
      "name": "Scott Bryson",
      "role": "President, PulteGroup Dallas division",
      "source_url": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President",
-     "source_evidence": "PulteGroup BusinessWire release, August 21, 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/",
-     "li_evidence": "Indexed title: PulteGroup.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/scott-bryson-2909939/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-003",
@@ -27314,38 +26781,29 @@
      "name": "James R. Brickman",
      "role": "Co-founder, Chief Executive Officer and Director",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Firm's leadership page.",
-     "linkedin_url": "https://www.linkedin.com/in/james-brickman-10040316/",
-     "li_evidence": "Indexed title: Green Brick Partners."
+     "linkedin_url": "https://www.linkedin.com/in/james-brickman-10040316/"
     },
     {
      "name": "Jed Dolson",
      "role": "President and Chief Operating Officer. Co-Chief Executive Officer from 15 October 2026",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Leadership page. 30 July 2026 release, filed with the SEC.",
-     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/",
-     "li_evidence": "Indexed title: Chief Operating Officer and Executive Vice President."
+     "linkedin_url": "https://www.linkedin.com/in/jed-dolson/"
     },
     {
      "name": "Bobby L. Samuel III",
      "role": "Executive Vice President of Land",
-     "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Leadership page. Runs land for the parent and subsidiary builders."
+     "source_url": "https://greenbrickpartners.com/leadership/"
     },
     {
      "name": "Jeffery Cox",
      "role": "Chief Financial Officer",
      "source_url": "https://greenbrickpartners.com/leadership/",
-     "source_evidence": "Leadership page. Appointed October 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/jefferycox/",
-     "li_evidence": "Indexed title: Green Brick Partners."
+     "linkedin_url": "https://www.linkedin.com/in/jefferycox/"
     }
    ],
    "vol": 3196,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-058",
@@ -27432,16 +26890,12 @@
     {
      "name": "Chris Hartley",
      "role": "Division President",
-     "source_url": "https://dealmakers.builderonline.com/dallas/speaker/chris-hartley/",
-     "source_evidence": "BUILDER's Dealmakers Dallas speaker page.",
-     "decider": true
+     "source_url": "https://dealmakers.builderonline.com/dallas/speaker/chris-hartley/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-050",
@@ -27531,16 +26985,12 @@
     {
      "name": "Ben Clark",
      "role": "President, Dallas Division",
-     "source_url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-OPENS-ELEVON-A-SOUGHT-AFTER-MASTER-PLANNED-COMMUNITY-IN-A-DESIRABLE-DALLAS-AREA-LOCATION/default.aspx",
-     "source_evidence": "KB Home release, June 3, 2026, on the Elevon opening.",
-     "decider": true
+     "source_url": "https://investor.kbhome.com/company-news/news-releases/press-release-details/2026/KB-HOME-OPENS-ELEVON-A-SOUGHT-AFTER-MASTER-PLANNED-COMMUNITY-IN-A-DESIRABLE-DALLAS-AREA-LOCATION/default.aspx"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-054",
@@ -27627,16 +27077,12 @@
     {
      "name": "Stacy Conley",
      "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-expands-sherman-texas-grand-opening-sherman-heights",
-     "source_evidence": "LGI release, April 15, 2026, Sherman Heights grand opening.",
-     "decider": true
+     "source_url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-expands-sherman-texas-grand-opening-sherman-heights"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-055",
@@ -27723,16 +27169,12 @@
     {
      "name": "Chad Tschetter",
      "role": "Area President, Dallas-Fort Worth",
-     "source_url": "https://candysdirt.com/2022/02/27/collin-county-residential-building-permits/",
-     "source_evidence": "Candy's Dirt article, February 27, 2022, citing NBC 5. Quoted as Area President.",
-     "decider": true
+     "source_url": "https://candysdirt.com/2022/02/27/collin-county-residential-building-permits/"
     }
    ],
    "vol": 889,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-062",
@@ -27832,16 +27274,12 @@
     {
      "name": "John Kuntz",
      "role": "President, Dallas Division",
-     "source_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html",
-     "source_evidence": "PR Newswire release, 15 November 2023.",
-     "decider": true
+     "source_url": "https://www.prnewswire.com/news-releases/four-up-and-coming-mattamy-communities-unveil-new-model-homes-in-dallas-fort-worth-301988953.html"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-006",
@@ -27936,32 +27374,24 @@
      "name": "Phillippe Lord",
      "role": "Chief Executive Officer",
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Investor management page.",
-     "linkedin_url": "https://www.linkedin.com/in/phillippe-lord-72924012/",
-     "li_evidence": "Indexed title: Phillippe Lord, Meritage Homes."
+     "linkedin_url": "https://www.linkedin.com/in/phillippe-lord-72924012/"
     },
     {
      "name": "Hilla Sferruzza",
      "role": "Executive Vice President and Chief Financial Officer",
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Investor management page.",
-     "linkedin_url": "https://www.linkedin.com/in/hilla-sferruzza-cpa-mba-b3170b8/",
-     "li_evidence": "Indexed title: Hilla Sferruzza, CPA, MBA, Meritage Homes."
+     "linkedin_url": "https://www.linkedin.com/in/hilla-sferruzza-cpa-mba-b3170b8/"
     },
     {
      "name": "Austin Woffinden",
      "role": "Executive Vice President, Corporate Operations and Strategy",
      "source_url": "https://investors.meritagehomes.com/company-information/management-team",
-     "source_evidence": "Management page bio. Area President, Dallas Fort Worth and Nashville, in 2025.",
-     "linkedin_url": "https://www.linkedin.com/in/austin-woffinden-692297b/",
-     "li_evidence": "Indexed title: Austin Woffinden, Meritage Homes."
+     "linkedin_url": "https://www.linkedin.com/in/austin-woffinden-692297b/"
     }
    ],
    "vol": 1833,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-053",
@@ -28051,16 +27481,12 @@
      "name": "Tom Cawthon",
      "role": "Dallas Division President (as of June 2025)",
      "source_url": "https://www.localprofile.com/real-estate/home-builders-betting-big-celina-10833314",
-     "source_evidence": "Local Profile, June 19, 2025, on Ranch at Uptown Celina.",
-     "decider": false,
      "departed": true
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-051",
@@ -28156,16 +27582,12 @@
     {
      "name": "Jay Saunders",
      "role": "Division President, Dallas-Fort Worth",
-     "source_url": "https://www.tollbrothers.com/blog/prestwick-grove-frisco-texas-grand-opening",
-     "source_evidence": "Toll release, 22 October 2025, Prestwick Grove grand opening.",
-     "decider": true
+     "source_url": "https://www.tollbrothers.com/blog/prestwick-grove-frisco-texas-grand-opening"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-009",
@@ -28257,44 +27679,32 @@
    ],
    "principals": [
     {
-     "name": "Ken Balogh",
-     "role": "President and Chief Executive Officer",
-     "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page.",
-     "linkedin_url": "https://www.linkedin.com/in/ken-balogh-02964741/",
-     "li_evidence": "Indexed title: Ken Balogh, Ashton Woods Homes."
-    },
-    {
      "name": "Lindsay Motley",
      "role": "Regional President, Texas",
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page. Promoted to the role in 2022.",
-     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614",
-     "li_evidence": "Indexed title: Regional President at Ashton Woods.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/lindsay-motley-3553b614"
     },
     {
      "name": "Adam Weaver",
      "role": "Senior Vice President of Purchasing",
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page executive team.",
-     "linkedin_url": "https://www.linkedin.com/in/adamweaver/",
-     "li_evidence": "Indexed title: Adam Weaver, Ashton Woods Homes.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/adamweaver/"
     },
     {
      "name": "Ken Newman",
      "role": "Senior Vice President of Construction Operations",
+     "source_url": "https://www.ashtonwoods.com/corporate-info"
+    },
+    {
+     "name": "Ken Balogh",
+     "role": "President and Chief Executive Officer",
      "source_url": "https://www.ashtonwoods.com/corporate-info",
-     "source_evidence": "Corporate page executive team.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/ken-balogh-02964741/"
     }
    ],
    "vol": 1289,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-202",
@@ -28518,25 +27928,19 @@
      "name": "Don Dykstra",
      "role": "Chairman",
      "source_url": null,
-     "source_evidence": null,
-     "linkedin_url": "https://www.linkedin.com/in/dondykstra",
-     "li_evidence": "Don Dykstra - Chairman - Bloomfield Homes"
+     "linkedin_url": "https://www.linkedin.com/in/dondykstra"
     },
     {
      "name": "Tim Stewart",
      "role": "President",
      "source_url": null,
-     "source_evidence": null,
-     "linkedin_url": "https://www.linkedin.com/in/tim-stewart-b5948410/",
-     "li_evidence": "Tim Stewart - President at Bloomfield Homes"
+     "linkedin_url": "https://www.linkedin.com/in/tim-stewart-b5948410/"
     }
    ],
    "vol": 1810,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-206",
@@ -28671,24 +28075,19 @@
     {
      "name": "Brandon Jones",
      "role": "CEO",
-     "source_url": "https://www.builderonline.com/firms/davidson-homes_o/",
-     "source_evidence": "BUILDER firm page, 2026 Builder 100 data"
+     "source_url": "https://www.builderonline.com/firms/davidson-homes_o/"
     },
     {
      "name": "Adam Davidson",
      "role": "Founder",
      "source_url": "https://www.davidsonhomes.com/our-story/",
-     "source_evidence": "Davidson Our Story page",
-     "linkedin_url": "https://www.linkedin.com/in/adam-davidson-408a6444/",
-     "li_evidence": "Indexed title: Adam Davidson, Davidson Homes LLC."
+     "linkedin_url": "https://www.linkedin.com/in/adam-davidson-408a6444/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-201",
@@ -28904,23 +28303,18 @@
      "name": "Aaron Graham",
      "role": "Chairman and CEO",
      "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Builder and Developer, restructuring article, 2026-08-06",
-     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/",
-     "li_evidence": "Aaron Graham - Chairman and CEO - Highland Homes"
+     "linkedin_url": "https://www.linkedin.com/in/aaron-graham-38728878/"
     },
     {
      "name": "Stephen Chambers",
      "role": "Chief Operating Officer, over architectural services, new product development and supply chain",
-     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/",
-     "source_evidence": "Builder and Developer, restructuring article, 2026-08-06"
+     "source_url": "https://www.bdmag.com/highland-homes-announces-restructuring/"
     }
    ],
    "vol": 1742,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-059",
@@ -29015,16 +28409,12 @@
     {
      "name": "Sean Ricks",
      "role": "President, Dallas-Fort Worth Division",
-     "source_url": "https://investors.tripointehomes.com/divisions/default.aspx",
-     "source_evidence": "Tri Pointe investor divisions page.",
-     "decider": true
+     "source_url": "https://investors.tripointehomes.com/divisions/default.aspx"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": true
   },
   {
    "target_id": "DFW-203",
@@ -29187,31 +28577,24 @@
      "name": "David Drees",
      "role": "Chief Executive Officer",
      "source_url": "https://www.builderonline.com/firms/drees-homes/",
-     "source_evidence": "BUILDER firm page, 2026 Builder 100 data",
-     "linkedin_url": "https://www.linkedin.com/in/david-drees-2882785a/",
-     "li_evidence": "Indexed title: David Drees, Drees Homes."
+     "linkedin_url": "https://www.linkedin.com/in/david-drees-2882785a/"
     },
     {
      "name": "Tim Terrell",
      "role": "President",
-     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/",
-     "source_evidence": "Drees press release, 2024-09-23"
+     "source_url": "https://www.dreeshomes.com/press-news/drees-homes-announces-strategic-changes-to-its-leadership-lineup/"
     },
     {
      "name": "David Harbin",
      "role": "President - Texas Region",
      "source_url": "https://www.linkedin.com/in/david-harbin-a7b4602a/",
-     "source_evidence": "LinkedIn profile, as shown in search result title",
-     "linkedin_url": "https://www.linkedin.com/in/david-harbin-a7b4602a/",
-     "li_evidence": "David Harbin - President - Texas Region at Drees Homes"
+     "linkedin_url": "https://www.linkedin.com/in/david-harbin-a7b4602a/"
     }
    ],
    "vol": 2286,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   },
   {
    "target_id": "DFW-231",
@@ -29342,31 +28725,24 @@
      "name": "Robert Kembel",
      "role": "Partner and President",
      "source_url": "https://www.thenehemiahcompany.com/our-team/1/robert-kembel",
-     "source_evidence": "Team bio page",
-     "linkedin_url": "https://www.linkedin.com/in/robert-kembel-314738164/",
-     "li_evidence": "Indexed title: Robert Kembel, The Nehemiah Company."
+     "linkedin_url": "https://www.linkedin.com/in/robert-kembel-314738164/"
     },
     {
      "name": "Howard Porteus",
      "role": "Partner and Development Manager",
      "source_url": "https://www.thenehemiahcompany.com/our-team/2/howard-porteus",
-     "source_evidence": "Team bio page",
-     "linkedin_url": "https://www.linkedin.com/in/howard-porteus-476513241/",
-     "li_evidence": "Indexed title: Howard Porteus, Managing Partner, The Nehemiah Company."
+     "linkedin_url": "https://www.linkedin.com/in/howard-porteus-476513241/"
     },
     {
      "name": "Phong Smith",
      "role": "Chief Investment Officer",
-     "source_url": "https://www.thenehemiahcompany.com/our-team",
-     "source_evidence": "Our Team page"
+     "source_url": "https://www.thenehemiahcompany.com/our-team"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-015",
@@ -29449,27 +28825,22 @@
     {
      "name": "Debbie Wilson",
      "role": "Owner, Cambridge Companies",
-     "source_url": "https://cambridgecos.com/about/",
-     "source_evidence": "Cambridge Companies about page."
+     "source_url": "https://cambridgecos.com/about/"
     },
     {
      "name": "Jim Melino",
      "role": "President and General Counsel",
-     "source_url": "https://cambridgecos.com/about/",
-     "source_evidence": "Cambridge Companies about page."
+     "source_url": "https://cambridgecos.com/about/"
     },
     {
      "name": "Randy McCuistion",
      "role": "Chief Development Officer",
-     "source_url": "https://cambridgecos.com/about/",
-     "source_evidence": "Cambridge Companies about page."
+     "source_url": "https://cambridgecos.com/about/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-021",
@@ -29549,15 +28920,12 @@
     {
      "name": "Mehrdad Moayedi",
      "role": "President and Chief Executive Officer",
-     "source_url": "https://centurionamerican.com/about/leadership/",
-     "source_evidence": "Leadership page. Founded Centurion American Custom Homes in 1990."
+     "source_url": "https://centurionamerican.com/about/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-001",
@@ -29654,35 +29022,26 @@
    ],
    "principals": [
     {
-     "name": "Fred Balda",
-     "role": "President",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood Communities leadership page."
-    },
-    {
      "name": "Elaine Eatman",
      "role": "Senior Vice President, DFW Project Manager for Ramble and Union Park",
      "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood leadership page, DFW project managers.",
-     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10",
-     "li_evidence": "Indexed title: Senior Vice President at Hillwood.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10"
     },
     {
      "name": "Angie Mastrocola",
      "role": "Senior Vice President, DFW Project Manager for Harvest",
      "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood leadership page, DFW project managers.",
-     "linkedin_url": "https://www.linkedin.com/in/angie-waddle-mastrocola-94766213/",
-     "li_evidence": "Indexed title: Angie (Waddle) Mastrocola, Hillwood Development.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/angie-waddle-mastrocola-94766213/"
+    },
+    {
+     "name": "Fred Balda",
+     "role": "President",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": true
   },
   {
    "target_id": "DFW-CH-018",
@@ -29769,21 +29128,17 @@
     {
      "name": "Phillip Huffines",
      "role": "President, CEO and Co-founder",
-     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
-     "source_evidence": "Firm blog post, June 4, 2025."
+     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/"
     },
     {
      "name": "Don Huffines",
      "role": "Co-founder",
-     "source_url": "https://huffinescommunities.com/who-we-are/",
-     "source_evidence": "Firm's Who We Are page."
+     "source_url": "https://huffinescommunities.com/who-we-are/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-003",
@@ -29874,29 +29229,23 @@
     {
      "name": "Chris Kleinert",
      "role": "Chief Executive Officer, Hunt Investment Holdings, and President, Hunt Realty Investments",
-     "source_url": "https://huntrealty.com/team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://huntrealty.com/team/"
     },
     {
      "name": "Mike Wallace",
      "role": "President, Investment Management and Development, Hunt Realty Investments",
-     "source_url": "https://huntrealty.com/team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://huntrealty.com/team/"
     },
     {
      "name": "Todd Watson",
      "role": "President, Land and Development, Hunt Realty Investments",
      "source_url": "https://huntrealty.com/team/",
-     "source_evidence": "Team page. Calls Fields his favorite Hunt asset.",
-     "linkedin_url": "https://www.linkedin.com/in/todd-watson-94353349/",
-     "li_evidence": "Indexed title: Hunt Realty Investments."
+     "linkedin_url": "https://www.linkedin.com/in/todd-watson-94353349/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-014",
@@ -29985,15 +29334,12 @@
     {
      "name": "Michael J. Smith",
      "role": "President and Chief Executive Officer",
-     "source_url": "https://www.johnsondevelopment.com/our-leaders",
-     "source_evidence": "Firm's leadership page."
+     "source_url": "https://www.johnsondevelopment.com/our-leaders"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-008",
@@ -30081,22 +29427,17 @@
      "name": "Tony Ruggeri",
      "role": "Co-CEO and Partner, Republic Property Group",
      "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Republic Property Group team page.",
-     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/",
-     "li_evidence": "Indexed title: Republic Property Group."
+     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/"
     },
     {
      "name": "Jake Wagner",
      "role": "Co-CEO and Partner, Republic Property Group",
-     "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Republic Property Group team page."
+     "source_url": "https://republicpropertygroup.com/team/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-020",
@@ -30177,26 +29518,20 @@
    ],
    "principals": [
     {
-     "name": "Fred Balda",
-     "role": "President, Hillwood Communities",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/fred-balda/",
-     "source_evidence": "Hillwood Communities leadership page. President since 1992."
-    },
-    {
      "name": "Huawei “Howie” Yin",
      "role": "Vice President, DFW Project Manager for Ramble and Lilyana",
      "source_url": "https://www.hillwoodcommunities.com/leadership/fred-balda/",
-     "source_evidence": "Hillwood Communities leadership page.",
-     "linkedin_url": "https://www.linkedin.com/in/huaweiyin/",
-     "li_evidence": "Indexed title: Hillwood Communities.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/huaweiyin/"
+    },
+    {
+     "name": "Fred Balda",
+     "role": "President, Hillwood Communities",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/fred-balda/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": true
   },
   {
    "target_id": "DFW-CH-016",
@@ -30283,15 +29618,12 @@
     {
      "name": "Craig Martin",
      "role": "Founder and Chief Executive Officer, Tellus Group",
-     "source_url": "https://tellusgroupllc.com/team/",
-     "source_evidence": "Tellus Group team page."
+     "source_url": "https://tellusgroupllc.com/team/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-004",
@@ -30376,10 +29708,8 @@
    ],
    "principals": [],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-007",
@@ -30464,26 +29794,20 @@
    ],
    "principals": [
     {
-     "name": "Fred Balda",
-     "role": "President, Hillwood Communities",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood Communities leadership page."
-    },
-    {
      "name": "Elaine Eatman",
      "role": "Senior Vice President, DFW Project Manager for Ramble and Union Park, Hillwood",
      "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood leadership page.",
-     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10",
-     "li_evidence": "Indexed title: Senior Vice President at Hillwood.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10"
+    },
+    {
+     "name": "Fred Balda",
+     "role": "President, Hillwood Communities",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": true
   },
   {
    "target_id": "DFW-CH-002",
@@ -30581,28 +29905,22 @@
      "name": "Tony Ruggeri",
      "role": "Co-CEO and Partner",
      "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Firm's team page.",
-     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/",
-     "li_evidence": "Indexed title: Republic Property Group."
+     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/"
     },
     {
      "name": "Jake Wagner",
      "role": "Co-CEO and Partner",
-     "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://republicpropertygroup.com/team/"
     },
     {
      "name": "Cheryl Turner",
      "role": "Chief Operating Officer",
-     "source_url": "https://republicpropertygroup.com/about-republic-property-group/",
-     "source_evidence": "Firm's about page."
+     "source_url": "https://republicpropertygroup.com/about-republic-property-group/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-011",
@@ -30693,21 +30011,17 @@
     {
      "name": "Phillip Huffines",
      "role": "President, CEO and Co-Founder",
-     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
-     "source_evidence": "Huffines Communities blog post, 4 June 2025."
+     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/"
     },
     {
      "name": "Don Huffines",
      "role": "Co-Founder",
-     "source_url": "https://huffinescommunities.com/who-we-are/",
-     "source_evidence": "Firm's Who We Are page."
+     "source_url": "https://huffinescommunities.com/who-we-are/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-019",
@@ -30790,21 +30104,17 @@
     {
      "name": "Phillip Huffines",
      "role": "President, Chief Executive Officer and Co-founder",
-     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/",
-     "source_evidence": "Firm blog, June 4, 2025."
+     "source_url": "https://huffinescommunities.com/from-fireworks-to-foundations-phillip-huffines-on-dallas-dirt-with-candy-evans/"
     },
     {
      "name": "Don Huffines",
      "role": "Co-founder",
-     "source_url": "https://huffinescommunities.com/who-we-are/",
-     "source_evidence": "Who-we-are page. Co-founded the firm with twin Phillip in 1985."
+     "source_url": "https://huffinescommunities.com/who-we-are/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-009",
@@ -30887,15 +30197,12 @@
     {
      "name": "Joe Hickman",
      "role": "Head, Blue Star Land",
-     "source_url": "https://prosperedc.com/connect/latest-news/spotlight-on-investors-jerry-jones-blue-star-land",
-     "source_evidence": "Named by Jerry Jones in a Prosper EDC investor spotlight."
+     "source_url": "https://prosperedc.com/connect/latest-news/spotlight-on-investors-jerry-jones-blue-star-land"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-017",
@@ -30978,21 +30285,17 @@
     {
      "name": "Craig Martin",
      "role": "Founder and Chief Executive Officer",
-     "source_url": "https://tellusgroupllc.com/team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://tellusgroupllc.com/team/"
     },
     {
      "name": "Andre Ferrari",
      "role": "Chief Operating Officer and General Counsel",
-     "source_url": "https://tellusgroupllc.com/team/",
-     "source_evidence": "Firm's team page."
+     "source_url": "https://tellusgroupllc.com/team/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-BTR-004",
@@ -31082,33 +30385,27 @@
     {
      "name": "Gary Berman",
      "role": "President and Chief Executive Officer",
-     "source_url": "https://triconhomes.com/about/our-people/",
-     "source_evidence": "Tricon Our People page."
+     "source_url": "https://triconhomes.com/about/our-people/"
     },
     {
      "name": "Alan O'Brien",
      "role": "Executive Vice President and Chief Operating Officer",
-     "source_url": "https://triconhomes.com/about/our-people/",
-     "source_evidence": "Tricon Our People page."
+     "source_url": "https://triconhomes.com/about/our-people/"
     },
     {
      "name": "Thomas Fichman",
      "role": "Senior Vice President, Investments",
-     "source_url": "https://triconhomes.com/about/our-people/",
-     "source_evidence": "Our People page. Over U.S. residential development, including build-to-rent."
+     "source_url": "https://triconhomes.com/about/our-people/"
     },
     {
      "name": "Ralph DeMott",
      "role": "Vice President, Operations",
-     "source_url": "https://triconhomes.com/about/our-people/",
-     "source_evidence": "Our People page. Also covers Minnesota, Illinois, Wisconsin and Iowa."
+     "source_url": "https://triconhomes.com/about/our-people/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "owner"
+   "type": "owner",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-012",
@@ -31187,15 +30484,12 @@
     {
      "name": "Jerry Ulke",
      "role": "General Manager and Vice President, Trinity Falls",
-     "source_url": "https://mckinneytoday.com/how-trinity-falls-is-creating-community-in-a-growing-mckinney/",
-     "source_evidence": "McKinney Today, September 15, 2026."
+     "source_url": "https://mckinneytoday.com/how-trinity-falls-is-creating-community-in-a-growing-mckinney/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-010",
@@ -31272,26 +30566,20 @@
    ],
    "principals": [
     {
-     "name": "Fred Balda",
-     "role": "President, Hillwood Communities",
-     "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood Communities leadership page."
-    },
-    {
      "name": "Elaine Eatman",
      "role": "Senior Vice President, DFW Project Manager for Ramble and Union Park",
      "source_url": "https://www.hillwoodcommunities.com/leadership/",
-     "source_evidence": "Hillwood Communities leadership page.",
-     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10",
-     "li_evidence": "Indexed title: Senior Vice President at Hillwood.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/elaine-eatman-54596a10"
+    },
+    {
+     "name": "Fred Balda",
+     "role": "President, Hillwood Communities",
+     "source_url": "https://www.hillwoodcommunities.com/leadership/"
     }
    ],
    "vol": null,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": true
   },
   {
    "target_id": "DFW-CH-005",
@@ -31379,22 +30667,17 @@
      "name": "Tony Ruggeri",
      "role": "Co-CEO and Partner, Republic Property Group",
      "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Republic Property Group team page.",
-     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/",
-     "li_evidence": "Indexed title: Republic Property Group."
+     "linkedin_url": "https://www.linkedin.com/in/tony-ruggeri-8ba6308/"
     },
     {
      "name": "Jake Wagner",
      "role": "Co-CEO and Partner, Republic Property Group",
-     "source_url": "https://republicpropertygroup.com/team/",
-     "source_evidence": "Republic Property Group team page."
+     "source_url": "https://republicpropertygroup.com/team/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-CH-013",
@@ -31495,15 +30778,12 @@
     {
      "name": "Craig Martin",
      "role": "Co-founder, Tellus Group",
-     "source_url": "https://windsongranchliving.com/craig-martin-dallas-500/",
-     "source_evidence": "2016 Windsong Ranch page, as founding partner, then with Terra Verde Group."
+     "source_url": "https://windsongranchliving.com/craig-martin-dallas-500/"
     }
    ],
    "vol": null,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "masterplan"
+   "type": "masterplan",
+   "exec_named": false
   },
   {
    "target_id": "DFW-228",
@@ -31648,31 +30928,24 @@
      "name": "Richard LeBlanc",
      "role": "President",
      "source_url": "https://www.hanoverproperty.com/richard-e-leblanc.html",
-     "source_evidence": "Biography page. Founded Hanover in 1984",
-     "linkedin_url": "https://www.linkedin.com/in/richard-leblanc-5760ab14",
-     "li_evidence": "Indexed title: Richard LeBlanc, President, Hanover Property Co.."
+     "linkedin_url": "https://www.linkedin.com/in/richard-leblanc-5760ab14"
     },
     {
      "name": "Ben Luedtke",
      "role": "Executive Vice President",
      "source_url": "https://www.hanoverproperty.com/ben-luedtke.html",
-     "source_evidence": "Biography page. Oversees entitlement and development of the single-family master plans",
-     "linkedin_url": "https://www.linkedin.com/in/ben-luedtke-a23278364",
-     "li_evidence": "Indexed title: Ben Luedtke, Hanover Property Company."
+     "linkedin_url": "https://www.linkedin.com/in/ben-luedtke-a23278364"
     },
     {
      "name": "Adam Whitworth",
      "role": "Project Manager",
-     "source_url": "https://www.hanoverproperty.com/adam-whitworth.html",
-     "source_evidence": "Biography page. Joined full-time in July 2018, formerly VP of Land Development at M/I Homes in DFW"
+     "source_url": "https://www.hanoverproperty.com/adam-whitworth.html"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-229",
@@ -31789,35 +31062,28 @@
      "name": "John Marlin",
      "role": "Founder & Chief Executive Officer",
      "source_url": "https://madev.com/about-us/",
-     "source_evidence": "About Us page",
-     "linkedin_url": "https://www.linkedin.com/in/john-marlin-8654077/",
-     "li_evidence": "Indexed title: John Marlin, MA Partners."
+     "linkedin_url": "https://www.linkedin.com/in/john-marlin-8654077/"
     },
     {
      "name": "David Howell",
      "role": "Vice President, Land Development",
-     "source_url": "https://madev.com/about-us/",
-     "source_evidence": "About Us page. Managed over 12,000 lots"
+     "source_url": "https://madev.com/about-us/"
     },
     {
      "name": "Wyatt Henderson",
      "role": "Co-Founder & Principal, Dallas",
-     "source_url": "https://madev.com/about-us/",
-     "source_evidence": "About Us page. Formerly with KB Home, Lennar and Ashton Woods"
+     "source_url": "https://madev.com/about-us/"
     },
     {
      "name": "Ryan Burton",
      "role": "Senior Project Manager, Dallas/Fort Worth development",
-     "source_url": "https://madev.com/about-us/",
-     "source_evidence": "About Us page"
+     "source_url": "https://madev.com/about-us/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-230",
@@ -31958,51 +31224,39 @@
    ],
    "principals": [
     {
+     "name": "Josh Oyer",
+     "role": "Head of Construction",
+     "source_url": "https://pmbinv.com/",
+     "linkedin_url": "https://www.linkedin.com/in/joshua-oyer-224648220/"
+    },
+    {
      "name": "Peter Pincoffs",
      "role": "Partner",
      "source_url": "https://pmbinv.com/",
-     "source_evidence": "Team section, PMB homepage",
-     "linkedin_url": "https://www.linkedin.com/in/peterpincoffs/",
-     "li_evidence": "Indexed title: Peter Pincoffs, PMB Capital Investments."
+     "linkedin_url": "https://www.linkedin.com/in/peterpincoffs/"
     },
     {
      "name": "Matt Mildren",
      "role": "Partner",
      "source_url": "https://pmbinv.com/",
-     "source_evidence": "Team section, PMB homepage",
-     "linkedin_url": "https://www.linkedin.com/in/matt-mildren-17036a3b/",
-     "li_evidence": "Indexed title: Matt Mildren, PMB Capital Investments."
+     "linkedin_url": "https://www.linkedin.com/in/matt-mildren-17036a3b/"
     },
     {
      "name": "Taylor Baird",
      "role": "Partner",
      "source_url": "https://pmbinv.com/",
-     "source_evidence": "Team section, PMB homepage",
-     "linkedin_url": "https://www.linkedin.com/in/taylor-baird-7a68a4149/",
-     "li_evidence": "Indexed title: Taylor Baird, PMB Capital Investments."
-    },
-    {
-     "name": "Josh Oyer",
-     "role": "Head of Construction",
-     "source_url": "https://pmbinv.com/",
-     "source_evidence": "Team section, PMB homepage",
-     "linkedin_url": "https://www.linkedin.com/in/joshua-oyer-224648220/",
-     "li_evidence": "Indexed title: Joshua Oyer, Head of Construction, PMB Capital Investments.",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/taylor-baird-7a68a4149/"
     },
     {
      "name": "Thad Rutherford",
      "role": "President & CEO, Southstar Development Partners (Woodcreek co-developer)",
-     "source_url": "https://southstartx.com/who-we-are",
-     "source_evidence": "Southstar Who We Are page"
+     "source_url": "https://southstartx.com/who-we-are"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": true
   },
   {
    "target_id": "DFW-225",
@@ -32116,41 +31370,31 @@
      "name": "Jay Hawes",
      "role": "President",
      "source_url": "https://provident.net/our-team/",
-     "source_evidence": "Our Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/jay-hawes-23b6398/",
-     "li_evidence": "Jay Hawes - Provident Realty Advisors | LinkedIn"
+     "linkedin_url": "https://www.linkedin.com/in/jay-hawes-23b6398/"
     },
     {
      "name": "Rylan Yowell",
      "role": "Managing Director, Master Planned Communities",
      "source_url": "https://provident.net/our-team/",
-     "source_evidence": "Our Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/rylan-yowell-8395496a/",
-     "li_evidence": "Rylan Yowell - Provident | LinkedIn"
+     "linkedin_url": "https://www.linkedin.com/in/rylan-yowell-8395496a/"
     },
     {
      "name": "Leon J. Backes",
      "role": "Founder & CEO",
      "source_url": "https://provident.net/our-team/",
-     "source_evidence": "Our Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/leonbackes/",
-     "li_evidence": "Leon Backes - Provident Realty Advisors | LinkedIn"
+     "linkedin_url": "https://www.linkedin.com/in/leonbackes/"
     },
     {
      "name": "Daniel Twigge",
      "role": "Executive Director, Master Planned Communities",
      "source_url": "https://provident.net/products/communities/",
-     "source_evidence": "Our Team page.",
-     "linkedin_url": "https://www.linkedin.com/in/daniel-twigge-45649bba/",
-     "li_evidence": "Daniel Twigge - Executive Vice President at Provident"
+     "linkedin_url": "https://www.linkedin.com/in/daniel-twigge-45649bba/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-224",
@@ -32329,49 +31573,38 @@
    ],
    "principals": [
     {
+     "name": "Hanna Brown",
+     "role": "Vice President, Dallas",
+     "source_url": "https://starwoodland.com/team/",
+     "linkedin_url": "https://www.linkedin.com/in/hanna-brown-aa93302a/"
+    },
+    {
      "name": "Curtis Attaway",
      "role": "Sr. VP of Development, Dallas",
-     "source_url": "https://starwoodland.com/team/",
-     "source_evidence": "Team page, Dallas office"
+     "source_url": "https://starwoodland.com/team/"
     },
     {
      "name": "Mike Moser",
      "role": "CEO",
      "source_url": "https://starwoodland.com/executive-management/",
-     "source_evidence": "Executive Management page",
-     "linkedin_url": "https://www.linkedin.com/in/mike-moser-633505a/",
-     "li_evidence": "Mike Moser - Starwood Land | LinkedIn"
+     "linkedin_url": "https://www.linkedin.com/in/mike-moser-633505a/"
     },
     {
      "name": "John Brian",
      "role": "Chief Operating Officer / East Region President",
      "source_url": "https://starwoodland.com/executive-management/",
-     "source_evidence": "Executive Management page",
-     "linkedin_url": "https://www.linkedin.com/in/john-brian-3b3ab2158/",
-     "li_evidence": "Indexed title: John Brian, Starwood Land."
-    },
-    {
-     "name": "Hanna Brown",
-     "role": "Vice President, Dallas",
-     "source_url": "https://starwoodland.com/team/",
-     "source_evidence": "Team page, Dallas office",
-     "linkedin_url": "https://www.linkedin.com/in/hanna-brown-aa93302a/",
-     "li_evidence": "Hanna Brown - Vice President at Starwood Land",
-     "decider": true
+     "linkedin_url": "https://www.linkedin.com/in/john-brian-3b3ab2158/"
     },
     {
      "name": "Kendall Hamrick",
      "role": "Development Director, Dallas",
-     "source_url": "https://starwoodland.com/team/",
-     "source_evidence": "Team page, Dallas office"
+     "source_url": "https://starwoodland.com/team/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": true,
-   "decider_confirmed": true,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": true
   },
   {
    "target_id": "DFW-232",
@@ -32492,28 +31725,23 @@
     {
      "name": "Jed Welsh",
      "role": "Vice President, Real Estate, Texas and Oklahoma",
-     "source_url": "https://walton.com/leadership/",
-     "source_evidence": "Leadership page, Real Estate Team"
+     "source_url": "https://walton.com/leadership/"
     },
     {
      "name": "William (Bill) Doherty",
      "role": "Chief Executive Officer",
-     "source_url": "https://walton.com/leadership/",
-     "source_evidence": "Leadership page, Global Executive Team"
+     "source_url": "https://walton.com/leadership/"
     },
     {
      "name": "Shane Doherty",
      "role": "Executive Vice President, Real Estate Operations",
-     "source_url": "https://walton.com/leadership/",
-     "source_evidence": "Leadership page, Real Estate Team"
+     "source_url": "https://walton.com/leadership/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-234",
@@ -32643,37 +31871,29 @@
      "name": "Jason Massey",
      "role": "President",
      "source_url": "https://wilbow.com/leadership/",
-     "source_evidence": "Leadership page",
-     "linkedin_url": "https://www.linkedin.com/in/jason-massey-b798ba88/",
-     "li_evidence": "Indexed title: Jason Massey, Wilbow Corporation."
+     "linkedin_url": "https://www.linkedin.com/in/jason-massey-b798ba88/"
     },
     {
      "name": "Brandon Luedke",
      "role": "Senior Vice President of Land Development",
      "source_url": "https://wilbow.com/leadership/",
-     "source_evidence": "Leadership page",
-     "linkedin_url": "https://www.linkedin.com/in/brandon-luedke-287a7014/",
-     "li_evidence": "Indexed title: Brandon Luedke, Wilbow Corporation."
+     "linkedin_url": "https://www.linkedin.com/in/brandon-luedke-287a7014/"
     },
     {
      "name": "Grayson Nastri",
      "role": "Chief Investment Officer",
-     "source_url": "https://wilbow.com/leadership/",
-     "source_evidence": "Leadership page"
+     "source_url": "https://wilbow.com/leadership/"
     },
     {
      "name": "Michael Ducoté",
      "role": "Regional Development Manager",
-     "source_url": "https://wilbow.com/leadership/",
-     "source_evidence": "Leadership page"
+     "source_url": "https://wilbow.com/leadership/"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-226",
@@ -32790,31 +32010,24 @@
      "name": "Eric Stanley",
      "role": "President & Chief Operating Officer",
      "source_url": "https://www.brightrealty.com/team",
-     "source_evidence": "Team page",
-     "linkedin_url": "https://www.linkedin.com/in/eric-stanley-5b037920/",
-     "li_evidence": "Indexed title: Eric Stanley, President and COO Bright Realty, LLC."
+     "linkedin_url": "https://www.linkedin.com/in/eric-stanley-5b037920/"
     },
     {
      "name": "Parker Bright",
      "role": "Chief Executive Officer",
      "source_url": "https://www.brightrealty.com/team",
-     "source_evidence": "Team page",
-     "linkedin_url": "https://www.linkedin.com/in/parker-bright-133265250/",
-     "li_evidence": "Indexed title: Parker Bright, Bright Realty."
+     "linkedin_url": "https://www.linkedin.com/in/parker-bright-133265250/"
     },
     {
      "name": "Zach Bright",
      "role": "Executive Vice President",
-     "source_url": "https://www.brightrealty.com/team",
-     "source_evidence": "Team page"
+     "source_url": "https://www.brightrealty.com/team"
     }
    ],
    "vol": null,
    "expansion": true,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "land"
+   "type": "land",
+   "exec_named": false
   },
   {
    "target_id": "DFW-002",
@@ -32933,16 +32146,12 @@
      "name": "David Grove",
      "role": "Executive Vice President, Homebuilding",
      "source_url": "https://newsroom.lennar.com/2026-06-05-Lennar-Names-Jim-Parker-Chief-Operating-Officer-and-David-Grove-EVP,-Homebuilding",
-     "source_evidence": "Lennar newsroom release, June 5, 2026, and company bio.",
-     "linkedin_url": "https://www.linkedin.com/in/david-grove-a8880511/",
-     "li_evidence": "Indexed title: Division President, Lennar Homes."
+     "linkedin_url": "https://www.linkedin.com/in/david-grove-a8880511/"
     }
    ],
    "vol": 5724,
-   "has_decider": false,
-   "decider_confirmed": false,
-   "decider_caveat": false,
-   "type": "homebuilder"
+   "type": "homebuilder",
+   "exec_named": false
   }
  ],
  "types": [
@@ -33006,1028 +32215,1028 @@
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 728.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "clear",
-    "dec": true,
+    "exec": true,
     "v": 259.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "clear",
-    "dec": true,
+    "exec": true,
     "v": 259.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "clear",
-    "dec": true,
+    "exec": true,
     "v": 177.0
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 1465.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": 482.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 436.0
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 636.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 1034.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": 400.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 406.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 696.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 649.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 176.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": 374.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": true,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": true,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": true,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": true,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 2,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 2,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 2,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 2,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 3,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": true,
     "fit": "partial",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "clear",
-    "dec": true,
+    "exec": true,
     "v": 286.0
    },
    {
     "cat": 0,
     "tr": true,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 7058.0
    },
    {
     "cat": 0,
     "tr": true,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": 1083.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 943.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "partial",
-    "dec": false,
+    "exec": false,
     "v": 1132.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 3196.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": 889.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 1833.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": 1289.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 1810.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 1742.0
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": 0,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 2286.0
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": true,
+    "exec": true,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": -1,
     "tr": false,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": null
    },
    {
     "cat": 0,
     "tr": true,
     "fit": "fail",
-    "dec": false,
+    "exec": false,
     "v": 5724.0
    }
   ],
   "n": 146,
   "track": 8,
-  "dec": 84,
+  "exec": 84,
   "band": [
    25,
    400
