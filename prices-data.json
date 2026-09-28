@@ -1324,6 +1324,23 @@
       "rf_mos": null,
       "rf_dom": 114.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.93,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/conroe/artavia-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "Pride Disposal 281-342-8178 Tax Info HOA: $1,395 Total Tax Amount: 2.93% Visit the Community Open"
+       },
+       {
+        "rate": 2.9,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/conroe/artavia",
+        "builder": "David Weekley Homes",
+        "quote": "Pride Disposal 281-342-8178 Tax Info HOA: $1,395 Total Tax Amount: 2.9% Visit the Community Open"
+       }
+      ],
+      "hoa": []
+     },
      "counties": [
       "Montgomery"
      ],
@@ -1565,6 +1582,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ],
@@ -2340,6 +2358,17 @@
       "rf_sold": 735.0,
       "rf_mos": null,
       "rf_dom": 67.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.32,
+        "url": "https://www.lennar.com/new-homes/texas/houston/katy/anniston/cottage-collection",
+        "builder": "Lennar",
+        "quote": "ions Services Fees Approximate HOA fees • $183.33 Approximate tax rate • 3.32 % Schedule a tour Request"
+       }
+      ],
+      "hoa": []
      },
      "rclco": [
       {
@@ -3470,6 +3499,19 @@
       "rf_mos": null,
       "rf_dom": 80.5
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1850,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/magnolia/audubon-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "et: Comcast 800-934-6489 www.xfinity.com Tax Info HOA: $1,850 annually Taxes: 3.2% Visit the Co"
+       }
+      ]
+     },
      "counties": [
       "Montgomery"
      ],
@@ -4401,6 +4443,26 @@
       "rf_mos": null,
       "rf_dom": 55.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.1689,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/richmond/austin-point",
+        "builder": "David Weekley Homes",
+        "quote": "223-4200 School Website Tax Info HOA: $1,400/year Tax Rate: 3.1689% Visit the Community Open"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1400,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/richmond/austin-point",
+        "builder": "David Weekley Homes",
+        "quote": ", TX 77469 (832) 223-4200 School Website Tax Info HOA: $1,400/year Tax Rate: 3.1689% Visit"
+       }
+      ]
+     },
      "counties": [
       "Fort Bend"
      ]
@@ -5019,6 +5081,17 @@
       "rf_mos": null,
       "rf_dom": 41.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.3,
+        "url": "https://www.lennar.com/new-homes/texas/houston/baytown/scotts-bend/watermill-collection",
+        "builder": "Lennar",
+        "quote": "ked Questions Fees Approximate HOA fees • $191.66 Approximate tax rate • 3.3 % Schedule a tour Request"
+       }
+      ],
+      "hoa": []
+     },
      "rclco": [
       {
        "rank": "28t",
@@ -5375,6 +5448,7 @@
       "rf_mos": null,
       "rf_dom": 76.5
      },
+     "fees": null,
      "counties": [
       "Waller"
      ]
@@ -5766,6 +5840,19 @@
       "rf_sold": 505.0,
       "rf_mos": null,
       "rf_dom": 88.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1200,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/montgomery/briarley",
+        "builder": "David Weekley Homes",
+        "quote": "ry, TX 77356 936-276-3000 School Website Tax Info HOA: $1,200.00/yr. Tax: 3.0199 Visit the C"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -7991,6 +8078,34 @@
       "rf_mos": null,
       "rf_dom": 58.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.256,
+        "url": "https://www.tripointehomes.com/tx/houston/bridgeland-70",
+        "builder": "Tri Pointe Homes",
+        "quote": "tion Dues are currently $1,355 per year. The 2024 combined tax rate was 3.256%. (*Note: All calculation"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1410,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/cypress/bridgeland-central-55-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ss, TX 77433 832-349-7600 School Website Tax Info HOA: $1,410 annually Taxes: 3.19% Visit the C"
+       },
+       {
+        "amount": 1355,
+        "to": null,
+        "per": "year",
+        "url": "https://www.tripointehomes.com/tx/houston/bridgeland-70",
+        "builder": "Tri Pointe Homes",
+        "quote": "sment and tax rate for this community? The annual Homeowners Association Dues are currently $1,355 per year. The 2024 combined tax r"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "6",
@@ -8863,6 +8978,26 @@
       "rf_sold": 166.0,
       "rf_mos": null,
       "rf_dom": 102.5
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.1689,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/rosenberg/brookewater-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ergy 800-752-8036 Tax Info HOA: $1,200 annually Tax Rate: 3.1689% Visit the Community Open"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1200,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/rosenberg/brookewater-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "icity: CenterPoint Energy 800-752-8036 Tax Info HOA: $1,200 annually Tax Rate: 3.1689% Visit"
+       }
+      ]
      },
      "counties": [
       "Fort Bend"
@@ -10016,6 +10151,26 @@
       "rf_sold": 505.0,
       "rf_mos": null,
       "rf_dom": 88.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.0808,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/todd-mission/colton-45",
+        "builder": "David Weekley Homes",
+        "quote": "://www.sienviro.com Tax Info HOA: $1,440 annually Tax: $3.0808 Visit the Community Open"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1440,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/todd-mission/colton-45",
+        "builder": "David Weekley Homes",
+        "quote": "nberg, TX 77471 https://www.sienviro.com Tax Info HOA: $1,440 annually Tax: $3.0808 Visit the C"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -11176,6 +11331,7 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ],
@@ -11482,6 +11638,7 @@
       "rf_mos": null,
       "rf_dom": 70.0
      },
+     "fees": null,
      "counties": [
       "Brazoria"
      ]
@@ -11949,6 +12106,7 @@
       "rf_mos": null,
       "rf_dom": 79.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ],
@@ -12601,6 +12759,19 @@
       "rf_sold": 248.0,
       "rf_mos": null,
       "rf_dom": 70.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1200,
+        "to": null,
+        "per": "year",
+        "url": "https://imaginationhomes.com/new-homes/texas/houston-area/arcola/creekhaven",
+        "builder": "Imagination Homes",
+        "quote": "own Center 15 miles Target 17 miles Tax Rate 3.53 HOA $1200 Annually Water/Sewer Municipal Ut"
+       }
+      ]
      },
      "counties": [
       "Brazoria"
@@ -13280,6 +13451,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ]
@@ -14124,6 +14296,17 @@
       "rf_mos": null,
       "rf_dom": 83.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.34,
+        "url": "https://www.lennar.com/new-homes/texas/houston/hockley/cypress-green/bristol-collection",
+        "builder": "Lennar",
+        "quote": "ked Questions Fees Approximate HOA fees • $112.66 Approximate tax rate • 3.34 % Schedule a tour Request"
+       }
+      ],
+      "hoa": []
+     },
      "rclco": [
       {
        "rank": "47",
@@ -14805,6 +14988,34 @@
       "rf_sold": 677.0,
       "rf_mos": null,
       "rf_dom": 58.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.193,
+        "url": "https://www.tripointehomes.com/tx/houston/dunham-pointe",
+        "builder": "Tri Pointe Homes",
+        "quote": "tion Dues are currently $1,100 per year. The 2024 combined tax rate was 3.193%. (*Note: All calculation"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1600,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/cypress/dunham-pointe-65-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ss, TX 77429 281-213-1800 School Website Tax Info HOA: $1,600/annually. Taxes: 3.11815% Visit t"
+       },
+       {
+        "amount": 1100,
+        "to": null,
+        "per": "year",
+        "url": "https://www.tripointehomes.com/tx/houston/dunham-pointe",
+        "builder": "Tri Pointe Homes",
+        "quote": "ssessment and tax rate for this community? Annual Homeowners Association Dues are currently $1,100 per year. The 2024 combined tax r"
+       }
+      ]
      },
      "counties": [
       "Harris"
@@ -15964,6 +16175,19 @@
       "rf_mos": null,
       "rf_dom": 67.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1464,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/katy/elyson-40",
+        "builder": "David Weekley Homes",
+        "quote": "ss, TX 77433 346-227-6000 School Website Tax Info HOA: $1,464 annually Tax Rate: $3.040659 per"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "47",
@@ -16431,6 +16655,7 @@
       "rf_mos": null,
       "rf_dom": 117.0
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ],
@@ -16821,6 +17046,34 @@
       "rf_sold": 264.0,
       "rf_mos": null,
       "rf_dom": 114.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.9299,
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-40",
+        "builder": "Shea Homes",
+        "quote": "nth Membership Fees Capital Assessment: $1,080/yr Property Tax 2.9299 per $100 assessed (2025) Utilitie"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 90,
+        "to": null,
+        "per": "month",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-40",
+        "builder": "Shea Homes",
+        "quote": "8 Caney Creek High School Public High Grades 9-12 HOA Evergreen HOA $90/month Membership Fees Capital"
+       },
+       {
+        "amount": 1080,
+        "to": null,
+        "per": "year",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/conroe/evergreen-70",
+        "builder": "Shea Homes",
+        "quote": "9-12 HOA Evergreen HOA $90/month Membership Fees HOA: $1,080/yr Property Tax 2.9299 per"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -17311,6 +17564,7 @@
       "rf_mos": null,
       "rf_dom": 83.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -17463,6 +17717,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ]
@@ -18087,6 +18342,19 @@
       "rf_sold": 226.0,
       "rf_mos": null,
       "rf_dom": 105.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1260,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/conroe/grand-central-park-55",
+        "builder": "David Weekley Homes",
+        "quote": "522-3200 Post Office Conroe 936-441-6055 Tax Info HOA: $1,260/year Taxes: MMD Tax $0.8550 M"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -19066,6 +19334,7 @@
       "rf_mos": null,
       "rf_dom": 73.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -19685,6 +19954,26 @@
       "rf_sold": 735.0,
       "rf_mos": null,
       "rf_dom": 67.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.33114,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/katy/grange-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ations 866-989-2255 Tax Info HOA: $1,320 annually Tax Rate: 3.33114% Visit the Community Open"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1320,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/katy/grange-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "Consolidated Communications 866-989-2255 Tax Info HOA: $1,320 annually Tax Rate: 3.33114% Visit"
+       }
+      ]
      },
      "counties": [
       "Waller"
@@ -20350,6 +20639,26 @@
       "rf_sold": 319.0,
       "rf_mos": null,
       "rf_dom": 78.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.81,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/richmond/harvest-green-45",
+        "builder": "David Weekley Homes",
+        "quote": "Station #2 281-232-5662 Tax Info HOA: $1,210/year Tax Rate: 2.81% Homeowners Association:"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1210,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/richmond/harvest-green-45",
+        "builder": "David Weekley Homes",
+        "quote": "Fire Department Station #2 281-232-5662 Tax Info HOA: $1,210/year Tax Rate: 2.81% Homeowne"
+       }
+      ]
      },
      "counties": [
       "Fort Bend"
@@ -21261,6 +21570,19 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1700,
+        "to": null,
+        "per": "year",
+        "url": "https://empirehomes.com/us/texas/houston/richmond/indigo/",
+        "builder": "Empire Homes",
+        "quote": "OUT YOUR NEW COMMUNITY PROPERTY TAXES & UTILITIES HOA: $1,700/Year Taxes: The county tax ra"
+       }
+      ]
+     },
      "counties": [
       "Fort Bend"
      ]
@@ -21910,6 +22232,7 @@
       "rf_mos": null,
       "rf_dom": 76.5
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "51",
@@ -23036,6 +23359,34 @@
       "rf_mos": null,
       "rf_dom": 83.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.31,
+        "url": "https://www.tripointehomes.com/tx/houston/jubilee-50",
+        "builder": "Tri Pointe Homes",
+        "quote": "tion Dues are currently $1,200 per year. The 2024 combined tax rate was 3.31%. (*Note: All calculation"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1230,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/hockley/jubilee-35",
+        "builder": "David Weekley Homes",
+        "quote": "er, TX 77484 936-372-3654 School Website Tax Info HOA: $1,230/Annually Foundation Fee .5% Taxes"
+       },
+       {
+        "amount": 1200,
+        "to": null,
+        "per": "year",
+        "url": "https://www.tripointehomes.com/tx/houston/jubilee-50",
+        "builder": "Tri Pointe Homes",
+        "quote": "A assessment and tax rate for Jubilee? The annual Homeowners Association Dues are currently $1,200 per year. The 2024 combined tax r"
+       }
+      ]
+     },
      "counties": [
       "Harris"
      ]
@@ -23860,6 +24211,19 @@
       "rf_sold": 505.0,
       "rf_mos": null,
       "rf_dom": 88.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1300,
+        "to": null,
+        "per": "year",
+        "url": "https://www.jpatrickhomes.com/communities/kresston-80-lots/",
+        "builder": "J. Patrick Homes",
+        "quote": "igh School (High School) HOA KRESSTON RESIDENTIAL ASSOCIATION Dues: $1,300 Annual Community News Johnson D"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -24850,6 +25214,7 @@
       "rf_mos": null,
       "rf_dom": 76.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "34",
@@ -25625,6 +25990,27 @@
       "rf_mos": null,
       "rf_dom": 35.5
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1400,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/league-city/legacy",
+        "builder": "David Weekley Homes",
+        "quote": "6700 Internet Centric Fiber 877-342-7270 Tax Info HOA: $1,400/annually Taxes: $2.92 per $100 as"
+       },
+       {
+        "amount": 117,
+        "to": null,
+        "per": "month",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/league-city/legacy-65",
+        "builder": "Shea Homes",
+        "quote": "Clear Springs High School Public High Grades 9-12 HOA Legacy HOA $117/month Membership Fees Assessme"
+       }
+      ]
+     },
      "counties": [
       "Galveston"
      ]
@@ -25953,6 +26339,7 @@
       "rf_mos": null,
       "rf_dom": 58.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "9",
@@ -26439,6 +26826,7 @@
       "rf_mos": null,
       "rf_dom": 114.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -28359,6 +28747,35 @@
       "rf_mos": null,
       "rf_dom": 117.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1330,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/manvel/meridiana-45-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ny, TX 77583 713-814-7500 School Website Tax Info HOA: $ 1,330/annually Brazoria County: 0.26162"
+       },
+       {
+        "amount": 1300,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/manvel/meridiana-55-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ny, TX 77583 713-814-7500 School Website Tax Info HOA: $ 1,300/annually Brazoria County: 0.26162"
+       },
+       {
+        "amount": 111,
+        "to": null,
+        "per": "month",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/manvel/meridiana-70",
+        "builder": "Shea Homes",
+        "quote": "8 Iowa Colony High School Public High Grades 9-12 HOA Meridiana HOA $111/month Membership Fees HOA: $1,"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "34",
@@ -28653,6 +29070,7 @@
       "rf_mos": null,
       "rf_dom": 80.5
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -28899,6 +29317,7 @@
       "rf_mos": null,
       "rf_dom": 109.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -29432,6 +29851,19 @@
       "rf_sold": 243.0,
       "rf_mos": null,
       "rf_dom": 117.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1300,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/manvel/pomona-40-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "352 Water: Si Environmental 832-490-1600 Tax Info HOA: $ 1,300/annually HOA dues include Home Mo"
+       }
+      ]
      },
      "counties": [
       "Brazoria"
@@ -30316,6 +30748,7 @@
       "rf_mos": null,
       "rf_dom": 87.5
      },
+     "fees": null,
      "counties": [
       "Chambers"
      ],
@@ -31982,6 +32415,19 @@
       "rf_sold": 215.0,
       "rf_mos": null,
       "rf_dom": 157.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 900,
+        "to": null,
+        "per": "year",
+        "url": "https://empirehomes.com/us/texas/houston/dayton/river-ranch/",
+        "builder": "Empire Homes",
+        "quote": "OUT YOUR NEW COMMUNITY PROPERTY TAXES & UTILITIES HOA: $900/Year Your HOA Fees Cover: Lan"
+       }
+      ]
      },
      "counties": [
       "Liberty"
@@ -34179,6 +34625,50 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.9414,
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-65",
+        "builder": "Shea Homes",
+        "quote": "2.08/mo Community Enhancement Transfer Fee: 0.5% Property Tax 2.9414 per $100 of assessed value (2025)"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1543,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/missouri-city/sienna-plantation-classic-series",
+        "builder": "David Weekley Homes",
+        "quote": "ty, TX 77459 281-327-5200 School Website Tax Info HOA: $1,543 annually Taxes: 2.89% Visit the C"
+       },
+       {
+        "amount": 1580,
+        "to": null,
+        "per": "year",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-40",
+        "builder": "Shea Homes",
+        "quote": "mbership Fees One-time Capitalization Fee: $1,580 HOA: $1,580/yr Community Enhancement Tr"
+       },
+       {
+        "amount": 132,
+        "to": null,
+        "per": "month",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-65",
+        "builder": "Shea Homes",
+        "quote": "meta Crawford High School Public High Grades 9-10 HOA Sienna HOA $132.09/month Membership Fees One-time"
+       },
+       {
+        "amount": 1585,
+        "to": null,
+        "per": "year",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/missouri-city/sienna-65",
+        "builder": "Shea Homes",
+        "quote": "mbership Fees One-time Capitalization Fee: $1,580 HOA: $1,585/yr or $132.08/mo Community"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "25",
@@ -34572,6 +35062,7 @@
       "rf_mos": null,
       "rf_dom": 70.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "41",
@@ -34906,6 +35397,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -35909,6 +36401,7 @@
       "rf_mos": null,
       "rf_dom": 67.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "3",
@@ -36801,8 +37294,436 @@
       "rf_mos": null,
       "rf_dom": 76.5
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1200,
+        "to": null,
+        "per": "year",
+        "url": "https://imaginationhomes.com/new-homes/texas/houston-area/katy/sunterra-lakes",
+        "builder": "Imagination Homes",
+        "quote": "o Ranch 18 miles Houston Premium Outlets 26 miles HOA $1200/annually Memorial Hermann Katy Ho"
+       }
+      ]
+     },
      "counties": [
       "Waller"
+     ]
+    },
+    {
+     "id": "hou-sweetgrass-village",
+     "name": "Sweetgrass Village",
+     "market": "houston",
+     "developer": null,
+     "developer_raw": null,
+     "developer_rolodex_id": null,
+     "website": null,
+     "city": "Crosby",
+     "county": "Harris",
+     "county_from_zip": false,
+     "zips": [
+      "77532"
+     ],
+     "lat": 29.9329,
+     "lon": -95.0572,
+     "address": "13015 Dianna Lee Drive, Crosby, TX 77532",
+     "acres": null,
+     "planned_homes": null,
+     "opened": null,
+     "isd": "Crosby ISD",
+     "rank": null,
+     "status": "active",
+     "price_text": null,
+     "facts": [
+      {
+       "text": "Lennar community page header: \"From $235,990\"; sqft range 1,273 - 3,147; stories 1 - 2; 3 collections; approximate HOA $50; approximate tax rate 3.39%.",
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village",
+       "date": "2026-09-28"
+      },
+      {
+       "text": "CastleRock page: Sweetgrass Village Total Tax Rate 3.393889%; Annual HOA Fee $660; schools Barrett Elementary, Crosby Middle School, Crosby High School.",
+       "url": "https://www.c-rock.com/community/texas/houston/sweetgrass_village",
+       "date": "2026-09-28"
+      },
+      {
+       "text": "KB Home grand opening press release, 2026-02-20: \"Pricing begins from the mid $200,000s\"; site off Crosby Cedar Bayou Road; planned amenities walking paths, pickleball courts, playground, recreation center with pool and splash pad.",
+       "url": "https://www.prnewswire.com/news-releases/kb-home-announces-the-grand-opening-of-its-newest-community-within-the-highly-desirable-sweetgrass-village-master-plan-in-crosby-texas-302693058.html",
+       "date": "2026-02-20"
+      },
+      {
+       "text": "Odyssey Engineering Group portfolio page: Sweetgrass Village and Barrett Crossing share regional facilities in northeast Harris County; 260 acres; nearly 1,100 planned lots; central lake; \"Current developers are Century Homes and Silvestri Development\".",
+       "url": "https://www.odysseyeg.com/portfolio-items/sweetgrass-village/",
+       "date": "2024-05-29"
+      },
+      {
+       "text": "DMRE land listing: \"Sweetgrass Village, a 1,052 acre master planned community that could feature about 2,800 single-family homes\"; off Crosby Lynchburg Rd.",
+       "url": "https://dmre.com/property/sweetgrass-village-mpc/",
+       "date": "2022-07-14"
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village",
+       "title": "Sweetgrass Village New Home Community - Crosby - Houston, TX by Lennar",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection",
+       "title": "Cottage Collection at Sweetgrass Village | Lennar",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/watermill-collection",
+       "title": "Watermill Collection at Sweetgrass Village | Lennar",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/classic-majors-collection",
+       "title": "Classic & Majors Collection at Sweetgrass Village | Lennar",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.kbhome.com/new-homes-houston/sweetgrass-village",
+       "title": "Sweetgrass Village - A New Home Community by KB Home",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.c-rock.com/community/texas/houston/sweetgrass_village",
+       "title": "Sweetgrass Village | CastleRock Communities",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.beazer.com/houston-tx/sweetgrass-village",
+       "title": "Sweetgrass Village - Beazer Homes (redirects to Houston page)",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.prnewswire.com/news-releases/kb-home-announces-the-grand-opening-of-its-newest-community-within-the-highly-desirable-sweetgrass-village-master-plan-in-crosby-texas-302693058.html",
+       "title": "KB Home announces grand opening in Sweetgrass Village master plan (PR Newswire)",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://www.odysseyeg.com/portfolio-items/sweetgrass-village/",
+       "title": "Sweetgrass Village | Odyssey Engineering Group",
+       "accessed": "2026-09-28"
+      },
+      {
+       "url": "https://dmre.com/property/sweetgrass-village-mpc/",
+       "title": "Sweetgrass Village MPC | DMRE",
+       "accessed": "2026-09-28"
+      }
+     ],
+     "rows": [
+      {
+       "builder": "Lennar",
+       "custom_members": null,
+       "rolodex_id": "HOU-166",
+       "section": "Cottage Collection",
+       "lots": [],
+       "from": 209990,
+       "from_approx": false,
+       "from_text": "From $209,990",
+       "to": 252990,
+       "to_text": "From $252,990 (Whitetail)",
+       "sqft_min": 1273,
+       "sqft_max": 1979,
+       "plans": 5,
+       "stories": [],
+       "qmi_count": 3,
+       "qmi": [
+        {
+         "price": 209990,
+         "sqft": 1273,
+         "plan": "Oakridge",
+         "url": null,
+         "ppsf": 165,
+         "id": "hfbaee5e15",
+         "beds": 3,
+         "fb": 2,
+         "address": "1211 Biscuit Drive",
+         "status": "Move-in ready",
+         "src": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection"
+        },
+        {
+         "price": 235990,
+         "sqft": 1607,
+         "plan": "Pinehollow",
+         "url": null,
+         "ppsf": 147,
+         "id": "h9d98e2053",
+         "beds": 4,
+         "fb": 2,
+         "address": "12863 Shaily Faith Court",
+         "status": "Move-in ready",
+         "src": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection"
+        },
+        {
+         "price": 244990,
+         "sqft": 1975,
+         "plan": "Whitetail",
+         "url": null,
+         "ppsf": 124,
+         "id": "h1a4cf0ad6",
+         "beds": 4,
+         "fb": 2,
+         "hb": 1,
+         "address": "1207 Biscuit Drive",
+         "status": "Move-in ready",
+         "src": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection"
+        }
+       ],
+       "qmi_ppsf": 147,
+       "incentive": null,
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-28"
+      },
+      {
+       "builder": "Lennar",
+       "custom_members": null,
+       "rolodex_id": "HOU-166",
+       "section": "Watermill Collection",
+       "lots": [],
+       "from": 243990,
+       "from_approx": false,
+       "from_text": "From $243,990",
+       "to": 263990,
+       "to_text": "From $263,990 (Littleton)",
+       "sqft_min": 1676,
+       "sqft_max": 1922,
+       "plans": 3,
+       "stories": [],
+       "qmi_count": 0,
+       "qmi": [],
+       "qmi_ppsf": null,
+       "incentive": null,
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/watermill-collection",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-28"
+      },
+      {
+       "builder": "Lennar",
+       "custom_members": null,
+       "rolodex_id": "HOU-166",
+       "section": "Classic & Majors Collection",
+       "lots": [],
+       "from": 277990,
+       "from_approx": false,
+       "from_text": "From $277,990",
+       "to": 355990,
+       "to_text": "From $355,990 (Steely, Next Gen)",
+       "sqft_min": 1564,
+       "sqft_max": 3147,
+       "plans": 6,
+       "stories": [],
+       "qmi_count": 1,
+       "qmi": [
+        {
+         "price": 338990,
+         "sqft": 3147,
+         "plan": "Steely",
+         "url": null,
+         "ppsf": 108,
+         "id": "hf16731685",
+         "beds": 5,
+         "fb": 4,
+         "address": "1515 Chimney Springs Drive",
+         "status": "Move-in ready",
+         "src": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/classic-majors-collection"
+        }
+       ],
+       "qmi_ppsf": 108,
+       "incentive": null,
+       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/classic-majors-collection",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-28"
+      },
+      {
+       "builder": "KB Home",
+       "custom_members": null,
+       "rolodex_id": "HOU-232",
+       "section": null,
+       "lots": [],
+       "from": 209995,
+       "from_approx": false,
+       "from_text": "From $209,995",
+       "to": 274995,
+       "to_text": "From $274,995 (Plan 2783)",
+       "sqft_min": 1523,
+       "sqft_max": 2783,
+       "plans": 8,
+       "stories": [
+        1,
+        2
+       ],
+       "qmi_count": 2,
+       "qmi": [
+        {
+         "price": 256995,
+         "sqft": 1964,
+         "plan": "Plan 1964",
+         "url": null,
+         "ppsf": 131,
+         "id": "hbe1959548",
+         "beds": 3,
+         "fb": 2,
+         "garage": 2,
+         "stories": 1.0,
+         "src": "https://www.kbhome.com/new-homes-houston/sweetgrass-village"
+        },
+        {
+         "price": 278986,
+         "sqft": 2003,
+         "plan": "Plan 2003",
+         "url": null,
+         "ppsf": 139,
+         "id": "h9b1d8da52",
+         "beds": 3,
+         "fb": 2,
+         "garage": 2,
+         "stories": 1.0,
+         "src": "https://www.kbhome.com/new-homes-houston/sweetgrass-village"
+        }
+       ],
+       "qmi_ppsf": 135,
+       "incentive": null,
+       "url": "https://www.kbhome.com/new-homes-houston/sweetgrass-village",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-28"
+      },
+      {
+       "builder": "CastleRock Communities",
+       "custom_members": null,
+       "rolodex_id": "HOU-022",
+       "section": null,
+       "lots": [],
+       "from": 209990,
+       "from_approx": false,
+       "from_text": "$209,990 - $293,055",
+       "to": 293055,
+       "to_text": "$209,990 - $293,055",
+       "sqft_min": 1201,
+       "sqft_max": 2412,
+       "plans": 9,
+       "stories": [],
+       "qmi_count": 4,
+       "qmi": [
+        {
+         "price": 236185,
+         "sqft": 1365,
+         "plan": "Oak",
+         "url": null,
+         "ppsf": 173,
+         "id": "h7951ce5ce",
+         "beds": 3,
+         "fb": 2,
+         "garage": 2,
+         "address": "1543 Nasella Drive",
+         "status": "Ready Oct. 2026",
+         "src": "https://www.c-rock.com/community/texas/houston/sweetgrass_village"
+        },
+        {
+         "price": 248395,
+         "sqft": 1570,
+         "plan": "Pecan",
+         "url": null,
+         "ppsf": 158,
+         "id": "h689fa1a97",
+         "beds": 3,
+         "fb": 2,
+         "garage": 2,
+         "address": "12919 Carla Scanlan Lane",
+         "status": "Ready Oct. 2026",
+         "src": "https://www.c-rock.com/community/texas/houston/sweetgrass_village"
+        },
+        {
+         "price": 275950,
+         "sqft": 1996,
+         "plan": "Alder",
+         "url": null,
+         "ppsf": 138,
+         "id": "h7fa367036",
+         "beds": 4,
+         "fb": 3,
+         "garage": 2,
+         "address": "1535 Nasella Drive",
+         "status": "Ready Dec. 2026",
+         "src": "https://www.c-rock.com/community/texas/houston/sweetgrass_village"
+        },
+        {
+         "price": 293055,
+         "sqft": 2334,
+         "plan": "Hickory",
+         "url": null,
+         "ppsf": 126,
+         "id": "h0e7637409",
+         "beds": 4,
+         "fb": 2,
+         "hb": 1,
+         "garage": 2,
+         "address": "1527 Nasella Drive",
+         "status": "Ready Dec. 2026",
+         "src": "https://www.c-rock.com/community/texas/houston/sweetgrass_village"
+        }
+       ],
+       "qmi_ppsf": 148,
+       "incentive": null,
+       "url": "https://www.c-rock.com/community/texas/houston/sweetgrass_village",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-28"
+      }
+     ],
+     "n_builders": 3,
+     "builders": [
+      "CastleRock Communities",
+      "KB Home",
+      "Lennar"
+     ],
+     "custom": [],
+     "from_min": 209990,
+     "from_max": 277990,
+     "from_med": 209995,
+     "to_max": 355990,
+     "lots": [],
+     "sqft_min": 1201,
+     "sqft_max": 3147,
+     "qmi_n": 10,
+     "qmi_price": 252695,
+     "qmi_sqft": 1970,
+     "qmi_ppsf": 138,
+     "qmi_ppsf_lo": 127,
+     "qmi_ppsf_hi": 155,
+     "zip_market": {
+      "zhvi": 263179,
+      "zhvi_month": "2026-08",
+      "zhvi_yoy": -0.0283,
+      "zhvi_5y": 0.1073,
+      "rf_period": "2026-05-31",
+      "rf_price": 246500.0,
+      "rf_ppsf": 137,
+      "rf_sold": 379.0,
+      "rf_mos": null,
+      "rf_dom": 59.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.39,
+        "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village/cottage-collection",
+        "builder": "Lennar",
+        "quote": "y Asked Questions Fees Approximate HOA fees • $50 Approximate tax rate • 3.39 % Schedule a tour Request"
+       }
+      ],
+      "hoa": []
+     },
+     "counties": [
+      "Harris"
      ]
     },
     {
@@ -37006,6 +37927,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "14t",
@@ -37663,6 +38585,19 @@
       "rf_mos": null,
       "rf_dom": 55.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1300,
+        "to": null,
+        "per": "year",
+        "url": "https://www.jpatrickhomes.com/communities/the-george-60-lots/",
+        "builder": "J. Patrick Homes",
+        "quote": "h School (High School) HOA THE GEORGE RESIDENTIAL ASSOCIATION Dues: $1,300 Annual Community News J. Patric"
+       }
+      ]
+     },
      "counties": [
       "Fort Bend"
      ]
@@ -38078,6 +39013,7 @@
       "rf_mos": null,
       "rf_dom": 83.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "42",
@@ -39287,7 +40223,7 @@
          "fb": 3,
          "garage": 2,
          "address": "21853 Golden Putt Drive",
-         "status": "Ready December 2185",
+         "status": "Ready December",
          "src": "https://www.caldwellhomes.com/communities/the-highlands"
         },
         {
@@ -39362,6 +40298,26 @@
       "rf_sold": 256.0,
       "rf_mos": null,
       "rf_dom": 80.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.2552,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/porter/the-highlands-50-encore-collection",
+        "builder": "David Weekley Homes",
+        "quote": "Rate in Montgomery Country is 1.25% New Caney ISD tax rate is 1.25520% Visit the Community Open"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1584,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/porter/the-highlands-40-homesites",
+        "builder": "David Weekley Homes",
+        "quote": "ntgomery County Police Trash: Best Trash Tax Info HOA: $1,584/year Includes Basic Fiber Int"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -40365,6 +41321,7 @@
       "rf_mos": null,
       "rf_dom": 103.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ],
@@ -40642,6 +41599,7 @@
       "rf_mos": null,
       "rf_dom": 58.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -42221,6 +43179,19 @@
       "rf_mos": null,
       "rf_dom": 88.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1260,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/montgomery/two-step-farm-35",
+        "builder": "David Weekley Homes",
+        "quote": "rnet: Lasso Powered by Centric & HomePro Tax Info HOA: $1,260/annually Taxes: 3.0699% Visit the"
+       }
+      ]
+     },
      "counties": [
       "Montgomery"
      ]
@@ -43065,6 +44036,7 @@
       "rf_mos": null,
       "rf_dom": 117.0
      },
+     "fees": null,
      "counties": [
       "Brazoria"
      ]
@@ -43651,6 +44623,7 @@
       "rf_mos": null,
       "rf_dom": 81.5
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -44007,6 +44980,7 @@
       "rf_mos": null,
       "rf_dom": 88.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ],
@@ -44562,6 +45536,34 @@
       "rf_sold": 359.0,
       "rf_mos": null,
       "rf_dom": 80.5
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.8808,
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/magnolia/woodhavyn-40",
+        "builder": "Shea Homes",
+        "quote": ": $1,075 Capitalization fee: 0.35% HOA: $1,075/yr Property Tax 2.8808 per $100 assessed (2025) Utilitie"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 90,
+        "to": null,
+        "per": "month",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/magnolia/woodhavyn-40",
+        "builder": "Shea Homes",
+        "quote": "7-8 Magnolia High School Public High Grades 9-12 HOA Woodhavyn HOA Inframark $90/month Membership Fees Assessme"
+       },
+       {
+        "amount": 1075,
+        "to": null,
+        "per": "year",
+        "url": "https://www.sheahomes.com/new-homes/texas/houston-area/magnolia/woodhavyn-40",
+        "builder": "Shea Homes",
+        "quote": "Assessment fee: $1,075 Capitalization fee: 0.35% HOA: $1,075/yr Property Tax 2.8808 per"
+       }
+      ]
      },
      "counties": [
       "Montgomery"
@@ -45166,6 +46168,7 @@
       "rf_mos": null,
       "rf_dom": 35.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -45274,6 +46277,7 @@
       "rf_mos": null,
       "rf_dom": 53.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -45404,6 +46408,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "rclco": [
       {
        "rank": "19",
@@ -45601,6 +46606,7 @@
       "rf_mos": null,
       "rf_dom": 70.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "11",
@@ -45784,6 +46790,7 @@
       "rf_mos": null,
       "rf_dom": 67.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "46",
@@ -45862,6 +46869,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "rclco": [
       {
        "rank": "54",
@@ -46134,6 +47142,7 @@
       "rf_mos": null,
       "rf_dom": 83.0
      },
+     "fees": null,
      "counties": [
       "Harris"
      ]
@@ -46213,6 +47222,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "counties": []
     },
     {
@@ -46351,6 +47361,7 @@
       "rf_mos": null,
       "rf_dom": 33.5
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ]
@@ -46511,6 +47522,7 @@
       "rf_mos": null,
       "rf_dom": 80.5
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -46633,6 +47645,7 @@
       "rf_mos": null,
       "rf_dom": 76.5
      },
+     "fees": null,
      "counties": [
       "Waller"
      ]
@@ -46891,6 +47904,7 @@
       "rf_mos": null,
       "rf_dom": 80.5
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -47000,6 +48014,7 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": null,
      "counties": [
       "Fort Bend"
      ]
@@ -47366,6 +48381,7 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "27",
@@ -47614,6 +48630,7 @@
       "rf_mos": null,
       "rf_dom": 37.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -47722,6 +48739,7 @@
       "rf_mos": null,
       "rf_dom": 157.0
      },
+     "fees": null,
      "counties": [
       "Liberty"
      ]
@@ -47867,6 +48885,7 @@
       "rf_mos": null,
       "rf_dom": 80.0
      },
+     "fees": null,
      "counties": [
       "Montgomery"
      ]
@@ -48302,10 +49321,11 @@
       "hou-river-ranch",
       "hou-sunterra",
       "hou-sunterra-lakes",
+      "hou-sweetgrass-village",
       "hou-tavola",
       "hou-the-highlands"
      ],
-     "n_comm": 18,
+     "n_comm": 19,
      "counties": [
       "Brazoria",
       "Fort Bend",
@@ -48317,7 +49337,7 @@
      ],
      "from_min": 193991,
      "from_max": 400000,
-     "from_med": 272990,
+     "from_med": 272490,
      "lots": [
       40,
       45,
@@ -48326,9 +49346,9 @@
       60,
       65
      ],
-     "qmi_n": 103,
-     "qmi_price": 292990,
-     "qmi_sqft": 1984,
+     "qmi_n": 107,
+     "qmi_price": 291990,
+     "qmi_sqft": 1975,
      "qmi_ppsf": 145,
      "qmi_ppsf_lo": 138,
      "qmi_ppsf_hi": 156,
@@ -48499,9 +49519,10 @@
       "hou-sierra-vista",
       "hou-sunterra",
       "hou-sunterra-lakes",
+      "hou-sweetgrass-village",
       "hou-wildrye"
      ],
-     "n_comm": 15,
+     "n_comm": 16,
      "counties": [
       "Brazoria",
       "Fort Bend",
@@ -48513,16 +49534,16 @@
      ],
      "from_min": 200000,
      "from_max": 280000,
-     "from_med": 280000,
+     "from_med": 244995,
      "lots": [
       40
      ],
-     "qmi_n": 7,
-     "qmi_price": 324702,
+     "qmi_n": 11,
+     "qmi_price": 289037,
      "qmi_sqft": 1915,
      "qmi_ppsf": 150,
-     "qmi_ppsf_lo": 138,
-     "qmi_ppsf_hi": 158,
+     "qmi_ppsf_lo": 134,
+     "qmi_ppsf_hi": 162,
      "closings": {
       "low": 1465,
       "high": 1465,
@@ -50695,6 +51716,45 @@
      "filer": null
     },
     {
+     "id": "b-houston-kb-home",
+     "name": "KB Home",
+     "rolodex_id": "HOU-232",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "KB Home",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     },
+     "communities": [
+      "hou-sweetgrass-village"
+     ],
+     "n_comm": 1,
+     "counties": [
+      "Harris"
+     ],
+     "from_min": 209995,
+     "from_max": 209995,
+     "from_med": 209995,
+     "lots": [],
+     "qmi_n": 2,
+     "qmi_price": 267990,
+     "qmi_sqft": 1984,
+     "qmi_ppsf": 135,
+     "qmi_ppsf_lo": 133,
+     "qmi_ppsf_hi": 137,
+     "closings": {
+      "low": 1062,
+      "high": 1062,
+      "year": 2024,
+      "source": "BUILDER Local Leaders 2025, Houston metro",
+      "wide": null
+     },
+     "filer": "KB Home"
+    },
+    {
      "id": "b-houston-kendall-homes",
      "name": "Kendall Homes",
      "rolodex_id": "HOU-063",
@@ -51909,14 +52969,14 @@
     }
    ],
    "totals": {
-    "communities": 74,
-    "rows": 687,
-    "builders": 71,
+    "communities": 75,
+    "rows": 692,
+    "builders": 72,
     "developers": 26,
-    "qmi": 1465,
-    "qmi_price": 449990,
-    "qmi_sqft": 2495,
-    "qmi_ppsf": 185,
+    "qmi": 1475,
+    "qmi_price": 449900,
+    "qmi_sqft": 2488,
+    "qmi_ppsf": 184,
     "from_med": 400000
    },
    "metro": {
@@ -79989,6 +81049,751 @@
      }
     },
     {
+     "zip": "77532",
+     "communities": [
+      "hou-sweetgrass-village"
+     ],
+     "county": "Harris",
+     "city": "Crosby",
+     "zhvi_series": [
+      [
+       "2015-01",
+       151188
+      ],
+      [
+       "2015-02",
+       152652
+      ],
+      [
+       "2015-03",
+       154005
+      ],
+      [
+       "2015-04",
+       155385
+      ],
+      [
+       "2015-05",
+       156501
+      ],
+      [
+       "2015-06",
+       157428
+      ],
+      [
+       "2015-07",
+       158039
+      ],
+      [
+       "2015-08",
+       158738
+      ],
+      [
+       "2015-09",
+       159394
+      ],
+      [
+       "2015-10",
+       160183
+      ],
+      [
+       "2015-11",
+       160892
+      ],
+      [
+       "2015-12",
+       161685
+      ],
+      [
+       "2016-01",
+       162584
+      ],
+      [
+       "2016-02",
+       163737
+      ],
+      [
+       "2016-03",
+       164513
+      ],
+      [
+       "2016-04",
+       165402
+      ],
+      [
+       "2016-05",
+       166268
+      ],
+      [
+       "2016-06",
+       167535
+      ],
+      [
+       "2016-07",
+       168492
+      ],
+      [
+       "2016-08",
+       169316
+      ],
+      [
+       "2016-09",
+       170235
+      ],
+      [
+       "2016-10",
+       171348
+      ],
+      [
+       "2016-11",
+       172738
+      ],
+      [
+       "2016-12",
+       174055
+      ],
+      [
+       "2017-01",
+       175201
+      ],
+      [
+       "2017-02",
+       176022
+      ],
+      [
+       "2017-03",
+       176928
+      ],
+      [
+       "2017-04",
+       177795
+      ],
+      [
+       "2017-05",
+       178575
+      ],
+      [
+       "2017-06",
+       179297
+      ],
+      [
+       "2017-07",
+       180020
+      ],
+      [
+       "2017-08",
+       180859
+      ],
+      [
+       "2017-09",
+       181479
+      ],
+      [
+       "2017-10",
+       182276
+      ],
+      [
+       "2017-11",
+       183241
+      ],
+      [
+       "2017-12",
+       184387
+      ],
+      [
+       "2018-01",
+       185376
+      ],
+      [
+       "2018-02",
+       186169
+      ],
+      [
+       "2018-03",
+       187204
+      ],
+      [
+       "2018-04",
+       188243
+      ],
+      [
+       "2018-05",
+       189355
+      ],
+      [
+       "2018-06",
+       190102
+      ],
+      [
+       "2018-07",
+       190775
+      ],
+      [
+       "2018-08",
+       191324
+      ],
+      [
+       "2018-09",
+       192086
+      ],
+      [
+       "2018-10",
+       192912
+      ],
+      [
+       "2018-11",
+       193816
+      ],
+      [
+       "2018-12",
+       194763
+      ],
+      [
+       "2019-01",
+       195768
+      ],
+      [
+       "2019-02",
+       196820
+      ],
+      [
+       "2019-03",
+       197746
+      ],
+      [
+       "2019-04",
+       198498
+      ],
+      [
+       "2019-05",
+       199199
+      ],
+      [
+       "2019-06",
+       199903
+      ],
+      [
+       "2019-07",
+       200453
+      ],
+      [
+       "2019-08",
+       200910
+      ],
+      [
+       "2019-09",
+       201237
+      ],
+      [
+       "2019-10",
+       201956
+      ],
+      [
+       "2019-11",
+       203055
+      ],
+      [
+       "2019-12",
+       204360
+      ],
+      [
+       "2020-01",
+       205385
+      ],
+      [
+       "2020-02",
+       206057
+      ],
+      [
+       "2020-03",
+       206787
+      ],
+      [
+       "2020-04",
+       207357
+      ],
+      [
+       "2020-05",
+       207471
+      ],
+      [
+       "2020-06",
+       207430
+      ],
+      [
+       "2020-07",
+       207837
+      ],
+      [
+       "2020-08",
+       208871
+      ],
+      [
+       "2020-09",
+       210320
+      ],
+      [
+       "2020-10",
+       212107
+      ],
+      [
+       "2020-11",
+       214328
+      ],
+      [
+       "2020-12",
+       216390
+      ],
+      [
+       "2021-01",
+       218462
+      ],
+      [
+       "2021-02",
+       220551
+      ],
+      [
+       "2021-03",
+       222973
+      ],
+      [
+       "2021-04",
+       225591
+      ],
+      [
+       "2021-05",
+       228628
+      ],
+      [
+       "2021-06",
+       232128
+      ],
+      [
+       "2021-07",
+       235288
+      ],
+      [
+       "2021-08",
+       237681
+      ],
+      [
+       "2021-09",
+       239360
+      ],
+      [
+       "2021-10",
+       241326
+      ],
+      [
+       "2021-11",
+       243986
+      ],
+      [
+       "2021-12",
+       246816
+      ],
+      [
+       "2022-01",
+       250382
+      ],
+      [
+       "2022-02",
+       254382
+      ],
+      [
+       "2022-03",
+       259401
+      ],
+      [
+       "2022-04",
+       264487
+      ],
+      [
+       "2022-05",
+       269166
+      ],
+      [
+       "2022-06",
+       273296
+      ],
+      [
+       "2022-07",
+       276048
+      ],
+      [
+       "2022-08",
+       277630
+      ],
+      [
+       "2022-09",
+       278076
+      ],
+      [
+       "2022-10",
+       278102
+      ],
+      [
+       "2022-11",
+       277542
+      ],
+      [
+       "2022-12",
+       275992
+      ],
+      [
+       "2023-01",
+       273896
+      ],
+      [
+       "2023-02",
+       271891
+      ],
+      [
+       "2023-03",
+       270736
+      ],
+      [
+       "2023-04",
+       270348
+      ],
+      [
+       "2023-05",
+       270671
+      ],
+      [
+       "2023-06",
+       271531
+      ],
+      [
+       "2023-07",
+       272330
+      ],
+      [
+       "2023-08",
+       273054
+      ],
+      [
+       "2023-09",
+       273123
+      ],
+      [
+       "2023-10",
+       273069
+      ],
+      [
+       "2023-11",
+       272509
+      ],
+      [
+       "2023-12",
+       271670
+      ],
+      [
+       "2024-01",
+       271000
+      ],
+      [
+       "2024-02",
+       270852
+      ],
+      [
+       "2024-03",
+       271456
+      ],
+      [
+       "2024-04",
+       271956
+      ],
+      [
+       "2024-05",
+       272089
+      ],
+      [
+       "2024-06",
+       271577
+      ],
+      [
+       "2024-07",
+       271043
+      ],
+      [
+       "2024-08",
+       270644
+      ],
+      [
+       "2024-09",
+       270662
+      ],
+      [
+       "2024-10",
+       270657
+      ],
+      [
+       "2024-11",
+       270750
+      ],
+      [
+       "2024-12",
+       270984
+      ],
+      [
+       "2025-01",
+       271503
+      ],
+      [
+       "2025-02",
+       272151
+      ],
+      [
+       "2025-03",
+       272399
+      ],
+      [
+       "2025-04",
+       272382
+      ],
+      [
+       "2025-05",
+       271975
+      ],
+      [
+       "2025-06",
+       271440
+      ],
+      [
+       "2025-07",
+       271140
+      ],
+      [
+       "2025-08",
+       270837
+      ],
+      [
+       "2025-09",
+       270643
+      ],
+      [
+       "2025-10",
+       270107
+      ],
+      [
+       "2025-11",
+       269690
+      ],
+      [
+       "2025-12",
+       269509
+      ],
+      [
+       "2026-01",
+       269497
+      ],
+      [
+       "2026-02",
+       269538
+      ],
+      [
+       "2026-03",
+       269219
+      ],
+      [
+       "2026-04",
+       268306
+      ],
+      [
+       "2026-05",
+       266900
+      ],
+      [
+       "2026-06",
+       265318
+      ],
+      [
+       "2026-07",
+       264015
+      ],
+      [
+       "2026-08",
+       263179
+      ]
+     ],
+     "redfin": {
+      "period_end": "2026-05-31",
+      "latest": {
+       "median_sale_price": 246500.0,
+       "median_ppsf": 136.863899996,
+       "homes_sold": 379.0,
+       "inventory": 344.0,
+       "months_of_supply": null,
+       "median_dom": 59.0,
+       "avg_sale_to_list": 0.9046877872,
+       "price_drops": null
+      },
+      "year_ago": {
+       "median_sale_price": 274740.0,
+       "median_ppsf": 148.941695247,
+       "homes_sold": 319.0,
+       "inventory": 405.0,
+       "months_of_supply": null,
+       "median_dom": 63.0,
+       "avg_sale_to_list": 0.9707077687,
+       "price_drops": null
+      },
+      "quarterly": [
+       [
+        "2019-02-28",
+        200000.0,
+        103.086419753
+       ],
+       [
+        "2019-05-31",
+        208000.0,
+        106.842875052
+       ],
+       [
+        "2019-08-31",
+        215000.0,
+        106.969633785
+       ],
+       [
+        "2019-11-30",
+        215000.0,
+        106.432617167
+       ],
+       [
+        "2020-02-29",
+        204995.0,
+        111.703620789
+       ],
+       [
+        "2020-05-31",
+        220000.0,
+        109.663815265
+       ],
+       [
+        "2020-08-31",
+        215216.0,
+        107.715430862
+       ],
+       [
+        "2020-11-30",
+        219000.0,
+        114.052422907
+       ],
+       [
+        "2021-02-28",
+        233888.0,
+        116.133082235
+       ],
+       [
+        "2021-05-31",
+        242470.0,
+        120.206295724
+       ],
+       [
+        "2021-08-31",
+        260000.0,
+        130.662020906
+       ],
+       [
+        "2021-11-30",
+        265000.0,
+        130.866989319
+       ],
+       [
+        "2022-02-28",
+        266000.0,
+        132.042253521
+       ],
+       [
+        "2022-05-31",
+        277500.0,
+        145.141735659
+       ],
+       [
+        "2022-08-31",
+        287500.0,
+        144.275896238
+       ],
+       [
+        "2022-11-30",
+        274995.0,
+        138.888888889
+       ],
+       [
+        "2023-02-28",
+        267000.0,
+        140.285865537
+       ],
+       [
+        "2023-05-31",
+        270000.0,
+        144.997004194
+       ],
+       [
+        "2023-08-31",
+        276775.0,
+        145.652173913
+       ],
+       [
+        "2023-11-30",
+        259495.0,
+        142.687277051
+       ],
+       [
+        "2024-02-29",
+        271890.0,
+        141.636455186
+       ],
+       [
+        "2024-05-31",
+        288000.0,
+        142.925571943
+       ],
+       [
+        "2024-08-31",
+        272020.0,
+        148.586118252
+       ],
+       [
+        "2024-11-30",
+        285500.0,
+        151.920359666
+       ],
+       [
+        "2025-02-28",
+        270000.0,
+        146.25773776
+       ],
+       [
+        "2025-05-31",
+        274740.0,
+        148.941695247
+       ],
+       [
+        "2025-08-31",
+        263990.0,
+        144.336213668
+       ],
+       [
+        "2025-11-30",
+        244870.0,
+        131.684722457
+       ],
+       [
+        "2026-02-28",
+        254340.0,
+        134.39933898
+       ],
+       [
+        "2026-05-31",
+        246500.0,
+        136.863899996
+       ]
+      ]
+     }
+    },
+    {
      "zip": "77535",
      "communities": [
       "hou-river-ranch",
@@ -85148,6 +86953,12 @@
      }
     ]
    },
+   "history": {
+    "reads": [
+     "2026-09-27"
+    ],
+    "gone": []
+   },
    "group_labels": {
     "adopter": "Already buying printed walls",
     "a": "Holds all three counts",
@@ -85830,6 +87641,7 @@
       "rf_mos": null,
       "rf_dom": 72.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -86182,15 +87994,15 @@
          "url": null,
          "ppsf": 230,
          "id": "hf915b61c3",
+         "was": 649900,
+         "address": "2717 Norfolk Drive",
          "beds": 4,
          "fb": 3,
+         "hb": 0,
          "garage": 2,
          "stories": 1,
-         "address": "2717 Norfolk Drive",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2717-norfolk-drive",
-         "was": 649900,
-         "hb": 0,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2717-norfolk-drive"
         },
         {
          "price": 624900,
@@ -86199,15 +88011,15 @@
          "url": null,
          "ppsf": 256,
          "id": "hfbad6378d",
+         "was": 663900,
+         "address": "2820 Norfolk Drive",
          "beds": 4,
          "fb": 3,
+         "hb": 0,
          "garage": 2,
          "stories": 1,
-         "address": "2820 Norfolk Drive",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2820-norfolk-drive",
-         "was": 663900,
-         "hb": 0,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2820-norfolk-drive"
         },
         {
          "price": 624900,
@@ -86216,15 +88028,15 @@
          "url": null,
          "ppsf": 246,
          "id": "h76954317b",
+         "was": 660900,
+         "address": "2652 Buckingham Lane",
          "beds": 4,
          "fb": 3,
+         "hb": 0,
          "garage": 2,
          "stories": 1,
-         "address": "2652 Buckingham Lane",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2652-buckingham-lane",
-         "was": 660900,
-         "hb": 0,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2652-buckingham-lane"
         },
         {
          "price": 649900,
@@ -86233,15 +88045,15 @@
          "url": null,
          "ppsf": 252,
          "id": "he5b4e2911",
+         "was": 678900,
+         "address": "2809 Norfolk Drive",
          "beds": 4,
          "fb": 3,
+         "hb": 1,
          "garage": 2,
          "stories": 1,
-         "address": "2809 Norfolk Drive",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2809-norfolk-drive",
-         "was": 678900,
-         "hb": 1,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2809-norfolk-drive"
         },
         {
          "price": 674900,
@@ -86250,15 +88062,15 @@
          "url": null,
          "ppsf": 225,
          "id": "hb654b5bbf",
+         "was": 737900,
+         "address": "2805 Norfolk Drive",
          "beds": 4,
          "fb": 3,
+         "hb": 1,
          "garage": 3,
          "stories": 2,
-         "address": "2805 Norfolk Drive",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2805-norfolk-drive",
-         "was": 737900,
-         "hb": 1,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/cambridge-crossing/cambridge-crossing-50/2805-norfolk-drive"
         }
        ],
        "qmi_ppsf": 246,
@@ -86413,6 +88225,27 @@
       "rf_sold": 401.0,
       "rf_mos": null,
       "rf_dom": 119.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1968,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/celina/cambridge-crossing",
+        "builder": "UnionMain Homes",
+        "quote": "ils Fitness Center Amenity Center HOA Home Owners Association assessments are $1968 annually. Taxes Total Estimated T"
+       },
+       {
+        "amount": 1668,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/celina/cambridge-crossing",
+        "builder": "UnionMain Homes",
+        "quote": "homeowner's assocation at Cambridge Crossing? The Homeowners Association (HOA) assessments are $1,668 per year and cover community main"
+       }
+      ]
      },
      "counties": [
       "Collin"
@@ -86734,6 +88567,17 @@
       "rf_mos": null,
       "rf_dom": 36.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.74,
+        "url": "https://www.amlegendhomes.com/communities/texas/lewisville/castle-hills-northpointe-townhomes",
+        "builder": "American Legend Homes",
+        "quote": "astle Hills Northpointe? Castle Hills Northpointe tax rate is 1.74% No MUD No PID What are t"
+       }
+      ],
+      "hoa": []
+     },
      "counties": [
       "Denton"
      ],
@@ -86961,6 +88805,7 @@
       "rf_mos": null,
       "rf_dom": 85.0
      },
+     "fees": null,
      "counties": [
       "Tarrant"
      ]
@@ -87436,6 +89281,26 @@
       "rf_sold": 298.0,
       "rf_mos": null,
       "rf_dom": 99.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.07,
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/royse-city/creekside",
+        "builder": "UnionMain Homes",
+        "quote": "e community page currently publishes an estimated total tax rate of approximately 2.07%. Buyers should confirm w"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 572,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/royse-city/creekside",
+        "builder": "UnionMain Homes",
+        "quote": "menities Swimming Pool Playground HOA Home Owners Association assessments are $572 annually. Taxes Total Estimated T"
+       }
+      ]
      },
      "counties": [
       "Rockwall"
@@ -88102,6 +89967,7 @@
       "rf_mos": null,
       "rf_dom": 82.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "45",
@@ -88358,6 +90224,7 @@
       "rf_mos": null,
       "rf_dom": 72.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "39",
@@ -89550,6 +91417,19 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1860,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/lavon/elevon",
+        "builder": "UnionMain Homes",
+        "quote": "Playground Hiking & Biking Trails HOA Home Owners Association assessments are $1860 annually. Taxes Total Estimated T"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "31t",
@@ -89799,6 +91679,19 @@
       "rf_sold": 170.0,
       "rf_mos": null,
       "rf_dom": 38.5
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1800,
+        "to": null,
+        "per": "year",
+        "url": "https://landonhomes.com/new-home-communities/east-village-classic-series/",
+        "builder": "Landon Homes",
+        "quote": "nnected to Frisco's miles of hike and bike trails HOA $1,800/Year Convenient access to DNT"
+       }
+      ]
      },
      "counties": [
       "Denton"
@@ -90646,6 +92539,19 @@
       "rf_mos": null,
       "rf_dom": 58.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1950,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/bartonville/furst-ranch",
+        "builder": "David Weekley Homes",
+        "quote": "site Tax Info Taxes: $2.718638 per $100 valuation HOA: $1,950/year or $162.50/mo. Visit the"
+       }
+      ]
+     },
      "counties": [
       "Denton"
      ]
@@ -91084,6 +92990,7 @@
       "rf_mos": null,
       "rf_dom": 82.0
      },
+     "fees": null,
      "counties": [
       "Kaufman"
      ]
@@ -91925,6 +93832,7 @@
       "rf_mos": null,
       "rf_dom": 70.0
      },
+     "fees": null,
      "counties": [
       "Ellis"
      ],
@@ -92209,6 +94117,19 @@
       "rf_sold": 285.0,
       "rf_mos": null,
       "rf_dom": 58.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 2070,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/argyle/retreat-at-harvest-gardens",
+        "builder": "David Weekley Homes",
+        "quote": "Northlake Police Department 940-648-3290 Tax Info HOA: $2,070/year - Includes Cable and Int"
+       }
+      ]
      },
      "rclco": [
       {
@@ -93097,6 +95018,7 @@
       "rf_mos": null,
       "rf_dom": 68.5
      },
+     "fees": null,
      "counties": [
       "Kaufman"
      ],
@@ -93669,6 +95591,26 @@
       "rf_mos": null,
       "rf_dom": 53.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.3,
+        "url": "https://www.firsttexashomes.com/community/lucas/16494/inspiration/",
+        "builder": "First Texas Homes",
+        "quote": "4) From the $460,000's Sq Ft Range: 1,817 - 3,744 Tax Rate: 2.3% HOA Dues: $1,740 (Annual"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1740,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/lucas/16494/inspiration/",
+        "builder": "First Texas Homes",
+        "quote": "0,000's Sq Ft Range: 1,817 - 3,744 Tax Rate: 2.3% HOA Dues: $1,740 (Annually) School District: Wylie"
+       }
+      ]
+     },
      "counties": [
       "Collin"
      ],
@@ -93994,6 +95936,19 @@
       "rf_mos": null,
       "rf_dom": 85.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 354,
+        "to": null,
+        "per": "month",
+        "url": "https://cadencehomestx.com/new-home-communities/townhomes-crowley-tx-karis/",
+        "builder": "Cadence Homes",
+        "quote": "hat does the HOA cover at Karis? Monthly townhome association dues are approximately $354 per month and cover a variety of s"
+       }
+      ]
+     },
      "counties": [
       "Tarrant"
      ],
@@ -94231,6 +96186,7 @@
       "rf_mos": null,
       "rf_dom": 146.5
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "48t",
@@ -95200,6 +97156,19 @@
       "rf_sold": 91.0,
       "rf_mos": null,
       "rf_dom": 50.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1600,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/denton/landmark",
+        "builder": "David Weekley Homes",
+        "quote": "877-342-7270 Fiber: Centric 877-342-7270 Tax Info HOA: $1,600/year, paid semi-annually. Cen"
+       }
+      ]
      },
      "counties": [
       "Denton"
@@ -96925,6 +98894,38 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.06,
+        "url": "https://www.firsttexashomes.com/community/celina/18189/the-bluffs-at-legacy-hills/",
+        "builder": "First Texas Homes",
+        "quote": "6) From the $390,000's Sq Ft Range: 1,762 - 4,302 Tax Rate: 2.06% HOA Dues: $1,130 (Annual"
+       },
+       {
+        "rate": 2.49,
+        "url": "https://unionmainhomes.com/legacy-hills/",
+        "builder": "UnionMain Homes",
+        "quote": "e community page currently publishes an estimated total tax rate of approximately 2.49%. Buyers should confirm t"
+       },
+       {
+        "rate": 2.48,
+        "url": "https://www.windsorhomestexas.com/communities/celina/brookshire-at-legacy-hills",
+        "builder": "Windsor Homes",
+        "quote": "tes 3-Car Garage options available on select lots Tax Rate 2.48% HOA Dues approx. $107per"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1130,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/celina/18189/the-bluffs-at-legacy-hills/",
+        "builder": "First Texas Homes",
+        "quote": ",000's Sq Ft Range: 1,762 - 4,302 Tax Rate: 2.06% HOA Dues: $1,130 (Annually) School District: Celina"
+       }
+      ]
+     },
      "counties": [
       "Collin"
      ],
@@ -97116,6 +99117,7 @@
       "rf_mos": null,
       "rf_dom": 65.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ],
@@ -97318,6 +99320,7 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ],
@@ -97549,6 +99552,7 @@
       "rf_mos": null,
       "rf_dom": 59.0
      },
+     "fees": null,
      "counties": [
       "Denton"
      ],
@@ -98293,6 +100297,26 @@
       "rf_mos": null,
       "rf_dom": 82.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.75,
+        "url": "https://www.amlegendhomes.com/communities/texas/forney/meraki",
+        "builder": "American Legend Homes",
+        "quote": "n County. What is the tax rate for Meraki? Meraki tax rate is 2.75%. Meraki’s MUD (Ledbetter"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 780,
+        "to": null,
+        "per": "year",
+        "url": "https://www.amlegendhomes.com/communities/texas/forney/meraki",
+        "builder": "American Legend Homes",
+        "quote": "he district. What are the HOA dues in Meraki? The HOA dues in Meraki are $780 annually. What are the amenities"
+       }
+      ]
+     },
      "counties": [
       "Kaufman"
      ]
@@ -98549,6 +100573,26 @@
       "rf_sold": 42.0,
       "rf_mos": null,
       "rf_dom": 45.5
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.39,
+        "url": "https://www.firsttexashomes.com/community/grand-prairie/16496/mira-lagos-crossing/",
+        "builder": "First Texas Homes",
+        "quote": "e Plans: (0) From the $570,000's Sq Ft Range: TBD Tax Rate: 2.39% HOA Dues: $1,480 (Annual"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1480,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/grand-prairie/16496/mira-lagos-crossing/",
+        "builder": "First Texas Homes",
+        "quote": "m the $570,000's Sq Ft Range: TBD Tax Rate: 2.39% HOA Dues: $1,480 (Annually) School District: Mansfi"
+       }
+      ]
      },
      "counties": [
       "Tarrant"
@@ -98924,6 +100968,7 @@
       "rf_mos": null,
       "rf_dom": 80.0
      },
+     "fees": null,
      "counties": [
       "Denton"
      ]
@@ -99258,6 +101303,7 @@
       "rf_mos": null,
       "rf_dom": 68.0
      },
+     "fees": null,
      "counties": [
       "Parker"
      ]
@@ -100136,6 +102182,7 @@
       "rf_mos": null,
       "rf_dom": 74.5
      },
+     "fees": null,
      "counties": [
       "Denton"
      ],
@@ -101036,15 +103083,15 @@
          "url": null,
          "ppsf": 255,
          "id": "h28d4f37e2",
-         "beds": 4,
-         "fb": 3,
-         "garage": 2,
-         "stories": 1,
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2905-genuine-risk-court",
          "was": 725900,
          "address": "2905 Genuine Risk Court",
+         "beds": 4,
+         "fb": 3,
          "hb": 0,
-         "status": "Move-In Ready"
+         "garage": 2,
+         "stories": 1,
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2905-genuine-risk-court"
         },
         {
          "price": 599900,
@@ -101053,15 +103100,15 @@
          "url": null,
          "ppsf": 236,
          "id": "h6c2af1261",
+         "was": 716900,
+         "address": "2717 Genuine Risk Court",
          "beds": 4,
          "fb": 3,
+         "hb": 0,
          "garage": 2,
          "stories": 1,
-         "address": "2717 Genuine Risk Court",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2717-genuine-risk-court",
-         "was": 716900,
-         "hb": 0,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2717-genuine-risk-court"
         },
         {
          "price": 599900,
@@ -101070,15 +103117,15 @@
          "url": null,
          "ppsf": 255,
          "id": "hc595b441d",
-         "beds": 4,
-         "fb": 3,
-         "garage": 2,
-         "stories": 1,
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2713-genuine-risk-court",
          "was": 715900,
          "address": "2713 Genuine Risk Court",
+         "beds": 4,
+         "fb": 3,
          "hb": 0,
-         "status": "Move-In Ready"
+         "garage": 2,
+         "stories": 1,
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2713-genuine-risk-court"
         },
         {
          "price": 624900,
@@ -101087,15 +103134,15 @@
          "url": null,
          "ppsf": 243,
          "id": "h89b0a3600",
+         "was": 732900,
+         "address": "2708 Genuine Risk Court",
          "beds": 4,
          "fb": 3,
+         "hb": 0,
          "garage": 2,
          "stories": 1,
-         "address": "2708 Genuine Risk Court",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2708-genuine-risk-court",
-         "was": 732900,
-         "hb": 0,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2708-genuine-risk-court"
         },
         {
          "price": 649900,
@@ -101104,15 +103151,15 @@
          "url": null,
          "ppsf": 252,
          "id": "hbab513ccf",
+         "was": 743900,
+         "address": "2821 Genuine Risk Court",
          "beds": 4,
          "fb": 3,
          "hb": 1,
          "garage": 2,
          "stories": 1,
-         "address": "2821 Genuine Risk Court",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2821-genuine-risk-court",
-         "was": 743900,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/mustang-lakes/mustang-lakes-50/2821-genuine-risk-court"
         }
        ],
        "qmi_ppsf": 252,
@@ -101394,6 +103441,27 @@
       "rf_sold": 401.0,
       "rf_mos": null,
       "rf_dom": 119.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 150,
+        "to": null,
+        "per": "month",
+        "url": "https://www.amlegendhomes.com/communities/texas/celina/mustang-lakes-villas",
+        "builder": "American Legend Homes",
+        "quote": "hat are the HOA dues in Mustang Lakes Villas? The HOA dues in Mustang Lakes Villas are $150/month. Includes front yard mai"
+       },
+       {
+        "amount": 162,
+        "to": null,
+        "per": "month",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/celina/mustang-lakes",
+        "builder": "David Weekley Homes",
+        "quote": "na, TX 75009 469-742-9102 School Website Tax Info HOA: $162/monthly Tax Rate: 2.015864% Visi"
+       }
+      ]
      },
      "counties": [
       "Collin"
@@ -102098,6 +104166,19 @@
       "rf_mos": null,
       "rf_dom": 72.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 1300,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/waxahachie/myrtle-creek",
+        "builder": "UnionMain Homes",
+        "quote": "ng Trails Recreational Facilities HOA Home Owners Association assessments are $1300 annually. Taxes Total: 2.652092%"
+       }
+      ]
+     },
      "counties": [
       "Ellis"
      ]
@@ -102414,6 +104495,7 @@
       "rf_mos": null,
       "rf_dom": 111.0
      },
+     "fees": null,
      "counties": [
       "Kaufman"
      ]
@@ -103734,7 +105816,7 @@
          "garage": 2,
          "stories": 2.0,
          "address": "4013 Bentsen Street",
-         "status": "Ready November 3928",
+         "status": "Ready November",
          "src": "https://southgatehomes.com/communities/painted-tree-50-series/"
         },
         {
@@ -103749,7 +105831,7 @@
          "garage": 3,
          "stories": 2.0,
          "address": "3928 Launch Road",
-         "status": "Ready November 3912",
+         "status": "Ready November",
          "src": "https://southgatehomes.com/communities/painted-tree-50-series/"
         }
        ],
@@ -104129,6 +106211,19 @@
       "rf_sold": 630.0,
       "rf_mos": null,
       "rf_dom": 72.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 395,
+        "to": null,
+        "per": "month",
+        "url": "https://cbjenihomes.com/communities/painted-tree-woodlands/",
+        "builder": "CB JENI Homes",
+        "quote": "er at Painted Tree? Monthly dues for the townhome association are approximately $395 per month ($305 Townhome + $90 Mas"
+       }
+      ]
      },
      "rclco": [
       {
@@ -105192,6 +107287,19 @@
       "rf_mos": null,
       "rf_dom": 76.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 2260,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/northlake/pecan-square",
+        "builder": "David Weekley Homes",
+        "quote": "ste Connections Sewer: Town of Northlake Tax Info HOA: $2,260/Annually Includes Frontier 2G Int"
+       }
+      ]
+     },
      "rclco": [
       {
        "rank": "45",
@@ -105928,6 +108036,26 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.016,
+        "url": "https://www.amlegendhomes.com/communities/texas/celina/ramble",
+        "builder": "American Legend Homes",
+        "quote": "llin County. What is the tax rate for Ramble? The tax rate for Ramble is 2.016% What are the HOA dues fo"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1950,
+        "to": 2250,
+        "per": "year",
+        "url": "https://www.amlegendhomes.com/communities/texas/celina/ramble",
+        "builder": "American Legend Homes",
+        "quote": "e is 2.016% What are the HOA dues for Ramble? The HOA dues for Ramble are $1,950 - $2,250 annually. Depending on lot size."
+       }
+      ]
+     },
      "counties": [
       "Collin"
      ]
@@ -106493,6 +108621,19 @@
       "rf_mos": null,
       "rf_dom": 70.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 780,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/midlothian/redden-farms-executive-series",
+        "builder": "David Weekley Homes",
+        "quote": "Newspaper Midlothian Mirror 972-937-3310 Tax Info HOA: $780 per year Taxes: Total - $2.5% Vis"
+       }
+      ]
+     },
      "counties": [
       "Ellis"
      ],
@@ -106697,6 +108838,19 @@
       "rf_sold": 200.0,
       "rf_mos": null,
       "rf_dom": 51.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 600,
+        "to": null,
+        "per": "year",
+        "url": "https://www.drhorton.com/texas/fort-worth/fort-worth/rosewood-at-beltmill",
+        "builder": "D.R. Horton (Express Homes)",
+        "quote": "of a new construction community with a manageable HOA ($600 annually). This community is zone"
+       }
+      ]
      },
      "rclco": [
       {
@@ -107319,6 +109473,19 @@
       "rf_mos": null,
       "rf_dom": 60.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 924,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/aubrey/sandbrock-ranch",
+        "builder": "David Weekley Homes",
+        "quote": "ey, TX 76227 972-347-7700 School Website Tax Info HOA: $924 annually/$243 paid quarterly Taxe"
+       }
+      ]
+     },
      "counties": [
       "Denton"
      ],
@@ -107555,6 +109722,7 @@
       "rf_mos": null,
       "rf_dom": 60.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "20t",
@@ -108330,6 +110498,32 @@
       "rf_mos": null,
       "rf_dom": 67.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 3.12,
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/mesquite/solterra-cottage-series",
+        "builder": "David Weekley Homes",
+        "quote": "Parkland Hospital: 0.2358 Solterra PID: 0.607615 Total Tax Rate: 3.120% Visit the Community Open"
+       },
+       {
+        "rate": 2.35,
+        "url": "https://www.firsttexashomes.com/community/mesquite/16543/solterra/",
+        "builder": "First Texas Homes",
+        "quote": "2) From the $360,000's Sq Ft Range: 1,762 - 3,502 Tax Rate: 2.35% HOA Dues: $1,250 (Annual"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1250,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/mesquite/solterra-cottage-series",
+        "builder": "David Weekley Homes",
+        "quote": "te, TX 75149 972-882-5200 School Website Tax Info HOA: $1,250 per year City of Mesquite: 0.6581"
+       }
+      ]
+     },
      "counties": [
       "Dallas"
      ]
@@ -108879,6 +111073,7 @@
       "rf_mos": null,
       "rf_dom": 63.0
      },
+     "fees": null,
      "counties": [
       "Johnson"
      ]
@@ -109353,6 +111548,7 @@
       "rf_mos": null,
       "rf_dom": 72.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -109898,6 +112094,26 @@
       "rf_sold": 326.0,
       "rf_mos": null,
       "rf_dom": 75.0
+     },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.94,
+        "url": "https://www.firsttexashomes.com/community/little-elm/16549/spiritas-ranch/",
+        "builder": "First Texas Homes",
+        "quote": "6) From the $460,000's Sq Ft Range: 2,122 - 4,302 Tax Rate: 1.94% HOA Dues: $900 (Annually"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 900,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/little-elm/16549/spiritas-ranch/",
+        "builder": "First Texas Homes",
+        "quote": ",000's Sq Ft Range: 2,122 - 4,302 Tax Rate: 1.94% HOA Dues: $900 (Annually) School District: Denton"
+       }
+      ]
      },
      "counties": [
       "Denton"
@@ -110591,6 +112807,26 @@
       "rf_mos": null,
       "rf_dom": 74.5
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.95,
+        "url": "https://www.amlegendhomes.com/communities/texas/prosper/star-trail",
+        "builder": "American Legend Homes",
+        "quote": "on County What is the tax rate in Star Trail? The tax rate in Star Trail is 1.95%. No MUD No PID What are"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 127,
+        "to": null,
+        "per": "month",
+        "url": "https://www.amlegendhomes.com/communities/texas/prosper/star-trail",
+        "builder": "American Legend Homes",
+        "quote": "D No PID What are the HOA dues in Star Trail? The HOA dues in Star Trail are $127 per month - billed quarterly at $3"
+       }
+      ]
+     },
      "counties": [
       "Collin",
       "Denton"
@@ -111029,6 +113265,7 @@
       "rf_mos": null,
       "rf_dom": 60.0
      },
+     "fees": null,
      "counties": [
       "Dallas"
      ]
@@ -111717,6 +113954,26 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.98,
+        "url": "https://www.firsttexashomes.com/community/celina/16498/sutton-fields/",
+        "builder": "First Texas Homes",
+        "quote": "5) From the $480,000's Sq Ft Range: 1,924 - 4,302 Tax Rate: 1.98% HOA Dues: $550 (Annually"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 550,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/celina/16498/sutton-fields/",
+        "builder": "First Texas Homes",
+        "quote": ",000's Sq Ft Range: 1,924 - 4,302 Tax Rate: 1.98% HOA Dues: $550 (Annually) School District: Prospe"
+       }
+      ]
+     },
      "counties": [
       "Collin"
      ]
@@ -112023,6 +114280,7 @@
       "rf_mos": null,
       "rf_dom": 74.5
      },
+     "fees": null,
      "counties": [
       "Tarrant"
      ]
@@ -112424,6 +114682,7 @@
       "rf_mos": null,
       "rf_dom": 78.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -113256,6 +115515,42 @@
       "rf_mos": null,
       "rf_dom": 76.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.475,
+        "url": "https://www.amlegendhomes.com/communities/texas/justin/treeline",
+        "builder": "American Legend Homes",
+        "quote": "unty. What is the tax rate for Treeline? Treeline tax rate is 2.475%. What are the HOA dues f"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1970,
+        "to": null,
+        "per": "year",
+        "url": "https://www.amlegendhomes.com/communities/texas/justin/treeline",
+        "builder": "American Legend Homes",
+        "quote": "s 2.475%. What are the HOA dues for Treeline? The HOA dues are $1,970 annually in Treeline. What are th"
+       },
+       {
+        "amount": 1975,
+        "to": null,
+        "per": "year",
+        "url": "https://www.drhorton.com/texas/fort-worth/justin/treeline",
+        "builder": "D.R. Horton",
+        "quote": "ailable for residents to enjoy. With a reasonable HOA fee of $1,975 annually, Treeline offers both af"
+       },
+       {
+        "amount": 1255,
+        "to": null,
+        "per": "year",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/justin/treeline",
+        "builder": "David Weekley Homes",
+        "quote": "-274-4014 Internet: Centric 281-252-6700 Tax Info HOA: $1,255 Annual Dues $720 for front yard"
+       }
+      ]
+     },
      "counties": [
       "Denton"
      ]
@@ -114015,15 +116310,15 @@
          "url": null,
          "ppsf": 238,
          "id": "hced9e023e",
+         "was": 561900,
+         "address": "8425 Donaho Trail",
          "beds": 4,
          "fb": 2,
          "hb": 0,
-         "address": "8425 Donaho Trail",
-         "status": "Move-In Ready",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-45/8425-donaho-trail",
-         "was": 561900,
          "garage": 2,
-         "stories": 1
+         "stories": 1,
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-45/8425-donaho-trail"
         },
         {
          "price": 474900,
@@ -114032,15 +116327,15 @@
          "url": null,
          "ppsf": 244,
          "id": "h392a5d148",
+         "was": 548900,
+         "address": "2712 Shady Branch Lane",
          "beds": 3,
          "fb": 2,
          "hb": 1,
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-45/2712-shady-branch-lane",
-         "was": 548900,
-         "address": "2712 Shady Branch Lane",
          "garage": 2,
          "stories": 1,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-45/2712-shady-branch-lane"
         },
         {
          "price": 474900,
@@ -114049,15 +116344,15 @@
          "url": null,
          "ppsf": 244,
          "id": "hed7be5a25",
+         "was": 551900,
+         "address": "436 Spruce Brook Drive",
          "beds": 3,
          "fb": 2,
          "hb": 1,
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/436-spruce-brook-drive",
-         "was": 551900,
-         "address": "436 Spruce Brook Drive",
          "garage": 2,
          "stories": 1,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/436-spruce-brook-drive"
         },
         {
          "price": 499900,
@@ -114066,15 +116361,15 @@
          "url": null,
          "ppsf": 256,
          "id": "h8d32da79e",
+         "was": 551900,
+         "address": "7312 Pinales Way",
          "beds": 3,
          "fb": 2,
          "hb": 1,
-         "address": "7312 Pinales Way",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/7312-pinales-way",
-         "was": 551900,
          "garage": 2,
          "stories": 1,
-         "status": "Move-In Ready"
+         "status": "Move-In Ready",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/7312-pinales-way"
         },
         {
          "price": 524900,
@@ -114083,15 +116378,15 @@
          "url": null,
          "ppsf": 270,
          "id": "h89029a69d",
+         "was": 560900,
+         "address": "416 Spruce Brook Drive",
          "beds": 4,
          "fb": 3,
          "hb": 0,
-         "address": "416 Spruce Brook Drive",
-         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/416-spruce-brook-drive",
-         "was": 560900,
          "garage": 2,
          "stories": 1,
-         "status": "Under Construction"
+         "status": "Under Construction",
+         "src": "https://www.perryhomes.com/new-homes/texas/dallas/trinity-falls/trinity-falls-at-province-woods-45/416-spruce-brook-drive"
         }
        ],
        "qmi_ppsf": 244,
@@ -114143,6 +116438,7 @@
       "rf_mos": null,
       "rf_dom": 72.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ],
@@ -114626,6 +116922,7 @@
       "rf_mos": null,
       "rf_dom": 60.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "39",
@@ -115175,6 +117472,26 @@
       "rf_mos": null,
       "rf_dom": 50.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.24,
+        "url": "https://www.amlegendhomes.com/communities/texas/fort-worth/ventana",
+        "builder": "American Legend Homes",
+        "quote": "ant County. What is the tax rate for Ventana? The tax rate for Ventana is 2.24%. Currently there is NO P"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 960,
+        "to": null,
+        "per": "year",
+        "url": "https://www.amlegendhomes.com/communities/texas/fort-worth/ventana",
+        "builder": "American Legend Homes",
+        "quote": "Dues in Ventana and what do they include? Ventana HOA dues are $960 annually which includes: Use of a"
+       }
+      ]
+     },
      "counties": [
       "Tarrant"
      ]
@@ -115636,6 +117953,7 @@
       "rf_mos": null,
       "rf_dom": 99.0
      },
+     "fees": null,
      "counties": [
       "Hunt"
      ],
@@ -116371,6 +118689,26 @@
       "rf_mos": null,
       "rf_dom": 106.5
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 1.99,
+        "url": "https://www.firsttexashomes.com/community/anna/16513/the-villages-of-hurricane-creek/",
+        "builder": "First Texas Homes",
+        "quote": "9) From the $290,000's Sq Ft Range: 1,546 - 4,302 Tax Rate: 1.99% HOA Dues: $1,080 (Annual"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 1080,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/anna/16513/the-villages-of-hurricane-creek/",
+        "builder": "First Texas Homes",
+        "quote": ",000's Sq Ft Range: 1,546 - 4,302 Tax Rate: 1.99% HOA Dues: $1,080 (Annually) School District: Anna I"
+       }
+      ]
+     },
      "counties": [
       "Collin"
      ],
@@ -116829,6 +119167,7 @@
       "rf_mos": null,
       "rf_dom": 66.5
      },
+     "fees": null,
      "counties": [
       "Tarrant"
      ]
@@ -117488,6 +119827,19 @@
       "rf_sold": 434.0,
       "rf_mos": null,
       "rf_dom": 82.0
+     },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 800,
+        "to": null,
+        "per": "year",
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/forney/walden-pond",
+        "builder": "UnionMain Homes",
+        "quote": "Playground Hiking & Biking Trails HOA Home Owners Association assessments are $800 annually. Taxes Total Estimated T"
+       }
+      ]
      },
      "counties": [
       "Kaufman"
@@ -118522,6 +120874,35 @@
       "rf_mos": null,
       "rf_dom": 68.0
      },
+     "fees": {
+      "tax": [],
+      "hoa": [
+       {
+        "amount": 233,
+        "to": null,
+        "per": "month",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/fort-worth/walsh-classic",
+        "builder": "David Weekley Homes",
+        "quote": "Newspaper: FW Star Telegram 800-776-7827 Tax Info HOA: $233/month Taxes: 2.56% Visit the C"
+       },
+       {
+        "amount": 223,
+        "to": null,
+        "per": "month",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/fort-worth/walsh-cottage",
+        "builder": "David Weekley Homes",
+        "quote": "Newspaper: FW Star Telegram 800-776-7827 Tax Info HOA: $223/month Taxes: 2.56% Visit the C"
+       },
+       {
+        "amount": 187,
+        "to": null,
+        "per": "month",
+        "url": "https://www.davidweekleyhomes.com/new-homes/tx/dallas-ft-worth/fort-worth/walsh-gardens",
+        "builder": "David Weekley Homes",
+        "quote": "Newspaper: FW Star Telegram 800-776-7827 Tax Info HOA: $187/month Taxes: 2.8% Visit the Co"
+       }
+      ]
+     },
      "counties": [
       "Parker"
      ],
@@ -118954,6 +121335,7 @@
       "rf_mos": null,
       "rf_dom": 99.0
      },
+     "fees": null,
      "counties": [
       "Rockwall"
      ],
@@ -119468,6 +121850,7 @@
       "rf_mos": null,
       "rf_dom": 50.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ],
@@ -119881,6 +122264,7 @@
       "rf_mos": null,
       "rf_dom": 68.5
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "43",
@@ -121393,6 +123777,17 @@
       "rf_mos": null,
       "rf_dom": 76.0
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.27,
+        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/justin/wildflower-ranch",
+        "builder": "UnionMain Homes",
+        "quote": "Event Area Playground Outdoor Events Taxes Total Estimated Tax Rate: 2.27% Northwest ISD Perrin Ele"
+       }
+      ],
+      "hoa": []
+     },
      "counties": [
       "Denton"
      ],
@@ -121584,6 +123979,7 @@
       "rf_mos": null,
       "rf_dom": 50.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "50t",
@@ -121864,6 +124260,7 @@
       "rf_mos": null,
       "rf_dom": 82.0
      },
+     "fees": null,
      "counties": [
       "Kaufman"
      ]
@@ -122012,7 +124409,7 @@
          "garage": 5,
          "stories": 2.0,
          "address": "3651 Whimbrel Court",
-         "status": "Ready October 3520",
+         "status": "Ready October",
          "src": "https://southgatehomes.com/communities/windsong-ranch/"
         },
         {
@@ -122028,7 +124425,7 @@
          "garage": 3,
          "stories": 2.0,
          "address": "3520 Whimbrel Court",
-         "status": "Ready October 4081",
+         "status": "Ready October",
          "src": "https://southgatehomes.com/communities/windsong-ranch/"
         }
        ],
@@ -122074,6 +124471,7 @@
       "rf_mos": null,
       "rf_dom": 74.5
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "18",
@@ -122448,6 +124846,26 @@
       "rf_mos": null,
       "rf_dom": 87.5
      },
+     "fees": {
+      "tax": [
+       {
+        "rate": 2.36,
+        "url": "https://www.firsttexashomes.com/community/fate/16497/woodcreek/",
+        "builder": "First Texas Homes",
+        "quote": "e Plans: (0) From the $610,000's Sq Ft Range: TBD Tax Rate: 2.36% HOA Dues: $720 (Annually"
+       }
+      ],
+      "hoa": [
+       {
+        "amount": 720,
+        "to": null,
+        "per": "year",
+        "url": "https://www.firsttexashomes.com/community/fate/16497/woodcreek/",
+        "builder": "First Texas Homes",
+        "quote": "m the $610,000's Sq Ft Range: TBD Tax Rate: 2.36% HOA Dues: $720 (Annually) School District: Rockwa"
+       }
+      ]
+     },
      "counties": [
       "Rockwall"
      ],
@@ -122704,6 +125122,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "counties": [
       "Denton"
      ]
@@ -122889,6 +125308,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -123068,6 +125488,7 @@
       "rf_mos": null,
       "rf_dom": 58.0
      },
+     "fees": null,
      "counties": [
       "Denton"
      ]
@@ -123271,6 +125692,7 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -123401,6 +125823,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "counties": []
     },
     {
@@ -123522,6 +125945,7 @@
       "rf_mos": null,
       "rf_dom": 119.0
      },
+     "fees": null,
      "rclco": [
       {
        "rank": "52",
@@ -123772,6 +126196,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "counties": [
       "Collin"
      ]
@@ -123979,6 +126404,7 @@
       "rf_mos": null,
       "rf_dom": 82.0
      },
+     "fees": null,
      "counties": [
       "Kaufman"
      ]
@@ -124047,6 +126473,7 @@
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
      "zip_market": null,
+     "fees": null,
      "rclco": [
       {
        "rank": "44",
@@ -162142,6 +164569,12 @@
       "value_per_unit": 285467
      }
     ]
+   },
+   "history": {
+    "reads": [
+     "2026-09-27"
+    ],
+    "gone": []
    },
    "group_labels": {
     "adopter": "Already buying printed walls",
