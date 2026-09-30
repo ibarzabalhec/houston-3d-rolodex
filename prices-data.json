@@ -1634,11 +1634,6 @@
        "date": "2025-10"
       },
       {
-       "text": "Lennar Anniston page: $219,991 - $495,990; 75 homes available; 8 collections (Fairway II Coming Soon); HOA $183.33; tax rate 3.32.",
-       "url": "https://www.lennar.com/new-homes/texas/houston/katy/anniston",
-       "date": "2026-09-27"
-      },
-      {
        "text": "Friendswood Development lists Lennar as the only builder at Anniston; Katy ISD; approx HOA fees $183.33.",
        "url": "https://friendswooddevelopment.com/communities/master-planned/anniston",
        "date": "2026-09-27"
@@ -4508,9 +4503,9 @@
        "date": "2026-09-27"
       },
       {
-       "text": "Lennar lists Scott's Bend as a master-planned community at Baytown Crossings: $193,991 - $477,990, 48 homes available, 5 collections, HOA $191.66, tax rate 3.3.",
-       "url": "https://www.lennar.com/new-homes/texas/houston/baytown/scotts-bend",
-       "date": "2026-09-27"
+       "text": "RCLCO 2023 ranking: No. 19, 638 sales.",
+       "url": "https://houstonagentmagazine.com/2024/01/08/rclco-top-50-master-planned-communities-2023/",
+       "date": "2024-01-08"
       },
       {
        "text": "RCLCO mid-2024 ranking: No. 35, 264 sales in the first half of 2024 (306 a year earlier).",
@@ -5143,6 +5138,11 @@
        "text": "356-acre master-planned community expected to accommodate 1,300 single-family homes; phase one homesites 40 to 50 feet; open for home sales May 1, 2024.",
        "url": "https://www.signorellicompany.com/press/716/the-signorelli-company-announces-bluestem-community-open-for-home-sales",
        "date": "2024-05"
+      },
+      {
+       "text": "Community homefinder: 26 available homes, 388 available homesites, 42 floorplans, 3 models.",
+       "url": "https://www.bluestemtx.com/find-a-home",
+       "date": "2026-09"
       },
       {
        "text": "Bluestem total tax rate 3.076104%; annual HOA fee $700.",
@@ -5888,6 +5888,11 @@
      "status": "active",
      "price_text": null,
      "facts": [
+      {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 500 sales, No. 9 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
+      },
       {
        "text": "RCLCO 2025 rank 11, 812 sales in 2025, 938 in 2024.",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
@@ -13497,6 +13502,11 @@
        "date": "2026-09-27"
       },
       {
+       "text": "Long Lake describes Cypress Green as a 635-acre master-planned community; Colina Homes states 850 acres.",
+       "url": "https://www.longlakeltd.com/new-homes/communities/cypress-green/",
+       "date": "2026-09-27"
+      },
+      {
        "text": "CastleRock: annual HOA fee $1000; total tax rate 3.39%.",
        "url": "https://www.c-rock.com/community/texas/houston/cypress_green",
        "date": "2026-09-27"
@@ -15051,6 +15061,11 @@
      "status": "active",
      "price_text": null,
      "facts": [
+      {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 227 sales, No. 43 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
+      },
       {
        "text": "RCLCO 2025 rank 41, 413 sales in 2025, 491 in 2024; developer listed as Brookfield Properties.",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
@@ -20701,6 +20716,11 @@
        "date": "2024-04"
       },
       {
+       "text": "Home finder lists 76 homes: Empire Homes 57, Autograph Homes 10, David Weekley Homes 6, Highland Homes 3, AR Homes 0. Filter price bands $200,000 to $699,999.",
+       "url": "https://www.indigocommunity.com/homefinder",
+       "date": "2026-09"
+      },
+      {
        "text": "Empire Homes Indigo: New Single-Family Homes And Townhomes Starting From The Mid-$200s To Mid-$500s; 939-2,508 sq. ft.; cottages, townhomes, duets, clusters, single family on 50 ft homesites.",
        "url": "https://empirehomes.com/us/texas/houston/richmond/indigo/",
        "date": "2026-09"
@@ -21617,7 +21637,13 @@
      },
      "status": "active",
      "price_text": "from the $300’s to $1 million +",
-     "facts": [],
+     "facts": [
+      {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 207 sales, No. 49 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
+      }
+     ],
      "sources": [
       {
        "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
@@ -29109,11 +29135,6 @@
        "text": "M/I Homes: floorplans on 40', 60' and future-planned 50' homesites; community square footage 1,061 - 3,840; Plans (34), Quick Move-In (25), Models (2).",
        "url": "https://www.mihomes.com/new-homes/texas/greater-houston/willis/moran-ranch",
        "date": "2026-09"
-      },
-      {
-       "text": "Lennar Moran Ranch: actively selling, $221,990 - $303,990; 10 plans in Cottage and Classic Collections; 7 homes available; pond, park, playground and two miles of onsite trails.",
-       "url": "https://www.lennar.com/new-homes/texas/houston/willis/moran-ranch",
-       "date": "2026-09"
       }
      ],
      "sources": [
@@ -29320,6 +29341,388 @@
      "fees": null,
      "counties": [
       "Montgomery"
+     ]
+    },
+    {
+     "id": "hou-oakberry-trails",
+     "name": "Oakberry Trails",
+     "market": "houston",
+     "developer": "Ryko Development",
+     "developer_raw": "Ryko Development",
+     "developer_rolodex_id": "HOU-235",
+     "website": "https://www.oakberrytrails.com/",
+     "city": "Waller",
+     "county": "Waller",
+     "county_from_zip": true,
+     "zips": [
+      "77484"
+     ],
+     "lat": 30.0835,
+     "lon": -95.9281,
+     "address": "21711 Berry Ranch Dr., Waller, TX 77484",
+     "acres": 215,
+     "planned_homes": 800,
+     "opened": null,
+     "isd": "Waller ISD",
+     "rank": null,
+     "status": "active",
+     "price_text": "new homes for sale priced from the low $300s",
+     "facts": [
+      {
+       "text": "215-acre master-planned community in Waller with over 800 single-family homes by Risewell Homes, K. Hovnanian Homes and Village Builders; homes starting in the low $300s; Waller ISD.",
+       "url": "https://www.rykodevelopment.com/oakberry-trails",
+       "date": "2026-09"
+      },
+      {
+       "text": "Builders Risewell Homes, K. Hovnanian Homes and Village Builders, with David Weekley coming soon.",
+       "url": "https://www.oakberrytrails.com/",
+       "date": "2026-09"
+      },
+      {
+       "text": "Ground broke at Oakberry Trails by Ryko Development in March 2024.",
+       "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/",
+       "date": "2024-06-20"
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://www.rykodevelopment.com/oakberry-trails",
+       "title": "Ryko Development: Oakberry Trails",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://www.oakberrytrails.com/",
+       "title": "Oakberry Trails home page",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://www.oakberrytrails.com/builders-in-waller-tx?hsLang=en",
+       "title": "Oakberry Trails builders",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/",
+       "title": "Wolff Companies: U.S. 290 corridor enters next growth phase",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://risewellhomes.com/texas/houston-new-homes/neighborhoods/cottages-at-oakberry-trails",
+       "title": "Risewell Homes: The Cottages at Oakberry Trails",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://risewellhomes.com/texas/houston-new-homes/neighborhoods/residences-at-oakberry-trails",
+       "title": "Risewell Homes: The Residences at Oakberry Trails",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://www.khov.com/new-construction-homes/texas/waller/oakberry-trails/",
+       "title": "K. Hovnanian Homes: Oakberry Trails",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/waller/oakberry-trails/avante-collection",
+       "title": "Lennar: Avante Collection at Oakberry Trails",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://www.lennar.com/new-homes/texas/houston/waller/oakberry-trails/richmond-collection",
+       "title": "Lennar: Richmond Collection at Oakberry Trails",
+       "accessed": "2026-09-30"
+      }
+     ],
+     "rows": [
+      {
+       "builder": "Risewell Homes",
+       "custom_members": null,
+       "rolodex_id": "HOU-075",
+       "section": "The Cottages Collection",
+       "lots": [
+        40
+       ],
+       "from": 269990,
+       "from_approx": false,
+       "from_text": "Priced from $269,990",
+       "to": 325990,
+       "to_text": "$325,990 (Jack plan)",
+       "sqft_min": 1690,
+       "sqft_max": 2686,
+       "plans": 7,
+       "stories": [
+        1,
+        2
+       ],
+       "qmi_count": null,
+       "qmi": [],
+       "qmi_ppsf": null,
+       "incentive": null,
+       "url": "https://risewellhomes.com/texas/houston-new-homes/neighborhoods/cottages-at-oakberry-trails",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      },
+      {
+       "builder": "Risewell Homes",
+       "custom_members": null,
+       "rolodex_id": "HOU-075",
+       "section": "The Residences Collection",
+       "lots": [
+        50
+       ],
+       "from": 308990,
+       "from_approx": false,
+       "from_text": "$308,990",
+       "to": 370990,
+       "to_text": "$370,990",
+       "sqft_min": 1715,
+       "sqft_max": 2818,
+       "plans": 6,
+       "stories": [
+        1,
+        2
+       ],
+       "qmi_count": 3,
+       "qmi": [
+        {
+         "price": 380990,
+         "sqft": 1715,
+         "plan": "Wyatt",
+         "url": null,
+         "ppsf": 222,
+         "id": "h15011c59b"
+        },
+        {
+         "price": 427990,
+         "sqft": 2449,
+         "plan": "Miller",
+         "url": null,
+         "ppsf": 175,
+         "id": "h97beecf39"
+        },
+        {
+         "price": 405370,
+         "sqft": 2449,
+         "plan": "Miller",
+         "url": null,
+         "ppsf": 166,
+         "id": "h6dfb5fdac"
+        }
+       ],
+       "qmi_ppsf": 175,
+       "incentive": null,
+       "url": "https://risewellhomes.com/texas/houston-new-homes/neighborhoods/residences-at-oakberry-trails",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      },
+      {
+       "builder": "K. Hovnanian Homes",
+       "custom_members": null,
+       "rolodex_id": "HOU-206",
+       "section": "Oakberry Trails (40' and 50' homesites)",
+       "lots": [
+        40,
+        50
+       ],
+       "from": 284990,
+       "from_approx": false,
+       "from_text": "Single Family Homes from the upper $200s; plans from $284,990",
+       "to": 430990,
+       "to_text": "$430,990",
+       "sqft_min": 1524,
+       "sqft_max": 3191,
+       "plans": 12,
+       "stories": [
+        1,
+        2
+       ],
+       "qmi_count": 3,
+       "qmi": [
+        {
+         "price": 332951,
+         "sqft": 2253,
+         "plan": "Spanish Cedar",
+         "url": null,
+         "ppsf": 148,
+         "id": "hbbff589e2"
+        },
+        {
+         "price": 309000,
+         "sqft": 2026,
+         "plan": "Silver Maple",
+         "url": null,
+         "ppsf": 153,
+         "id": "h5e25b05b1"
+        },
+        {
+         "price": 357690,
+         "sqft": 3171,
+         "plan": "El Paso",
+         "url": null,
+         "ppsf": 113,
+         "id": "h267b8105f"
+        }
+       ],
+       "qmi_ppsf": 148,
+       "incentive": null,
+       "url": "https://www.khov.com/new-construction-homes/texas/waller/oakberry-trails/",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      },
+      {
+       "builder": "Village Builders",
+       "custom_members": null,
+       "rolodex_id": "HOU-166",
+       "section": "Avante Collection",
+       "lots": [],
+       "from": 245990,
+       "from_approx": false,
+       "from_text": "$245,990 - $330,990",
+       "to": 330990,
+       "to_text": "$245,990 - $330,990",
+       "sqft_min": 1572,
+       "sqft_max": 2400,
+       "plans": 6,
+       "stories": [],
+       "qmi_count": 4,
+       "qmi": [
+        {
+         "price": 264990,
+         "sqft": 1749,
+         "plan": "Everett II",
+         "url": null,
+         "ppsf": 152,
+         "id": "h3620de747"
+        },
+        {
+         "price": 267990,
+         "sqft": 1655,
+         "plan": "Linfield",
+         "url": null,
+         "ppsf": 162,
+         "id": "hcdbb8d22b"
+        },
+        {
+         "price": 267990,
+         "sqft": 1655,
+         "plan": "Linfield",
+         "url": null,
+         "ppsf": 162,
+         "id": "hc05fd96c9"
+        },
+        {
+         "price": 276990,
+         "sqft": 2083,
+         "plan": "Haven II",
+         "url": null,
+         "ppsf": 133,
+         "id": "hc6e9ccae4"
+        }
+       ],
+       "qmi_ppsf": 157,
+       "incentive": null,
+       "url": "https://www.lennar.com/new-homes/texas/houston/waller/oakberry-trails/avante-collection",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      },
+      {
+       "builder": "Village Builders",
+       "custom_members": null,
+       "rolodex_id": "HOU-166",
+       "section": "Richmond Collection",
+       "lots": [],
+       "from": 301990,
+       "from_approx": false,
+       "from_text": "$301,990 - $398,990",
+       "to": 398990,
+       "to_text": "$301,990 - $398,990",
+       "sqft_min": 1830,
+       "sqft_max": 2924,
+       "plans": 7,
+       "stories": [],
+       "qmi_count": 4,
+       "qmi": [
+        {
+         "price": 309990,
+         "sqft": 2093,
+         "plan": "Hillwood",
+         "url": null,
+         "ppsf": 148,
+         "id": "h4bcd73dc1"
+        },
+        {
+         "price": 309990,
+         "sqft": 2093,
+         "plan": "Hillwood",
+         "url": null,
+         "ppsf": 148,
+         "id": "h99f7879e5"
+        },
+        {
+         "price": 361990,
+         "sqft": 2726,
+         "plan": "Memorial",
+         "url": null,
+         "ppsf": 133,
+         "id": "h28a9dfa32"
+        },
+        {
+         "price": 381990,
+         "sqft": 2924,
+         "plan": "Westchase",
+         "url": null,
+         "ppsf": 131,
+         "id": "h0fe6b5fd7"
+        }
+       ],
+       "qmi_ppsf": 140,
+       "incentive": null,
+       "url": "https://www.lennar.com/new-homes/texas/houston/waller/oakberry-trails/richmond-collection",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      }
+     ],
+     "n_builders": 3,
+     "builders": [
+      "K. Hovnanian Homes",
+      "Risewell Homes",
+      "Village Builders"
+     ],
+     "custom": [],
+     "from_min": 245990,
+     "from_max": 308990,
+     "from_med": 284990,
+     "to_max": 430990,
+     "lots": [
+      40,
+      50
+     ],
+     "sqft_min": 1524,
+     "sqft_max": 3191,
+     "qmi_n": 14,
+     "qmi_price": 321470,
+     "qmi_sqft": 2093,
+     "qmi_ppsf": 150,
+     "qmi_ppsf_lo": 137,
+     "qmi_ppsf_hi": 162,
+     "zip_market": {
+      "zhvi": 353605,
+      "zhvi_month": "2026-08",
+      "zhvi_yoy": -0.0117,
+      "zhvi_5y": 0.0931,
+      "rf_period": "2026-05-31",
+      "rf_price": 290000.0,
+      "rf_ppsf": 145,
+      "rf_sold": 235.0,
+      "rf_mos": null,
+      "rf_dom": 81.5
+     },
+     "fees": null,
+     "counties": [
+      "Waller"
      ]
     },
     {
@@ -35434,6 +35837,11 @@
      "price_text": "from the high $200s to the $800s",
      "facts": [
       {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 450 sales, No. 10 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
+      },
+      {
        "text": "RCLCO 2025 rank 5, 1,024 sales in 2025, 1,325 in 2024.",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
        "date": "2026-02"
@@ -37337,16 +37745,6 @@
      "price_text": null,
      "facts": [
       {
-       "text": "Lennar community page header: \"From $235,990\"; sqft range 1,273 - 3,147; stories 1 - 2; 3 collections; approximate HOA $50; approximate tax rate 3.39%.",
-       "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village",
-       "date": "2026-09-28"
-      },
-      {
-       "text": "CastleRock page: Sweetgrass Village Total Tax Rate 3.393889%; Annual HOA Fee $660; schools Barrett Elementary, Crosby Middle School, Crosby High School.",
-       "url": "https://www.c-rock.com/community/texas/houston/sweetgrass_village",
-       "date": "2026-09-28"
-      },
-      {
        "text": "KB Home grand opening press release, 2026-02-20: \"Pricing begins from the mid $200,000s\"; site off Crosby Cedar Bayou Road; planned amenities walking paths, pickleball courts, playground, recreation center with pool and splash pad.",
        "url": "https://www.prnewswire.com/news-releases/kb-home-announces-the-grand-opening-of-its-newest-community-within-the-highly-desirable-sweetgrass-village-master-plan-in-crosby-texas-302693058.html",
        "date": "2026-02-20"
@@ -37761,6 +38159,11 @@
        "text": "RCLCO 2025 rank 9, 974 sales in 2025, 737 in 2024; developer D.R. Horton.",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf",
        "date": "2026-02"
+      },
+      {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 594 sales, No. 6 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
       },
       {
        "text": "Zoned to Lamar Consolidated ISD; Tamarron Elementary and Slawinski Elementary in the community; 61 D.R. Horton homes for sale.",
@@ -38646,6 +39049,11 @@
        "text": "Six builders listed: David Weekley, Shea, Lennar, Village Builders, Perry, Westin; lot sizes 40' to 70'.",
        "url": "https://thegrandprairietx.com/the-builders/",
        "date": "2026-09-27"
+      },
+      {
+       "text": "Mid-year RCLCO ranking reported by Houston Agent Magazine: 259 sales, No. 35 nationally.",
+       "url": "https://houstonagentmagazine.com/2026/08/04/tamarron-houston-top-selling-mpc-mid-year-2026/",
+       "date": "2026-08-04"
       }
      ],
      "sources": [
@@ -41635,6 +42043,11 @@
        "date": "2026-09"
       },
       {
+       "text": "Oxland Group plans a 1,860-acre community; phase one, The Homestead, 1,100 lots from 35 to 80 feet wide; land deal with Regent Properties closed July 19, 2023.",
+       "url": "https://www.businesswire.com/news/home/20230823663383/en/Oxland-Group-Reveals-Plans-for-1860-acre-Master-Planned-Community-in-Montgomery-County",
+       "date": "2023-08"
+      },
+      {
        "text": "Coming early 2027: Trilogy at Two Step Farm (55+), McKinley Homes, William David Homes.",
        "url": "https://twostepfarm.com/homes",
        "date": "2026-09"
@@ -44072,6 +44485,11 @@
        "date": "2026-09"
       },
       {
+       "text": "Nov 3, 2023: Hines announced a 528-acre community in Harris County near Waller, 2 miles north of SH 290, with approximately 1,400 single-family homes; first phase of approximately 350 lots expected to deliver in summer 2025.",
+       "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller",
+       "date": "2023-11"
+      },
+      {
        "text": "Builders named by Hines in 2023: Highland Homes, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods, Castlerock Homes.",
        "url": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller",
        "date": "2023-11"
@@ -45019,6 +45437,11 @@
       {
        "text": "2026 HOA annual assessment $1,075; total tax rate 2.8808 (Montgomery County MUD 136 at 1.50).",
        "url": "https://woodhavyn.com/hoa-tax-rates-providers/",
+       "date": "2026-09"
+      },
+      {
+       "text": "Community homes page: 28 available homes and 68 floor plans; price filter $330,000 to $680,000.",
+       "url": "https://woodhavyn.com/homes/",
        "date": "2026-09"
       }
      ],
@@ -46283,6 +46706,107 @@
      ]
     },
     {
+     "id": "hou-beacon-hill",
+     "name": "Beacon Hill",
+     "market": "houston",
+     "developer": "Wolff Companies",
+     "developer_raw": "Wolff Companies",
+     "developer_rolodex_id": "HOU-234",
+     "website": "https://wolffcompanies.com/current-projects/beacon-hill/",
+     "city": "Waller",
+     "county": "Waller",
+     "county_from_zip": false,
+     "zips": [],
+     "lat": null,
+     "lon": null,
+     "address": null,
+     "acres": 587,
+     "planned_homes": 870,
+     "opened": 2021,
+     "isd": "Waller ISD",
+     "rank": null,
+     "status": "active",
+     "price_text": "priced from $240s to $470s",
+     "facts": [
+      {
+       "text": "587 acres in the City and County of Waller, on the north side of U.S. 290 between FM 362 and James Muse Parkway; 317 acres on the freeway for a business park.",
+       "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+       "date": "2026-09"
+      },
+      {
+       "text": "On the northern 270 acres Long Lake Ltd. builds approximately 870 homes, priced from $240s to $470s; first residents moved in August 2021; more than 200 families by summer 2025.",
+       "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+       "date": "2026-09"
+      },
+      {
+       "text": "Long Lake opened its first model homes, in the Lake Ridge and Briarwood collections, in July 2021.",
+       "url": "https://wolffcompanies.com/news/first-model-homes-open-in-wolff-cos-master-planned-community-beacon-hill-in-waller/",
+       "date": "2021-07-02"
+      }
+     ],
+     "sources": [
+      {
+       "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+       "title": "Wolff Companies: Beacon Hill",
+       "accessed": "2026-09-30"
+      },
+      {
+       "url": "https://wolffcompanies.com/news/first-model-homes-open-in-wolff-cos-master-planned-community-beacon-hill-in-waller/",
+       "title": "Wolff Companies: First model homes open in Beacon Hill",
+       "accessed": "2026-09-30"
+      }
+     ],
+     "rows": [
+      {
+       "builder": "Long Lake, Ltd.",
+       "custom_members": null,
+       "rolodex_id": "HOU-130",
+       "section": "Beacon Hill (Lake Ridge and Briarwood)",
+       "lots": [],
+       "from": 240000,
+       "from_approx": true,
+       "from_text": "priced from $240s to $470s",
+       "to": 470000,
+       "to_text": "$470s",
+       "sqft_min": null,
+       "sqft_max": null,
+       "plans": null,
+       "stories": [],
+       "qmi_count": null,
+       "qmi": [],
+       "qmi_ppsf": null,
+       "incentive": null,
+       "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+       "price_url": null,
+       "qmi_url": null,
+       "as_of": "2026-09-30"
+      }
+     ],
+     "n_builders": 1,
+     "builders": [
+      "Long Lake, Ltd."
+     ],
+     "custom": [],
+     "from_min": 240000,
+     "from_max": 240000,
+     "from_med": 240000,
+     "to_max": 470000,
+     "lots": [],
+     "sqft_min": null,
+     "sqft_max": null,
+     "qmi_n": 0,
+     "qmi_price": null,
+     "qmi_sqft": null,
+     "qmi_ppsf": null,
+     "qmi_ppsf_lo": null,
+     "qmi_ppsf_hi": null,
+     "zip_market": null,
+     "fees": null,
+     "counties": [
+      "Waller"
+     ]
+    },
+    {
      "id": "hou-breckenridge-forest",
      "name": "Breckenridge Forest",
      "market": "houston",
@@ -46314,6 +46838,11 @@
        "text": "RCLCO 2024 ranking: No. 27, 541 sales in 2024, 630 in 2023, down 14%; developer D.R. Horton.",
        "url": "https://www.rclco.com/wp-content/uploads/2025/01/Advisory-RCLCO-Top-Selling-MPCs-of-2024-1-7-2024.pdf",
        "date": "2025-01"
+      },
+      {
+       "text": "RCLCO 2023 ranking: No. 22, 630 sales.",
+       "url": "https://houstonagentmagazine.com/2024/01/08/rclco-top-50-master-planned-communities-2023/",
+       "date": "2024-01-08"
       },
       {
        "text": "RCLCO mid-2024 ranking: No. 21, 336 sales in the first half of 2024 (360 a year earlier).",
@@ -46471,6 +47000,11 @@
        "text": "RCLCO 2024 ranking (Caldwell Ranch, Rosharon, D.R. Horton): No. 47, 382 sales in 2024, 633 in 2023, down 40%.",
        "url": "https://www.rclco.com/wp-content/uploads/2025/01/Advisory-RCLCO-Top-Selling-MPCs-of-2024-1-7-2024.pdf",
        "date": "2025-01"
+      },
+      {
+       "text": "RCLCO 2023 ranking: Caldwell Ranch No. 21, 633 sales.",
+       "url": "https://houstonagentmagazine.com/2024/01/08/rclco-top-50-master-planned-communities-2023/",
+       "date": "2024-01-08"
       },
       {
        "text": "RCLCO mid-2024 ranking: Caldwell Ranch No. 31 (tie), 272 sales in the first half of 2024.",
@@ -47268,6 +47802,11 @@
       {
        "text": "Gracepoint Homes, The Point at Imperial: \"Breaking Ground Soon and Final Opportunities at The Point!\"; two-story brownstone townhomes with two-car garages.",
        "url": "https://gracepointhomes.com/community/the-point-at-imperial/",
+       "date": "2026-09"
+      },
+      {
+       "text": "730 Imperial Blvd (Buchanan, 2,468 sq ft, $619,990) and 734 Imperial Blvd (Monroe, 3,088 sq ft, $694,990) both listed Contract Pending, completion December 2026.",
+       "url": "https://gracepointhomes.com/inventory/730-imperial-blvd/",
        "date": "2026-09"
       }
      ],
@@ -49937,6 +50476,56 @@
      "filer": "Toll Brothers"
     },
     {
+     "id": "b-houston-village-builders",
+     "name": "Village Builders",
+     "rolodex_id": "HOU-166",
+     "rolodex_section": "Lennar and the firms it owns",
+     "rolodex_group": "icon",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Lennar",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "clear"
+     },
+     "communities": [
+      "hou-bridgeland",
+      "hou-colton",
+      "hou-cross-creek-west",
+      "hou-grand-prairie",
+      "hou-kresston",
+      "hou-legacy",
+      "hou-oakberry-trails",
+      "hou-sunterra",
+      "hou-the-highlands"
+     ],
+     "n_comm": 9,
+     "counties": [
+      "Fort Bend",
+      "Galveston",
+      "Harris",
+      "Montgomery",
+      "Waller"
+     ],
+     "from_min": 245990,
+     "from_max": 495990,
+     "from_med": 325495,
+     "lots": [
+      45,
+      50,
+      55,
+      65
+     ],
+     "qmi_n": 12,
+     "qmi_price": 302990,
+     "qmi_sqft": 2088,
+     "qmi_ppsf": 150,
+     "qmi_ppsf_lo": 133,
+     "qmi_ppsf_hi": 160,
+     "closings": null,
+     "filer": "Lennar"
+    },
+    {
      "id": "b-houston-century-communities",
      "name": "Century Communities",
      "rolodex_id": "HOU-009",
@@ -49985,55 +50574,6 @@
       "wide": null
      },
      "filer": "Century Communities"
-    },
-    {
-     "id": "b-houston-village-builders",
-     "name": "Village Builders",
-     "rolodex_id": "HOU-166",
-     "rolodex_section": "Lennar and the firms it owns",
-     "rolodex_group": "icon",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Lennar",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "fail",
-      "innovation": "clear"
-     },
-     "communities": [
-      "hou-bridgeland",
-      "hou-colton",
-      "hou-cross-creek-west",
-      "hou-grand-prairie",
-      "hou-kresston",
-      "hou-legacy",
-      "hou-sunterra",
-      "hou-the-highlands"
-     ],
-     "n_comm": 8,
-     "counties": [
-      "Fort Bend",
-      "Galveston",
-      "Harris",
-      "Montgomery",
-      "Waller"
-     ],
-     "from_min": 275991,
-     "from_max": 495990,
-     "from_med": 370495,
-     "lots": [
-      45,
-      50,
-      55,
-      65
-     ],
-     "qmi_n": 4,
-     "qmi_price": 314490,
-     "qmi_sqft": 1962,
-     "qmi_ppsf": 155,
-     "qmi_ppsf_lo": 146,
-     "qmi_ppsf_hi": 160,
-     "closings": null,
-     "filer": "Lennar"
     },
     {
      "id": "b-houston-ashton-woods",
@@ -50133,6 +50673,53 @@
       "high": 540,
       "year": 2025,
       "source": "BUILDER firm page",
+      "wide": null
+     },
+     "filer": null
+    },
+    {
+     "id": "b-houston-long-lake-ltd",
+     "name": "Long Lake, Ltd.",
+     "rolodex_id": "HOU-130",
+     "rolodex_section": "Two of three counts",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Long Lake, Ltd.",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
+     "communities": [
+      "hou-beacon-hill",
+      "hou-cypress-green",
+      "hou-grand-magnolia",
+      "hou-river-ranch",
+      "hou-sunterra",
+      "hou-sunterra-lakes"
+     ],
+     "n_comm": 6,
+     "counties": [
+      "Harris",
+      "Liberty",
+      "Montgomery",
+      "Waller"
+     ],
+     "from_min": 200000,
+     "from_max": 290000,
+     "from_med": 240000,
+     "lots": [],
+     "qmi_n": 20,
+     "qmi_price": 441790,
+     "qmi_sqft": 2655,
+     "qmi_ppsf": 162,
+     "qmi_ppsf_lo": 160,
+     "qmi_ppsf_hi": 174,
+     "closings": {
+      "low": 782,
+      "high": 782,
+      "year": 2025,
+      "source": "Builder 100 firm page",
       "wide": null
      },
      "filer": null
@@ -50490,7 +51077,13 @@
      "qmi_ppsf": 212,
      "qmi_ppsf_lo": 179,
      "qmi_ppsf_hi": 227,
-     "closings": null,
+     "closings": {
+      "low": 1056,
+      "high": 1056,
+      "year": 2025,
+      "source": "BUILDER 2026 Builder 100, company-wide",
+      "wide": "company-wide"
+     },
      "filer": null
     },
     {
@@ -50532,52 +51125,6 @@
      "qmi_ppsf_hi": null,
      "closings": null,
      "filer": "LGI Homes"
-    },
-    {
-     "id": "b-houston-long-lake-ltd",
-     "name": "Long Lake, Ltd.",
-     "rolodex_id": "HOU-130",
-     "rolodex_section": "Two of three counts",
-     "rolodex_group": "b",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Long Lake, Ltd.",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "partial",
-      "innovation": "fail"
-     },
-     "communities": [
-      "hou-cypress-green",
-      "hou-grand-magnolia",
-      "hou-river-ranch",
-      "hou-sunterra",
-      "hou-sunterra-lakes"
-     ],
-     "n_comm": 5,
-     "counties": [
-      "Harris",
-      "Liberty",
-      "Montgomery",
-      "Waller"
-     ],
-     "from_min": 200000,
-     "from_max": 290000,
-     "from_med": 245000,
-     "lots": [],
-     "qmi_n": 20,
-     "qmi_price": 441790,
-     "qmi_sqft": 2655,
-     "qmi_ppsf": 162,
-     "qmi_ppsf_lo": 160,
-     "qmi_ppsf_hi": 174,
-     "closings": {
-      "low": 782,
-      "high": 782,
-      "year": 2025,
-      "source": "Builder 100 firm page",
-      "wide": null
-     },
-     "filer": null
     },
     {
      "id": "b-houston-pulte-homes",
@@ -50675,6 +51222,55 @@
       "wide": null
      },
      "filer": null
+    },
+    {
+     "id": "b-houston-k-hovnanian-homes",
+     "name": "K. Hovnanian Homes",
+     "rolodex_id": "HOU-206",
+     "rolodex_section": "National builder",
+     "rolodex_group": "national",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "K. Hovnanian Homes",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
+     "communities": [
+      "hou-grand-magnolia",
+      "hou-marvida",
+      "hou-oakberry-trails",
+      "hou-river-ranch"
+     ],
+     "n_comm": 4,
+     "counties": [
+      "Harris",
+      "Liberty",
+      "Montgomery",
+      "Waller"
+     ],
+     "from_min": 226990,
+     "from_max": 500000,
+     "from_med": 342495,
+     "lots": [
+      40,
+      50,
+      60
+     ],
+     "qmi_n": 3,
+     "qmi_price": 332951,
+     "qmi_sqft": 2253,
+     "qmi_ppsf": 148,
+     "qmi_ppsf_lo": 130,
+     "qmi_ppsf_hi": 150,
+     "closings": {
+      "low": 1030,
+      "high": 1030,
+      "year": 2024,
+      "source": "BUILDER Local Leaders 2025, Houston metro, Hovnanian Enterprises",
+      "wide": null
+     },
+     "filer": "Hovnanian Enterprises"
     },
     {
      "id": "b-houston-smith-douglas-homes",
@@ -50842,52 +51438,6 @@
      "filer": null
     },
     {
-     "id": "b-houston-k-hovnanian-homes",
-     "name": "K. Hovnanian Homes",
-     "rolodex_id": "HOU-206",
-     "rolodex_section": "National builder",
-     "rolodex_group": "national",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "K. Hovnanian Homes",
-     "marks": {
-      "repeatability": "clear",
-      "machine_fit": "partial",
-      "innovation": "fail"
-     },
-     "communities": [
-      "hou-grand-magnolia",
-      "hou-marvida",
-      "hou-river-ranch"
-     ],
-     "n_comm": 3,
-     "counties": [
-      "Harris",
-      "Liberty",
-      "Montgomery"
-     ],
-     "from_min": 226990,
-     "from_max": 500000,
-     "from_med": 400000,
-     "lots": [
-      50,
-      60
-     ],
-     "qmi_n": 0,
-     "qmi_price": null,
-     "qmi_sqft": null,
-     "qmi_ppsf": null,
-     "qmi_ppsf_lo": null,
-     "qmi_ppsf_hi": null,
-     "closings": {
-      "low": 1030,
-      "high": 1030,
-      "year": 2024,
-      "source": "BUILDER Local Leaders 2025, Houston metro, Hovnanian Enterprises",
-      "wide": null
-     },
-     "filer": "Hovnanian Enterprises"
-    },
-    {
      "id": "b-houston-mckinley-homes",
      "name": "McKinley Homes",
      "rolodex_id": "HOU-212",
@@ -50920,6 +51470,51 @@
      "qmi_ppsf": 198,
      "qmi_ppsf_lo": 191,
      "qmi_ppsf_hi": 200,
+     "closings": {
+      "low": 450,
+      "high": 450,
+      "year": 2025,
+      "source": "BUILDER 2026 Builder 100, company-wide",
+      "wide": "company-wide"
+     },
+     "filer": null
+    },
+    {
+     "id": "b-houston-risewell-homes",
+     "name": "Risewell Homes",
+     "rolodex_id": "HOU-075",
+     "rolodex_section": "Two of three counts",
+     "rolodex_group": "b",
+     "rolodex_type": "homebuilder",
+     "rolodex_card": "Risewell Homes",
+     "marks": {
+      "repeatability": "partial",
+      "machine_fit": "partial",
+      "innovation": "fail"
+     },
+     "communities": [
+      "hou-marvida",
+      "hou-oakberry-trails",
+      "hou-sunterra"
+     ],
+     "n_comm": 3,
+     "counties": [
+      "Harris",
+      "Waller"
+     ],
+     "from_min": 269990,
+     "from_max": 400000,
+     "from_med": 304495,
+     "lots": [
+      40,
+      50
+     ],
+     "qmi_n": 5,
+     "qmi_price": 427990,
+     "qmi_sqft": 2449,
+     "qmi_ppsf": 190,
+     "qmi_ppsf_lo": 175,
+     "qmi_ppsf_hi": 212,
      "closings": null,
      "filer": null
     },
@@ -51105,41 +51700,6 @@
      "qmi_ppsf": 150,
      "qmi_ppsf_lo": 148,
      "qmi_ppsf_hi": 153,
-     "closings": null,
-     "filer": null
-    },
-    {
-     "id": "b-houston-risewell-homes",
-     "name": "Risewell Homes",
-     "rolodex_id": "HOU-075",
-     "rolodex_section": "Two of three counts",
-     "rolodex_group": "b",
-     "rolodex_type": "homebuilder",
-     "rolodex_card": "Risewell Homes",
-     "marks": {
-      "repeatability": "partial",
-      "machine_fit": "partial",
-      "innovation": "fail"
-     },
-     "communities": [
-      "hou-marvida",
-      "hou-sunterra"
-     ],
-     "n_comm": 2,
-     "counties": [
-      "Harris",
-      "Waller"
-     ],
-     "from_min": 300000,
-     "from_max": 400000,
-     "from_med": 350000,
-     "lots": [],
-     "qmi_n": 2,
-     "qmi_price": 579990,
-     "qmi_sqft": 2858,
-     "qmi_ppsf": 201,
-     "qmi_ppsf_lo": 196,
-     "qmi_ppsf_hi": 206,
      "closings": null,
      "filer": null
     },
@@ -51885,7 +52445,13 @@
      "qmi_ppsf": null,
      "qmi_ppsf_lo": null,
      "qmi_ppsf_hi": null,
-     "closings": null,
+     "closings": {
+      "low": 695,
+      "high": 695,
+      "year": 2025,
+      "source": "BUILDER 2026 Builder 100, company-wide",
+      "wide": "company-wide"
+     },
      "filer": null
     },
     {
@@ -52947,6 +53513,32 @@
      }
     },
     {
+     "id": "d-houston-ryko-development",
+     "name": "Ryko Development",
+     "rolodex_id": "HOU-235",
+     "communities": [
+      "hou-oakberry-trails"
+     ],
+     "n_comm": 1,
+     "builders": [
+      "K. Hovnanian Homes",
+      "Risewell Homes",
+      "Village Builders"
+     ],
+     "acres": 215,
+     "from_min": 245990,
+     "from_max": 308990,
+     "qmi_n": 14,
+     "qmi_price": 321470,
+     "qmi_ppsf": 150,
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
+    },
+    {
      "id": "d-houston-trend-development",
      "name": "Trend Development",
      "rolodex_id": null,
@@ -52966,16 +53558,40 @@
      "qmi_ppsf": 201,
      "rolodex_section": null,
      "marks": null
+    },
+    {
+     "id": "d-houston-wolff-companies",
+     "name": "Wolff Companies",
+     "rolodex_id": "HOU-234",
+     "communities": [
+      "hou-beacon-hill"
+     ],
+     "n_comm": 1,
+     "builders": [
+      "Long Lake, Ltd."
+     ],
+     "acres": 587,
+     "from_min": 240000,
+     "from_max": 240000,
+     "qmi_n": 0,
+     "qmi_price": null,
+     "qmi_ppsf": null,
+     "rolodex_section": "Land owner, not the buyer",
+     "marks": {
+      "repeatability": "clear",
+      "machine_fit": "fail",
+      "innovation": "fail"
+     }
     }
    ],
    "totals": {
-    "communities": 75,
-    "rows": 692,
+    "communities": 77,
+    "rows": 698,
     "builders": 72,
-    "developers": 26,
-    "qmi": 1475,
-    "qmi_price": 449900,
-    "qmi_sqft": 2488,
+    "developers": 28,
+    "qmi": 1489,
+    "qmi_price": 449583,
+    "qmi_sqft": 2482,
     "qmi_ppsf": 184,
     "from_med": 400000
    },
@@ -76576,6 +77192,7 @@
      "zip": "77484",
      "communities": [
       "hou-grand-magnolia",
+      "hou-oakberry-trails",
       "hou-wildrye"
      ],
      "county": "Waller",
@@ -88846,6 +89463,11 @@
        "date": "2026-09"
       },
       {
+       "text": "Hines property page (former developer): 287 acres, 525 total lots, located off Hwy 66, 10322 TX-66.",
+       "url": "https://www.hines.com/properties/creekside-royse-city-royse",
+       "date": "2026-09"
+      },
+      {
        "text": "Builders on community site: RockWell Homes, UnionMain Homes, William Ryan Homes, Lennar.",
        "url": "https://creeksideroysecity.com/find-your-home/",
        "date": "2026-09"
@@ -90024,6 +90646,11 @@
        "date": "2026-01"
       },
       {
+       "text": "Green Brick release: Eastridge ranked 39th by RCLCO, 36th by JBREC, #9 in Dallas Business Journal regional ranking; RCLCO Top 50 for a second consecutive year.",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      },
+      {
        "text": "Green Brick Partners with Meritage Homes developing 2,400 homesites on 547 acres, total build out value circa $640 million; 40', 50' and 60' single-family homesites.",
        "url": "https://eastridgetx.com/",
        "date": "2026-09"
@@ -90313,11 +90940,6 @@
       {
        "text": "UnionMain FAQ: most homesites in Elevon range from 40-60 feet wide; HOA assessments $1,860 annually.",
        "url": "https://www.unionmainhomes.com/new-homes-for-sale/texas/lavon/elevon",
-       "date": "2026-09"
-      },
-      {
-       "text": "Lennar Elevon: 14 homes available across the Classic and Eventide collections; community range $279,999 - $417,999.",
-       "url": "https://www.lennar.com/new-homes/texas/dallas-ft-worth/lavon/elevon",
        "date": "2026-09"
       },
       {
@@ -90980,8 +91602,8 @@
        "from": 270000,
        "from_approx": true,
        "from_text": "From the High $200s",
-       "to": 466900,
-       "to_text": "Starting From $466,900",
+       "to": null,
+       "to_text": null,
        "sqft_min": 1320,
        "sqft_max": 3081,
        "plans": 33,
@@ -91508,6 +92130,11 @@
        "text": "Residential neighborhoods listed: The Preserve (gated), Brookside North & South, East Village; plus multifamily.",
        "url": "https://fieldsfrisco.com/our-communities/",
        "date": "2026-09"
+      },
+      {
+       "text": "The Preserve: 10 custom builders; homes starting at 3.5+MM; spec list shows Hawkins-Welwood 416 Watson Boulevard, 5,240 SQFT, $4,100,000; other specs call for price.",
+       "url": "https://thepreserveinfrisco.com/spec-homes/#/spec-list",
+       "date": "2026-09-27"
       },
       {
        "text": "$13 million Brookside Club amenity center for Brookside and The Preserve residents.",
@@ -93028,6 +93655,11 @@
       {
        "text": "5,000-acre master-planned community; amenity centers with pools, 15 miles of hike and bike trails, stocked pond, dog park; Midlothian ISD.",
        "url": "https://www.highlandhomes.com/dfw/venus/goodland",
+       "date": "2026-09"
+      },
+      {
+       "text": "Community site inventory lists 47 available homes, 120 floor plans and 8 models; price filter range $380,000 to $890,000.",
+       "url": "https://goodlandtx.com/find-a-home/",
        "date": "2026-09"
       },
       {
@@ -95992,6 +96624,11 @@
       {
        "text": "CandysDirt, citing RCLCO 2025: Lakehaven in Farmersville #47 with 375 sales.",
        "url": "https://candysdirt.com/2026/01/19/texas-holds-strong-in-2025s-top-selling-master-planned-communities-rankings/",
+       "date": "2026-01"
+      },
+      {
+       "text": "Green Brick release: Lakehaven tied for 47th by RCLCO, 45th by JBREC, #28 in Dallas Business Journal regional ranking.",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
        "date": "2026-01"
       },
       {
@@ -99352,6 +99989,11 @@
      "price_text": "PRICED FROM $334,990 - $463,990",
      "facts": [
       {
+       "text": "Ranked #14 in Dallas Business Journal \"Top 40 Master-Planned Communities in North Texas\", based on 12-month closings through the first quarter of 2025.",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      },
+      {
        "text": "Trophy lists Madero as Haslet, TX 76052, \"less than 30 minutes north of Downtown Fort Worth\"; Northwest ISD; \"NO PID and NO MUD\"; two amenity centers; future on-site retail and elementary school; \"10+ Phases | New Lots Opening Every Year\".",
        "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/haslet/madero",
        "date": "2026-09"
@@ -100357,6 +100999,11 @@
        "date": "2026-09"
       },
       {
+       "text": "Grand Homes Las Brisas at Mira Lagos pages: model address 7404 Brisa Court; County: Tarrant; Price Range: $600's - $800's; 2823 Mariposa listed Sold - Not Available.",
+       "url": "https://www.grandhomes.com/inventory/grand-prairie/2823-mariposa/83/1640/",
+       "date": "2026-09"
+      },
+      {
        "text": "Bloomfield Homes communities page (64 communities) lists no Mira Lagos community.",
        "url": "https://www.bloomfieldhomes.com/new-homes/",
        "date": "2026-09"
@@ -100625,13 +101272,13 @@
      "price_text": null,
      "facts": [
       {
-       "text": "M/I Homes lists 21 plans and 15 quick move-in homes at Mobberly Farms; community square footage 1,349 - 3,020.",
-       "url": "https://www.mihomes.com/new-homes/texas/dallas-fort-worth-metroplex/pilot-point/mobberly-farms",
+       "text": "Approximately 520 acres; 1,986 single-family residences; status Now Selling. Builders: Centex Homes, Lennar, M/I Homes.",
+       "url": "https://centurionamerican.com/development/mobberly-farms/",
        "date": "2026-09"
       },
       {
-       "text": "Lennar lists 14 plans at Mobberly Farms, priced $282,999 - $343,999.",
-       "url": "https://www.lennar.com/new-homes/texas/dallas-ft-worth/pilot-point/mobberly-farms",
+       "text": "M/I Homes lists 21 plans and 15 quick move-in homes at Mobberly Farms; community square footage 1,349 - 3,020.",
+       "url": "https://www.mihomes.com/new-homes/texas/dallas-fort-worth-metroplex/pilot-point/mobberly-farms",
        "date": "2026-09"
       }
      ],
@@ -110554,11 +111201,6 @@
      "price_text": "NEW HOMES IN MANSFIELD FROM THE LOWER $500S TO $1 MILLION +",
      "facts": [
       {
-       "text": "870-acre mixed-use development in Mansfield, Texas.",
-       "url": "https://southpointenewhomes.com/",
-       "date": "2026-09"
-      },
-      {
        "text": "Brenda Norwood Elementary, Alma Martinez Intermediate and Charlene McKinzey Middle School opened in 2021, serving South Pointe.",
        "url": "https://southpointenewhomes.com/schools/",
        "date": "2026-09"
@@ -110566,11 +111208,6 @@
       {
        "text": "Grand Homes lists South Pointe as Grand Finale - Last Chance!, county Johnson.",
        "url": "https://www.grandhomes.com/community/south-pointe/102/",
-       "date": "2026-09"
-      },
-      {
-       "text": "Drees Homes at South Pointe offers 90 ft home sites with prices starting in the $760s to $920s.",
-       "url": "https://southpointenewhomes.com/homes/drees/",
        "date": "2026-09"
       }
      ],
@@ -111104,6 +111741,11 @@
      "price_text": "PRICED FROM $265,990 - $442,990",
      "facts": [
       {
+       "text": "Ranked #38 in the Dallas Business Journal Top 40 Master-Planned Communities in North Texas (12-month closings through Q1 2025).",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      },
+      {
        "text": "Trophy Signature Homes offers five product lines at Southridge: Texas Tree Series 40' lots, Trophy Series 50' and 60' lots, Victory Series 50' lots, Musician Series 60' lots; 29 floor plans.",
        "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/mckinney/southridge",
        "date": "2026-09"
@@ -111578,16 +112220,6 @@
      "status": "active",
      "price_text": null,
      "facts": [
-      {
-       "text": "545-acre residential community in Little Elm on Lewisville Lake; 40-, 50- and 60-foot lots; just over 2,100 single-family homes at completion; status Now Selling.",
-       "url": "https://centurionamerican.com/development/spiritas-ranch/",
-       "date": "2026-09"
-      },
-      {
-       "text": "Lennar lists Spiritas Ranch at $409,999 - $553,999, collections Brookstone (from $439,999) and Brookstone West (from $409,999).",
-       "url": "https://www.lennar.com/new-homes/texas/dallas-ft-worth/little-elm/spiritas-ranch",
-       "date": "2026-09"
-      },
       {
        "text": "Mattamy Homes reports an average HERS score of 52 at Spiritas Ranch.",
        "url": "https://mattamyhomes.com/texas/dallas-fort-worth/little-elm/spiritas-ranch",
@@ -112858,6 +113490,11 @@
      "status": "active",
      "price_text": "PRICED FROM $286,990 - $379,490",
      "facts": [
+      {
+       "text": "Ranked #40 in the Dallas Business Journal Top 40 Master-Planned Communities in North Texas (12-month closings through Q1 2025).",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      },
       {
        "text": "Trophy Signature Homes Stonehaven sales center: 2128 Lone Star Lane, Seagoville, TX 75159; all four Trophy series on 50' lots.",
        "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/seagoville/stonehaven",
@@ -114309,7 +114946,18 @@
      "rank": null,
      "status": "active",
      "price_text": "PRICED FROM $309,990 - $412,490",
-     "facts": [],
+     "facts": [
+      {
+       "text": "Ranked #20 in the Dallas Business Journal Top 40 Master-Planned Communities in North Texas (12-month closings through Q1 2025).",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      },
+      {
+       "text": "Lavon EDC project page: 205 acres annexed into Lavon; 645 single-family lots of 40', 50' and 60' widths; 10 acres of retail proposed; developer listed as Meritage Homes of Texas, LLC.",
+       "url": "https://www.lavonedc.com/projects-properties/page/trails-lavon",
+       "date": null
+      }
+     ],
      "sources": [
       {
        "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/lavon/trails-of-lavon",
@@ -115588,6 +116236,16 @@
       {
        "text": "350-acre natural park; 127-acre age-restricted section.",
        "url": "https://www.trinityfalls.com/",
+       "date": "2026-09"
+      },
+      {
+       "text": "Community available-homes page: 39 available homes, 130 floor plans, 9 models, 144 available homesites; price filter range $330,000 to $790,000.",
+       "url": "https://www.trinityfalls.com/available-homes",
+       "date": "2026-09-27"
+      },
+      {
+       "text": "Community builder prices: Cadence townhomes from the high $300s; Chesmar from the high $600s to low $800s (60' homesites); Coventry from the mid $500s (40' & 50'); Del Webb from the low $400s (45', 50' & 65'); Drees from the low $700s (60'); Highland from the mid $600s (50'); Perry from the mid $500s (45', 50' & 60').",
+       "url": "https://www.trinityfalls.com/builders/perry-homes",
        "date": "2026-09"
       },
       {
@@ -117998,11 +118656,6 @@
        "text": "First Texas Homes lists HOA dues of $1,080 annually and a 1.99% tax rate.",
        "url": "https://www.firsttexashomes.com/community/anna/16513/the-villages-of-hurricane-creek/",
        "date": "2026-09"
-      },
-      {
-       "text": "Lennar lists 14 available homes at Hurricane Creek in Anna across Classic North, Classic South, Cottage North and Cottage South collections.",
-       "url": "https://www.lennar.com/new-homes/texas/dallas-ft-worth/anna",
-       "date": "2026-09"
       }
      ],
      "sources": [
@@ -119211,6 +119864,11 @@
        "text": "Dallas Express, May 27, 2024: Walden Pond East builders Brightland Homes and Lennar; Walden Pond West builders Lennar, UnionMain and Pacesetter; UnionMain home sizes 1,511 to 3,276 sq ft.",
        "url": "https://dallasexpress.com/realestate/massive-development-taking-shape-in-north-texas/",
        "date": "2024-05"
+      },
+      {
+       "text": "D.R. Horton lists Walden Pond West as \"Coming Soon\", from the $220s, from 1,324 sq. ft.",
+       "url": "https://www.drhorton.com/texas/dallas/forney",
+       "date": "2026-09"
       },
       {
        "text": "UnionMain: HOA assessments $800 annually; total estimated tax rate 2.739308%.",
@@ -121930,11 +122588,6 @@
        "text": "Community site builder menu lists Beazer Homes, DR Horton, Express Homes, KB Home, Lennar, Trophy Signature Homes and Summerwell (summerwellwildcatranch.com); its KB Home and Trophy Signature Homes pages return not-found.",
        "url": "https://wildcatranchtexas.com/",
        "date": "2026-09"
-      },
-      {
-       "text": "Lennar Wildcat Ranch page: 12 plans, no homes available, new homesites coming soon.",
-       "url": "https://www.lennar.com/new-homes/texas/dallas-ft-worth/crandall/wildcat-ranch",
-       "date": "2026-09"
       }
      ],
      "sources": [
@@ -124035,6 +124688,11 @@
        "date": "2014-04"
       },
       {
+       "text": "LGI Homes opened a new section in Windmill Farms on September 26, 2017: 76 homes, 1,600 to 2,600 square feet.",
+       "url": "https://investor.lgihomes.com/news-releases/news-release-details/lgi-homes-opens-new-section-windmill-farms-community-0",
+       "date": "2017-09"
+      },
+      {
        "text": "Megatel Homes Windmill Farms: Closeout Community; no homes available; plans 1,642 - 2,608 sq. ft.",
        "url": "https://www.megatelhomes.com/communities/dfwhouston/forney/windmill-farms",
        "date": "2026-09"
@@ -125350,11 +126008,6 @@
        "date": "2026-09"
       },
       {
-       "text": "400 acres of parks, trails, recreational amenities and natural open space; trail system approximately 14 miles.",
-       "url": "https://www.canyonfallstx.com/community/by-the-numbers/",
-       "date": "2026-09"
-      },
-      {
        "text": "Spaced out over 1,199 acres (Chesmar Homes Canyon Falls page, marked Final Opportunity).",
        "url": "https://www.chesmar.com/texas/dallas-new-homes/argyle/canyon-falls/",
        "date": "2026-09"
@@ -125719,7 +126372,13 @@
      "rank": null,
      "status": "built_out",
      "price_text": null,
-     "facts": [],
+     "facts": [
+      {
+       "text": "Ranked #26 in Dallas Business Journal \"Top 40 Master-Planned Communities in North Texas\", based on 12-month closings through the first quarter of 2025.",
+       "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
+       "date": "2026-01"
+      }
+     ],
      "sources": [
       {
        "url": "https://www.businesswire.com/news/home/20260116519018/en/Green-Brick-Partners-Communities-Earn-Top-Rankings-in-Regional-and-National-Lists",
@@ -126441,6 +127100,11 @@
        "text": "RCLCO mid-2024: #44, 225 sales; Saginaw, Texas; developer D.R. Horton.",
        "url": "https://www.rclco.com/wp-content/uploads/2024/08/RCLCO-Advisory-Top-Selling-MY-MPCs-2024.pdf",
        "date": "2024-08"
+      },
+      {
+       "text": "Not among the 46 communities listed on D.R. Horton's Fort Worth area page.",
+       "url": "https://www.drhorton.com/texas/fort-worth",
+       "date": "2026-09"
       }
      ],
      "sources": [
@@ -165790,6 +166454,22 @@
    "i": 74
   },
   {
+   "id": "zonda-dfw-starts-q2-2026",
+   "market": "dfw",
+   "topic": "lot_supply",
+   "entity": "Zonda / Builder Magazine",
+   "community": null,
+   "metric": "annual housing starts, year-over-year change",
+   "value": -13,
+   "unit": "percent",
+   "period": "Q2 2026",
+   "text": "Annual housing starts were down by more than 13% year over year in the second quarter, while annual closings also posted a double-digit annual decline.",
+   "url": "https://www.builderonline.com/data-analysis/the-forces-shaping-the-dallas-housing-market-in-2026/",
+   "source_title": "The Forces Shaping the Dallas Housing Market in 2026 (Builder, Vincent Salandro)",
+   "published": "2026-09-16",
+   "i": 75
+  },
+  {
    "id": "lennar-southcentral-landcost-q2-2026",
    "market": "national",
    "topic": "lot_share",
@@ -166250,27 +166930,6 @@
     "value": 60317,
     "unit": "USD/lot",
     "how": "3,800,000 divided by 63 lots"
-   }
-  },
-  {
-   "id": "tci-windmill-lots-6m-2026",
-   "market": "dfw",
-   "topic": "land_deal",
-   "entity": "Transcontinental Realty Investors",
-   "community": "Windmill Farms (Kaufman County)",
-   "metric": "single-family lots sold to builders, 42 lots",
-   "value": 2000000,
-   "unit": "USD",
-   "period": "6M 2026 (Jan-Jun)",
-   "text": "During the six months ended June 30, 2026, we sold 42 lots from our holdings in Windmill Farms for $2.0 million, resulting in a gain on sale of $1.6 million.",
-   "url": "https://www.sec.gov/Archives/edgar/data/733590/000162828026054111/tci-20260630.htm",
-   "source_title": "Transcontinental Realty Investors Form 10-Q, quarter ended June 30, 2026",
-   "published": "2026-08-06",
-   "i": 104,
-   "computed": {
-    "value": 47619,
-    "unit": "USD/lot",
-    "how": "2,000,000 divided by 42 lots"
    }
   },
   {

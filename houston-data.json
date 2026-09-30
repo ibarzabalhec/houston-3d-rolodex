@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 113,
+ "build": 114,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
@@ -1478,6 +1478,19 @@
     "wide": null
    },
    {
+    "id": "HOU-210",
+    "name": "Empire Homes",
+    "short": "Empire Homes",
+    "low": 1056,
+    "high": 1056,
+    "year": 2025,
+    "source": "BUILDER 2026 Builder 100, company-wide",
+    "fit": "partial",
+    "method": "fail",
+    "group": "b",
+    "wide": "company-wide"
+   },
+   {
     "id": "HOU-033",
     "name": "Coventry Homes",
     "short": "Coventry",
@@ -1556,6 +1569,19 @@
     "wide": "two markets"
    },
    {
+    "id": "HOU-220",
+    "name": "Saratoga Homes",
+    "short": "Saratoga Homes",
+    "low": 695,
+    "high": 695,
+    "year": 2025,
+    "source": "BUILDER 2026 Builder 100, company-wide",
+    "fit": "partial",
+    "method": "fail",
+    "group": "b",
+    "wide": "company-wide"
+   },
+   {
     "id": "HOU-064",
     "name": "Colina Homes",
     "short": "Colina Homes",
@@ -1580,6 +1606,19 @@
     "method": "fail",
     "group": "b",
     "wide": "Houston and Austin"
+   },
+   {
+    "id": "HOU-212",
+    "name": "McKinley Homes",
+    "short": "McKinley Homes",
+    "low": 450,
+    "high": 450,
+    "year": 2025,
+    "source": "BUILDER 2026 Builder 100, company-wide",
+    "fit": "partial",
+    "method": "fail",
+    "group": "b",
+    "wide": "company-wide"
    },
    {
     "id": "HOU-135",
@@ -1686,7 +1725,7 @@
     "wide": null
    }
   ],
-  "closings_missing": 62,
+  "closings_missing": 59,
   "closings_base": 89,
   "bands": [
    [
@@ -22559,7 +22598,7 @@
      "linkedin_url": "https://www.linkedin.com/in/wendy-hudson-67910b37/"
     }
    ],
-   "vol": null,
+   "vol": 1056,
    "expansion": true,
    "type": "homebuilder",
    "exec_named": true
@@ -22950,7 +22989,7 @@
      "linkedin_url": "https://www.linkedin.com/in/jinsong-yang-55691817/"
     }
    ],
-   "vol": null,
+   "vol": 450,
    "expansion": true,
    "type": "homebuilder",
    "exec_named": true
@@ -23167,7 +23206,7 @@
      "linkedin_url": "https://www.linkedin.com/in/david-bombach-4b475023/"
     }
    ],
-   "vol": null,
+   "vol": 695,
    "expansion": true,
    "type": "homebuilder",
    "exec_named": false
@@ -37213,7 +37252,7 @@
     "tr": false,
     "fit": "partial",
     "exec": true,
-    "v": null
+    "v": 1056.0
    },
    {
     "cat": 0,
@@ -37241,7 +37280,7 @@
     "tr": false,
     "fit": "partial",
     "exec": true,
-    "v": null
+    "v": 450.0
    },
    {
     "cat": 0,
@@ -37255,7 +37294,7 @@
     "tr": false,
     "fit": "partial",
     "exec": false,
-    "v": null
+    "v": 695.0
    },
    {
     "cat": 0,
@@ -38340,7 +38379,7 @@
   {
    "k": "owns",
    "a": "HOU-132",
-   "b": "Forestar Group",
+   "b": "HOU-226",
    "rel": "owned 62 percent",
    "card": "HOU-132"
   },
@@ -38707,6 +38746,146 @@
    "b": "HOU-022",
    "rel": "",
    "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-015",
+   "b": "HOU-024",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-015",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-233",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-233",
+   "b": "HOU-203",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-233",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-133",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-133"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-222",
+   "b": "HOU-045",
+   "rel": "",
+   "card": "HOU-222"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-222",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-222"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-225",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-225"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-227",
+   "b": "HOU-045",
+   "rel": "",
+   "card": "HOU-227"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-227",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-227"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-228",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-228"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-229",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-229"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-229",
+   "b": "HOU-072",
+   "rel": "",
+   "card": "HOU-229"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-229",
+   "b": "HOU-033",
+   "rel": "",
+   "card": "HOU-229"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-223",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-223"
+  },
+  {
+   "k": "builds",
+   "a": "Oakberry Trails",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-235"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-039",
+   "b": "HOU-136",
+   "rel": "",
+   "card": "HOU-136"
+  },
+  {
+   "k": "builds",
+   "a": "HOU-040",
+   "b": "HOU-215",
+   "rel": "",
+   "card": "HOU-215"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-233",
+   "b": "HOU-115",
+   "rel": "developer",
+   "card": "HOU-115"
   },
   {
    "k": "builds",
