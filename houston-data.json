@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 111,
- "last_updated": "2026-09-28",
- "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-28",
- "kicker": "Rolodex · Greater Houston · 2026-09-28",
+ "build": 112,
+ "last_updated": "2026-09-30",
+ "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
+ "kicker": "Rolodex · Greater Houston · 2026-09-30",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "156 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "158 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "156",
+   "158",
    "firms screened",
    false,
    null
@@ -65,8 +65,8 @@
    }
   ],
   [
-   "102",
-   "of 156 with an executive named",
+   "104",
+   "of 158 with an executive named",
    true,
    {
     "dec": "any"
@@ -79,10 +79,10 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 105,
+   "clear": 107,
    "partial": 43,
    "fail": 8,
-   "total": 156
+   "total": 158
   },
   {
    "key": "machine_fit",
@@ -90,8 +90,8 @@
    "blurb": "",
    "clear": 9,
    "partial": 97,
-   "fail": 50,
-   "total": 156
+   "fail": 52,
+   "total": 158
   },
   {
    "key": "innovation",
@@ -99,8 +99,8 @@
    "blurb": "",
    "clear": 18,
    "partial": 17,
-   "fail": 121,
-   "total": 156
+   "fail": 123,
+   "total": 158
   }
  ],
  "matrix": {
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 195 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 198 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1764,12 +1764,12 @@
    {
     "group": "channel",
     "label": "Land owner, not the buyer",
-    "n": 17,
+    "n": 19,
     "yes": 2,
     "partly": 0,
-    "no": 15,
-    "named": 11,
-    "linked": 17
+    "no": 17,
+    "named": 13,
+    "linked": 19
    },
    {
     "group": "icon",
@@ -2070,8 +2070,20 @@
     "builders": []
    },
    {
+    "id": "HOU-235",
+    "short": "Ryko Development",
+    "line": "",
+    "builders": []
+   },
+   {
     "id": "HOU-224",
     "short": "Sam Yager Incorporated",
+    "line": "",
+    "builders": []
+   },
+   {
+    "id": "HOU-234",
+    "short": "Wolff Companies",
     "line": "",
     "builders": []
    },
@@ -19256,10 +19268,10 @@
   "local": "Houston|San Leon"
  },
  "stats": {
-  "total": 156,
+  "total": 158,
   "adopters": 3,
-  "principals": 367,
-  "with_executive": 102
+  "principals": 370,
+  "with_executive": 104
  },
  "targets": [
   {
@@ -20302,6 +20314,14 @@
      "signal_type": "repeatable",
      "fit_signal": "The same owner and builder, two years earlier.",
      "url": "https://yieldpro.com/2023/10/tricon-residential-celebrates-grand-opening-of-new-90-unit-built-to-rent-community-in-richmond-texas/"
+    },
+    {
+     "name": "Jubilee, Hockley",
+     "detail": "Johnson Development's 1,622-acre master plan. Homes on 40-foot lots from the $290s and on 70-foot lots from the $590s.",
+     "url": "https://www.highlandhomes.com/houston/hockley/jubilee",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "capital_signals": [],
@@ -20357,6 +20377,10 @@
     },
     {
      "url": "https://www.builderonline.com/land/local-leaders-list/2026/houston-pasadena-the-woodlands-tx/",
+     "date": null
+    },
+    {
+     "url": "https://www.highlandhomes.com/houston/hockley/jubilee",
      "date": null
     }
    ],
@@ -20562,6 +20586,14 @@
      "signal_type": "repeatable",
      "fit_signal": "No land developer's approval needed for a method change.",
      "url": "https://therealdeal.com/texas/houston/2024/11/25/long-lake-purchased-100-acre-tract-in-houston-area/"
+    },
+    {
+     "name": "Beacon Hill",
+     "detail": "Waller, on US 290 in Wolff Companies' Beacon Hill. About 870 homes on 270 acres, from the $240s to $470s, in the Lake Ridge and Briarwood collections. First residents in August 2021.",
+     "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "capital_signals": [],
@@ -20589,6 +20621,14 @@
     },
     {
      "url": "https://www.longlakeltd.com/new-homes/communities/creekwood-crossing/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/news/first-model-homes-open-in-wolff-cos-master-planned-community-beacon-hill-in-waller/",
      "date": null
     }
    ],
@@ -23811,6 +23851,14 @@
      "signal_type": "repeatable",
      "fit_signal": "Repeat detached production, backed by a listed parent.",
      "url": "https://www.coventryhomes.com/about-us/"
+    },
+    {
+     "name": "Jubilee, Hockley",
+     "detail": "Johnson Development's master plan. 40-foot homes from $331,990 on 8 plans, and 55-foot homes from $464,990 on 11 plans.",
+     "url": "https://www.coventryhomes.com/new-homes/tx/hockley/jubilee/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "capital_signals": [
@@ -23836,6 +23884,10 @@
     },
     {
      "url": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer",
+     "date": null
+    },
+    {
+     "url": "https://www.coventryhomes.com/new-homes/tx/hockley/jubilee/",
      "date": null
     }
    ],
@@ -32575,6 +32627,14 @@
      "signal_type": "repeatable",
      "fit_signal": "Detached rentals on one site, through a partnership with Christopher Todd.",
      "url": "https://www.houstonchronicle.com/business/real-estate/article/Taylor-Morrison-starts-first-build-to-rent-16757127.php"
+    },
+    {
+     "name": "Betka Road, Hockley",
+     "detail": "165.7 acres south of US 290, next to Jubilee, Waller ISD. Bought in January 2024.",
+     "url": "https://realtynewsreport.com/builder-buys-166-acres-near-houston/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "capital_signals": [],
@@ -32582,6 +32642,10 @@
    "sources": [
     {
      "url": "https://www.builderonline.com/land/development/two-years-of-yardly-how-taylor-morrisons-build-to-rent-brand-has-evolved_o",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/builder-buys-166-acres-near-houston/",
      "date": null
     },
     {
@@ -34443,7 +34507,7 @@
    "entity_name": "The Signorelli Company",
    "region": "The Woodlands HQ / Fort Bend, Liberty",
    "homepage_url": "https://www.signorellicompany.com/",
-   "synopsis": "Privately held land developer with more than 16 master-planned communities. It develops Austin Point in Rosenberg and Valley Ranch in New Caney. Austin Point plans roughly 14,000 homes on 4,700 acres.",
+   "synopsis": "Privately held land developer with more than 16 master-planned communities. It develops Austin Point in Rosenberg, Valley Ranch in New Caney and Bluestem north of Brookshire. Austin Point plans roughly 14,000 homes on 4,700 acres.",
    "key_stat": "23,000+ paper lots in pipeline",
    "principals": [
     {
@@ -34483,6 +34547,14 @@
      "signal_type": "method_risk",
      "fit_signal": "Signorelli can specify a wall method on its lots through its builder.",
      "url": "https://www.globenewswire.com/news-release/2026/08/06/3340350/0/en/Citing-strong-market-fundamentals-Signorelli-chooses-rapid-Texas-expansion-for-award-winning-homebuilding-division.html"
+    },
+    {
+     "name": "Bluestem",
+     "detail": "North of Brookshire, Waller County, Royal ISD. 356 acres, more than 1,300 homes, announced February 2022. Sales began in May 2024 with CastleRock, First America Homes and Legend Homes.",
+     "url": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "capital_signals": [],
@@ -34508,6 +34580,18 @@
     },
     {
      "url": "https://www.signorellicompany.com/valley-ranch",
+     "date": null
+    },
+    {
+     "url": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/articles/signorelli-co-to-build-new-1300-home-community-in-waller-county/",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2024/05/28/sales-begin-at-bluestem/",
      "date": null
     }
    ],
@@ -35498,7 +35582,7 @@
    "entity_name": "Johnson Development Corp",
    "region": "Houston / Fort Bend, Montgomery",
    "homepage_url": "https://www.johnsondevelopment.com/",
-   "synopsis": "Land developer of Houston-area masterplans. They include Sienna.",
+   "synopsis": "Land developer of Houston-area masterplans. They include Sienna, and Jubilee and Everly in Hockley.",
    "key_stat": "Fifteen concurrent Houston masterplans",
    "principals": [
     {
@@ -35507,12 +35591,61 @@
      "source_url": "https://www.johnsondevelopment.com/our-leaders"
     }
    ],
-   "key_projects": [],
+   "key_projects": [
+    {
+     "name": "Jubilee",
+     "detail": "Hockley, southwest of US 290 and Katy Hockley Road, Waller ISD. 1,622 acres. Home sales from February 2024, and more than 480 families had bought by July 2026. Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+     "url": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Everly",
+     "detail": "Hockley, off the Grand Parkway at Hopfe Road, through Johnson Land Ventures. 318 acres, about 1,000 homes. 308 first-phase homesites went to Drees, Perry and Westin. Sales from August 2025.",
+     "url": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
    "capital_signals": [],
    "mvp_screen": "Sells lots to the builders on its land, Sienna among its masterplans.",
    "sources": [
     {
      "url": "https://www.johnsondevelopment.com/mpc_houston",
+     "date": null
+    },
+    {
+     "url": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee",
+     "date": null
+    },
+    {
+     "url": "https://www.liveinjubilee.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.liveinjubilee.com/home-builders",
+     "date": null
+    },
+    {
+     "url": "https://www.liveinjubilee.com/news/jubilee-introduces-new-builder-homesites-model-homes",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/",
+     "date": null
+    },
+    {
+     "url": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/cy-fair/development/johnson-land-ventures-announces-name-of-new-318-acrecommunity-in-northwest-harris-county/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/308-homes-underway-in-everly/",
      "date": null
     }
    ],
@@ -36133,6 +36266,106 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-235",
+   "entity_name": "Ryko Development",
+   "short": "Ryko Development",
+   "homepage_url": "https://www.rykodevelopment.com/",
+   "company_li": null,
+   "team_url": "https://www.rykodevelopment.com/about",
+   "chain": null,
+   "phone": "7139520200",
+   "phone_source": "https://www.rykodevelopment.com/oakberry-trails",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "6,100+ homes developed since 1991 (Ryko)",
+   "mvp_screen": "Sells Oakberry Trails lots to Risewell, K. Bassam Barazi is president.",
+   "synopsis": "Houston land developer founded in 1991, led by President Bassam Barazi. It develops lakeside master plans in Houston and in Upper Marlboro, Maryland. Its Waller County plan is Oakberry Trails, off US 290, where ground broke in March 2024.",
+   "region": "Houston office on San Felipe Street, with Oakberry Trails in Waller",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Over 800 homes planned at Oakberry Trails, by Risewell, K. Hovnanian and Village Builders."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Over 800 homes planned at Oakberry Trails (Ryko). It sells lots. The builders buy the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Oakberry Trails",
+     "detail": "Waller, Waller ISD, off US 290. 215 acres, over 800 homes, from the low $300s. Builders Risewell, K. Hovnanian and Village Builders, with David Weekley coming soon.",
+     "url": "https://www.rykodevelopment.com/oakberry-trails",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.rykodevelopment.com/communities",
+     "date": null
+    },
+    {
+     "url": "https://www.rykodevelopment.com/oakberry-trails",
+     "date": null
+    },
+    {
+     "url": "https://www.oakberrytrails.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.rykodevelopment.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.rykodevelopment.com/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Bassam Barazi",
+     "role": "President",
+     "source_url": "https://www.rykodevelopment.com/about"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "land",
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-224",
    "entity_name": "Sam Yager Incorporated",
    "short": "Sam Yager Incorporated",
@@ -36244,6 +36477,124 @@
      "role": "Vice President & Chief Operating Officer",
      "source_url": "https://syi.net/team/",
      "linkedin_url": "https://www.linkedin.com/in/greg-voinis-7201517/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "land",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-234",
+   "entity_name": "Wolff Companies",
+   "short": "Wolff Companies",
+   "homepage_url": "https://wolffcompanies.com/",
+   "company_li": null,
+   "team_url": "https://wolffcompanies.com/about/leadership/",
+   "chain": null,
+   "phone": "7136268050",
+   "phone_source": "https://wolffcompanies.com/contact",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Beacon Hill: 587 acres on US 290 in Waller (Wolff Companies)",
+   "mvp_screen": "Sold Beacon Hill's northern 270 acres to Long Lake, which builds about 870 homes there. Sold 78 acres to Hines in January 2022.",
+   "synopsis": "Houston developer of mixed-use business communities, led by Chairman and President David S. Wolff. Its current project is Beacon Hill, 587 acres on the north side of US 290 between FM 362 and James R. Muse Parkway in Waller. A business park takes the 323 acres on the freeway.",
+   "region": "Houston office on Briar Hollow Lane, with Beacon Hill on US 290 in Waller",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Sold 78 acres in Beacon Hill to Hines in January 2022, for up to 1,300,000 square feet of industrial space.",
+     "url": "https://wolffcompanies.com/current-projects/beacon-hill/"
+    },
+    {
+     "text": "Near $29 million invested in Beacon Hill's infrastructure to date (Wolff, June 2024).",
+     "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "About 870 homes by Long Lake at Beacon Hill, in its Lake Ridge and Briarwood collections."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "About 870 homes planned at Beacon Hill (Wolff). It sold the land. The builder buys the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "fail",
+    "innovation": "fail"
+   },
+   "cell": "clear|fail",
+   "group": "channel",
+   "key_projects": [
+    {
+     "name": "Beacon Hill",
+     "detail": "Waller, Waller ISD. 587 acres on US 290. Long Lake builds about 870 homes on the northern 270 acres, from the $240s to $470s. First residents in August 2021.",
+     "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://wolffcompanies.com/current-projects/beacon-hill/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/news/first-model-homes-open-in-wolff-cos-master-planned-community-beacon-hill-in-waller/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/about/leadership/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/contact",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/",
+     "date": null
+    },
+    {
+     "url": "https://wolffcompanies.com/news/u-s-290-corridor-enters-next-growth-phase-with-major-residential-industrial-developments-underway/",
+     "date": null
+    },
+    {
+     "url": "https://www.hines.com/news/hines-acquires-nearly-80-acres-in-beacon-hill-from-wolff-companies",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "David S. Wolff",
+     "role": "Chairman and President",
+     "source_url": "https://wolffcompanies.com/about/leadership/"
+    },
+    {
+     "name": "David L. Lane",
+     "role": "Executive Vice President and Chief Financial Officer",
+     "source_url": "https://wolffcompanies.com/about/leadership/"
     }
    ],
    "vol": null,
@@ -37736,6 +38087,20 @@
     "cat": -1,
     "tr": false,
     "fit": "fail",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "fail",
     "exec": false,
     "v": null
    },
@@ -37761,9 +38126,9 @@
     "v": null
    }
   ],
-  "n": 156,
+  "n": 158,
   "track": 18,
-  "exec": 102,
+  "exec": 104,
   "band": [
    25,
    400
@@ -38111,6 +38476,237 @@
    "b": "HOU-062",
    "rel": "people from Taylor Morrison founded it",
    "card": "HOU-062"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-040",
+   "b": "Jubilee",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-040",
+   "b": "Everly",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-015",
+   "b": "Bluestem",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-234",
+   "b": "Beacon Hill",
+   "rel": "",
+   "card": "HOU-234"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-235",
+   "b": "Oakberry Trails",
+   "rel": "",
+   "card": "HOU-235"
+  },
+  {
+   "k": "develops",
+   "a": "HOU-233",
+   "b": "Waller master plan",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "partner",
+   "a": "HOU-234",
+   "b": "HOU-233",
+   "rel": "78 acres in Beacon Hill",
+   "card": "HOU-234"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-201",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-033",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-023",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-168",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-067",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-069",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-013",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-205",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Jubilee",
+   "b": "HOU-068",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Everly",
+   "b": "HOU-202",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Everly",
+   "b": "HOU-013",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Everly",
+   "b": "HOU-068",
+   "rel": "",
+   "card": "HOU-040"
+  },
+  {
+   "k": "builds",
+   "a": "Bluestem",
+   "b": "HOU-022",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "builds",
+   "a": "Bluestem",
+   "b": "HOU-007",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "builds",
+   "a": "Bluestem",
+   "b": "HOU-010",
+   "rel": "",
+   "card": "HOU-015"
+  },
+  {
+   "k": "builds",
+   "a": "Beacon Hill",
+   "b": "HOU-130",
+   "rel": "",
+   "card": "HOU-234"
+  },
+  {
+   "k": "builds",
+   "a": "Oakberry Trails",
+   "b": "HOU-075",
+   "rel": "",
+   "card": "HOU-235"
+  },
+  {
+   "k": "builds",
+   "a": "Oakberry Trails",
+   "b": "HOU-206",
+   "rel": "",
+   "card": "HOU-235"
+  },
+  {
+   "k": "builds",
+   "a": "Oakberry Trails",
+   "b": "HOU-166",
+   "rel": "",
+   "card": "HOU-235"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-168",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-045",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-202",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-034",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-205",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-024",
+   "rel": "",
+   "card": "HOU-233"
+  },
+  {
+   "k": "builds",
+   "a": "Waller master plan",
+   "b": "HOU-022",
+   "rel": "",
+   "card": "HOU-233"
   },
   {
    "k": "builds",
