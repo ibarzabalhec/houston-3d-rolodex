@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 117,
+ "build": 118,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-30",
@@ -1846,91 +1846,427 @@
     "place": "Georgetown",
     "printer": "ICON, with Lennar",
     "units": 100,
-    "status": "Finished 2025, per ICON"
+    "status": "Finished 2025, per ICON",
+    "id": "wolf-ranch",
+    "mk": "",
+    "stage": "Printed",
+    "year": 2025,
+    "by": "ICON",
+    "field": {
+     "ICON": "ICON"
+    },
+    "firms": [
+     {
+      "how": "with",
+      "name": "Lennar",
+      "id": "DFW-002"
+     }
+    ],
+    "sources": [
+     {
+      "url": "https://newsroom.lennar.com/2021-10-26-Lennar-To-Build-Worlds-Largest-Neighborhood-Of-3D-Printed-Homes-With-ICON",
+      "label": "Lennar announces Wolf Ranch, 26 October 2021",
+      "date": "26 October 2021"
+     },
+     {
+      "url": "https://www.iconbuild.com/newsroom/icon-and-lennar-announce-community-of-3d-printed-homes-is-now-underway-in-georgetown-tx",
+      "label": "ICON and Lennar, Wolf Ranch under way, 10 November 2022",
+      "date": "10 November 2022"
+     },
+     {
+      "url": "https://www.iconbuild.com/projects/wolf-ranch",
+      "label": "ICON's Wolf Ranch project page",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Community First! Village",
     "place": "Austin",
     "printer": "ICON",
     "units": 100,
-    "status": "100 under way from December 2024. ICON's page: 117 structures, 2019 to 2026"
+    "status": "100 under way from December 2024. ICON's page: 117 structures, 2019 to 2026",
+    "id": "community-first-village",
+    "mk": "",
+    "stage": "Under way",
+    "year": 2024,
+    "by": "ICON",
+    "field": {
+     "ICON": "ICON"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://www.iconbuild.com/newsroom/icon-announces-construction-is-underway-for-more-3d-printed-homes-to-serve-the-chronically-homeless-in-texas",
+      "label": "ICON at Community First! Village, 19 December 2024",
+      "date": "19 December 2024"
+     },
+     {
+      "url": "https://www.iconbuild.com/projects/community-first-village",
+      "label": "ICON's Community First! Village project page",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Zuri Gardens",
     "place": "Houston",
     "printer": "HiveASMBLD, for Cole Klein",
     "units": 80,
-    "status": "Under way"
+    "status": "Under way",
+    "id": "zuri-gardens",
+    "mk": "houston",
+    "stage": "Under way",
+    "year": null,
+    "by": "HiveASMBLD",
+    "field": {
+     "HiveASMBLD": "HiveASMBLD"
+    },
+    "firms": [
+     {
+      "how": "for",
+      "name": "Cole Klein",
+      "id": null
+     }
+    ],
+    "where": "City of Houston, near Hobby Airport",
+    "sources": [
+     {
+      "url": "https://houston.innovationmap.com/zuri-gardens-houston-2674387821.html",
+      "label": "InnovationMap",
+      "date": ""
+     },
+     {
+      "url": "https://www.houstoniamag.com/home-and-real-estate/2025/12/3d-printed-houses-neighborhood-houston",
+      "label": "Houstonia Magazine: Houston's First 3D Printed Home Community, Zuri Gardens",
+      "date": "3 December 2025"
+     },
+     {
+      "url": "https://www.archpaper.com/2026/02/zuri-gardens-3d-printed-texas-community/",
+      "label": "The Architect's Newspaper: Zuri Gardens, a 3D-printed Texas community, shows promise for attainable housing",
+      "date": "February 2026"
+     },
+     {
+      "url": "https://www.hiveasmbld.com/projects",
+      "label": "HiveASMBLD's own project list",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Gulf Shore Estates",
     "place": "San Leon",
     "printer": "HiveASMBLD, for Commander",
     "units": 23,
-    "status": "23 of 26 to be printed"
+    "status": "23 of 26 to be printed",
+    "id": "gulf-shore-estates",
+    "mk": "houston",
+    "stage": "Under way",
+    "year": 2026,
+    "of": 26,
+    "of_word": "homes planned",
+    "by": "HiveASMBLD",
+    "field": {
+     "HiveASMBLD": "HiveASMBLD"
+    },
+    "firms": [
+     {
+      "how": "for",
+      "name": "Commander",
+      "id": null
+     }
+    ],
+    "where": "Unincorporated Galveston County, San Leon",
+    "sources": [
+     {
+      "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
+      "label": "Homes.com: Houston's 3D-printed housing push grows with two new developments",
+      "date": "22 April 2026"
+     },
+     {
+      "url": "https://abc13.com/post/san-leon-development-aims-sustainability-ground/18943368/",
+      "label": "ABC13 Houston: San Leon development aims for sustainability from the ground up",
+      "date": "22 April 2026"
+     },
+     {
+      "url": "https://houstonagentmagazine.com/2026/04/08/hiveasmbld-3d-printed-gulf-shore-estates-san-leon/",
+      "label": "Houston Agent Magazine: HiveASMBLD launches 3D-printed Gulf Shore Estates in San Leon",
+      "date": "8 April 2026"
+     },
+     {
+      "url": "https://www.hiveasmbld.com/projects",
+      "label": "HiveASMBLD's own project list",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Mueller",
     "place": "Austin",
     "printer": "ICON",
     "units": 12,
-    "status": "Finished 2026, per ICON"
+    "status": "Finished 2026, per ICON",
+    "id": "mueller",
+    "mk": "",
+    "stage": "Printed",
+    "year": 2026,
+    "by": "ICON",
+    "field": {
+     "ICON": "ICON"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://www.iconbuild.com/newsroom/icon-releases-affordable-3d-printed-homes-for-sale-and-breaks-ground-in-austins-mueller-community",
+      "label": "ICON at Mueller, 31 July 2025",
+      "date": "31 July 2025"
+     },
+     {
+      "url": "https://www.iconbuild.com/projects/mueller",
+      "label": "ICON's Mueller project page",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Lumen Villas",
     "place": "Marfa",
     "printer": "HiveASMBLD",
     "units": 9,
-    "status": "Started 2025, per HiveASMBLD"
+    "status": "Started 2025, per HiveASMBLD",
+    "id": "lumen-villas",
+    "mk": "",
+    "stage": "Under way",
+    "year": 2025,
+    "by": "HiveASMBLD",
+    "field": {
+     "HiveASMBLD": "HiveASMBLD"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://www.hiveasmbld.com/projects",
+      "label": "HiveASMBLD's own project list",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Wimberley Springs",
     "place": "Wimberley",
     "printer": "ICON",
     "units": 5,
-    "status": "Finished 2025, per ICON. Eight announced, July 2024"
+    "status": "Finished 2025, per ICON. Eight announced, July 2024",
+    "id": "wimberley-springs",
+    "mk": "",
+    "stage": "Printed",
+    "year": 2025,
+    "of": 8,
+    "of_word": "announced, July 2024",
+    "by": "ICON",
+    "field": {
+     "ICON": "ICON"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://www.iconbuild.com/newsroom/new-icon-homes-coming-to-wimberley-texas-and-available-for-sale",
+      "label": "ICON at Wimberley Springs, 16 July 2024",
+      "date": "16 July 2024"
+     },
+     {
+      "url": "https://www.iconbuild.com/projects/wimberley-springs",
+      "label": "ICON's Wimberley Springs project page",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Las Casitas",
     "place": "Round Top",
     "printer": "Hive3D, on a CyBe printer",
     "units": 5,
-    "status": "Five rental casitas, from mid 2023, per CyBe"
+    "status": "Five rental casitas, from mid 2023, per CyBe",
+    "id": "las-casitas",
+    "mk": "",
+    "stage": "Started",
+    "year": 2023,
+    "by": "Hive3D",
+    "maker": "CyBe",
+    "field": {
+     "Hive3D": "HiveASMBLD",
+     "CyBe": "CyBe Construction"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://cybe.eu/cases/las-casitas/",
+      "label": "CyBe's case page for Las Casitas, Round Top, Texas",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "PRINT3D houses",
     "place": "Mabank and other Texas sites",
     "printer": "PRINT3D",
     "units": 3,
-    "status": "Three houses among seven structures by May 2026, per Community Impact"
+    "status": "Three houses among seven structures by May 2026, per Community Impact",
+    "id": "print3d-houses",
+    "mk": "",
+    "stage": "Printed",
+    "year": 2026,
+    "by": "PRINT3D",
+    "field": {
+     "PRINT3D": "PRINT3D Technologies"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://communityimpact.com/dallas-fort-worth/allen/real-estate/2026/05/26/allen-based-print3d-technologies-brings-3d-printing-innovation-to-homebuilding/",
+      "label": "Community Impact on the build count and prices, 26 May 2026",
+      "date": "26 May 2026"
+     }
+    ]
    },
    {
     "project": "Avenue J",
     "place": "Houston",
     "printer": "HiveASMBLD, for Elpis",
     "units": 2,
-    "status": "One duplex, started March 2026"
+    "status": "One duplex, started March 2026",
+    "id": "avenue-j",
+    "mk": "houston",
+    "stage": "Under way",
+    "year": 2026,
+    "by": "HiveASMBLD",
+    "field": {
+     "HiveASMBLD": "HiveASMBLD"
+    },
+    "firms": [
+     {
+      "how": "for",
+      "name": "Elpis",
+      "id": null
+     }
+    ],
+    "where": "City of Houston, East End",
+    "sources": [
+     {
+      "url": "https://www.homes.com/news/houstons-3d-printed-housing-push-grows-with-two-new-developments/647676272/",
+      "label": "Homes.com: Houston's 3D-printed housing push grows with two new developments",
+      "date": "22 April 2026"
+     },
+     {
+      "url": "https://www.houstonchronicle.com/business/article/3d-print-affordable-houston-east-end-22153531.php",
+      "label": "Houston Chronicle",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Spring Branch house",
     "place": "Houston",
     "printer": "PERI, on a COBOD printer",
     "units": 1,
-    "status": "Printed July 2022 to May 2023, per PERI"
+    "status": "Printed July 2022 to May 2023, per PERI",
+    "id": "spring-branch-house",
+    "mk": "houston",
+    "stage": "Printed",
+    "year": 2022,
+    "by": "PERI",
+    "maker": "COBOD",
+    "field": {
+     "PERI": "PERI 3D Construction",
+     "COBOD": "COBOD International"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://www.peri-usa.com/projects/houston-3d.html",
+      "label": "PERI's Spring Branch project page",
+      "date": ""
+     },
+     {
+      "url": "https://www.peri-usa.com/company/press/houston-3d.html",
+      "label": "PERI's release on the Houston house",
+      "date": ""
+     },
+     {
+      "url": "https://abc13.com/post/3d-printing-printed-homes-spring-branch-home-built-with-cive/12850103/",
+      "label": "ABC13 Houston on the build",
+      "date": ""
+     }
+    ]
    },
    {
     "project": "Bolt Street house",
     "place": "Fort Worth",
     "printer": "Black Buffalo 3D, with Boxer Property",
     "units": 1,
-    "status": "Printed May 2024"
+    "status": "Printed May 2024",
+    "id": "bolt-street-house",
+    "mk": "dfw",
+    "stage": "Printed",
+    "year": 2024,
+    "by": "Black Buffalo 3D",
+    "field": {
+     "Black Buffalo 3D": "Black Buffalo 3D"
+    },
+    "firms": [
+     {
+      "how": "with",
+      "name": "Boxer Property",
+      "id": null
+     }
+    ],
+    "where": "City of Fort Worth, 100 W. Bolt St.",
+    "address": "100 West Bolt Street, Fort Worth",
+    "sources": [
+     {
+      "url": "https://fortworthreport.org/2024/06/02/a-3d-printed-home-under-construction-in-fort-worth-may-be-first-of-many/",
+      "label": "Fort Worth Report",
+      "date": ""
+     },
+     {
+      "url": "https://www.voxelmatters.com/black-buffalo-3d-live-print-home-texas/",
+      "label": "VoxelMatters on the Fort Worth live print, 24 May 2024",
+      "date": "24 May 2024"
+     },
+     {
+      "url": "https://candysdirt.com/2024/05/28/you-can-see-a-3d-printed-home-get-built-in-fort-worth-right-now/",
+      "label": "CandysDirt on the Fort Worth address and Boxer's lot, 28 May 2024",
+      "date": "28 May 2024"
+     }
+    ]
    },
    {
     "project": "Von Perry house",
     "place": "Nevada, Collin County",
     "printer": "Von Perry",
     "units": 1,
-    "status": "Begun December 2021, last reported August 2022"
+    "status": "Begun December 2021, last reported August 2022",
+    "id": "von-perry-house",
+    "mk": "dfw",
+    "stage": "Started",
+    "year": 2021,
+    "by": "Von Perry",
+    "field": {
+     "Von Perry": "Von Perry"
+    },
+    "firms": [],
+    "sources": [
+     {
+      "url": "https://dallasinnovates.com/dallas-startup-von-perry-is-building-a-3d-printed-home-in-collin-county/",
+      "label": "Dallas Innovates on the Collin County house, 14 December 2021",
+      "date": "14 December 2021"
+     },
+     {
+      "url": "https://dallasinnovates.com/dallas-startup-von-perry-looks-to-raise-2m-to-build-more-3d%E2%80%91printed-homes-across-texas/",
+      "label": "Dallas Innovates on the geopolymer switch, 31 August 2022",
+      "date": "31 August 2022"
+     }
+    ]
    }
   ],
   "timeline": [
