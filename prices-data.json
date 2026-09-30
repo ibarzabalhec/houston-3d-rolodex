@@ -1344,7 +1344,17 @@
      "counties": [
       "Montgomery"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "17590 ARTAVIA PKWY Conroe, Texas 77302",
+      "url": "https://artaviatx.com/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.20175,
+      "lon": -95.33645,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-amira",
@@ -1586,7 +1596,17 @@
      "counties": [
       "Harris"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "20508 Mueschke Road, Tomball, TX 77377",
+      "url": "https://amiratexas.com/amira-gains-100-acres/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.06252,
+      "lon": -95.73414,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-anniston",
@@ -2390,7 +2410,17 @@
      ],
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "6806 Harvest Wheat Lane, Katy, TX 77493",
+      "url": "https://friendswooddevelopment.com/communities/master-planned/anniston",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.8532,
+      "lon": -95.8315,
+      "how": "zip",
+      "zip": "77493"
+     }
     },
     {
      "id": "hou-audubon",
@@ -3510,7 +3540,16 @@
      "counties": [
       "Montgomery"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "40001 Audubon Pkwy, Magnolia, TX 77354",
+      "url": "https://audubonliving.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.22054,
+      "lon": -95.72072,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-austin-point",
@@ -4460,7 +4499,17 @@
      },
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "4719 Hydra Lane, Richmond, TX 77469",
+      "url": "https://www.austinpoint.com/model-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.4914,
+      "lon": -95.7021,
+      "how": "zip",
+      "zip": "77469"
+     }
     },
     {
      "id": "hou-baytown-crossings",
@@ -5107,7 +5156,17 @@
      ],
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "9639 Sterling Arbor Drive, Baytown, TX 77521",
+      "url": "https://friendswooddevelopment.com/communities/master-planned/baytown-crossings",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.83647,
+      "lon": -94.99152,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-bluestem",
@@ -5451,7 +5510,17 @@
      "fees": null,
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "address": "3065 El Dorado Drive, Brookshire, TX 77423",
+      "url": "https://www.bluestemtx.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.8331,
+      "lon": -95.9869,
+      "how": "zip",
+      "zip": "77423"
+     }
     },
     {
      "id": "hou-briarley",
@@ -5856,7 +5925,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "103 Plott Hound Drive, Montgomery, TX 77316",
+      "url": "https://briarleytx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.3062,
+      "lon": -95.6864,
+      "how": "zip",
+      "zip": "77316"
+     }
     },
     {
      "id": "hou-bridgeland",
@@ -8161,7 +8240,16 @@
      "counties": [
       "Harris"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "20203 Bridgeland Creek Parkway, Suite 100, Cypress, TX 77433",
+      "url": "https://www.bridgeland.com/contact/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.94082,
+      "lon": -95.75261,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-brookewater",
@@ -9006,7 +9094,17 @@
      },
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "5214 Eloise Harper Lane, Rosenberg, TX 77471",
+      "url": "https://livebrookewater.com/information-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.5485,
+      "lon": -95.862,
+      "how": "zip",
+      "zip": "77471"
+     }
     },
     {
      "id": "hou-colton",
@@ -10179,7 +10277,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "42030 Texoma Way, Todd Mission, Texas 77316",
+      "url": "https://coltontx.com/builders/drees-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.3062,
+      "lon": -95.6864,
+      "how": "zip",
+      "zip": "77316"
+     }
     },
     {
      "id": "hou-candela",
@@ -11340,7 +11448,16 @@
      "counties": [
       "Fort Bend"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "26631 Candela Heights Drive, Richmond, TX 77406",
+      "url": "https://candelatx.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.68245,
+      "lon": -95.84077,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-canterra-creek",
@@ -11646,7 +11763,18 @@
      "fees": null,
      "counties": [
       "Brazoria"
-     ]
+     ],
+     "loc": {
+      "address": "8742 Jade Hill Dr., Iowa Colony, TX 77583",
+      "url": "https://www.tricoasthomes.com/communities/iowa-colony-tx/canterra-creek-60",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Tricoast Homes",
+      "lat": 29.3742,
+      "lon": -95.4538,
+      "how": "zip",
+      "zip": "77583"
+     }
     },
     {
      "id": "hou-cielo",
@@ -12115,7 +12243,17 @@
      "counties": [
       "Montgomery"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "10607 Flight Deck Court, Conroe, TX 77303",
+      "url": "https://www.cieloconroe.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.37068,
+      "lon": -95.41242,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-creekhaven",
@@ -12780,7 +12918,17 @@
      },
      "counties": [
       "Brazoria"
-     ]
+     ],
+     "loc": {
+      "address": "13306 Glacier View Lane, Arcola, TX 77583",
+      "url": "https://creekhaventx.com/information-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.3742,
+      "lon": -95.4538,
+      "how": "zip",
+      "zip": "77583"
+     }
     },
     {
      "id": "hou-cross-creek-west",
@@ -13459,7 +13607,17 @@
      "fees": null,
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "4803 Garden Crest Lane, Fulshear, TX 77441",
+      "url": "https://www.crosscreekwesttx.com/fulshear-home-builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.6974,
+      "lon": -95.9096,
+      "how": "zip",
+      "zip": "77441"
+     }
     },
     {
      "id": "hou-cypress-green",
@@ -14335,7 +14493,17 @@
      "counties": [
       "Harris"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "20103 Sedona Pk Dr, Hockley, TX 77447",
+      "url": "https://cypressgreentx.com/information-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.07128,
+      "lon": -95.76715,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-dunham-pointe",
@@ -15029,7 +15197,18 @@
      },
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "20410 Via Casa Laura Dr., Cypress, TX 77433",
+      "url": "https://www.davidweekleyhomes.com/new-homes/tx/houston/cypress/dunham-pointe-65-homesites",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "David Weekley Homes",
+      "lat": 29.9453,
+      "lon": -95.7414,
+      "how": "zip",
+      "zip": "77433"
+     }
     },
     {
      "id": "hou-elyson",
@@ -16253,7 +16432,16 @@
      "counties": [
       "Harris"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "7303 Prairie Lakeshore Lane, Katy, TX 77493",
+      "url": "https://www.elyson.com/homes/homebuilders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.8877,
+      "lon": -95.79284,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-emberly",
@@ -16674,7 +16862,12 @@
      "counties": [
       "Fort Bend"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "lat": 29.46356,
+      "lon": -95.95199,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-evergreen",
@@ -17092,7 +17285,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "12990 Soaring Forest Dr, Conroe, TX 77302",
+      "url": "https://evergreen-texas.com/our-builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.2221,
+      "lon": -95.3449,
+      "how": "zip",
+      "zip": "77302"
+     }
     },
     {
      "id": "hou-everly",
@@ -17582,7 +17785,17 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "21821 Everly Fields Blvd, Hockley, TX 77447",
+      "url": "https://www.everlytx.com/builder/perry-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.0553,
+      "lon": -95.8248,
+      "how": "zip",
+      "zip": "77447"
+     }
     },
     {
      "id": "hou-fulbrook-on-fulshear-creek",
@@ -17735,7 +17948,17 @@
      "fees": null,
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "5005 Lodge Lake Drive, Fulshear, TX 77441",
+      "url": "https://www.fulbrookhomes.com/contact",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.67988,
+      "lon": -95.89351,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-grand-central-park",
@@ -18373,7 +18596,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "750 Grand Central Parkway, Conroe, TX 77304",
+      "url": "https://www.grandcentralparktx.com/home-builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.3278,
+      "lon": -95.516,
+      "how": "zip",
+      "zip": "77304"
+     }
     },
     {
      "id": "hou-grand-magnolia",
@@ -19352,7 +19585,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "305 Box Elder Ct., Waller, TX 77484",
+      "url": "https://grandmagnoliatx.com/find-us/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.1563,
+      "lon": -95.7493,
+      "how": "zip",
+      "zip": "77355"
+     }
     },
     {
      "id": "hou-grange",
@@ -19992,7 +20235,17 @@
      },
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "address": "405 Dove Meadow Lane, Katy, Texas 77493",
+      "url": "https://www.liveingrange.com/home-builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.8532,
+      "lon": -95.8315,
+      "how": "zip",
+      "zip": "77493"
+     }
     },
     {
      "id": "hou-harvest-green",
@@ -20677,7 +20930,17 @@
      },
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "3400 Harvest Corner Dr, Richmond, TX 77406",
+      "url": "https://www.harvestgreentexas.com/home-builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.64301,
+      "lon": -95.72238,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-indigo",
@@ -21605,7 +21868,17 @@
      },
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "1255 Mercantile St., Richmond TX 77406",
+      "url": "https://www.indigocommunity.com/builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.6461,
+      "lon": -95.7945,
+      "how": "zip",
+      "zip": "77406"
+     }
     },
     {
      "id": "hou-jordan-ranch",
@@ -22281,7 +22554,16 @@
       "Fort Bend"
      ],
      "county_from": "homes",
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "30757 Jordan Crossing Blvd, Fulshear, TX 77423",
+      "url": "https://www.jordanranchtexas.com/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.75754,
+      "lon": -95.88094,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-jubilee",
@@ -23415,7 +23697,18 @@
      },
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "26134 Happy Home St, Hockley, TX 77447",
+      "url": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee",
+      "read": "2026-09-27",
+      "whose": "developer",
+      "developer": "Johnson Development",
+      "lat": 30.0553,
+      "lon": -95.8248,
+      "how": "zip",
+      "zip": "77447"
+     }
     },
     {
      "id": "hou-kresston",
@@ -24253,7 +24546,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "26850 Trailblazers Run, Montgomery, TX 77316",
+      "url": "https://kresston.com/builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.3062,
+      "lon": -95.6864,
+      "how": "zip",
+      "zip": "77316"
+     }
     },
     {
      "id": "hou-lago-mar",
@@ -25267,7 +25570,16 @@
      "counties": [
       "Galveston"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "13229 Golden Isle Drive, Texas City, TX 77568",
+      "url": "https://lagomarintexascity.com/information-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.40285,
+      "lon": -95.06348,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-legacy",
@@ -26039,7 +26351,17 @@
      },
      "counties": [
       "Galveston"
-     ]
+     ],
+     "loc": {
+      "address": "633 Barrel Oak Drive, League City, TX 77546",
+      "url": "https://www.legacybyhillwood.com/our-builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.51197,
+      "lon": -95.17389,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-marvida",
@@ -26395,7 +26717,12 @@
      "counties": [
       "Harris"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "lat": 29.89655,
+      "lon": -95.74473,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-mavera",
@@ -26855,7 +27182,18 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "16418 Cedarveil Court, Conroe, Texas 77302",
+      "url": "https://www.centex.com/homes/texas/houston/conroe/mavera-210854",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "PulteGroup",
+      "lat": 30.2221,
+      "lon": -95.3449,
+      "how": "zip",
+      "zip": "77302"
+     }
     },
     {
      "id": "hou-meridiana",
@@ -28852,7 +29190,16 @@
      "counties": [
       "Brazoria"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4003 Meridiana Parkway, Iowa Colony, TX 77583",
+      "url": "https://www.meridianatexas.com/about-us/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.45405,
+      "lon": -95.37728,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-mill-creek",
@@ -29099,7 +29446,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "14714 Clover Summit, Magnolia, TX 77354",
+      "url": "https://millcreek-community.com/builders",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.23116,
+      "lon": -95.70527,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-moran-ranch",
@@ -29341,7 +29698,18 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "749 Ivory Creek Court, Willis, Texas 77378",
+      "url": "https://www.mihomes.com/new-homes/texas/greater-houston/willis/moran-ranch",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "M/I Homes",
+      "lat": 30.41539,
+      "lon": -95.48403,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-oakberry-trails",
@@ -29723,7 +30091,17 @@
      "fees": null,
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "address": "21711 Berry Ranch Dr., Waller, TX 77484",
+      "url": "https://www.oakberrytrails.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.0835,
+      "lon": -95.9281,
+      "how": "zip",
+      "zip": "77484"
+     }
     },
     {
      "id": "hou-pomona",
@@ -30271,7 +30649,17 @@
      "counties": [
       "Brazoria"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4545 Pomona Parkway, Manvel, Texas 77578",
+      "url": "https://www.pomonabyhillwood.com/contact-us",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.5279,
+      "lon": -95.40057,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-riceland",
@@ -31155,7 +31543,16 @@
      "counties": [
       "Chambers"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "12212 Valencia, Mont Belvieu, TX 77580",
+      "url": "https://www.ricelandtx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.86418,
+      "lon": -94.86919,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-river-ranch",
@@ -32834,7 +33231,17 @@
      },
      "counties": [
       "Liberty"
-     ]
+     ],
+     "loc": {
+      "address": "15 River Ranch Blvd, Dayton, TX 77535",
+      "url": "https://www.riverranchdayton.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.0548,
+      "lon": -94.9223,
+      "how": "zip",
+      "zip": "77535"
+     }
     },
     {
      "id": "hou-sienna",
@@ -35122,7 +35529,17 @@
      "counties": [
       "Fort Bend"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "5777 Sienna Pkwy #100, Missouri City, TX 77459",
+      "url": "https://www.siennatx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.5307,
+      "lon": -95.53458,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-sierra-vista",
@@ -35479,7 +35896,16 @@
      "counties": [
       "Brazoria"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "10303 Crystal View Drive, Rosharon, TX 77583",
+      "url": "https://sierravistahouston.com/contact/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.42784,
+      "lon": -95.44892,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-sorella",
@@ -35803,7 +36229,17 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "21000 Sorella Landing Lane, Tomball, Texas 77377",
+      "url": "https://sorellaliving.com/location/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.0599,
+      "lon": -95.6722,
+      "how": "zip",
+      "zip": "77377"
+     }
     },
     {
      "id": "hou-sunterra",
@@ -36862,7 +37298,16 @@
       "Waller"
      ],
      "county_from": "homes",
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "27106 Shadow Dune Drive, Katy, Texas 77493",
+      "url": "https://sunterratx.com/welcome-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.83719,
+      "lon": -95.85509,
+      "how": "homes"
+     }
     },
     {
      "id": "hou-sunterra-lakes",
@@ -37717,7 +38162,18 @@
      },
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "address": "4016 Shimmer Sol Drive, Brookshire, TX 77423",
+      "url": "https://www.drhorton.com/texas/houston/katy/sunterra-lakes",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "D.R. Horton",
+      "lat": 29.8331,
+      "lon": -95.9869,
+      "how": "zip",
+      "zip": "77423"
+     }
     },
     {
      "id": "hou-sweetgrass-village",
@@ -38122,7 +38578,18 @@
      },
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "13015 Dianna Lee Drive, Crosby, TX 77532",
+      "url": "https://www.lennar.com/new-homes/texas/houston/crosby/sweetgrass-village",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "Lennar",
+      "lat": 29.9329,
+      "lon": -95.0572,
+      "how": "zip",
+      "zip": "77532"
+     }
     },
     {
      "id": "hou-tamarron",
@@ -38380,7 +38847,18 @@
      ],
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "31730 Barrymoor Trace, Fulshear, TX 77441",
+      "url": "https://www.drhorton.com/texas/houston/fulshear/tamarron",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "D.R. Horton",
+      "lat": 29.73462,
+      "lon": -95.91786,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-the-george",
@@ -39003,7 +39481,17 @@
      },
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "7730 Tribute Circle, Richmond, TX 77469",
+      "url": "https://lifeatthegeorge.com/home-builders/962/perry-homes",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.4914,
+      "lon": -95.7021,
+      "how": "zip",
+      "zip": "77469"
+     }
     },
     {
      "id": "hou-grand-prairie",
@@ -39455,7 +39943,17 @@
      ],
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "16507 Verbena Glen Dr, Hockley, Texas 77447",
+      "url": "https://thegrandprairietx.com/builders/david-weekley-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.0553,
+      "lon": -95.8248,
+      "how": "zip",
+      "zip": "77447"
+     }
     },
     {
      "id": "hou-the-highlands",
@@ -40729,7 +41227,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "21875 Zion Dr, Porter, TX 77365",
+      "url": "https://thehighlands.com/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.13371,
+      "lon": -95.31493,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-the-woodlands-hills",
@@ -41733,7 +42241,17 @@
      "counties": [
       "Montgomery"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1460 N. Teralyn Hills Drive, Willis, Texas 77318",
+      "url": "https://thewoodlandshills.com/location/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.39934,
+      "lon": -95.50269,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-towne-lake",
@@ -42010,7 +42528,17 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "10000 Towne Lake Parkway, Cypress, TX 77433",
+      "url": "https://townelaketexas.com/contact-us",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 29.92299,
+      "lon": -95.68993,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-two-step-farm",
@@ -43607,7 +44135,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "11725 Howdy Drive, Montgomery, TX 77316",
+      "url": "https://twostepfarm.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.3062,
+      "lon": -95.6864,
+      "how": "zip",
+      "zip": "77316"
+     }
     },
     {
      "id": "hou-valencia",
@@ -44452,7 +44990,17 @@
      "fees": null,
      "counties": [
       "Brazoria"
-     ]
+     ],
+     "loc": {
+      "address": "6426 Sparkling Citrus Street, Manvel, TX 77578",
+      "url": "https://www.valenciabyhillwood.com/new-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.4854,
+      "lon": -95.3623,
+      "how": "zip",
+      "zip": "77578"
+     }
     },
     {
      "id": "hou-wildrye",
@@ -45044,7 +45592,17 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "22407 Sawyer Mountain Dr, Waller, TX 77484",
+      "url": "https://livewildrye.com/information-center/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.0835,
+      "lon": -95.9281,
+      "how": "zip",
+      "zip": "77484"
+     }
     },
     {
      "id": "hou-woodforest",
@@ -45402,7 +45960,18 @@
      "counties": [
       "Montgomery"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "251 Central Pine Street, Montgomery, TX 77316",
+      "url": "https://www.johnsondevelopment.com/montgomery-tx/mpc_woodforest",
+      "read": "2026-09-27",
+      "whose": "developer",
+      "developer": "Johnson Development",
+      "lat": 30.28059,
+      "lon": -95.55327,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-woodhavyn",
@@ -45990,7 +46559,17 @@
      },
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "29914 Stony Forest Dr., Magnolia, TX 77354",
+      "url": "https://woodhavyn.com/the-builders/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.2079,
+      "lon": -95.643,
+      "how": "zip",
+      "zip": "77354"
+     }
     },
     {
      "id": "hou-woodsons-reserve",
@@ -46594,7 +47173,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "4125 Waterbend Cove, Spring, Texas 77386",
+      "url": "https://woodsonsreserve.com/location/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 30.1003,
+      "lon": -95.3565,
+      "how": "zip",
+      "zip": "77386"
+     }
     },
     {
      "id": "hou-balmoral",
@@ -46703,7 +47292,18 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "15815 Invergelder Drive, Humble, TX 77346",
+      "url": "https://www.chesmar.com/texas/houston-new-homes/humble/balmoral/",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "Chesmar Homes",
+      "lat": 29.95256,
+      "lon": -95.19205,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-beacon-hill",
@@ -46804,7 +47404,10 @@
      "fees": null,
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "hou-breckenridge-forest",
@@ -46964,7 +47567,10 @@
        "url": "https://www.rclco.com/wp-content/uploads/2025/01/Advisory-RCLCO-Top-Selling-MPCs-of-2024-1-7-2024.pdf"
       }
      ],
-     "counties": []
+     "counties": [],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "hou-caldwell-crossing",
@@ -47169,7 +47775,17 @@
      ],
      "counties": [
       "Brazoria"
-     ]
+     ],
+     "loc": {
+      "address": "1307 Angelfish Drive, Iowa Colony, TX 77583",
+      "url": "https://www.drhorton.com/texas/houston/iowa-colony/caldwell-crossing",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.3742,
+      "lon": -95.4538,
+      "how": "zip",
+      "zip": "77583"
+     }
     },
     {
      "id": "hou-cane-island",
@@ -47337,7 +47953,17 @@
      ],
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "2100 Cane Island Parkway, Katy, TX 77493",
+      "url": "https://caneisland.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.79906,
+      "lon": -95.8433,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-cross-creek-ranch",
@@ -47432,7 +48058,10 @@
      ],
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "hou-dellrose",
@@ -47679,7 +48308,17 @@
      "fees": null,
      "counties": [
       "Harris"
-     ]
+     ],
+     "loc": {
+      "address": "17312 Springfield Meadow Dr, Hockley, TX 77447",
+      "url": "https://dellroseliving.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.0553,
+      "lon": -95.8248,
+      "how": "zip",
+      "zip": "77447"
+     }
     },
     {
      "id": "hou-freeman-ranch",
@@ -47757,7 +48396,15 @@
      "qmi_ppsf_hi": null,
      "zip_market": null,
      "fees": null,
-     "counties": []
+     "counties": [],
+     "loc": {
+      "address": "305 Fastboy Ln, Waller, TX 77484",
+      "url": "https://www.lgihomes.com/texas/houston/freeman-ranch",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "LGI Homes",
+      "how": null
+     }
     },
     {
      "id": "hou-imperial",
@@ -47903,7 +48550,18 @@
      "fees": null,
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "730 Imperial Drive, Sugarland, TX 77498",
+      "url": "https://gracepointhomes.com/community/the-point-at-imperial/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Gracepoint Homes",
+      "lat": 29.62546,
+      "lon": -95.6436,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-magnolia-woods",
@@ -48064,7 +48722,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "21619 Bluebonnet Bay Drive, Magnolia, TX 77354",
+      "url": "https://www.lgihomes.com/texas/houston/magnolia-woods",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.2079,
+      "lon": -95.643,
+      "how": "zip",
+      "zip": "77354"
+     }
     },
     {
      "id": "hou-mirabella",
@@ -48187,7 +48855,18 @@
      "fees": null,
      "counties": [
       "Waller"
-     ]
+     ],
+     "loc": {
+      "address": "1454 Catalina Drive, Brookshire, TX 77423",
+      "url": "https://www.centurycommunities.com/find-your-new-home/texas/houston-metro/brookshire/mirabella/",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "Century Communities",
+      "lat": 29.8331,
+      "lon": -95.9869,
+      "how": "zip",
+      "zip": "77423"
+     }
     },
     {
      "id": "hou-northgrove",
@@ -48446,7 +49125,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "8553 Burdekin Rd, Magnolia, TX 77354",
+      "url": "https://northgrovetx.com/builder/chesmar-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.14932,
+      "lon": -95.58841,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-riverstone",
@@ -48556,7 +49245,17 @@
      "fees": null,
      "counties": [
       "Fort Bend"
-     ]
+     ],
+     "loc": {
+      "address": "18353 University Boulevard, Sugar Land, TX 77479",
+      "url": "https://www.riverstone.com/builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 29.54841,
+      "lon": -95.59367,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-tavola",
@@ -48962,7 +49661,17 @@
      ],
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "23404 Sentosa Bluff Ct, New Caney, TX 77357",
+      "url": "https://friendswooddevelopment.com/communities/master-planned/tavola",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.1644,
+      "lon": -95.191,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-the-woodlands",
@@ -49172,7 +49881,17 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "address": "9950 Woodloch Forest Drive, Suite 1200, The Woodlands, Texas 77380",
+      "url": "https://www.theresidencesatthewoodlands.com/about/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 30.15948,
+      "lon": -95.45577,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "hou-trinity-landing",
@@ -49281,7 +50000,18 @@
      "fees": null,
      "counties": [
       "Liberty"
-     ]
+     ],
+     "loc": {
+      "address": "7513 Us 90, Dayton, Texas 77535",
+      "url": "https://www.mihomes.com/new-homes/texas/greater-houston/houston/trinity-landing",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "M/I Homes and Meritage Homes",
+      "lat": 30.0548,
+      "lon": -94.9223,
+      "how": "zip",
+      "zip": "77535"
+     }
     },
     {
      "id": "hou-valley-ranch",
@@ -49427,7 +50157,13 @@
      "fees": null,
      "counties": [
       "Montgomery"
-     ]
+     ],
+     "loc": {
+      "lat": 30.1135,
+      "lon": -95.2745,
+      "how": "zip",
+      "zip": "77365"
+     }
     }
    ],
    "builders": [
@@ -88261,7 +88997,17 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "6251 Aster Park Trl, McKinney, Texas 75072",
+      "url": "https://asterparktx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.2458,
+      "lon": -96.6307,
+      "how": "zip",
+      "zip": "75071"
+     }
     },
     {
      "id": "dfw-cambridge-crossing",
@@ -88866,7 +89612,17 @@
      },
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "2225 Huddleston Drive, Celina, TX 75009",
+      "url": "https://cambridgecrossingcelina.com/homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.3389,
+      "lon": -96.753,
+      "how": "zip",
+      "zip": "75009"
+     }
     },
     {
      "id": "dfw-castle-hills",
@@ -89198,7 +89954,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3521 Jester Drive, Lewisville, TX 75056",
+      "url": "https://castlehills.com/northpointe-new-homes.php",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 33.05416,
+      "lon": -96.89437,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-chisholm-trail-ranch",
@@ -89425,7 +90191,18 @@
      "fees": null,
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "address": "6604 Denim Drive, Crowley, TX 76036",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/crowley/tesoro-at-chisholm-trail-ranch",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Trophy Signature Homes",
+      "lat": 32.60924,
+      "lon": -97.42377,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-creekside-royse-city",
@@ -89926,7 +90703,18 @@
      },
      "counties": [
       "Rockwall"
-     ]
+     ],
+     "loc": {
+      "address": "2263 River Bend Road, Royse City, TX 75189",
+      "url": "https://www.rockwell-homes.com/new-homes/tx/royse-city/creekside/14633/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "RockWell Homes",
+      "lat": 32.9421,
+      "lon": -96.3117,
+      "how": "zip",
+      "zip": "75189"
+     }
     },
     {
      "id": "dfw-devonshire",
@@ -90603,7 +91391,16 @@
      "counties": [
       "Kaufman"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1201 Ravenhill Drive, Forney, Texas 75126",
+      "url": "https://www.devonshireliving.com/new-homes/builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.77723,
+      "lon": -96.43646,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-eastridge",
@@ -90864,7 +91661,18 @@
      ],
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "400 Watertown Drive, McKinney, TX 75071",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/mckinney/eastridge",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "Trophy Signature Homes",
+      "lat": 33.23122,
+      "lon": -96.5153,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-elevon",
@@ -92094,7 +92902,16 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "819 Wanderville Way, Lavon, TX 75173",
+      "url": "https://elevontx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.02777,
+      "lon": -96.41303,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-fields",
@@ -92322,7 +93139,18 @@
      },
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "6801 Baxley Road, Frisco, TX 75033",
+      "url": "https://landonhomes.com/new-home-communities/east-village-classic-series/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Landon Homes",
+      "lat": 33.1848,
+      "lon": -96.8443,
+      "how": "zip",
+      "zip": "75033"
+     }
     },
     {
      "id": "dfw-furst-ranch",
@@ -93181,7 +94009,18 @@
      },
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "2016 Rangeland Way, Argyle, TX 76226",
+      "url": "https://www.shaddockhomes.com/communities/dallas-fort-worth/argyle/furst-ranch",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Shaddock Homes",
+      "lat": 33.1055,
+      "lon": -97.1775,
+      "how": "zip",
+      "zip": "76226"
+     }
     },
     {
      "id": "dfw-gateway-parks",
@@ -93620,7 +94459,18 @@
      "fees": null,
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "address": "1602 Glacier Drive, Forney, TX 75126",
+      "url": "https://www.ashtonwoods.com/dallas/gateway-parks?comm=DAL|D287",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Ashton Woods",
+      "lat": 32.72251,
+      "lon": -96.41987,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-goodland",
@@ -94469,7 +95319,17 @@
       "Ellis"
      ],
      "county_from": "homes",
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4701 Buttonbush Dr., Goodland, TX 76084",
+      "url": "https://goodlandtx.com/find-a-home/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.50227,
+      "lon": -97.07444,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-harvest",
@@ -94792,7 +95652,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1301 Homestead Way, Argyle, Texas 76226",
+      "url": "https://www.harvestbyhillwood.com/new-home/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.10622,
+      "lon": -97.23004,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-heartland",
@@ -95654,7 +96524,16 @@
      "counties": [
       "Kaufman"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3002 Finney St., Crandall, TX 75114",
+      "url": "https://heartlandtexas.com/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.66943,
+      "lon": -96.45561,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-inspiration",
@@ -96246,7 +97125,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1715 Inspiration Blvd, St. Paul, TX 75098",
+      "url": "https://inspirationtexas.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.05866,
+      "lon": -96.54691,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-karis",
@@ -96584,7 +97473,18 @@
      "counties": [
       "Tarrant"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1025 Karis Blvd., Crowley, TX 76036",
+      "url": "https://cadencehomestx.com/new-home-communities/townhomes-crowley-tx-karis/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Cadence Homes",
+      "lat": 32.58987,
+      "lon": -97.36082,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-lakehaven",
@@ -96836,7 +97736,18 @@
      ],
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "3700 Richland Drive, Farmersville, TX 75442",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/farmersville/lakehaven",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Trophy Signature Homes",
+      "lat": 33.11653,
+      "lon": -96.42041,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-landmark-by-hillwood",
@@ -97809,7 +98720,17 @@
      },
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "9018 Landmark Trail, Denton, TX 76207",
+      "url": "https://www.landmarkbyhillwood.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.14116,
+      "lon": -97.24445,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-legacy-hills",
@@ -99566,7 +100487,12 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "lat": 33.35091,
+      "lon": -96.8235,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-liberty",
@@ -99758,7 +100684,18 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "2913 Autumn Glen Drive, Melissa, TX 75454",
+      "url": "https://www.bloomfieldhomes.com/new-homes/tx/melissa/liberty/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Bloomfield Homes",
+      "lat": 33.29078,
+      "lon": -96.55356,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-light-farms",
@@ -99961,7 +100898,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1234 Homestead Ct. Celina, TX 75009",
+      "url": "https://lightfarmstx.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.27473,
+      "lon": -96.79925,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-madero",
@@ -100198,7 +101145,17 @@
      "counties": [
       "Denton"
      ],
-     "county_from": "homes"
+     "county_from": "homes",
+     "loc": {
+      "address": "15308 Meso Maya Lane, Haslet, TX 76052",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/haslet/madero",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.9791,
+      "lon": -97.3713,
+      "how": "zip",
+      "zip": "76052"
+     }
     },
     {
      "id": "dfw-meraki",
@@ -100961,7 +101918,17 @@
      },
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "address": "2001 Meraki Parkway, Forney, Texas 75126",
+      "url": "https://merakiliving.com/builder/american-legend-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.7426,
+      "lon": -96.4529,
+      "how": "zip",
+      "zip": "75126"
+     }
     },
     {
      "id": "dfw-mira-lagos",
@@ -101244,7 +102211,17 @@
      "counties": [
       "Tarrant"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3025 S. Camino Lagos, Grand Prairie, Texas 75054",
+      "url": "https://www.miralagoshoa.com/contact",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 32.59195,
+      "lon": -97.05748,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-mobberly-farms",
@@ -101618,7 +102595,18 @@
      "fees": null,
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "6517 Adderly Rd., Pilot Point, Texas 76258",
+      "url": "https://centurionamerican.com/development/mobberly-farms/",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "Centurion American",
+      "lat": 33.30519,
+      "lon": -96.89052,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-morningstar",
@@ -101953,7 +102941,17 @@
      "fees": null,
      "counties": [
       "Parker"
-     ]
+     ],
+     "loc": {
+      "address": "128 Heather Wind Lane, Aledo, Texas 76008",
+      "url": "https://www.welcometomorningstar.com/homes/builders",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.74998,
+      "lon": -97.59562,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-mosaic",
@@ -102833,7 +103831,16 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4601 Meander Way, Prosper, TX 75078",
+      "url": "https://mosaiclivingtx.com/builder/american-legend-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.26214,
+      "lon": -96.84675,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-mustang-lakes",
@@ -104113,7 +105120,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "2682 Roseland Parkway, Celina, TX 75009",
+      "url": "https://mustanglakes.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.2736,
+      "lon": -96.74112,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-myrtle-creek",
@@ -104828,7 +105845,17 @@
      },
      "counties": [
       "Ellis"
-     ]
+     ],
+     "loc": {
+      "address": "229 Wintergrass Drive, Waxahachie, TX 75165",
+      "url": "https://myrtlecreektx.com/community/developer/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.3717,
+      "lon": -96.803,
+      "how": "zip",
+      "zip": "75165"
+     }
     },
     {
      "id": "dfw-northspur",
@@ -105145,7 +106172,17 @@
      "fees": null,
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "address": "111 Aston Way, Terrell, TX 75160",
+      "url": "https://livenorthspur.com/our-builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.7643,
+      "lon": -96.2933,
+      "how": "zip",
+      "zip": "75160"
+     }
     },
     {
      "id": "dfw-painted-tree",
@@ -106915,7 +107952,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4005 Attwater Street, McKinney, TX 75071",
+      "url": "https://www.bloomfieldhomes.com/new-homes/tx/mckinney/painted-tree/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Bloomfield Homes",
+      "lat": 33.23062,
+      "lon": -96.66703,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-pecan-square",
@@ -107989,7 +109036,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "2701 North Market Square Lane, Northlake, TX 76247",
+      "url": "https://www.pecansquarebyhillwood.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 33.09348,
+      "lon": -97.25011,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-ramble",
@@ -108705,7 +109762,17 @@
      },
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "2287 Preston Rd, Celina, TX 75009",
+      "url": "https://www.ramblebyhillwood.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.3389,
+      "lon": -96.753,
+      "how": "zip",
+      "zip": "75009"
+     }
     },
     {
      "id": "dfw-redden-farms",
@@ -109284,7 +110351,18 @@
      "counties": [
       "Ellis"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3044 Farmhouse Drive, Midlothian, TX 76065",
+      "url": "https://www.davidweekleyhomes.com/neighborhoods/tx/dallas-ft-worth/redden-farms",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "David Weekley Homes",
+      "lat": 32.48065,
+      "lon": -96.95656,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-rosewood-at-beltmill",
@@ -109509,7 +110587,17 @@
      ],
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "address": "904 Fort Knox Drive, Fort Worth, TX 76131",
+      "url": "https://www.drhorton.com/texas/fort-worth/fort-worth/rosewood-at-beltmill",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.8818,
+      "lon": -97.3459,
+      "how": "zip",
+      "zip": "76131"
+     }
     },
     {
      "id": "dfw-sandbrock-ranch",
@@ -110136,7 +111224,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1601 Sandbrock Parkway, Aubrey, Texas 76227",
+      "url": "https://sandbrockranch.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.26738,
+      "lon": -96.89744,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-silverado",
@@ -110419,7 +111517,17 @@
      ],
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "2604 O'Connell Circle, Aubrey, TX 76227",
+      "url": "https://www.drhorton.com/texas/dallas/aubrey/silverado",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.24963,
+      "lon": -96.95247,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-solterra",
@@ -111173,7 +112281,18 @@
      },
      "counties": [
       "Dallas"
-     ]
+     ],
+     "loc": {
+      "address": "1612 Casting Ridge, Mesquite, TX 75181",
+      "url": "https://www.firsttexashomes.com/community/mesquite/16543/solterra/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "First Texas Homes",
+      "lat": 32.7239,
+      "lon": -96.5559,
+      "how": "zip",
+      "zip": "75181"
+     }
     },
     {
      "id": "dfw-south-pointe",
@@ -111713,7 +112832,18 @@
      "fees": null,
      "counties": [
       "Johnson"
-     ]
+     ],
+     "loc": {
+      "address": "3203 Salt Grass Ave, Mansfield, TX 76063",
+      "url": "https://www.coventryhomes.com/new-homes/tx/mansfield/south-pointe/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Coventry Homes",
+      "lat": 32.53539,
+      "lon": -97.08701,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-southridge",
@@ -112193,7 +113323,17 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "3800 High Valley Drive, McKinney, TX 75071",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/mckinney/southridge",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.2458,
+      "lon": -96.6307,
+      "how": "zip",
+      "zip": "75071"
+     }
     },
     {
      "id": "dfw-spiritas-ranch",
@@ -112749,7 +113889,18 @@
      },
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "3905 Norwood Road, Little Elm, TX 75068",
+      "url": "https://mattamyhomes.com/texas/dallas-fort-worth/little-elm/spiritas-ranch",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "Mattamy Homes",
+      "lat": 33.21233,
+      "lon": -96.96736,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-star-trail",
@@ -113463,7 +114614,17 @@
       "Collin",
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "910 Shooting Star Drive Prosper, TX 75078",
+      "url": "https://startrailprosper.com/builders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.24548,
+      "lon": -96.8275,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-stonehaven",
@@ -113905,7 +115066,17 @@
      "fees": null,
      "counties": [
       "Dallas"
-     ]
+     ],
+     "loc": {
+      "address": "2128 Lone Star Lane, Seagoville, TX 75159",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/seagoville/stonehaven",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.68204,
+      "lon": -96.55303,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-sutton-fields",
@@ -114613,7 +115784,18 @@
      },
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "4413 Angevin Ave, Celina, Texas 75009",
+      "url": "https://centurionamerican.com/development/sutton-fields/",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "Centurion American Development Group",
+      "lat": 33.3389,
+      "lon": -96.753,
+      "how": "zip",
+      "zip": "75009"
+     }
     },
     {
      "id": "dfw-tavolo-park",
@@ -114920,7 +116102,18 @@
      "fees": null,
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "address": "5964 Carmona Trail, Fort Worth, TX 76123",
+      "url": "https://laderaliving.com/55-plus-communities/ladera-at-tavolo-park/",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Ladera Living",
+      "lat": 32.63478,
+      "lon": -97.41787,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-trails-of-lavon",
@@ -115333,7 +116526,17 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "1126 Yucca Avenue, Lavon, TX 75166",
+      "url": "https://trophysignaturehomes.com/communities/dallas-ft-worth/lavon/trails-of-lavon",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.0147,
+      "lon": -96.4494,
+      "how": "zip",
+      "zip": "75166"
+     }
     },
     {
      "id": "dfw-treeline",
@@ -116201,7 +117404,17 @@
      },
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "8551 Treeline Parkway, Justin, TX 76247",
+      "url": "https://www.treelinebyhillwood.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 33.0943,
+      "lon": -97.3286,
+      "how": "zip",
+      "zip": "76247"
+     }
     },
     {
      "id": "dfw-trinity-falls",
@@ -117100,7 +118313,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "7801 Trinity Falls Parkway, McKinney, Texas 75071",
+      "url": "https://www.trinityfalls.com/contact",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 33.28185,
+      "lon": -96.6201,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-union-park",
@@ -117594,7 +118817,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "4795 Union Park Blvd., Little Elm, TX 76227",
+      "url": "https://www.unionparkbyhillwood.com/new-home/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.22842,
+      "lon": -96.92376,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-ventana",
@@ -118152,7 +119385,17 @@
      },
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "address": "5500 Ventana Parkway, Fort Worth, Texas 76126",
+      "url": "https://ventanatx.com/faqs/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.67307,
+      "lon": -97.5062,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-verandah",
@@ -118615,7 +119858,17 @@
      "counties": [
       "Hunt"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3004 Lakewood Ln, Royse City, Texas 75189",
+      "url": "https://centurionamerican.com/development/verandah/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.98434,
+      "lon": -96.28948,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-villages-of-hurricane-creek",
@@ -119365,7 +120618,18 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "3213 Cross Shore Drive, Anna, TX 75409",
+      "url": "https://www.firsttexashomes.com/community/anna/16513/the-villages-of-hurricane-creek/",
+      "read": "2026-09-30",
+      "whose": "builder",
+      "builder": "First Texas Homes",
+      "lat": 33.35904,
+      "lon": -96.59403,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-viridian",
@@ -119823,7 +121087,18 @@
      "fees": null,
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "address": "1327 Viridian Park Lane, Arlington, TX 76005",
+      "url": "https://www.johnsondevelopment.com/arlington-tx/mpc_viridian",
+      "read": "2026-09-27",
+      "whose": "developer",
+      "developer": "Johnson Development",
+      "lat": 32.79464,
+      "lon": -97.07976,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-walden-pond",
@@ -120502,7 +121777,16 @@
      "counties": [
       "Kaufman"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "2083 Rhodora Ave., Forney, Texas 75126",
+      "url": "https://centurionamerican.com/development/walden-pond/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.76428,
+      "lon": -96.42746,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-walsh",
@@ -121564,7 +122848,17 @@
      "counties": [
       "Parker"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "2024 Grey Birch Place, Aledo, TX 76008",
+      "url": "https://walshtx.com/our-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.73972,
+      "lon": -97.58045,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-waterscape",
@@ -121997,7 +123291,17 @@
      "counties": [
       "Rockwall"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "5205 Huffines Boulevard, Royse City, Texas 75189",
+      "url": "https://waterscapetexas.com/location/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 32.93162,
+      "lon": -96.33398,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-whitewing-trails",
@@ -122512,7 +123816,17 @@
      "counties": [
       "Collin"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1805 Sideoat Ln., Princeton, Texas 75407",
+      "url": "https://centurionamerican.com/development/whitewing-trails/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.19311,
+      "lon": -96.51401,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-wildcat-ranch",
@@ -122951,7 +124265,17 @@
      ],
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "address": "1000 Wildcat Trail, Crandall, TX 75114",
+      "url": "https://wildcatranchtexas.com/community/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.6166,
+      "lon": -96.4434,
+      "how": "zip",
+      "zip": "75114"
+     }
     },
     {
      "id": "dfw-wildflower-ranch",
@@ -124444,7 +125768,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "737 Landon Lane, Justin, TX 76247",
+      "url": "https://www.ashtonwoods.com/dallas/wildflower-ranch?comm_alt=true&comm=DAL%7CMCWILD",
+      "read": "2026-09-27",
+      "whose": "builder",
+      "builder": "Ashton Woods",
+      "lat": 33.05047,
+      "lon": -97.3408,
+      "how": "homes"
+     }
     },
     {
      "id": "dfw-winchester-crossing",
@@ -124650,7 +125984,17 @@
      ],
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "720 Gallop Drive, Princeton, TX 75407",
+      "url": "https://www.drhorton.com/texas/dallas/princeton/winchester-crossing",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.15876,
+      "lon": -96.5147,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-windmill-farms",
@@ -124921,7 +126265,13 @@
      "fees": null,
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "lat": 32.7426,
+      "lon": -96.4529,
+      "how": "zip",
+      "zip": "75126"
+     }
     },
     {
      "id": "dfw-windsong-ranch",
@@ -125143,7 +126493,17 @@
      "counties": [
       "Denton"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "1001 Windsong Parkway South, Prosper, TX 75078",
+      "url": "https://windsongranchliving.com/builders/shaddock-custom-homes/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.22514,
+      "lon": -96.87343,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-woodcreek",
@@ -125527,7 +126887,17 @@
      "counties": [
       "Rockwall"
      ],
-     "placed": "homes"
+     "placed": "homes",
+     "loc": {
+      "address": "100 Woodcreek Blvd, Fate, TX 75087",
+      "url": "https://woodcreekfate.com/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 32.93987,
+      "lon": -96.3941,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-alpha-ranch",
@@ -125783,7 +127153,10 @@
      "fees": null,
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "dfw-bluewood",
@@ -125969,7 +127342,10 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "dfw-canyon-falls",
@@ -126144,7 +127520,17 @@
      "fees": null,
      "counties": [
       "Denton"
-     ]
+     ],
+     "loc": {
+      "address": "6950 Canyon Falls Drive, Northlake, TX 76226",
+      "url": "https://www.canyonfallstx.com/homes/homebuilders/",
+      "read": "2026-09-27",
+      "whose": "community",
+      "lat": 33.0684,
+      "lon": -97.21884,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-creeks-of-legacy",
@@ -126348,7 +127734,13 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "lat": 33.3389,
+      "lon": -96.753,
+      "how": "zip",
+      "zip": "75009"
+     }
     },
     {
      "id": "dfw-cross-creek-meadows",
@@ -126483,7 +127875,10 @@
      "qmi_ppsf_hi": null,
      "zip_market": null,
      "fees": null,
-     "counties": []
+     "counties": [],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "dfw-lilyana",
@@ -126617,7 +128012,17 @@
      ],
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "address": "4211 Lilyana Ln, Celina, TX 75009",
+      "url": "https://www.lilyanabyhillwood.com/",
+      "read": "2026-09-30",
+      "whose": "community",
+      "lat": 33.3389,
+      "lon": -96.753,
+      "how": "zip",
+      "zip": "75009"
+     }
     },
     {
      "id": "dfw-serenade",
@@ -126858,7 +128263,10 @@
      "fees": null,
      "counties": [
       "Collin"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     },
     {
      "id": "dfw-travis-ranch",
@@ -127066,7 +128474,18 @@
      "fees": null,
      "counties": [
       "Kaufman"
-     ]
+     ],
+     "loc": {
+      "address": "2020 Bronte Dr., Forney, Texas 75126",
+      "url": "https://centurionamerican.com/development/travis-ranch/",
+      "read": "2026-09-30",
+      "whose": "developer",
+      "developer": "Centurion American Development Group",
+      "lat": 32.80753,
+      "lon": -96.46852,
+      "how": "address",
+      "geo_read": "2026-09-30"
+     }
     },
     {
      "id": "dfw-watersbend",
@@ -127150,7 +128569,10 @@
      ],
      "counties": [
       "Tarrant"
-     ]
+     ],
+     "loc": {
+      "how": null
+     }
     }
    ],
    "builders": [
