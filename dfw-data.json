@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 114,
+ "build": 115,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-30",
@@ -33955,6 +33955,1125 @@
    "b": "DFW-081",
    "rel": "",
    "card": "DFW-CH-013"
+  }
+ ],
+ "mpc": [
+  {
+   "n": "Aster Park",
+   "city": "McKinney",
+   "county": "Collin",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-aster-park",
+   "f": [
+    "DFW-009",
+    "DFW-025",
+    "DFW-051",
+    "DFW-055",
+    "DFW-079",
+    "DFW-201",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Cambridge Crossing",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "The Cambridge Companies",
+   "px": "dfw-cambridge-crossing",
+   "f": [
+    "DFW-010",
+    "DFW-028",
+    "DFW-042",
+    "DFW-201",
+    "DFW-CH-015"
+   ]
+  },
+  {
+   "n": "Castle Hills",
+   "city": "Lewisville",
+   "county": "Denton",
+   "dev": "Bright Realty",
+   "px": "dfw-castle-hills",
+   "f": [
+    "DFW-024",
+    "DFW-025",
+    "DFW-029",
+    "DFW-051",
+    "DFW-226"
+   ]
+  },
+  {
+   "n": "Chisholm Trail Ranch",
+   "city": "Fort Worth",
+   "county": "Tarrant",
+   "dev": "Walton Development and Management",
+   "px": "dfw-chisholm-trail-ranch",
+   "f": [
+    "DFW-003a",
+    "DFW-006",
+    "DFW-232"
+   ]
+  },
+  {
+   "n": "Creekside",
+   "city": "Royse City",
+   "county": "Rockwall",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-creekside-royse-city",
+   "f": [
+    "DFW-002",
+    "DFW-028",
+    "DFW-079",
+    "DFW-207",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Devonshire",
+   "city": "Forney",
+   "county": "Kaufman",
+   "dev": "Haynes Development",
+   "px": "dfw-devonshire",
+   "f": [
+    "DFW-003a",
+    "DFW-009",
+    "DFW-010",
+    "DFW-020",
+    "DFW-025",
+    "DFW-079",
+    "DFW-201",
+    "DFW-202"
+   ]
+  },
+  {
+   "n": "Eastridge",
+   "city": "McKinney",
+   "county": "Collin",
+   "dev": "Green Brick Partners in partnership with Meritage Homes",
+   "px": "dfw-eastridge",
+   "f": [
+    "DFW-003",
+    "DFW-003a",
+    "DFW-006"
+   ]
+  },
+  {
+   "n": "Elevon",
+   "city": "Lavon",
+   "county": "Collin",
+   "dev": "MA Partners",
+   "px": "dfw-elevon",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-003a",
+    "DFW-020",
+    "DFW-023",
+    "DFW-028",
+    "DFW-044",
+    "DFW-045",
+    "DFW-050",
+    "DFW-055",
+    "DFW-058",
+    "DFW-229"
+   ]
+  },
+  {
+   "n": "Fields",
+   "city": "Frisco",
+   "county": "Denton",
+   "dev": "Hunt Realty / Karahan",
+   "px": "dfw-fields",
+   "f": [
+    "DFW-032",
+    "DFW-CH-003"
+   ]
+  },
+  {
+   "n": "Furst Ranch",
+   "city": "Flower Mound / Argyle / Bartonville",
+   "county": "Denton",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-furst-ranch",
+   "f": [
+    "DFW-009",
+    "DFW-011",
+    "DFW-025",
+    "DFW-042",
+    "DFW-051",
+    "DFW-201",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Gateway Parks",
+   "city": "Forney",
+   "county": "Kaufman",
+   "dev": "Gateway Holdings, LLC",
+   "px": "dfw-gateway-parks",
+   "f": [
+    "DFW-009",
+    "DFW-011",
+    "DFW-038",
+    "DFW-058",
+    "DFW-059",
+    "DFW-201"
+   ]
+  },
+  {
+   "n": "Goodland",
+   "city": "Venus",
+   "county": "Ellis",
+   "dev": "Provident Realty Advisors",
+   "px": "dfw-goodland",
+   "f": [
+    "DFW-011",
+    "DFW-023",
+    "DFW-052",
+    "DFW-201",
+    "DFW-225"
+   ]
+  },
+  {
+   "n": "Harvest by Hillwood",
+   "city": "Argyle",
+   "county": "Denton",
+   "dev": "Hillwood Communities",
+   "px": "dfw-harvest",
+   "f": [
+    "DFW-011",
+    "DFW-059",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Heartland",
+   "city": "Heartland",
+   "county": "Kaufman",
+   "dev": "Huffines Communities",
+   "px": "dfw-heartland",
+   "f": [
+    "DFW-021",
+    "DFW-042",
+    "DFW-045",
+    "DFW-050",
+    "DFW-061",
+    "DFW-201",
+    "DFW-206",
+    "DFW-210",
+    "DFW-220",
+    "DFW-CH-018"
+   ]
+  },
+  {
+   "n": "Inspiration",
+   "city": "St. Paul",
+   "county": "Collin",
+   "dev": "Huffines Communities",
+   "px": "dfw-inspiration",
+   "f": [
+    "DFW-008",
+    "DFW-009",
+    "DFW-025",
+    "DFW-CH-018"
+   ]
+  },
+  {
+   "n": "Karis",
+   "city": "Crowley",
+   "county": "Tarrant",
+   "dev": "The Nehemiah Company",
+   "px": "dfw-karis",
+   "f": [
+    "DFW-011",
+    "DFW-078",
+    "DFW-231"
+   ]
+  },
+  {
+   "n": "Lakehaven",
+   "city": "Farmersville",
+   "county": "Collin",
+   "dev": "Green Brick Partners",
+   "px": "dfw-lakehaven",
+   "f": [
+    "DFW-003",
+    "DFW-003a",
+    "DFW-006"
+   ]
+  },
+  {
+   "n": "Landmark by Hillwood",
+   "city": "Denton",
+   "county": "Denton",
+   "dev": "Hillwood Communities",
+   "px": "dfw-landmark-by-hillwood",
+   "f": [
+    "DFW-010",
+    "DFW-011",
+    "DFW-029",
+    "DFW-042",
+    "DFW-051",
+    "DFW-055",
+    "DFW-059",
+    "DFW-201",
+    "DFW-203",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Legacy Hills",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Centurion American",
+   "px": "dfw-legacy-hills",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-007",
+    "DFW-008",
+    "DFW-009",
+    "DFW-028",
+    "DFW-038",
+    "DFW-052",
+    "DFW-055",
+    "DFW-062",
+    "DFW-064",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Liberty by Hillwood",
+   "city": "Melissa",
+   "county": "Collin",
+   "dev": "Hillwood Communities",
+   "px": "dfw-liberty",
+   "f": [
+    "DFW-202",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Light Farms",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Republic Property Group",
+   "px": "dfw-light-farms",
+   "f": [
+    "DFW-025",
+    "DFW-CH-002",
+    "DFW-CH-008"
+   ]
+  },
+  {
+   "n": "Madero",
+   "city": "Haslet",
+   "county": "Denton",
+   "dev": "Green Brick Partners",
+   "px": "dfw-madero",
+   "f": [
+    "DFW-003",
+    "DFW-003a"
+   ]
+  },
+  {
+   "n": "Meraki",
+   "city": "McLendon-Chisholm (Forney address)",
+   "county": "Kaufman",
+   "dev": "Tellus Group",
+   "px": "dfw-meraki",
+   "f": [
+    "DFW-010",
+    "DFW-029",
+    "DFW-201",
+    "DFW-202",
+    "DFW-222",
+    "DFW-CH-017"
+   ]
+  },
+  {
+   "n": "Mira Lagos",
+   "city": "Grand Prairie",
+   "county": "Tarrant",
+   "dev": "Hanover Property Company",
+   "px": "dfw-mira-lagos",
+   "f": [
+    "DFW-008",
+    "DFW-023",
+    "DFW-228"
+   ]
+  },
+  {
+   "n": "Mobberly Farms",
+   "city": "Pilot Point",
+   "county": "Denton",
+   "dev": "Centurion American",
+   "px": "dfw-mobberly-farms",
+   "f": [
+    "DFW-002",
+    "DFW-055",
+    "DFW-063",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Morningstar",
+   "city": "Aledo",
+   "county": "Parker",
+   "dev": "Wilbow",
+   "px": "dfw-morningstar",
+   "f": [
+    "DFW-001",
+    "DFW-003a",
+    "DFW-033",
+    "DFW-234"
+   ]
+  },
+  {
+   "n": "Mosaic",
+   "city": "Celina",
+   "county": "Denton",
+   "dev": "Tellus Group",
+   "px": "dfw-mosaic",
+   "f": [
+    "DFW-010",
+    "DFW-029",
+    "DFW-043",
+    "DFW-078",
+    "DFW-081",
+    "DFW-201",
+    "DFW-202",
+    "DFW-203",
+    "DFW-CH-016",
+    "DFW-CH-017"
+   ]
+  },
+  {
+   "n": "Mustang Lakes",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "The Cambridge Companies",
+   "px": "dfw-mustang-lakes",
+   "f": [
+    "DFW-010",
+    "DFW-011",
+    "DFW-024",
+    "DFW-029",
+    "DFW-042",
+    "DFW-073",
+    "DFW-081",
+    "DFW-201"
+   ]
+  },
+  {
+   "n": "Myrtle Creek",
+   "city": "Waxahachie",
+   "county": "Ellis",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-myrtle-creek",
+   "f": [
+    "DFW-010",
+    "DFW-011",
+    "DFW-021",
+    "DFW-028",
+    "DFW-042",
+    "DFW-044",
+    "DFW-201",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Northspur",
+   "city": "Terrell",
+   "county": "Kaufman",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-northspur",
+   "f": [
+    "DFW-001",
+    "DFW-021",
+    "DFW-214",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Painted Tree",
+   "city": "McKinney",
+   "county": "Collin",
+   "dev": "Oxland Group",
+   "px": "dfw-painted-tree",
+   "f": [
+    "DFW-003a",
+    "DFW-003b",
+    "DFW-003c",
+    "DFW-003d",
+    "DFW-011",
+    "DFW-014",
+    "DFW-042",
+    "DFW-059",
+    "DFW-202",
+    "DFW-203",
+    "DFW-CH-004"
+   ]
+  },
+  {
+   "n": "Pecan Square",
+   "city": "Northlake",
+   "county": "Denton",
+   "dev": "Hillwood Communities",
+   "px": "dfw-pecan-square",
+   "f": [
+    "DFW-011",
+    "DFW-042",
+    "DFW-078",
+    "DFW-201",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Ramble by Hillwood",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Hillwood Communities",
+   "px": "dfw-ramble",
+   "f": [
+    "DFW-010",
+    "DFW-029",
+    "DFW-042",
+    "DFW-201",
+    "DFW-203",
+    "DFW-CH-001",
+    "DFW-CH-007"
+   ]
+  },
+  {
+   "n": "Redden Farms",
+   "city": "Midlothian",
+   "county": "Ellis",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-redden-farms",
+   "f": [
+    "DFW-011",
+    "DFW-021",
+    "DFW-034",
+    "DFW-044",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Rosewood at Beltmill",
+   "city": "Fort Worth",
+   "county": "Tarrant",
+   "dev": "D.R. Horton",
+   "px": "dfw-rosewood-at-beltmill",
+   "f": [
+    "DFW-001"
+   ]
+  },
+  {
+   "n": "Sandbrock Ranch",
+   "city": "Aubrey",
+   "county": "Denton",
+   "dev": "",
+   "px": "dfw-sandbrock-ranch",
+   "f": [
+    "DFW-011",
+    "DFW-042",
+    "DFW-201"
+   ]
+  },
+  {
+   "n": "Silverado",
+   "city": "Aubrey",
+   "county": "Denton",
+   "dev": "D.R. Horton",
+   "px": "dfw-silverado",
+   "f": [
+    "DFW-001"
+   ]
+  },
+  {
+   "n": "Solterra Texas",
+   "city": "Mesquite",
+   "county": "Dallas",
+   "dev": "Huffines Communities",
+   "px": "dfw-solterra",
+   "f": [
+    "DFW-002",
+    "DFW-008",
+    "DFW-011",
+    "DFW-025",
+    "DFW-042",
+    "DFW-061",
+    "DFW-205",
+    "DFW-CH-018",
+    "DFW-CH-019"
+   ]
+  },
+  {
+   "n": "South Pointe",
+   "city": "Mansfield",
+   "county": "Johnson",
+   "dev": "",
+   "px": "dfw-south-pointe",
+   "f": [
+    "DFW-011",
+    "DFW-023",
+    "DFW-042",
+    "DFW-058",
+    "DFW-203"
+   ]
+  },
+  {
+   "n": "Southridge",
+   "city": "McKinney",
+   "county": "Collin",
+   "dev": "Green Brick Partners",
+   "px": "dfw-southridge",
+   "f": [
+    "DFW-003",
+    "DFW-003a",
+    "DFW-006"
+   ]
+  },
+  {
+   "n": "Spiritas Ranch",
+   "city": "Little Elm",
+   "county": "Denton",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-spiritas-ranch",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-007",
+    "DFW-008",
+    "DFW-045",
+    "DFW-062",
+    "DFW-208",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Star Trail",
+   "city": "Prosper",
+   "county": "Collin",
+   "dev": "Blue Star Land LP",
+   "px": "dfw-star-trail",
+   "f": [
+    "DFW-024",
+    "DFW-029",
+    "DFW-042",
+    "DFW-051",
+    "DFW-201",
+    "DFW-CH-009"
+   ]
+  },
+  {
+   "n": "Stonehaven",
+   "city": "Seagoville",
+   "county": "Dallas",
+   "dev": "Green Brick Partners",
+   "px": "dfw-stonehaven",
+   "f": [
+    "DFW-003",
+    "DFW-003a",
+    "DFW-006"
+   ]
+  },
+  {
+   "n": "Sutton Fields",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-sutton-fields",
+   "f": [
+    "DFW-008",
+    "DFW-045",
+    "DFW-055",
+    "DFW-062",
+    "DFW-079",
+    "DFW-202",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Tavolo Park",
+   "city": "Fort Worth",
+   "county": "Tarrant",
+   "dev": "Provident Realty Advisors",
+   "px": "dfw-tavolo-park",
+   "f": [
+    "DFW-011",
+    "DFW-025",
+    "DFW-201",
+    "DFW-218",
+    "DFW-225"
+   ]
+  },
+  {
+   "n": "Trails of Lavon",
+   "city": "Lavon",
+   "county": "Collin",
+   "dev": "Green Brick Partners",
+   "px": "dfw-trails-of-lavon",
+   "f": [
+    "DFW-003",
+    "DFW-003a",
+    "DFW-006"
+   ]
+  },
+  {
+   "n": "Treeline",
+   "city": "Justin",
+   "county": "Denton",
+   "dev": "Hillwood Communities",
+   "px": "dfw-treeline",
+   "f": [
+    "DFW-001",
+    "DFW-007",
+    "DFW-011",
+    "DFW-020",
+    "DFW-029",
+    "DFW-052",
+    "DFW-059",
+    "DFW-201",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Trinity Falls",
+   "city": "McKinney",
+   "county": "Collin",
+   "dev": "Johnson Development",
+   "px": "dfw-trinity-falls",
+   "f": [
+    "DFW-010",
+    "DFW-042",
+    "DFW-064",
+    "DFW-078",
+    "DFW-201",
+    "DFW-203",
+    "DFW-CH-012",
+    "DFW-CH-014"
+   ]
+  },
+  {
+   "n": "Union Park by Hillwood",
+   "city": "Little Elm",
+   "county": "Denton",
+   "dev": "Hillwood Communities",
+   "px": "dfw-union-park",
+   "f": [
+    "DFW-059",
+    "DFW-202",
+    "DFW-CH-001",
+    "DFW-CH-010"
+   ]
+  },
+  {
+   "n": "Ventana",
+   "city": "Fort Worth",
+   "county": "Tarrant",
+   "dev": "",
+   "px": "dfw-ventana",
+   "f": [
+    "DFW-003a",
+    "DFW-010",
+    "DFW-011",
+    "DFW-029",
+    "DFW-052",
+    "DFW-053",
+    "DFW-201",
+    "DFW-230"
+   ]
+  },
+  {
+   "n": "Verandah",
+   "city": "Royse City",
+   "county": "Hunt",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-verandah",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-052",
+    "DFW-055",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Villages of Hurricane Creek",
+   "city": "Anna",
+   "county": "Collin",
+   "dev": "Centurion American",
+   "px": "dfw-villages-of-hurricane-creek",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-008",
+    "DFW-052",
+    "DFW-062",
+    "DFW-202",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Viridian",
+   "city": "Arlington",
+   "county": "Tarrant",
+   "dev": "Johnson Development",
+   "px": "dfw-viridian",
+   "f": [
+    "DFW-011",
+    "DFW-203",
+    "DFW-BTR-004",
+    "DFW-CH-014"
+   ]
+  },
+  {
+   "n": "Walden Pond",
+   "city": "Forney",
+   "county": "Kaufman",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-walden-pond",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-028",
+    "DFW-045",
+    "DFW-062",
+    "DFW-205",
+    "DFW-207",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Walsh",
+   "city": "Fort Worth",
+   "county": "Parker",
+   "dev": "Republic Property Group",
+   "px": "dfw-walsh",
+   "f": [
+    "DFW-010",
+    "DFW-011",
+    "DFW-024",
+    "DFW-201",
+    "DFW-203",
+    "DFW-213",
+    "DFW-216",
+    "DFW-221",
+    "DFW-CH-002",
+    "DFW-CH-005"
+   ]
+  },
+  {
+   "n": "Waterscape",
+   "city": "Royse City",
+   "county": "Rockwall",
+   "dev": "Huffines Communities",
+   "px": "dfw-waterscape",
+   "f": [
+    "DFW-020",
+    "DFW-042",
+    "DFW-201",
+    "DFW-202",
+    "DFW-CH-018"
+   ]
+  },
+  {
+   "n": "Whitewing Trails",
+   "city": "Princeton",
+   "county": "Collin",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-whitewing-trails",
+   "f": [
+    "DFW-001",
+    "DFW-003a",
+    "DFW-007",
+    "DFW-052",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Wildcat Ranch",
+   "city": "Crandall",
+   "county": "Kaufman",
+   "dev": "SOCFM Developer LLC and PMB Capital Investments",
+   "px": "dfw-wildcat-ranch",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-003a",
+    "DFW-050",
+    "DFW-052",
+    "DFW-230"
+   ]
+  },
+  {
+   "n": "Wildflower Ranch",
+   "city": "Fort Worth",
+   "county": "Denton",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "dfw-wildflower-ranch",
+   "f": [
+    "DFW-001",
+    "DFW-009",
+    "DFW-028",
+    "DFW-042",
+    "DFW-051",
+    "DFW-052",
+    "DFW-062",
+    "DFW-079",
+    "DFW-201",
+    "DFW-202",
+    "DFW-205",
+    "DFW-207",
+    "DFW-208",
+    "DFW-224"
+   ]
+  },
+  {
+   "n": "Winchester Crossing",
+   "city": "Princeton",
+   "county": "Collin",
+   "dev": "D.R. Horton",
+   "px": "dfw-winchester-crossing",
+   "f": [
+    "DFW-001"
+   ]
+  },
+  {
+   "n": "Windmill Farms",
+   "city": "Forney",
+   "county": "Kaufman",
+   "dev": "",
+   "px": "dfw-windmill-farms",
+   "f": [
+    "DFW-022",
+    "DFW-038",
+    "DFW-053"
+   ]
+  },
+  {
+   "n": "Windsong Ranch",
+   "city": "Prosper",
+   "county": "Denton",
+   "dev": "Tellus Group",
+   "px": "dfw-windsong-ranch",
+   "f": [
+    "DFW-003c",
+    "DFW-025",
+    "DFW-CH-013",
+    "DFW-CH-017"
+   ]
+  },
+  {
+   "n": "Woodcreek",
+   "city": "Fate",
+   "county": "Rockwall",
+   "dev": "PMB Capital Investments and Southstar Development",
+   "px": "dfw-woodcreek",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-007",
+    "DFW-008",
+    "DFW-052",
+    "DFW-059",
+    "DFW-230"
+   ]
+  },
+  {
+   "n": "Alpha Ranch",
+   "city": "Fort Worth",
+   "county": "Denton",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-alpha-ranch",
+   "f": [
+    "DFW-001",
+    "DFW-007",
+    "DFW-008",
+    "DFW-009",
+    "DFW-052",
+    "DFW-055",
+    "DFW-062",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Bluewood",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Hillwood Communities",
+   "px": "dfw-bluewood",
+   "f": [
+    "DFW-001",
+    "DFW-002",
+    "DFW-006",
+    "DFW-055",
+    "DFW-CH-001"
+   ]
+  },
+  {
+   "n": "Canyon Falls",
+   "city": "Flower Mound / Northlake / Argyle",
+   "county": "Denton",
+   "dev": "Brookfield Residential",
+   "px": "dfw-canyon-falls",
+   "f": []
+  },
+  {
+   "n": "Creeks of Legacy",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Centurion American",
+   "px": "dfw-creeks-of-legacy",
+   "f": [
+    "DFW-008",
+    "DFW-022",
+    "DFW-050",
+    "DFW-059",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Cross Creek Meadows",
+   "city": "Celina",
+   "county": "",
+   "dev": "Green Brick Partners",
+   "px": "dfw-cross-creek-meadows",
+   "f": [
+    "DFW-003",
+    "DFW-003a"
+   ]
+  },
+  {
+   "n": "Lilyana by Hillwood",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Hillwood Communities",
+   "px": "dfw-lilyana",
+   "f": [
+    "DFW-055",
+    "DFW-CH-001",
+    "DFW-CH-020"
+   ]
+  },
+  {
+   "n": "Serenade",
+   "city": "Celina",
+   "county": "Collin",
+   "dev": "Huffines Communities",
+   "px": "dfw-serenade",
+   "f": [
+    "DFW-020",
+    "DFW-021",
+    "DFW-028",
+    "DFW-044",
+    "DFW-061",
+    "DFW-205",
+    "DFW-CH-011",
+    "DFW-CH-018"
+   ]
+  },
+  {
+   "n": "Travis Ranch",
+   "city": "Forney",
+   "county": "Kaufman",
+   "dev": "Centurion American Development Group",
+   "px": "dfw-travis-ranch",
+   "f": [
+    "DFW-022",
+    "DFW-053",
+    "DFW-061",
+    "DFW-CH-021"
+   ]
+  },
+  {
+   "n": "Watersbend",
+   "city": "Saginaw",
+   "county": "Tarrant",
+   "dev": "D.R. Horton",
+   "px": "dfw-watersbend",
+   "f": [
+    "DFW-001"
+   ]
+  },
+  {
+   "n": "Talia",
+   "city": "",
+   "county": "",
+   "dev": "The Nehemiah Company",
+   "card": "DFW-231",
+   "kp": "Talia",
+   "f": [
+    "DFW-231"
+   ]
+  },
+  {
+   "n": "Lakesong",
+   "city": "",
+   "county": "",
+   "dev": "Huffines Communities",
+   "card": "DFW-CH-018",
+   "kp": "Serenade, Solterra and Lakesong",
+   "f": [
+    "DFW-CH-018"
+   ]
+  },
+  {
+   "n": "Wellington",
+   "city": "",
+   "county": "",
+   "dev": "Hanover Property Company",
+   "card": "DFW-228",
+   "kp": "Wellington",
+   "f": [
+    "DFW-228"
+   ]
+  },
+  {
+   "n": "Somerset",
+   "city": "",
+   "county": "",
+   "dev": "Hanover Property Company",
+   "card": "DFW-228",
+   "kp": "Somerset",
+   "f": [
+    "DFW-228"
+   ]
+  },
+  {
+   "n": "Berkshire",
+   "city": "",
+   "county": "",
+   "dev": "Hanover Property Company",
+   "card": "DFW-228",
+   "kp": "Berkshire",
+   "f": [
+    "DFW-228"
+   ]
+  },
+  {
+   "n": "Reunion",
+   "city": "",
+   "county": "",
+   "dev": "PMB Capital Investments",
+   "card": "DFW-230",
+   "kp": "Reunion",
+   "f": [
+    "DFW-230"
+   ]
+  },
+  {
+   "n": "Riverstone Estates",
+   "city": "",
+   "county": "",
+   "dev": "Wilbow",
+   "card": "DFW-234",
+   "kp": "Riverstone Estates",
+   "f": [
+    "DFW-234"
+   ]
   }
  ],
  "paid": [

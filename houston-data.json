@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 114,
+ "build": 115,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
@@ -39166,6 +39166,1214 @@
    "b": "HOU-166",
    "rel": "",
    "card": "HOU-042"
+  }
+ ],
+ "mpc": [
+  {
+   "n": "ARTAVIA",
+   "city": "Conroe",
+   "county": "Montgomery",
+   "dev": "AIRIA Development Company",
+   "px": "hou-artavia",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-070",
+    "HOU-071",
+    "HOU-166",
+    "HOU-168",
+    "HOU-201",
+    "HOU-222"
+   ]
+  },
+  {
+   "n": "Amira",
+   "city": "Tomball",
+   "county": "Harris",
+   "dev": "Johnson Development",
+   "px": "hou-amira",
+   "f": [
+    "HOU-013",
+    "HOU-040",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Anniston",
+   "city": "Katy",
+   "county": "Harris",
+   "dev": "Friendswood Development Company",
+   "px": "hou-anniston",
+   "f": [
+    "HOU-042",
+    "HOU-166"
+   ]
+  },
+  {
+   "n": "Audubon",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Audubon Magnolia Development, LLC (managed by Sam Yager Inc.)",
+   "px": "hou-audubon",
+   "f": [
+    "HOU-009",
+    "HOU-013",
+    "HOU-023",
+    "HOU-045",
+    "HOU-068",
+    "HOU-070",
+    "HOU-074",
+    "HOU-077",
+    "HOU-202",
+    "HOU-203",
+    "HOU-210",
+    "HOU-224"
+   ]
+  },
+  {
+   "n": "Austin Point",
+   "city": "Richmond",
+   "county": "Fort Bend",
+   "dev": "The Signorelli Company",
+   "px": "hou-austin-point",
+   "f": [
+    "HOU-013",
+    "HOU-015",
+    "HOU-022",
+    "HOU-023",
+    "HOU-024",
+    "HOU-068",
+    "HOU-069",
+    "HOU-201",
+    "HOU-202",
+    "HOU-213"
+   ]
+  },
+  {
+   "n": "Baytown Crossings",
+   "city": "Baytown",
+   "county": "Harris",
+   "dev": "Friendswood Development Company",
+   "px": "hou-baytown-crossings",
+   "f": [
+    "HOU-042",
+    "HOU-166",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Bluestem",
+   "city": "Brookshire",
+   "county": "Waller",
+   "dev": "The Signorelli Company",
+   "px": "hou-bluestem",
+   "f": [
+    "HOU-007",
+    "HOU-010",
+    "HOU-015",
+    "HOU-022"
+   ]
+  },
+  {
+   "n": "Briarley",
+   "city": "Montgomery",
+   "county": "Montgomery",
+   "dev": "Johnson Development",
+   "px": "hou-briarley",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-168"
+   ]
+  },
+  {
+   "n": "Bridgeland",
+   "city": "Cypress",
+   "county": "Harris",
+   "dev": "Howard Hughes",
+   "px": "hou-bridgeland",
+   "f": [
+    "HOU-009",
+    "HOU-011",
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-034",
+    "HOU-045",
+    "HOU-068",
+    "HOU-069",
+    "HOU-070",
+    "HOU-072",
+    "HOU-166",
+    "HOU-167",
+    "HOU-168",
+    "HOU-201",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Brookewater",
+   "city": "Rosenberg",
+   "county": "Fort Bend",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-brookewater",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-024",
+    "HOU-025",
+    "HOU-034",
+    "HOU-045",
+    "HOU-062",
+    "HOU-068",
+    "HOU-168"
+   ]
+  },
+  {
+   "n": "COLTON",
+   "city": "Todd Mission",
+   "county": "Montgomery",
+   "dev": "AIRIA Development Company",
+   "px": "hou-colton",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-072",
+    "HOU-166",
+    "HOU-168",
+    "HOU-201",
+    "HOU-202",
+    "HOU-222"
+   ]
+  },
+  {
+   "n": "Candela",
+   "city": "Richmond",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-candela",
+   "f": [
+    "HOU-013",
+    "HOU-033",
+    "HOU-040",
+    "HOU-068"
+   ]
+  },
+  {
+   "n": "Canterra Creek",
+   "city": "Iowa Colony",
+   "county": "Brazoria",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-canterra-creek",
+   "f": [
+    "HOU-014",
+    "HOU-022",
+    "HOU-039",
+    "HOU-062",
+    "HOU-132",
+    "HOU-166"
+   ]
+  },
+  {
+   "n": "Cielo",
+   "city": "Conroe",
+   "county": "Montgomery",
+   "dev": "The Signorelli Company",
+   "px": "hou-cielo",
+   "f": [
+    "HOU-007",
+    "HOU-015",
+    "HOU-022",
+    "HOU-034",
+    "HOU-073"
+   ]
+  },
+  {
+   "n": "Creekhaven",
+   "city": "Iowa Colony",
+   "county": "Brazoria",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-creekhaven",
+   "f": [
+    "HOU-022",
+    "HOU-033",
+    "HOU-034",
+    "HOU-064",
+    "HOU-074",
+    "HOU-076",
+    "HOU-220"
+   ]
+  },
+  {
+   "n": "Cross Creek West",
+   "city": "Fulshear",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-cross-creek-west",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-040",
+    "HOU-068",
+    "HOU-069",
+    "HOU-070",
+    "HOU-072",
+    "HOU-166",
+    "HOU-168",
+    "HOU-203"
+   ]
+  },
+  {
+   "n": "Cypress Green",
+   "city": "Hockley",
+   "county": "Harris",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-cypress-green",
+   "f": [
+    "HOU-022",
+    "HOU-033",
+    "HOU-034",
+    "HOU-039",
+    "HOU-064",
+    "HOU-130",
+    "HOU-132",
+    "HOU-166"
+   ]
+  },
+  {
+   "n": "Dunham Pointe",
+   "city": "Cypress",
+   "county": "Harris",
+   "dev": "Archie Dunham",
+   "px": "hou-dunham-pointe",
+   "f": [
+    "HOU-023",
+    "HOU-033",
+    "HOU-069",
+    "HOU-203",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Elyson",
+   "city": "Katy",
+   "county": "Harris",
+   "dev": "Brookfield Residential",
+   "px": "hou-elyson",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-043",
+    "HOU-045",
+    "HOU-068",
+    "HOU-069",
+    "HOU-168",
+    "HOU-201",
+    "HOU-203",
+    "HOU-207"
+   ]
+  },
+  {
+   "n": "Emberly",
+   "city": "Beasley",
+   "county": "Fort Bend",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-emberly",
+   "f": [
+    "HOU-014",
+    "HOU-022",
+    "HOU-039",
+    "HOU-062",
+    "HOU-132",
+    "HOU-166",
+    "HOU-209"
+   ]
+  },
+  {
+   "n": "Evergreen",
+   "city": "Conroe",
+   "county": "Montgomery",
+   "dev": "Shea Homes",
+   "px": "hou-evergreen",
+   "f": [
+    "HOU-013",
+    "HOU-045",
+    "HOU-168",
+    "HOU-204"
+   ]
+  },
+  {
+   "n": "Everly",
+   "city": "Hockley",
+   "county": "Harris",
+   "dev": "Johnson Development",
+   "px": "hou-everly",
+   "f": [
+    "HOU-013",
+    "HOU-040",
+    "HOU-068",
+    "HOU-202"
+   ]
+  },
+  {
+   "n": "Fulbrook on Fulshear Creek",
+   "city": "Fulshear",
+   "county": "Fort Bend",
+   "dev": "Trend Development",
+   "px": "hou-fulbrook-on-fulshear-creek",
+   "f": [
+    "HOU-013",
+    "HOU-069"
+   ]
+  },
+  {
+   "n": "Grand Central Park",
+   "city": "Conroe",
+   "county": "Montgomery",
+   "dev": "Johnson Development",
+   "px": "hou-grand-central-park",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-068",
+    "HOU-071",
+    "HOU-168",
+    "HOU-202"
+   ]
+  },
+  {
+   "n": "Grand Magnolia",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-grand-magnolia",
+   "f": [
+    "HOU-022",
+    "HOU-034",
+    "HOU-039",
+    "HOU-064",
+    "HOU-073",
+    "HOU-130",
+    "HOU-166",
+    "HOU-206",
+    "HOU-212",
+    "HOU-216"
+   ]
+  },
+  {
+   "n": "Grange",
+   "city": "Katy",
+   "county": "Waller",
+   "dev": "Johnson Development",
+   "px": "hou-grange",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-168",
+    "HOU-202"
+   ]
+  },
+  {
+   "n": "Harvest Green",
+   "city": "Richmond",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-harvest-green",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-040",
+    "HOU-068",
+    "HOU-072",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Indigo",
+   "city": "Richmond",
+   "county": "Fort Bend",
+   "dev": "Meristem Communities",
+   "px": "hou-indigo",
+   "f": [
+    "HOU-023",
+    "HOU-168",
+    "HOU-210",
+    "HOU-211",
+    "HOU-228"
+   ]
+  },
+  {
+   "n": "Jordan Ranch",
+   "city": "Fulshear",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-jordan-ranch",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-168",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Jubilee",
+   "city": "Hockley",
+   "county": "Harris",
+   "dev": "Johnson Development",
+   "px": "hou-jubilee",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-168",
+    "HOU-201",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Kresston",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Johnson Development",
+   "px": "hou-kresston",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-166",
+    "HOU-168",
+    "HOU-203",
+    "HOU-215",
+    "HOU-219"
+   ]
+  },
+  {
+   "n": "Lago Mar",
+   "city": "Texas City",
+   "county": "Galveston",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-lago-mar",
+   "f": [
+    "HOU-009",
+    "HOU-014",
+    "HOU-022",
+    "HOU-023",
+    "HOU-033",
+    "HOU-039",
+    "HOU-062",
+    "HOU-064",
+    "HOU-068",
+    "HOU-132",
+    "HOU-166",
+    "HOU-167",
+    "HOU-209",
+    "HOU-214"
+   ]
+  },
+  {
+   "n": "Legacy",
+   "city": "League City",
+   "county": "Galveston",
+   "dev": "Hillwood Communities",
+   "px": "hou-legacy",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-068",
+    "HOU-072",
+    "HOU-133",
+    "HOU-166",
+    "HOU-168",
+    "HOU-201",
+    "HOU-202",
+    "HOU-204"
+   ]
+  },
+  {
+   "n": "Marvida",
+   "city": "Cypress",
+   "county": "Harris",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-marvida",
+   "f": [
+    "HOU-012",
+    "HOU-013",
+    "HOU-022",
+    "HOU-039",
+    "HOU-075",
+    "HOU-136",
+    "HOU-206"
+   ]
+  },
+  {
+   "n": "Mavera",
+   "city": "Conroe",
+   "county": "Montgomery",
+   "dev": "PulteGroup",
+   "px": "hou-mavera",
+   "f": [
+    "HOU-008",
+    "HOU-167",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Meridiana",
+   "city": "Iowa Colony",
+   "county": "Brazoria",
+   "dev": "Rise Communities",
+   "px": "hou-meridiana",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-045",
+    "HOU-068",
+    "HOU-069",
+    "HOU-076",
+    "HOU-168",
+    "HOU-201",
+    "HOU-202",
+    "HOU-204",
+    "HOU-223"
+   ]
+  },
+  {
+   "n": "Mill Creek",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Forestar",
+   "px": "hou-mill-creek",
+   "f": [
+    "HOU-132",
+    "HOU-226"
+   ]
+  },
+  {
+   "n": "Moran Ranch",
+   "city": "Willis",
+   "county": "Montgomery",
+   "dev": "",
+   "px": "hou-moran-ranch",
+   "f": [
+    "HOU-012",
+    "HOU-166"
+   ]
+  },
+  {
+   "n": "Oakberry Trails",
+   "city": "Waller",
+   "county": "Waller",
+   "dev": "Ryko Development",
+   "px": "hou-oakberry-trails",
+   "f": [
+    "HOU-075",
+    "HOU-166",
+    "HOU-206",
+    "HOU-235"
+   ]
+  },
+  {
+   "n": "Pomona",
+   "city": "Manvel",
+   "county": "Brazoria",
+   "dev": "Hillwood Communities",
+   "px": "hou-pomona",
+   "f": [
+    "HOU-023",
+    "HOU-033",
+    "HOU-133",
+    "HOU-168"
+   ]
+  },
+  {
+   "n": "Riceland",
+   "city": "Mont Belvieu",
+   "county": "Chambers",
+   "dev": "McGrath Real Estate Partners",
+   "px": "hou-riceland",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-045",
+    "HOU-168",
+    "HOU-211",
+    "HOU-227"
+   ]
+  },
+  {
+   "n": "River Ranch",
+   "city": "Dayton",
+   "county": "Liberty",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-river-ranch",
+   "f": [
+    "HOU-009",
+    "HOU-010",
+    "HOU-022",
+    "HOU-033",
+    "HOU-034",
+    "HOU-039",
+    "HOU-062",
+    "HOU-063",
+    "HOU-064",
+    "HOU-074",
+    "HOU-130",
+    "HOU-132",
+    "HOU-166",
+    "HOU-167",
+    "HOU-206",
+    "HOU-209",
+    "HOU-210",
+    "HOU-212",
+    "HOU-214"
+   ]
+  },
+  {
+   "n": "Sienna",
+   "city": "Missouri City",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-sienna",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-071",
+    "HOU-072",
+    "HOU-168",
+    "HOU-201",
+    "HOU-203",
+    "HOU-204",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Sierra Vista",
+   "city": "Rosharon",
+   "county": "Brazoria",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-sierra-vista",
+   "f": [
+    "HOU-022",
+    "HOU-039",
+    "HOU-073",
+    "HOU-074",
+    "HOU-209",
+    "HOU-216",
+    "HOU-217"
+   ]
+  },
+  {
+   "n": "Sorella",
+   "city": "Tomball",
+   "county": "Harris",
+   "dev": "Johnson Development",
+   "px": "hou-sorella",
+   "f": [
+    "HOU-012",
+    "HOU-040",
+    "HOU-073",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Sunterra",
+   "city": "Katy",
+   "county": "Waller",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-sunterra",
+   "f": [
+    "HOU-009",
+    "HOU-022",
+    "HOU-024",
+    "HOU-034",
+    "HOU-039",
+    "HOU-045",
+    "HOU-062",
+    "HOU-064",
+    "HOU-068",
+    "HOU-073",
+    "HOU-075",
+    "HOU-130",
+    "HOU-132",
+    "HOU-166",
+    "HOU-168",
+    "HOU-201",
+    "HOU-209"
+   ]
+  },
+  {
+   "n": "Sunterra Lakes",
+   "city": "Brookshire",
+   "county": "Waller",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-sunterra-lakes",
+   "f": [
+    "HOU-009",
+    "HOU-022",
+    "HOU-024",
+    "HOU-076",
+    "HOU-130",
+    "HOU-132",
+    "HOU-166",
+    "HOU-221"
+   ]
+  },
+  {
+   "n": "Sweetgrass Village",
+   "city": "Crosby",
+   "county": "Harris",
+   "dev": "",
+   "px": "hou-sweetgrass-village",
+   "f": [
+    "HOU-022",
+    "HOU-166",
+    "HOU-232"
+   ]
+  },
+  {
+   "n": "Tamarron",
+   "city": "Fulshear",
+   "county": "Fort Bend",
+   "dev": "D.R. Horton",
+   "px": "hou-tamarron",
+   "f": [
+    "HOU-132"
+   ]
+  },
+  {
+   "n": "The George",
+   "city": "Richmond",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-the-george",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-040",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-069",
+    "HOU-168",
+    "HOU-210"
+   ]
+  },
+  {
+   "n": "The Grand Prairie",
+   "city": "Hockley",
+   "county": "Harris",
+   "dev": "EMBER Real Estate & Development",
+   "px": "hou-grand-prairie",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-068",
+    "HOU-166",
+    "HOU-204",
+    "HOU-225"
+   ]
+  },
+  {
+   "n": "The Highlands",
+   "city": "Porter",
+   "county": "Montgomery",
+   "dev": "Caldwell Companies",
+   "px": "hou-the-highlands",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-041",
+    "HOU-045",
+    "HOU-069",
+    "HOU-070",
+    "HOU-072",
+    "HOU-131",
+    "HOU-166",
+    "HOU-168",
+    "HOU-201",
+    "HOU-202"
+   ]
+  },
+  {
+   "n": "The Woodlands Hills",
+   "city": "Willis",
+   "county": "Montgomery",
+   "dev": "Howard Hughes",
+   "px": "hou-the-woodlands-hills",
+   "f": [
+    "HOU-009",
+    "HOU-011",
+    "HOU-013",
+    "HOU-023",
+    "HOU-034",
+    "HOU-045",
+    "HOU-067",
+    "HOU-068",
+    "HOU-070",
+    "HOU-168"
+   ]
+  },
+  {
+   "n": "Towne Lake",
+   "city": "Cypress",
+   "county": "Harris",
+   "dev": "Caldwell Companies",
+   "px": "hou-towne-lake",
+   "f": [
+    "HOU-041",
+    "HOU-071",
+    "HOU-072",
+    "HOU-131",
+    "HOU-213"
+   ]
+  },
+  {
+   "n": "Two Step Farm",
+   "city": "Montgomery",
+   "county": "Montgomery",
+   "dev": "Oxland Group",
+   "px": "hou-two-step-farm",
+   "f": [
+    "HOU-013",
+    "HOU-023",
+    "HOU-033",
+    "HOU-072",
+    "HOU-134",
+    "HOU-167",
+    "HOU-168",
+    "HOU-202",
+    "HOU-204",
+    "HOU-211",
+    "HOU-212",
+    "HOU-213",
+    "HOU-229"
+   ]
+  },
+  {
+   "n": "Valencia",
+   "city": "Manvel",
+   "county": "Brazoria",
+   "dev": "Hillwood Communities",
+   "px": "hou-valencia",
+   "f": [
+    "HOU-013",
+    "HOU-033",
+    "HOU-133",
+    "HOU-167",
+    "HOU-201"
+   ]
+  },
+  {
+   "n": "Wildrye",
+   "city": "Waller",
+   "county": "Harris",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-wildrye",
+   "f": [
+    "HOU-012",
+    "HOU-022",
+    "HOU-023",
+    "HOU-024",
+    "HOU-034",
+    "HOU-045",
+    "HOU-168",
+    "HOU-202"
+   ]
+  },
+  {
+   "n": "Woodforest",
+   "city": "Montgomery",
+   "county": "Montgomery",
+   "dev": "Johnson Development",
+   "px": "hou-woodforest",
+   "f": [
+    "HOU-040",
+    "HOU-045",
+    "HOU-168"
+   ]
+  },
+  {
+   "n": "Woodhavyn",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Shea Homes",
+   "px": "hou-woodhavyn",
+   "f": [
+    "HOU-013",
+    "HOU-203",
+    "HOU-204"
+   ]
+  },
+  {
+   "n": "Woodson's Reserve",
+   "city": "Spring",
+   "county": "Montgomery",
+   "dev": "Toll Brothers",
+   "px": "hou-woodsons-reserve",
+   "f": [
+    "HOU-203",
+    "HOU-205"
+   ]
+  },
+  {
+   "n": "Balmoral",
+   "city": "Humble",
+   "county": "Harris",
+   "dev": "Land Tejas / Starwood Land",
+   "px": "hou-balmoral",
+   "f": [
+    "HOU-039",
+    "HOU-045"
+   ]
+  },
+  {
+   "n": "Beacon Hill",
+   "city": "Waller",
+   "county": "Waller",
+   "dev": "Wolff Companies",
+   "px": "hou-beacon-hill",
+   "f": [
+    "HOU-130",
+    "HOU-234"
+   ]
+  },
+  {
+   "n": "Breckenridge Forest",
+   "city": "Spring",
+   "county": "",
+   "dev": "D.R. Horton",
+   "px": "hou-breckenridge-forest",
+   "f": [
+    "HOU-132"
+   ]
+  },
+  {
+   "n": "Caldwell Crossing (formerly Caldwell Ranch)",
+   "city": "Iowa Colony",
+   "county": "Brazoria",
+   "dev": "D.R. Horton",
+   "px": "hou-caldwell-crossing",
+   "f": [
+    "HOU-132"
+   ]
+  },
+  {
+   "n": "Cane Island",
+   "city": "Katy",
+   "county": "Harris",
+   "dev": "Rise Communities",
+   "px": "hou-cane-island",
+   "f": [
+    "HOU-213",
+    "HOU-223"
+   ]
+  },
+  {
+   "n": "Cross Creek Ranch",
+   "city": "Fulshear",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-cross-creek-ranch",
+   "f": [
+    "HOU-040"
+   ]
+  },
+  {
+   "n": "Dellrose",
+   "city": "Hockley",
+   "county": "Harris",
+   "dev": "Precedent Land Company",
+   "px": "hou-dellrose",
+   "f": [
+    "HOU-024",
+    "HOU-033",
+    "HOU-045",
+    "HOU-166",
+    "HOU-210",
+    "HOU-230"
+   ]
+  },
+  {
+   "n": "Freeman Ranch",
+   "city": "Katy",
+   "county": "",
+   "dev": "",
+   "px": "hou-freeman-ranch",
+   "f": [
+    "HOU-014"
+   ]
+  },
+  {
+   "n": "Imperial",
+   "city": "Sugar Land",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-imperial",
+   "f": [
+    "HOU-040",
+    "HOU-215"
+   ]
+  },
+  {
+   "n": "Magnolia Woods",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "LGI Homes",
+   "px": "hou-magnolia-woods",
+   "f": [
+    "HOU-014",
+    "HOU-217"
+   ]
+  },
+  {
+   "n": "Mirabella",
+   "city": "Brookshire",
+   "county": "Waller",
+   "dev": "Century Communities",
+   "px": "hou-mirabella",
+   "f": [
+    "HOU-009"
+   ]
+  },
+  {
+   "n": "NorthGrove",
+   "city": "Magnolia",
+   "county": "Montgomery",
+   "dev": "Toll Brothers",
+   "px": "hou-northgrove",
+   "f": [
+    "HOU-013",
+    "HOU-045",
+    "HOU-068",
+    "HOU-168",
+    "HOU-203"
+   ]
+  },
+  {
+   "n": "Riverstone",
+   "city": "Sugar Land",
+   "county": "Fort Bend",
+   "dev": "Johnson Development",
+   "px": "hou-riverstone",
+   "f": [
+    "HOU-040"
+   ]
+  },
+  {
+   "n": "Tavola",
+   "city": "New Caney",
+   "county": "Montgomery",
+   "dev": "Friendswood Development Company",
+   "px": "hou-tavola",
+   "f": [
+    "HOU-012",
+    "HOU-013",
+    "HOU-042",
+    "HOU-068",
+    "HOU-166"
+   ]
+  },
+  {
+   "n": "The Woodlands",
+   "city": "The Woodlands",
+   "county": "Montgomery",
+   "dev": "Howard Hughes",
+   "px": "hou-the-woodlands",
+   "f": [
+    "HOU-011"
+   ]
+  },
+  {
+   "n": "Trinity Landing",
+   "city": "Dayton",
+   "county": "Liberty",
+   "dev": "M/I Homes and Meritage Homes",
+   "px": "hou-trinity-landing",
+   "f": [
+    "HOU-012"
+   ]
+  },
+  {
+   "n": "Valley Ranch (Azalea District)",
+   "city": "New Caney",
+   "county": "Montgomery",
+   "dev": "The Signorelli Company",
+   "px": "hou-valley-ranch",
+   "f": [
+    "HOU-007",
+    "HOU-015"
+   ]
+  },
+  {
+   "n": "Heritage Bend",
+   "city": "",
+   "county": "",
+   "dev": "Hines",
+   "card": "HOU-233",
+   "kp": "Heritage Bend",
+   "f": [
+    "HOU-233"
+   ]
+  },
+  {
+   "n": "Sandy Point",
+   "city": "",
+   "county": "",
+   "dev": "Hines",
+   "card": "HOU-233",
+   "kp": "Sandy Point",
+   "f": [
+    "HOU-233"
+   ]
+  },
+  {
+   "n": "Windrose Green",
+   "city": "",
+   "county": "",
+   "dev": "EMBER Real Estate & Development",
+   "card": "HOU-225",
+   "kp": "Windrose Green",
+   "f": [
+    "HOU-225"
+   ]
   }
  ],
  "paid": [
