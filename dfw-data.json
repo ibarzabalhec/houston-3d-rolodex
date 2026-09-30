@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 116,
+ "build": 117,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-30",
@@ -33972,6 +33972,12 @@
     "DFW-079",
     "DFW-201",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Aster Park"
+    ]
    ]
   },
   {
@@ -33986,6 +33992,12 @@
     "DFW-042",
     "DFW-201",
     "DFW-CH-015"
+   ],
+   "k": [
+    [
+     "DFW-CH-015",
+     "Cambridge Crossing, Celina"
+    ]
    ]
   },
   {
@@ -34000,6 +34012,12 @@
     "DFW-029",
     "DFW-051",
     "DFW-226"
+   ],
+   "k": [
+    [
+     "DFW-226",
+     "Castle Hills"
+    ]
    ]
   },
   {
@@ -34012,6 +34030,12 @@
     "DFW-003a",
     "DFW-006",
     "DFW-232"
+   ],
+   "k": [
+    [
+     "DFW-232",
+     "Chisholm Trail Ranch"
+    ]
    ]
   },
   {
@@ -34026,6 +34050,12 @@
     "DFW-079",
     "DFW-207",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Creekside"
+    ]
    ]
   },
   {
@@ -34076,6 +34106,12 @@
     "DFW-055",
     "DFW-058",
     "DFW-229"
+   ],
+   "k": [
+    [
+     "DFW-229",
+     "Elevon"
+    ]
    ]
   },
   {
@@ -34087,6 +34123,12 @@
    "f": [
     "DFW-032",
     "DFW-CH-003"
+   ],
+   "k": [
+    [
+     "DFW-CH-003",
+     "Fields and Fields West, Frisco"
+    ]
    ]
   },
   {
@@ -34103,6 +34145,12 @@
     "DFW-051",
     "DFW-201",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Furst Ranch"
+    ]
    ]
   },
   {
@@ -34132,6 +34180,12 @@
     "DFW-052",
     "DFW-201",
     "DFW-225"
+   ],
+   "k": [
+    [
+     "DFW-225",
+     "Goodland"
+    ]
    ]
   },
   {
@@ -34188,6 +34242,12 @@
     "DFW-011",
     "DFW-078",
     "DFW-231"
+   ],
+   "k": [
+    [
+     "DFW-231",
+     "Karis"
+    ]
    ]
   },
   {
@@ -34251,6 +34311,12 @@
    "f": [
     "DFW-202",
     "DFW-CH-001"
+   ],
+   "k": [
+    [
+     "DFW-CH-001",
+     "Ramble, Celina, and Liberty, Melissa"
+    ]
    ]
   },
   {
@@ -34263,6 +34329,16 @@
     "DFW-025",
     "DFW-CH-002",
     "DFW-CH-008"
+   ],
+   "k": [
+    [
+     "DFW-CH-008",
+     "Light Farms, Celina"
+    ],
+    [
+     "DFW-CH-002",
+     "Light Farms, Celina"
+    ]
    ]
   },
   {
@@ -34301,6 +34377,12 @@
     "DFW-008",
     "DFW-023",
     "DFW-228"
+   ],
+   "k": [
+    [
+     "DFW-228",
+     "Mira Lagos"
+    ]
    ]
   },
   {
@@ -34327,6 +34409,12 @@
     "DFW-003a",
     "DFW-033",
     "DFW-234"
+   ],
+   "k": [
+    [
+     "DFW-234",
+     "Morningstar"
+    ]
    ]
   },
   {
@@ -34346,6 +34434,16 @@
     "DFW-203",
     "DFW-CH-016",
     "DFW-CH-017"
+   ],
+   "k": [
+    [
+     "DFW-CH-016",
+     "Mosaic, Celina"
+    ],
+    [
+     "DFW-CH-017",
+     "Windsong Ranch and Mosaic"
+    ]
    ]
   },
   {
@@ -34380,6 +34478,12 @@
     "DFW-044",
     "DFW-201",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Myrtle Creek"
+    ]
    ]
   },
   {
@@ -34393,6 +34497,12 @@
     "DFW-021",
     "DFW-214",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Northspur"
+    ]
    ]
   },
   {
@@ -34413,6 +34523,12 @@
     "DFW-202",
     "DFW-203",
     "DFW-CH-004"
+   ],
+   "k": [
+    [
+     "DFW-059",
+     "Painted Tree, McKinney"
+    ]
    ]
   },
   {
@@ -34443,6 +34559,16 @@
     "DFW-203",
     "DFW-CH-001",
     "DFW-CH-007"
+   ],
+   "k": [
+    [
+     "DFW-CH-001",
+     "Ramble, Celina, and Liberty, Melissa"
+    ],
+    [
+     "DFW-CH-007",
+     "Ramble, Celina"
+    ]
    ]
   },
   {
@@ -34457,6 +34583,12 @@
     "DFW-034",
     "DFW-044",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Redden Farms"
+    ]
    ]
   },
   {
@@ -34507,6 +34639,16 @@
     "DFW-205",
     "DFW-CH-018",
     "DFW-CH-019"
+   ],
+   "k": [
+    [
+     "DFW-CH-018",
+     "Serenade, Solterra and Lakesong"
+    ],
+    [
+     "DFW-CH-019",
+     "Solterra, Mesquite"
+    ]
    ]
   },
   {
@@ -34565,6 +34707,12 @@
     "DFW-051",
     "DFW-201",
     "DFW-CH-009"
+   ],
+   "k": [
+    [
+     "DFW-CH-009",
+     "Star Trail, Prosper"
+    ]
    ]
   },
   {
@@ -34654,6 +34802,16 @@
     "DFW-203",
     "DFW-CH-012",
     "DFW-CH-014"
+   ],
+   "k": [
+    [
+     "DFW-CH-014",
+     "Trinity Falls, McKinney"
+    ],
+    [
+     "DFW-CH-012",
+     "Trinity Falls, McKinney"
+    ]
    ]
   },
   {
@@ -34667,6 +34825,12 @@
     "DFW-202",
     "DFW-CH-001",
     "DFW-CH-010"
+   ],
+   "k": [
+    [
+     "DFW-CH-010",
+     "Union Park, Little Elm"
+    ]
    ]
   },
   {
@@ -34684,6 +34848,12 @@
     "DFW-053",
     "DFW-201",
     "DFW-230"
+   ],
+   "k": [
+    [
+     "DFW-230",
+     "Ventana"
+    ]
    ]
   },
   {
@@ -34727,6 +34897,16 @@
     "DFW-203",
     "DFW-BTR-004",
     "DFW-CH-014"
+   ],
+   "k": [
+    [
+     "DFW-CH-014",
+     "Viridian, Arlington"
+    ],
+    [
+     "DFW-BTR-004",
+     "Tricon Viridian, Arlington"
+    ]
    ]
   },
   {
@@ -34763,6 +34943,16 @@
     "DFW-221",
     "DFW-CH-002",
     "DFW-CH-005"
+   ],
+   "k": [
+    [
+     "DFW-CH-002",
+     "Walsh, Fort Worth"
+    ],
+    [
+     "DFW-CH-005",
+     "Walsh, Fort Worth"
+    ]
    ]
   },
   {
@@ -34806,6 +34996,12 @@
     "DFW-050",
     "DFW-052",
     "DFW-230"
+   ],
+   "k": [
+    [
+     "DFW-230",
+     "Wildcat Ranch"
+    ]
    ]
   },
   {
@@ -34829,6 +35025,16 @@
     "DFW-207",
     "DFW-208",
     "DFW-224"
+   ],
+   "k": [
+    [
+     "DFW-224",
+     "Wildflower Ranch"
+    ],
+    [
+     "DFW-051",
+     "Wildflower Ranch, Fort Worth"
+    ]
    ]
   },
   {
@@ -34864,6 +35070,16 @@
     "DFW-025",
     "DFW-CH-013",
     "DFW-CH-017"
+   ],
+   "k": [
+    [
+     "DFW-CH-017",
+     "Windsong Ranch and Mosaic"
+    ],
+    [
+     "DFW-CH-013",
+     "Windsong Ranch, Prosper"
+    ]
    ]
   },
   {
@@ -34880,6 +35096,12 @@
     "DFW-052",
     "DFW-059",
     "DFW-230"
+   ],
+   "k": [
+    [
+     "DFW-230",
+     "Woodcreek"
+    ]
    ]
   },
   {
@@ -34956,6 +35178,12 @@
     "DFW-055",
     "DFW-CH-001",
     "DFW-CH-020"
+   ],
+   "k": [
+    [
+     "DFW-CH-020",
+     "Lilyana, Celina"
+    ]
    ]
   },
   {
@@ -34973,6 +35201,16 @@
     "DFW-205",
     "DFW-CH-011",
     "DFW-CH-018"
+   ],
+   "k": [
+    [
+     "DFW-CH-018",
+     "Serenade, Solterra and Lakesong"
+    ],
+    [
+     "DFW-CH-011",
+     "Serenade, Celina"
+    ]
    ]
   },
   {

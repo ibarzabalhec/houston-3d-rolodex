@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 116,
+ "build": 117,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
@@ -39187,6 +39187,16 @@
     "HOU-168",
     "HOU-201",
     "HOU-222"
+   ],
+   "k": [
+    [
+     "HOU-222",
+     "ARTAVIA"
+    ],
+    [
+     "HOU-067",
+     "Sienna, Jordan Ranch, Artavia, The Woodlands Hills"
+    ]
    ]
   },
   {
@@ -39231,6 +39241,12 @@
     "HOU-203",
     "HOU-210",
     "HOU-224"
+   ],
+   "k": [
+    [
+     "HOU-224",
+     "Audubon"
+    ]
    ]
   },
   {
@@ -39250,6 +39266,12 @@
     "HOU-201",
     "HOU-202",
     "HOU-213"
+   ],
+   "k": [
+    [
+     "HOU-015",
+     "Austin Point"
+    ]
    ]
   },
   {
@@ -39275,6 +39297,12 @@
     "HOU-010",
     "HOU-015",
     "HOU-022"
+   ],
+   "k": [
+    [
+     "HOU-015",
+     "Bluestem"
+    ]
    ]
   },
   {
@@ -39315,6 +39343,12 @@
     "HOU-168",
     "HOU-201",
     "HOU-205"
+   ],
+   "k": [
+    [
+     "HOU-011",
+     "Bridgeland"
+    ]
    ]
   },
   {
@@ -39354,6 +39388,12 @@
     "HOU-201",
     "HOU-202",
     "HOU-222"
+   ],
+   "k": [
+    [
+     "HOU-222",
+     "COLTON"
+    ]
    ]
   },
   {
@@ -39524,6 +39564,12 @@
     "HOU-040",
     "HOU-068",
     "HOU-202"
+   ],
+   "k": [
+    [
+     "HOU-040",
+     "Everly"
+    ]
    ]
   },
   {
@@ -39618,6 +39664,12 @@
     "HOU-210",
     "HOU-211",
     "HOU-228"
+   ],
+   "k": [
+    [
+     "HOU-228",
+     "Indigo"
+    ]
    ]
   },
   {
@@ -39635,6 +39687,12 @@
     "HOU-068",
     "HOU-168",
     "HOU-201"
+   ],
+   "k": [
+    [
+     "HOU-067",
+     "Sienna, Jordan Ranch, Artavia, The Woodlands Hills"
+    ]
    ]
   },
   {
@@ -39655,6 +39713,20 @@
     "HOU-168",
     "HOU-201",
     "HOU-205"
+   ],
+   "k": [
+    [
+     "HOU-040",
+     "Jubilee"
+    ],
+    [
+     "HOU-168",
+     "Jubilee, Hockley"
+    ],
+    [
+     "HOU-033",
+     "Jubilee, Hockley"
+    ]
    ]
   },
   {
@@ -39719,6 +39791,12 @@
     "HOU-201",
     "HOU-202",
     "HOU-204"
+   ],
+   "k": [
+    [
+     "HOU-133",
+     "Legacy, League City"
+    ]
    ]
   },
   {
@@ -39735,6 +39813,12 @@
     "HOU-075",
     "HOU-136",
     "HOU-206"
+   ],
+   "k": [
+    [
+     "HOU-136",
+     "Willow at Marvida, Cypress"
+    ]
    ]
   },
   {
@@ -39767,6 +39851,12 @@
     "HOU-202",
     "HOU-204",
     "HOU-223"
+   ],
+   "k": [
+    [
+     "HOU-223",
+     "Meridiana"
+    ]
    ]
   },
   {
@@ -39778,6 +39868,12 @@
    "f": [
     "HOU-132",
     "HOU-226"
+   ],
+   "k": [
+    [
+     "HOU-226",
+     "Mill Creek"
+    ]
    ]
   },
   {
@@ -39802,6 +39898,12 @@
     "HOU-166",
     "HOU-206",
     "HOU-235"
+   ],
+   "k": [
+    [
+     "HOU-235",
+     "Oakberry Trails"
+    ]
    ]
   },
   {
@@ -39830,6 +39932,12 @@
     "HOU-168",
     "HOU-211",
     "HOU-227"
+   ],
+   "k": [
+    [
+     "HOU-227",
+     "Riceland"
+    ]
    ]
   },
   {
@@ -39881,6 +39989,12 @@
     "HOU-203",
     "HOU-204",
     "HOU-205"
+   ],
+   "k": [
+    [
+     "HOU-067",
+     "Sienna, Jordan Ranch, Artavia, The Woodlands Hills"
+    ]
    ]
   },
   {
@@ -39965,6 +40079,12 @@
     "HOU-022",
     "HOU-166",
     "HOU-232"
+   ],
+   "k": [
+    [
+     "HOU-232",
+     "Sweetgrass Village"
+    ]
    ]
   },
   {
@@ -40030,6 +40150,12 @@
     "HOU-168",
     "HOU-201",
     "HOU-202"
+   ],
+   "k": [
+    [
+     "HOU-131",
+     "Fairway Pines at The Highlands"
+    ]
    ]
   },
   {
@@ -40049,6 +40175,16 @@
     "HOU-068",
     "HOU-070",
     "HOU-168"
+   ],
+   "k": [
+    [
+     "HOU-011",
+     "The Woodlands Hills"
+    ],
+    [
+     "HOU-067",
+     "Sienna, Jordan Ranch, Artavia, The Woodlands Hills"
+    ]
    ]
   },
   {
@@ -40085,6 +40221,12 @@
     "HOU-212",
     "HOU-213",
     "HOU-229"
+   ],
+   "k": [
+    [
+     "HOU-229",
+     "Two Step Farm"
+    ]
    ]
   },
   {
@@ -40099,6 +40241,12 @@
     "HOU-133",
     "HOU-167",
     "HOU-201"
+   ],
+   "k": [
+    [
+     "HOU-133",
+     "Valencia, Manvel"
+    ]
    ]
   },
   {
@@ -40173,6 +40321,12 @@
    "f": [
     "HOU-130",
     "HOU-234"
+   ],
+   "k": [
+    [
+     "HOU-234",
+     "Beacon Hill"
+    ]
    ]
   },
   {
@@ -40204,6 +40358,12 @@
    "f": [
     "HOU-213",
     "HOU-223"
+   ],
+   "k": [
+    [
+     "HOU-223",
+     "Cane Island"
+    ]
    ]
   },
   {
@@ -40229,6 +40389,12 @@
     "HOU-166",
     "HOU-210",
     "HOU-230"
+   ],
+   "k": [
+    [
+     "HOU-230",
+     "Dellrose"
+    ]
    ]
   },
   {
