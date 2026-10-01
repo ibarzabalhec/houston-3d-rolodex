@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 118,
+ "build": 119,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-09-30",
@@ -33611,686 +33611,898 @@
    "a": "DFW-003",
    "b": "DFW-003a",
    "rel": "Green Brick Partners brand",
-   "card": "DFW-003a"
+   "card": "DFW-003a",
+   "q": "Green Brick Partners brand",
+   "s": "https://greenbrickpartners.com/brands-services/"
   },
   {
    "k": "owns",
    "a": "DFW-003",
    "b": "DFW-003b",
    "rel": "part of Green Brick Partners",
-   "card": "DFW-003b"
+   "card": "DFW-003b",
+   "q": "It is part of Green Brick Partners",
+   "s": "https://greenbrickpartners.com/brands-services/"
   },
   {
    "k": "owns",
    "a": "DFW-003",
    "b": "DFW-003c",
    "rel": "",
-   "card": "DFW-003c"
+   "card": "DFW-003c",
+   "q": "Green Brick owns it",
+   "s": "https://greenbrickpartners.com/brands-services/"
   },
   {
    "k": "owns",
    "a": "DFW-003",
    "b": "DFW-003d",
    "rel": "operates under Green Brick",
-   "card": "DFW-003d"
+   "card": "DFW-003d",
+   "q": "It operates as CLH20 LLC under Green Brick",
+   "s": "https://greenbrickpartners.com/brands-services/"
   },
   {
    "k": "owns",
    "a": "DFW-003",
    "b": "DFW-014",
    "rel": "",
-   "card": "DFW-014"
+   "card": "DFW-014",
+   "q": "The parent is Green Brick",
+   "s": "https://greenbrickpartners.com/brands-services/"
   },
   {
    "k": "owns",
    "a": "DFW-007",
    "b": "DFW-063",
    "rel": "affordable brand",
-   "card": "DFW-063"
+   "card": "DFW-063",
+   "q": "PulteGroup's affordable brand",
+   "s": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President"
   },
   {
    "k": "owns",
    "a": "DFW-007",
    "b": "DFW-064",
    "rel": "active-adult brand",
-   "card": "DFW-064"
+   "card": "DFW-064",
+   "q": "PulteGroup's active-adult brand",
+   "s": "https://www.businesswire.com/news/home/20250821913928/en/PulteGroup-Promotes-Scott-Bryson-to-Dallas-Division-President"
   },
   {
    "k": "owns",
    "a": "DFW-010",
    "b": "DFW-024",
    "rel": "luxury brand",
-   "card": "DFW-024"
+   "card": "DFW-024",
+   "q": "Luxury brand of Perry Homes.",
+   "s": "https://www.perryhomes.com/about-perry-homes"
   },
   {
    "k": "owns",
    "a": "DFW-009",
    "b": "DFW-038",
    "rel": "Ashton Woods brand",
-   "card": "DFW-038"
+   "card": "DFW-038",
+   "q": "Ashton Woods brand"
   },
   {
    "k": "owns",
    "a": "DFW-048",
    "b": "DFW-031",
    "rel": "bought it in February 2022",
-   "card": "DFW-031"
+   "card": "DFW-031",
+   "q": "Partners In Building, a Houston custom builder, bought it in February 2022."
   },
   {
    "k": "owns",
    "a": "Qualico",
    "b": "DFW-045",
    "rel": "part of the family",
-   "card": "DFW-045"
+   "card": "DFW-045",
+   "q": "It is part of the Qualico family.",
+   "s": "https://www.qualico.com/news/pacesetter-homes-dfw-sees-continued-expansion-with-new-communities-and-products"
   },
   {
    "k": "owns",
    "a": "Curve Development",
    "b": "DFW-BTR-009",
    "rel": "Cyrene brand",
-   "card": "DFW-BTR-009"
+   "card": "DFW-BTR-009",
+   "q": "Curve Development developed it under its Cyrene brand",
+   "s": "https://curvedevelopment.com/projects/cyrene-at-painted-tree/"
   },
   {
    "k": "owns",
-   "a": "Highland Homes",
+   "a": "DFW-201",
    "b": "DFW-BTR-007",
    "rel": "part of the family",
-   "card": "DFW-BTR-007"
+   "card": "DFW-BTR-007",
+   "q": "It is part of the Highland Homes family.",
+   "s": "https://www.highlandhomes.com/"
   },
   {
    "k": "owns",
    "a": "Daiwa House",
    "b": "DFW-061",
    "rel": "acquired its equity, September 2021",
-   "card": "DFW-061"
+   "card": "DFW-061",
+   "q": "Daiwa House USA Holdings acquired its equity, September 2021",
+   "s": "https://www.daiwahouse.com/English/global/americas/united_states/castlerock_communities.html"
   },
   {
    "k": "owns",
    "a": "DFW-061",
    "b": "The Jones Company of Tennessee",
    "rel": "bought January 2024",
-   "card": "DFW-061"
+   "card": "DFW-061",
+   "q": "It bought The Jones Company of Tennessee in January 2024."
   },
   {
    "k": "owns",
    "a": "Dream Finders Homes",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-042"
+   "card": "DFW-042",
+   "q": "Dream Finders Homes (NASDAQ: DFH) now owns it."
   },
   {
    "k": "owns",
    "a": "Metromont",
    "b": "DFW-TR-032",
    "rel": "acquired it December 15, 2025",
-   "card": "DFW-TR-032"
+   "card": "DFW-TR-032",
+   "q": "Metromont acquired it effective December 15, 2025.",
+   "s": "https://www.prnewswire.com/news-releases/metromont-to-acquire-heldenfels-enterprises-inc-302643864.html"
   },
   {
    "k": "owns",
    "a": "BakerTriangle",
    "b": "DFW-TR-092",
    "rel": "prefab division",
-   "card": "DFW-TR-092"
+   "card": "DFW-TR-092",
+   "q": "Prefab division of BakerTriangle",
+   "s": "https://bakertriangle.com/contact"
   },
   {
    "k": "owns",
    "a": "Builders FirstSource",
    "b": "DFW-TR-010",
    "rel": "plant",
-   "card": "DFW-TR-010"
+   "card": "DFW-TR-010",
+   "q": "Builders FirstSource plant on Enterprise Avenue in Fort Worth",
+   "s": "https://www.bldr.com/who-we-are/in-the-news/builders-firstsource-acquires-trussway"
   },
   {
    "k": "owns",
    "a": "ERW Companies",
    "b": "DFW-TR-085",
    "rel": "part of ERW Companies",
-   "card": "DFW-TR-085"
+   "card": "DFW-TR-085",
+   "q": "It is part of ERW Companies",
+   "s": "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/"
   },
   {
    "k": "owns",
    "a": "Wells",
    "b": "DFW-TR-030",
    "rel": "Wells plants",
-   "card": "DFW-TR-030"
+   "card": "DFW-TR-030",
+   "q": "Wells, Hillsboro plants",
+   "s": "https://wells.build/contact/locations/hillsboro-texas/"
   },
   {
    "k": "owns",
    "a": "Wells",
    "b": "GATE Precast",
    "rel": "bought July 2024",
-   "card": "DFW-TR-030"
+   "card": "DFW-TR-030",
+   "q": "Wells bought GATE Precast in July 2024.",
+   "s": "https://wells.build/company/news/wells-announces-acquisition-of-gate-precast/"
   },
   {
    "k": "owns",
    "a": "Concrete Pumping Holdings",
    "b": "DFW-TR-060",
    "rel": "",
-   "card": "DFW-TR-060"
+   "card": "DFW-TR-060",
+   "q": "the parent, Concrete Pumping Holdings"
   },
   {
    "k": "owns",
    "a": "Sterling Infrastructure",
    "b": "DFW-TR-001",
    "rel": "subsidiary",
-   "card": "DFW-TR-001"
+   "card": "DFW-TR-001",
+   "q": "It is a subsidiary of Sterling Infrastructure"
   },
   {
    "k": "owns",
    "a": "UFP Industries",
    "b": "DFW-TR-011",
    "rel": "part of the site-built components network",
-   "card": "DFW-TR-011"
+   "card": "DFW-TR-011",
+   "q": "It is part of UFP Industries' site-built components network."
   },
   {
    "k": "develops",
    "a": "DFW-CH-001",
    "b": "DFW-CH-007",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "q": "Hillwood develops the lots",
+   "s": "https://www.ramblebyhillwood.com/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-001",
    "b": "DFW-CH-020",
    "rel": "Hillwood Communities masterplan",
-   "card": "DFW-CH-020"
+   "card": "DFW-CH-020",
+   "q": "Hillwood Communities masterplan",
+   "s": "https://www.lilyanabyhillwood.com/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-001",
    "b": "DFW-CH-010",
    "rel": "",
-   "card": "DFW-CH-010"
+   "card": "DFW-CH-010",
+   "q": "Hillwood sells lots",
+   "s": "https://www.unionparkbyhillwood.com/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-018",
    "b": "DFW-CH-011",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "q": "Huffines Communities masterplan in Celina",
+   "s": "https://huffinescommunities.com/projects/serenade/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-018",
    "b": "DFW-CH-019",
    "rel": "",
-   "card": "DFW-CH-019"
+   "card": "DFW-CH-019",
+   "q": "Huffines Communities masterplan on the former Lucas family farm",
+   "s": "https://huffinescommunities.com/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-014",
    "b": "DFW-CH-012",
    "rel": "Johnson Development masterplan",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "q": "Johnson Development masterplan in McKinney"
   },
   {
    "k": "develops",
    "a": "DFW-CH-002",
    "b": "DFW-CH-008",
    "rel": "develops and markets it",
-   "card": "DFW-CH-008"
+   "card": "DFW-CH-008",
+   "q": "Republic develops and markets it for LFC Land Company",
+   "s": "https://republicpropertygroup.com/communities/light-farms/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-002",
    "b": "DFW-CH-005",
    "rel": "",
-   "card": "DFW-CH-005"
+   "card": "DFW-CH-005",
+   "q": "Republic Property Group sells lots to roster builders",
+   "s": "https://republicpropertygroup.com/communities/walsh/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-017",
    "b": "DFW-CH-016",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "q": "Tellus Group develops it.",
+   "s": "https://tellusgroupllc.com/contact/"
   },
   {
    "k": "develops",
    "a": "DFW-CH-017",
    "b": "DFW-CH-013",
    "rel": "bought it in 2018",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "q": "Tellus Group bought it from Terra Verde Group in 2018"
   },
   {
    "k": "develops",
    "a": "Cambridge Companies",
    "b": "DFW-CH-015",
    "rel": "masterplanned community",
-   "card": "DFW-CH-015"
+   "card": "DFW-CH-015",
+   "q": "Masterplanned community in Celina by Cambridge Companies",
+   "s": "https://cambridgecrossingcelina.com/builders/"
   },
   {
    "k": "develops",
    "a": "Blue Star Land LP",
    "b": "DFW-CH-009",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "q": "Masterplan by Blue Star Land LP",
+   "s": "https://startrailprosper.com/"
   },
   {
    "k": "owns",
    "a": "Jerry Jones Family of Companies",
    "b": "Blue Star Land LP",
    "rel": "part of",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "q": "Blue Star Land LP, part of the Jerry Jones Family of Companies",
+   "s": "https://startrailprosper.com/"
   },
   {
    "k": "partner",
    "a": "DFW-CH-021",
    "b": "DFW-BTR-010",
    "rel": "build-to-rent joint venture, 2025",
-   "card": "DFW-CH-021"
+   "card": "DFW-CH-021",
+   "q": "It formed a build-to-rent joint venture with Wan Bridge in 2025."
   },
   {
    "k": "partner",
    "a": "DFW-BTR-004",
    "b": "DFW-BTR-007",
    "rel": "built its Viridian homes",
-   "card": "DFW-BTR-004"
+   "card": "DFW-BTR-004",
+   "q": "HHS Residential built its Viridian homes in Arlington"
   },
   {
    "k": "partner",
    "a": "DFW-029",
    "b": "Belclaire",
    "rel": "sister brand",
-   "card": "DFW-029"
+   "card": "DFW-029",
+   "q": "with a sister brand, Belclaire"
   },
   {
    "k": "partner",
    "a": "DFW-008",
    "b": "Gallery Custom Homes",
    "rel": "sister brands",
-   "card": "DFW-008"
+   "card": "DFW-008",
+   "q": "sister brands Gallery Custom Homes"
   },
   {
    "k": "partner",
    "a": "DFW-008",
    "b": "Harwood Homes",
    "rel": "sister brands",
-   "card": "DFW-008"
+   "card": "DFW-008",
+   "q": "sister brands Gallery Custom Homes and Harwood Homes"
   },
   {
    "k": "supplies",
    "a": "DFW-TR-001",
    "b": "DFW-001",
    "rel": "Horton homes",
-   "card": "DFW-TR-001"
+   "card": "DFW-TR-001",
+   "q": "2,000+ Horton homes",
+   "s": "https://www.strlco.com/wp-content/uploads/2021/11/Tealstone_Brochure.pdf"
   },
   {
    "k": "supplies",
    "a": "DFW-TR-085",
    "b": "DFW-008",
    "rel": "turnkey vendor",
-   "card": "DFW-TR-085"
+   "card": "DFW-TR-085",
+   "q": "First Texas Homes superintendent Christoph Heimsoth calls it a turnkey vendor."
   },
   {
    "k": "people",
    "a": "DFW-053",
    "b": "DFW-081",
    "rel": "co-founder sold Darling Homes to Taylor Morrison",
-   "card": "DFW-081"
+   "card": "DFW-081",
+   "q": "Co-founder Bill Darling sold Darling Homes to Taylor Morrison in 2013"
   },
   {
    "k": "builds",
    "a": "DFW-CH-007",
    "b": "DFW-029",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Coventry, Drees, Highland Homes and Perry Homes."
   },
   {
    "k": "builds",
    "a": "DFW-CH-007",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Coventry, Drees, Highland Homes and Perry Homes."
   },
   {
    "k": "builds",
    "a": "DFW-CH-007",
-   "b": "Drees",
+   "b": "DFW-203",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Coventry, Drees, Highland Homes and Perry Homes."
   },
   {
    "k": "builds",
    "a": "DFW-CH-007",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Coventry, Drees, Highland Homes and Perry Homes."
   },
   {
    "k": "builds",
    "a": "DFW-CH-007",
    "b": "DFW-010",
    "rel": "",
-   "card": "DFW-CH-007"
+   "card": "DFW-CH-007",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Coventry, Drees, Highland Homes and Perry Homes."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
-   "b": "Bloomfield Homes",
+   "b": "DFW-202",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-003b",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-003d",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-011",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
-   "b": "Drees",
+   "b": "DFW-203",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-014",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-003c",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-004",
    "b": "DFW-059",
    "rel": "",
-   "card": "DFW-CH-004"
+   "card": "DFW-CH-004",
+   "qm": 1,
+   "q": "Its own builders page lists Bloomfield Homes, CB JENI, Centre Living, Coventry, David Weekley, Drees, Normandy, Southgate and Tri Pointe."
   },
   {
    "k": "builds",
    "a": "DFW-CH-009",
    "b": "DFW-029",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Britton, Coventry, Highland Homes and Toll Brothers.",
+   "s": "https://startrailprosper.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-009",
    "b": "DFW-024",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Britton, Coventry, Highland Homes and Toll Brothers.",
+   "s": "https://startrailprosper.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-009",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Britton, Coventry, Highland Homes and Toll Brothers.",
+   "s": "https://startrailprosper.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-009",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Britton, Coventry, Highland Homes and Toll Brothers.",
+   "s": "https://startrailprosper.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-009",
    "b": "DFW-051",
    "rel": "",
-   "card": "DFW-CH-009"
+   "card": "DFW-CH-009",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Britton, Coventry, Highland Homes and Toll Brothers.",
+   "s": "https://startrailprosper.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
-   "b": "DRB Homes",
+   "b": "DFW-205",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
    "b": "DFW-061",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
    "b": "DFW-020",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
    "b": "DFW-021",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
    "b": "DFW-044",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-011",
    "b": "DFW-028",
    "rel": "",
-   "card": "DFW-CH-011"
+   "card": "DFW-CH-011",
+   "qm": 1,
+   "q": "Its own builders page lists DRB Homes, CastleRock, HistoryMaker, Impression, Risewell and UnionMain."
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
    "b": "DFW-078",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
    "b": "Chesmar",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
    "b": "DFW-064",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
-   "b": "Drees",
+   "b": "DFW-203",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-012",
    "b": "DFW-010",
    "rel": "",
-   "card": "DFW-CH-012"
+   "card": "DFW-CH-012",
+   "qm": 1,
+   "q": "Its own builders page lists Cadence Homes, Chesmar, Coventry, Del Webb, Drees, Highland Homes and Perry Homes.",
+   "s": "https://www.trinityfalls.com/builders"
   },
   {
    "k": "builds",
    "a": "DFW-CH-015",
    "b": "DFW-042",
    "rel": "",
-   "card": "DFW-CH-015"
+   "card": "DFW-CH-015",
+   "qm": 1,
+   "q": "Its own builders page lists Coventry, Highland Homes, Perry Homes and UnionMain.",
+   "s": "https://cambridgecrossingcelina.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-015",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-015"
+   "card": "DFW-CH-015",
+   "qm": 1,
+   "q": "Its own builders page lists Coventry, Highland Homes, Perry Homes and UnionMain.",
+   "s": "https://cambridgecrossingcelina.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-015",
    "b": "DFW-010",
    "rel": "",
-   "card": "DFW-CH-015"
+   "card": "DFW-CH-015",
+   "qm": 1,
+   "q": "Its own builders page lists Coventry, Highland Homes, Perry Homes and UnionMain.",
+   "s": "https://cambridgecrossingcelina.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-015",
    "b": "DFW-028",
    "rel": "",
-   "card": "DFW-CH-015"
+   "card": "DFW-CH-015",
+   "qm": 1,
+   "q": "Its own builders page lists Coventry, Highland Homes, Perry Homes and UnionMain.",
+   "s": "https://cambridgecrossingcelina.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
    "b": "DFW-029",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
-   "b": "Bloomfield Homes",
+   "b": "DFW-202",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
    "b": "DFW-078",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
-   "b": "Drees",
+   "b": "DFW-203",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
    "b": "DFW-043",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
    "b": "DFW-010",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-016",
    "b": "DFW-081",
    "rel": "",
-   "card": "DFW-CH-016"
+   "card": "DFW-CH-016",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Bloomfield Homes, Cadence Homes, Drees, Highland Homes, Homebound, Perry Homes and Tradition.",
+   "s": "https://mosaiclivingtx.com/builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "DFW-029",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "Belclaire",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
-   "b": "Drees",
+   "b": "DFW-203",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "DFW-035",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
-   "b": "Highland Homes",
+   "b": "DFW-201",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "DFW-025",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "DFW-003c",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
   },
   {
    "k": "builds",
    "a": "DFW-CH-013",
    "b": "DFW-081",
    "rel": "",
-   "card": "DFW-CH-013"
+   "card": "DFW-CH-013",
+   "qm": 1,
+   "q": "Its own builders page lists American Legend, Belclaire, Drees, Grenadier, Highland Homes, Shaddock, Southgate and Tradition.",
+   "s": "https://www.traditionhomes.com/communities/windsong-ranch/"
   }
  ],
  "mpc": [
@@ -35666,5 +35878,86 @@
   "https://www.housingwire.com/articles/why-builders-firstsource-bought-icg-and-why-pulte-sold-it/",
   "https://www.houstonchronicle.com/business/real-estate/article/McGuyer-Homebuilders-acquired-by-Florida-builder-16468304.php",
   "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
- ]
+ ],
+ "tnode": {
+  "Qualico": {
+   "u": "https://www.qualico.com/news/pacesetter-homes-dfw-sees-continued-expansion-with-new-communities-and-products",
+   "us": 1
+  },
+  "Curve Development": {
+   "u": "https://curvedevelopment.com/projects/cyrene-at-painted-tree/",
+   "us": 1
+  },
+  "Daiwa House": {
+   "u": "https://www.daiwahouse.com/English/global/americas/united_states/castlerock_communities.html",
+   "us": 1
+  },
+  "The Jones Company of Tennessee": {
+   "u": "https://www.c-rock.com/"
+  },
+  "Dream Finders Homes": {
+   "u": "https://www.coventryhomes.com/"
+  },
+  "Metromont": {
+   "u": "https://www.prnewswire.com/news-releases/metromont-to-acquire-heldenfels-enterprises-inc-302643864.html",
+   "us": 1
+  },
+  "BakerTriangle": {
+   "u": "https://bakertriangle.com/contact",
+   "us": 1
+  },
+  "Builders FirstSource": {
+   "x": [
+    "houston",
+    "HOU-147"
+   ]
+  },
+  "ERW Companies": {
+   "u": "https://erw-sitesolutions.com/construction-company-texas/kaufman-concrete-foundations-texas/",
+   "us": 1
+  },
+  "Wells": {
+   "u": "https://wells.build/contact/locations/hillsboro-texas/",
+   "us": 1
+  },
+  "GATE Precast": {
+   "u": "https://wells.build/company/news/wells-announces-acquisition-of-gate-precast/",
+   "us": 1
+  },
+  "Concrete Pumping Holdings": {
+   "u": "https://www.brundagebone.com/"
+  },
+  "Sterling Infrastructure": {
+   "u": "https://tealstonelp.com/"
+  },
+  "UFP Industries": {
+   "u": "https://ufpsitebuilt.com/our-locations/hillsboro-tx"
+  },
+  "Cambridge Companies": {
+   "u": "https://cambridgecrossingcelina.com/builders/",
+   "us": 1
+  },
+  "Blue Star Land LP": {
+   "u": "https://startrailprosper.com/",
+   "us": 1
+  },
+  "Jerry Jones Family of Companies": {
+   "u": "https://startrailprosper.com/"
+  },
+  "Belclaire": {
+   "u": "https://windsongranchliving.com/explore-windsong-ranchs-exceptional-builders/"
+  },
+  "Gallery Custom Homes": {
+   "u": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/"
+  },
+  "Harwood Homes": {
+   "u": "https://www.builderonline.com/land/local-leaders-list/2025/dallas-fort-worth-arlington-tx/"
+  },
+  "Chesmar": {
+   "x": [
+    "houston",
+    "HOU-045"
+   ]
+  }
+ }
 }

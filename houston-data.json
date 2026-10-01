@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 118,
+ "build": 119,
  "last_updated": "2026-09-30",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
@@ -38540,966 +38540,1206 @@
    "a": "Berkshire Hathaway",
    "b": "Clayton Properties Group",
    "rel": "part of",
-   "card": "HOU-073"
+   "card": "HOU-073",
+   "q": "Its parent, Clayton Properties Group, is part of Berkshire Hathaway."
   },
   {
    "k": "owns",
    "a": "Clayton Properties Group",
    "b": "HOU-073",
    "rel": "",
-   "card": "HOU-073"
+   "card": "HOU-073",
+   "q": "Its parent, Clayton Properties Group, is part of Berkshire Hathaway."
   },
   {
    "k": "owns",
    "a": "HOU-041",
    "b": "HOU-131",
    "rel": "",
-   "card": "HOU-131"
+   "card": "HOU-131",
+   "q": "Its parent, Caldwell Companies, develops Towne Lake",
+   "s": "https://www.caldwellhomes.com/"
   },
   {
    "k": "owns",
    "a": "HOU-015",
    "b": "HOU-007",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "Owns First America Homes"
   },
   {
    "k": "owns",
    "a": "Onsite ICF",
    "b": "HOU-123",
    "rel": "division",
-   "card": "HOU-123"
+   "card": "HOU-123",
+   "q": "It is a division of Onsite ICF.",
+   "s": "https://www.onsite-icf.com/aboutus"
   },
   {
    "k": "owns",
    "a": "Sekisui House",
    "b": "HOU-045",
    "rel": "agreed to buy it in 2022",
-   "card": "HOU-045"
+   "card": "HOU-045",
+   "q": "Sekisui House agreed to buy it for about $514 million in 2022.",
+   "s": "https://www.builderonline.com/builder-100/strategy/sekisui-house-finalizes-u-s-rebrand-after-m-d-c-holdings-acquisition/"
   },
   {
    "k": "owns",
    "a": "Clay Development & Construction",
    "b": "HOU-136",
    "rel": "build-to-rent division",
-   "card": "HOU-136"
+   "card": "HOU-136",
+   "q": "Build-to-rent division of Houston industrial developer Clay Development & Construction",
+   "s": "https://www.clayresidential.com/"
   },
   {
    "k": "owns",
    "a": "HOU-023",
    "b": "HOU-076",
    "rel": "a David Weekley Homes line",
-   "card": "HOU-076"
+   "card": "HOU-076",
+   "q": "A David Weekley Homes line"
   },
   {
    "k": "owns",
    "a": "Dream Finders Homes",
    "b": "McGuyer Homebuilders (MHI)",
    "rel": "bought in 2021",
-   "card": "HOU-033"
+   "card": "HOU-033",
+   "q": "Dream Finders Homes bought the assets of its parent MHI in October 2021",
+   "s": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer"
   },
   {
    "k": "owns",
    "a": "McGuyer Homebuilders (MHI)",
    "b": "HOU-033",
    "rel": "",
-   "card": "HOU-033"
+   "card": "HOU-033",
+   "q": "Dream Finders Homes bought the assets of its parent MHI in October 2021",
+   "s": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer"
   },
   {
    "k": "owns",
    "a": "HOU-147",
    "b": "HOU-148",
    "rel": "",
-   "card": "HOU-148"
+   "card": "HOU-148",
+   "q": "Its parent is Builders FirstSource.",
+   "s": "https://www.bldr.com/who-we-are/in-the-news/builders-firstsource-acquires-trussway"
   },
   {
    "k": "owns",
    "a": "Satterfield and Pontikes",
    "b": "HOU-106",
    "rel": "part of the family",
-   "card": "HOU-106"
+   "card": "HOU-106",
+   "q": "Part of the Satterfield and Pontikes family"
   },
   {
    "k": "owns",
    "a": "Metromont",
    "b": "HOU-142",
    "rel": "bought it 15 December 2025",
-   "card": "HOU-142"
+   "card": "HOU-142",
+   "q": "Metromont bought it on 15 December 2025"
   },
   {
    "k": "owns",
    "a": "US LBM",
    "b": "HOU-151",
    "rel": "Texas banner",
-   "card": "HOU-151"
+   "card": "HOU-151",
+   "q": "It is the Texas banner for US LBM"
   },
   {
    "k": "owns",
    "a": "KPS Capital Partners",
    "b": "Wells",
    "rel": "agreed to buy, February 2026",
-   "card": "HOU-138"
+   "card": "HOU-138",
+   "q": "KPS Capital Partners agreed in February 2026 to buy Wells",
+   "s": "https://concreteproducts.com/index.php/2026/02/10/private-equity-operator-kps-outlines-wells-acquisition-agreement/"
   },
   {
    "k": "owns",
    "a": "Wells",
    "b": "HOU-138",
    "rel": "",
-   "card": "HOU-138"
+   "card": "HOU-138",
+   "q": "Its parent, Wells, runs 13 plants",
+   "s": "https://wells.build/contact/locations/pearland-texas/"
   },
   {
    "k": "owns",
    "a": "Wells",
    "b": "HOU-144",
    "rel": "Wells plants",
-   "card": "HOU-144"
+   "card": "HOU-144",
+   "q": "Wells plants on one street in Hillsboro",
+   "s": "https://wells.build/contact/locations/hillsboro-texas/"
   },
   {
    "k": "owns",
    "a": "Sterling Infrastructure",
    "b": "HOU-163",
    "rel": "",
-   "card": "HOU-163"
+   "card": "HOU-163",
+   "q": "Its parent is publicly traded Sterling Infrastructure."
   },
   {
    "k": "owns",
    "a": "HOU-109",
    "b": "Taylor Made Concrete",
    "rel": "delivery arm",
-   "card": "HOU-109"
+   "card": "HOU-109",
+   "q": "its delivery arm is Taylor Made Concrete"
   },
   {
    "k": "owns",
    "a": "HOU-130",
    "b": "Woodmere Development",
    "rel": "land arm",
-   "card": "HOU-130"
+   "card": "HOU-130",
+   "q": "Its land arm, Woodmere Development"
   },
   {
    "k": "owns",
    "a": "Sumitomo Forestry",
    "b": "HOU-034",
    "rel": "controlling stake, 2014",
-   "card": "HOU-034"
+   "card": "HOU-034",
+   "q": "Sumitomo Forestry took a controlling stake in 2014",
+   "s": "https://www.businesswire.com/news/home/20140501005392/en/Texas-Homebuilder-Gehan-Homes-Sells-Stake-Sumitomo",
+   "d": "2014-05-01"
   },
   {
    "k": "owns",
    "a": "Daiwa House",
    "b": "HOU-022",
    "rel": "holds 80 percent",
-   "card": "HOU-022"
+   "card": "HOU-022",
+   "q": "Daiwa House, which builds industrially in Japan, holds 80 percent",
+   "s": "https://www.daiwahouse.com/English/about/release/pdf/release_20210810e.pdf"
   },
   {
    "k": "owns",
    "a": "HOU-166",
    "b": "HOU-042",
    "rel": "wholly owned subsidiary since 2000",
-   "card": "HOU-042"
+   "card": "HOU-042",
+   "q": "It has been a wholly owned Lennar subsidiary since 2000."
   },
   {
    "k": "owns",
    "a": "HOU-166",
    "b": "Rausch Coleman Homes",
    "rel": "bought February 2025",
-   "card": "HOU-078"
+   "card": "HOU-078",
+   "q": "Owned by Rausch Coleman, which Lennar bought in February 2025",
+   "s": "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes"
   },
   {
    "k": "owns",
    "a": "Rausch Coleman Homes",
    "b": "HOU-078",
    "rel": "bought it in 2020",
-   "card": "HOU-078"
+   "card": "HOU-078",
+   "q": "Rausch Coleman Homes bought it in 2020.",
+   "s": "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes"
   },
   {
    "k": "owns",
    "a": "HOU-132",
    "b": "HOU-226",
    "rel": "owned 62 percent",
-   "card": "HOU-132"
+   "card": "HOU-132",
+   "q": "It owned 62 percent of Forestar Group"
   },
   {
    "k": "partner",
    "a": "HOU-008",
    "b": "HOU-012",
    "rel": "co-acquired Trinity Landing",
-   "card": "HOU-008"
+   "card": "HOU-008",
+   "q": "Trinity Landing, co-acquired with M/I Homes"
   },
   {
    "k": "partner",
    "a": "HOU-006",
    "b": "HOU-005",
    "rel": "bought M-K-T Heights",
-   "card": "HOU-006"
+   "card": "HOU-006",
+   "q": "it bought the 218,000 square foot M-K-T Heights with MetroNational and Radom Capital"
   },
   {
    "k": "partner",
    "a": "HOU-006",
    "b": "MetroNational",
    "rel": "bought M-K-T Heights",
-   "card": "HOU-006"
+   "card": "HOU-006",
+   "q": "it bought the 218,000 square foot M-K-T Heights with MetroNational and Radom Capital",
+   "s": "https://natlawreview.com/press-releases/metronational-grows-greater-houston-portfolio-landmark-m-k-t-heights",
+   "d": "2026-03-30"
   },
   {
    "k": "partner",
    "a": "HOU-005",
    "b": "MetroNational",
    "rel": "M-K-T Heights",
-   "card": "HOU-006"
+   "card": "HOU-006",
+   "q": "it bought the 218,000 square foot M-K-T Heights with MetroNational and Radom Capital",
+   "s": "https://natlawreview.com/press-releases/metronational-grows-greater-houston-portfolio-landmark-m-k-t-heights",
+   "d": "2026-03-30"
   },
   {
    "k": "partner",
    "a": "HOU-081",
    "b": "HOU-082",
    "rel": "joint-venture partner on East Blocks",
-   "card": "HOU-082"
+   "card": "HOU-082",
+   "q": "It is also Pagewood's joint-venture partner on East Blocks",
+   "s": "https://therealdeal.com/texas/houston/2023/11/13/pagewood-wile-to-convert-eado-houston-warehouses/"
   },
   {
    "k": "partner",
    "a": "HOU-025",
    "b": "HOU-026",
    "rel": "built the Cypress community",
-   "card": "HOU-026"
+   "card": "HOU-026",
+   "q": "built its Cypress community with Taylor Morrison"
   },
   {
    "k": "partner",
    "a": "HOU-168",
    "b": "HOU-040",
    "rel": "rental homes",
-   "card": "HOU-168"
+   "card": "HOU-168",
+   "q": "175 rental homes with Johnson Development",
+   "s": "https://www.multihousingnews.com/tricon-completes-texas-single-family-rentals/"
   },
   {
    "k": "partner",
    "a": "HOU-168",
    "b": "Tricon",
    "rel": "Tricon communities",
-   "card": "HOU-168"
+   "card": "HOU-168",
+   "q": "Three Tricon communities",
+   "s": "https://triconhomes.com/resources/insights/tricon-opens-two-need-communities-in-texas/"
   },
   {
    "k": "owns",
    "a": "HOU-147",
    "b": "Innovative Construction Group",
    "rel": "agreed to buy, August 2026",
-   "card": "HOU-147"
+   "card": "HOU-147",
+   "q": "In August 2026 it agreed to buy the off-site framing producer PulteGroup bought in 2020."
   },
   {
    "k": "partner",
    "a": "HOU-167",
    "b": "HOU-147",
    "rel": "agreed to buy off-site framing producer, August 2026",
-   "card": "HOU-147"
+   "card": "HOU-147",
+   "q": "In August 2026 it agreed to buy the off-site framing producer PulteGroup bought in 2020."
   },
   {
    "k": "partner",
    "a": "HiveASMBLD",
    "b": "HOU-002",
    "rel": "prints Zuri Gardens homes",
-   "card": "HOU-002"
+   "card": "HOU-002",
+   "q": "Prints its Zuri Gardens homes with HiveASMBLD"
   },
   {
    "k": "partner",
    "a": "HiveASMBLD",
    "b": "HOU-016",
    "rel": "prints with HiveASMBLD",
-   "card": "HOU-016"
+   "card": "HOU-016",
+   "q": "Prints Gulf Shore Estates with HiveASMBLD"
   },
   {
    "k": "partner",
    "a": "HiveASMBLD",
    "b": "HOU-017",
    "rel": "prints with HiveASMBLD",
-   "card": "HOU-017"
+   "card": "HOU-017",
+   "q": "Prints Avenue J with HiveASMBLD"
   },
   {
    "k": "partner",
    "a": "Interra Capital Group",
    "b": "HOU-038",
    "rel": "kept it as manager",
-   "card": "HOU-038"
+   "card": "HOU-038",
+   "q": "Interra Capital Group bought the buildings and kept it as manager"
   },
   {
    "k": "supplies",
    "a": "HOU-163",
    "b": "HOU-132",
    "rel": "home foundations",
-   "card": "HOU-163"
+   "card": "HOU-163",
+   "q": "Horton has taken more than 2,000 of its home foundations"
   },
   {
    "k": "supplies",
    "a": "HOU-103",
    "b": "HOU-114",
    "rel": "concrete",
-   "card": "HOU-114"
+   "card": "HOU-114",
+   "q": "Concrete by Texas A&M Concrete.",
+   "s": "https://tilt-up.org/projects/profile/?id=6094"
   },
   {
    "k": "supplies",
    "a": "HOU-105",
    "b": "HOU-115",
    "rel": "poured its tilt-up panels",
-   "card": "HOU-115"
+   "card": "HOU-115",
+   "q": "Encore Concrete Construction poured its award-listed tilt-up panels"
   },
   {
    "k": "people",
    "a": "HOU-013",
    "b": "HOU-070",
    "rel": "founding brothers were division presidents",
-   "card": "HOU-070"
+   "card": "HOU-070",
+   "q": "Its founding brothers were division presidents at Perry Homes"
   },
   {
    "k": "people",
    "a": "HOU-025",
    "b": "HOU-062",
    "rel": "people from Taylor Morrison founded it",
-   "card": "HOU-062"
+   "card": "HOU-062",
+   "q": "People from Taylor Morrison, Toll Brothers and Ryland Homes founded it"
   },
   {
    "k": "develops",
    "a": "HOU-040",
    "b": "Jubilee",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Jubilee and Everly in Hockley",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "develops",
    "a": "HOU-040",
    "b": "Everly",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Jubilee and Everly in Hockley",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly"
   },
   {
    "k": "develops",
    "a": "HOU-015",
    "b": "Bluestem",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "Bluestem north of Brookshire",
+   "s": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/"
   },
   {
    "k": "develops",
    "a": "HOU-234",
    "b": "Beacon Hill",
    "rel": "",
-   "card": "HOU-234"
+   "card": "HOU-234",
+   "q": "Its current project is Beacon Hill",
+   "s": "https://wolffcompanies.com/current-projects/beacon-hill/"
   },
   {
    "k": "develops",
    "a": "HOU-235",
    "b": "Oakberry Trails",
    "rel": "",
-   "card": "HOU-235"
+   "card": "HOU-235",
+   "q": "Its Waller County plan is Oakberry Trails",
+   "s": "https://www.rykodevelopment.com/oakberry-trails"
   },
   {
    "k": "develops",
    "a": "HOU-233",
    "b": "Waller master plan",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Waller master plan",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "partner",
    "a": "HOU-234",
    "b": "HOU-233",
    "rel": "78 acres in Beacon Hill",
-   "card": "HOU-234"
+   "card": "HOU-234",
+   "q": "Sold 78 acres in Beacon Hill to Hines in January 2022",
+   "s": "https://wolffcompanies.com/current-projects/beacon-hill/"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-201",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-033",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-168",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-067",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-069",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-013",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-205",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Jubilee",
    "b": "HOU-068",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Builders include Beazer, Coventry, David Weekley, Highland, J. Patrick, Newmark, Perry, Tri Pointe and Westin.",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_jubilee"
   },
   {
    "k": "builds",
    "a": "Everly",
    "b": "HOU-202",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "went to Drees, Perry and Westin",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly"
   },
   {
    "k": "builds",
    "a": "Everly",
    "b": "HOU-013",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "went to Drees, Perry and Westin",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly"
   },
   {
    "k": "builds",
    "a": "Everly",
    "b": "HOU-068",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "went to Drees, Perry and Westin",
+   "s": "https://www.johnsondevelopment.com/hockley-tx/mpc_everly"
   },
   {
    "k": "builds",
    "a": "Bluestem",
    "b": "HOU-022",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "with CastleRock, First America Homes and Legend Homes",
+   "s": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/"
   },
   {
    "k": "builds",
    "a": "Bluestem",
    "b": "HOU-007",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "with CastleRock, First America Homes and Legend Homes",
+   "s": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/"
   },
   {
    "k": "builds",
    "a": "Bluestem",
    "b": "HOU-010",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "with CastleRock, First America Homes and Legend Homes",
+   "s": "https://coveringkaty.com/news/waller/new-amenity-space-unveiled-at-bluestem-community-in-waller-c/"
   },
   {
    "k": "builds",
    "a": "Beacon Hill",
    "b": "HOU-130",
    "rel": "",
-   "card": "HOU-234"
+   "card": "HOU-234",
+   "q": "Long Lake builds about 870 homes",
+   "s": "https://wolffcompanies.com/current-projects/beacon-hill/"
   },
   {
    "k": "builds",
    "a": "Oakberry Trails",
    "b": "HOU-075",
    "rel": "",
-   "card": "HOU-235"
+   "card": "HOU-235",
+   "q": "Builders Risewell, K. Hovnanian and Village Builders",
+   "s": "https://www.rykodevelopment.com/oakberry-trails"
   },
   {
    "k": "builds",
    "a": "Oakberry Trails",
    "b": "HOU-206",
    "rel": "",
-   "card": "HOU-235"
+   "card": "HOU-235",
+   "q": "Builders Risewell, K. Hovnanian and Village Builders",
+   "s": "https://www.rykodevelopment.com/oakberry-trails"
   },
   {
    "k": "builds",
    "a": "Oakberry Trails",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-235"
+   "card": "HOU-235",
+   "q": "Builders Risewell, K. Hovnanian and Village Builders",
+   "s": "https://www.rykodevelopment.com/oakberry-trails"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-168",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-045",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-202",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-034",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-205",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-024",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "Waller master plan",
    "b": "HOU-022",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Chesmar, Drees, Brightland, Tri Pointe, Ashton Woods and Castlerock",
+   "s": "https://www.hines.com/news/hines-to-develop-master-planned-community-in-harris-county-near-waller"
   },
   {
    "k": "builds",
    "a": "HOU-015",
    "b": "HOU-024",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "Builders include Ashton Woods, Beazer, Drees, CastleRock, David Weekley, Perry, Westin.",
+   "s": "https://shoppingcenterbusiness.com/signorelli-co-announces-phase-i-of-4700-acre-master-planned-development-near-houston/",
+   "d": "2023-09-22"
   },
   {
    "k": "builds",
    "a": "HOU-015",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-015"
+   "card": "HOU-015",
+   "q": "Builders include Ashton Woods, Beazer, Drees, CastleRock, David Weekley, Perry, Westin.",
+   "s": "https://shoppingcenterbusiness.com/signorelli-co-announces-phase-i-of-4700-acre-master-planned-development-near-houston/",
+   "d": "2023-09-22"
   },
   {
    "k": "builds",
    "a": "HOU-233",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Builders include Toll Brothers, Perry, Highland, Village Builders/Lennar and Westin.",
+   "s": "https://houstonagentmagazine.com/2026/07/22/highland-homes-breaks-ground-heritage-bend-mpc/"
   },
   {
    "k": "builds",
    "a": "HOU-233",
    "b": "HOU-203",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Builders include Toll Brothers, Perry, Highland, Village Builders/Lennar and Westin.",
+   "s": "https://houstonagentmagazine.com/2026/07/22/highland-homes-breaks-ground-heritage-bend-mpc/"
   },
   {
    "k": "builds",
    "a": "HOU-233",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-233"
+   "card": "HOU-233",
+   "q": "Highland, Newmark, Westin, David Weekley and Chesmar.",
+   "s": "https://www.hines.com/news/hines-acquires-1-500-acres-in-league-city-for-master-planned-community-development"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Perry, Shea, Village Builders, Westin.",
+   "s": "https://www.hillwoodcommunities.com/lifestyle-communities/legacy/"
   },
   {
    "k": "builds",
    "a": "HOU-222",
    "b": "HOU-045",
    "rel": "",
-   "card": "HOU-222"
+   "card": "HOU-222",
+   "q": "Builders include Beazer, Chesmar, David Weekley, Highland, Perry and Westin",
+   "s": "https://artaviatx.com/builders/"
   },
   {
    "k": "builds",
    "a": "HOU-222",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-222"
+   "card": "HOU-222",
+   "q": "Builders include Beazer, Chesmar, David Weekley, Highland, Perry and Westin",
+   "s": "https://artaviatx.com/builders/"
   },
   {
    "k": "builds",
    "a": "HOU-225",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-225"
+   "card": "HOU-225",
+   "q": "Builders David Weekley, Lennar, Perry, Shea, Village Builders and Westin",
+   "s": "https://thegrandprairietx.com/"
   },
   {
    "k": "builds",
    "a": "HOU-227",
    "b": "HOU-045",
    "rel": "",
-   "card": "HOU-227"
+   "card": "HOU-227",
+   "q": "Builders Autograph, Chesmar, David Weekley, Highland and Perry.",
+   "s": "https://www.ricelandtx.com/"
   },
   {
    "k": "builds",
    "a": "HOU-227",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-227"
+   "card": "HOU-227",
+   "q": "Builders Autograph, Chesmar, David Weekley, Highland and Perry.",
+   "s": "https://www.ricelandtx.com/"
   },
   {
    "k": "builds",
    "a": "HOU-228",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-228"
+   "card": "HOU-228",
+   "q": "by AR Homes, Autograph, David Weekley, Empire and Highland",
+   "s": "https://www.indigocommunity.com/"
   },
   {
    "k": "builds",
    "a": "HOU-229",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-229"
+   "card": "HOU-229",
+   "q": "Builders Autograph, Coventry, David Weekley, Drees, DSLD, Highland, Partners in Building, Perry and Pulte",
+   "s": "https://twostepfarm.com/"
   },
   {
    "k": "builds",
    "a": "HOU-229",
    "b": "HOU-072",
    "rel": "",
-   "card": "HOU-229"
+   "card": "HOU-229",
+   "q": "Builders Autograph, Coventry, David Weekley, Drees, DSLD, Highland, Partners in Building, Perry and Pulte",
+   "s": "https://twostepfarm.com/"
   },
   {
    "k": "builds",
    "a": "HOU-229",
    "b": "HOU-033",
    "rel": "",
-   "card": "HOU-229"
+   "card": "HOU-229",
+   "q": "Builders Autograph, Coventry, David Weekley, Drees, DSLD, Highland, Partners in Building, Perry and Pulte",
+   "s": "https://twostepfarm.com/"
   },
   {
    "k": "builds",
    "a": "HOU-223",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-223"
+   "card": "HOU-223",
+   "q": "Builders Chesmar, David Weekley, Imagination, Beazer, Drees, Highland, Newmark, Perry, Shea and Westin",
+   "s": "https://www.meridianatexas.com/about-us/"
   },
   {
    "k": "builds",
    "a": "Oakberry Trails",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-235"
+   "card": "HOU-235",
+   "q": "with David Weekley coming soon",
+   "s": "https://www.rykodevelopment.com/oakberry-trails"
   },
   {
    "k": "builds",
    "a": "HOU-039",
    "b": "HOU-136",
    "rel": "",
-   "card": "HOU-136"
+   "card": "HOU-136",
+   "q": "Land Tejas community south of Houston.",
+   "s": "https://realtynewsreport.com/robert-clay-ventures-into-build-to-rent-single-family/"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-215",
    "rel": "",
-   "card": "HOU-215"
+   "card": "HOU-215",
+   "q": "Johnson Development community near Magnolia.",
+   "s": "https://kresston.com/builders"
   },
   {
    "k": "partner",
    "a": "HOU-233",
    "b": "HOU-115",
    "rel": "developer",
-   "card": "HOU-115"
+   "card": "HOU-115",
+   "q": "770,640 square feet, developer Hines.",
+   "s": "https://www.arch-con.com/steel-before-panels"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-013",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-168",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-045",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-033",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-009",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-201",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-068",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-205",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-070",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-069",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-072",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-067",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-011",
    "b": "HOU-034",
    "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-011",
+   "q": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
+   "s": "https://www.bridgeland.com/homes/builders-model-homes/"
   },
   {
    "k": "builds",
    "a": "HOU-041",
    "b": "HOU-072",
    "rel": "",
-   "card": "HOU-041"
+   "card": "HOU-041",
+   "q": "Towne Lake, and The Highlands with more than 4,000 planned homes across thirteen builders"
   },
   {
    "k": "builds",
    "a": "HOU-041",
    "b": "HOU-071",
    "rel": "",
-   "card": "HOU-041"
+   "card": "HOU-041",
+   "q": "Towne Lake, and The Highlands with more than 4,000 planned homes across thirteen builders"
   },
   {
    "k": "builds",
    "a": "HOU-041",
    "b": "HOU-077",
    "rel": "",
-   "card": "HOU-041"
+   "card": "HOU-041",
+   "q": "Towne Lake, and The Highlands with more than 4,000 planned homes across thirteen builders"
   },
   {
    "k": "builds",
    "a": "HOU-041",
    "b": "HOU-070",
    "rel": "",
-   "card": "HOU-041"
+   "card": "HOU-041",
+   "q": "Towne Lake, and The Highlands with more than 4,000 planned homes across thirteen builders"
   },
   {
    "k": "builds",
    "a": "HOU-041",
    "b": "HOU-069",
    "rel": "",
-   "card": "HOU-041"
+   "card": "HOU-041",
+   "q": "Towne Lake, and The Highlands with more than 4,000 planned homes across thirteen builders"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-013",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-033",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-167",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-023",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-168",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-072",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-133",
    "b": "HOU-068",
    "rel": "",
-   "card": "HOU-133"
+   "card": "HOU-133",
+   "q": "Pomona, Valencia and Legacy in League City",
+   "s": "https://www.builderonline.com/land/development/hillwood-communities-acquires-540-acres-for-third-master-plan-in-the-houston-area_o"
   },
   {
    "k": "builds",
    "a": "HOU-039",
    "b": "HOU-062",
    "rel": "",
-   "card": "HOU-039"
+   "card": "HOU-039",
+   "q": "Sunterra in Katy, eighteen builders on its own builder page",
+   "s": "https://sunterratx.com/homebuilders/"
   },
   {
    "k": "builds",
    "a": "HOU-039",
    "b": "HOU-075",
    "rel": "",
-   "card": "HOU-039"
+   "card": "HOU-039",
+   "q": "Sunterra in Katy, eighteen builders on its own builder page",
+   "s": "https://sunterratx.com/homebuilders/"
   },
   {
    "k": "builds",
    "a": "HOU-039",
    "b": "Greystar (Summerwell)",
    "rel": "",
-   "card": "HOU-039"
+   "card": "HOU-039",
+   "q": "Sunterra in Katy, eighteen builders on its own builder page",
+   "s": "https://sunterratx.com/homebuilders/"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-068",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-067",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-071",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-069",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-077",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-072",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-040",
    "b": "HOU-204",
    "rel": "",
-   "card": "HOU-040"
+   "card": "HOU-040",
+   "q": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
+   "s": "https://www.liveinjubilee.com/home-builders"
   },
   {
    "k": "builds",
    "a": "HOU-043",
    "b": "HOU-069",
    "rel": "",
-   "card": "HOU-043"
-  },
-  {
-   "k": "builds",
-   "a": "HOU-011",
-   "b": "Brightland Homes",
-   "rel": "",
-   "card": "HOU-011"
+   "card": "HOU-043",
+   "q": "Elyson, 3,600 acres in Katy, now inside Brookfield Residential"
   },
   {
    "k": "builds",
    "a": "HOU-042",
    "b": "HOU-166",
    "rel": "",
-   "card": "HOU-042"
+   "card": "HOU-042",
+   "q": "Wholly owned by Lennar since 2000"
   }
  ],
  "mpc": [
@@ -40906,5 +41146,114 @@
   "https://www.houstonchronicle.com/business/real-estate/article/Trendmaker-Homes-to-rebrand-as-TRI-Pointe-Homes-15882270.php",
   "https://www.houstonchronicle.com/business/real-estate/article/magnolia-new-homes-audubon-heron-run-expansion-20232407.php",
   "https://www.stripes.com/branches/army/2026-07-28/fort-bliss-3-d-barracks-opening-22393339.html"
- ]
+ ],
+ "tnode": {
+  "Berkshire Hathaway": {
+   "u": "https://communityimpact.com/sponsored/award-winning-brohn-homes-makes-major-houston-debut-what-it-means-for-the-community/"
+  },
+  "Clayton Properties Group": {
+   "u": "https://communityimpact.com/sponsored/award-winning-brohn-homes-makes-major-houston-debut-what-it-means-for-the-community/"
+  },
+  "Onsite ICF": {
+   "u": "https://www.onsite-icf.com/aboutus",
+   "us": 1
+  },
+  "Sekisui House": {
+   "u": "https://www.builderonline.com/builder-100/strategy/sekisui-house-finalizes-u-s-rebrand-after-m-d-c-holdings-acquisition/",
+   "us": 1
+  },
+  "Clay Development & Construction": {
+   "u": "https://www.clayresidential.com/",
+   "us": 1
+  },
+  "Dream Finders Homes": {
+   "u": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer",
+   "us": 1
+  },
+  "McGuyer Homebuilders (MHI)": {
+   "u": "https://investors.dreamfindershomes.com/news-events/press-releases/detail/12/dream-finders-homes-acquires-the-assets-of-mcguyer",
+   "us": 1
+  },
+  "Satterfield and Pontikes": {
+   "u": "https://grecostructures.com/"
+  },
+  "Metromont": {
+   "u": "https://heldenfels.com/"
+  },
+  "US LBM": {
+   "u": "https://texasbuildingsupply.com/products/components/"
+  },
+  "KPS Capital Partners": {
+   "u": "https://concreteproducts.com/index.php/2026/02/10/private-equity-operator-kps-outlines-wells-acquisition-agreement/",
+   "us": 1
+  },
+  "Wells": {
+   "u": "https://wells.build/contact/locations/pearland-texas/",
+   "us": 1
+  },
+  "Sterling Infrastructure": {
+   "u": "https://www.tealstonelp.com/"
+  },
+  "Taylor Made Concrete": {
+   "u": "https://tandtconstruction.com/about-us/"
+  },
+  "Woodmere Development": {
+   "u": "https://www.longlakeltd.com/"
+  },
+  "Sumitomo Forestry": {
+   "u": "https://www.businesswire.com/news/home/20140501005392/en/Texas-Homebuilder-Gehan-Homes-Sells-Stake-Sumitomo",
+   "us": 1
+  },
+  "Daiwa House": {
+   "u": "https://www.daiwahouse.com/English/about/release/pdf/release_20210810e.pdf",
+   "us": 1
+  },
+  "Rausch Coleman Homes": {
+   "u": "https://newsroom.lennar.com/2025-02-10-Lennar-Completes-Acquisition-of-Rausch-Coleman-Homes",
+   "us": 1
+  },
+  "MetroNational": {
+   "u": "https://natlawreview.com/press-releases/metronational-grows-greater-houston-portfolio-landmark-m-k-t-heights",
+   "us": 1
+  },
+  "Tricon": {
+   "x": [
+    "dfw",
+    "DFW-BTR-004"
+   ]
+  },
+  "Innovative Construction Group": {
+   "u": "https://www.bldr.com/products/manufactured-components"
+  },
+  "HiveASMBLD": {
+   "u": "https://www.houstoniamag.com/home-and-real-estate/2025/12/3d-printed-houses-neighborhood-houston"
+  },
+  "Interra Capital Group": {
+   "u": "https://houston.org/news/downtown-conversions-turn-aging-office-towers-new-residences-hotels/"
+  },
+  "Jubilee": {
+   "m": 29
+  },
+  "Everly": {
+   "m": 21
+  },
+  "Bluestem": {
+   "m": 6
+  },
+  "Beacon Hill": {
+   "m": 61
+  },
+  "Oakberry Trails": {
+   "m": 38
+  },
+  "Waller master plan": {
+   "c": [
+    "HOU-233",
+    "Waller master plan"
+   ]
+  },
+  "Greystar (Summerwell)": {
+   "u": "https://sunterratx.com/homebuilders/"
+  }
+ }
 }
