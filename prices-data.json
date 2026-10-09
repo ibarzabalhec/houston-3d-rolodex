@@ -15216,7 +15216,7 @@
      "market": "houston",
      "developer": "Brookfield Residential",
      "developer_raw": "Brookfield Residential (Newland)",
-     "developer_rolodex_id": "HOU-043",
+     "developer_rolodex_id": "HOU-207",
      "website": "https://www.elyson.com/",
      "city": "Katy",
      "county": "Harris",
@@ -53951,7 +53951,7 @@
     {
      "id": "d-houston-brookfield-residential",
      "name": "Brookfield Residential",
-     "rolodex_id": "HOU-043",
+     "rolodex_id": "HOU-207",
      "communities": [
       "hou-elyson"
      ],
@@ -53973,10 +53973,10 @@
      "qmi_n": 35,
      "qmi_price": 441840,
      "qmi_ppsf": 192,
-     "rolodex_section": "Land owner, not the buyer",
+     "rolodex_section": "National builder",
      "marks": {
-      "repeatability": "partial",
-      "machine_fit": "fail",
+      "repeatability": "clear",
+      "machine_fit": "partial",
       "innovation": "fail"
      }
     },

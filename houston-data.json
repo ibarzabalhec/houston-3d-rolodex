@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 123,
+ "build": 124,
  "last_updated": "2026-10-09",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-09",
  "kicker": "Rolodex · Greater Houston · 2026-10-09",
@@ -21669,6 +21669,19 @@
    "short": "Long Lake, Ltd.",
    "cell": "clear|partial",
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "15 Oct 2026",
+     "plat": "Sheldon Ridge Sec 15",
+     "kind": "Final plat",
+     "lots": 60,
+     "county": "Harris",
+     "owner": "Woodmere Development Co.",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    }
+   ],
    "exec_named": true
   },
   {
@@ -33962,6 +33975,85 @@
    "vol": null,
    "expansion": true,
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "15 Oct 2026",
+     "plat": "Midline Sec 11",
+     "kind": "Replat",
+     "lots": 55,
+     "county": "Harris",
+     "owner": "Brookfield Properties",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Sec 73",
+     "kind": "Preliminary plat",
+     "lots": 38,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Sec 79",
+     "kind": "Preliminary plat",
+     "lots": 46,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 5",
+     "kind": "Preliminary plat",
+     "lots": 31,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 6",
+     "kind": "Preliminary plat",
+     "lots": 34,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 12",
+     "kind": "Preliminary plat",
+     "lots": 31,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 13",
+     "kind": "Preliminary plat",
+     "lots": 36,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -35131,6 +35223,17 @@
      "lots": 77,
      "county": "Harris",
      "owner": "Taylor Morrison",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": null
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Trillium Sec 12",
+     "kind": "Extension of approval",
+     "lots": 109,
+     "county": "Fort Bend",
+     "owner": "TPHTM 1464, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
      "px": null
@@ -39157,74 +39260,6 @@
    "cell": "partial|fail",
    "channel_line": "Elyson, 3,600 acres in Katy, now inside Brookfield Residential",
    "type": "land",
-   "plats": [
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Sec 73",
-     "kind": "Preliminary plat",
-     "lots": 38,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    },
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Sec 79",
-     "kind": "Preliminary plat",
-     "lots": 46,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    },
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Cy Fair Sec 5",
-     "kind": "Preliminary plat",
-     "lots": 31,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    },
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Cy Fair Sec 6",
-     "kind": "Preliminary plat",
-     "lots": 34,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    },
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Cy Fair Sec 12",
-     "kind": "Preliminary plat",
-     "lots": 31,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    },
-    {
-     "when": "1 Oct 2026",
-     "plat": "Elyson Cy Fair Sec 13",
-     "kind": "Preliminary plat",
-     "lots": 36,
-     "county": "Harris",
-     "owner": "NASH FM 529, LLC",
-     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-     "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
-    }
-   ],
    "exec_named": false
   },
   {
@@ -42414,7 +42449,6 @@
    "f": [
     "HOU-013",
     "HOU-023",
-    "HOU-043",
     "HOU-045",
     "HOU-068",
     "HOU-069",
@@ -43462,7 +43496,7 @@
   "n": 88,
   "lots": 2466,
   "big": 18,
-  "on_cards": 17,
+  "on_cards": 20,
   "from": "1 Oct 2026",
   "to": "15 Oct 2026",
   "csv": "houston-plats.csv"

@@ -2,12 +2,12 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-01,Bridgeland Prairieland Village Sec 53,Final plat,76,19.82,Harris,"Bridgeland Development, LP, a Maryland limited partnership","BGE, Inc.",HOU-011,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Cresmere Place partial replat no 5,Final plat,2,0.2765,Harris,,"PLS CONSTRUCTION LAYOUT, INC",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Eleanor Enclave,Final plat,2,0.3042,Harris,,Texas Land Maps,,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Sec 73,Preliminary plat,38,27.72,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Sec 79,Preliminary plat,46,15.09,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Cy Fair Sec 5,Preliminary plat,31,12.28,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Cy Fair Sec 6,Preliminary plat,34,6.69,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Cy Fair Sec 12,Preliminary plat,31,13.17,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Elyson Cy Fair Sec 13,Preliminary plat,36,33.61,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-043,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Sec 73,Preliminary plat,38,27.72,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Sec 79,Preliminary plat,46,15.09,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Cy Fair Sec 5,Preliminary plat,31,12.28,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Cy Fair Sec 6,Preliminary plat,34,6.69,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Cy Fair Sec 12,Preliminary plat,31,13.17,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Elyson Cy Fair Sec 13,Preliminary plat,36,33.61,Harris,"NASH FM 529, LLC",Meta Planning + Design LLC,HOU-207,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Estates at Knoll Street replat no 1,Final plat,17,1.398,Harris,,"PLS CONSTRUCTION LAYOUT, INC",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Gomez Bigwood Development,Final plat,2,0.1791,Harris,,Doshi Engineering & Surveying Company,,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Hazard Homes Enclave,Plat,8,0.371,Harris,,Texas Land Maps,,https://plattracker.powerappsportals.us/agenda-documents/
@@ -42,7 +42,7 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-01,Oakberry Trails Sec 12,Extension of approval,51,7.9254,Harris,"LOB West, Inc",Benchmark Engineering Corporation,HOU-235,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Pecan Estates Sec 5,Extension of approval,96,74.512,Harris,"Murff Castle Estates, LLC","LJA, Inc.",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Redbud Sec 3,Extension of approval,77,16.9,Harris,Taylor Morrison,Meta Planning + Design LLC,HOU-025,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Trillium Sec 12,Extension of approval,109,30.6,Fort Bend,"TPHTM 1464, LLC",Meta Planning + Design LLC,,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Trillium Sec 12,Extension of approval,109,30.6,Fort Bend,"TPHTM 1464, LLC",Meta Planning + Design LLC,HOU-025,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Villas at Cullen,Extension of approval,3,0.1579,Harris,,"CE Engineers & Development Consultants, INC",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-15,Magnolia Residential,Replat,3,0.2189,Harris,,CGEA|Planning + Design,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Freeman ROW,Replat,3,0.1089,Harris,Revolution Homes,The Interfield Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
@@ -56,14 +56,14 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-15,Camay Oaks,Replat,5,0.353,Harris,,The Interfield Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Mansfield Commons,Final plat,34,1.962,Harris,Gbokiri Essential LLC,The Interfield Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Huntington Place Homes,Replat,3,0.3122,Harris,,"PLS CONSTRUCTION LAYOUT, INC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
-2026-10-15,Sheldon Ridge Sec 15,Final plat,60,12.568,Harris,Woodmere Development Co.,IDS Engineering Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Sheldon Ridge Sec 15,Final plat,60,12.568,Harris,Woodmere Development Co.,IDS Engineering Group,HOU-130,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Gallahad Street Homes,"Replat, public hearing",2,0.1612,Harris,,"PLS CONSTRUCTION LAYOUT, INC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Grace Lane Estates,Plat,3,0.2295,Harris,"AAB Homes, LLC","AAB Homes, LLC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Granville Park Residences,Replat,4,0.354,Harris,,New Era Development & Land Services,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Sydnor Residence,Replat,2,0.1147,Harris,,New Era Development & Land Services,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Houston Avenue Square,Plat,2,0.1113,Harris,,New Era Development & Land Services,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Lawrence Street Grove,Replat,2,0.1125,Harris,"TOMO Development, LLC","Total Surveyors, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
-2026-10-15,Midline Sec 11,Replat,55,16.0,Harris,Brookfield Properties,"LJA, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Midline Sec 11,Replat,55,16.0,Harris,Brookfield Properties,"LJA, Inc.",HOU-207,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Dolly Wright Manor,Replat,2,0.3409,Harris,Jake  Patrick,"Patrick Planning Services, LLC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Westhaven Manor North Sec 2,Final plat,61,9.179,Harris,"LGI HOMES - TEXAS, LLC, a Texas limited liability company",Pape-Dawson,HOU-014,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,C and F Investments at Paul Quinn,Replat,4,0.785,Harris,,"CAS Consultants, LLC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
