@@ -6,7 +6,7 @@
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "169 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "174 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "169",
+   "174",
    "firms screened",
    false,
    null
@@ -45,7 +45,7 @@
    }
   ],
   [
-   "5",
+   "7",
    "builders and developers hold all three counts",
    false,
    {
@@ -65,8 +65,8 @@
    }
   ],
   [
-   "114",
-   "of 169 with an executive named",
+   "119",
+   "of 174 with an executive named",
    true,
    {
     "dec": "any"
@@ -79,28 +79,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 109,
+   "clear": 114,
    "partial": 52,
    "fail": 8,
-   "total": 169
+   "total": 174
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
    "clear": 10,
-   "partial": 107,
+   "partial": 112,
    "fail": 52,
-   "total": 169
+   "total": 174
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 20,
-   "partial": 17,
-   "fail": 132,
-   "total": 169
+   "clear": 21,
+   "partial": 18,
+   "fail": 135,
+   "total": 174
   }
  ],
  "matrix": {
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 223 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 234 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1725,8 +1725,8 @@
     "wide": null
    }
   ],
-  "closings_missing": 70,
-  "closings_base": 100,
+  "closings_missing": 75,
+  "closings_base": 105,
   "bands": [
    [
     25,
@@ -1753,22 +1753,22 @@
    {
     "group": "a",
     "label": "Holds all three counts",
-    "n": 5,
-    "yes": 4,
-    "partly": 1,
+    "n": 7,
+    "yes": 5,
+    "partly": 2,
     "no": 0,
-    "named": 4,
-    "linked": 4
+    "named": 6,
+    "linked": 6
    },
    {
     "group": "b",
     "label": "Two of three counts",
-    "n": 55,
+    "n": 58,
     "yes": 3,
     "partly": 2,
-    "no": 50,
-    "named": 38,
-    "linked": 52
+    "no": 53,
+    "named": 41,
+    "linked": 55
    },
    {
     "group": "trade",
@@ -19641,10 +19641,10 @@
   "local": "Houston|San Leon"
  },
  "stats": {
-  "total": 169,
+  "total": 174,
   "adopters": 3,
-  "principals": 395,
-  "with_executive": 114
+  "principals": 406,
+  "with_executive": 119
  },
  "targets": [
   {
@@ -20010,6 +20010,130 @@
    "short": "Elpis 3D",
    "cell": "fail|partial",
    "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-256",
+   "entity_name": "RREAF Holdings",
+   "short": "RREAF Holdings",
+   "homepage_url": "https://www.rreaf.com/",
+   "company_li": null,
+   "team_url": "https://rreaf.com/team/",
+   "chain": null,
+   "phone": "2145223300",
+   "phone_source": "https://www.rreaf.com/",
+   "phone_label": "Dallas office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "278 furnished cottages for purchase at the Margaritaville resort on Galveston's East Beach (RREAF, The Daily News, July 2026)",
+   "mvp_screen": "Chose Aura Dwellings and Hospitality in 2024 to build its 278 Galveston cottages off site. Run from Dallas.",
+   "synopsis": "Dallas real estate investment and development firm with multifamily, hospitality, master planned community, outdoor community and extended stay platforms. RREAF lists 15,000+ units and keys and $5B in assets under management. In Galveston it is building a $700M Margaritaville resort on 63 acres of East Beach with 278 for-sale cottages, a 300,000-square-foot hotel and a water park.",
+   "region": "Dallas office on Woodall Rodgers Freeway, developing the Margaritaville resort on Galveston's East Beach",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "RREAF and Innisfree Hotels announced a partnership to develop the Galveston Margaritaville resort in January 2024.",
+     "url": "https://blog.margaritaville.com/2024/01/rreaf-holdings-and-innisfree-hotels-announce-partnership-to-develop-brand-new-margaritaville-resort-on-galveston-beach/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "278 furnished cottages on one 63-acre Galveston site (RREAF, 2026). The first 100 cottage units are slated for the end of 2026."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "278 cottages is a project total, not a yearly figure (RREAF, 2026). The first 100 units are slated for completion by the end of 2026."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Off-site built cottages on its own Galveston resort, with Aura Dwellings and Hospitality selected as construction partner in 2024. Two modular model homes arrived in July 2026."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "cell": "clear|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "Margaritaville Beach Resort Galveston",
+     "detail": "63 acres on East Beach. 278 for-sale cottages built off site by Aura Dwellings and Hospitality, a 334-room tower and a water park. $700M. Full opening targeted for 2028 or 2029.",
+     "url": "https://www.bisnow.com/news/houston/deal-sheet/700m-margaritaville-galveston-nears-vertical-construction-the-houston-deal-sheet-134277",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://secrethouston.com/galveston-margaritaville-cottage-resort-2026/",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/houston/bay-area/development/2026/05/04/margaritaville-resort-in-galveston-debuts-model-home",
+     "date": null
+    },
+    {
+     "url": "https://rreaf.com/team/",
+     "date": null
+    },
+    {
+     "url": "https://www.rreaf.com/",
+     "date": null
+    },
+    {
+     "url": "https://blog.margaritaville.com/2024/01/rreaf-holdings-and-innisfree-hotels-announce-partnership-to-develop-brand-new-margaritaville-resort-on-galveston-beach/",
+     "date": null
+    },
+    {
+     "url": "https://www.galvnews.com/business/buzz/biz-buzz-modular-model-homes-arrive-at-margaritaville-in-galveston-island-sweet-shop-makes-big/article_610802eb-e457-4a94-82ce-acfc9d3af055.html",
+     "date": null
+    },
+    {
+     "url": "https://www.bisnow.com/news/houston/deal-sheet/700m-margaritaville-galveston-nears-vertical-construction-the-houston-deal-sheet-134277",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Kip Sowden",
+     "role": "Chairman and Chief Executive Officer",
+     "source_url": "https://rreaf.com/team/"
+    },
+    {
+     "name": "Doug McKnight",
+     "role": "President, RREAF Holdings",
+     "source_url": "https://rreaf.com/team/"
+    },
+    {
+     "name": "Carl Schwab",
+     "role": "President, RREAF Development Services",
+     "source_url": "https://rreaf.com/team/"
+    },
+    {
+     "name": "Brad Busby",
+     "role": "Executive Vice President, Hospitality",
+     "source_url": "https://rreaf.com/team/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "developer",
    "exec_named": true
   },
   {
@@ -20594,6 +20718,126 @@
    "expansion": true,
    "type": "homebuilder",
    "exec_named": false
+  },
+  {
+   "target_id": "HOU-261",
+   "entity_name": "Roberts Resorts",
+   "short": "Roberts Resorts",
+   "homepage_url": "https://robertsresorts.com/index.php",
+   "company_li": null,
+   "team_url": "https://robertsresorts.com/the-roberts-difference/",
+   "chain": null,
+   "phone": "9368562949",
+   "phone_source": "https://robertsresorts.com/resorts/waters-edge-rv/",
+   "phone_label": "Water's Edge, Lake Conroe",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "More than $43 million over three years for three RV resorts and one tiny home community northwest of Houston (Roberts Resorts, 2022)",
+   "mvp_screen": "Bought its Flagstaff Village Camp cabins from Cavco and Clayton. Resorts in Willis and Spring.",
+   "synopsis": "Family-owned RV resort and tiny home community developer and operator based in Scottsdale, run by the second generation of the Roberts family under President and CEO Scott Roberts. It lists 13 resorts, five in Texas, including Water's Edge on Lake Conroe, Majestic Pines in Willis and Rayford Crossing in Spring. Its Majestic Hills Tiny Home Community in Willis had 83 sites with 62 to 70 more planned in 2022.",
+   "region": "Scottsdale, Arizona, with three RV resorts and a tiny home community in Willis and Spring, north of Houston",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Lakefront cedar-loft cabin models at Water's Edge on Lake Conroe, and a tiny home community of 83 sites in Willis (Roberts Resorts, 2022). Its Village Camp concept pairs RV sites with rental cabins at Truckee and Flagstaff."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "62 to 70 added tiny home sites at Majestic Hills and 38 rental cabins in Flagstaff's first phase are project totals (Roberts Resorts, 2022). No yearly figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Cabins from Cavco Industries and Lakeside Clayton Park Models at its Flagstaff Village Camp (Good Sam, 2022). That is off-site building bought from a factory, and no page shows it on the Houston resorts."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "cell": "clear|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "Water's Edge RV and Cottage Resort",
+     "detail": "Willis, northwest shore of Lake Conroe. Lakefront cedar-loft cabins and RV sites. $17.5 million plan to grow from 200 to 300 sites (2022).",
+     "url": "https://robertsresorts.com/resorts/waters-edge-rv/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Majestic Hills Tiny Home Community",
+     "detail": "Willis. 83 sites, with 62 to 70 more planned: $955,000 for land and $3.2 million for improvements (2022).",
+     "url": "https://suncruisermedia.com/Home/industry-news/roberts-resorts-plans-invest-improvements/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Majestic Pines RV Resort",
+     "detail": "Willis. From 233 to 393 sites: $800,000 for land, $1.2 million for improvements and $12 million for new amenities (2022).",
+     "url": "https://robertsresorts.com/resorts/majestic-pines",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://suncruisermedia.com/Home/industry-news/roberts-resorts-plans-invest-improvements/",
+     "date": null
+    },
+    {
+     "url": "https://robertsresorts.com/resorts/waters-edge-rv/",
+     "date": null
+    },
+    {
+     "url": "https://blog.goodsam.com/roberts-resorts-launches-village-camp",
+     "date": null
+    },
+    {
+     "url": "https://robertsresorts.com/index.php",
+     "date": null
+    },
+    {
+     "url": "https://robertsresorts.com/the-roberts-difference/",
+     "date": null
+    },
+    {
+     "url": "https://robertsresorts.com/resorts/majestic-pines",
+     "date": null
+    },
+    {
+     "url": "https://robertsresorts.com/resorts/waters-edge-rv/blog/explore-our-welcoming-cabins-at-waters-edge-an-rv-and-cottage-resort-on-the-shores-of-lake-conroe/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Scott Roberts",
+     "role": "President and CEO",
+     "source_url": "https://blog.goodsam.com/roberts-resorts-launches-village-camp"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "developer",
+   "exec_named": true
   },
   {
    "target_id": "HOU-060",
@@ -22898,6 +23142,138 @@
    "exec_named": false
   },
   {
+   "target_id": "HOU-262",
+   "entity_name": "Agape Homes CDC",
+   "short": "Agape Homes CDC",
+   "homepage_url": "https://www.agapehomescdc.org/",
+   "company_li": null,
+   "team_url": "https://www.agapedevelopment.org/about/our-team",
+   "chain": null,
+   "phone": "7136581001",
+   "phone_source": "https://www.agapedevelopment.org/contact",
+   "phone_label": "Office, Agape Development",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "80 single-family homes near 6412 Calhoun Road, 57 affordable and 23 market rate (City of Houston AHDP)",
+   "mvp_screen": "Builds its own four-plan set on vacant lots in one neighborhood. A City of Houston program builder.",
+   "synopsis": "Homeownership arm of Agape Development, a Christian ministry in OST/South Union founded in 2005 and led by CEO and co-founder Kirk Craig. It builds two-, three- and four-bedroom detached homes on vacant lots and sells them at cost to families below 80% AMI. The City of Houston names it the developer of 80 homes near 6412 Calhoun Road through the Affordable Home Development Program.",
+   "region": "6504 Calhoun Road, building in Houston's Greater OST/South Union",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "City of Houston forgivable loan of $2,190,000.00 in Uptown TIRZ Series 2021 Affordable Homes Funds for the Calhoun Road infrastructure.",
+     "url": "https://houstontx.gov/housing/homes/ost-su.html"
+    },
+    {
+     "text": "Cadence Bank profile: first 8 homes opened in January 2022, with a goal of 88 homes by the end of 2023.",
+     "url": "https://cadencebank.com/insights-and-articles/personal/agape-homes-cdc"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "4 floor plans, 2-A, 2-B, 3-A and 3-B, built on lots in Greater OST/South Union (Agape Homes CDC)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No published yearly figure. The 80-home Calhoun Road development is a project total (City of Houston AHDP)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "New Homes for OST / South Union",
+     "detail": "Near 6412 Calhoun Road. 80 single-family homes, 57 affordable and 23 market rate, for buyers at 70% to 100% AMI. City forgivable loan of $2,190,000.00 from Uptown TIRZ funds for infrastructure.",
+     "url": "https://houstontx.gov/housing/homes/ost-su.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://houstontx.gov/housing/ahdp.html",
+     "date": null
+    },
+    {
+     "url": "https://www.agapehomescdc.org/",
+     "date": null
+    },
+    {
+     "url": "https://www.agapedevelopment.org/housing",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/homes/ost-su.html",
+     "date": null
+    },
+    {
+     "url": "https://www.agapedevelopment.org/about/our-team",
+     "date": null
+    },
+    {
+     "url": "https://www.agapedevelopment.org/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.agapedevelopment.org/about/our-story",
+     "date": null
+    },
+    {
+     "url": "https://cadencebank.com/insights-and-articles/personal/agape-homes-cdc",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Kirk Craig",
+     "role": "CEO and Co-Founder, Agape Development, and Interim Housing Director",
+     "source_url": "https://www.agapedevelopment.org/about/our-team"
+    },
+    {
+     "name": "Shirlita Travis",
+     "role": "Housing Director",
+     "source_url": "https://www.agapedevelopment.org/about/our-team"
+    },
+    {
+     "name": "Zach Massey",
+     "role": "COO",
+     "source_url": "https://www.agapedevelopment.org/about/our-team"
+    },
+    {
+     "name": "James Miller",
+     "role": "President, Board of Directors",
+     "source_url": "https://www.agapedevelopment.org/about/our-team"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "nonprofit",
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-211",
    "entity_name": "Autograph Homes",
    "short": "Autograph Homes",
@@ -23033,6 +23409,127 @@
    "vol": null,
    "expansion": true,
    "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-259",
+   "entity_name": "Camp Margaritaville RV Resort Crystal Beach (MVCB Bungalows)",
+   "short": "Camp Margaritaville RV Resort Crystal Beach (MVCB Bungalows)",
+   "homepage_url": "https://www.margaritavilleresorts.com/camp-margaritaville-rv-resort-crystal-beach-tx",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "4095151970",
+   "phone_source": "https://www.margaritavilleresorts.com/camp-margaritaville-rv-resort-crystal-beach-tx",
+   "phone_label": "Resort line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "11 Beach Bungalows under construction and 11 more starting October 2026 (MVCB Bungalows, 2026)",
+   "mvp_screen": "Founder Brad Ballard builds the bungalows through his own MVCB Construction LLC.",
+   "synopsis": "RV resort and beach home community in Crystal Beach founded and developed by Brad Ballard as Bolivar Beach Club and RV Resort and rebranded under Camp Margaritaville in 2022. In July 2025 it launched the Beach Bungalows, furnished three- and four-bedroom homes of 1,837 to 1,909 square feet priced from the $800s. MVCB Bungalows, LLC and MVCB Construction LLC sell and build the homes.",
+   "region": "Crystal Beach, Bolivar Peninsula, on more than 150 acres of beachfront off Highway 87",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Margaritaville took over the brand of Bolivar Beach Club and RV Resort in 2022.",
+     "url": "https://moderncampground.com/usa/texas/bolivar-beach-club-rv-resort-to-become-camp-margaritaville-crystal-beach/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Three- and four-bedroom plans of 1,837 to 1,909 square feet repeated on beachfront lots at one Crystal Beach site (MVCB Bungalows, 2026)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "22 homes in two batches, 11 underway and 11 starting October 2026, with over 30 projected for delivery before spring 2027 (Houston Agent Magazine). No yearly figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Fortified Gold storm standard on every home (Houston Agent Magazine, 2026). That is a certification."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "The Beach Bungalows at Camp Margaritaville Crystal Beach",
+     "detail": "785 Seaside Drive, Crystal Beach. Furnished 3 to 4 bedroom homes, 1,837 to 1,909 square feet, from the $800s. 11 under construction, 11 more from October 2026.",
+     "url": "https://ownmargaritavillebungalowscrystalbeach.com/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Camp Margaritaville RV Resort Crystal Beach",
+     "detail": "796 Highway 87, Crystal Beach. RV resort with 60 private poolside cabanas, rebranded from Bolivar Beach Club in 2022.",
+     "url": "https://www.margaritavilleresorts.com/camp-margaritaville-rv-resort-crystal-beach-tx/blog/camp-margaritaville-rv-resort-grand-opening",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://ownmargaritavillebungalowscrystalbeach.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.mannpublications.com/mannreport/2025/07/02/camp-margaritaville-resort-crystal-beach-announces-residential-resort-community/",
+     "date": null
+    },
+    {
+     "url": "https://houstonagentmagazine.com/2026/09/01/beach-bungalows-at-camp-margaritaville-resort-crystal-beach/",
+     "date": null
+    },
+    {
+     "url": "https://www.margaritavilleresorts.com/camp-margaritaville-rv-resort-crystal-beach-tx",
+     "date": null
+    },
+    {
+     "url": "https://www.margaritavilleresorts.com/camp-margaritaville-rv-resort-crystal-beach-tx/blog/camp-margaritaville-rv-resort-grand-opening",
+     "date": null
+    },
+    {
+     "url": "https://moderncampground.com/usa/texas/camp-margaritaville-resort-crystal-beach-introduces-beach-bungalows/",
+     "date": null
+    },
+    {
+     "url": "https://moderncampground.com/usa/texas/bolivar-beach-club-rv-resort-to-become-camp-margaritaville-crystal-beach/",
+     "date": null
+    },
+    {
+     "url": "https://houston.culturemap.com/boliver-beach-club-rv-resort-margaritaville",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Brad Ballard",
+     "role": "Founder and Developer, Camp Margaritaville Resort Crystal Beach",
+     "source_url": "https://www.mannpublications.com/mannreport/2025/07/02/camp-margaritaville-resort-crystal-beach-announces-residential-resort-community/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "developer",
    "exec_named": true
   },
   {
@@ -23306,6 +23803,119 @@
     }
    ],
    "vol": 1056,
+   "expansion": true,
+   "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-263",
+   "entity_name": "Five Woods Realty",
+   "short": "Five Woods Realty",
+   "homepage_url": "https://fairwoodshomes.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "75 single-family homes at Fairwoods at Furman, 60 affordable and 15 market rate (City of Houston AHDP)",
+   "mvp_screen": "Sells three plans at Fairwoods at Furman, a gated community. A City of Houston program builder.",
+   "synopsis": "Houston community development firm building workforce multifamily and urban infill single-family communities, a certified MBE and HUBZone business (City of Houston). Its single-family community is Fairwoods at Furman, a gated 75-home community at 13520 Furman Road priced from the upper $200,000s. Founding principal Laolu Davies-Yemitan leads it.",
+   "region": "Greater Houston, building Fairwoods at Furman in South Acres/Crestmont Park",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "City of Houston forgivable loan of $2,000,000.00 in Uptown TIRZ Series 2021 Affordable Homes Funds for Fairwoods at Furman infrastructure.",
+     "url": "https://houstontx.gov/housing/homes/sa-crestmont.html"
+    },
+    {
+     "text": "City of Houston proposed $3,500,000.00 in Uptown TIRZ Series 2021 Affordable Housing Funds to Five Woods LHP, LLC for acquisition and infrastructure at 13520 and 13606 Furman Road (public notice, October 2023).",
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2023/10/PN_SF_Five_Woods_TIRZ_Final-103023.pdf"
+    },
+    {
+     "text": "Capital Impact Partners is listed as a development partner on Fairwoods at Furman.",
+     "url": "https://www.fairwoodshomes.com/about"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "3 plans, the Evergreen, Vista and Pine Woods, from 1,452 to 1,739 sq ft, sold across 75 homes at Fairwoods at Furman (Fairwoods at Furman, City of Houston)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No published yearly figure. Fairwoods at Furman is a 75-home project total (City of Houston AHDP)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Fairwoods at Furman",
+     "detail": "13520 Furman Road, South Acres/Crestmont Park. Gated community of 75 homes, 60 affordable and 15 market rate. 3- and 4-bedroom plans from 1,452 to 1,739 sq ft, from the upper $200,000s.",
+     "url": "https://houstontx.gov/housing/homes/sa-crestmont.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://houstontx.gov/housing/ahdp.html",
+     "date": null
+    },
+    {
+     "url": "https://fairwoodshomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/homes/sa-crestmont.html",
+     "date": null
+    },
+    {
+     "url": "https://www.hccs.edu/about-us/board-of-trustees/laolu-davies-yemitan/",
+     "date": null
+    },
+    {
+     "url": "https://www.fairwoodshomes.com/about",
+     "date": null
+    },
+    {
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2023/10/PN_SF_Five_Woods_TIRZ_Final-103023.pdf",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Laolu Davies-Yemitan",
+     "role": "Founding principal, Five Woods Realty",
+     "source_url": "https://www.hccs.edu/about-us/board-of-trustees/laolu-davies-yemitan/"
+    }
+   ],
+   "vol": null,
    "expansion": true,
    "type": "homebuilder",
    "exec_named": true
@@ -38795,6 +39405,13 @@
     "v": null
    },
    {
+    "cat": 1,
+    "tr": true,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 0,
     "tr": true,
     "fit": "partial",
@@ -38827,6 +39444,13 @@
     "tr": true,
     "fit": "partial",
     "exec": false,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
     "v": null
    },
    {
@@ -38970,7 +39594,21 @@
     "v": 1062.0
    },
    {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
     "tr": false,
     "fit": "partial",
     "exec": true,
@@ -38989,6 +39627,13 @@
     "fit": "partial",
     "exec": true,
     "v": 1056.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
    },
    {
     "cat": -1,
@@ -39957,9 +40602,9 @@
     "v": null
    }
   ],
-  "n": 169,
-  "track": 20,
-  "exec": 114,
+  "n": 174,
+  "track": 21,
+  "exec": 119,
   "band": [
    25,
    400
@@ -39971,11 +40616,11 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 75
+    "n": 76
    },
    {
     "label": "Developers",
-    "n": 19
+    "n": 22
    },
    {
     "label": "General contractors",
@@ -40215,6 +40860,15 @@
    "rel": "owned 62 percent",
    "card": "HOU-132",
    "q": "It owned 62 percent of Forestar Group"
+  },
+  {
+   "k": "supplies",
+   "a": "HOU-126",
+   "b": "HOU-256",
+   "rel": "built off site",
+   "card": "HOU-256",
+   "q": "built off site by Aura Dwellings and Hospitality",
+   "s": "https://www.bisnow.com/news/houston/deal-sheet/700m-margaritaville-galveston-nears-vertical-construction-the-houston-deal-sheet-134277"
   },
   {
    "k": "partner",
@@ -42546,6 +43200,17 @@
    ]
   },
   {
+   "n": "The Beach Bungalows at Camp Margaritaville Crystal Beach",
+   "city": "",
+   "county": "",
+   "dev": "Camp Margaritaville RV Resort Crystal Beach (MVCB Bungalows)",
+   "card": "HOU-259",
+   "kp": "The Beach Bungalows at Camp Margaritaville Crystal Beach",
+   "f": [
+    "HOU-259"
+   ]
+  },
+  {
    "n": "Heritage Bend",
    "city": "",
    "county": "",
@@ -42593,11 +43258,13 @@
   "https://www.bisnow.com/houston/news/industrial/provident-realty-advisors-hires-christen-vestal-to-lead-forthcoming-houston-office-116393",
   "https://www.bisnow.com/houston/news/office/modernized-medical-office-building-to-break-ground-in-katy-90935",
   "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549",
+  "https://www.bisnow.com/news/houston/deal-sheet/700m-margaritaville-galveston-nears-vertical-construction-the-houston-deal-sheet-134277",
   "https://www.bizjournals.com/houston/news/2025/03/14/wan-bridge-adjusts-build-to-rent-goal.html",
   "https://www.bizjournals.com/houston/news/2026/04/03/hiveasmbld-3d-printed-homes-community-san-leon.html",
   "https://www.dallasnews.com/business/real-estate/2025/04/09/developer-sells-7-d-fw-neighborhoods-as-part-of-800-million-deal/",
   "https://www.enr.com/articles/56905-harvey-l-harvey-cleary-a-little-bit-of-everything-firm",
   "https://www.enr.com/toplists/2026-Top-400-Contractors-1",
+  "https://www.galvnews.com/business/buzz/biz-buzz-modular-model-homes-arrive-at-margaritaville-in-galveston-island-sweet-shop-makes-big/article_610802eb-e457-4a94-82ce-acfc9d3af055.html",
   "https://www.galvnews.com/news/printing-the-future-san-leon-project-tests-new-model-for-coastal-housing/article_e6c622f8-f6cd-47f6-ad36-ed1cac45a3d4.html",
   "https://www.housingwire.com/articles/century-communities-q2-2026-strategy/",
   "https://www.housingwire.com/articles/partners-building-succession-plan/",
