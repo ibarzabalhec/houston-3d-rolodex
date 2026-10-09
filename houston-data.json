@@ -1,9 +1,9 @@
 {
  "version": "2.0",
- "build": 120,
- "last_updated": "2026-09-30",
- "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-09-30",
- "kicker": "Rolodex · Greater Houston · 2026-09-30",
+ "build": 123,
+ "last_updated": "2026-10-09",
+ "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-09",
+ "kicker": "Rolodex · Greater Houston · 2026-10-09",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
  "meta_description": "174 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
@@ -20028,7 +20028,7 @@
    "phone_absent": null,
    "press": [],
    "key_stat": "278 furnished cottages for purchase at the Margaritaville resort on Galveston's East Beach (RREAF, The Daily News, July 2026)",
-   "mvp_screen": "Chose Aura Dwellings and Hospitality in 2024 to build its 278 Galveston cottages off site. Run from Dallas.",
+   "mvp_screen": "Chose Aura Dwellings and Hospitality in 2024 to build its Galveston cottages off site. Run from Dallas.",
    "synopsis": "Dallas real estate investment and development firm with multifamily, hospitality, master planned community, outdoor community and extended stay platforms. RREAF lists 15,000+ units and keys and $5B in assets under management. In Galveston it is building a $700M Margaritaville resort on 63 acres of East Beach with 278 for-sale cottages, a 300,000-square-foot hotel and a water park.",
    "region": "Dallas office on Woodall Rodgers Freeway, developing the Margaritaville resort on Galveston's East Beach",
    "company_li_note": null,
@@ -34737,6 +34737,30 @@
    "short": "LGI Homes",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "15 Oct 2026",
+     "plat": "Cypress Trails at Bauer Landing Sec 2",
+     "kind": "Preliminary plat",
+     "lots": 158,
+     "county": "Harris",
+     "owner": "LGI Homes - Texas, LLC",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    },
+    {
+     "when": "15 Oct 2026",
+     "plat": "Westhaven Manor North Sec 2",
+     "kind": "Final plat",
+     "lots": 61,
+     "county": "Harris",
+     "owner": "LGI HOMES - TEXAS, LLC, a Texas limited liability company",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    }
+   ],
    "exec_named": true
   },
   {
@@ -34961,6 +34985,19 @@
    "short": "Meritage",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "15 Oct 2026",
+     "plat": "Mill Ridge Village Sec 1",
+     "kind": "Replat, public hearing",
+     "lots": 147,
+     "county": "Harris",
+     "owner": "Meritage Homes",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    }
+   ],
    "exec_named": false
   },
   {
@@ -35075,6 +35112,30 @@
    "short": "Taylor Morrison",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Hockley Meadows Sec 5",
+     "kind": "Extension of approval",
+     "lots": 140,
+     "county": "Harris",
+     "owner": "Taylor Morrison of Texas, Inc.",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": null
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Redbud Sec 3",
+     "kind": "Extension of approval",
+     "lots": 77,
+     "county": "Harris",
+     "owner": "Taylor Morrison",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": null
+    }
+   ],
    "exec_named": false
   },
   {
@@ -36864,6 +36925,41 @@
    "cell": "clear|fail",
    "channel_line": "Bridgeland, The Woodlands and The Woodlands Hills, as each community's own builder page lists them.",
    "type": "land",
+   "plats": [
+    {
+     "when": "15 Oct 2026",
+     "plat": "Woodlands Village of Sterling Ridge Sec 94 partial replat no 1 replat no 1",
+     "kind": "Final plat",
+     "lots": 66,
+     "county": "Montgomery",
+     "owner": "Woodlands Land Development, L.P.",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "px": null
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Bridgeland Prairieland Village Sec 53",
+     "kind": "Final plat",
+     "lots": 76,
+     "county": "Harris",
+     "owner": "Bridgeland Development, LP, a Maryland limited partnership",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-bridgeland"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Bridgeland Creekland Village Sec 22 replat no 1",
+     "kind": "Replat, public hearing",
+     "lots": 80,
+     "county": "Harris",
+     "owner": "Howard Hughes",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-bridgeland"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -38727,6 +38823,30 @@
    "vol": null,
    "expansion": true,
    "type": "land",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Oakberry Trails Sec 5",
+     "kind": "Extension of approval",
+     "lots": 70,
+     "county": "Harris",
+     "owner": "LOB West, Inc",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-oakberry-trails"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Oakberry Trails Sec 12",
+     "kind": "Extension of approval",
+     "lots": 51,
+     "county": "Harris",
+     "owner": "LOB West, Inc",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-oakberry-trails"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -39037,6 +39157,74 @@
    "cell": "partial|fail",
    "channel_line": "Elyson, 3,600 acres in Katy, now inside Brookfield Residential",
    "type": "land",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Sec 73",
+     "kind": "Preliminary plat",
+     "lots": 38,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Sec 79",
+     "kind": "Preliminary plat",
+     "lots": 46,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 5",
+     "kind": "Preliminary plat",
+     "lots": 31,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 6",
+     "kind": "Preliminary plat",
+     "lots": 34,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 12",
+     "kind": "Preliminary plat",
+     "lots": 31,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    },
+    {
+     "when": "1 Oct 2026",
+     "plat": "Elyson Cy Fair Sec 13",
+     "kind": "Preliminary plat",
+     "lots": 36,
+     "county": "Harris",
+     "owner": "NASH FM 529, LLC",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": "hou-elyson"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -39160,6 +39348,19 @@
    "short": "Lennar",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Winward Falls Sec 1",
+     "kind": "Final plat",
+     "lots": 270,
+     "county": "Harris",
+     "owner": "Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": null
+    }
+   ],
    "exec_named": true
   },
   {
@@ -39233,6 +39434,19 @@
    "cell": "partial|fail",
    "channel_line": "Wholly owned by Lennar since 2000",
    "type": "land",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Winward Falls Sec 1",
+     "kind": "Final plat",
+     "lots": 270,
+     "county": "Harris",
+     "owner": "Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "px": null
+    }
+   ],
    "exec_named": false
   },
   {
@@ -43244,6 +43458,15 @@
    ]
   }
  ],
+ "plats": {
+  "n": 88,
+  "lots": 2466,
+  "big": 18,
+  "on_cards": 17,
+  "from": "1 Oct 2026",
+  "to": "15 Oct 2026",
+  "csv": "houston-plats.csv"
+ },
  "paid": [
   "https://clpha.org/news/2025/houston-housing-authority-names-jamie-bryant-president-ceo",
   "https://therealdeal.com/texas/2026/03/12/icon-opens-3d-home-printing-tech-to-outside-builders/",
