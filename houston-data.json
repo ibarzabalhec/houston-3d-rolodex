@@ -6,7 +6,7 @@
  "kicker": "Rolodex · Greater Houston · 2026-09-30",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "158 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "169 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "158",
+   "169",
    "firms screened",
    false,
    null
@@ -45,7 +45,7 @@
    }
   ],
   [
-   "3",
+   "5",
    "builders and developers hold all three counts",
    false,
    {
@@ -65,8 +65,8 @@
    }
   ],
   [
-   "104",
-   "of 158 with an executive named",
+   "114",
+   "of 169 with an executive named",
    true,
    {
     "dec": "any"
@@ -79,28 +79,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 107,
-   "partial": 43,
+   "clear": 109,
+   "partial": 52,
    "fail": 8,
-   "total": 158
+   "total": 169
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
-   "clear": 9,
-   "partial": 97,
+   "clear": 10,
+   "partial": 107,
    "fail": 52,
-   "total": 158
+   "total": 169
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 18,
+   "clear": 20,
    "partial": 17,
-   "fail": 123,
-   "total": 158
+   "fail": 132,
+   "total": 169
   }
  ],
  "matrix": {
@@ -117,7 +117,7 @@
    "fail": "No"
   }
  },
- "matrix_note": "<b>4 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>1</b> of the 4 holds all three counts.",
+ "matrix_note": "<b>5 firms</b> read Yes on both axes of this grid. The grid leaves out track record. <b>1</b> of the 5 holds all three counts.",
  "signal_labels": {
   "method_risk": "Method risk absorbed",
   "repeatable": "Repeatable volume",
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 198 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 223 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1725,8 +1725,8 @@
     "wide": null
    }
   ],
-  "closings_missing": 59,
-  "closings_base": 89,
+  "closings_missing": 70,
+  "closings_base": 100,
   "bands": [
    [
     25,
@@ -1753,22 +1753,22 @@
    {
     "group": "a",
     "label": "Holds all three counts",
-    "n": 3,
-    "yes": 2,
+    "n": 5,
+    "yes": 4,
     "partly": 1,
     "no": 0,
-    "named": 3,
-    "linked": 2
+    "named": 4,
+    "linked": 4
    },
    {
     "group": "b",
     "label": "Two of three counts",
-    "n": 46,
+    "n": 55,
     "yes": 3,
     "partly": 2,
-    "no": 41,
-    "named": 29,
-    "linked": 43
+    "no": 50,
+    "named": 38,
+    "linked": 52
    },
    {
     "group": "trade",
@@ -19641,10 +19641,10 @@
   "local": "Houston|San Leon"
  },
  "stats": {
-  "total": 158,
+  "total": 169,
   "adopters": 3,
-  "principals": 370,
-  "with_executive": 104
+  "principals": 395,
+  "with_executive": 114
  },
  "targets": [
   {
@@ -20352,6 +20352,250 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-244",
+   "entity_name": "City of Houston Housing and Community Development Department",
+   "short": "City of Houston Housing and Community Development Department",
+   "homepage_url": null,
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "8323946200",
+   "phone_source": "https://houstontx.gov/housing/ahdp.html",
+   "phone_label": "Main line, HCD",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "868 homes facilitated through the Affordable Home Development Program since 2021 (City of Houston HCD, June 2024)",
+   "mvp_screen": "Funds 80 hybrid 3D-printed homes at Zuri Gardens through a City forgivable loan. Its program builders hold the construction contracts.",
+   "synopsis": "City department that funds new single-family homes through the New Home Development Program, launched in 2018 with the Houston Land Bank, and the Affordable Home Development Program, launched in 2021. NHDP had completed 84 homes by June 2024 and AHDP had facilitated 868. Director Michael Nichols has led it since March 2024.",
+   "region": "City of Houston, with NHDP homes in Acres Homes, Settegast, Sunnyside, Fifth Ward and Third Ward",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "About $450 million in federal, state and local funds planned for the fiscal year (City of Houston HCD, June 2024).",
+     "url": "https://311.houstontx.gov/housing/communication/2024/0624.html"
+    },
+    {
+     "text": "$17.4 million invested through AHDP by June 2024.",
+     "url": "https://311.houstontx.gov/housing/communication/2024/0624.html"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "84 NHDP homes since 2018 by DSW and Mayberry Homes. AHDP developers bring their own plans, and the City requires one site plan per model."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "868 AHDP homes since 2021 and 84 NHDP homes since 2018 (City of Houston HCD, June 2024), multi-year counts."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "80 hybrid 3D-printed concrete homes at Zuri Gardens, funded by a $1,836,564.03 City forgivable loan through AHDP. Cole Klein Builders develops it and HiveASMBLD prints the walls."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "cell": "partial|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "Zuri Gardens",
+     "detail": "Minnetex, near Hobby Airport. 80 affordable hybrid 3D-printed concrete homes averaging 1,360 SF, by Cole Klein Builders.",
+     "url": "https://311.houstontx.gov/housing/homes/sh-garver-zuri.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Garver Gardens",
+     "detail": "Martindale Road and Carson Road, Minnetex. 200 homes, 160 affordable and 40 market rate, by Cole Klein Builders.",
+     "url": "https://311.houstontx.gov/housing/homes/sh-garver-zuri.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Robins Landing",
+     "detail": "Northeast Houston. 468 homes, 400 affordable and 68 market rate, by Houston Habitat for Humanity.",
+     "url": "https://houstontx.gov/housing/ahdp.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "New Home Development Program",
+     "detail": "DSW and Mayberry Homes build in Acres Homes, Settegast and Sunnyside. Mayberry Homes builds in Fifth Ward.",
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://311.houstontx.gov/housing/communication/2024/0624.html",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/ahdp.html",
+     "date": null
+    },
+    {
+     "url": "https://311.houstontx.gov/housing/homes/sh-garver-zuri.html",
+     "date": null
+    },
+    {
+     "url": "https://houston.culturemap.com/news/real-estate/innovative-3d-printed-affordable-housing-development-rises-in-houston/",
+     "date": null
+    },
+    {
+     "url": "https://cohips.houstontx.gov/moc/2024/michael-nichols-housing-director.html",
+     "date": null
+    },
+    {
+     "url": "https://rotaryhouston.org/stories/houston-s-housing-affordability-crisis",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Michael Nichols",
+     "role": "Director, Housing and Community Development",
+     "source_url": "https://311.houstontx.gov/housing/communication/2024/0624.html"
+    },
+    {
+     "name": "Cedrick LaSane",
+     "role": "Assistant Director, Single Family program",
+     "source_url": "https://311.houstontx.gov/housing/communication/2024/0624.html"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "no_web_presence": false,
+   "type": "agency",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-255",
+   "entity_name": "DSW Homes",
+   "short": "DSW Homes",
+   "homepage_url": "https://www.dswhomes.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Over 1,200 scattered lot rehabilitations and new construction projects a year on average, company-wide (City of Houston builder profile)",
+   "mvp_screen": "A City of Houston New Home Development Program builder. Its site describes modular homes on its New Jersey rebuilding work.",
+   "synopsis": "Disaster recovery and affordable housing builder established in November 2009, working in federally funded grant programs. It builds, repairs, elevates and replaces homes on scattered lots, in Galveston and Brick, New Jersey and now in Houston. The City of Houston names it a New Home Development Program builder in Acres Homes, Settegast and Sunnyside.",
+   "region": "Building in Houston's Acres Homes, Settegast and Sunnyside, with past work in Galveston and Brick, New Jersey",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "City of Houston contract for housing construction and repair services, $66,666,667 total and $11,046,554 in CDBG-DR funds, February 2019 to January 2024 (HUD Requirement Report, March 2025).",
+     "url": "https://recovery.houstontx.gov/dr17/reports/2025/HUD_Requirement_Report-031825.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "3 Houston neighborhoods in the city program, on scattered lots, with the Spruce as its sample 2-bedroom, 2-bath plan (City of Houston)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Over 1,200 scattered lot rehabilitations and new construction projects a year on average, company-wide (City of Houston). The figure includes repairs."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "2014: modular homes in its Hurricane Sandy recovery work in New Jersey, including the Rebuilding Union Beach grant homes (DSW Homes)."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "cell": "partial|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "City of Houston New Home Development Program",
+     "detail": "Builder in Acres Homes, Settegast and Sunnyside, with the Houston Land Bank. Sample plan: the Spruce, 2 bedrooms, 2 baths, 1-car garage.",
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://cohips.houstontx.gov/housing/homes/settegast.html",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "date": null
+    },
+    {
+     "url": "https://www.dswhomes.com/",
+     "date": null
+    },
+    {
+     "url": "https://preflight.houstontx.gov/housing/homes/sunnyside.html",
+     "date": null
+    },
+    {
+     "url": "https://recovery.houstontx.gov/dr17/reports/2025/HUD_Requirement_Report-031825.pdf",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Steve Mataro",
+     "role": "Owner",
+     "source_url": "https://www.dswhomes.com/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "homebuilder",
+   "exec_named": false
+  },
+  {
    "target_id": "HOU-060",
    "entity_name": "Cervelle Homes",
    "region": "Friendswood, Galveston-Harris",
@@ -20562,6 +20806,135 @@
     }
    ],
    "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-248",
+   "entity_name": "Houston Habitat for Humanity",
+   "short": "Houston Habitat for Humanity",
+   "homepage_url": "https://www.houstonhabitat.org/",
+   "company_li": null,
+   "team_url": "https://www.houstonhabitat.org/who-we-are/board-staff/",
+   "chain": null,
+   "phone": "7136719993",
+   "phone_source": "https://www.houstonhabitat.org/",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "32 new houses in 4 neighborhoods in 2024 (Houston Habitat 2024 Annual Report)",
+   "mvp_screen": "Builds its own homes from four named plans at Robins Landing. 32 new houses in 2024.",
+   "synopsis": "Houston nonprofit homebuilder, founded in 1987 and led by CEO Allison Hay. It builds and sells single-family homes to first-time buyers with an affordable mortgage, and all its homes have been Energy Star Certified for over 23 years. Its current master plan is Robins Landing, 127 acres in Northeast Houston.",
+   "region": "Houston, building in Northeast Houston, Third Ward and Settegast",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "$33 million secured for Robins Landing infrastructure, including $4.79 million from the City of Houston and $1.5 million from Habitat for Humanity International (Realty News Report, 2022).",
+     "url": "https://realtynewsreport.com/habitat-starts-houston-neighborhood/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Four named plans at Robins Landing in 2026: Virgo, Scorpio, Leo and Libra, from three to four bedrooms."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "32 new houses in 2024 (Houston Habitat 2024 Annual Report). 100 of the 450-plus homes at Robins Landing are Houston Habitat builds (Realty News Report, 2022)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "clear",
+    "innovation": "fail"
+   },
+   "cell": "clear|clear",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Robins Landing",
+     "detail": "Northeast Houston. 127 acres, more than 450 single-family homes. Houston Habitat builds 100. CastleRock Communities and Chesmar Homes build 300 (2022 plan). Two- to four-bedroom homes, availability in 2026.",
+     "url": "https://www.houstonhabitat.org/where-we-build/robins-landing/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Avenue Park",
+     "detail": "Houston Habitat neighborhood with published floor plans.",
+     "url": "https://www.houstonhabitat.org/where-we-build/avenue-park-neighborhood-floor-plans-houston-habitat-for-humanity/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Third Ward",
+     "detail": "Houston Habitat neighborhood with published floor plans.",
+     "url": "https://www.houstonhabitat.org/where-we-build/third-ward-neighborhood-floor-plans-houston-habitat-for-humanity/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.houstonhabitat.org/wp-content/uploads/sites/2/2025/09/0725_HFH_AnnualReport_2024-FINAL-DIGITAL.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/where-we-build/robins-landing/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/habitat-starts-houston-neighborhood/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/who-we-are/board-staff/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/who-we-are/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/where-we-build/avenue-park-neighborhood-floor-plans-houston-habitat-for-humanity/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonhabitat.org/where-we-build/third-ward-neighborhood-floor-plans-houston-habitat-for-humanity/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Allison Hay",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.houstonhabitat.org/who-we-are/board-staff/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "nonprofit",
    "exec_named": true
   },
   {
@@ -22938,6 +23311,123 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-245",
+   "entity_name": "Houston Land Bank",
+   "short": "Houston Land Bank",
+   "homepage_url": "https://www.houstonlandbank.org/",
+   "company_li": "https://www.linkedin.com/company/houlandbank/",
+   "team_url": null,
+   "chain": null,
+   "phone": "2816554600",
+   "phone_source": "https://www.houstonlandbank.org/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Over 100 affordable and resilient homes targeted by the Finding Home initiative (Houston Land Bank, December 2024)",
+   "mvp_screen": "Pairs its lots with a catalog of pre-approved home plans. Its Approved Homebuilders build the homes.",
+   "synopsis": "Houston nonprofit land bank that turns vacant and tax-foreclosed lots into affordable homes. It sells lots at a discount to Approved Homebuilders, who must build to a capped price, and supplies the lots for the City's New Home Development Program. President and CEO Christa Stoneham leads it.",
+   "region": "Houston, with lots in Acres Homes, Settegast, Sunnyside and Fifth Ward",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Finding Home is backed by Fannie Mae and the CenterPoint Energy Foundation (Houston Land Bank, December 2024).",
+     "url": "https://www.houstonlandbank.org/news"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "A catalog of pre-approved home plans for small lots (Houston Land Bank). The Front Porch Plan Book adds prototype designs from Rural Studio and three Houston architecture firms (Auburn, January 2026)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Over 100 homes targeted under Finding Home (Houston Land Bank, December 2024), a program total. Established builders take 5 to 10 or more lots at a time."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Finding Home",
+     "detail": "With Houston Community Land Trust, Fannie Mae and CenterPoint Energy Foundation. Over 100 affordable and resilient homes on vacant sites in seven neighborhoods.",
+     "url": "https://www.houstonlandbank.org/news",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "New Home Development Program",
+     "detail": "City of Houston program on HLB lots. Homes sell at 80% of AMI.",
+     "url": "https://www.houstonlandbank.org/about-us",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.houstonlandbank.org/news",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonlandbank.org/for-builders",
+     "date": null
+    },
+    {
+     "url": "https://cadc.auburn.edu/?p=47732",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonlandbank.org/",
+     "date": null
+    },
+    {
+     "url": "https://www.houstonlandbank.org/about-us",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/communication/2019/0607.html",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Christa Stoneham",
+     "role": "President and CEO",
+     "source_url": "https://www.houstonlandbank.org/news"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-076",
    "entity_name": "Imagination Homes",
    "region": "Meridiana, Rosharon",
@@ -24578,6 +25068,161 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-238",
+   "entity_name": "Ascendant Development",
+   "short": "Ascendant Development",
+   "homepage_url": "https://www.ascendantdevco.com/",
+   "company_li": null,
+   "team_url": "https://www.ascendantdevco.com/about",
+   "chain": null,
+   "phone": "7136009393",
+   "phone_source": "https://www.ascendantdevco.com/",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "320 one-story detached homes at Preserve at HW6, Fresno (Ascendant, ground broken January 2023)",
+   "mvp_screen": "Its own Ascendant Construction, led by President Sterling Laguarta, builds its jobs. Three Houston communities: Fresno, Kingwood and Tomball.",
+   "synopsis": "Houston developer and general contractor of apartments, student housing and build-to-rent homes, formed in 2022 and led by principals Richard Owen and David Kulkarni. Its Houston build-to-rent communities are Preserve at HW6 in Fresno (320 homes), Preserve at Woodridge in Kingwood (131 units) and Amplify Tomball (170 townhomes). The firm lists 5,000+ units developed and 50+ employees.",
+   "region": "Houston office on Southwest Freeway, with build-to-rent communities in Fresno, Kingwood and Tomball",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "A $21.2 million loan from Moody National Bank in 2021 for Preserve at Woodridge, per Yardi Matrix.",
+     "url": "https://www.multihousingnews.com/ascendant-development-delivers-houston-btr-project/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Three Houston build-to-rent communities since 2023 (Ascendant). Preserve at HW6 and Preserve at Woodridge are detached one-story homes. Amplify Tomball is three-story townhomes."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "320 homes at Fresno, 131 units at Kingwood and 170 at Tomball (Ascendant). These are project totals, not a yearly figure. Ascendant Construction oversees its own jobs."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Preserve at HW6",
+     "detail": "Fresno, 11923 State Highway 6. 320 one-story detached homes, 763 to 1,388 square feet. Ground broken January 2023.",
+     "url": "https://www.ascendantdevco.com/properties/preserve-at-hwy6",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Preserve at Woodridge",
+     "detail": "Kingwood, 4520 Woodridge Parkway. 131 units, 668 to 1,255 square feet. Leasing from summer 2023.",
+     "url": "https://www.ascendantdevco.com/properties/preserve-at-woodridge",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Amplify Tomball",
+     "detail": "Tomball, 17318 N. Eldridge Parkway. 170 three-story townhomes with garages. Completed August 2026.",
+     "url": "https://www.ascendantdevco.com/properties/amplify-tomball",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.multihousingnews.com/ascendant-breaks-ground-on-houston-btr-project/",
+     "date": null
+    },
+    {
+     "url": "https://www.multihousingnews.com/ascendant-development-delivers-houston-btr-project/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/build-to-rent-community-delivers-in-tomball/",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/construction",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/projects",
+     "date": null
+    },
+    {
+     "url": "https://www.connectcre.com/stories/ascendant-continues-btr-trend-in-houston-suburbs/",
+     "date": null
+    },
+    {
+     "url": "https://www.mannpublications.com/mannabouttown/2026/08/20/completion-of-amplify-tomball-adds-170-luxury-build-to-rent-townhomes-to-ascendants-expanding-greater-houston-portfolio/",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/properties/preserve-at-hwy6",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/properties/preserve-at-woodridge",
+     "date": null
+    },
+    {
+     "url": "https://www.ascendantdevco.com/properties/amplify-tomball",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Richard Owen",
+     "role": "Principal and co-founder",
+     "source_url": "https://www.multihousingnews.com/ascendant-breaks-ground-on-houston-btr-project/"
+    },
+    {
+     "name": "David Kulkarni",
+     "role": "Principal",
+     "source_url": "https://www.ascendantdevco.com/about"
+    },
+    {
+     "name": "Sterling Laguarta",
+     "role": "President, Ascendant Construction",
+     "source_url": "https://www.ascendantdevco.com/about"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "btr",
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-035",
    "entity_name": "Avenue CDC",
    "region": "Near Northside, Harris County",
@@ -24706,6 +25351,241 @@
    "cell": "partial|partial",
    "type": "nonprofit",
    "exec_named": false
+  },
+  {
+   "target_id": "HOU-239",
+   "entity_name": "Balcara Group",
+   "short": "Balcara Group",
+   "homepage_url": "https://balcaragroup.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "114 homes at Balcara at Meridiana, Iowa Colony, opened January 2024 (Bisnow)",
+   "mvp_screen": "A national homebuilder built the Meridiana homes to Balcara's design.",
+   "synopsis": "Houston developer of build-to-rent communities, led by CEO Paul Davey. In Greater Houston it built Balcara at Balmoral in Humble (163 homes, sold to Fundrise in 2021) and Balcara at Meridiana in Iowa Colony (114 homes, opened 2024). It has completed three more communities in the Tampa-St. Petersburg area, the latest Balcara 301 at Sun City with 120 townhomes.",
+   "region": "Houston, with build-to-rent communities in Humble and Iowa Colony and three in the Tampa-St. Petersburg area",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "Sold Balcara at Balmoral, 163 homes, to Fundrise in December 2021, with Montgomery Street Partners of Dallas.",
+     "url": "https://www.connectcre.com/stories/fundrise-acquires-balcara-at-balmoral-as-part-of-single-family-rental-strategy/"
+    },
+    {
+     "text": "Balcara at Meridiana offered for investment sale through Berkadia.",
+     "url": "https://properties.berkadia.com/balcara-meridiana-456761/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Two Houston communities since 2020 (Balcara), and three in the Tampa-St. Petersburg area. Balcara said in 2020 it planned to replicate the Balmoral model in Texas and Florida."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "114 homes at Meridiana in 2024 and 163 at Balmoral in 2020 (Balcara). These are project totals, not a yearly figure. A national homebuilder built the Meridiana homes, so Balcara chooses the builder and the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Balcara at Meridiana",
+     "detail": "Iowa Colony, in the Meridiana master plan off Highway 288. 114 three- and four-bedroom homes, 1,700 to 1,770 square feet, with two-car garages. Opened January 2024. Managed by Greystar.",
+     "url": "https://www.connectcre.com/stories/latest-houston-btr-project-marks-nearly-10000-units/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Balcara at Balmoral",
+     "detail": "Humble, in Land Tejas's Balmoral. 163 homes with two-car garages. Preleasing from December 2020.",
+     "url": "https://realtynewsreport.com/balcara-group-constructing-single-family-rental-homes-in-northeast-houston/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://realtynewsreport.com/balcara-group-constructing-single-family-rental-homes-in-northeast-houston/",
+     "date": null
+    },
+    {
+     "url": "https://www.multihousingnews.com/balcara-group-finishes-florida-btr-community/",
+     "date": null
+    },
+    {
+     "url": "https://properties.berkadia.com/balcara-meridiana-456761/",
+     "date": null
+    },
+    {
+     "url": "https://www.connectcre.com/stories/latest-houston-btr-project-marks-nearly-10000-units/",
+     "date": null
+    },
+    {
+     "url": "https://www.connectcre.com/stories/fundrise-acquires-balcara-at-balmoral-as-part-of-single-family-rental-strategy/",
+     "date": null
+    },
+    {
+     "url": "https://balcaragroup.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.bisnow.com/houston/news/deal-sheet/this-weeks-houston-deal-sheet-btr-community-opens-south-of-houston-122478",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Paul Davey",
+     "role": "CEO",
+     "source_url": "https://www.bisnow.com/houston/news/deal-sheet/this-weeks-houston-deal-sheet-btr-community-opens-south-of-houston-122478"
+    },
+    {
+     "name": "Ed Steffelin",
+     "role": "Chief Investment Officer",
+     "source_url": "https://realtynewsreport.com/balcara-group-constructing-single-family-rental-homes-in-northeast-houston/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "btr",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-250",
+   "entity_name": "Bay Area Habitat for Humanity Houston",
+   "short": "Bay Area Habitat for Humanity Houston",
+   "homepage_url": "https://www.bahfh.org",
+   "company_li": null,
+   "team_url": "https://bahfh.org/staff/",
+   "chain": null,
+   "phone": "2813373590",
+   "phone_source": "https://www.bahfh.org",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "172nd home dedicated since 1991, in Texas City in April 2024 (Marathon Petroleum, 2024)",
+   "mvp_screen": "Builds on scattered lots in Galveston County. Four sites on its 2026 list.",
+   "synopsis": "Habitat for Humanity affiliate founded in 1991, led by Executive Director Megan Scheffer. It builds homes with families and volunteers in southeast Harris County, Galveston County and northern Brazoria County, from Texas City and La Porte to League City and Alvin. Its homes sell on no-interest mortgages.",
+   "region": "Clear Lake office on Gemini Street, building in southeast Harris, Galveston and northern Brazoria counties",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Four homes on its 2026 site list, in Dickinson, La Porte and Texas City."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "172 homes dedicated from 1991 to April 2024 (Marathon Petroleum, 2024). A cumulative total, with no yearly figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Texas City homes",
+     "detail": "Three-bedroom home dedicated April 2024, the 172nd since 1991, sponsored by Marathon Petroleum's Galveston Bay refinery. Two more Texas City homes on the 2026 site list.",
+     "url": "https://www.marathonpetroleum.com/Newsroom/Company-News/Galveston-Bay-team-helps-make-dream-come-true-for-first-time-homeowner/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Dickinson and La Porte homes",
+     "detail": "One home in each city on the 2026 site list.",
+     "url": "https://www.bahfh.org",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.marathonpetroleum.com/Newsroom/Company-News/Galveston-Bay-team-helps-make-dream-come-true-for-first-time-homeowner/",
+     "date": null
+    },
+    {
+     "url": "https://www.bahfh.org",
+     "date": null
+    },
+    {
+     "url": "https://bahfh.org/staff/",
+     "date": null
+    },
+    {
+     "url": "https://bahfh.org/about/",
+     "date": null
+    },
+    {
+     "url": "https://www.habitat.org/us-tx/houston/bay-area-hfh-houston",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Megan Scheffer",
+     "role": "Executive Director",
+     "source_url": "https://bahfh.org/staff/"
+    },
+    {
+     "name": "Charles Broussard",
+     "role": "Construction Project & Land Acquisitions Manager",
+     "source_url": "https://bahfh.org/staff/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "nonprofit",
+   "exec_named": true
   },
   {
    "target_id": "HOU-045",
@@ -24931,6 +25811,138 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-243",
+   "entity_name": "Harris County Housing and Community Development",
+   "short": "Harris County Housing and Community Development",
+   "homepage_url": "https://hcd.harriscountytx.gov/About-Us",
+   "company_li": null,
+   "team_url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team",
+   "chain": null,
+   "phone": "8329274955",
+   "phone_source": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "161 homes in three acreage developments, Orchard Place, Providence Place and East Aldine Estates (Harris County HCD, 2025)",
+   "mvp_screen": "Develops its own acreage sites on County-owned land. Three developments under way: Orchard Place, Providence Place and East Aldine Estates.",
+   "synopsis": "Harris County department that runs the Single-Family New Construction Program, which sells new homes to low-to-moderate-income buyers with up to 45% assistance. It has bought 71 homes from builders and sold 66, and has three acreage developments under way with 161 homes. The program carries a $60 million budget.",
+   "region": "Houston office at 1111 Fannin Street, with homes across Harris County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "$60 million budget for the Single-Family New Construction Program (Harris County HCD).",
+     "url": "https://hcd.harriscountytx.gov/Maps/Single-Family-Housing-Development"
+    },
+    {
+     "text": "$18,443,110.78 spent on 71 homes bought from builders in 10 communities, table of October 16, 2025.",
+     "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "161 homes across three developments, each with its own plan range. 1,496 to 1,940 SF at Orchard Place, 1,628 to 2,209 SF at Providence Place, 1,399 to 1,871 SF at East Aldine Estates."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "161 homes in three acreage developments (Harris County HCD), a program total. About 80 of them were due in 2025."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Orchard Place",
+     "detail": "Pasadena, Vista Road and Westside Drive. 54 homes, 3 bedrooms, 1,496 to 1,940 SF. Home construction, due summer 2025.",
+     "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Providence Place",
+     "detail": "16755 Ella Boulevard, Houston. 60 homes, 2 to 4 bedrooms, 1,628 to 2,209 SF. Pre-construction, due late summer 2025.",
+     "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "East Aldine Estates",
+     "detail": "2201 Connorvale Road, Aldine. 47 homes, 3 bedrooms, 1,399 to 1,871 SF. Infrastructure construction, due early 2026.",
+     "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction",
+     "date": null
+    },
+    {
+     "url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team",
+     "date": null
+    },
+    {
+     "url": "https://hcd.harriscountytx.gov/About-Us",
+     "date": null
+    },
+    {
+     "url": "https://hcd.harriscountytx.gov/Maps/Single-Family-Housing-Development",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Thao Costis",
+     "role": "Executive Director",
+     "source_url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team"
+    },
+    {
+     "name": "Marcia Cameron-Denton",
+     "role": "Director of Single-Family Housing Development",
+     "source_url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team"
+    },
+    {
+     "name": "Tory Gunsolley",
+     "role": "Chief Programs Officer",
+     "source_url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team"
+    },
+    {
+     "name": "Anita Green",
+     "role": "Chief Operating Officer",
+     "source_url": "https://hcd.harriscountytx.gov/About-Us/Leadership-Team"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-219",
    "entity_name": "Huntington Homes",
    "short": "Huntington Homes",
@@ -25149,6 +26161,375 @@
      "what": "Began sales on 60-foot homesites at The George, a 1,500-acre Richmond community planned for 4,000 homesites."
     }
    ],
+   "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-240",
+   "entity_name": "Landmark Properties",
+   "short": "Landmark Properties",
+   "homepage_url": "https://www.landmarkproperties.com/",
+   "company_li": null,
+   "team_url": "https://www.landmarkproperties.com/management-team/",
+   "chain": null,
+   "phone": "7065431910",
+   "phone_source": "https://www.landmarkproperties.com/",
+   "phone_label": "Main line, Athens, Georgia",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "190 build-to-rent homes at The Everstead at Conroe, first phase completed April 2025 (Landmark Properties)",
+   "mvp_screen": "Landmark Construction, its own arm, was general contractor at both Houston Everstead communities. Run from Athens, Georgia.",
+   "synopsis": "Athens, Georgia developer of student, multifamily and build-to-rent housing, led by Chairman and CEO J. Wesley Rogers, with $15 billion in assets under management company-wide. Its build-to-rent division launched in 2021 and builds under The Everstead name. In Greater Houston it built The Everstead at Windrose in Spring (194 homes, opened 2024) and The Everstead at Conroe (190 homes, first phase completed 2025).",
+   "region": "Athens, Georgia headquarters, with Everstead build-to-rent communities in Spring and Conroe",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "The Everstead at Conroe is a joint venture with Open House Group Co., Ltd., listed on the Tokyo Stock Exchange, with financing from Wintrust.",
+     "url": "https://www.landmarkproperties.com/landmark-properties-celebrates-first-phase-completion-at-the-everstead-at-conroe"
+    },
+    {
+     "text": "The Everstead at Windrose was developed with Principal Real Estate Investors, with financing arranged by TSB Capital Advisors (2022).",
+     "url": "https://landmarkproperties.com/landmark-properties-announces-construction-start-for-second-build-to-rent-neighborhood-in-spring-texas"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Two Everstead communities in Houston, 194 and 190 homes, each a mix of townhouses, single-family and cottage-style homes (Landmark). The same Everstead mix is in Madison, Alabama."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "194 homes at Spring and 190 at Conroe (Landmark). These are project totals, not a yearly figure. Landmark Construction was general contractor on both."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "The Everstead at Windrose",
+     "detail": "Spring, 7801 FM 2920. 194 townhouses, single-family and cottage-style homes. Construction began October 2022. Opened 2024. Partner Principal Real Estate Investors.",
+     "url": "https://landmarkproperties.com/landmark-properties-announces-construction-start-for-second-build-to-rent-neighborhood-in-spring-texas",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "The Everstead at Conroe",
+     "detail": "Conroe, 7711 Longmire Road, 23.5 acres. 190 ranch homes and townhomes in 136 one- and two-story buildings. Construction began February 2024. First phase completed April 2025.",
+     "url": "https://www.landmarkproperties.com/landmark-properties-starts-construction-on-the-everstead-at-conroe-a-190-unit-build-to-rent-community-in-suburban-houston/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.landmarkproperties.com/landmark-properties-celebrates-first-phase-completion-at-the-everstead-at-conroe",
+     "date": null
+    },
+    {
+     "url": "https://landmarkproperties.com/landmark-properties-announces-construction-start-for-second-build-to-rent-neighborhood-in-spring-texas",
+     "date": null
+    },
+    {
+     "url": "https://www.landmarkproperties.com/landmark-properties-starts-construction-on-the-everstead-at-conroe-a-190-unit-build-to-rent-community-in-suburban-houston/",
+     "date": null
+    },
+    {
+     "url": "https://www.newswire.com/news/landmark-properties-announces-construction-start-for-companys-first-21833380",
+     "date": null
+    },
+    {
+     "url": "https://www.landmarkproperties.com/management-team/",
+     "date": null
+    },
+    {
+     "url": "https://www.landmarkproperties.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "J. Wesley Rogers",
+     "role": "Chairman and CEO",
+     "source_url": "https://www.landmarkproperties.com/management-team/"
+    },
+    {
+     "name": "Jason Doornbos",
+     "role": "Chief Development Officer",
+     "source_url": "https://www.landmarkproperties.com/landmark-properties-celebrates-first-phase-completion-at-the-everstead-at-conroe"
+    },
+    {
+     "name": "Arthur Templin",
+     "role": "Chief Operating Officer, Development and Construction",
+     "source_url": "https://www.landmarkproperties.com/management-team/"
+    },
+    {
+     "name": "Kyle Moore",
+     "role": "Senior Vice President, Construction",
+     "source_url": "https://www.landmarkproperties.com/management-team/"
+    },
+    {
+     "name": "Justin Hu",
+     "role": "Managing Director, Investment Management (oversees the single family build-to-rent platform)",
+     "source_url": "https://www.landmarkproperties.com/management-team/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "btr",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-241",
+   "entity_name": "Lēva Living",
+   "short": "Lēva Living",
+   "homepage_url": "https://www.levaliving.com/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "160 build-to-rent homes at Humble Ranch, Atascocita, on a $36.2 million construction loan from HALL Structured Finance (REBusiness)",
+   "mvp_screen": "Geis Development builds its homes. Its Atascocita community is financed by a $36.2 million construction loan.",
+   "synopsis": "Houston build-to-rent developer co-founded by CEO Bobby C. Orr, Jr., founder of Orr Commercial, and President Jennifer Orr. Its first community is on 16 acres at 17260 W. Lake Houston Parkway in Atascocita, with 160 one- to three-bedroom homes. Construction began in June 2022, with completion expected in the third quarter of 2026.",
+   "region": "Houston, with one build-to-rent community on W. Lake Houston Parkway in Atascocita",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "$36.2 million construction loan from HALL Structured Finance for Humble Ranch, arranged by Broadsword Investors.",
+     "url": "https://rebusinessonline.com/hsf-provides-36-2m-construction-loan-for-build-to-rent-project-in-atascocita-texas/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "One Houston community, 160 homes in one-, two- and three-bedroom plans of 773 to 1,358 square feet (Lēva Living, 2022)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "160 homes at Atascocita from 2022 to 2026 (Lēva Living). That is a project total, not a yearly figure. Geis Development builds the homes, so Lēva Living chooses the builder and the wall."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Humble Ranch",
+     "detail": "Atascocita, 17260 W. Lake Houston Parkway, 16 acres. 160 units: one-bedroom duplexes and two- and three-bedroom detached homes, one and two stories with metal roofs. Builder Geis Development, architect Danze & Davin. Ground broken June 2022, completion expected third quarter 2026.",
+     "url": "https://rebusinessonline.com/hsf-provides-36-2m-construction-loan-for-build-to-rent-project-in-atascocita-texas/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://rebusinessonline.com/hsf-provides-36-2m-construction-loan-for-build-to-rent-project-in-atascocita-texas/",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/lake-houston-humble-kingwood/housing-real-estate/leva-living-to-break-ground-in-february-on-new-16-acre-community-in-atascocita/",
+     "date": null
+    },
+    {
+     "url": "https://realtynewsreport.com/bobby-orr-firm-building-single-family-rentals/",
+     "date": null
+    },
+    {
+     "url": "https://www.levaliving.com/",
+     "date": null
+    },
+    {
+     "url": "https://communityimpact.com/lake-houston-humble-kingwood/impacts/leva-living-begins-construction-on-single-family-rental-neighborhood-in-atascocita/",
+     "date": null
+    },
+    {
+     "url": "https://www.multihousingnews.com/leva-living-plans-houston-area-sfr-community/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Bobby C. Orr, Jr.",
+     "role": "CEO and co-founder",
+     "source_url": "https://realtynewsreport.com/bobby-orr-firm-building-single-family-rentals/"
+    },
+    {
+     "name": "Jennifer Orr",
+     "role": "President and co-founder",
+     "source_url": "https://communityimpact.com/lake-houston-humble-kingwood/housing-real-estate/leva-living-to-break-ground-in-february-on-new-16-acre-community-in-atascocita/"
+    },
+    {
+     "name": "Jeff Williams",
+     "role": "Executive Vice President of Finance and co-founder",
+     "source_url": "https://communityimpact.com/lake-houston-humble-kingwood/housing-real-estate/leva-living-to-break-ground-in-february-on-new-16-acre-community-in-atascocita/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "btr",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-254",
+   "entity_name": "Mayberry Homes, Inc.",
+   "short": "Mayberry Homes, Inc.",
+   "homepage_url": "https://mayberryhomes.net/",
+   "company_li": null,
+   "team_url": "https://mayberryhomes.net/about-us/",
+   "chain": null,
+   "phone": "7135238585",
+   "phone_source": "https://mayberryhomes.net/contact/",
+   "phone_label": "Main line, Houston",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "40 affordable single-family detached homes at Southern Palms on Martin Luther King Jr Blvd (City of Houston public notice, September 2022)",
+   "mvp_screen": "A City of Houston New Home Development Program builder in four neighborhoods. CEO Sharone Mayberry.",
+   "synopsis": "Houston builder at 4412 Almeda Road, led by CEO Sharone Mayberry, with over 31 years of building (Mayberry Homes). It sells homes in its Exquisite, Executive and Signature series, townhomes and homes on buyers' lots, aimed at low and moderate income families. The City of Houston names it a New Home Development Program builder in Fifth Ward, Acres Homes, Settegast and Sunnyside.",
+   "region": "Houston office on Almeda Road, building in Fifth Ward, Acres Homes, Settegast, Sunnyside and OST-South Union",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "City of Houston forgivable loan of up to $2,000,000 in Uptown TIRZ Series 2021 Affordable Homes Funds for Southern Palms (public notice, September 2022).",
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2022/09/PN_ADHP_Southern_Palms-E-091622.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "40 homes at Southern Palms (City of Houston, 2022). Its Exquisite, Executive and Signature series plans are tailored to each buyer."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No published yearly figure. Southern Palms is a 40-home project (City of Houston, 2022)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Southern Palms",
+     "detail": "5302, 5306 and 5320 Martin Luther King Jr Blvd, OST-South Union. 40 affordable single-family detached homes for buyers at 100% to 120% of AMI. Homebuyer Fair on December 3, 2022.",
+     "url": "https://houstontx.gov/housing/homes/ost-mlk.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "City of Houston New Home Development Program",
+     "detail": "Builder in Fifth Ward, Acres Homes, Settegast and Sunnyside, with the Houston Land Bank. Up to $50,000 in buyer subsidy.",
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2022/09/PN_ADHP_Southern_Palms-E-091622.pdf",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/homes/ost-mlk.html",
+     "date": null
+    },
+    {
+     "url": "https://mayberryhomes.net/",
+     "date": null
+    },
+    {
+     "url": "https://mayberryhomes.net/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://mayberryhomes.net/contact/",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/nhdp.html",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/housing/homes/fifth-ward.html",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Sharone Mayberry",
+     "role": "CEO",
+     "source_url": "https://mayberryhomes.net/about-us/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
    "type": "homebuilder",
    "exec_named": true
   },
@@ -37435,6 +38816,20 @@
     "v": null
    },
    {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": true,
+    "fit": "partial",
+    "exec": false,
+    "v": null
+   },
+   {
     "cat": 0,
     "tr": false,
     "fit": "clear",
@@ -37447,6 +38842,13 @@
     "fit": "clear",
     "exec": true,
     "v": 45.0
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "clear",
+    "exec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -37589,6 +38991,13 @@
     "v": 1056.0
    },
    {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 0,
     "tr": false,
     "fit": "partial",
@@ -37697,7 +39106,28 @@
     "cat": 1,
     "tr": false,
     "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
     "exec": false,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
     "v": null
    },
    {
@@ -37715,7 +39145,35 @@
     "v": null
    },
    {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": 1,
     "tr": false,
     "fit": "partial",
     "exec": true,
@@ -38499,9 +39957,9 @@
     "v": null
    }
   ],
-  "n": 158,
-  "track": 18,
-  "exec": 104,
+  "n": 169,
+  "track": 20,
+  "exec": 114,
   "band": [
    25,
    400
@@ -38513,11 +39971,11 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 73
+    "n": 75
    },
    {
     "label": "Developers",
-    "n": 15
+    "n": 19
    },
    {
     "label": "General contractors",
@@ -40424,12 +41882,17 @@
     "HOU-201",
     "HOU-202",
     "HOU-204",
-    "HOU-223"
+    "HOU-223",
+    "HOU-239"
    ],
    "k": [
     [
      "HOU-223",
      "Meridiana"
+    ],
+    [
+     "HOU-239",
+     "Balcara at Meridiana"
     ]
    ]
   },
@@ -41126,6 +42589,7 @@
   "https://therealdeal.com/texas/houston/2025/08/21/radom-capital-asana-partners-secure-houston-multifamily-loan/",
   "https://therealdeal.com/texas/houston/2025/12/30/brohn-homes-plants-flag-in-houston-with-historymaker-deal/",
   "https://www.bisnow.com/houston/news/construction-development/skanska-overcomes-challenges-on-texas-sized-tiltwall-project-131013",
+  "https://www.bisnow.com/houston/news/deal-sheet/this-weeks-houston-deal-sheet-btr-community-opens-south-of-houston-122478",
   "https://www.bisnow.com/houston/news/industrial/provident-realty-advisors-hires-christen-vestal-to-lead-forthcoming-houston-office-116393",
   "https://www.bisnow.com/houston/news/office/modernized-medical-office-building-to-break-ground-in-katy-90935",
   "https://www.bisnow.com/news/houston/construction-development/next-stop-apartments-3d-printed-house-lays-foundation-for-bigger-projects-ahead-117549",
