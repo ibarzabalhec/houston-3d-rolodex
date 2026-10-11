@@ -1,9 +1,9 @@
 {
  "version": "2.0",
- "build": 124,
- "last_updated": "2026-10-09",
- "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-09",
- "kicker": "Rolodex · Greater Houston · 2026-10-09",
+ "build": 123,
+ "last_updated": "2026-10-10",
+ "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
+ "kicker": "Rolodex · Greater Houston · 2026-10-10",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
  "meta_description": "174 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
@@ -20134,6 +20134,18 @@
    "vol": null,
    "expansion": true,
    "type": "developer",
+   "registrations": [
+    {
+     "when": "16 Sep 2026",
+     "name": "Margaritaville Cottages Temporary",
+     "owner": "RREAF Grand Beach Development, LP",
+     "cost": 500000.0,
+     "work": "New construction",
+     "city": "Galveston",
+     "start": "20 Sep 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001168"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -21679,7 +21691,18 @@
      "owner": "Woodmere Development Co.",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
+    },
+    {
+     "when": "15 Oct 2026",
+     "plat": "Sheldon Ridge GP",
+     "kind": "General plan",
+     "lots": null,
+     "county": "Harris",
+     "owner": "Woodmere Development Co.",
+     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93918/OriginalFiles/SR_GENERAL_PLAN_09-26.pdf?sv=2021-08-06&se=2051-10-05T12%3A31%3A13Z&sr=b&sp=r&sig=Nc3u7o07ymlnVgk2PPPb2mrqjqbC78Lm%2FJqIh%2F3Ob6A%3D",
+     "doc": "Plat filed with the Planning Commission",
+     "acres": 378.381
     }
    ],
    "exec_named": true
@@ -24555,6 +24578,19 @@
     }
    ],
    "type": "homebuilder",
+   "plats": [
+    {
+     "when": "1 Oct 2026",
+     "plat": "Lexington Gardens",
+     "kind": "Replat",
+     "lots": 2,
+     "county": "Harris",
+     "owner": "Sandcastle Homes Inc",
+     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
+     "doc": "Planning Commission action agenda",
+     "acres": null
+    }
+   ],
    "exec_named": true
   },
   {
@@ -33603,6 +33639,18 @@
    "short": "D.R. Horton",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "registrations": [
+    {
+     "when": "16 Jul 2026",
+     "name": "D.R. Horton Houston North Division Office",
+     "owner": "DR Horton Texas Ltd",
+     "cost": 25000000.0,
+     "work": "New construction",
+     "city": "Spring",
+     "start": "1 Oct 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025482"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -33722,6 +33770,18 @@
    "short": "PulteGroup",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "registrations": [
+    {
+     "when": "11 Aug 2026",
+     "name": "Mavera Amenity Center Phase 2 Wiffleball Field Improvements",
+     "owner": "Kevin Beard",
+     "cost": 900000.0,
+     "work": "New construction",
+     "city": "Conroe",
+     "start": "5 Oct 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027563"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -33978,6 +34038,39 @@
    "plats": [
     {
      "when": "15 Oct 2026",
+     "plat": "Gardenlight City Place Sec 1",
+     "kind": "Preliminary plat",
+     "lots": 208,
+     "county": "Harris",
+     "owner": "Brookfield Properties",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "acres": null
+    },
+    {
+     "when": "15 Oct 2026",
+     "plat": "Gardenlight City Place Sec 3",
+     "kind": "Replat",
+     "lots": 94,
+     "county": "Harris",
+     "owner": "Brookfield Properties",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "acres": null
+    },
+    {
+     "when": "15 Oct 2026",
+     "plat": "Gardenlight City Place Sec 2",
+     "kind": "Replat",
+     "lots": 51,
+     "county": "Harris",
+     "owner": "Brookfield Properties",
+     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
+     "doc": "Planning Commission upcoming agenda",
+     "acres": null
+    },
+    {
+     "when": "15 Oct 2026",
      "plat": "Midline Sec 11",
      "kind": "Replat",
      "lots": 55,
@@ -33985,7 +34078,18 @@
      "owner": "Brookfield Properties",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
+    },
+    {
+     "when": "15 Oct 2026",
+     "plat": "Gardenlight City Place GP",
+     "kind": "General plan",
+     "lots": null,
+     "county": "Harris",
+     "owner": "Brookfield Properties",
+     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93907/OriginalFiles/3293-00001_Gardenlight_City_Place_General_Plan_10-02-2026.pdf?sv=2021-08-06&se=2051-10-02T19%3A22%3A51Z&sr=b&sp=r&sig=z5J13bhSiBPdOr1LkgIbylPOZCOJW%2BDc4g6L93h5m0k%3D",
+     "doc": "Plat filed with the Planning Commission",
+     "acres": 420.6
     },
     {
      "when": "1 Oct 2026",
@@ -33996,7 +34100,7 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -34007,7 +34111,7 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -34018,7 +34122,7 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -34029,7 +34133,7 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -34040,7 +34144,7 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -34051,7 +34155,19 @@
      "owner": "NASH FM 529, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-elyson"
+     "acres": null
+    }
+   ],
+   "registrations": [
+    {
+     "when": "6 Oct 2026",
+     "name": "Midline Amenity Detention Ponds Phase 2 126-030",
+     "owner": "BC-SB BAYBROOK JV",
+     "cost": 634000.0,
+     "work": "New construction",
+     "city": "Webster",
+     "start": "16 Nov 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002832"
     }
    ],
    "exec_named": true
@@ -34615,6 +34731,28 @@
    "vol": null,
    "expansion": true,
    "type": "homebuilder",
+   "registrations": [
+    {
+     "when": "22 Sep 2026",
+     "name": "Toll Brother's Regency at Sienna Clubhouse",
+     "owner": "Toll-Gtis Property Owner, LLC",
+     "cost": 10000000.0,
+     "work": "New construction",
+     "city": "Missouri City",
+     "start": "19 Oct 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001713"
+    },
+    {
+     "when": "3 Sep 2026",
+     "name": "Oakhill Reserve Amenity Pool House",
+     "owner": "Toll Southwest, LLC",
+     "cost": 3000000.0,
+     "work": "New construction",
+     "city": "Tomball",
+     "start": "19 Dec 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000351"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -34839,7 +34977,7 @@
      "owner": "LGI Homes - Texas, LLC",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
     },
     {
      "when": "15 Oct 2026",
@@ -34850,7 +34988,7 @@
      "owner": "LGI HOMES - TEXAS, LLC, a Texas limited liability company",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
     }
    ],
    "exec_named": true
@@ -34960,6 +35098,18 @@
    "short": "M/I Homes",
    "cell": "clear|fail",
    "type": "homebuilder",
+   "registrations": [
+    {
+     "when": "7 Jul 2026",
+     "name": "Hardscape and Landscape to Serve Trinity Landing Recreation Center",
+     "owner": "M/I Homes of Houston LLC",
+     "cost": 203000.0,
+     "work": "New construction",
+     "city": "Dayton",
+     "start": "1 Aug 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024650"
+    }
+   ],
    "exec_named": true
   },
   {
@@ -35087,7 +35237,7 @@
      "owner": "Meritage Homes",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
     }
    ],
    "exec_named": false
@@ -35214,7 +35364,7 @@
      "owner": "Taylor Morrison of Texas, Inc.",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": null
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -35225,7 +35375,7 @@
      "owner": "Taylor Morrison",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": null
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -35236,7 +35386,19 @@
      "owner": "TPHTM 1464, LLC",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": null
+     "acres": null
+    }
+   ],
+   "registrations": [
+    {
+     "when": "9 Jul 2026",
+     "name": "Blue Creek Trails Rec Center Park Amenities",
+     "owner": "Taylor Morrison of Texas",
+     "cost": 1740000.0,
+     "work": "New construction",
+     "city": "Richmond",
+     "start": "7 Sep 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024852"
     }
    ],
    "exec_named": false
@@ -37038,7 +37200,7 @@
      "owner": "Woodlands Land Development, L.P.",
      "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
      "doc": "Planning Commission upcoming agenda",
-     "px": null
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -37049,7 +37211,7 @@
      "owner": "Bridgeland Development, LP, a Maryland limited partnership",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-bridgeland"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -37060,7 +37222,69 @@
      "owner": "Howard Hughes",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-bridgeland"
+     "acres": null
+    }
+   ],
+   "registrations": [
+    {
+     "when": "23 Sep 2026",
+     "name": "BCP 11 North Full Lake Amenity",
+     "owner": "Bridgeland Development, LP",
+     "cost": 1559000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "1 Dec 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001797"
+    },
+    {
+     "when": "10 Sep 2026",
+     "name": "Bridgeland Prairieland Section 45 Amenity and Neighborhood Park",
+     "owner": "Bridgeland Development",
+     "cost": 20000000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "2 Nov 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000746"
+    },
+    {
+     "when": "24 Aug 2026",
+     "name": "Creekland Village Section 23 Amenity",
+     "owner": "Bridgeland Development, LP",
+     "cost": 2000000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "30 Nov 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028593"
+    },
+    {
+     "when": "17 Aug 2026",
+     "name": "Creekland Village Section 24 Amenity",
+     "owner": "Bridgeland Development, LP",
+     "cost": 2000000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "30 Nov 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028056"
+    },
+    {
+     "when": "14 Jul 2026",
+     "name": "Bridgeland Prairieland Section 47 Amenity",
+     "owner": "Bridgeland Development",
+     "cost": 1300000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "15 Sep 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025203"
+    },
+    {
+     "when": "7 Jul 2026",
+     "name": "Bridgeland Creekland Village Section 14 & 16 Active Adult Phase 1A Amenity landscape",
+     "owner": "Bridgeland Development",
+     "cost": 1250000.0,
+     "work": "New construction",
+     "city": "Cypress",
+     "start": "27 Jul 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024608"
     }
    ],
    "exec_named": false
@@ -37206,6 +37430,18 @@
    "cell": "clear|partial",
    "channel_line": "Valley Ranch, Austin Point, Granger Pines and Cielo",
    "type": "land",
+   "registrations": [
+    {
+     "when": "10 Sep 2026",
+     "name": "Bluestem Phase 2 Recreation Center",
+     "owner": "Bluestem Development Company LLC",
+     "cost": 950000.0,
+     "work": "New construction",
+     "city": "Brookshire",
+     "start": "1 Sep 2025",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000728"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -37716,6 +37952,18 @@
    "cell": "clear|fail",
    "channel_line": "Sunterra in Katy, eighteen builders on its own builder page",
    "type": "land",
+   "registrations": [
+    {
+     "when": "11 Sep 2026",
+     "name": "Sunterra Lakes South Recreation Center Splashpad and Restroom Pavilion",
+     "owner": "Astro Sunterra West LP",
+     "cost": 2839900.0,
+     "work": "New construction",
+     "city": "Katy",
+     "start": "1 Oct 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000868"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -38260,6 +38508,18 @@
    "cell": "clear|fail",
    "channel_line": "Fifteen Houston masterplans by its own count, including Sienna, Cross Creek Ranch, Harvest Green, Veranda, Jordan Ranch, Woodforest and Grand Central Park",
    "type": "land",
+   "registrations": [
+    {
+     "when": "21 Jul 2026",
+     "name": "Grange Amenity Complex",
+     "owner": "Johnson Development",
+     "cost": 16045302.0,
+     "work": "New construction",
+     "city": "Katy",
+     "start": "26 Oct 2026",
+     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025795"
+    }
+   ],
    "exec_named": false
   },
   {
@@ -38936,7 +39196,7 @@
      "owner": "LOB West, Inc",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-oakberry-trails"
+     "acres": null
     },
     {
      "when": "1 Oct 2026",
@@ -38947,7 +39207,7 @@
      "owner": "LOB West, Inc",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": "hou-oakberry-trails"
+     "acres": null
     }
    ],
    "exec_named": true
@@ -39393,7 +39653,7 @@
      "owner": "Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": null
+     "acres": null
     }
    ],
    "exec_named": true
@@ -39479,7 +39739,7 @@
      "owner": "Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve",
      "url": "https://plattracker.powerappsportals.us/agenda-documents/",
      "doc": "Planning Commission action agenda",
-     "px": null
+     "acres": null
     }
    ],
    "exec_named": false
@@ -43493,10 +43753,10 @@
   }
  ],
  "plats": {
-  "n": 88,
+  "n": 92,
   "lots": 2466,
   "big": 18,
-  "on_cards": 20,
+  "on_cards": 26,
   "from": "1 Oct 2026",
   "to": "15 Oct 2026",
   "csv": "houston-plats.csv"

@@ -27,7 +27,7 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-01,Haight Plaza Park,Replat,2,0.115,Harris,,New Era Development & Land Services,,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Jezebel Estates,Replat,2,0.1263,Harris,"Hearthstone Homes, LP",Cameron Architects Inc.,,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Lawrence Heights,Replat,2,0.138,Harris,Core Builders,The Interfield Group,,https://plattracker.powerappsportals.us/agenda-documents/
-2026-10-01,Lexington Gardens,Replat,2,0.1435,Harris,Sandcastle Homes Inc,MOMENTUM EGINEERING,,https://plattracker.powerappsportals.us/agenda-documents/
+2026-10-01,Lexington Gardens,Replat,2,0.1435,Harris,Sandcastle Homes Inc,MOMENTUM EGINEERING,HOU-066,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Miriam Grove,Replat,2,0.1141,Harris,Maybrook Homes,"Total Surveyors, Inc.",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Reza Falls,Replat,2,0.1676,Harris,,Survey Solutions of Texas,,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-01,Winged Oaks,Replat,20,8.1535,Harris,Altar Group,DVJ GROUP,,https://plattracker.powerappsportals.us/agenda-documents/
@@ -46,11 +46,11 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-01,Villas at Cullen,Extension of approval,3,0.1579,Harris,,"CE Engineers & Development Consultants, INC",,https://plattracker.powerappsportals.us/agenda-documents/
 2026-10-15,Magnolia Residential,Replat,3,0.2189,Harris,,CGEA|Planning + Design,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Freeman ROW,Replat,3,0.1089,Harris,Revolution Homes,The Interfield Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
-2026-10-15,Gardenlight City Place Sec 1,Preliminary plat,208,55.5,Harris,Brookfield Properties,"LJA, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
-2026-10-15,Gardenlight City Place Sec 3,Replat,94,25.8,Harris,Brookfield Properties,"LJA, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Gardenlight City Place Sec 1,Preliminary plat,208,55.5,Harris,Brookfield Properties,"LJA, Inc.",HOU-207,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Gardenlight City Place Sec 3,Replat,94,25.8,Harris,Brookfield Properties,"LJA, Inc.",HOU-207,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Benavides Villas on Wellington,Plat,2,0.2284,Harris,Ashley Tax Services,"South Texas Surveying Associates, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Cypress Trails at Bauer Landing Sec 2,Preliminary plat,158,44.047,Harris,"LGI Homes - Texas, LLC",Pape-Dawson,HOU-014,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
-2026-10-15,Gardenlight City Place Sec 2,Replat,51,9.5,Harris,Brookfield Properties,"LJA, Inc.",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Gardenlight City Place Sec 2,Replat,51,9.5,Harris,Brookfield Properties,"LJA, Inc.",HOU-207,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Andores Rest,Preliminary plat,2,6.1532,Harris,Tilson Custom Home Builder,Chesterfield Development Services,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Lacey Estates,Preliminary plat,24,4.3208,Harris,,"PLS CONSTRUCTION LAYOUT, INC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Camay Oaks,Replat,5,0.353,Harris,,The Interfield Group,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
@@ -87,3 +87,7 @@ date,plat,type,lots,acres,county,owner as printed,applicant,cards,source
 2026-10-15,Neyland Manors,Replat,2,0.1694,Harris,Hart Custom Homes LLC,"Owens Management Systems, LLC",,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Loduc Creek,Final plat,23,4.3855,Harris,Plavans LLC,Gruller Surveying LLC,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
 2026-10-15,Easter Haven,"Replat, public hearing",2,0.109,Harris,Adeo Homes LLC,Adeo Homes LLC,,https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet
+2026-10-15,Sheldon Ridge GP,General plan,,378.381,Harris,Woodmere Development Co.,IDS Engineering Group,HOU-130,https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93918/OriginalFiles/SR_GENERAL_PLAN_09-26.pdf?sv=2021-08-06&se=2051-10-05T12%3A31%3A13Z&sr=b&sp=r&sig=Nc3u7o07ymlnVgk2PPPb2mrqjqbC78Lm%2FJqIh%2F3Ob6A%3D
+2026-10-15,Gardenlight City Place GP,General plan,,420.6,Harris,Brookfield Properties,"LJA, Inc.",HOU-207,https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93907/OriginalFiles/3293-00001_Gardenlight_City_Place_General_Plan_10-02-2026.pdf?sv=2021-08-06&se=2051-10-02T19%3A22%3A51Z&sr=b&sp=r&sig=z5J13bhSiBPdOr1LkgIbylPOZCOJW%2BDc4g6L93h5m0k%3D
+2026-10-15,McHard Industrial GP,General plan,,79.052,Fort Bend,Kimley Horn,Kimley Horn,,https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93669/OriginalFiles/067548037-McHard_Industrial_GP_V1-1.pdf?sv=2021-08-06&se=2051-09-21T14%3A50%3A30Z&sr=b&sp=r&sig=W8FdoaMM6uuIbvO8z%2BURHs7Au1CjY7v62%2F5xZEO0dqI%3D
+2026-10-15,Benders Creek GP,General plan,,190.5,Harris,Academy Development,"LJA, Inc.",,https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Submitted/2026-1449/OriginalFiles/2284-2504_Benders_Creek_General_Plan_09-18-2026.pdf?sv=2021-08-06&se=2051-09-22T20%3A29%3A56Z&sr=b&sp=r&sig=%2BFqP9ATYyzZwmqz51cJDcuBt4oQ7hpyv3BNxUi1ztqw%3D
