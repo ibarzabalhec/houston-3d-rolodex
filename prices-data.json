@@ -1,7 +1,7 @@
 {
  "version": 1,
  "as_of": "2026-09-27",
- "built": "2026-10-10",
+ "built": "2026-10-11",
  "markets": {
   "houston": {
    "place": "Greater Houston",
@@ -1630,10 +1630,10 @@
      "opened": null,
      "isd": "Katy ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "12",
-      "sales": 775,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "18",
+      "sales": 313,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "Lennar - from the $260s",
@@ -2406,6 +2406,14 @@
        "sales_prior": null,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "18",
+       "developer": "Friendswood Development Company",
+       "sales": 313,
+       "sales_prior": 476,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -5959,10 +5967,10 @@
      "opened": null,
      "isd": "Waller ISD; Cy-Fair ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "11",
-      "sales": 812,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "9",
+      "sales": 500,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": null,
@@ -8235,6 +8243,14 @@
        "sales_prior": 938,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "9",
+       "developer": "Howard Hughes Communities",
+       "sales": 500,
+       "sales_prior": 438,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -15232,10 +15248,10 @@
      "opened": null,
      "isd": "Katy ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "41",
-      "sales": 413,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "43",
+      "sales": 227,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": null,
@@ -16427,6 +16443,14 @@
        "sales_prior": 491,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "43",
+       "developer": "Brookfield Properties",
+       "sales": 227,
+       "sales_prior": 217,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -21903,10 +21927,10 @@
      "opened": null,
      "isd": null,
      "rank": {
-      "source": "RCLCO Mid-2024",
-      "rank": "49t",
-      "sales": 211,
-      "url": "https://www.rclco.com/wp-content/uploads/2024/08/RCLCO-Advisory-Top-Selling-MY-MPCs-2024.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "49",
+      "sales": 207,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "from the $300’s to $1 million +",
@@ -22548,6 +22572,14 @@
        "sales_prior": 218,
        "period": "Mid-2024",
        "url": "https://www.rclco.com/wp-content/uploads/2024/08/RCLCO-Advisory-Top-Selling-MY-MPCs-2024.pdf"
+      },
+      {
+       "rank": "49",
+       "developer": "Johnson Development Corp.",
+       "sales": 207,
+       "sales_prior": 174,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -27218,10 +27250,10 @@
      "opened": 2016,
      "isd": "Alvin ISD",
      "rank": {
-      "source": "RCLCO 2025",
+      "source": "RCLCO Mid-2026",
       "rank": "24",
-      "sales": 527,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "sales": 276,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "NEW HOMES FROM THE $200’S – $1MIL+",
@@ -29185,6 +29217,14 @@
        "sales_prior": 555,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "24",
+       "developer": "Rise Communities",
+       "sales": 276,
+       "sales_prior": 277,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -33265,10 +33305,10 @@
      "opened": 1996,
      "isd": "Fort Bend ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "38",
-      "sales": 432,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "46",
+      "sales": 223,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "New Homes Low $300s-Million+",
@@ -35524,6 +35564,14 @@
        "sales_prior": 585,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "46",
+       "developer": "Johnson Dev. / Toll Brothers / GTIS",
+       "sales": 223,
+       "sales_prior": 227,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -36264,10 +36312,10 @@
      "opened": null,
      "isd": "Katy ISD; Royal ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "5",
-      "sales": 1024,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "10",
+      "sales": 450,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "from the high $200s to the $800s",
@@ -37291,6 +37339,14 @@
        "sales_prior": 1325,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "10",
+       "developer": "Land Tejas/Starwood Land",
+       "sales": 450,
+       "sales_prior": 543,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -38614,10 +38670,10 @@
      "opened": null,
      "isd": "Lamar CISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "9",
-      "sales": 974,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "6",
+      "sales": 594,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": null,
@@ -38843,6 +38899,14 @@
        "sales_prior": 737,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "6",
+       "developer": "D.R. Horton",
+       "sales": 594,
+       "sales_prior": 510,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -39515,10 +39579,10 @@
      "opened": null,
      "isd": "Waller ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "17",
-      "sales": 639,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "35",
+      "sales": 259,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": null,
@@ -39939,6 +40003,14 @@
        "sales_prior": null,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "35",
+       "developer": "EMBER",
+       "sales": 259,
+       "sales_prior": 299,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -91424,10 +91496,10 @@
      "opened": null,
      "isd": "McKinney ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "39",
-      "sales": 427,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "21",
+      "sales": 299,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "homes ranging from the low $300s to high $400s",
@@ -91657,6 +91729,14 @@
        "sales_prior": null,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "21",
+       "developer": "Green Brick Partners",
+       "sales": 299,
+       "sales_prior": null,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -91697,10 +91777,10 @@
      "opened": null,
      "isd": "Community ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "43",
-      "sales": 407,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "44",
+      "sales": 225,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": null,
@@ -92897,6 +92977,14 @@
        "sales_prior": 466,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "44",
+       "developer": "MA Partners",
+       "sales": 225,
+       "sales_prior": 217,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -97508,10 +97596,10 @@
      "opened": null,
      "isd": "Farmersville ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "48t",
-      "sales": 375,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "45",
+      "sales": 224,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "homes starting in the mid $200s",
@@ -97732,6 +97820,14 @@
        "sales_prior": null,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "45",
+       "developer": "Green Brick Partners",
+       "sales": 224,
+       "sales_prior": null,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -106206,10 +106302,10 @@
      "opened": null,
      "isd": "McKinney ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "15",
-      "sales": 643,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "31t",
+      "sales": 262,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "New homes from the $300s – $1M+",
@@ -107947,6 +108043,14 @@
        "sales_prior": 523,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "31t",
+       "developer": "Oxland Group",
+       "sales": 262,
+       "sales_prior": 330,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -111258,10 +111362,10 @@
      "opened": null,
      "isd": "Aubrey ISD",
      "rank": {
-      "source": "RCLCO 2025",
-      "rank": "34t",
-      "sales": 446,
-      "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      "source": "RCLCO Mid-2026",
+      "rank": "25t",
+      "sales": 273,
+      "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
      },
      "status": "active",
      "price_text": "From $319,990",
@@ -111513,6 +111617,14 @@
        "sales_prior": 653,
        "period": "2025",
        "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+      },
+      {
+       "rank": "25t",
+       "developer": "D.R. Horton",
+       "sales": 273,
+       "sales_prior": 213,
+       "period": "Mid-2026",
+       "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
       }
      ],
      "counties": [
@@ -178254,6 +178366,10 @@
    {
     "period": "2025",
     "url": "https://www.rclco.com/wp-content/uploads/2026/02/RCLCO-The-Advisory-Advisory-Top-Selling-MPCs-2025-2-3.pdf"
+   },
+   {
+    "period": "Mid-2026",
+    "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf"
    }
   ]
  }
