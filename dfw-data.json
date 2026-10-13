@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 129,
+ "build": 130,
  "last_updated": "2026-10-10",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-10-10",
@@ -36120,6 +36120,17 @@
     ]
    },
    {
+    "date": "2026-08-13",
+    "when": "13 Aug 2026",
+    "group": "disasters",
+    "kind": "HUD notice",
+    "title": "Notice on Community Development Block Grant Disaster Recovery (CDBG-DR) Formula",
+    "text": "This notice seeks additional comment on an earlier Request for Information (RFI) on the methodology HUD uses to calculate Community Development Block Grant Disaster Recovery (CDBG-DR) allocation amounts. It also notifies the public that HUD will use the formula described in the 2025 notice for allocations to 2023 and 2024 disasters until a final rule is completed.",
+    "url": "https://www.federalregister.gov/documents/2026/08/13/2026-16499/notice-on-community-development-block-grant-disaster-recovery-cdbg-dr-formula",
+    "src": "Federal Register",
+    "cards": []
+   },
+   {
     "date": "2026-08-11",
     "when": "11 Aug 2026",
     "group": "buildings",
@@ -36463,9 +36474,14 @@
     "cards": []
    }
   ],
-  "n": 49,
+  "n": 50,
   "on_cards": 11,
   "groups": [
+   {
+    "key": "disasters",
+    "label": "Disasters and recovery funds",
+    "n": 1
+   },
    {
     "key": "buildings",
     "label": "Buildings registered",
@@ -36506,6 +36522,18 @@
    {
     "name": "RCLCO master-planned community rankings",
     "url": "https://www.rclco.com/pub_cat/mpc-reports/"
+   },
+   {
+    "name": "FEMA disaster declarations (OpenFEMA)",
+    "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
+   },
+   {
+    "name": "Federal Register, HUD disaster recovery notices",
+    "url": "https://www.federalregister.gov/api/v1/documents.json"
+   },
+   {
+    "name": "Texas General Land Office, disaster recovery notices",
+    "url": "https://www.glo.texas.gov/disaster-recovery/public-notices"
    }
   ]
  },

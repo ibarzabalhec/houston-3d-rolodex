@@ -1,12 +1,12 @@
 {
  "version": "2.0",
- "build": 129,
+ "build": 130,
  "last_updated": "2026-10-10",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
  "kicker": "Rolodex · Greater Houston · 2026-10-10",
  "headline": "Greater Houston builders and developers, screened for a construction printer.",
  "headline_html": "Greater Houston builders and developers,<br><b>screened for a construction printer.</b>",
- "meta_description": "174 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
+ "meta_description": "182 Greater Houston builders, developers and wall contractors screened against three counts for a construction printer, with named executives, sources, a market view and the permitting route. By Héctor Ibarzábal.",
  "group_labels": {
   "adopter": "Already buying printed walls",
   "a": "Holds all three counts",
@@ -29,7 +29,7 @@
  },
  "stat_strip": [
   [
-   "174",
+   "182",
    "firms screened",
    false,
    null
@@ -45,7 +45,7 @@
    }
   ],
   [
-   "7",
+   "10",
    "builders and developers hold all three counts",
    false,
    {
@@ -65,8 +65,8 @@
    }
   ],
   [
-   "119",
-   "of 174 with an executive named",
+   "127",
+   "of 182 with an executive named",
    true,
    {
     "dec": "any"
@@ -79,28 +79,28 @@
    "key": "repeatability",
    "label": "Repetition",
    "blurb": "",
-   "clear": 114,
-   "partial": 52,
+   "clear": 119,
+   "partial": 55,
    "fail": 8,
-   "total": 174
+   "total": 182
   },
   {
    "key": "machine_fit",
    "label": "Printer fit",
    "blurb": "",
    "clear": 10,
-   "partial": 112,
+   "partial": 120,
    "fail": 52,
-   "total": 174
+   "total": 182
   },
   {
    "key": "innovation",
    "label": "Track record",
    "blurb": "",
-   "clear": 21,
-   "partial": 18,
-   "fail": 135,
-   "total": 174
+   "clear": 23,
+   "partial": 19,
+   "fail": 140,
+   "total": 182
   }
  ],
  "matrix": {
@@ -1176,7 +1176,7 @@
   ],
   [
    "Sources",
-   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 234 firm sites or dated reports, 14 names with no page to link. No aggregator."
+   "Company filings, company pages, trade press. Each contact names its page: 158 LinkedIn headlines naming the firm, 248 firm sites or dated reports, 14 names with no page to link. No aggregator."
   ]
  ],
  "code": {
@@ -1725,8 +1725,8 @@
     "wide": null
    }
   ],
-  "closings_missing": 75,
-  "closings_base": 105,
+  "closings_missing": 83,
+  "closings_base": 113,
   "bands": [
    [
     25,
@@ -1753,22 +1753,22 @@
    {
     "group": "a",
     "label": "Holds all three counts",
-    "n": 7,
-    "yes": 5,
-    "partly": 2,
+    "n": 10,
+    "yes": 7,
+    "partly": 3,
     "no": 0,
-    "named": 6,
-    "linked": 6
+    "named": 9,
+    "linked": 9
    },
    {
     "group": "b",
     "label": "Two of three counts",
-    "n": 58,
+    "n": 63,
     "yes": 3,
     "partly": 2,
-    "no": 53,
-    "named": 41,
-    "linked": 55
+    "no": 58,
+    "named": 46,
+    "linked": 60
    },
    {
     "group": "trade",
@@ -19641,10 +19641,10 @@
   "local": "Houston|San Leon"
  },
  "stats": {
-  "total": 174,
+  "total": 182,
   "adopters": 3,
-  "principals": 406,
-  "with_executive": 119
+  "principals": 420,
+  "with_executive": 127
  },
  "targets": [
   {
@@ -20013,6 +20013,188 @@
    "exec_named": true
   },
   {
+   "target_id": "HOU-276",
+   "entity_name": "Brizo Construction LLC",
+   "short": "Brizo Construction LLC",
+   "homepage_url": "https://www.brizoconstruction.com/",
+   "company_li": "https://www.linkedin.com/company/brizo-construction-llc/",
+   "team_url": null,
+   "chain": null,
+   "phone": "4093164764",
+   "phone_source": "https://www.brizoconstruction.com/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "Over 5,000 homeowners served through multiple state and emergency declarations, company-wide (Brizo About page, 2023 site)",
+   "mvp_screen": "The GLO Resilient Home catalog names it as builder of tilt-wall homes, with concrete panels made off-site. Its 100th Harvey home was in Port Arthur, 2020.",
+   "synopsis": "Brizo Construction LLC is a Houston general contractor in disaster recovery, civil construction and energy services. It rebuilds, elevates and repairs homes for local, state and federal programs. It rebuilt its 100th Hurricane Harvey home in Port Arthur for the GLO program in January 2020, and it holds GLO Harvey construction contracts for Zone 2 and Zone 3, including the Zone 3 Pre-qualified builders pool.",
+   "region": "Houston, 9100 Canniff Street, with six more Gulf Coast offices",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "GLO contract 19-094-001-B538, Zone 3 Pre-qualified builders pool, executed 12-06-2018, ends 06-30-2026, $63,087,682.16 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-B537, construction services for single-family and multi-family residential structures, executed 12-09-2018, ends 06-30-2026, $80,808,854.89 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-B539, construction services for single-family and multi-family residential structures, executed 12-09-2018, ends 06-30-2026, $21,190,430.82 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C414, Zone 2 construction services for single-family and multi-family residential structures, executed 04-24-2020, ends 06-30-2026, $71,994,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C561, construction services for single-family and multi-family residential structures, executed 01-08-2021, ends 06-30-2026, $13,333,333.33 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C559, construction services for single-family and multi-family residential structures, executed 02-03-2021, ends 06-30-2026, $15,151,515.15 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C560, construction services for single-family and multi-family residential structures, executed 02-03-2021, ends 06-30-2026, $33,333,333.33 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 21-084-001-C755, reconstruction of single-family homes using Resilient Tilt-Wall Construction methods, executed 02-01-2021, ends 10-31-2025, $16,675,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C792, construction services for single-family and multi-family residential structures, executed 06-27-2021, ends 06-30-2026, $6,860,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-001-C793, construction services for single-family and multi-family residential structures for Zone 3, executed 06-27-2021, ends 06-30-2026, $10,150,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 18-179-013-A859, residential construction repair service for Disaster Recovery, executed 02-08-2018, ends 03-05-2019, $3,202,212.73 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "Named in a City of Houston HCDD notice, comment period 2025-08-30 to 2025-09-14, as one of eight contractors for the Rehabilitation and Reconstruction Home Repair Program Master Contractor Agreement, up to $3,000,000.00 in CDBG funds.",
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2025/08/PN-SFHRP_MCA_CDBG-E-082925.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "More than 9,800 Harvey homes rebuilt by the GLO Homeowner Assistance Program on owners' lots, from program floorplans. Brizo holds HAP construction contracts for Zone 2 and Zone 3 and builds the Resilient Home Program tilt-wall home type."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "100 Harvey homes rebuilt by January 2020, Port Arthur News. That is a running total, not a yearly figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "$16,675,000.00 GLO contract 21-084-001-C755 (2021) for single-family reconstruction using Resilient Tilt-Wall Construction methods. GLO's catalog says Brizo's homes use concrete slab, wall panels and roof structure, with panels built off-site and about 60 days from slab pour to completion."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "cell": "clear|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "GLO Resilient Home Program, tilt-wall homes",
+     "detail": "Single-family Harvey reconstruction in tilt-wall concrete. GLO contract 21-084-001-C755, executed 02-01-2021, ends 10-31-2025, $16,675,000.00.",
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO Harvey Zone 3 Pre-qualified builders pool",
+     "detail": "GLO contract 19-094-001-B538, executed 12-06-2018, ends 06-30-2026, $63,087,682.16.",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO Harvey Zone 2 construction",
+     "detail": "Single-family and multi-family construction. GLO contract 19-094-001-C414, executed 04-24-2020, ends 06-30-2026, $71,994,000.00.",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "100th Hurricane Harvey home, Port Arthur",
+     "detail": "Rebuilt for the Simmons family through the GLO disaster relief program, January 2020.",
+     "url": "https://panews.com/2020/01/17/finally-home-brizo-construction-gifts-100th-hurricane-harvey-home-in-port-arthur/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.brizoconstruction.com/about",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "date": null
+    },
+    {
+     "url": "https://panews.com/2020/01/17/finally-home-brizo-construction-gifts-100th-hurricane-harvey-home-in-port-arthur/",
+     "date": null
+    },
+    {
+     "url": "https://www.brizoconstruction.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.beaumontenterprise.com/news/article/People-in-Business-Representing-SRPC-Brizo-14984346.php",
+     "date": null
+    },
+    {
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2025/08/PN-SFHRP_MCA_CDBG-E-082925.pdf",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Cody Lee",
+     "role": "President",
+     "source_url": "https://panews.com/2020/01/17/finally-home-brizo-construction-gifts-100th-hurricane-harvey-home-in-port-arthur/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "gc",
+   "recovery": true,
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-256",
    "entity_name": "RREAF Holdings",
    "short": "RREAF Holdings",
@@ -20146,6 +20328,185 @@
      "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001168"
     }
    ],
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-270",
+   "entity_name": "Texas General Land Office, Community Development and Revitalization",
+   "short": "Texas General Land Office, Community Development and Revitalization",
+   "homepage_url": "https://www.glo.texas.gov/disaster-recovery",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "$244,100,000 for the 2024 Homeowner Assistance Program, within $555,687,000 in CDBG-DR funds for the 2024 storms and Hurricane Beryl (GLO, 2025)",
+   "mvp_screen": "Rebuilds homes from standard floorplans through state-approved builders, paid at the per-square-foot prices set in its builder procurement.",
+   "synopsis": "State agency that runs Texas disaster recovery housing with HUD funds. Its Hurricane Harvey Homeowner Assistance Program rebuilt more than 9,800 homes and has concluded. The 2024 program repairs or rebuilds owner-occupied homes, with a $450,000 reconstruction cap. Land Commissioner Dawn Buckingham leads the GLO.",
+   "region": "Texas, with 2024 disaster housing in 27 counties including Brazoria, Fort Bend, Galveston, Matagorda, Liberty and Hardin",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "HUD allocated $555,687,000 in CDBG-DR to the State of Texas for 2024 disasters (Federal Register, January 16, 2025).",
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the"
+    },
+    {
+     "text": "CDBG-MIT grant of $4,301,841,000.00 (GLO quarterly report, 2025).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-05/mit-2025-q1.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Standard floorplans, priced at the composite per-square-foot pricing set in builder procurement (GLO 2024 housing guidelines, March 2026)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,369 applications to the 2024 program and 6 homes completed by June 2026 (GLO quarterly report). Its builders hold the construction contracts."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Bid out cast-in-place or masonry block rebuilds in 2020 under its Resilient Home Program, and offers tilt-wall homes built by Brizo Construction."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "clear"
+   },
+   "cell": "clear|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "2024 Homeowner Assistance Program",
+     "detail": "Repair or rebuild of owner-occupied single-family homes damaged in the 2024 storms and Hurricane Beryl. $244,100,000. Application intake open with no closing date.",
+     "url": "https://www.glo.texas.gov/disaster-recovery/2024HAP",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Hurricane Harvey Homeowner Assistance Program",
+     "detail": "More than 9,800 homes rebuilt. Concluded.",
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Resilient Home Program (CDBG-MIT)",
+     "detail": "$100,000,000 budget. Four home types: tilt-wall by Brizo Construction, steel by DSW Homes, composite lumber and wood frame by James W. Turner Construction.",
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "ICON Technology, Inc., contract 21-086-001-C751",
+     "detail": "$16,675,000.00, 03-26-2021 to 07-31-2024, Resilient Cast-in-Place or Masonry Block Construction methods (GLO contracts report, 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Harvey pre-qualified builders",
+     "detail": "Brizo Construction, DSW Homes, James W. Turner Construction, Byrdson Services, DRC Construction, Ducky Recovery, Lemoine Disaster Recovery, RM Quality Construction, SLSCO and Stonewater, most contracts ending 06-30-2026.",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-07/hap-overview.pdf",
+     "date": null
+    },
+    {
+     "url": "https://glo.texas.gov/sites/default/files/2026-03/24d-housing-guidelines1773179360181.pdf",
+     "date": null
+    },
+    {
+     "url": "https://glo.texas.gov/sites/default/files/2026-07/2024-disasters-2026-q2.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/about-glo/press-releases/glo-seeks-proposals-resilient-building-construction-services",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/es/node/18091",
+     "date": null
+    },
+    {
+     "url": "https://glo.texas.gov/sites/default/files/2025-06/24d-final-notice-matagorda-county-spanish.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/about-glo/press-releases/texas-glo-posts-2024-disasters-action-plan-public-comment-announces",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-05/mit-2025-q1.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/2024HAP",
+     "date": null
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Dawn Buckingham, M.D.",
+     "role": "Texas Land Commissioner",
+     "source_url": "https://www.glo.texas.gov/es/node/18091"
+    },
+    {
+     "name": "Jet Hays",
+     "role": "Deputy Director of Program Integration",
+     "source_url": "https://glo.texas.gov/sites/default/files/2025-06/24d-final-notice-matagorda-county-spanish.pdf"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -20516,6 +20877,10 @@
     {
      "text": "$17.4 million invested through AHDP by June 2024.",
      "url": "https://311.houstontx.gov/housing/communication/2024/0624.html"
+    },
+    {
+     "text": "HUD allocated $314,645,000 in CDBG-DR to Houston for the 2024 disasters (Federal Register, January 16, 2025).",
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the"
     }
    ],
    "email": null,
@@ -20580,6 +20945,14 @@
      "signal": null,
      "signal_type": null,
      "fit_signal": null
+    },
+    {
+     "name": "DR24 Single Family Home Repair Program",
+     "detail": "Hurricane Beryl and the 2024 derecho. About $45,000,000 for about 150 households. Reconstruction up to $300,000.00 per household. Contractor proposals under RFP-2026-0013 were due August 6, 2026.",
+     "url": "https://cohips.houstontx.gov/hcdrecovery/dr24/public-notices/2026/05/Final_NOIRROF-for-Tiered-Review_DR24_HRP-052626.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "sources": [
@@ -20610,6 +20983,18 @@
     {
      "url": "https://rotaryhouston.org/stories/houston-s-housing-affordability-crisis",
      "date": null
+    },
+    {
+     "url": "https://cohips.houstontx.gov/hcdrecovery/dr24/public-notices/2026/05/Final_NOIRROF-for-Tiered-Review_DR24_HRP-052626.pdf",
+     "date": null
+    },
+    {
+     "url": "https://houstontx.gov/hcdrecovery/dr24/funding/index.html",
+     "date": null
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the",
+     "date": null
     }
    ],
    "principals": [
@@ -20628,6 +21013,7 @@
    "expansion": true,
    "no_web_presence": false,
    "type": "agency",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -20695,6 +21081,30 @@
      "signal": null,
      "signal_type": null,
      "fit_signal": null
+    },
+    {
+     "name": "GLO Resilient Home Program",
+     "detail": "The GLO catalog lists steel homes built by DSW Homes, one of four home types.",
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO pre-qualified builders pool",
+     "detail": "Zone 3 pre-qualified builders pool, contract B527 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Lamar Elementary infill, Corpus Christi",
+     "detail": "One of four builders sold City lots for 40 to 45 single-family homes (City of Corpus Christi, May 2024).",
+     "url": "https://www.corpuschristitx.gov/news/posts/city-council-approves-sale-of-lots-for-single-family-development/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "sources": [
@@ -20717,6 +21127,18 @@
     {
      "url": "https://recovery.houstontx.gov/dr17/reports/2025/HUD_Requirement_Report-031825.pdf",
      "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/news/posts/city-council-approves-sale-of-lots-for-single-family-development/",
+     "date": null
     }
    ],
    "principals": [
@@ -20729,7 +21151,206 @@
    "vol": null,
    "expansion": true,
    "type": "homebuilder",
+   "recovery": true,
    "exec_named": false
+  },
+  {
+   "target_id": "HOU-277",
+   "entity_name": "James W. Turner Construction Ltd.",
+   "short": "James W. Turner Construction Ltd.",
+   "homepage_url": "https://www.jwtc.net/",
+   "company_li": null,
+   "team_url": "https://www.jwtc.net/who-we-are",
+   "chain": null,
+   "phone": "8004839333",
+   "phone_source": "https://www.jwtc.net/contact",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "34,000+ housing projects completed since 1982, company-wide (JWTC homepage, 2026)",
+   "mvp_screen": "Builds two of the four GLO Resilient Home types, composite lumber and wood frame. Holds a $129,664,000.00 Zone 2 Harvey line.",
+   "synopsis": "James W. Turner Construction Ltd. is a Tomball disaster recovery builder founded in 1982 by James Turner. It does rehabilitation, reconstruction and new single-family homes for FEMA, HUD HOME, CDBG and CDBG-DR programs, with Texas offices in Beaumont, Galveston, La Feria, La Marque, Pleasanton, Nederland and Tomball. It rebuilds Harvey homes for the GLO Homeowner Assistance Program and the Resilient Home Program, and it has run the City of Houston Home Repair Program since March 2018 in Harris County and parts of Montgomery and Fort Bend Counties.",
+   "region": "Tomball headquarters, 14215 Mary Jane Lane, with 15 offices across the US",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "GLO contract 18-179-001-A881, residential construction repair service for Disaster Recovery, executed 12-19-2017, ends 02-26-2019, $24,087,559.96 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-B531, construction services for single-family and multi-family residential structures, executed 12-06-2018, ends 06-30-2026, $80,808,854.89 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-B532, construction services for single-family and multi-family residential structures, executed 12-09-2018, ends 06-30-2026, $63,587,682.16 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-B533, construction services for single-family and multi-family residential structures, executed 12-09-2018, ends 06-30-2026, $21,190,430.82 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C418, Zone 2 construction services for single-family and multi-family residential structures, executed 04-26-2020, ends 06-30-2026, $129,664,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C568, construction services for single-family and multi-family residential structures, executed 01-11-2021, ends 06-30-2026, $13,333,333.33 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 21-088-001-C748, reconstruction of single-family homes using Resilient Structural Composite Lumber Construction methods, executed 01-30-2021, ends 10-31-2025, $17,947,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C566, construction services for single-family and multi-family residential structures, executed 02-03-2021, ends 06-30-2026, $15,151,515.15 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 21-076-001-C743, reconstruction of single-family homes using Resilient Wood-Frame Construction methods, executed 02-08-2021, ends 10-31-2025, $25,344,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C567, construction services for single-family and multi-family residential structures, executed 02-18-2021, ends 06-30-2026, $33,333,333.33 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C799, construction services for single-family and multi-family residential structures, executed 06-22-2021, ends 06-30-2026, $6,087,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "GLO contract 19-094-007-C800, construction services for single-family and multi-family residential structures for Zone 3, executed 06-30-2021, ends 06-30-2026, $10,786,000.00 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "Named in a City of Houston HCDD notice, comment period 2025-08-30 to 2025-09-14, as one of eight contractors for the Rehabilitation and Reconstruction Home Repair Program Master Contractor Agreement, up to $3,000,000.00 in CDBG funds.",
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2025/08/PN-SFHRP_MCA_CDBG-E-082925.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "More than 9,800 Harvey homes rebuilt by the GLO Homeowner Assistance Program on owners' lots, from program floorplans. JWTC holds HAP contracts for Zone 2 and Zone 3 and builds two Resilient Home Program home types."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "34,000+ housing projects since 1982 is a company-wide running total, not a yearly figure."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "$17,947,000.00 GLO contract 21-088-001-C748 (2021) for homes using Resilient Structural Composite Lumber Construction methods. GLO's catalog describes engineered composite wood components and a JWTC wall system against moisture, inside a traditional frame."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "partial"
+   },
+   "cell": "clear|partial",
+   "group": "a",
+   "key_projects": [
+    {
+     "name": "GLO Resilient Home Program, structural composite lumber homes",
+     "detail": "GLO contract 21-088-001-C748, executed 01-30-2021, ends 10-31-2025, $17,947,000.00.",
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO Resilient Home Program, wood-frame homes",
+     "detail": "Fortified Gold certified, spray foam insulation. GLO contract 21-076-001-C743, executed 02-08-2021, ends 10-31-2025, $25,344,000.00.",
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO Harvey Zone 2 construction",
+     "detail": "Single-family and multi-family construction. GLO contract 19-094-007-C418, executed 04-26-2020, ends 06-30-2026, $129,664,000.00.",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "City of Houston Home Repair Program",
+     "detail": "Rehabilitation to reconstruction and new construction, March 2018 to ongoing, in Harris County and portions of Montgomery and Fort Bend Counties. Reconstructions between $65k and $150k.",
+     "url": "https://www.jwtc.net/projects/blog-post-title-one-txjwh-rttbd",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.jwtc.net/",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/resources/cdr/documents/mitigation/programs/homeowner-programs/resilient-home/resilient-home-catalogue.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.jwtc.net/who-we-are",
+     "date": null
+    },
+    {
+     "url": "https://www.jwtc.net/contact",
+     "date": null
+    },
+    {
+     "url": "https://www.jwtc.net/post-disaster-recovery",
+     "date": null
+    },
+    {
+     "url": "https://www.jwtc.net/reconstruction-projects",
+     "date": null
+    },
+    {
+     "url": "https://www.jwtc.net/projects/blog-post-title-one-txjwh-rttbd",
+     "date": null
+    },
+    {
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2025/08/PN-SFHRP_MCA_CDBG-E-082925.pdf",
+     "date": null
+    },
+    {
+     "url": "https://311.houstontx.gov/housing/publiclegal/notices/2018/01/HOU159777-01_lr.pdf",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "James Turner",
+     "role": "President/CEO",
+     "source_url": "https://www.jwtc.net/who-we-are"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "homebuilder",
+   "recovery": true,
+   "exec_named": true
   },
   {
    "target_id": "HOU-261",
@@ -24336,6 +24957,167 @@
    "exec_named": false
   },
   {
+   "target_id": "HOU-280",
+   "entity_name": "Lemoine Disaster Recovery, L.L.C.",
+   "short": "Lemoine Disaster Recovery, L.L.C.",
+   "homepage_url": "https://disaster.1lemoine.com/",
+   "company_li": null,
+   "team_url": "https://disaster.1lemoine.com/",
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "$73,627,036.71 GLO Harvey construction work order 19-094-016-B569, one of five it holds (GLO contracts report, updated 11/30/25)",
+   "mvp_screen": "Home reconstruction is a program line inside LEMOINE, an architecture, engineering and construction company. Ben Diebold is President of Resiliency.",
+   "synopsis": "Lemoine Disaster Recovery holds GLO contract 19-094-016 for Hurricane Harvey single-family and multi-family residential construction in Zone 2. Its disaster site lists the Texas CDBG-DR program (Hurricane Recovery Housing) for the GLO, the Texas GLO Hurricane Harvey Homeowner Reimbursement Program, the Puerto Rico CDBG-R3 Program and the Louisiana Shelter at Home Program. It is part of LEMOINE, founded in 1975 by the Lemoine family, with 1,100+ professionals in Alabama, Florida, Louisiana, Mississippi, Texas, Virginia and Puerto Rico.",
+   "region": "Houston (11370 Brittmoore Park), building in Texas GLO Zone 2, with offices in Louisiana, Alabama, Mississippi, Florida, Virginia and Puerto Rico",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "GLO contracts 19-094-016 and 18-179-007 (UEID C182PM2K1463) carry five work orders totaling $135,213,681.34 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    },
+    {
+     "text": "Parent is LEMOINE, family-founded in 1975. Lenny Lemoine moved from CEO to Executive Chairman and Seth Lemoine became CEO (press release, 2026-06-23).",
+     "url": "https://1lemoine.com/lemoine-announces-executive-leadership-transition/"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Work order B569, $73,627,036.71, for construction of single-family and multi-family residential structures in the GLO Harvey program, which rebuilt more than 9,800 homes (GLO)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,100+ professionals company-wide in 2026, and no yearly home count is published."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "GLO work order 19-094-016-C423",
+     "detail": "Executed 05-06-2020, ends 06-30-2026, $26,166,000.00 total (Harvey 5B $24,148,862.95, Mitigation $2,017,137.05). Zone 2 Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-016-B569",
+     "detail": "Executed 12-14-2018, ends 06-30-2026, $73,627,036.71 total (Harvey 5B $73,627,036.71). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-016-C801",
+     "detail": "Executed 07-06-2021, ends 06-30-2026, $5,000,000.00 total (2019 Disasters $5,000,000.00). Construction services for single-family and multi-family residential structures for Zone 2. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-016-C579",
+     "detail": "Executed 02-08-2021, ends 06-30-2026, $15,151,515.15 total (Mitigation $15,151,515.15). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 18-179-007-A887",
+     "detail": "Executed 12-20-2017, ends 03-01-2019, $15,269,129.48 total (Harvey 5B $15,269,129.48). Residential construction repair service for Disaster Recovery. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "date": null
+    },
+    {
+     "url": "https://1lemoine.com/lemoine-announces-executive-leadership-transition/",
+     "date": null
+    },
+    {
+     "url": "https://disaster.1lemoine.com/",
+     "date": null
+    },
+    {
+     "url": "https://disaster.1lemoine.com/cdbg-dr-construction-management/",
+     "date": null
+    },
+    {
+     "url": "https://1lemoine.com/building-whats-next-lemoine-announces-strategic-leadership-transitions/",
+     "date": null
+    },
+    {
+     "url": "https://1lemoine.com/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Ben Diebold",
+     "role": "President of Resiliency",
+     "source_url": "https://1lemoine.com/building-whats-next-lemoine-announces-strategic-leadership-transitions/"
+    },
+    {
+     "name": "Seth Lemoine",
+     "role": "Chief Executive Officer",
+     "source_url": "https://1lemoine.com/lemoine-announces-executive-leadership-transition/"
+    },
+    {
+     "name": "William Lemoine",
+     "role": "Chief Operating Officer",
+     "source_url": "https://1lemoine.com/lemoine-announces-executive-leadership-transition/"
+    },
+    {
+     "name": "Charles Connelly",
+     "role": "Vice President, Recovery and Resiliency",
+     "source_url": "https://disaster.1lemoine.com/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "gc",
+   "recovery": true,
+   "exec_named": true
+  },
+  {
    "target_id": "HOU-212",
    "entity_name": "McKinley Homes",
    "short": "McKinley Homes",
@@ -24826,6 +25608,177 @@
    "vol": null,
    "expansion": true,
    "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-279",
+   "entity_name": "Stonewater, Inc.",
+   "short": "Stonewater, Inc.",
+   "homepage_url": "https://www.stonewaterinc.com/",
+   "company_li": "https://www.linkedin.com/company/stonewater-inc",
+   "team_url": "https://www.stonewaterinc.com/team",
+   "chain": null,
+   "phone": "4095157950",
+   "phone_source": "https://www.stonewaterinc.com/",
+   "phone_label": "Footer line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "$63,627,036.71 GLO Harvey construction work order 19-094-009-B543, one of nine it holds (GLO contracts report, updated 11/30/25)",
+   "mvp_screen": "Holds nine GLO Harvey work orders for single-family and multi-family residential construction. Reports more than 1,400 homes completed since 2008.",
+   "synopsis": "Stonewater is a residential construction firm in federally funded disaster recovery housing, founded in 2002 and in the sector since 2008. Its site says it rebuilds homes under CDBG-DR programs in Florida, Texas, North Carolina, South Carolina, Alabama and California, with more than 1,400 homes completed and over $320 million in federally funded construction. In Texas it builds under GLO contract 19-094-009 for Hurricane Harvey housing, and its services page names Texas GLO, City of Houston HGAC, Galveston Co THAP HGAC and Port Arthur Housing Authority.",
+   "region": "Texas GLO Zone 2 (Harris, Galveston, Fort Bend and 30 other counties) and Zone 3, with CDBG-DR work in six states",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [
+    {
+     "text": "GLO contract 19-094-009 (UEID M22FF78CS6Z6) carries nine work orders totaling $278,917,081.60 in CDBG-DR and CDBG-MIT funds, all ending 06-30-2026 (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf"
+    }
+   ],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Yes",
+     "mark": "clear",
+     "text": "Work order B543, $63,627,036.71, for construction of single-family and multi-family residential structures in the GLO Harvey program, which rebuilt more than 9,800 homes (GLO)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "1,400 homes is a company-wide career total since 2008, not a yearly figure. No yearly count is published."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Elevated foundations, wind-zone compliant construction and manufactured housing replacement are listed on its site. None is a new wall system on its own jobs."
+    }
+   ],
+   "marks": {
+    "repeatability": "clear",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "clear|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "GLO work order 19-094-009-C572",
+     "detail": "Executed 02-03-2021, ends 06-30-2026, $33,333,333.33 total (CDBG-MIT [Mitigation] $33,333,333.33). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-C420",
+     "detail": "Executed 04-29-2020, ends 06-30-2026, $58,927,000.00 total (Harvey 5B $39,638,229.89, Mitigation $19,288,770.11). Zone 2 Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-C571",
+     "detail": "Executed 02-03-2021, ends 06-30-2026, $15,151,515.15 total (Mitigation $15,151,515.15). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-C805",
+     "detail": "Executed 06-27-2021, ends 06-30-2026, $11,266,750.10 total (2018 Floods $5,812,473.85, 2019 Disasters $5,454,276.25). Construction services for single-family and multi-family residential structures for Zone 3. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-C804",
+     "detail": "Executed 06-27-2021, ends 06-30-2026, $5,000,000.00 total (2019 Disasters $5,000,000.00). Construction services for single-family and multi-family residential structures for Zone 2. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-C573",
+     "detail": "Executed 01-08-2021, ends 06-30-2026, $13,333,333.33 total (Mitigation $13,333,333.33). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-B544",
+     "detail": "Executed 12-12-2018, ends 06-30-2026, $57,087,682.16 total (Harvey 5B $57,087,682.16). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-B545",
+     "detail": "Executed 12-09-2018, ends 06-30-2026, $21,190,430.82 total (Harvey 5B $21,190,430.82). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "GLO work order 19-094-009-B543",
+     "detail": "Executed 12-09-2018, ends 06-30-2026, $63,627,036.71 total (Harvey 5B $63,627,036.71). Construction services for Single-Family and Multi-Family residential structures. (GLO contracts report, updated 11/30/25).",
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.glo.texas.gov/sites/default/files/2025-12/state-of-texas-glo-contracts-report-all.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.glo.texas.gov/disaster-recovery/hurricane-harvey/homeowner-assistance",
+     "date": null
+    },
+    {
+     "url": "https://www.stonewaterinc.com/",
+     "date": null
+    },
+    {
+     "url": "https://www.stonewaterinc.com/team",
+     "date": null
+    },
+    {
+     "url": "https://www.stonewaterinc.com/services",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Jim Schumer",
+     "role": "Chief Executive Officer",
+     "source_url": "https://www.stonewaterinc.com/team"
+    },
+    {
+     "name": "Jason Stewart",
+     "role": "Chief Operating Officer",
+     "source_url": "https://www.stonewaterinc.com/team"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "homebuilder",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -26244,6 +27197,7 @@
    "vol": null,
    "expansion": true,
    "type": "nonprofit",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -26351,6 +27305,326 @@
    "short": "Chesmar",
    "cell": "partial|partial",
    "type": "homebuilder",
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-271",
+   "entity_name": "City of Corpus Christi Planning and Community Development",
+   "short": "City of Corpus Christi Planning and Community Development",
+   "homepage_url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/about-us/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "3618263160",
+   "phone_source": "https://www.corpuschristitx.gov/department-directory/finance-procurement/contracts-and-procurement/supplier-portal-information/",
+   "phone_label": "Procurement office",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "$7,443,430 in federal HUD funds approved for 2026-27, HOME $3,507,376 of it (City of Corpus Christi, July 2026)",
+   "mvp_screen": "Sold the Lamar Elementary infill lots to four builders, DSW Homes among them, under a sale price cap.",
+   "synopsis": "City department that spends Corpus Christi's HUD housing grants. Its HOME funds pay for affordable housing construction, rental housing and homebuyer help, and its 2025 notice of funding admitted single-family new construction for sale or rent. City Manager Peter Zanoni oversees it.",
+   "region": "Corpus Christi, with infill lots in the former Lamar Elementary neighborhood",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Four contracts for 40 to 45 single-family homes on the Lamar Elementary lots (City of Corpus Christi, May 2024)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "40 to 45 homes on the Lamar lots across four builders (City of Corpus Christi, May 2024), a project total."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Lamar Elementary infill",
+     "detail": "Lots donated by the Ed Rachal Foundation, sold to Habitat Corpus Christi, Thanksgiving Homes, Come Dream Come Build and DSW Homes. Sale price cap $282,000.",
+     "url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/planning/planning-in-the-works/infill-housing-former-lamar-elementary-neighborhood/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "HOME notice of funding, 2025",
+     "detail": "New construction for homeownership and for single-family rental. Applications were due June 3, 2025.",
+     "url": "https://www.corpuschristitx.gov/media/4mtpsl0p/fy2026-py2025-home-nofa-05052025.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.corpuschristitx.gov/news/posts/news-release-72826-council-approves-74-million-plan-for-affordable-housing-and-community-development/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/news/posts/city-council-approves-sale-of-lots-for-single-family-development/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/about-us/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/department-directory/finance-procurement/contracts-and-procurement/supplier-portal-information/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/media/4mtpsl0p/fy2026-py2025-home-nofa-05052025.pdf",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/planning/planning-in-the-works/infill-housing-former-lamar-elementary-neighborhood/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/community-development/funding-opportunities/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Peter Zanoni",
+     "role": "City Manager",
+     "source_url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/about-us/"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "recovery": true,
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-273",
+   "entity_name": "City of Port Arthur Housing and Neighborhood Revitalization",
+   "short": "City of Port Arthur Housing and Neighborhood Revitalization",
+   "homepage_url": "https://portarthurtx.gov/430/Housing-and-Neighborhood-Revitalization",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": null,
+   "phone_source": null,
+   "phone_label": null,
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "New homes built and sold at cost to eligible buyers, with up to $40,000 in help (City of Port Arthur)",
+   "mvp_screen": "Rebuilds a house on its own lot when repair is not feasible. CHDOs build its new homes with HOME funds.",
+   "synopsis": "City division that runs Port Arthur's CDBG and HOME housing programs. It rehabilitates homes, demolishes and rebuilds them on the same lot with the owner's consent, and has new homes built and sold at cost. Its RFP P26-022 for environmental review, due March 18, 2026, covers reconstruction and new construction.",
+   "region": "Port Arthur, Jefferson County",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "Reconstruction on existing lots and new homes sold at cost (City of Port Arthur)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "No yearly home count on its pages. RFP P26-022 covers rehabilitation, reconstruction and new construction (March 2026)."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "RFP P26-022, environmental review",
+     "detail": "For rehabilitation and reconstruction, new construction and demolition. Proposals due March 18, 2026.",
+     "url": "https://portarthurtx.gov/DocumentCenter/View/18835/RFP---Environmental-Review",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://portarthurtx.gov/430/Housing-and-Neighborhood-Revitalization",
+     "date": null
+    },
+    {
+     "url": "https://portarthurtx.gov/DocumentCenter/View/18835/RFP---Environmental-Review",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Beverly A. Freeman",
+     "role": "Housing and Neighborhood Revitalization Manager",
+     "source_url": "https://portarthurtx.gov/430/Housing-and-Neighborhood-Revitalization"
+    },
+    {
+     "name": "Ronald Burton, CPM",
+     "role": "City Manager",
+     "source_url": "https://portarthurtx.gov/DocumentCenter/View/18835/RFP---Environmental-Review"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "recovery": true,
+   "exec_named": true
+  },
+  {
+   "target_id": "HOU-272",
+   "entity_name": "Corpus Christi Housing Authority",
+   "short": "Corpus Christi Housing Authority",
+   "homepage_url": "https://hacc.org/",
+   "company_li": null,
+   "team_url": null,
+   "chain": null,
+   "phone": "3618893373",
+   "phone_source": "https://hacc.org/procurement/",
+   "phone_label": "Main line",
+   "phone_more": [],
+   "phone_note": null,
+   "phone_absent": null,
+   "press": [],
+   "key_stat": "About 40 homes at about $200,000 on the former Lozano Elementary site (KZTV, August 2024)",
+   "mvp_screen": "Builds and sells single-family homes through Thanksgiving Homes. Its board was weighing a developer joint venture in July 2026.",
+   "synopsis": "Public housing authority for Corpus Christi. Thanksgiving Homes is its first initiative for single-family rentals and sales. It issued RFQ 26023 for developer partner services. Its board named CFO Rhen Bass interim CEO in September 2025.",
+   "region": "Corpus Christi, with homes on the former Lozano Elementary site",
+   "company_li_note": null,
+   "team_note": null,
+   "capital_signals": [],
+   "email": null,
+   "email_label": null,
+   "email_source": null,
+   "why": [
+    {
+     "axis": "repeatability",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "About 40 homes on one site, the former Lozano Elementary (KZTV, August 2024)."
+    },
+    {
+     "axis": "machine_fit",
+     "verdict": "Partly",
+     "mark": "partial",
+     "text": "About 40 homes at Lozano (KZTV, August 2024), a project total."
+    },
+    {
+     "axis": "innovation",
+     "verdict": "No",
+     "mark": "fail",
+     "text": "Nothing on record."
+    }
+   ],
+   "marks": {
+    "repeatability": "partial",
+    "machine_fit": "partial",
+    "innovation": "fail"
+   },
+   "cell": "partial|partial",
+   "group": "b",
+   "key_projects": [
+    {
+     "name": "Thanksgiving Homes",
+     "detail": "Single-family homes for rent and for sale.",
+     "url": "https://hacc.org/thanksgiving-homes-2/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "RFQ 26023 Developer Partner Services",
+     "detail": "A solicitation for a developer partner.",
+     "url": "https://hacc.org/procurement/",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Board agenda, July 23, 2026",
+     "detail": "A development and land joint venture offer from a potential developer partner, and a bid for CCISD surplus property.",
+     "url": "https://www.corpuschristitx.gov/media/legpwtuy/housing-authority-20260723.pdf",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://kztv10.com/news/local-news/new-housing-development-begins-breaking-ground-at-former-lozano-elementary-school",
+     "date": null
+    },
+    {
+     "url": "https://www.kristv.com/news/6-investigates/corpus-christi-housing-authority-terminates-ceo-gary-allsup",
+     "date": null
+    },
+    {
+     "url": "https://hacc.org/procurement/",
+     "date": null
+    },
+    {
+     "url": "https://hacc.org/thanksgiving-homes-2/",
+     "date": null
+    },
+    {
+     "url": "https://www.corpuschristitx.gov/media/legpwtuy/housing-authority-20260723.pdf",
+     "date": null
+    },
+    {
+     "url": "https://hacc.org/",
+     "date": null
+    }
+   ],
+   "principals": [
+    {
+     "name": "Rhen Bass",
+     "role": "Interim CEO",
+     "source_url": "https://www.kristv.com/news/6-investigates/corpus-christi-housing-authority-terminates-ceo-gary-allsup"
+    }
+   ],
+   "vol": null,
+   "expansion": true,
+   "type": "agency",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -26498,6 +27772,10 @@
     {
      "text": "$18,443,110.78 spent on 71 homes bought from builders in 10 communities, table of October 16, 2025.",
      "url": "https://hcd.harriscountytx.gov/Residents/Homeownership-Programs/Single-Family-New-Construction"
+    },
+    {
+     "text": "HUD allocated $67,326,000 in CDBG-DR to Harris County for the 2024 disasters (Federal Register, January 16, 2025).",
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the"
     }
    ],
    "email": null,
@@ -26554,6 +27832,22 @@
      "signal": null,
      "signal_type": null,
      "fit_signal": null
+    },
+    {
+     "name": "Hurricane Beryl and derecho recovery",
+     "detail": "Programs include Homebuyer Assistance, Minor Home Repair and a Single-Family Housing Development Program.",
+     "url": "https://hcd.harriscountytx.gov/Disaster-Recovery/Hurricane-Beryl-Derecho",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
+    },
+    {
+     "name": "Single-Family New Construction Program",
+     "detail": "Harvey CDBG-DR, $60 million, including new homes on two County-owned sites.",
+     "url": "https://hcd.harriscountytx.gov/Maps/Single-Family-Housing-Development",
+     "signal": null,
+     "signal_type": null,
+     "fit_signal": null
     }
    ],
    "sources": [
@@ -26571,6 +27865,14 @@
     },
     {
      "url": "https://hcd.harriscountytx.gov/Maps/Single-Family-Housing-Development",
+     "date": null
+    },
+    {
+     "url": "https://hcd.harriscountytx.gov/Disaster-Recovery/Hurricane-Beryl-Derecho",
+     "date": null
+    },
+    {
+     "url": "https://www.federalregister.gov/documents/2025/01/16/2025-00943/allocations-for-community-development-block-grant-disaster-recovery-and-implementation-of-the",
      "date": null
     }
    ],
@@ -26599,6 +27901,7 @@
    "vol": null,
    "expansion": true,
    "type": "agency",
+   "recovery": true,
    "exec_named": true
   },
   {
@@ -39914,7 +41217,21 @@
     "v": null
    },
    {
+    "cat": -1,
+    "tr": true,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 1,
+    "tr": true,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
     "tr": true,
     "fit": "partial",
     "exec": true,
@@ -39953,6 +41270,13 @@
     "tr": true,
     "fit": "partial",
     "exec": false,
+    "v": null
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
     "v": null
    },
    {
@@ -40173,6 +41497,13 @@
     "v": null
    },
    {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
     "cat": 0,
     "tr": false,
     "fit": "partial",
@@ -40192,6 +41523,13 @@
     "fit": "partial",
     "exec": false,
     "v": 695.0
+   },
+   {
+    "cat": 0,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -40290,6 +41628,27 @@
     "fit": "partial",
     "exec": true,
     "v": 1087.0
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
+   },
+   {
+    "cat": -1,
+    "tr": false,
+    "fit": "partial",
+    "exec": true,
+    "v": null
    },
    {
     "cat": 0,
@@ -41111,9 +42470,9 @@
     "v": null
    }
   ],
-  "n": 174,
-  "track": 21,
-  "exec": 119,
+  "n": 182,
+  "track": 23,
+  "exec": 127,
   "band": [
    25,
    400
@@ -41125,7 +42484,7 @@
   "cats": [
    {
     "label": "Homebuilders",
-    "n": 76
+    "n": 78
    },
    {
     "label": "Developers",
@@ -44554,6 +45913,17 @@
     "cards": []
    },
    {
+    "date": "2026-09-01",
+    "when": "1 Sep 2026",
+    "group": "disasters",
+    "kind": "Major disaster declaration",
+    "title": "Severe Storms, Straight-Line Winds, Tornadoes, And Flooding, DR-4935-TX",
+    "text": "Major disaster declaration DR-4935-TX, flood, declared 1 Sep 2026. Counties in this market: Grimes County.",
+    "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries?$filter=femaDeclarationString%20eq%20'DR-4935-TX'&$select=femaDeclarationString,disasterNumber,declarationType,declarationDate,incidentType,declarationTitle,designatedArea,fipsCountyCode,ihProgramDeclared,iaProgramDeclared",
+    "src": "FEMA record (data)",
+    "cards": []
+   },
+   {
     "date": "2026-08-24",
     "when": "24 Aug 2026",
     "group": "buildings",
@@ -44627,6 +45997,17 @@
     "text": "New construction, 1,200 square feet, $150,000 estimated. Start 1 Oct 2026, finish 1 Dec 2026. At 6605 Garth Road #300, Baytown. Scope as filed: First-generation tenant improvement in an existing retail shell building. Owner as filed: San Jacinto Retail Associates LLC, 4500 Bissonnet St. Suite 200, Bellaire, Texas 77401.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027768",
     "src": "TDLR project page",
+    "cards": []
+   },
+   {
+    "date": "2026-08-13",
+    "when": "13 Aug 2026",
+    "group": "disasters",
+    "kind": "HUD notice",
+    "title": "Notice on Community Development Block Grant Disaster Recovery (CDBG-DR) Formula",
+    "text": "This notice seeks additional comment on an earlier Request for Information (RFI) on the methodology HUD uses to calculate Community Development Block Grant Disaster Recovery (CDBG-DR) allocation amounts. It also notifies the public that HUD will use the formula described in the 2025 notice for allocations to 2023 and 2024 disasters until a final rule is completed.",
+    "url": "https://www.federalregister.gov/documents/2026/08/13/2026-16499/notice-on-community-development-block-grant-disaster-recovery-cdbg-dr-formula",
+    "src": "Federal Register",
     "cards": []
    },
    {
@@ -45087,9 +46468,14 @@
     "cards": []
    }
   ],
-  "n": 95,
+  "n": 97,
   "on_cards": 54,
   "groups": [
+   {
+    "key": "disasters",
+    "label": "Disasters and recovery funds",
+    "n": 2
+   },
    {
     "key": "plats",
     "label": "Plats",
@@ -45121,6 +46507,30 @@
     "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet"
    },
    {
+    "name": "Harris County HCD, Hurricane Beryl and derecho",
+    "url": "https://hcd.harriscountytx.gov/Disaster-Recovery/Hurricane-Beryl-Derecho"
+   },
+   {
+    "name": "City of Corpus Christi, housing funding",
+    "url": "https://www.corpuschristitx.gov/department-directory/planning-economic-development/community-development/funding-opportunities/"
+   },
+   {
+    "name": "Corpus Christi Housing Authority, procurement",
+    "url": "https://hacc.org/procurement/"
+   },
+   {
+    "name": "City of Port Arthur, bids",
+    "url": "https://portarthurtx.gov/Bids.aspx"
+   },
+   {
+    "name": "City of Galveston, bids",
+    "url": "https://www.galvestontx.gov/bids.aspx"
+   },
+   {
+    "name": "City of Orange, bids",
+    "url": "https://orangetexas.gov/Bids.aspx"
+   },
+   {
     "name": "TDLR building registrations",
     "url": "https://www.tdlr.texas.gov/TABS/Search"
    },
@@ -45139,6 +46549,18 @@
    {
     "name": "RCLCO master-planned community rankings",
     "url": "https://www.rclco.com/pub_cat/mpc-reports/"
+   },
+   {
+    "name": "FEMA disaster declarations (OpenFEMA)",
+    "url": "https://www.fema.gov/api/open/v2/DisasterDeclarationsSummaries"
+   },
+   {
+    "name": "Federal Register, HUD disaster recovery notices",
+    "url": "https://www.federalregister.gov/api/v1/documents.json"
+   },
+   {
+    "name": "Texas General Land Office, disaster recovery notices",
+    "url": "https://www.glo.texas.gov/disaster-recovery/public-notices"
    }
   ]
  },
