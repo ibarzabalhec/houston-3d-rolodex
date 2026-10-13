@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 128,
+ "build": 129,
  "last_updated": "2026-10-10",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-10-10",
@@ -35869,7 +35869,8 @@
     "when": "8 Oct 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "The Colony Recreation Center, The Colony. $26,000,000 estimated, new construction, start 5 Oct 2026. Owner as filed: The Colony Texas.",
+    "title": "The Colony Recreation Center",
+    "text": "New construction, 59,500 square feet, $26,000,000 estimated. Start 5 Oct 2026, finish 31 Dec 2027. At 4431 Augusta Street, The Colony. Scope as filed: Approx. 41,000 SF of interior remodel work to existing building, approx. 18,500 SF of new building addition, about 6 acres of site/parking improvements. Owner as filed: The Colony Texas, 4431 Augusta Street, The Colony, Texas 75056. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027003081",
     "src": "TDLR project page",
     "cards": []
@@ -35879,7 +35880,8 @@
     "when": "7 Oct 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Chaparral Lewisville, Lewisville. $1,000,000 estimated, new construction, start 29 Jan 2027. Owner as filed: CP Lewisville MF LLC.",
+    "title": "Chaparral Lewisville",
+    "text": "New construction, 7,222 square feet, $1,000,000 estimated. Start 29 Jan 2027, finish 29 Jan 2028. At 1918 E SH 121 BUS, Lewisville. Scope as filed: Club/Leasing Building - 7222 SF. Owner as filed: CP Lewisville MF LLC, 4925 Greenville Avenue Suite 860, Dallas, Texas 75206.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002946",
     "src": "TDLR project page",
     "cards": []
@@ -35889,7 +35891,8 @@
     "when": "5 Oct 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "JDA- Self Storage Mesquite TX, Mesquite. $10,350,000 estimated, new construction, start 1 Jan 2027. Owner as filed: Johnson Development Associates Inc.",
+    "title": "JDA- Self Storage Mesquite TX",
+    "text": "New construction, 115,562 square feet, $10,350,000 estimated. Start 1 Jan 2027, finish 29 Feb 2028. At 5201 Northwest Drive, Mesquite. Scope as filed: 2 story self-storage facility with one rental office and perimeter drive units. Owner as filed: Johnson Development Associates Inc, 4350 W Cypress St, Tampa, Florida 33607.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002702",
     "src": "TDLR project page",
     "cards": [
@@ -35904,7 +35907,8 @@
     "when": "29 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Americana Hotel Event Barn by Loews Hotels, Arlington. $6,000,000 estimated, new construction, start 5 Jan 2027. Owner as filed: GFT Convention Center Hotel Owner, LLC.",
+    "title": "Americana Hotel Event Barn by Loews Hotels",
+    "text": "New construction, 37,400 square feet, $6,000,000 estimated. Start 5 Jan 2027, finish 31 Dec 2027. At 1500A Convention Center Drive, Arlington. Scope as filed: Construction of an event barn with an event lawn = EVENT BARN new construction SF = 11,000 EVENT LAWN = 26,400SF. Owner as filed: GFT Convention Center Hotel Owner, LLC, 9 West 57th Street 20th Floor, New York, New York 10019.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002308",
     "src": "TDLR project page",
     "cards": []
@@ -35914,7 +35918,8 @@
     "when": "24 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Aura Glenn Heights, Glenn Heights. $32,700,000 estimated, new construction, start 18 Dec 2026. Owner as filed: Trinsic Acquisition Company, LLC.",
+    "title": "Aura Glenn Heights",
+    "text": "New construction, 357,200 square feet, $32,700,000 estimated. Start 18 Dec 2026, finish 18 Dec 2028. At TBD Ovilla Rd Suite 50, LB 5, Glenn Heights. Scope as filed: Multifamily development with 336 units and associated clubhouse for leasing operations and resident amenities. Leasing Construction Costs - $595,095.00. Owner as filed: Trinsic Acquisition Company, LLC, 8235 Douglas Avenue Suite 950, Dallas, Texas 75225.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001837",
     "src": "TDLR project page",
     "cards": []
@@ -35924,7 +35929,8 @@
     "when": "22 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "The Archer Assisted Living, Weatherford. $2,000,000 estimated, new construction, start 1 Dec 2026. Owner as filed: Aimwell Solutions, LLC.",
+    "title": "The Archer Assisted Living",
+    "text": "New construction, 9,635 square feet, $2,000,000 estimated. Start 1 Dec 2026, finish 1 Dec 2027. At 3910 Tin Top Road, Weatherford. Scope as filed: Single story wood framed, 4-16 bed assisted living facility. Wood framed structure with pre-engineered wood truss on concrete slab with asphalt shingle roof. Owner as filed: Aimwell Solutions, LLC, 220 Adams Drive Ste. 280 PMB #1056, Weatherford, Texas 76086.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001680",
     "src": "TDLR project page",
     "cards": []
@@ -35934,7 +35940,8 @@
     "when": "21 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Verge at Frisco, Frisco. $2,630,000 estimated, new construction, start 1 Dec 2026. Owner as filed: Sovereign at Frisco LLC.",
+    "title": "Verge at Frisco",
+    "text": "New construction, 15,486 square feet, $2,630,000 estimated. Start 1 Dec 2026, finish 1 May 2028. At SW corner Stonebrook Pkwy and Legacy Dr, Frisco. Scope as filed: Amenity and leasing center to support 152 dwelling unit multifamily development. Owner as filed: Sovereign at Frisco LLC, 150 E 52nd St Ste 22002, New York, New York 10022.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001495",
     "src": "TDLR project page",
     "cards": []
@@ -35944,7 +35951,8 @@
     "when": "15 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Lake Forest Senior Living, LLC, Mckinney. $63,000,000 estimated, new construction, start 1 Mar 2027. Owner as filed: KAYASA HOLDINGS LLC.",
+    "title": "Lake Forest Senior Living, LLC",
+    "text": "New construction, 247,383 square feet, $63,000,000 estimated. Start 1 Mar 2027, finish 1 Nov 2028. At 4656 W UNIVERSITY DR, Mckinney. Scope as filed: Senior Living consists of 222 units. Total 3 apartment buildings. 1 apartment bldg has retail and clubhouse with 72 units. The other 2 bldgs are identical with 75 units each. Site has 4 garage bldgs and 1 maintenance bldg. Owner as filed: KAYASA HOLDINGS LLC, 5000 OVERTON PLZ STE 200, FORT WORTH, Texas 76109. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001111",
     "src": "TDLR project page",
     "cards": []
@@ -35954,7 +35962,8 @@
     "when": "15 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Terra Nova Amenity Center, Terrell. $2,000,000 estimated, new construction, start 1 Jun 2027. Owner as filed: Cindy M Alexander.",
+    "title": "Terra Nova Amenity Center",
+    "text": "New construction, 35,000 square feet, $2,000,000 estimated. Start 1 Jun 2027, finish 8 Sep 2027. At North of Finch Meadow St. & West of Terra Nova Pky, Terrell. Scope as filed: Sidewalk, pool deck, decomposed granite, sport court. Owner as filed: Cindy M Alexander, PO Box 305, Cedar Hill, Texas 75104.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001119",
     "src": "TDLR project page",
     "cards": []
@@ -35964,7 +35973,8 @@
     "when": "11 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "BUILDING 1 : HORIZON LAKES HOA, Heath. $12,000,000 estimated, new construction, start 1 Nov 2026. Owner as filed: RLS (HORIZON) LLC.",
+    "title": "BUILDING 1 : HORIZON LAKES HOA",
+    "text": "New construction, 2,975 square feet, $12,000,000 estimated. Start 1 Nov 2026, finish 1 May 2028. At 2800 W FM RD 550, Heath. Scope as filed: GROUND UP CONSTRUCTION - POOL PAVILION AND RESTROOMS FOR HORIZON LAKES AMENITY CENTER. Owner as filed: RLS (HORIZON) LLC, 250 VESEY ST FL 15, NEW YORK, New York 10281.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000866",
     "src": "TDLR project page",
     "cards": []
@@ -35974,7 +35984,8 @@
     "when": "2 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Preston Crossing at Genstar, Dallas. $7,409,000 estimated, new construction, start 8 Jan 2027. Owner as filed: PCD LLC.",
+    "title": "Preston Crossing at Genstar",
+    "text": "New construction, 65,751 square feet, $7,409,000 estimated. Start 8 Jan 2027, finish 29 Oct 2027. At 6495 STAR COVE DRIVE, Dallas. Scope as filed: 31 newly-constructed townhomes. Owner as filed: PCD LLC, PO BOX 797626, Dallas, Texas 75379.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000148",
     "src": "TDLR project page",
     "cards": []
@@ -35984,7 +35995,8 @@
     "when": "2 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "West Henderson Cleburne, Cleburne. $10,000,000 estimated, new construction, start 16 Dec 2026. Owner as filed: The Maddox Group.",
+    "title": "West Henderson Cleburne",
+    "text": "New construction, 41,000 square feet, $10,000,000 estimated. Start 16 Dec 2026, finish 16 Jun 2028. At 110 W Henderson St, Cleburne. Scope as filed: Existing building to be demolished. New construction will consist of a three-story, metal-framed mixed-use building with retail and restaurant space on the ground floor and multifamily residential units on the second and third floors. Owner as filed: The Maddox Group, 6961 CR 1017, Joshua, Texas 76058.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000130",
     "src": "TDLR project page",
     "cards": []
@@ -35994,7 +36006,8 @@
     "when": "28 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "HERITAGE SQUARE TOWNHOMES PH 2, Waxahachie. $22,750,000 estimated, new construction, start 1 Dec 2026. Owner as filed: Skanda Investments and Masina Investments LLC.",
+    "title": "HERITAGE SQUARE TOWNHOMES PH 2",
+    "text": "New construction, 55,000 square feet, $22,750,000 estimated. Start 1 Dec 2026, finish 1 May 2028. At 501 HOUSTON ST, Waxahachie. Scope as filed: 11 TWO STORY TOWNHOMES B1, 7, 10 / B2, 8 / B3, 9 / B4, B5, B6, B11. Owner as filed: Skanda Investments and Masina Investments LLC, 12219 BRETON DR, FRISCO, Texas 75035.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026029165",
     "src": "TDLR project page",
     "cards": []
@@ -36004,7 +36017,8 @@
     "when": "25 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "The Heights at UNT Station, Dallas. $19,000,000 estimated, new construction, start 1 Jan 2027. Owner as filed: Curtis Jones.",
+    "title": "The Heights at UNT Station",
+    "text": "New construction, 254,890 square feet, $19,000,000 estimated. Start 1 Jan 2027, finish 30 Jun 2028. At 1021 E Wheatland Road, Dallas. Scope as filed: New construction of 210-unit affordable apartments. Owner as filed: Curtis Jones, 412 Lisa Lane, DeSoto, Texas 75115.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028771",
     "src": "TDLR project page",
     "cards": []
@@ -36014,9 +36028,10 @@
     "when": "19 Aug 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Nortex Municipal Utility District of Kaufman County, Kaufman County, 752 acres. Petitioners as filed: NORTEX VALENCIA LAND BANK, LP, a Texas limited partnership, VALENCIA SERIES A PROTECTED SERIES OF CYD LAND, LLC, a Texas limited liability company, and NORTEX VALENCIA PHASE 1, L.P., a Texas limited partnership.",
+    "title": "Nortex Municipal Utility District of Kaufman County",
+    "text": "752 acres in Kaufman County, outside any city or ETJ. Works named in the petition: drainage and roads. No bonds are planned for now. No lienholder on the land. Petitioners as filed: NORTEX VALENCIA LAND BANK, LP, a Texas limited partnership, VALENCIA SERIES A PROTECTED SERIES OF CYD LAND, LLC, a Texas limited liability company, and NORTEX VALENCIA PHASE 1, L.P., a Texas limited partnership. Notice D-07082026-032.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0904/0904ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -36024,7 +36039,8 @@
     "when": "19 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Creekside Amenity Area, Prosper. $1,000,000 estimated, new construction, start 1 Sep 2026. Owner as filed: SHADDOCK-CREEKSIDE PROSPER LLC.",
+    "title": "Creekside Amenity Area",
+    "text": "New construction, 2,706 square feet, $1,000,000 estimated. Start 1 Sep 2026, finish 31 Jan 2027. At CREEKSIDE LOT 58X, BLOCK A, Prosper. Scope as filed: RESIDENTIAL AMENITY AREA INCLUDING SPORTS COURTS, PLAYGROUND, TURF AREA/PUTTING GREEN, AND 1,000 SQ FT. SHADE STRUCTURE. Owner as filed: SHADDOCK-CREEKSIDE PROSPER LLC, 2400 DALLAS PKWY #560, Plano, Texas 75093.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028202",
     "src": "TDLR project page",
     "cards": [
@@ -36043,7 +36059,8 @@
     "when": "19 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Maverick Farms Amenity Building, Pilot Point. $1,500,000 estimated, new construction, start 1 Jan 2027. Owner as filed: OMA Pilot Point, LLC.",
+    "title": "Maverick Farms Amenity Building",
+    "text": "New construction, 2,892 square feet, $1,500,000 estimated. Start 1 Jan 2027, finish 30 Jul 2027. At 12251 Mustang Road, Pilot Point. Scope as filed: one story amenity building with associated swimming pool and site improvements serving a residential subdivision/ 2892 sq ft. Owner as filed: OMA Pilot Point, LLC, 8400 Belleview Drive, Suite 110, Plano, Texas 75024.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028198",
     "src": "TDLR project page",
     "cards": []
@@ -36053,7 +36070,8 @@
     "when": "18 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Christs Haven for Children - New Residence, Fort Worth. $700,000 estimated, new construction, start 4 Jan 2027. Owner as filed: Christ's Haven for Children.",
+    "title": "Christs Haven for Children - New Residence",
+    "text": "New construction, 5,483 square feet, $700,000 estimated. Start 4 Jan 2027, finish 2 Aug 2027. At 4200 Keller Haslet Rd, Fort Worth. Scope as filed: New Custom Residence for for a foster family. Owner as filed: Christ's Haven for Children, 4200 Keller Haslet Rd, Fort Worth, Texas 76224.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028136",
     "src": "TDLR project page",
     "cards": []
@@ -36063,7 +36081,8 @@
     "when": "13 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Watercolor Amenity Center, Euless. $900,000 estimated, new construction, start 15 Sep 2026. Owner as filed: MM Euless 661 LLC.",
+    "title": "Watercolor Amenity Center",
+    "text": "New construction, 117,335 square feet, $900,000 estimated. Start 15 Sep 2026, finish 3 May 2027. At 1151 PILOT HILL DR, EULESS, Euless. Scope as filed: Amenity Center including Swimming Pool, Restrooms, and shade structures. Owner as filed: MM Euless 661 LLC, 1800 VALLEY VIEW LN STE 300, Farmers Branch, Texas 75234.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027720",
     "src": "TDLR project page",
     "cards": []
@@ -36073,7 +36092,8 @@
     "when": "13 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Mosaic Phase 4A, Celina. $5,867,225 estimated, new construction, start 5 Oct 2026. Owner as filed: Tellus Texas I LLC.",
+    "title": "Mosaic Phase 4A",
+    "text": "New construction, 1,010,374 square feet, $5,867,225 estimated. Start 5 Oct 2026, finish 8 Mar 2027. At 25 feet Southwest Miscellany Lane and Triadic Lane 35 southwest 5116 Triadic Lane in Prosper (Google), Celina. Scope as filed: Residential improvements including excavation, paving, utilities. Owner as filed: Tellus Texas I LLC, 5301 Headquarters Drive, Plano, Texas 75024.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027753",
     "src": "TDLR project page",
     "cards": [
@@ -36088,7 +36108,8 @@
     "when": "13 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Mosaic Phase 5, Celina. $7,200,000 estimated, new construction, start 20 Aug 2026. Owner as filed: Tellus Texas I LLC.",
+    "title": "Mosaic Phase 5",
+    "text": "New construction, 1,053,455 square feet, $7,200,000 estimated. Start 20 Aug 2026, finish 11 Jan 2027. At 35 feet Southwest Miscellany Lane and Triadic Lane 35 southwest 5116 Triadic Lane in Prosper (Google), Celina. Scope as filed: Residential construction. Owner as filed: Tellus Texas I LLC, 5301 Headquarters Drive, Plano, Texas 75024.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027746",
     "src": "TDLR project page",
     "cards": [
@@ -36103,7 +36124,8 @@
     "when": "11 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "PRESBYTERIAN HOMES AT COLLEYVILLE, Colleyville. $63,000,000 estimated, new construction, start 1 Sep 2026. Owner as filed: CD-SG (Colleyville) LLC.",
+    "title": "PRESBYTERIAN HOMES AT COLLEYVILLE",
+    "text": "New construction, 241,000 square feet, $63,000,000 estimated. Start 1 Sep 2026, finish 30 Oct 2028. At 913 CHEEK SPARGER ROAD, Colleyville. Scope as filed: Independent Living, Assisted Living, and Memory Care community - 241,000 SF. Owner as filed: CD-SG (Colleyville) LLC, 2215 Market St, Denver, Colorado 80205.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027486",
     "src": "TDLR project page",
     "cards": []
@@ -36113,7 +36135,8 @@
     "when": "8 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Home2 Suites Waxahachie, Waxahachie. $8,000,000 estimated, new construction, start 1 Feb 2027. Owner as filed: Waxahachie Hotel Partners LP.",
+    "title": "Home2 Suites Waxahachie",
+    "text": "New construction, 61,600 square feet, $8,000,000 estimated. Start 1 Feb 2027, finish 31 Oct 2028. At RAE St, Waxahachie. Scope as filed: 98 room Hotel. Owner as filed: Waxahachie Hotel Partners LP, 1431 Greenway Dr, Site 380, Irving, Texas 75038.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027322",
     "src": "TDLR project page",
     "cards": []
@@ -36123,7 +36146,8 @@
     "when": "6 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Richardson Ridge Apartments, Fort Worth. $250,000 estimated, new construction, start 1 Jan 2027. Owner as filed: Richardson Ridge, LP.",
+    "title": "Richardson Ridge Apartments",
+    "text": "New construction, 5,800 square feet, $250,000 estimated. Start 1 Jan 2027, finish 1 Jan 2028. At 4000 Campus Drive, Fort Worth. Scope as filed: New Clubhouse/Leasing Center for an apartment complex. Owner as filed: Richardson Ridge, LP, 500 South Front Street, 10th Floor Suite 410, Columbus, Ohio 43215. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027143",
     "src": "TDLR project page",
     "cards": []
@@ -36133,7 +36157,8 @@
     "when": "3 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Mapleshade Apartments, Plano. $2,000,000 estimated, new construction, start 4 Jan 2027. Owner as filed: AHC MAPLESHADE MANAGER LLC.",
+    "title": "Mapleshade Apartments",
+    "text": "New construction, 11,367 square feet, $2,000,000 estimated. Start 4 Jan 2027, finish 5 Jan 2029. At Mapleshade Lane, Plano. Scope as filed: 11,367 SF - Clubhouse and associated parking for a 360 unit for-rent apartment development. The Clubhouse is in a 2-story, wood framed building with elevator and public access sidewalks to public right of way. Owner as filed: AHC MAPLESHADE MANAGER LLC, 9805 Katy Freeway, suite 550, Houston, Texas 77024.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026789",
     "src": "TDLR project page",
     "cards": []
@@ -36143,7 +36168,8 @@
     "when": "30 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Roseland Homes Renovation, Dallas. $28,000,000 estimated, new construction, start 1 Jan 2027. Owner as filed: Roseland II, LP.",
+    "title": "Roseland Homes Renovation",
+    "text": "New construction, 329,201 square feet, $28,000,000 estimated. Start 1 Jan 2027, finish 1 Jan 2028. At 3001 McCoy Place, Dallas. Scope as filed: Site wide interior/exterior renovations and improvements. New leasing office. 329,201 s.f. Owner as filed: Roseland II, LP, 3939 N. Hampton Road, Dallas, Texas 7512. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026626",
     "src": "TDLR project page",
     "cards": []
@@ -36153,7 +36179,8 @@
     "when": "30 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Cedar Ridge Amenity Center, Anna. $1,357,000 estimated, new construction, start 1 Sep 2026. Owner as filed: Saginaw 106, LTD.",
+    "title": "Cedar Ridge Amenity Center",
+    "text": "New construction, 3,169 square feet, $1,357,000 estimated. Start 1 Sep 2026, finish 30 Jun 2027. At 2008 Bird Nest LN, Anna. Scope as filed: New building. Owner as filed: Saginaw 106, LTD, 3045 Lackland Rd,, Fort Worth, Texas 76116.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026542",
     "src": "TDLR project page",
     "cards": []
@@ -36163,7 +36190,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Eastridge, Princeton, Texas. Rank 21, 299 sales. Developer as printed: Green Brick Partners.",
+    "title": "Eastridge",
+    "text": "Princeton, Texas. Rank 21, 299 sales. Developer as printed: Green Brick Partners.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36178,7 +36206,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Silverado, Aubrey, Texas. Rank 25t, 273 sales, 213 the period before. Developer as printed: D.R. Horton.",
+    "title": "Silverado",
+    "text": "Aubrey, Texas. Rank 25t, 273 sales, 213 the period before. Developer as printed: D.R. Horton.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36193,7 +36222,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Liberty Trails, Fort Worth, Texas. Rank 27, 272 sales. Developer as printed: D.R. Horton.",
+    "title": "Liberty Trails",
+    "text": "Fort Worth, Texas. Rank 27, 272 sales. Developer as printed: D.R. Horton.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36208,7 +36238,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Painted Tree, McKinney, Texas. Rank 31t, 262 sales, 330 the period before. Developer as printed: Oxland Group.",
+    "title": "Painted Tree",
+    "text": "McKinney, Texas. Rank 31t, 262 sales, 330 the period before. Developer as printed: Oxland Group.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36223,7 +36254,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Elevon, Lavon, Texas. Rank 44, 225 sales, 217 the period before. Developer as printed: MA Partners.",
+    "title": "Elevon",
+    "text": "Lavon, Texas. Rank 44, 225 sales, 217 the period before. Developer as printed: MA Partners.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36238,7 +36270,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Lakehaven, Farmersville, Texas. Rank 45, 224 sales. Developer as printed: Green Brick Partners.",
+    "title": "Lakehaven",
+    "text": "Farmersville, Texas. Rank 45, 224 sales. Developer as printed: Green Brick Partners.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -36253,7 +36286,8 @@
     "when": "27 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Hotel Cotten Bratton, Weatherford. $1,250,000 estimated, new construction, start 1 Aug 2026. Owner as filed: Rider Scott.",
+    "title": "Hotel Cotten Bratton",
+    "text": "New construction, 2,560 square feet, $1,250,000 estimated. Start 1 Aug 2026, finish 30 Nov 2026. At 117 College Ave, Weatherford. Scope as filed: 15 hotel rooms, 1 utility room totalling 2,560 sq ft. Owner as filed: Rider Scott, 7400 East Bankhead Highway, Willow Park, Texas 76008.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026233",
     "src": "TDLR project page",
     "cards": []
@@ -36263,7 +36297,8 @@
     "when": "24 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "WALSH RANCH ADULT AMENITY CENTER, Fort Worth. $3,000,000 estimated, new construction, start 1 Sep 2026. Owner as filed: QUAIL VALLEY DEVCO IVA LLC.",
+    "title": "WALSH RANCH ADULT AMENITY CENTER",
+    "text": "New construction, 5,973 square feet, $3,000,000 estimated. Start 1 Sep 2026, finish 1 Jun 2027. At CIDER CREEK BLVD, Fort Worth. Scope as filed: GROUND UP NEW CONSTRUCTION. Owner as filed: QUAIL VALLEY DEVCO IVA LLC, 400 S RECORD ST STE 1200, DALLAS, Texas 75202.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026094",
     "src": "TDLR project page",
     "cards": [
@@ -36278,7 +36313,8 @@
     "when": "22 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "The Greenway at Champions Circle, Fort Worth. $807,900 estimated, new construction, start 22 Oct 2026. Owner as filed: DE BTR LLC.",
+    "title": "The Greenway at Champions Circle",
+    "text": "New construction, 5,386 square feet, $807,900 estimated. Start 22 Oct 2026, finish 1 Mar 2027. At SH 114 (2500-2700 blks), Fort Worth. Scope as filed: DOUBLE EAGLE SFR - clubhouse. Owner as filed: DE BTR LLC, 8333 Douglas Ave #1500, Dallas, Texas 75225.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025893",
     "src": "TDLR project page",
     "cards": []
@@ -36288,7 +36324,8 @@
     "when": "20 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "THE ENCLAVE AT FATE VILLAGE, Fate. $1,800,000 estimated, new construction, start 1 Mar 2027. Owner as filed: BT FATE PHASE I OWNER, LLC.",
+    "title": "THE ENCLAVE AT FATE VILLAGE",
+    "text": "New construction, 2,921 square feet, $1,800,000 estimated. Start 1 Mar 2027, finish 30 Sep 2027. At 422 W. GREENBRAIR ROAD, Fate. Scope as filed: NEW 2,921 SF RESIDENT CENTER WITH 1,600 SF POOL . Owner as filed: BT FATE PHASE I OWNER, LLC, 5430 LBJ FWY, #1050, DALLAS, Texas 75240.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025591",
     "src": "TDLR project page",
     "cards": []
@@ -36298,7 +36335,8 @@
     "when": "16 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Franklin Branch Apartments, Mckinney. $27,051,424 estimated, new construction, start 3 Mar 2027. Owner as filed: Franklin Branch Apartments Ltd.",
+    "title": "Franklin Branch Apartments",
+    "text": "New construction, 343,515 square feet, $27,051,424 estimated. Start 3 Mar 2027, finish 4 Nov 2028. At 3565 FM 1461, Mckinney. Scope as filed: Multifamily housing project that will consist of approximately apartment units, with patios and balconies. The design will incorporate nine (9) 3-Story walk-up buildings and one (1) Clubhouse/Lease Office. Owner as filed: Franklin Branch Apartments Ltd, 1228 Euclid Ave. 4th Floor, Cleveland, Ohio 44115.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025468",
     "src": "TDLR project page",
     "cards": []
@@ -36308,7 +36346,8 @@
     "when": "8 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Stewart Creek Recreation Center Parking Lot Expansion, The Colony. $450,000 estimated, new construction, start 1 Oct 2026. Owner as filed: The Colony.",
+    "title": "Stewart Creek Recreation Center Parking Lot Expansion",
+    "text": "New construction, 37,890 square feet, $450,000 estimated. Start 1 Oct 2026, finish 31 Dec 2026. At 4431 Augusta St, The Colony. Scope as filed: Parking expansion off off main parking lot. Owner as filed: The Colony, 5151 N Colony Blvd, The Colony, Texas 75056. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024719",
     "src": "TDLR project page",
     "cards": []
@@ -36318,9 +36357,10 @@
     "when": "29 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "The Heavens Municipal Utility District of Grayson County, Grayson County, 470 acres, estimated cost $104,325,000. Petitioners as filed: FM2729 LLC, FM 2729 Investment LLC, and FM 2729 Dane and Knobhill LLC.",
+    "title": "The Heavens Municipal Utility District of Grayson County",
+    "text": "470 acres in Grayson County, outside any city or ETJ. Works named in the petition: water, drainage and roads. Estimated cost $104,325,000. Lienholder: David S. Kohm and Stacy Michelle Kohm, MPM Rati, LLC, and, DSA Partners II, Ltd. Petitioners as filed: FM2729 LLC, FM 2729 Investment LLC, and FM 2729 Dane and Knobhill LLC. Notice D-05152026-023.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0710/0710ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -36328,9 +36368,10 @@
     "when": "24 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Twin Bridges Municipal Utility District of Collin County, Collin County, 224 acres, estimated cost $68,615,000. Petitioners as filed: VSS Management, L.L.C., a Texas limited liability company and general partner of VSS Limited Partnership, a Texas limited partnership.",
+    "title": "Twin Bridges Municipal Utility District of Collin County",
+    "text": "224 acres in Collin County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $68,615,000. No lienholder on the land. Petitioners as filed: VSS Management, L.L.C., a Texas limited liability company and general partner of VSS Limited Partnership, a Texas limited partnership. Notice D-06012026-002.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0710/0710ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -36338,9 +36379,10 @@
     "when": "5 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Hunter Ranch Municipal Utility District of Grayson County, Grayson County, 518 acres, estimated cost $99,165,000. Petitioners as filed: Cothran Malibu, LP, a Delaware limited partnership.",
+    "title": "Hunter Ranch Municipal Utility District of Grayson County",
+    "text": "518 acres in Grayson County, outside any city or ETJ. Works named in the petition: water, drainage and roads. Estimated cost $99,165,000. No lienholder on the land. Petitioners as filed: Cothran Malibu, LP, a Delaware limited partnership. Notice D-04292026-068.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0619/0619ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -36348,9 +36390,10 @@
     "when": "4 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Whites Creek Ranch Municipal Utility District of Wise County, Wise County, 831 acres, estimated cost $28,079,259. Petitioners as filed: COALRIDGE PROPERTIES, LLC.",
+    "title": "Whites Creek Ranch Municipal Utility District of Wise County",
+    "text": "831 acres in Wise County. Works named in the petition: water, drainage and roads. Estimated cost $28,079,259. No lienholder on the land. Petitioners as filed: COALRIDGE PROPERTIES, LLC. Notice D-02062025-026.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0619/0619ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -36358,13 +36401,69 @@
     "when": "4 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Whites Creek Ranch Municipal Utility District of Wise County, Wise County, 831 acres, estimated cost $28,079,259. Petitioners as filed: COALRIDGE PROPERTIES, LLC.",
+    "title": "Whites Creek Ranch Municipal Utility District of Wise County",
+    "text": "831 acres in Wise County. Works named in the petition: water, drainage and roads. Estimated cost $28,079,259. No lienholder on the land. Petitioners as filed: COALRIDGE PROPERTIES, LLC. Notice D-05082026-021.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0626/0626ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-05-28",
+    "when": "28 May 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Grayson County Municipal Utility District No. 10",
+    "text": "141 acres in Grayson County. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $32,510,000. No lienholder on the land. Petitioners as filed: The Cherukuru Investments at Howe LLC. Notice D-05072026-019.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0612/0612ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-05-21",
+    "when": "21 May 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Stanford Farm Municipal Utility District",
+    "text": "109 acres in Collin County, in the ETJ of the City of Farmersville. Works named in the petition: water, drainage and roads. Estimated cost $20,470,000. No lienholder on the land. Petitioners as filed: The Jack L. Morris Sr. Living Trust. Notice D-05072026-012.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0605/0605ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-05-14",
+    "when": "14 May 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Cross Creek East Municipal Utility District of Hunt County",
+    "text": "231 acres in Hunt County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $58,404,656. Lienholder: on the property to be included in the proposed District, i.e., C2R Secured Debt Fund I, LP, a Texas limited partnership, and Grandview Bancshares, Inc., a Texas corporation. Petitioners as filed: TCCI Josephine Scott, LLC, a Texas limited liability company, and TCCI Griggs, LLC., a Texas limited liability company. Notice D-04212026-041.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0529/0529ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-04-30",
+    "when": "30 Apr 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "HCR Municipal Management District No. 1 of Collin County",
+    "text": "214 acres in Collin County, in the ETJ of the City of Weston. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $17,525,000. No lienholder on the land. Petitioners as filed: Estate of Susie D Crossland and Estate of Thomas B Crossland. Notice D-04082026-028.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0515/0515ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-04-28",
+    "when": "28 Apr 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Preston 540 Ranch Municipal Utility District of Grayson County",
+    "text": "540 acres in Grayson County, outside any city or ETJ. Works named in the petition: water, drainage and roads. Estimated cost $220,796,501. No lienholder on the land. Petitioners as filed: Amy Allen Meyer, Trustee of the Amy Allen Meyer GST Trust, Dated August 9, 2009, Amy Allen Meyer, an individual, Tom W. Allen, III, Trustee of the Tom W. Allen GST Trust, Dated August 9, 2009, and Tom W. Allen, III, an individual. Notice D-03232026-037.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0508/0508ia.pdf",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    }
   ],
-  "n": 44,
+  "n": 49,
   "on_cards": 11,
   "groups": [
    {
@@ -36375,7 +36474,7 @@
    {
     "key": "districts",
     "label": "Water districts",
-    "n": 6
+    "n": 11
    },
    {
     "key": "rankings",
@@ -36383,7 +36482,7 @@
     "n": 6
    }
   ],
-  "from": "4 Jun 2026",
+  "from": "28 Apr 2026",
   "to": "8 Oct 2026",
   "days": 180,
   "read": "11 Oct 2026",

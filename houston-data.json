@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 128,
+ "build": 129,
  "last_updated": "2026-10-10",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
  "kicker": "Rolodex · Greater Houston · 2026-10-10",
@@ -43768,9 +43768,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat, public hearing",
-    "text": "Mill Ridge Village Sec 1, 147 lots, Harris County. Owner as filed: Meritage Homes.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Mill Ridge Village Sec 1",
+    "text": "147 lots on 20.9 acres. Houston ETJ, Harris County, ZIP 77429, Key Map 369J. Land use as filed: Single Family Residential (PAE 1/PAE 2). Owner as filed: Meritage Homes. Applicant: McKim & Creed, Inc. Submitted 8 Sep 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Submitted/2026-1485/OriginalFiles/Mill_Ridge_Village_Sec_1_NEW.pdf?sv=2021-08-06&se=2051-09-23T15%3A51%3A47Z&sr=b&sp=r&sig=lylUCltzwn14bVqudtYS4uUTziiS3lC1P%2FlDpQ1O6kA%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-008",
@@ -43783,9 +43784,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat, public hearing",
-    "text": "Highland Crossing replat no 1, 18 lots, Harris County.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Highland Crossing replat no 1",
+    "text": "18 lots on 1.2 acres. City of Houston, Harris County, ZIP 77091, Key Map 452C. Land use as filed: Single Family Residential (Shared Driveways). Owner as filed: 3h Engineering & Construction, Inc. Applicant: PLS CONSTRUCTION LAYOUT, INC. Submitted 7 Sep 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93748/OriginalFiles/Highland_Crossing_Replat_No_1.pdf?sv=2021-08-06&se=2051-09-06T20%3A32%3A38Z&sr=b&sp=r&sig=T0jgvF83yXwu72godo2GvSe%2Bj9MT19WV5ljVmFJtv7g%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43793,9 +43795,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Gardenlight City Place Sec 3, 94 lots, Harris County. Owner as filed: Brookfield Properties.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Gardenlight City Place Sec 3",
+    "text": "94 lots on 25.8 acres, lots drawn at 45' x 100', 50' x 110', 50' x 120' and 55' x 120', 15 restricted reserves and 10 blocks. Houston ETJ, Harris County, ZIP 77389, Key Map 291M. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). The drawing shows alley-served lots. Owner as filed: Brookfield Properties. Applicant: LJA, Inc. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93894/OriginalFiles/3293-00001_Gardenlight_Section_3_Preliminary_Plat_10-05-2026.pdf?sv=2021-08-06&se=2051-10-05T15%3A35%3A26Z&sr=b&sp=r&sig=xHncBo6Lv11pZi9yD8n%2Bwa1mIkZg46diCcc84FBFGlk%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-207",
@@ -43808,9 +43811,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Gardenlight City Place Sec 2, 51 lots, Harris County. Owner as filed: Brookfield Properties.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Gardenlight City Place Sec 2",
+    "text": "51 lots on 9.5 acres, lots drawn at 48' x 76', 5 restricted reserves and 3 blocks. Houston ETJ, Harris County, ZIP 77389, Key Map 291M. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). Owner as filed: Brookfield Properties. Applicant: LJA, Inc. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93896/OriginalFiles/3293-00001_Gardenlight_Section_2_Preliminary_Plat_10-05-2026.pdf?sv=2021-08-06&se=2051-10-05T15%3A23%3A14Z&sr=b&sp=r&sig=Kngpm%2FSPtaIb1Nz3O951NGu2iIoYEOespznxhrtSUm0%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-207",
@@ -43823,9 +43827,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Midline Sec 11, 55 lots, Harris County. Owner as filed: Brookfield Properties.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Midline Sec 11",
+    "text": "55 lots on 16 acres, lots drawn at 40' x 125', 6 restricted reserves and 4 blocks. Houston ETJ, Harris County, ZIP 77598, Key Map 657D. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). Owner as filed: Brookfield Properties. Applicant: LJA, Inc. Submitted 2 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93885/OriginalFiles/3293-10037_Midline_Section_11_Preliminary_Plat_10-02-2026.pdf?sv=2021-08-06&se=2051-10-02T16%3A59%3A39Z&sr=b&sp=r&sig=cklnB8K68tgjw3hcJMUKTcYGa3d6JzF1vVhybBpo7XE%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-207",
@@ -43838,9 +43843,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Maybell Springs, 11 lots, Harris County.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Maybell Springs",
+    "text": "11 lots on 0.9 acres. City of Houston, Harris County, ZIP 77091, Key Map 412Y. Land use as filed: Residential Guest Parking, Single Family Residential (Shared Driveways). Owner as filed: CE Engineers & Development Consultants, Inc. Applicant: CE Engineers & Development Consultants, INC. Submitted 21 Sep 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93863/OriginalFiles/261062125-Model.pdf?sv=2021-08-06&se=2051-09-21T15%3A56%3A18Z&sr=b&sp=r&sig=MbqWmErZdSQqQdB0Gf1L8oqS8VPjLsZuF2ZODm7jQyw%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43848,9 +43854,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Gardenlight City Place Sec 1, 208 lots, Harris County. Owner as filed: Brookfield Properties.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Gardenlight City Place Sec 1",
+    "text": "208 lots on 55.5 acres, lots drawn at 32' x 155' and 70' x 138', 22 restricted reserves and 18 blocks. Houston ETJ, Harris County, ZIP 77389, Key Map 291M. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). The drawing shows alley-served lots. Out of the J. Jones Survey, Abstract 481. Owner as filed: Brookfield Properties. Applicant: LJA, Inc. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Submitted/2026-1657/OriginalFiles/3293-00001_Gardenlight_Section_1_Preliminary_Plat_10-07-26.pdf?sv=2021-08-06&se=2051-10-07T18%3A13%3A49Z&sr=b&sp=r&sig=h55GrZSuGDYeQTJqFXbZsJ71305hxNgbPITBgcmqcFo%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-207",
@@ -43863,9 +43870,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Cypress Trails at Bauer Landing Sec 2, 158 lots, Harris County. Owner as filed: LGI Homes - Texas, LLC.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Cypress Trails at Bauer Landing Sec 2",
+    "text": "158 lots on 44 acres, 5 reserves and 6 blocks. Houston ETJ, Harris County, ZIP 77447, Key Map 285P. Land use as filed: Single Family Residential (Public Street). Owner as filed: LGI Homes - Texas, LLC. Applicant: Pape-Dawson. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93903/OriginalFiles/251001_-_PL42500-21_PRELIM.pdf?sv=2021-08-06&se=2051-10-05T15%3A23%3A22Z&sr=b&sp=r&sig=rsdgp%2Baa12RD85FvdJ%2F3XP0S3F57tk94IvFiCEZuXWk%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-014",
@@ -43878,9 +43886,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Lacey Estates, 24 lots, Harris County.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Lacey Estates",
+    "text": "24 lots on 4.3 acres. Houston ETJ, Harris County, ZIP 77375, Key Map 329F. Land use as filed: Compensating Open Space, Drainage or Detention, Residential Guest Parking, Single Family Residential (PAE 1/PAE 2). Owner as filed: 3h Engineering & Construction, Inc. Applicant: PLS CONSTRUCTION LAYOUT, INC. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93940/OriginalFiles/Lacey_Estates.pdf?sv=2021-08-06&se=2051-10-05T14%3A35%3A00Z&sr=b&sp=r&sig=DmoWeaSd3eA1XL2TGWQ2aj3e2%2BArPupzhnZlhoU6PGI%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43888,9 +43897,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "General plan",
-    "text": "Sheldon Ridge GP, 378 acres, Harris County. Owner as filed: Woodmere Development Co.",
+    "title": "Sheldon Ridge GP",
+    "text": "378.4 acres. Houston ETJ, Harris County, ZIP 77044, Key Map 418S. Land use as filed: General Plan. Out of the John Dunman Survey, Abstract 231. Owner as filed: Woodmere Development Co. Applicant: IDS Engineering Group. Submitted 5 Oct 2026.",
     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93918/OriginalFiles/SR_GENERAL_PLAN_09-26.pdf?sv=2021-08-06&se=2051-10-05T12%3A31%3A13Z&sr=b&sp=r&sig=Nc3u7o07ymlnVgk2PPPb2mrqjqbC78Lm%2FJqIh%2F3Ob6A%3D",
-    "src": "Plat filed with the Planning Commission",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-130",
@@ -43903,9 +43913,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "General plan",
-    "text": "Gardenlight City Place GP, 421 acres, Harris County. Owner as filed: Brookfield Properties.",
+    "title": "Gardenlight City Place GP",
+    "text": "420.6 acres. Houston ETJ, Harris County, ZIP 77389, Key Map 291H. Land use as filed: General Plan. Out of the J. Jones Survey, Abstract 481. Owner as filed: Brookfield Properties. Applicant: LJA, Inc. Submitted 2 Oct 2026.",
     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93907/OriginalFiles/3293-00001_Gardenlight_City_Place_General_Plan_10-02-2026.pdf?sv=2021-08-06&se=2051-10-02T19%3A22%3A51Z&sr=b&sp=r&sig=z5J13bhSiBPdOr1LkgIbylPOZCOJW%2BDc4g6L93h5m0k%3D",
-    "src": "Plat filed with the Planning Commission",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-207",
@@ -43918,9 +43929,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "General plan",
-    "text": "McHard Industrial GP, 79 acres, Fort Bend County. Owner as filed: Kimley Horn.",
+    "title": "McHard Industrial GP",
+    "text": "79.1 acres, lots drawn at 75' x 75'. Houston ETJ, Fort Bend County, ZIP 77053, Key Map 610H. Land use as filed: General Plan. Out of the Thomas Hobermaker Survey, Abstract 191. Owner as filed: Kimley Horn. Applicant: Kimley Horn. Submitted 21 Sep 2026.",
     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93669/OriginalFiles/067548037-McHard_Industrial_GP_V1-1.pdf?sv=2021-08-06&se=2051-09-21T14%3A50%3A30Z&sr=b&sp=r&sig=W8FdoaMM6uuIbvO8z%2BURHs7Au1CjY7v62%2F5xZEO0dqI%3D",
-    "src": "Plat filed with the Planning Commission",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43928,9 +43940,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "General plan",
-    "text": "Benders Creek GP, 190 acres, Harris County. Owner as filed: Academy Development.",
+    "title": "Benders Creek GP",
+    "text": "190.5 acres. City of Houston, Harris County, ZIP 77033, Key Map 574B. Land use as filed: General Plan. Owner as filed: Academy Development. Applicant: LJA, Inc. Submitted 4 Sep 2026.",
     "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Submitted/2026-1449/OriginalFiles/2284-2504_Benders_Creek_General_Plan_09-18-2026.pdf?sv=2021-08-06&se=2051-09-22T20%3A29%3A56Z&sr=b&sp=r&sig=%2BFqP9ATYyzZwmqz51cJDcuBt4oQ7hpyv3BNxUi1ztqw%3D",
-    "src": "Plat filed with the Planning Commission",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43938,9 +43951,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Mansfield Commons, 34 lots, Harris County. Owner as filed: Gbokiri Essential LLC.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Mansfield Commons",
+    "text": "34 lots on 2 acres, 1 reserve and 34 blocks. City of Houston, Harris County, ZIP 77091, Key Map 452A. Land use as filed: Residential Guest Parking, Single Family Residential (PAE 1/PAE 2). Out of the In The E. Benson Survey, Abstract 110. Owner as filed: Gbokiri Essential LLC. Applicant: The Interfield Group. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93937/OriginalFiles/10.02.26_-_PDF_of_Plat_2_Pages.pdf?sv=2021-08-06&se=2051-10-05T13%3A41%3A00Z&sr=b&sp=r&sig=YH%2B0gIhEmGBZ0S0eLc6%2FXd4qCtTvYGP5ldhpGS9KrPY%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -43948,9 +43962,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Sheldon Ridge Sec 15, 60 lots, Harris County. Owner as filed: Woodmere Development Co.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Sheldon Ridge Sec 15",
+    "text": "60 lots on 12.6 acres, 2 reserves and 5 blocks. Houston ETJ, Harris County, ZIP 77044, Key Map 418S. Land use as filed: Landscape or Open Space, Single Family Residential (Public Street). Out of the John Jones Survey, Abstract 483. Owner as filed: Woodmere Development Co. Applicant: IDS Engineering Group. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93919/OriginalFiles/SR_15_Plat.pdf?sv=2021-08-06&se=2051-10-05T09%3A24%3A34Z&sr=b&sp=r&sig=8ysQVFMI8Ub5M84PdGk8nQ8Qm1I%2By4hrzSjcKqSHJ4I%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-130",
@@ -43963,9 +43978,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Westhaven Manor North Sec 2, 61 lots, Harris County. Owner as filed: LGI HOMES - TEXAS, LLC, a Texas limited liability company.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Westhaven Manor North Sec 2",
+    "text": "61 lots on 9.2 acres, 4 reserves and 4 blocks. Houston ETJ, Harris County, ZIP 77484, Key Map 242T. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). Out of the G.N. Railroad Company Survey, Abstract 966. Owner as filed: LGI HOMES - TEXAS, LLC, a Texas limited liability company. Applicant: Pape-Dawson. Submitted 2 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93596/OriginalFiles/PL41014-002_FINAL.pdf?sv=2021-08-06&se=2051-09-30T04%3A54%3A59Z&sr=b&sp=r&sig=2yQwRxJSxJmmIr1ISIztvNEf59vVCF7fqDpblxxqkkg%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-014",
@@ -43978,9 +43994,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Woodlands Village of Sterling Ridge Sec 94 partial replat no 1 replat no 1, 66 lots, Montgomery County. Owner as filed: Woodlands Land Development, L.P.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Woodlands Village of Sterling Ridge Sec 94 partial replat no 1 replat no 1",
+    "text": "66 lots on 17.2 acres. Houston ETJ, Montgomery County, ZIP 77354, Key Map 249A. Land use as filed: Landscape or Open Space, Single Family Residential (Public Street). Owner as filed: Woodlands Land Development, L.P. Applicant: LJA, Inc. Submitted 2 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93817/OriginalFiles/TWVSR94PR2_10.1.26.pdf?sv=2021-08-06&se=2051-10-01T17%3A07%3A03Z&sr=b&sp=r&sig=dMsiSykexQAknzUFvWfiSVNvePv6JmylnpxX762WWiY%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-011",
@@ -43993,9 +44010,10 @@
     "when": "15 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Loduc Creek, 23 lots, Harris County. Owner as filed: Plavans LLC.",
-    "url": "https://plattracker.powerappsportals.us/CurrentAgendaSpreadsheet",
-    "src": "Planning Commission upcoming agenda",
+    "title": "Loduc Creek",
+    "text": "23 lots on 4.4 acres. City of Houston, Harris County, ZIP 77040, Key Map 410Y. Land use as filed: Unrestricted, Single Family Residential (PAE 1/PAE 2). Owner as filed: Plavans LLC. Applicant: Gruller Surveying LLC. Submitted 10 Aug 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93572/OriginalFiles/45-22233_PLAT_V2-Layout1.pdf?sv=2021-08-06&se=2051-08-10T12%3A47%3A05Z&sr=b&sp=r&sig=b0XFyYVjNSaqioSy%2BF1Luxoo1VpkZywUXGMBItv3AIk%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -44003,7 +44021,8 @@
     "when": "9 Oct 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Ellora Recreation Center Improvements, Waller. $4,077,185 estimated, new construction, start 4 Jan 2027. Owner as filed: GRBK HOU, LLC.",
+    "title": "Ellora Recreation Center Improvements",
+    "text": "New construction, 195,000 square feet, $4,077,185 estimated. Start 4 Jan 2027, finish 3 Jan 2028. At 31820 Willowstone Path, Waller. Scope as filed: Parking lot, building, pool, fencing, lighting, site furniture, concrete walk, sports courts, shade sails, playground, outdoor games, decomposed granite, synthetic turf, berms, landscape, irrigation, fine grade and hydromulch, sod, and drainage. Owner as filed: GRBK HOU, LLC, 5501 Headquarters Drive, Suite 300W, Plano, Texas 75024. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027003165",
     "src": "TDLR project page",
     "cards": []
@@ -44013,7 +44032,8 @@
     "when": "6 Oct 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Midline Amenity Detention Ponds Phase 2 126-030, Webster. $634,000 estimated, new construction, start 16 Nov 2026. Owner as filed: BC-SB BAYBROOK JV.",
+    "title": "Midline Amenity Detention Ponds Phase 2 126-030",
+    "text": "New construction, 48,000 square feet, $634,000 estimated. Start 16 Nov 2026, finish 14 May 2027. At Beamer Road @ Fife Lane, Webster. Scope as filed: Sidewalks, hardscape walks, furnishings, landscape and irrigation. Owner as filed: BC-SB BAYBROOK JV, 10613 W. SAM HOUSTON PKWY NORTH, SUITE 200,, Houston, Texas 77064. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002832",
     "src": "TDLR project page",
     "cards": [
@@ -44028,9 +44048,10 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Replat, public hearing",
-    "text": "Bridgeland Creekland Village Sec 22 replat no 1, 80 lots, Harris County. Owner as filed: Howard Hughes.",
-    "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-    "src": "Planning Commission action agenda",
+    "title": "Bridgeland Creekland Village Sec 22 replat no 1",
+    "text": "80 lots on 13.2 acres. Houston ETJ, Harris County, ZIP 77447, Key Map 365F. Land use as filed: Compensating Open Space, Landscape or Open Space, Single Family Residential (Public Street). Owner as filed: Bridgeland Development, LP. Applicant: LJA, Inc. Submitted 2 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93891/OriginalFiles/BridgelandCV_22_Replat-10.05.26.pdf?sv=2021-08-06&se=2051-10-02T14%3A04%3A10Z&sr=b&sp=r&sig=8Y8oNAFa7WpXKwocNAu10MN%2F1pPOn2p4IeR9dX0lXg0%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-011",
@@ -44043,9 +44064,10 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Aurora Fields, 44 lots, Harris County.",
-    "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-    "src": "Planning Commission action agenda",
+    "title": "Aurora Fields",
+    "text": "44 lots on 3 acres. City of Houston, Harris County, ZIP 77091, Key Map 452A. Land use as filed: Landscape or Open Space, Residential Guest Parking, Single Family Residential (PAE 1/PAE 2). Owner as filed: To be determined. Applicant: SEM SERVICES. Submitted 5 Oct 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93933/OriginalFiles/Mansfield_-_October_2026.pdf?sv=2021-08-06&se=2051-10-05T12%3A21%3A16Z&sr=b&sp=r&sig=%2FcECw9F2lnfm41FDxZqsNq24aCl%2B1ccJBSLtWKr8944%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -44053,7 +44075,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Lexington Gardens, 2 lots, Harris County. Owner as filed: Sandcastle Homes Inc.",
+    "title": "Lexington Gardens",
+    "text": "2 lots on 0.1 acres. City of Houston, Harris County, Key Map 492Z. Owner as filed: Sandcastle Homes Inc. Applicant: MOMENTUM EGINEERING.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44068,9 +44091,10 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Replat",
-    "text": "Winged Oaks, 20 lots, Harris County. Owner as filed: Altar Group.",
-    "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-    "src": "Planning Commission action agenda",
+    "title": "Winged Oaks",
+    "text": "20 lots on 8.2 acres. City of Houston, Harris County, ZIP 77043, Key Map 449Y. Land use as filed: Unrestricted, Commercial, Drainage or Detention, Landscape or Open Space, Residential Guest Parking, Single Family Residential (PAE 1/PAE 2). Owner as filed: Altar Group. Applicant: DVJ GROUP. Submitted 4 Sep 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Submitted/2026-1454/OriginalFiles/Plat_combined.pdf?sv=2021-08-06&se=2051-09-16T15%3A33%3A56Z&sr=b&sp=r&sig=lmJaB6BKXd6vclOayuDb4pQh9sI812diU6TFD86j3gM%3D",
+    "src": "Plat drawing (PDF)",
     "cards": []
    },
    {
@@ -44078,7 +44102,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Sec 73, 38 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Sec 73",
+    "text": "38 lots on 27.7 acres. Houston ETJ, Harris County, Key Map 404M. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44093,7 +44118,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Sec 79, 46 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Sec 79",
+    "text": "46 lots on 15.1 acres. Houston ETJ, Harris County, Key Map 404M. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44108,7 +44134,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Cy Fair Sec 5, 31 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Cy Fair Sec 5",
+    "text": "31 lots on 12.3 acres. Houston ETJ, Harris County, Key Map 405L. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44123,7 +44150,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Cy Fair Sec 6, 34 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Cy Fair Sec 6",
+    "text": "34 lots on 6.7 acres. Houston ETJ, Harris County, Key Map 405L. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44138,7 +44166,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Cy Fair Sec 12, 31 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Cy Fair Sec 12",
+    "text": "31 lots on 13.2 acres. Houston ETJ, Harris County, Key Map 405L. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44153,7 +44182,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Preliminary plat",
-    "text": "Elyson Cy Fair Sec 13, 36 lots, Harris County. Owner as filed: NASH FM 529, LLC.",
+    "title": "Elyson Cy Fair Sec 13",
+    "text": "36 lots on 33.6 acres. Houston ETJ, Harris County, Key Map 405L. Owner as filed: NASH FM 529, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44168,7 +44198,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Bridgeland Prairieland Village Sec 53, 76 lots, Harris County. Owner as filed: Bridgeland Development, LP, a Maryland limited partnership.",
+    "title": "Bridgeland Prairieland Village Sec 53",
+    "text": "76 lots on 19.8 acres. Houston ETJ, Harris County, Key Map 365T. Owner as filed: Bridgeland Development, LP, a Maryland limited partnership. Applicant: BGE, Inc.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44183,7 +44214,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Estates at Knoll Street replat no 1, 17 lots, Harris County.",
+    "title": "Estates at Knoll Street replat no 1",
+    "text": "17 lots on 1.4 acres. City of Houston, Harris County, Key Map 450V. Applicant: PLS CONSTRUCTION LAYOUT, INC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": []
@@ -44193,9 +44225,10 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Winward Falls Sec 1, 270 lots, Harris County. Owner as filed: Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve.",
-    "url": "https://plattracker.powerappsportals.us/agenda-documents/",
-    "src": "Planning Commission action agenda",
+    "title": "Winward Falls Sec 1",
+    "text": "270 lots on 145.5 acres, 13 reserves and 8 blocks. Houston ETJ, Harris County, ZIP 77493, Key Map 404K. Land use as filed: Drainage or Detention, Landscape or Open Space, Single Family Residential (Public Street), Other. Owner as filed: Lennar Homes of Texas Land and Construction, LTD. A Texas Limited Partnership d/b/a Friendswood Deve. Submitted 18 Sep 2026.",
+    "url": "https://sablobgtxpptprod.blob.core.usgovcloudapi.net/plattracker-documents/Drafts/93799/OriginalFiles/WinwardFalls_Sec1_PlatSet_-_09-16-2026.pdf?sv=2021-08-06&se=2051-09-18T15%3A03%3A55Z&sr=b&sp=r&sig=KEvkTFKa7Xs0rtc0IyTx0VwnvmeYtJ%2BOlhYaHNe1T4U%3D",
+    "src": "Plat drawing (PDF)",
     "cards": [
      {
       "id": "HOU-042",
@@ -44212,7 +44245,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Final plat",
-    "text": "Winzer Heights, 39 lots, Harris County. Owner as filed: Terravision Development, LLC.",
+    "title": "Winzer Heights",
+    "text": "39 lots on 2.4 acres. City of Houston, Harris County, Key Map 412S. Owner as filed: Terravision Development, LLC. Applicant: Pioneer Engineering, LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": []
@@ -44222,7 +44256,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Hockley Meadows Sec 5, 140 lots, Harris County. Owner as filed: Taylor Morrison of Texas, Inc.",
+    "title": "Hockley Meadows Sec 5",
+    "text": "140 lots on 35.3 acres. Houston ETJ, Harris County, Key Map 324J. Owner as filed: Taylor Morrison of Texas, Inc. Applicant: LJA, Inc.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44237,7 +44272,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Oakberry Trails Sec 5, 70 lots, Harris County. Owner as filed: LOB West, Inc.",
+    "title": "Oakberry Trails Sec 5",
+    "text": "70 lots on 17.4 acres. Houston ETJ, Harris County, Key Map 283F. Owner as filed: LOB West, Inc. Applicant: Benchmark Engineering Corporation.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44252,7 +44288,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Oakberry Trails Sec 12, 51 lots, Harris County. Owner as filed: LOB West, Inc.",
+    "title": "Oakberry Trails Sec 12",
+    "text": "51 lots on 7.9 acres. Houston ETJ, Harris County, Key Map 283G. Owner as filed: LOB West, Inc. Applicant: Benchmark Engineering Corporation.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44267,7 +44304,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Pecan Estates Sec 5, 96 lots, Harris County. Owner as filed: Murff Castle Estates, LLC.",
+    "title": "Pecan Estates Sec 5",
+    "text": "96 lots on 74.5 acres. Houston ETJ, Harris County, Key Map 419K. Owner as filed: Murff Castle Estates, LLC. Applicant: LJA, Inc.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": []
@@ -44277,7 +44315,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Redbud Sec 3, 77 lots, Harris County. Owner as filed: Taylor Morrison.",
+    "title": "Redbud Sec 3",
+    "text": "77 lots on 16.9 acres. Houston ETJ, Harris County, Key Map 325D. Owner as filed: Taylor Morrison. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44292,7 +44331,8 @@
     "when": "1 Oct 2026",
     "group": "plats",
     "kind": "Extension of approval",
-    "text": "Trillium Sec 12, 109 lots, Fort Bend County. Owner as filed: TPHTM 1464, LLC.",
+    "title": "Trillium Sec 12",
+    "text": "109 lots on 30.6 acres. Houston ETJ, Fort Bend County, Key Map 526U. Owner as filed: TPHTM 1464, LLC. Applicant: Meta Planning + Design LLC.",
     "url": "https://plattracker.powerappsportals.us/agenda-documents/",
     "src": "Planning Commission action agenda",
     "cards": [
@@ -44307,7 +44347,8 @@
     "when": "25 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "RV park facility building, Houston. $600,000 estimated, new construction, start 1 Mar 2027. Owner as filed: Southcoast Holdings LLC.",
+    "title": "RV park facility building",
+    "text": "New construction, 1,708 square feet, $600,000 estimated. Start 1 Mar 2027, finish 31 May 2027. At 3818 Almeda Genoa, Houston, Tx, Houston. Scope as filed: build a facility building for a RV park. Owner as filed: Southcoast Holdings LLC, 1320 Almeda Genoa Rd Suite B600, Houston, Texas 77047.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002017",
     "src": "TDLR project page",
     "cards": []
@@ -44317,7 +44358,8 @@
     "when": "24 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Will Clayton & Kenswick, Humble. $8,500,000 estimated, new construction, start 30 Nov 2026. Owner as filed: Will Clayton & Kenswick Drive, LLC.",
+    "title": "Will Clayton & Kenswick",
+    "text": "New construction, 802 square feet, $8,500,000 estimated. Start 30 Nov 2026, finish 30 Nov 2027. At 18202 Kenswick Drive, Humble. Scope as filed: 1.29 Acres with 76 Stall parking lot and 802 SF PRE FAB amenity building. Owner as filed: Will Clayton & Kenswick Drive, LLC, 268 Bush ST Unit 49, San Francisco, California 94104.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001881",
     "src": "TDLR project page",
     "cards": []
@@ -44327,7 +44369,8 @@
     "when": "23 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "BCP 11 North Full Lake Amenity, Cypress. $1,559,000 estimated, new construction, start 1 Dec 2026. Owner as filed: Bridgeland Development, LP.",
+    "title": "BCP 11 North Full Lake Amenity",
+    "text": "New construction, 292,500 square feet, $1,559,000 estimated. Start 1 Dec 2026, finish 1 Jun 2027. At 0 Bridgeland Creek Parkway Suite 350, Cypress. Scope as filed: Planting, Irrigation, Conc. Sidewalk, site furnishing and decorative stone. Owner as filed: Bridgeland Development, LP, Bridgeland Creek park way Suite 350, cypress, Texas 77433.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001797",
     "src": "TDLR project page",
     "cards": [
@@ -44342,7 +44385,8 @@
     "when": "22 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Toll Brother's Regency at Sienna Clubhouse, Missouri City. $10,000,000 estimated, new construction, start 19 Oct 2026. Owner as filed: Toll-Gtis Property Owner, LLC.",
+    "title": "Toll Brother's Regency at Sienna Clubhouse",
+    "text": "New construction, 6,996 square feet, $10,000,000 estimated. Start 19 Oct 2026, finish 19 Dec 2027. At 11722 Regency Lake Drive, Missouri City. Scope as filed: 6,996sf Clubhouse with a pool, four pickleball courts, an enclosed 387sf Poolhouse, a 916sf BBQ Pavilion, and a 513sf Pickleball Pavilion. Clubhouse contains a catering kitchen, fitness center, and a multpurpose room. Owner as filed: Toll-Gtis Property Owner, LLC, 250 Gibralter Road, Horsham, Pennsylvania 19044.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001713",
     "src": "TDLR project page",
     "cards": [
@@ -44357,7 +44401,8 @@
     "when": "21 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Peek Road II, Richmond. $500,000 estimated, new construction, start 9 Feb 2026. Owner as filed: DD WPT 11.45, LLC.",
+    "title": "Peek Road II",
+    "text": "New construction, 7,252 square feet, $500,000 estimated. Start 9 Feb 2026, finish 31 Mar 2027. At 21660 FM 1093 Road, Richmond. Scope as filed: Ground-up Construction of an apartment complex leasing office. 7,252 SF. Owner as filed: DD WPT 11.45, LLC, 403 Corporate Center Drive, Suite 201, Stockbridge, Georgia 30281.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001585",
     "src": "TDLR project page",
     "cards": []
@@ -44367,9 +44412,10 @@
     "when": "17 Sep 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Liberty County Municipal Management District No. 3, Liberty County, 1,010 acres, estimated cost $32,550,000. Petitioners as filed: Joseph H. Smesny and Andrea Smesny, co-trustees of the Joseph and Andrea Smesny Revocable Trust, 1960 LB, L.P., a Texas limited partnership, Hill Terra Development Corporation, a Texas corporation, and William Paul Connor.",
+    "title": "Liberty County Municipal Management District No. 3",
+    "text": "1,010 acres in Liberty County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $32,550,000. No lienholder on the land. Petitioners as filed: Joseph H. Smesny and Andrea Smesny, co-trustees of the Joseph and Andrea Smesny Revocable Trust, 1960 LB, L.P., a Texas limited partnership, Hill Terra Development Corporation, a Texas corporation, and William Paul Connor. Notice D-09012026-003.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/1002/1002ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -44377,7 +44423,8 @@
     "when": "16 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Margaritaville Cottages Temporary, Galveston. $500,000 estimated, new construction, start 20 Sep 2026. Owner as filed: RREAF Grand Beach Development, LP.",
+    "title": "Margaritaville Cottages Temporary",
+    "text": "New construction, 1,660 square feet, $500,000 estimated. Start 20 Sep 2026, finish 27 Sep 2026. At 245 E Beach Drive, Galveston. Scope as filed: Install four-module, temporary offices, totaling 1,660-sf combined, with accessible route, ramp/deck, parking, utilities and hold-down anchorage. Owner as filed: RREAF Grand Beach Development, LP, 1909 Woodall Rodgers Fwy, 3rd Floor, Dallas, Texas 75201.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001168",
     "src": "TDLR project page",
     "cards": [
@@ -44392,9 +44439,10 @@
     "when": "15 Sep 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Liberty County Municipal Utility District No. 21, Liberty County, 1,010 acres, estimated cost $186,600,000. Petitioners as filed: Joseph H. Smesny and Andrea Smesny, co-trustees of the Joseph and Andrea Smesny Revocable Trust, 1960 LB, L.P., a Texas limited partnership, Hill Terra Development Corporation, a Texas corporation, and William Paul Connor.",
+    "title": "Liberty County Municipal Utility District No. 21",
+    "text": "1,010 acres in Liberty County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage and roads. Estimated cost $186,600,000. No lienholder on the land. Petitioners as filed: Joseph H. Smesny and Andrea Smesny, co-trustees of the Joseph and Andrea Smesny Revocable Trust, 1960 LB, L.P., a Texas limited partnership, Hill Terra Development Corporation, a Texas corporation, and William Paul Connor. Notice D-09012026-001.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/1002/1002ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -44402,7 +44450,8 @@
     "when": "11 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Sunterra Lakes South Recreation Center Splashpad and Restroom Pavilion, Katy. $2,839,900 estimated, new construction, start 1 Oct 2026. Owner as filed: Astro Sunterra West LP.",
+    "title": "Sunterra Lakes South Recreation Center Splashpad and Restroom Pavilion",
+    "text": "New construction, 9,700 square feet, $2,839,900 estimated. Start 1 Oct 2026, finish 15 Jan 2027. At Mourning Dove Drive & Sunterra Lakes Boulevard, Katy. Scope as filed: Splash pad, site furniture, restroom pavilion. Owner as filed: Astro Sunterra West LP, 10375 Richmond Avenue, Suite 1000, Houston, Texas 77042.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000868",
     "src": "TDLR project page",
     "cards": [
@@ -44417,7 +44466,8 @@
     "when": "10 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Bridgeland Prairieland Section 45 Amenity and Neighborhood Park, Cypress. $20,000,000 estimated, new construction, start 2 Nov 2026. Owner as filed: Bridgeland Development.",
+    "title": "Bridgeland Prairieland Section 45 Amenity and Neighborhood Park",
+    "text": "New construction, 188,614 square feet, $20,000,000 estimated. Start 2 Nov 2026, finish 29 Mar 2027. At 10502 Spicebush Swallowtail Drive, Cypress. Scope as filed: Concrete Walks, Pavers, Concrete Seat Wall with Wooden Bench Top, Shade Structures, Artificial Turf Berms, Poured-in-Place Surfacing, Playground Equipment, Site Furniture, Mailbox Pads, Grading, Drainage, Lighting & Electrical, Irrigation, & Planting. Owner as filed: Bridgeland Development, 23720 House Hahl Rd, Cypress, Texas 77433. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000746",
     "src": "TDLR project page",
     "cards": [
@@ -44432,7 +44482,8 @@
     "when": "10 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Bluestem Phase 2 Recreation Center, Brookshire. $950,000 estimated, new construction, start 1 Sep 2025. Owner as filed: Bluestem Development Company LLC.",
+    "title": "Bluestem Phase 2 Recreation Center",
+    "text": "New construction, 20,000 square feet, $950,000 estimated. Start 1 Sep 2025, finish 11 Sep 2026. At 3004 Roundtree Ln, Brookshire. Scope as filed: Playground, Sports courts, site furnishings, sidewalks 20,000 SF. Owner as filed: Bluestem Development Company LLC, 1401 Woodlands Parkway, The Woodlands, Texas 77380.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000728",
     "src": "TDLR project page",
     "cards": [
@@ -44447,7 +44498,8 @@
     "when": "8 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Cypress Villa Studio Apt, Spring. $1,600,000 estimated, new construction, start 1 Jan 2027. Owner as filed: H & J Inc.",
+    "title": "Cypress Villa Studio Apt",
+    "text": "New construction, 22,166 square feet, $1,600,000 estimated. Start 1 Jan 2027, finish 1 Jan 2029. At 17724 S Cypress Villa Drive, Spring. Scope as filed: Two apartment buildings. Owner as filed: H & J Inc, 16223 Cochet Spring Drive, Spring, Texas 77379.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000501",
     "src": "TDLR project page",
     "cards": []
@@ -44457,7 +44509,8 @@
     "when": "4 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Apartments, Galveston. $300,000 estimated, new construction, start 2 Nov 2026. Owner as filed: Tohme Capital LLC.",
+    "title": "Apartments",
+    "text": "New construction, 4,286 square feet, $300,000 estimated. Start 2 Nov 2026, finish 30 Jul 2027. At 2815 Ave K, Galveston. Scope as filed: Construct two story apartment, 8 units, on piles. Owner as filed: Tohme Capital LLC, 1012 Northwind, Port Arthur, Texas 77640.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000428",
     "src": "TDLR project page",
     "cards": []
@@ -44467,7 +44520,8 @@
     "when": "3 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Oakhill Reserve Amenity Pool House, Tomball. $3,000,000 estimated, new construction, start 19 Dec 2026. Owner as filed: Toll Southwest, LLC.",
+    "title": "Oakhill Reserve Amenity Pool House",
+    "text": "New construction, 3,896 square feet, $3,000,000 estimated. Start 19 Dec 2026, finish 15 Sep 2027. At 0 Opal Haven Road, Tomball. Scope as filed: 3896 SQFT community pool house including restrooms, storage, pool equipment, and electrical room with a 764 SQFT cabana on the pool deck. Site work includes pathways, pool, pickleball courts, parking, and play areas. Owner as filed: Toll Southwest, LLC, 1140 Virginia Drive, Fort Washington, Pennsylvania 19034.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000351",
     "src": "TDLR project page",
     "cards": [
@@ -44482,7 +44536,8 @@
     "when": "2 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Amenity Center, Humble. $606,081 estimated, new construction, start 1 Dec 2026. Owner as filed: The Grove at Deerbrook, LP.",
+    "title": "Amenity Center",
+    "text": "New construction, 5,819 square feet, $606,081 estimated. Start 1 Dec 2026, finish 30 Jun 2027. At 19778 Deerbrook Park Blvd, Humble. Scope as filed: New construction for Amenity Center plus related site work. Owner as filed: The Grove at Deerbrook, LP, 1500 North Post Oak Road, # 190, Houston, Texas 77055.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000244",
     "src": "TDLR project page",
     "cards": []
@@ -44492,7 +44547,8 @@
     "when": "2 Sep 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Leasing Office, Spring. $1,500,000 estimated, new construction, start 1 Dec 2026. Owner as filed: Vida at Spring Plaza, LLC.",
+    "title": "Leasing Office",
+    "text": "New construction, 2,500 square feet, $1,500,000 estimated. Start 1 Dec 2026, finish 1 Jun 2027. At 21021 Spring Plaza Drive, Spring. Scope as filed: To build and maintain a Leasing office for a multifamily project. Owner as filed: Vida at Spring Plaza, LLC, 21021 Spring Plaza Drive, Spring, Texas 77388.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000174",
     "src": "TDLR project page",
     "cards": []
@@ -44502,7 +44558,8 @@
     "when": "24 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Creekland Village Section 23 Amenity, Cypress. $2,000,000 estimated, new construction, start 30 Nov 2026. Owner as filed: Bridgeland Development, LP.",
+    "title": "Creekland Village Section 23 Amenity",
+    "text": "New construction, 490,000 square feet, $2,000,000 estimated. Start 30 Nov 2026, finish 30 Nov 2027. At Intersection of Stargazing Trl. & Attoyac Bayou Dr, Cypress. Scope as filed: Concrete walk, site furnishings, planting and irrigation. Owner as filed: Bridgeland Development, LP, 20203 Bridgeland Creek Parkway, Suite 350, Cypress, Texas 77433. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028593",
     "src": "TDLR project page",
     "cards": [
@@ -44517,7 +44574,8 @@
     "when": "20 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "GARTH ROAD RV STORAGE, Baytown. $600,000 estimated, new construction, start 15 Sep 2026. Owner as filed: SATSANGDISHKA, LLC.",
+    "title": "GARTH ROAD RV STORAGE",
+    "text": "New construction, 75,750 square feet, $600,000 estimated. Start 15 Sep 2026, finish 14 Apr 2027. At 9460 GARTH ROAD, Baytown. Scope as filed: erection of rv storage facility. Owner as filed: SATSANGDISHKA, LLC, 2408 QUARTZITE STREET, LEAUGE CITY, Texas 77573.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028385",
     "src": "TDLR project page",
     "cards": []
@@ -44525,9 +44583,21 @@
    {
     "date": "2026-08-19",
     "when": "19 Aug 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Waller County Municipal Utility District No. 75",
+    "text": "146 acres in Waller County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage, roads, parks and recreation and fire protection. Estimated cost $35,895,000. No lienholder on the land. Petitioners as filed: GRBK HOU, LLC, a Texas limited liability company. Notice D-080422026-008.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0904/0904ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-19",
+    "when": "19 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Heritage Bend Amenity Center, Richmond. $7,000,000 estimated, new construction, start 14 Nov 2026. Owner as filed: 129 Fulshear Land Development, LLC.",
+    "title": "Heritage Bend Amenity Center",
+    "text": "New construction, 10,757 square feet, $7,000,000 estimated. Start 14 Nov 2026, finish 18 Dec 2027. At 8118 Heritage Prairie Dr, Richmond. Scope as filed: New construction amenity center buildings (10,757 SF combined), site development, pool, parking lot and playground. Owner as filed: 129 Fulshear Land Development, LLC, 5601 Democracy Drive, Plano, Texas 75024.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028201",
     "src": "TDLR project page",
     "cards": []
@@ -44537,7 +44607,8 @@
     "when": "17 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Creekland Village Section 24 Amenity, Cypress. $2,000,000 estimated, new construction, start 30 Nov 2026. Owner as filed: Bridgeland Development, LP.",
+    "title": "Creekland Village Section 24 Amenity",
+    "text": "New construction, 250,000 square feet, $2,000,000 estimated. Start 30 Nov 2026, finish 30 Nov 2027. At Intersection of Stargazing Trl. & Armand Bayou Dr, Cypress. Scope as filed: Sidewalk, Planting, Irrigation, Entry Monument, Mailboxes, Site Furnishings. Owner as filed: Bridgeland Development, LP, 20203 Bridgeland Creek Parkway, Suite 350, Cypress, Texas 77433. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028056",
     "src": "TDLR project page",
     "cards": [
@@ -44552,7 +44623,8 @@
     "when": "13 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Building 10A Leasing Office, Baytown. $150,000 estimated, new construction, start 1 Oct 2026. Owner as filed: San Jacinto Retail Associates LLC.",
+    "title": "Building 10A Leasing Office",
+    "text": "New construction, 1,200 square feet, $150,000 estimated. Start 1 Oct 2026, finish 1 Dec 2026. At 6605 Garth Road #300, Baytown. Scope as filed: First-generation tenant improvement in an existing retail shell building. Owner as filed: San Jacinto Retail Associates LLC, 4500 Bissonnet St. Suite 200, Bellaire, Texas 77401.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027768",
     "src": "TDLR project page",
     "cards": []
@@ -44562,7 +44634,8 @@
     "when": "11 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Amandera Recreation Center, Richmond. $43,000,000 estimated, new construction, start 1 Sep 2026. Owner as filed: TPHTM 359 LLC.",
+    "title": "Amandera Recreation Center",
+    "text": "New construction, 11,700 square feet, $43,000,000 estimated. Start 1 Sep 2026, finish 1 Apr 2027. At 4300 Amandera Parkway, Richmond. Scope as filed: The Fitness Building is a gym, storage, kids playroom, and restrooms w/ showers. The Meeting Building is meeting room, game room, and restrooms. The office building is office, storage, restrooms, and a covered patio. Owner as filed: TPHTM 359 LLC, 4900 N. Scottsdale Road Suite 2000, Scottsdale, Arizona 85251.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027457",
     "src": "TDLR project page",
     "cards": []
@@ -44572,7 +44645,8 @@
     "when": "11 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Mavera Amenity Center Phase 2 Wiffleball Field Improvements, Conroe. $900,000 estimated, new construction, start 5 Oct 2026. Owner as filed: Kevin Beard.",
+    "title": "Mavera Amenity Center Phase 2 Wiffleball Field Improvements",
+    "text": "New construction, 55,000 square feet, $900,000 estimated. Start 5 Oct 2026, finish 5 Mar 2027. At Mavera Overlook Loop and Crossfield Drive, Conroe. Scope as filed: Wiffleball Field, Seating Areas, Concrete Walks, Grading, Drainage, Lighting, Irrigation, Planting. Owner as filed: Kevin Beard, 1311 Broadfield Blvd Suite 100, Houston, Texas 77084.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027563",
     "src": "TDLR project page",
     "cards": [
@@ -44587,7 +44661,8 @@
     "when": "6 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "RV Building, Webster. $300,000 estimated, new construction, start 30 Aug 2026. Owner as filed: Emmons Holdings LLC.",
+    "title": "RV Building",
+    "text": "New construction, 3,000 square feet, $300,000 estimated. Start 30 Aug 2026, finish 20 Nov 2026. At 1423 FM 528, Webster. Scope as filed: New storage building, 3000 square feet. Owner as filed: Emmons Holdings LLC, 1423 FM 528, Webster, Texas 77598.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026027158",
     "src": "TDLR project page",
     "cards": []
@@ -44597,7 +44672,8 @@
     "when": "4 Aug 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Talon Ridge Recreation Center Amenity Improvements, Beasley. $2,728,500 estimated, new construction, start 20 Oct 2026. Owner as filed: JBZ Rosenberg Land, LLC.",
+    "title": "Talon Ridge Recreation Center Amenity Improvements",
+    "text": "New construction, 203,000 square feet, $2,728,500 estimated. Start 20 Oct 2026, finish 16 Aug 2027. At Sharp Talon Trl. & Eagle Bluff Ln, Beasley. Scope as filed: Work includes sidewalks, trails, sports courts, lighting, site furniture, drainage, outdoor patio, playground, shade structures, fencing, irrigation, planting, fine grading, and hydromulch. Owner as filed: JBZ Rosenberg Land, LLC, 7906 N. Sam Houston Pkwy. West, Ste. 102, Houston, Texas 77064.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026936",
     "src": "TDLR project page",
     "cards": []
@@ -44607,7 +44683,8 @@
     "when": "30 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Express Inn & Suites, Hockley. $1,800,000 estimated, new construction, start 30 Jul 2026. Owner as filed: Mehendi Rajab Momin.",
+    "title": "Express Inn & Suites",
+    "text": "New construction, 20,200 square feet, $1,800,000 estimated. Start 30 Jul 2026, finish 17 May 2027. At 32210 Hempstead Road, Hockley. Scope as filed: Construction of new two story hotel. Owner as filed: Mehendi Rajab Momin, 3315 Bamberg Way, Sugar Land, Texas 77479.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026597",
     "src": "TDLR project page",
     "cards": []
@@ -44617,7 +44694,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Tamarron, Katy, Texas. Rank 6, 594 sales, 510 the period before. Developer as printed: D.R. Horton.",
+    "title": "Tamarron",
+    "text": "Katy, Texas. Rank 6, 594 sales, 510 the period before. Developer as printed: D.R. Horton.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44632,7 +44710,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Bridgeland, Cypress, Texas. Rank 9, 500 sales, 438 the period before. Developer as printed: Howard Hughes Communities.",
+    "title": "Bridgeland",
+    "text": "Cypress, Texas. Rank 9, 500 sales, 438 the period before. Developer as printed: Howard Hughes Communities.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44647,7 +44726,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Sunterra, Katy, Texas. Rank 10, 450 sales, 543 the period before. Developer as printed: Land Tejas/Starwood Land.",
+    "title": "Sunterra",
+    "text": "Katy, Texas. Rank 10, 450 sales, 543 the period before. Developer as printed: Land Tejas/Starwood Land.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44662,7 +44742,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Anniston, Katy, Texas. Rank 18, 313 sales, 476 the period before. Developer as printed: Friendswood Development Company.",
+    "title": "Anniston",
+    "text": "Katy, Texas. Rank 18, 313 sales, 476 the period before. Developer as printed: Friendswood Development Company.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44677,7 +44758,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Meridiana, Rosharon, Texas. Rank 24, 276 sales, 277 the period before. Developer as printed: Rise Communities.",
+    "title": "Meridiana",
+    "text": "Rosharon, Texas. Rank 24, 276 sales, 277 the period before. Developer as printed: Rise Communities.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44692,7 +44774,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "The Grand Prairie, Hockley, Texas. Rank 35, 259 sales, 299 the period before. Developer as printed: EMBER.",
+    "title": "The Grand Prairie",
+    "text": "Hockley, Texas. Rank 35, 259 sales, 299 the period before. Developer as printed: EMBER.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44707,7 +44790,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Elyson, Katy, Texas. Rank 43, 227 sales, 217 the period before. Developer as printed: Brookfield Properties.",
+    "title": "Elyson",
+    "text": "Katy, Texas. Rank 43, 227 sales, 217 the period before. Developer as printed: Brookfield Properties.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44722,7 +44806,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Sienna, Missouri City, Texas. Rank 46, 223 sales, 227 the period before. Developer as printed: Johnson Dev. / Toll Brothers / GTIS.",
+    "title": "Sienna",
+    "text": "Missouri City, Texas. Rank 46, 223 sales, 227 the period before. Developer as printed: Johnson Dev. / Toll Brothers / GTIS.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44741,7 +44826,8 @@
     "when": "29 Jul 2026",
     "group": "rankings",
     "kind": "RCLCO ranking",
-    "text": "Jordan Ranch, Fulshear, Texas. Rank 49, 207 sales, 174 the period before. Developer as printed: Johnson Development Corp.",
+    "title": "Jordan Ranch",
+    "text": "Fulshear, Texas. Rank 49, 207 sales, 174 the period before. Developer as printed: Johnson Development Corp.",
     "url": "https://www.rclco.com/wp-content/uploads/2026/07/Advisory-Top-Selling-MY-MPCs-2026-07-30.pdf",
     "src": "The Top-Selling Master-Planned Communities of Mid-Year 2026",
     "cards": [
@@ -44756,7 +44842,8 @@
     "when": "28 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "August Meadows Amenity Improvements, Needville. $346,221 estimated, new construction, start 23 Sep 2026. Owner as filed: Ventana Development Companies.",
+    "title": "August Meadows Amenity Improvements",
+    "text": "New construction, 96,000 square feet, $346,221 estimated. Start 23 Sep 2026, finish 1 Apr 2027. At Altimore Rd. & Asa Ave, Needville. Scope as filed: Sidewalks, Irrigation, and Planting. Owner as filed: Ventana Development Companies, 410 Brooks St., Sugar Land, Texas 77478.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026026322",
     "src": "TDLR project page",
     "cards": []
@@ -44766,7 +44853,8 @@
     "when": "22 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "GATED RENTAL WOODLANDS RV, Magnolia. $12,000,000 estimated, new construction, start 1 Oct 2026. Owner as filed: GRFIS3L LLC.",
+    "title": "GATED RENTAL WOODLANDS RV",
+    "text": "New construction, 3,900 square feet, $12,000,000 estimated. Start 1 Oct 2026, finish 1 Jun 2027. At 8903 MILLER ROAD, Magnolia. Scope as filed: SITE AND BUILDING. Owner as filed: GRFIS3L LLC, 5599 SAN FELIPE SUITE 1510, HOUSTON, Texas 77056.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025927",
     "src": "TDLR project page",
     "cards": []
@@ -44776,7 +44864,8 @@
     "when": "21 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Grange Amenity Complex, Katy. $16,045,302 estimated, new construction, start 26 Oct 2026. Owner as filed: Johnson Development.",
+    "title": "Grange Amenity Complex",
+    "text": "New construction, 13,800 square feet, $16,045,302 estimated. Start 26 Oct 2026, finish 1 Oct 2027. At 1934 Ricestead Road, Katy. Scope as filed: New amenity building for residents to include gym & gathering space, pool, and pickleball open air pavilion. Owner as filed: Johnson Development, 24285 Katy Freeway, Suite 650, Katy, Texas 77494.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025795",
     "src": "TDLR project page",
     "cards": [
@@ -44791,7 +44880,8 @@
     "when": "17 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Nella Boat & RV Storage, Dickinson. $850,000 estimated, new construction, start 1 Aug 2026. Owner as filed: Nella Ranch, LLC.",
+    "title": "Nella Boat & RV Storage",
+    "text": "New construction, 143,725 square feet, $850,000 estimated. Start 1 Aug 2026, finish 1 Aug 2027. At 7605 FM 517 Road East, Dickinson. Scope as filed: 15 New metal storage buildings for 238 storage units. Total square footage of all storage buildings is 143,325, plus another approx. 400 sf for the stand alone single user restroom. Owner as filed: Nella Ranch, LLC, 7605 FM 517 Road East, Dickinson, Texas 77539.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025573",
     "src": "TDLR project page",
     "cards": []
@@ -44801,7 +44891,8 @@
     "when": "16 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "D.R. Horton Houston North Division Office, Spring. $25,000,000 estimated, new construction, start 1 Oct 2026. Owner as filed: DR Horton Texas Ltd.",
+    "title": "D.R. Horton Houston North Division Office",
+    "text": "New construction, 71,000 square feet, $25,000,000 estimated. Start 1 Oct 2026, finish 30 Nov 2027. At 1525 Sawdust Road, Spring. Scope as filed: The project features a 4-story ~71,000 SF office building, maintenance building, and pavilion. Owner as filed: DR Horton Texas Ltd, 400 Carriage Hills Blvd, Conroe, Texas 77384.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025482",
     "src": "TDLR project page",
     "cards": [
@@ -44816,7 +44907,8 @@
     "when": "16 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "The Woodlands Country Club, The Woodlands. $2,800,000 estimated, renovation or alteration, start 1 Sep 2026. Owner as filed: Arcis Golf.",
+    "title": "The Woodlands Country Club",
+    "text": "Renovation or alteration, 12,500 square feet, $2,800,000 estimated. Start 1 Sep 2026, finish 5 Feb 2027. At 1730 S. Milbend Driive, The Woodlands. Scope as filed: Renovation of the interior of the main level of an existing two-story Clubhouse Building which encompasses approximately 12,500 square feet of enclosed and conditioned space. The lower level of the building which encompasses approximately 10,600 s.f. Owner as filed: Arcis Golf, 8343 Douglas Ave Suite 200, Dallas, Texas 75225.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025403",
     "src": "TDLR project page",
     "cards": [
@@ -44831,7 +44923,8 @@
     "when": "15 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "AMTEX Hays Street, Houston. $18,190,914 estimated, new construction, start 15 Nov 2026. Owner as filed: HCHFC 1406 Hays Landowner, LLC.",
+    "title": "AMTEX Hays Street",
+    "text": "New construction, 5,175 square feet, $18,190,914 estimated. Start 15 Nov 2026, finish 15 May 2028. At 1500 Hays Street, Houston. Scope as filed: This is a 5,175 sf clubhouse and leasing office for a new 110 unit multifamily development in Houston, Texas. Owner as filed: HCHFC 1406 Hays Landowner, LLC, 1111 Fannin Street 9th Floor, Houston, Texas 77002.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025296",
     "src": "TDLR project page",
     "cards": []
@@ -44841,7 +44934,8 @@
     "when": "14 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Bridgeland Prairieland Section 47 Amenity, Cypress. $1,300,000 estimated, new construction, start 15 Sep 2026. Owner as filed: Bridgeland Development.",
+    "title": "Bridgeland Prairieland Section 47 Amenity",
+    "text": "New construction, 37,352 square feet, $1,300,000 estimated. Start 15 Sep 2026, finish 12 Feb 2027. At 10606 Costal Marsh Dr, Cypress. Scope as filed: Concrete Walks, Pavers, Pedestrian Bridges, Pavilion, Dry Creekbed, Artificial Turf, Poured-In-Place Surfacing, Playground Equipment, Site Furniture, Grading, Drainage, Lighting & Electrical, Irrigation, and Planting. Owner as filed: Bridgeland Development, 23720 House Hahl Rd, Cypress, Texas 77433. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025203",
     "src": "TDLR project page",
     "cards": [
@@ -44856,7 +44950,8 @@
     "when": "14 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "NRP Barber Hill, Baytown. $44,781,000 estimated, new construction, start 15 Nov 2026. Owner as filed: NRP Holdings LLC.",
+    "title": "NRP Barber Hill",
+    "text": "New construction, 416,959 square feet, $44,781,000 estimated. Start 15 Nov 2026, finish 29 Sep 2028. At 8737 FM 1409, Baytown. Scope as filed: 7) 3-STORY APARTMENT BUILDINGS WITH SURFACE PARKING AND (6) STAND-ALONE GARAGES. LEASING/AMENITY & FITNESS ARE SEPARATE BUILDINGS. Owner as filed: NRP Holdings LLC, 1228 Euclid Ave. 4th Floor, Cleveland, Ohio 44115.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025221",
     "src": "TDLR project page",
     "cards": []
@@ -44866,7 +44961,8 @@
     "when": "10 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Valley Ranch Community Center Landscape, Porter. $450,000 estimated, new construction, start 1 Sep 2026. Owner as filed: Sig Valley Ranch LTD.",
+    "title": "Valley Ranch Community Center Landscape",
+    "text": "New construction, 80,000 square feet, $450,000 estimated. Start 1 Sep 2026, finish 1 Mar 2027. At 21425 Palmetto Cypress Drive, Porter. Scope as filed: Sidewalk, hard-scape, playground, site furniture, pool deck, fence, fine grading, planting and irrigation,. Owner as filed: Sig Valley Ranch LTD, 1401 Woodlands Pkwy, The Woodlands, Texas 77380.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026025023",
     "src": "TDLR project page",
     "cards": []
@@ -44876,7 +44972,8 @@
     "when": "9 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Blue Creek Trails Rec Center Park Amenities, Richmond. $1,740,000 estimated, new construction, start 7 Sep 2026. Owner as filed: Taylor Morrison of Texas.",
+    "title": "Blue Creek Trails Rec Center Park Amenities",
+    "text": "New construction, 209,000 square feet, $1,740,000 estimated. Start 7 Sep 2026, finish 30 Jun 2027. At Canal Road & Grand Parkway, Richmond. Scope as filed: Parking lot, Pickleball Courts, Pavilion, Pre-Fab. Restrooms, Pool, Playground, Concrete walks, Landscape, Irrigation, Hydromulch, Solid sod. Owner as filed: Taylor Morrison of Texas, 3250 Briarpark Drive Suite #300, Houston, Texas 77042. The registration says public funds or land are involved.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024852",
     "src": "TDLR project page",
     "cards": [
@@ -44889,9 +44986,21 @@
    {
     "date": "2026-07-07",
     "when": "7 Jul 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Fort Bend County Municipal Utility District No. 300",
+    "text": "276 acres in Fort Bend County. Works named in the petition: water, wastewater, drainage, roads and parks and recreation. Estimated cost $61,015,000. Lienholder: Simmons Bank, an Arkansas chartered bank. Petitioners as filed: Ayler Land Investment LLC, a Texas limited liability company. Notice D-06112026-028.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0717/0717ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
+   },
+   {
+    "date": "2026-07-07",
+    "when": "7 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Katy Morton Ranch, Katy. $400,000 estimated, new construction, start 1 Jan 2027. Owner as filed: Arbor Rose Capital Fund III LLC.",
+    "title": "Katy Morton Ranch",
+    "text": "New construction, 11,418 square feet, $400,000 estimated. Start 1 Jan 2027, finish 1 Aug 2028. At 3133 Galileo Way, Katy. Scope as filed: An 11,418 SF Clubhouse and leasing office serving a 249-unit multifamily apartment complex, with two amenity courtyards including a pool, cabana, pickleball court, dog park, and pavilion structure. Owner as filed: Arbor Rose Capital Fund III LLC, 7051 Southwest Freeway, Houston, Texas 77074.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024665",
     "src": "TDLR project page",
     "cards": []
@@ -44901,7 +45010,8 @@
     "when": "7 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Bridgeland Creekland Village Section 14 & 16 Active Adult Phase 1A Amenity landscape, Cypress. $1,250,000 estimated, new construction, start 27 Jul 2026. Owner as filed: Bridgeland Development.",
+    "title": "Bridgeland Creekland Village Section 14 & 16 Active Adult Phase 1A Amenity landscape",
+    "text": "New construction, 162,416 square feet, $1,250,000 estimated. Start 27 Jul 2026, finish 26 Oct 2026. At 13506 Benavides Court, Cypress. Scope as filed: Entry Monumentation, vehicular gate, pedestrian hardscape circulation, grading and drainage, landscape, and irrigation. Owner as filed: Bridgeland Development, 23720 House Hahl Rd, Cypress, Texas 77433.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024608",
     "src": "TDLR project page",
     "cards": [
@@ -44916,7 +45026,8 @@
     "when": "7 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Hardscape and Landscape to Serve Trinity Landing Recreation Center, Dayton. $203,000 estimated, new construction, start 1 Aug 2026. Owner as filed: M/I Homes of Houston LLC.",
+    "title": "Hardscape and Landscape to Serve Trinity Landing Recreation Center",
+    "text": "New construction, 309,793 square feet, $203,000 estimated. Start 1 Aug 2026, finish 1 Jan 2027. At 2145 Harbor View Drive, Dayton. Scope as filed: Construction of Trinity Landing recreation center to include hardscape, irrigation, planting, play equipment, & pool. (estimate of SF: 309,793). Owner as filed: M/I Homes of Houston LLC, 10720 W Sam Houston Pkwy N #100, Houston, Texas 77064.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024650",
     "src": "TDLR project page",
     "cards": [
@@ -44931,7 +45042,8 @@
     "when": "1 Jul 2026",
     "group": "buildings",
     "kind": "Registered with TDLR",
-    "text": "Sterling Point Recreation Center Landscape, Baytown. $290,000 estimated, new construction, start 2 Nov 2026. Owner as filed: Sterling Point Community Association.",
+    "title": "Sterling Point Recreation Center Landscape",
+    "text": "New construction, 11,695 square feet, $290,000 estimated. Start 2 Nov 2026, finish 1 Apr 2027. At 9717 Sterling Arbor Dr, Baytown. Scope as filed: Installation of landscape amenities including planting, splash pad, site furnishing, and fencing. Owner as filed: Sterling Point Community Association, 12603 Louetta Road, Suite 101, Cypress, Texas 77429.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026024293",
     "src": "TDLR project page",
     "cards": []
@@ -44941,9 +45053,10 @@
     "when": "16 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Montgomery-San Jacinto Counties Municipal Utility District No. 3, Montgomery County, 300 acres, estimated cost $40,430,000. Petitioners as filed: Pine Creek Lakes LLC, a Texas limited liability company.",
+    "title": "Montgomery-San Jacinto Counties Municipal Utility District No. 3",
+    "text": "300 acres in Montgomery County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage, roads and parks and recreation. Estimated cost $40,430,000. No lienholder on the land. Petitioners as filed: Pine Creek Lakes LLC, a Texas limited liability company. Notice D-06012026-010.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0626/0626ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": []
    },
    {
@@ -44951,18 +45064,30 @@
     "when": "10 Jun 2026",
     "group": "districts",
     "kind": "Water district petition",
-    "text": "Austin Point Improvement District, Fort Bend County, 153 acres, estimated cost $20,050,000. Petitioners as filed: Rosenberg Land Holdings Company LLC, a Texas limited liability company, East Montgomery County Acquisition Company LLC, a Texas limited liability company, and Montgomery Ridge, Limited, a Texas limited partnership.",
+    "title": "Austin Point Improvement District",
+    "text": "153 acres in Fort Bend County, outside any city or ETJ. Works named in the petition: water, wastewater, drainage, roads and parks and recreation. Estimated cost $20,050,000. Lienholder: Simmons Bank and Third Coast Bank SBB. Petitioners as filed: Rosenberg Land Holdings Company LLC, a Texas limited liability company, East Montgomery County Acquisition Company LLC, a Texas limited liability company, and Montgomery Ridge, Limited, a Texas limited partnership. Notice D-05122026-029.",
     "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0619/0619ia.pdf",
-    "src": "Texas Register",
+    "src": "Texas Register notice (PDF)",
     "cards": [
      {
       "id": "HOU-015",
       "short": "Signorelli"
      }
     ]
+   },
+   {
+    "date": "2026-05-01",
+    "when": "1 May 2026",
+    "group": "districts",
+    "kind": "Water district petition",
+    "title": "Montgomery County Municipal Utility District No. 265",
+    "text": "193 acres in Montgomery County. Works named in the petition: water, wastewater, drainage and parks and recreation. Estimated cost $54,350,000. No lienholder on the land. Petitioners as filed: CET Limited. Notice D-03062026-011.",
+    "url": "https://www.sos.state.tx.us/texreg/pdf/backview/0515/0515ia.pdf",
+    "src": "Texas Register notice (PDF)",
+    "cards": []
    }
   ],
-  "n": 92,
+  "n": 95,
   "on_cards": 54,
   "groups": [
    {
@@ -44978,7 +45103,7 @@
    {
     "key": "districts",
     "label": "Water districts",
-    "n": 4
+    "n": 7
    },
    {
     "key": "rankings",
@@ -44986,7 +45111,7 @@
     "n": 9
    }
   ],
-  "from": "10 Jun 2026",
+  "from": "1 May 2026",
   "to": "15 Oct 2026",
   "days": 180,
   "read": "11 Oct 2026",
