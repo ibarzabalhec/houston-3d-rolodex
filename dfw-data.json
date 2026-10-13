@@ -1,6 +1,6 @@
 {
  "version": "2.0",
- "build": 130,
+ "build": 131,
  "last_updated": "2026-10-10",
  "byline": "Héctor Ibarzábal · ibarzabalhec@gmail.com · 2026-10-10",
  "kicker": "Rolodex · Dallas-Fort Worth · 2026-10-10",
@@ -35865,6 +35865,275 @@
  "feed": {
   "items": [
    {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Gateway Forest Apartments",
+    "text": "Gateway Forest Apartments. This project is for a 275 unit urban residential development. There will be two runs of townhomes along Ridgeview Dr. to act as a buffer. There will also be a ﬁve story parking garage centrally located for use by the urban residential residents. Lastly, there will be a 3 story leasing ofﬁce and amenity center. The PD Amendment is for private yard fences along Southside Boulevard. Land use: Multi-Family / Mixed Use. 275 units. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Wendover Tract",
+    "text": "Wendover Tract. The request is to amend Planned Development-105 (PD-105) to allow for a Single Family development on 10.029 acres. The proposal includes 7 Estate lots and open space / HOA lots. Land use: Single-Family Residential. 10 acres. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Greenville Pointe",
+    "text": "Greenville Pointe. Retail and 17 single-family homes. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Allen Heights Addition",
+    "text": "Allen Heights Addition. Single-Family Subdivision for 8 homes. Land use: Single-Family Residential. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Cypress Group - Greenville/Chaparral",
+    "text": "Cypress Group - Greenville/Chaparral. PD for Multi-Family. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "Allen City Center - C",
+    "text": "Allen City Center - C. This is a multi-building mixed use development Block A will feature multi-family residential along with surface parking. Block B will feature multi-family residential and a four level parking garage. Block C will feature three office buildings, surface parking, and a parking garage. Block D will feature multi-family residential and a parking garage. Land use: Office/Retail. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "Allen City Center - D",
+    "text": "Allen City Center - D. This is a multi-building mixed use development Block A will feature multi-family residential along with surface parking. Block B will feature multi-family residential and a four level parking garage. Block C will feature three office buildings, surface parking, and a parking garage. Block D will feature multi-family residential and a parking garage. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "Allen City Center - A",
+    "text": "Allen City Center - A. This is a multi-building mixed use development Block A will feature multi-family residential along with surface parking. Block B will feature multi-family residential and a four level parking garage. Block C will feature three office buildings, surface parking, and a parking garage. Block D will feature multi-family residential and a parking garage. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "Allen City Center - B",
+    "text": "Allen City Center - B. This is a multi-building mixed use development Block A will feature multi-family residential along with surface parking. Block B will feature multi-family residential and a four level parking garage. Block C will feature three office buildings, surface parking, and a parking garage. Block D will feature multi-family residential and a parking garage. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "The Avenue",
+    "text": "The Avenue. Carwash. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "TCC Urban Residential Phase I",
+    "text": "TCC Urban Residential Phase I. This application is for three lots in the TCC Development. Two of these lots are are for public use and are being improved to be used as open space within this development. The third lot is being developed for use as a four story urban residential use with a six story parking garage attached. Land use: Office/Retail. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "TCC Townhomes",
+    "text": "TCC Townhomes. This project is for 105 townhome units spread out over 19 buildings. These townhomes will be all part of the same lot and will function as a multifamily development for site plan purposes as each individual unit will be leased. Access to the site will be provided through internal drives to the east and north. There will be access to open spaces to the northwest and central to the site. Land use: Multi-Family / Mixed Use. 105 units. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "121 Technology Park",
+    "text": "121 Technology Park. This project is to subdivide one larger parcel into two smaller parcels in order to allow for the phased development of this project to commence. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Monfort Capital",
+    "text": "Monfort Capital. This project is for a site plan for an interior access self storage complex. There will also be a number of small office/retail/warehouse units along the Curtis Ln. frontage. Land use: Office/Retail. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Sloan Corners (Hartwood Square)",
+    "text": "Sloan Corners (Hartwood Square). This project is for a multi-family development in the Sloan Corners West master planned community. There are 479 proposed units for this development across two buildings. Each building will also provide a parking garage located interior to the site. Land use: Multi-Family / Mixed Use. 479 units. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "The Avenue Apartments",
+    "text": "The Avenue Apartments. The Avenue Apartments project is a five story urban residential building with a maximum height of 60 feet that will contain 325 units. This will be the first multi-family building to be constructed within The Avenue. Parking will be provided by a five-story parking garage with 431 spaces. Land use: Multi-Family / Mixed Use. 325 units. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Custer Ridge Estates",
+    "text": "Custer Ridge Estates. Planned Development No. 151 (PD-151) with a base zoning of R-5, Single-Family, consists of 34+/- acres with105 proposed lots. Land use: Single-Family Residential. 34 acres, 105 lots. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": [
+     {
+      "id": "DFW-025",
+      "short": "Shaddock"
+     }
+    ]
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Bethany Hill Project",
+    "text": "Bethany Hill Project. This project will include 8 - 12 single-family residential lots once fully developed. Land use: Single-Family Residential. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Allen Gateway Multi-Family Phase 2",
+    "text": "Allen Gateway Multi-Family Phase 2. Proposing 299 multi-family dwelling units. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Bravo Park West",
+    "text": "Bravo Park West. Sloan Corners Mixed Use Park. Land use: Multi-Family / Mixed Use. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "The Avenue Addition",
+    "text": "The Avenue Addition. The residential development consists of 94 single-family lots with 16 HOA lots on 12.53 acres. Land use: Single-Family Residential. 12.5 acres, 94 lots. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development project",
+    "title": "Twin Creeks Active Adult",
+    "text": "Twin Creeks Active Adult. This project is for a 55+ apartment complex. The complex will have a donut shape with the parking garage in the center. The complex will also offer a fitness center that will be available to the public, as well as street parking, as a park character area on the northern side of the development. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development agreement",
+    "title": "Celina, development agreement, 98 acres",
+    "text": "Conduct a Public Hearing to consider and act upon a request for a Development Agreement on approximately 98 acres of land, generally located east of future Custer Road and approximately 1,800 feet north of future Ousley Boulevard, within both the City limits and the Extraterritorial Jurisdiction (ETJ), for Cordoba Estates. (Mohan). 98 acres. On the Celina agenda.",
+    "url": "https://celinatx.api.civicclerk.com/v1/Meetings/1152",
+    "src": "Celina agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-13",
+    "when": "13 Oct 2026",
+    "group": "plats",
+    "kind": "Development agreement",
+    "title": "Celina, development agreement, 41 acres",
+    "text": "Conduct a Public Hearing to consider and act upon a request for a Development Agreement on approximately 41 acres of land, generally located at the northeast corner of FM 455 and future J Fred Smith Parkway, within the Extraterritorial Jurisdiction (ETJ), for Celina Stone Tract. (Mohan). 41 acres. On the Celina agenda.",
+    "url": "https://celinatx.api.civicclerk.com/v1/Meetings/1152",
+    "src": "Celina agenda record (data)",
+    "cards": []
+   },
+   {
     "date": "2026-10-08",
     "when": "8 Oct 2026",
     "group": "buildings",
@@ -35903,6 +36172,33 @@
     ]
    },
    {
+    "date": "2026-10-05",
+    "when": "5 Oct 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Anna, planned development zoning, 30 acres",
+    "text": "Conduct a Public Hearing/Consider/Discuss/Action on a request to rezone 30.0± acres on the south side of W. Rosamond Parkway, 1000± feet west of N. Powell Parkway, from Planned Development (PD) to Single-Family Residential 7.2 (SF-7.2). (Ord. No. 760-2017) (ZONE 26-0002). Case ZONE 26-0002. 30 acres. On the Anna agenda.",
+    "url": "https://annatx.api.civicclerk.com/v1/Meetings/1570",
+    "src": "Anna agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-10-02",
+    "when": "2 Oct 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "The Woods At Lindsey Place Phase 4",
+    "text": "16 new home permits from 2 Oct 2026, Anna, Collin County. Builder as filed: DR HORTON. Plans as filed: 2218, 2233, 2433, 2445, 3215, 3217 and H30A. Lot owner as filed: DR HORTON -TEXAS LTD.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27THE+WOODS+AT+LINDSEY+PLACE+PHASE+4%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-001",
+      "short": "D.R. Horton"
+     }
+    ]
+   },
+   {
     "date": "2026-09-29",
     "when": "29 Sep 2026",
     "group": "buildings",
@@ -35911,6 +36207,28 @@
     "text": "New construction, 37,400 square feet, $6,000,000 estimated. Start 5 Jan 2027, finish 31 Dec 2027. At 1500A Convention Center Drive, Arlington. Scope as filed: Construction of an event barn with an event lawn = EVENT BARN new construction SF = 11,000 EVENT LAWN = 26,400SF. Owner as filed: GFT Convention Center Hotel Owner, LLC, 9 West 57th Street 20th Floor, New York, New York 10019.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027002308",
     "src": "TDLR project page",
+    "cards": []
+   },
+   {
+    "date": "2026-09-28",
+    "when": "28 Sep 2026",
+    "group": "plats",
+    "kind": "Preliminary plat",
+    "title": "Crowley, preliminary plat, 8.5 acres",
+    "text": "Discuss and make a recommendation to the City Council on a preliminary plat for MAA Crowley Crossings Addition, Lots 1-6X, Block 1, being approximately 8.462 acres situated in the Juan Armendaris Survey, Abstract No. 1767, City of Crowley, Tarrant County, Texas. Case # PPLT-2026-006 . BACKGROUND AND OVERVIEW Request Preliminary Plat for Lots 1-6X, Block 1, MAA Crowley Crossings Addition Applicant Tim Shoemaker Location Southeast corner of FM 1187 (Crowley Plover Road) and Beverly Street/Business FM 1187.... 8.5 acres. On the Crowley agenda.",
+    "url": "https://crowleytx.api.civicclerk.com/v1/Meetings/252",
+    "src": "Crowley agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-25",
+    "when": "25 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Windmore Phase 2",
+    "text": "18 new home permits issued 25 Sep 2026 to 2 Oct 2026, Princeton, Collin County. Builder as filed: TROPHY. Plans as filed: HARPER-1732, HARRISON-1740, HAYDEN-1745, HAYLEE-1777, HOLDEN-1786, MAGNOLIA-3070, MASTERS-4090 and WIMBLEDON-4095. Lot owner as filed: TSHH LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27WINDMORE+PHASE+2%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
     "cards": []
    },
    {
@@ -35925,6 +36243,88 @@
     "cards": []
    },
    {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Public improvement district",
+    "title": "Aubrey, public improvement district, 236.8 acres",
+    "text": "Consideration and action on Resolution No. 1071-26, setting a Public Hearing under Sec. 372.009 of the Texas Local Government Code for the creation of the Covey Creek Public Improvement District within the City of Aubrey, Texas, on an approximate 236.815 acres of land, situated in the Fredrick H. Pollard Survey, Abstract No. 995, Denton County, Texas, setting a date and authorizing the issuance of notice by the City Secretary of Aubrey, Texas for the Public Hearing. (Covey Creek Development). 236.8 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Public improvement district",
+    "title": "Aubrey, public improvement district, 23 acres",
+    "text": "Conduct a Public Hearing, Consider and take action on Resolution No. 1072-26 authorizing and creating the Sherman Ridge Public Improvement District within the city limits, consisting of approximately 23.039 acres of land, as more specifically described therein, located north of West Sherman Drive (FM 428) and west of Linda Street and more commonly identified as the Sherman Ridge Development, pursuant to Chapter 372 of the Texas Local Government Code. (Sherman Ridge). 23 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "High Country",
+    "text": "Consider and take action regarding a Final Plat of High Country, Phase 10, being approximately 32.121 acres to create 136 residential lots, 4 open space lots, 1 general retail lot, and Right-of-Way (ROW) dedication for McNatt Road and Frontier Parkway, situated in the James Bridges Jr. Survey, Abstract No. 36, City of Aubrey Extraterritorial Jurisdiction (ETJ), Denton County, Texas, generally located west of the intersection of McNatt Road and Frontier parkway. Denton County Property IDs 52364 & 1059776. (High... 32.1 acres, 136 lots. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 53.6 acres",
+    "text": "Consider and act on Resolution No. 1069-26, accepting a petition requesting annexation by ARCK Developers, LLC as owner of approximately 53.606 acres of land, more or less, situated in the J. Bridges Survey, Abstract No. 36, Denton County, Texas, located at 6411 Knuckles Road, calling and setting a public hearing on the annexation of the property into the Aubrey City limits, providing for related matters, and providing an effective date. (Knuckles Road) . 53.6 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 56 acres",
+    "text": "Consideration and action on Resolution No. 1068-26, accepting a petition requesting voluntary annexation by Belew Cemetery as owner of approximately 25.701 acres of land, commonly identified as 9500 Belew Road, Aubrey, Texas, initiating the simultaneous annexation of approximately 0.119 acres comprising portions of right of way of Massey Road and Belew Road, and approximately 30.13 acres comprising a portion of railroad right -of way, the annexation area collectively containing an approximate 55.95 acres,... 56 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-24",
+    "when": "24 Sep 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 237 acres",
+    "text": "Consider and act on Resolution No. 1067-26, accepting a petition requesting annexation by MM Covey Creek 165, LLC and MMM 2025 Family, LP as owners of approximately 237 acres of land, legally described as being situated in the Fredrick H. Pollard Survey, Abstract No. 995, Denton County, Texas, and commonly known as 9882 Coffey Road, Aubrey, Texas, together with the applicable Coffey Road and its associated right-of-way, calling and setting a public hearing on the annexation of all property into the Aubrey City... 237 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/246",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-23",
+    "when": "23 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "BOMAN, JOSEPH SURVEY Abstract 81 Tract 1E6A",
+    "text": "39 new home permits from 23 Sep 2026, Fort Worth, ZIP 76106. Townhouse, 2,084 to 2,174 square feet. The land is still described by survey and tract, not by lot. Owner as filed: DR HORTON - TEXAA LTD.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27DR+HORTON+-+TEXAA+LTD%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-001",
+      "short": "D.R. Horton"
+     }
+    ]
+   },
+   {
     "date": "2026-09-22",
     "when": "22 Sep 2026",
     "group": "buildings",
@@ -35933,6 +36333,17 @@
     "text": "New construction, 9,635 square feet, $2,000,000 estimated. Start 1 Dec 2026, finish 1 Dec 2027. At 3910 Tin Top Road, Weatherford. Scope as filed: Single story wood framed, 4-16 bed assisted living facility. Wood framed structure with pre-engineered wood truss on concrete slab with asphalt shingle roof. Owner as filed: Aimwell Solutions, LLC, 220 Adams Drive Ste. 280 PMB #1056, Weatherford, Texas 76086.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001680",
     "src": "TDLR project page",
+    "cards": []
+   },
+   {
+    "date": "2026-09-22",
+    "when": "22 Sep 2026",
+    "group": "plats",
+    "kind": "Development agreement",
+    "title": "Oak Ridge",
+    "text": "Conduct a Public Hearing/Consider/Discuss/Action on an Ordinance establishing zoning on 808± acres located at the southeast corner of County Road 285 and County Road 827 in accordance with the Oak Ridge Development Agreement (Res. No. 2025-05-1782). (Director of Development Services Kaleb Kentner). 808 acres. On the Anna agenda.",
+    "url": "https://annatx.api.civicclerk.com/v1/Meetings/1553",
+    "src": "Anna agenda record (data)",
     "cards": []
    },
    {
@@ -35945,6 +36356,22 @@
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027001495",
     "src": "TDLR project page",
     "cards": []
+   },
+   {
+    "date": "2026-09-16",
+    "when": "16 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Morning Ridge Phase 3",
+    "text": "10 new home permits from 16 Sep 2026, Princeton, Collin County. Builder as filed: D R HORTON. Plans as filed: 1829, 1956, 2025, 2329, 2623, 2733, 2868 and 2956. Lot owner as filed: FORESTAR (USA) REAL ESTATE GROUP INC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27MORNING+RIDGE+PHASE+3%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-001",
+      "short": "D.R. Horton"
+     }
+    ]
    },
    {
     "date": "2026-09-15",
@@ -35969,6 +36396,60 @@
     "cards": []
    },
    {
+    "date": "2026-09-15",
+    "when": "15 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "The Parks At Foster Crossing Addition Phase I",
+    "text": "15 new home permits issued 15 Sep 2026 to 2 Oct 2026, Anna, Collin County. Builder as filed: MERITAGE. Plans as filed: C403, C404, C456, C465, L340, L345, L380 and L390. Lot owner as filed: MERITAGE HOMES OF TEXAS LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27THE+PARKS+AT+FOSTER+CROSSING+ADDITION+PHASE+I%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-15",
+    "when": "15 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Nicholson Ranch Phase 1",
+    "text": "17 new home permits issued 15 Sep 2026 to 21 Sep 2026, Collin County, Collin County. Builder as filed: TROPHY SIGNATURE. Plans as filed: BIRCH-3035, CEDAR-3045, CYPRESS-3047, MAGNOLIA-3070, OAK II-3086 and WILLOW-3095. Lot owner as filed: TSHH LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27NICHOLSON+RANCH+PHASE+1%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-003a",
+      "short": "Trophy Signature"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-15",
+    "when": "15 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Eastridge Phase 7",
+    "text": "10 new home permits issued 15 Sep 2026 to 28 Sep 2026, Princeton, Collin County. Builder as filed: TROPHY. Plans as filed: CLARET-4085, CYPRESS-3047, GILMOUR II-4947, MASTERS-4090, WIMBLEDON-4095 and WINTERS-4094. Lot owner as filed: TSHH LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27EASTRIDGE+PHASE+7%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-003",
+      "short": "Green Brick"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-14",
+    "when": "14 Sep 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "McKinney, annexation, 61.9 acres",
+    "text": "Consider/Discuss/Act on a Resolution Authorizing the City Manager to Execute an Annexation Facilities and Developer Participation Agreement with Provident Realty Acquisitions III LLC Related to the Annexation and Infrastructure Improvements Associated with an Industrial Warehouse Project on Approximately 61.922 Acres Generally Located East of State Highway 5 and South of State Highway 121. 61.9 acres. On the McKinney agenda.",
+    "url": "https://webapi.legistar.com/v1/mckinney/matters/30852",
+    "src": "McKinney agenda record (data)",
+    "cards": []
+   },
+   {
     "date": "2026-09-11",
     "when": "11 Sep 2026",
     "group": "buildings",
@@ -35977,6 +36458,109 @@
     "text": "New construction, 2,975 square feet, $12,000,000 estimated. Start 1 Nov 2026, finish 1 May 2028. At 2800 W FM RD 550, Heath. Scope as filed: GROUND UP CONSTRUCTION - POOL PAVILION AND RESTROOMS FOR HORIZON LAKES AMENITY CENTER. Owner as filed: RLS (HORIZON) LLC, 250 VESEY ST FL 15, NEW YORK, New York 10281.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2027000866",
     "src": "TDLR project page",
+    "cards": []
+   },
+   {
+    "date": "2026-09-10",
+    "when": "10 Sep 2026",
+    "group": "plats",
+    "kind": "Final plat",
+    "title": "High Country",
+    "text": "Consider and make a recommendation to City Council regarding a Final Plat of High Country, Phase 10, being approximately 32.121 acres to create 136 residential lots, 4 open space lots, 1 general retail lot, and Right-of-Way (ROW) dedication for McNatt Road and Frontier Parkway, situated in the James Bridges Jr. Survey, Abstract No. 36, City of Aubrey Extraterritorial Jurisdiction (ETJ), Denton County, Texas, generally located west of the intersection of McNatt Road and Frontier parkway. Denton County Property... 32.1 acres, 136 lots. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/245",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-09",
+    "when": "9 Sep 2026",
+    "group": "plats",
+    "kind": "Plat",
+    "title": "Dallas, plat, 22.5 acres",
+    "text": "An application to create one 22.459-acre lot from a tract of land in City Block 2/6682, on property located on Lake June Road at Algonquin Drive, southwest corner. Applicant/Owner: City of Dallas Surveyor: City of Dallas Application Filed: August 19, 2026. Zoning: CR, R-7.5(A) Staff Recommendation: Approval, subject to compliance with the conditions listed in the docket. Planner: William Castillo Council District: 5 PLAT-26-000213. 22.5 acres. On the Dallas agenda.",
+    "url": "https://webapi.legistar.com/v1/cityofdallas/matters/26172",
+    "src": "Dallas agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-09",
+    "when": "9 Sep 2026",
+    "group": "plats",
+    "kind": "Development agreement",
+    "title": "Oak Ridge",
+    "text": "Conduct a Public Hearing/Consider/Discuss/Action on request to zone 808.1± acres on the southeast corner of County Road 285 and County Road 827 in accordance with the Oak Ridge Development Agreement (Resolution No. 2025-05-1782) (PD 26-0003). Case PD 26-0003. 808.1 acres. On the Anna agenda.",
+    "url": "https://annatx.api.civicclerk.com/v1/Meetings/1544",
+    "src": "Anna agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-04",
+    "when": "4 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Eastridge Phase 6",
+    "text": "20 new home permits issued 4 Sep 2026 to 2 Oct 2026, Princeton, Collin County. Builder as filed: TROPHY. Plans as filed: CEDAR-3045, CLARET-4085-B, CYPRESS-3047, EMMY II-4032, HADLEY-1728, HEISMAN-4040, MAGNOLIA-3070 and MASTERS-4090. Lot owner as filed: TSHH LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27EASTRIDGE+PHASE+6%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-003",
+      "short": "Green Brick"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-04",
+    "when": "4 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Songhill Phase 1",
+    "text": "25 new home permits issued 4 Sep 2026 to 6 Oct 2026, North Collin County Mud #1, Collin County. Builder as filed: LENNAR. Plans as filed: AARON-N056, COBB-N038, DIMAGGIO-N054, GEHRIG-N052, IDLEWOOD-2530, KITSON-2520, MAYS-N050 and MORROW-2554. Lot owner as filed: DRP BOOKBINDER MULTISTATE LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27SONGHILL+PHASE+1%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-002",
+      "short": "Lennar"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-04",
+    "when": "4 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Southridge Phase 4",
+    "text": "17 new home permits issued 4 Sep 2026 to 9 Oct 2026, Princeton, Collin County. Builder as filed: TROPHY. Plans as filed: CEDAR-3045, CYPRESS-3047, MAGNOLIA-3070, OAK II-3086, WILLOW-3095 and WILLOW-3095-P. Lot owner as filed: TSHH LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27SOUTHRIDGE+PHASE+4%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-003",
+      "short": "Green Brick"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-03",
+    "when": "3 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Rocky Creek",
+    "text": "14 new home permits from 3 Sep 2026, Fort Worth, ZIP 76036. Single family residence, 2,591 to 3,606 square feet. Owner as filed: ROCKY CREEK CROSSING LTD.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27ROCKY+CREEK+CROSSING+LTD%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-03",
+    "when": "3 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "La Prelle",
+    "text": "12 new home permits from 3 Sep 2026, Fort Worth, ZIP 76052. Single family residence, 2,731 to 4,544 square feet. Owner as filed: TPHMI DFW 4047 LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27TPHMI+DFW+4047+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
     "cards": []
    },
    {
@@ -36002,6 +36586,117 @@
     "cards": []
    },
    {
+    "date": "2026-09-02",
+    "when": "2 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Inspiration Phase 10",
+    "text": "12 new home permits issued 2 Sep 2026 to 30 Sep 2026, Collin County Wcid #3, Collin County. Builder as filed: FIRST TEXAS. Plans as filed: CAROLINE 2, COLUMBIA, INWOOD, MCKINNON, MCKINNON-CUSTO, MOCKINGBIRD and SHEFFIELD EW. Lot owner as filed: FIRST TEXAS HOMES INC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27INSPIRATION+PHASE+10%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-008",
+      "short": "First Texas Homes"
+     },
+     {
+      "id": "DFW-CH-018",
+      "short": "Huffines"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-02",
+    "when": "2 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "Inspiration Phase 10",
+    "text": "10 new home permits from 2 Sep 2026, Collin County Wcid #3, Collin County. Builder as filed: ASHTON WOODS. Plans as filed: 5129, FAREWELL 5127, HAWKINS 5129, MARSHALL 5125, MASON 5222, REGENCY 6234 and WELLMAN 5224. Lot owner as filed: ASHTON DALLAS RESIDENTIAL LLC, JEN TEXAS 38 LLC.",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json?%24where=permittypecode%3D%27N%27+AND+propabssubname%3D%27INSPIRATION+PHASE+10%27&%24order=permitissueddate+DESC",
+    "src": "Collin CAD permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-009",
+      "short": "Ashton Woods"
+     },
+     {
+      "id": "DFW-CH-018",
+      "short": "Huffines"
+     }
+    ]
+   },
+   {
+    "date": "2026-09-01",
+    "when": "1 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "SHELBY COUNTY SCHOOL LAND SURV Abstract 1375 Tract 33 46.408 AC INTO PLAT D224208199 (32000A)",
+    "text": "23 new home permits from 1 Sep 2026, Fort Worth, ZIP 76140. Single family residence, 1,892 to 2,694 square feet. The land is still described by survey and tract, not by lot. Owner as filed: KLLB AIV LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27KLLB+AIV+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-01",
+    "when": "1 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "REED, JOSIAH N SURVEY Abstract 1497 Tract 2C07",
+    "text": "17 new home permits from 1 Sep 2026, Fort Worth, ZIP 76179. Single family residence, 2,062 to 4,222 square feet. The land is still described by survey and tract, not by lot. Owner as filed: GRBK EDGEWOOD LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27GRBK+EDGEWOOD+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-01",
+    "when": "1 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "M E P & P RR CO SURVEY #19 Abstract 1138 Tract 1C01",
+    "text": "12 new home permits from 1 Sep 2026, Fort Worth, ZIP 76179. Single family residence, 2,224 to 3,656 square feet. The land is still described by survey and tract, not by lot. Owner as filed: GRBK EDGEWOOD LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27GRBK+EDGEWOOD+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-09-01",
+    "when": "1 Sep 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "A0972A Overton, Tr 8(Pt), 550.7283 Acres, Old Dcad Tr #1",
+    "text": "12 new home permits from 1 Sep 2026, Fort Worth, ZIP 76052. Single family residence, 2,245 to 3,656 square feet. The land is still described by survey and tract, not by lot. Owner as filed: GRBK EDGEWOOD LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27GRBK+EDGEWOOD+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-31",
+    "when": "31 Aug 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "M E P & P RR CO SURVEY #17 Abstract 1131 Tract 4 & 4A",
+    "text": "13 new home permits from 31 Aug 2026, Fort Worth, ZIP 76179. Single family residence, 2,016 to 2,994 square feet. The land is still described by survey and tract, not by lot. Owner as filed: JEN TEXAS 31 LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27JEN+TEXAS+31+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-31",
+    "when": "31 Aug 2026",
+    "group": "permits",
+    "kind": "First home permits",
+    "title": "ROBERTSON, HENRY SURVEY Abstract 1798 Tract 2B04B",
+    "text": "13 new home permits from 31 Aug 2026, Fort Worth, ZIP 76131. Single family residence, 2,149 to 3,675 square feet. The land is still described by survey and tract, not by lot. Owner as filed: M/I HOMES OF DFW LLC.",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0/query?where=Permit_Type%3D%27Residential+Building+Permit%27+AND+Owner_Full_Name%3D%27M%2FI+HOMES+OF+DFW+LLC%27&outFields=%2A&returnGeometry=false&orderByFields=File_Date+DESC&f=json",
+    "src": "Fort Worth permit records (data)",
+    "cards": [
+     {
+      "id": "DFW-055",
+      "short": "M/I Homes"
+     }
+    ]
+   },
+   {
     "date": "2026-08-28",
     "when": "28 Aug 2026",
     "group": "buildings",
@@ -36013,6 +36708,72 @@
     "cards": []
    },
    {
+    "date": "2026-08-28",
+    "when": "28 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Denton, annexation, 28.2 acres",
+    "text": "Consider adoption of an ordinance of the City of Denton, Texas regarding a Municipal Services Agreement, pursuant to Tex. Loc. Gov. Code Sec. 43.0672, between the City of Denton and The Residences of Lake District No. 1, LTD. for the provision of city services to approximately 28.212 acres of land, generally located on the north side of Jim Christal Road, approximately 1,284 feet west of the intersection of North Masch Branch Road and Jim Christal Road, approving a schedule of annexation, authorizing the City... 28.2 acres. On the Denton agenda.",
+    "url": "https://webapi.legistar.com/v1/denton-tx/matters/32617",
+    "src": "Denton agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-28",
+    "when": "28 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Denton, annexation, 28.2 acres",
+    "text": "Hold a public hearing and consider a petition for voluntary annexation of approximately 28.212 acres of land, generally located on the north side of Jim Christal Road, approximately 1,284 feet west of the intersection of N Masch Branch Road and Jim Christal Road, into the City of Denton, Denton County, Texas. (A26-0007a, Lybbert-Rogers-Cole, Sean Jacobson). 28.2 acres. On the Denton agenda.",
+    "url": "https://webapi.legistar.com/v1/denton-tx/matters/32618",
+    "src": "Denton agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-28",
+    "when": "28 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Denton, annexation, 28.2 acres",
+    "text": "Conduct the first of two readings of an ordinance of the City of Denton, Texas annexing approximately 28.212 acres of land, generally located on the north side of Jim Christal Road, approximately 1,284 feet west of the intersection of N Masch Branch Road and Jim Christal Road, into the City of Denton, Denton County, Texas, providing for a correction to the City map to include the annexed land, and providing for a savings clause and an effective date. (A26-0007b, Lybbert-Rogers-Cole, Sean Jacobson). 28.2 acres. On the Denton agenda.",
+    "url": "https://webapi.legistar.com/v1/denton-tx/matters/32619",
+    "src": "Denton agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-27",
+    "when": "27 Aug 2026",
+    "group": "plats",
+    "kind": "Public improvement district",
+    "title": "Aubrey, public improvement district, 23 acres",
+    "text": "Consideration and action on Resolution No. 1060-26, setting a Public Hearing under Sec. 372.009 of the Texas Local Government Code for the creation of the Sherman Ridge Public Improvement District within the City of Aubrey, Texas, on an approximate 23.039 acres of land more specifically described as all of Lots 11 and 12, Aubrey Estates, an addition to the City of Aubrey, Denton County, Texas, recorded in Cabinet G, Slide 353, Denton County Plat Records, and all of Lot 9R, Aubrey Estates, an addition to the... 23 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/235",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-27",
+    "when": "27 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 23 acres",
+    "text": "Hold a public hearing, consider, and act on Ordinance No. 979-26 regarding an amendment to Exhibit 14A, \"Zoning Ordinance,\" of Chapter 14, \"Zoning\" of the Code of Ordinances of the City of Aubrey, Texas, and the official Zoning Map of the City, to zone an approximate 23.039 acres of land, more specifically described as all of Lots 11 and 12, Aubrey Estates, an addition to the City of Aubrey, Denton County, Texas, recorded in Cabinet G, Slide 353, Denton County Plat Records, and all of Lot 9R, Aubrey Estates, an... 23 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/235",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
+    "date": "2026-08-27",
+    "when": "27 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 23 acres",
+    "text": "Hold a public hearing, consider and act on Ordinance No. 977-26 annexing 23.039-acre tract of land into the corporate limits of the City of Aubrey, Texas, on the voluntary petition of the owner, being all of Lots 11 and 12, Aubrey Estates (Denton County Appraisal District Property ID No. 153507) and all of Lot 9R, Aubrey Estates (Denton County Appraisal District Property ID No. 1073854), situated in the John M. Fisher Survey, Abstract No. 432, Denton County, Texas, generally located north of West Sherman Drive... 23 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/235",
+    "src": "Aubrey agenda record (data)",
+    "cards": []
+   },
+   {
     "date": "2026-08-25",
     "when": "25 Aug 2026",
     "group": "buildings",
@@ -36021,6 +36782,17 @@
     "text": "New construction, 254,890 square feet, $19,000,000 estimated. Start 1 Jan 2027, finish 30 Jun 2028. At 1021 E Wheatland Road, Dallas. Scope as filed: New construction of 210-unit affordable apartments. Owner as filed: Curtis Jones, 412 Lisa Lane, DeSoto, Texas 75115.",
     "url": "https://www.tdlr.texas.gov/TABS/Projects/TABS2026028771",
     "src": "TDLR project page",
+    "cards": []
+   },
+   {
+    "date": "2026-08-25",
+    "when": "25 Aug 2026",
+    "group": "plats",
+    "kind": "Plat",
+    "title": "Dallas, plat, 4.6 acres, 21 lots",
+    "text": "An application to replat a 4.554-acre tract of land containing all of Lot 55 in City Block T/5455 and a portion of Lot 1 in City Block S/5455 to create 21 lots ranging in size from 4,960.13 square feet to 30,386 square feet and private streets, on property located on Kingsway Avenue, south of Meadow Park Drive. Applicant/Owner: Preston Hollow Phase 3, LP Surveyor: Westwood Professional Services, Inc. Application Filed: August 5, 2026 Zoning: PD 750 (Tracts A, C, and D) Staff Recommendation: Approval, subject to... 4.6 acres, 21 lots. On the Dallas agenda.",
+    "url": "https://webapi.legistar.com/v1/cityofdallas/matters/26004",
+    "src": "Dallas agenda record (data)",
     "cards": []
    },
    {
@@ -36128,6 +36900,17 @@
     "text": "This notice seeks additional comment on an earlier Request for Information (RFI) on the methodology HUD uses to calculate Community Development Block Grant Disaster Recovery (CDBG-DR) allocation amounts. It also notifies the public that HUD will use the formula described in the 2025 notice for allocations to 2023 and 2024 disasters until a final rule is completed.",
     "url": "https://www.federalregister.gov/documents/2026/08/13/2026-16499/notice-on-community-development-block-grant-disaster-recovery-cdbg-dr-formula",
     "src": "Federal Register",
+    "cards": []
+   },
+   {
+    "date": "2026-08-13",
+    "when": "13 Aug 2026",
+    "group": "plats",
+    "kind": "Annexation",
+    "title": "Aubrey, annexation, 23 acres",
+    "text": "Hold a public hearing, consider, and make a recommendation to City Council regarding an amendment to Exhibit 14A, \"Zoning Ordinance,\" of Chapter 14, \"Zoning\" of the Code of Ordinances of the City of Aubrey, Texas, and the official Zoning Map of the City, to zone an approximate 23.039 acres of land, more specifically described as all of Lots 11 and 12, Aubrey Estates, an addition to the City of Aubrey, Denton County, Texas, recorded in Cabinet G, Slide 353, Denton County Plat Records, and all of Lot 9R, Aubrey... 23 acres. On the Aubrey agenda.",
+    "url": "https://aubreytx.api.civicclerk.com/v1/Meetings/234",
+    "src": "Aubrey agenda record (data)",
     "cards": []
    },
    {
@@ -36364,6 +37147,17 @@
     "cards": []
    },
    {
+    "date": "2026-07-07",
+    "when": "7 Jul 2026",
+    "group": "plats",
+    "kind": "Planned development zoning",
+    "title": "Allen Townhomes",
+    "text": "Allen Townhomes. 41 Townhome lots with three open space lots on 5.8 acres. 5.8 acres, 41 lots. From Allen's current development projects.",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0/query?where=LifeCycleStatus%3D%27Current%27&outFields=OBJECTID%2CDevelopmentStage%2CApplicationType%2CProjectName%2CProjectDescription%2CProjectLocation%2CLandUse%2CDeveloper%2CPlanningZoningCommDate%2CCityCouncilDate&returnGeometry=false&f=json&resultRecordCount=500",
+    "src": "Allen agenda record (data)",
+    "cards": []
+   },
+   {
     "date": "2026-06-29",
     "when": "29 Jun 2026",
     "group": "districts",
@@ -36474,13 +37268,23 @@
     "cards": []
    }
   ],
-  "n": 50,
-  "on_cards": 11,
+  "n": 116,
+  "on_cards": 23,
   "groups": [
    {
     "key": "disasters",
     "label": "Disasters and recovery funds",
     "n": 1
+   },
+   {
+    "key": "plats",
+    "label": "Plats and zoning cases",
+    "n": 46
+   },
+   {
+    "key": "permits",
+    "label": "New home permits",
+    "n": 20
    },
    {
     "key": "buildings",
@@ -36499,10 +37303,34 @@
    }
   ],
   "from": "28 Apr 2026",
-  "to": "8 Oct 2026",
+  "to": "13 Oct 2026",
   "days": 180,
   "read": "11 Oct 2026",
   "sources": [
+   {
+    "name": "City agendas through Legistar (Dallas, Fort Worth, Denton, McKinney, Plano and others)",
+    "url": "https://webapi.legistar.com/Help"
+   },
+   {
+    "name": "City agendas through CivicClerk (Anna, Celina, Mansfield, Aubrey, Justin, Crowley)",
+    "url": "https://annatx.api.civicclerk.com/v1/Events"
+   },
+   {
+    "name": "Allen current development projects",
+    "url": "https://gismaps.cityofallen.org/arcgis/rest/services/CommunityDevelopment/Current_Development_Projects/FeatureServer/0"
+   },
+   {
+    "name": "Collin CAD building permits (data.texas.gov)",
+    "url": "https://data.texas.gov/resource/82ee-gbj5.json"
+   },
+   {
+    "name": "Collin CAD subdivision list (data.texas.gov)",
+    "url": "https://data.texas.gov/resource/wkpt-bats.json"
+   },
+   {
+    "name": "Fort Worth development permits (City open data)",
+    "url": "https://services5.arcgis.com/3ddLCBXe1bRt7mzj/arcgis/rest/services/CFW_Open_Data_Development_Permits_View/FeatureServer/0"
+   },
    {
     "name": "TDLR building registrations",
     "url": "https://www.tdlr.texas.gov/TABS/Search"
